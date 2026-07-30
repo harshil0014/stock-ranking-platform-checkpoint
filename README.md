@@ -193,11 +193,16 @@ would be misleading.
 ## Next milestone
 
 Qlib Linear has been reproduced twice with the official v0.9.7 implementation
-on a frozen offline synthetic pipeline. The exact next milestone is reproducing
-official Qlib LightGBM on the same dataset and evaluation protocol without
-test-driven tuning. Alpha158 and real-market work remain later and require
-approved data provenance. Portfolio construction and performance claims remain
-out of scope.
+on a frozen offline synthetic pipeline. The Qlib LightGBM diagnostic proved
+that an uninitialized workflow fails after training at `R.log_metrics`. The
+official local-recorder path then initialized Qlib successfully, but installed
+MLflow rejected its filesystem store before fitting because the additional
+`MLFLOW_ALLOW_FILE_STORE=true` opt-in was initially absent. After explicit
+authorization for LightGBM child processes only, two fresh official runs
+completed and matched predictions and both feature-importance measures exactly
+at the fixed `1e-12` tolerance. This is synthetic-only reproduction evidence.
+Alpha158 and real-market work remain later and require approved data
+provenance. Portfolio construction and performance claims remain out of scope.
 
 ## Open-source quant research layer
 

@@ -31,6 +31,11 @@ from stock_research.qlib_reproduction import (
     plan_qlib_linear_reproduction,
     run_qlib_linear_reproduction,
 )
+from stock_research.qlib_lightgbm_reproduction import (
+    QlibLightGBMReproductionConfig,
+    plan_qlib_lightgbm_reproduction,
+    run_qlib_lightgbm_reproduction,
+)
 
 
 DEFAULT_REGISTRY = Path("research/registry/open_source_registry.json")
@@ -154,6 +159,49 @@ def build_parser() -> argparse.ArgumentParser:
     reproduce.add_argument("--dry-run", action="store_true")
     reproduce.add_argument(
         "--discard-failed-artifacts", action="store_true"
+    )
+
+    lightgbm = commands.add_parser("reproduce-qlib-lightgbm")
+    lightgbm.add_argument("--seed", type=int, default=20260730)
+    lightgbm.add_argument("--reruns", type=int, default=2)
+    lightgbm.add_argument(
+        "--reproducibility-tolerance", type=float, default=1e-12
+    )
+    lightgbm.add_argument(
+        "--output-root", type=Path,
+        default=Path("research/generated/qlib-lightgbm"),
+    )
+    lightgbm.add_argument(
+        "--frozen-linear-batch", type=Path,
+        default=Path(
+            "research/generated/qlib-linear/final-locked-20260731"
+        ),
+    )
+    lightgbm.add_argument(
+        "--qlib-interpreter", type=Path,
+        default=Path(".venv-qlib/Scripts/python.exe"),
+    )
+    lightgbm.add_argument(
+        "--environment-report", type=Path,
+        default=Path("research/generated/qlib-environment-verified.json"),
+    )
+    lightgbm.add_argument(
+        "--frozen-specification", type=Path,
+        default=Path(
+            "research/specifications/qlib_lightgbm_frozen_protocol.json"
+        ),
+    )
+    lightgbm.add_argument("--batch-id")
+    lightgbm.add_argument("--dry-run", action="store_true")
+    lightgbm.add_argument(
+        "--discard-failed-artifacts", action="store_true"
+    )
+    lightgbm.add_argument(
+        "--resume-completed-run-one", action="store_true",
+        help=(
+            "resume product post-processing after a verified successful "
+            "run-01 subprocess without retraining it"
+        ),
     )
     return parser
 
@@ -313,6 +361,37 @@ def _run(args: argparse.Namespace) -> int:
             result = run_qlib_linear_reproduction(config)
             print(
                 f"Qlib Linear reproduction: {result.directory} "
+                f"({len(result.runs)} runs, reproducible)"
+            )
+    elif args.command == "reproduce-qlib-lightgbm":
+        config = QlibLightGBMReproductionConfig(
+            seed=args.seed,
+            reruns=args.reruns,
+            reproducibility_tolerance=args.reproducibility_tolerance,
+            output_root=args.output_root,
+            frozen_linear_batch=args.frozen_linear_batch,
+            qlib_interpreter=args.qlib_interpreter,
+            environment_report=args.environment_report,
+            frozen_specification=args.frozen_specification,
+            batch_id=args.batch_id,
+            keep_failed_artifacts=not args.discard_failed_artifacts,
+            resume_completed_run_one=args.resume_completed_run_one,
+        )
+        if args.dry_run:
+            plan = plan_qlib_lightgbm_reproduction(config)
+            print(json.dumps({
+                **asdict(plan),
+                "output_directory": str(plan.output_directory),
+                "selected_source_run": str(plan.selected_source_run),
+                "commands": [list(command) for command in plan.commands],
+                "dry_run": True,
+                "artifacts_written": False,
+                "training_performed": False,
+            }, indent=2, sort_keys=True, allow_nan=False, default=str))
+        else:
+            result = run_qlib_lightgbm_reproduction(config)
+            print(
+                f"Qlib LightGBM reproduction: {result.directory} "
                 f"({len(result.runs)} runs, reproducible)"
             )
     return 0

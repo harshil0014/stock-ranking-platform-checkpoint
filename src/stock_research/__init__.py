@@ -52,6 +52,26 @@ from stock_research.synthetic_qlib import (
     generate_synthetic_qlib_data,
     reconstruct_price_features,
 )
+from stock_research.qlib_lightgbm_compatibility import (
+    QlibLightGBMCompatibilityConfig,
+    QlibLightGBMCompatibilityPlan,
+    QlibLightGBMCompatibilityResult,
+    build_qlib_lightgbm_plan,
+    run_qlib_lightgbm_compatibility_proof,
+    validate_frozen_lightgbm_inputs,
+)
+from stock_research.qlib_lightgbm_reproduction import (
+    QlibLightGBMBatchResult,
+    QlibLightGBMReproductionConfig,
+    QlibLightGBMReproductionPlan,
+    QlibLightGBMRunResult,
+    build_lightgbm_subprocess_environment,
+    compare_lightgbm_reproduction_runs,
+    finalize_failed_lightgbm_batch,
+    plan_qlib_lightgbm_reproduction,
+    run_qlib_lightgbm_reproduction,
+    validate_local_recorder_paths,
+)
 
 __all__ = [
     "ChronologicalSplit", "DateRange", "EvaluationProtocol", "EvaluationResult",
@@ -70,6 +90,22 @@ __all__ = [
     "build_qlib_subprocess_environment",
     "plan_qlib_linear_reproduction", "reconstruct_price_features",
     "run_qlib_linear_reproduction",
+    "QlibLightGBMCompatibilityConfig",
+    "QlibLightGBMCompatibilityPlan",
+    "QlibLightGBMCompatibilityResult",
+    "build_qlib_lightgbm_plan",
+    "run_qlib_lightgbm_compatibility_proof",
+    "validate_frozen_lightgbm_inputs",
+    "QlibLightGBMBatchResult",
+    "QlibLightGBMReproductionConfig",
+    "QlibLightGBMReproductionPlan",
+    "QlibLightGBMRunResult",
+    "build_lightgbm_subprocess_environment",
+    "compare_lightgbm_reproduction_runs",
+    "finalize_failed_lightgbm_batch",
+    "plan_qlib_lightgbm_reproduction",
+    "run_qlib_lightgbm_reproduction",
+    "validate_local_recorder_paths",
 ]
 
 __version__ = "0.1.0"

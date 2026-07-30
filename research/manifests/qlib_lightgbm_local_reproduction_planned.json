@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "run_id": "5c120b87-9a26-4aa4-82c1-09d6629e5634",
+  "model_id": "qlib_lightgbm_v0_9_7",
+  "status": "planned",
+  "created_at": "2026-07-31T00:00:00+00:00",
+  "source_commit": "630ffc93dfd52c797ef40a4df3d1d29859acd1df",
+  "worktree_status": "implementation planned",
+  "model_configuration": {
+    "model_family": "Qlib LightGBM",
+    "upstream_class": "qlib.contrib.model.gbdt.LGBModel",
+    "upstream": {
+      "version": "v0.9.7",
+      "commit": "da920b7"
+    },
+    "workflow": "official local file-backed MLflowExpManager"
+  },
+  "model_configuration_fingerprint": "resolved from the frozen specification at runtime",
+  "evaluation_protocol_fingerprint": "210bca5c4ac474f766a3caf549d8adc4dc06ae22b3378eb70f4ed224f6978782",
+  "datasets": {
+    "source": {
+      "fingerprint": "7412fc79f8af0acf87b1cb22209842d153e8a6b6e9370e147b43e454ca247f2d",
+      "provenance": "accepted offline fictional Qlib Linear batch"
+    }
+  },
+  "splits": {
+    "train": {
+      "start": "2025-09-23",
+      "end": "2026-03-09"
+    },
+    "validation": {
+      "start": "2026-03-17",
+      "end": "2026-04-27"
+    },
+    "test": {
+      "start": "2026-05-05",
+      "end": "2026-06-29"
+    },
+    "purge_days": 7,
+    "embargo_days": 7
+  },
+  "seeds": {
+    "model": 20260730
+  },
+  "parameters": {
+    "upstream_class": "qlib.contrib.model.gbdt.LGBModel",
+    "workflow": "Qlib MLflowExpManager with a local file URI",
+    "reruns": 2,
+    "reproducibility_tolerance": 1e-12
+  },
+  "paths": {
+    "frozen_specification": "research/specifications/qlib_lightgbm_frozen_protocol.json"
+  },
+  "evaluation_protocol": {
+    "fingerprint": "210bca5c4ac474f766a3caf549d8adc4dc06ae22b3378eb70f4ed224f6978782"
+  },
+  "evaluation_artifacts": [],
+  "notes": "Planned offline synthetic-only reproduction using Qlib's official local file-backed workflow."
+}

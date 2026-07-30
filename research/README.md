@@ -17,6 +17,7 @@ stock-research contract-validate --kind labels --input research\examples\labels.
 stock-research contract-validate --kind split --input research\examples\split.json
 stock-research environment-inspect
 stock-research reproduce-qlib-linear --dry-run
+stock-research reproduce-qlib-lightgbm --dry-run
 ```
 
 See `docs/evaluation_methodology.md`, `docs/open_source_policy.md`, and
@@ -27,3 +28,13 @@ now passed the offline synthetic reproduction. See
 [`docs/qlib_linear_reproduction.md`](docs/qlib_linear_reproduction.md) for the
 frozen data, execution, artifact, and evidence boundaries. This result is
 synthetic-only and is not real-market validation or investment evidence.
+
+The official Qlib LightGBM wrapper has a preserved uninitialized-workflow
+diagnostic and a separate local-recorder attempt. Qlib initialization passed,
+but installed MLflow required an unapproved filesystem-store environment
+opt-in before `R.start` could create the recorder. The opt-in was later
+authorized for LightGBM child processes only, and two fresh official runs
+completed reproducibly on the frozen fictional protocol. See
+[`docs/qlib_lightgbm_compatibility.md`](docs/qlib_lightgbm_compatibility.md).
+The successful result is synthetic-only; neither earlier blocked diagnostic is
+a reproduction claim.

@@ -12,9 +12,15 @@ investment evidence, or an upstream benchmark reproduction.
 2. Qlib Linear uses the official class with recorded parameters, seeds,
    features, package lock, datasets, and model configuration fingerprint. Its
    stable reproduced signal ID is `qlib_linear_ols_v0_9_7`.
-3. Qlib LightGBM is the exact next reproduction under the frozen synthetic
-   dataset and protocol, without test-driven tuning. Its distinct
-   parameters and model fingerprint are expected and must be preserved.
+3. Qlib LightGBM has two preserved diagnostics. An uninitialized workflow
+   trains and then fails at `R.log_metrics`. The subsequently authorized
+   official local `MLflowExpManager` path initializes Qlib but the installed
+   MLflow rejects filesystem tracking unless
+   `MLFLOW_ALLOW_FILE_STORE=true` is explicitly set. After that setting was
+   authorized for LightGBM child processes only, two fresh official runs
+   completed with zero prediction and feature-importance differences at
+   `1e-12`. Its `synthetic_reproduced` status is limited to this frozen
+   fictional protocol and is not real-market or investment evidence.
 4. DoubleEnsemble follows only after both simpler models reproduce cleanly.
 5. TRA follows after a separate PyTorch environment and security/resource
    review; PyTorch is not part of the initial Qlib environment.

@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "accepted_source_batch_id": "final-locked-20260731",
+  "accepted_source_batch": "research/generated/qlib-linear/final-locked-20260731",
+  "selected_source_run": "run-01",
+  "source_selection_rule": "lexicographically first valid completed run",
+  "seed": 20260730,
+  "row_counts": {
+    "features": 6000,
+    "labels": 6000,
+    "train": 3600,
+    "valid": 900,
+    "test": 1200
+  },
+  "instrument_count": 30,
+  "feature_list": [
+    "irrelevant_noise",
+    "momentum_20d",
+    "momentum_5d",
+    "price_to_trend_20d",
+    "quality_proxy",
+    "redundant_momentum_20d",
+    "sector_momentum_20d",
+    "size_proxy",
+    "value_proxy",
+    "volatility_20d"
+  ],
+  "label_name": "forward_1d_return",
+  "label_definition": "Simple adjusted-close return from as_of_date to the next business day; generated from time-t features plus independent noise.",
+  "splits": {
+    "train": {
+      "start": "2025-09-23",
+      "end": "2026-03-09"
+    },
+    "validation": {
+      "start": "2026-03-17",
+      "end": "2026-04-27"
+    },
+    "test": {
+      "start": "2026-05-05",
+      "end": "2026-06-29"
+    },
+    "purge_days": 7,
+    "embargo_days": 7
+  },
+  "missing_value_policy": "reject",
+  "dataset_fingerprints": {
+    "features": "5f58fff937e55be716ad69446ad1955b7070247f87ea57fe298779b8f4918cfa",
+    "fundamentals": "1c6fa4d9bbc27335db44878b784133d9d0cf3f3eb000e423ef00f9a41eb3f665",
+    "generation_metadata": "d3e6e1511f6b19b07cc2f713b562b54cc6fe50c8e038b88014106e418918e680",
+    "labels": "7412fc79f8af0acf87b1cb22209842d153e8a6b6e9370e147b43e454ca247f2d",
+    "mapping": "985abb94e7a104368a964f5b7c68ad9fcd264a943ea16e7ae74abde2cb83f7ab",
+    "prices": "8c945ffc4af9d5deccc2a2c060b396adb239becf77e7147309b0eda937096983",
+    "universe": "4ab0a881ed88014f6e37e75de706cb19eaf326d46bba31f62bd8f71070bfd442"
+  },
+  "label_dataset_fingerprint": "7412fc79f8af0acf87b1cb22209842d153e8a6b6e9370e147b43e454ca247f2d",
+  "evaluation_protocol_fingerprint": "210bca5c4ac474f766a3caf549d8adc4dc06ae22b3378eb70f4ed224f6978782",
+  "canonical_file_hashes": {
+    "data_generation_metadata.json": "cd830f0eb23b0568a0a8cfbe8030fc139e74a983641a7dad7178aa7567b20a25",
+    "dataset_fingerprints.json": "a7bc1285531196c428623af78d810648ebf00f7cca1e33be01e5fba53941416c",
+    "evaluation_protocol.json": "6c38051a6cdd2bccaab5ff8e7451ef1308b8e03c66d664b43e12599fb8b69821",
+    "qlib_instrument_mapping.csv": "be46852f24b6ab6f46a06537a37270bd6eb316a501f0df2158bd91d1f87eb32e",
+    "split.json": "d4c867fa1d7222515a8319d7e52f76a56d794c022277000980c3b9c58e124343",
+    "synthetic_features.csv": "47138dbeb431391158dd9869031352aeca251ddec41d99991f50c401c5c52b93",
+    "synthetic_labels.csv": "05b6fbc34f14597cbc2d34461b83c6bf809e52e2013cdb9a49325775298524dd",
+    "synthetic_qlib_panel.csv": "147204cbeec272ab0088eddaa0bdcaeda8797b9d963a1f76b549eeb1a5ea231e",
+    "synthetic_v2_fundamentals.csv": "ff534933510a5e12d0d8ce64f5e19a309defa677381891b9f93bbb9c68b90382",
+    "synthetic_v2_prices.csv": "504c47b616cb8b55a11ac9a2f0a48f07cad878e0d719cd72378b5cee852ed27a",
+    "synthetic_v2_universe.csv": "0abef193dd67ab289464f1e9aa4f5966da01ad76c85dcd978ce8c0eeab87785b"
+  },
+  "accepted_baseline_hashes": {
+    "qlib_signals.csv": "81a0ab8ad5679dc28dbff87a3fd7dcc690b65c57d544e4b66908a18f54e8675f",
+    "research_v2_eligibility_report.csv": "2c4cb4aa7921c4d8b175b87b92c93d1b1ce88f96bd12220c8f87f10326bfc3e0",
+    "research_v2_signals.csv": "cdaab574d5a7972eff849017104eac6abd59d5010cb46504e11b434eeaf1d8fa"
+  },
+  "accepted_baseline_counts": {
+    "qlib_linear_signals": 1200,
+    "research_v2_signals": 1160,
+    "research_v2_ineligible": 40
+  },
+  "environment_fingerprint": "a7d1b7472d2f5e09927b8859aec082c8e986b5ee30f82289635e4b11e91eea99",
+  "environment_report_sha256": "4895ff4238d78e989e54803f93db6d2b5ed7cddd3be16df0006557dcd8a721f7",
+  "resolved_lock_sha256": "7028da531668b7d119e249e4258112977ea8618bbe8f378864ad8af84f6e924b",
+  "qlib_gbdt_source_sha256": "062874b847ebd6426b5f54a263d5dbce49b18d528ea35dae96b6a31dbf7f3c66",
+  "evidence_scope": "Frozen offline synthetic-only protocol; no Alpha158, real-market validation, portfolio evidence, investment evidence, or test-driven tuning."
+}

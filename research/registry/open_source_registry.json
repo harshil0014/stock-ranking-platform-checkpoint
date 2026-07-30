@@ -86,10 +86,21 @@
       "metrics": ["IC", "Rank IC", "ICIR"],
       "dependencies": ["pyqlib==0.9.7", "lightgbm candidate constraint"],
       "role": "second ML reproduction target",
-      "adoption_status": "adoption_specified",
-      "risks": ["candidate dependency constraint unverified", "not locally reproduced"],
+      "adoption_status": "synthetic_reproduced",
+      "risks": ["synthetic-only evidence", "not real-market validation", "not investment evidence", "not upstream benchmark reproduction"],
       "citations": ["https://github.com/microsoft/LightGBM"],
-      "verification_date": "2026-07-30"
+      "verification_date": "2026-07-31",
+      "local_evidence": {
+        "batch": "research/generated/qlib-lightgbm/official-local-recorder-opt-in-20260731",
+        "model_id": "qlib_lightgbm_v0_9_7",
+        "runs": 2,
+        "maximum_prediction_difference": 0.0,
+        "maximum_gain_importance_difference": 0.0,
+        "maximum_split_importance_difference": 0.0,
+        "fixed_tolerance": 1e-12,
+        "workflow": "official Qlib MLflowExpManager with subprocess-only local file-store opt-in",
+        "scope": "offline deterministic synthetic-only reproduction; not real-market validation, investment evidence, or upstream benchmark reproduction"
+      }
     },
     {
       "id": "qlib_double_ensemble",
