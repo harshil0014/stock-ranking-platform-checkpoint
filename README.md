@@ -5,7 +5,8 @@ long-term product will compare sectors, rank stocks inside each sector, create
 model portfolios, and evaluate them against benchmarks with scheduled
 rebalancing.
 
-This milestone implements only **Baseline V1**. It does not fetch market data,
+The repository implements **Baseline V1** and the offline, point-in-time
+**Research V2** scoring engine. It does not fetch live data, rank sectors,
 construct portfolios, backtest results, or make investment recommendations.
 
 ## What Baseline V1 means
@@ -65,6 +66,44 @@ Run the tests after editable installation:
 .\.venv\Scripts\python.exe -m pytest -q
 ```
 
+## Run Research V2
+
+Research V2 uses three independent offline datasets:
+
+```powershell
+.\.venv\Scripts\stock-ranker.exe research-v2 `
+  --universe data\input\v2_universe.csv `
+  --prices data\input\v2_prices.csv `
+  --fundamentals data\input\v2_fundamentals.csv `
+  --ranking-date 2026-06-30 `
+  --output-dir data\output\v2 `
+  --top-n 5
+```
+
+It creates `full_research_v2_rankings.csv`,
+`top_5_research_v2_rankings.csv`, and
+`research_v2_eligibility_report.csv`.
+
+Required names are exact and case-sensitive:
+
+```text
+Universe:     ticker, company, sector
+Prices:       ticker, date, adjusted_close
+Fundamentals: ticker, period_end, available_date,
+              roce, debt_to_equity, profit_growth_yoy
+```
+
+Returns, fundamentals, volatility, and drawdown use decimal representation.
+`available_date` is when a fundamental version became public. Future records
+are removed before stock-level numeric validation, preventing future malformed
+values from contaminating earlier results.
+
+The sample contains only fictional companies and deliberately includes a
+fundamental revision, future records, a scoring tie, and an ineligible leverage
+value. See
+[docs/research_v2_methodology.md](docs/research_v2_methodology.md) for all
+formulas, eligibility rules, weights, and point-in-time behavior.
+
 ## Input contract
 
 Names are exact and case-sensitive. The engine does not guess aliases.
@@ -117,7 +156,11 @@ src/stock_ranker/
   exporting.py       full and top-N CSV output
   config.py          Baseline V1 configuration
   cli.py             installed command
-  research_v2.py     future scoring interface
+  research_v2.py     Research V2 metrics, eligibility, and scoring
+  v2_config.py       V2 weights and settings
+  v2_contracts.py    V2 schemas
+  v2_validation.py   V2 structural validation
+  v2_exporting.py    V2 result exporting
   portfolio.py       future construction/rebalancing interface
   backtesting.py     future backtest/benchmark interface
 data/input/          committed synthetic input
@@ -141,10 +184,15 @@ Baseline V1:
 - does not score sectors, weight portfolios, compare benchmarks, or rebalance;
 - is a research ranking, not financial advice or a prediction of returns.
 
+Research V2 adds price, risk, and fundamental scoring but remains dependent on
+the coverage, accuracy, publication dates, and classifications in its supplied
+offline files. Its component scores express relative ordinal position within a
+sector, not the magnitude of financial superiority. Cross-sector comparisons
+would be misleading.
+
 ## Next milestone
 
-Research V2 should add validated historical and fundamental contracts, risk and
-quality metrics, explicit weighted scoring, sector-first selection, portfolio
-weighting, point-in-time backtesting, benchmark evaluation, transaction-cost
-assumptions, and scheduled rebalancing. The current interface modules mark
-those boundaries without returning fake results.
+The next milestone should add separate sector/index histories and sector-level
+scoring. Portfolio weighting should follow only after that boundary is
+defined, with point-in-time backtesting, benchmarks, transaction costs, and
+scheduled rebalancing in later milestones.

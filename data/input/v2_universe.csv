@@ -1,0 +1,19 @@
+ticker,company,sector
+TEC001,Aster Quantum Systems,Technology
+TEC002,Blue Nova Software,Technology
+TEC003,Cedar Pixel Labs,Technology
+TEC004,Delta Logic Studio,Technology
+TEC005,Echo Circuit Works,Technology
+TEC006,Fable Data Services,Technology
+FIN001,Amber Ledger Cooperative,Financial Services
+FIN002,Banyan Credit Network,Financial Services
+FIN003,Coral Payment House,Financial Services
+FIN004,Dawn Rural Finance,Financial Services
+FIN005,Elm Trust Services,Financial Services
+FIN006,Flint Capital Exchange,Financial Services
+IND001,Atlas Motion Equipment,Industrials
+IND002,Beacon Process Tools,Industrials
+IND003,Cobalt Fabrication Lab,Industrials
+IND004,Drift Transit Components,Industrials
+IND005,Ember Automation Works,Industrials
+IND006,Forge Industrial Studio,Industrials
