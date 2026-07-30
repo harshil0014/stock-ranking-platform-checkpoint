@@ -1,0 +1,19 @@
+ticker,company,sector,as_of_date,current_price,close_1y_ago,close_3y_ago,close_5y_ago,ath_date
+TEC001,Aster Byte Systems,Technology,2026-06-30,240,180,130,90,2026-06-20
+TEC002,Blue Orbit Software,Technology,2026-06-30,175,160,120,80,2026-03-15
+TEC003,Cedar Cloud Labs,Technology,2026-06-30,110,125,100,70,2025-11-01
+TEC004,Delta Logic Works,Technology,2026-06-30,150,125,100,75,2026-05-01
+TEC005,Echo Digital Services,Technology,2026-06-30,180,150,120,90,2026-05-01
+TEC006,Fable Circuit Design,Technology,2026-06-30,95,90,85,80,2024-12-10
+FIN001,Amber Ledger Finance,Financial Services,2026-06-30,320,250,190,120,2026-06-25
+FIN002,Banyan Credit House,Financial Services,2026-06-30,205,200,150,100,2025-09-15
+FIN003,Coral Trust Services,Financial Services,2026-06-30,145,160,130,95,2026-01-20
+FIN004,Dawn Capital Network,Financial Services,2026-06-30,275,220,180,150,2026-04-30
+FIN005,Elm Payments Cooperative,Financial Services,2026-06-30,88,80,70,65,2025-12-31
+FIN006,Flint Rural Lending,Financial Services,2026-06-30,118,105,100,92,2024-08-18
+IND001,Atlas Motion Equipment,Industrials,2026-06-30,410,300,220,140,2026-06-29
+IND002,Beacon Process Controls,Industrials,2026-06-30,190,175,145,105,2026-02-11
+IND003,Cobalt Fabrication Works,Industrials,2026-06-30,135,150,115,85,2025-08-05
+IND004,Drift Industrial Tools,Industrials,2026-06-30,260,210,170,110,2026-05-16
+IND005,Ember Transit Components,Industrials,2026-06-30,155,140,125,100,2025-10-10
+IND006,Forge Automation Studio,Industrials,2026-06-30,102,98,90,78,2024-11-25
