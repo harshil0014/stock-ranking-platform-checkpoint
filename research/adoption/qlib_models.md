@@ -1,15 +1,19 @@
 # Qlib adoption specifications
 
-These are implementation specifications, not reproduction claims. All Qlib work
-is isolated from the Python 3.13 product environment and pinned to Qlib v0.9.7
-at commit `da920b7`.
+All Qlib work is isolated from the Python 3.13 product environment and pinned
+to Qlib v0.9.7 at commit `da920b7`. The official Qlib Linear implementation has
+now been reproduced twice on the frozen offline fictional dataset. The two
+runs had identical coefficients and predictions at the fixed `1e-12`
+tolerance. This synthetic-only result is not real-market validation,
+investment evidence, or an upstream benchmark reproduction.
 
 1. Research V2 is exported as the stable, explicitly non-ML
    `research_v2_baseline`.
-2. Qlib Linear is the first reproduction target. Use the official class and
-   record its parameters, seeds, features, package lock, datasets, and model
-   configuration fingerprint.
-3. Qlib LightGBM follows under the same evaluation protocol. Its distinct
+2. Qlib Linear uses the official class with recorded parameters, seeds,
+   features, package lock, datasets, and model configuration fingerprint. Its
+   stable reproduced signal ID is `qlib_linear_ols_v0_9_7`.
+3. Qlib LightGBM is the exact next reproduction under the frozen synthetic
+   dataset and protocol, without test-driven tuning. Its distinct
    parameters and model fingerprint are expected and must be preserved.
 4. DoubleEnsemble follows only after both simpler models reproduce cleanly.
 5. TRA follows after a separate PyTorch environment and security/resource

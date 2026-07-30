@@ -11,7 +11,12 @@ from typing import Any
 from stock_research.errors import Diagnostic, ResearchValidationError
 
 
-ALLOWED_STATUSES = {"provenance_verified", "adoption_specified"}
+ALLOWED_STATUSES = {
+    "provenance_verified",
+    "adoption_specified",
+    "environment_verified",
+    "synthetic_reproduced",
+}
 REQUIRED_FIELDS = {
     "id", "name", "kind", "official_source", "paper", "release",
     "code_license", "dataset_license_status", "inputs", "outputs", "metrics",
@@ -77,6 +82,20 @@ def validate_registry(value: str | Path | dict[str, Any]) -> Registry:
             raise ResearchValidationError(
                 Diagnostic("registry_status", "invalid adoption_status", row)
             )
+        if entry["adoption_status"] in {
+            "environment_verified", "synthetic_reproduced"
+        }:
+            evidence = entry.get("local_evidence")
+            if not isinstance(evidence, dict) or not str(
+                evidence.get("scope", "")
+            ).strip():
+                raise ResearchValidationError(
+                    Diagnostic(
+                        "registry_local_evidence",
+                        "verified/reproduced status requires scoped local_evidence",
+                        row,
+                    )
+                )
         source = entry["official_source"]
         if not isinstance(source, dict) or not source.get("url"):
             raise ResearchValidationError(

@@ -192,10 +192,12 @@ would be misleading.
 
 ## Next milestone
 
-The exact next milestone is reproducing Qlib Linear in a verified isolated
-Python 3.12 environment on an offline synthetic pipeline. A separately
-licensed Indian-market point-in-time dataset follows only after provenance
-approval. Portfolio construction and performance claims remain out of scope.
+Qlib Linear has been reproduced twice with the official v0.9.7 implementation
+on a frozen offline synthetic pipeline. The exact next milestone is reproducing
+official Qlib LightGBM on the same dataset and evaluation protocol without
+test-driven tuning. Alpha158 and real-market work remain later and require
+approved data provenance. Portfolio construction and performance claims remain
+out of scope.
 
 ## Open-source quant research layer
 
@@ -207,10 +209,15 @@ cross-sectional IC/Rank IC evaluation. It installs a separate
 `stock-ranker research-v2` unchanged.
 
 Qlib is not a product dependency. The verified upstream package pin is
-`pyqlib==0.9.7` (tag `v0.9.7`, commit `da920b7`) and its proposed dependency
-constraints remain unverified until a clean Python 3.12 installation, complete
-`pip freeze`, and smoke checks succeed. The Python 3.13 `.venv` must not
-contain Qlib, LightGBM, or PyTorch.
+`pyqlib==0.9.7` (tag `v0.9.7`, commit `da920b7`). Its isolated Python 3.12
+environment has a captured complete `pip freeze` and passing import smoke
+checks. The Python 3.13 `.venv` must not contain Qlib, LightGBM, or PyTorch.
+
+Use `stock-research reproduce-qlib-linear --dry-run` to validate the complete
+plan without training or writing run artifacts. A full invocation performs two
+independent official Qlib runs and compares each with genuine Research V2
+signals. See
+[research/docs/qlib_linear_reproduction.md](research/docs/qlib_linear_reproduction.md).
 
 Evaluation compares models only when their
 `evaluation_protocol_fingerprint` matches. Model families keep independent

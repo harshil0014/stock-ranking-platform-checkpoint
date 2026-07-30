@@ -9,8 +9,13 @@ Registry status means only:
 
 - `provenance_verified`: the named source/release/licence metadata was checked.
 - `adoption_specified`: a local adoption sequence and controls are documented.
+- `environment_verified`: the pinned package installed in the isolated Python
+  3.12 environment, its resolved lock was captured, and required imports passed.
+- `synthetic_reproduced`: the official implementation reproduced deterministically
+  on the frozen offline fictional dataset and protocol.
 
-No Qlib model, Alpha handler, paper result, or benchmark is marked reproduced.
-The candidate LightGBM, NumPy, and pandas constraints are specifications to
-test. Compatibility becomes verified only after a clean Python 3.12
-installation, captured `pip freeze`, and successful import smoke checks.
+Qlib Linear is `synthetic_reproduced`; this is not real-market validation,
+investment evidence, or an upstream benchmark reproduction. Qlib LightGBM,
+DoubleEnsemble, TRA, Alpha158, and Alpha360 remain unreproduced. Candidate
+constraints for later environments remain specifications until separately
+installed and tested.

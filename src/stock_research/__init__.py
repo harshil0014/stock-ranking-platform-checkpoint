@@ -37,6 +37,21 @@ from stock_research.manifests import (
     write_manifest,
 )
 from stock_research.registry import Registry, validate_registry
+from stock_research.qlib_reproduction import (
+    QlibLinearReproductionConfig,
+    ReproductionBatchResult,
+    ReproductionPlan,
+    ReproductionRunResult,
+    build_qlib_subprocess_environment,
+    compare_reproduction_runs,
+    plan_qlib_linear_reproduction,
+    run_qlib_linear_reproduction,
+)
+from stock_research.synthetic_qlib import (
+    SyntheticDatasetBundle,
+    generate_synthetic_qlib_data,
+    reconstruct_price_features,
+)
 
 __all__ = [
     "ChronologicalSplit", "DateRange", "EvaluationProtocol", "EvaluationResult",
@@ -49,6 +64,12 @@ __all__ = [
     "transition_manifest", "validate_feature_panel", "validate_labels",
     "validate_manifest", "validate_registry", "validate_signals",
     "validate_split", "write_manifest",
+    "QlibLinearReproductionConfig", "ReproductionBatchResult",
+    "ReproductionPlan", "ReproductionRunResult", "SyntheticDatasetBundle",
+    "compare_reproduction_runs", "generate_synthetic_qlib_data",
+    "build_qlib_subprocess_environment",
+    "plan_qlib_linear_reproduction", "reconstruct_price_features",
+    "run_qlib_linear_reproduction",
 ]
 
 __version__ = "0.1.0"

@@ -26,6 +26,11 @@ from stock_research.manifests import (
 )
 from stock_research.fingerprints import fingerprint_file
 from stock_research.registry import validate_registry
+from stock_research.qlib_reproduction import (
+    QlibLinearReproductionConfig,
+    plan_qlib_linear_reproduction,
+    run_qlib_linear_reproduction,
+)
 
 
 DEFAULT_REGISTRY = Path("research/registry/open_source_registry.json")
@@ -130,6 +135,26 @@ def build_parser() -> argparse.ArgumentParser:
     compare = commands.add_parser("compare")
     compare.add_argument("--evaluations", required=True, nargs="+", type=Path)
     compare.add_argument("--output", required=True, type=Path)
+
+    reproduce = commands.add_parser("reproduce-qlib-linear")
+    reproduce.add_argument("--seed", type=int, default=20260730)
+    reproduce.add_argument(
+        "--output-root", type=Path,
+        default=Path("research/generated/qlib-linear"),
+    )
+    reproduce.add_argument(
+        "--qlib-interpreter", type=Path,
+        default=Path(".venv-qlib/Scripts/python.exe"),
+    )
+    reproduce.add_argument(
+        "--environment-report", type=Path,
+        default=Path("research/generated/qlib-environment-verified.json"),
+    )
+    reproduce.add_argument("--batch-id")
+    reproduce.add_argument("--dry-run", action="store_true")
+    reproduce.add_argument(
+        "--discard-failed-artifacts", action="store_true"
+    )
     return parser
 
 
@@ -265,6 +290,31 @@ def _run(args: argparse.Namespace) -> int:
     elif args.command == "compare":
         result = compare_evaluations(args.evaluations, output_path=args.output)
         print(f"Comparison: {args.output} ({len(result)} models)")
+    elif args.command == "reproduce-qlib-linear":
+        config = QlibLinearReproductionConfig(
+            seed=args.seed,
+            output_root=args.output_root,
+            qlib_interpreter=args.qlib_interpreter,
+            environment_report=args.environment_report,
+            keep_failed_artifacts=not args.discard_failed_artifacts,
+            batch_id=args.batch_id,
+        )
+        if args.dry_run:
+            plan = plan_qlib_linear_reproduction(config)
+            print(json.dumps({
+                **asdict(plan),
+                "output_directory": str(plan.output_directory),
+                "commands": [list(command) for command in plan.commands],
+                "dry_run": True,
+                "artifacts_written": False,
+                "training_performed": False,
+            }, indent=2, sort_keys=True, allow_nan=False, default=str))
+        else:
+            result = run_qlib_linear_reproduction(config)
+            print(
+                f"Qlib Linear reproduction: {result.directory} "
+                f"({len(result.runs)} runs, reproducible)"
+            )
     return 0
 
 
@@ -273,7 +323,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     try:
         return _run(parser.parse_args(argv))
     except (
-        ValueError, TypeError, OSError, KeyError, json.JSONDecodeError,
+        ValueError, TypeError, RuntimeError, OSError, KeyError, json.JSONDecodeError,
         pd.errors.ParserError,
     ) as exc:
         print(f"Error: {exc}", file=sys.stderr)

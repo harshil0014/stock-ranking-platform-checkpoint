@@ -34,10 +34,15 @@
       "metrics": ["IC", "Rank IC"],
       "dependencies": ["pyqlib==0.9.7", "LightGBM direct upstream dependency"],
       "role": "isolated upstream research framework",
-      "adoption_status": "provenance_verified",
-      "risks": ["Python 3.12 environment not yet locally verified", "dataset rights are separate"],
+      "adoption_status": "environment_verified",
+      "risks": ["environment verification is local to the recorded Windows Python 3.12 lock", "dataset rights are separate"],
       "citations": ["https://github.com/microsoft/qlib/releases/tag/v0.9.7", "https://pypi.org/project/pyqlib/0.9.7/"],
-      "verification_date": "2026-07-30"
+      "verification_date": "2026-07-31",
+      "local_evidence": {
+        "environment_fingerprint": "a7d1b7472d2f5e09927b8859aec082c8e986b5ee30f82289635e4b11e91eea99",
+        "package": "pyqlib==0.9.7",
+        "scope": "clean local Python 3.12 environment installation, resolved lock, and import smoke checks"
+      }
     },
     {
       "id": "qlib_linear",
@@ -53,10 +58,19 @@
       "metrics": ["IC", "Rank IC", "ICIR"],
       "dependencies": ["pyqlib==0.9.7"],
       "role": "first ML reproduction target",
-      "adoption_status": "adoption_specified",
-      "risks": ["not locally reproduced"],
+      "adoption_status": "synthetic_reproduced",
+      "risks": ["synthetic-only evidence", "not real-market validation", "not investment evidence", "not upstream benchmark reproduction"],
       "citations": ["https://github.com/microsoft/qlib/tree/v0.9.7/qlib/contrib/model"],
-      "verification_date": "2026-07-30"
+      "verification_date": "2026-07-31",
+      "local_evidence": {
+        "batch": "research/generated/qlib-linear/final-locked-20260731",
+        "model_id": "qlib_linear_ols_v0_9_7",
+        "runs": 2,
+        "maximum_prediction_difference": 0.0,
+        "maximum_coefficient_difference": 0.0,
+        "fixed_tolerance": 1e-12,
+        "scope": "offline deterministic synthetic-only reproduction; not real-market validation, investment evidence, or upstream benchmark reproduction"
+      }
     },
     {
       "id": "qlib_lightgbm",

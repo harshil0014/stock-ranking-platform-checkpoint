@@ -285,7 +285,14 @@ def export_evaluation(result: EvaluationResult, output_dir: str | Path) -> dict[
         json.dumps(result.summary, indent=2, sort_keys=True, allow_nan=False) + "\n",
         encoding="utf-8",
     )
-    result.daily_ic.to_csv(paths["daily_ic"], index=False, na_rep="")
-    result.daily_rank_ic.to_csv(paths["daily_rank_ic"], index=False, na_rep="")
-    result.coverage.to_csv(paths["coverage"], index=False, na_rep="")
+    csv_options = {
+        "index": False,
+        "na_rep": "",
+        "encoding": "utf-8",
+        "lineterminator": "\n",
+        "float_format": "%.17g",
+    }
+    result.daily_ic.to_csv(paths["daily_ic"], **csv_options)
+    result.daily_rank_ic.to_csv(paths["daily_rank_ic"], **csv_options)
+    result.coverage.to_csv(paths["coverage"], **csv_options)
     return paths

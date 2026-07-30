@@ -16,7 +16,14 @@ stock-research contract-validate --kind features --input research\examples\featu
 stock-research contract-validate --kind labels --input research\examples\labels.csv
 stock-research contract-validate --kind split --input research\examples\split.json
 stock-research environment-inspect
+stock-research reproduce-qlib-linear --dry-run
 ```
 
 See `docs/evaluation_methodology.md`, `docs/open_source_policy.md`, and
 `adoption/qlib_models.md` before adding an experiment.
+
+The pinned Qlib v0.9.7 Python 3.12 environment and official LinearModel have
+now passed the offline synthetic reproduction. See
+[`docs/qlib_linear_reproduction.md`](docs/qlib_linear_reproduction.md) for the
+frozen data, execution, artifact, and evidence boundaries. This result is
+synthetic-only and is not real-market validation or investment evidence.

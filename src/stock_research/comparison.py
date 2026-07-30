@@ -81,5 +81,8 @@ def compare_evaluations(
     if output_path is not None:
         target = Path(output_path)
         target.parent.mkdir(parents=True, exist_ok=True)
-        comparison.to_csv(target, index=False, na_rep="")
+        comparison.to_csv(
+            target, index=False, na_rep="", encoding="utf-8",
+            lineterminator="\n", float_format="%.17g",
+        )
     return comparison

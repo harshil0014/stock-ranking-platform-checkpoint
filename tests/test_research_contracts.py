@@ -126,3 +126,60 @@ def test_split_gaps_and_test_contamination():
             DateRange("2022-01-01", "2022-12-31"),
             purge_days=1,
         )
+
+
+def test_split_applies_purge_and_embargo_to_their_own_boundaries():
+    split = ChronologicalSplit(
+        DateRange("2026-01-01", "2026-01-10"),
+        DateRange("2026-01-13", "2026-01-20"),
+        DateRange("2026-01-25", "2026-01-31"),
+        purge_days=2,
+        embargo_days=4,
+    )
+
+    assert split.purge_days == 2
+    assert split.embargo_days == 4
+
+
+def test_split_boundary_rules_are_asymmetric_and_old_stricter_splits_still_work():
+    purge_only = ChronologicalSplit(
+        DateRange("2026-01-01", "2026-01-10"),
+        DateRange("2026-01-13", "2026-01-20"),
+        DateRange("2026-01-21", "2026-01-31"),
+        purge_days=2,
+        embargo_days=0,
+    )
+    embargo_only = ChronologicalSplit(
+        DateRange("2026-01-01", "2026-01-10"),
+        DateRange("2026-01-11", "2026-01-20"),
+        DateRange("2026-01-25", "2026-01-31"),
+        purge_days=0,
+        embargo_days=4,
+    )
+    old_stricter = ChronologicalSplit(
+        DateRange("2026-01-01", "2026-01-10"),
+        DateRange("2026-01-17", "2026-01-20"),
+        DateRange("2026-01-27", "2026-01-31"),
+        purge_days=2,
+        embargo_days=4,
+    )
+    assert purge_only.validation.start.isoformat() == "2026-01-13"
+    assert embargo_only.test.start.isoformat() == "2026-01-25"
+    assert old_stricter.purge_days == 2
+
+    with pytest.raises(ResearchValidationError, match="train/validation"):
+        ChronologicalSplit(
+            DateRange("2026-01-01", "2026-01-10"),
+            DateRange("2026-01-12", "2026-01-20"),
+            DateRange("2026-01-30", "2026-01-31"),
+            purge_days=2,
+            embargo_days=0,
+        )
+    with pytest.raises(ResearchValidationError, match="validation/test"):
+        ChronologicalSplit(
+            DateRange("2026-01-01", "2026-01-10"),
+            DateRange("2026-01-13", "2026-01-20"),
+            DateRange("2026-01-24", "2026-01-31"),
+            purge_days=0,
+            embargo_days=4,
+        )

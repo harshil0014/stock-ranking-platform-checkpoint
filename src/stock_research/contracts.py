@@ -218,15 +218,21 @@ class ChronologicalSplit:
             value = getattr(self, name)
             if isinstance(value, bool) or not isinstance(value, int) or value < 0:
                 _raise("invalid_gap", f"{name} must be a nonnegative integer")
-        required_gap = self.purge_days + self.embargo_days
         validation_gap = (self.validation.start - self.train.end).days - 1
         test_gap = (self.test.start - self.validation.end).days - 1
         if self.train.end >= self.validation.start or self.validation.end >= self.test.start:
             _raise("split_overlap", "train, validation, and test must be chronological")
-        if validation_gap < required_gap or test_gap < required_gap:
+        if validation_gap < self.purge_days:
             _raise(
                 "split_gap_violation",
-                f"each split boundary requires at least {required_gap} calendar gap days",
+                "train/validation boundary requires at least "
+                f"{self.purge_days} purge calendar days",
+            )
+        if test_gap < self.embargo_days:
+            _raise(
+                "split_gap_violation",
+                "validation/test boundary requires at least "
+                f"{self.embargo_days} embargo calendar days",
             )
 
     def as_dict(self) -> dict:

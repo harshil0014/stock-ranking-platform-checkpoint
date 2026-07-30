@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260730-0000-4000-8000-000000000001",
+  "model_id": "qlib_linear_ols_v0_9_7",
+  "status": "planned",
+  "created_at": "2026-07-30T00:00:00+00:00",
+  "source_commit": "5a8038e2936deb6ced3bf77259ec7f139d0214e4",
+  "worktree_status": "Clean committed foundation before implementation.",
+  "model_configuration": {
+    "features": [
+      "irrelevant_noise",
+      "momentum_20d",
+      "momentum_5d",
+      "price_to_trend_20d",
+      "quality_proxy",
+      "redundant_momentum_20d",
+      "sector_momentum_20d",
+      "size_proxy",
+      "value_proxy",
+      "volatility_20d"
+    ],
+    "model_family": "Qlib Linear",
+    "parameters": {
+      "alpha": 0.0,
+      "estimator": "ols",
+      "fit_intercept": false,
+      "include_valid": false
+    },
+    "seed": 20260730,
+    "upstream": {
+      "commit": "da920b7",
+      "version": "v0.9.7"
+    }
+  },
+  "model_configuration_fingerprint": "derived-at-runtime-and-verified",
+  "datasets": {
+    "provenance": "deterministic fictional data generated offline",
+    "status": "generated per ignored run directory"
+  },
+  "splits": {
+    "embargo_days": 7,
+    "purge_days": 7,
+    "test": {
+      "end": "2026-06-29",
+      "start": "2026-05-05"
+    },
+    "train": {
+      "end": "2026-03-09",
+      "start": "2025-09-23"
+    },
+    "validation": {
+      "end": "2026-04-27",
+      "start": "2026-03-17"
+    }
+  },
+  "seeds": {
+    "generator": 20260730
+  },
+  "parameters": {
+    "reproduction_tolerance": 1e-12,
+    "reruns": 2
+  },
+  "paths": {
+    "generated_output": "research/generated/qlib-linear/"
+  },
+  "evaluation_protocol": {
+    "annualization_factor": 252,
+    "evaluation_frequency": "daily",
+    "label_name": "forward_1d_return"
+  },
+  "evaluation_protocol_fingerprint": "derived-at-runtime-and-verified",
+  "notes": "Planned offline synthetic-only reproduction. Runtime writes derived manifests only under ignored generated output and never rewrites this file."
+}

@@ -28,6 +28,16 @@ def test_registry_is_valid_and_contains_separate_alpha_handlers():
     assert all(
         entry["adoption_status"] != "reproduced" for entry in registry.entries
     )
+    statuses = {
+        entry["id"]: entry["adoption_status"] for entry in registry.entries
+    }
+    assert statuses["qlib_framework"] == "environment_verified"
+    assert statuses["qlib_linear"] == "synthetic_reproduced"
+    linear = next(
+        entry for entry in registry.entries if entry["id"] == "qlib_linear"
+    )
+    assert "synthetic-only" in linear["local_evidence"]["scope"]
+    assert "not real-market validation" in linear["local_evidence"]["scope"]
 
 
 def test_registry_rejects_duplicate_ids():
@@ -36,6 +46,18 @@ def test_registry_rejects_duplicate_ids():
     )
     raw["entries"].append(raw["entries"][0])
     with pytest.raises(ResearchValidationError, match="registry_duplicate_id"):
+        validate_registry(raw)
+
+
+def test_verified_registry_status_requires_scoped_local_evidence():
+    raw = json.loads(
+        (ROOT / "research/registry/open_source_registry.json").read_text()
+    )
+    framework = next(
+        entry for entry in raw["entries"] if entry["id"] == "qlib_framework"
+    )
+    framework.pop("local_evidence")
+    with pytest.raises(ResearchValidationError, match="registry_local_evidence"):
         validate_registry(raw)
 
 
