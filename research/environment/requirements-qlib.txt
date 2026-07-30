@@ -1,0 +1,8 @@
+# Verified upstream package pin.
+pyqlib==0.9.7
+
+# Candidate constraints. These are not project compatibility claims until the
+# clean Python 3.12 installation and smoke checks complete successfully.
+lightgbm==4.6.0
+numpy==2.0.2
+pandas==2.2.3

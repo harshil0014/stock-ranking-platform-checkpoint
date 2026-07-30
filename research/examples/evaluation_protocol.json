@@ -1,0 +1,20 @@
+{
+  "label_name": "forward_5d_return",
+  "label_definition": "Simple forward return from as_of_date through label_end_date in the synthetic fixture.",
+  "label_dataset_fingerprint": "3baed6ee5c7c232f8cf273d06ae308e08977b84f57e8723c4f545f18e6c5791e",
+  "train": {"start": "2020-01-01", "end": "2023-12-31"},
+  "validation": {"start": "2024-01-15", "end": "2025-06-30"},
+  "test": {"start": "2026-01-02", "end": "2026-01-16"},
+  "purge_days": 7,
+  "embargo_days": 5,
+  "evaluation_frequency": "synthetic",
+  "metric_definitions": {
+    "ic": "Per-date Pearson correlation; at least two usable nonconstant observations.",
+    "rank_ic": "Per-date Pearson correlation of average ranks.",
+    "icir": "Mean valid correlation divided by sample standard deviation with ddof=1.",
+    "coverage": "Usable matched observations divided by label observations per date."
+  },
+  "annualization_factor": null,
+  "minimum_cross_sectional_observations": 2,
+  "test_universe_policy": "All label observations in the synthetic fixture; missing predictions remain visible."
+}

@@ -1,0 +1,13 @@
+as_of_date,ticker,label_end_date,forward_return,label_name
+2026-01-02,ALFA,2026-01-09,0.10,forward_5d_return
+2026-01-02,BRAV,2026-01-09,0.05,forward_5d_return
+2026-01-02,CHAR,2026-01-09,-0.02,forward_5d_return
+2026-01-02,DELT,2026-01-09,-0.10,forward_5d_return
+2026-01-09,ALFA,2026-01-16,0.05,forward_5d_return
+2026-01-09,BRAV,2026-01-16,0.10,forward_5d_return
+2026-01-09,CHAR,2026-01-16,-0.10,forward_5d_return
+2026-01-09,DELT,2026-01-16,0.00,forward_5d_return
+2026-01-16,ALFA,2026-01-23,-0.02,forward_5d_return
+2026-01-16,BRAV,2026-01-23,0.04,forward_5d_return
+2026-01-16,CHAR,2026-01-23,0.08,forward_5d_return
+2026-01-16,DELT,2026-01-23,-0.03,forward_5d_return

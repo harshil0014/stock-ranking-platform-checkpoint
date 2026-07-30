@@ -7,6 +7,17 @@ __pycache__/
 data/output/* 
 !data/output/.gitkeep 
 *.egg-info/
+.venv-qlib/
+research/datasets/
+research/clones/
+research/cache/
+research/models/
+research/pickles/
+research/experiment_stores/
+research/output/
+research/generated/
+*.pkl
+*.pickle
 build/
 dist/
 .coverage

@@ -1,0 +1,7 @@
+{
+  "train": {"start": "2020-01-01", "end": "2023-12-31"},
+  "validation": {"start": "2024-01-15", "end": "2025-06-30"},
+  "test": {"start": "2026-01-02", "end": "2026-01-16"},
+  "purge_days": 7,
+  "embargo_days": 5
+}

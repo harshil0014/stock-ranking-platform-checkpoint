@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "order": [
+    "research_v2_baseline",
+    "qlib_linear",
+    "qlib_lightgbm",
+    "qlib_double_ensemble",
+    "qlib_tra",
+    "potential_hybrid"
+  ],
+  "gate": "Each upstream model must be reproduced under the shared evaluation protocol before modification or hybridization.",
+  "potential_hybrid": {
+    "status": "blocked_pending_reproduction",
+    "requirements": [
+      "verified isolated Qlib environment",
+      "reproduced upstream baselines",
+      "documented ablations",
+      "approved data provenance and licences"
+    ]
+  }
+}

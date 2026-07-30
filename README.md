@@ -192,7 +192,33 @@ would be misleading.
 
 ## Next milestone
 
-The next milestone should add separate sector/index histories and sector-level
-scoring. Portfolio weighting should follow only after that boundary is
-defined, with point-in-time backtesting, benchmarks, transaction costs, and
-scheduled rebalancing in later milestones.
+The exact next milestone is reproducing Qlib Linear in a verified isolated
+Python 3.12 environment on an offline synthetic pipeline. A separately
+licensed Indian-market point-in-time dataset follows only after provenance
+approval. Portfolio construction and performance claims remain out of scope.
+
+## Open-source quant research layer
+
+The additive [`research/`](research/) layer provides leakage-aware feature,
+label, signal, and chronological-split contracts; deterministic provenance
+fingerprints; planned experiment manifests; Qlib-free signal adapters; and
+cross-sectional IC/Rank IC evaluation. It installs a separate
+`stock-research` command and leaves both `stock-ranker rank` and
+`stock-ranker research-v2` unchanged.
+
+Qlib is not a product dependency. The verified upstream package pin is
+`pyqlib==0.9.7` (tag `v0.9.7`, commit `da920b7`) and its proposed dependency
+constraints remain unverified until a clean Python 3.12 installation, complete
+`pip freeze`, and smoke checks succeed. The Python 3.13 `.venv` must not
+contain Qlib, LightGBM, or PyTorch.
+
+Evaluation compares models only when their
+`evaluation_protocol_fingerprint` matches. Model families keep independent
+configuration and dataset fingerprints. Primary ICIR is unannualized; a
+default annualization factor of 252 applies only when frequency is explicitly
+daily. Other frequencies produce null annualized values unless a positive
+factor is explicitly supplied.
+
+The project intentionally has no licence yet. Owner licence selection is a
+blocker to public distribution. Synthetic fixtures and scores are research
+contract tests, not trained results, portfolio claims, or investment advice.
