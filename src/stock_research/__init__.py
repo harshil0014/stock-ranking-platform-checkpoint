@@ -72,6 +72,17 @@ from stock_research.qlib_lightgbm_reproduction import (
     run_qlib_lightgbm_reproduction,
     validate_local_recorder_paths,
 )
+from stock_research.qlib_doubleensemble_reproduction import (
+    QlibDoubleEnsembleBatchResult,
+    QlibDoubleEnsembleReproductionConfig,
+    QlibDoubleEnsembleReproductionPlan,
+    QlibDoubleEnsembleRunResult,
+    build_doubleensemble_subprocess_environment,
+    compare_doubleensemble_runs,
+    finalize_doubleensemble_failed_batch,
+    plan_qlib_doubleensemble_reproduction,
+    run_qlib_doubleensemble_reproduction,
+)
 
 __all__ = [
     "ChronologicalSplit", "DateRange", "EvaluationProtocol", "EvaluationResult",
@@ -106,6 +117,15 @@ __all__ = [
     "plan_qlib_lightgbm_reproduction",
     "run_qlib_lightgbm_reproduction",
     "validate_local_recorder_paths",
+    "QlibDoubleEnsembleBatchResult",
+    "QlibDoubleEnsembleReproductionConfig",
+    "QlibDoubleEnsembleReproductionPlan",
+    "QlibDoubleEnsembleRunResult",
+    "build_doubleensemble_subprocess_environment",
+    "compare_doubleensemble_runs",
+    "finalize_doubleensemble_failed_batch",
+    "plan_qlib_doubleensemble_reproduction",
+    "run_qlib_doubleensemble_reproduction",
 ]
 
 __version__ = "0.1.0"

@@ -22,6 +22,12 @@ investment evidence, or an upstream benchmark reproduction.
    `1e-12`. Its `synthetic_reproduced` status is limited to this frozen
    fictional protocol and is not real-market or investment evidence.
 4. DoubleEnsemble follows only after both simpler models reproduce cleanly.
+   Its frozen reproduction uses the official Qlib 0.9.7 `DEnsembleModel`,
+   three GBM submodels, and the accepted synthetic protocol. Promotion remains
+   conditional on two-run reproducibility and the complete acceptance suite.
+   The first fixed attempt trained successfully but produced three one-tree,
+   zero-split submodels and a constant test signal. It stopped before run 2,
+   so the model remains `adoption_specified`.
 5. TRA follows after a separate PyTorch environment and security/resource
    review; PyTorch is not part of the initial Qlib environment.
 6. No hybrid is proposed as a result until all adopted components have

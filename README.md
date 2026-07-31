@@ -234,3 +234,8 @@ factor is explicitly supplied.
 The project intentionally has no licence yet. Owner licence selection is a
 blocker to public distribution. Synthetic fixtures and scores are research
 contract tests, not trained results, portfolio claims, or investment advice.
+
+The official Qlib DoubleEnsemble attempt on the same frozen synthetic protocol
+trained three submodels but produced a constant test signal, so it stopped
+before run 2 and remains `adoption_specified`. Accepted Linear and LightGBM
+evidence is unchanged.

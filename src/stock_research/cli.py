@@ -36,6 +36,11 @@ from stock_research.qlib_lightgbm_reproduction import (
     plan_qlib_lightgbm_reproduction,
     run_qlib_lightgbm_reproduction,
 )
+from stock_research.qlib_doubleensemble_reproduction import (
+    QlibDoubleEnsembleReproductionConfig,
+    plan_qlib_doubleensemble_reproduction,
+    run_qlib_doubleensemble_reproduction,
+)
 
 
 DEFAULT_REGISTRY = Path("research/registry/open_source_registry.json")
@@ -202,6 +207,52 @@ def build_parser() -> argparse.ArgumentParser:
             "resume product post-processing after a verified successful "
             "run-01 subprocess without retraining it"
         ),
+    )
+
+    doubleensemble = commands.add_parser(
+        "reproduce-qlib-doubleensemble"
+    )
+    doubleensemble.add_argument("--seed", type=int, default=20260730)
+    doubleensemble.add_argument("--reruns", type=int, default=2)
+    doubleensemble.add_argument(
+        "--reproducibility-tolerance", type=float, default=1e-12
+    )
+    doubleensemble.add_argument(
+        "--output-root", type=Path,
+        default=Path("research/generated/qlib-doubleensemble"),
+    )
+    doubleensemble.add_argument(
+        "--frozen-linear-batch", type=Path,
+        default=Path(
+            "research/generated/qlib-linear/final-locked-20260731"
+        ),
+    )
+    doubleensemble.add_argument(
+        "--accepted-lightgbm-batch", type=Path,
+        default=Path(
+            "research/generated/qlib-lightgbm/"
+            "official-local-recorder-opt-in-20260731"
+        ),
+    )
+    doubleensemble.add_argument(
+        "--qlib-interpreter", type=Path,
+        default=Path(".venv-qlib/Scripts/python.exe"),
+    )
+    doubleensemble.add_argument(
+        "--environment-report", type=Path,
+        default=Path("research/generated/qlib-environment-verified.json"),
+    )
+    doubleensemble.add_argument(
+        "--frozen-specification", type=Path,
+        default=Path(
+            "research/specifications/"
+            "qlib_doubleensemble_frozen_protocol.json"
+        ),
+    )
+    doubleensemble.add_argument("--batch-id")
+    doubleensemble.add_argument("--dry-run", action="store_true")
+    doubleensemble.add_argument(
+        "--discard-failed-artifacts", action="store_true"
     )
     return parser
 
@@ -392,6 +443,38 @@ def _run(args: argparse.Namespace) -> int:
             result = run_qlib_lightgbm_reproduction(config)
             print(
                 f"Qlib LightGBM reproduction: {result.directory} "
+                f"({len(result.runs)} runs, reproducible)"
+            )
+    elif args.command == "reproduce-qlib-doubleensemble":
+        config = QlibDoubleEnsembleReproductionConfig(
+            seed=args.seed,
+            reruns=args.reruns,
+            reproducibility_tolerance=args.reproducibility_tolerance,
+            output_root=args.output_root,
+            frozen_linear_batch=args.frozen_linear_batch,
+            accepted_lightgbm_batch=args.accepted_lightgbm_batch,
+            qlib_interpreter=args.qlib_interpreter,
+            environment_report=args.environment_report,
+            frozen_specification=args.frozen_specification,
+            batch_id=args.batch_id,
+            keep_failed_artifacts=not args.discard_failed_artifacts,
+        )
+        if args.dry_run:
+            plan = plan_qlib_doubleensemble_reproduction(config)
+            print(json.dumps({
+                **asdict(plan),
+                "output_directory": str(plan.output_directory),
+                "selected_source_run": str(plan.selected_source_run),
+                "selected_lightgbm_run": str(plan.selected_lightgbm_run),
+                "commands": [list(command) for command in plan.commands],
+                "dry_run": True,
+                "artifacts_written": False,
+                "training_performed": False,
+            }, indent=2, sort_keys=True, allow_nan=False, default=str))
+        else:
+            result = run_qlib_doubleensemble_reproduction(config)
+            print(
+                f"Qlib DoubleEnsemble reproduction: {result.directory} "
                 f"({len(result.runs)} runs, reproducible)"
             )
     return 0

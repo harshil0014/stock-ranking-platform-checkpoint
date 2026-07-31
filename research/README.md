@@ -38,3 +38,10 @@ completed reproducibly on the frozen fictional protocol. See
 [`docs/qlib_lightgbm_compatibility.md`](docs/qlib_lightgbm_compatibility.md).
 The successful result is synthetic-only; neither earlier blocked diagnostic is
 a reproduction claim.
+
+The DoubleEnsemble milestone is specified in
+[`docs/qlib_doubleensemble_reproduction.md`](docs/qlib_doubleensemble_reproduction.md).
+Its product orchestration remains Qlib-free; the official Qlib class runs only
+in `.venv-qlib` against copied, hash-verified frozen inputs. The first fixed
+attempt produced only constant signals and stopped before the second run; it
+is compatibility evidence, not a reproduced model result.

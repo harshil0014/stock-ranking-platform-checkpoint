@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "run_id": "planned-qlib-doubleensemble-frozen-synthetic",
+  "model_id": "qlib_doubleensemble_v0_9_7",
+  "status": "planned",
+  "upstream_class": "qlib.contrib.model.double_ensemble.DEnsembleModel",
+  "upstream_version": "0.9.7",
+  "source_commit": "da920b7",
+  "dataset": "accepted frozen offline synthetic protocol",
+  "evaluation_protocol_fingerprint": "210bca5c4ac474f766a3caf549d8adc4dc06ae22b3378eb70f4ed224f6978782",
+  "seed": 20260730,
+  "reruns": 2,
+  "notes": "Runtime derives ignored completed or failed manifests and never rewrites this planned manifest."
+}
