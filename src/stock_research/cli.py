@@ -41,6 +41,11 @@ from stock_research.qlib_doubleensemble_reproduction import (
     plan_qlib_doubleensemble_reproduction,
     run_qlib_doubleensemble_reproduction,
 )
+from stock_research.qlib_tra_reproduction import (
+    QlibTRAReproductionConfig,
+    plan_qlib_tra_reproduction,
+    run_qlib_tra_reproduction,
+)
 
 
 DEFAULT_REGISTRY = Path("research/registry/open_source_registry.json")
@@ -254,6 +259,62 @@ def build_parser() -> argparse.ArgumentParser:
     doubleensemble.add_argument(
         "--discard-failed-artifacts", action="store_true"
     )
+
+    tra = commands.add_parser("reproduce-qlib-tra")
+    tra.add_argument("--seed", type=int, default=20260730)
+    tra.add_argument("--reruns", type=int, default=2)
+    tra.add_argument("--reproducibility-tolerance", type=float, default=1e-12)
+    tra.add_argument("--timeout-seconds", type=int, default=7200)
+    tra.add_argument(
+        "--output-root", type=Path,
+        default=Path("research/generated/qlib-tra"),
+    )
+    tra.add_argument(
+        "--frozen-linear-batch", type=Path,
+        default=Path("research/generated/qlib-linear/final-locked-20260731"),
+    )
+    tra.add_argument(
+        "--accepted-lightgbm-batch", type=Path,
+        default=Path(
+            "research/generated/qlib-lightgbm/"
+            "official-local-recorder-opt-in-20260731"
+        ),
+    )
+    tra.add_argument(
+        "--doubleensemble-batch", type=Path,
+        default=Path(
+            "research/generated/qlib-doubleensemble/"
+            "official-frozen-reproduction-20260731"
+        ),
+    )
+    tra.add_argument(
+        "--tra-interpreter", type=Path,
+        default=Path(".venv-tra/Scripts/python.exe"),
+    )
+    tra.add_argument(
+        "--environment-report", type=Path,
+        default=Path("research/environment/tra_environment_report.json"),
+    )
+    tra.add_argument(
+        "--dependency-lock", type=Path,
+        default=Path("research/environment/tra_dependency_lock.txt"),
+    )
+    tra.add_argument(
+        "--frozen-specification", type=Path,
+        default=Path("research/specifications/qlib_tra_frozen_protocol.json"),
+    )
+    tra.add_argument(
+        "--batch-id", default="official-frozen-tra-20260731"
+    )
+    tra.add_argument("--dry-run", action="store_true")
+    tra.add_argument("--discard-failed-artifacts", action="store_true")
+    tra.add_argument(
+        "--resume-completed-run-one", action="store_true",
+        help=(
+            "resume verified product post-processing after a completed "
+            "run-01 runner without fitting or predicting again"
+        ),
+    )
     return parser
 
 
@@ -426,7 +487,6 @@ def _run(args: argparse.Namespace) -> int:
             frozen_specification=args.frozen_specification,
             batch_id=args.batch_id,
             keep_failed_artifacts=not args.discard_failed_artifacts,
-            resume_completed_run_one=args.resume_completed_run_one,
         )
         if args.dry_run:
             plan = plan_qlib_lightgbm_reproduction(config)
@@ -475,6 +535,44 @@ def _run(args: argparse.Namespace) -> int:
             result = run_qlib_doubleensemble_reproduction(config)
             print(
                 f"Qlib DoubleEnsemble reproduction: {result.directory} "
+                f"({len(result.runs)} runs, reproducible)"
+            )
+    elif args.command == "reproduce-qlib-tra":
+        config = QlibTRAReproductionConfig(
+            seed=args.seed,
+            reruns=args.reruns,
+            reproducibility_tolerance=args.reproducibility_tolerance,
+            timeout_seconds=args.timeout_seconds,
+            output_root=args.output_root,
+            frozen_linear_batch=args.frozen_linear_batch,
+            accepted_lightgbm_batch=args.accepted_lightgbm_batch,
+            doubleensemble_batch=args.doubleensemble_batch,
+            tra_interpreter=args.tra_interpreter,
+            environment_report=args.environment_report,
+            dependency_lock=args.dependency_lock,
+            frozen_specification=args.frozen_specification,
+            batch_id=args.batch_id,
+            keep_failed_artifacts=not args.discard_failed_artifacts,
+            resume_completed_run_one=args.resume_completed_run_one,
+        )
+        if args.dry_run:
+            plan = plan_qlib_tra_reproduction(config)
+            print(json.dumps({
+                **asdict(plan),
+                "output_directory": str(plan.output_directory),
+                "selected_source_run": str(plan.selected_source_run),
+                "selected_lightgbm_run": str(plan.selected_lightgbm_run),
+                "selected_doubleensemble_run":
+                    str(plan.selected_doubleensemble_run),
+                "commands": [list(command) for command in plan.commands],
+                "dry_run": True,
+                "artifacts_written": False,
+                "training_performed": False,
+            }, indent=2, sort_keys=True, allow_nan=False, default=str))
+        else:
+            result = run_qlib_tra_reproduction(config)
+            print(
+                f"Qlib TRA reproduction: {result.directory} "
                 f"({len(result.runs)} runs, reproducible)"
             )
     return 0

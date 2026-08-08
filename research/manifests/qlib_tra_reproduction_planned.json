@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "run_id": "planned-qlib-tra-frozen-synthetic",
+  "model_id": "qlib_tra_v0_9_7",
+  "status": "planned",
+  "upstream_class": "qlib.contrib.model.pytorch_tra.TRAModel",
+  "dataset_class": "qlib.contrib.data.dataset.MTSDatasetH",
+  "upstream_version": "0.9.7",
+  "source_commit": "da920b7",
+  "torch_version": "2.4.1+cpu",
+  "dataset": "accepted frozen offline synthetic protocol with official 60-step sequence views",
+  "evaluation_protocol_fingerprint": "210bca5c4ac474f766a3caf549d8adc4dc06ae22b3378eb70f4ed224f6978782",
+  "seed": 20260730,
+  "reruns": 2,
+  "tolerance": 1e-12,
+  "notes": "Runtime derives ignored completed or failed manifests and never rewrites this planned manifest."
+}

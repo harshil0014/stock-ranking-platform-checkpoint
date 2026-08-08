@@ -83,6 +83,16 @@ from stock_research.qlib_doubleensemble_reproduction import (
     plan_qlib_doubleensemble_reproduction,
     run_qlib_doubleensemble_reproduction,
 )
+from stock_research.qlib_tra_reproduction import (
+    QlibTRABatchResult,
+    QlibTRAReproductionConfig,
+    QlibTRAReproductionPlan,
+    QlibTRARunResult,
+    build_tra_subprocess_environment,
+    compare_tra_runs,
+    plan_qlib_tra_reproduction,
+    run_qlib_tra_reproduction,
+)
 
 __all__ = [
     "ChronologicalSplit", "DateRange", "EvaluationProtocol", "EvaluationResult",
@@ -126,6 +136,14 @@ __all__ = [
     "finalize_doubleensemble_failed_batch",
     "plan_qlib_doubleensemble_reproduction",
     "run_qlib_doubleensemble_reproduction",
+    "QlibTRABatchResult",
+    "QlibTRAReproductionConfig",
+    "QlibTRAReproductionPlan",
+    "QlibTRARunResult",
+    "build_tra_subprocess_environment",
+    "compare_tra_runs",
+    "plan_qlib_tra_reproduction",
+    "run_qlib_tra_reproduction",
 ]
 
 __version__ = "0.1.0"

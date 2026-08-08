@@ -8,6 +8,7 @@ data/output/*
 !data/output/.gitkeep 
 *.egg-info/
 .venv-qlib/
+.venv-tra/
 research/datasets/
 research/clones/
 research/cache/

@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "package_archives": [
+    {
+      "package": "torch",
+      "version": "2.4.1+cpu",
+      "filename": "torch-2.4.1+cpu-cp312-cp312-win_amd64.whl",
+      "platform_tags": ["cp312", "cp312", "win_amd64"],
+      "source_index": "https://download.pytorch.org/whl/cpu",
+      "resolved_download_host": "download-r2.pytorch.org",
+      "sha256": "3a570e5c553415cdbddfe679207327b3a3806b21c6adea14fba77684d1619e97"
+    }
+  ],
+  "qlib_dependency_stage": {
+    "source_index": "https://pypi.org/simple",
+    "pin_source": "research/generated/qlib-pip-freeze.txt",
+    "pin_source_sha256": "7028da531668b7d119e249e4258112977ea8618bbe8f378864ad8af84f6e924b",
+    "note": "The accepted Qlib dependency stage reused pip's verified local cache where available; the exact installed package set is recorded in tra_dependency_lock.txt."
+  }
+}

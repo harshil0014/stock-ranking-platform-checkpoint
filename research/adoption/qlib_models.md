@@ -28,8 +28,13 @@ investment evidence, or an upstream benchmark reproduction.
    The first fixed attempt trained successfully but produced three one-tree,
    zero-split submodels and a constant test signal. It stopped before run 2,
    so the model remains `adoption_specified`.
-5. TRA follows after a separate PyTorch environment and security/resource
-   review; PyTorch is not part of the initial Qlib environment.
+5. TRA was reproduced twice with the official Qlib v0.9.7 `TRAModel` and
+   `MTSDatasetH` in a separate Python 3.12.10 CPU environment using
+   `torch==2.4.1+cpu`. Routed and all three per-state prediction columns were
+   identical at the frozen `1e-12` tolerance. The evidence is limited to the
+   frozen offline synthetic sequence protocol; it is not Alpha360,
+   paper-result, real-market, portfolio, profitability, or investment
+   evidence. DoubleEnsemble remains a status-only compatibility blocker.
 6. No hybrid is proposed as a result until all adopted components have
    reproduced results and required ablations.
 

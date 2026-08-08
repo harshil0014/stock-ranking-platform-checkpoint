@@ -14,8 +14,10 @@ Registry status means only:
 - `synthetic_reproduced`: the official implementation reproduced deterministically
   on the frozen offline fictional dataset and protocol.
 
-Qlib Linear is `synthetic_reproduced`; this is not real-market validation,
-investment evidence, or an upstream benchmark reproduction. Qlib LightGBM,
-DoubleEnsemble, TRA, Alpha158, and Alpha360 remain unreproduced. Candidate
-constraints for later environments remain specifications until separately
-installed and tested.
+Qlib Linear, Qlib LightGBM, and TRA are `synthetic_reproduced`; this is not
+real-market validation, investment evidence, or an upstream benchmark or
+paper-result reproduction. DoubleEnsemble remains `adoption_specified`
+because the frozen configuration produced a scientifically unusable constant
+signal. Alpha158 and Alpha360 remain unreproduced. Candidate constraints for
+later environments remain specifications until separately installed and
+tested.

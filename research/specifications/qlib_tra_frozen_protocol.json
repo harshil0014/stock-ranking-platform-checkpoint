@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "accepted_source_batch": "research/generated/qlib-linear/final-locked-20260731",
+  "accepted_lightgbm_batch": "research/generated/qlib-lightgbm/official-local-recorder-opt-in-20260731",
+  "accepted_doubleensemble_batch": "research/generated/qlib-doubleensemble/official-frozen-reproduction-20260731",
+  "selected_source_run": "run-01",
+  "seed": 20260730,
+  "row_counts": {
+    "panel": 6000,
+    "train": 3600,
+    "valid": 900,
+    "test": 1200,
+    "instruments": 30,
+    "dates": 200
+  },
+  "feature_list": [
+    "irrelevant_noise",
+    "momentum_20d",
+    "momentum_5d",
+    "price_to_trend_20d",
+    "quality_proxy",
+    "redundant_momentum_20d",
+    "sector_momentum_20d",
+    "size_proxy",
+    "value_proxy",
+    "volatility_20d"
+  ],
+  "label_name": "forward_1d_return",
+  "label_horizon": 1,
+  "label_dataset_fingerprint": "7412fc79f8af0acf87b1cb22209842d153e8a6b6e9370e147b43e454ca247f2d",
+  "evaluation_protocol_fingerprint": "210bca5c4ac474f766a3caf549d8adc4dc06ae22b3378eb70f4ed224f6978782",
+  "accepted_qlib_environment_fingerprint": "a7d1b7472d2f5e09927b8859aec082c8e986b5ee30f82289635e4b11e91eea99",
+  "tra_environment_fingerprint": "31ce00c29af3e6fd5c8c899165e8d8a033119e6b62fc3ab086c7459421bada36",
+  "accepted_dependency_lock_sha256": "7028da531668b7d119e249e4258112977ea8618bbe8f378864ad8af84f6e924b",
+  "tra_dependency_lock_sha256": "d37eced517b73d601a7c94d7b7a6ec382c3e41387181289a5366d16da32f15a0",
+  "torch_wheel_sha256": "3a570e5c553415cdbddfe679207327b3a3806b21c6adea14fba77684d1619e97",
+  "tra_source_sha256": "a3ea48722ffbcb795733de57805ea4a07f40477cfcacebc0b495be418ba25a6b",
+  "dataset_source_sha256": "b484666b36be3302ff496e4ae8f5de01ea279783acfdd5212edf996f8136b8b6",
+  "canonical_file_hashes": {
+    "data_generation_metadata.json": "cd830f0eb23b0568a0a8cfbe8030fc139e74a983641a7dad7178aa7567b20a25",
+    "dataset_fingerprints.json": "a7bc1285531196c428623af78d810648ebf00f7cca1e33be01e5fba53941416c",
+    "evaluation_protocol.json": "6c38051a6cdd2bccaab5ff8e7451ef1308b8e03c66d664b43e12599fb8b69821",
+    "qlib_instrument_mapping.csv": "be46852f24b6ab6f46a06537a37270bd6eb316a501f0df2158bd91d1f87eb32e",
+    "split.json": "d4c867fa1d7222515a8319d7e52f76a56d794c022277000980c3b9c58e124343",
+    "synthetic_labels.csv": "05b6fbc34f14597cbc2d34461b83c6bf809e52e2013cdb9a49325775298524dd",
+    "synthetic_qlib_panel.csv": "147204cbeec272ab0088eddaa0bdcaeda8797b9d963a1f76b549eeb1a5ea231e"
+  },
+  "accepted_baseline_hashes": {
+    "qlib_linear_signals.csv": "81a0ab8ad5679dc28dbff87a3fd7dcc690b65c57d544e4b66908a18f54e8675f",
+    "research_v2_signals.csv": "cdaab574d5a7972eff849017104eac6abd59d5010cb46504e11b434eeaf1d8fa",
+    "research_v2_ineligible.csv": "2c4cb4aa7921c4d8b175b87b92c93d1b1ce88f96bd12220c8f87f10326bfc3e0",
+    "qlib_lightgbm_signals.csv": "250ed28966a0eb79ff71476fb98cc97f7682e5a039ece1d75068274c2a7aa83c"
+  },
+  "dataset_configuration": {
+    "seq_len": 60,
+    "horizon": 1,
+    "input_size": null,
+    "num_states": 3,
+    "batch_size": 1024,
+    "n_samples": null,
+    "memory_mode": "sample",
+    "shuffle": true,
+    "drop_last": true
+  },
+  "model_input_size": 10,
+  "evidence_scope": "Official Qlib v0.9.7 TRAModel on frozen synthetic sequence data only; not Alpha360, paper-result, real-market, portfolio, profitability, or investment evidence."
+}

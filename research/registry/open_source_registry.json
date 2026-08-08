@@ -133,12 +133,22 @@
       "inputs": ["validated temporal features", "forward-return label"],
       "outputs": ["routed prediction score"],
       "metrics": ["IC", "Rank IC", "ICIR"],
-      "dependencies": ["pyqlib==0.9.7", "PyTorch optional environment"],
+      "dependencies": ["pyqlib==0.9.7", "torch==2.4.1+cpu in isolated Python 3.12 environment"],
       "role": "fourth ML reproduction target",
-      "adoption_status": "adoption_specified",
-      "risks": ["PyTorch excluded from initial Qlib smoke checks", "not locally reproduced"],
+      "adoption_status": "synthetic_reproduced",
+      "risks": ["synthetic-only evidence", "not Alpha360 or paper-result reproduction", "not real-market validation", "not investment evidence"],
       "citations": ["https://www.microsoft.com/en-us/research/publication/learning-multiple-stock-trading-patterns-with-temporal-routing-adaptor-and-optimal-transport/"],
-      "verification_date": "2026-07-30"
+      "verification_date": "2026-07-31",
+      "local_evidence": {
+        "batch": "research/generated/qlib-tra/official-frozen-tra-20260731",
+        "model_id": "qlib_tra_v0_9_7",
+        "runs": 2,
+        "maximum_score_difference": 0.0,
+        "maximum_state_score_difference": 0.0,
+        "fixed_tolerance": 1e-12,
+        "environment_fingerprint": "31ce00c29af3e6fd5c8c899165e8d8a033119e6b62fc3ab086c7459421bada36",
+        "scope": "official Qlib v0.9.7 TRAModel on the frozen offline synthetic sequence protocol only; not Alpha360, paper-result, real-market, portfolio, profitability, or investment evidence"
+      }
     },
     {
       "id": "qlib_alpha158",

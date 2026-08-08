@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-07-31",
+  "operating_system": "Microsoft Windows 11 Home Single Language 10.0.26200",
+  "architecture": "64-bit",
+  "cpu": {
+    "model": "AMD Ryzen 5 7235HS",
+    "physical_cores": 4,
+    "logical_cores": 8
+  },
+  "memory": {
+    "total_bytes": 25439199232,
+    "available_at_audit_bytes": 8804540416
+  },
+  "disk": {
+    "volume": "C:",
+    "size_bytes": 509722226688,
+    "free_at_audit_bytes": 142203940864
+  },
+  "gpu": {
+    "detected_name": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "wmi_adapter_ram_bytes": 4293918720,
+    "reported_name_and_wmi_memory_disagree": true,
+    "driver_version": "32.0.15.9166",
+    "pytorch_cuda_available": false
+  },
+  "selected_device": "cpu",
+  "selection_reason": "Deterministic auditing on the small frozen synthetic dataset.",
+  "estimated_panel_rows": 6000,
+  "estimated_sequence_shape": [60, 10],
+  "estimated_segment_rows": {"train": 3600, "valid": 900, "test": 1200},
+  "estimated_peak_memory_class": "below 4 GiB",
+  "timeout_seconds_per_run": 7200,
+  "privacy": "No serial numbers, credentials, complete environment dump, or unrelated machine details are recorded."
+}
