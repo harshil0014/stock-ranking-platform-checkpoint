@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "policy": "Only exact, explicitly reported ratio concepts are accepted. No accounting formula, proxy, fuzzy match, or unit conversion is permitted.",
+  "audited_example": {
+    "ticker": "BAJAJFINSV",
+    "metadata_export_sha256": "f90f5c51f8e530f1958d2283eeb75a2722bf475b9937f7ec46ca6193f6c4848d",
+    "xbrl_filename": "INTEGRATED_FILING_NBFC_INDAS_1662721_30042026110827_WEB.xml",
+    "xbrl_sha256": "6190a4c0d4c99af85a9406d00db06f5286237e2bc148fe515e5430ef0c86bc1d"
+  },
+  "taxonomy_families": ["BANKING", "INDAS", "LI", "NBFC_INDAS"],
+  "metrics": {
+    "roce": {"concepts": ["ReturnOnCapitalEmployed"], "unit": "pure", "period_type": "annual_duration"},
+    "debt_to_equity": {"concepts": ["DebtEquityRatio"], "unit": "pure", "period_type": "instant"},
+    "profit_growth_yoy": {"concepts": ["ProfitGrowthYoY"], "unit": "pure", "period_type": "annual_duration"}
+  }
+}

@@ -57,6 +57,33 @@ NIFTY 50 snapshot, not a survivorship-bias-free historical universe, and the
 result is not a walk-forward backtest. See
 [the real-history methodology](docs/real_historical_baseline.md).
 
+For the point-in-time accounting view, choose **Prepared real NIFTY 50
+Research V2 dataset**. The offline view combines the accepted frozen price
+bundle with official NSE Integrated Filing metadata and XBRL selected using
+exchange dissemination time through `2026-08-07 15:30:00 IST`. It displays
+every company, explicit exclusions, filing provenance, and a rank-only
+Baseline V1 comparison. The scoring model remains **Research V2**; its separate
+real-accounting input contract is **NSE Audited Standalone Fundamentals v1**
+(`nse_audited_standalone_fundamentals_v1`). Baseline and Research V2 raw scores
+have different directions and scales and are never subtracted.
+
+The Integrated Filing XBRLs alone could not provide all three canonical
+fundamentals. A second conservative stage therefore audits official NSE-hosted
+FY2025-26 annual-report PDFs with isolated `pypdf` extraction. It accepts only
+manually reviewed audited standalone statutory disclosures on one consistent
+basis: explicit issuer ROCE, explicit debt-to-equity, and current/comparable
+reported PAT. Candidate text, ROA, ROE, ROEV, ROIC, derived ratios, and other
+substitutes remain exclusions. The frozen contract admits 34 of 50 companies.
+Standalone was selected for the broadest internally consistent audited
+statutory-ratio coverage, not because standalone economics are universally
+superior to consolidated economics. See
+[the real Research V2 methodology](docs/real_research_v2.md).
+
+The comparison preserves the original Baseline sector rank for context and
+also recalculates unchanged Baseline V1 on exactly the Research-V2-eligible
+cohort. Rank movement is computed only from that matched Baseline rank to the
+Research V2 rank. Singleton sectors are labelled non-informative.
+
 ## What Baseline V1 means
 
 The source research discusses four signals: one-year price growth, three-year
@@ -209,6 +236,7 @@ src/stock_ranker/
   v2_contracts.py    V2 schemas
   v2_validation.py   V2 structural validation
   v2_exporting.py    V2 result exporting
+  real_research_v2.py safe NSE XBRL parsing and frozen real V2 bundle boundary
   portfolio.py       future construction/rebalancing interface
   backtesting.py     future backtest/benchmark interface
 data/input/          committed synthetic input

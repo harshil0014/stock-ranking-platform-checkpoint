@@ -25,12 +25,13 @@ from stock_ranker.historical_baseline import (
     load_historical_baseline_bundle,
 )
 from stock_ranker.nse_snapshot import parse_nse_snapshot
+from stock_ranker.real_research_v2 import load_real_research_v2_bundle
 from stock_ranker.research_v2 import (
     ResearchV2Inputs,
     calculate_research_v2,
     get_top_research_v2_by_sector,
 )
-from stock_ranker.v2_config import ResearchV2Config
+from stock_ranker.v2_config import ResearchV2Config, ResearchV2Weights
 from stock_ranker.v2_contracts import (
     V2_CONTRIBUTION_COLUMNS,
     V2_METRIC_COLUMNS,
@@ -43,11 +44,13 @@ METHOD_RESEARCH_V2 = "research_v2"
 METHODS = (METHOD_BASELINE, METHOD_RESEARCH_V2)
 INPUT_OFFICIAL_NSE_SNAPSHOT = "official_nse_snapshot"
 INPUT_PREPARED_REAL_BASELINE = "prepared_real_baseline"
+INPUT_PREPARED_REAL_RESEARCH_V2 = "prepared_real_research_v2"
 MAX_UPLOAD_BYTES = 25 * 1024 * 1024
 
 DATA_MODE_LABELS = {
     "real_current_snapshot": "REAL CURRENT SNAPSHOT",
     "real_historical_point_in_time": "REAL HISTORICAL / POINT-IN-TIME",
+    "real_point_in_time_research_v2": "REAL POINT-IN-TIME RESEARCH V2",
     "real_historical_price_research": "REAL HISTORICAL PRICE RESEARCH",
     "synthetic_research_test": "SYNTHETIC RESEARCH TEST",
 }
@@ -55,6 +58,10 @@ DATA_MODE_LABELS = {
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 PREPARED_REAL_BASELINE_BUNDLE = (
     PROJECT_ROOT / "data/marketdata/nifty50-baseline-2026-08-07"
+)
+PREPARED_REAL_RESEARCH_V2_BUNDLE = (
+    PROJECT_ROOT
+    / "data/marketdata/nifty50-research-v2-2026-08-07/standalone-contract-reason-fix-run-01"
 )
 SYNTHETIC_FILES = {
     METHOD_BASELINE: {"baseline": PROJECT_ROOT / "data/input/synthetic_stocks.csv"},
@@ -100,6 +107,127 @@ def _records(frame: pd.DataFrame) -> list[dict[str, Any]]:
     for column in normalized.select_dtypes(include=["datetime", "datetimetz"]):
         normalized[column] = normalized[column].dt.strftime("%Y-%m-%d")
     return json.loads(normalized.to_json(orient="records", double_precision=15))
+
+
+def _display_percent(value: Any) -> str | None:
+    if value is None:
+        return None
+    rendered = f"{float(value) * 100:.4f}".rstrip("0").rstrip(".")
+    return f"{rendered}%"
+
+
+def _display_report_amount(value: Any, unit: Any) -> str | None:
+    if value is None:
+        return None
+    rendered = f"{float(value):,.15g}"
+    return f"{rendered} {unit}" if unit else rendered
+
+
+def _fair_baseline_comparison_group(comparison: dict[str, Any]) -> dict[str, Any]:
+    """Present the frozen matched-cohort comparison without recalculating it."""
+
+    movement = comparison.get("rank_movement")
+    if comparison.get("comparison_status") != "MATCHED_COHORT" or movement is None:
+        rendered_movement: str | None = None
+    else:
+        numeric = float(movement)
+        rendered = str(int(numeric)) if numeric.is_integer() else str(numeric)
+        rendered_movement = f"+{rendered}" if numeric > 0 else rendered
+    return {
+        "original_baseline_sector_rank": comparison.get(
+            "original_baseline_sector_rank"
+        ),
+        "matched_cohort_baseline_sector_rank": comparison.get(
+            "matched_baseline_sector_rank"
+        ),
+        "research_v2_sector_rank": comparison.get("research_v2_sector_rank"),
+        "matched_cohort_rank_movement": rendered_movement,
+        "eligible_peer_count": comparison.get("eligible_peer_count"),
+        "comparison_status": comparison.get("comparison_status"),
+        "comparison_explanation": (
+            "Rank movement compares Research V2 only with Baseline V1 reranked "
+            "on the same Research-V2-eligible sector cohort. The original "
+            "Baseline rank is shown for context and is not used to calculate "
+            "movement."
+        ),
+    }
+
+
+def _real_v2_provenance_groups(
+    filing: dict[str, Any],
+    ranking: dict[str, Any] | None,
+    contract_label: str | None,
+) -> dict[str, dict[str, Any]]:
+    """Separate final annual-report donors from corroborating XBRL evidence."""
+
+    xbrl = {
+        "xbrl_selection_status": filing.get("selection_status"),
+        "xbrl_stage_reason_code": filing.get("reason_code"),
+        "xbrl_statement_basis": filing.get("statement_basis"),
+        "xbrl_exchange_dissemination_timestamp": filing.get(
+            "exchange_dissemination_timestamp"
+        ),
+        "xbrl_source_url": filing.get("source_xbrl_url"),
+        "xbrl_sha_256": filing.get("xbrl_sha256"),
+    }
+    annual = {
+        "annual_report_selection_status": filing.get("annual_report_selection_status"),
+        "annual_report_audit_status": filing.get("annual_report_audit_status"),
+        "annual_report_source_url": filing.get("annual_report_source_url"),
+        "annual_report_pdf_filename": filing.get("annual_report_pdf_filename"),
+        "annual_report_pdf_sha_256": filing.get("annual_report_pdf_sha256"),
+        "financial_year": filing.get("annual_report_financial_year"),
+        "submission_type": filing.get("annual_report_submission_type"),
+        "broadcast_timestamp": filing.get("annual_report_broadcast_timestamp"),
+        "exchange_dissemination_timestamp": filing.get(
+            "annual_report_exchange_dissemination_timestamp"
+        ),
+        "reporting_basis": filing.get("annual_report_reporting_basis"),
+        "fundamental_data_contract_version": filing.get(
+            "fundamental_data_contract_version"
+        ),
+    }
+    groups: dict[str, dict[str, Any]] = {
+        "integrated_filing_xbrl_evidence_corroborating": xbrl,
+        "nse_annual_report_fundamental_provenance": annual,
+    }
+    roce = filing.get("annual_report_roce")
+    leverage = filing.get("annual_report_debt_to_equity")
+    profit = filing.get("annual_report_profit")
+    if ranking is not None and all(isinstance(value, dict) for value in (roce, leverage, profit)):
+        basis = filing.get("annual_report_reporting_basis")
+        groups = {
+            "final_research_v2_fundamentals": {
+                "fundamental_data_contract": contract_label,
+                "reporting_basis": basis,
+                "roce_value": _display_percent(roce.get("canonical_decimal")),
+                "roce_exact_disclosure_label": roce.get("label"),
+                "roce_source_page": roce.get("page"),
+                "roce_source_section_or_table": roce.get("table"),
+                "roce_reporting_basis": basis,
+                "roce_issuer_formula_or_basis": roce.get("formula"),
+                "debt_to_equity_value": leverage.get("canonical_decimal"),
+                "debt_to_equity_exact_disclosure_label": leverage.get("label"),
+                "debt_to_equity_source_page": leverage.get("page"),
+                "debt_to_equity_source_section_or_table": leverage.get("table"),
+                "debt_to_equity_reporting_basis": basis,
+                "debt_to_equity_issuer_formula_or_basis": leverage.get("formula"),
+                "fy2025_26_pat_or_profit": _display_report_amount(
+                    profit.get("current_value"), profit.get("unit")
+                ),
+                "fy2024_25_pat_or_profit": _display_report_amount(
+                    profit.get("prior_value"), profit.get("unit")
+                ),
+                "profit_growth_yoy": _display_percent(ranking.get("profit_growth_yoy")),
+                "profit_exact_disclosure_label": profit.get("label"),
+                "profit_source_page": profit.get("page"),
+                "profit_source_section_or_table": profit.get("table"),
+                "profit_reporting_basis": basis,
+                "profit_comparability_warning": profit.get("comparability_warning"),
+            },
+            **groups,
+        }
+    return groups
 
 
 def _decode_upload(files: dict[str, Any], field: str) -> bytes:
@@ -345,6 +473,147 @@ def _prepared_real_baseline() -> dict[str, Any]:
     }
 
 
+def _prepared_real_research_v2() -> dict[str, Any]:
+    bundle = load_real_research_v2_bundle(PREPARED_REAL_RESEARCH_V2_BUNDLE)
+    metadata = bundle.metadata
+    ranked = {row["ticker"]: row for row in _records(bundle.rankings)}
+    comparison_by_ticker = {
+        row["ticker"]: row for row in _records(bundle.comparison)
+    }
+    provenance_by_ticker = {}
+    for item in _records(bundle.provenance):
+        raw_facts = item.get("fact_provenance")
+        if isinstance(raw_facts, str):
+            item["fact_provenance"] = json.loads(raw_facts)
+        for field in (
+            "annual_report_roce", "annual_report_debt_to_equity",
+            "annual_report_profit",
+        ):
+            value = item.get(field)
+            if isinstance(value, str) and value.strip():
+                item[field] = json.loads(value)
+        provenance_by_ticker[item["ticker"]] = item
+    weights = {
+        name: float(value) for name, value in ResearchV2Weights().as_dict().items()
+    }
+    results: list[dict[str, Any]] = []
+    export_rows: list[dict[str, Any]] = []
+    for status in _records(bundle.eligibility):
+        ticker = status["ticker"]
+        row = ranked.get(ticker)
+        filing = provenance_by_ticker.get(ticker, {})
+        comparison = comparison_by_ticker.get(ticker, {})
+        if row is None:
+            display = {
+                "ticker": ticker, "company": status["company"],
+                "sector": status["sector"], "rank": None, "score": None,
+                "eligible": False, "status": "Ineligible",
+                "reason": status["reason"], "selected_top_5": False,
+                "explanation": {
+                    "eligibility": {
+                        "reason_code": status["reason_code"],
+                        "reason": status["reason"],
+                    },
+                    "fair_baseline_comparison": _fair_baseline_comparison_group(
+                        comparison
+                    ),
+                    **_real_v2_provenance_groups(
+                        filing, None, metadata.get("fundamental_data_contract_label")
+                    ),
+                    "interpretation": (
+                        "No fundamental value, component score, or final score was "
+                        "fabricated for this excluded company."
+                    ),
+                },
+            }
+            export_rows.append({
+                **status, **filing,
+                # Filing provenance retains the earlier XBRL-stage status,
+                # but the canonical export reason is the final standalone
+                # annual-report contract decision.
+                "reason_code": status["reason_code"],
+                "reason": status["reason"],
+                "research_v2_score": None, "sector_rank": None,
+            })
+        else:
+            display = {
+                "ticker": ticker, "company": row["company"],
+                "sector": row["sector"], "rank": row["sector_rank"],
+                "score": row["research_v2_score"], "eligible": True,
+                "status": "Eligible", "reason": status["reason"],
+                "selected_top_5": bool(row["sector_rank"] <= 5),
+                "explanation": {
+                    "price_derived_metrics": {
+                        name: row[name] for name in V2_METRIC_COLUMNS[:6]
+                    },
+                    "fundamental_metrics": {
+                        name: row[name] for name in V2_METRIC_COLUMNS[6:]
+                    },
+                    "component_scores": {
+                        name: row[name] for name in V2_SCORE_COLUMNS
+                    },
+                    "weights_percent": weights,
+                    "contributions": {
+                        name: row[name] for name in V2_CONTRIBUTION_COLUMNS
+                    },
+                    "final_score": row["research_v2_score"],
+                    "sector_rank": row["sector_rank"],
+                    "fair_baseline_comparison": _fair_baseline_comparison_group(
+                        comparison
+                    ),
+                    **_real_v2_provenance_groups(
+                        filing, row, metadata.get("fundamental_data_contract_label")
+                    ),
+                    "method_version": row["method_version"],
+                    "interpretation": (
+                        "Higher Research V2 score is better only within this sector."
+                    ),
+                },
+            }
+            export_rows.append({**row, **filing, "reason_code": "ELIGIBLE",
+                                "reason": status["reason"]})
+        results.append(display)
+    results.sort(key=lambda item: (
+        item["sector"], not item["eligible"], item["score"] is None,
+        -(item["score"] or 0), item["ticker"],
+    ))
+    provenance = _common_provenance(
+        source_label="Official NSE annual reports and Integrated Filing evidence; accepted frozen Yahoo adjusted-price bundle",
+        data_mode="real_point_in_time_research_v2",
+        as_of_date=str(metadata["ranking_date"]), method=METHOD_RESEARCH_V2,
+        universe="Current NIFTY 50 universe from the accepted 2026-08-07 snapshot",
+        company_count=len(results), eligible_count=int(metadata["eligible_count"]),
+        ineligible_count=int(metadata["excluded_count"]),
+    )
+    provenance.update({
+        "bundle_fingerprint": bundle.fingerprint,
+        "filing_cutoff": metadata["filing_cutoff"],
+        "bundle_status": metadata["status"],
+        "baseline_bundle_fingerprint": metadata["baseline_bundle_fingerprint"],
+        "scoring_model": "Research V2",
+        "fundamental_data_contract": metadata.get("fundamental_data_contract_label"),
+        "fundamental_data_contract_version": metadata.get("fundamental_data_contract_version"),
+        "matched_cohort_methodology": "Baseline V1 is recalculated without formula changes on exactly the Research-V2-eligible tickers in each sector; movement uses that matched rank only.",
+    })
+    provenance["warnings"].extend([
+        "The current NIFTY 50 universe creates survivorship bias; this is one as-of snapshot, not a walk-forward backtest.",
+        "Standalone was selected for broad internally consistent audited statutory-ratio coverage, not because standalone economics are universally superior.",
+        "Issuer ROCE definitions vary and are retained in provenance; missing accepted facts cause exclusion, never substitution or imputation.",
+        "Yahoo adjusted-price semantics are inherited from the accepted Baseline bundle.",
+        "No transaction-cost, liquidity, portfolio-optimization, profitability, or investment-performance claim is made.",
+    ])
+    return {
+        "method": METHOD_RESEARCH_V2, "results": results,
+        "comparison": _records(bundle.comparison),
+        "comparison_sector_summary": _records(bundle.comparison_sector_summary),
+        "comparison_export_csv": bundle.comparison.to_csv(index=False, lineterminator="\n"),
+        "comparison_export_filename": "real_nifty50_baseline_v1_vs_research_v2_2026-08-07.csv",
+        "export_csv": pd.DataFrame(export_rows).to_csv(index=False, lineterminator="\n"),
+        "export_filename": "real_nifty50_research_v2_2026-08-07.csv",
+        "provenance": provenance,
+    }
+
+
 def _research_v2(payload: dict[str, Any], files: dict[str, Any]) -> dict[str, Any]:
     ranking_date = _iso_date(payload.get("ranking_date"), "ranking_date")
     config = ResearchV2Config(
@@ -438,6 +707,10 @@ def analyze_website_request(payload: dict[str, Any]) -> dict[str, Any]:
         if payload.get("method", METHOD_BASELINE) != METHOD_BASELINE:
             raise ValueError("prepared real historical data supports Baseline V1 only")
         return _prepared_real_baseline()
+    if payload.get("input_source") == INPUT_PREPARED_REAL_RESEARCH_V2:
+        if payload.get("method", METHOD_RESEARCH_V2) != METHOD_RESEARCH_V2:
+            raise ValueError("prepared real Research V2 data supports Research V2 only")
+        return _prepared_real_research_v2()
     method = payload.get("method")
     if method not in METHODS:
         raise ValueError("method must be baseline_v1 or research_v2")

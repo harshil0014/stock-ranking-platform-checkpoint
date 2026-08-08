@@ -27,6 +27,18 @@ from stock_ranker.research_v2 import (
     get_top_research_v2_by_sector,
     load_research_v2_inputs,
 )
+from stock_ranker.real_research_v2 import (
+    FUNDAMENTAL_DATA_CONTRACT_VERSION,
+    RealResearchV2Bundle,
+    XBRLDocument,
+    XBRLFact,
+    build_matched_cohort_comparison,
+    extract_exact_reported_metrics,
+    load_real_research_v2_bundle,
+    parse_nse_xbrl,
+    prepare_real_research_v2_bundle,
+    select_point_in_time_filing,
+)
 from stock_ranker.validation import validate_baseline_input
 from stock_ranker.v2_config import ResearchV2Config, ResearchV2Weights
 from stock_ranker.v2_exporting import (
@@ -42,6 +54,10 @@ __all__ = [
     "ResearchV2Inputs",
     "ResearchV2Result",
     "ResearchV2Weights",
+    "RealResearchV2Bundle",
+    "FUNDAMENTAL_DATA_CONTRACT_VERSION",
+    "XBRLDocument",
+    "XBRLFact",
     "NSESnapshotResult",
     "HistoricalBaselineBundle",
     "HistoricalBaselinePrepared",
@@ -60,6 +76,12 @@ __all__ = [
     "prepare_historical_baseline",
     "provider_symbol",
     "calculate_prepared_real_rankings",
+    "extract_exact_reported_metrics",
+    "load_real_research_v2_bundle",
+    "parse_nse_xbrl",
+    "prepare_real_research_v2_bundle",
+    "build_matched_cohort_comparison",
+    "select_point_in_time_filing",
 ]
 
 __version__ = "0.2.0"

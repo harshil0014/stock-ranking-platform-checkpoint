@@ -3,15 +3,21 @@
   "isolated_from_product_and_research_environments": true,
   "platform": "Windows-11-10.0.26200-SP0",
   "python": "3.13.4",
-  "purpose": "Online acquisition only; prepared-bundle website execution does not import yfinance",
+  "purpose": "Online acquisition and isolated PDF extraction only; prepared-bundle website execution imports neither yfinance nor pypdf",
   "repair_dependency_note": "scipy==1.18.0 is pinned because yfinance 1.5.1 repair=True imports scipy",
   "selected_packages": {
     "numpy": "2.5.1",
     "pandas": "3.0.5",
+    "pypdf": "6.15.0",
     "scipy": "1.18.0",
     "yfinance": "1.5.1"
   },
   "status": "installed_and_import_verified",
+  "pdf_extractor": {
+    "project": "https://pypi.org/project/pypdf/",
+    "software_license": "BSD-3-Clause",
+    "use": "page-numbered text extraction from official NSE-hosted annual-report PDFs"
+  },
   "upstream": {
     "data_use_caveat": "Yahoo Finance data is intended for research, education, and personal-use contexts; upstream/source terms apply.",
     "project": "https://github.com/ranaroussi/yfinance",
