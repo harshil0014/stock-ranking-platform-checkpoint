@@ -1,0 +1,246 @@
+{
+  "accounting_contract": {
+    "availability_rule": "NSE exchange dissemination timestamp must be less than or equal to the historical information cutoff",
+    "basis": "AUDITED_STANDALONE",
+    "contract_identifier": "nse_audited_standalone_fundamentals_v1",
+    "fiscal_year_by_ranking_year": {
+      "2022": "FY2021-22",
+      "2023": "FY2022-23",
+      "2024": "FY2023-24",
+      "2025": "FY2024-25"
+    },
+    "missing_availability_reason": "UNVERIFIED_FILING_AVAILABILITY",
+    "older_fiscal_year_fallback_allowed": false,
+    "required_inputs": [
+      "explicit issuer-disclosed ROCE",
+      "explicit issuer-disclosed debt-to-equity",
+      "current audited standalone reported PAT",
+      "prior audited standalone reported PAT"
+    ],
+    "substitutions_forbidden": [
+      "derived ROCE",
+      "derived debt-to-equity",
+      "ROA",
+      "ROE",
+      "ROEV",
+      "ROIC",
+      "cross-basis mixing",
+      "proxy ratios"
+    ]
+  },
+  "comparison_protocol": {
+    "full_historical_baseline_role": "context_only",
+    "matched_baseline_definition": "Run unchanged Baseline V1 on exactly the Research V2 eligible stocks within each historical sector",
+    "performance_comparison": "Research V2 versus matched Baseline V1 only",
+    "prohibited_comparison": "Full/original Baseline rank versus Research V2 rank as a performance statistic",
+    "research_v2_cohort": "Stocks eligible for Research V2 on the applicable historical ranking date"
+  },
+  "evaluation": {
+    "aggregation_unit": "sector-date",
+    "baseline_signal_orientation": "negative Baseline V1 score so higher is better; the underlying Baseline calculation is unchanged",
+    "minimum_cross_section": {
+      "pairwise_ordering_accuracy": 2,
+      "rank_ic": 3,
+      "singleton": "no ranking-quality observation"
+    },
+    "primary": {
+      "aggregate": "equal-weight arithmetic mean across valid sector-date observations",
+      "comparison": "mean of Research V2 Rank IC minus matched Baseline V1 Rank IC over paired valid sector-date observations",
+      "horizon_months": 12,
+      "metric": "Spearman Rank IC",
+      "model_means_reported_separately": true,
+      "rank_tie_method": "average",
+      "raw_scores_pooled_across_sectors": false,
+      "research_v2_signal_orientation": "Research V2 score, higher is better"
+    },
+    "secondary": {
+      "horizons_months": [
+        12,
+        3,
+        6
+      ],
+      "metrics": [
+        "median Rank IC",
+        "sample standard deviation of Rank IC",
+        "unannualized Rank ICIR when at least two valid observations exist and sample standard deviation is nonzero",
+        "pairwise ordering accuracy",
+        "top-ranked-stock excess return versus matched sector cohort",
+        "equal-sized top-half minus bottom-half future-return spread with the middle stock omitted for odd cohort sizes",
+        "Research V2 win/tie/loss count relative to matched Baseline V1"
+      ],
+      "rank_icir_annualization": null,
+      "top_five_overlap_is_performance_metric": false,
+      "win_tie_loss_tolerance": 1e-12
+    }
+  },
+  "fingerprint": {
+    "algorithm": "SHA-256",
+    "canonicalization": "UTF-8 encoding of the parsed JSON value serialized with lexicographically sorted object keys, no insignificant whitespace, and separators ',' and ':'",
+    "hash_embedded_in_protocol": false,
+    "hash_record_location": "docs/walk_forward_validation_protocol_v1.md"
+  },
+  "future_return_labels": {
+    "adjusted_price_semantics": "Yahoo Adj Close endpoint divided by Yahoo Adj Close on the ranking date minus one",
+    "endpoint_rule": "Last trading observation on or before the calendar target horizon date",
+    "horizons": {
+      "primary_months": 12,
+      "secondary_months": [
+        3,
+        6
+      ]
+    },
+    "label_formula": "adjusted_price_endpoint / adjusted_price_ranking_date - 1",
+    "missing_endpoint_policy": "Exclude the label and report the exact missing-label reason",
+    "outcome_isolation": "No future-return label may influence predictor construction, eligibility, parameters, formulas, or weights",
+    "provenance_required": [
+      "ranking-date observation date and value",
+      "calendar target date",
+      "selected endpoint date and value",
+      "source symbol",
+      "source configuration"
+    ]
+  },
+  "historical_universe": {
+    "expected_investable_count_each_date": 50,
+    "historical_sector_source": "Corresponding official historical NSE Indices monthly snapshot",
+    "membership_rule": "Official NIFTY 50 membership in the July Market Capitalisation, Weightage, Beta report preceding or containing the ranking date",
+    "projection_of_2026_universe_backward": false,
+    "source": "Official NSE Indices Market Capitalisation, Weightage, Beta July monthly reports",
+    "source_files": [
+      {
+        "expected_nifty50_csv_sha256": "85032a234edeb1adb8fbc1bf233b04151a03467961b64c852cb3bd1b53befd65",
+        "expected_zip_filename": "mcwb_jul22.zip",
+        "expected_zip_sha256": "af2bb20cc901eaaa4694f102dc4cd62517397092660bf000b4f03029764e291a",
+        "report_month": "2022-07"
+      },
+      {
+        "expected_nifty50_csv_sha256": "aa6ecd85791511aef647a546dfaf7db9b956f10c60ae331885e5855e657debbf",
+        "expected_zip_filename": "mcwb_jul23.zip",
+        "expected_zip_sha256": "ce8a335221f222def0ee68b5d2aa6e2cdf500ec171e9c3d100df01a8a4545ac4",
+        "report_month": "2023-07"
+      },
+      {
+        "expected_nifty50_csv_sha256": "b8bb21128768ee8beb74d5fc9072818900e81a8aa7a11787c9990c72baf694b6",
+        "expected_zip_filename": "mcwb_jul24.zip",
+        "expected_zip_sha256": "5a89a9e0fd709a1b310f03be4b8a4bc8f36c6982a4e83a8746c88af084b700ba",
+        "report_month": "2024-07"
+      },
+      {
+        "expected_nifty50_csv_sha256": "2f4b9ae31c1f840bf15a8f452c77a0d2fc21fc409d2cee03e0851694d903eafd",
+        "expected_zip_filename": "mcwb_jul25.zip",
+        "expected_zip_sha256": "0244f8ac658343e07c045eb390f6ac6e42cefc45540a5badcefefdcd284201f4",
+        "report_month": "2025-07"
+      }
+    ],
+    "special_identity_rules": [
+      {
+        "action": "Preserve in source provenance but exclude from investable ranking membership",
+        "reason": "Official synthetic corporate-action placeholder, not yet a normally listed/tradable security",
+        "report_month": "2023-07",
+        "symbol": "DUMMYREL"
+      }
+    ]
+  },
+  "immutable_model_boundaries": {
+    "baseline_v1": "Existing accepted formulas, eligibility, anchors, ranking, and tie behavior",
+    "research_v2": "Existing accepted nine metrics, weights, directions, eligibility, rank-range normalization, final scoring, ranking, and ties"
+  },
+  "limitations": [
+    "Yahoo historical prices are acquired retrospectively and are not vendor-vintage archives.",
+    "Yahoo adjusted-price semantics are inherited from accepted prior milestones.",
+    "Annual-report archive completeness may reduce historical Research V2 coverage.",
+    "Missing NSE dissemination timestamps cause exclusion.",
+    "Historical symbol or name changes may cause identity-resolution exclusions.",
+    "Only four annual ranking dates are evaluated, so statistical power is limited.",
+    "There is no transaction-cost, portfolio-profitability, or investment-performance claim.",
+    "The comparison studies ranking quality and is not investment advice."
+  ],
+  "no_tuning_rule": {
+    "exploratory_alternatives": "Must be labelled exploratory and cannot replace the preregistered primary result",
+    "if_baseline_wins": "Report that result without changing the protocol",
+    "outcome_dependent_changes_forbidden": [
+      "Research V2 weights",
+      "Baseline V1 formulas",
+      "Research V2 formulas",
+      "accounting contract",
+      "ranking dates",
+      "primary 12-month horizon",
+      "primary Rank IC metric",
+      "historical universe rule",
+      "historical sector rule",
+      "price donor",
+      "treatment of excluded companies"
+    ]
+  },
+  "price_features": {
+    "future_observations_forbidden": true,
+    "historical_eligibility": "Existing accepted anchor, tolerance, daily-return-count, and history rules",
+    "immutable_features": [
+      "Baseline V1 one-year return",
+      "Baseline V1 three-year CAGR",
+      "Baseline V1 five-year CAGR",
+      "Baseline V1 days since recorded high",
+      "Research V2 one-year annualized volatility",
+      "Research V2 three-year maximum drawdown"
+    ],
+    "insufficient_history_policy": "Explicit exclusion; no imputation"
+  },
+  "price_predictor": {
+    "acquisition_configuration": {
+      "actions": true,
+      "auto_adjust": false,
+      "frequency": "daily",
+      "maximum_requested_observation": "historical information cutoff",
+      "repair": true
+    },
+    "cutoff_rebased_adjusted_series": {
+      "formula": "pit_adjusted_price(s|t) = AdjClose(s) / (AdjClose(t) / Close(t)) for s <= t",
+      "purpose": "Remove the common post-cutoff adjustment scale while preserving relative corporate-action-adjusted history through the cutoff",
+      "role": "engineering normalization, not a stock-selection algorithm"
+    },
+    "donor": "Yahoo historical prices through yfinance in the isolated market-data environment",
+    "predictor_rows_after_cutoff_allowed": false,
+    "preserve_columns": [
+      "Close",
+      "Adj Close",
+      "Dividends",
+      "Stock Splits",
+      "Repaired?"
+    ],
+    "retrospective_acquisition_limitation": true,
+    "sensitivity_audit": {
+      "comparison": "repair=True versus repair=False",
+      "report_each_affected_company_date": true,
+      "status": "planned"
+    }
+  },
+  "protocol_identifier": "walk_forward_validation_protocol_v1",
+  "protocol_status": "preregistered_outcome_blind",
+  "protocol_version": 1,
+  "ranking_dates": [
+    {
+      "actual_ranking_date": "2022-08-05",
+      "information_cutoff": "2022-08-05T15:30:00+05:30",
+      "target_date": "2022-08-07",
+      "timezone": "Asia/Kolkata"
+    },
+    {
+      "actual_ranking_date": "2023-08-07",
+      "information_cutoff": "2023-08-07T15:30:00+05:30",
+      "target_date": "2023-08-07",
+      "timezone": "Asia/Kolkata"
+    },
+    {
+      "actual_ranking_date": "2024-08-07",
+      "information_cutoff": "2024-08-07T15:30:00+05:30",
+      "target_date": "2024-08-07",
+      "timezone": "Asia/Kolkata"
+    },
+    {
+      "actual_ranking_date": "2025-08-07",
+      "information_cutoff": "2025-08-07T15:30:00+05:30",
+      "target_date": "2025-08-07",
+      "timezone": "Asia/Kolkata"
+    }
+  ]
+}
