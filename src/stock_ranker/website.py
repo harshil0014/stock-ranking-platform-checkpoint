@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import base64
+import binascii
 from datetime import datetime
 from io import StringIO
 import json
@@ -16,6 +18,7 @@ from stock_ranker.baseline import (
 )
 from stock_ranker.config import BaselineConfig
 from stock_ranker.contracts import METRIC_COLUMNS, RANK_COLUMNS
+from stock_ranker.nse_snapshot import parse_nse_snapshot
 from stock_ranker.research_v2 import (
     ResearchV2Inputs,
     calculate_research_v2,
@@ -32,6 +35,8 @@ from stock_ranker.v2_contracts import (
 METHOD_BASELINE = "baseline_v1"
 METHOD_RESEARCH_V2 = "research_v2"
 METHODS = (METHOD_BASELINE, METHOD_RESEARCH_V2)
+INPUT_OFFICIAL_NSE_SNAPSHOT = "official_nse_snapshot"
+MAX_UPLOAD_BYTES = 25 * 1024 * 1024
 
 DATA_MODE_LABELS = {
     "real_current_snapshot": "REAL CURRENT SNAPSHOT",
@@ -84,6 +89,49 @@ def _records(frame: pd.DataFrame) -> list[dict[str, Any]]:
     for column in normalized.select_dtypes(include=["datetime", "datetimetz"]):
         normalized[column] = normalized[column].dt.strftime("%Y-%m-%d")
     return json.loads(normalized.to_json(orient="records", double_precision=15))
+
+
+def _decode_upload(files: dict[str, Any], field: str) -> bytes:
+    value = files.get(field)
+    if not isinstance(value, str) or not value:
+        raise ValueError(f"{field} is required")
+    try:
+        decoded = base64.b64decode(value, validate=True)
+    except (binascii.Error, ValueError) as exc:
+        raise ValueError(f"{field} must be valid base64 data") from exc
+    if not decoded:
+        raise ValueError(f"{field} must not be empty")
+    if len(decoded) > MAX_UPLOAD_BYTES:
+        raise ValueError(f"{field} exceeds the 25 MiB decoded upload limit")
+    return decoded
+
+
+def _official_snapshot(payload: dict[str, Any]) -> dict[str, Any]:
+    files = payload.get("files")
+    if not isinstance(files, dict):
+        raise ValueError("files must be supplied for the official snapshot")
+    nifty_name = _required_text(files, "nifty_filename")
+    bhavcopy_name = _required_text(files, "bhavcopy_filename")
+    result = parse_nse_snapshot(
+        _decode_upload(files, "nifty_base64"),
+        _decode_upload(files, "bhavcopy_base64"),
+        nifty_filename=nifty_name,
+        bhavcopy_filename=bhavcopy_name,
+    )
+    trade_date = result.provenance["trade_date"]
+    return {
+        "mode": "real_snapshot",
+        "analysis_available": False,
+        "ranking_notice": (
+            "Ranking unavailable for this snapshot alone. Historical price "
+            "data is required for Baseline V1. Historical point-in-time prices "
+            "and fundamentals are required for Research V2."
+        ),
+        "snapshot": _records(result.snapshot),
+        "export_csv": result.snapshot.to_csv(index=False, lineterminator="\n"),
+        "export_filename": f"nifty50_nse_snapshot_{trade_date}.csv",
+        "provenance": result.provenance,
+    }
 
 
 def _common_provenance(
@@ -273,6 +321,8 @@ def analyze_website_request(payload: dict[str, Any]) -> dict[str, Any]:
 
     if not isinstance(payload, dict):
         raise TypeError("request must be a JSON object")
+    if payload.get("input_source") == INPUT_OFFICIAL_NSE_SNAPSHOT:
+        return _official_snapshot(payload)
     method = payload.get("method")
     if method not in METHODS:
         raise ValueError("method must be baseline_v1 or research_v2")

@@ -28,6 +28,18 @@ that label is permitted only for Research V2 inputs carrying the required
 price dates and fundamental availability dates. The website fetches no market
 data and makes no investment recommendation.
 
+For a one-day official market view, choose **Official NSE / NIFTY snapshot
+files**, upload an official NIFTY constituent CSV and its corresponding NSE
+CM-UDiFF Common Bhavcopy Final ZIP, and select **Import snapshot**. The adapter
+joins `Symbol + Series + ISIN Code` to `TckrSymb + SctySrs + ISIN`, validates
+every constituent, and exports only the canonical matched snapshot. It never
+extracts the ZIP into the repository and never fetches live data.
+
+This real snapshot view deliberately does not run Baseline V1 or Research V2.
+One trading day cannot supply YoY, three- or five-year CAGR, recorded-high
+recency, or point-in-time fundamentals. Historical price and fundamental
+inputs remain a later milestone.
+
 ## What Baseline V1 means
 
 The source research discusses four signals: one-year price growth, three-year
