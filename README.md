@@ -6,8 +6,10 @@ model portfolios, and evaluate them against benchmarks with scheduled
 rebalancing.
 
 The repository implements **Baseline V1** and the offline, point-in-time
-**Research V2** scoring engine. It does not fetch live data, rank sectors,
-construct portfolios, backtest results, or make investment recommendations.
+**Research V2** scoring engine. A separate isolated adapter can acquire and
+freeze real historical prices; normal product execution never fetches them.
+The project does not rank sectors, construct portfolios, backtest results, or
+make investment recommendations.
 
 ## Local research website
 
@@ -37,8 +39,23 @@ extracts the ZIP into the repository and never fetches live data.
 
 This real snapshot view deliberately does not run Baseline V1 or Research V2.
 One trading day cannot supply YoY, three- or five-year CAGR, recorded-high
-recency, or point-in-time fundamentals. Historical price and fundamental
-inputs remain a later milestone.
+recency, or point-in-time fundamentals.
+
+For the prepared real demonstration, choose **Prepared real NIFTY 50
+historical dataset**, then **Run analysis**. The website validates the local
+frozen bundle and runs the accepted Baseline V1 engine without internet
+access. It shows 1Y/3Y/5Y anchors, the recorded-study-period high, the four
+metric ranks, combined score, sector rank, exclusions, provenance, and a real
+NIFTY 50 CSV export.
+
+This mode is labelled **REAL HISTORICAL PRICE RESEARCH**. It uses Yahoo `Adj
+Close` from a `yfinance==1.5.1` repaired max-history fetch and independently
+checks terminal prices against the supplied official NSE 07-Aug-2026 snapshot.
+The adjusted series includes upstream dividend adjustments. No project
+corporate-action formula is applied. The universe is the current supplied
+NIFTY 50 snapshot, not a survivorship-bias-free historical universe, and the
+result is not a walk-forward backtest. See
+[the real-history methodology](docs/real_historical_baseline.md).
 
 ## What Baseline V1 means
 

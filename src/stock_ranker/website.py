@@ -18,6 +18,12 @@ from stock_ranker.baseline import (
 )
 from stock_ranker.config import BaselineConfig
 from stock_ranker.contracts import METRIC_COLUMNS, RANK_COLUMNS
+from stock_ranker.historical_baseline import (
+    PRICE_SERIES,
+    PROVIDER,
+    calculate_prepared_real_rankings,
+    load_historical_baseline_bundle,
+)
 from stock_ranker.nse_snapshot import parse_nse_snapshot
 from stock_ranker.research_v2 import (
     ResearchV2Inputs,
@@ -36,15 +42,20 @@ METHOD_BASELINE = "baseline_v1"
 METHOD_RESEARCH_V2 = "research_v2"
 METHODS = (METHOD_BASELINE, METHOD_RESEARCH_V2)
 INPUT_OFFICIAL_NSE_SNAPSHOT = "official_nse_snapshot"
+INPUT_PREPARED_REAL_BASELINE = "prepared_real_baseline"
 MAX_UPLOAD_BYTES = 25 * 1024 * 1024
 
 DATA_MODE_LABELS = {
     "real_current_snapshot": "REAL CURRENT SNAPSHOT",
     "real_historical_point_in_time": "REAL HISTORICAL / POINT-IN-TIME",
+    "real_historical_price_research": "REAL HISTORICAL PRICE RESEARCH",
     "synthetic_research_test": "SYNTHETIC RESEARCH TEST",
 }
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PREPARED_REAL_BASELINE_BUNDLE = (
+    PROJECT_ROOT / "data/marketdata/nifty50-baseline-2026-08-07"
+)
 SYNTHETIC_FILES = {
     METHOD_BASELINE: {"baseline": PROJECT_ROOT / "data/input/synthetic_stocks.csv"},
     METHOD_RESEARCH_V2: {
@@ -150,6 +161,10 @@ def _common_provenance(
         warnings.append(
             "Current-snapshot mode is not a point-in-time historical claim."
         )
+    elif data_mode == "real_historical_price_research":
+        warnings.append(
+            "Real historical price research on a current universe; not a point-in-time backtest."
+        )
     else:
         warnings.append(
             "Point-in-time behavior relies on supplied availability dates and source accuracy."
@@ -231,6 +246,102 @@ def _baseline(payload: dict[str, Any], files: dict[str, Any]) -> dict[str, Any]:
             company_count=len(rankings), eligible_count=len(rankings),
             ineligible_count=0,
         ),
+    }
+
+
+def _prepared_real_baseline() -> dict[str, Any]:
+    bundle = load_historical_baseline_bundle(PREPARED_REAL_BASELINE_BUNDLE)
+    rankings, top = calculate_prepared_real_rankings(bundle, 5)
+    selected = set(top["ticker"].tolist())
+    ranked = {row["ticker"]: row for row in _records(rankings)}
+    anchors = {row["ticker"]: row for row in _records(bundle.anchors)}
+    mapping = {row["ticker"]: row for row in _records(bundle.symbol_map)}
+    results: list[dict[str, Any]] = []
+    export_rows: list[dict[str, Any]] = []
+    for status in _records(bundle.eligibility):
+        ticker = status["ticker"]
+        row = ranked.get(ticker)
+        if row is None:
+            results.append({
+                "ticker": ticker, "company": status["company"],
+                "sector": status["sector"], "rank": None, "score": None,
+                "eligible": False, "status": "Excluded",
+                "reason": status["reason"], "selected_top_5": False,
+                "explanation": {
+                    "eligibility": {"reason_code": status["reason_code"], "reason": status["reason"]},
+                    "interpretation": "No price or score was fabricated for this excluded company.",
+                },
+            })
+            export_rows.append({**status, "provider": PROVIDER,
+                                "adjustment_series": PRICE_SERIES,
+                                "as_of_date": bundle.metadata["as_of_date"],
+                                "bundle_fingerprint": bundle.fingerprint})
+            continue
+        anchor = anchors[ticker]
+        results.append({
+            "ticker": ticker, "company": row["company"], "sector": row["sector"],
+            "rank": row["sector_rank"], "score": row["baseline_score"],
+            "eligible": True, "status": "Eligible", "reason": status["reason"],
+            "selected_top_5": ticker in selected,
+            "explanation": {
+                "data_derived": {
+                    "current_date": anchor["current_date"], "current_price": anchor["current_price"],
+                    "close_1y_date": anchor["close_1y_date"], "close_1y_ago": anchor["close_1y_ago"],
+                    "close_3y_date": anchor["close_3y_date"], "close_3y_ago": anchor["close_3y_ago"],
+                    "close_5y_date": anchor["close_5y_date"], "close_5y_ago": anchor["close_5y_ago"],
+                    "recorded_high_date": anchor["recorded_high_date"],
+                    "recorded_high_price": anchor["recorded_high_price"],
+                    "recorded_high_search_start_date": anchor.get("recorded_high_search_start_date"),
+                    "recorded_high_search_start_basis": anchor.get("recorded_high_search_start_basis"),
+                    "recorded_high_search_start_evidence": anchor.get("recorded_high_search_start_evidence"),
+                    "provider_symbol": mapping[ticker]["provider_symbol"],
+                    "provider_status": mapping[ticker]["status"],
+                },
+                "ranking_derived_metrics": {name: row[name] for name in METRIC_COLUMNS},
+                "ranking_derived_metric_ranks": {name: row[name] for name in RANK_COLUMNS},
+                "combined_score": row["baseline_score"], "sector_rank": row["sector_rank"],
+                "method_version": row["method_version"],
+                "interpretation": "Lower Baseline V1 score and sector rank are better within this sector.",
+            },
+        })
+        export_rows.append({
+            **row, **anchor, "eligible": True, "reason_code": "ELIGIBLE",
+            "reason": status["reason"], "provider": PROVIDER,
+            "provider_symbol": mapping[ticker]["provider_symbol"],
+            "provider_status": mapping[ticker]["status"],
+            "adjustment_series": PRICE_SERIES, "bundle_fingerprint": bundle.fingerprint,
+        })
+    results.sort(key=lambda item: (
+        item["sector"], not item["eligible"], item["score"] is None,
+        item["score"] if item["score"] is not None else float("inf"), item["ticker"],
+    ))
+    eligible_count = sum(item["eligible"] for item in results)
+    provenance = _common_provenance(
+        source_label=("Yahoo Finance historical prices through yfinance 1.5.1; "
+                      "official supplied NSE snapshot used for terminal validation"),
+        data_mode="real_historical_price_research",
+        as_of_date=str(bundle.metadata["as_of_date"]), method=METHOD_BASELINE,
+        universe="Current NIFTY 50 universe as of supplied constituent file",
+        company_count=len(results), eligible_count=eligible_count,
+        ineligible_count=len(results) - eligible_count,
+    )
+    provenance.update({
+        "bundle_fingerprint": bundle.fingerprint,
+        "historical_provider": PROVIDER,
+        "adjustment_series": PRICE_SERIES,
+        "reliance_audit_status": bundle.metadata.get("reliance_audit_status"),
+    })
+    provenance["warnings"].extend([
+        "Real historical prices use the current NIFTY 50 universe; this is not a survivorship-bias-free historical universe.",
+        "This is not a walk-forward backtest and makes no profitability claim.",
+        "Corporate-action handling comes from the selected upstream adjusted series; this project applies no custom adjustment.",
+        "Yahoo adjusted prices include upstream dividend adjustments and are not claimed to reproduce the paper's source-price semantics.",
+    ])
+    return {
+        "method": METHOD_BASELINE, "results": results,
+        "export_csv": pd.DataFrame(export_rows).to_csv(index=False, lineterminator="\n"),
+        "export_filename": "real_nifty50_baseline_v1_2026-08-07.csv",
+        "provenance": provenance,
     }
 
 
@@ -323,6 +434,10 @@ def analyze_website_request(payload: dict[str, Any]) -> dict[str, Any]:
         raise TypeError("request must be a JSON object")
     if payload.get("input_source") == INPUT_OFFICIAL_NSE_SNAPSHOT:
         return _official_snapshot(payload)
+    if payload.get("input_source") == INPUT_PREPARED_REAL_BASELINE:
+        if payload.get("method", METHOD_BASELINE) != METHOD_BASELINE:
+            raise ValueError("prepared real historical data supports Baseline V1 only")
+        return _prepared_real_baseline()
     method = payload.get("method")
     if method not in METHODS:
         raise ValueError("method must be baseline_v1 or research_v2")

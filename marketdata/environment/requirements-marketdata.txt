@@ -1,0 +1,2 @@
+yfinance==1.5.1
+scipy==1.18.0

@@ -1,0 +1,20 @@
+{
+  "environment": ".venv-marketdata",
+  "isolated_from_product_and_research_environments": true,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.4",
+  "purpose": "Online acquisition only; prepared-bundle website execution does not import yfinance",
+  "repair_dependency_note": "scipy==1.18.0 is pinned because yfinance 1.5.1 repair=True imports scipy",
+  "selected_packages": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "scipy": "1.18.0",
+    "yfinance": "1.5.1"
+  },
+  "status": "installed_and_import_verified",
+  "upstream": {
+    "data_use_caveat": "Yahoo Finance data is intended for research, education, and personal-use contexts; upstream/source terms apply.",
+    "project": "https://github.com/ranaroussi/yfinance",
+    "software_license": "Apache-2.0"
+  }
+}

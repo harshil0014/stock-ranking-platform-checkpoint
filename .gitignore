@@ -9,6 +9,8 @@ data/output/*
 *.egg-info/
 .venv-qlib/
 .venv-tra/
+.venv-marketdata/
+data/marketdata/
 research/datasets/
 research/clones/
 research/cache/
