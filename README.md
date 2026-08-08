@@ -9,6 +9,25 @@ The repository implements **Baseline V1** and the offline, point-in-time
 **Research V2** scoring engine. It does not fetch live data, rank sectors,
 construct portfolios, backtest results, or make investment recommendations.
 
+## Local research website
+
+Launch the professor-facing offline demonstration from the repository root:
+
+```powershell
+.\\.venv\\Scripts\\python.exe -m stock_ranker.webapp --port 8765
+```
+
+Then open `http://127.0.0.1:8765` in Chrome. The dependency-free local server
+binds only to loopback, uploads CSV content in memory, and calls the accepted
+Baseline V1 and Research V2 APIs without changing their calculations.
+
+The committed built-in demonstration is always labelled **SYNTHETIC RESEARCH
+TEST**. Local real files may be uploaded through the canonical V1 or V2
+contracts. Baseline snapshots cannot be labelled historical point-in-time;
+that label is permitted only for Research V2 inputs carrying the required
+price dates and fundamental availability dates. The website fetches no market
+data and makes no investment recommendation.
+
 ## What Baseline V1 means
 
 The source research discusses four signals: one-year price growth, three-year
