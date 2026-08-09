@@ -1,0 +1,37 @@
+{
+  "amendment_created_before_outcome_acquisition": true,
+  "amendment_identifier": "walk_forward_validation_protocol_amendment_001",
+  "amendment_status": "preregistered_pre_outcome_clarification",
+  "amendment_version": 1,
+  "clarification": {
+    "evaluation_grouping_tier": "Official NSE Indices Sector",
+    "future_sector_date_evaluation_grouping": "historical_sector",
+    "industry_source_provenance_preserved": true,
+    "mapping_rule": "Map the verbatim MCWB Industry value through the historical official NSE Indices classification structure applicable at the ranking cutoff; unresolved mappings fail rather than fall back or use fuzzy matching.",
+    "source_field": "MCWB Industry",
+    "target_field": "historical_sector"
+  },
+  "discovery": {
+    "decision_used_outcomes": false,
+    "observed_issue": "The blind implementation passed the MCWB Industry field directly into the engines as sector, producing 27, 29, 28, and 30 Baseline groups.",
+    "reason": "Predictor-only feasibility inspection showed that the preregistered sector-date metric requires the higher official NSE Indices Sector tier rather than the more granular MCWB Industry labels."
+  },
+  "immutable_items": [
+    "primary sector-date Spearman Rank IC metric",
+    "ranking dates",
+    "future-return horizons",
+    "historical constituent membership rules",
+    "Baseline V1 formulas and ranking behavior",
+    "Research V2 formulas, weights, eligibility and ranking behavior",
+    "price policy",
+    "accounting contract and fundamental policy"
+  ],
+  "parent_protocol": {
+    "identifier": "walk_forward_validation_protocol_v1",
+    "sha256": "a81278b799e1a61c3684f3b319fb14e2f6f0db6a2bdad1cd79b2ce13fd6f8576",
+    "version": 1
+  },
+  "primary_metric_changed": false,
+  "primary_metric_interpretation": "sector-date Spearman Rank IC, where sector means the official NSE Indices Sector tier applicable at each ranking cutoff",
+  "schema_version": 1
+}
