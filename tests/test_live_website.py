@@ -130,5 +130,67 @@ def test_live_http_routes_and_default_page() -> None:
             assert data["summary"]["all_nse_equities"] == 2397
         with urlopen(base + "/api/live/stock?ticker=RELIANCE", timeout=15) as response:
             assert json.load(response)["stock"]["ticker"] == "RELIANCE"
+        with urlopen(base + "/api/live/history?ticker=RELIANCE&range=1y", timeout=15) as response:
+            history = json.load(response)
+            assert history["available"] is True
+            assert history["ticker"] == "RELIANCE"
     finally:
         server.shutdown(); server.server_close(); thread.join(timeout=5)
+
+
+@pytest.mark.parametrize("selected_range", ["1m", "6m", "1y", "3y", "5y"])
+def test_live_history_ranges_are_safe_cached_and_end_at_the_snapshot(selected_range: str) -> None:
+    data = live_website.live_history("RELIANCE", selected_range)
+    assert data["available"] is True
+    assert data["point_count"] == len(data["points"])
+    assert data["points"] == sorted(data["points"], key=lambda item: item["date"])
+    assert data["end_date"] <= "2026-08-07"
+    assert all(point["adjusted_price"] > 0 for point in data["points"])
+    assert "prepared current-product history cache" in data["price_basis"]
+
+
+def test_live_history_never_calls_a_provider_and_handles_missing_cache(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(live_website, "LIVE_HISTORY_ROOT", tmp_path)
+    data = live_website.live_history("RELIANCE", "1y")
+    assert data["available"] is False
+    assert data["message"] == "Historical chart unavailable for this stock."
+    source = Path(live_website.__file__).read_text(encoding="utf-8")
+    assert "yfinance" not in source
+    assert "http" not in source
+
+
+@pytest.mark.parametrize("ticker", ["../RELIANCE", "A/B", "C:\\secret"])
+def test_live_history_rejects_path_traversal(ticker: str) -> None:
+    with pytest.raises(live_website.LiveWebsiteError, match="safe identifier"):
+        live_website.live_history(ticker, "1y")
+
+
+def test_live_stock_model_details_use_only_canonical_values_and_sector_peers() -> None:
+    data = live_website.live_stock("HINDUNILVR")
+    model = data["research_v2"]
+    assert model["eligible"] is True
+    assert model["peer_count"] == 4
+    assert model["sector_rank"] == 2
+    assert len(model["factor_details"]) == 9
+    assert sum(item["weight_percent"] for item in model["factor_details"]) == 100
+    assert sum(item["contribution"] for item in model["factor_details"]) == pytest.approx(model["score"])
+    assert {item["category"] for item in model["factor_details"]} == {"PRICE / GROWTH", "RISK", "FUNDAMENTALS"}
+    assert "full eligible" in data["rank_scope"]
+
+
+def test_filters_do_not_recompute_canonical_sector_ranks() -> None:
+    all_rows = live_website.live_overview("baseline_v1")["rows"]
+    small_auto = [row for row in all_rows if row["size_segment"] == "SMALL" and row["sector"] == "Automobile and Auto Components"]
+    canonical = {row["ticker"]: row["sector_rank"] for row in all_rows}
+    assert small_auto
+    assert all(row["sector_rank"] == canonical[row["ticker"]] for row in small_auto)
+
+
+def test_unified_ui_contains_price_chart_progressive_disclosure_and_neutral_language() -> None:
+    rendered = INDEX_HTML + APP_JS
+    for text in ("Adjusted Price History", "View model details", "View source evidence", "MODEL RANKING POSITION", "Beginner glossary", "View validation results"):
+        assert text in rendered
+    assert "Sector Rank is calculated across the full eligible sector" in rendered
+    lowered = rendered.lower()
+    for prohibited in ("strong buy", "fair value", "expected return", "risk score", "safety score"):
+        assert prohibited not in lowered

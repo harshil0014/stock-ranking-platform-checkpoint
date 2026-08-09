@@ -86,6 +86,18 @@ def test_validation_primary_is_canonical_and_secondary_is_separate() -> None:
     assert data["secondary"]["6"]["research_v2_rank_ic"]["mean"] == pytest.approx(0.6666666666666666)
     assert data["secondary"]["3"]["research_v2_rank_ic"]["mean"] == pytest.approx(0.16666666666666666)
     assert "not statistically conclusive" in data["interpretation"]
+    chart = {item["horizon_months"]: item for item in data["chart_data"]}
+    assert chart[3]["status"] == "SECONDARY"
+    assert chart[3]["research_v2_rank_ic"] == pytest.approx(0.16666666666666666)
+    assert chart[3]["matched_baseline_rank_ic"] == pytest.approx(0.3333333333333333)
+    assert chart[3]["research_v2_pairwise_accuracy"] == pytest.approx(0.5384615384615384)
+    assert chart[3]["matched_baseline_pairwise_accuracy"] == pytest.approx(0.5769230769230769)
+    assert chart[6]["status"] == "SECONDARY"
+    assert chart[12]["status"] == "PRIMARY"
+    assert chart[12]["research_v2_rank_ic"] == 0
+    assert chart[12]["matched_baseline_rank_ic"] == pytest.approx(-0.04465819873852043)
+    assert data["coverage_by_year"] == {"2022": 8, "2023": 4, "2024": 8, "2025": 16}
+    assert "Rank IC asks whether" in data["rank_ic_definition"]
 
 
 def test_corrupted_evaluation_fingerprint_is_rejected(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
@@ -106,6 +118,16 @@ def test_provenance_exposes_real_annual_report_evidence_without_inventing_pages(
     assert data["annual_report"]["annual_report_pdf_sha_256"]
     assert data["final_fundamentals"]["roce_source_page"] is not None
     assert data["final_fundamentals"]["debt_to_equity_source_page"] is not None
+    assert data["simple_evidence"]["roce"] == {
+        "value": data["final_fundamentals"]["roce_value"],
+        "page": data["final_fundamentals"]["roce_source_page"],
+    }
+    assert data["simple_evidence"]["debt_to_equity"] == {
+        "value": data["final_fundamentals"]["debt_to_equity_value"],
+        "page": data["final_fundamentals"]["debt_to_equity_source_page"],
+    }
+    assert data["simple_evidence"]["profit_page"] == data["final_fundamentals"]["profit_source_page"]
+    assert data["simple_evidence"]["available_before_ranking_date"] == "YES"
 
 
 def test_methodology_keeps_original_paper_and_project_extension_distinct() -> None:
@@ -127,6 +149,22 @@ def test_status_and_limitations_report_accepted_milestone_not_live_test_claim() 
     assert data["evaluation_reproduction"] == "9 files, byte-identical"
     assert data["cohort_sizes"] == {"2022": 8, "2023": 4, "2024": 8, "2025": 16}
     assert len(data["limitations"]) >= 7
+    assert data["plain_checks"] == [
+        "No future information enters historical rankings.",
+        "No company is silently replaced by a successor.",
+        "Missing data is excluded rather than guessed.",
+        "Repeated runs reproduce identical research artifacts.",
+    ]
+
+
+def test_research_home_tells_the_full_flow_and_model_boundary() -> None:
+    data = research_website.overview()
+    assert [item["title"] for item in data["story"]] == [
+        "Original method", "Software Baseline", "Research V2 extension",
+        "Point-in-time reconstruction", "Freeze predictions", "Reveal outcomes", "Compare rankings",
+    ]
+    assert "deterministic project operationalization" in data["model_comparison"]["boundary"]
+    assert "project extension" in data["model_comparison"]["boundary"]
 
 
 def test_missing_current_artifact_returns_controlled_state(monkeypatch: pytest.MonkeyPatch) -> None:

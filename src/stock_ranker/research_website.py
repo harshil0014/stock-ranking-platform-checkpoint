@@ -90,6 +90,20 @@ def overview() -> dict[str, Any]:
             "robustness_audit": "PASS",
             "primary_sample": "3 sector-date observations",
         },
+        "story": [
+            {"title": "Original method", "text": "Four price-history signals establish the research starting point."},
+            {"title": "Software Baseline", "text": "The signals are implemented deterministically as Baseline V1."},
+            {"title": "Research V2 extension", "text": "Risk, audited fundamentals and strict eligibility are added."},
+            {"title": "Point-in-time reconstruction", "text": "Only information available at each historical cutoff is admitted."},
+            {"title": "Freeze predictions", "text": "Ranks and cohorts are fixed before outcomes are inspected."},
+            {"title": "Reveal outcomes", "text": "Future prices are added only after the prediction evidence is frozen."},
+            {"title": "Compare rankings", "text": "Both methods are evaluated on matched sector cohorts."},
+        ],
+        "model_comparison": {
+            "baseline": ["YoY", "3Y CAGR", "5Y CAGR", "recorded-high recency", "within-sector ranking"],
+            "research_v2_adds": ["volatility", "drawdown", "ROCE", "debt/equity", "profit growth", "point-in-time eligibility", "provenance"],
+            "boundary": "Baseline V1 is a deterministic project operationalization of the original paper's ranking signals. Research V2 is a project extension.",
+        },
     }
 
 
@@ -208,6 +222,7 @@ def historical(year_value: str) -> dict[str, Any]:
         "eligible_count": len(v2), "excluded_count": len(rows) - len(v2),
         "universe_source": "Official historical NIFTY 50 MCWB snapshot",
         "classification_document": provenance["classification_document"],
+        "coverage_by_year": COHORT_COUNTS,
         "rows": _records(pd.DataFrame(rows)),
         "separation_warning": (
             "WHAT THE MODEL KNEW THEN. Future outcomes are deliberately excluded from this prediction table."
@@ -250,6 +265,14 @@ def validation() -> dict[str, Any]:
             "Walk-forward evaluation artifact has not been prepared locally.",
             "Run marketdata/runners/evaluate_walk_forward.py against the frozen blind bundle and cached outcomes.",
         ) | {"diagnostic": type(exc).__name__}
+    horizons = {"3": summary["horizons"]["3"], "6": summary["horizons"]["6"], "12": summary["horizons"]["12"]}
+    chart_data = [{
+        "horizon_months": int(months), "status": "PRIMARY" if months == "12" else "SECONDARY",
+        "research_v2_rank_ic": item["research_v2_rank_ic"]["mean"],
+        "matched_baseline_rank_ic": item["matched_baseline_rank_ic"]["mean"],
+        "research_v2_pairwise_accuracy": item["pairwise"]["research_v2"]["pairwise_accuracy"],
+        "matched_baseline_pairwise_accuracy": item["pairwise"]["matched_baseline"]["pairwise_accuracy"],
+    } for months, item in horizons.items()]
     return {
         "available": True,
         "protocol": {"identifier": "walk_forward_validation_protocol_v1", "sha256": PROTOCOL_SHA256},
@@ -262,6 +285,19 @@ def validation() -> dict[str, Any]:
         "pairwise": _records(pairwise),
         "top_stock_excess": _records(top),
         "top_bottom_spread": _records(spread),
+        "chart_data": chart_data,
+        "coverage_by_year": COHORT_COUNTS,
+        "plain_findings": [
+            "At 3 months, the Baseline performed somewhat better.",
+            "At 6 months, Research V2 performed better in this small sample.",
+            "At the preregistered 12-month horizon, Research V2 was only slightly higher.",
+            "The 12-month primary test had only three valid sector observations, so the evidence is preliminary.",
+        ],
+        "rank_ic_definition": (
+            "Rank IC asks whether stocks ranked higher by the model also tended to have higher future returns "
+            "within the same sector. Positive values tended to align, zero indicates little ordering relationship, "
+            "and negative values tended to oppose future ordering."
+        ),
         "interpretation": (
             "The first historical experiment is horizon-dependent. Research V2 was weaker at 3 months, stronger at 6 months, and marginally stronger under the preregistered 12-month primary comparison. The primary comparison contains only three valid sector-date observations and is not statistically conclusive."
         ),
@@ -276,6 +312,8 @@ def provenance(ticker_value: str) -> dict[str, Any]:
         return current
     stock = current["stock"]
     explanation = stock.get("explanation", {})
+    fundamentals = explanation.get("final_research_v2_fundamentals") or {}
+    report = explanation.get("nse_annual_report_fundamental_provenance") or {}
     return {
         "available": True, "ticker": ticker, "company": stock["company"],
         "eligible": stock["eligible"], "reason": stock["reason"],
@@ -286,6 +324,17 @@ def provenance(ticker_value: str) -> dict[str, Any]:
         "final_fundamentals": explanation.get("final_research_v2_fundamentals"),
         "xbrl_corroboration": explanation.get("integrated_filing_xbrl_evidence_corroborating"),
         "unavailable_message": None if stock["eligible"] else "Accepted fundamental provenance is unavailable because this stock is excluded.",
+        "simple_evidence": None if not stock["eligible"] else {
+            "heading": "Verified Fundamental Evidence",
+            "roce": {"value": fundamentals.get("roce_value"), "page": fundamentals.get("roce_source_page")},
+            "debt_to_equity": {"value": fundamentals.get("debt_to_equity_value"), "page": fundamentals.get("debt_to_equity_source_page")},
+            "profit_current": fundamentals.get("fy2025_26_pat_or_profit"),
+            "profit_prior": fundamentals.get("fy2024_25_pat_or_profit"),
+            "profit_growth": fundamentals.get("profit_growth_yoy"),
+            "profit_page": fundamentals.get("profit_source_page"),
+            "source": "NSE annual report",
+            "available_before_ranking_date": "YES" if report.get("exchange_dissemination_timestamp") else None,
+        },
     }
 
 
@@ -317,6 +366,12 @@ def status() -> dict[str, Any]:
             "Tie handling": "PASS", "Endpoint policy": "PASS",
             "Cache/fingerprint corruption": "PASS",
         },
+        "plain_checks": [
+            "No future information enters historical rankings.",
+            "No company is silently replaced by a successor.",
+            "Missing data is excluded rather than guessed.",
+            "Repeated runs reproduce identical research artifacts.",
+        ],
         "blind_reproduction": "46 files, byte-identical",
         "evaluation_reproduction": "9 files, byte-identical",
         "cohort_sizes": COHORT_COUNTS,

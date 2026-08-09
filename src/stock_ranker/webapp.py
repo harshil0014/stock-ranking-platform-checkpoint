@@ -10,7 +10,7 @@ from typing import Any
 from urllib.parse import parse_qs, urlparse
 
 from stock_ranker.web_assets import APP_JS, INDEX_HTML, STYLES_CSS
-from stock_ranker.live_website import LiveWebsiteError, live_overview, live_stock
+from stock_ranker.live_website import LiveWebsiteError, live_history, live_overview, live_stock
 from stock_ranker.research_website import (
     ResearchWebsiteError,
     historical,
@@ -70,6 +70,9 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
         live_routes = {
             "/api/live/overview": lambda: live_overview(query.get("model", ["baseline_v1"])[0]),
             "/api/live/stock": lambda: live_stock(query.get("ticker", [""])[0]),
+            "/api/live/history": lambda: live_history(
+                query.get("ticker", [""])[0], query.get("range", ["1y"])[0]
+            ),
         }
         if path in live_routes:
             try:
