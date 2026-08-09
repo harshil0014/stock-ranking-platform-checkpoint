@@ -11,7 +11,7 @@ freeze real historical prices; normal product execution never fetches them.
 The project does not rank sectors, construct portfolios, backtest results, or
 make investment recommendations.
 
-## Local research website
+## Live Market and Research Lab website
 
 Launch the professor-facing offline demonstration from the repository root:
 
@@ -19,20 +19,45 @@ Launch the professor-facing offline demonstration from the repository root:
 .\\.venv\\Scripts\\python.exe -m stock_ranker.webapp --port 8765
 ```
 
-Then open `http://127.0.0.1:8765` in Chrome. The dependency-free local server
-binds only to loopback, uploads CSV content in memory, and calls the accepted
-Baseline V1 and Research V2 APIs without changing their calculations.
+Then open `http://127.0.0.1:8765/`. **LIVE MARKET** is the default practical
+screen; **RESEARCH LAB** preserves the frozen professor-facing evidence. The
+dependency-free local server binds only to loopback and reads prepared outputs without
+changing Baseline V1, Research V2, or walk-forward calculations. Its Overview,
+Rankings, Historical, Validation, Provenance, Methodology, and Status views are
+designed for a short professor or competition demonstration. See
+`docs/professor_competition_demo.md` for the walkthrough and artifact requirements.
 
-The committed built-in demonstration is always labelled **SYNTHETIC RESEARCH
-TEST**. Local real files may be uploaded through the canonical V1 or V2
-contracts. Baseline snapshots cannot be labelled historical point-in-time;
-that label is permitted only for Research V2 inputs carrying the required
-price dates and fundamental availability dates. The website fetches no market
-data and makes no investment recommendation.
+The legacy analysis API retains its committed **SYNTHETIC RESEARCH TEST**
+fixtures and canonical upload contracts for regression compatibility. The
+professor interface itself does not fabricate fallback values: unavailable or
+integrity-mismatched local artifacts produce a controlled status. Normal page
+navigation fetches no market data and makes no investment recommendation.
 
-For a one-day official market view, choose **Official NSE / NIFTY snapshot
-files**, upload an official NIFTY constituent CSV and its corresponding NSE
-CM-UDiFF Common Bhavcopy Final ZIP, and select **Import snapshot**. The adapter
+LIVE MARKET reads `data/live_market/current` once per request from an ignored,
+fingerprinted product bundle. The current prepared workflow uses the official
+NSE “Securities available for Equity segment” list, official NSE Indices size
+memberships, and the official NSE CM-UDiFF EOD bhavcopy. It calls the universe
+**ALL NSE**, not all Indian exchanges. ETFs, mutual funds, REITs, InvITs, debt,
+preference shares, warrants, and SME securities are outside this main-board
+ordinary-equity universe. Unclassified or data-incomplete securities remain
+browsable and are never assigned invented ranks.
+
+Prepare or update the bundle outside the web server, using the isolated market
+data environment:
+
+```powershell
+.\.venv-marketdata\Scripts\python.exe marketdata\runners\prepare_live_market.py
+```
+
+The runner caches one provider-history CSV per exact `.NS` symbol, resumes
+after interruption, uses bounded retries, and writes the final CSV and manifest
+atomically. `--no-download` rebuilds from cache; `--download-limit N` supports a
+bounded acquisition smoke. Page navigation never starts downloads. See
+[the LIVE MARKET data contract](docs/live_market.md).
+
+The legacy `/api/analyze` endpoint retains the one-day official market adapter
+for an official NIFTY constituent CSV and corresponding NSE CM-UDiFF Common
+Bhavcopy Final ZIP. The adapter
 joins `Symbol + Series + ISIN Code` to `TckrSymb + SctySrs + ISIN`, validates
 every constituent, and exports only the canonical matched snapshot. It never
 extracts the ZIP into the repository and never fetches live data.
@@ -41,10 +66,9 @@ This real snapshot view deliberately does not run Baseline V1 or Research V2.
 One trading day cannot supply YoY, three- or five-year CAGR, recorded-high
 recency, or point-in-time fundamentals.
 
-For the prepared real demonstration, choose **Prepared real NIFTY 50
-historical dataset**, then **Run analysis**. The website validates the local
-frozen bundle and runs the accepted Baseline V1 engine without internet
-access. It shows 1Y/3Y/5Y anchors, the recorded-study-period high, the four
+For the prepared real demonstration, open **Rankings** and choose **Baseline
+V1**. The website validates the local frozen bundle and reads the accepted
+Baseline V1 result without internet access. Its stock explanation shows the four
 metric ranks, combined score, sector rank, exclusions, provenance, and a real
 NIFTY 50 CSV export.
 
@@ -57,8 +81,8 @@ NIFTY 50 snapshot, not a survivorship-bias-free historical universe, and the
 result is not a walk-forward backtest. See
 [the real-history methodology](docs/real_historical_baseline.md).
 
-For the point-in-time accounting view, choose **Prepared real NIFTY 50
-Research V2 dataset**. The offline view combines the accepted frozen price
+For the point-in-time accounting view, choose **Research V2** in Rankings and
+inspect a company or open Provenance. The offline view combines the accepted frozen price
 bundle with official NSE Integrated Filing metadata and XBRL selected using
 exchange dissemination time through `2026-08-07 15:30:00 IST`. It displays
 every company, explicit exclusions, filing provenance, and a rank-only

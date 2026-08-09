@@ -7,8 +7,21 @@ from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
 from typing import Any
+from urllib.parse import parse_qs, urlparse
 
 from stock_ranker.web_assets import APP_JS, INDEX_HTML, STYLES_CSS
+from stock_ranker.live_website import LiveWebsiteError, live_overview, live_stock
+from stock_ranker.research_website import (
+    ResearchWebsiteError,
+    historical,
+    methodology,
+    overview,
+    provenance as research_provenance,
+    rankings,
+    status as research_status,
+    stock_explanation,
+    validation,
+)
 from stock_ranker.website import analyze_website_request
 
 
@@ -35,18 +48,68 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
         self._send(status, body, "application/json; charset=utf-8")
 
     def do_GET(self) -> None:  # noqa: N802 - required by BaseHTTPRequestHandler
+        request = urlparse(self.path)
+        path = request.path
+        query = parse_qs(request.query)
         routes = {
             "/": (INDEX_HTML, "text/html; charset=utf-8"),
+            "/live": (INDEX_HTML, "text/html; charset=utf-8"),
+            "/overview": (INDEX_HTML, "text/html; charset=utf-8"),
+            "/rankings": (INDEX_HTML, "text/html; charset=utf-8"),
+            "/historical": (INDEX_HTML, "text/html; charset=utf-8"),
+            "/validation": (INDEX_HTML, "text/html; charset=utf-8"),
+            "/provenance": (INDEX_HTML, "text/html; charset=utf-8"),
+            "/methodology": (INDEX_HTML, "text/html; charset=utf-8"),
+            "/status": (INDEX_HTML, "text/html; charset=utf-8"),
             "/app.js": (APP_JS, "text/javascript; charset=utf-8"),
             "/styles.css": (STYLES_CSS, "text/css; charset=utf-8"),
         }
-        if self.path == "/api/health":
+        if path == "/api/health":
             self._json(HTTPStatus.OK, {"status": "ok", "service": "stock-ranking-website"})
             return
-        if self.path not in routes:
+        live_routes = {
+            "/api/live/overview": lambda: live_overview(query.get("model", ["baseline_v1"])[0]),
+            "/api/live/stock": lambda: live_stock(query.get("ticker", [""])[0]),
+        }
+        if path in live_routes:
+            try:
+                self._json(HTTPStatus.OK, live_routes[path]())
+            except LiveWebsiteError as exc:
+                self._json(HTTPStatus.BAD_REQUEST, {"available": False, "status": "LIVE MARKET REQUEST ERROR", "error": str(exc)})
+            except (FileNotFoundError, KeyError, TypeError, ValueError, json.JSONDecodeError) as exc:
+                self._json(HTTPStatus.INTERNAL_SERVER_ERROR, {
+                    "available": False, "status": "CONTROLLED LIVE MARKET API ERROR",
+                    "error": f"Prepared live-market response is unavailable ({type(exc).__name__}).",
+                })
+            return
+        research_routes = {
+            "/api/research/overview": lambda: overview(),
+            "/api/research/rankings": lambda: rankings(query.get("model", ["research_v2"])[0]),
+            "/api/research/stock": lambda: stock_explanation(
+                query.get("model", ["research_v2"])[0], query.get("ticker", [""])[0]
+            ),
+            "/api/research/historical": lambda: historical(query.get("year", [""])[0]),
+            "/api/research/validation": lambda: validation(),
+            "/api/research/provenance": lambda: research_provenance(query.get("ticker", [""])[0]),
+            "/api/research/methodology": lambda: methodology(),
+            "/api/research/status": lambda: research_status(),
+        }
+        if path in research_routes:
+            try:
+                payload = research_routes[path]()
+                self._json(HTTPStatus.OK, payload)
+            except ResearchWebsiteError as exc:
+                self._json(HTTPStatus.BAD_REQUEST, {"available": False, "status": "INTEGRITY OR REQUEST ERROR", "error": str(exc)})
+            except (FileNotFoundError, KeyError, TypeError, ValueError, json.JSONDecodeError) as exc:
+                self._json(HTTPStatus.INTERNAL_SERVER_ERROR, {
+                    "available": False, "status": "CONTROLLED RESEARCH API ERROR",
+                    "error": f"Prepared research response is unavailable ({type(exc).__name__}).",
+                })
+            return
+        if path not in routes:
             self._json(HTTPStatus.NOT_FOUND, {"error": "Not found"})
             return
-        text, content_type = routes[self.path]
+        text, content_type = routes[path]
         self._send(HTTPStatus.OK, text.encode("utf-8"), content_type)
 
     def do_POST(self) -> None:  # noqa: N802 - required by BaseHTTPRequestHandler
