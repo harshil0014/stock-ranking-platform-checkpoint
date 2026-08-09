@@ -1,0 +1,61 @@
+{
+  "classification_documents": [
+    {
+      "applicable_ranking_dates": ["2022-08-05"],
+      "document_date": "2022-04",
+      "document_id": "nse_indices_industry_classification_structure_2022_04",
+      "sha256": "428e90ab2681a62d611362bb1d8a3bbb0d301c2a2ff198c9d1280ec2854ec21c",
+      "source": "NSE Indices Limited",
+      "url": "https://niftyindices.com/docs/default-source/default-document-library/nse-indices_industry-classification-structure-2022-04bcddfa4c99bc6f449e1fff0200847f3c.pdf?sfvrsn=d0619534_2"
+    },
+    {
+      "applicable_ranking_dates": ["2023-08-07", "2024-08-07", "2025-08-07"],
+      "document_date": "2023-07",
+      "document_id": "nse_indices_industry_classification_structure_2023_07",
+      "sha256": "8ae58cbd10d7dd5184d76cfec6486f91c019026c8de329432b69c54ff7235f8b",
+      "source": "NSE Indices Limited",
+      "url": "https://www.niftyindices.com/docs/default-source/default-document-library/nse-indices_industry-classification-structure-2023-07.pdf?sfvrsn=74449434_2"
+    }
+  ],
+  "mapping_policy": "Exact declarative crosswalk from the verbatim legacy MCWB Industry label to the Sector containing its corresponding official Basic Industry. No fuzzy matching or current-company classification is permitted.",
+  "mappings": [
+    {"historical_industry":"ALUMINIUM","official_basic_industry":"Aluminium","official_basic_industry_code":"IN010302001","historical_sector":"Metals & Mining","official_sector_code":"IN0103"},
+    {"historical_industry":"CEMENT","official_basic_industry":"Cement & Cement Products","official_basic_industry_code":"IN010203001","historical_sector":"Construction Materials","official_sector_code":"IN0102"},
+    {"historical_industry":"CIGARETTES & RELATED PRODUCTS","official_basic_industry":"Cigarettes & Tobacco Products","official_basic_industry_code":"IN040103001","historical_sector":"Fast Moving Consumer Goods","official_sector_code":"IN0401"},
+    {"historical_industry":"COMPUTERS - SOFTWARE","official_basic_industry":"Computers - Software & Consulting","official_basic_industry_code":"IN080101001","historical_sector":"Information Technology","official_sector_code":"IN0801"},
+    {"historical_industry":"CONSUMER FOOD","official_basic_industry":"Packaged Foods","official_basic_industry_code":"IN040104004","historical_sector":"Fast Moving Consumer Goods","official_sector_code":"IN0401"},
+    {"historical_industry":"DEFENSE","official_basic_industry":"Aerospace & Defense","official_basic_industry_code":"IN070201001","historical_sector":"Capital Goods","official_sector_code":"IN0702"},
+    {"historical_industry":"DIVERSIFIED","official_basic_industry":"Diversified","official_basic_industry_code":"IN120101001","historical_sector":"Diversified","official_sector_code":"IN1201"},
+    {"historical_industry":"E-RETAIL/ E-COMMERCE","official_basic_industry":"E-Retail/ E-Commerce","official_basic_industry_code":"IN020603004","historical_sector":"Consumer Services","official_sector_code":"IN0206"},
+    {"historical_industry":"ENGINEERING-DESIGNING-CONSTRUCTION","official_basic_industry":"Engineering, Designing & Construction","official_basic_industry_code":"IN070101002","document_overrides":{"nse_indices_industry_classification_structure_2023_07":{"official_basic_industry":"Civil Construction","official_basic_industry_code":"IN070101001"}},"historical_sector":"Construction","official_sector_code":"IN0701"},
+    {"historical_industry":"GEMS, JEWELLERY AND WATCHES","official_basic_industry":"Gems, Jewellery And Watches","official_basic_industry_code":"IN020201005","historical_sector":"Consumer Durables","official_sector_code":"IN0202"},
+    {"historical_industry":"GENERAL INSURANCE","official_basic_industry":"General Insurance","official_basic_industry_code":"IN050104001","historical_sector":"Financial Services","official_sector_code":"IN0501"},
+    {"historical_industry":"HOSPITAL","official_basic_industry":"Hospital","official_basic_industry_code":"IN060103001","historical_sector":"Healthcare","official_sector_code":"IN0601"},
+    {"historical_industry":"HOUSING FINANCE","official_basic_industry":"Housing Finance Company","official_basic_industry_code":"IN050101002","historical_sector":"Financial Services","official_sector_code":"IN0501"},
+    {"historical_industry":"INDUSTRIAL MINERALS","official_basic_industry":"Industrial Minerals","official_basic_industry_code":"IN010304001","historical_sector":"Metals & Mining","official_sector_code":"IN0103"},
+    {"historical_industry":"LIFE INSURANCE","official_basic_industry":"Life Insurance","official_basic_industry_code":"IN050104002","historical_sector":"Financial Services","official_sector_code":"IN0501"},
+    {"historical_industry":"MOTOR CYCLES/SCOOTERS","official_basic_industry":"2/3 Wheelers","official_basic_industry_code":"IN020101002","historical_sector":"Automobile and Auto Components","official_sector_code":"IN0201"},
+    {"historical_industry":"NBFC","official_basic_industry":"Non Banking Financial Company (NBFC)","official_basic_industry_code":"IN050101004","historical_sector":"Financial Services","official_sector_code":"IN0501"},
+    {"historical_industry":"Non Banking Financial Company (NBFC)","official_basic_industry":"Non Banking Financial Company (NBFC)","official_basic_industry_code":"IN050101004","historical_sector":"Financial Services","official_sector_code":"IN0501"},
+    {"historical_industry":"OIL EXPLORATION","official_basic_industry":"Oil Exploration & Production","official_basic_industry_code":"IN030102001","historical_sector":"Oil, Gas & Consumable Fuels","official_sector_code":"IN0301"},
+    {"historical_industry":"PAINTS","official_basic_industry":"Paints","official_basic_industry_code":"IN020201015","historical_sector":"Consumer Durables","official_sector_code":"IN0202"},
+    {"historical_industry":"PASSENGER/UTILITY VEHICLES","official_basic_industry":"Passenger Cars & Utility Vehicles","official_basic_industry_code":"IN020101001","historical_sector":"Automobile and Auto Components","official_sector_code":"IN0201"},
+    {"historical_industry":"PESTICIDES AND AGROCHEMICALS","official_basic_industry":"Pesticides & Agrochemicals","official_basic_industry_code":"IN010102002","historical_sector":"Chemicals","official_sector_code":"IN0101"},
+    {"historical_industry":"PHARMACEUTICALS","official_basic_industry":"Pharmaceuticals","official_basic_industry_code":"IN060101001","historical_sector":"Healthcare","official_sector_code":"IN0601"},
+    {"historical_industry":"PORT","official_basic_industry":"Port & Port services","official_basic_industry_code":"IN090103002","historical_sector":"Services","official_sector_code":"IN0901"},
+    {"historical_industry":"POWER","official_basic_industry":"Power Generation","official_basic_industry_code":"IN110101004","document_overrides":{"nse_indices_industry_classification_structure_2022_04":{"official_basic_industry":"Electric Utilities","official_basic_industry_code":"IN110101001"}},"historical_sector":"Power","official_sector_code":"IN1101"},
+    {"historical_industry":"POWER - TRANSMISSION","official_basic_industry":"Power - Transmission","official_basic_industry_code":"IN110101003","historical_sector":"Power","official_sector_code":"IN1101"},
+    {"historical_industry":"PRIVATE SECTOR BANK","official_basic_industry":"Private Sector Bank","official_basic_industry_code":"IN050102002","historical_sector":"Financial Services","official_sector_code":"IN0501"},
+    {"historical_industry":"PUBLIC SECTOR BANK","official_basic_industry":"Public Sector Bank","official_basic_industry_code":"IN050102001","historical_sector":"Financial Services","official_sector_code":"IN0501"},
+    {"historical_industry":"REFINERIES/MARKETING","official_basic_industry":"Refineries & Marketing","official_basic_industry_code":"IN030103001","historical_sector":"Oil, Gas & Consumable Fuels","official_sector_code":"IN0301"},
+    {"historical_industry":"SPECIALITY RETAIL","official_basic_industry":"Speciality Retail","official_basic_industry_code":"IN020603001","historical_sector":"Consumer Services","official_sector_code":"IN0206"},
+    {"historical_industry":"STEEL","official_basic_industry":"Iron & Steel","official_basic_industry_code":"IN010301004","historical_sector":"Metals & Mining","official_sector_code":"IN0103"},
+    {"historical_industry":"TEA &  COFFEE","official_basic_industry":"Tea & Coffee","official_basic_industry_code":"IN040101003","historical_sector":"Fast Moving Consumer Goods","official_sector_code":"IN0401"},
+    {"historical_industry":"TELECOM - SERVICES","official_basic_industry":"Telecom - Cellular & Fixed line services","official_basic_industry_code":"IN100101001","historical_sector":"Telecommunication","official_sector_code":"IN1001"},
+    {"historical_industry":"TRADING - MINERALS/ MINING","official_basic_industry":"Trading - Minerals","official_basic_industry_code":"IN010305002","historical_sector":"Metals & Mining","official_sector_code":"IN0103"}
+  ],
+  "schema_version": 1,
+  "source_field": "Industry",
+  "target_tier": "Sector",
+  "unresolved_policy": "Reject the snapshot; partial or fuzzy mapping is forbidden."
+}

@@ -1,0 +1,17 @@
+{
+  "aliases": [],
+  "forbidden_substitutions": [
+    {
+      "historical_symbol": "HDFC",
+      "prohibited_provider_symbol": "HDFCBANK.NS",
+      "reason": "HDFC Ltd. must retain its historical security identity and cannot be replaced by its successor."
+    },
+    {
+      "historical_symbol": "DUMMYREL",
+      "prohibited_provider_symbol": "JIOFIN.NS",
+      "reason": "The July 2023 synthetic corporate-action placeholder is not JIOFIN investable membership."
+    }
+  ],
+  "normal_rule": "Append .NS to the exact official historical NSE symbol.",
+  "schema_version": 1
+}

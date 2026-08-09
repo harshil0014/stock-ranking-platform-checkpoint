@@ -11,6 +11,7 @@ data/output/*
 .venv-tra/
 .venv-marketdata/
 data/marketdata/
+data/walk_forward/
 research/datasets/
 research/clones/
 research/cache/
