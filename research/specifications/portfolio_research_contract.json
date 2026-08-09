@@ -1,0 +1,9 @@
+{
+  "formation_date": null,
+  "holding_period": null,
+  "ranking_model": null,
+  "reason": "Four sparse annual cohorts do not provide preregistered top-K, rebalancing, benchmark, transaction-cost, or formation-time covariance choices.",
+  "status": "PORTFOLIO HISTORICAL EVALUATION NOT YET SUPPORTED BY CURRENT DATA",
+  "transaction_cost_assumption": null,
+  "weighting_algorithm": null
+}

@@ -1,0 +1,61 @@
+{
+  "entries": [
+    {
+      "adapter_owned_by_project": "Exact frozen signal/outcome mapping and comparison audit",
+      "core_ranking": false,
+      "license": "Apache-2.0",
+      "name": "Alphalens Reloaded",
+      "purpose": "Independent grouped factor IC and descriptive quantile diagnostics",
+      "status": "VERIFIED",
+      "upstream": "https://github.com/stefan-jansen/alphalens-reloaded",
+      "upstream_functionality": "Factor information coefficient and mean return by quantile",
+      "version": "0.4.6"
+    },
+    {
+      "adapter_owned_by_project": "Semantic-equivalence classification and canonical value comparison",
+      "core_ranking": false,
+      "license": "Apache-2.0",
+      "name": "Empyrical Reloaded",
+      "purpose": "Independent risk/return metric verification",
+      "status": "VERIFIED",
+      "upstream": "https://github.com/stefan-jansen/empyrical-reloaded",
+      "upstream_functionality": "Annualized volatility, maximum drawdown and annual return",
+      "version": "0.5.12"
+    },
+    {
+      "adapter_owned_by_project": "Feasibility contract only; no portfolio was constructed",
+      "core_ranking": false,
+      "license": "BSD-3-Clause",
+      "name": "skfolio",
+      "purpose": "Experimental downstream portfolio research",
+      "status": "EXPERIMENTAL / DEFERRED",
+      "upstream": "https://github.com/skfolio/skfolio",
+      "upstream_functionality": "Portfolio optimization",
+      "version": "0.20.1"
+    },
+    {
+      "adapter_owned_by_project": "Deferred boundary only",
+      "core_ranking": false,
+      "license": "Apache-2.0",
+      "name": "QuantStats",
+      "purpose": "Portfolio analytics only after a defensible return stream exists",
+      "status": "DEFERRED",
+      "upstream": "https://github.com/ranaroussi/quantstats",
+      "upstream_functionality": "Portfolio performance analytics",
+      "version": "0.0.81"
+    },
+    {
+      "adapter_owned_by_project": "Offline synthetic protocols, adapters and evidence harness",
+      "core_ranking": false,
+      "license": "MIT",
+      "name": "Microsoft Qlib",
+      "purpose": "Separate synthetic ML benchmark reproductions",
+      "status": "VERIFIED / PARTIAL",
+      "upstream": "https://github.com/microsoft/qlib",
+      "upstream_functionality": "Official Linear, LightGBM, TRA and DoubleEnsemble models",
+      "version": "0.9.7"
+    }
+  ],
+  "ranking_boundary": "None of these libraries defines or changes accepted Baseline V1 or Research V2 scoring.",
+  "schema_version": "1.0"
+}

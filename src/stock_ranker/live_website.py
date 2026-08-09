@@ -299,6 +299,11 @@ def live_stock(ticker_value: str) -> dict[str, Any]:
         "simple_explanation": (
             "Research V2 ranks this company relative to eligible companies in the same sector "
             "using price performance, risk and audited fundamentals."
+            if bool(row["v2_eligible"])
+            else (
+                "Research V2 requires price, risk and audited fundamental evidence. "
+                f"This company is not currently eligible: {row['v2_reason']}"
+            )
         ),
         "bundle_fingerprint": bundle.fingerprint,
         "warning": "Latest available research snapshot; not investment advice.",

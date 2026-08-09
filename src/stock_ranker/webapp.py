@@ -16,6 +16,7 @@ from stock_ranker.research_website import (
     historical,
     methodology,
     overview,
+    quant_lab,
     provenance as research_provenance,
     rankings,
     status as research_status,
@@ -61,6 +62,7 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
             "/provenance": (INDEX_HTML, "text/html; charset=utf-8"),
             "/methodology": (INDEX_HTML, "text/html; charset=utf-8"),
             "/status": (INDEX_HTML, "text/html; charset=utf-8"),
+            "/quant-lab": (INDEX_HTML, "text/html; charset=utf-8"),
             "/app.js": (APP_JS, "text/javascript; charset=utf-8"),
             "/styles.css": (STYLES_CSS, "text/css; charset=utf-8"),
         }
@@ -96,6 +98,7 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
             "/api/research/provenance": lambda: research_provenance(query.get("ticker", [""])[0]),
             "/api/research/methodology": lambda: methodology(),
             "/api/research/status": lambda: research_status(),
+            "/api/research/quant-lab": lambda: quant_lab(),
         }
         if path in research_routes:
             try:

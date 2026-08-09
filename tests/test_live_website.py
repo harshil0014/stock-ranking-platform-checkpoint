@@ -188,7 +188,7 @@ def test_filters_do_not_recompute_canonical_sector_ranks() -> None:
 
 def test_unified_ui_contains_price_chart_progressive_disclosure_and_neutral_language() -> None:
     rendered = INDEX_HTML + APP_JS
-    for text in ("Adjusted Price History", "View model details", "View source evidence", "MODEL RANKING POSITION", "Beginner glossary", "View validation results"):
+    for text in ("Price History", "accepted adjusted-price series", "View model details", "View source evidence", "Higher ranked", "Beginner glossary", "View validation results"):
         assert text in rendered
     assert "Sector Rank is calculated across the full eligible sector" in rendered
     lowered = rendered.lower()

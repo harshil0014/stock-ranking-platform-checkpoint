@@ -1,0 +1,19 @@
+{
+  "environment": ".venv-quantlab",
+  "imports": {
+    "alphalens": "PASS",
+    "empyrical": "PASS",
+    "quantstats": "PASS",
+    "skfolio": "PASS"
+  },
+  "lock_sha256": "8d51a0f1599f16c970f78e712275b1554767cdbc52dd1e5e5de5c70d72c3dcf0",
+  "packages": {
+    "alphalens-reloaded": {"license": "Apache-2.0", "version": "0.4.6"},
+    "empyrical-reloaded": {"license": "Apache-2.0", "version": "0.5.12"},
+    "quantstats": {"license": "Apache-2.0", "version": "0.0.81"},
+    "skfolio": {"license": "BSD-3-Clause", "version": "0.20.1"}
+  },
+  "python": "3.13.4",
+  "production_environment_modified": false,
+  "status": "verified"
+}

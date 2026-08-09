@@ -22,6 +22,9 @@ PROTOCOL_SHA256 = "a81278b799e1a61c3684f3b319fb14e2f6f0db6a2bdad1cd79b2ce13fd6f8
 AMENDMENT_SHA256 = "7f8c5d40de88077f3b6afcd471d0db4377fab567d2839e719a71ee6b11ae7163"
 BLIND_FINGERPRINT = "c438c31967e1f2685bbe77d85db6ca44617e024c699dba3749ee3523af6e401d"
 EVALUATION_FINGERPRINT = "04e29e8a0f641f900e2ef5ca6d6fe5252b75eff9b23a69fba3b6480f373606c1"
+QUANT_LAB_ROOT = PROJECT_ROOT / "research/generated/quantlab/real-frozen-v1"
+QUANT_REGISTRY = PROJECT_ROOT / "research/registry/quant_integrations.json"
+QLIB_REGISTRY = PROJECT_ROOT / "research/registry/open_source_registry.json"
 HISTORICAL_DATES = {
     "2022": "2022-08-05", "2023": "2023-08-07",
     "2024": "2024-08-07", "2025": "2025-08-07",
@@ -389,4 +392,55 @@ def status() -> dict[str, Any]:
             "No transaction-cost, liquidity, or execution model is included.",
             "Weights are fixed research choices and are not proven optimal.",
         ],
+    }
+
+
+def quant_lab() -> dict[str, Any]:
+    """Return hash-validated independent-analysis artifacts without quant imports."""
+
+    from stock_research.quant_lab import validate_quant_lab_artifacts
+
+    try:
+        summary = validate_quant_lab_artifacts(QUANT_LAB_ROOT)
+        registry = json.loads(QUANT_REGISTRY.read_text(encoding="utf-8"))
+        ic = pd.read_csv(QUANT_LAB_ROOT / "alphalens_ic_comparison.csv")
+        audit = pd.read_csv(QUANT_LAB_ROOT / "empyrical_metric_audit.csv")
+        qlib_registry = json.loads(QLIB_REGISTRY.read_text(encoding="utf-8"))
+    except (FileNotFoundError, ValueError, KeyError, json.JSONDecodeError) as exc:
+        return _unavailable(
+            "The independently generated Quant Lab artifacts are unavailable or invalid.",
+            "Run the isolated quant-lab runner documented in research/docs/open_source_quant_lab.md.",
+        ) | {"diagnostic": type(exc).__name__}
+    sample = audit.loc[audit["ticker"].isin(["RELIANCE", "HINDUNILVR"])].copy()
+    metric_summary = []
+    for metric, group in audit.groupby("metric", sort=True):
+        metric_summary.append({
+            "metric": metric,
+            "rows": len(group),
+            "passes": int(group["status"].eq("PASS").sum()),
+            "explained_differences": int(group["status"].eq("EXPLAINED_DIFFERENCE").sum()),
+            "failures": int(group["status"].eq("FAIL").sum()),
+        })
+    qlib_by_id = {entry["id"]: entry for entry in qlib_registry["entries"]}
+    qlib_models = [
+        {"name": "Linear", "status": "REPRODUCED", "evidence_status": qlib_by_id["qlib_linear"]["adoption_status"]},
+        {"name": "LightGBM", "status": "REPRODUCED", "evidence_status": qlib_by_id["qlib_lightgbm"]["adoption_status"]},
+        {"name": "TRA", "status": "REPRODUCED", "evidence_status": qlib_by_id["qlib_tra"]["adoption_status"]},
+        {"name": "DoubleEnsemble", "status": "COMPATIBILITY / SCIENTIFIC BLOCKER", "evidence_status": qlib_by_id["qlib_double_ensemble"]["adoption_status"]},
+    ]
+    return {
+        "available": True,
+        "title": "Open-Source Quant Lab",
+        "boundary": summary["boundary"],
+        "primary_warning": "This is a secondary independent analysis; the preregistered 12-month result remains primary.",
+        "integrations": registry["entries"],
+        "alphalens": summary["alphalens"],
+        "alphalens_comparison": _records(ic),
+        "empyrical": summary["empyrical"],
+        "empyrical_metric_summary": metric_summary,
+        "empyrical_examples": _records(sample),
+        "qlib_models": qlib_models,
+        "skfolio": summary["skfolio"],
+        "quantstats": summary["quantstats"],
+        "adapter_fingerprint": summary["adapter_fingerprint"],
     }

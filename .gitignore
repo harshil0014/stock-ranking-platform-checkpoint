@@ -10,6 +10,7 @@ data/output/*
 .venv-qlib/
 .venv-tra/
 .venv-marketdata/
+.venv-quantlab/
 data/marketdata/
 data/live_market/
 data/walk_forward/
