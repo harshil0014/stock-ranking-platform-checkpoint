@@ -53,8 +53,26 @@ def calculate_future_returns(outcome_prices: pd.DataFrame) -> pd.DataFrame:
     missing = required.difference(outcome_prices.columns)
     if missing:
         raise ValueError(f"outcome prices missing columns: {sorted(missing)}")
+    checked = outcome_prices.copy(deep=True)
+    checked["date"] = pd.to_datetime(checked["date"], errors="raise")
+    if checked[["ranking_date", "ticker", "provider_symbol"]].isna().any().any():
+        raise ValueError("outcome prices contain missing identity values")
+    if checked[["ranking_date", "ticker", "provider_symbol"]].astype(str).apply(
+        lambda column: column.str.strip().eq("")
+    ).any().any():
+        raise ValueError("outcome prices contain blank identity values")
+    if checked.duplicated(["ranking_date", "ticker", "date"]).any():
+        raise ValueError("outcome prices contain duplicate company-date observations")
+    provider_counts = checked.groupby(
+        ["ranking_date", "ticker"], sort=True
+    )["provider_symbol"].nunique(dropna=False)
+    if provider_counts.ne(1).any():
+        raise ValueError("outcome prices contain mixed provider identities")
+    checked["adj_close"] = pd.to_numeric(checked["adj_close"], errors="coerce")
+    if (~np.isfinite(checked["adj_close"]) | checked["adj_close"].le(0)).any():
+        raise ValueError("OUTCOME_UNAVAILABLE: invalid adjusted price")
     rows = []
-    for (ranking_date, ticker), group in outcome_prices.groupby(
+    for (ranking_date, ticker), group in checked.groupby(
         ["ranking_date", "ticker"], sort=True
     ):
         start = select_price_on_or_before(group, str(ranking_date))
@@ -148,7 +166,29 @@ def evaluate_walk_forward(
     manifest = json.loads((blind_root / "manifest.json").read_text(encoding="utf-8"))
     if manifest.get("blind_prediction_fingerprint") != BLIND_FINGERPRINT:
         raise ValueError("frozen blind fingerprint mismatch")
+    if manifest.get("protocol_sha256") != PROTOCOL_SHA256:
+        raise ValueError("frozen protocol hash mismatch")
+    if manifest.get("future_outcome_data_present") is not False:
+        raise ValueError("frozen prediction bundle is not outcome-blind")
     frozen = _frozen_groups(blind_root)
+    required_outcomes = {
+        "ranking_date", "ticker", "horizon_months", "future_adjusted_return",
+    }
+    missing_outcomes = required_outcomes.difference(future_returns.columns)
+    if missing_outcomes:
+        raise ValueError(f"future returns missing columns: {sorted(missing_outcomes)}")
+    if future_returns.duplicated(["ranking_date", "ticker", "horizon_months"]).any():
+        raise ValueError("future returns contain duplicate company-date-horizon keys")
+    observed_horizons = set(pd.to_numeric(
+        future_returns["horizon_months"], errors="coerce"
+    ).dropna().astype(int))
+    if observed_horizons != set(HORIZONS):
+        raise ValueError("future returns do not contain the frozen horizon set")
+    numeric_returns = pd.to_numeric(future_returns["future_adjusted_return"], errors="coerce")
+    if (~np.isfinite(numeric_returns)).any():
+        raise ValueError("OUTCOME_UNAVAILABLE: non-finite future return")
+    future_returns = future_returns.copy(deep=True)
+    future_returns["future_adjusted_return"] = numeric_returns
     expected_keys = frozen[["ranking_date", "ticker"]].drop_duplicates().sort_values(
         ["ranking_date", "ticker"], kind="stable"
     ).reset_index(drop=True)

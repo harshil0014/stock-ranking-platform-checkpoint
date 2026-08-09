@@ -24,15 +24,20 @@ def run(blind_root: Path, outcome_cache: Path, output: Path) -> str:
     cache_manifest = json.loads((outcome_cache / "cache_manifest.json").read_text(encoding="utf-8"))
     if sha256(prices_path.read_bytes()).hexdigest() != cache_manifest["outcome_prices_sha256"]:
         raise ValueError("cached outcome-price hash mismatch")
+    request_path = outcome_cache / "request_provenance.json"
+    request_hash = sha256(request_path.read_bytes()).hexdigest()
+    if request_hash != cache_manifest["request_provenance_sha256"]:
+        raise ValueError("cached outcome-request provenance hash mismatch")
+    request = json.loads(request_path.read_text(encoding="utf-8"))
+    if request.get("blind_prediction_fingerprint") != BLIND_FINGERPRINT:
+        raise ValueError("cached outcome request has wrong blind fingerprint")
     prices = pd.read_csv(prices_path)
     returns = calculate_future_returns(prices)
     evaluation = evaluate_walk_forward(blind_root, returns)
     provenance = {
         "schema_version": 1, "blind_prediction_fingerprint": BLIND_FINGERPRINT,
         "outcome_cache_manifest": cache_manifest,
-        "outcome_request_provenance_sha256": sha256(
-            (outcome_cache / "request_provenance.json").read_bytes()
-        ).hexdigest(),
+        "outcome_request_provenance_sha256": request_hash,
         "predictions_frozen_before_outcome_acquisition": True,
         "models_or_mappings_changed_after_reveal": False,
     }

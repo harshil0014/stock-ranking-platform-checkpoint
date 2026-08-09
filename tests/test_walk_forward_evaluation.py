@@ -16,6 +16,14 @@ ROOT = Path(__file__).resolve().parents[1]
 BLIND_ROOT = ROOT / "data/walk_forward/blind_predictions_v1_run_01"
 
 
+def _blind_manifest() -> dict[str, object]:
+    return {
+        "blind_prediction_fingerprint": evaluation.BLIND_FINGERPRINT,
+        "protocol_sha256": evaluation.PROTOCOL_SHA256,
+        "future_outcome_data_present": False,
+    }
+
+
 def test_frozen_research_identifiers_are_unchanged() -> None:
     assert evaluation.PROTOCOL_SHA256 == "a81278b799e1a61c3684f3b319fb14e2f6f0db6a2bdad1cd79b2ce13fd6f8576"
     assert evaluation.AMENDMENT_SHA256 == "7f8c5d40de88077f3b6afcd471d0db4377fab567d2839e719a71ee6b11ae7163"
@@ -64,7 +72,7 @@ def test_acquisition_uses_exact_frozen_provider_and_bounded_request(tmp_path: Pa
     blind = tmp_path / "blind"
     date_dir = blind / "2025-08-07"
     date_dir.mkdir(parents=True)
-    (blind / "manifest.json").write_text(json.dumps({"blind_prediction_fingerprint": evaluation.BLIND_FINGERPRINT}))
+    (blind / "manifest.json").write_text(json.dumps(_blind_manifest()))
     pd.DataFrame({"ticker": ["AAA"]}).to_csv(date_dir / "research_v2.csv", index=False)
     pd.DataFrame({
         "historical_symbol": ["AAA"], "provider_symbol": ["ORIGINAL.NS"],
@@ -120,7 +128,7 @@ def _returns() -> pd.DataFrame:
 
 
 def test_sector_evaluation_primary_delta_top_and_odd_groups(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
-    (tmp_path / "manifest.json").write_text(json.dumps({"blind_prediction_fingerprint": evaluation.BLIND_FINGERPRINT}))
+    (tmp_path / "manifest.json").write_text(json.dumps(_blind_manifest()))
     monkeypatch.setattr(evaluation, "_frozen_groups", lambda _: _frozen_frame())
     result = evaluation.evaluate_walk_forward(tmp_path, _returns())
     primary = result.sector_rank_ic.query("horizon_months == 12").iloc[0]
@@ -136,7 +144,7 @@ def test_sector_evaluation_primary_delta_top_and_odd_groups(tmp_path: Path, monk
 
 
 def test_cohort_mismatch_is_rejected(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
-    (tmp_path / "manifest.json").write_text(json.dumps({"blind_prediction_fingerprint": evaluation.BLIND_FINGERPRINT}))
+    (tmp_path / "manifest.json").write_text(json.dumps(_blind_manifest()))
     monkeypatch.setattr(evaluation, "_frozen_groups", lambda _: _frozen_frame())
     with pytest.raises(ValueError, match="cohort does not match"):
         evaluation.evaluate_walk_forward(tmp_path, _returns().query("ticker != 'C'"))
@@ -145,7 +153,7 @@ def test_cohort_mismatch_is_rejected(tmp_path: Path, monkeypatch: pytest.MonkeyP
 def test_export_is_byte_deterministic(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     blind = tmp_path / "blind"
     blind.mkdir()
-    (blind / "manifest.json").write_text(json.dumps({"blind_prediction_fingerprint": evaluation.BLIND_FINGERPRINT}))
+    (blind / "manifest.json").write_text(json.dumps(_blind_manifest()))
     monkeypatch.setattr(evaluation, "_frozen_groups", lambda _: _frozen_frame())
     result = evaluation.evaluate_walk_forward(blind, _returns())
     prices = pd.DataFrame({"date": ["2025-08-07"], "adj_close": [1.0]})
