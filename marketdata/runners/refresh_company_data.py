@@ -19,6 +19,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[2]
 MARKET_RUNNER = ROOT / "marketdata/runners/refresh_live_market.py"
+BSE_HISTORY_RUNNER = ROOT / "marketdata/runners/daily_bse_history.py"
 YAHOO_RUNNER = ROOT / "marketdata/runners/acquire_yahoo_secondary_facts.py"
 OFFICIAL_RUNNER = ROOT / "marketdata/runners/acquire_exchange_backbone.py"
 FACT_RUNNER = ROOT / "marketdata/runners/prepare_company_facts.py"
@@ -26,6 +27,19 @@ MARKET_STATE = ROOT / "data/live_market"
 YAHOO_STATE = ROOT / "data/company_facts/providers/yahoo"
 OFFICIAL_STATE = ROOT / "data/company_facts/providers/official_exchange"
 FACT_STATE = ROOT / "data/company_facts"
+
+
+def _marketdata_interpreter() -> str:
+    """Prefer the isolated market-data environment for yfinance work."""
+
+    candidates = (
+        ROOT / ".venv-marketdata/Scripts/python.exe",
+        ROOT / ".venv-marketdata/bin/python",
+    )
+    for candidate in candidates:
+        if candidate.is_file():
+            return str(candidate)
+    return sys.executable
 
 
 def _read_json(path: Path) -> dict[str, Any] | None:
@@ -65,14 +79,19 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--full-backfill", action="store_true")
     parser.add_argument("--provider", choices=("all", "official", "yahoo", "screener"), default="all")
     parser.add_argument("--secondary-limit", type=int, default=250)
+    parser.add_argument("--bse-history-limit", type=int, default=100)
+    parser.add_argument("--skip-bse-history", action="store_true")
     parser.add_argument("--workers", type=int, default=3)
     parser.add_argument("--batch-id")
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--retry-errors", action="store_true")
     parser.add_argument("--seed-batch")
     args = parser.parse_args(argv)
-    if args.secondary_limit < 0 or not 1 <= args.workers <= 6:
-        parser.error("secondary-limit must be nonnegative and workers must be 1 through 6")
+    if args.secondary_limit < 0 or args.bse_history_limit < 0 or not 1 <= args.workers <= 6:
+        parser.error(
+            "secondary-limit and bse-history-limit must be nonnegative; "
+            "workers must be 1 through 6"
+        )
     if args.status:
         print(json.dumps(refresh_status(), indent=2, sort_keys=True))
         return 0
@@ -93,12 +112,25 @@ def main(argv: list[str] | None = None) -> int:
     if args.seed_batch:
         secondary.extend(["--seed-batch", args.seed_batch])
     official = [sys.executable, str(OFFICIAL_RUNNER), "--batch-id", batch_id]
+    bse_history = None
+    if (
+        args.provider in ("all", "official")
+        and not args.skip_bse_history
+        and args.bse_history_limit > 0
+    ):
+        bse_history = [
+            _marketdata_interpreter(), str(BSE_HISTORY_RUNNER),
+            "--limit", str(args.bse_history_limit),
+            "--workers", str(min(2, args.workers)),
+            "--attempts", "1",
+        ]
     accepted_official = _accepted_official_batch()
     if accepted_official:
         official.extend(["--seed-batch", accepted_official])
     plan = {
         "write_free": args.dry_run,
         "market": [sys.executable, str(MARKET_RUNNER), "--download-limit", "1000", "--workers", "4"] if args.provider in ("all", "official") else None,
+        "bse_history": bse_history,
         "official_exchange": official if args.provider in ("all", "official") else None,
         "secondary": secondary if args.provider in ("all", "yahoo") else None,
         "company_facts": [sys.executable, str(FACT_RUNNER)],
@@ -111,12 +143,16 @@ def main(argv: list[str] | None = None) -> int:
     report: dict[str, Any] = {"started_at": datetime.now(timezone.utc).isoformat(), "plan": plan}
     if plan["market"]:
         report["market"] = _run(plan["market"])
+    if plan["bse_history"]:
+        report["bse_history"] = _run(plan["bse_history"])
     if plan["official_exchange"]:
         report["official_exchange"] = _run(plan["official_exchange"])
     if plan["secondary"]:
         report["secondary"] = _run(plan["secondary"])
-    provider_failures = [name for name in ("market", "official_exchange", "secondary")
-                         if report.get(name, {}).get("exit_code", 0) != 0]
+    provider_failures = [
+        name for name in ("market", "bse_history", "official_exchange", "secondary")
+        if report.get(name, {}).get("exit_code", 0) != 0
+    ]
     report["company_facts"] = _run(plan["company_facts"])
     report["provider_failures"] = provider_failures
     report["status"] = (
