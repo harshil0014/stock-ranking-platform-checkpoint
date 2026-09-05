@@ -28,14 +28,22 @@ from stock_ranker.historical_baseline import (  # noqa: E402
 )
 from stock_ranker.live_market import (  # noqa: E402
     SEGMENT_FILES,
+    add_bse_traded_securities,
+    apply_nse_prior_trade_fallback,
     apply_official_segments,
+    audit_official_equity_universe,
     build_latest_snapshot,
     combine_live_market,
     load_index_membership,
     load_official_equity_universe,
     write_live_bundle,
 )
+from stock_ranker.pit_accounting_promotion import (  # noqa: E402
+    file_sha256, load_promoted_additions, merge_candidate_fundamentals,
+)
 from stock_ranker.real_research_v2 import load_real_research_v2_bundle  # noqa: E402
+from stock_ranker.research_v2 import ResearchV2Inputs, calculate_research_v2  # noqa: E402
+from stock_ranker.v2_config import ResearchV2Config  # noqa: E402
 
 
 DEFAULT_SOURCE = ROOT / "data/live_market/source"
@@ -43,6 +51,7 @@ DEFAULT_OUTPUT = ROOT / "data/live_market/current"
 DEFAULT_CACHE = ROOT / "data/live_market/history_cache"
 ACCEPTED_BASELINE = ROOT / "data/marketdata/nifty50-baseline-2026-08-07"
 ACCEPTED_V2 = ROOT / "data/marketdata/nifty50-research-v2-2026-08-07/standalone-contract-reason-fix-run-01"
+CURRENT_V2_ADDITIONS = ROOT / "marketdata/specifications/pit_independently_validated_additions_v1.json"
 AS_OF_DATE = "2026-08-07"
 OFFICIAL_SOURCE_URLS = {
     "equity.csv": "https://nsearchives.nseindia.com/content/equities/EQUITY_L.csv",
@@ -111,15 +120,21 @@ def acquire_official_sources(source: Path, trade_date: str, attempts: int) -> No
             raise ValueError(f"could not acquire {filename}: {error}")
 
 
-def _fetch_one(ticker: str, cache: Path, attempts: int, as_of_date: str = AS_OF_DATE) -> tuple[bool, str]:
+def _fetch_one(
+    ticker: str, cache: Path, attempts: int, as_of_date: str = AS_OF_DATE,
+    provider_code: str | None = None,
+) -> tuple[bool, str]:
     target = cache / f"{ticker}.csv"
     if target.is_file():
-        return True, "CACHE_HIT"
+        cached = pd.read_csv(target, usecols=["date"])
+        dates = pd.to_datetime(cached["date"], format="%Y-%m-%d", errors="coerce")
+        if dates.notna().any() and dates.max().date().isoformat() >= as_of_date:
+            return True, "CACHE_HIT"
     import yfinance as yf
     error = "provider returned no history"
     for attempt in range(1, attempts + 1):
         try:
-            fetched = yf.Ticker(provider_symbol(ticker)).history(
+            fetched = yf.Ticker(provider_code or provider_symbol(ticker)).history(
                 period="max", interval="1d", auto_adjust=False,
                 repair=True, actions=True, raise_errors=True,
             )
@@ -143,6 +158,62 @@ def _fetch_one(ticker: str, cache: Path, attempts: int, as_of_date: str = AS_OF_
     return False, error
 
 
+def _cache_covers(path: Path, as_of_date: str) -> bool:
+    if not path.is_file():
+        return False
+    try:
+        cached = pd.read_csv(path, usecols=["date"])
+    except (OSError, UnicodeError, ValueError, pd.errors.ParserError):
+        return False
+    dates = pd.to_datetime(cached["date"], format="%Y-%m-%d", errors="coerce")
+    return bool(dates.notna().any() and dates.max().date().isoformat() >= as_of_date)
+
+
+def _build_current_v2(
+    trade_date: str,
+    cache: Path,
+) -> tuple[pd.DataFrame, pd.DataFrame, str, str]:
+    """Recalculate the current V2 view from frozen accepted evidence and current prices."""
+
+    accepted = load_real_research_v2_bundle(ACCEPTED_V2)
+    universe = pd.read_csv(ACCEPTED_V2 / "universe.csv")[["ticker", "company", "sector"]]
+    fundamentals = pd.read_csv(ACCEPTED_V2 / "fundamentals.csv")
+    additions, addition_identity, _ = load_promoted_additions(
+        CURRENT_V2_ADDITIONS, ranking_date=datetime.strptime(trade_date, "%Y-%m-%d").date()
+    )
+    fundamentals = merge_candidate_fundamentals(fundamentals, additions)
+    overlap = sorted(set(universe["ticker"].astype(str)) & set(addition_identity["ticker"].astype(str)))
+    if overlap:
+        raise ValueError(f"current V2 additions overlap the frozen universe: {overlap}")
+    universe = pd.concat([universe, addition_identity], ignore_index=True)
+    price_frames: list[pd.DataFrame] = []
+    for ticker in universe["ticker"].astype(str):
+        history_path = cache / f"{ticker}.csv"
+        if not history_path.is_file():
+            continue
+        history = pd.read_csv(history_path, usecols=["date", "adjusted_close"])
+        history.insert(0, "ticker", ticker)
+        price_frames.append(history)
+    prices = (
+        pd.concat(price_frames, ignore_index=True)
+        if price_frames else pd.DataFrame(columns=["ticker", "date", "adjusted_close"])
+    )
+    result = calculate_research_v2(
+        ResearchV2Inputs(universe=universe, prices=prices, fundamentals=fundamentals),
+        ResearchV2Config(ranking_date=datetime.strptime(trade_date, "%Y-%m-%d").date()),
+    )
+    eligibility = result.eligibility.copy()
+    accepted_reasons = accepted.eligibility.set_index("ticker")[["reason_code", "reason"]]
+    for index, row in eligibility.iterrows():
+        ticker = str(row["ticker"])
+        if bool(row["eligible"]) or ticker not in accepted_reasons.index:
+            continue
+        calculated = str(row["reason_code"])
+        if calculated == "MISSING_FUNDAMENTALS":
+            eligibility.loc[index, ["reason_code", "reason"]] = accepted_reasons.loc[ticker].to_numpy()
+    return result.rankings, eligibility, accepted.fingerprint, file_sha256(CURRENT_V2_ADDITIONS)
+
+
 def prepare(args: argparse.Namespace) -> dict[str, object]:
     started = datetime.now(timezone.utc)
     source = Path(args.source).resolve()
@@ -153,6 +224,11 @@ def prepare(args: argparse.Namespace) -> dict[str, object]:
         print("[Sources] acquiring allowlisted official NSE/NSE Indices files", flush=True)
         acquire_official_sources(source, args.trade_date, args.attempts)
     print("[Universe] validating official NSE equity list", flush=True)
+    nse_instrument_audit = audit_official_equity_universe(source / "equity.csv")
+    instrument_exclusions = [
+        nse_instrument_audit.loc[~nse_instrument_audit["ranking_universe_eligible"]]
+        .assign(exchange="NSE")
+    ]
     universe = load_official_equity_universe(source / "equity.csv")
     memberships = {
         segment: load_index_membership(source / filename, segment)
@@ -167,11 +243,70 @@ def prepare(args: argparse.Namespace) -> dict[str, object]:
         raise ValueError("official bhavcopy trading date does not match --trade-date")
     print(f"[Snapshot] {snapshot_metadata['matched_count']} matched / "
           f"{snapshot_metadata['missing_count']} unavailable as of {snapshot_metadata['trade_date']}", flush=True)
+    bse_path_value = getattr(args, "bse_bhavcopy", None)
+    bse_path = Path(bse_path_value).resolve() if bse_path_value else None
+    if bse_path is not None:
+        universe, snapshot, bse_metadata = add_bse_traded_securities(
+            universe, snapshot, bse_path, exclusion_sink=instrument_exclusions
+        )
+        if bse_metadata["trade_date"] != args.trade_date:
+            raise ValueError("BSE and NSE bhavcopies must have the same trading date")
+        snapshot_metadata = dict(snapshot_metadata)
+        combined_ready = snapshot["snapshot_status"].astype(str).str.startswith("AVAILABLE")
+        snapshot_metadata.update({
+            "nse_matched_count": snapshot_metadata["matched_count"],
+            "nse_missing_count": snapshot_metadata["missing_count"],
+            "bse": bse_metadata,
+            "matched_count": int(combined_ready.sum()),
+            "missing_count": int((~combined_ready).sum()),
+            "source": "Official NSE and BSE CM-UDiFF Common Bhavcopy Final",
+        })
+        print(
+            f"[BSE] added {bse_metadata['bse_only_rows']} exact-ISIN BSE-only traded securities",
+            flush=True,
+        )
+    prior_path_value = getattr(args, "nse_prior_trades", None)
+    prior_path = Path(prior_path_value).resolve() if prior_path_value else None
+    if prior_path is not None:
+        snapshot, prior_metadata = apply_nse_prior_trade_fallback(universe, snapshot, prior_path)
+        combined_ready = snapshot["snapshot_status"].astype(str).str.startswith("AVAILABLE")
+        snapshot_metadata = dict(snapshot_metadata)
+        snapshot_metadata.update({
+            "prior_trade_fallback": prior_metadata,
+            "matched_count": int(combined_ready.sum()),
+            "missing_count": int((~combined_ready).sum()),
+        })
+        print(
+            f"[Prior trade] filled {prior_metadata['fallback_count']} absent NSE quotes "
+            f"from {prior_metadata['trade_date']}", flush=True,
+        )
 
     seeded = _seed_accepted_cache(cache)
     classified = universe.loc[universe["classification_status"].eq("CLASSIFIED")].copy()
-    targets = classified["ticker"].tolist()
-    missing = [ticker for ticker in targets if not (cache / f"{ticker}.csv").is_file()]
+    # Page completeness is independent of model eligibility: retain useful
+    # history for every exact NSE identity even when classification is absent.
+    cached_bse = universe["ticker"].map(lambda value: (cache / f"{value}.csv").is_file())
+    history_universe = universe.loc[
+        universe["primary_exchange"].eq("NSE")
+        | (universe["primary_exchange"].eq("BSE") & cached_bse)
+    ].copy()
+    # Bounded refreshes must update the already rankable universe first. A
+    # partially refreshed cache otherwise creates terminal-price mismatches and
+    # an invalid apparent eligibility collapse in the candidate state.
+    history_universe["_refresh_priority"] = history_universe["classification_status"].ne("CLASSIFIED").astype(int)
+    history_universe = history_universe.sort_values(["_refresh_priority", "ticker"], kind="stable")
+    targets = history_universe["ticker"].tolist()
+    provider_codes = {
+        str(row.ticker): (
+            f"{row.exchange_security_id}.BO" if str(row.primary_exchange) == "BSE"
+            else provider_symbol(str(row.ticker))
+        )
+        for row in history_universe.itertuples(index=False)
+    }
+    missing = [
+        ticker for ticker in targets
+        if not _cache_covers(cache / f"{ticker}.csv", args.trade_date)
+    ]
     if args.download_limit is not None:
         missing = missing[:args.download_limit]
     attempted = 0
@@ -180,7 +315,10 @@ def prepare(args: argparse.Namespace) -> dict[str, object]:
     if not args.no_download:
         with ThreadPoolExecutor(max_workers=args.workers) as executor:
             pending = {
-                executor.submit(_fetch_one, ticker, cache, args.attempts, args.trade_date): ticker
+                executor.submit(
+                    _fetch_one, ticker, cache, args.attempts, args.trade_date,
+                    provider_codes[ticker],
+                ): ticker
                 for ticker in missing
             }
             for index, future in enumerate(as_completed(pending), start=1):
@@ -210,20 +348,29 @@ def prepare(args: argparse.Namespace) -> dict[str, object]:
     boundaries["boundary_type"] = "OFFICIAL_NSE_SECURITY_LISTING_DATE"
     boundaries["evidence_source"] = "NSE Securities available for Equity segment DATE OF LISTING"
     print("[Baseline] applying unchanged Baseline V1 preparation and ranking", flush=True)
+    model_snapshot = snapshot.copy()
+    if "price_exchange" in model_snapshot:
+        model_snapshot.loc[model_snapshot["price_exchange"].ne("NSE"), "latest_price"] = pd.NA
     prepared = prepare_historical_baseline(
-        identity, snapshot.rename(columns={"latest_price": "close"})[["ticker", "close"]],
+        identity, model_snapshot.rename(columns={"latest_price": "close"})[["ticker", "close"]],
         histories, as_of_date=args.trade_date, history_start_boundaries=boundaries,
     )
     baseline_rankings = calculate_baseline_rankings(prepared.baseline_input) if not prepared.baseline_input.empty else pd.DataFrame()
 
-    v2 = load_real_research_v2_bundle(ACCEPTED_V2)
+    current_v2_rankings, current_v2_eligibility, frozen_v2_fingerprint, current_v2_additions_fingerprint = _build_current_v2(
+        args.trade_date, cache
+    )
     market = combine_live_market(
         universe, snapshot, baseline_rankings=baseline_rankings,
         baseline_eligibility=prepared.eligibility,
-        v2_rankings=v2.rankings, v2_eligibility=v2.eligibility,
+        v2_rankings=current_v2_rankings, v2_eligibility=current_v2_eligibility,
     )
     completed = datetime.now(timezone.utc)
     source_files = {"equity_universe": source / "equity.csv", "bhavcopy": bhavcopy_path}
+    if bse_path is not None:
+        source_files["bse_bhavcopy"] = bse_path
+    if prior_path is not None:
+        source_files["nse_prior_trades"] = prior_path
     source_files.update({f"segment_{key.lower()}": source / value for key, value in SEGMENT_FILES.items()})
     bundle = write_live_bundle(
         market, output, snapshot_metadata=snapshot_metadata,
@@ -231,13 +378,18 @@ def prepare(args: argparse.Namespace) -> dict[str, object]:
         acquisition_started_at=started.isoformat(), acquisition_completed_at=completed.isoformat(),
         history_attempted=attempted, history_acquired=sum(value is not None for value in histories.values()),
         history_failed=sum(value is None for value in histories.values()),
+        history_targeted=len(targets),
+        current_v2_ranking_date=args.trade_date,
+        frozen_v2_evidence_fingerprint=frozen_v2_fingerprint,
+        current_v2_additions_fingerprint=current_v2_additions_fingerprint,
+        instrument_exclusions=pd.concat(instrument_exclusions, ignore_index=True),
     )
     report = {
         "bundle_fingerprint": bundle.fingerprint, "universe_count": len(market),
         "snapshot_matched": snapshot_metadata["matched_count"],
         "history_cache_seeded": seeded, "history_attempted": attempted,
         "history_downloaded": downloaded, "history_failures": failures,
-        "price_ready": int(market["snapshot_status"].eq("AVAILABLE").sum()),
+        "price_ready": int(market["snapshot_status"].astype(str).str.startswith("AVAILABLE").sum()),
         "baseline_eligible": int(market["baseline_eligible"].sum()),
         "research_v2_eligible": int(market["v2_eligible"].sum()),
         "output": str(bundle.path), "runtime_seconds": (completed - started).total_seconds(),
@@ -252,6 +404,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
     parser.add_argument("--cache", default=str(DEFAULT_CACHE))
     parser.add_argument("--trade-date", default=AS_OF_DATE)
+    parser.add_argument("--bse-bhavcopy", type=Path)
+    parser.add_argument("--nse-prior-trades", type=Path)
     parser.add_argument("--acquire-sources", action="store_true")
     parser.add_argument("--attempts", type=int, default=2)
     parser.add_argument("--workers", type=int, default=4)

@@ -1,5 +1,9 @@
 # Stock Ranking Platform
 
+The latest reconciled current-data counts and their exact cohort definitions
+are recorded in
+[docs/current_data_status_20260829.md](docs/current_data_status_20260829.md).
+
 An offline-first foundation for explainable Indian equity research. The
 long-term product will compare sectors, rank stocks inside each sector, create
 model portfolios, and evaluate them against benchmarks with scheduled
@@ -10,6 +14,41 @@ The repository implements **Baseline V1** and the offline, point-in-time
 freeze real historical prices; normal product execution never fetches them.
 The project does not rank sectors, construct portfolios, backtest results, or
 make investment recommendations.
+
+## Professor workbook reference benchmark
+
+The optional offline `professor-reference` command audits the supplied Baba
+Venkeesh Master Sheet XLSX, preserves exact cell/formula provenance, joins only
+exact current NSE symbols, and compares its cached 1Y/3Y/5Y and ATH-recency
+fields with a same-date Baseline V1 reconstruction. It never invents a
+professor sector rank: the workbook has no sector taxonomy or computed ranking
+formula. The prepared website Methodology view shows the three-stage boundary
+**Professor Reference → Baseline V1 → Research V2** by current NSE sector.
+
+```powershell
+.\.venv\Scripts\stock-ranker.exe professor-reference `
+  --workbook "C:\path\to\Baba Venkeesh - Master Sheet v2.1-Final.xlsx" `
+  --output-dir data\professor_reference\current
+```
+
+The observed reference verdict is **PARTIAL MATCH** and the independent
+Research V2 verdict is **INSUFFICIENT EVIDENCE** because the preregistered
+12-month comparison has only three sector-date observations. See
+[the full benchmark audit](docs/professor_reference_benchmark.md).
+
+The newer OK Strategy v4.3 workbook is audited separately with
+`stock-ranker professor-strategy`. It extracts the explicit SIP profit/loss
+rank and cached CAGR/industry evidence with exact cell provenance, compares the
+exact 14-stock cohort without fuzzy substitutions, and reports `PARTIAL MATCH`.
+See [the OK Strategy audit](docs/professor_ok_strategy_v4_3.md). Screener is
+supported only through an optional dated, user-supplied export matched by exact
+NSE/BSE code; the product does not scrape Screener or treat it as an API.
+
+The separately supplied 99-security acceptance cohort is audited without fuzzy
+identity matching and displayed beside canonical model statuses. Its result is
+98 resolved, one legitimately provider-unavailable, no unresolved identity,
+and **NOT REPRODUCIBLE FROM AVAILABLE METHODOLOGY** for the undisclosed global
+ranking formula. See [the supplied-cohort audit](docs/professor_supplied_acceptance.md).
 
 ## Live Market and Research Lab website
 
@@ -33,26 +72,32 @@ professor interface itself does not fabricate fallback values: unavailable or
 integrity-mismatched local artifacts produce a controlled status. Normal page
 navigation fetches no market data and makes no investment recommendation.
 
-LIVE MARKET reads `data/live_market/current` once per request from an ignored,
-fingerprinted product bundle. The current prepared workflow uses the official
-NSE “Securities available for Equity segment” list, official NSE Indices size
-memberships, and the official NSE CM-UDiFF EOD bhavcopy. It calls the universe
-**ALL NSE**, not all Indian exchanges. ETFs, mutual funds, REITs, InvITs, debt,
-preference shares, warrants, and SME securities are outside this main-board
-ordinary-equity universe. Unclassified or data-incomplete securities remain
-browsable and are never assigned invented ranks.
+LIVE MARKET resolves an atomic accepted-state pointer under the ignored
+`data/live_market/` evidence store. On startup it checks official NSE and BSE
+public EOD sources in an isolated background process; a failed or partial
+refresh cannot replace the last-known-good bundle. The accepted universe uses
+exact ISIN identity under `listed_ordinary_company_equity_v1`: company-issued
+ordinary equity only, with funds/ETFs, debt/government securities, preference
+and other non-equity securities, listed trusts, rights entitlements, and
+alternate/DVR classes excluded with an auditable reason. Dual listings are not
+duplicated and BSE-only names never receive invented NSE tickers. Unclassified
+or data-incomplete securities remain browsable and are never assigned invented
+ranks or fundamentals.
 
-Prepare or update the bundle outside the web server, using the isolated market
-data environment:
+The same refresh can be run or inspected explicitly:
 
 ```powershell
-.\.venv-marketdata\Scripts\python.exe marketdata\runners\prepare_live_market.py
+.\.venv\Scripts\stock-ranker.exe refresh --status
+.\.venv\Scripts\stock-ranker.exe refresh --dry-run
+.\.venv\Scripts\stock-ranker.exe refresh
 ```
 
-The runner caches one provider-history CSV per exact `.NS` symbol, resumes
-after interruption, uses bounded retries, and writes the final CSV and manifest
-atomically. `--no-download` rebuilds from cache; `--download-limit N` supports a
-bounded acquisition smoke. Page navigation never starts downloads. See
+Raw downloads and accepted snapshots are immutable and hashed. The runner
+rejects HTML error pages, stale/wrong-date files, schema drift, identity
+duplicates, implausible coverage changes, model-eligibility collapses and
+frozen-research drift. It caches one provider-history CSV per exact `.NS`
+symbol and updates only stale histories. Page navigation itself remains
+offline; it reads one internally consistent accepted bundle. See
 [the LIVE MARKET data contract](docs/live_market.md).
 
 The legacy `/api/analyze` endpoint retains the one-day official market adapter
@@ -261,6 +306,8 @@ src/stock_ranker/
   v2_validation.py   V2 structural validation
   v2_exporting.py    V2 result exporting
   real_research_v2.py safe NSE XBRL parsing and frozen real V2 bundle boundary
+  data_state.py      transactional market acceptance and last-known-good state
+  company_facts.py   ISIN-keyed facts and immutable accepted snapshots
   portfolio.py       future construction/rebalancing interface
   backtesting.py     future backtest/benchmark interface
 data/input/          committed synthetic input
@@ -268,6 +315,48 @@ data/output/         ignored generated results
 docs/                methodology documentation
 tests/               behavioral and command tests
 ```
+
+## Company information coverage
+
+The local website reads a provider-independent accepted company-fact snapshot,
+not Screener.in or a live page scraper. Build it from cached accepted evidence:
+
+```powershell
+.\.venv\Scripts\stock-ranker.exe company-facts --dry-run
+.\.venv\Scripts\stock-ranker.exe company-facts
+.\.venv\Scripts\stock-ranker.exe data-refresh --dry-run
+.\.venv\Scripts\stock-ranker.exe data-refresh --status
+.\.venv\Scripts\stock-ranker.exe data-backfill --resume --retry-errors
+```
+
+The measured 5,093-security coverage and exact unresolved categories are in
+[`docs/company_information_coverage.md`](docs/company_information_coverage.md).
+Company-page richness is separate from Baseline and strict Research V2
+eligibility; missing facts carry precise statuses rather than guessed or
+zero-filled values.
+
+The unified refresh checks official exchange data, acquires a bounded,
+identity-validated secondary-fact batch in the isolated market-data
+environment, then atomically rebuilds the coherent fact state. Use
+`data-refresh --full-backfill` for a resumable all-market secondary pass.
+Provider failures retain the previous accepted state. Screener remains
+policy-disabled as an automated source under its published terms and robots
+rules; see [`docs/open_source_data_foundation.md`](docs/open_source_data_foundation.md).
+
+The implemented [official exchange backbone](docs/official_exchange_backbone.md)
+uses bulk NSE filing/shareholding/action/document catalogues, linked XBRLs and
+official BSE endpoints. It keeps raw evidence in immutable ignored batches,
+separates official facts from secondary references, and gradually drains a
+rate-limit-aware Yahoo backlog. Website navigation remains entirely offline.
+
+Strict PIT fundamental scaling is documented in
+[`docs/pit_fundamental_scale.md`](docs/pit_fundamental_scale.md). The new
+workflow discovers official NSE annual-report metadata for the full
+Baseline-ready V2-gap population, downloads only bounded frozen batches, and
+generates page-level accounting review packets. It never treats extracted
+numbers as accepted facts or updates frozen Research V2 automatically. Official
+symbol/name history is normalized as exact identity evidence; possible ISIN
+transitions remain quarantined and never splice price histories automatically.
 
 ## Synthetic sample and limitations
 

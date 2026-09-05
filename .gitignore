@@ -10,10 +10,14 @@ data/output/*
 .venv-qlib/
 .venv-tra/
 .venv-marketdata/
+.venv-accounting-audit/
 .venv-quantlab/
 data/marketdata/
 data/live_market/
+data/company_facts/
+data/professor_reference/
 data/walk_forward/
+data/point_in_time/
 research/datasets/
 research/clones/
 research/cache/

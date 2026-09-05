@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-22",
+  "provider": "Screener.in",
+  "role": "human product-coverage benchmark only",
+  "automated_acquisition_enabled": false,
+  "runtime_dependency_allowed": false,
+  "facts_may_enter_canonical_store": false,
+  "robots_url": "https://www.screener.in/robots.txt",
+  "terms_url": "https://www.screener.in/guides/terms/",
+  "decision": "POLICY_DISABLED",
+  "reason": "The published service licence limits materials to personal, non-commercial transitory viewing and prohibits copying/public display; robots.txt also disallows query, sort, limit, page and source-quarter routes. No automated crawling or redistribution is authorized.",
+  "permitted_use": "Manual visual parity review and user-supplied exports with explicit provenance and rights",
+  "reconsideration_gate": "Written permission or a separately reviewed licensed API/export agreement"
+}

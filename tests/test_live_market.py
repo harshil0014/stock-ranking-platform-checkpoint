@@ -12,6 +12,7 @@ from stock_ranker.live_market import (
     apply_official_segments,
     build_latest_snapshot,
     combine_live_market,
+    classify_ranking_instruments,
     load_index_membership,
     load_live_market_bundle,
     load_official_equity_universe,
@@ -25,6 +26,9 @@ def _universe_csv(path: Path) -> Path:
         {"SYMBOL": "BBB", "NAME OF COMPANY": "Beta Bank", "SERIES": "BE", "DATE OF LISTING": "02-FEB-2010", "PAID UP VALUE": 10, "MARKET LOT": 1, "ISIN NUMBER": "INE000B01001", "FACE VALUE": 10},
         {"SYMBOL": "CCC", "NAME OF COMPANY": "Core Care", "SERIES": "BZ", "DATE OF LISTING": "03-MAR-2020", "PAID UP VALUE": 10, "MARKET LOT": 1, "ISIN NUMBER": "INE000C01001", "FACE VALUE": 10},
         {"SYMBOL": "ETF", "NAME OF COMPANY": "An ETF", "SERIES": "EQMF", "DATE OF LISTING": "04-APR-2020", "PAID UP VALUE": 10, "MARKET LOT": 1, "ISIN NUMBER": "INF000X01001", "FACE VALUE": 10},
+        {"SYMBOL": "ETFINEQ", "NAME OF COMPANY": "An ETF In EQ", "SERIES": "EQ", "DATE OF LISTING": "04-APR-2020", "PAID UP VALUE": 10, "MARKET LOT": 1, "ISIN NUMBER": "INF000X01019", "FACE VALUE": 10},
+        {"SYMBOL": "ALPHADVR", "NAME OF COMPANY": "Alpha Auto", "SERIES": "EQ", "DATE OF LISTING": "04-APR-2020", "PAID UP VALUE": 10, "MARKET LOT": 1, "ISIN NUMBER": "INE000A01019", "FACE VALUE": 10},
+        {"SYMBOL": "PREF", "NAME OF COMPANY": "Preference Security", "SERIES": "EQ", "DATE OF LISTING": "04-APR-2020", "PAID UP VALUE": 10, "MARKET LOT": 1, "ISIN NUMBER": "INE000A04013", "FACE VALUE": 10},
     ]).to_csv(path, index=False, lineterminator="\n")
     return path
 
@@ -74,6 +78,28 @@ def test_universe_keeps_main_board_equity_series_and_excludes_fund_like_series(t
     assert universe["ticker"].tolist() == ["AAA", "BBB", "CCC"]
     assert universe["series"].tolist() == ["EQ", "BE", "BZ"]
     assert "ETF" not in set(universe["ticker"])
+    assert set(universe["ranking_instrument_type"]) == {"ORDINARY_COMPANY_EQUITY"}
+
+
+def test_instrument_contract_distinguishes_non_company_and_security_class_noise() -> None:
+    rows = pd.DataFrame([
+        {"symbol": "ORD", "name": "Ordinary Company", "series": "EQ", "isin": "INE001A01010"},
+        {"symbol": "ETF", "name": "Exchange Traded Fund", "series": "EQ", "isin": "INF001A01010"},
+        {"symbol": "TRUST", "name": "Infrastructure Trust", "series": "IF", "isin": "INE001A23010"},
+        {"symbol": "RIGHT", "name": "Rights Entitlement", "series": "R", "isin": "INE001A20010"},
+        {"symbol": "ORDDVR", "name": "Ordinary Company", "series": "EQ", "isin": "INE001A01028"},
+        {"symbol": "PREF", "name": "Preference Share", "series": "EQ", "isin": "INE001A04016"},
+    ])
+    audit = classify_ranking_instruments(
+        rows, exchange="NSE", ticker_column="symbol", company_column="name",
+        series_column="series", isin_column="isin",
+    ).set_index("ticker")
+    assert bool(audit.loc["ORD", "ranking_universe_eligible"])
+    assert audit.loc["ETF", "ranking_universe_reason_code"] == "EXCLUDED_FUND_OR_ETF"
+    assert audit.loc["TRUST", "ranking_universe_reason_code"] == "EXCLUDED_LISTED_TRUST_UNIT"
+    assert audit.loc["RIGHT", "ranking_universe_reason_code"] == "EXCLUDED_RIGHTS_ENTITLEMENT"
+    assert audit.loc["ORDDVR", "ranking_universe_reason_code"] == "EXCLUDED_ALTERNATE_SECURITY_CLASS"
+    assert audit.loc["PREF", "ranking_universe_reason_code"] == "EXCLUDED_NON_ORDINARY_COMPANY_SECURITY"
 
 
 def test_official_memberships_are_exact_and_other_nse_remains_unclassified(tmp_path: Path) -> None:
@@ -137,8 +163,29 @@ def test_combine_gates_models_without_fabricating_values(tmp_path: Path) -> None
     assert rows.loc["AAA", "days_since_recorded_high"] == 5
     assert not any(column.endswith(("_x", "_y")) for column in market.columns)
     assert rows.loc["BBB", "baseline_reason_code"] == "PRICE_HISTORY_UNAVAILABLE"
-    assert rows.loc["CCC", "baseline_reason_code"] == "UNCLASSIFIED"
+    assert rows.loc["CCC", "baseline_reason_code"] == "PRICE_UNAVAILABLE"
     assert pd.isna(rows.loc["BBB", "baseline_score"])
+
+
+def test_missing_snapshot_price_takes_precedence_over_unclassified_status() -> None:
+    universe = pd.DataFrame([{
+        "ticker": "NOQUOTE", "company": "No Quote Limited", "series": "EQ",
+        "isin": "INE000A01001", "listing_date": "2020-01-01", "universe": "ALL NSE",
+        "universe_source": "Official test master", "primary_exchange": "NSE",
+        "exchange_security_id": "NOQUOTE", "identity_status": "OFFICIAL_NSE_MASTER",
+        "size_segment": "OTHER NSE", "sector": pd.NA, "industry": pd.NA,
+        "basic_industry": pd.NA, "classification_status": "UNCLASSIFIED",
+        "classification_source": pd.NA,
+    }])
+    snapshot = pd.DataFrame(columns=[
+        "ticker", "trade_date", "snapshot_status", "latest_price", "previous_close",
+        "day_change", "day_change_pct", "open", "high", "low", "volume",
+        "traded_value", "transactions", "snapshot_source",
+    ])
+    row = combine_live_market(universe, snapshot).iloc[0]
+    assert row["baseline_reason_code"] == "PRICE_UNAVAILABLE"
+    assert row["v2_reason_code"] == "PRICE_UNAVAILABLE"
+    assert "No official exchange trade row" in row["baseline_reason"]
 
 
 def test_bundle_fingerprint_validates_and_detects_mutation(tmp_path: Path) -> None:
@@ -158,7 +205,7 @@ def test_accepted_scoring_modules_are_only_called_not_reimplemented() -> None:
     source = (Path(__file__).parents[1] / "marketdata/runners/prepare_live_market.py").read_text(encoding="utf-8")
     assert "calculate_baseline_rankings(prepared.baseline_input)" in source
     assert "load_real_research_v2_bundle(ACCEPTED_V2)" in source
-    assert "yf.Ticker(provider_symbol(ticker)).history" in source
+    assert "yf.Ticker(provider_code or provider_symbol(ticker)).history" in source
     assert "fuzzy" not in source.lower()
 
 
@@ -172,6 +219,8 @@ def test_history_cache_hit_is_resumable_without_importing_provider(tmp_path: Pat
     spec.loader.exec_module(runner)
     (tmp_path / "AAA.csv").write_text("date,raw_close,adjusted_close\n2026-08-07,1,1\n", encoding="utf-8")
     assert runner._fetch_one("AAA", tmp_path, 2) == (True, "CACHE_HIT")
+    assert runner._cache_covers(tmp_path / "AAA.csv", "2026-08-07") is True
+    assert runner._cache_covers(tmp_path / "AAA.csv", "2026-08-08") is False
 
 
 def test_provider_failure_is_bounded_and_does_not_create_cache(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:

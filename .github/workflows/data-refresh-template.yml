@@ -1,0 +1,20 @@
+name: Offline public-data refresh template
+
+on:
+  workflow_dispatch:
+  # Enable only after repository-owner review of data licences and artifact retention.
+  # schedule:
+  #   - cron: "30 14 * * 1-5"
+
+jobs:
+  refresh:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: python -m pip install -e .
+      - run: python -m pytest -q -p no:cacheprovider
+      - run: marketdata\scheduling\windows_refresh.ps1 -DryRun
+      # Generated evidence is intentionally not committed by this template.

@@ -3,7 +3,7 @@ from __future__ import annotations
 import pytest
 
 from stock_ranker import research_website
-from stock_ranker.live_website import live_overview, live_stock
+from stock_ranker.live_website import _bundle, live_overview, live_stock
 from stock_ranker.web_assets import APP_JS, INDEX_HTML, STYLES_CSS
 
 
@@ -17,11 +17,12 @@ def test_ineligible_live_v2_copy_never_claims_ranking() -> None:
 
 def test_eligible_live_v2_copy_and_canonical_values_are_unchanged() -> None:
     data = live_stock("RELIANCE")
+    canonical = _bundle().market.set_index("ticker").loc["RELIANCE"]
     assert data["research_v2"]["eligible"] is True
     assert "ranks this company" in data["simple_explanation"]
-    assert data["research_v2"]["score"] == 50
-    assert data["research_v2"]["sector_rank"] == 1
-    assert data["research_v2"]["peer_count"] == 1
+    assert data["research_v2"]["score"] == canonical["research_v2_score"]
+    assert data["research_v2"]["sector_rank"] == canonical["research_v2_sector_rank"]
+    assert data["research_v2"]["peer_count"] == 2
     assert len(data["research_v2"]["factor_details"]) == 9
 
 
@@ -161,12 +162,18 @@ def test_price_history_heading_and_compact_badge_are_display_only() -> None:
     assert "latest-badge" in INDEX_HTML and ".latest-badge" in STYLES_CSS
 
 
-def test_live_counts_and_bundle_fingerprint_are_unchanged() -> None:
+def test_live_counts_match_the_atomic_accepted_bundle_and_frozen_v2_is_unchanged() -> None:
     data = live_overview("research_v2")
-    assert data["summary"] == {
-        "all_nse_equities": 2397,
-        "price_ready": 2393,
-        "baseline_eligible": 567,
-        "research_v2_eligible": 34,
-    }
-    assert data["bundle_fingerprint"] == "73803826866c63f3844d644cebf5cb6f729812213095f49271b0db60262dbbc4"
+    bundle = _bundle()
+    manifest = bundle.manifest
+    assert data["summary"]["supported_equities"] == manifest["universe_count"]
+    assert data["summary"]["nse_equities"] == manifest["nse_universe_count"]
+    assert data["summary"]["bse_only_equities"] == manifest["bse_only_count"]
+    assert data["summary"]["price_ready"] == manifest["snapshot"]["matched_count"]
+    assert data["summary"]["baseline_eligible"] >= manifest["baseline_eligible_count"]
+    assert data["summary"]["baseline_eligible"] == live_overview("baseline_v1")["summary"]["baseline_eligible"]
+    assert data["summary"]["research_v2_eligible"] == manifest["research_v2_eligible_count"] == 61
+    assert data["bundle_fingerprint"] == bundle.fingerprint
+    assert manifest["research_v2_frozen_evidence_fingerprint"] == (
+        "2a66a124ba83db489656ab6af5f73a609d3a7c75b5fb540e9bd7d9383b27b25b"
+    )

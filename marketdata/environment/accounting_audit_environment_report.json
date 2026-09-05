@@ -1,0 +1,17 @@
+{
+  "environment": ".venv-accounting-audit",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.4",
+  "purpose": "Independent annual-report text and table evidence extraction with pdfminer/pdfplumber and PDFium; no product ranking dependencies installed",
+  "packages": {
+    "pdfminer.six": "20251230",
+    "pdfplumber": "0.11.9",
+    "pypdfium2": "5.13.0"
+  },
+  "isolation": {
+    "pandas_installed": false,
+    "project_installed": false,
+    "pypdf_used_for_accepted_values": false
+  },
+  "status": "verified_for_independent_cached_pdf_audit"
+}

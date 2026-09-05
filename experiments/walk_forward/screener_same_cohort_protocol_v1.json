@@ -1,0 +1,90 @@
+{
+  "accounting_contract": {
+    "availability_clock": "Earliest exact official NSE/BSE dissemination timestamp for the same ISIN and financial period",
+    "basis": "STANDALONE",
+    "financial_methodology": "screener_historical_standalone_official_clock_v1",
+    "latest_filing_first": true,
+    "ranking_cutoff": "15:30:00 Asia/Kolkata on each ranking date",
+    "restatement_limitation": "The later hash-pinned Screener export may contain vendor restatements; source_observed_at and workbook hashes remain visible",
+    "value_source": "Hash-pinned Screener historical company workbook",
+    "v2_eligibility_applied_after_latest_selection": true
+  },
+  "aggregation": {
+    "across_dates": "Report every date separately; aggregate only equal-weight valid sector-date observations",
+    "minimum_cross_section_pairwise": 2,
+    "minimum_cross_section_rank_correlation": 3,
+    "no_statistical_significance_claim": true,
+    "pooled_security_rows_are_descriptive_only": true
+  },
+  "comparison": {
+    "baseline": "Unchanged Baseline V1 reranked within each sector on exactly the final V2-and-outcome-eligible cohort",
+    "full_baseline_rank_role": "Context only",
+    "research_v2": "Unchanged Research V2 scoring on the same cohort",
+    "same_cohort_required": true
+  },
+  "execution_gate": {
+    "minimum_rank_ic_eligible_sectors_each_date": 2,
+    "minimum_same_cohort_securities_each_date": 10,
+    "minimum_total_rank_ic_sector_dates": 12,
+    "outcomes_must_remain_unread_until_gate_passes": true
+  },
+  "future_returns": {
+    "adjusted_price_semantics": "Yahoo Adj Close endpoint / Yahoo Adj Close on ranking date - 1",
+    "endpoint": "Last trading observation on or before the calendar target",
+    "missing_outcome": "Exclude the security from both model sides and report the exact reason",
+    "outcome_isolation": "Ranking, eligibility, cohort, formulas and configuration are frozen before return values are read",
+    "primary_horizon_months": 12,
+    "secondary_horizons_months": [3, 6]
+  },
+  "interpretation": {
+    "allowed": [
+      "Per-date and per-sector descriptive ranking agreement",
+      "Paired model differences on valid sector-date observations",
+      "Explicit coverage, exclusions and concentration limitations"
+    ],
+    "forbidden": [
+      "Universal superiority",
+      "Statistical significance inferred from four dates",
+      "Portfolio profitability",
+      "Investment advice",
+      "Tuning after outcomes"
+    ]
+  },
+  "metrics": {
+    "primary": "Sector-date Spearman Rank IC at 12 months",
+    "secondary": [
+      "Sector-date Kendall tau-b",
+      "Pairwise ordering accuracy",
+      "Top-ranked-stock excess return versus its matched sector",
+      "Equal-sized top-half minus bottom-half spread",
+      "Per-date top-N overlap",
+      "V2 win/tie/loss versus matched Baseline"
+    ],
+    "ties": "Average ranks for Spearman; tau-b tie correction; model ties receive 0.5 pairwise credit; exact outcome ties are excluded",
+    "top_n": "Within each sector use min(5, cohort size), preserve reported ties, and use ticker only for deterministic exact-N cutoff"
+  },
+  "portfolio_boundary": {
+    "equal_weight": "Only within transparent top/bottom descriptive baskets",
+    "transaction_cost": null,
+    "transaction_cost_reason": "No executable portfolio or supported cost model is part of this experiment",
+    "turnover": "Optional descriptive identity overlap between adjacent annual selections; not a performance adjustment"
+  },
+  "protocol_identifier": "screener_historical_same_cohort_evaluation_protocol_v1",
+  "protocol_status": "frozen_pre_outcome_execution_gated",
+  "protocol_version": 1,
+  "ranking_dates": ["2022-08-05", "2023-08-07", "2024-08-07", "2025-08-07"],
+  "scientific_immutability": {
+    "baseline_method": true,
+    "classification_method": true,
+    "outcome_definition": true,
+    "research_v2_eligibility": true,
+    "research_v2_formulas": true,
+    "research_v2_weights": true
+  },
+  "universe": {
+    "membership": "Official NIFTY 50 membership from the corresponding NSE Indices July MCWB snapshot",
+    "projection_of_current_universe_backward": false,
+    "sector": "Official date-applicable NSE Indices Sector tier",
+    "survivorship_policy": "Later broad/current issuer populations may not enter a historical ranking cohort"
+  }
+}

@@ -25,6 +25,9 @@ EVALUATION_FINGERPRINT = "04e29e8a0f641f900e2ef5ca6d6fe5252b75eff9b23a69fba3b648
 QUANT_LAB_ROOT = PROJECT_ROOT / "research/generated/quantlab/real-frozen-v1"
 QUANT_REGISTRY = PROJECT_ROOT / "research/registry/quant_integrations.json"
 QLIB_REGISTRY = PROJECT_ROOT / "research/registry/open_source_registry.json"
+PROFESSOR_REFERENCE_ROOT = PROJECT_ROOT / "data/professor_reference/current"
+PROFESSOR_ACCEPTANCE_ROOT = PROJECT_ROOT / "data/professor_reference/acceptance_current"
+PROFESSOR_STRATEGY_ROOT = PROJECT_ROOT / "data/professor_reference/strategy_current"
 HISTORICAL_DATES = {
     "2022": "2022-08-05", "2023": "2023-08-07",
     "2024": "2024-08-07", "2025": "2025-08-07",
@@ -356,6 +359,126 @@ def methodology() -> dict[str, Any]:
         "weights_percent": weights,
         "fundamental_contract": "NSE Audited Standalone Fundamentals v1",
         "point_in_time_rule": "For a historical ranking date, predictor data released after that cutoff is not allowed.",
+    }
+
+
+def professor_reference(sector_value: str = "") -> dict[str, Any]:
+    """Expose the prepared workbook benchmark without opening user files in-browser."""
+    root = PROFESSOR_REFERENCE_ROOT
+    try:
+        manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
+        for entry in manifest["files"]:
+            path = root / str(entry["path"])
+            if not path.is_file() or path.stat().st_size != entry["size"] or sha256(path.read_bytes()).hexdigest() != entry["sha256"]:
+                raise ResearchWebsiteError("Professor-reference artifact integrity error.")
+        audit = json.loads((root / "audit_summary.json").read_text(encoding="utf-8"))
+        comparison = pd.read_csv(root / "stock_comparison.csv")
+        metrics = pd.read_csv(root / "metric_summary.csv")
+        sectors = sorted(comparison["sector"].dropna().astype(str).unique().tolist())
+        sector = str(sector_value).strip()
+        if sector and sector not in sectors:
+            raise ResearchWebsiteError("sector is not present in the professor-reference comparison")
+        rows = comparison.loc[comparison["sector"].eq(sector)] if sector else comparison.iloc[0:0]
+    except ResearchWebsiteError:
+        raise
+    except (FileNotFoundError, KeyError, ValueError, json.JSONDecodeError) as exc:
+        return _unavailable(
+            "The professor-reference benchmark has not been prepared locally.",
+            "Run stock-ranker professor-reference with the supplied workbook and cached project artifacts.",
+        ) | {"diagnostic": type(exc).__name__}
+    keep = [
+        "reference_ticker", "ticker", "company", "sector", "identity_status",
+        "reference_yoy_growth", "yoy_growth", "reference_cagr_3y", "cagr_3y",
+        "reference_cagr_5y", "cagr_5y", "reference_days_since_recorded_high",
+        "days_since_recorded_high", "baseline_score", "baseline_sector_rank",
+        "v2_eligible", "research_v2_score", "research_v2_sector_rank",
+        "disagreement_reason", "price_cell", "yoy_cell", "cagr_3y_cell",
+        "cagr_5y_cell", "recency_cell", "comparison_snapshot_note",
+    ]
+    return {
+        "available": True, "sectors": sectors, "selected_sector": sector or None,
+        "rows": _records(rows.loc[:, [column for column in keep if column in rows.columns]]),
+        "metric_summary": _records(metrics), "audit": audit,
+        "warning": (
+            "The workbook has no sector rank or composite score. Baseline columns are a same-date "
+            "project reconstruction; Research V2 columns are a separately dated extension."
+        ),
+    }
+
+
+def professor_acceptance(search_value: str = "") -> dict[str, Any]:
+    """Expose the hash-validated supplied-cohort audit without recalculation."""
+    root = PROFESSOR_ACCEPTANCE_ROOT
+    try:
+        manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
+        for entry in manifest["files"]:
+            path = root / str(entry["path"])
+            if not path.is_file() or path.stat().st_size != entry["size"] or sha256(path.read_bytes()).hexdigest() != entry["sha256"]:
+                raise ResearchWebsiteError("Professor acceptance artifact integrity error.")
+        audit = json.loads((root / "acceptance_summary.json").read_text(encoding="utf-8"))
+        frame = pd.read_csv(root / "security_acceptance.csv", low_memory=False)
+    except ResearchWebsiteError:
+        raise
+    except (FileNotFoundError, KeyError, ValueError, json.JSONDecodeError) as exc:
+        return _unavailable(
+            "The supplied professor cohort has not been prepared locally.",
+            "Run stock-ranker professor-acceptance with the supplied request and verified identity evidence.",
+        ) | {"diagnostic": type(exc).__name__}
+    strategy_audit = None
+    strategy_fingerprint = None
+    strategy_root = PROFESSOR_STRATEGY_ROOT
+    try:
+        strategy_manifest = json.loads((strategy_root / "manifest.json").read_text(encoding="utf-8"))
+        for entry in strategy_manifest["files"]:
+            path = strategy_root / str(entry["path"])
+            if not path.is_file() or path.stat().st_size != entry["size"] or sha256(path.read_bytes()).hexdigest() != entry["sha256"]:
+                raise ResearchWebsiteError("Professor strategy artifact integrity error.")
+        strategy_audit = json.loads((strategy_root / "strategy_summary.json").read_text(encoding="utf-8"))
+        strategy = pd.read_csv(strategy_root / "professor_strategy_comparison.csv", low_memory=False)
+        strategy_columns = [
+            "requested_code", "workbook_sip_rank", "workbook_sip_profit_loss",
+            "workbook_sip_cagr_10y", "workbook_sip_cagr_5y", "workbook_sip_cagr_3y",
+            "workbook_industry", "screener_industry", "sip_cells", "sip_rank_formula", "cagr_cells",
+            "workbook_evidence_status", "screener_evidence_status", "strategy_disagreement_reason",
+        ]
+        frame = frame.merge(strategy.loc[:, [column for column in strategy_columns if column in strategy.columns]],
+                            on="requested_code", how="left", validate="one_to_one")
+        strategy_fingerprint = strategy_manifest["strategy_fingerprint"]
+    except FileNotFoundError:
+        pass
+    query = str(search_value).strip().casefold()
+    if query:
+        searchable = (frame["requested_code"].fillna("").astype(str) + " " +
+                      frame["canonical_company"].fillna("").astype(str) + " " +
+                      frame["canonical_symbol"].fillna("").astype(str)).str.casefold()
+        frame = frame.loc[searchable.str.contains(query, regex=False)]
+    ranked = frame["reference_rank"].notna()
+    frame = pd.concat([frame.loc[ranked].sort_values("reference_rank", kind="stable"),
+                       frame.loc[~ranked].sort_values("requested_code", kind="stable")])
+    keep = [
+        "requested_code", "reference_rank", "canonical_company", "canonical_exchange",
+        "canonical_symbol", "isin", "identity_status", "resolution_status", "resolution_reason",
+        "sector", "size_classification", "latest_price", "latest_price_date",
+        "history_start_date", "history_end_date", "anchor_1y_available",
+        "anchor_3y_available", "anchor_5y_available", "recorded_high_date",
+        "baseline_eligibility_reason", "baseline_score", "baseline_sector_rank",
+        "research_v2_reason", "research_v2_score", "research_v2_sector_rank",
+        "mapping_decision", "identity_evidence_source",
+        "workbook_sip_rank", "workbook_sip_profit_loss", "workbook_sip_cagr_10y",
+        "workbook_sip_cagr_5y", "workbook_sip_cagr_3y", "workbook_industry",
+        "screener_industry", "sip_cells", "sip_rank_formula", "cagr_cells",
+        "workbook_evidence_status", "screener_evidence_status", "strategy_disagreement_reason",
+    ]
+    return {
+        "available": True, "audit": audit,
+        "acceptance_fingerprint": manifest["acceptance_fingerprint"],
+        "rows": _records(frame.loc[:, [column for column in keep if column in frame.columns]]),
+        "strategy_audit": strategy_audit,
+        "strategy_fingerprint": strategy_fingerprint,
+        "warning": (
+            "Reference rank is external evaluation evidence. Baseline and Research V2 ranks remain canonical "
+            "within-sector ranks and are never recomputed for this filtered cohort."
+        ),
     }
 
 

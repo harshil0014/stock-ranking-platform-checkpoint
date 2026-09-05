@@ -1,0 +1,108 @@
+{
+  "schema_version": "pit_annual_report_validation_v1",
+  "fundamental_data_contract_version": "nse_audited_standalone_fundamentals_v1",
+  "reporting_basis": "STANDALONE",
+  "financial_year": "2025-26",
+  "period_end": "2026-03-31",
+  "policy": "Review-only evidence set. Use formal standalone statutory/key-ratio disclosures and reported standalone profit. Never derive a missing ratio, substitute a proxy, normalize profit, or promote these records automatically.",
+  "records": [
+    {
+      "ticker": "SHRIPISTON", "company": "SPR Auto Technologies Limited", "isin": "INE526E01018", "pdf_sha256": "661c763a31bab86cae7fe5ac3c716068fdfb6481cf1d02b950df4bbd0998795d", "review_status": "COMPLETE_DIRECT_DISCLOSURE", "unresolved_reason": "",
+      "roce": {"label": "Return on capital employed", "canonical_decimal": 0.1585, "page": 125, "anchors": ["Return on capital employed", "Capital employed = Net worth + Debt", "15.85 24.83"], "formula": "Profit before tax and finance cost / (Net worth + Debt)"},
+      "debt_to_equity": {"label": "Debt-Equity ratio", "canonical_decimal": 0.59, "page": 124, "anchors": ["Debt-Equity ratio", "Debt consist of borrowings", "0.59 0.15"], "formula": "Borrowings / Total Equity"},
+      "profit": {"label": "Profit for the year", "current_value": 5136.23, "prior_value": 4978.09, "unit": "INR million", "page": 93, "anchors": ["Profit for the year", "5,136.23 4,978.09"]},
+      "comparability_warning": ""
+    },
+    {
+      "ticker": "IDEA", "company": "Vodafone Idea Limited", "isin": "INE669E01016", "pdf_sha256": "cf1fd51c68298a84469783fb3ca3933d3ca466530b171b9cf151dd12d7266eea", "review_status": "COMPLETE_DIRECT_DISCLOSURE", "unresolved_reason": "",
+      "roce": {"label": "Return on Capital employed", "canonical_decimal": 0.50, "page": 275, "anchors": ["Return on Capital employed", "50% (3)%"], "formula": "(Profit/(loss) before tax + Finance costs - Other income) / (Equity share capital + Other equity + Debt excluding interest accrued but not due)", "additional_evidence": [{"page": 276, "anchors": ["Return on Capital employed", "Finance costs-Other income"]}]},
+      "debt_to_equity": {"label": "Debt Equity Ratio", "canonical_decimal": -4.14, "page": 275, "anchors": ["Debt Equity Ratio", "(4.14) (2.81)", "Debt (excluding interest accrued but not due) / Equity"], "formula": "Debt excluding interest accrued but not due / Equity"},
+      "profit": {"label": "Profit / (Loss) after tax for the year", "current_value": 34482, "prior_value": -27442, "unit": "INR crore", "page": 199, "anchors": ["Profit / (Loss) after tax for the year", "34,482 (27,442)"]},
+      "comparability_warning": "The formal debt-equity ratio is negative and therefore fails the unchanged V2 leverage rule; the report also presents a distinct net-debt/equity ratio. Profit includes the issuer's reported exceptional item and is not normalized."
+    },
+    {
+      "ticker": "IGARASHI", "company": "Igarashi Motors India Limited", "isin": "INE188B01013", "pdf_sha256": "71cf525f7b23936b69050d45752fc8db57285a11951f00ae860e0721cec564b3", "review_status": "COMPLETE_DIRECT_DISCLOSURE", "unresolved_reason": "",
+      "roce": {"label": "Return on Capital employed", "canonical_decimal": 0.04, "page": 217, "anchors": ["Return on Capital employed", "4.00% 7.00%", "Capital employed"], "formula": "Profit before taxes and finance cost / (Net worth + total debt + deferred tax liability)"},
+      "debt_to_equity": {"label": "Debt-Equity ratio", "canonical_decimal": 0.28, "page": 217, "anchors": ["Debt-Equity ratio", "0.28 0.28"], "formula": "Total debt / Shareholder's equity"},
+      "profit": {"label": "Profit for the year", "current_value": 1214.66, "prior_value": 2416.83, "unit": "INR lakh", "page": 163, "anchors": ["Profit for the year", "1,214.66 2,416.83"]},
+      "comparability_warning": ""
+    },
+    {
+      "ticker": "POWERINDIA", "company": "Hitachi Energy India Limited", "isin": "INE07Y701011", "pdf_sha256": "364374330db20628b70ac5de71e83e4f5014d59db2d3aadf1948b0c92de6156a", "review_status": "UNRESOLVED", "unresolved_reason": "UNRESOLVED_NO_NUMERIC_DEBT_EQUITY_DISCLOSURE",
+      "roce": {"label": "Return on Capital Employed", "page": 294, "anchors": ["Return on Capital Employed", "0.26 0.13", "Deferred Tax Asset"], "formula": "EBIT / (Tangible Net Worth + Total Debt - Deferred Tax Asset)"},
+      "debt_to_equity": {"label": "Debt-Equity Ratio", "page": 294, "anchors": ["Debt- Equity Ratio", "Short term borrowings", "Shareholder's Equity"], "formula": "Short-term borrowings / Shareholder's Equity; issuer displays dashes, not a numeric ratio"},
+      "profit": {"label": "Profit for the year", "current_value": 987.84, "prior_value": 383.98, "unit": "INR crore", "page": 240, "anchors": ["Profit for the year", "987.84 383.98"]},
+      "comparability_warning": "A dash is not converted to zero; debt-to-equity remains unresolved."
+    },
+    {
+      "ticker": "BLUESTARCO", "company": "Blue Star Limited", "isin": "INE472A01039", "pdf_sha256": "6f9fdfa71cadd53e336b76a7e580cff2b77c4bab4973d229024b1b8f2a5f6fea", "review_status": "COMPLETE_DIRECT_DISCLOSURE", "unresolved_reason": "",
+      "roce": {"label": "Return on Capital employed (ROCE)", "canonical_decimal": 0.1601, "page": 424, "anchors": ["Return on Capital employed", "16.01% 21.40%"], "formula": "(Profit before exceptional item and tax + Finance charges) / Capital employed"},
+      "debt_to_equity": {"label": "Debt-Equity ratio", "canonical_decimal": 0.24, "page": 424, "anchors": ["Debt-Equity ratio", "0.24 0.11"], "formula": "Total Debt / Shareholder equity"},
+      "profit": {"label": "Profit for the year", "current_value": 385.10, "prior_value": 484.90, "unit": "INR crore", "page": 354, "anchors": ["Profit for the year", "385.10 484.90"]},
+      "comparability_warning": "The issuer labels the denominator Capital Employed without expanding it in the ratio table."
+    },
+    {
+      "ticker": "TRF", "company": "TRF Limited", "isin": "INE391D01019", "pdf_sha256": "5d04ae7fcb48c0500b4b2554235d506690218ca76587fe96af66761390cc3904", "review_status": "COMPLETE_DIRECT_DISCLOSURE", "unresolved_reason": "",
+      "roce": {"label": "Return on Capital Employed", "canonical_decimal": 0.1267, "page": 126, "anchors": ["Return on Capital Employed", "12.67% 32.48%", "Average Capital Employed"], "formula": "EBIT / Average Capital Employed"},
+      "debt_to_equity": {"label": "Debt-Equity Ratio", "canonical_decimal": 1.55, "page": 126, "anchors": ["Debt-Equity Ratio", "1.55 1.91"], "formula": "Total Debt / Average Shareholder's Equity"},
+      "profit": {"label": "Profit for the year", "current_value": 211.05, "prior_value": 2762.70, "unit": "INR lakh", "page": 69, "anchors": ["Profit for the year", "211.05 2,762.70"]},
+      "comparability_warning": ""
+    },
+    {
+      "ticker": "TRIDENT", "company": "Trident Limited", "isin": "INE064C01022", "pdf_sha256": "8749262ceac9c1be5c925a8e3356b0e621fd5b755a66f1d8046768421d510a8a", "review_status": "COMPLETE_DIRECT_DISCLOSURE", "unresolved_reason": "",
+      "roce": {"label": "Return on capital employed", "canonical_decimal": 0.09, "page": 128, "anchors": ["Return on capital employed", "0.09 0.10", "Deferred Tax Liability"], "formula": "EBIT / (Tangible Net Worth + Total Debt + Deferred Tax Liability)"},
+      "debt_to_equity": {"label": "Debt-Equity Ratio", "canonical_decimal": 0.43, "page": 127, "anchors": ["Debt- Equity Ratio", "0.43 0.40", "excluding lease liabilities"], "formula": "Total debt excluding lease liabilities / Total equity excluding specified reserves"},
+      "profit": {"label": "Profit for the year", "current_value": 3760.6, "prior_value": 3668.3, "unit": "INR million", "page": 91, "anchors": ["Profit for the year", "3,760.6 3,668.3"]},
+      "comparability_warning": ""
+    },
+    {
+      "ticker": "SHALBY", "company": "Shalby Limited", "isin": "INE597J01018", "pdf_sha256": "391cc9988eb85edf4592a79f00707977cb1991d77b87967373dba167043dc5ab", "review_status": "COMPLETE_DIRECT_DISCLOSURE", "unresolved_reason": "",
+      "roce": {"label": "Return on Capital Employed", "canonical_decimal": 0.0902, "page": 309, "anchors": ["Return on Capital Employed", "9.02%", "11.04%", "Deferred Tax Liability"], "formula": "EBIT / (Tangible Net Worth + Total Debt + Deferred Tax Liability)"},
+      "debt_to_equity": {"label": "Debt-to-equity Ratio", "canonical_decimal": 0.10, "page": 308, "anchors": ["Debt-to-equity Ratio", "0.10", "0.09"], "formula": "Total debt / Shareholder equity"},
+      "profit": {"label": "Profit for the year from continuing operations", "current_value": 1129.09, "prior_value": 837.92, "unit": "INR million", "page": 227, "anchors": ["Profit for the year from continuing operations", "1,129.09 837.92"]},
+      "comparability_warning": "The reported statement presents profit from continuing operations; no adjusted measure is substituted."
+    },
+    {
+      "ticker": "AMBUJACEM", "company": "Ambuja Cements Limited", "isin": "INE079A01024", "pdf_sha256": "e9aedec8eef2fe351e93fe5e5fcb68d76ad0c048c9a57bfea4375d96ec1f60a2", "review_status": "COMPLETE_DIRECT_DISCLOSURE", "unresolved_reason": "",
+      "roce": {"label": "Return on Capital Employed", "canonical_decimal": 0.0322, "page": 289, "anchors": ["Return on Capital Employed", "3.22% 6.98%", "Deferred Tax Liability"], "formula": "(PBT excluding OCI + finance cost on borrowings) / (Tangible net worth + total debt + deferred tax liability)"},
+      "debt_to_equity": {"label": "Debt Equity Ratio", "canonical_decimal": 0.0, "page": 288, "anchors": ["Debt Equity Ratio", "0.00 0.00"], "formula": "Total debts / Shareholder equity"},
+      "profit": {"label": "Profit after tax", "current_value": 3558.37, "prior_value": 2835.00, "unit": "INR crore", "page": 222, "anchors": ["Profit after tax", "3,558.37 2,835.00"]},
+      "comparability_warning": "The prior-year standalone figures are explicitly restated; the reported restated comparator is retained."
+    },
+    {
+      "ticker": "PVRINOX", "company": "PVR INOX Limited", "isin": "INE191H01014", "pdf_sha256": "61f28e7f310be41d3d991c0aca64ec6a52e4054bcfeec125afb91d31ff1b4de1", "review_status": "COMPLETE_DIRECT_DISCLOSURE", "unresolved_reason": "",
+      "roce": {"label": "Return on Capital Employed", "canonical_decimal": 0.4712, "page": 230, "anchors": ["Return on Capital Employed", "47.12% 15.88%", "other intangible assets"], "formula": "EBIT / (Total equity + borrowings - other intangible assets - goodwill)"},
+      "debt_to_equity": {"label": "Debt Equity Ratio", "canonical_decimal": 0.10, "page": 230, "anchors": ["Debt Equity Ratio", "0.10 0.21"], "formula": "Total borrowings / Total equity"},
+      "profit": {"label": "Profit / (loss) for the year", "current_value": 2685, "prior_value": -2769, "unit": "INR million", "page": 172, "anchors": ["Profit / (loss) for the year", "2 6 8 5", "( 2 7 6 9 )"]},
+      "comparability_warning": "Reported profit contains exceptional items; no normalization is applied."
+    },
+    {
+      "ticker": "VIMTALABS", "company": "Vimta Labs Limited", "isin": "INE579C01029", "pdf_sha256": "e36daf5e0edfa8fed676e8e1a9f51421f4cc5dc7b3a95c4d012f0c9a7e6dad15", "review_status": "COMPLETE_DIRECT_DISCLOSURE", "unresolved_reason": "",
+      "roce": {"label": "Return on Capital Employed", "canonical_decimal": 0.2118, "page": 169, "anchors": ["Return on Capital Employed", "21.18% 22.73%"], "formula": "EBIT / Capital Employed"},
+      "debt_to_equity": {"label": "Debt-Equity Ratio", "canonical_decimal": 0.01, "page": 169, "anchors": ["Debt-Equity Ratio", "0.01 0.02"], "formula": "Total Debt / Total Equity"},
+      "profit": {"label": "Profit for the year", "current_value": 775.12, "prior_value": 673.42, "unit": "INR million", "page": 121, "anchors": ["Profit for the year", "775.12 673.42"]},
+      "comparability_warning": "Prior reported profit includes a small discontinued-operation amount; the statutory total is retained without normalization."
+    },
+    {
+      "ticker": "TVTODAY", "company": "TV Today Network Limited", "isin": "INE038F01029", "pdf_sha256": "376ca714429c26f48a75adf9694ff252fa793fbb98e1fdaa12d0a53c29ef4095", "review_status": "COMPLETE_DIRECT_DISCLOSURE", "unresolved_reason": "",
+      "roce": {"label": "Return on Capital Employed", "canonical_decimal": 0.0258, "page": 314, "anchors": ["Return on Capital Employed", "2.58% 10.96%", "intangible assets"], "formula": "EBIT / (Total equity - intangible assets + total debt)"},
+      "debt_to_equity": {"label": "Debt Equity Ratio", "canonical_decimal": 0.02, "page": 313, "anchors": ["Debt Equity Ratio", "0.02 0.02", "Lease liabilities"], "formula": "Lease liabilities / Shareholder equity"},
+      "profit": {"label": "Profit for the year", "current_value": 13.74, "prior_value": 74.83, "unit": "INR crore", "page": 249, "anchors": ["Profit for the year", "13.74 74.83"]},
+      "comparability_warning": "The issuer states ratios and reported profit include discontinued operations; no normalization is applied."
+    },
+    {
+      "ticker": "BOSCHLTD", "company": "Bosch Limited", "isin": "INE323A01026", "pdf_sha256": "39ba05d9e676f4d76442a2c9450d9c78dab6d9009ead5a0c648eb6d7074d43c9", "review_status": "COMPLETE_DIRECT_DISCLOSURE", "unresolved_reason": "",
+      "roce": {"label": "Return on Capital Employed", "canonical_decimal": 0.24, "page": 342, "anchors": ["Return on Capital Employed", "24.00% 19.67%", "includes exceptional items"], "formula": "EBIT including exceptional items / (Tangible net worth + total debt + deferred tax liability)"},
+      "debt_to_equity": {"label": "Debt-Equity ratio", "canonical_decimal": 0.01, "page": 342, "anchors": ["Debt-Equity ratio", "0.01 0.01", "lease liabilities"], "formula": "Current and non-current lease liabilities / Shareholder equity"},
+      "profit": {"label": "Profit for the year", "current_value": 27703, "prior_value": 20133, "unit": "INR million", "page": 278, "anchors": ["Profit for the year", "27,703 20,133"]},
+      "comparability_warning": "A management section shows an adjusted 20.7% ROCE excluding exceptional items. The formal standalone statutory ratio (24.00%, including exceptional items) is selected under the frozen direct-disclosure policy; both are disclosed, not hidden."
+    },
+    {
+      "ticker": "SHEKHAWATI", "company": "Shekhawati Industries Limited", "isin": "INE268L01046", "pdf_sha256": "121855726ccf4515ab144329583acc04506dd32849364ec4fd0081eaad357e39", "review_status": "COMPLETE_DIRECT_DISCLOSURE", "unresolved_reason": "",
+      "roce": {"label": "Return on Capital Employed", "canonical_decimal": 0.40, "page": 131, "anchors": ["Return on capital employed", "890.26 2,198.59 0.40", "631.78 1,318.59 0.48"], "formula": "EBIT / (Tangible Net Worth + Total debt + Deferred Tax liability)", "additional_evidence": [{"page": 132, "anchors": ["Capital Employed", "Tangible Networth", "Deferred Tax liability"]}]},
+      "debt_to_equity": {"label": "Debt Equity Ratio", "canonical_decimal": 0.06, "page": 131, "anchors": ["Debt Equity Ratio", "138.06 2,198.59 0.06", "36.16 1,318.59 0.03"], "formula": "Total debt / Shareholder equity"},
+      "profit": {"label": "Profit / (loss) for the year", "current_value": 880.55, "prior_value": 628.21, "unit": "INR lakh", "page": 86, "anchors": ["Profit / (loss) for the year", "880.55 628.21"]},
+      "comparability_warning": ""
+    }
+  ]
+}

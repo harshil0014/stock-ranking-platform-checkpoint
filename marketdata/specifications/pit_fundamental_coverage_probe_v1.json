@@ -1,0 +1,39 @@
+{
+  "schema_version": "pit_fundamental_coverage_probe_v1",
+  "purpose": "Test whether strict Research V2 fundamental coverage can expand without weakening identity, availability, basis, or direct-disclosure rules.",
+  "sample": {
+    "size": 50,
+    "population": "NSE exact-ISIN securities that are current-product Baseline eligible and not already Research V2 eligible",
+    "selection": "ascending SHA-256 of ISIN",
+    "ranking_date": "2026-08-21",
+    "financial_year": "2025-26"
+  },
+  "required_fundamentals": [
+    "roce",
+    "debt_to_equity",
+    "profit_growth_yoy"
+  ],
+  "identity_rule": "Exact current NSE-master ISIN must occur in extracted issuer report text; ticker-only or fuzzy-name matching is insufficient.",
+  "availability_rule": "Use the official exchange dissemination timestamp and reject reports disseminated after the ranking-date cutoff.",
+  "basis_rule": "Accept only reviewed audited standalone disclosures for all required fields; never mix standalone and consolidated facts.",
+  "discovery_sources": [
+    "official NSE integrated financial-results XBRL",
+    "official NSE annual-report API and archive PDF"
+  ],
+  "candidate_rule": "Automated PDF extraction creates review candidates only and never model inputs.",
+  "scale_gate": {
+    "minimum_reviewed_complete_rate": 0.2,
+    "requires_exact_identity": true,
+    "requires_official_availability_timestamp": true,
+    "requires_all_three_reviewed_direct_disclosures": true,
+    "allows_imputation": false,
+    "allows_derived_roce_or_debt_to_equity": false
+  },
+  "prohibited_actions": [
+    "change Research V2 formulas or weights",
+    "impute a missing fundamental",
+    "derive a ratio from raw accounting facts",
+    "accept unreviewed PDF text",
+    "start a monthly or multi-year backtest"
+  ]
+}

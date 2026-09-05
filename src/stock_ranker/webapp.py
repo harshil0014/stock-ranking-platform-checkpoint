@@ -3,19 +3,32 @@
 from __future__ import annotations
 
 import argparse
+from pathlib import Path
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
+import subprocess
+import sys
 from typing import Any
 from urllib.parse import parse_qs, urlparse
 
 from stock_ranker.web_assets import APP_JS, INDEX_HTML, STYLES_CSS
-from stock_ranker.live_website import LiveWebsiteError, live_history, live_overview, live_stock
+from stock_ranker.live_website import (
+    LiveWebsiteError,
+    company_facts_coverage,
+    live_dashboard,
+    live_data_status,
+    live_history,
+    live_overview,
+    live_stock,
+)
 from stock_ranker.research_website import (
     ResearchWebsiteError,
     historical,
     methodology,
     overview,
+    professor_acceptance,
+    professor_reference,
     quant_lab,
     provenance as research_provenance,
     rankings,
@@ -54,6 +67,7 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
         query = parse_qs(request.query)
         routes = {
             "/": (INDEX_HTML, "text/html; charset=utf-8"),
+            "/dashboard": (INDEX_HTML, "text/html; charset=utf-8"),
             "/live": (INDEX_HTML, "text/html; charset=utf-8"),
             "/overview": (INDEX_HTML, "text/html; charset=utf-8"),
             "/rankings": (INDEX_HTML, "text/html; charset=utf-8"),
@@ -70,11 +84,18 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
             self._json(HTTPStatus.OK, {"status": "ok", "service": "stock-ranking-website"})
             return
         live_routes = {
+            "/api/live/dashboard": lambda: live_dashboard(
+                query.get("sector", [""])[0], query.get("model", ["baseline_v1"])[0],
+                query.get("segment", [""])[0],
+                fingerprint_only=query.get("fingerprint_only", ["false"])[0].lower() == "true",
+            ),
             "/api/live/overview": lambda: live_overview(query.get("model", ["baseline_v1"])[0]),
             "/api/live/stock": lambda: live_stock(query.get("ticker", [""])[0]),
             "/api/live/history": lambda: live_history(
                 query.get("ticker", [""])[0], query.get("range", ["1y"])[0]
             ),
+            "/api/live/data-status": lambda: live_data_status(),
+            "/api/live/company-facts-coverage": lambda: company_facts_coverage(),
         }
         if path in live_routes:
             try:
@@ -99,6 +120,12 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
             "/api/research/methodology": lambda: methodology(),
             "/api/research/status": lambda: research_status(),
             "/api/research/quant-lab": lambda: quant_lab(),
+            "/api/research/professor-reference": lambda: professor_reference(
+                query.get("sector", [""])[0]
+            ),
+            "/api/research/professor-acceptance": lambda: professor_acceptance(
+                query.get("search", [""])[0]
+            ),
         }
         if path in research_routes:
             try:
@@ -150,16 +177,46 @@ def create_server(host: str = "127.0.0.1", port: int = 8765) -> ThreadingHTTPSer
     return ThreadingHTTPServer((host, port), ResearchWebsiteHandler)
 
 
+def start_background_refresh(project_root: str | Path | None = None) -> subprocess.Popen[bytes] | None:
+    """Start one isolated bounded refresh; serving never waits for or depends on it."""
+
+    root = Path(project_root or Path(__file__).resolve().parents[2]).resolve()
+    runner = root / "marketdata" / "runners" / "refresh_company_data.py"
+    market_python = root / ".venv-marketdata" / "Scripts" / "python.exe"
+    if not runner.is_file():
+        return None
+    interpreter = market_python if market_python.is_file() else Path(sys.executable)
+    log_path = root / "data" / "live_market" / "refresh.log"
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    log = log_path.open("ab")
+    creationflags = getattr(subprocess, "CREATE_NO_WINDOW", 0)
+    try:
+        return subprocess.Popen(
+            [str(interpreter), str(runner)], cwd=root,
+            stdin=subprocess.DEVNULL, stdout=log, stderr=subprocess.STDOUT,
+            creationflags=creationflags,
+        )
+    finally:
+        log.close()
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Serve the local Indian equity research website.")
     parser.add_argument("--port", type=int, default=8765)
+    parser.add_argument("--no-auto-refresh", action="store_true")
     args = parser.parse_args(argv)
     try:
         server = create_server(port=args.port)
     except (OSError, ValueError) as exc:
         parser.error(str(exc))
     url = f"http://127.0.0.1:{server.server_address[1]}"
+    refresh = None if args.no_auto_refresh else start_background_refresh()
     print(f"Indian Equity Research Platform: {url}", flush=True)
+    print(
+        "Market refresh: disabled" if args.no_auto_refresh else
+        "Market refresh: checking free public sources in the background",
+        flush=True,
+    )
     print("Press Ctrl+C to stop.", flush=True)
     try:
         server.serve_forever()

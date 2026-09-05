@@ -1,0 +1,37 @@
+{
+  "schema_version": "pit_fundamental_scale_v1",
+  "ranking_date": "2026-08-21",
+  "target_financial_year": "2025-26",
+  "population": {
+    "primary_exchange": "NSE",
+    "identity": "exact current official ISIN",
+    "baseline_ready": true,
+    "research_v2_eligible": false
+  },
+  "required_direct_disclosures": [
+    "audited standalone ROCE",
+    "audited standalone debt-to-equity",
+    "audited standalone current and comparable prior annual profit"
+  ],
+  "availability": "official exchange dissemination timestamp on or before ranking cutoff",
+  "stages": [
+    "whole-population metadata discovery",
+    "deterministic sector-diverse bounded download",
+    "hash-verified PDF text and page locator extraction",
+    "exact ISIN-in-document verification",
+    "independent accounting review",
+    "separately versioned current-data promotion"
+  ],
+  "batch_size": 250,
+  "financial_entity_policy": "separate economic-applicability review",
+  "prohibitions": [
+    "raw-fact ROCE derivation",
+    "proxy substitution",
+    "imputation",
+    "standalone and consolidated basis mixing",
+    "filename-derived availability timestamp",
+    "automatic acceptance of extracted numeric tokens",
+    "automatic price-history splicing across an ISIN transition",
+    "mutation of frozen Research V2 or walk-forward evidence"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "official_exchange_backbone_v1",
+  "canonical_identity": "ISIN with exchange-specific security identifier and effective dates",
+  "precedence": [
+    "official_exchange_or_regulator",
+    "issuer_audited_evidence",
+    "identity_validated_secondary_reference"
+  ],
+  "nse_bulk_surfaces": {
+    "financials": "/api/integrated-filing-results",
+    "legacy_financials": "/api/corporates-financial-results",
+    "shareholding": "/api/corporate-share-holdings-master",
+    "corporate_actions": "/api/corporates-corporateActions",
+    "announcements_and_documents": "/api/corporate-announcements"
+  },
+  "bse_surfaces": {
+    "corporate_actions": "api.bseindia.com/BseIndiaAPI/api/DefaultData/w",
+    "shareholding_by_exact_scrip_code": "api.bseindia.com/BseIndiaAPI/api/Corp_Shareholding_ng/w"
+  },
+  "xbrl_contract": {
+    "retain_source_concepts": true,
+    "retain_unknown_numeric_concepts": true,
+    "preserve_statement_basis": true,
+    "preserve_period_and_revision": true,
+    "families": [
+      "INDAS",
+      "BANKING",
+      "NBFC_INDAS",
+      "LIFE_INSURANCE",
+      "GENERAL_INSURANCE",
+      "REIT_INVIT"
+    ]
+  },
+  "classification_states": [
+    "OFFICIAL",
+    "DERIVED_PRIMARY_EVIDENCE",
+    "DERIVED_SECONDARY_REFERENCE_ONLY",
+    "UNCLASSIFIED"
+  ],
+  "secondary_provider_policy": {
+    "durable_backlog": true,
+    "stop_on_rate_limit": true,
+    "no_proxy_rotation": true,
+    "no_concurrency_escalation": true,
+    "never_ranking_grade_without_primary_evidence": true
+  },
+  "scientific_boundaries": {
+    "baseline_v1_unchanged": true,
+    "research_v2_unchanged": true,
+    "frozen_experiments_unchanged": true,
+    "page_completeness_is_not_model_eligibility": true
+  }
+}
