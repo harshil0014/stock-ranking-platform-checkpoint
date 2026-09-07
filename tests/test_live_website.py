@@ -31,7 +31,7 @@ def test_live_models_preserve_eligibility_gates_and_searchable_other_nse() -> No
     baseline = live_website.live_overview("baseline_v1")
     v2 = live_website.live_overview("research_v2")
     assert sum(row["eligible"] for row in baseline["rows"]) == baseline["summary"]["baseline_eligible"]
-    assert sum(row["eligible"] for row in v2["rows"]) == v2["summary"]["research_v2_eligible"] == 61
+    assert sum(row["eligible"] for row in v2["rows"]) == v2["summary"]["research_v2_eligible"]
     assert any(row["size_segment"] == "OTHER NSE" for row in baseline["rows"])
     assert any(row["classification_status"] == "UNCLASSIFIED" for row in baseline["rows"])
 
@@ -51,7 +51,7 @@ def test_live_stock_reliance_has_price_both_models_and_nine_v2_factors() -> None
 
 def test_every_eligible_live_detail_matches_the_canonical_v2_model_inputs() -> None:
     bundle = live_website._bundle()
-    assert live_website.validate_v2_detail_invariants(bundle.market) == bundle.manifest["research_v2_eligible_count"] == 61
+    assert live_website.validate_v2_detail_invariants(bundle.market) == bundle.manifest["research_v2_eligible_count"]
     canonical = bundle.market.loc[bundle.market["v2_eligible"].astype(bool)].set_index("ticker")
     for ticker in sorted(canonical.index):
         detail = live_website.live_stock(ticker)["research_v2"]

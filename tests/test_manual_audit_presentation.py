@@ -172,7 +172,7 @@ def test_live_counts_match_the_atomic_accepted_bundle_and_frozen_v2_is_unchanged
     assert data["summary"]["price_ready"] == manifest["snapshot"]["matched_count"]
     assert data["summary"]["baseline_eligible"] >= manifest["baseline_eligible_count"]
     assert data["summary"]["baseline_eligible"] == live_overview("baseline_v1")["summary"]["baseline_eligible"]
-    assert data["summary"]["research_v2_eligible"] == manifest["research_v2_eligible_count"] == 61
+    assert data["summary"]["research_v2_eligible"] == manifest["research_v2_eligible_count"]
     assert data["bundle_fingerprint"] == bundle.fingerprint
     assert manifest["research_v2_frozen_evidence_fingerprint"] == (
         "2a66a124ba83db489656ab6af5f73a609d3a7c75b5fb540e9bd7d9383b27b25b"

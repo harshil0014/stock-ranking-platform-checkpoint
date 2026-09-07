@@ -12,9 +12,13 @@ data/output/*
 .venv-marketdata/
 .venv-accounting-audit/
 .venv-quantlab/
+.venv-bse/
+.pytest_tmp*/
 data/marketdata/
 data/live_market/
 data/company_facts/
+data/company_facts_candidate*/
+data/diagnostics/
 data/professor_reference/
 data/walk_forward/
 data/point_in_time/
