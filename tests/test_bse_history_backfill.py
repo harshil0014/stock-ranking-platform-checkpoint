@@ -75,3 +75,21 @@ def test_bse_cache_filename_matches_existing_live_market_contract(tmp_path: Path
     module._atomic_csv(normalized, target)
     assert target.is_file()
     assert module._cache_covers(target, "2026-09-02")
+
+
+def test_existing_history_is_extended_and_overlaps_are_deduplicated(tmp_path: Path) -> None:
+    target = tmp_path / "BSE-504240.csv"
+    existing = pd.DataFrame({
+        "date": ["2024-01-02", "2025-01-02"],
+        "raw_close": [10.0, 20.0],
+        "adjusted_close": [10.0, 20.0],
+    })
+    incoming = pd.DataFrame({
+        "date": ["2025-01-02", "2026-01-02"],
+        "raw_close": [21.0, 30.0],
+        "adjusted_close": [21.0, 30.0],
+    })
+    module._atomic_csv(existing, target)
+    merged = module.merge_cached_history(target, incoming)
+    assert merged["date"].tolist() == ["2024-01-02", "2025-01-02", "2026-01-02"]
+    assert merged.loc[merged["date"].eq("2025-01-02"), "raw_close"].iat[0] == 21.0

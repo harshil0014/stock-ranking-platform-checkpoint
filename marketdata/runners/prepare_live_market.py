@@ -149,7 +149,10 @@ def _fetch_one(
             normalized = normalized.loc[normalized["date"] <= as_of_date]
             if normalized.empty:
                 raise ValueError("provider returned no observations through the snapshot date")
-            _atomic_csv(normalized.sort_values("date", kind="stable"), target)
+            normalized = _merge_cached_history(
+                target, normalized.sort_values("date", kind="stable")
+            )
+            _atomic_csv(normalized, target)
             return True, "DOWNLOADED"
         except Exception as exc:  # bounded provider failure becomes evidence
             error = f"{type(exc).__name__}: {exc}"
@@ -167,6 +170,39 @@ def _cache_covers(path: Path, as_of_date: str) -> bool:
         return False
     dates = pd.to_datetime(cached["date"], format="%Y-%m-%d", errors="coerce")
     return bool(dates.notna().any() and dates.max().date().isoformat() >= as_of_date)
+
+
+def _merge_cached_history(path: Path, incoming: pd.DataFrame) -> pd.DataFrame:
+    """Retain accepted observations when a provider response is incomplete."""
+
+    columns = ["date", "raw_close", "adjusted_close"]
+    if not path.is_file():
+        return incoming.loc[:, columns].copy()
+    try:
+        existing = pd.read_csv(path)
+    except (OSError, UnicodeError, ValueError, pd.errors.ParserError) as exc:
+        raise ValueError("existing accepted history is unreadable; refusing replacement") from exc
+    if not set(columns).issubset(existing.columns):
+        raise ValueError("existing accepted history has an invalid schema; refusing replacement")
+    existing = existing.loc[:, columns].copy()
+    for frame in (existing, incoming):
+        dates = pd.to_datetime(frame["date"], format="%Y-%m-%d", errors="coerce")
+        frame["date"] = dates.dt.strftime("%Y-%m-%d")
+        frame["raw_close"] = pd.to_numeric(frame["raw_close"], errors="coerce")
+        frame["adjusted_close"] = pd.to_numeric(frame["adjusted_close"], errors="coerce")
+    if (
+        existing.isna().any().any()
+        or existing["date"].duplicated().any()
+        or existing["raw_close"].le(0).any()
+        or existing["adjusted_close"].le(0).any()
+    ):
+        raise ValueError("existing accepted history failed validation; refusing replacement")
+    return (
+        pd.concat([existing, incoming.loc[:, columns]], ignore_index=True)
+        .drop_duplicates("date", keep="last")
+        .sort_values("date", kind="stable")
+        .reset_index(drop=True)
+    )
 
 
 def _build_current_v2(

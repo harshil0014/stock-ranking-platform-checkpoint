@@ -8,11 +8,11 @@ from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
 import subprocess
-import sys
 from typing import Any
 from urllib.parse import parse_qs, urlparse
 
 from stock_ranker.web_assets import APP_JS, INDEX_HTML, STYLES_CSS
+from stock_ranker.market_refresh import MarketRefreshController, RefreshAlreadyRunning
 from stock_ranker.live_website import (
     LiveWebsiteError,
     company_facts_coverage,
@@ -46,6 +46,9 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
     """Serve static assets and the in-process canonical analysis endpoint."""
 
     server_version = "StockRankingLocal/1.0"
+
+    def _refresh_controller(self) -> MarketRefreshController:
+        return self.server.refresh_controller  # type: ignore[attr-defined]
 
     def _send(self, status: HTTPStatus, body: bytes, content_type: str) -> None:
         self.send_response(status)
@@ -82,6 +85,9 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
         }
         if path == "/api/health":
             self._json(HTTPStatus.OK, {"status": "ok", "service": "stock-ranking-website"})
+            return
+        if path == "/api/live/refresh-status":
+            self._json(HTTPStatus.OK, self._refresh_controller().status())
             return
         live_routes = {
             "/api/live/dashboard": lambda: live_dashboard(
@@ -146,7 +152,22 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
         self._send(HTTPStatus.OK, text.encode("utf-8"), content_type)
 
     def do_POST(self) -> None:  # noqa: N802 - required by BaseHTTPRequestHandler
-        if self.path != "/api/analyze":
+        path = urlparse(self.path).path
+        if path == "/api/live/refresh":
+            try:
+                self._json(HTTPStatus.ACCEPTED, self._refresh_controller().start())
+            except RefreshAlreadyRunning as exc:
+                payload = self._refresh_controller().status()
+                payload["message"] = str(exc)
+                self._json(HTTPStatus.CONFLICT, payload)
+            except (FileNotFoundError, OSError, RuntimeError, ValueError) as exc:
+                self._json(HTTPStatus.INTERNAL_SERVER_ERROR, {
+                    "status": "FAILED", "running": False,
+                    "last_known_good_retained": True,
+                    "message": f"Refresh could not start ({type(exc).__name__}). Previous accepted data retained.",
+                })
+            return
+        if path != "/api/analyze":
             self._json(HTTPStatus.NOT_FOUND, {"error": "Not found"})
             return
         if self.headers.get_content_type() != "application/json":
@@ -167,37 +188,40 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
         print(f"{self.address_string()} - {format % args}")
 
 
-def create_server(host: str = "127.0.0.1", port: int = 8765) -> ThreadingHTTPServer:
+def create_server(
+    host: str = "127.0.0.1",
+    port: int = 8765,
+    *,
+    refresh_controller: MarketRefreshController | None = None,
+) -> ThreadingHTTPServer:
     """Create, but do not start, the local website server."""
 
     if host not in {"127.0.0.1", "localhost"}:
         raise ValueError("host must be localhost or 127.0.0.1")
     if isinstance(port, bool) or not isinstance(port, int) or not 0 <= port <= 65535:
         raise ValueError("port must be an integer from 0 through 65535")
-    return ThreadingHTTPServer((host, port), ResearchWebsiteHandler)
+    server = ThreadingHTTPServer((host, port), ResearchWebsiteHandler)
+    server.refresh_controller = refresh_controller or MarketRefreshController(  # type: ignore[attr-defined]
+        Path(__file__).resolve().parents[2]
+    )
+    return server
 
 
-def start_background_refresh(project_root: str | Path | None = None) -> subprocess.Popen[bytes] | None:
+def start_background_refresh(
+    project_root: str | Path | None = None,
+    *,
+    controller: MarketRefreshController | None = None,
+) -> subprocess.Popen[bytes] | None:
     """Start one isolated bounded refresh; serving never waits for or depends on it."""
 
-    root = Path(project_root or Path(__file__).resolve().parents[2]).resolve()
-    runner = root / "marketdata" / "runners" / "refresh_company_data.py"
-    market_python = root / ".venv-marketdata" / "Scripts" / "python.exe"
-    if not runner.is_file():
-        return None
-    interpreter = market_python if market_python.is_file() else Path(sys.executable)
-    log_path = root / "data" / "live_market" / "refresh.log"
-    log_path.parent.mkdir(parents=True, exist_ok=True)
-    log = log_path.open("ab")
-    creationflags = getattr(subprocess, "CREATE_NO_WINDOW", 0)
     try:
-        return subprocess.Popen(
-            [str(interpreter), str(runner)], cwd=root,
-            stdin=subprocess.DEVNULL, stdout=log, stderr=subprocess.STDOUT,
-            creationflags=creationflags,
+        manager = controller or MarketRefreshController(
+            project_root or Path(__file__).resolve().parents[2]
         )
-    finally:
-        log.close()
+        manager.start(source="startup")
+        return manager._process  # compatibility for callers that inspect the process
+    except (FileNotFoundError, OSError, RefreshAlreadyRunning, RuntimeError, ValueError):
+        return None
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -206,11 +230,12 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--no-auto-refresh", action="store_true")
     args = parser.parse_args(argv)
     try:
-        server = create_server(port=args.port)
+        controller = MarketRefreshController(Path(__file__).resolve().parents[2])
+        server = create_server(port=args.port, refresh_controller=controller)
     except (OSError, ValueError) as exc:
         parser.error(str(exc))
     url = f"http://127.0.0.1:{server.server_address[1]}"
-    refresh = None if args.no_auto_refresh else start_background_refresh()
+    refresh = None if args.no_auto_refresh else start_background_refresh(controller=controller)
     print(f"Indian Equity Research Platform: {url}", flush=True)
     print(
         "Market refresh: disabled" if args.no_auto_refresh else

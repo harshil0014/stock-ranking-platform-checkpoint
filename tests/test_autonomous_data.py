@@ -212,7 +212,16 @@ def test_website_background_refresh_uses_isolated_runner_and_returns_immediately
     runner.parent.mkdir(parents=True)
     runner.write_text("print('test')\n", encoding="utf-8")
     calls: list[tuple[list[str], dict[str, object]]] = []
-    sentinel = object()
+    class FakeProcess:
+        pid = 1234
+
+        def poll(self):
+            return None
+
+        def wait(self):
+            return 0
+
+    sentinel = FakeProcess()
 
     def fake_popen(command: list[str], **kwargs: object):
         calls.append((command, kwargs))
@@ -221,7 +230,8 @@ def test_website_background_refresh_uses_isolated_runner_and_returns_immediately
     monkeypatch.setattr(subprocess, "Popen", fake_popen)
     assert webapp.start_background_refresh(tmp_path) is sentinel
     assert len(calls) == 1
-    assert calls[0][0][-1] == str(runner)
+    assert str(runner) in calls[0][0]
+    assert "--status-file" in calls[0][0]
     assert calls[0][1]["cwd"] == tmp_path.resolve()
 
 

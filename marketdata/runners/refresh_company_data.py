@@ -16,8 +16,14 @@ import subprocess
 import sys
 from typing import Any
 
-
 ROOT = Path(__file__).resolve().parents[2]
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
+
+from stock_ranker.data_state import atomic_write_json
+
+
 MARKET_RUNNER = ROOT / "marketdata/runners/refresh_live_market.py"
 BSE_HISTORY_RUNNER = ROOT / "marketdata/runners/daily_bse_history.py"
 YAHOO_RUNNER = ROOT / "marketdata/runners/acquire_yahoo_secondary_facts.py"
@@ -72,6 +78,36 @@ def _run(command: list[str]) -> dict[str, Any]:
             "stdout": completed.stdout[-8000:], "stderr": completed.stderr[-8000:]}
 
 
+def _publish_status(
+    path: Path | None,
+    *,
+    status: str = "RUNNING",
+    running: bool = True,
+    stage: str,
+    message: str,
+    **extra: Any,
+) -> None:
+    if path is None:
+        return
+    current = _read_json(path) or {}
+    current.update({
+        "status": status,
+        "running": running,
+        "stage": stage,
+        "message": message,
+        **extra,
+    })
+    atomic_write_json(path, current)
+
+
+def _accepted_market_identity() -> dict[str, Any]:
+    state = _read_json(MARKET_STATE / "accepted_state.json") or {}
+    return {
+        "trade_date": state.get("trade_date"),
+        "fingerprint": state.get("bundle_fingerprint"),
+    }
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Refresh the coherent offline company-data state.")
     parser.add_argument("--status", action="store_true")
@@ -86,6 +122,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--retry-errors", action="store_true")
     parser.add_argument("--seed-batch")
+    parser.add_argument("--status-file", type=Path)
     args = parser.parse_args(argv)
     if args.secondary_limit < 0 or args.bse_history_limit < 0 or not 1 <= args.workers <= 6:
         parser.error(
@@ -140,19 +177,55 @@ def main(argv: list[str] | None = None) -> int:
     if args.dry_run:
         print(json.dumps(plan, indent=2, sort_keys=True))
         return 0
-    report: dict[str, Any] = {"started_at": datetime.now(timezone.utc).isoformat(), "plan": plan}
+    started_at = datetime.now(timezone.utc).isoformat()
+    before = _accepted_market_identity()
+    _publish_status(
+        args.status_file,
+        stage="CHECKING_LATEST_MARKET_DATA",
+        message="Checking latest market data…",
+        started_at=started_at,
+        current_accepted_trade_date=before["trade_date"],
+        current_accepted_fingerprint=before["fingerprint"],
+        last_known_good_retained=True,
+    )
+    report: dict[str, Any] = {"started_at": started_at, "plan": plan}
     if plan["market"]:
+        _publish_status(
+            args.status_file,
+            stage="REFRESHING_NSE_BSE_MARKET_SNAPSHOT",
+            message="Refreshing NSE/BSE market snapshot…",
+        )
         report["market"] = _run(plan["market"])
     if plan["bse_history"]:
+        _publish_status(
+            args.status_file,
+            stage="UPDATING_HISTORICAL_PRICES",
+            message="Updating historical prices…",
+        )
         report["bse_history"] = _run(plan["bse_history"])
     if plan["official_exchange"]:
+        _publish_status(
+            args.status_file,
+            stage="REFRESHING_OFFICIAL_COMPANY_EVIDENCE",
+            message="Refreshing official company evidence…",
+        )
         report["official_exchange"] = _run(plan["official_exchange"])
     if plan["secondary"]:
+        _publish_status(
+            args.status_file,
+            stage="REFRESHING_SECONDARY_EVIDENCE",
+            message="Refreshing allowed secondary evidence…",
+        )
         report["secondary"] = _run(plan["secondary"])
     provider_failures = [
         name for name in ("market", "bse_history", "official_exchange", "secondary")
         if report.get(name, {}).get("exit_code", 0) != 0
     ]
+    _publish_status(
+        args.status_file,
+        stage="REBUILDING_COMPANY_FACTS",
+        message="Rebuilding and validating company facts…",
+    )
     report["company_facts"] = _run(plan["company_facts"])
     report["provider_failures"] = provider_failures
     report["status"] = (
@@ -161,6 +234,24 @@ def main(argv: list[str] | None = None) -> int:
         else "FACT_BUILD_FAILED_LAST_KNOWN_GOOD_RETAINED"
     )
     report["completed_at"] = datetime.now(timezone.utc).isoformat()
+    after = _accepted_market_identity()
+    succeeded = report["status"].startswith("ACCEPTED")
+    _publish_status(
+        args.status_file,
+        status="SUCCEEDED" if succeeded else "FAILED",
+        running=False,
+        stage="COMPLETED" if succeeded else "FAILED",
+        message=(
+            f"Updated successfully · {after['trade_date']}"
+            if succeeded
+            else "Refresh failed · Previous accepted data retained"
+        ),
+        completed_at=report["completed_at"],
+        new_accepted_trade_date=after["trade_date"] if succeeded else None,
+        new_accepted_fingerprint=after["fingerprint"] if succeeded else None,
+        provider_failures=provider_failures,
+        last_known_good_retained=True,
+    )
     print(json.dumps(report, indent=2, sort_keys=True))
     return 0 if report["status"].startswith("ACCEPTED") else 1
 

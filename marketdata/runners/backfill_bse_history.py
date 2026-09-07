@@ -83,6 +83,39 @@ def _cache_covers(path: Path, trade_date: str) -> bool:
     return bool(dates.notna().any() and dates.max().date().isoformat() >= trade_date)
 
 
+def merge_cached_history(path: Path, incoming: pd.DataFrame) -> pd.DataFrame:
+    """Extend a valid accepted series and deterministically update overlaps."""
+
+    required = ["date", "raw_close", "adjusted_close"]
+    if not path.is_file():
+        return incoming.loc[:, required].copy()
+    try:
+        existing = pd.read_csv(path)
+    except (OSError, UnicodeError, ValueError, pd.errors.ParserError) as exc:
+        raise ValueError("existing accepted history is unreadable; refusing replacement") from exc
+    if not set(required).issubset(existing.columns):
+        raise ValueError("existing accepted history has an invalid schema; refusing replacement")
+    existing = existing.loc[:, required].copy()
+    for frame in (existing, incoming):
+        parsed = pd.to_datetime(frame["date"], format="%Y-%m-%d", errors="coerce")
+        frame["date"] = parsed.dt.strftime("%Y-%m-%d")
+        frame["raw_close"] = pd.to_numeric(frame["raw_close"], errors="coerce")
+        frame["adjusted_close"] = pd.to_numeric(frame["adjusted_close"], errors="coerce")
+    if (
+        existing.isna().any().any()
+        or existing["date"].duplicated().any()
+        or existing["raw_close"].le(0).any()
+        or existing["adjusted_close"].le(0).any()
+    ):
+        raise ValueError("existing accepted history failed validation; refusing replacement")
+    return (
+        pd.concat([existing, incoming.loc[:, required]], ignore_index=True)
+        .drop_duplicates("date", keep="last")
+        .sort_values("date", kind="stable")
+        .reset_index(drop=True)
+    )
+
+
 def validate_downloaded_history(
     fetched: pd.DataFrame,
     *,
@@ -195,7 +228,13 @@ def _fetch_one(
                 trade_date=trade_date,
                 official_price=float(row["latest_price"]),
             )
+            normalized = merge_cached_history(target, normalized)
             _atomic_csv(normalized, target)
+            audit.update({
+                "rows": int(len(normalized)),
+                "first_date": str(normalized.iloc[0]["date"]),
+                "last_date": str(normalized.iloc[-1]["date"]),
+            })
             return {
                 **base,
                 **audit,
