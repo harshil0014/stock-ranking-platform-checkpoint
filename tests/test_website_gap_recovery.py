@@ -45,6 +45,38 @@ def test_structured_profile_counts_as_available_without_provider_prose() -> None
     assert module._available(row, "company_profile") is True
 
 
+def test_screener_statement_coverage_matches_company_fact_semantics() -> None:
+    row = pd.Series({
+        "screener_historical_financials_available": True,
+        "screener_workbook_available": True,
+        "annual_report_status": None,
+        "quarterly_results_status": "SCREENER_STANDALONE_HISTORY_AVAILABLE",
+        "balance_sheet_status": "SCREENER_STANDALONE_HISTORY_AVAILABLE",
+        "cash_flow_status": "SCREENER_STANDALONE_HISTORY_AVAILABLE",
+    })
+    assert module._available(row, "annual_financials") is True
+    assert module._available(row, "quarterly_financials") is True
+    assert module._available(row, "balance_sheet") is True
+    assert module._available(row, "cash_flow") is True
+
+
+def test_generic_missing_adjusted_history_is_not_called_corporate_action_unresolved() -> None:
+    row = pd.Series({
+        "history_status": "NO_ACCEPTED_ADJUSTED_HISTORY",
+        "history_reason": "No identity-verified adjusted history is present in the accepted local evidence store.",
+        "corporate_action_history_status": "NO_VERIFIED_ACTION_AWARE_HISTORY",
+    })
+    cause, route, terminal = module._cause(row, "accepted_history", pd.Timestamp("2026-09-07").date())
+    assert cause == "HISTORY_NOT_ACQUIRED"
+    assert route == "EXACT_IDENTITY_NSE_BSE_HISTORY_RECOVERY"
+    assert terminal == "ACTION_REQUIRED"
+
+
+def test_valuation_coverage_uses_canonical_company_fact_fields() -> None:
+    assert module._available(pd.Series({"book_value": 42.0}), "valuation") is True
+    assert module._available(pd.Series({"dividend_yield": 0.01}), "valuation") is True
+
+
 def test_display_state_audit_is_total() -> None:
     facts = pd.DataFrame([{
         "ticker": "ABC", "company": "ABC Limited", "isin": "INE001A01010",
