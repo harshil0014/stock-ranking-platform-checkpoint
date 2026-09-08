@@ -16,6 +16,7 @@ from stock_ranker.live_market import LiveMarketBundle, load_live_market_bundle
 from stock_ranker.data_state import data_state_status, resolve_accepted_bundle_root
 from stock_ranker.company_facts import load_company_fact_snapshot, resolve_company_fact_snapshot
 from stock_ranker.screener_statements import load_screener_statement_history
+from stock_ranker.product_evidence import enrich_presentation
 from stock_ranker.v2_config import ResearchV2Weights
 
 
@@ -99,7 +100,7 @@ def company_facts_coverage() -> dict[str, Any]:
     return {
         "available": True, "coverage": result.coverage,
         "manifest": result.manifest,
-        "warning": "Screener.in is a coverage checklist only; no Screener data is copied or required.",
+        "warning": "Accepted user-exported Screener data enriches current company pages. Historical research still requires the separate official publication clock.",
     }
 
 
@@ -655,7 +656,7 @@ def live_stock(ticker_value: str) -> dict[str, Any]:
         "corporate_actions_announcements_documents": {
             "status": clean(fact.get("documents_status")),
             "reason": "Official exchange actions and document metadata are indexed without downloading every linked document; all displayed links retain their source provenance.",
-            "values": values("corporate_actions_status", "official_action_count", "latest_corporate_action_date", "announcements_status", "latest_document_type", "latest_document_date", "latest_document_url", "annual_report_source_url", "annual_report_pdf_sha256"),
+            "values": values("corporate_actions_status", "official_action_count", "latest_corporate_action_date", "announcements_status", "latest_document_type", "latest_document_date", "latest_document_url", "latest_document_source_sha256", "annual_report_source_url", "annual_report_pdf_sha256"),
         },
         "professor_reference": {
             "status": "PROFESSOR_COHORT_EVIDENCE" if bool(fact.get("professor_cohort")) else "NOT_IN_PROFESSOR_COHORT",
@@ -672,6 +673,7 @@ def live_stock(ticker_value: str) -> dict[str, Any]:
             "values": {},
         },
     }
+    enrich_presentation(facts, fact)
     screener_history = load_screener_statement_history(
         ticker,
         str(row.get("isin") or ""),

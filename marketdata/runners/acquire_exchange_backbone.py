@@ -10,6 +10,7 @@ import argparse
 from datetime import date, datetime, timedelta, timezone
 from hashlib import sha256
 import json
+import re
 from pathlib import Path
 import shutil
 import sys
@@ -169,9 +170,19 @@ def _download_financial_xbrl(batch: Path, rows: list[dict[str, Any]], limit: int
     ))
 
 
+def validate_bse_shareholding_identity(data: bytes, expected_isin: str) -> None:
+    """An unchanged scrip code does not prove unchanged security identity."""
+    observed = set(re.findall(r"\bIN[A-Z0-9]{10}\b", data.decode("utf-8", errors="replace")))
+    if observed != {expected_isin}:
+        raise ValueError(f"BSE filing ISIN conflict or missing identity: expected {expected_isin}; observed {sorted(observed)}")
+
+
 def _bse_shareholding(batch: Path, market: pd.DataFrame, limit: int, *,
                       prioritize_professor: bool = True) -> tuple[pd.DataFrame, pd.DataFrame, dict[str, int]]:
-    candidates = market.loc[market["exchange_security_id"].notna()].copy()
+    # NSE symbols are not BSE scrip codes. Only use an identifier explicitly
+    # carried by the accepted BSE identity row; never send a ticker as a code.
+    bse_codes = market["exchange_security_id"].astype(str).str.replace(r"\.0$", "", regex=True)
+    candidates = market.loc[market["primary_exchange"].eq("BSE") & bse_codes.str.fullmatch(r"\d{6}")].copy()
     strategy_path = ROOT / "data/professor_reference/strategy_current/professor_strategy_comparison.csv"
     professor_isins = (set(pd.read_csv(strategy_path, usecols=["isin"])["isin"].dropna().astype(str))
                        if strategy_path.is_file() else set())
@@ -196,6 +207,8 @@ def _bse_shareholding(batch: Path, market: pd.DataFrame, limit: int, *,
             counts["catalogues"] += 1
             if not rows:
                 continue
+            if any(str(row.get("FLD_ScripCode", "")).removesuffix(".0") != code for row in rows):
+                raise ValueError("BSE shareholding catalogue identity conflicts with requested exact scrip code")
             latest = max(rows, key=lambda row: str(row.get("EndDate") or ""))
             attachment = str(latest.get("XBRLAttachment") or "")
             if not attachment:
@@ -206,6 +219,7 @@ def _bse_shareholding(batch: Path, market: pd.DataFrame, limit: int, *,
             xbrl = (xbrl_path.read_bytes() if xbrl_path.is_file() else
                     fetch_bytes(xbrl_url, referer="https://www.bseindia.com/corporates/Sharehold_Searchnew.aspx"))
             xbrl_path.write_bytes(xbrl)
+            validate_bse_shareholding_identity(xbrl, str(item.isin))
             atomic_write_json(xbrl_path.with_suffix(xbrl_path.suffix + ".metadata.json"), {
                 "retrieved_at": datetime.now(timezone.utc).isoformat(),
                 "source_identifier": str(latest.get("nqtrid") or filename),
@@ -230,8 +244,13 @@ def _bse_shareholding(batch: Path, market: pd.DataFrame, limit: int, *,
             })
             counts["xbrl_parsed"] += 1
             time.sleep(0.05)
-        except (OSError, RuntimeError, ValueError, TypeError):
+        except (OSError, RuntimeError, ValueError, TypeError) as exc:
             counts["failed"] += 1
+            atomic_write_json(root / f"{code}.failure.json", {
+                "ticker": item.ticker, "isin": item.isin, "scrip_code": code,
+                "source_url": url, "error_class": type(exc).__name__,
+                "error": str(exc)[:500], "accepted": False,
+            })
     return (pd.DataFrame(holdings, columns=SHAREHOLDING_COLUMNS),
             pd.DataFrame(documents, columns=DOCUMENT_COLUMNS), counts)
 

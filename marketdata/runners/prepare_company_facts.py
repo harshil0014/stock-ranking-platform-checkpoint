@@ -14,6 +14,7 @@ from stock_ranker.company_facts import build_company_facts, promote_company_fact
 from stock_ranker.data_state import resolve_accepted_bundle_root  # noqa: E402
 from stock_ranker.live_market import load_live_market_bundle  # noqa: E402
 from stock_ranker.screener_data_bundle import load_accepted_screener_data_bundle  # noqa: E402
+from stock_ranker.screener_statements import accepted_screener_workbook_isins  # noqa: E402
 
 
 DEFAULT_FILINGS = PROJECT_ROOT / "data/marketdata/nifty50-research-v2-2026-08-07/standalone-contract-reason-fix-run-01/filing_provenance.csv"
@@ -93,6 +94,7 @@ def main(argv: list[str] | None = None) -> int:
         screener_market_path=screener.root / "market_master.csv",
         screener_history_path=screener.root / "normalized_history.csv",
         screener_workbook_audit_path=screener.root / "workbook_audit.csv",
+        screener_workbook_isins=accepted_screener_workbook_isins(),
         screener_bundle_fingerprint=screener.fingerprint,
         screener_source_observed_at=str(screener.summary.get("source_observed_at") or ""),
         official_backbone_path=official_backbone,

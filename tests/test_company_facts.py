@@ -230,6 +230,23 @@ def test_screener_bundle_enriches_current_product_by_exact_isin_without_changing
     assert result.coverage["metrics"]["strict_v2_eligible"]["count"] == 1
 
 
+def test_accepted_legacy_workbook_identity_is_surfaced_without_a_market_override(tmp_path: Path) -> None:
+    control = build_company_facts(
+        _market(), history_root=tmp_path / "control-history",
+        market_fingerprint="b" * 64,
+    )
+    result = build_company_facts(
+        _market(), history_root=tmp_path / "history",
+        screener_workbook_isins={"INE000A01001"},
+        market_fingerprint="b" * 64,
+    )
+
+    row = result.facts.set_index("ticker").loc["AAA"]
+    assert bool(row["screener_workbook_available"])
+    assert row["quarterly_results_status"] == "SCREENER_STANDALONE_HISTORY_AVAILABLE"
+    assert bool(row["v2_eligible"]) == bool(control.facts.set_index("ticker").loc["AAA", "v2_eligible"])
+
+
 def test_deterministic_snapshot_and_hash_validation(tmp_path: Path) -> None:
     result = _build(tmp_path)
     first = tmp_path / "one"
@@ -260,7 +277,7 @@ def test_atomic_promotion_is_idempotent_and_rejects_invalid_candidate(tmp_path: 
 
 def test_company_page_has_complete_section_order_and_validated_screener_history() -> None:
     headings = [
-        "Company Overview", "Company Profile (Secondary Reference)", "Classification", "Market Data", "Price History Evidence",
+        "Company Overview", "Company Profile", "Classification", "Market Data", "Price History Evidence",
         "Valuation", "Quarterly Results", "Annual Financials", "Balance Sheet",
         "Cash Flow", "Ratios / Quality", "Shareholding", "Peers",
         "Corporate Actions / Announcements / Documents", "Professor Reference",

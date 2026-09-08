@@ -1,7 +1,10 @@
 from __future__ import annotations
 
 from stock_ranker.live_website import live_stock
-from stock_ranker.screener_statements import load_screener_statement_history
+from stock_ranker.screener_statements import (
+    accepted_screener_workbook_isins,
+    load_screener_statement_history,
+)
 from stock_ranker.web_assets import APP_JS, INDEX_HTML, STYLES_CSS
 
 
@@ -24,7 +27,7 @@ def test_screener_history_never_substitutes_an_identity() -> None:
     assert history == {
         "available": False,
         "status": "NO_VALIDATED_SCREENER_HISTORY",
-        "reason": "No accepted hash-pinned standalone Screener workbook matches this exact ticker and ISIN.",
+        "reason": "No accepted hash-pinned standalone Screener workbook matches this exact ISIN.",
     }
 
 
@@ -35,6 +38,13 @@ def test_latest_accepted_bundle_workbook_is_discovered_outside_legacy_batches() 
     assert history["workbook_sha256"] == "d19771b3512abbb48419405b134cc9408c43e82932e067fc997c322753c75c1c"
     assert history["accepted_bundle_fingerprint"] == "3277812548c02d401ab2cf032066203ba4a6234a020d94ae43e3b7f8994552d8"
     assert history["reporting_basis"] == "STANDALONE"
+
+
+def test_statement_index_includes_every_accepted_exact_isin_workbook() -> None:
+    identities = accepted_screener_workbook_isins()
+
+    assert "INE002A01018" in identities
+    assert len(identities) >= 4200
 
 
 def test_live_stock_includes_same_validated_statement_history() -> None:

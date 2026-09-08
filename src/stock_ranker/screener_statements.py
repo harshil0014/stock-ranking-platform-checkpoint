@@ -124,18 +124,40 @@ def _candidate_records() -> list[tuple[dict[str, object], Path, Path]]:
     return records
 
 
+@lru_cache(maxsize=1)
+def accepted_screener_workbook_isins() -> frozenset[str]:
+    """Return all locally accepted, hash-pinned standalone workbook identities.
+
+    The current incremental bundle is authoritative for its own records, but
+    older accepted manual manifests remain valid local evidence.  This index is
+    deliberately ISIN-only: a current exchange ticker can legitimately differ
+    from the ticker captured when a historical workbook was accepted.
+    """
+
+    return frozenset(
+        str(record.get("isin", "")).strip().upper()
+        for record, _, _ in _candidate_records()
+        if str(record.get("isin", "")).strip()
+    )
+
+
 @lru_cache(maxsize=512)
 def load_screener_statement_history(ticker: str, isin: str) -> dict[str, Any]:
     """Return validated historical statement tables for an exact ticker/ISIN."""
 
     ticker = ticker.strip().upper()
     isin = isin.strip().upper()
-    matches = [item for item in _candidate_records() if str(item[0].get("ticker", "")).upper() == ticker and str(item[0].get("isin", "")).upper() == isin]
+    # ISIN is the project identity key.  Do not turn an exact ISIN match into a
+    # missing history merely because a current exchange ticker has changed.
+    matches = [
+        item for item in _candidate_records()
+        if str(item[0].get("isin", "")).strip().upper() == isin
+    ]
     if not matches:
         return {
             "available": False,
             "status": "NO_VALIDATED_SCREENER_HISTORY",
-            "reason": "No accepted hash-pinned standalone Screener workbook matches this exact ticker and ISIN.",
+            "reason": "No accepted hash-pinned standalone Screener workbook matches this exact ISIN.",
         }
     record, workbook_path, manifest_path = max(
         matches,
@@ -219,6 +241,8 @@ def load_screener_statement_history(ticker: str, isin: str) -> dict[str, Any]:
         "company": inspection.company,
         "ticker": ticker,
         "isin": isin,
+        "source_ticker": str(record.get("ticker") or "").strip().upper() or None,
+        "identity_resolution": "EXACT_ISIN",
         "reporting_basis": REPORTING_BASIS,
         "workbook_version": inspection.version,
         "source_observed_at": record.get("source_observed_at"),

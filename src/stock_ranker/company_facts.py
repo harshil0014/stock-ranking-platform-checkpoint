@@ -91,7 +91,7 @@ FACT_COLUMNS = (
     "official_operating_cash_flow", "shareholding_as_of", "promoter_holding_pct",
     "public_holding_pct", "fii_holding_pct", "dii_holding_pct",
     "promoter_pledge_pct", "official_total_shares", "latest_document_type",
-    "latest_document_date", "latest_document_url", "official_action_count",
+    "latest_document_date", "latest_document_url", "latest_document_source_sha256", "official_action_count",
     "latest_corporate_action_date", "official_evidence_freshness",
     "official_market_cap", "official_pe_ratio", "official_pb_ratio",
     "official_return_on_equity", "official_debt_to_equity",
@@ -233,6 +233,7 @@ def build_company_facts(
     screener_market_path: str | Path | None = None,
     screener_history_path: str | Path | None = None,
     screener_workbook_audit_path: str | Path | None = None,
+    screener_workbook_isins: set[str] | frozenset[str] | None = None,
     screener_bundle_fingerprint: str | None = None,
     screener_source_observed_at: str | None = None,
     official_backbone_path: str | Path | None = None,
@@ -292,9 +293,15 @@ def build_company_facts(
     screener_history = _load_optional(screener_history_path)
     screener_history_isins = set(screener_history["isin"].dropna().astype(str)) if "isin" in screener_history else set()
     screener_audit = _load_optional(screener_workbook_audit_path)
-    screener_workbook_isins = set(
+    accepted_workbook_isins = set(
         screener_audit.loc[screener_audit["file_status"].eq("ACCEPTED"), "isin"].dropna().astype(str)
     ) if {"file_status", "isin"}.issubset(screener_audit.columns) else set()
+    if screener_workbook_isins is not None:
+        accepted_workbook_isins.update(
+            str(isin).strip().upper()
+            for isin in screener_workbook_isins
+            if str(isin).strip()
+        )
     official_financials = pd.DataFrame()
     official_shareholding = pd.DataFrame()
     official_actions = pd.DataFrame()
@@ -309,6 +316,10 @@ def build_company_facts(
         official_actions = backbone.corporate_actions.copy()
         official_documents = backbone.documents.copy()
         classification_audit = backbone.classification_audit.copy()
+        from stock_ranker.product_evidence import official_document_index
+
+        official_documents = official_document_index(
+            official_documents, official_financials, official_shareholding)
     official_financial_by_isin = {
         str(key): value.copy() for key, value in official_financials.groupby("isin", sort=False)
     } if not official_financials.empty else {}
@@ -430,6 +441,7 @@ def build_company_facts(
             "dii_holding_pct": None, "promoter_pledge_pct": None,
             "official_total_shares": None, "latest_document_type": None,
             "latest_document_date": None, "latest_document_url": None,
+            "latest_document_source_sha256": None,
             "official_action_count": 0, "latest_corporate_action_date": None,
             "official_evidence_freshness": "NO_ACCEPTED_OFFICIAL_CORPORATE_EVIDENCE",
             "official_market_cap": None, "official_pe_ratio": None,
@@ -618,7 +630,7 @@ def build_company_facts(
                     "it does not replace frozen research classifications."
                 )
         item["screener_historical_financials_available"] = isin in screener_history_isins
-        item["screener_workbook_available"] = isin in screener_workbook_isins
+        item["screener_workbook_available"] = isin in accepted_workbook_isins
         if item["screener_workbook_available"]:
             item["quarterly_results_status"] = "SCREENER_STANDALONE_HISTORY_AVAILABLE"
             item["balance_sheet_status"] = "SCREENER_STANDALONE_HISTORY_AVAILABLE"
@@ -793,6 +805,7 @@ def build_company_facts(
                 "latest_document_type": _text(document.get("document_type")),
                 "latest_document_date": _text(document.get("available_at")),
                 "latest_document_url": _text(document.get("source_url")),
+                "latest_document_source_sha256": _text(document.get("source_sha256")),
                 "documents_status": "OFFICIAL_DOCUMENT_INDEX_AVAILABLE",
                 "announcements_status": "OFFICIAL_DOCUMENT_INDEX_AVAILABLE",
                 "official_evidence_freshness": "ACCEPTED_OFFICIAL_EXCHANGE_EVIDENCE",
@@ -806,7 +819,8 @@ def build_company_facts(
                 "annual_report_status": "NO_VERIFIED_FILING", "annual_report_reason": "No accepted audited annual-report record is linked to this security.",
                 "annual_report_financial_year": None, "annual_report_reporting_basis": None,
                 "annual_report_source_url": None, "annual_report_pdf_sha256": None,
-                "fundamental_contract": None, "documents_status": "OFFICIAL_DISCOVERY_ROUTE_AVAILABLE_NOT_CACHED",
+                "fundamental_contract": None,
+                "documents_status": "OFFICIAL_DOCUMENT_INDEX_AVAILABLE" if document is not None else "OFFICIAL_DISCOVERY_ROUTE_AVAILABLE_NOT_CACHED",
             })
         else:
             profit = _parse_json_fact(getattr(filing, "annual_report_profit", None))
