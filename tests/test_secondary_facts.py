@@ -112,5 +112,8 @@ def test_product_layer_is_provider_free_and_scheduler_uses_unified_cli():
     scheduler = (root / "marketdata/scheduling/windows_refresh.ps1").read_text(encoding="utf-8")
     assert "refresh_company_data.py" in scheduler
     policy = json.loads((root / "marketdata/specifications/screener_reference_policy.json").read_text(encoding="utf-8"))
-    assert policy["decision"] == "POLICY_DISABLED"
-    assert policy["facts_may_enter_canonical_store"] is False
+    assert policy["decision"] == "USER_SUPPLIED_CURRENT_REFERENCE_ALLOWED"
+    assert policy["facts_may_enter_canonical_store"] is True
+    assert policy["automated_acquisition_enabled"] is False
+    assert policy["runtime_dependency_allowed"] is False
+    assert any("historical PIT timestamps" in item for item in policy["prohibited_use"])

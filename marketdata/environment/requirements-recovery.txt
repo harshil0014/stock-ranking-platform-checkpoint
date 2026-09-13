@@ -1,0 +1,2 @@
+# Isolated offline iXBRL review engine; do not install in product .venv.
+arelle-release==2.44.7

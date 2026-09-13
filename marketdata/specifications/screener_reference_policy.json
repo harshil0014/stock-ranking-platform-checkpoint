@@ -1,15 +1,37 @@
 {
-  "schema_version": 1,
-  "checked_at": "2026-08-22",
+  "schema_version": 2,
+  "checked_at": "2026-09-12",
   "provider": "Screener.in",
-  "role": "human product-coverage benchmark only",
+  "role": "user-supplied Premium current/reference enrichment and validated standalone historical workbook display; never a PIT clock",
   "automated_acquisition_enabled": false,
   "runtime_dependency_allowed": false,
-  "facts_may_enter_canonical_store": false,
+  "facts_may_enter_canonical_store": true,
   "robots_url": "https://www.screener.in/robots.txt",
   "terms_url": "https://www.screener.in/guides/terms/",
-  "decision": "POLICY_DISABLED",
-  "reason": "The published service licence limits materials to personal, non-commercial transitory viewing and prohibits copying/public display; robots.txt also disallows query, sort, limit, page and source-quarter routes. No automated crawling or redistribution is authorized.",
-  "permitted_use": "Manual visual parity review and user-supplied exports with explicit provenance and rights",
-  "reconsideration_gate": "Written permission or a separately reviewed licensed API/export agreement"
+  "decision": "USER_SUPPLIED_CURRENT_REFERENCE_ALLOWED",
+  "reason": "Only user-supplied/manual Screener Premium exports and workbooks are accepted. The application does not crawl Screener.in, call it at runtime, or treat Screener current observations as historical point-in-time evidence.",
+  "permitted_use": "Populate current/reference company facts and display validated standalone historical workbook content with explicit Screener provenance, subject to deterministic identity checks.",
+  "reconsideration_gate": "Any future automated acquisition, licensed API, redistribution, or broader provider use requires a separate policy and rights review.",
+  "prohibited_use": [
+    "Automated crawling or provider requests during page navigation/runtime",
+    "Using Screener current/reference observations as historical PIT timestamps",
+    "Backdating current Screener values into Research V2 cohorts",
+    "Overwriting frozen Research V2 PIT factors or eligibility with Screener current/reference values",
+    "Accepting quarantined or conflicting identity matches"
+  ],
+  "identity_match_policy": {
+    "primary": "exact canonical ISIN",
+    "fallback": "one unique ACCEPTED row matching primary exchange plus exchange security ID; current/reference only",
+    "conflicts": "quarantined/conflicting identities are rejected",
+    "canonical_identity": "canonical ISIN is never replaced; provider/source ISIN is retained separately"
+  },
+  "current_reference_precedence": {
+    "overlapping_fields": "Snapshot first, Operational fallback",
+    "preservation": "provider observations and provenance are retained rather than averaged"
+  },
+  "pit_boundary": {
+    "screener_role": "no Screener current/reference observation is a PIT clock",
+    "research_v2": "official filing evidence plus official exchange dissemination/availability timing only",
+    "historical_workbook_identity": "historical/workbook evidence retains exact canonical-ISIN semantics; current/reference exchange-code fallback is not propagated into PIT"
+  }
 }

@@ -13,6 +13,8 @@ data/output/*
 .venv-accounting-audit/
 .venv-quantlab/
 .venv-bse/
+.venv-recovery/
+data/recovery_packs/
 .pytest_tmp*/
 data/marketdata/
 data/live_market/

@@ -135,6 +135,8 @@ def _product_market_view(market: pd.DataFrame, facts: pd.DataFrame) -> pd.DataFr
         "product_baseline_score", "product_baseline_sector_rank",
         "product_baseline_eligible", "product_baseline_reason_code",
         "product_baseline_reason",
+        "product_price_reference", "product_price_date", "product_price_exchange",
+        "product_price_status", "product_price_source", "product_price_source_sha256",
     ]
     available = [column for column in columns if column in facts]
     view = market.merge(facts[available], on="ticker", how="left", validate="one_to_one")
@@ -156,6 +158,14 @@ def _product_market_view(market: pd.DataFrame, facts: pd.DataFrame) -> pd.DataFr
     for target, source in mapping.items():
         if source in view:
             view[target] = view[source]
+    if "product_price_reference" in view and view["product_price_reference"].notna().any():
+        prior = view["latest_price"].isna() & view["product_price_reference"].notna()
+        view.loc[prior, "latest_price"] = view.loc[prior, "product_price_reference"]
+        view.loc[prior, "trade_date"] = view.loc[prior, "product_price_date"]
+        view.loc[prior, "price_exchange"] = view.loc[prior, "product_price_exchange"]
+        view.loc[prior, "snapshot_status"] = view.loc[prior, "product_price_status"]
+        view.loc[prior, "snapshot_source"] = view.loc[prior, "product_price_source"]
+        view.loc[prior, "price_identity_status"] = "EXACT_IDENTITY_OFFICIAL_PRIOR_TRADE"
     return view
 
 
@@ -603,6 +613,12 @@ def live_stock(ticker_value: str) -> dict[str, Any]:
         "research_v2_sector_rank",
     ]].rename(columns={"product_sector": "official_sector", "product_industry": "official_industry", "product_baseline_eligible": "baseline_eligible", "product_baseline_sector_rank": "baseline_sector_rank"})
     peers = _records(peer_view) if peer_basis else []
+    for peer in peers:
+        if peer.get('latest_price') is None:
+            evidence = peer_rows.loc[peer_rows.ticker.eq(peer['ticker'])].iloc[0]
+            peer['latest_price'] = clean(evidence.get('product_price_reference'))
+            peer['price_date'] = clean(evidence.get('product_price_date'))
+            peer['price_status'] = clean(evidence.get('product_price_status'))
     facts = {
         "schema_version": fact_result.manifest["schema_version"],
         "fingerprint": fact_result.manifest["fingerprint"],
@@ -617,9 +633,11 @@ def live_stock(ticker_value: str) -> dict[str, Any]:
             "professor_taxonomy_is_separate": True,
         },
         "market_data": {
-            "status": "LATEST_ACCEPTED_EOD" if clean(fact.get("latest_price")) is not None else "NO_ACCEPTED_CURRENT_TRADE",
-            "reason": f"Latest accepted official trade date: {fact.get('trade_date')}",
-            "values": values("trade_date", "latest_price", "previous_close", "day_change", "day_change_pct", "open", "high", "low", "volume", "traded_value", "transaction_count"),
+            "status": "LATEST_ACCEPTED_EOD" if clean(fact.get("latest_price")) is not None else (clean(fact.get("product_price_status")) or "NO_ACCEPTED_CURRENT_TRADE"),
+            "reason": f"Latest accepted official trade date: {row.get('trade_date')}; market snapshot date: {fact.get('trade_date')}",
+            "values": {**values("trade_date", "latest_price", "previous_close", "day_change", "day_change_pct", "open", "high", "low", "volume", "traded_value", "transaction_count"),
+                       "trade_date": clean(row.get("trade_date")), "latest_price": clean(row.get("latest_price")),
+                       **values("product_price_source", "product_price_source_sha256", "product_price_identity_evidence")},
         },
         "price_history": {
             "status": clean(fact.get("history_status")), "reason": clean(fact.get("history_reason")),
@@ -651,7 +669,46 @@ def live_stock(ticker_value: str) -> dict[str, Any]:
             "reason": "Accepted values use the audited standalone V2 contract; definitions are shown in Source Evidence." if bool(fact.get("v2_eligible")) else ("Accepted Screener current ratios are available for company research, but do not become historical PIT evidence without an official dissemination clock." if has_screener_current else ("Conventional industrial ROCE and leverage definitions are not silently imposed on a financial institution." if is_financial else "Missing ratios are not estimated from incompatible or unaudited evidence.")),
             "values": values("roce", "debt_to_equity", "profit_growth_yoy", "screener_roce_pct", "screener_roe_pct", "screener_debt_to_equity", "screener_profit_growth_pct", "screener_sales_growth_pct", "screener_operating_margin_pct", "screener_return_on_assets_pct", "screener_current_ratio", "screener_interest_coverage", "screener_cash_conversion_quality", "screener_working_capital_days", "screener_debtor_days", "screener_inventory_days", "screener_asset_turnover", "official_return_on_equity", "official_debt_to_equity", "official_revenue_growth", "official_profit_growth_yoy", "official_net_margin", "official_ratio_formula_version", "official_ratio_reporting_basis", "return_on_equity", "secondary_debt_to_equity", "revenue_growth", "secondary_profit_growth", "operating_margin", "profit_margin"),
         },
-        "shareholding": {"status": clean(fact.get("shareholding_status")) if clean(fact.get("shareholding_as_of")) else ("SCREENER_CURRENT_REFERENCE_AVAILABLE" if has_screener_ownership else clean(fact.get("shareholding_status"))), "reason": "Official Regulation 31 values are shown when present; accepted exact-ISIN Screener ownership is a separately named current reference fallback.", "values": values("shareholding_as_of", "promoter_holding_pct", "public_holding_pct", "fii_holding_pct", "dii_holding_pct", "promoter_pledge_pct", "official_total_shares", "screener_promoter_holding_pct", "screener_public_holding_pct", "screener_fii_holding_pct", "screener_dii_holding_pct", "screener_pledged_pct")},
+        "screener_current_reference": {
+            "status": "SCREENER_CURRENT_REFERENCE_AVAILABLE" if has_screener_current else "NO_SCREENER_CURRENT_REFERENCE",
+            "reason": "User-supplied Screener Premium export matched to the accepted Screener bundle. These are current/reference observations only and do not alter frozen historical PIT research.",
+            "values": values(
+                "screener_match_method", "screener_source_isin",
+                "screener_company_name", "screener_nse_code", "screener_bse_code",
+                "screener_industry_group", "screener_industry",
+                "screener_market_cap_crore", "screener_current_price",
+                "screener_pe_ratio", "screener_pb_ratio", "screener_dividend_yield_pct",
+                "screener_eps", "screener_profit_after_tax_crore", "screener_sales_crore",
+                "screener_roce_pct", "screener_roe_pct", "screener_debt_to_equity",
+                "screener_profit_growth_pct", "screener_sales_growth_pct",
+                "screener_operating_margin_pct", "screener_return_on_assets_pct",
+                "screener_current_ratio", "screener_interest_coverage",
+                "screener_cash_conversion_quality", "screener_operating_cash_flow_crore",
+                "screener_free_cash_flow_crore", "screener_working_capital_days",
+                "screener_debtor_days", "screener_inventory_days",
+                "screener_asset_turnover", "screener_latest_quarter_sales_crore",
+                "screener_latest_quarter_pat_crore", "screener_quarterly_sales_growth_pct",
+                "screener_quarterly_profit_growth_pct", "screener_promoter_holding_pct",
+                "screener_public_holding_pct", "screener_fii_holding_pct",
+                "screener_dii_holding_pct", "screener_pledged_pct",
+                "screener_total_debt_crore", "screener_cash_conversion_cycle_days",
+                "screener_roce_3y_avg_pct", "screener_roic_pct", "screener_croic_pct",
+                "screener_sales_growth_3y_pct", "screener_sales_growth_5y_pct",
+                "screener_profit_growth_3y_pct", "screener_profit_growth_5y_pct",
+                "screener_roe_3y_avg_pct", "screener_roe_5y_avg_pct",
+                "screener_return_3m_pct", "screener_return_6m_pct",
+                "screener_return_1y_pct", "screener_return_3y_pct",
+                "screener_return_5y_pct", "screener_peg_ratio",
+                "screener_enterprise_value_crore", "screener_ev_ebitda",
+                "screener_price_to_free_cash_flow", "screener_price_to_sales",
+                "screener_industry_pe", "screener_earnings_yield_pct",
+                "screener_fii_holding_change_pct", "screener_dii_holding_change_pct",
+                "screener_promoter_holding_change_pct",
+                "screener_historical_financials_available", "screener_workbook_available",
+                "screener_source_observed_at", "screener_bundle_fingerprint",
+            ),
+        },
+        "shareholding": {"status": clean(fact.get("shareholding_status")) if clean(fact.get("shareholding_as_of")) else ("SCREENER_CURRENT_REFERENCE_AVAILABLE" if has_screener_ownership else clean(fact.get("shareholding_status"))), "reason": "Official Regulation 31 values are shown when present; accepted Screener ownership is a separately named current/reference fallback.", "values": values("shareholding_as_of", "promoter_holding_pct", "public_holding_pct", "fii_holding_pct", "dii_holding_pct", "promoter_pledge_pct", "official_total_shares", "screener_promoter_holding_pct", "screener_public_holding_pct", "screener_fii_holding_pct", "screener_dii_holding_pct", "screener_pledged_pct")},
         "peers": {"status": "EVIDENCE_MATCHED_PEERS" if peers else "NO_CLASSIFIED_PEER_SET", "reason": f"Peers share this security's {peer_basis}. Canonical ranks are not recalculated." if peer_basis else "No authoritative classification exists from which to form peers.", "basis": peer_basis, "rows": peers},
         "corporate_actions_announcements_documents": {
             "status": clean(fact.get("documents_status")),

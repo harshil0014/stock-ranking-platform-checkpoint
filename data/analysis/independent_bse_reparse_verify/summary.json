@@ -1,0 +1,12 @@
+{
+  "adjusted_history_written": false,
+  "codes_with_raw_history": 43,
+  "identity_conflicts": 0,
+  "network_access": false,
+  "status_counts": {
+    "NO_OFFICIAL_RAW_HISTORY": 34,
+    "RAW_HISTORY_RECOVERED": 43
+  },
+  "target_count": 77,
+  "total_rows": 11318
+}

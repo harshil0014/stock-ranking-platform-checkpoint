@@ -247,6 +247,70 @@ def test_accepted_legacy_workbook_identity_is_surfaced_without_a_market_override
     assert bool(row["v2_eligible"]) == bool(control.facts.set_index("ticker").loc["AAA", "v2_eligible"])
 
 
+
+def test_screener_unique_exchange_code_fallback_is_current_only_and_rejects_quarantine(tmp_path: Path) -> None:
+    market = _market().copy()
+    market.loc[market["ticker"].eq("BSE-2"), "exchange_security_id"] = "519606"
+
+    accepted_path = tmp_path / "screener_exchange_fallback.csv"
+    pd.DataFrame([
+        {
+            "isin": "INEOLD001001", "primary_exchange": "BSE",
+            "exchange_security_id": "519606", "market_merge_status": "ACCEPTED",
+            "snapshot__Name": "Identity Continuity Limited",
+            "snapshot__Industry Group": "Technology",
+            "snapshot__Industry": "Software",
+            "snapshot__Market Capitalization": 250,
+            "snapshot__Return on capital employed": 99.0,
+        },
+        {
+            "isin": "INEQUAR00101", "primary_exchange": "BSE",
+            "exchange_security_id": "534796",
+            "market_merge_status": "CONFLICT_QUARANTINED",
+            "snapshot__Name": "Quarantined Limited",
+            "snapshot__Industry Group": "Financial Services",
+        },
+    ]).to_csv(accepted_path, index=False)
+
+    result = build_company_facts(
+        market, history_root=tmp_path / "history",
+        screener_market_path=accepted_path,
+        screener_bundle_fingerprint="e" * 64,
+        screener_source_observed_at="2026-09-01T00:00:00+00:00",
+        market_fingerprint="b" * 64,
+    )
+    row = result.facts.set_index("ticker").loc["BSE-2"]
+
+    assert row["isin"] == "INE000A01002"
+    assert row["screener_source_isin"] == "INEOLD001001"
+    assert row["screener_match_method"] == "UNIQUE_PRIMARY_EXCHANGE_SECURITY_ID"
+    assert row["screener_current_status"] == "ACCEPTED_UNIQUE_EXCHANGE_CODE_CURRENT_REFERENCE"
+    assert row["product_sector"] == "Technology"
+    assert row["product_classification_evidence"] == "UNIQUE_EXCHANGE_CODE_SCREENER_CURRENT_REFERENCE"
+
+    assert pd.isna(row["roce"])
+    assert not bool(row["v2_eligible"])
+    assert result.coverage["metrics"]["screener_exact_isin_current"]["count"] == 0
+    assert result.coverage["metrics"]["screener_unique_exchange_code_current"]["count"] == 1
+    assert result.coverage["metrics"]["screener_current_reference"]["count"] == 1
+
+    quarantined_market = market.copy()
+    quarantined_market.loc[
+        quarantined_market["ticker"].eq("BSE-2"), "exchange_security_id"
+    ] = "534796"
+    rejected = build_company_facts(
+        quarantined_market, history_root=tmp_path / "history2",
+        screener_market_path=accepted_path,
+        screener_bundle_fingerprint="f" * 64,
+        screener_source_observed_at="2026-09-01T00:00:00+00:00",
+        market_fingerprint="b" * 64,
+    )
+    rejected_row = rejected.facts.set_index("ticker").loc["BSE-2"]
+    assert pd.isna(rejected_row["screener_current_status"])
+    assert pd.isna(rejected_row["screener_source_isin"])
+    assert rejected.coverage["metrics"]["screener_unique_exchange_code_current"]["count"] == 0
+
+
 def test_deterministic_snapshot_and_hash_validation(tmp_path: Path) -> None:
     result = _build(tmp_path)
     first = tmp_path / "one"

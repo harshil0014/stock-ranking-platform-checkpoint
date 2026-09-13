@@ -1,0 +1,819 @@
+marketdata\runners\acquire_bulk_classification.py:7:from __future__ import annotations
+marketdata\runners\acquire_bulk_classification.py:9:import argparse
+marketdata\runners\acquire_bulk_classification.py:10:from datetime import datetime, timezone
+marketdata\runners\acquire_bulk_classification.py:11:import hashlib
+marketdata\runners\acquire_bulk_classification.py:12:import json
+marketdata\runners\acquire_bulk_classification.py:13:from pathlib import Path
+marketdata\runners\acquire_bulk_classification.py:14:import sys
+marketdata\runners\acquire_bulk_classification.py:15:import time
+marketdata\runners\acquire_bulk_classification.py:16:from typing import Any
+marketdata\runners\acquire_bulk_classification.py:18:import pandas as pd
+marketdata\runners\acquire_bulk_classification.py:19:import requests
+marketdata\runners\acquire_bulk_classification.py:24:from stock_ranker.bulk_classification import build_bulk_classifications  # noqa: E402
+marketdata\runners\acquire_bulk_classification.py:25:from stock_ranker.company_facts import load_company_fact_snapshot, resolve_company_fact_snapshot  # noqa: E402
+marketdata\runners\acquire_bulk_classification.py:26:from stock_ranker.data_state import atomic_write_json  # noqa: E402
+marketdata\runners\acquire_exchange_backbone.py:7:from __future__ import annotations
+marketdata\runners\acquire_exchange_backbone.py:9:import argparse
+marketdata\runners\acquire_exchange_backbone.py:10:from datetime import date, datetime, timedelta, timezone
+marketdata\runners\acquire_exchange_backbone.py:11:from hashlib import sha256
+marketdata\runners\acquire_exchange_backbone.py:12:import json
+marketdata\runners\acquire_exchange_backbone.py:13:import re
+marketdata\runners\acquire_exchange_backbone.py:14:from pathlib import Path
+marketdata\runners\acquire_exchange_backbone.py:15:import shutil
+marketdata\runners\acquire_exchange_backbone.py:16:import sys
+marketdata\runners\acquire_exchange_backbone.py:17:import time
+marketdata\runners\acquire_exchange_backbone.py:18:from typing import Any
+marketdata\runners\acquire_exchange_backbone.py:19:from urllib.parse import urlencode
+marketdata\runners\acquire_exchange_backbone.py:20:from urllib.request import Request, urlopen
+marketdata\runners\acquire_exchange_backbone.py:22:import pandas as pd
+marketdata\runners\acquire_exchange_backbone.py:28:from stock_ranker.company_facts import load_company_fact_snapshot, resolve_company_fact_snapshot  # noqa: E402
+marketdata\runners\acquire_exchange_backbone.py:29:from stock_ranker.data_state import atomic_write_json, resolve_accepted_bundle_root  # noqa: E402
+marketdata\runners\acquire_exchange_backbone.py:30:from stock_ranker.exchange_backbone import (  # noqa: E402
+marketdata\runners\acquire_exchange_backbone.py:38:from stock_ranker.live_market import load_live_market_bundle  # noqa: E402
+marketdata\runners\acquire_identity_continuity.py:1:from __future__ import annotations
+marketdata\runners\acquire_identity_continuity.py:3:import argparse
+marketdata\runners\acquire_identity_continuity.py:4:from hashlib import sha256
+marketdata\runners\acquire_identity_continuity.py:5:import json
+marketdata\runners\acquire_identity_continuity.py:6:from pathlib import Path
+marketdata\runners\acquire_identity_continuity.py:7:import sys
+marketdata\runners\acquire_identity_continuity.py:9:import pandas as pd
+marketdata\runners\acquire_identity_continuity.py:16:from marketdata.runners.acquire_nse_annual_reports import _fetch  # noqa: E402
+marketdata\runners\acquire_identity_continuity.py:17:from stock_ranker.identity_continuity import (  # noqa: E402
+marketdata\runners\acquire_nifty50_baseline.py:3:from __future__ import annotations
+marketdata\runners\acquire_nifty50_baseline.py:5:import argparse
+marketdata\runners\acquire_nifty50_baseline.py:6:from datetime import datetime, timezone
+marketdata\runners\acquire_nifty50_baseline.py:7:from hashlib import sha256
+marketdata\runners\acquire_nifty50_baseline.py:8:import json
+marketdata\runners\acquire_nifty50_baseline.py:9:from pathlib import Path
+marketdata\runners\acquire_nifty50_baseline.py:10:import shutil
+marketdata\runners\acquire_nifty50_baseline.py:11:import sys
+marketdata\runners\acquire_nifty50_baseline.py:12:from typing import Any
+marketdata\runners\acquire_nifty50_baseline.py:14:import pandas as pd
+marketdata\runners\acquire_nifty50_baseline.py:20:from stock_ranker.historical_baseline import (  # noqa: E402
+marketdata\runners\acquire_nifty50_baseline.py:28:from stock_ranker.nse_snapshot import load_nse_snapshot  # noqa: E402
+marketdata\runners\acquire_nse_annual_reports.py:3:from __future__ import annotations
+marketdata\runners\acquire_nse_annual_reports.py:5:import argparse
+marketdata\runners\acquire_nse_annual_reports.py:6:from datetime import datetime
+marketdata\runners\acquire_nse_annual_reports.py:7:from hashlib import sha256
+marketdata\runners\acquire_nse_annual_reports.py:8:import json
+marketdata\runners\acquire_nse_annual_reports.py:9:from pathlib import Path
+marketdata\runners\acquire_nse_annual_reports.py:10:import shutil
+marketdata\runners\acquire_nse_annual_reports.py:11:import sys
+marketdata\runners\acquire_nse_annual_reports.py:12:import time
+marketdata\runners\acquire_nse_annual_reports.py:13:from urllib.parse import urlencode, urlparse
+marketdata\runners\acquire_nse_annual_reports.py:14:from urllib.request import Request, urlopen
+marketdata\runners\acquire_nse_annual_reports.py:15:from zoneinfo import ZoneInfo
+marketdata\runners\acquire_nse_annual_reports.py:17:import pandas as pd
+marketdata\runners\acquire_nse_v2_fundamentals.py:3:from __future__ import annotations
+marketdata\runners\acquire_nse_v2_fundamentals.py:5:import argparse
+marketdata\runners\acquire_nse_v2_fundamentals.py:6:from datetime import datetime
+marketdata\runners\acquire_nse_v2_fundamentals.py:7:from hashlib import sha256
+marketdata\runners\acquire_nse_v2_fundamentals.py:8:import json
+marketdata\runners\acquire_nse_v2_fundamentals.py:9:from pathlib import Path
+marketdata\runners\acquire_nse_v2_fundamentals.py:10:import sys
+marketdata\runners\acquire_nse_v2_fundamentals.py:11:import time
+marketdata\runners\acquire_nse_v2_fundamentals.py:12:from urllib.parse import urlencode, urlparse
+marketdata\runners\acquire_nse_v2_fundamentals.py:13:from urllib.request import Request, urlopen
+marketdata\runners\acquire_nse_v2_fundamentals.py:14:from zoneinfo import ZoneInfo
+marketdata\runners\acquire_nse_v2_fundamentals.py:16:import pandas as pd
+marketdata\runners\acquire_nse_v2_fundamentals.py:20:from stock_ranker.real_research_v2 import select_point_in_time_filing  # noqa: E402
+marketdata\runners\acquire_screener_public_history.py:3:from __future__ import annotations
+marketdata\runners\acquire_screener_public_history.py:5:import argparse
+marketdata\runners\acquire_screener_public_history.py:6:from datetime import date
+marketdata\runners\acquire_screener_public_history.py:7:import hashlib
+marketdata\runners\acquire_screener_public_history.py:8:import json
+marketdata\runners\acquire_screener_public_history.py:9:from pathlib import Path
+marketdata\runners\acquire_screener_public_history.py:10:import sys
+marketdata\runners\acquire_screener_public_history.py:12:import pandas as pd
+marketdata\runners\acquire_screener_public_history.py:19:from stock_ranker.screener_historical_fundamentals import (  # noqa: E402
+marketdata\runners\acquire_screener_public_history.py:24:from stock_ranker.screener_public_history import (  # noqa: E402
+marketdata\runners\acquire_walk_forward_blind.py:3:from __future__ import annotations
+marketdata\runners\acquire_walk_forward_blind.py:5:import argparse
+marketdata\runners\acquire_walk_forward_blind.py:6:from datetime import datetime
+marketdata\runners\acquire_walk_forward_blind.py:7:from hashlib import sha256
+marketdata\runners\acquire_walk_forward_blind.py:8:import json
+marketdata\runners\acquire_walk_forward_blind.py:9:from pathlib import Path
+marketdata\runners\acquire_walk_forward_blind.py:10:import sys
+marketdata\runners\acquire_walk_forward_blind.py:11:from urllib.parse import urlencode, urlparse
+marketdata\runners\acquire_walk_forward_blind.py:12:from zoneinfo import ZoneInfo
+marketdata\runners\acquire_walk_forward_blind.py:14:import pandas as pd
+marketdata\runners\acquire_walk_forward_blind.py:21:from marketdata.runners.acquire_nse_annual_reports import API, _fetch  # noqa: E402
+marketdata\runners\acquire_walk_forward_blind.py:22:from stock_ranker.walk_forward_blind import (  # noqa: E402
+marketdata\runners\acquire_walk_forward_outcomes.py:3:from __future__ import annotations
+marketdata\runners\acquire_walk_forward_outcomes.py:5:import argparse
+marketdata\runners\acquire_walk_forward_outcomes.py:6:from datetime import timedelta
+marketdata\runners\acquire_walk_forward_outcomes.py:7:from hashlib import sha256
+marketdata\runners\acquire_walk_forward_outcomes.py:8:import json
+marketdata\runners\acquire_walk_forward_outcomes.py:9:from pathlib import Path
+marketdata\runners\acquire_walk_forward_outcomes.py:10:import sys
+marketdata\runners\acquire_walk_forward_outcomes.py:11:from typing import Callable
+marketdata\runners\acquire_walk_forward_outcomes.py:13:import pandas as pd
+marketdata\runners\acquire_walk_forward_outcomes.py:19:from stock_ranker.walk_forward_evaluation import (  # noqa: E402
+marketdata\runners\acquire_yahoo_secondary_facts.py:3:from __future__ import annotations
+marketdata\runners\acquire_yahoo_secondary_facts.py:5:import argparse
+marketdata\runners\acquire_yahoo_secondary_facts.py:6:from concurrent.futures import ThreadPoolExecutor, as_completed
+marketdata\runners\acquire_yahoo_secondary_facts.py:7:from datetime import datetime, timedelta, timezone
+marketdata\runners\acquire_yahoo_secondary_facts.py:8:import hashlib
+marketdata\runners\acquire_yahoo_secondary_facts.py:9:import json
+marketdata\runners\acquire_yahoo_secondary_facts.py:10:import math
+marketdata\runners\acquire_yahoo_secondary_facts.py:11:import os
+marketdata\runners\acquire_yahoo_secondary_facts.py:12:from pathlib import Path
+marketdata\runners\acquire_yahoo_secondary_facts.py:13:import sys
+marketdata\runners\acquire_yahoo_secondary_facts.py:14:import time
+marketdata\runners\acquire_yahoo_secondary_facts.py:15:from typing import Any
+marketdata\runners\acquire_yahoo_secondary_facts.py:20:import pandas as pd  # noqa: E402
+marketdata\runners\acquire_yahoo_secondary_facts.py:21:import yfinance as yf  # noqa: E402
+marketdata\runners\acquire_yahoo_secondary_facts.py:23:from stock_ranker.data_state import atomic_write_json, resolve_accepted_bundle_root  # noqa: E402
+marketdata\runners\acquire_yahoo_secondary_facts.py:24:from stock_ranker.live_market import load_live_market_bundle  # noqa: E402
+marketdata\runners\acquire_yahoo_secondary_facts.py:25:from stock_ranker.exchange_backbone import (  # noqa: E402
+marketdata\runners\acquire_yahoo_secondary_facts.py:28:from stock_ranker.secondary_facts import (  # noqa: E402
+marketdata\runners\adjudicate_walk_forward_fundamentals.py:3:from __future__ import annotations
+marketdata\runners\adjudicate_walk_forward_fundamentals.py:5:import argparse
+marketdata\runners\adjudicate_walk_forward_fundamentals.py:6:from hashlib import sha256
+marketdata\runners\adjudicate_walk_forward_fundamentals.py:7:import json
+marketdata\runners\adjudicate_walk_forward_fundamentals.py:8:from pathlib import Path
+marketdata\runners\adjudicate_walk_forward_fundamentals.py:9:import re
+marketdata\runners\adjudicate_walk_forward_fundamentals.py:10:import sys
+marketdata\runners\apply_screener_deadline_overlay.py:1:from __future__ import annotations
+marketdata\runners\apply_screener_deadline_overlay.py:3:import argparse
+marketdata\runners\apply_screener_deadline_overlay.py:4:import hashlib
+marketdata\runners\apply_screener_deadline_overlay.py:5:import json
+marketdata\runners\apply_screener_deadline_overlay.py:6:import shutil
+marketdata\runners\apply_screener_deadline_overlay.py:7:from datetime import datetime, timezone
+marketdata\runners\apply_screener_deadline_overlay.py:8:from pathlib import Path
+marketdata\runners\apply_screener_deadline_overlay.py:10:import pandas as pd
+marketdata\runners\apply_screener_deadline_overlay.py:12:from stock_ranker.screener_data_bundle import (
+marketdata\runners\apply_screener_deadline_overlay.py:18:from stock_ranker.screener_historical_fundamentals import sha256_file
+marketdata\runners\audit_baseline_eligibility.py:3:from __future__ import annotations
+marketdata\runners\audit_baseline_eligibility.py:5:import argparse
+marketdata\runners\audit_baseline_eligibility.py:6:import json
+marketdata\runners\audit_baseline_eligibility.py:7:from pathlib import Path
+marketdata\runners\audit_baseline_eligibility.py:8:import sys
+marketdata\runners\audit_baseline_eligibility.py:10:import pandas as pd
+marketdata\runners\audit_baseline_eligibility.py:14:from stock_ranker.baseline_eligibility_audit import audit_baseline_eligibility  # noqa: E402
+marketdata\runners\audit_bse_adjustment_readiness.py:1:from __future__ import annotations
+marketdata\runners\audit_bse_adjustment_readiness.py:3:import argparse
+marketdata\runners\audit_bse_adjustment_readiness.py:4:import csv
+marketdata\runners\audit_bse_adjustment_readiness.py:5:from datetime import date, datetime
+marketdata\runners\audit_bse_adjustment_readiness.py:6:import hashlib
+marketdata\runners\audit_bse_adjustment_readiness.py:7:import io
+marketdata\runners\audit_bse_adjustment_readiness.py:8:import json
+marketdata\runners\audit_bse_adjustment_readiness.py:9:import math
+marketdata\runners\audit_bse_adjustment_readiness.py:10:import os
+marketdata\runners\audit_bse_adjustment_readiness.py:11:from pathlib import Path
+marketdata\runners\audit_bse_adjustment_readiness.py:12:import re
+marketdata\runners\audit_bse_adjustment_readiness.py:13:import sqlite3
+marketdata\runners\audit_bse_adjustment_readiness.py:14:import sys
+marketdata\runners\audit_bse_adjustment_readiness.py:15:from zipfile import ZipFile
+marketdata\runners\audit_bse_adjustment_semantics_against_yahoo.py:1:from __future__ import annotations
+marketdata\runners\audit_bse_adjustment_semantics_against_yahoo.py:3:import csv
+marketdata\runners\audit_bse_adjustment_semantics_against_yahoo.py:4:import json
+marketdata\runners\audit_bse_adjustment_semantics_against_yahoo.py:5:import math
+marketdata\runners\audit_bse_adjustment_semantics_against_yahoo.py:6:from pathlib import Path
+marketdata\runners\audit_bse_adjustment_semantics_against_yahoo.py:7:import statistics
+marketdata\runners\audit_bse_adjustment_semantics_against_yahoo.py:8:import sys
+marketdata\runners\audit_bse_candidate_cache_quarantine.py:1:from __future__ import annotations
+marketdata\runners\audit_bse_candidate_cache_quarantine.py:3:import argparse
+marketdata\runners\audit_bse_candidate_cache_quarantine.py:4:import csv
+marketdata\runners\audit_bse_candidate_cache_quarantine.py:5:from datetime import date
+marketdata\runners\audit_bse_candidate_cache_quarantine.py:6:import json
+marketdata\runners\audit_bse_candidate_cache_quarantine.py:7:import math
+marketdata\runners\audit_bse_candidate_cache_quarantine.py:8:from pathlib import Path
+marketdata\runners\audit_bse_candidate_cache_quarantine.py:9:import sys
+marketdata\runners\audit_bse_history_completion.py:1:from __future__ import annotations
+marketdata\runners\audit_bse_history_completion.py:3:import argparse
+marketdata\runners\audit_bse_history_completion.py:4:import csv
+marketdata\runners\audit_bse_history_completion.py:5:import hashlib
+marketdata\runners\audit_bse_history_completion.py:6:import json
+marketdata\runners\audit_bse_history_completion.py:7:from pathlib import Path
+marketdata\runners\audit_bse_history_completion.py:8:import re
+marketdata\runners\audit_bse_history_completion.py:9:import sqlite3
+marketdata\runners\audit_bse_history_completion.py:10:import sys
+marketdata\runners\audit_bse_history_completion.py:11:from zipfile import ZipFile
+marketdata\runners\audit_final_data_quality.py:3:from __future__ import annotations
+marketdata\runners\audit_final_data_quality.py:5:import argparse
+marketdata\runners\audit_final_data_quality.py:6:import json
+marketdata\runners\audit_final_data_quality.py:7:from pathlib import Path
+marketdata\runners\audit_final_data_quality.py:8:import sys
+marketdata\runners\audit_final_data_quality.py:10:import pandas as pd
+marketdata\runners\audit_final_data_quality.py:16:from stock_ranker.company_facts import load_company_fact_snapshot, resolve_company_fact_snapshot  # noqa: E402
+marketdata\runners\audit_financial_recovery_pack.py:2:import argparse
+marketdata\runners\audit_financial_recovery_pack.py:3:from collections import Counter
+marketdata\runners\audit_financial_recovery_pack.py:4:from decimal import Decimal
+marketdata\runners\audit_financial_recovery_pack.py:5:import json
+marketdata\runners\audit_financial_recovery_pack.py:6:from pathlib import Path
+marketdata\runners\audit_financial_recovery_pack.py:8:from financial_recovery_pack import atomic_write_json, csv_bytes, sha, targets
+marketdata\runners\audit_independent_annual_reports.py:3:from __future__ import annotations
+marketdata\runners\audit_independent_annual_reports.py:5:import argparse
+marketdata\runners\audit_independent_annual_reports.py:6:from concurrent.futures import ProcessPoolExecutor, as_completed
+marketdata\runners\audit_independent_annual_reports.py:7:from hashlib import sha256
+marketdata\runners\audit_independent_annual_reports.py:8:import importlib.util
+marketdata\runners\audit_independent_annual_reports.py:9:import json
+marketdata\runners\audit_independent_annual_reports.py:10:from pathlib import Path
+marketdata\runners\audit_independent_annual_reports.py:11:import re
+marketdata\runners\audit_independent_annual_reports.py:12:import sys
+marketdata\runners\audit_independent_annual_reports.py:13:from typing import Any
+marketdata\runners\audit_nse_annual_reports.py:3:from __future__ import annotations
+marketdata\runners\audit_nse_annual_reports.py:5:import argparse
+marketdata\runners\audit_nse_annual_reports.py:6:from concurrent.futures import ThreadPoolExecutor
+marketdata\runners\audit_nse_annual_reports.py:7:from hashlib import sha256
+marketdata\runners\audit_nse_annual_reports.py:8:from importlib.metadata import PackageNotFoundError, version
+marketdata\runners\audit_nse_annual_reports.py:9:import json
+marketdata\runners\audit_nse_annual_reports.py:10:from pathlib import Path
+marketdata\runners\audit_nse_annual_reports.py:11:import re
+marketdata\runners\audit_nse_annual_reports.py:12:import subprocess
+marketdata\runners\audit_nse_annual_reports.py:13:import sys
+marketdata\runners\audit_nse_annual_reports.py:15:import pandas as pd
+marketdata\runners\audit_pdfium_annual_reports.py:3:from __future__ import annotations
+marketdata\runners\audit_pdfium_annual_reports.py:5:import argparse
+marketdata\runners\audit_pdfium_annual_reports.py:6:from concurrent.futures import ProcessPoolExecutor, as_completed
+marketdata\runners\audit_pdfium_annual_reports.py:7:from hashlib import sha256
+marketdata\runners\audit_pdfium_annual_reports.py:8:import importlib.util
+marketdata\runners\audit_pdfium_annual_reports.py:9:import json
+marketdata\runners\audit_pdfium_annual_reports.py:10:from pathlib import Path
+marketdata\runners\audit_pdfium_annual_reports.py:11:import re
+marketdata\runners\audit_pdfium_annual_reports.py:12:import sys
+marketdata\runners\audit_pdfium_annual_reports.py:13:from typing import Any
+marketdata\runners\audit_point_in_time_integrity.py:3:from __future__ import annotations
+marketdata\runners\audit_point_in_time_integrity.py:5:import argparse
+marketdata\runners\audit_point_in_time_integrity.py:6:from collections import Counter
+marketdata\runners\audit_point_in_time_integrity.py:7:import json
+marketdata\runners\audit_point_in_time_integrity.py:8:from pathlib import Path
+marketdata\runners\audit_point_in_time_integrity.py:9:from typing import Any
+marketdata\runners\audit_point_in_time_integrity.py:11:import pandas as pd
+marketdata\runners\audit_screener_acquisition_routes.py:3:from __future__ import annotations
+marketdata\runners\audit_screener_acquisition_routes.py:5:import argparse
+marketdata\runners\audit_screener_acquisition_routes.py:6:from datetime import date
+marketdata\runners\audit_screener_acquisition_routes.py:7:import hashlib
+marketdata\runners\audit_screener_acquisition_routes.py:8:import json
+marketdata\runners\audit_screener_acquisition_routes.py:9:from pathlib import Path
+marketdata\runners\audit_screener_acquisition_routes.py:10:import sys
+marketdata\runners\audit_screener_acquisition_routes.py:12:import pandas as pd
+marketdata\runners\audit_screener_acquisition_routes.py:17:from stock_ranker.screener_historical_fundamentals import (  # noqa: E402
+marketdata\runners\audit_screener_acquisition_routes.py:23:from stock_ranker.screener_public_history import parse_cached_public_pages  # noqa: E402
+marketdata\runners\audit_screener_acquisition_routes.py:24:from stock_ranker.screener_xbrl_reconstruction import (  # noqa: E402
+marketdata\runners\audit_screener_premium_exports.py:3:from __future__ import annotations
+marketdata\runners\audit_screener_premium_exports.py:5:import argparse
+marketdata\runners\audit_screener_premium_exports.py:6:from pathlib import Path
+marketdata\runners\audit_screener_premium_exports.py:7:import sys
+marketdata\runners\audit_screener_premium_exports.py:12:from stock_ranker.company_facts import load_company_fact_snapshot, resolve_company_fact_snapshot  # noqa: E402
+marketdata\runners\audit_screener_premium_exports.py:13:from stock_ranker.data_state import atomic_write_json  # noqa: E402
+marketdata\runners\audit_screener_premium_exports.py:14:from stock_ranker.screener_premium_reference import exact_isin_coverage, reconcile_screener_exports  # noqa: E402
+marketdata\runners\audit_walk_forward_integrity.py:3:from __future__ import annotations
+marketdata\runners\audit_walk_forward_integrity.py:5:import argparse
+marketdata\runners\audit_walk_forward_integrity.py:6:import csv
+marketdata\runners\audit_walk_forward_integrity.py:7:from datetime import datetime
+marketdata\runners\audit_walk_forward_integrity.py:8:from hashlib import sha256
+marketdata\runners\audit_walk_forward_integrity.py:9:import json
+marketdata\runners\audit_walk_forward_integrity.py:10:import math
+marketdata\runners\audit_walk_forward_integrity.py:11:from pathlib import Path
+marketdata\runners\audit_walk_forward_integrity.py:12:import sys
+marketdata\runners\audit_website_gap_root_causes.py:11:from __future__ import annotations
+marketdata\runners\audit_website_gap_root_causes.py:13:import argparse
+marketdata\runners\audit_website_gap_root_causes.py:14:from datetime import date, datetime, timezone
+marketdata\runners\audit_website_gap_root_causes.py:15:import json
+marketdata\runners\audit_website_gap_root_causes.py:16:from pathlib import Path
+marketdata\runners\audit_website_gap_root_causes.py:17:import sys
+marketdata\runners\audit_website_gap_root_causes.py:18:from typing import Any
+marketdata\runners\audit_website_gap_root_causes.py:20:import pandas as pd
+marketdata\runners\audit_website_gap_root_causes.py:27:from stock_ranker.company_facts import (  # noqa: E402
+marketdata\runners\audit_website_missing_data.py:1:from __future__ import annotations
+marketdata\runners\audit_website_missing_data.py:3:import json
+marketdata\runners\audit_website_missing_data.py:4:from pathlib import Path
+marketdata\runners\audit_website_missing_data.py:5:import pandas as pd
+marketdata\runners\backfill_bse_history.py:12:from __future__ import annotations
+marketdata\runners\backfill_bse_history.py:14:import argparse
+marketdata\runners\backfill_bse_history.py:15:from concurrent.futures import ThreadPoolExecutor, as_completed
+marketdata\runners\backfill_bse_history.py:16:from datetime import date, datetime, timezone
+marketdata\runners\backfill_bse_history.py:17:import json
+marketdata\runners\backfill_bse_history.py:18:import math
+marketdata\runners\backfill_bse_history.py:19:from pathlib import Path
+marketdata\runners\backfill_bse_history.py:20:import re
+marketdata\runners\backfill_bse_history.py:21:import sys
+marketdata\runners\backfill_bse_history.py:22:import time
+marketdata\runners\backfill_bse_history.py:23:from typing import Any
+marketdata\runners\backfill_bse_history.py:24:from zoneinfo import ZoneInfo
+marketdata\runners\backfill_bse_history.py:26:import pandas as pd
+marketdata\runners\backfill_bse_history.py:34:from stock_ranker.data_state import (  # noqa: E402
+marketdata\runners\backfill_bse_history.py:40:from stock_ranker.live_market import load_live_market_bundle  # noqa: E402
+marketdata\runners\build_bse_candidate_history_cache.py:1:from __future__ import annotations
+marketdata\runners\build_bse_candidate_history_cache.py:3:import argparse
+marketdata\runners\build_bse_candidate_history_cache.py:4:import csv
+marketdata\runners\build_bse_candidate_history_cache.py:5:from datetime import date
+marketdata\runners\build_bse_candidate_history_cache.py:6:import json
+marketdata\runners\build_bse_candidate_history_cache.py:7:import math
+marketdata\runners\build_bse_candidate_history_cache.py:8:import os
+marketdata\runners\build_bse_candidate_history_cache.py:9:from pathlib import Path
+marketdata\runners\build_bse_candidate_history_cache.py:10:import re
+marketdata\runners\build_bse_candidate_history_cache.py:11:import shutil
+marketdata\runners\build_bse_candidate_history_cache.py:12:import sys
+marketdata\runners\build_candidate_company_facts.py:1:from __future__ import annotations
+marketdata\runners\build_candidate_company_facts.py:3:import argparse
+marketdata\runners\build_candidate_company_facts.py:4:import json
+marketdata\runners\build_candidate_company_facts.py:5:from pathlib import Path
+marketdata\runners\build_candidate_company_facts.py:6:import sys
+marketdata\runners\build_candidate_company_facts.py:13:from stock_ranker.company_facts import build_company_facts  # noqa: E402
+marketdata\runners\build_candidate_company_facts.py:14:from stock_ranker.live_market import load_live_market_bundle  # noqa: E402
+marketdata\runners\build_candidate_company_facts.py:15:from stock_ranker.screener_data_bundle import load_accepted_screener_data_bundle  # noqa: E402
+marketdata\runners\build_data_completeness_report.py:3:from __future__ import annotations
+marketdata\runners\build_data_completeness_report.py:5:import argparse
+marketdata\runners\build_data_completeness_report.py:6:from hashlib import sha256
+marketdata\runners\build_data_completeness_report.py:7:import json
+marketdata\runners\build_data_completeness_report.py:8:from pathlib import Path
+marketdata\runners\build_data_completeness_report.py:9:import sys
+marketdata\runners\build_data_completeness_report.py:15:import pandas as pd  # noqa: E402
+marketdata\runners\build_data_completeness_report.py:17:from stock_ranker.company_facts import load_company_fact_snapshot, resolve_company_fact_snapshot  # noqa: E402
+marketdata\runners\build_data_completeness_report.py:18:from stock_ranker.data_state import atomic_write_json  # noqa: E402
+marketdata\runners\build_data_completeness_report.py:19:from stock_ranker.secondary_facts import load_yahoo_secondary_bundle  # noqa: E402
+marketdata\runners\build_data_completeness_report.py:20:from stock_ranker.exchange_backbone import audit_derived_classifications  # noqa: E402
+marketdata\runners\build_pit_annual_report_review_packets.py:1:from __future__ import annotations
+marketdata\runners\build_pit_annual_report_review_packets.py:3:import argparse
+marketdata\runners\build_pit_annual_report_review_packets.py:4:import json
+marketdata\runners\build_pit_annual_report_review_packets.py:5:from pathlib import Path
+marketdata\runners\build_pit_annual_report_review_packets.py:6:import sys
+marketdata\runners\build_pit_annual_report_review_packets.py:8:import pandas as pd
+marketdata\runners\build_pit_annual_report_review_packets.py:14:from stock_ranker.pit_annual_report_packets import build_annual_report_review_packets  # noqa: E402
+marketdata\runners\build_pit_fundamental_candidate_cohort.py:3:from __future__ import annotations
+marketdata\runners\build_pit_fundamental_candidate_cohort.py:5:import argparse
+marketdata\runners\build_pit_fundamental_candidate_cohort.py:6:from datetime import date
+marketdata\runners\build_pit_fundamental_candidate_cohort.py:7:import json
+marketdata\runners\build_pit_fundamental_candidate_cohort.py:8:from pathlib import Path
+marketdata\runners\build_pit_fundamental_candidate_cohort.py:9:import sys
+marketdata\runners\build_pit_fundamental_candidate_cohort.py:11:import pandas as pd
+marketdata\runners\build_pit_fundamental_candidate_cohort.py:17:from stock_ranker.pit_accounting_promotion import (  # noqa: E402
+marketdata\runners\build_pit_fundamental_candidate_cohort.py:21:from stock_ranker.research_v2 import ResearchV2Inputs, calculate_research_v2  # noqa: E402
+marketdata\runners\build_pit_fundamental_candidate_cohort.py:22:from stock_ranker.v2_config import ResearchV2Config  # noqa: E402
+marketdata\runners\check_recovery_numeric_transforms.py:6:import argparse
+marketdata\runners\check_recovery_numeric_transforms.py:7:from decimal import Decimal
+marketdata\runners\check_recovery_numeric_transforms.py:8:import json
+marketdata\runners\check_recovery_numeric_transforms.py:9:from pathlib import Path
+marketdata\runners\check_recovery_numeric_transforms.py:10:import re
+marketdata\runners\check_recovery_numeric_transforms.py:11:from bs4 import BeautifulSoup
+marketdata\runners\check_recovery_numeric_transforms.py:12:from financial_recovery_pack import sha, csv_bytes
+marketdata\runners\compare_candidate_vs_accepted_company_facts.py:1:from __future__ import annotations
+marketdata\runners\compare_candidate_vs_accepted_company_facts.py:3:import argparse
+marketdata\runners\compare_candidate_vs_accepted_company_facts.py:4:import csv
+marketdata\runners\compare_candidate_vs_accepted_company_facts.py:5:import json
+marketdata\runners\compare_candidate_vs_accepted_company_facts.py:6:from pathlib import Path
+marketdata\runners\compare_candidate_vs_accepted_company_facts.py:7:import sys
+marketdata\runners\compare_same_cohort.py:3:from __future__ import annotations
+marketdata\runners\compare_same_cohort.py:5:import argparse
+marketdata\runners\compare_same_cohort.py:6:from hashlib import sha256
+marketdata\runners\compare_same_cohort.py:7:import json
+marketdata\runners\compare_same_cohort.py:8:from pathlib import Path
+marketdata\runners\compare_same_cohort.py:9:import shutil
+marketdata\runners\compare_same_cohort.py:10:import sys
+marketdata\runners\compare_same_cohort.py:12:import pandas as pd
+marketdata\runners\compare_same_cohort.py:17:from stock_ranker.same_cohort_comparison import (  # noqa: E402
+marketdata\runners\compare_same_cohort.py:24:from stock_ranker.walk_forward_blind import _baseline_from_prices  # noqa: E402
+marketdata\runners\daily_bse_history.py:10:from __future__ import annotations
+marketdata\runners\daily_bse_history.py:12:import argparse
+marketdata\runners\daily_bse_history.py:13:from concurrent.futures import ThreadPoolExecutor, as_completed
+marketdata\runners\daily_bse_history.py:14:from datetime import date, datetime, timedelta, timezone
+marketdata\runners\daily_bse_history.py:15:import json
+marketdata\runners\daily_bse_history.py:16:from pathlib import Path
+marketdata\runners\daily_bse_history.py:17:import sys
+marketdata\runners\daily_bse_history.py:18:from typing import Any
+marketdata\runners\daily_bse_history.py:20:import pandas as pd
+marketdata\runners\daily_bse_history.py:30:import backfill_bse_history as core  # noqa: E402
+marketdata\runners\daily_bse_history.py:31:from stock_ranker.data_state import (  # noqa: E402
+marketdata\runners\daily_bse_history.py:37:from stock_ranker.live_market import load_live_market_bundle  # noqa: E402
+marketdata\runners\diagnose_bse_missing_18.py:1:from __future__ import annotations
+marketdata\runners\diagnose_bse_missing_18.py:3:import csv
+marketdata\runners\diagnose_bse_missing_18.py:4:import re
+marketdata\runners\diagnose_bse_missing_18.py:5:from pathlib import Path
+marketdata\runners\diagnose_bse_missing_18.py:6:from zipfile import ZipFile
+marketdata\runners\diagnose_candidate_v2_60_to_63.py:1:from __future__ import annotations
+marketdata\runners\diagnose_candidate_v2_60_to_63.py:3:import csv
+marketdata\runners\diagnose_candidate_v2_60_to_63.py:4:import json
+marketdata\runners\diagnose_candidate_v2_60_to_63.py:5:from pathlib import Path
+marketdata\runners\diagnose_candidate_v2_60_to_63.py:6:import sys
+marketdata\runners\diagnose_frozen_v2_60_vs_61.py:1:from __future__ import annotations
+marketdata\runners\diagnose_frozen_v2_60_vs_61.py:3:import csv
+marketdata\runners\diagnose_frozen_v2_60_vs_61.py:4:import json
+marketdata\runners\diagnose_frozen_v2_60_vs_61.py:5:from pathlib import Path
+marketdata\runners\diagnose_frozen_v2_60_vs_61.py:6:import sys
+marketdata\runners\diagnose_product_baseline_losses.py:1:from __future__ import annotations
+marketdata\runners\diagnose_product_baseline_losses.py:3:import argparse
+marketdata\runners\diagnose_product_baseline_losses.py:4:import csv
+marketdata\runners\diagnose_product_baseline_losses.py:5:import json
+marketdata\runners\diagnose_product_baseline_losses.py:6:import math
+marketdata\runners\diagnose_product_baseline_losses.py:7:from pathlib import Path
+marketdata\runners\diagnose_product_baseline_losses.py:8:import sys
+marketdata\runners\diagnose_v2_missing_isin.py:1:from __future__ import annotations
+marketdata\runners\diagnose_v2_missing_isin.py:3:import csv
+marketdata\runners\diagnose_v2_missing_isin.py:4:import json
+marketdata\runners\diagnose_v2_missing_isin.py:5:from pathlib import Path
+marketdata\runners\diagnose_v2_missing_isin.py:6:import sys
+marketdata\runners\discover_pit_fundamental_scale.py:1:from __future__ import annotations
+marketdata\runners\discover_pit_fundamental_scale.py:3:import argparse
+marketdata\runners\discover_pit_fundamental_scale.py:4:from datetime import datetime
+marketdata\runners\discover_pit_fundamental_scale.py:5:from hashlib import sha256
+marketdata\runners\discover_pit_fundamental_scale.py:6:import json
+marketdata\runners\discover_pit_fundamental_scale.py:7:from pathlib import Path
+marketdata\runners\discover_pit_fundamental_scale.py:8:import sys
+marketdata\runners\discover_pit_fundamental_scale.py:9:from zoneinfo import ZoneInfo
+marketdata\runners\discover_pit_fundamental_scale.py:11:import pandas as pd
+marketdata\runners\discover_pit_fundamental_scale.py:18:from marketdata.runners.acquire_nse_annual_reports import acquire  # noqa: E402
+marketdata\runners\discover_pit_fundamental_scale.py:19:from stock_ranker.pit_fundamental_scale import (  # noqa: E402
+marketdata\runners\download_bse_corporate_actions.py:1:from __future__ import annotations
+marketdata\runners\download_bse_corporate_actions.py:3:import argparse
+marketdata\runners\download_bse_corporate_actions.py:4:import calendar
+marketdata\runners\download_bse_corporate_actions.py:5:import csv
+marketdata\runners\download_bse_corporate_actions.py:6:from datetime import date, datetime, timedelta, timezone
+marketdata\runners\download_bse_corporate_actions.py:7:import hashlib
+marketdata\runners\download_bse_corporate_actions.py:8:import io
+marketdata\runners\download_bse_corporate_actions.py:9:import json
+marketdata\runners\download_bse_corporate_actions.py:10:import os
+marketdata\runners\download_bse_corporate_actions.py:11:from pathlib import Path
+marketdata\runners\download_bse_corporate_actions.py:12:import random
+marketdata\runners\download_bse_corporate_actions.py:13:import re
+marketdata\runners\download_bse_corporate_actions.py:14:import shutil
+marketdata\runners\download_bse_corporate_actions.py:15:import sqlite3
+marketdata\runners\download_bse_corporate_actions.py:16:import subprocess
+marketdata\runners\download_bse_corporate_actions.py:17:import sys
+marketdata\runners\download_bse_corporate_actions.py:18:import time
+marketdata\runners\download_bse_corporate_actions.py:19:from typing import Iterable
+marketdata\runners\download_bse_corporate_actions.py:20:from zipfile import ZipFile
+marketdata\runners\download_bse_historical_corporate_announcements_v2.py:1:from __future__ import annotations
+marketdata\runners\download_bse_historical_corporate_announcements_v2.py:3:import argparse
+marketdata\runners\download_bse_historical_corporate_announcements_v2.py:4:import csv
+marketdata\runners\download_bse_historical_corporate_announcements_v2.py:5:from datetime import date, datetime, timedelta, timezone
+marketdata\runners\download_bse_historical_corporate_announcements_v2.py:6:import hashlib
+marketdata\runners\download_bse_historical_corporate_announcements_v2.py:7:import json
+marketdata\runners\download_bse_historical_corporate_announcements_v2.py:8:import os
+marketdata\runners\download_bse_historical_corporate_announcements_v2.py:9:from pathlib import Path
+marketdata\runners\download_bse_historical_corporate_announcements_v2.py:10:import random
+marketdata\runners\download_bse_historical_corporate_announcements_v2.py:11:import re
+marketdata\runners\download_bse_historical_corporate_announcements_v2.py:12:import shutil
+marketdata\runners\download_bse_historical_corporate_announcements_v2.py:13:import sqlite3
+marketdata\runners\download_bse_historical_corporate_announcements_v2.py:14:import subprocess
+marketdata\runners\download_bse_historical_corporate_announcements_v2.py:15:import sys
+marketdata\runners\download_bse_historical_corporate_announcements_v2.py:16:import time
+marketdata\runners\download_bse_historical_corporate_announcements_v2.py:17:from typing import Iterable
+marketdata\runners\download_bse_historical_corporate_announcements_v2.py:18:from zipfile import ZipFile
+marketdata\runners\download_bse_history_playwright.py:8:from __future__ import annotations
+marketdata\runners\download_bse_history_playwright.py:10:import argparse
+marketdata\runners\download_bse_history_playwright.py:11:import csv
+marketdata\runners\download_bse_history_playwright.py:12:from dataclasses import asdict, dataclass
+marketdata\runners\download_bse_history_playwright.py:13:from datetime import datetime, timezone
+marketdata\runners\download_bse_history_playwright.py:14:import hashlib
+marketdata\runners\download_bse_history_playwright.py:15:import io
+marketdata\runners\download_bse_history_playwright.py:16:import json
+marketdata\runners\download_bse_history_playwright.py:17:import os
+marketdata\runners\download_bse_history_playwright.py:18:from pathlib import Path
+marketdata\runners\download_bse_history_playwright.py:19:import re
+marketdata\runners\download_bse_history_playwright.py:20:import shutil
+marketdata\runners\download_bse_history_playwright.py:21:import subprocess
+marketdata\runners\download_bse_history_playwright.py:22:import sys
+marketdata\runners\download_bse_history_playwright.py:23:import tempfile
+marketdata\runners\download_bse_history_playwright.py:24:import time
+marketdata\runners\download_bse_history_playwright.py:25:from typing import Any, Iterable
+marketdata\runners\download_bse_history_playwright.py:26:from urllib.parse import parse_qs, urlparse
+marketdata\runners\download_bse_history_playwright.py:27:from zipfile import ZipFile
+marketdata\runners\download_bse_structured_corporate_actions.py:1:from __future__ import annotations
+marketdata\runners\download_bse_structured_corporate_actions.py:3:import argparse
+marketdata\runners\download_bse_structured_corporate_actions.py:4:import csv
+marketdata\runners\download_bse_structured_corporate_actions.py:5:from datetime import date, datetime, timedelta, timezone
+marketdata\runners\download_bse_structured_corporate_actions.py:6:import hashlib
+marketdata\runners\download_bse_structured_corporate_actions.py:7:import json
+marketdata\runners\download_bse_structured_corporate_actions.py:8:import os
+marketdata\runners\download_bse_structured_corporate_actions.py:9:from pathlib import Path
+marketdata\runners\download_bse_structured_corporate_actions.py:10:import random
+marketdata\runners\download_bse_structured_corporate_actions.py:11:import re
+marketdata\runners\download_bse_structured_corporate_actions.py:12:import shutil
+marketdata\runners\download_bse_structured_corporate_actions.py:13:import sqlite3
+marketdata\runners\download_bse_structured_corporate_actions.py:14:import subprocess
+marketdata\runners\download_bse_structured_corporate_actions.py:15:import sys
+marketdata\runners\download_bse_structured_corporate_actions.py:16:import time
+marketdata\runners\download_bse_structured_corporate_actions.py:17:from typing import Iterable
+marketdata\runners\download_bse_structured_corporate_actions.py:18:from zipfile import ZipFile
+marketdata\runners\download_pit_annual_report_batch.py:1:from __future__ import annotations
+marketdata\runners\download_pit_annual_report_batch.py:3:import argparse
+marketdata\runners\download_pit_annual_report_batch.py:4:import json
+marketdata\runners\download_pit_annual_report_batch.py:5:from pathlib import Path
+marketdata\runners\download_pit_annual_report_batch.py:6:import sys
+marketdata\runners\download_pit_annual_report_batch.py:12:from marketdata.runners.acquire_nse_annual_reports import (  # noqa: E402
+marketdata\runners\evaluate_screener_historical_same_cohort.py:3:from __future__ import annotations
+marketdata\runners\evaluate_screener_historical_same_cohort.py:5:import argparse
+marketdata\runners\evaluate_screener_historical_same_cohort.py:6:from hashlib import sha256
+marketdata\runners\evaluate_screener_historical_same_cohort.py:7:import json
+marketdata\runners\evaluate_screener_historical_same_cohort.py:8:from pathlib import Path
+marketdata\runners\evaluate_screener_historical_same_cohort.py:9:import sys
+marketdata\runners\evaluate_screener_historical_same_cohort.py:15:from stock_ranker.screener_historical_evaluation import (  # noqa: E402
+marketdata\runners\evaluate_walk_forward.py:3:from __future__ import annotations
+marketdata\runners\evaluate_walk_forward.py:5:import argparse
+marketdata\runners\evaluate_walk_forward.py:6:from hashlib import sha256
+marketdata\runners\evaluate_walk_forward.py:7:import json
+marketdata\runners\evaluate_walk_forward.py:8:from pathlib import Path
+marketdata\runners\evaluate_walk_forward.py:9:import sys
+marketdata\runners\evaluate_walk_forward.py:11:import pandas as pd
+marketdata\runners\evaluate_walk_forward.py:17:from stock_ranker.walk_forward_evaluation import (  # noqa: E402
+marketdata\runners\finalize_product_recovery.py:2:from __future__ import annotations
+marketdata\runners\finalize_product_recovery.py:4:import argparse
+marketdata\runners\finalize_product_recovery.py:5:import hashlib
+marketdata\runners\finalize_product_recovery.py:6:import json
+marketdata\runners\finalize_product_recovery.py:7:from pathlib import Path
+marketdata\runners\finalize_product_recovery.py:8:import shutil
+marketdata\runners\finalize_product_recovery.py:9:import sys
+marketdata\runners\finalize_product_recovery.py:13:import pandas as pd
+marketdata\runners\finalize_product_recovery.py:14:from stock_ranker.company_facts import load_company_fact_snapshot, resolve_company_fact_snapshot
+marketdata\runners\finalize_product_recovery.py:15:from stock_ranker.data_state import atomic_write_json
+marketdata\runners\finalize_product_recovery.py:16:from audit_website_gap_root_causes import build_audit
+marketdata\runners\finalize_product_recovery.py:17:from datetime import date, datetime, timezone
+marketdata\runners\finalize_walk_forward_adjudication.py:3:from __future__ import annotations
+marketdata\runners\finalize_walk_forward_adjudication.py:5:from datetime import datetime
+marketdata\runners\finalize_walk_forward_adjudication.py:6:import json
+marketdata\runners\finalize_walk_forward_adjudication.py:7:from pathlib import Path
+marketdata\runners\finalize_walk_forward_rescue.py:3:from __future__ import annotations
+marketdata\runners\finalize_walk_forward_rescue.py:5:from datetime import datetime
+marketdata\runners\finalize_walk_forward_rescue.py:6:import json
+marketdata\runners\finalize_walk_forward_rescue.py:7:from pathlib import Path
+marketdata\runners\financial_recovery_pack.py:6:from __future__ import annotations
+marketdata\runners\financial_recovery_pack.py:8:import argparse
+marketdata\runners\financial_recovery_pack.py:9:import csv
+marketdata\runners\financial_recovery_pack.py:10:from datetime import datetime, timezone
+marketdata\runners\financial_recovery_pack.py:11:import hashlib
+marketdata\runners\financial_recovery_pack.py:12:from html.parser import HTMLParser
+marketdata\runners\financial_recovery_pack.py:13:import json
+marketdata\runners\financial_recovery_pack.py:14:from pathlib import Path
+marketdata\runners\financial_recovery_pack.py:15:import re
+marketdata\runners\financial_recovery_pack.py:16:import sys
+marketdata\runners\financial_recovery_pack.py:17:import time
+marketdata\runners\financial_recovery_pack.py:18:from urllib.parse import urlencode, urljoin, urlsplit
+marketdata\runners\financial_recovery_pack.py:19:from urllib.error import HTTPError
+marketdata\runners\financial_recovery_pack.py:20:from urllib.request import Request, urlopen, build_opener, HTTPRedirectHandler
+marketdata\runners\financial_recovery_pack.py:24:from stock_ranker.data_state import atomic_write_json
+marketdata\runners\financial_recovery_pack.py:25:from stock_ranker.exchange_backbone import FINANCIAL_COLUMNS, SHAREHOLDING_COLUMNS
+marketdata\runners\financial_recovery_pack.py:26:from acquire_exchange_backbone import validate_bse_shareholding_identity, parse_shareholding_inline_xbrl
+marketdata\runners\freeze_screener_historical_evaluation_readiness.py:3:from __future__ import annotations
+marketdata\runners\freeze_screener_historical_evaluation_readiness.py:5:import argparse
+marketdata\runners\freeze_screener_historical_evaluation_readiness.py:6:from hashlib import sha256
+marketdata\runners\freeze_screener_historical_evaluation_readiness.py:7:import json
+marketdata\runners\freeze_screener_historical_evaluation_readiness.py:8:from pathlib import Path
+marketdata\runners\freeze_screener_historical_evaluation_readiness.py:9:import sys
+marketdata\runners\freeze_screener_historical_evaluation_readiness.py:11:import pandas as pd
+marketdata\runners\freeze_screener_historical_evaluation_readiness.py:16:from stock_ranker.historical_evaluation_readiness import (  # noqa: E402
+marketdata\runners\freeze_screener_historical_evaluation_readiness.py:22:from stock_ranker.screener_historical_fundamentals import (  # noqa: E402
+marketdata\runners\ingest_screener_data_bundle.py:3:from __future__ import annotations
+marketdata\runners\ingest_screener_data_bundle.py:5:import argparse
+marketdata\runners\ingest_screener_data_bundle.py:6:import json
+marketdata\runners\ingest_screener_data_bundle.py:7:from pathlib import Path
+marketdata\runners\ingest_screener_data_bundle.py:8:import sys
+marketdata\runners\ingest_screener_data_bundle.py:10:from stock_ranker.screener_data_bundle import ingest_screener_data_bundle
+marketdata\runners\ingest_screener_manual_batch.py:3:from __future__ import annotations
+marketdata\runners\ingest_screener_manual_batch.py:5:import argparse
+marketdata\runners\ingest_screener_manual_batch.py:6:from datetime import date
+marketdata\runners\ingest_screener_manual_batch.py:7:import hashlib
+marketdata\runners\ingest_screener_manual_batch.py:8:import json
+marketdata\runners\ingest_screener_manual_batch.py:9:from pathlib import Path
+marketdata\runners\ingest_screener_manual_batch.py:10:import sys
+marketdata\runners\ingest_screener_manual_batch.py:12:import pandas as pd
+marketdata\runners\ingest_screener_manual_batch.py:17:from stock_ranker.screener_historical_fundamentals import (  # noqa: E402
+marketdata\runners\ingest_screener_manual_batch.py:23:from stock_ranker.screener_manual_batch import (  # noqa: E402
+marketdata\runners\manual_financial_recovery.py:5:from __future__ import annotations
+marketdata\runners\manual_financial_recovery.py:6:import argparse
+marketdata\runners\manual_financial_recovery.py:7:import io
+marketdata\runners\manual_financial_recovery.py:8:import json
+marketdata\runners\manual_financial_recovery.py:9:from pathlib import Path, PurePosixPath
+marketdata\runners\manual_financial_recovery.py:10:import re
+marketdata\runners\manual_financial_recovery.py:11:import zipfile
+marketdata\runners\manual_financial_recovery.py:12:import xml.etree.ElementTree as ET
+marketdata\runners\manual_financial_recovery.py:13:from decimal import Decimal, InvalidOperation
+marketdata\runners\manual_financial_recovery.py:15:from financial_recovery_pack import immutable, sha, targets, csv_bytes, atomic_write_json
+marketdata\runners\manual_financial_recovery.py:16:from stock_ranker.exchange_backbone import parse_exchange_xbrl, FINANCIAL_COLUMNS
+marketdata\runners\normalize_recovery_review.py:2:import argparse
+marketdata\runners\normalize_recovery_review.py:3:from datetime import date
+marketdata\runners\normalize_recovery_review.py:4:import json
+marketdata\runners\normalize_recovery_review.py:5:from pathlib import Path
+marketdata\runners\normalize_recovery_review.py:6:import sys
+marketdata\runners\normalize_recovery_review.py:9:from stock_ranker.exchange_backbone import CANONICAL_CONCEPTS, FINANCIAL_COLUMNS
+marketdata\runners\normalize_recovery_review.py:10:from financial_recovery_pack import csv_bytes, sha, targets
+marketdata\runners\prepare_company_facts.py:3:from __future__ import annotations
+marketdata\runners\prepare_company_facts.py:5:import argparse
+marketdata\runners\prepare_company_facts.py:6:import json
+marketdata\runners\prepare_company_facts.py:7:from pathlib import Path
+marketdata\runners\prepare_company_facts.py:8:import sys
+marketdata\runners\prepare_company_facts.py:13:from stock_ranker.company_facts import build_company_facts, promote_company_fact_snapshot  # noqa: E402
+marketdata\runners\prepare_company_facts.py:14:from stock_ranker.data_state import resolve_accepted_bundle_root  # noqa: E402
+marketdata\runners\prepare_company_facts.py:15:from stock_ranker.live_market import load_live_market_bundle  # noqa: E402
+marketdata\runners\prepare_company_facts.py:16:from stock_ranker.screener_data_bundle import load_accepted_screener_data_bundle  # noqa: E402
+marketdata\runners\prepare_company_facts.py:17:from stock_ranker.screener_statements import accepted_screener_workbook_isins  # noqa: E402
+marketdata\runners\prepare_live_market.py:3:from __future__ import annotations
+marketdata\runners\prepare_live_market.py:5:import argparse
+marketdata\runners\prepare_live_market.py:6:from concurrent.futures import ThreadPoolExecutor, as_completed
+marketdata\runners\prepare_live_market.py:7:from datetime import datetime, timezone
+marketdata\runners\prepare_live_market.py:8:import json
+marketdata\runners\prepare_live_market.py:9:from pathlib import Path
+marketdata\runners\prepare_live_market.py:10:import sys
+marketdata\runners\prepare_live_market.py:11:import time
+marketdata\runners\prepare_live_market.py:12:from urllib.request import Request, urlopen
+marketdata\runners\prepare_live_market.py:14:import pandas as pd
+marketdata\runners\prepare_live_market.py:22:from stock_ranker.baseline import calculate_baseline_rankings  # noqa: E402
+marketdata\runners\prepare_live_market.py:23:from stock_ranker.historical_baseline import (  # noqa: E402
+marketdata\runners\prepare_live_market.py:29:from stock_ranker.live_market import (  # noqa: E402
+marketdata\runners\prepare_live_market.py:41:from stock_ranker.pit_accounting_promotion import (  # noqa: E402
+marketdata\runners\prepare_live_market.py:44:from stock_ranker.real_research_v2 import load_real_research_v2_bundle  # noqa: E402
+marketdata\runners\prepare_live_market.py:45:from stock_ranker.research_v2 import ResearchV2Inputs, calculate_research_v2  # noqa: E402
+marketdata\runners\prepare_live_market.py:46:from stock_ranker.v2_config import ResearchV2Config  # noqa: E402
+marketdata\runners\prepare_nse_v2_bundle.py:2:from __future__ import annotations
+marketdata\runners\prepare_nse_v2_bundle.py:3:import argparse
+marketdata\runners\prepare_nse_v2_bundle.py:4:from pathlib import Path
+marketdata\runners\prepare_nse_v2_bundle.py:5:import sys
+marketdata\runners\prepare_nse_v2_bundle.py:9:from stock_ranker.real_research_v2 import prepare_real_research_v2_bundle  # noqa: E402
+marketdata\runners\prepare_screener_historical_pit.py:3:from __future__ import annotations
+marketdata\runners\prepare_screener_historical_pit.py:5:import argparse
+marketdata\runners\prepare_screener_historical_pit.py:6:from datetime import date
+marketdata\runners\prepare_screener_historical_pit.py:7:import hashlib
+marketdata\runners\prepare_screener_historical_pit.py:8:import json
+marketdata\runners\prepare_screener_historical_pit.py:9:from pathlib import Path
+marketdata\runners\prepare_screener_historical_pit.py:10:import shutil
+marketdata\runners\prepare_screener_historical_pit.py:11:import sys
+marketdata\runners\prepare_screener_historical_pit.py:13:import pandas as pd
+marketdata\runners\prepare_screener_historical_pit.py:18:from stock_ranker.data_state import atomic_write_json  # noqa: E402
+marketdata\runners\prepare_screener_historical_pit.py:19:from stock_ranker.screener_historical_fundamentals import (  # noqa: E402
+marketdata\runners\prepare_screener_historical_pit.py:26:from stock_ranker.screener_premium_reference import reconcile_screener_exports  # noqa: E402
+marketdata\runners\prepare_targeted_screener_rescue.py:3:from __future__ import annotations
+marketdata\runners\prepare_targeted_screener_rescue.py:5:import argparse
+marketdata\runners\prepare_targeted_screener_rescue.py:6:import json
+marketdata\runners\prepare_targeted_screener_rescue.py:7:from pathlib import Path
+marketdata\runners\prepare_targeted_screener_rescue.py:8:import sys
+marketdata\runners\prepare_targeted_screener_rescue.py:10:import pandas as pd
+marketdata\runners\prepare_targeted_screener_rescue.py:15:from stock_ranker.targeted_screener_rescue import (  # noqa: E402
+marketdata\runners\prepare_targeted_screener_rescue.py:18:from stock_ranker.screener_historical_fundamentals import sha256_file  # noqa: E402
+marketdata\runners\prepare_walk_forward_blind.py:3:from __future__ import annotations
+marketdata\runners\prepare_walk_forward_blind.py:5:import argparse
+marketdata\runners\prepare_walk_forward_blind.py:6:from hashlib import sha256
+marketdata\runners\prepare_walk_forward_blind.py:7:import json
+marketdata\runners\prepare_walk_forward_blind.py:8:from pathlib import Path
+marketdata\runners\prepare_walk_forward_blind.py:9:import sys
+marketdata\runners\prepare_walk_forward_blind.py:11:import pandas as pd
+marketdata\runners\prepare_walk_forward_blind.py:17:from stock_ranker.walk_forward_blind import (  # noqa: E402
+marketdata\runners\probe_bse_annual_report_fallback.py:1:from __future__ import annotations
+marketdata\runners\probe_bse_annual_report_fallback.py:3:import argparse
+marketdata\runners\probe_bse_annual_report_fallback.py:4:from datetime import datetime, timezone
+marketdata\runners\probe_bse_annual_report_fallback.py:5:from hashlib import sha256
+marketdata\runners\probe_bse_annual_report_fallback.py:6:import json
+marketdata\runners\probe_bse_annual_report_fallback.py:7:from pathlib import Path
+marketdata\runners\probe_bse_annual_report_fallback.py:8:import sys
+marketdata\runners\probe_bse_annual_report_fallback.py:9:import time
+marketdata\runners\probe_bse_annual_report_fallback.py:11:import pandas as pd
+marketdata\runners\probe_bse_annual_report_fallback.py:12:import requests
+marketdata\runners\probe_bse_annual_report_fallback.py:18:from stock_ranker.bse_annual_report_fallback import (  # noqa: E402
+marketdata\runners\probe_pit_fundamental_coverage.py:3:from __future__ import annotations
+marketdata\runners\probe_pit_fundamental_coverage.py:5:import argparse
+marketdata\runners\probe_pit_fundamental_coverage.py:6:from datetime import datetime
+marketdata\runners\probe_pit_fundamental_coverage.py:7:from hashlib import sha256
+marketdata\runners\probe_pit_fundamental_coverage.py:8:import json
+marketdata\runners\probe_pit_fundamental_coverage.py:9:from pathlib import Path
+marketdata\runners\probe_pit_fundamental_coverage.py:10:import sys
+marketdata\runners\probe_pit_fundamental_coverage.py:11:from zoneinfo import ZoneInfo
+marketdata\runners\probe_pit_fundamental_coverage.py:13:import pandas as pd
+marketdata\runners\probe_pit_fundamental_coverage.py:19:from marketdata.runners.acquire_nse_annual_reports import acquire
+marketdata\runners\probe_pit_fundamental_coverage.py:20:from marketdata.runners.audit_nse_annual_reports import audit
+marketdata\runners\probe_pit_fundamental_coverage.py:21:from stock_ranker.pit_fundamental_probe import (
+marketdata\runners\probe_residual_bse_ownership.py:2:from pathlib import Path
+marketdata\runners\probe_residual_bse_ownership.py:3:import sys
+marketdata\runners\probe_residual_bse_ownership.py:4:import json
+marketdata\runners\probe_residual_bse_ownership.py:5:import argparse
+marketdata\runners\probe_residual_bse_ownership.py:9:from acquire_exchange_backbone import _bse_shareholding
+marketdata\runners\probe_residual_bse_ownership.py:10:from stock_ranker.company_facts import load_company_fact_snapshot, resolve_company_fact_snapshot
+marketdata\runners\probe_residual_bse_ownership.py:11:from stock_ranker.data_state import atomic_write_json
+marketdata\runners\promote_bse_price_return_candidate.py:10:from __future__ import annotations
+marketdata\runners\promote_bse_price_return_candidate.py:12:import argparse
+marketdata\runners\promote_bse_price_return_candidate.py:13:from hashlib import sha256
+marketdata\runners\promote_bse_price_return_candidate.py:14:import json
+marketdata\runners\promote_bse_price_return_candidate.py:15:from pathlib import Path
+marketdata\runners\promote_bse_price_return_candidate.py:16:import shutil
+marketdata\runners\promote_bse_price_return_candidate.py:17:import sys
+marketdata\runners\promote_bse_price_return_candidate.py:18:from uuid import uuid4
+marketdata\runners\promote_bse_price_return_candidate.py:20:import pandas as pd
+marketdata\runners\promote_bse_price_return_candidate.py:28:from stock_ranker.company_facts import (  # noqa: E402
+marketdata\runners\promote_bse_price_return_candidate.py:35:from stock_ranker.data_state import (  # noqa: E402
+marketdata\runners\promote_bse_price_return_candidate.py:42:from stock_ranker.live_market import load_live_market_bundle  # noqa: E402
+marketdata\runners\rebuild_bse_candidate_price_return.py:1:from __future__ import annotations
+marketdata\runners\rebuild_bse_candidate_price_return.py:3:import argparse
+marketdata\runners\rebuild_bse_candidate_price_return.py:4:import csv
+marketdata\runners\rebuild_bse_candidate_price_return.py:5:from datetime import date
+marketdata\runners\rebuild_bse_candidate_price_return.py:6:import json
+marketdata\runners\rebuild_bse_candidate_price_return.py:7:import math
+marketdata\runners\rebuild_bse_candidate_price_return.py:8:import os
+marketdata\runners\rebuild_bse_candidate_price_return.py:9:from pathlib import Path
+marketdata\runners\rebuild_bse_candidate_price_return.py:10:import shutil
+marketdata\runners\rebuild_bse_candidate_price_return.py:11:import sys
+marketdata\runners\recover_bse_history_from_bhavcopy.py:1:from __future__ import annotations
+marketdata\runners\recover_bse_history_from_bhavcopy.py:3:import argparse
+marketdata\runners\recover_bse_history_from_bhavcopy.py:4:import csv
+marketdata\runners\recover_bse_history_from_bhavcopy.py:5:from datetime import date, datetime, timedelta, timezone
+marketdata\runners\recover_bse_history_from_bhavcopy.py:6:import hashlib
+marketdata\runners\recover_bse_history_from_bhavcopy.py:7:import io
+marketdata\runners\recover_bse_history_from_bhavcopy.py:8:import json
+marketdata\runners\recover_bse_history_from_bhavcopy.py:9:import os
+marketdata\runners\recover_bse_history_from_bhavcopy.py:10:from pathlib import Path
+marketdata\runners\recover_bse_history_from_bhavcopy.py:11:import random
+marketdata\runners\recover_bse_history_from_bhavcopy.py:12:import re
+marketdata\runners\recover_bse_history_from_bhavcopy.py:13:import shutil
+marketdata\runners\recover_bse_history_from_bhavcopy.py:14:import sqlite3
+marketdata\runners\recover_bse_history_from_bhavcopy.py:15:import subprocess
+marketdata\runners\recover_bse_history_from_bhavcopy.py:16:import sys
+marketdata\runners\recover_bse_history_from_bhavcopy.py:17:import time
+marketdata\runners\recover_bse_history_from_bhavcopy.py:18:from zipfile import ZipFile, BadZipFile
+marketdata\runners\recover_website_gaps.py:16:from __future__ import annotations
+marketdata\runners\recover_website_gaps.py:18:import argparse
+marketdata\runners\recover_website_gaps.py:19:from datetime import datetime, timezone
+marketdata\runners\recover_website_gaps.py:20:import json
+marketdata\runners\recover_website_gaps.py:21:from pathlib import Path
+marketdata\runners\recover_website_gaps.py:22:import subprocess
+marketdata\runners\recover_website_gaps.py:23:import sys
+marketdata\runners\recover_website_gaps.py:24:from typing import Any
+marketdata\runners\refresh_company_data.py:9:from __future__ import annotations
+marketdata\runners\refresh_company_data.py:11:import argparse
+marketdata\runners\refresh_company_data.py:12:from datetime import datetime, timezone
+marketdata\runners\refresh_company_data.py:13:import json
+marketdata\runners\refresh_company_data.py:14:from pathlib import Path
+marketdata\runners\refresh_company_data.py:15:import subprocess
+marketdata\runners\refresh_company_data.py:16:import sys
+marketdata\runners\refresh_company_data.py:17:from typing import Any
+marketdata\runners\refresh_company_data.py:24:from stock_ranker.data_state import atomic_write_json
+marketdata\runners\refresh_live_market.py:3:from __future__ import annotations
+marketdata\runners\refresh_live_market.py:5:import argparse
+marketdata\runners\refresh_live_market.py:6:from datetime import date, datetime, timedelta, timezone
+marketdata\runners\refresh_live_market.py:7:import json
+marketdata\runners\refresh_live_market.py:8:from pathlib import Path
+marketdata\runners\refresh_live_market.py:9:import sys
+marketdata\runners\refresh_live_market.py:10:import time
+marketdata\runners\refresh_live_market.py:11:from types import SimpleNamespace
+marketdata\runners\refresh_live_market.py:12:from urllib.error import HTTPError, URLError
+marketdata\runners\refresh_live_market.py:13:from urllib.request import Request, urlopen
+marketdata\runners\refresh_live_market.py:14:from uuid import uuid4
+marketdata\runners\refresh_live_market.py:15:from zoneinfo import ZoneInfo
+marketdata\runners\refresh_live_market.py:16:from zipfile import BadZipFile, ZipFile
+marketdata\runners\refresh_live_market.py:26:import prepare_live_market  # noqa: E402
+marketdata\runners\refresh_live_market.py:27:from stock_ranker.data_state import (  # noqa: E402
+marketdata\runners\refresh_live_market.py:39:from stock_ranker.live_market import load_live_market_bundle  # noqa: E402
+marketdata\runners\rescue_walk_forward_nse_availability.py:3:from __future__ import annotations
+marketdata\runners\rescue_walk_forward_nse_availability.py:5:import argparse
+marketdata\runners\rescue_walk_forward_nse_availability.py:6:from datetime import datetime
+marketdata\runners\rescue_walk_forward_nse_availability.py:7:from hashlib import sha256
+marketdata\runners\rescue_walk_forward_nse_availability.py:8:import http.cookiejar
+marketdata\runners\rescue_walk_forward_nse_availability.py:9:import json
+marketdata\runners\rescue_walk_forward_nse_availability.py:10:from pathlib import Path
+marketdata\runners\rescue_walk_forward_nse_availability.py:11:import re
+marketdata\runners\rescue_walk_forward_nse_availability.py:12:import sys
+marketdata\runners\rescue_walk_forward_nse_availability.py:13:import time
+marketdata\runners\rescue_walk_forward_nse_availability.py:14:from urllib.parse import urlencode, urlparse
+marketdata\runners\rescue_walk_forward_nse_availability.py:15:from urllib.request import HTTPCookieProcessor, Request, build_opener
+marketdata\runners\rescue_walk_forward_nse_availability.py:16:from zoneinfo import ZoneInfo
+marketdata\runners\review_manual_pdfium.py:2:import argparse
+marketdata\runners\review_manual_pdfium.py:3:import hashlib
+marketdata\runners\review_manual_pdfium.py:4:import io
+marketdata\runners\review_manual_pdfium.py:5:import json
+marketdata\runners\review_manual_pdfium.py:6:from pathlib import Path
+marketdata\runners\review_manual_pdfium.py:7:import zipfile
+marketdata\runners\review_recovery_ixbrl.py:6:from __future__ import annotations
+marketdata\runners\review_recovery_ixbrl.py:7:import argparse
+marketdata\runners\review_recovery_ixbrl.py:8:from decimal import Decimal, InvalidOperation
+marketdata\runners\review_recovery_ixbrl.py:9:import hashlib
+marketdata\runners\review_recovery_ixbrl.py:10:import importlib.metadata
+marketdata\runners\review_recovery_ixbrl.py:11:import json
+marketdata\runners\review_recovery_ixbrl.py:12:from pathlib import Path
+marketdata\runners\review_recovery_ixbrl.py:13:import re
+marketdata\runners\smoke_candidate_website_20260907.py:1:from __future__ import annotations
+marketdata\runners\smoke_candidate_website_20260907.py:3:import json
+marketdata\runners\smoke_candidate_website_20260907.py:4:from pathlib import Path
+marketdata\runners\smoke_candidate_website_20260907.py:5:import sys
+marketdata\runners\smoke_candidate_website_20260907.py:6:import threading
+marketdata\runners\smoke_candidate_website_20260907.py:7:from urllib.request import urlopen
+marketdata\runners\smoke_candidate_website_20260907.py:8:from urllib.parse import urlencode
+marketdata\runners\smoke_product_recovery.py:2:from __future__ import annotations
+marketdata\runners\smoke_product_recovery.py:3:import argparse
+marketdata\runners\smoke_product_recovery.py:4:import json
+marketdata\runners\smoke_product_recovery.py:5:from pathlib import Path
+marketdata\runners\smoke_product_recovery.py:6:import sys
+marketdata\runners\smoke_product_recovery.py:7:import threading
+marketdata\runners\smoke_product_recovery.py:8:from urllib.request import urlopen
+marketdata\runners\smoke_product_recovery.py:12:from stock_ranker import live_website
+marketdata\runners\smoke_product_recovery.py:13:from stock_ranker.webapp import create_server
+marketdata\runners\smoke_product_recovery.py:14:from stock_ranker.data_state import atomic_write_json
+marketdata\runners\stage_bse_history_and_corporate_actions.py:1:from __future__ import annotations
+marketdata\runners\stage_bse_history_and_corporate_actions.py:3:import argparse
+marketdata\runners\stage_bse_history_and_corporate_actions.py:4:import csv
+marketdata\runners\stage_bse_history_and_corporate_actions.py:5:from datetime import datetime, date
+marketdata\runners\stage_bse_history_and_corporate_actions.py:6:import json
+marketdata\runners\stage_bse_history_and_corporate_actions.py:7:from pathlib import Path
+marketdata\runners\stage_bse_history_and_corporate_actions.py:8:import re
+marketdata\runners\stage_bse_history_and_corporate_actions.py:9:import shutil
+marketdata\runners\stage_bse_history_and_corporate_actions.py:10:import sqlite3
+marketdata\runners\stage_bse_history_and_corporate_actions.py:11:import sys
+marketdata\runners\validate_pit_annual_reports.py:1:from __future__ import annotations
+marketdata\runners\validate_pit_annual_reports.py:3:import argparse
+marketdata\runners\validate_pit_annual_reports.py:4:from pathlib import Path
+marketdata\runners\validate_pit_annual_reports.py:5:import sys
+marketdata\runners\validate_pit_annual_reports.py:13:from stock_ranker.pit_annual_report_validation import (  # noqa: E402
+marketdata\runners\verify_financial_recovery_pack.py:6:import argparse
+marketdata\runners\verify_financial_recovery_pack.py:7:import hashlib
+marketdata\runners\verify_financial_recovery_pack.py:8:import json
+marketdata\runners\verify_financial_recovery_pack.py:9:from pathlib import Path
+marketdata\runners\verify_financial_recovery_pack.py:10:import subprocess
+marketdata\runners\verify_financial_recovery_pack.py:11:import sys
+marketdata\runners\verify_financial_recovery_pack.py:13:from review_recovery_ixbrl import extract

@@ -56,7 +56,8 @@ FACT_COLUMNS = (
     "bulk_classification_provider_symbol", "bulk_classification_retrieved_at",
     "bulk_classification_fingerprint",
     "screener_bundle_fingerprint", "screener_source_observed_at",
-    "screener_current_status", "screener_company_name", "screener_nse_code",
+    "screener_current_status", "screener_match_method", "screener_source_isin",
+    "screener_company_name", "screener_nse_code",
     "screener_bse_code", "screener_industry_group", "screener_industry",
     "screener_market_cap_crore", "screener_current_price", "screener_pe_ratio",
     "screener_pb_ratio", "screener_dividend_yield_pct", "screener_eps",
@@ -73,6 +74,19 @@ FACT_COLUMNS = (
     "screener_quarterly_profit_growth_pct", "screener_promoter_holding_pct",
     "screener_public_holding_pct", "screener_fii_holding_pct",
     "screener_dii_holding_pct", "screener_pledged_pct",
+    "screener_total_debt_crore", "screener_cash_conversion_cycle_days",
+    "screener_roce_3y_avg_pct", "screener_roic_pct", "screener_croic_pct",
+    "screener_sales_growth_3y_pct", "screener_sales_growth_5y_pct",
+    "screener_profit_growth_3y_pct", "screener_profit_growth_5y_pct",
+    "screener_roe_3y_avg_pct", "screener_roe_5y_avg_pct",
+    "screener_return_3m_pct", "screener_return_6m_pct",
+    "screener_return_1y_pct", "screener_return_3y_pct",
+    "screener_return_5y_pct", "screener_peg_ratio",
+    "screener_enterprise_value_crore", "screener_ev_ebitda",
+    "screener_price_to_free_cash_flow", "screener_price_to_sales",
+    "screener_industry_pe", "screener_earnings_yield_pct",
+    "screener_fii_holding_change_pct", "screener_dii_holding_change_pct",
+    "screener_promoter_holding_change_pct",
     "screener_historical_financials_available", "screener_workbook_available",
     "roce", "debt_to_equity", "profit_growth_yoy", "annual_profit_current",
     "annual_profit_prior", "annual_profit_unit", "annual_profit_label",
@@ -116,6 +130,9 @@ FACT_COLUMNS = (
     "product_baseline_score", "product_baseline_sector_rank",
     "product_baseline_eligible", "product_baseline_reason_code",
     "product_baseline_reason",
+    "product_price_reference", "product_price_date", "product_price_exchange",
+    "product_price_source", "product_price_source_sha256",
+    "product_price_identity_evidence", "product_price_status",
 )
 
 
@@ -283,13 +300,34 @@ def build_company_facts(
         bulk_by_isin = {str(row.isin): row for row in bulk.itertuples(index=False)}
     screener = _load_optional(screener_market_path)
     screener_by_isin: dict[str, Any] = {}
+    screener_by_exchange_code: dict[tuple[str, str], dict[str, Any]] = {}
+
+    def screener_exchange_key(exchange: Any, security_id: Any) -> tuple[str, str] | None:
+        if _missing(exchange) or _missing(security_id):
+            return None
+        exchange_text = str(exchange).strip().upper()
+        security_text = str(security_id).strip().upper()
+        if security_text.endswith(".0") and security_text[:-2].isdigit():
+            security_text = security_text[:-2]
+        if not exchange_text or not security_text:
+            return None
+        return exchange_text, security_text
     if not screener.empty:
         if not {"isin", "market_merge_status"}.issubset(screener.columns):
             raise ValueError("accepted Screener market data are missing identity/status columns")
         if screener["isin"].duplicated().any():
             raise ValueError("accepted Screener market data contain duplicate ISINs")
         screener = screener.loc[screener["market_merge_status"].eq("ACCEPTED")].copy()
-        screener_by_isin = {str(row["isin"]): row for row in screener.to_dict("records")}
+        screener_records = screener.to_dict("records")
+        screener_by_isin = {str(row["isin"]): row for row in screener_records}
+        exchange_groups: dict[tuple[str, str], list[dict[str, Any]]] = {}
+        for row in screener_records:
+            key = screener_exchange_key(row.get("primary_exchange"), row.get("exchange_security_id"))
+            if key is not None:
+                exchange_groups.setdefault(key, []).append(row)
+        screener_by_exchange_code = {
+            key: rows[0] for key, rows in exchange_groups.items() if len(rows) == 1
+        }
     screener_history = _load_optional(screener_history_path)
     screener_history_isins = set(screener_history["isin"].dropna().astype(str)) if "isin" in screener_history else set()
     screener_audit = _load_optional(screener_workbook_audit_path)
@@ -543,9 +581,35 @@ def build_company_facts(
                         "secondary_capital_expenditure": cash.get("capital_expenditure"),
                         "secondary_reporting_basis": "YAHOO_PROVIDER_BASIS_UNSPECIFIED",
                     })
+                    if (
+                        item["return_on_equity"] is None
+                        and item["secondary_annual_net_income"] is not None
+                        and item["secondary_stockholders_equity"] not in (None, 0)
+                    ):
+                        item["return_on_equity"] = (
+                            item["secondary_annual_net_income"]
+                            / item["secondary_stockholders_equity"]
+                        )
         isin = str(get("isin"))
+        screener_match_method: str | None = None
         screener_row = screener_by_isin.get(isin)
         if screener_row is not None:
+            screener_match_method = "EXACT_ISIN"
+        else:
+            exchange_key = screener_exchange_key(
+                get("primary_exchange"), get("exchange_security_id")
+            )
+            if exchange_key is not None:
+                screener_row = screener_by_exchange_code.get(exchange_key)
+                if screener_row is not None:
+                    screener_match_method = "UNIQUE_PRIMARY_EXCHANGE_SECURITY_ID"
+        if screener_row is not None:
+            screener_match_label = (
+                "exact ISIN"
+                if screener_match_method == "EXACT_ISIN"
+                else "unique primary-exchange security ID"
+            )
+
             def screener_value(*names: str) -> Any:
                 for name in names:
                     value = screener_row.get(name)
@@ -592,6 +656,32 @@ def build_company_facts(
                 "screener_fii_holding_pct": screener_value("operational__FII holding"),
                 "screener_dii_holding_pct": screener_value("operational__DII holding"),
                 "screener_pledged_pct": screener_value("snapshot__Pledged percentage"),
+                "screener_total_debt_crore": screener_value("snapshot__Debt", "operational__Debt"),
+                "screener_cash_conversion_cycle_days": screener_value("operational__Cash Conversion Cycle"),
+                "screener_roce_3y_avg_pct": screener_value("operational__ROCE3yr avg"),
+                "screener_roic_pct": screener_value("operational__Return on invested capital"),
+                "screener_croic_pct": screener_value("operational__CROIC"),
+                "screener_sales_growth_3y_pct": screener_value("snapshot__Sales growth 3Years"),
+                "screener_sales_growth_5y_pct": screener_value("snapshot__Sales growth 5Years"),
+                "screener_profit_growth_3y_pct": screener_value("snapshot__Profit growth 3Years"),
+                "screener_profit_growth_5y_pct": screener_value("snapshot__Profit growth 5Years"),
+                "screener_roe_3y_avg_pct": screener_value("snapshot__Average return on equity 3Years"),
+                "screener_roe_5y_avg_pct": screener_value("snapshot__Average return on equity 5Years"),
+                "screener_return_3m_pct": screener_value("snapshot__Return over 3months"),
+                "screener_return_6m_pct": screener_value("snapshot__Return over 6months"),
+                "screener_return_1y_pct": screener_value("snapshot__Return over 1year"),
+                "screener_return_3y_pct": screener_value("snapshot__Return over 3years"),
+                "screener_return_5y_pct": screener_value("snapshot__Return over 5years"),
+                "screener_peg_ratio": screener_value("snapshot__PEG Ratio"),
+                "screener_enterprise_value_crore": screener_value("snapshot__Enterprise Value"),
+                "screener_ev_ebitda": screener_value("snapshot__EVEBITDA"),
+                "screener_price_to_free_cash_flow": screener_value("snapshot__Price to Free Cash Flow"),
+                "screener_price_to_sales": screener_value("snapshot__Price to Sales"),
+                "screener_industry_pe": screener_value("snapshot__Industry PE"),
+                "screener_earnings_yield_pct": screener_value("snapshot__Earnings yield"),
+                "screener_fii_holding_change_pct": screener_value("operational__Change in FII holding"),
+                "screener_dii_holding_change_pct": screener_value("operational__Change in DII holding"),
+                "screener_promoter_holding_change_pct": screener_value("snapshot__Change in promoter holding"),
             }
             item.update({name: _text(value) if name in {
                 "screener_company_name", "screener_nse_code", "screener_bse_code",
@@ -600,15 +690,72 @@ def build_company_facts(
             item.update({
                 "screener_bundle_fingerprint": screener_bundle_fingerprint,
                 "screener_source_observed_at": screener_source_observed_at,
-                "screener_current_status": "ACCEPTED_EXACT_ISIN_CURRENT_REFERENCE",
+                "screener_current_status": (
+                    "ACCEPTED_EXACT_ISIN_CURRENT_REFERENCE"
+                    if screener_match_method == "EXACT_ISIN"
+                    else "ACCEPTED_UNIQUE_EXCHANGE_CODE_CURRENT_REFERENCE"
+                ),
+                "screener_match_method": screener_match_method,
+                "screener_source_isin": _text(screener_row.get("isin")),
             })
             if item["market_cap"] is None and item["screener_market_cap_crore"] is not None:
                 item["market_cap"] = item["screener_market_cap_crore"] * 10_000_000
                 item["valuation_status"] = "SCREENER_CURRENT_REFERENCE_AVAILABLE"
-                item["valuation_reason"] = "Accepted Screener current market data matched by exact ISIN; values do not enter frozen research models."
+                item["valuation_reason"] = f"Accepted Screener current market data matched by {screener_match_label}; values do not enter frozen research models."
             for target, source_name in (
                 ("pe_ratio", "screener_pe_ratio"), ("pb_ratio", "screener_pb_ratio"),
                 ("trailing_eps", "screener_eps"),
+            ):
+                if item[target] is None:
+                    item[target] = item[source_name]
+
+            # Current/reference-only product enrichment from accepted Screener Premium.
+            # These fields do not alter Baseline V1 or frozen Research V2/PIT inputs.
+            # Accepted official facts later in this build still take precedence.
+            if (
+                item["dividend_yield"] is None
+                and item["screener_dividend_yield_pct"] is not None
+            ):
+                item["dividend_yield"] = item["screener_dividend_yield_pct"] / 100.0
+
+            if (
+                item["book_value"] is None
+                and item["screener_current_price"] is not None
+                and item["screener_pb_ratio"] is not None
+                and item["screener_pb_ratio"] > 0
+            ):
+                item["book_value"] = (
+                    item["screener_current_price"] / item["screener_pb_ratio"]
+                )
+
+            if (
+                item["shares_outstanding"] is None
+                and item["screener_market_cap_crore"] is not None
+                and item["screener_market_cap_crore"] > 0
+                and item["screener_current_price"] is not None
+                and item["screener_current_price"] > 0
+            ):
+                item["shares_outstanding"] = (
+                    item["screener_market_cap_crore"] * 10_000_000
+                    / item["screener_current_price"]
+                )
+
+            if (
+                item["profit_margin"] is None
+                and item["screener_profit_after_tax_crore"] is not None
+                and item["screener_sales_crore"] not in (None, 0)
+            ):
+                item["profit_margin"] = (
+                    item["screener_profit_after_tax_crore"]
+                    / item["screener_sales_crore"]
+                )
+
+            for target, source_name in (
+                ("promoter_holding_pct", "screener_promoter_holding_pct"),
+                ("public_holding_pct", "screener_public_holding_pct"),
+                ("fii_holding_pct", "screener_fii_holding_pct"),
+                ("dii_holding_pct", "screener_dii_holding_pct"),
+                ("promoter_pledge_pct", "screener_pledged_pct"),
             ):
                 if item[target] is None:
                     item[target] = item[source_name]
@@ -620,13 +767,24 @@ def build_company_facts(
             ):
                 if item[target] is None and item[source_name] is not None:
                     item[target] = item[source_name] / 100
+            if (
+                item["return_on_equity"] is None
+                and item["screener_eps"] is not None
+                and item["screener_pb_ratio"] is not None
+                and item["screener_current_price"] not in (None, 0)
+            ):
+                item["return_on_equity"] = (
+                    item["screener_eps"]
+                    * item["screener_pb_ratio"]
+                    / item["screener_current_price"]
+                )
             if item["secondary_debt_to_equity"] is None:
                 item["secondary_debt_to_equity"] = item["screener_debt_to_equity"]
             if item["derived_research_sector"] is None and item["screener_industry_group"] is not None:
                 item["derived_research_sector"] = item["screener_industry_group"]
                 item["derived_research_industry"] = item["screener_industry"]
                 item["classification_reason"] = (
-                    "Accepted Screener market-wide classification is matched by exact ISIN for current-product browsing only; "
+                    f"Accepted Screener market-wide classification is matched by {screener_match_label} for current-product browsing only; "
                     "it does not replace frozen research classifications."
                 )
         item["screener_historical_financials_available"] = isin in screener_history_isins
@@ -773,6 +931,15 @@ def build_company_facts(
             item["trailing_eps"] = item["official_annual_eps"]
             item["pe_ratio"] = item["latest_price"] / item["official_annual_eps"]
             item["official_pe_ratio"] = item["pe_ratio"]
+        if (
+            item["official_annual_pat"] is not None
+            and item["official_equity"] not in (None, 0)
+        ):
+            item["official_return_on_equity"] = (
+                item["official_annual_pat"]
+                / item["official_equity"]
+            )
+            item["return_on_equity"] = item["official_return_on_equity"]
         if item["official_equity"] is not None and item["official_total_shares"] not in (None, 0):
             item["book_value"] = item["official_equity"] / item["official_total_shares"]
             if item["book_value"] != 0 and item["latest_price"] is not None:
@@ -857,7 +1024,9 @@ def build_company_facts(
         rows.append(item)
     facts = pd.DataFrame(rows)
     from stock_ranker.product_classification import add_product_classification_and_baseline
+    from stock_ranker.product_price_reference import official_prior_references
 
+    facts, _ = official_prior_references(facts, Path(history_root).parent / "evidence/raw")
     facts = add_product_classification_and_baseline(facts, history_root=history_root)
     facts = facts.loc[:, list(FACT_COLUMNS)]
     total = len(facts)
@@ -874,6 +1043,7 @@ def build_company_facts(
     metrics = {
         "identity": int(facts[["ticker", "company", "isin", "primary_exchange"]].notna().all(axis=1).sum()),
         "current_price": count("latest_price"),
+        "current_or_dated_official_reference_price": int((facts["latest_price"].notna() | facts["product_price_reference"].notna()).sum()),
         "classification": count("official_sector"),
         "derived_classification": count("derived_research_sector"),
         "market_cap": count("market_cap"), "history_1y": true_count("history_1y_usable"),
@@ -899,7 +1069,13 @@ def build_company_facts(
         "debt_to_equity": any_count("debt_to_equity", "official_debt_to_equity", "secondary_debt_to_equity", "screener_debt_to_equity"),
         "profit_growth": any_count("profit_growth_yoy", "official_profit_growth_yoy", "secondary_profit_growth", "screener_profit_growth_pct"),
         "operational_cash_flow": any_count("official_operating_cash_flow", "secondary_operating_cash_flow", "screener_operating_cash_flow_crore"),
-        "screener_exact_isin_current": count("screener_current_status"),
+        "screener_exact_isin_current": int(
+            facts["screener_current_status"].eq("ACCEPTED_EXACT_ISIN_CURRENT_REFERENCE").sum()
+        ),
+        "screener_unique_exchange_code_current": int(
+            facts["screener_current_status"].eq("ACCEPTED_UNIQUE_EXCHANGE_CODE_CURRENT_REFERENCE").sum()
+        ),
+        "screener_current_reference": count("screener_current_status"),
         "screener_historical_financials": true_count("screener_historical_financials_available"),
         "screener_detailed_workbooks": true_count("screener_workbook_available"),
         "screener_industry_group": count("screener_industry_group"),

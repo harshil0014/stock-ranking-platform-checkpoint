@@ -33,7 +33,19 @@ def test_live_models_preserve_eligibility_gates_and_searchable_other_nse() -> No
     assert sum(row["eligible"] for row in baseline["rows"]) == baseline["summary"]["baseline_eligible"]
     assert sum(row["eligible"] for row in v2["rows"]) == v2["summary"]["research_v2_eligible"]
     assert any(row["size_segment"] == "OTHER NSE" for row in baseline["rows"])
-    assert any(row["classification_status"] == "UNCLASSIFIED" for row in baseline["rows"])
+    classification_statuses = {row["classification_status"] for row in baseline["rows"]}
+    assert classification_statuses <= {
+        "OFFICIAL",
+        "EXACT_IDENTITY_SECONDARY_REFERENCE",
+        "EXACT_ISIN_SCREENER_CURRENT_REFERENCE",
+        "UNIQUE_EXCHANGE_CODE_SCREENER_CURRENT_REFERENCE",
+        "UNCLASSIFIED",
+    }
+    coverage = live_website.company_facts_coverage()
+    assert sum(
+        row["classification_status"] != "UNCLASSIFIED"
+        for row in baseline["rows"]
+    ) == coverage["coverage"]["metrics"]["product_classified"]["count"]
 
 
 def test_live_stock_reliance_has_price_both_models_and_nine_v2_factors() -> None:

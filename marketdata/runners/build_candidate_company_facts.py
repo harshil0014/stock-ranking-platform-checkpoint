@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 from pathlib import Path
 import sys
@@ -10,7 +11,14 @@ SRC = PROJECT_ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from stock_ranker.company_facts import build_company_facts  # noqa: E402
+from stock_ranker.company_facts import (  # noqa: E402
+    CompanyFactResult,
+    _json_bytes,
+    _sha256_bytes,
+    build_company_facts,
+    load_company_fact_snapshot,
+    write_company_fact_snapshot,
+)
 from stock_ranker.live_market import load_live_market_bundle  # noqa: E402
 from stock_ranker.screener_data_bundle import load_accepted_screener_data_bundle  # noqa: E402
 
@@ -79,6 +87,10 @@ def main(argv=None) -> int:
     p.add_argument("--market-root", type=Path, default=DEFAULT_MARKET)
     p.add_argument("--history-root", type=Path, default=DEFAULT_HISTORY)
     p.add_argument("--output-root", type=Path, default=DEFAULT_OUTPUT)
+    p.add_argument(
+        "--preserve-unrelated-from", type=Path,
+        help="Direct accepted snapshot whose non-history/non-Product-Baseline fields remain byte-semantically unchanged.",
+    )
     args = p.parse_args(argv)
 
     try:
@@ -108,14 +120,41 @@ def main(argv=None) -> int:
             market_fingerprint=market.fingerprint,
         )
 
+        if args.preserve_unrelated_from:
+            prior = load_company_fact_snapshot(args.preserve_unrelated_from.resolve())
+            old = prior.facts.set_index("isin")
+            current = result.facts.set_index("isin")
+            if not old.index.equals(current.index):
+                raise ValueError("preservation snapshot identities differ")
+            allowed = {
+                "corporate_action_history_status", "recorded_high", "recorded_high_date",
+                "high_52w", "high_52w_date", "low_52w", "low_52w_date",
+            }
+            allowed.update(column for column in current if column.startswith("history_") or column.startswith("product_baseline_"))
+            for column in current.columns:
+                if column not in allowed:
+                    current[column] = old[column]
+            facts = current.reset_index().loc[:, result.facts.columns]
+            coverage = copy.deepcopy(result.coverage)
+            for metric in ("balance_sheet", "cash_flow", "screener_detailed_workbooks"):
+                coverage["metrics"][metric] = copy.deepcopy(prior.coverage["metrics"][metric])
+            canonical_rows = json.loads(facts.to_json(orient="records", date_format="iso", double_precision=15))
+            manifest = dict(result.manifest)
+            manifest["fingerprint"] = _sha256_bytes(_json_bytes({
+                "schema_version": manifest["schema_version"],
+                "market_fingerprint": manifest["market_fingerprint"],
+                "screener_bundle_fingerprint": manifest["screener_bundle_fingerprint"],
+                "facts": canonical_rows,
+                "coverage": coverage,
+            }))
+            result = CompanyFactResult(facts=facts, coverage=coverage, manifest=manifest)
+
         facts = result.facts.copy()
         output = args.output_root.resolve()
-        output.mkdir(parents=True, exist_ok=True)
-
+        if output.exists():
+            raise FileExistsError(f"candidate output must be fresh: {output}")
+        write_company_fact_snapshot(result, output)
         facts_path = output / "company_facts.csv"
-        tmp = facts_path.with_suffix(".csv.tmp")
-        facts.to_csv(tmp, index=False, lineterminator="\n", encoding="utf-8")
-        tmp.replace(facts_path)
 
         bse = facts.loc[facts["primary_exchange"].astype(str).str.upper().eq("BSE")].copy()
 
@@ -151,15 +190,6 @@ def main(argv=None) -> int:
             output / "summary.json",
             json.dumps(summary, indent=2, sort_keys=True),
         )
-        atomic_text(
-            output / "coverage.json",
-            json.dumps(result.coverage, indent=2, sort_keys=True, default=str),
-        )
-        atomic_text(
-            output / "manifest.json",
-            json.dumps(result.manifest, indent=2, sort_keys=True, default=str),
-        )
-
         print(json.dumps(summary, indent=2, sort_keys=True))
         print(f"Candidate facts: {facts_path}")
         print(f"Summary: {output / 'summary.json'}")

@@ -1,0 +1,22 @@
+{
+  "model": "greenblatt_india_v1",
+  "description": "Greenblatt-style current/reference ranking for Indian equities using ROIC and earnings yield.",
+  "source_snapshot": "data\\company_facts\\snapshots\\2026-09-07-76b3e78cd63dbe04197ba5c75266e47d7e15e65ec0c4063c6c25fac6b70c92c7\\company_facts.csv",
+  "source_fingerprint": "76b3e78cd63dbe04197ba5c75266e47d7e15e65ec0c4063c6c25fac6b70c92c7",
+  "minimum_market_cap_crore": 5000.0,
+  "excluded_sector_patterns": [
+    "\\bfinance\\b",
+    "\\bfinancial\\b",
+    "\\bbank",
+    "\\binsurance\\b",
+    "\\bcapital markets?\\b",
+    "\\butilities?\\b"
+  ],
+  "universe_rows": 4572,
+  "eligible_rows": 679,
+  "excluded_financial_or_utility": 657,
+  "failed_market_cap": 3730,
+  "failed_positive_roic": 950,
+  "failed_positive_earnings_yield": 904,
+  "warning": "Uses Screener current/reference ROIC and earnings-yield fields. This is not PIT-safe Research V2 and must not overwrite frozen PIT evidence. Because the exact accounting adjustments used by Greenblatt's proprietary database are not replicated here, present this as Greenblatt-style / Magic-Formula-inspired, not as an exact reproduction of the proprietary screener."
+}

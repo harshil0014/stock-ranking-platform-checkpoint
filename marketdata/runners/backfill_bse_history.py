@@ -14,6 +14,7 @@ from __future__ import annotations
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, datetime, timezone
+import hashlib
 import json
 import math
 from pathlib import Path
@@ -38,11 +39,16 @@ from stock_ranker.data_state import (  # noqa: E402
     resolve_accepted_bundle_root,
 )
 from stock_ranker.live_market import load_live_market_bundle  # noqa: E402
+from stock_ranker.company_facts import (  # noqa: E402
+    load_company_fact_snapshot,
+    resolve_company_fact_snapshot,
+)
 
 
 DEFAULT_STATE_ROOT = ROOT / "data" / "live_market"
 DEFAULT_CACHE_ROOT = DEFAULT_STATE_ROOT / "history_cache"
 DEFAULT_REPORT_ROOT = DEFAULT_STATE_ROOT / "history_backfill_reports"
+DEFAULT_COMPANY_FACT_ROOT = ROOT / "data" / "company_facts"
 MAX_CURRENT_RELATIVE_DIFFERENCE = 0.02
 TERMINAL_TOLERANCE_DAYS = 7
 IST = ZoneInfo("Asia/Kolkata")
@@ -59,6 +65,21 @@ def _atomic_csv(frame: pd.DataFrame, destination: Path) -> None:
         float_format="%.17g",
     )
     temporary.replace(destination)
+
+
+def _atomic_json(payload: dict[str, Any], destination: Path) -> None:
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    temporary = destination.with_suffix(destination.suffix + ".tmp")
+    temporary.write_text(
+        json.dumps(payload, indent=2, sort_keys=True, allow_nan=False) + "\n",
+        encoding="utf-8",
+        newline="\n",
+    )
+    temporary.replace(destination)
+
+
+def _history_metadata_path(path: Path) -> Path:
+    return path.with_suffix(".metadata.json")
 
 
 def bse_provider_code(exchange_security_id: object) -> str:
@@ -80,7 +101,25 @@ def _cache_covers(path: Path, trade_date: str) -> bool:
     except (OSError, UnicodeError, ValueError, pd.errors.ParserError):
         return False
     dates = pd.to_datetime(frame["date"], format="%Y-%m-%d", errors="coerce")
-    return bool(dates.notna().any() and dates.max().date().isoformat() >= trade_date)
+    if dates.notna().any():
+        terminal = dates.max().date()
+        accepted = date.fromisoformat(trade_date)
+        lag_days = (accepted - terminal).days
+        if lag_days <= TERMINAL_TOLERANCE_DAYS:
+            return True
+    metadata_path = _history_metadata_path(path)
+    if not metadata_path.is_file():
+        return False
+    try:
+        metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, ValueError, TypeError):
+        return False
+    return bool(
+        metadata.get("validation_status") == "ACCEPTED"
+        and metadata.get("accepted_for_current_reference") is True
+        and metadata.get("trade_date") == trade_date
+        and metadata.get("csv_sha256") == hashlib.sha256(path.read_bytes()).hexdigest()
+    )
 
 
 def merge_cached_history(path: Path, incoming: pd.DataFrame) -> pd.DataFrame:
@@ -121,6 +160,7 @@ def validate_downloaded_history(
     *,
     trade_date: str,
     official_price: float,
+    current_reference_price: float | None = None,
 ) -> tuple[pd.DataFrame, dict[str, Any]]:
     """Normalize provider history and cross-check identity with accepted BSE close."""
 
@@ -163,19 +203,25 @@ def validate_downloaded_history(
     accepted_date = date.fromisoformat(trade_date)
     terminal_date = date.fromisoformat(str(terminal["date"]))
     lag_days = (accepted_date - terminal_date).days
-    if lag_days < 0 or lag_days > TERMINAL_TOLERANCE_DAYS:
+    stale_terminal = lag_days > TERMINAL_TOLERANCE_DAYS
+    reference = float(current_reference_price) if current_reference_price is not None else None
+    valid_reference = reference is not None and math.isfinite(reference) and reference > 0
+    if lag_days < 0 or (stale_terminal and not valid_reference):
         raise ValueError(
             f"provider terminal observation is {lag_days} calendar days from accepted trade date"
         )
 
     provider_raw = float(terminal["raw_close"])
     relative_difference = abs(provider_raw - official) / official
-    if relative_difference > MAX_CURRENT_RELATIVE_DIFFERENCE:
+    if relative_difference > MAX_CURRENT_RELATIVE_DIFFERENCE and not valid_reference:
         raise ValueError(
             "provider raw close differs from accepted BSE close by "
             f"{relative_difference * 100:.4f}% (> 2.0000%)"
         )
 
+    uses_current_reference = valid_reference and (
+        stale_terminal or relative_difference > MAX_CURRENT_RELATIVE_DIFFERENCE
+    )
     audit = {
         "rows": int(len(normalized)),
         "first_date": str(normalized.iloc[0]["date"]),
@@ -184,6 +230,12 @@ def validate_downloaded_history(
         "provider_raw_close": provider_raw,
         "terminal_lag_days": int(lag_days),
         "current_relative_difference": float(relative_difference),
+        "terminal_freshness": "STALE_CURRENT_REFERENCE_ONLY" if stale_terminal else "CURRENT",
+        "current_reference_price": reference,
+        "current_reference_used": uses_current_reference,
+        "current_reference_authority": (
+            "SCREENER_PREMIUM" if uses_current_reference else "OFFICIAL_EXCHANGE_CLOSE"
+        ),
     }
     return normalized, audit
 
@@ -227,6 +279,7 @@ def _fetch_one(
                 fetched,
                 trade_date=trade_date,
                 official_price=float(row["latest_price"]),
+                current_reference_price=row.get("screener_current_price"),
             )
             normalized = merge_cached_history(target, normalized)
             _atomic_csv(normalized, target)
@@ -235,6 +288,17 @@ def _fetch_one(
                 "first_date": str(normalized.iloc[0]["date"]),
                 "last_date": str(normalized.iloc[-1]["date"]),
             })
+            metadata = {
+                **base,
+                **audit,
+                "accepted_for_current_reference": (
+                    audit["current_reference_used"] is True
+                ),
+                "validation_status": "ACCEPTED",
+                "csv_sha256": hashlib.sha256(target.read_bytes()).hexdigest(),
+                "created_at": datetime.now(timezone.utc).isoformat(),
+            }
+            _atomic_json(metadata, _history_metadata_path(target))
             return {
                 **base,
                 **audit,
@@ -312,6 +376,18 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
         accepted_root = resolve_accepted_bundle_root(state_root)
         bundle = load_live_market_bundle(accepted_root)
         bse = _eligible_bse_rows(bundle.market)
+        fact_bundle = load_company_fact_snapshot(
+            resolve_company_fact_snapshot(Path(args.company_fact_root).resolve())
+        )
+        reference = fact_bundle.facts.loc[:, [
+            "isin", "screener_current_status", "screener_current_price"
+        ]].copy()
+        allowed_reference = reference["screener_current_status"].isin({
+            "ACCEPTED_EXACT_ISIN_CURRENT_REFERENCE",
+            "ACCEPTED_UNIQUE_EXCHANGE_CODE_CURRENT_REFERENCE",
+        })
+        reference.loc[~allowed_reference, "screener_current_price"] = None
+        bse = bse.merge(reference.loc[:, ["isin", "screener_current_price"]], on="isin", how="left", validate="one_to_one")
 
         already_covered_mask = bse.apply(
             lambda row: _cache_covers(
@@ -321,7 +397,26 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
             axis=1,
         )
         pending = bse.loc[~already_covered_mask].copy()
-        if not args.all:
+
+        requested_tickers: list[str] = []
+        if args.tickers_file is not None:
+            tickers_path = Path(args.tickers_file).resolve()
+            if not tickers_path.exists():
+                raise FileNotFoundError(f"tickers file does not exist: {tickers_path}")
+            requested_tickers = [
+                line.strip()
+                for line in tickers_path.read_text(encoding="utf-8").splitlines()
+                if line.strip() and not line.lstrip().startswith("#")
+            ]
+            requested_tickers = list(dict.fromkeys(requested_tickers))
+            invalid = [ticker for ticker in requested_tickers if not re.fullmatch(r"BSE-\d+", ticker)]
+            if invalid:
+                raise ValueError(
+                    "tickers file contains invalid BSE ticker(s): " + ", ".join(invalid[:10])
+                )
+            requested_set = set(requested_tickers)
+            pending = pending.loc[pending["ticker"].astype(str).isin(requested_set)].copy()
+        elif not args.all:
             pending = pending.head(args.limit).copy()
 
         summary: dict[str, Any] = {
@@ -333,9 +428,20 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
             "already_covered_before_run": int(already_covered_mask.sum()),
             "missing_before_run": int((~already_covered_mask).sum()),
             "selected_this_run": int(len(pending)),
+            "requested_ticker_count": int(len(requested_tickers)),
+            "requested_tickers_already_covered": int(
+                len(set(requested_tickers) & set(bse.loc[already_covered_mask, "ticker"].astype(str)))
+            ) if requested_tickers else 0,
+            "requested_tickers_not_in_bse_universe": int(
+                len(set(requested_tickers) - set(bse["ticker"].astype(str)))
+            ) if requested_tickers else 0,
             "identity_contract": "OFFICIAL_BSE_TRADE_RECORD + numeric scrip code + exact ISIN",
             "provider_mapping": "official BSE numeric scrip code -> <code>.BO",
-            "terminal_validation": "provider raw close within 2% of accepted BSE close and <=7 calendar days",
+            "terminal_validation": (
+                "strict <=7-day and <=2% exchange-close validation by default; "
+                "stale terminal histories require an accepted exact-identity Screener "
+                "current/reference price and are marked in sidecar metadata"
+            ),
         }
         if args.dry_run:
             summary["selected"] = pending[
@@ -425,8 +531,15 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--state-root", type=Path, default=DEFAULT_STATE_ROOT)
     parser.add_argument("--cache-root", type=Path, default=DEFAULT_CACHE_ROOT)
     parser.add_argument("--report-root", type=Path, default=DEFAULT_REPORT_ROOT)
+    parser.add_argument("--company-fact-root", type=Path, default=DEFAULT_COMPANY_FACT_ROOT)
     parser.add_argument("--limit", type=int, default=25)
     parser.add_argument("--all", action="store_true")
+    parser.add_argument(
+        "--tickers-file",
+        type=Path,
+        default=None,
+        help="Optional UTF-8 file with one exact BSE-<scrip> ticker per line; only those pending histories are selected.",
+    )
     parser.add_argument("--workers", type=int, default=2)
     parser.add_argument("--attempts", type=int, default=2)
     parser.add_argument("--dry-run", action="store_true")
@@ -437,6 +550,8 @@ def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     if args.limit < 1:
         raise SystemExit("--limit must be at least 1")
+    if args.all and args.tickers_file is not None:
+        raise SystemExit("--all and --tickers-file are mutually exclusive")
     if not 1 <= args.workers <= 6:
         raise SystemExit("--workers must be from 1 through 6")
     if not 1 <= args.attempts <= 5:

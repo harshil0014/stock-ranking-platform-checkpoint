@@ -2,8 +2,10 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import hashlib
 import json
+import os
 from pathlib import Path
 import shutil
 import sys
@@ -21,11 +23,49 @@ def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def resolve_candidate(path: Path) -> Path:
+    """Accept either a state store or the direct immutable build directory."""
+    if (path / "company_facts.csv").is_file() and (path / "manifest.json").is_file():
+        load_company_fact_snapshot(path)
+        return path.resolve()
+    return resolve_company_fact_snapshot(path)
+
+
+def promote_new_history_files(candidate: Path, decisions: Path, history_root: Path) -> int:
+    with decisions.open("r", encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    promoted = 0
+    history_root.mkdir(parents=True, exist_ok=True)
+    for row in rows:
+        if row.get("status") != "PROMOTED_TO_CANDIDATE":
+            continue
+        name = f"{row['ticker']}.csv"
+        source = candidate / name
+        target = history_root / name
+        if not source.is_file():
+            raise ValueError(f"verified history candidate is missing: {name}")
+        if target.exists():
+            if digest(target) != digest(source):
+                raise ValueError(f"refusing to overwrite existing history: {name}")
+            continue
+        pending = target.with_suffix(target.suffix + ".pending")
+        shutil.copyfile(source, pending)
+        if digest(pending) != digest(source):
+            pending.unlink(missing_ok=True)
+            raise ValueError(f"history copy hash mismatch: {name}")
+        os.replace(pending, target)
+        promoted += 1
+    return promoted
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--candidate-one", type=Path, required=True)
     parser.add_argument("--candidate-two", type=Path, required=True)
     parser.add_argument("--state-root", type=Path, default=ROOT / "data/company_facts")
+    parser.add_argument("--history-candidate", type=Path)
+    parser.add_argument("--history-decisions", type=Path)
+    parser.add_argument("--history-root", type=Path, default=ROOT / "data/live_market/history_cache")
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--promote", action="store_true")
     args = parser.parse_args()
@@ -33,7 +73,7 @@ def main() -> None:
         raise ValueError("audit output must be fresh")
     old_pointer = (args.state_root / "accepted_state.json").read_bytes()
     before_path = resolve_company_fact_snapshot(args.state_root)
-    paths = [resolve_company_fact_snapshot(p) for p in (args.candidate_one, args.candidate_two)]
+    paths = [resolve_candidate(p) for p in (args.candidate_one, args.candidate_two)]
     before, after = load_company_fact_snapshot(before_path), load_company_fact_snapshot(paths[0])
     hashes = {}
     for name in ("company_facts.csv", "coverage_summary.json", "manifest.json"):
@@ -76,8 +116,11 @@ def main() -> None:
               "after_fingerprint": after.manifest["fingerprint"], "deterministic_artifact_hashes": hashes,
               "securities": len(b), "companies_with_changed_fields": int(changes["isin"].nunique()),
               "changes_by_field": changes.groupby("field").size().to_dict(),
-              "coverage": coverage, "remaining": summary, "promoted": False}
+              "coverage": coverage, "remaining": summary, "promoted": False,
+              "history_files_promoted": 0}
     if args.promote:
+        if bool(args.history_candidate) != bool(args.history_decisions):
+            raise ValueError("history candidate and decisions must be supplied together")
         if (args.state_root / "accepted_state.json").read_bytes() != old_pointer:
             raise ValueError("accepted state advanced during audit")
         destination = args.state_root / "snapshots" / paths[0].name
@@ -86,10 +129,21 @@ def main() -> None:
         load_company_fact_snapshot(destination)
         if any(digest(destination / name) != expected for name, expected in hashes.items()):
             raise ValueError("immutable destination differs from verified candidate")
-        pointer = json.loads((args.candidate_one / "accepted_state.json").read_text())
-        pointer["accepted_at"] = datetime.now(timezone.utc).isoformat()
-        pointer["snapshot_path"] = destination.relative_to(args.state_root).as_posix()
+        manifest = after.manifest
+        pointer = {
+            "schema_version": manifest["schema_version"],
+            "accepted_at": datetime.now(timezone.utc).isoformat(),
+            "snapshot_path": destination.relative_to(args.state_root).as_posix(),
+            "fingerprint": manifest["fingerprint"],
+            "trade_date": manifest["trade_date"],
+            "market_fingerprint": manifest["market_fingerprint"],
+        }
         atomic_write_json(args.state_root / "accepted_state.json", pointer)
+        if args.history_candidate:
+            report["history_files_promoted"] = promote_new_history_files(
+                args.history_candidate.resolve(), args.history_decisions.resolve(),
+                args.history_root.resolve(),
+            )
         report["promoted"] = True
     atomic_write_json(args.output / "acceptance.json", report)
     print(json.dumps({k: v for k, v in report.items() if k not in {"coverage", "remaining", "changes_by_field"}}, default=int))

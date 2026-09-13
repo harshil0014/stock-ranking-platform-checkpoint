@@ -83,3 +83,47 @@ def test_bulk_exact_identity_is_used_only_after_existing_evidence(tmp_path: Path
     assert result.loc["BULK", "product_sector"] == "Bulk"
     assert result.loc["BULK", "product_classification_evidence"] == "EXACT_IDENTITY_SECONDARY_REFERENCE"
     assert result.loc["BULK", "product_classification_source"] == "Yahoo bulk"
+
+
+def test_stale_exact_identity_history_uses_accepted_screener_current(tmp_path: Path):
+    ticker = "BSE-500500"
+    dates = pd.to_datetime(["2021-08-19", "2023-08-18", "2025-08-19"])
+    pd.DataFrame({
+        "date": dates.strftime("%Y-%m-%d"),
+        "adjusted_close": [50.0, 75.0, 90.0],
+    }).to_csv(tmp_path / f"{ticker}.csv", index=False)
+    facts = pd.DataFrame([{
+        "ticker": ticker, "company": "Exact BSE Ltd", "listing_date": "2000-01-01",
+        "trade_date": "2026-08-19", "latest_price": 101.0,
+        "official_sector": None, "secondary_identity_status": "NOT_CHECKED",
+        "bulk_classification_status": "ACCEPTED", "bulk_classification_sector": "Industrials",
+        "bulk_classification_source": "Exact source", "bulk_classification_retrieved_at": "2026-08-19",
+        "screener_current_status": "ACCEPTED_EXACT_ISIN_CURRENT_REFERENCE",
+        "screener_current_price": 100.0, "baseline_eligible": False,
+        "baseline_reason_code": "UNCLASSIFIED",
+    }])
+    row = add_product_classification_and_baseline(facts, history_root=tmp_path).iloc[0]
+    assert bool(row["product_baseline_eligible"])
+    assert row["product_baseline_yoy_growth"] == 100.0 / 90.0 - 1
+    assert row["product_baseline_days_since_recorded_high"] == 0
+    assert "Screener Premium is authoritative" in row["product_baseline_reason"]
+
+
+def test_stale_history_without_accepted_current_reference_remains_ineligible(tmp_path: Path):
+    ticker = "BSE-500501"
+    dates = pd.to_datetime(["2021-08-19", "2023-08-18", "2025-08-19"])
+    pd.DataFrame({
+        "date": dates.strftime("%Y-%m-%d"),
+        "adjusted_close": [50.0, 75.0, 90.0],
+    }).to_csv(tmp_path / f"{ticker}.csv", index=False)
+    facts = pd.DataFrame([{
+        "ticker": ticker, "company": "No Reference Ltd", "listing_date": "2000-01-01",
+        "trade_date": "2026-08-19", "latest_price": 101.0,
+        "official_sector": None, "secondary_identity_status": "NOT_CHECKED",
+        "bulk_classification_status": "ACCEPTED", "bulk_classification_sector": "Industrials",
+        "screener_current_status": "UNAVAILABLE", "screener_current_price": 100.0,
+        "baseline_eligible": False, "baseline_reason_code": "UNCLASSIFIED",
+    }])
+    row = add_product_classification_and_baseline(facts, history_root=tmp_path).iloc[0]
+    assert not bool(row["product_baseline_eligible"])
+    assert row["product_baseline_reason_code"] == "CURRENT_PRICE_UNAVAILABLE"

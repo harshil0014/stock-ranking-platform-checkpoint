@@ -94,6 +94,21 @@ def extract_codes(source: Path) -> list[str]:
     return codes
 
 
+def extract_codes_csv(source: Path) -> list[str]:
+    """Load an explicit exact-code audit cohort without filename conventions."""
+    with source.open("r", encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        if not reader.fieldnames or "bse_code" not in reader.fieldnames:
+            raise ValueError("--codes-csv must contain a bse_code column")
+        codes = sorted({normalize_code(row.get("bse_code")) for row in reader})
+    invalid = [code for code in codes if not re.fullmatch(r"\d{6}", code)]
+    if invalid:
+        raise ValueError(f"invalid exact BSE codes in --codes-csv: {invalid[:5]}")
+    if not codes:
+        raise ValueError("--codes-csv contains no exact six-digit BSE codes")
+    return codes
+
+
 def fingerprint(codes: Iterable[str]) -> str:
     return hashlib.sha256(("\n".join(sorted(codes)) + "\n").encode()).hexdigest()
 
@@ -391,6 +406,11 @@ def parser() -> argparse.ArgumentParser:
     p.add_argument("--downloads-root", type=Path, default=downloads_root())
     p.add_argument("--source", type=Path)
     p.add_argument(
+        "--codes-csv",
+        type=Path,
+        help="Explicit CSV cohort with a bse_code column; mutually exclusive with --source.",
+    )
+    p.add_argument(
         "--output-root",
         type=Path,
         default=downloads_root() / "BSE_Structured_Corporate_Actions",
@@ -410,9 +430,15 @@ def main(argv=None) -> int:
         parser().error("--delay-seconds must be >= 0.3")
 
     try:
-        source = args.source.resolve() if args.source else discover_source(args.downloads_root.resolve())
-        codes = extract_codes(source)
-        if len(codes) != 228:
+        if args.codes_csv and args.source:
+            raise ValueError("--codes-csv and --source are mutually exclusive")
+        if args.codes_csv:
+            source = args.codes_csv.resolve()
+            codes = extract_codes_csv(source)
+        else:
+            source = args.source.resolve() if args.source else discover_source(args.downloads_root.resolve())
+            codes = extract_codes(source)
+        if not args.codes_csv and len(codes) != 228:
             print(f"WARNING: exact code count={len(codes)}, expected 228", file=sys.stderr)
 
         selected = set(PROBE_CODES) if args.mode == "probe" else set(codes)

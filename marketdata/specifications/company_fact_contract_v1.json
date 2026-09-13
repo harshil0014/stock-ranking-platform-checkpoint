@@ -1,5 +1,5 @@
 {
-  "schema_version": "company_fact_layer_v1",
+  "schema_version": "company_fact_layer_v2",
   "canonical_key": "isin",
   "purpose": "Provider-independent, provenance-bearing company-page facts without changing ranking contracts.",
   "classification_policy": {
@@ -8,21 +8,61 @@
     "derived_research": "Allowed only from reproducible business evidence; company-name guessing and opaque prediction are forbidden"
   },
   "source_routes": {
-    "identity": ["NSE CM MII security master", "BSE UDiFF security master", "NSDL ISIN master"],
-    "current_market": ["NSE CM UDiFF bhavcopy", "BSE CM UDiFF bhavcopy"],
-    "classification": ["NSE Indices industry classification", "exchange/issuer filings", "professor workbook as separate evidence"],
-    "history": ["accepted yfinance adjusted-close research cache", "NSE/BSE official EOD archives", "official corporate-action records"],
-    "secondary_reference": ["identity-validated Yahoo Finance observations through isolated yfinance acquisition"],
-    "fundamentals": ["NSE/BSE XBRL filings", "audited annual reports", "issuer investor-relations documents"],
-    "ownership": ["NSE/BSE Regulation 31 shareholding-pattern filings"],
-    "documents": ["NSE/BSE announcements and annual-report archives", "issuer investor-relations sites"]
+    "identity": [
+      "NSE CM MII security master",
+      "BSE UDiFF security master",
+      "NSDL ISIN master"
+    ],
+    "current_market": [
+      "NSE CM UDiFF bhavcopy",
+      "BSE CM UDiFF bhavcopy"
+    ],
+    "classification": [
+      "NSE Indices industry classification",
+      "exchange/issuer filings",
+      "professor workbook as separate evidence"
+    ],
+    "history": [
+      "accepted yfinance adjusted-close research cache",
+      "NSE/BSE official EOD archives",
+      "official corporate-action records"
+    ],
+    "secondary_reference": [
+      "identity-validated Yahoo Finance observations through isolated yfinance acquisition",
+      "user-supplied Screener Premium market-wide exports accepted for current/reference enrichment with explicit provenance"
+    ],
+    "fundamentals": [
+      "NSE/BSE XBRL filings",
+      "audited annual reports",
+      "issuer investor-relations documents",
+      "user-supplied Screener Premium exports/workbooks for current/reference display and analysis only"
+    ],
+    "ownership": [
+      "NSE/BSE Regulation 31 shareholding-pattern filings",
+      "user-supplied Screener Premium exports/workbooks for current/reference ownership display only"
+    ],
+    "documents": [
+      "NSE/BSE announcements and annual-report archives",
+      "issuer investor-relations sites"
+    ]
   },
   "scientific_boundaries": [
-    "No missing fact is guessed, imputed or copied from Screener.in.",
+    "No missing fact is guessed or imputed.",
+    "User-supplied Screener Premium exports/workbooks may populate current/reference facts only when their provenance and identity match are retained.",
     "Standalone and consolidated facts are never silently mixed.",
     "Page completeness is independent of Baseline and Research V2 eligibility.",
-    "Screener.in is a coverage checklist only, not a runtime dependency or data source."
-    ,"Secondary reference fields never override official identity, exchange prices, official classification, audited fundamentals, or Research V2 inputs."
-    ,"Every secondary row must match exact provider symbol, expected exchange, EQUITY type and canonical ISIN mapping before contributing facts."
-  ]
+    "Screener.in is not a runtime dependency; no automated provider request occurs during page navigation.",
+    "Screener current/reference facts never create, backdate or overwrite historical PIT evidence.",
+    "Research V2 PIT factors and eligibility remain based on accepted official filing evidence plus official exchange dissemination/availability timing.",
+    "Secondary reference fields never override official identity or frozen Research V2 PIT inputs.",
+    "Every secondary row must satisfy its provider-specific identity checks before contributing facts; conflicts and quarantined identities are rejected."
+  ],
+  "screener_current_reference_policy": {
+    "acquisition": "No runtime scraping, crawling, browser automation, API request or provider request during page navigation.",
+    "accepted_input": "User-supplied/manual Screener Premium exports and workbooks may enter the current/reference company-fact layer with explicit provenance.",
+    "precedence": "Exact canonical ISIN is primary. A unique accepted primary-exchange security-code match may be used only as a current/reference identity fallback; quarantined/conflicting identities are rejected.",
+    "source_precedence": "For overlapping current/reference fields, the accepted Snapshot export is preferred and Operational is fallback; original provider observations remain provenance-bearing.",
+    "pit_boundary": "Screener current/reference observations are never backdated, promoted or treated as historical point-in-time evidence.",
+    "research_v2_boundary": "Research V2 PIT eligibility and ranking inputs remain frozen to accepted official filing evidence and official exchange dissemination/availability clocks."
+  }
 }

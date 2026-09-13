@@ -1,0 +1,13 @@
+sir_rank,sir_code,ticker,company,product_sector,product_industry,current_ref_rank_14,current_ref_score,current_ref_factor_count,product_baseline_eligible,product_baseline_sector_rank,product_baseline_score,v2_eligible,research_v2_sector_rank,research_v2_score,v2_reason_code
+2,NSE:SHAILY,SHAILY,Shaily Engineering Plastics Limited,Consumer Durables,,10.0,65.97260474140172,7,False,,,False,,,FUNDAMENTALS_UNAVAILABLE
+3,NSE:TDPOWERSYS,TDPOWERSYS,TD Power Systems Limited,Capital Goods,,6.0,73.0435113183694,7,True,3.0,6.0,False,,,FUNDAMENTALS_UNAVAILABLE
+4,GVT&D,GVT&D,GE Vernova T&D India Limited,Capital Goods,,1.0,77.4643074377856,7,True,5.0,8.25,False,,,FUNDAMENTALS_UNAVAILABLE
+5,NSE:V2RETAIL,V2RETAIL,V2 Retail Limited,Consumer Services,,5.0,73.85388938183969,7,True,1.0,1.0,False,,,FUNDAMENTALS_UNAVAILABLE
+6,BOM:524717,BSE-524717,TITAN BIOTECH LTD.,Healthcare,,3.0,74.75575508584964,7,False,,,False,,,BSE_FUNDAMENTAL_CONTRACT_UNAVAILABLE
+7,NSE:TERASOFT,TERASOFT,Tera Software Limited,Technology,Information Technology Services,9.0,66.8228542036222,7,True,15.0,26.0,False,,,FUNDAMENTALS_UNAVAILABLE
+8,NSE:KRISHANA,KRISHANA,Krishana Phoschem Limited,Basic Materials,Agricultural Inputs,8.0,71.87051541591806,7,True,8.0,16.25,False,,,FUNDAMENTALS_UNAVAILABLE
+9,NSE:LUMAXTECH,LUMAXTECH,Lumax Auto Technologies Limited,Automobile and Auto Components,,7.0,72.30876393110437,7,True,1.0,1.5,False,,,FUNDAMENTALS_UNAVAILABLE
+10,NSE:APOLLO,APOLLO,Apollo Micro Systems Limited,Capital Goods,,12.0,48.104124142560686,7,True,7.0,11.0,False,,,FUNDAMENTALS_UNAVAILABLE
+11,NSE:INDOTECH,INDOTECH,Indo Tech Transformers Limited,Industrials,Electrical Equipment & Parts,2.0,75.97907080671013,7,True,5.0,16.25,False,,,FUNDAMENTALS_UNAVAILABLE
+12,NSE:WELCORP,WELCORP,Welspun Corp Limited,Capital Goods,,11.0,64.02621430104853,7,True,1.0,3.5,False,,,FUNDAMENTALS_UNAVAILABLE
+13,NSE:CEMPRO,CEMPRO,Cemindia Projects Limited,Construction,,4.0,73.98834460470407,7,True,1.0,2.0,True,1.0,71.25,ELIGIBLE

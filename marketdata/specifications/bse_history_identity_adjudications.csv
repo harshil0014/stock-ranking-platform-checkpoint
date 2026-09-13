@@ -1,0 +1,11 @@
+bse_code,decision,history_start_boundary,reason
+500371,ALLOW,,"The captured announcement was a false positive: it only schedules a board meeting; recovered observations begin after the current exact-code trading resumption."
+505720,ALLOW,2024-10-11,"Pre-demerger continuity is not asserted. Retain only post-event UDiFF rows carrying the current exact ISIN."
+506579,ALLOW,2024-07-08,"Pre-demerger/rename continuity is not asserted. Retain only post-event UDiFF rows carrying the current exact ISIN."
+524055,ALLOW,,"The detected amalgamation was proposed during the recovered period and did not establish a completed price-continuity break."
+531463,ALLOW,2026-03-18,"Pre-capital-reduction continuity is not asserted. Retain only post-relisting UDiFF rows carrying the current exact ISIN."
+539200,ALLOW,,"The announcement classifier matched consolidated financial-statement wording, not a security consolidation."
+544308,ALLOW,,"The delisting evidence concerns Calcutta Stock Exchange only; the exact BSE security remained listed and unchanged."
+544437,ALLOW,,"The merger reference concerns the internal-auditor firm, not the listed issuer."
+544518,ALLOW,,"The proposal absorbs a private company into the continuing exact BSE issuer; no completed distribution or identity break occurs within the recovered observations."
+544531,ALLOW,,"The pending absorption leaves the exact BSE issuer as transferee; no completed distribution or identity break occurs within the recovered observations."

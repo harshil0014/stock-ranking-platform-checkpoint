@@ -60,25 +60,61 @@ def _secondary_metrics(row: dict[str, Any], history_root: Path) -> tuple[dict[st
     if frame.empty:
         return None, "PRICE_HISTORY_UNAVAILABLE", "No accepted adjusted-history observation exists through the trade date."
     selected: dict[str, pd.Series] = {}
-    for name, years in (("current", 0), ("close_1y", 1), ("close_3y", 3), ("close_5y", 5)):
-        target = as_of if years == 0 else as_of - pd.DateOffset(years=years)
+    for name, years in (("close_1y", 1), ("close_3y", 3), ("close_5y", 5)):
+        target = as_of - pd.DateOffset(years=years)
         observation = _select_prior(frame, target)
         if observation is None:
-            code = "CURRENT_PRICE_UNAVAILABLE" if years == 0 else f"INSUFFICIENT_{years}Y_HISTORY"
-            return None, code, f"No prior adjusted-close observation exists within seven days of the {name} target."
+            return None, f"INSUFFICIENT_{years}Y_HISTORY", f"No prior adjusted-close observation exists within seven days of the {name} target."
         selected[name] = observation
     listing = pd.to_datetime(row.get("listing_date"), format="%Y-%m-%d", errors="coerce")
     high_frame = frame if pd.isna(listing) else frame.loc[frame["date"].ge(listing)]
     if high_frame.empty:
         return None, "RECORDED_HIGH_HISTORY_UNAVAILABLE", "No adjusted history remains after the documented listing boundary."
-    maximum = high_frame["adjusted_close"].max()
-    high = high_frame.loc[high_frame["adjusted_close"].eq(maximum)].iloc[-1]
-    provider_current = float(selected["current"]["adjusted_close"])
-    official_current = float(row["latest_price"])
+    terminal = frame.iloc[-1]
+    terminal_lag_days = int((as_of - terminal["date"]).days)
+    provider_current = float(terminal["adjusted_close"])
+    prior_reference = not _present(row.get("latest_price"))
+    official_current = float(row["product_price_reference"] if prior_reference else row["latest_price"])
     relative_difference = abs(provider_current - official_current) / official_current
-    if relative_difference > 0.02:
-        return None, "CURRENT_PRICE_MISMATCH", "Provider history differs from the accepted exchange close by more than the Product Classification v1 two-percent identity/continuity gate."
     current = official_current
+    current_price_reason = (
+        "Accepted exchange current price and exact-identity adjusted history satisfy "
+        "the Product Classification v1 continuity gate."
+    )
+    accepted_screener = str(row.get("screener_current_status")) in {
+        "ACCEPTED_EXACT_ISIN_CURRENT_REFERENCE",
+        "ACCEPTED_UNIQUE_EXCHANGE_CODE_CURRENT_REFERENCE",
+    }
+    if terminal_lag_days > 7 or relative_difference > 0.02:
+        if prior_reference:
+            return None, "CURRENT_PRICE_MISMATCH", (
+                "Official prior-trade price is available, but differs from the accepted "
+                "adjusted-history terminal by more than 2% or history is stale; "
+                "cross-exchange continuity remains unresolved."
+            )
+        screener_current = pd.to_numeric(row.get("screener_current_price"), errors="coerce")
+        if not accepted_screener or pd.isna(screener_current) or float(screener_current) <= 0:
+            code = "CURRENT_PRICE_UNAVAILABLE" if terminal_lag_days > 7 else "CURRENT_PRICE_MISMATCH"
+            return None, code, (
+                "The exact-identity provider history does not supply a current continuity "
+                "observation and no accepted Screener Premium current/reference price is available."
+            )
+        current = float(screener_current)
+        current_price_reason = (
+            "Provider terminal staleness or exchange-price conflict is retained as provenance; "
+            "Screener Premium is authoritative for current/reference price and the "
+            "accepted exact-identity adjusted history supplies historical anchors."
+        )
+    maximum = max(float(high_frame["adjusted_close"].max()), current)
+    if current >= float(high_frame["adjusted_close"].max()):
+        high_date = pd.Timestamp(row['product_price_date']) if prior_reference else as_of
+    else:
+        high_date = high_frame.loc[high_frame["adjusted_close"].eq(maximum)].iloc[-1]["date"]
+    if prior_reference:
+        current_price_reason = (
+            f"Official {row['product_price_exchange']} prior-trade price from {row['product_price_date']}; "
+            "historical anchors retain the snapshot date and existing continuity rules."
+        )
     return ({
         "ticker": str(row["ticker"]), "company": str(row["company"]),
         "sector": str(row["product_sector"]), "as_of_date": as_of,
@@ -86,12 +122,12 @@ def _secondary_metrics(row: dict[str, Any], history_root: Path) -> tuple[dict[st
         "close_1y_ago": float(selected["close_1y"]["adjusted_close"]),
         "close_3y_ago": float(selected["close_3y"]["adjusted_close"]),
         "close_5y_ago": float(selected["close_5y"]["adjusted_close"]),
-        "ath_date": high["date"],
+        "ath_date": high_date,
         "yoy_growth": current / float(selected["close_1y"]["adjusted_close"]) - 1,
         "cagr_3y": (current / float(selected["close_3y"]["adjusted_close"])) ** (1 / 3) - 1,
         "cagr_5y": (current / float(selected["close_5y"]["adjusted_close"])) ** (1 / 5) - 1,
-        "days_since_recorded_high": int((as_of - high["date"]).days),
-    }, "ELIGIBLE", "Exact-identity secondary classification and accepted adjusted history satisfy current-product Baseline V1 inputs.")
+        "days_since_recorded_high": int((as_of - high_date).days),
+    }, "ELIGIBLE", current_price_reason)
 
 
 def add_product_classification_and_baseline(
@@ -118,8 +154,12 @@ def add_product_classification_and_baseline(
             str(source.get("bulk_classification_status")) == "ACCEPTED"
             and _present(source.get("bulk_classification_sector"))
         )
+        screener_status = str(source.get("screener_current_status"))
         screener_secondary = (
-            str(source.get("screener_current_status")) == "ACCEPTED_EXACT_ISIN_CURRENT_REFERENCE"
+            screener_status in {
+                "ACCEPTED_EXACT_ISIN_CURRENT_REFERENCE",
+                "ACCEPTED_UNIQUE_EXCHANGE_CODE_CURRENT_REFERENCE",
+            }
             and _present(source.get("screener_industry_group"))
         )
         if official:
@@ -144,7 +184,11 @@ def add_product_classification_and_baseline(
         elif screener_secondary:
             result.at[index, "product_sector"] = source["screener_industry_group"]
             result.at[index, "product_industry"] = source.get("screener_industry")
-            result.at[index, "product_classification_evidence"] = "EXACT_ISIN_SCREENER_CURRENT_REFERENCE"
+            result.at[index, "product_classification_evidence"] = (
+                "EXACT_ISIN_SCREENER_CURRENT_REFERENCE"
+                if screener_status == "ACCEPTED_EXACT_ISIN_CURRENT_REFERENCE"
+                else "UNIQUE_EXCHANGE_CODE_SCREENER_CURRENT_REFERENCE"
+            )
             result.at[index, "product_classification_source"] = "Accepted Screener market-wide export"
             result.at[index, "product_classification_as_of"] = source.get("screener_source_observed_at")
         else:
@@ -154,7 +198,17 @@ def add_product_classification_and_baseline(
 
         row = result.loc[index].to_dict()
         if not _present(row.get("latest_price")):
-            reasons[ticker] = ("PRICE_UNAVAILABLE", "No accepted current exchange price exists.")
+            if row.get("product_price_status") == "OFFICIAL_PRIOR_TRADE" and _present(row.get("product_price_reference")):
+                metrics, code, reason = _secondary_metrics(row, Path(history_root))
+                reasons[ticker] = (code, reason)
+                if metrics is not None:
+                    metric_rows.append(metrics)
+            elif row.get("product_price_status") == "OFFICIAL_LAST_TRADE_STALE":
+                reasons[ticker] = ("CURRENT_PRICE_STALE", f"Last verified official trade is {row.get('product_price_date')}; outside the existing seven-day continuity window.")
+            elif row.get("product_price_status") == "OFFICIAL_PRIOR_TRADE_ACTION_REVIEW_REQUIRED":
+                reasons[ticker] = ("CURRENT_PRICE_ACTION_REVIEW_REQUIRED", "An official corporate action follows the last verified trade; its price basis requires review.")
+            else:
+                reasons[ticker] = ("PRICE_UNAVAILABLE", "No accepted current exchange price exists.")
             continue
         frozen_metrics = (
             "baseline_yoy_growth", "baseline_cagr_3y", "baseline_cagr_5y",
@@ -179,7 +233,7 @@ def add_product_classification_and_baseline(
             metrics, code, reason = _secondary_metrics(row, Path(history_root))
             reasons[ticker] = (code, reason)
             if metrics is not None:
-                reasons[ticker] = ("ELIGIBLE", "Accepted exchange current price and exact-identity adjusted history pass the Product Classification v1 continuity gate.")
+                reasons[ticker] = ("ELIGIBLE", reason)
                 metric_rows.append(metrics)
         elif official:
             reasons[ticker] = (str(row.get("baseline_reason_code")), str(row.get("history_reason") or "Accepted current Baseline eligibility reason applies."))
