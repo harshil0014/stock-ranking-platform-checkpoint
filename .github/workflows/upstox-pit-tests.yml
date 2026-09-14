@@ -8,7 +8,9 @@ on:
       - "src/stock_ranker/upstox_fundamentals.py"
       - "src/stock_ranker/pit_structured_fundamentals.py"
       - "marketdata/runners/acquire_upstox_v2_candidates.py"
+      - "marketdata/runners/run_upstox_v2_probe.py"
       - "tests/test_upstox_fundamentals.py"
+      - "tests/test_upstox_probe_runner.py"
       - "tests/test_pit_structured_fundamentals.py"
       - ".github/workflows/upstox-pit-tests.yml"
   workflow_dispatch:
@@ -23,5 +25,6 @@ jobs:
           python-version: "3.13"
       - run: python -m pip install -r requirements.txt
       - run: python -m pip install -e .
-      - run: python -m py_compile marketdata/runners/acquire_upstox_v2_candidates.py
-      - run: python -m pytest -q tests/test_upstox_fundamentals.py tests/test_pit_structured_fundamentals.py
+      - run: python -m py_compile marketdata/runners/acquire_upstox_v2_candidates.py marketdata/runners/run_upstox_v2_probe.py
+      - run: python -m pytest -q tests/test_upstox_fundamentals.py tests/test_upstox_probe_runner.py tests/test_pit_structured_fundamentals.py
+      - run: python -m pytest -q
