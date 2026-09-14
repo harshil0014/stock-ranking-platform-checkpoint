@@ -1,4 +1,4 @@
-"""Acquire Upstox historical fundamentals as PIT candidates, never as PIT truth.
+r"""Acquire Upstox historical fundamentals as PIT candidates, never as PIT truth.
 
 The Analytics Token is read from ``UPSTOX_ACCESS_TOKEN`` only.  It is never
 accepted on the command line and is never written to output.  Raw responses are
@@ -236,8 +236,6 @@ def acquire(
                 )
                 raw_path = _raw_path(output, str(target.ticker), endpoint)
                 raw_sha = _write_json(raw_path, payload)
-                # Normalize before marking the response successful.  This catches
-                # basis/schema surprises at acquisition time rather than later.
                 if endpoint == "income-statement":
                     normalize_income_statement(
                         payload, isin=str(target.isin), reporting_basis=basis,
