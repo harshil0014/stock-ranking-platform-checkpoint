@@ -29,24 +29,41 @@ def _client():
     )
 
 
+def _download_and_extract(s3, bucket: str, key: str, runtime_root: Path) -> None:
+    archive = Path("/tmp") / key
+    print(f"Downloading {key}...", flush=True)
+    s3.download_file(bucket, key, str(archive))
+    print(f"Extracting {key}...", flush=True)
+    with zipfile.ZipFile(archive) as handle:
+        handle.extractall(runtime_root)
+    archive.unlink(missing_ok=True)
+
+
 def main() -> int:
     runtime_root = Path(os.environ.get("STOCK_RANKER_RUNTIME_ROOT", "/var/lib/stock-ranking"))
     data_root = runtime_root / "data"
     ready = data_root / "live_market" / "snapshots" / f"2026-09-18-{MARKET_FINGERPRINT}" / "bundle_manifest.json"
-    if ready.is_file():
-        print("Railway runtime payload already present.", flush=True)
-        return 0
+    accepted_state = data_root / "live_market" / "accepted_state.json"
+    history_root = data_root / "live_market" / "history_cache"
+
     runtime_root.mkdir(parents=True, exist_ok=True)
-    archive = Path("/tmp/core_runtime.zip")
-    print("Downloading validated core runtime payload...", flush=True)
-    _client().download_file(_required("DEPLOY_BUCKET_NAME"), "core_runtime.zip", str(archive))
-    print("Extracting validated core runtime payload...", flush=True)
-    with zipfile.ZipFile(archive) as handle:
-        handle.extractall(runtime_root)
+    s3 = _client()
+    bucket = _required("DEPLOY_BUCKET_NAME")
+
+    if not ready.is_file() or not accepted_state.is_file():
+        _download_and_extract(s3, bucket, "core_runtime.zip", runtime_root)
+
+    if not history_root.is_dir() or not any(history_root.glob("*.csv")):
+        _download_and_extract(s3, bucket, "history_cache.zip", runtime_root)
+
     if not ready.is_file():
-        raise RuntimeError("core runtime extraction completed but accepted market bundle is missing")
-    archive.unlink(missing_ok=True)
-    print("Railway runtime payload seeded.", flush=True)
+        raise RuntimeError("accepted market bundle is missing after runtime bootstrap")
+    if not accepted_state.is_file():
+        raise RuntimeError("accepted_state.json is missing after runtime bootstrap")
+    if not history_root.is_dir():
+        raise RuntimeError("history cache is missing after runtime bootstrap")
+
+    print("Railway runtime payload ready.", flush=True)
     return 0
 
 
