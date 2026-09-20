@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import os
+import zipfile
 from datetime import datetime
 from functools import lru_cache
 from pathlib import Path
@@ -29,6 +31,7 @@ LIVE_BUNDLE_ROOT = LIVE_STATE_ROOT / "snapshots" / (
     "2026-09-18-" + RELEASE["accepted_market_fingerprint"]
 )
 LIVE_HISTORY_ROOT = DATA_ROOT / "live_market/history_cache"
+LIVE_HISTORY_ARCHIVE = Path(os.environ.get("STOCK_RANKER_RUNTIME_ROOT", str(DATA_ROOT.parent))) / "history_cache.zip"
 COMPANY_FACT_STATE_ROOT = DATA_ROOT / "company_facts"
 COMPANY_FACT_SNAPSHOT_ROOT = COMPANY_FACT_STATE_ROOT / "snapshots" / (
     "2026-09-18-" + RELEASE["accepted_company_fingerprint"]
@@ -414,6 +417,18 @@ def _cached_history(path: str, mtime_ns: int) -> pd.DataFrame:
     return frame.drop_duplicates("date", keep="last").sort_values("date", kind="stable")
 
 
+@lru_cache(maxsize=128)
+def _cached_history_zip(path: str, member: str, mtime_ns: int) -> pd.DataFrame:
+    del mtime_ns
+    with zipfile.ZipFile(path) as archive:
+        with archive.open(member) as source:
+            frame = pd.read_csv(source, usecols=["date", "adjusted_close"])
+    frame["date"] = pd.to_datetime(frame["date"], format="%Y-%m-%d", errors="coerce")
+    frame["adjusted_close"] = pd.to_numeric(frame["adjusted_close"], errors="coerce")
+    frame = frame.dropna().loc[lambda item: item["adjusted_close"].gt(0)]
+    return frame.drop_duplicates("date", keep="last").sort_values("date", kind="stable")
+
+
 def live_history(ticker_value: str, range_value: str = "1y") -> dict[str, Any]:
     """Read one safe cached adjusted-price series without provider access."""
 
@@ -427,7 +442,21 @@ def live_history(ticker_value: str, range_value: str = "1y") -> dict[str, Any]:
     if not bundle.market["ticker"].eq(ticker).any():
         raise LiveWebsiteError("stock is not present in the prepared ALL NSE universe")
     path = LIVE_HISTORY_ROOT / f"{ticker}.csv"
-    if not path.is_file():
+    archive_member = f"data/live_market/history_cache/{ticker}.csv"
+    if path.is_file():
+        frame = _cached_history(str(path.resolve()), path.stat().st_mtime_ns).copy()
+    elif LIVE_HISTORY_ARCHIVE.is_file():
+        try:
+            frame = _cached_history_zip(
+                str(LIVE_HISTORY_ARCHIVE.resolve()),
+                archive_member,
+                LIVE_HISTORY_ARCHIVE.stat().st_mtime_ns,
+            ).copy()
+        except KeyError:
+            frame = pd.DataFrame(columns=["date", "adjusted_close"])
+    else:
+        frame = pd.DataFrame(columns=["date", "adjusted_close"])
+    if frame.empty:
         return {
             "available": False, "ticker": ticker, "range": selected_range,
             "status": "HISTORICAL CHART UNAVAILABLE",
@@ -437,7 +466,6 @@ def live_history(ticker_value: str, range_value: str = "1y") -> dict[str, Any]:
                 if ticker.startswith("BSE-") else "Historical chart unavailable for this stock."
             ),
         }
-    frame = _cached_history(str(path.resolve()), path.stat().st_mtime_ns).copy()
     trade_date = pd.Timestamp(str(bundle.manifest["snapshot"]["trade_date"]))
     frame = frame.loc[frame["date"].le(trade_date)]
     start = trade_date - pd.DateOffset(months=HISTORY_RANGES[selected_range])

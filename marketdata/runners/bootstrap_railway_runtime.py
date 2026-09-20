@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import os
 from pathlib import Path
+import shutil
 import zipfile
 
 import boto3
@@ -45,6 +46,7 @@ def main() -> int:
     ready = data_root / "live_market" / "snapshots" / f"2026-09-18-{MARKET_FINGERPRINT}" / "bundle_manifest.json"
     accepted_state = data_root / "live_market" / "accepted_state.json"
     history_root = data_root / "live_market" / "history_cache"
+    history_archive = runtime_root / "history_cache.zip"
 
     runtime_root.mkdir(parents=True, exist_ok=True)
     s3 = _client()
@@ -53,15 +55,21 @@ def main() -> int:
     if not ready.is_file() or not accepted_state.is_file():
         _download_and_extract(s3, bucket, "core_runtime.zip", runtime_root)
 
-    if not history_root.is_dir() or not any(history_root.glob("*.csv")):
-        _download_and_extract(s3, bucket, "history_cache.zip", runtime_root)
+    # Hosted deployment keeps the large history cache compressed and reads
+    # individual CSV members on demand. This fits the Railway trial volume
+    # without weakening the underlying observed data.
+    if not history_archive.is_file():
+        if history_root.exists():
+            shutil.rmtree(history_root)
+        print("Downloading compressed history cache...", flush=True)
+        s3.download_file(bucket, "history_cache.zip", str(history_archive))
 
     if not ready.is_file():
         raise RuntimeError("accepted market bundle is missing after runtime bootstrap")
     if not accepted_state.is_file():
         raise RuntimeError("accepted_state.json is missing after runtime bootstrap")
-    if not history_root.is_dir():
-        raise RuntimeError("history cache is missing after runtime bootstrap")
+    if not history_archive.is_file():
+        raise RuntimeError("compressed history cache is missing after runtime bootstrap")
 
     print("Railway runtime payload ready.", flush=True)
     return 0
