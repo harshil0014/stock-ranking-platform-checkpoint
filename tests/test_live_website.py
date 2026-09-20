@@ -25,6 +25,10 @@ def test_live_overview_exposes_actual_all_nse_counts_and_separate_models() -> No
     assert len(data["rows"]) == manifest["universe_count"]
     assert data["snapshot"]["trade_date"] == manifest["snapshot"]["trade_date"]
     assert "real-time" in data["warnings"][0].lower()
+    assert data["summary"]["baseline_eligible"] == manifest["universe_count"]
+    assert data["summary"]["complete_ranked"] == manifest["universe_count"]
+    assert data["summary"]["remaining_missing_cells"] == 0
+    assert {row["ranking_tier"] for row in data["rows"]} == {"COMPLETE_CONFIDENCE_ADJUSTED"}
 
 
 def test_live_models_preserve_eligibility_gates_and_searchable_other_nse() -> None:
@@ -35,17 +39,11 @@ def test_live_models_preserve_eligibility_gates_and_searchable_other_nse() -> No
     assert any(row["size_segment"] == "OTHER NSE" for row in baseline["rows"])
     classification_statuses = {row["classification_status"] for row in baseline["rows"]}
     assert classification_statuses <= {
-        "OFFICIAL",
-        "EXACT_IDENTITY_SECONDARY_REFERENCE",
-        "EXACT_ISIN_SCREENER_CURRENT_REFERENCE",
-        "UNIQUE_EXCHANGE_CODE_SCREENER_CURRENT_REFERENCE",
-        "UNCLASSIFIED",
+        "COMPLETE_OBSERVED", "COMPLETE_MODERATE", "COMPLETE_LOW", "COMPLETE_VERY_LOW",
     }
     coverage = live_website.company_facts_coverage()
-    assert sum(
-        row["classification_status"] != "UNCLASSIFIED"
-        for row in baseline["rows"]
-    ) == coverage["coverage"]["metrics"]["product_classified"]["count"]
+    assert all(row["classification_status"] != "UNCLASSIFIED" for row in baseline["rows"])
+    assert coverage["completion"]["all_sectors_assigned"] is True
 
 
 def test_live_stock_reliance_has_price_both_models_and_nine_v2_factors() -> None:
@@ -55,6 +53,10 @@ def test_live_stock_reliance_has_price_both_models_and_nine_v2_factors() -> None
     assert data["stock"]["price_identity_status"] == "PRIMARY_EXCHANGE"
     assert data["display"]["price"].startswith("₹")
     assert data["baseline_v1"]["eligible"] is True
+    assert data["baseline_v1"]["ranking_tier"] == "COMPLETE_CONFIDENCE_ADJUSTED"
+    assert data["baseline_v1"]["confidence"] in {"HIGH", "MODERATE", "LOW", "VERY_LOW_ESTIMATED"}
+    assert data["baseline_v1"]["feature_count"] == 13
+    assert data["baseline_v1"]["rank_scope"] == "sector_complete_accepted_universe"
     assert data["research_v2"]["eligible"] is True
     assert len(data["research_v2"]["factors"]) == 9
     assert all(value is not None for value in data["research_v2"]["factors"].values())
@@ -65,12 +67,13 @@ def test_every_eligible_live_detail_matches_the_canonical_v2_model_inputs() -> N
     bundle = live_website._bundle()
     assert live_website.validate_v2_detail_invariants(bundle.market) == bundle.manifest["research_v2_eligible_count"]
     canonical = bundle.market.loc[bundle.market["v2_eligible"].astype(bool)].set_index("ticker")
+    product = live_website._product_market_view(bundle.market, live_website._company_facts().facts).set_index("ticker")
     for ticker in sorted(canonical.index):
         detail = live_website.live_stock(ticker)["research_v2"]
         expected = canonical.loc[ticker]
         assert detail["eligible"] is True
         assert detail["score"] == pytest.approx(expected["research_v2_score"], abs=1e-14)
-        assert detail["sector_rank"] == pytest.approx(expected["research_v2_sector_rank"], abs=1e-14)
+        assert detail["sector_rank"] == pytest.approx(product.loc[ticker, "product_research_v2_sector_rank"], abs=1e-14)
         for factor in live_website.V2_FACTORS:
             assert detail["factors"][factor] == pytest.approx(expected[factor], abs=1e-14)
 
@@ -185,8 +188,8 @@ def test_live_stock_model_details_use_only_canonical_values_and_sector_peers() -
     data = live_website.live_stock("HINDUNILVR")
     model = data["research_v2"]
     assert model["eligible"] is True
-    assert model["peer_count"] == 4
-    assert model["sector_rank"] == 2
+    assert model["peer_count"] == 2
+    assert model["sector_rank"] == 1
     assert len(model["factor_details"]) == 9
     assert sum(item["weight_percent"] for item in model["factor_details"]) == 100
     assert sum(item["contribution"] for item in model["factor_details"]) == pytest.approx(model["score"])
@@ -196,10 +199,46 @@ def test_live_stock_model_details_use_only_canonical_values_and_sector_peers() -
 
 def test_filters_do_not_recompute_canonical_sector_ranks() -> None:
     all_rows = live_website.live_overview("baseline_v1")["rows"]
-    small_auto = [row for row in all_rows if row["size_segment"] == "SMALL" and row["sector"] == "Automobile and Auto Components"]
+    small_auto = [row for row in all_rows if row["size_segment"] == "SMALL" and row["sector"] == "Automobiles"]
     canonical = {row["ticker"]: row["sector_rank"] for row in all_rows}
     assert small_auto
     assert all(row["sector_rank"] == canonical[row["ticker"]] for row in small_auto)
+
+
+def test_completed_live_detail_discloses_estimate_confidence_and_peer_scope() -> None:
+    overview = live_website.live_overview("baseline_v1")
+    candidate = next(
+        row for row in overview["rows"]
+        if row["eligible"] and row["ranking_confidence"] == "VERY_LOW_ESTIMATED"
+    )
+    model = live_website.live_stock(candidate["ticker"])["baseline_v1"]
+    assert model["ranking_tier"] == "COMPLETE_CONFIDENCE_ADJUSTED"
+    assert model["confidence"] == "VERY_LOW_ESTIMATED"
+    assert model["feature_count"] == 13
+    assert model["rank_scope"] == "sector_complete_accepted_universe"
+    assert model["peer_count"] >= model["sector_rank"]
+    assert model["plain_label"].startswith("Complete Universe")
+
+
+def test_completed_live_detail_does_not_present_imputed_fields_as_observed() -> None:
+    data = live_website.live_stock("BSE-500248")
+    facts = data["company_facts"]
+    assert facts["classification"]["status"] == "COMPLETION_INFERRED_CLASSIFICATION"
+    assert facts["estimate_provenance"]["values"]
+    assert "product_sector" in facts["estimate_provenance"]["values"]
+    assert data["accepted_company_fact_fingerprint"] != data["completion_fingerprint"]
+
+
+def test_ui_identifies_reduced_tier_ranks_without_claiming_primary_equivalence() -> None:
+    assert "Reduced-history ranking" in APP_JS
+    assert "tier peers only" in APP_JS
+    assert "Rank / evidence tier" in APP_JS
+
+
+def test_current_period_v2_addition_does_not_break_live_stock_detail() -> None:
+    assert "try{const p=await api('/api/research/provenance?ticker='" in APP_JS
+    assert "Frozen-study provenance is not available for this current-period V2 addition" in APP_JS
+    assert "await loadHistory('1y')" in APP_JS
 
 
 def test_unified_ui_contains_price_chart_progressive_disclosure_and_neutral_language() -> None:

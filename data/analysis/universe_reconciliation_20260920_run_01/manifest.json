@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "path": "final_universe_additions.csv",
+      "sha256": "f5b8dbca4cc249b235c62b124e8db13fac550ecfa4c67a557101faa93cb96f9b",
+      "size": 20532
+    },
+    {
+      "path": "historical_universe_dispositions.csv",
+      "sha256": "aaa736063a3b35f92ad461cbc8821df207fcd6b8c52c7e62ea449dac0fbd265d",
+      "size": 963793
+    },
+    {
+      "path": "summary.json",
+      "sha256": "72b50f969b7228bb79659a0168422acae3df3d0e7e148abd6c56bc4f50ff2afb",
+      "size": 721
+    }
+  ],
+  "fingerprint": "6501e17940dc73bac82d5e741c8b59da8dd1e17114dda9e602cbbfd7d495505c",
+  "schema_version": "historical_to_final_universe_reconciliation_manifest_v1"
+}

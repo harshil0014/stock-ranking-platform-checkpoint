@@ -1,0 +1,21 @@
+{
+  "schema_version": "validated_product_release_v1",
+  "accepted_universe_count": 4436,
+  "sector_count": 58,
+  "historical_universe_count": 4549,
+  "historical_excluded_count": 240,
+  "historical_superseded_count": 1,
+  "final_new_identity_count": 127,
+  "accepted_market_fingerprint": "98adc0296bff77fd44fc4c6815692a86033b14763d689791df14752550983eb1",
+  "accepted_company_fingerprint": "4064dc5b0a12fc385150a08e23a61f230b0f2acfcee76e394c8e80cee48d741e",
+  "completion_fingerprint": "b965968004c7fdfa661c126a937b801aa5c5ae8ee705629d8d640821a1764fc8",
+  "candidate_fingerprint": "1c7cc263bb24fdc9c09f553cc828c09d5069b914d90bd89d6e266e70f66c853e",
+  "frozen_judgments_sha256": "3181228540a8f2d76ab4971341df8ea83a9c6dd7855127304310a22bab7e57be",
+  "final_audit_fingerprint": "99216461dbb2d6c151fa0b21141952786bac8954a2a966b6700ebd56ace1e3ca",
+  "universe_reconciliation_fingerprint": "6501e17940dc73bac82d5e741c8b59da8dd1e17114dda9e602cbbfd7d495505c",
+  "website_audit_fingerprint": "ac53af0996ff239ec735ffbbbe8c9172fa136f17a80b5bb3d2af17806973c319",
+  "pairwise_agreement": 0.9501581944737397,
+  "post_hoc_judgments_added": false,
+  "remaining_missing_cells": 0,
+  "rank_consistency_errors": 0
+}

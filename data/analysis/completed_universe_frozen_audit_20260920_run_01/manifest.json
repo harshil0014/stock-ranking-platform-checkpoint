@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "path": "frozen_scope_reconciliation.csv",
+      "sha256": "25eaec7d0a0b2847131974a01650c00c9fb4a94b36169abcf3acb452e9025a0b",
+      "size": 10321
+    },
+    {
+      "path": "stock_by_stock_final_audit.csv",
+      "sha256": "cc54a2c0d2b39d79320e84572167ef6646b0f9ae07243ef2d69201ac73cbfd92",
+      "size": 2829280
+    },
+    {
+      "path": "summary.json",
+      "sha256": "ca7b38584a349f0a2067313f130abf441f7b873816e89f789419cfe204eb16c5",
+      "size": 824
+    }
+  ],
+  "fingerprint": "99216461dbb2d6c151fa0b21141952786bac8954a2a966b6700ebd56ace1e3ca",
+  "schema_version": "completed_universe_frozen_audit_manifest_v1"
+}

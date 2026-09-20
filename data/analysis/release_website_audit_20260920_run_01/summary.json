@@ -1,0 +1,16 @@
+{
+  "all_checks_pass": true,
+  "broken_company_pages": 0,
+  "broken_views": 0,
+  "company_pages_verified": 4436,
+  "completion_fingerprint": "b965968004c7fdfa661c126a937b801aa5c5ae8ee705629d8d640821a1764fc8",
+  "estimated_company_pages_with_provenance": 4436,
+  "history_available_count": 4374,
+  "history_endpoints_verified": 4436,
+  "history_explicitly_unavailable_count": 62,
+  "research_views_verified": 12,
+  "schema_version": "release_website_exhaustive_audit_v1",
+  "sector_count": 58,
+  "sector_dashboards_verified": 58,
+  "universe_count": 4436
+}

@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import date, datetime
+from datetime import date, datetime, time
 from hashlib import sha256
 import json
 import math
@@ -59,6 +59,15 @@ def validated_fundamental_candidates(
             deferred.append({
                 "ticker": ticker,
                 "reason": "OFFICIAL_REPORT_AVAILABLE_AFTER_RANKING_DATE",
+                "available_date": timestamp.date().isoformat(),
+            })
+            continue
+        # Exchange timestamps in this evidence schema are local IST, not UTC.
+        # A calendar-day comparison alone admits after-close disclosures.
+        if timestamp.date() == ranking_date and timestamp.time() > time(15, 30):
+            deferred.append({
+                "ticker": ticker,
+                "reason": "OFFICIAL_REPORT_AVAILABLE_AFTER_RANKING_CUTOFF",
                 "available_date": timestamp.date().isoformat(),
             })
             continue
@@ -131,6 +140,14 @@ def load_promoted_additions(path: str | Path, *, ranking_date: date) -> tuple[pd
         available = date.fromisoformat(str(item["available_date"]))
         if available > ranking_date:
             deferred.append({"ticker": ticker, "available_date": available.isoformat(), "reason": "OFFICIAL_REPORT_AVAILABLE_AFTER_RANKING_DATE"})
+            continue
+        if available == ranking_date:
+            # These reviewed specifications only certify an availability date.
+            # Do not invent a midnight dissemination time for same-day use.
+            deferred.append({
+                "ticker": ticker, "available_date": available.isoformat(),
+                "reason": "OFFICIAL_DISSEMINATION_TIME_UNVERIFIED",
+            })
             continue
         roce = float(item["roce"]["value"])
         debt = float(item["debt_to_equity"]["value"])

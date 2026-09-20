@@ -4,6 +4,10 @@ __pycache__/
 .pytest_cache/ 
 .pytest-tmp/
 .pytest-tmp*/
+.pytest-final-*/
+.pytest-full-*/
+cloudflared.exe
+decentralized-medical-research-network/
 data/output/* 
 !data/output/.gitkeep 
 *.egg-info/
@@ -24,6 +28,16 @@ data/diagnostics/
 data/professor_reference/
 data/walk_forward/
 data/point_in_time/
+data/analysis/vendor_financial_features*/
+data/analysis/vendor_expanded_historical_panel*/
+data/analysis/chronological_ml_benchmark*/
+data/analysis/broad_chronological_price_ml*/
+data/analysis/broad_price_ml_stress*/
+data/analysis/current_price_ensemble*/
+!data/analysis/current_price_ensemble_v5_20260918_run_01/
+!data/analysis/current_price_ensemble_v5_20260918_run_01/**
+data/analysis/codex_complete_universe_audit_20260918_run_0[1-5]/
+data/analysis/complete_universe_20260918_run_0[1-4]/
 research/datasets/
 research/clones/
 research/cache/

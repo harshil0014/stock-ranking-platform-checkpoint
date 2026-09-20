@@ -38,6 +38,75 @@ class Registry:
         }
 
 
+@dataclass(frozen=True, slots=True)
+class ExecutionRegistry:
+    """Capability registry used by the common model execution layer."""
+
+    schema_version: str
+    entries: tuple[dict[str, Any], ...]
+
+    @property
+    def model_ids(self) -> set[str]:
+        return {entry["id"] for entry in self.entries}
+
+    def get(self, model_id: str) -> dict[str, Any]:
+        matches = [entry for entry in self.entries if entry["id"] == model_id]
+        if not matches:
+            raise KeyError(model_id)
+        return dict(matches[0])
+
+
+def validate_execution_registry(value: str | Path | dict[str, Any]) -> ExecutionRegistry:
+    """Validate model capabilities without importing any model dependency."""
+
+    if isinstance(value, (str, Path)):
+        try:
+            raw = json.loads(Path(value).read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            raise ResearchValidationError(Diagnostic("invalid_execution_registry", str(exc))) from exc
+    else:
+        raw = value
+    if not isinstance(raw, dict) or raw.get("schema_version") != "model_execution_registry_v1":
+        raise ResearchValidationError(Diagnostic("execution_registry_schema", "unexpected schema version"))
+    entries = raw.get("entries")
+    if not isinstance(entries, list) or not entries:
+        raise ResearchValidationError(Diagnostic("execution_registry_entries", "entries must be nonempty"))
+    required = {
+        "id", "display_name", "implementation_kind", "required_features",
+        "optional_features", "training_required", "supported_frequencies",
+        "status", "upstream_reference", "pit_policy", "output_contract",
+    }
+    seen = set()
+    allowed_statuses = {"specified", "adapter_ready", "synthetic_reproduced", "blocked", "verified"}
+    for row, entry in enumerate(entries):
+        if not isinstance(entry, dict) or required - set(entry):
+            missing = sorted(required - set(entry)) if isinstance(entry, dict) else sorted(required)
+            raise ResearchValidationError(Diagnostic("execution_registry_fields", f"missing fields: {missing}", row))
+        model_id = entry["id"]
+        if not isinstance(model_id, str) or not model_id.strip() or model_id in seen:
+            raise ResearchValidationError(Diagnostic("execution_registry_id", f"invalid or duplicate id: {model_id}", row))
+        seen.add(model_id)
+        if entry["status"] not in allowed_statuses:
+            raise ResearchValidationError(Diagnostic("execution_registry_status", "invalid status", row))
+        features = entry["required_features"]
+        if not isinstance(features, list) or not features:
+            raise ResearchValidationError(Diagnostic("execution_registry_features", "required_features must be nonempty", row))
+        names = []
+        for feature in features:
+            if not isinstance(feature, dict) or not isinstance(feature.get("name"), str) or not feature["name"].strip():
+                raise ResearchValidationError(Diagnostic("execution_registry_feature", "malformed feature requirement", row))
+            names.append(feature["name"])
+        if len(names) != len(set(names)):
+            raise ResearchValidationError(Diagnostic("execution_registry_feature", "duplicate feature requirement", row))
+        if not isinstance(entry["training_required"], bool):
+            raise ResearchValidationError(Diagnostic("execution_registry_training", "training_required must be boolean", row))
+        if not isinstance(entry["pit_policy"], str) or "current_only" not in entry["pit_policy"]:
+            raise ResearchValidationError(Diagnostic("execution_registry_pit_policy", "PIT policy must address current_only evidence", row))
+        if entry["output_contract"] != "canonical_signals_v1":
+            raise ResearchValidationError(Diagnostic("execution_registry_output", "unsupported output contract", row))
+    return ExecutionRegistry(raw["schema_version"], tuple(entries))
+
+
 def validate_registry(value: str | Path | dict[str, Any]) -> Registry:
     if isinstance(value, (str, Path)):
         try:

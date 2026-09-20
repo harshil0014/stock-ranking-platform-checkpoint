@@ -90,6 +90,7 @@ def test_prior_quote_uses_existing_metrics_and_conflict_cannot_use_future_screen
     result['product_price_reference']=150
     result['screener_current_price']=150
     result['screener_current_status']='ACCEPTED_EXACT_ISIN_CURRENT_REFERENCE'
+    result['screener_industry_group']='Sector'
     ranked=add_product_classification_and_baseline(result,history_root=tmp_path).iloc[0]
     assert not ranked.product_baseline_eligible
     assert ranked.product_baseline_reason_code=='CURRENT_PRICE_MISMATCH'

@@ -1,0 +1,18 @@
+{
+  "duplicate_final_isin_count": 0,
+  "duplicate_historical_isin_count": 0,
+  "exact_retained_count": 4308,
+  "excluded_historical_count": 240,
+  "final_addition_count": 128,
+  "final_count": 4436,
+  "final_counts_reconcile": true,
+  "final_frame_sha256": "cdea8771e5eb172712832683798d01bfdec14d35f1642359542f88a25fdc6cde",
+  "historical_count": 4549,
+  "historical_counts_reconcile": true,
+  "historical_disposition_count": 4549,
+  "historical_frame_sha256": "6bacaae69241000ae838aef31330cc0f62ebc403a57441c8d6063a206d3136fa",
+  "missing_disposition_count": 0,
+  "new_final_identity_count": 127,
+  "schema_version": "historical_to_final_universe_reconciliation_v1",
+  "superseded_identity_count": 1
+}

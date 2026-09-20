@@ -1,0 +1,22 @@
+services:
+  stock-ranking:
+    build:
+      context: .
+    restart: unless-stopped
+    init: true
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    environment:
+      PORT: "8765"
+      STOCK_RANKER_DATA_ROOT: /var/lib/stock-ranking/data
+      STOCK_RANKER_RESEARCH_ROOT: /var/lib/stock-ranking/research
+    ports:
+      - "${STOCK_RANKER_HTTP_PORT:-8765}:8765"
+    volumes:
+      - "${STOCK_RANKER_DATA_PATH:-./data}:/var/lib/stock-ranking/data:ro"
+      - "${STOCK_RANKER_RESEARCH_PATH:-./research}:/var/lib/stock-ranking/research:ro"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL

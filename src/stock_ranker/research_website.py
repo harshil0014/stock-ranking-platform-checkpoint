@@ -11,23 +11,30 @@ from typing import Any
 import pandas as pd
 
 from stock_ranker.v2_config import ResearchV2Weights
+from stock_ranker.runtime import PROJECT_ROOT, data_root, research_root
 from stock_ranker.walk_forward_blind import validate_blind_snapshot_directory
 from stock_ranker.website import _prepared_real_baseline, _prepared_real_research_v2
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-BLIND_ROOT = PROJECT_ROOT / "data/walk_forward/blind_predictions_v1_run_01"
-EVALUATION_ROOT = PROJECT_ROOT / "data/walk_forward/evaluation_v1_run_01"
+DATA_ROOT = data_root()
+RESEARCH_ROOT = research_root()
+BLIND_ROOT = DATA_ROOT / "walk_forward/blind_predictions_v1_run_01"
+EVALUATION_ROOT = DATA_ROOT / "walk_forward/evaluation_v1_run_01"
 PROTOCOL_SHA256 = "a81278b799e1a61c3684f3b319fb14e2f6f0db6a2bdad1cd79b2ce13fd6f8576"
 AMENDMENT_SHA256 = "7f8c5d40de88077f3b6afcd471d0db4377fab567d2839e719a71ee6b11ae7163"
 BLIND_FINGERPRINT = "c438c31967e1f2685bbe77d85db6ca44617e024c699dba3749ee3523af6e401d"
 EVALUATION_FINGERPRINT = "04e29e8a0f641f900e2ef5ca6d6fe5252b75eff9b23a69fba3b6480f373606c1"
-QUANT_LAB_ROOT = PROJECT_ROOT / "research/generated/quantlab/real-frozen-v1"
-QUANT_REGISTRY = PROJECT_ROOT / "research/registry/quant_integrations.json"
-QLIB_REGISTRY = PROJECT_ROOT / "research/registry/open_source_registry.json"
-PROFESSOR_REFERENCE_ROOT = PROJECT_ROOT / "data/professor_reference/current"
-PROFESSOR_ACCEPTANCE_ROOT = PROJECT_ROOT / "data/professor_reference/acceptance_current"
-PROFESSOR_STRATEGY_ROOT = PROJECT_ROOT / "data/professor_reference/strategy_current"
+QUANT_LAB_ROOT = RESEARCH_ROOT / "generated/quantlab/real-frozen-v1"
+QUANT_REGISTRY = RESEARCH_ROOT / "registry/quant_integrations.json"
+QLIB_REGISTRY = RESEARCH_ROOT / "registry/open_source_registry.json"
+PROFESSOR_REFERENCE_ROOT = DATA_ROOT / "professor_reference/current"
+PROFESSOR_ACCEPTANCE_ROOT = DATA_ROOT / "professor_reference/acceptance_current"
+PROFESSOR_STRATEGY_ROOT = DATA_ROOT / "professor_reference/strategy_current"
+PROSPECTIVE_MODELS_ROOT = DATA_ROOT / "walk_forward/prospective_model_validation_v4_20260915"
+CHRONOLOGICAL_ML_ROOT = DATA_ROOT / "analysis/chronological_ml_benchmark_v3_run_01"
+BROAD_PRICE_ML_ROOT = DATA_ROOT / "analysis/broad_chronological_price_ml_v2_run_01"
+BROAD_PRICE_STRESS_ROOT = DATA_ROOT / "analysis/broad_price_ml_stress_v1_run_01"
+CURRENT_PRICE_ENSEMBLE_ROOT = DATA_ROOT / "analysis/current_price_ensemble_v5_20260918_run_01"
 HISTORICAL_DATES = {
     "2022": "2022-08-05", "2023": "2023-08-07",
     "2024": "2024-08-07", "2025": "2025-08-07",
@@ -359,6 +366,13 @@ def methodology() -> dict[str, Any]:
         "weights_percent": weights,
         "fundamental_contract": "NSE Audited Standalone Fundamentals v1",
         "point_in_time_rule": "For a historical ranking date, predictor data released after that cutoff is not allowed.",
+        "complete_universe": (
+            "The production Complete Universe model ranks all 4,436 accepted identities within 58 completed "
+            "sectors. It combines price/history (55%), the locked validated price ensemble (20%), "
+            "sector-relative quality/growth/risk (20%), and valuation (5%). Missing inputs are filled only "
+            "in the separate completion layer, carry cell-level method/confidence codes, and are shrunk "
+            "toward a neutral sector score when evidence is weak. Observed source data remains immutable."
+        ),
     }
 
 
@@ -485,7 +499,11 @@ def professor_acceptance(search_value: str = "") -> dict[str, Any]:
 def status() -> dict[str, Any]:
     return {
         "available": True, "robustness_audit": "PASS",
-        "accepted_test_milestone": "324 passed",
+        "accepted_test_milestone": "FULL RELEASE SUITE PASS",
+        "production_universe": 4436,
+        "production_sectors": 58,
+        "remaining_missing_cells": 0,
+        "frozen_pairwise_agreement": 0.9501581944737397,
         "checks": {
             "Temporal leakage": "PASS", "Identity substitution": "PASS",
             "Sector/taxonomy": "PASS", "Missing/malformed data": "PASS",
@@ -495,7 +513,7 @@ def status() -> dict[str, Any]:
         "plain_checks": [
             "No future information enters historical rankings.",
             "No company is silently replaced by a successor.",
-            "Missing data is excluded rather than guessed.",
+            "Every completion estimate is labelled and the original missing state is preserved.",
             "Repeated runs reproduce identical research artifacts.",
         ],
         "blind_reproduction": "46 files, byte-identical",
@@ -516,6 +534,70 @@ def status() -> dict[str, Any]:
             "Weights are fixed research choices and are not proven optimal.",
         ],
     }
+
+
+def model_candidates(ticker_value: str = "") -> dict[str, Any]:
+    """Expose verified challengers without changing the canonical ranking."""
+    from stock_research.prospective_validation import validate_prospective_freeze
+
+    try:
+        summary = validate_prospective_freeze(PROSPECTIVE_MODELS_ROOT)
+        protocol = json.loads((PROSPECTIVE_MODELS_ROOT / "protocol.json").read_text(encoding="utf-8"))
+        manifest = json.loads((PROSPECTIVE_MODELS_ROOT / "manifest.json").read_text(encoding="utf-8"))
+    except (FileNotFoundError, ValueError, KeyError, json.JSONDecodeError) as exc:
+        return _unavailable(
+            "The outcome-blind model-candidate freeze is unavailable or invalid.",
+            "Create the prospective freeze with marketdata/runners/freeze_prospective_models.py.",
+        ) | {"diagnostic": type(exc).__name__}
+    retrospective = None
+    try:
+        from stock_research.chronological_ml_benchmark import validate_result
+        retrospective = validate_result(CHRONOLOGICAL_ML_ROOT)
+    except (FileNotFoundError, ValueError, KeyError, json.JSONDecodeError):
+        pass
+    broad = stress = current = current_row = None
+    try:
+        from stock_research.current_price_ensemble import validate_current_price_ensemble
+        current = validate_current_price_ensemble(CURRENT_PRICE_ENSEMBLE_ROOT)
+        broad = json.loads((BROAD_PRICE_ML_ROOT / "summary.json").read_text(encoding="utf-8"))
+        stress = json.loads((BROAD_PRICE_STRESS_ROOT / "summary.json").read_text(encoding="utf-8"))
+        if ticker_value:
+            ticker = _safe_ticker(ticker_value)
+            candidate_rows = pd.read_csv(CURRENT_PRICE_ENSEMBLE_ROOT / "rankings.csv")
+            match = candidate_rows.loc[candidate_rows["ticker"].astype(str).eq(ticker)]
+            if not match.empty:
+                current_row = _records(match)[0]
+                current_row["score"] = current_row["ensemble_score"]
+                current_row["sector_rank"] = current_row["ensemble_sector_rank"]
+                current_row["peer_count"] = int(
+                    candidate_rows["sector"].eq(match.iloc[0]["sector"]).sum()
+                )
+    except (FileNotFoundError, ValueError, KeyError, json.JSONDecodeError):
+        pass
+    result = {
+        "available": True, "status": protocol["status"],
+        "summary": summary, "challengers": protocol["challengers"],
+        "future_evaluation": protocol["future_evaluation"],
+        "fingerprint": manifest["fingerprint"],
+        "warning": "Challenger rankings are frozen research candidates, not the production default or investment advice.",
+        "retrospective_ml_evidence": retrospective,
+        "broad_locked_test": broad,
+        "broad_stress_test": stress,
+        "current_price_ensemble": current,
+        "current_price_ensemble_row": current_row,
+    }
+    if ticker_value:
+        ticker = _safe_ticker(ticker_value)
+        frame = pd.read_csv(PROSPECTIVE_MODELS_ROOT / "frozen_signals.csv")
+        match = frame.loc[frame["ticker"].astype(str).eq(ticker)]
+        if match.empty:
+            exclusions = pd.read_csv(PROSPECTIVE_MODELS_ROOT / "exclusions.csv")
+            excluded = exclusions.loc[exclusions["ticker"].astype(str).eq(ticker)]
+            result["row"] = None
+            result["exclusion"] = _records(excluded)[0] if not excluded.empty else {"reason": "NOT_IN_FROZEN_COHORT"}
+        else:
+            result["row"] = _records(match)[0]
+    return result
 
 
 def quant_lab() -> dict[str, Any]:

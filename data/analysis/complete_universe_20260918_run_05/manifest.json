@@ -1,0 +1,41 @@
+{
+  "artifacts": [
+    {
+      "path": "complete_rankings.csv",
+      "sha256": "8a4b4cd96155f6bcb6182d6b41c6fb41d92ee32769ef3b732eac490a1e872369",
+      "size": 1415173
+    },
+    {
+      "path": "completed_company_facts.csv",
+      "sha256": "8e5de53f272650ff90fe37c56ca015bde38af665ac1d3176e4b17dc02f1412eb",
+      "size": 26046634
+    },
+    {
+      "path": "estimate_codebook.json",
+      "sha256": "91771243eaf80d478c94a7d18b99222a7f5bc2086a6f3825a2c546bef9734654",
+      "size": 775
+    },
+    {
+      "path": "field_completion_summary.csv",
+      "sha256": "003dfaea3dfce432e121d938082433510c762e3f627dad1215252616cf46c4ee",
+      "size": 12308
+    },
+    {
+      "path": "field_estimate_codes.csv",
+      "sha256": "94754ad16ebb3a3dcb45b8043390ec44ae799da4c5b3026ad840c22a2a75fda1",
+      "size": 2950666
+    },
+    {
+      "path": "resolved_exclusions_audit.csv",
+      "sha256": "41f762bdd60c3a78afb9866cc333bd990fa0bbe89e80466840c875576b794d32",
+      "size": 244843
+    },
+    {
+      "path": "summary.json",
+      "sha256": "672ffb6a8bfe658c1c820f62aef74824081d9e62adfeff6c6a0a32ab4498f8ad",
+      "size": 1157
+    }
+  ],
+  "fingerprint": "b965968004c7fdfa661c126a937b801aa5c5ae8ee705629d8d640821a1764fc8",
+  "schema_version": "complete_universe_manifest_v1"
+}

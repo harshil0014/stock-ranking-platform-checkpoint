@@ -1,0 +1,20 @@
+{
+  "agreement_target": 0.85,
+  "agreement_target_met": true,
+  "all_stocks_reviewed": true,
+  "benchmark_frozen_before_final_completion": true,
+  "comparable_within_scope_pairs": 213345,
+  "completion_fingerprint": "b965968004c7fdfa661c126a937b801aa5c5ae8ee705629d8d640821a1764fc8",
+  "external_data_accessed": false,
+  "frozen_judgments_sha256": "3181228540a8f2d76ab4971341df8ea83a9c6dd7855127304310a22bab7e57be",
+  "frozen_order_auditable_count": 3987,
+  "meaningful_disagreement_count": 206,
+  "outcomes_accessed": false,
+  "pairwise_agreement": 0.9501581944737397,
+  "post_hoc_judgments_added": false,
+  "ranked_count": 4436,
+  "reviewed_without_pre_frozen_order_count": 449,
+  "schema_version": "completed_universe_frozen_audit_v1",
+  "stock_by_stock_audit_count": 4436,
+  "universe_count": 4436
+}

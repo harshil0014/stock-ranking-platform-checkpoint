@@ -177,6 +177,18 @@ def validate_bse_shareholding_identity(data: bytes, expected_isin: str) -> None:
         raise ValueError(f"BSE filing ISIN conflict or missing identity: expected {expected_isin}; observed {sorted(observed)}")
 
 
+def _seed_tree(source: Path, destination: Path) -> None:
+    """Reuse immutable raw files cheaply; copy only when hard links are unavailable."""
+
+    def link_or_copy(src: str, dst: str) -> str:
+        try:
+            return str(Path(dst).hardlink_to(Path(src)))
+        except OSError:
+            return shutil.copy2(src, dst)
+
+    shutil.copytree(source, destination, copy_function=link_or_copy)
+
+
 def _bse_shareholding(batch: Path, market: pd.DataFrame, limit: int, *,
                       prioritize_professor: bool = True) -> tuple[pd.DataFrame, pd.DataFrame, dict[str, int]]:
     # NSE symbols are not BSE scrip codes. Only use an identifier explicitly
@@ -427,13 +439,3 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-def _seed_tree(source: Path, destination: Path) -> None:
-    """Reuse immutable raw files cheaply; copy only when hard links are unavailable."""
-
-    def link_or_copy(src: str, dst: str) -> str:
-        try:
-            return str(Path(dst).hardlink_to(Path(src)))
-        except OSError:
-            return shutil.copy2(src, dst)
-
-    shutil.copytree(source, destination, copy_function=link_or_copy)

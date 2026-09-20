@@ -17,6 +17,10 @@ def test_registry_contract_manifest_and_environment_commands(tmp_path, capsys):
         str(ROOT / "research/registry/open_source_registry.json"),
     ]) == 0
     assert main([
+        "model-registry-validate", "--registry",
+        str(ROOT / "research/registry/model_execution_registry.json"),
+    ]) == 0
+    assert main([
         "contract-validate", "--kind", "features", "--input",
         str(ROOT / "research/examples/features.csv"),
     ]) == 0
@@ -48,6 +52,26 @@ def test_qlib_conversion_cli(tmp_path):
         "--run-id", "run",
     ]) == 0
     assert output.is_file()
+
+
+def test_current_feature_export_is_current_only(tmp_path):
+    output = tmp_path / "current.csv"
+    assert main([
+        "current-feature-export", "--state-root", str(ROOT / "data/company_facts"),
+        "--output", str(output),
+    ]) == 0
+    frame = pd.read_csv(output)
+    assert not frame.empty
+    assert set(frame["availability_status"]) == {"current_only"}
+    assert main([
+        "contract-validate", "--kind", "feature-evidence", "--mode",
+        "current", "--input", str(output),
+    ]) == 0
+    # The generic contract refuses this exact export in historical mode.
+    assert main([
+        "contract-validate", "--kind", "feature-evidence", "--mode",
+        "historical_evaluation", "--input", str(output),
+    ]) != 0
 
 
 def test_invalid_cli_returns_nonzero(tmp_path, capsys):

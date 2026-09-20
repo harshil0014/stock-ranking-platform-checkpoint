@@ -37,6 +37,7 @@ from stock_ranker.v2_contracts import (
     V2_METRIC_COLUMNS,
     V2_SCORE_COLUMNS,
 )
+from stock_ranker.runtime import PROJECT_ROOT, data_root
 
 
 METHOD_BASELINE = "baseline_v1"
@@ -55,20 +56,20 @@ DATA_MODE_LABELS = {
     "synthetic_research_test": "SYNTHETIC RESEARCH TEST",
 }
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DATA_ROOT = data_root()
 PREPARED_REAL_BASELINE_BUNDLE = (
-    PROJECT_ROOT / "data/marketdata/nifty50-baseline-2026-08-07"
+    DATA_ROOT / "marketdata/nifty50-baseline-2026-08-07"
 )
 PREPARED_REAL_RESEARCH_V2_BUNDLE = (
-    PROJECT_ROOT
-    / "data/marketdata/nifty50-research-v2-2026-08-07/standalone-contract-reason-fix-run-01"
+    DATA_ROOT
+    / "marketdata/nifty50-research-v2-2026-08-07/standalone-contract-reason-fix-run-01"
 )
 SYNTHETIC_FILES = {
-    METHOD_BASELINE: {"baseline": PROJECT_ROOT / "data/input/synthetic_stocks.csv"},
+    METHOD_BASELINE: {"baseline": DATA_ROOT / "input/synthetic_stocks.csv"},
     METHOD_RESEARCH_V2: {
-        "universe": PROJECT_ROOT / "data/input/v2_universe.csv",
-        "prices": PROJECT_ROOT / "data/input/v2_prices.csv",
-        "fundamentals": PROJECT_ROOT / "data/input/v2_fundamentals.csv",
+        "universe": DATA_ROOT / "input/v2_universe.csv",
+        "prices": DATA_ROOT / "input/v2_prices.csv",
+        "fundamentals": DATA_ROOT / "input/v2_fundamentals.csv",
     },
 }
 

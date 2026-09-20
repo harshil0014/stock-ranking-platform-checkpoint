@@ -18,6 +18,8 @@ from stock_research.comparison import compare_evaluations
 from stock_research.contracts import (
     validate_feature_panel, validate_labels, validate_signals, validate_split
 )
+from stock_research.current_data import load_accepted_current_evidence
+from stock_research.platform import validate_feature_evidence
 from stock_research.environment import inspect_environment
 from stock_research.evaluation import EvaluationProtocol, evaluate_signals
 from stock_research.manifests import (
@@ -25,7 +27,7 @@ from stock_research.manifests import (
     write_manifest,
 )
 from stock_research.fingerprints import fingerprint_file
-from stock_research.registry import validate_registry
+from stock_research.registry import validate_execution_registry, validate_registry
 from stock_research.qlib_reproduction import (
     QlibLinearReproductionConfig,
     plan_qlib_linear_reproduction,
@@ -49,6 +51,7 @@ from stock_research.qlib_tra_reproduction import (
 
 
 DEFAULT_REGISTRY = Path("research/registry/open_source_registry.json")
+DEFAULT_EXECUTION_REGISTRY = Path("research/registry/model_execution_registry.json")
 
 
 def _json(path: Path) -> dict[str, Any]:
@@ -98,16 +101,30 @@ def build_parser() -> argparse.ArgumentParser:
     registry = commands.add_parser("registry-validate")
     registry.add_argument("--registry", type=Path, default=DEFAULT_REGISTRY)
 
+    execution_registry = commands.add_parser("model-registry-validate")
+    execution_registry.add_argument(
+        "--registry", type=Path, default=DEFAULT_EXECUTION_REGISTRY
+    )
+
     environment = commands.add_parser("environment-inspect")
     environment.add_argument("--output", type=Path)
 
     contract = commands.add_parser("contract-validate")
     contract.add_argument(
-        "--kind", required=True, choices=("features", "labels", "signals", "split")
+        "--kind", required=True,
+        choices=("features", "feature-evidence", "labels", "signals", "split")
     )
     contract.add_argument("--input", required=True, type=Path)
     contract.add_argument("--output", type=Path)
     contract.add_argument("--registry", type=Path)
+    contract.add_argument(
+        "--mode", choices=("current", "historical_train", "historical_evaluation"),
+        default="current",
+    )
+
+    current_features = commands.add_parser("current-feature-export")
+    current_features.add_argument("--state-root", type=Path, default=Path("data/company_facts"))
+    current_features.add_argument("--output", required=True, type=Path)
 
     rv2 = commands.add_parser("signal-export-research-v2")
     rv2.add_argument("--input", required=True, type=Path)
@@ -322,6 +339,9 @@ def _run(args: argparse.Namespace) -> int:
     if args.command == "registry-validate":
         registry = validate_registry(args.registry)
         print(f"Valid registry: {len(registry.entries)} entries ({args.registry})")
+    elif args.command == "model-registry-validate":
+        registry = validate_execution_registry(args.registry)
+        print(f"Valid model execution registry: {len(registry.entries)} entries ({args.registry})")
     elif args.command == "environment-inspect":
         _write_json(inspect_environment(), args.output)
     elif args.command == "contract-validate":
@@ -332,6 +352,8 @@ def _run(args: argparse.Namespace) -> int:
         frame = pd.read_csv(args.input, dtype=str)
         if args.kind == "features":
             validated_frame = validate_feature_panel(frame)
+        elif args.kind == "feature-evidence":
+            validated_frame = validate_feature_evidence(frame, mode=args.mode)
         elif args.kind == "labels":
             validated_frame = validate_labels(frame)
         else:
@@ -344,6 +366,14 @@ def _run(args: argparse.Namespace) -> int:
             args.output.parent.mkdir(parents=True, exist_ok=True)
             validated_frame.to_csv(args.output, index=False)
         print(f"Valid {args.kind}: {len(validated_frame)} rows")
+    elif args.command == "current-feature-export":
+        evidence = load_accepted_current_evidence(args.state_root)
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        evidence.to_csv(
+            args.output, index=False, encoding="utf-8", lineterminator="\n",
+            float_format="%.17g",
+        )
+        print(f"Current-only feature evidence: {args.output} ({len(evidence)} rows)")
     elif args.command == "signal-export-research-v2":
         signals = research_v2_to_signals(pd.read_csv(args.input), run_id=args.run_id)
         args.output.parent.mkdir(parents=True, exist_ok=True)

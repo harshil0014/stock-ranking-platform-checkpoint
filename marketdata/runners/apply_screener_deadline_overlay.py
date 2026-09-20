@@ -180,6 +180,52 @@ def merge_fresh_exports(paths: list[Path]) -> pd.DataFrame:
     )
 
 
+def merge_sector_exports(paths: list[Path]) -> pd.DataFrame:
+    """Combine disjoint Screener sector exports with fail-closed identity checks."""
+
+    frames: list[pd.DataFrame] = []
+    for path in sorted(paths):
+        frame = load_export(path)
+        groups = sorted(frame["Industry Group"].dropna().astype(str).str.strip().unique())
+        if len(groups) != 1:
+            raise ValueError(f"{path.name}: expected exactly one Screener industry group, found {groups}")
+        frame = frame.copy()
+        frame["Sector Export File"] = path.name
+        frame["Sector Export Group"] = groups[0]
+        frames.append(frame)
+
+    master = pd.concat(frames, ignore_index=True, sort=False)
+    duplicate = master["ISIN Code"].duplicated(keep=False)
+    if duplicate.any():
+        values = sorted(master.loc[duplicate, "ISIN Code"].unique())
+        raise ValueError(f"Sector exports contain duplicate ISINs: {values[:20]}")
+    return master.sort_values("ISIN Code", kind="stable").reset_index(drop=True)
+
+
+def merge_sector_export_directories(directories: list[Path]) -> pd.DataFrame:
+    passes = [merge_sector_exports(sorted(directory.glob("*.csv"))) for directory in directories]
+    expected = set(passes[0]["ISIN Code"])
+    for directory, frame in zip(directories[1:], passes[1:]):
+        if set(frame["ISIN Code"]) != expected:
+            raise ValueError(f"{directory}: sector-pass ISIN universe differs")
+    master = passes[0].set_index("ISIN Code")
+    for directory, incoming_frame in zip(directories[1:], passes[1:]):
+        incoming = incoming_frame.set_index("ISIN Code")
+        for column in IDENTITY_COLUMNS - {"ISIN Code"}:
+            left, right = master[column], incoming[column]
+            both = present(left) & present(right)
+            if both.any() and (left[both].map(normalize_identity) != right[both].map(normalize_identity)).any():
+                raise ValueError(f"{directory}: identity conflict in {column}")
+        for column in incoming.columns:
+            if column not in master.columns:
+                master[column] = incoming[column]
+            else:
+                mask = present(incoming[column])
+                master[column] = master[column].astype(object)
+                master.loc[mask, column] = incoming.loc[mask, column]
+    return master.reset_index().sort_values("ISIN Code", kind="stable").reset_index(drop=True)
+
+
 def load_full_company_universe() -> pd.DataFrame:
     state = json.loads(
         FACT_STATE.read_text(encoding="utf-8")
@@ -255,11 +301,8 @@ def rebuild_inventory(bundle: Path) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser()
 
-    parser.add_argument(
-        "--input",
-        action="append",
-        required=True,
-    )
+    parser.add_argument("--input", action="append")
+    parser.add_argument("--sector-directory", action="append")
 
     parser.add_argument(
         "--batch-id",
@@ -268,7 +311,14 @@ def main() -> int:
 
     args = parser.parse_args()
 
-    paths = [Path(p).resolve() for p in args.input]
+    if bool(args.input) == bool(args.sector_directory):
+        raise SystemExit("Supply either --input or --sector-directory, but not both.")
+    sector_mode = bool(args.sector_directory)
+    sector_directories = [Path(value).resolve() for value in (args.sector_directory or [])]
+    paths = (
+        [path for directory in sector_directories for path in sorted(directory.glob("*.csv"))]
+        if sector_mode else [Path(p).resolve() for p in args.input]
+    )
 
     for path in paths:
         if not path.is_file():
@@ -276,7 +326,10 @@ def main() -> int:
 
     print("Loading fresh Screener exports...")
 
-    fresh = merge_fresh_exports(paths)
+    fresh = (
+        merge_sector_export_directories(sector_directories)
+        if sector_mode else merge_fresh_exports(paths)
+    )
 
     print(f"Fresh Screener rows: {len(fresh)}")
     print(f"Fresh columns: {len(fresh.columns)}")
@@ -336,7 +389,7 @@ def main() -> int:
 
     print(f"Previous Screener universe: {len(old_market)}")
 
-    # Fresh full 4572 universe is the base.
+    # The current accepted company-fact universe is the base.
     combined = fresh_market.set_index("isin")
 
     old = old_market.set_index("isin")
@@ -356,6 +409,10 @@ def main() -> int:
         }:
             continue
 
+        # Sector exports contain a wider mix of numeric and text columns than
+        # the older market-wide files.  Object dtype preserves accepted prior
+        # values without coercing or truncating either representation.
+        combined[column] = combined[column].astype(object)
         missing_fresh = ~present(combined[column])
         usable_old = present(old_values)
 
@@ -448,8 +505,12 @@ def main() -> int:
 
     shutil.copytree(old_bundle, output)
 
+    merged_export_name = (
+        "sector_merged_screener_export.csv" if sector_mode
+        else "deadline_merged_screener_export.csv"
+    )
     fresh.to_csv(
-        output / "deadline_merged_screener_export.csv",
+        output / merged_export_name,
         index=False,
         encoding="utf-8",
         lineterminator="\n",
@@ -479,7 +540,9 @@ def main() -> int:
 
     if len(fresh_conflicts):
         fresh_conflicts = fresh_conflicts.copy()
-        fresh_conflicts["overlay_generation"] = "FRESH_20260912"
+        fresh_conflicts["overlay_generation"] = (
+            "SCREENER_SECTORS_20260915" if sector_mode else "FRESH_20260912"
+        )
 
     conflict_parts = [
         frame
@@ -584,12 +647,15 @@ def main() -> int:
         ["isin", "ticker", "company"],
     ]
 
-    summary["deadline_current_overlay"] = {
+    overlay_key = "sector_current_overlay" if sector_mode else "deadline_current_overlay"
+    summary[overlay_key] = {
         "policy": (
+            "Fresh Screener sector current/reference evidence " if sector_mode else
             "Fresh Screener current/reference evidence "
-            "overlaid additively on prior accepted Screener "
-            "evidence. Fresh non-empty values win; prior "
-            "fields fill gaps. Historical PIT evidence unchanged."
+        ) + (
+            "overlaid additively on prior accepted Screener evidence. "
+            "Fresh non-empty values win; prior fields fill gaps. "
+            "Historical PIT evidence unchanged."
         ),
         "full_company_universe": len(combined),
         "fresh_export_rows": len(fresh),
@@ -608,16 +674,17 @@ def main() -> int:
         summary.get("source_hashes", {})
     )
 
-    source_hashes["deadline_inputs_20260912"] = {
-        path.name: sha256_file(path)
+    input_hash_key = "sector_inputs_20260915" if sector_mode else "deadline_inputs_20260912"
+    source_hashes[input_hash_key] = {
+        (f"{path.parent.name}/{path.name}" if sector_mode else path.name): sha256_file(path)
         for path in paths
     }
 
-    source_hashes[
-        "deadline_merged_export_20260912"
-    ] = sha256_file(
-        output / "deadline_merged_screener_export.csv"
+    merged_hash_key = (
+        "sector_merged_export_20260915" if sector_mode
+        else "deadline_merged_export_20260912"
     )
+    source_hashes[merged_hash_key] = sha256_file(output / merged_export_name)
 
     summary["source_hashes"] = source_hashes
 

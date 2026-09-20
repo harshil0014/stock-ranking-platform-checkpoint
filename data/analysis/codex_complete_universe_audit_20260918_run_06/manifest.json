@@ -1,0 +1,31 @@
+{
+  "artifacts": [
+    {
+      "path": "frozen_codex_judgments.csv",
+      "sha256": "3181228540a8f2d76ab4971341df8ea83a9c6dd7855127304310a22bab7e57be",
+      "size": 788457
+    },
+    {
+      "path": "meaningful_disagreements.csv",
+      "sha256": "7f5f3a3b9e34292e225350008a72aa649811437fbad4008cd9311a824e5c1680",
+      "size": 124172
+    },
+    {
+      "path": "sector_reconciliation.csv",
+      "sha256": "39cc16f70fd16504aa10841db7f54f139faa035d1c50338ad9acd543c1d3a36b",
+      "size": 10828
+    },
+    {
+      "path": "stock_by_stock_audit.csv",
+      "sha256": "eaf2361416b950c998828f6c1b4edd833bad925944b164cbcf015e20b8a1be24",
+      "size": 1662436
+    },
+    {
+      "path": "summary.json",
+      "sha256": "97f5e4eea7c669eec4a7175dca5fe46dcf02155bb344026beab7cdad595320ea",
+      "size": 1619
+    }
+  ],
+  "fingerprint": "5440b5e552e8da796ef10805f457d3b6f0e87bff378cbb01e645e875d0021998",
+  "schema_version": "codex_internal_audit_manifest_v2"
+}

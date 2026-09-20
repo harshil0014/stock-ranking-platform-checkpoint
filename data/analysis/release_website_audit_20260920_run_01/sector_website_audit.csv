@@ -1,0 +1,59 @@
+sector,companies,status
+"Aerospace & Defense",30,PASS
+"Agricultural Food & other Products",165,PASS
+"Agricultural, Commercial & Construction Vehicles",15,PASS
+"Auto Components",156,PASS
+"Automobiles",22,PASS
+"Banks",41,PASS
+"Beverages",30,PASS
+"Capital Markets",75,PASS
+"Cement & Cement Products",40,PASS
+"Chemicals & Petrochemicals",229,PASS
+"Cigarettes & Tobacco Products",5,PASS
+"Commercial Services & Supplies",265,PASS
+"Construction",136,PASS
+"Consumable Fuels",5,PASS
+"Consumer Durables",229,PASS
+"Diversified",34,PASS
+"Diversified FMCG",5,PASS
+"Diversified Metals",5,PASS
+"Electrical Equipment",101,PASS
+"Engineering Services",2,PASS
+"Entertainment",61,PASS
+"Ferrous Metals",35,PASS
+"Fertilizers & Agrochemicals",54,PASS
+"Finance",451,PASS
+"Financial Technology (Fintech)",13,PASS
+"Food Products",108,PASS
+"Gas",9,PASS
+"Healthcare Equipment & Supplies",16,PASS
+"Healthcare Services",69,PASS
+"Household Products",17,PASS
+"IT - Hardware",20,PASS
+"IT - Services",87,PASS
+"IT - Software",127,PASS
+"Industrial Manufacturing",158,PASS
+"Industrial Products",373,PASS
+"Insurance",13,PASS
+"Leisure Services",102,PASS
+"Media",26,PASS
+"Metals & Minerals Trading",20,PASS
+"Minerals & Mining",14,PASS
+"Non - Ferrous Metals",26,PASS
+"Oil",21,PASS
+"Other Construction Materials",19,PASS
+"Other Consumer Services",32,PASS
+"Other Utilities",17,PASS
+"Paper, Forest & Jute Products",49,PASS
+"Personal Products",16,PASS
+"Petroleum Products",19,PASS
+"Pharmaceuticals & Biotechnology",200,PASS
+"Power",47,PASS
+"Printing & Publication",7,PASS
+"Realty",156,PASS
+"Retailing",66,PASS
+"Telecom -  Equipment & Accessories",12,PASS
+"Telecom - Services",21,PASS
+"Textiles & Apparels",272,PASS
+"Transport Infrastructure",14,PASS
+"Transport Services",79,PASS

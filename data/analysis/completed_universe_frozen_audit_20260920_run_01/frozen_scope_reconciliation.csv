@@ -1,0 +1,195 @@
+peer_scope,audited_stocks,comparable_pairs,pairwise_agreement,meaningful_disagreements
+Aerospace & Defense | PRIMARY_5Y,12,66,0.9090909090909091,1
+Aerospace & Defense | RECENCY_ONLY,4,6,0.8333333333333334,0
+Aerospace & Defense | REDUCED_1Y,5,10,1.0,0
+Aerospace & Defense | REDUCED_3Y,7,21,0.9047619047619048,1
+Agricultural Food & other Products | PRIMARY_5Y,114,6441,0.9448067070330693,0
+Agricultural Food & other Products | RECENCY_ONLY,10,45,0.4,7
+Agricultural Food & other Products | REDUCED_1Y,8,28,0.8928571428571429,1
+Agricultural Food & other Products | REDUCED_3Y,11,55,0.9454545454545454,0
+"Agricultural, Commercial & Construction Vehicles | PRIMARY_5Y",9,36,0.9166666666666666,1
+"Agricultural, Commercial & Construction Vehicles | RECENCY_ONLY",2,1,1.0,0
+"Agricultural, Commercial & Construction Vehicles | REDUCED_1Y",2,1,1.0,0
+Auto Components | PRIMARY_5Y,116,6670,0.9626686656671665,0
+Auto Components | RECENCY_ONLY,10,45,0.6222222222222222,4
+Auto Components | REDUCED_1Y,10,45,0.9111111111111111,0
+Auto Components | REDUCED_3Y,5,10,0.8,1
+Automobiles | PRIMARY_5Y,10,45,0.9111111111111111,0
+Automobiles | RECENCY_ONLY,2,1,0.0,0
+Automobiles | REDUCED_1Y,5,10,1.0,0
+Automobiles | REDUCED_3Y,1,0,1.0,0
+Banks | PRIMARY_5Y,35,595,0.9630252100840336,0
+Banks | REDUCED_1Y,3,3,1.0,0
+Banks | REDUCED_3Y,3,3,0.6666666666666666,0
+Beverages | PRIMARY_5Y,24,276,0.9420289855072463,1
+Beverages | REDUCED_1Y,2,1,1.0,0
+Beverages | REDUCED_3Y,1,0,1.0,0
+Capital Markets | PRIMARY_5Y,44,946,0.9513742071881607,1
+Capital Markets | RECENCY_ONLY,8,28,0.75,5
+Capital Markets | REDUCED_1Y,7,21,1.0,0
+Capital Markets | REDUCED_3Y,6,15,0.9333333333333333,0
+Cement & Cement Products | PRIMARY_5Y,37,666,0.9564564564564565,0
+Cement & Cement Products | REDUCED_1Y,2,1,1.0,0
+Chemicals & Petrochemicals | PRIMARY_5Y,153,11628,0.9553663570691434,0
+Chemicals & Petrochemicals | RECENCY_ONLY,17,136,0.6176470588235294,9
+Chemicals & Petrochemicals | REDUCED_1Y,25,300,0.8533333333333334,4
+Chemicals & Petrochemicals | REDUCED_3Y,15,105,0.9047619047619048,0
+Cigarettes & Tobacco Products | PRIMARY_5Y,3,3,1.0,0
+Commercial Services & Supplies | PRIMARY_5Y,192,18336,0.9607875218150087,0
+Commercial Services & Supplies | RECENCY_ONLY,12,66,0.3333333333333333,11
+Commercial Services & Supplies | REDUCED_1Y,17,136,0.8308823529411765,3
+Commercial Services & Supplies | REDUCED_3Y,19,171,0.9473684210526315,0
+Construction | PRIMARY_5Y,86,3655,0.9499316005471956,0
+Construction | RECENCY_ONLY,13,78,0.5128205128205128,9
+Construction | REDUCED_1Y,19,171,0.9122807017543859,2
+Construction | REDUCED_3Y,5,10,0.9,0
+Consumable Fuels | PRIMARY_5Y,2,1,1.0,0
+Consumable Fuels | RECENCY_ONLY,2,1,1.0,0
+Consumable Fuels | REDUCED_3Y,1,0,1.0,0
+Consumer Durables | PRIMARY_5Y,149,11026,0.9558316705967713,0
+Consumer Durables | RECENCY_ONLY,19,171,0.5614035087719298,14
+Consumer Durables | REDUCED_1Y,19,171,0.8654970760233918,3
+Consumer Durables | REDUCED_3Y,21,210,0.9666666666666667,0
+Diversified FMCG | PRIMARY_5Y,3,3,1.0,0
+Diversified FMCG | REDUCED_1Y,2,1,1.0,0
+Diversified Metals | PRIMARY_5Y,1,0,1.0,0
+Diversified Metals | RECENCY_ONLY,3,3,0.6666666666666666,0
+Diversified | PRIMARY_5Y,12,66,0.9545454545454546,0
+Electrical Equipment | PRIMARY_5Y,60,1770,0.9485875706214689,0
+Electrical Equipment | RECENCY_ONLY,13,78,0.7051282051282052,6
+Electrical Equipment | REDUCED_1Y,16,120,0.9166666666666666,0
+Electrical Equipment | REDUCED_3Y,5,10,0.9,0
+Engineering Services | PRIMARY_5Y,1,0,1.0,0
+Engineering Services | REDUCED_1Y,1,0,1.0,0
+Entertainment | PRIMARY_5Y,53,1378,0.9637155297532656,0
+Entertainment | RECENCY_ONLY,2,1,1.0,0
+Entertainment | REDUCED_3Y,1,0,1.0,0
+Ferrous Metals | PRIMARY_5Y,24,276,0.9347826086956522,0
+Ferrous Metals | RECENCY_ONLY,2,1,0.0,0
+Ferrous Metals | REDUCED_1Y,2,1,1.0,0
+Ferrous Metals | REDUCED_3Y,2,1,1.0,0
+Fertilizers & Agrochemicals | PRIMARY_5Y,43,903,0.9723145071982281,0
+Fertilizers & Agrochemicals | RECENCY_ONLY,3,3,0.3333333333333333,0
+Fertilizers & Agrochemicals | REDUCED_1Y,2,1,1.0,0
+Fertilizers & Agrochemicals | REDUCED_3Y,5,10,0.8,0
+Finance | PRIMARY_5Y,340,57630,0.9564462953322922,0
+Finance | RECENCY_ONLY,17,136,0.6544117647058824,8
+Finance | REDUCED_1Y,23,253,0.932806324110672,0
+Finance | REDUCED_3Y,18,153,0.8627450980392157,3
+Financial Technology (Fintech) | PRIMARY_5Y,4,6,1.0,0
+Financial Technology (Fintech) | RECENCY_ONLY,3,3,0.3333333333333333,0
+Financial Technology (Fintech) | REDUCED_1Y,1,0,1.0,0
+Financial Technology (Fintech) | REDUCED_3Y,3,3,1.0,0
+Food Products | PRIMARY_5Y,65,2080,0.94375,0
+Food Products | RECENCY_ONLY,12,66,0.42424242424242425,7
+Food Products | REDUCED_1Y,10,45,0.9111111111111111,1
+Food Products | REDUCED_3Y,11,55,0.9818181818181818,0
+Gas | PRIMARY_5Y,8,28,0.9642857142857143,0
+Healthcare Equipment & Supplies | PRIMARY_5Y,5,10,0.9,0
+Healthcare Equipment & Supplies | RECENCY_ONLY,1,0,1.0,0
+Healthcare Equipment & Supplies | REDUCED_1Y,4,6,0.6666666666666666,0
+Healthcare Equipment & Supplies | REDUCED_3Y,4,6,0.6666666666666666,0
+Healthcare Services | PRIMARY_5Y,40,780,0.9397435897435897,0
+Healthcare Services | RECENCY_ONLY,11,55,0.6545454545454545,6
+Healthcare Services | REDUCED_1Y,6,15,0.9333333333333333,0
+Healthcare Services | REDUCED_3Y,6,15,0.9333333333333333,0
+Household Products | PRIMARY_5Y,15,105,0.9809523809523809,0
+Household Products | REDUCED_1Y,2,1,1.0,0
+IT - Hardware | PRIMARY_5Y,15,105,0.9809523809523809,0
+IT - Hardware | REDUCED_1Y,4,6,1.0,0
+IT - Services | PRIMARY_5Y,48,1128,0.9627659574468085,0
+IT - Services | RECENCY_ONLY,9,36,0.7777777777777778,5
+IT - Services | REDUCED_1Y,13,78,0.9358974358974359,1
+IT - Services | REDUCED_3Y,4,6,1.0,0
+IT - Software | PRIMARY_5Y,92,4186,0.9438604873387482,1
+IT - Software | RECENCY_ONLY,11,55,0.509090909090909,6
+IT - Software | REDUCED_1Y,9,36,0.8611111111111112,3
+IT - Software | REDUCED_3Y,7,21,1.0,0
+Industrial Manufacturing | PRIMARY_5Y,95,4465,0.9522956326987682,0
+Industrial Manufacturing | RECENCY_ONLY,25,300,0.75,6
+Industrial Manufacturing | REDUCED_1Y,21,210,0.9380952380952381,0
+Industrial Manufacturing | REDUCED_3Y,7,21,0.9523809523809523,0
+Industrial Products | PRIMARY_5Y,256,32640,0.9517769607843137,0
+Industrial Products | RECENCY_ONLY,29,406,0.5517241379310345,19
+Industrial Products | REDUCED_1Y,35,595,0.9025210084033614,2
+Industrial Products | REDUCED_3Y,24,276,0.9456521739130435,1
+Insurance | PRIMARY_5Y,7,21,1.0,0
+Insurance | RECENCY_ONLY,1,0,1.0,0
+Insurance | REDUCED_1Y,3,3,1.0,0
+Insurance | REDUCED_3Y,2,1,0.0,0
+Leisure Services | PRIMARY_5Y,62,1891,0.9481755684822845,0
+Leisure Services | RECENCY_ONLY,8,28,0.42857142857142855,6
+Leisure Services | REDUCED_1Y,19,171,0.8771929824561403,4
+Leisure Services | REDUCED_3Y,3,3,0.6666666666666666,0
+Media | PRIMARY_5Y,14,91,0.8791208791208791,3
+Media | RECENCY_ONLY,4,6,0.6666666666666666,0
+Media | REDUCED_1Y,4,6,1.0,0
+Media | REDUCED_3Y,2,1,1.0,0
+Metals & Minerals Trading | PRIMARY_5Y,7,21,0.9047619047619048,0
+Metals & Minerals Trading | RECENCY_ONLY,2,1,1.0,0
+Metals & Minerals Trading | REDUCED_1Y,2,1,1.0,0
+Metals & Minerals Trading | REDUCED_3Y,2,1,1.0,0
+Minerals & Mining | PRIMARY_5Y,12,66,0.9545454545454546,0
+Minerals & Mining | REDUCED_3Y,1,0,1.0,0
+Non - Ferrous Metals | PRIMARY_5Y,17,136,0.9632352941176471,0
+Non - Ferrous Metals | RECENCY_ONLY,3,3,0.6666666666666666,0
+Non - Ferrous Metals | REDUCED_1Y,1,0,1.0,0
+Non - Ferrous Metals | REDUCED_3Y,1,0,1.0,0
+Oil | PRIMARY_5Y,14,91,0.978021978021978,0
+Oil | RECENCY_ONLY,1,0,1.0,0
+Oil | REDUCED_1Y,3,3,1.0,0
+Oil | REDUCED_3Y,1,0,1.0,0
+Other Construction Materials | PRIMARY_5Y,17,136,0.9926470588235294,0
+Other Construction Materials | REDUCED_1Y,1,0,1.0,0
+Other Construction Materials | REDUCED_3Y,1,0,1.0,0
+Other Consumer Services | PRIMARY_5Y,18,153,0.9019607843137255,1
+Other Consumer Services | RECENCY_ONLY,3,3,0.6666666666666666,0
+Other Consumer Services | REDUCED_1Y,3,3,0.3333333333333333,0
+Other Consumer Services | REDUCED_3Y,4,6,1.0,0
+Other Utilities | PRIMARY_5Y,4,6,1.0,0
+Other Utilities | REDUCED_1Y,8,28,0.8928571428571429,2
+Other Utilities | REDUCED_3Y,3,3,1.0,0
+"Paper, Forest & Jute Products | PRIMARY_5Y",40,780,0.9384615384615385,0
+"Paper, Forest & Jute Products | REDUCED_1Y",2,1,1.0,0
+"Paper, Forest & Jute Products | REDUCED_3Y",2,1,1.0,0
+Personal Products | PRIMARY_5Y,12,66,0.9696969696969697,0
+Personal Products | RECENCY_ONLY,3,3,1.0,0
+Personal Products | REDUCED_1Y,1,0,1.0,0
+Petroleum Products | PRIMARY_5Y,16,120,0.9416666666666667,0
+Petroleum Products | REDUCED_1Y,1,0,1.0,0
+Petroleum Products | REDUCED_3Y,2,1,1.0,0
+Pharmaceuticals & Biotechnology | PRIMARY_5Y,136,9180,0.9608932461873638,0
+Pharmaceuticals & Biotechnology | RECENCY_ONLY,10,45,0.6,4
+Pharmaceuticals & Biotechnology | REDUCED_1Y,18,153,0.8954248366013072,1
+Pharmaceuticals & Biotechnology | REDUCED_3Y,16,120,0.9,3
+Power | PRIMARY_5Y,37,666,0.963963963963964,0
+Power | RECENCY_ONLY,4,6,0.16666666666666666,0
+Power | REDUCED_1Y,3,3,1.0,0
+Power | REDUCED_3Y,1,0,1.0,0
+Printing & Publication | PRIMARY_5Y,5,10,1.0,0
+Printing & Publication | RECENCY_ONLY,1,0,1.0,0
+Realty | PRIMARY_5Y,108,5778,0.9505019037729318,0
+Realty | RECENCY_ONLY,6,15,0.6,3
+Realty | REDUCED_1Y,10,45,0.9111111111111111,1
+Realty | REDUCED_3Y,10,45,0.9333333333333333,0
+Retailing | PRIMARY_5Y,32,496,0.9415322580645161,0
+Retailing | RECENCY_ONLY,5,10,0.9,0
+Retailing | REDUCED_1Y,17,136,0.9411764705882353,0
+Retailing | REDUCED_3Y,8,28,0.9285714285714286,0
+Telecom -  Equipment & Accessories | PRIMARY_5Y,12,66,0.9848484848484849,0
+Telecom - Services | PRIMARY_5Y,16,120,0.9333333333333333,1
+Telecom - Services | RECENCY_ONLY,1,0,1.0,0
+Telecom - Services | REDUCED_1Y,2,1,1.0,0
+Telecom - Services | REDUCED_3Y,1,0,1.0,0
+Textiles & Apparels | PRIMARY_5Y,191,18145,0.9518324607329843,1
+Textiles & Apparels | RECENCY_ONLY,20,190,0.5,14
+Textiles & Apparels | REDUCED_1Y,13,78,0.8846153846153846,2
+Textiles & Apparels | REDUCED_3Y,18,153,0.9215686274509803,0
+Transport Infrastructure | PRIMARY_5Y,9,36,0.9722222222222222,0
+Transport Infrastructure | RECENCY_ONLY,1,0,1.0,0
+Transport Infrastructure | REDUCED_1Y,2,1,1.0,0
+Transport Infrastructure | REDUCED_3Y,2,1,1.0,0
+Transport Services | PRIMARY_5Y,40,780,0.9487179487179487,0
+Transport Services | RECENCY_ONLY,7,21,0.5238095238095238,5
+Transport Services | REDUCED_1Y,8,28,0.8928571428571429,1
+Transport Services | REDUCED_3Y,7,21,0.9047619047619048,1

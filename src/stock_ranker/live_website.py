@@ -13,18 +13,27 @@ from zoneinfo import ZoneInfo
 import pandas as pd
 
 from stock_ranker.live_market import LiveMarketBundle, load_live_market_bundle
-from stock_ranker.data_state import data_state_status, resolve_accepted_bundle_root
-from stock_ranker.company_facts import load_company_fact_snapshot, resolve_company_fact_snapshot
+from stock_ranker.data_state import data_state_status
+from stock_ranker.company_facts import load_company_fact_snapshot
 from stock_ranker.screener_statements import load_screener_statement_history
 from stock_ranker.product_evidence import enrich_presentation
+from stock_ranker.runtime import PROJECT_ROOT, data_root, validated_release
+from stock_ranker.universe_completion import ESTIMATE_CODES, FINANCIAL_SECTORS, validate_completion
 from stock_ranker.v2_config import ResearchV2Weights
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-LIVE_STATE_ROOT = PROJECT_ROOT / "data/live_market"
-LIVE_BUNDLE_ROOT = LIVE_STATE_ROOT / "current"
-LIVE_HISTORY_ROOT = PROJECT_ROOT / "data/live_market/history_cache"
-COMPANY_FACT_STATE_ROOT = PROJECT_ROOT / "data/company_facts"
+DATA_ROOT = data_root()
+RELEASE = validated_release()
+LIVE_STATE_ROOT = DATA_ROOT / "live_market"
+LIVE_BUNDLE_ROOT = LIVE_STATE_ROOT / "snapshots" / (
+    "2026-09-18-" + RELEASE["accepted_market_fingerprint"]
+)
+LIVE_HISTORY_ROOT = DATA_ROOT / "live_market/history_cache"
+COMPANY_FACT_STATE_ROOT = DATA_ROOT / "company_facts"
+COMPANY_FACT_SNAPSHOT_ROOT = COMPANY_FACT_STATE_ROOT / "snapshots" / (
+    "2026-09-18-" + RELEASE["accepted_company_fingerprint"]
+)
+COMPLETION_ROOT = DATA_ROOT / "analysis/complete_universe_20260918_run_05"
 SAFE_TICKER = re.compile(r"^[A-Z0-9&.-]{1,32}$")
 V2_FACTORS = (
     "return_1y", "cagr_3y", "cagr_5y", "days_since_recorded_high",
@@ -67,9 +76,8 @@ def _cached_bundle(path: str, manifest_mtime_ns: int) -> LiveMarketBundle:
 
 def _bundle() -> LiveMarketBundle:
     try:
-        resolved = resolve_accepted_bundle_root(LIVE_STATE_ROOT)
-        manifest = resolved / "bundle_manifest.json"
-        return _cached_bundle(str(resolved), manifest.stat().st_mtime_ns)
+        manifest = LIVE_BUNDLE_ROOT / "bundle_manifest.json"
+        return _cached_bundle(str(LIVE_BUNDLE_ROOT), manifest.stat().st_mtime_ns)
     except (FileNotFoundError, KeyError, OSError, TypeError, ValueError, json.JSONDecodeError) as exc:
         raise LiveWebsiteError(
             "No validated market snapshot is available. Autonomous refresh evidence is shown in Data Status."
@@ -84,22 +92,79 @@ def _cached_company_facts(path: str, manifest_mtime_ns: int):
 
 def _company_facts():
     try:
-        root = resolve_company_fact_snapshot(COMPANY_FACT_STATE_ROOT)
-        manifest = root / "manifest.json"
-        return _cached_company_facts(str(root), manifest.stat().st_mtime_ns)
+        manifest = COMPANY_FACT_SNAPSHOT_ROOT / "manifest.json"
+        return _cached_company_facts(
+            str(COMPANY_FACT_SNAPSHOT_ROOT), manifest.stat().st_mtime_ns
+        )
     except (FileNotFoundError, KeyError, OSError, TypeError, ValueError, json.JSONDecodeError) as exc:
         raise LiveWebsiteError(
             "No validated company-fact snapshot is available; the accepted market snapshot remains usable."
         ) from exc
 
 
+@lru_cache(maxsize=2)
+def _cached_completion(path: str, manifest_mtime_ns: int):
+    del manifest_mtime_ns
+    root = Path(path)
+    summary = validate_completion(root)
+    manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
+    completed = pd.read_csv(root / "completed_company_facts.csv", low_memory=False)
+    codes = pd.read_csv(root / "field_estimate_codes.csv", low_memory=False)
+    if len(completed) != summary["universe_count"] or len(codes) != len(completed):
+        raise ValueError("completion row counts do not reconcile")
+    return completed, codes, summary, manifest
+
+
+def _completion():
+    manifest = COMPLETION_ROOT / "manifest.json"
+    try:
+        return _cached_completion(str(COMPLETION_ROOT), manifest.stat().st_mtime_ns)
+    except (FileNotFoundError, OSError, ValueError, json.JSONDecodeError) as exc:
+        raise LiveWebsiteError("The validated complete-universe ranking is unavailable.") from exc
+
+
+def deployment_health() -> dict[str, Any]:
+    """Validate the immutable serving state for readiness and deployment probes."""
+    bundle = _bundle()
+    facts = _company_facts()
+    completed, codes, summary, manifest = _completion()
+    healthy = (
+        len(bundle.market) == 4436
+        and len(facts.facts) == 4436
+        and len(completed) == 4436
+        and len(codes) == 4436
+        and summary.get("ranked_count") == 4436
+        and summary.get("remaining_missing_cell_count") == 0
+        and summary.get("rank_consistency_error_count") == 0
+        and summary.get("accepted_company_fingerprint") == facts.manifest.get("fingerprint")
+        and summary.get("accepted_market_fingerprint") == bundle.fingerprint
+    )
+    if not healthy:
+        raise LiveWebsiteError("Serving-state counts or fingerprints do not reconcile.")
+    return {
+        "status": "ok",
+        "service": "stock-ranking-website",
+        "ready": True,
+        "universe_count": 4436,
+        "sector_count": int(summary["sector_count"]),
+        "ranked_count": int(summary["ranked_count"]),
+        "remaining_missing_cells": int(summary["remaining_missing_cell_count"]),
+        "market_fingerprint": bundle.fingerprint,
+        "company_fact_fingerprint": facts.manifest["fingerprint"],
+        "completion_fingerprint": manifest["fingerprint"],
+    }
+
+
 def company_facts_coverage() -> dict[str, Any]:
     """Expose measured accepted fact coverage, not provider marketing claims."""
 
     result = _company_facts()
+    _, _, completion_summary, completion_manifest = _completion()
     return {
         "available": True, "coverage": result.coverage,
         "manifest": result.manifest,
+        "completion": completion_summary,
+        "completion_fingerprint": completion_manifest["fingerprint"],
         "warning": "Accepted user-exported Screener data enriches current company pages. Historical research still requires the separate official publication clock.",
     }
 
@@ -113,9 +178,23 @@ def live_data_status() -> dict[str, Any]:
         raise LiveWebsiteError("Validated data-state status is unavailable.") from exc
     status["available"] = True
     status["mode"] = "OFFLINE-FIRST ACCEPTED STATE"
+    facts = _company_facts()
+    _, _, completion_summary, completion_manifest = _completion()
+    metrics = facts.coverage.get("metrics", {})
+    status["product_ranking"] = {
+        "company_fact_fingerprint": facts.manifest.get("fingerprint"),
+        "ranked": metrics.get("product_baseline_eligible", {}).get("count", 0),
+        "primary_5y": metrics.get("product_baseline_primary_5y", {}).get("count", 0),
+        "reduced_3y": metrics.get("product_baseline_reduced_3y", {}).get("count", 0),
+        "reduced_1y": metrics.get("product_baseline_reduced_1y", {}).get("count", 0),
+        "recency_only": metrics.get("product_baseline_recency_only", {}).get("count", 0),
+        "complete_ranked": completion_summary["ranked_count"],
+        "complete_missing_cells": completion_summary["remaining_missing_cell_count"],
+        "completion_fingerprint": completion_manifest["fingerprint"],
+    }
     status["refresh_policy"] = (
-        "The local website starts a bounded background refresh. Only complete validated snapshots "
-        "are accepted; failures leave the prior snapshot active."
+        "Serving is pinned to the validated release fingerprints. Refresh is an explicit, "
+        "single-writer maintenance action and cannot change the serving release pointer."
     )
     return status
 
@@ -134,7 +213,9 @@ def _product_market_view(market: pd.DataFrame, facts: pd.DataFrame) -> pd.DataFr
         "product_baseline_cagr_5y", "product_baseline_days_since_recorded_high",
         "product_baseline_score", "product_baseline_sector_rank",
         "product_baseline_eligible", "product_baseline_reason_code",
-        "product_baseline_reason",
+        "product_baseline_reason", "product_baseline_ranking_tier",
+        "product_baseline_confidence", "product_baseline_feature_count",
+        "product_baseline_rank_scope", "product_baseline_method_version",
         "product_price_reference", "product_price_date", "product_price_exchange",
         "product_price_status", "product_price_source", "product_price_source_sha256",
     ]
@@ -158,6 +239,62 @@ def _product_market_view(market: pd.DataFrame, facts: pd.DataFrame) -> pd.DataFr
     for target, source in mapping.items():
         if source in view:
             view[target] = view[source]
+    completed, _, _, _ = _completion()
+    completion_columns = [
+        "ticker", "complete_sector", "complete_sector_method",
+        "complete_sector_confidence", "complete_score", "complete_sector_rank",
+        "complete_peer_count", "complete_confidence", "complete_reliability",
+        "complete_observed_ranking_inputs", "complete_estimated_ranking_inputs",
+        "complete_rank_scope", "complete_method_version",
+        "product_industry", "product_basic_industry",
+        "product_baseline_yoy_growth", "product_baseline_cagr_3y",
+        "product_baseline_cagr_5y", "product_baseline_days_since_recorded_high",
+    ]
+    overlay = completed[completion_columns].rename(columns={
+        column: f"{column}_completed"
+        for column in completion_columns
+        if column != "ticker" and not column.startswith("complete_")
+    })
+    view = view.merge(overlay, on="ticker", how="left", validate="one_to_one")
+    view["sector"] = view["complete_sector"]
+    view["product_sector"] = view["complete_sector"]
+    view["industry"] = view["product_industry_completed"]
+    view["product_industry"] = view["product_industry_completed"]
+    view["basic_industry"] = view["product_basic_industry_completed"]
+    view["product_basic_industry"] = view["product_basic_industry_completed"]
+    view["classification_status"] = (
+        "COMPLETE_" + view["complete_sector_confidence"].astype(str)
+    )
+    view["classification_source"] = view["complete_sector_method"]
+    for target in (
+        "product_baseline_yoy_growth", "product_baseline_cagr_3y",
+        "product_baseline_cagr_5y", "product_baseline_days_since_recorded_high",
+    ):
+        view[target] = view[f"{target}_completed"]
+    view["baseline_yoy_growth"] = view["product_baseline_yoy_growth"]
+    view["baseline_cagr_3y"] = view["product_baseline_cagr_3y"]
+    view["baseline_cagr_5y"] = view["product_baseline_cagr_5y"]
+    view["baseline_days_since_recorded_high"] = view["product_baseline_days_since_recorded_high"]
+    view["baseline_score"] = view["complete_score"]
+    view["baseline_sector_rank"] = view["complete_sector_rank"]
+    view["baseline_eligible"] = True
+    view["baseline_reason_code"] = "COMPLETE_CONFIDENCE_ADJUSTED_RANK"
+    view["baseline_reason"] = (
+        "All accepted identities are ranked; estimated inputs are provenance-coded and "
+        "weaker evidence is shrunk toward the sector midpoint."
+    )
+    view["product_baseline_score"] = view["complete_score"]
+    view["product_baseline_sector_rank"] = view["complete_sector_rank"]
+    view["product_baseline_eligible"] = True
+    view["product_baseline_reason_code"] = view["baseline_reason_code"]
+    view["product_baseline_reason"] = view["baseline_reason"]
+    view["product_baseline_ranking_tier"] = "COMPLETE_CONFIDENCE_ADJUSTED"
+    view["product_baseline_confidence"] = view["complete_confidence"]
+    view["product_baseline_feature_count"] = (
+        view["complete_observed_ranking_inputs"] + view["complete_estimated_ranking_inputs"]
+    )
+    view["product_baseline_rank_scope"] = view["complete_rank_scope"]
+    view["product_baseline_method_version"] = view["complete_method_version"]
     if "product_price_reference" in view and view["product_price_reference"].notna().any():
         prior = view["latest_price"].isna() & view["product_price_reference"].notna()
         view.loc[prior, "latest_price"] = view.loc[prior, "product_price_reference"]
@@ -166,7 +303,41 @@ def _product_market_view(market: pd.DataFrame, facts: pd.DataFrame) -> pd.DataFr
         view.loc[prior, "snapshot_status"] = view.loc[prior, "product_price_status"]
         view.loc[prior, "snapshot_source"] = view.loc[prior, "product_price_source"]
         view.loc[prior, "price_identity_status"] = "EXACT_IDENTITY_OFFICIAL_PRIOR_TRADE"
+    # Align unchanged current V2 scores to the same complete current-product
+    # grouping. Frozen historical V2 classifications and ranks are untouched.
+    view["product_research_v2_sector_rank"] = float("nan")
+    if {"v2_eligible", "sector", "research_v2_score"}.issubset(view.columns):
+        v2_eligible = (
+            view["v2_eligible"].fillna(False).astype(bool)
+            & view["sector"].notna()
+            & pd.to_numeric(view["research_v2_score"], errors="coerce").notna()
+        )
+        view.loc[v2_eligible, "product_research_v2_sector_rank"] = (
+            view.loc[v2_eligible]
+            .groupby("sector", sort=False)["research_v2_score"]
+            .rank(ascending=False, method="min")
+            .astype("int64")
+        )
     return view
+
+
+@lru_cache(maxsize=2)
+def _cached_product_market_view(
+    market_root: str, market_manifest_mtime_ns: int,
+    fact_root: str, fact_manifest_mtime_ns: int,
+) -> pd.DataFrame:
+    bundle = _cached_bundle(market_root, market_manifest_mtime_ns)
+    facts = _cached_company_facts(fact_root, fact_manifest_mtime_ns)
+    return _product_market_view(bundle.market, facts.facts)
+
+
+def _product_view() -> pd.DataFrame:
+    market_root = LIVE_BUNDLE_ROOT
+    fact_root = COMPANY_FACT_SNAPSHOT_ROOT
+    return _cached_product_market_view(
+        str(market_root), (market_root / "bundle_manifest.json").stat().st_mtime_ns,
+        str(fact_root), (fact_root / "manifest.json").stat().st_mtime_ns,
+    )
 
 
 def format_price(value: Any) -> str:
@@ -222,7 +393,7 @@ def _model_status(row: pd.Series, model: str) -> tuple[bool, str, str, Any, Any]
     if model == "research_v2":
         return (
             bool(row["v2_eligible"]), str(row["v2_reason_code"]),
-            str(row["v2_reason"]), row.get("research_v2_score"), row.get("research_v2_sector_rank"),
+            str(row["v2_reason"]), row.get("research_v2_score"), row.get("product_research_v2_sector_rank"),
         )
     raise LiveWebsiteError("model must be baseline_v1 or research_v2")
 
@@ -294,7 +465,7 @@ def live_overview(model: str = "baseline_v1") -> dict[str, Any]:
     bundle = _bundle()
     validate_v2_detail_invariants(bundle.market)
     fact_result = _company_facts()
-    frame = _product_market_view(bundle.market, fact_result.facts) if model == "baseline_v1" else bundle.market.copy()
+    frame = _product_view()
     for column, default in (
         ("primary_exchange", "NSE"), ("exchange_security_id", pd.NA),
         ("identity_status", "OFFICIAL_NSE_MASTER"),
@@ -317,6 +488,17 @@ def live_overview(model: str = "baseline_v1") -> dict[str, Any]:
     view["reason"] = reasons
     view["score"] = scores
     view["sector_rank"] = ranks
+    if model == "baseline_v1":
+        view["ranking_tier"] = frame.get("product_baseline_ranking_tier")
+        view["ranking_confidence"] = frame.get("product_baseline_confidence")
+        view["ranking_feature_count"] = frame.get("product_baseline_feature_count")
+        view["rank_scope"] = frame.get("product_baseline_rank_scope")
+        view["method_version"] = frame.get("product_baseline_method_version")
+        view["observed_ranking_inputs"] = frame.get("complete_observed_ranking_inputs")
+        view["estimated_ranking_inputs"] = frame.get("complete_estimated_ranking_inputs")
+        view["ranking_reliability"] = frame.get("complete_reliability")
+        view["classification_method"] = frame.get("complete_sector_method")
+        view["classification_confidence"] = frame.get("complete_sector_confidence")
     screening_columns = [
         "ticker", "market_cap", "pe_ratio", "pb_ratio", "trailing_eps",
         "dividend_yield", "return_on_equity", "roce", "debt_to_equity",
@@ -327,25 +509,32 @@ def live_overview(model: str = "baseline_v1") -> dict[str, Any]:
         "screener_market_cap_crore", "screener_workbook_available",
         "screener_bundle_fingerprint",
     ]
-    view = view.merge(fact_result.facts[screening_columns], on="ticker", how="left", validate="one_to_one")
-    view = view.sort_values(
-        ["eligible", "sector", "score", "ticker"],
-        ascending=[False, True, True if model == "baseline_v1" else False, True],
-        na_position="last", kind="stable",
+    completed_facts, _, completion_summary, completion_manifest = _completion()
+    view = view.merge(completed_facts[screening_columns], on="ticker", how="left", validate="one_to_one")
+    view["_tier_order"] = (
+        view["ranking_tier"].map({"PRIMARY_5Y": 0, "REDUCED_3Y": 1, "REDUCED_1Y": 2, "RECENCY_ONLY": 3}).fillna(9)
+        if model == "baseline_v1" else 0
     )
+    view = view.sort_values(
+        ["eligible", "sector", "_tier_order", "score", "ticker"],
+        ascending=[False, True, True, True if model == "baseline_v1" else False, True],
+        na_position="last", kind="stable",
+    ).drop(columns="_tier_order")
     manifest = bundle.manifest
     state = live_data_status()
     return {
         "available": True, "mode": "LIVE MARKET", "model": model,
-        "title": "Latest Market Snapshot", "changing_snapshot": True,
+        "title": "Validated Market Snapshot", "changing_snapshot": False,
         "summary": {
             "all_nse_equities": manifest.get("nse_universe_count", manifest["universe_count"]),
             "supported_equities": manifest["universe_count"],
             "nse_equities": manifest.get("nse_universe_count", manifest["universe_count"]),
             "bse_only_equities": manifest.get("bse_only_count", 0),
             "price_ready": manifest["snapshot"]["matched_count"],
-            "baseline_eligible": int(frame["baseline_eligible"].astype(bool).sum()) if model == "baseline_v1" else int(fact_result.facts["product_baseline_eligible"].fillna(False).astype(bool).sum()),
+            "baseline_eligible": int(frame["baseline_eligible"].astype(bool).sum()),
             "research_v2_eligible": manifest["research_v2_eligible_count"],
+            "complete_ranked": completion_summary["ranked_count"],
+            "remaining_missing_cells": completion_summary["remaining_missing_cell_count"],
         },
         "snapshot": manifest["snapshot"],
         "segments": ["ALL", "ALL NSE", "LARGE", "MID", "SMALL", "MICRO", "OTHER NSE", "OTHER BSE"],
@@ -354,6 +543,7 @@ def live_overview(model: str = "baseline_v1") -> dict[str, Any]:
         "industries": sorted(frame["industry"].dropna().astype(str).unique().tolist()),
         "rows": _records(view),
         "bundle_fingerprint": bundle.fingerprint,
+        "completion_fingerprint": completion_manifest["fingerprint"],
         "data_state": state,
         "provenance": {
             "universe_source": manifest["universe_source"],
@@ -368,8 +558,8 @@ def live_overview(model: str = "baseline_v1") -> dict[str, Any]:
         },
         "warnings": [
             "Latest available EOD snapshot; not a licensed real-time NSE feed.",
-            "Baseline V1 current-product coverage uses Product Classification v1: official evidence first, then exact-identity secondary reference evidence.",
-            "Scores and ranks are sector-relative, not universal market ranks.",
+            "Current-product sectors use the accepted exact-ISIN Screener industry-group taxonomy; other classifications remain visible as provenance.",
+            "Every accepted identity has a confidence-adjusted full-sector rank; estimated cells are separately provenance-coded.",
             "Research screening only; not investment advice or a recommendation.",
         ],
     }
@@ -395,19 +585,26 @@ def live_dashboard(
         }
     validate_v2_detail_invariants(bundle.market)
     fact_result = _company_facts()
-    frame = _product_market_view(bundle.market, fact_result.facts) if model == "baseline_v1" else bundle.market.copy()
+    frame = _product_view()
     sectors = sorted(frame["sector"].dropna().astype(str).unique().tolist())
     if sector and sector not in sectors:
         raise LiveWebsiteError("sector is not present in the prepared live bundle")
     eligibility_column = "baseline_eligible" if model == "baseline_v1" else "v2_eligible"
     score_column = "baseline_score" if model == "baseline_v1" else "research_v2_score"
-    rank_column = "baseline_sector_rank" if model == "baseline_v1" else "research_v2_sector_rank"
+    rank_column = "baseline_sector_rank" if model == "baseline_v1" else "product_research_v2_sector_rank"
 
     def card(row: pd.Series) -> dict[str, Any]:
         def numeric(value: Any) -> float | None:
             return None if value is None or pd.isna(value) else float(value)
 
-        peer_count = _sector_peer_count(frame, row, eligibility_column)
+        if model == "baseline_v1":
+            peer_count = int((
+                frame[eligibility_column].astype(bool)
+                & frame["sector"].eq(row["sector"])
+                & frame["product_baseline_ranking_tier"].eq(row.get("product_baseline_ranking_tier"))
+            ).sum())
+        else:
+            peer_count = _sector_peer_count(frame, row, eligibility_column)
         rank = float(row[rank_column])
         item: dict[str, Any] = {
             "ticker": row["ticker"], "company": row["company"],
@@ -420,6 +617,15 @@ def live_dashboard(
             "displayed_leader": False,
         }
         if model == "baseline_v1":
+            item.update({
+                "ranking_tier": row.get("product_baseline_ranking_tier"),
+                "ranking_confidence": row.get("product_baseline_confidence"),
+                "ranking_feature_count": numeric(row.get("product_baseline_feature_count")),
+                "rank_scope": row.get("product_baseline_rank_scope"),
+                "observed_ranking_inputs": int(row.get("complete_observed_ranking_inputs")),
+                "estimated_ranking_inputs": int(row.get("complete_estimated_ranking_inputs")),
+                "ranking_reliability": numeric(row.get("complete_reliability")),
+            })
             item["baseline_factors"] = {
                 name: numeric(row[column]) for name, column in BASELINE_FACTOR_COLUMNS.items()
             }
@@ -448,6 +654,7 @@ def live_dashboard(
         return item
 
     top_four: list[dict[str, Any]] = []
+    sector_rows: list[dict[str, Any]] = []
     leaders: list[dict[str, Any]] = []
     sector_frame = frame.loc[frame["sector"].eq(sector)] if sector else frame.iloc[0:0]
     if sector:
@@ -458,6 +665,44 @@ def live_dashboard(
         top_four = [card(row) for _, row in displayed.iterrows()]
         if top_four:
             top_four[0]["displayed_leader"] = True
+        complete = sector_frame
+        if segment not in {"", "ALL", "ALL NSE"}:
+            complete = complete.loc[complete["size_segment"].eq(segment)]
+        complete = complete.sort_values(
+            [eligibility_column, rank_column, "ticker"],
+            ascending=[False, True, True], na_position="last", kind="stable",
+        )
+        for _, row in complete.iterrows():
+            eligible = bool(row[eligibility_column])
+            item = {
+                "ticker": row["ticker"], "company": row["company"],
+                "sector": row["sector"], "size_segment": row["size_segment"],
+                "latest_price": None if pd.isna(row["latest_price"]) else float(row["latest_price"]),
+                "day_change_pct": None if pd.isna(row["day_change_pct"]) else float(row["day_change_pct"]),
+                "trade_date": row["trade_date"], "eligible": eligible,
+                "reason_code": row["baseline_reason_code"] if model == "baseline_v1" else row["v2_reason_code"],
+                "reason": row["baseline_reason"] if model == "baseline_v1" else row["v2_reason"],
+                "canonical_sector_rank": None if not eligible or pd.isna(row[rank_column]) else float(row[rank_column]),
+                "canonical_score": None if not eligible or pd.isna(row[score_column]) else float(row[score_column]),
+            }
+            if model == "baseline_v1":
+                item.update({
+                    "ranking_tier": None if pd.isna(row.get("product_baseline_ranking_tier")) else row.get("product_baseline_ranking_tier"),
+                    "ranking_confidence": None if pd.isna(row.get("product_baseline_confidence")) else row.get("product_baseline_confidence"),
+                    "observed_ranking_inputs": int(row.get("complete_observed_ranking_inputs")),
+                    "estimated_ranking_inputs": int(row.get("complete_estimated_ranking_inputs")),
+                    "ranking_reliability": None if pd.isna(row.get("complete_reliability")) else float(row.get("complete_reliability")),
+                    "baseline_factors": {
+                        name: None if pd.isna(row.get(column)) else float(row.get(column))
+                        for name, column in BASELINE_FACTOR_COLUMNS.items()
+                    },
+                })
+            else:
+                item["strongest_contributions"] = [] if not eligible else sorted(
+                    ({"metric": name, "contribution": float(row[f"{name}_contribution"])} for name in V2_FACTORS),
+                    key=lambda value: (-value["contribution"], value["metric"]),
+                )[:3]
+            sector_rows.append(item)
     else:
         eligible = frame.loc[frame[eligibility_column].astype(bool)].sort_values(
             ["sector", rank_column, "ticker"], kind="stable"
@@ -466,6 +711,7 @@ def live_dashboard(
             leaders.append({
                 "sector": row["sector"], "ticker": row["ticker"], "company": row["company"],
                 "canonical_sector_rank": float(row[rank_column]), "size_segment": row["size_segment"],
+                "ranking_tier": row.get("product_baseline_ranking_tier") if model == "baseline_v1" else None,
             })
 
     prepared_count = int(len(sector_frame)) if sector else 0
@@ -490,17 +736,22 @@ def live_dashboard(
         "sector_summary": {
             "prepared_companies": prepared_count, "baseline_eligible": baseline_count,
             "research_v2_eligible": v2_count, "selected_model_eligible_peers": selected_eligible,
-            "displayed_companies": len(top_four),
+            "displayed_companies": len(sector_rows),
             "v2_coverage_ratio": (v2_count / prepared_count) if prepared_count else None,
         },
-        "top_four": top_four, "sector_leaders": leaders,
+        "top_four": top_four, "sector_rows": sector_rows, "sector_leaders": leaders,
         "selection_warning": (
             "Choose a sector. Sector-relative scores are not compared across sectors."
             if not sector else
             "Research V2 coverage is intentionally strict because missing audited fundamentals are not guessed."
             if model == "research_v2" and selected_eligible < 4 else None
         ),
-        "rank_scope": "Filters select displayed companies but never recompute canonical sector ranks.",
+        "rank_scope": (
+            "Complete Universe ranks every accepted security against the full completed sector; "
+            "filters never recompute ranks. Confidence and estimate provenance remain visible."
+            if model == "baseline_v1" else
+            "Filters select displayed companies but never recompute canonical sector ranks."
+        ),
         "research_summary": {
             "baseline": "Original-paper price-history methodology operationalized in software.",
             "research_v2": "Adds risk and audited fundamentals.",
@@ -534,20 +785,34 @@ def live_stock(ticker_value: str) -> dict[str, Any]:
     if matches.empty:
         raise LiveWebsiteError("stock is not present in the prepared ALL NSE universe")
     fact_result = _company_facts()
-    fact_matches = fact_result.facts.loc[fact_result.facts["ticker"].eq(ticker)]
+    original_matches = fact_result.facts.loc[fact_result.facts["ticker"].eq(ticker)]
+    if original_matches.empty:
+        raise LiveWebsiteError("stock is missing from the accepted company-fact layer")
+    original_fact = original_matches.iloc[0]
+    completed_facts, estimate_codes, completion_summary, completion_manifest = _completion()
+    fact_matches = completed_facts.loc[completed_facts["ticker"].eq(ticker)]
     if fact_matches.empty:
         raise LiveWebsiteError("stock is missing from the accepted company-fact layer")
     fact = fact_matches.iloc[0]
-    product = _product_market_view(bundle.market, fact_result.facts)
+    estimate_match = estimate_codes.loc[estimate_codes["ticker"].eq(ticker)]
+    if estimate_match.empty:
+        raise LiveWebsiteError("stock is missing from the completion provenance layer")
+    estimate_row = estimate_match.iloc[0]
+    product = _product_view()
     row = product.loc[product["ticker"].eq(ticker)].iloc[0]
     baseline = {
         "eligible": bool(row["baseline_eligible"]), "score": row.get("baseline_score"),
         "sector_rank": row.get("baseline_sector_rank"), "reason_code": row["baseline_reason_code"],
         "reason": row["baseline_reason"],
         "factors": {name: row.get(column) for name, column in BASELINE_FACTOR_COLUMNS.items()},
-        "peer_count": _sector_peer_count(bundle.market, row, "baseline_eligible"),
-        "plain_label": "Baseline V1 — Current Product Coverage",
+        "peer_count": _sector_peer_count(product, row, "baseline_eligible"),
+        "plain_label": "Complete Universe - confidence-adjusted sector ranking",
         "classification_scope": "Product Classification v1; historical research classifications remain frozen",
+        "ranking_tier": row.get("product_baseline_ranking_tier"),
+        "confidence": row.get("product_baseline_confidence"),
+        "feature_count": row.get("product_baseline_feature_count"),
+        "rank_scope": row.get("product_baseline_rank_scope"),
+        "method_version": row.get("product_baseline_method_version"),
     }
     weights = {name: float(value) for name, value in ResearchV2Weights().as_dict().items()}
     factor_details = [{
@@ -558,11 +823,11 @@ def live_stock(ticker_value: str) -> dict[str, Any]:
     } for name in V2_FACTORS]
     v2 = {
         "eligible": bool(row["v2_eligible"]), "score": row.get("research_v2_score"),
-        "sector_rank": row.get("research_v2_sector_rank"), "reason_code": row["v2_reason_code"],
+        "sector_rank": row.get("product_research_v2_sector_rank"), "reason_code": row["v2_reason_code"],
         "reason": row["v2_reason"],
         "factors": {name: row.get(name) for name in V2_FACTORS},
         "factor_details": factor_details,
-        "peer_count": _sector_peer_count(bundle.market, row, "v2_eligible"),
+        "peer_count": _sector_peer_count(product, row, "v2_eligible"),
         "plain_label": "Price + risk + fundamentals",
     }
     identity_columns = (
@@ -586,16 +851,26 @@ def live_stock(ticker_value: str) -> dict[str, Any]:
     def values(*names: str) -> dict[str, Any]:
         return {name: clean(fact.get(name)) for name in names}
 
-    is_financial = str(fact.get("official_sector", "")).strip().lower() in {
-        "financial services", "banking", "insurance",
-    }
-    has_screener_current = clean(fact.get("screener_current_status")) is not None
-    has_screener_workbook = bool(fact.get("screener_workbook_available"))
-    has_screener_ownership = any(clean(fact.get(name)) is not None for name in (
+    def observed(name: str) -> Any:
+        """Return the untouched source value when declaring evidence availability."""
+        return clean(original_fact.get(name))
+
+    def evidence_status(name: str) -> str:
+        """Never let an imputed status masquerade as observed source coverage."""
+        return str(observed(name) or "COMPLETION_ESTIMATE_ONLY")
+
+    def was_estimated(name: str) -> bool:
+        code = clean(estimate_row.get(f"estimate_code__{name}"))
+        return code is not None and int(code) != 0
+
+    is_financial = str(fact.get("complete_sector", "")).strip() in FINANCIAL_SECTORS
+    has_screener_current = clean(original_fact.get("screener_current_status")) is not None
+    has_screener_workbook = bool(original_fact.get("screener_workbook_available"))
+    has_screener_ownership = any(clean(original_fact.get(name)) is not None for name in (
         "screener_promoter_holding_pct", "screener_public_holding_pct",
         "screener_fii_holding_pct", "screener_dii_holding_pct",
     ))
-    same = fact_result.facts.loc[fact_result.facts["ticker"].ne(ticker)].copy()
+    same = product.loc[product["ticker"].ne(ticker)].copy()
     peer_basis = None
     for column, label in (("product_basic_industry", "product basic industry"),
                           ("product_industry", "product industry"),
@@ -610,8 +885,8 @@ def live_stock(ticker_value: str) -> dict[str, Any]:
     peer_view = peer_rows[[
         "ticker", "company", "product_sector", "product_industry",
         "latest_price", "product_baseline_eligible", "product_baseline_sector_rank", "v2_eligible",
-        "research_v2_sector_rank",
-    ]].rename(columns={"product_sector": "official_sector", "product_industry": "official_industry", "product_baseline_eligible": "baseline_eligible", "product_baseline_sector_rank": "baseline_sector_rank"})
+        "product_research_v2_sector_rank",
+    ]].rename(columns={"product_sector": "official_sector", "product_industry": "official_industry", "product_baseline_eligible": "baseline_eligible", "product_baseline_sector_rank": "baseline_sector_rank", "product_research_v2_sector_rank": "research_v2_sector_rank"})
     peers = _records(peer_view) if peer_basis else []
     for peer in peers:
         if peer.get('latest_price') is None:
@@ -620,53 +895,53 @@ def live_stock(ticker_value: str) -> dict[str, Any]:
             peer['price_date'] = clean(evidence.get('product_price_date'))
             peer['price_status'] = clean(evidence.get('product_price_status'))
     facts = {
-        "schema_version": fact_result.manifest["schema_version"],
-        "fingerprint": fact_result.manifest["fingerprint"],
+        "schema_version": completion_summary["schema_version"],
+        "fingerprint": completion_manifest["fingerprint"],
         "overview": {
             "status": "CANONICAL_IDENTITY_VERIFIED",
             "values": values("ticker", "company", "isin", "primary_exchange", "exchange_security_id", "series", "listing_date", "identity_status"),
         },
         "classification": {
-            "status": clean(fact.get("product_classification_evidence")),
-            "reason": clean(fact.get("classification_reason")),
+            "status": "COMPLETION_INFERRED_CLASSIFICATION" if was_estimated("product_sector") else evidence_status("product_classification_evidence"),
+            "reason": ("Completion-layer sector assignment; see Estimate Provenance for method and confidence. " if was_estimated("product_sector") else "") + str(clean(fact.get("classification_reason")) or ""),
             "values": values("product_classification_version", "product_sector", "product_industry", "product_basic_industry", "product_classification_evidence", "product_classification_source", "product_classification_as_of", "official_sector", "official_industry", "official_basic_industry", "official_classification_source", "secondary_sector", "secondary_industry", "screener_industry_group", "screener_industry", "size_segment"),
             "professor_taxonomy_is_separate": True,
         },
         "market_data": {
-            "status": "LATEST_ACCEPTED_EOD" if clean(fact.get("latest_price")) is not None else (clean(fact.get("product_price_status")) or "NO_ACCEPTED_CURRENT_TRADE"),
+            "status": "LATEST_ACCEPTED_EOD" if observed("latest_price") is not None else (observed("product_price_status") or "NO_ACCEPTED_CURRENT_TRADE"),
             "reason": f"Latest accepted official trade date: {row.get('trade_date')}; market snapshot date: {fact.get('trade_date')}",
             "values": {**values("trade_date", "latest_price", "previous_close", "day_change", "day_change_pct", "open", "high", "low", "volume", "traded_value", "transaction_count"),
                        "trade_date": clean(row.get("trade_date")), "latest_price": clean(row.get("latest_price")),
                        **values("product_price_source", "product_price_source_sha256", "product_price_identity_evidence")},
         },
         "price_history": {
-            "status": clean(fact.get("history_status")), "reason": clean(fact.get("history_reason")),
+            "status": evidence_status("history_status"), "reason": observed("history_reason"),
             "values": values("history_start_date", "history_end_date", "history_observation_count", "history_1y_usable", "history_3y_usable", "history_5y_usable", "high_52w", "high_52w_date", "low_52w", "low_52w_date", "recorded_high", "recorded_high_date", "history_price_basis", "corporate_action_history_status"),
         },
         "valuation": {
-            "status": clean(fact.get("valuation_status")), "reason": clean(fact.get("valuation_reason")),
+            "status": evidence_status("valuation_status"), "reason": observed("valuation_reason"),
             "values": values("market_cap", "shares_outstanding", "pe_ratio", "pb_ratio", "trailing_eps", "book_value", "dividend_yield", "beta", "official_market_cap", "official_pe_ratio", "official_pb_ratio", "screener_market_cap_crore", "screener_current_price", "screener_pe_ratio", "screener_pb_ratio", "screener_dividend_yield_pct", "screener_eps", "official_ratio_formula_version", "official_ratio_reporting_basis"),
         },
         "company_profile_secondary_reference": {
-            "status": clean(fact.get("secondary_identity_status")),
-            "reason": clean(fact.get("secondary_reason")),
+            "status": evidence_status("secondary_identity_status"),
+            "reason": observed("secondary_reason"),
             "values": values("company_profile", "secondary_sector", "secondary_industry", "secondary_source", "secondary_source_as_of", "secondary_freshness_status"),
         },
         "quarterly_results": {
-            "status": "SCREENER_STANDALONE_HISTORY_AVAILABLE" if has_screener_workbook else clean(fact.get("quarterly_results_status")),
+            "status": "SCREENER_STANDALONE_HISTORY_AVAILABLE" if has_screener_workbook else evidence_status("quarterly_results_status"),
             "reason": "Official exchange XBRL facts remain first; accepted exact-ISIN Screener current and standalone history are separately labelled and do not alter historical PIT eligibility.",
-            "values": values("official_quarterly_period_end", "official_quarterly_reporting_basis", "official_quarterly_revenue", "official_quarterly_pat", "screener_latest_quarter_sales_crore", "screener_latest_quarter_pat_crore", "screener_quarterly_sales_growth_pct", "screener_quarterly_profit_growth_pct", "secondary_quarterly_period_end", "secondary_quarterly_revenue", "secondary_quarterly_net_income", "secondary_reporting_basis"),
+            "values": values("official_quarterly_period_end", "official_quarterly_reporting_basis", "official_quarterly_revenue", "official_quarterly_pat", "screener_latest_quarter_sales_crore", "screener_latest_quarter_operating_profit_crore", "screener_latest_quarter_pat_crore", "screener_latest_quarter_opm_pct", "screener_latest_quarter_npm_pct", "screener_latest_quarter_eps", "screener_last_result_date", "screener_quarterly_sales_growth_pct", "screener_quarterly_profit_growth_pct", "secondary_quarterly_period_end", "secondary_quarterly_revenue", "secondary_quarterly_net_income", "secondary_reporting_basis"),
         },
         "annual_financials": {
-            "status": "NORMALIZED_OFFICIAL_FACTS_AVAILABLE" if clean(fact.get("official_annual_period_end")) else ("SCREENER_STANDALONE_HISTORY_AVAILABLE" if bool(fact.get("screener_historical_financials_available")) else clean(fact.get("annual_report_status"))),
-            "reason": "Accepted official exchange XBRL facts are shown with their period and standalone/consolidated basis; audited annual-report and secondary evidence remain separately identified." if clean(fact.get("official_annual_period_end")) else clean(fact.get("annual_report_reason")),
-            "values": values("official_annual_period_end", "official_annual_reporting_basis", "official_annual_revenue", "official_annual_pat", "official_annual_eps", "annual_profit_current", "annual_profit_prior", "annual_profit_unit", "annual_profit_label", "annual_report_financial_year", "annual_report_reporting_basis", "fundamental_contract", "screener_sales_crore", "screener_profit_after_tax_crore", "screener_eps", "screener_historical_financials_available", "screener_workbook_available", "secondary_annual_period_end", "secondary_annual_revenue", "secondary_annual_ebitda", "secondary_annual_net_income", "secondary_annual_eps", "secondary_reporting_basis"),
+            "status": "NORMALIZED_OFFICIAL_FACTS_AVAILABLE" if observed("official_annual_period_end") else ("SCREENER_STANDALONE_HISTORY_AVAILABLE" if bool(original_fact.get("screener_historical_financials_available")) else evidence_status("annual_report_status")),
+            "reason": "Accepted official exchange XBRL facts are shown with their period and standalone/consolidated basis; audited annual-report and secondary evidence remain separately identified." if observed("official_annual_period_end") else observed("annual_report_reason"),
+            "values": values("official_annual_period_end", "official_annual_reporting_basis", "official_annual_revenue", "official_annual_pat", "official_annual_eps", "annual_profit_current", "annual_profit_prior", "annual_profit_unit", "annual_profit_label", "annual_report_financial_year", "annual_report_reporting_basis", "fundamental_contract", "screener_annual_sales_crore", "screener_annual_operating_profit_crore", "screener_annual_pat_crore", "screener_annual_opm_pct", "screener_annual_npm_pct", "screener_last_annual_result_date", "screener_prior_annual_sales_crore", "screener_prior_annual_pat_crore", "screener_sales_crore", "screener_profit_after_tax_crore", "screener_eps", "screener_historical_financials_available", "screener_workbook_available", "secondary_annual_period_end", "secondary_annual_revenue", "secondary_annual_ebitda", "secondary_annual_net_income", "secondary_annual_eps", "secondary_reporting_basis"),
         },
-        "balance_sheet": {"status": clean(fact.get("balance_sheet_status")), "reason": "Official exchange XBRL balance-sheet facts are shown first; secondary-provider fields retain their separate unspecified reporting basis.", "values": values("official_balance_period_end", "official_total_assets", "official_borrowings", "official_equity", "official_cash", "secondary_balance_period_end", "secondary_total_assets", "secondary_total_debt", "secondary_stockholders_equity", "secondary_cash_balance", "secondary_reporting_basis")},
-        "cash_flow": {"status": clean(fact.get("cash_flow_status")), "reason": "Official exchange XBRL operating cash flow is shown with its period; secondary-provider fields remain separately labelled.", "values": values("official_cash_flow_period_end", "official_operating_cash_flow", "secondary_cash_flow_period_end", "secondary_operating_cash_flow", "secondary_free_cash_flow", "secondary_capital_expenditure", "secondary_reporting_basis")},
+        "balance_sheet": {"status": evidence_status("balance_sheet_status"), "reason": "Official exchange XBRL balance-sheet facts are shown first; accepted Screener current/reference and secondary-provider fields remain separately labelled.", "values": values("official_balance_period_end", "official_total_assets", "official_borrowings", "official_equity", "official_cash", "screener_equity_capital_crore", "screener_reserves_crore", "screener_total_assets_crore", "screener_current_assets_crore", "screener_current_liabilities_crore", "screener_total_debt_crore", "screener_inventory_crore", "screener_trade_receivables_crore", "screener_contingent_liabilities_crore", "secondary_balance_period_end", "secondary_total_assets", "secondary_total_debt", "secondary_stockholders_equity", "secondary_cash_balance", "secondary_reporting_basis")},
+        "cash_flow": {"status": evidence_status("cash_flow_status"), "reason": "Official exchange XBRL operating cash flow is shown first; accepted Screener current/reference and secondary-provider fields remain separately labelled.", "values": values("official_cash_flow_period_end", "official_operating_cash_flow", "screener_operating_cash_flow_crore", "screener_free_cash_flow_crore", "screener_cash_from_investing_crore", "screener_cash_from_financing_crore", "screener_net_cash_flow_crore", "secondary_cash_flow_period_end", "secondary_operating_cash_flow", "secondary_free_cash_flow", "secondary_capital_expenditure", "secondary_reporting_basis")},
         "ratios_quality": {
-            "status": "STRICT_V2_FACTS_AVAILABLE" if bool(fact.get("v2_eligible")) else ("SCREENER_CURRENT_REFERENCE_AVAILABLE" if has_screener_current else ("FINANCIAL_INSTITUTION_CONVENTIONAL_RATIO_NOT_ASSUMED" if is_financial else "STRICT_RATIO_EVIDENCE_INCOMPLETE")),
-            "reason": "Accepted values use the audited standalone V2 contract; definitions are shown in Source Evidence." if bool(fact.get("v2_eligible")) else ("Accepted Screener current ratios are available for company research, but do not become historical PIT evidence without an official dissemination clock." if has_screener_current else ("Conventional industrial ROCE and leverage definitions are not silently imposed on a financial institution." if is_financial else "Missing ratios are not estimated from incompatible or unaudited evidence.")),
+            "status": "STRICT_V2_FACTS_AVAILABLE" if bool(original_fact.get("v2_eligible")) else ("SCREENER_CURRENT_REFERENCE_AVAILABLE" if has_screener_current else ("FINANCIAL_INSTITUTION_CONVENTIONAL_RATIO_NOT_ASSUMED" if is_financial else "STRICT_RATIO_EVIDENCE_INCOMPLETE")),
+            "reason": "Accepted values use the audited standalone V2 contract; definitions are shown in Source Evidence." if bool(original_fact.get("v2_eligible")) else ("Accepted Screener current ratios are available for company research, but do not become historical PIT evidence without an official dissemination clock." if has_screener_current else ("Conventional industrial ROCE and leverage definitions are not silently imposed on a financial institution." if is_financial else "Missing ratios are completed only in the explicitly coded completion view, not represented here as observed evidence.")),
             "values": values("roce", "debt_to_equity", "profit_growth_yoy", "screener_roce_pct", "screener_roe_pct", "screener_debt_to_equity", "screener_profit_growth_pct", "screener_sales_growth_pct", "screener_operating_margin_pct", "screener_return_on_assets_pct", "screener_current_ratio", "screener_interest_coverage", "screener_cash_conversion_quality", "screener_working_capital_days", "screener_debtor_days", "screener_inventory_days", "screener_asset_turnover", "official_return_on_equity", "official_debt_to_equity", "official_revenue_growth", "official_profit_growth_yoy", "official_net_margin", "official_ratio_formula_version", "official_ratio_reporting_basis", "return_on_equity", "secondary_debt_to_equity", "revenue_growth", "secondary_profit_growth", "operating_margin", "profit_margin"),
         },
         "screener_current_reference": {
@@ -704,19 +979,36 @@ def live_stock(ticker_value: str) -> dict[str, Any]:
                 "screener_industry_pe", "screener_earnings_yield_pct",
                 "screener_fii_holding_change_pct", "screener_dii_holding_change_pct",
                 "screener_promoter_holding_change_pct",
+                "screener_number_equity_shares_crore", "screener_book_value",
+                "screener_equity_capital_crore", "screener_reserves_crore",
+                "screener_total_assets_crore", "screener_current_assets_crore",
+                "screener_current_liabilities_crore", "screener_inventory_crore",
+                "screener_trade_receivables_crore", "screener_contingent_liabilities_crore",
+                "screener_cash_from_investing_crore", "screener_cash_from_financing_crore",
+                "screener_net_cash_flow_crore", "screener_annual_sales_crore",
+                "screener_annual_operating_profit_crore", "screener_annual_pat_crore",
+                "screener_annual_opm_pct", "screener_annual_npm_pct",
+                "screener_last_annual_result_date", "screener_prior_annual_sales_crore",
+                "screener_prior_annual_pat_crore", "screener_latest_quarter_operating_profit_crore",
+                "screener_latest_quarter_opm_pct", "screener_latest_quarter_npm_pct",
+                "screener_latest_quarter_eps", "screener_last_result_date",
+                "screener_volume", "screener_volume_1week_avg", "screener_volume_1month_avg",
+                "screener_high_price", "screener_low_price", "screener_all_time_high_price",
+                "screener_all_time_low_price", "screener_return_1d_pct",
+                "screener_return_1week_pct", "screener_return_1month_pct",
                 "screener_historical_financials_available", "screener_workbook_available",
                 "screener_source_observed_at", "screener_bundle_fingerprint",
             ),
         },
-        "shareholding": {"status": clean(fact.get("shareholding_status")) if clean(fact.get("shareholding_as_of")) else ("SCREENER_CURRENT_REFERENCE_AVAILABLE" if has_screener_ownership else clean(fact.get("shareholding_status"))), "reason": "Official Regulation 31 values are shown when present; accepted Screener ownership is a separately named current/reference fallback.", "values": values("shareholding_as_of", "promoter_holding_pct", "public_holding_pct", "fii_holding_pct", "dii_holding_pct", "promoter_pledge_pct", "official_total_shares", "screener_promoter_holding_pct", "screener_public_holding_pct", "screener_fii_holding_pct", "screener_dii_holding_pct", "screener_pledged_pct")},
+        "shareholding": {"status": observed("shareholding_status") if observed("shareholding_as_of") else ("SCREENER_CURRENT_REFERENCE_AVAILABLE" if has_screener_ownership else evidence_status("shareholding_status")), "reason": "Official Regulation 31 values are shown when present; accepted Screener ownership is a separately named current/reference fallback.", "values": values("shareholding_as_of", "promoter_holding_pct", "public_holding_pct", "fii_holding_pct", "dii_holding_pct", "promoter_pledge_pct", "official_total_shares", "screener_promoter_holding_pct", "screener_public_holding_pct", "screener_fii_holding_pct", "screener_dii_holding_pct", "screener_pledged_pct")},
         "peers": {"status": "EVIDENCE_MATCHED_PEERS" if peers else "NO_CLASSIFIED_PEER_SET", "reason": f"Peers share this security's {peer_basis}. Canonical ranks are not recalculated." if peer_basis else "No authoritative classification exists from which to form peers.", "basis": peer_basis, "rows": peers},
         "corporate_actions_announcements_documents": {
-            "status": clean(fact.get("documents_status")),
+            "status": evidence_status("documents_status"),
             "reason": "Official exchange actions and document metadata are indexed without downloading every linked document; all displayed links retain their source provenance.",
             "values": values("corporate_actions_status", "official_action_count", "latest_corporate_action_date", "announcements_status", "latest_document_type", "latest_document_date", "latest_document_url", "latest_document_source_sha256", "annual_report_source_url", "annual_report_pdf_sha256"),
         },
         "professor_reference": {
-            "status": "PROFESSOR_COHORT_EVIDENCE" if bool(fact.get("professor_cohort")) else "NOT_IN_PROFESSOR_COHORT",
+            "status": "PROFESSOR_COHORT_EVIDENCE" if bool(original_fact.get("professor_cohort")) else "NOT_IN_PROFESSOR_COHORT",
             "reason": "Professor taxonomy and ranks are displayed separately and never replace model sectors or ranks.",
             "values": values("professor_supplied_rank", "workbook_strategy_rank", "professor_industry", "professor_workbook_current_price", "professor_workbook_market_cap", "professor_workbook_cagr_10y", "professor_workbook_cagr_5y", "professor_workbook_cagr_3y", "professor_workbook_cagr_1y", "professor_evidence_status"),
         },
@@ -728,6 +1020,21 @@ def live_stock(ticker_value: str) -> dict[str, Any]:
             "status": "FROZEN_RESEARCH_SEPARATE",
             "reason": "Current fact refreshes do not modify frozen point-in-time experiments or their fingerprints.",
             "values": {},
+        },
+        "estimate_provenance": {
+            "status": "CELL_LEVEL_ESTIMATE_CODES_AVAILABLE",
+            "reason": (
+                "Observed facts remain in the accepted source snapshot. Values completed by the "
+                "model are identified here by field, method and confidence."
+            ),
+            "values": {
+                column.removeprefix("estimate_code__"): (
+                    f"{ESTIMATE_CODES[int(code)]['label']} · "
+                    f"{ESTIMATE_CODES[int(code)]['confidence']} confidence"
+                )
+                for column, code in estimate_row.items()
+                if column.startswith("estimate_code__") and int(code) != 0
+            },
         },
     }
     enrich_presentation(facts, fact)
@@ -752,5 +1059,7 @@ def live_stock(ticker_value: str) -> dict[str, Any]:
             )
         ),
         "bundle_fingerprint": bundle.fingerprint,
+        "completion_fingerprint": completion_manifest["fingerprint"],
+        "accepted_company_fact_fingerprint": fact_result.manifest["fingerprint"],
         "warning": "Latest available research snapshot; not investment advice.",
     }

@@ -83,7 +83,7 @@ def _candidate_records() -> list[tuple[dict[str, object], Path, Path]]:
     if SCREENER_BUNDLE_STATE.is_file():
         bundle = load_accepted_screener_data_bundle(
             SCREENER_BUNDLE_STATE,
-            include_history=False,
+            include_history=True,
             include_workbook_audit=True,
         )
         identity = bundle.market_master.set_index("isin", drop=False)
@@ -106,6 +106,41 @@ def _candidate_records() -> list[tuple[dict[str, object], Path, Path]]:
                 "contract_version": bundle.summary.get("schema_version"),
                 "accepted_bundle_fingerprint": bundle.fingerprint,
             }, workbook, bundle.root / "bundle_summary.json"))
+        # The latest batch audit describes only that batch, whereas normalized
+        # history is cumulative. Resolve older accepted payloads by their exact
+        # recorded hash, never by company-name similarity or a directory date.
+        indexed = {str(record[0].get("workbook_sha256")) for record in records}
+        candidates: dict[str, Path] = {}
+        for pattern_root, pattern in (
+            (SCREENER_BUNDLE_STATE.parent, "batches/*/workbooks/*/*.xlsx"),
+            (MARKETDATA_ROOT, "screener-historical-*/source_workbooks/**/*.xlsx"),
+        ):
+            for path in sorted(pattern_root.glob(pattern)):
+                digest = path.stem.split("__")[-1]
+                if len(digest) == 64:
+                    candidates.setdefault(digest, path)
+        historical = bundle.normalized_history
+        historical = historical.loc[
+            historical["reporting_basis"].eq(REPORTING_BASIS)
+            & historical["source_name"].eq("SCREENER_PREMIUM_COMPANY_EXPORT")
+        ]
+        for row in historical.drop_duplicates(["isin", "source_workbook_sha256"]).to_dict("records"):
+            isin, digest = str(row["isin"]), str(row["source_workbook_sha256"])
+            if digest in indexed or digest not in candidates:
+                continue
+            path = candidates[digest]
+            if sha256_file(path) != digest:
+                raise ValueError(f"cumulative Screener workbook hash mismatch: {digest}")
+            records.append(({
+                # Historical identities do not disappear merely because they
+                # are absent from today's market master.
+                "ticker": str(identity.loc[isin, "ticker"] if isin in identity.index else row["ticker"]), "isin": isin,
+                "reporting_basis": REPORTING_BASIS,
+                "source_observed_at": row["source_observed_at"],
+                "workbook_sha256": digest, "contract_version": row["contract_version"],
+                "accepted_bundle_fingerprint": bundle.fingerprint,
+            }, path, bundle.root / "bundle_summary.json"))
+            indexed.add(digest)
     if not MARKETDATA_ROOT.exists():
         return records
     for manifest_path in sorted(MARKETDATA_ROOT.glob("screener-historical-*/batch_manifest.json")):

@@ -178,10 +178,10 @@ def test_exact_bulk_classification_is_separate_and_does_not_override_official(tm
     )
     rows = result.facts.set_index("ticker")
     assert rows.loc["AAA", "official_sector"] == "Industrials"
-    assert rows.loc["AAA", "product_sector"] == "Industrials"
+    assert pd.isna(rows.loc["AAA", "product_sector"])
     assert rows.loc["AAA", "bulk_classification_sector"] == "Technology"
     assert rows.loc["BSE-2", "derived_research_sector"] == "Technology"
-    assert rows.loc["BSE-2", "product_sector"] == "Technology"
+    assert pd.isna(rows.loc["BSE-2", "product_sector"])
     assert rows.loc["BSE-2", "bulk_classification_identity_method"] == "EXACT_BSE_CODE_AND_ISIN"
 
 
@@ -192,7 +192,7 @@ def test_screener_bundle_enriches_current_product_by_exact_isin_without_changing
     pd.DataFrame([
         {
             "isin": "INE000A01001", "market_merge_status": "ACCEPTED",
-            "snapshot__Name": "AAA Limited", "snapshot__Industry Group": "Wrong override",
+            "snapshot__Name": "AAA Limited", "snapshot__Industry Group": "Industrial Manufacturing",
             "snapshot__Industry": "Industrial Machinery", "snapshot__Market Capitalization": 500,
             "snapshot__Return on capital employed": 21.5,
         },
@@ -216,7 +216,8 @@ def test_screener_bundle_enriches_current_product_by_exact_isin_without_changing
         market_fingerprint="b" * 64,
     )
     rows = result.facts.set_index("ticker")
-    assert rows.loc["AAA", "product_sector"] == "Industrials"
+    assert rows.loc["AAA", "product_sector"] == "Industrial Manufacturing"
+    assert rows.loc["AAA", "official_sector"] == "Industrials"
     assert rows.loc["AAA", "roce"] == pytest.approx(0.2)
     assert rows.loc["BSE-2", "product_sector"] == "Technology"
     assert rows.loc["BSE-2", "product_classification_evidence"] == "EXACT_ISIN_SCREENER_CURRENT_REFERENCE"

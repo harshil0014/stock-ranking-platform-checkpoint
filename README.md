@@ -4,12 +4,26 @@ The latest reconciled current-data counts and their exact cohort definitions
 are recorded in
 [docs/current_data_status_20260829.md](docs/current_data_status_20260829.md).
 
+The accepted universe now has a separate confidence-aware completion layer:
+all 4,436 identities have a sector, completed fields and a full-sector rank,
+with zero blank cells in the completed artifact. Every estimate is cell-coded
+and the original accepted snapshot is preserved unchanged. See
+[the complete-universe report](docs/complete_universe_completion_20260920.md).
+
+The final Complete Universe architecture was compared with pre-existing frozen
+Codex judgments across 3,987 independently orderable identities and 213,345
+within-scope pairs, with honestly measured agreement of 95.0158%. All 4,436
+identities have a stock-by-stock audit row; the 449 that lacked a pre-frozen
+independent order are reviewed but are not added to the agreement denominator. See
+[the complete internal ranking audit](docs/complete_internal_ranking_audit_20260918.md).
+
 An offline-first foundation for explainable Indian equity research. The
 long-term product will compare sectors, rank stocks inside each sector, create
 model portfolios, and evaluate them against benchmarks with scheduled
 rebalancing.
 
-The repository implements **Baseline V1** and the offline, point-in-time
+The repository implements the confidence-aware **Complete Universe** product
+ranking, preserves **Baseline V1**, and retains the offline, point-in-time
 **Research V2** scoring engine. A separate isolated adapter can acquire and
 freeze real historical prices; normal product execution never fetches them.
 The project does not rank sectors, construct portfolios, backtest results, or
@@ -52,7 +66,7 @@ ranking formula. See [the supplied-cohort audit](docs/professor_supplied_accepta
 
 ## Live Market and Research Lab website
 
-Launch the professor-facing offline demonstration from the repository root:
+Launch the read-only application locally from the repository root:
 
 ```powershell
 .\\.venv\\Scripts\\python.exe -m stock_ranker.webapp --port 8765
@@ -60,29 +74,62 @@ Launch the professor-facing offline demonstration from the repository root:
 
 Then open `http://127.0.0.1:8765/`. **LIVE MARKET** is the default practical
 screen; **RESEARCH LAB** preserves the frozen professor-facing evidence. The
-dependency-free local server binds only to loopback and reads prepared outputs without
-changing Baseline V1, Research V2, or walk-forward calculations. Its Overview,
+dependency-free server binds to loopback by default and reads prepared outputs without
+changing the accepted observed snapshot, Research V2, or walk-forward calculations. Its Overview,
 Rankings, Historical, Validation, Provenance, Methodology, and Status views are
-designed for a short professor or competition demonstration. See
+available both locally and in the permanent container deployment. See
 `docs/professor_competition_demo.md` for the walkthrough and artifact requirements.
 
 The legacy analysis API retains its committed **SYNTHETIC RESEARCH TEST**
 fixtures and canonical upload contracts for regression compatibility. The
-professor interface itself does not fabricate fallback values: unavailable or
-integrity-mismatched local artifacts produce a controlled status. Normal page
-navigation fetches no market data and makes no investment recommendation.
+Complete Universe estimates are always labelled through cell-level provenance
+and never overwrite observed facts. Integrity-mismatched local artifacts still
+produce a controlled status. Normal page navigation fetches no market data and
+makes no investment recommendation.
 
 LIVE MARKET resolves an atomic accepted-state pointer under the ignored
-`data/live_market/` evidence store. On startup it checks official NSE and BSE
-public EOD sources in an isolated background process; a failed or partial
+`data/live_market/` evidence store. Startup and hosted serving are read-only by
+default. Refresh is an explicit opt-in maintenance action; a failed or partial
 refresh cannot replace the last-known-good bundle. The accepted universe uses
 exact ISIN identity under `listed_ordinary_company_equity_v1`: company-issued
 ordinary equity only, with funds/ETFs, debt/government securities, preference
 and other non-equity securities, listed trusts, rights entitlements, and
 alternate/DVR classes excluded with an auditable reason. Dual listings are not
-duplicated and BSE-only names never receive invented NSE tickers. Unclassified
-or data-incomplete securities remain browsable and are never assigned invented
-ranks or fundamentals.
+duplicated and BSE-only names never receive invented NSE tickers. Previously
+unclassified or data-incomplete securities remain browsable and now receive
+confidence-adjusted ranks. Inferred sectors and completed fields are explicitly
+estimate-coded and never overwrite the accepted observed layer.
+
+The preserved pre-completion Baseline coverage uses explicit evidence routing. Securities
+with all four original inputs remain in the unchanged `PRIMARY_5Y` ranking.
+Shorter accepted histories may enter `REDUCED_3Y` (1Y growth, 3Y CAGR and high
+recency), `REDUCED_1Y` (1Y growth and high recency), or guarded
+`RECENCY_ONLY` rankings. Each reduced tier is ranked only against same-sector
+peers in that exact tier, carries a visible confidence label, and cannot change
+or compete directly with primary ranks. Recency-only admission requires at
+least 20 real observations spanning 30 calendar days. Missing classifications,
+unsafe price continuity, or shorter evidence remain unranked in that strict
+legacy view. The production Complete Universe layer ranks all accepted identities
+separately and labels every estimate. Neither route expands frozen historical or
+PIT eligibility.
+
+## Permanent hosting
+
+The supported permanent deployment is the read-only Docker Compose service in
+`compose.yaml`. It validates the frozen release fingerprints before starting,
+runs unprivileged with a read-only root filesystem, mounts large evidence stores
+read-only from durable host storage, and exposes `/api/health` as a fail-closed
+readiness probe.
+
+```sh
+cp .env.example .env
+docker compose build --pull
+docker compose up -d
+curl --fail http://127.0.0.1:8765/api/health
+```
+
+See [the permanent deployment runbook](docs/permanent_deployment.md) for evidence
+volume layout, TLS reverse-proxy requirements, refresh isolation and rollback.
 
 The same refresh can be run or inspected explicitly:
 

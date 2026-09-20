@@ -1,0 +1,26 @@
+{
+  "accepted_company_fingerprint": "4064dc5b0a12fc385150a08e23a61f230b0f2acfcee76e394c8e80cee48d741e",
+  "accepted_market_fingerprint": "98adc0296bff77fd44fc4c6815692a86033b14763d689791df14752550983eb1",
+  "as_of_date": "2026-09-18",
+  "deterministic_controls": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "20260730"
+  },
+  "latest_training_endpoint": "2026-08-31",
+  "outcomes_accessed_for_current_ranking": false,
+  "product_default": "baseline_v1",
+  "product_default_changed": false,
+  "ranked": 3713,
+  "research_status": "PROSPECTIVE_CANDIDATE",
+  "schema_version": "current_price_ensemble_v1",
+  "sectors": 58,
+  "selected_models": [
+    "ridge",
+    "price_multifactor_signal"
+  ],
+  "source_locked_test_fingerprint": "5ef4e829a279a2fad397d9d6c0635eaf743e9fb37bdb45ab9298bdd6b1c1fafd",
+  "training_rows": 197822
+}

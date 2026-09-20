@@ -143,7 +143,7 @@ def test_methodology_keeps_original_paper_and_project_extension_distinct() -> No
 def test_status_and_limitations_report_accepted_milestone_not_live_test_claim() -> None:
     data = research_website.status()
     assert data["robustness_audit"] == "PASS"
-    assert data["accepted_test_milestone"] == "324 passed"
+    assert data["accepted_test_milestone"] == "FULL RELEASE SUITE PASS"
     assert set(data["checks"].values()) == {"PASS"}
     assert data["blind_reproduction"] == "46 files, byte-identical"
     assert data["evaluation_reproduction"] == "9 files, byte-identical"
@@ -152,7 +152,7 @@ def test_status_and_limitations_report_accepted_milestone_not_live_test_claim() 
     assert data["plain_checks"] == [
         "No future information enters historical rankings.",
         "No company is silently replaced by a successor.",
-        "Missing data is excluded rather than guessed.",
+        "Every completion estimate is labelled and the original missing state is preserved.",
         "Repeated runs reproduce identical research artifacts.",
     ]
 
@@ -186,6 +186,9 @@ def test_spa_contains_all_views_primary_before_secondary_and_visible_limits() ->
     assert "VISIBLE LIMITATIONS" in INDEX_HTML
     assert "Original-paper signals" not in APP_JS  # supplied by the canonical backend adapter
     assert "grid-template-columns" in STYLES_CSS
+    assert 'id="liveCandidate"' in INDEX_HTML
+    assert "PROSPECTIVE CANDIDATE" in APP_JS
+    assert "/api/research/model-candidates?ticker=" in APP_JS
     prohibited = ("guaranteed returns", "AI predicts winning stocks", "profitable strategy", "V2 proved superior")
     rendered = (INDEX_HTML + APP_JS).lower()
     assert not any(term.lower() in rendered for term in prohibited)
@@ -207,6 +210,7 @@ def test_http_routes_and_research_apis_smoke() -> None:
             "/api/research/historical?year=2025", "/api/research/validation",
             "/api/research/provenance?ticker=HINDUNILVR",
             "/api/research/methodology", "/api/research/status",
+            "/api/research/model-candidates?ticker=RELIANCE",
         ):
             with urlopen(base + route, timeout=20) as response:
                 assert response.status == 200

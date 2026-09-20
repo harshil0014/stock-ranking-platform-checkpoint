@@ -1,0 +1,38 @@
+{
+  "0": {
+    "confidence": "OBSERVED",
+    "label": "OBSERVED"
+  },
+  "1": {
+    "confidence": "MODERATE",
+    "label": "SECTOR_MEDIAN_OR_MODE"
+  },
+  "2": {
+    "confidence": "LOW",
+    "label": "UNIVERSE_MEDIAN_OR_MODE"
+  },
+  "3": {
+    "confidence": "VERY_LOW",
+    "label": "EXPLICIT_MODEL_FALLBACK"
+  },
+  "4": {
+    "confidence": "MODERATE",
+    "label": "INTERNAL_PROXY_FIELD"
+  },
+  "5": {
+    "confidence": "LOW",
+    "label": "CONFLICT_RECONSTRUCTION"
+  },
+  "6": {
+    "confidence": "MODERATE",
+    "label": "EXACT_INTERNAL_TAXONOMY_MAPPING"
+  },
+  "7": {
+    "confidence": "LOW",
+    "label": "NAME_TOKEN_TAXONOMY_MODEL"
+  },
+  "8": {
+    "confidence": "MODEL_DERIVED",
+    "label": "COMPLETE_UNIVERSE_DERIVED_RANK"
+  }
+}

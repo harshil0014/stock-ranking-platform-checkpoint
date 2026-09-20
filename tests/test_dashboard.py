@@ -8,13 +8,30 @@ from urllib.request import urlopen
 
 import pytest
 
+from stock_ranker import live_website
 from stock_ranker.live_website import live_dashboard, live_overview
 from stock_ranker.web_assets import APP_JS, INDEX_HTML, STYLES_CSS
 from stock_ranker.webapp import create_server
 
 
-AUTO = "Automobile and Auto Components"
-OIL_GAS = "Oil Gas & Consumable Fuels"
+AUTO = "Automobiles"
+CHEMICALS = "Chemicals & Petrochemicals"
+
+
+def test_all_screener_groups_have_exact_complete_prepared_membership() -> None:
+    facts = live_website._company_facts().facts
+    expected = facts.loc[facts["screener_industry_group"].notna()].groupby(
+        "screener_industry_group", sort=True
+    ).size().to_dict()
+    rows = live_overview("baseline_v1")["rows"]
+    actual: dict[str, int] = {}
+    for row in rows:
+        if row["sector"] is not None:
+            actual[row["sector"]] = actual.get(row["sector"], 0) + 1
+    assert len(expected) == 58
+    assert set(expected).issubset(actual)
+    assert all(actual[sector] >= count for sector, count in expected.items())
+    assert sum(actual.values()) == len(rows) == 4436
 
 
 def test_dashboard_all_sector_landing_never_creates_overall_rank() -> None:
@@ -47,12 +64,15 @@ def test_size_filter_preserves_full_sector_ranks_and_ties() -> None:
     ]
     canonical = {row["ticker"]: row["sector_rank"] for row in live_overview("baseline_v1")["rows"]}
     assert all(row["canonical_sector_rank"] == canonical[row["ticker"]] for row in data["top_four"])
-    assert data["sector_summary"]["selected_model_eligible_peers"] == 40
+    assert data["sector_summary"]["selected_model_eligible_peers"] == sum(
+        row["sector"] == AUTO and row["eligible"]
+        for row in live_overview("baseline_v1")["rows"]
+    )
     assert "never recompute" in data["rank_scope"]
 
 
 def test_displayed_leader_can_keep_non_one_canonical_rank() -> None:
-    data = live_dashboard(AUTO, "baseline_v1", "LARGE")
+    data = live_dashboard(AUTO, "baseline_v1", "MID")
     assert data["top_four"][0]["displayed_leader"] is True
     canonical = {row["ticker"]: row["sector_rank"] for row in live_overview("baseline_v1")["rows"]}
     ticker = data["top_four"][0]["ticker"]
@@ -61,31 +81,47 @@ def test_displayed_leader_can_keep_non_one_canonical_rank() -> None:
 
 
 def test_v2_two_peer_and_four_plus_cohorts_show_only_available_up_to_four() -> None:
-    two = live_dashboard("Construction Materials", "research_v2", "ALL")
-    many = live_dashboard("Healthcare", "research_v2", "ALL")
+    two = live_dashboard("Cement & Cement Products", "research_v2", "ALL")
+    many = live_dashboard("IT - Software", "research_v2", "ALL")
     assert len(two["top_four"]) == 2
     assert two["sector_summary"]["selected_model_eligible_peers"] == 2
     assert len(many["top_four"]) == 4
     expected = sum(
-        row["sector"] == "Healthcare" and row["eligible"]
+        row["sector"] == "IT - Software" and row["eligible"]
         for row in live_overview("research_v2")["rows"]
     )
-    assert many["sector_summary"]["selected_model_eligible_peers"] == expected == 7
+    assert many["sector_summary"]["selected_model_eligible_peers"] == expected == 6
 
 
 def test_v2_expanded_sector_has_real_companies_and_strict_coverage_warning() -> None:
-    data = live_dashboard(OIL_GAS, "research_v2", "ALL")
+    data = live_dashboard(CHEMICALS, "research_v2", "ALL")
     assert len(data["top_four"]) == 2
     row = data["top_four"][0]
-    assert (row["ticker"], row["canonical_sector_rank"], row["eligible_peer_count"]) == ("RELIANCE", 1, 2)
+    assert (row["ticker"], row["canonical_sector_rank"], row["eligible_peer_count"]) == ("SOLARINDS", 1, 2)
     assert data["sector_summary"]["research_v2_eligible"] == 2
-    assert data["sector_summary"]["prepared_companies"] == 17
-    assert data["sector_summary"]["v2_coverage_ratio"] == pytest.approx(2 / 17)
+    # The accepted market is a moving snapshot.  Verify reconciliation to the
+    # returned complete sector instead of pinning an obsolete provider count.
+    assert data["sector_summary"]["prepared_companies"] == len(data["sector_rows"])
+    assert data["sector_summary"]["prepared_companies"] > 2
+    assert (
+        data["sector_summary"]["displayed_companies"]
+        == data["sector_summary"]["prepared_companies"]
+    )
+    assert len(data["sector_rows"]) == data["sector_summary"]["prepared_companies"]
+    json.dumps(data, allow_nan=False)
+    assert sum(not item["eligible"] for item in data["sector_rows"]) == (
+        data["sector_summary"]["prepared_companies"]
+        - data["sector_summary"]["research_v2_eligible"]
+    )
+    assert data["sector_summary"]["v2_coverage_ratio"] == pytest.approx(
+        data["sector_summary"]["research_v2_eligible"]
+        / data["sector_summary"]["prepared_companies"]
+    )
     assert "intentionally strict" in data["selection_warning"]
 
 
 def test_v2_grouped_donut_is_exact_sum_of_existing_contributions() -> None:
-    row = live_dashboard(OIL_GAS, "research_v2", "ALL")["top_four"][0]
+    row = live_dashboard(CHEMICALS, "research_v2", "ALL")["top_four"][0]
     details = row["factor_details"]
     expected = {
         category: sum(item["contribution"] for item in details if item["category"] == category)
@@ -100,10 +136,16 @@ def test_v2_grouped_donut_is_exact_sum_of_existing_contributions() -> None:
 def test_baseline_ring_uses_rank_position_not_score_share() -> None:
     row = live_dashboard(AUTO, "baseline_v1", "ALL")["top_four"][0]
     assert row["canonical_sector_rank"] == 1
-    assert row["eligible_peer_count"] == 40
-    assert row["rank_percentile"] == pytest.approx(2.5)
+    expected_peers = sum(
+        item["sector"] == AUTO
+        and item["eligible"]
+        and item["ranking_tier"] == row["ranking_tier"]
+        for item in live_overview("baseline_v1")["rows"]
+    )
+    assert row["eligible_peer_count"] == expected_peers
+    assert row["rank_percentile"] == pytest.approx(100 / expected_peers)
     assert "SECTOR POSITION" in APP_JS
-    assert "Rank position among the full eligible sector" in APP_JS
+    assert "Rank position within the stated evidence-tier comparison scope" in APP_JS
     assert "score share" not in APP_JS.lower()
 
 

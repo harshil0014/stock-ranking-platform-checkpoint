@@ -1,0 +1,20 @@
+{
+  "artifacts": [
+    {
+      "path": "provenance.json",
+      "sha256": "ce6e56fbccf869458268143ccb45e18fe845bc292b51adaa254c2b562385f6e2",
+      "size": 317146
+    },
+    {
+      "path": "rankings.csv",
+      "sha256": "61511b2f93adf12c54ce2f234fece3fe97a13e77174bca872d6c43355539c0db",
+      "size": 1812590
+    },
+    {
+      "path": "summary.json",
+      "sha256": "452fd7f41d2c95e3c0f27f7dff106ebe486efa926e2d8d262f0741a7da1bf733",
+      "size": 950
+    }
+  ],
+  "fingerprint": "1c7cc263bb24fdc9c09f553cc828c09d5069b914d90bd89d6e266e70f66c853e"
+}

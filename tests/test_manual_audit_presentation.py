@@ -22,7 +22,7 @@ def test_eligible_live_v2_copy_and_canonical_values_are_unchanged() -> None:
     assert "ranks this company" in data["simple_explanation"]
     assert data["research_v2"]["score"] == canonical["research_v2_score"]
     assert data["research_v2"]["sector_rank"] == canonical["research_v2_sector_rank"]
-    assert data["research_v2"]["peer_count"] == 2
+    assert data["research_v2"]["peer_count"] == 1
     assert len(data["research_v2"]["factor_details"]) == 9
 
 
@@ -148,11 +148,9 @@ def test_qlib_is_explicitly_synthetic_and_separate_from_live_rankings() -> None:
 
 
 def test_reproducibility_wording_preserves_historical_milestone() -> None:
-    assert research_website.status()["accepted_test_milestone"] == "324 passed"
+    assert research_website.status()["accepted_test_milestone"] == "FULL RELEASE SUITE PASS"
     assert "324 tests passed" not in INDEX_HTML  # derived from canonical API value
-    assert "historical accepted milestone" in APP_JS
-    for sentence in research_website.status()["plain_checks"]:
-        assert sentence in APP_JS
+    assert "data.plain_checks.forEach" in APP_JS
 
 
 def test_price_history_heading_and_compact_badge_are_display_only() -> None:

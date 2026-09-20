@@ -1,0 +1,17 @@
+{
+  "schema_version": "broad_chronological_price_ml_protocol_v1",
+  "created_before_evaluation": true,
+  "decision_months": {"start": "2020-08", "end": "2025-08"},
+  "development_end": "2023-08-31",
+  "validation": {"start": "2023-09-01", "end": "2024-08-31"},
+  "locked_test": {"start": "2024-09-01", "end": "2025-08-31"},
+  "primary_horizon_months": 12,
+  "identity": "exact accepted ISIN",
+  "universe": "accepted current ordinary-equity universe filtered by listing/history start at each decision",
+  "primary_metric": "equal-weight mean sector-date Spearman Rank IC",
+  "feature_policy": "price observations dated on or before each decision only",
+  "training_policy": "expanding; labels admitted only after their complete sector-date endpoint is strictly before prediction date",
+  "selection_policy": "select the two highest positive validation mean-Rank-IC challengers and average their within-sector percentiles; locked-test results cannot change selection",
+  "candidates": ["mom12_1", "mom6_1", "price_multifactor", "ridge", "extra_trees", "lightgbm_regression", "lightgbm_lambdarank"],
+  "promotion_boundary": "current-survivor membership and current sector labels make this supplementary; production promotion requires prospective or true point-in-time universe confirmation"
+}

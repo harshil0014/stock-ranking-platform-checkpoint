@@ -67,6 +67,11 @@ def test_statement_index_includes_every_accepted_exact_isin_workbook() -> None:
         ).is_file()
     )
     assert expected <= identities
+    cumulative = accepted.normalized_history
+    workbook_isins = set(cumulative.loc[
+        cumulative["source_name"].eq("SCREENER_PREMIUM_COMPANY_EXPORT"), "isin"
+    ])
+    assert workbook_isins <= identities
 
 
 def test_live_stock_includes_same_validated_statement_history() -> None:

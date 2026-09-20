@@ -1,0 +1,16 @@
+{
+  "artifacts": [
+    {
+      "path": "sector_website_audit.csv",
+      "sha256": "e45213f2e567a784445226ccfa783b89bf56e019c446ca6aca8934b4186d27fc",
+      "size": 1793
+    },
+    {
+      "path": "summary.json",
+      "sha256": "06630567c3483e8d924c525eb0fe50f43add2a493289dcf8f23720895c64c028",
+      "size": 572
+    }
+  ],
+  "fingerprint": "ac53af0996ff239ec735ffbbbe8c9172fa136f17a80b5bb3d2af17806973c319",
+  "schema_version": "release_website_exhaustive_audit_manifest_v1"
+}

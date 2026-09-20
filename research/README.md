@@ -4,6 +4,11 @@ This directory contains source-controlled contracts, provenance, environment
 specifications, adoption controls, and fictional examples. Generated reports,
 manifests, model files, caches, cloned repositories, and datasets are ignored.
 
+The additive model-neutral foundation is described in
+[`../docs/common_research_platform.md`](../docs/common_research_platform.md).
+Its per-feature evidence clocks and execution registry let native and isolated
+models share validated data without promoting current-only facts into history.
+
 The `stock-research` executable runs in the main Python 3.13 environment and
 does not import Qlib. Qlib is confined to `.venv-qlib`, created only by
 `environment/setup.ps1` when Python 3.12 is available.
@@ -12,6 +17,8 @@ Quick validation:
 
 ```powershell
 stock-research registry-validate
+stock-research model-registry-validate
+stock-research current-feature-export --output research\generated\current-feature-evidence.csv
 stock-research contract-validate --kind features --input research\examples\features.csv
 stock-research contract-validate --kind labels --input research\examples\labels.csv
 stock-research contract-validate --kind split --input research\examples\split.json
@@ -19,6 +26,11 @@ stock-research environment-inspect
 stock-research reproduce-qlib-linear --dry-run
 stock-research reproduce-qlib-lightgbm --dry-run
 ```
+
+The current candidate-production gate is frozen without outcomes by
+`marketdata/runners/freeze_prospective_models.py`. It evaluates strict Mom12m
+and a fixed Baseline/Mom12m blend later, after genuinely unseen horizons
+mature. It does not change the website default.
 
 See `docs/evaluation_methodology.md`, `docs/open_source_policy.md`, and
 `adoption/qlib_models.md` before adding an experiment.

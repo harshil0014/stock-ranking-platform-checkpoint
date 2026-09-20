@@ -1,8 +1,9 @@
-"""Dependency-free localhost server for the stock-ranking demonstration."""
+"""Dependency-free read-only server for the stock-ranking product."""
 
 from __future__ import annotations
 
 import argparse
+import os
 from pathlib import Path
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -16,6 +17,7 @@ from stock_ranker.market_refresh import MarketRefreshController, RefreshAlreadyR
 from stock_ranker.live_website import (
     LiveWebsiteError,
     company_facts_coverage,
+    deployment_health,
     live_dashboard,
     live_data_status,
     live_history,
@@ -26,6 +28,7 @@ from stock_ranker.research_website import (
     ResearchWebsiteError,
     historical,
     methodology,
+    model_candidates,
     overview,
     professor_acceptance,
     professor_reference,
@@ -45,7 +48,7 @@ MAX_REQUEST_BYTES = 30 * 1024 * 1024
 class ResearchWebsiteHandler(BaseHTTPRequestHandler):
     """Serve static assets and the in-process canonical analysis endpoint."""
 
-    server_version = "StockRankingLocal/1.0"
+    server_version = "StockRankingPlatform/1.0"
 
     def _refresh_controller(self) -> MarketRefreshController:
         return self.server.refresh_controller  # type: ignore[attr-defined]
@@ -84,10 +87,20 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
             "/styles.css": (STYLES_CSS, "text/css; charset=utf-8"),
         }
         if path == "/api/health":
-            self._json(HTTPStatus.OK, {"status": "ok", "service": "stock-ranking-website"})
+            try:
+                self._json(HTTPStatus.OK, deployment_health())
+            except (FileNotFoundError, KeyError, TypeError, ValueError, json.JSONDecodeError) as exc:
+                self._json(HTTPStatus.SERVICE_UNAVAILABLE, {
+                    "status": "not_ready", "service": "stock-ranking-website",
+                    "ready": False, "error": type(exc).__name__,
+                })
             return
         if path == "/api/live/refresh-status":
-            self._json(HTTPStatus.OK, self._refresh_controller().status())
+            payload = self._refresh_controller().status()
+            payload["enabled"] = bool(self.server.refresh_enabled)  # type: ignore[attr-defined]
+            if not payload["enabled"]:
+                payload["message"] = "Refresh disabled in read-only deployment"
+            self._json(HTTPStatus.OK, payload)
             return
         live_routes = {
             "/api/live/dashboard": lambda: live_dashboard(
@@ -125,6 +138,7 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
             "/api/research/provenance": lambda: research_provenance(query.get("ticker", [""])[0]),
             "/api/research/methodology": lambda: methodology(),
             "/api/research/status": lambda: research_status(),
+            "/api/research/model-candidates": lambda: model_candidates(query.get("ticker", [""])[0]),
             "/api/research/quant-lab": lambda: quant_lab(),
             "/api/research/professor-reference": lambda: professor_reference(
                 query.get("sector", [""])[0]
@@ -154,6 +168,13 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
     def do_POST(self) -> None:  # noqa: N802 - required by BaseHTTPRequestHandler
         path = urlparse(self.path).path
         if path == "/api/live/refresh":
+            if not self.server.refresh_enabled:  # type: ignore[attr-defined]
+                self._json(HTTPStatus.FORBIDDEN, {
+                    "status": "DISABLED", "running": False,
+                    "last_known_good_retained": True,
+                    "message": "Market refresh is disabled in this read-only deployment.",
+                })
+                return
             try:
                 self._json(HTTPStatus.ACCEPTED, self._refresh_controller().start())
             except RefreshAlreadyRunning as exc:
@@ -193,17 +214,19 @@ def create_server(
     port: int = 8765,
     *,
     refresh_controller: MarketRefreshController | None = None,
+    refresh_enabled: bool = True,
 ) -> ThreadingHTTPServer:
-    """Create, but do not start, the local website server."""
+    """Create, but do not start, the website server."""
 
-    if host not in {"127.0.0.1", "localhost"}:
-        raise ValueError("host must be localhost or 127.0.0.1")
+    if host not in {"127.0.0.1", "localhost", "0.0.0.0", "::"}:
+        raise ValueError("host must be localhost, 127.0.0.1, 0.0.0.0, or ::")
     if isinstance(port, bool) or not isinstance(port, int) or not 0 <= port <= 65535:
         raise ValueError("port must be an integer from 0 through 65535")
     server = ThreadingHTTPServer((host, port), ResearchWebsiteHandler)
     server.refresh_controller = refresh_controller or MarketRefreshController(  # type: ignore[attr-defined]
         Path(__file__).resolve().parents[2]
     )
+    server.refresh_enabled = refresh_enabled  # type: ignore[attr-defined]
     return server
 
 
@@ -226,19 +249,26 @@ def start_background_refresh(
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Serve the local Indian equity research website.")
-    parser.add_argument("--port", type=int, default=8765)
-    parser.add_argument("--no-auto-refresh", action="store_true")
+    parser.add_argument("--host", default=os.environ.get("HOST", "127.0.0.1"))
+    parser.add_argument("--port", type=int, default=int(os.environ.get("PORT", "8765")))
+    parser.add_argument("--auto-refresh", action="store_true", help="Opt in to one startup refresh check.")
+    parser.add_argument("--enable-refresh-api", action="store_true", help="Enable mutable refresh endpoints.")
+    parser.add_argument("--no-auto-refresh", action="store_true", help=argparse.SUPPRESS)
     args = parser.parse_args(argv)
     try:
         controller = MarketRefreshController(Path(__file__).resolve().parents[2])
-        server = create_server(port=args.port, refresh_controller=controller)
+        server = create_server(
+            host=args.host, port=args.port, refresh_controller=controller,
+            refresh_enabled=args.enable_refresh_api,
+        )
     except (OSError, ValueError) as exc:
         parser.error(str(exc))
-    url = f"http://127.0.0.1:{server.server_address[1]}"
-    refresh = None if args.no_auto_refresh else start_background_refresh(controller=controller)
+    url = f"http://{args.host}:{server.server_address[1]}"
+    should_refresh = args.auto_refresh and not args.no_auto_refresh
+    refresh = start_background_refresh(controller=controller) if should_refresh else None
     print(f"Indian Equity Research Platform: {url}", flush=True)
     print(
-        "Market refresh: disabled" if args.no_auto_refresh else
+        "Market refresh: disabled" if not should_refresh else
         "Market refresh: checking free public sources in the background",
         flush=True,
     )

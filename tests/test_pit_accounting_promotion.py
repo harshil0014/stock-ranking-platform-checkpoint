@@ -38,6 +38,24 @@ def test_negative_leverage_cannot_enter_candidate() -> None:
         validated_fundamental_candidates([_record(debt=-0.1)], ranking_date=date(2026, 8, 7))
 
 
+@pytest.mark.parametrize("clock,allowed", [("15:29:59", True), ("15:30:00", True), ("15:30:01", False), ("23:59:59", False)])
+def test_same_day_official_ist_cutoff(clock, allowed):
+    frame, accepted, deferred = validated_fundamental_candidates(
+        [_record(timestamp=f"07-AUG-2026 {clock}")], ranking_date=date(2026, 8, 7)
+    )
+    assert len(frame) == len(accepted) == int(allowed)
+    if not allowed:
+        assert deferred[0]["reason"] == "OFFICIAL_REPORT_AVAILABLE_AFTER_RANKING_CUTOFF"
+
+
+def test_previous_day_after_close_is_available():
+    frame, _, deferred = validated_fundamental_candidates(
+        [_record(timestamp="06-AUG-2026 23:59:59")], ranking_date=date(2026, 8, 7)
+    )
+    assert len(frame) == 1
+    assert deferred == []
+
+
 def test_candidate_merge_rejects_overlap_and_preserves_schema() -> None:
     existing = pd.DataFrame([["ABC", "2026-03-31", "2026-07-01", 0.1, 0.2, 0.3]], columns=FUNDAMENTAL_COLUMNS)
     with pytest.raises(ValueError, match="overlap"):
@@ -64,6 +82,10 @@ def test_promoted_spec_preserves_point_in_time_boundary(tmp_path) -> None:
     assert fundamentals["ticker"].tolist() == ["ABC"]
     assert identity["ticker"].tolist() == ["ABC"]
     assert deferred[0]["ticker"] == "LATE"
+
+    same_day, _, deferred = load_promoted_additions(path, ranking_date=date(2026, 8, 1))
+    assert same_day.empty
+    assert deferred[0]["reason"] == "OFFICIAL_DISSEMINATION_TIME_UNVERIFIED"
 
 
 def test_source_controlled_additions_are_exact_and_pit_filtered() -> None:
