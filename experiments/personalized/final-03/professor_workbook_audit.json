@@ -1,0 +1,21 @@
+{
+  "amount": 7500.0,
+  "cached_arithmetic_matches": 0,
+  "calendar_formula": "EOMONTH(Today(),-A4)",
+  "duplicate_display_rows": 0,
+  "interval_days": 30.0,
+  "lookback_months": 36.0,
+  "price_lookup_formula": "IFERROR(__xludf.DUMMYFUNCTION(\"if(C3=\"\"\"\",\"\"\"\", index(GOOGLEFINANCE($E$1,\"\"Close\"\",Workday(C3,-2),1),2))\"),\"#N/A\")",
+  "purchase_formula": "if(isblank(E3),\"\",if(isblank($B$1),ROUNDDOWN($D$1/E3,0),$B$1))",
+  "rank_basis": "profit/loss divided by actual amount spent; no target weight",
+  "rank_formula": "rank(I7,$I$7:$I$20)",
+  "source_is_instruction": false,
+  "target_cagr": 0.2,
+  "unknowns": [
+    "GoogleFinance live recalculation and exchange holiday behavior",
+    "Uncached/spilled execution-price cells",
+    "Corporate-action basis of cached prices",
+    "Delisting proceeds and historical membership"
+  ],
+  "workbook_sha256": "be2ab62fb41abd4769b5f5d8de7f3df04edc6cfa336bb0d2c5906fc6da2e980b"
+}

@@ -52,3 +52,5 @@ build/
 dist/
 .coverage
 htmlcov/
+experiments/personalized/run-01/
+experiments/personalized/run-02/

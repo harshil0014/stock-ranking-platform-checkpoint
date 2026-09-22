@@ -1,0 +1,145 @@
+{
+  "artifacts": [
+    {
+      "path": "candidate_summary.csv",
+      "sha256": "8813c71b6f937c79a281960f06cbb8b00619900cbefb571c5f5daf38b5d67fd9",
+      "size": 6189
+    },
+    {
+      "path": "current_amount10000.csv.gz",
+      "sha256": "d52f267b8ef063d6344b1131259c72d3f9293c2161f7919083fc5e9e647ff733",
+      "size": 565512
+    },
+    {
+      "path": "current_base.csv.gz",
+      "sha256": "aac74c5f88cf21bbc816bb1a6b087e8840b3703cc8aaf451993474f33e75f27a",
+      "size": 565236
+    },
+    {
+      "path": "current_existing_comparison.csv",
+      "sha256": "37d83694e242f44536e2f4320f57336c84a839015b57e6859322be50c31124c3",
+      "size": 414774
+    },
+    {
+      "path": "current_factor_correlation.csv",
+      "sha256": "807e39869737924d4df730b58f6faf1cc70a6a79c0628c6a9643e13b26895c59",
+      "size": 5302
+    },
+    {
+      "path": "current_factor_pair_counts.csv",
+      "sha256": "65e2a80ce1bae9a970be362aa126ec20790d53ac4d5eeea3ab6ef0414cca5d9a",
+      "size": 1771
+    },
+    {
+      "path": "current_horizon24.csv.gz",
+      "sha256": "6cd42446d25881c066edecdaf962824a86886f6e93d70ab5e18331ae44348dea",
+      "size": 563855
+    },
+    {
+      "path": "current_lookback12.csv.gz",
+      "sha256": "b040e1ee08669d88c2fbb4e95f4fa8222591921aeebe92fa61f3d8cfb4844972",
+      "size": 574135
+    },
+    {
+      "path": "current_lookback60.csv.gz",
+      "sha256": "73140fd082633c63709affeb9d1ddd7318844086f2202d217d66751f12194145",
+      "size": 545028
+    },
+    {
+      "path": "current_quarterly.csv.gz",
+      "sha256": "3b47d0ee72d8b59f3a7d0485cf1303c78baa471558b6580baa15a7d2103545c1",
+      "size": 565540
+    },
+    {
+      "path": "current_target10.csv.gz",
+      "sha256": "810fcda7e001096c7b816a03538d6779b6be276f21e4843b0a0d6dccde0f6bc4",
+      "size": 564336
+    },
+    {
+      "path": "current_target30.csv.gz",
+      "sha256": "7a519cb3f8250895e980fe10a9ff433e61e665fe479f832c9382b36d046a2567",
+      "size": 566359
+    },
+    {
+      "path": "current_weekly.csv.gz",
+      "sha256": "1291af5068a0bd1808576ee5a5ae7fdf9f71c9c558b41de1952def411905e869",
+      "size": 565769
+    },
+    {
+      "path": "development_panel.csv.gz",
+      "sha256": "9397ca859fd1f88c6d58ac7eaa26964ae1bde595b0d550b629f9d4088ccb0dc5",
+      "size": 25254628
+    },
+    {
+      "path": "double_counting.csv",
+      "sha256": "6a36f81aa909a300efe795e7bbf7e5640208f951af8d3956abab409ef980fa67",
+      "size": 165456
+    },
+    {
+      "path": "experiments.json",
+      "sha256": "74529f64fd631d39ee1753e0bd9b17b93c36a61c2620e234b4a2d77496e7df4f",
+      "size": 2403
+    },
+    {
+      "path": "inputs.json",
+      "sha256": "2d7c739f37f01da08a5c96a949f0f1ef90097f40c5ee5a24a94fd784906f12f1",
+      "size": 392087
+    },
+    {
+      "path": "professor_workbook_audit.json",
+      "sha256": "9e86eaec327c0e888b6a4aeaed77085596d55cc5837a102251985dfbfae90b69",
+      "size": 958
+    },
+    {
+      "path": "professor_workbook_benchmark.csv",
+      "sha256": "4cf47205f7ab0e463805fafefe1cc7ba0b5b0ada8adcec713b3c7e262c55410b",
+      "size": 2633
+    },
+    {
+      "path": "profile_sensitivity.csv",
+      "sha256": "77eeee264274842835d4e3c09ccc7a064b02807c484c8941583828a74703b461",
+      "size": 3027
+    },
+    {
+      "path": "protocol.json",
+      "sha256": "0c80154275ab3e4a15b79c584d13124b128bdb3f2c32bcfeec62aa81f4e60c0c",
+      "size": 4544
+    },
+    {
+      "path": "runtime.csv",
+      "sha256": "b77b853d734864adfee0e66fd7fdd993c31b6dab07b2f36e94f43da02718e4fb",
+      "size": 440
+    },
+    {
+      "path": "sector_stability.csv",
+      "sha256": "e8e6d0a60c63f3b318642e8ca40957becfcfb1d96ed22442c7a688c93ac2b366",
+      "size": 1521062
+    },
+    {
+      "path": "summary.json",
+      "sha256": "eff857aafffa701f73825e8512b498b70e145807468a07593bdb9e3726cabd5f",
+      "size": 1657
+    },
+    {
+      "path": "turnover.csv",
+      "sha256": "e3b4bf99581199cd0443af5e947306586acf9022163559dd0fbb43f58e590bad",
+      "size": 11564
+    },
+    {
+      "path": "uncertainty.csv",
+      "sha256": "b5a679d9999e9ff6d16495de567c9af1902f561c577314c4d013d22cc7b725c0",
+      "size": 3970
+    },
+    {
+      "path": "validation_metrics.csv",
+      "sha256": "1de43fc7988802dd97ec6ff72312752d193ba61bbdbdfb099888eda9d719599f",
+      "size": 144322
+    },
+    {
+      "path": "validation_predictions.csv.gz",
+      "sha256": "054c755f4032b15038e202c0f6c9f6b940bd5bc01ed5c5c1f13d8182070187f8",
+      "size": 18586651
+    }
+  ],
+  "fingerprint": "7a13390fcb5ce02f462d2ac2cffe790be87425ee2aad7a2cd624b872f2bc0040"
+}

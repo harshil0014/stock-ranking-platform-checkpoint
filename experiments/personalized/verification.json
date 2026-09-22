@@ -1,0 +1,13 @@
+{
+  "all_history_files_unchanged": 4374,
+  "full_artifact_hash_verification": true,
+  "manifest_sha256": "36b91109d739166e423d43b8c15a847388b1d05d43dd7eb542e9639d1f5a590b",
+  "production_branch_unchanged": "f4d178f84112babc2ef4d4eebafeaf77c6f55ea1",
+  "regenerated_panel_rows": 3072,
+  "sample_identities": 64,
+  "sample_seed": 20260922,
+  "scope": "Numerical/provenance verification, not investment-performance validation",
+  "seconds": 13.634247500001948,
+  "status": "PASS",
+  "universe": 4436
+}

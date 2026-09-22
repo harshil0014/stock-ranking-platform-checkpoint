@@ -1,0 +1,10 @@
+{
+  "runs": [
+    {"id": "run-01", "status": "FAIL", "stage": "development_panel_generation", "reason": "Terminal weekend contributions were incorrectly treated as missing executions; an all-unavailable result lacked expected metric columns. Fixed by retaining pending contributions as cash and supplying a stable missing-value schema.", "log": "logs/run-01.log", "local_artifacts_retained": true},
+    {"id": "run-02", "status": "RESEARCH ONLY", "stage": "completed_development_diagnostics", "reason": "Intermediate run retained as development evidence. It was not used to select model parameters. Source was evolving during the run, so its end-recorded source hashes are not claimed as a frozen execution provenance. Its dated numerical panel is an explicitly hashed input to final-03, independently checked on 3072 regenerated rows.", "log": "logs/run-02.log", "local_artifacts_retained": true},
+    {"id": "final-03", "status": "RESEARCH ONLY", "stage": "completed_frozen_source_replay", "reason": "Protocol persisted before evaluation; fixed Ridge/LambdaRank parameters and train-only correlation clusters. Baseline formula reconstructed with calendar-year anchors and complete-sector cohorts. No unseen test or production promotion.", "log": "logs/final-03.log", "artifacts": "final-03/manifest.json"}
+  ],
+  "test_logs": ["logs/existing-suite.log", "logs/final-suite.log"],
+  "verification": "verification.json",
+  "policy": "Intermediate bulky outputs remain local and ignored by Git; failure logs and this ledger are retained. Final inputs, outputs, predictions, metrics and fingerprints are versioned."
+}

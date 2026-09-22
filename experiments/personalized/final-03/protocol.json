@@ -1,0 +1,145 @@
+{
+  "checkpoint_commit": "f4d178f84112babc2ef4d4eebafeaf77c6f55ea1",
+  "historical_production_comparator": "Baseline V1 formula reconstructed on available current-survivor history; not archived historical production decisions",
+  "limitations": [
+    "Current-survivor universe",
+    "Current sector labels in retrospective diagnostics",
+    "Provider-adjusted histories, no verified delisting or total-return ledger",
+    "Historical quality and valuation unavailable in this new panel; no current fundamentals backfilled",
+    "Overlapping validation outcomes and rolling windows; no independent-probability claim",
+    "Asset drawdown and mean asset XIRR are not portfolio drawdown or portfolio XIRR"
+  ],
+  "locked_test_opened": false,
+  "model_parameters": {
+    "lambdarank_leaves": 7,
+    "lambdarank_trees": 60,
+    "ridge_alpha": 100,
+    "seed": 20260922
+  },
+  "outcome_status": "PREVIOUSLY_EXPOSED_HISTORY_DEVELOPMENT_ONLY",
+  "professor_style_comparator": "Fractional historical profit/loss proxy; verified whole-share workbook arithmetic is separate and cannot be populated from unusable purchase caches",
+  "profiles": {
+    "amount10000": {
+      "amount": 10000,
+      "fee_bps": 0,
+      "fixed_fee": 0,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "max_price_gap_days": 7,
+      "target_cagr": 0.2,
+      "whole_shares": false
+    },
+    "base": {
+      "amount": 7500,
+      "fee_bps": 0,
+      "fixed_fee": 0,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "max_price_gap_days": 7,
+      "target_cagr": 0.2,
+      "whole_shares": false
+    },
+    "horizon24": {
+      "amount": 7500,
+      "fee_bps": 0,
+      "fixed_fee": 0,
+      "horizon_months": 24,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "max_price_gap_days": 7,
+      "target_cagr": 0.2,
+      "whole_shares": false
+    },
+    "lookback12": {
+      "amount": 7500,
+      "fee_bps": 0,
+      "fixed_fee": 0,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 12,
+      "max_price_gap_days": 7,
+      "target_cagr": 0.2,
+      "whole_shares": false
+    },
+    "lookback60": {
+      "amount": 7500,
+      "fee_bps": 0,
+      "fixed_fee": 0,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 60,
+      "max_price_gap_days": 7,
+      "target_cagr": 0.2,
+      "whole_shares": false
+    },
+    "quarterly": {
+      "amount": 7500,
+      "fee_bps": 0,
+      "fixed_fee": 0,
+      "horizon_months": 12,
+      "interval_days": 90,
+      "lookback_months": 36,
+      "max_price_gap_days": 7,
+      "target_cagr": 0.2,
+      "whole_shares": false
+    },
+    "target10": {
+      "amount": 7500,
+      "fee_bps": 0,
+      "fixed_fee": 0,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "max_price_gap_days": 7,
+      "target_cagr": 0.1,
+      "whole_shares": false
+    },
+    "target30": {
+      "amount": 7500,
+      "fee_bps": 0,
+      "fixed_fee": 0,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "max_price_gap_days": 7,
+      "target_cagr": 0.3,
+      "whole_shares": false
+    },
+    "weekly": {
+      "amount": 7500,
+      "fee_bps": 0,
+      "fixed_fee": 0,
+      "horizon_months": 12,
+      "interval_days": 7,
+      "lookback_months": 36,
+      "max_price_gap_days": 7,
+      "target_cagr": 0.2,
+      "whole_shares": false
+    }
+  },
+  "rank_cluster_correlation_threshold": 0.85,
+  "replayed_panel_sha256": "9a9be9790215763904c6f6b91de0e9d3e3ce583e30c07a47519600f02d6bae66",
+  "rolling_rule": "Up to four evenly spaced horizon-length windows inside lookback; no horizon truncation",
+  "schema": "personalized_v1",
+  "selection_rule": "No model promotion; descriptive validation diagnostics only",
+  "sources": [
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.brentq.html",
+    "https://lightgbm.readthedocs.io/en/stable/pythonapi/lightgbm.LGBMRanker.html",
+    "https://www.nseindia.com/companies-listing/corporate-filings-actions",
+    "https://www.nseindia.com/static/products-services/equity-derivatives-corporate-actions-adjustments"
+  ],
+  "training_dates": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31"
+  ],
+  "validation_dates": [
+    "2022-06-30",
+    "2022-12-31",
+    "2023-06-30",
+    "2023-12-31"
+  ]
+}

@@ -43,6 +43,7 @@ def build_parser() -> argparse.ArgumentParser:
         description="Offline stock-ranking research engine.",
     )
     subparsers = parser.add_subparsers(dest="command", required=True)
+    subparsers.add_parser("personalized", help="Opt-in personalized research export; use personalized --help for profile options.", add_help=False)
     rank = subparsers.add_parser(
         "rank", help="Generate Baseline V1 full and top-N rankings."
     )
@@ -285,6 +286,14 @@ def _run_data_refresh(args: argparse.Namespace) -> int:
 def main(argv: Sequence[str] | None = None) -> int:
     """Run the CLI and return a process-compatible exit code."""
 
+    arguments = list(argv) if argv is not None else sys.argv[1:]
+    if arguments and arguments[0] == "personalized":
+        from stock_ranker.personalized_cli import main as personalized_main
+        try:
+            return personalized_main(arguments[1:])
+        except (ValueError, TypeError, OSError) as exc:
+            print(f"Error: {exc}", file=sys.stderr)
+            return 2
     parser = build_parser()
     try:
         args = parser.parse_args(argv)

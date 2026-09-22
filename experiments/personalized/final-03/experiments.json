@@ -1,0 +1,118 @@
+[
+  {
+    "alpha": 100.0,
+    "candidate": "ridge_personalized",
+    "features": [
+      "xirr_score",
+      "goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y"
+    ],
+    "latest_training_endpoint": "2021-12-31",
+    "train_rows": 56388
+  },
+  {
+    "alpha": 100.0,
+    "candidate": "ridge_without_xirr",
+    "features": [
+      "goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y"
+    ],
+    "latest_training_endpoint": "2021-12-31",
+    "train_rows": 56388
+  },
+  {
+    "alpha": 100.0,
+    "candidate": "ridge_without_goal",
+    "features": [
+      "xirr_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y"
+    ],
+    "latest_training_endpoint": "2021-12-31",
+    "train_rows": 56388
+  },
+  {
+    "alpha": 100.0,
+    "candidate": "ridge_without_risk",
+    "features": [
+      "xirr_score",
+      "goal_score",
+      "cagr_3y",
+      "cagr_5y"
+    ],
+    "latest_training_endpoint": "2021-12-31",
+    "train_rows": 56388
+  },
+  {
+    "alpha": 100.0,
+    "candidate": "ridge_without_cagr",
+    "features": [
+      "xirr_score",
+      "goal_score",
+      "price_drawdown"
+    ],
+    "latest_training_endpoint": "2021-12-31",
+    "train_rows": 56388
+  },
+  {
+    "alpha": 100.0,
+    "candidate": "ridge_goal_only",
+    "features": [
+      "goal_score"
+    ],
+    "latest_training_endpoint": "2021-12-31",
+    "train_rows": 56388
+  },
+  {
+    "candidate": "cluster_rank_aggregation",
+    "clusters": [
+      [
+        "cagr_3y"
+      ],
+      [
+        "cagr_5y"
+      ],
+      [
+        "goal_score"
+      ],
+      [
+        "price_drawdown"
+      ],
+      [
+        "xirr_score"
+      ]
+    ],
+    "interpretation": "All inputs are price-derived; clusters do not establish independent economic causes",
+    "status": "RESEARCH ONLY",
+    "training_correlation_threshold": 0.85
+  },
+  {
+    "candidate": "lambdarank",
+    "features": [
+      "xirr_score",
+      "goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y"
+    ],
+    "importance": {
+      "cagr_3y": 83,
+      "cagr_5y": 115,
+      "goal_score": 14,
+      "price_drawdown": 55,
+      "xirr_score": 81
+    },
+    "parameters": {
+      "max_depth": 3,
+      "n_estimators": 60,
+      "num_leaves": 7,
+      "seed": 20260922
+    },
+    "train_rows": 56388
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "as_of_date": "2026-09-18",
+  "candidate_status": {
+    "cluster_rank_aggregation": "RESEARCH ONLY",
+    "family_aggregation": "INSUFFICIENT EVIDENCE",
+    "goal": "RESEARCH ONLY",
+    "lambdarank": "RESEARCH ONLY",
+    "personalized_existing": "RESEARCH ONLY",
+    "professor_style": "RESEARCH ONLY",
+    "professor_workbook": "INSUFFICIENT EVIDENCE",
+    "ridge_personalized": "RESEARCH ONLY",
+    "whole_share_full_universe": "INSUFFICIENT EVIDENCE",
+    "xirr": "RESEARCH ONLY"
+  },
+  "history_errors": 73,
+  "limitations": [
+    "Current-survivor universe",
+    "Current sector labels in retrospective diagnostics",
+    "Provider-adjusted histories, no verified delisting or total-return ledger",
+    "Historical quality and valuation unavailable in this new panel; no current fundamentals backfilled",
+    "Overlapping validation outcomes and rolling windows; no independent-probability claim",
+    "Asset drawdown and mean asset XIRR are not portfolio drawdown or portfolio XIRR"
+  ],
+  "load_seconds": 51.59113549999893,
+  "locked_test_opened": false,
+  "next_milestone": "Verified historical membership, identity/action ledger and delisting proceeds; preregister and freeze a prospective personalized comparison before new outcomes mature.",
+  "overall": "PARTIAL",
+  "package_versions": {
+    "lightgbm": "4.6.0",
+    "numpy": "2.0.2",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0"
+  },
+  "peak_process_memory_mb": 712.59765625,
+  "production_changed": false,
+  "python": "3.12.10",
+  "total_seconds": 225.78664410000056,
+  "universe": 4436,
+  "valid_history_files": 4363
+}

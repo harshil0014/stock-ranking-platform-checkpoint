@@ -1,0 +1,38 @@
+{
+  "overall": "PARTIAL",
+  "production_changed": false,
+  "branch": "personalized-investing-20260922",
+  "protected_commit": "f4d178f84112babc2ef4d4eebafeaf77c6f55ea1",
+  "final_run": "final-03",
+  "verification": "verification.json",
+  "tests": {"passed": 847, "skipped": 1, "skip_reason": "Existing external NSE/NIFTY fixture not supplied"},
+  "universe": 4436,
+  "base_rankable": 1233,
+  "full_universe_rows_included": true,
+  "all_securities_have_defensible_ranks": false,
+  "candidate_decisions": {
+    "professor_workbook": {"status": "INSUFFICIENT EVIDENCE", "reason": "Supplied XLSX has zero cached purchases/investment and blank returns/ranks; formulas are extracted and verified purchase arithmetic is implemented separately."},
+    "professor_style": {"status": "RESEARCH ONLY", "reason": "Fractional proxy for historical profit/loss, not executable whole-share workbook reproduction. Common-cohort mean IC -0.046888; top-20 goal achievement 0.28125."},
+    "xirr": {"status": "RESEARCH ONLY", "reason": "Cash-flow accounting verified, but almost identical ordering to profit/loss under a common fractional contribution schedule; no independent factor vote justified."},
+    "goal": {"status": "RESEARCH ONLY", "reason": "Best goal-oriented development result among principal candidates: top-20 achievement 0.591667 and shortfall 0.074377 versus baseline 0.5625 and 0.091606. Mean IC 0.013544 with descriptive date-block interval [-0.012588, 0.039676]; insufficient independent evidence."},
+    "personalized_existing": {"status": "RESEARCH ONLY", "reason": "Unvalidated equal rank blend did not improve goal outcomes over baseline; mean IC -0.043951 and top-20 shortfall 0.097109. Do not adopt the proposed weights."},
+    "family_aggregation": {"status": "INSUFFICIENT EVIDENCE", "reason": "Current quality/valuation integration and family ablations work; equivalent PIT historical inputs are absent, so predictive comparison is unavailable."},
+    "ridge_personalized": {"status": "RESEARCH ONLY", "reason": "Mean IC 0.048020 but top-20 achievement 0.3625 and shortfall 0.125716 are worse than goal ranking and baseline. Better IC alone does not establish investor suitability."},
+    "ridge_ablations": {"status": "RESEARCH ONLY", "reason": "Removing risk raised mean IC to 0.069813; removing goal raised it to 0.05158. Neither rescued top-20 goal utility. Added factors did not earn automatic inclusion."},
+    "lambdarank": {"status": "RESEARCH ONLY", "reason": "Mean IC 0.011208 and top-20 achievement 0.533333 provide no compelling improvement over transparent goal ranking."},
+    "cluster_rank_aggregation": {"status": "RESEARCH ONLY", "reason": "Train-only correlation clustering is implemented, but mean IC -0.040185 and shortfall 0.109109 do not justify selecting it. Transparency alone did not improve outcomes."},
+    "whole_share_full_universe": {"status": "INSUFFICIENT EVIDENCE", "reason": "Verified raw-price action-ledger simulator is tested for affordability, liquidity caps, fees, splits and dividend entitlements. Accepted provider-adjusted prices cannot certify actual historical whole-share purchases."}
+  },
+  "interpretation": "All performance statistics are exploratory averages across four validation dates and six profiles on the common cohort. Overlapping outcomes, survivor selection and current sector labels prevent a generalization claim. No locked or prospective test was opened, no model promoted, and no calibrated probability of achieving 20% is claimed.",
+  "personalization": {
+    "amount_only_goal_rank_spearman": 1.0,
+    "weekly_goal_rank_spearman": 0.997788,
+    "quarterly_goal_rank_spearman": 0.989603,
+    "lookback12_goal_rank_spearman": 0.566597,
+    "target30_goal_rank_spearman": 0.997504,
+    "horizon24_goal_rank_spearman": 0.861814,
+    "explanation": "Amount scales fractional wealth without changing percentage quality. Intervals change purchase timing; lookback changes evidence; horizon changes scenario length; target changes capped goal shortfall. Whole-share constraints and fixed fees are distinct tested nonlinear amount effects."
+  },
+  "runtime": {"history_preparation_seconds": 51.59, "first_profile_seconds_including_export": 8.57, "warm_amount_change_seconds_including_export": 0.742, "warm_target_change_seconds_including_export": 0.675, "peak_process_memory_mb": 712.60},
+  "recommended_next_milestone": "Build and audit an official-source historical security-membership, identity, corporate-action and delisting ledger; repair stale execution endpoints and obtain a usable professor execution snapshot. Then preregister and prospectively freeze goal-shortfall versus professor-style, existing baseline and Ridge-ablation rankings across investor profiles. Require new matured outcomes and PIT quality/valuation coverage before choosing a final personalized model."
+}
