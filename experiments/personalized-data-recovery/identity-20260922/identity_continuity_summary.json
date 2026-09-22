@@ -1,0 +1,16 @@
+{
+  "automatic_price_series_merge_count": 0,
+  "continuity_fingerprint": "81112096c3465a9399e8a0acd5da84eaeaead1f33182540e0e08300ed3f55387",
+  "current_nse_security_count": 2575,
+  "current_securities_with_history_count": 749,
+  "identity_evidence_row_count": 1331,
+  "isin_transition_review_count": 288,
+  "name_history_url": "https://nsearchives.nseindia.com/content/equities/namechange.csv",
+  "name_source_sha256": "eaca7b0a6a37a0c0fec458c18c5dcf01bfd69c4dac608faad3e078db64353076",
+  "name_transition_count": 554,
+  "schema_version": "official_nse_identity_continuity_v1",
+  "scientific_boundary": "Only official symbol/name edges are accepted automatically; action-linked historical ISINs remain review evidence and do not splice prices.",
+  "symbol_history_url": "https://nsearchives.nseindia.com/content/equities/symbolchange.csv",
+  "symbol_source_sha256": "2820323c0abbbcfebde467e8ff071a4cfa78073b75f83f70cd2ad9c98a72ecea",
+  "symbol_transition_count": 489
+}

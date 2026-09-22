@@ -1,0 +1,7 @@
+status,reason,count
+AVAILABLE,,1233
+INSUFFICIENT_HISTORY,,997
+INVALID_HISTORY,HISTORY_FILE_MISSING,62
+INVALID_HISTORY,dates must be unique and strictly increasing,2
+INVALID_HISTORY,prices must be finite and positive,9
+STALE_TERMINAL,,2133

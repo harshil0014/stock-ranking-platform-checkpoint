@@ -1,0 +1,64 @@
+[
+  {
+    "date": "2026-09-08",
+    "status": "DOWNLOADED",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260908_F_0000.csv.zip",
+    "bytes": 204444,
+    "sha256": "87d13e23fa3e73e0d59c93531d08ed44665029780c399ea10d1260dba19a5143"
+  },
+  {
+    "date": "2026-09-09",
+    "status": "DOWNLOADED",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260909_F_0000.csv.zip",
+    "bytes": 206043,
+    "sha256": "84386e611be78c52bf21635c5c3cde2d135157fe5bcb63e7653f5aee86502f58"
+  },
+  {
+    "date": "2026-09-10",
+    "status": "DOWNLOADED",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260910_F_0000.csv.zip",
+    "bytes": 205216,
+    "sha256": "5647ee1289541ddfb9d23467079ca94d378a9e192f2b05b413c737f1af498bbf"
+  },
+  {
+    "date": "2026-09-11",
+    "status": "DOWNLOADED",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260911_F_0000.csv.zip",
+    "bytes": 204525,
+    "sha256": "c34af0e74a9c21aad106dfcb31f03685d4baaa24af09da2245b6d007527b43fe"
+  },
+  {
+    "date": "2026-09-14",
+    "status": "UNAVAILABLE",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260914_F_0000.csv.zip",
+    "error": "HTTPError:HTTP Error 404: Not Found"
+  },
+  {
+    "date": "2026-09-15",
+    "status": "DOWNLOADED",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260915_F_0000.csv.zip",
+    "bytes": 206785,
+    "sha256": "1838e677dc64454862d7aef4e802a624d964796446e7ed474f562a04167078ca"
+  },
+  {
+    "date": "2026-09-16",
+    "status": "DOWNLOADED",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260916_F_0000.csv.zip",
+    "bytes": 205671,
+    "sha256": "634717ad747859d4fb31c2d1b66ab98b5c475c80841d1981437b97423046bce8"
+  },
+  {
+    "date": "2026-09-17",
+    "status": "DOWNLOADED",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260917_F_0000.csv.zip",
+    "bytes": 203981,
+    "sha256": "e4cda994812c889efa32f0436bb5b0670cce5966310d4525a5ccf1fa7192e76e"
+  },
+  {
+    "date": "2026-09-18",
+    "status": "DOWNLOADED",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260918_F_0000.csv.zip",
+    "bytes": 204944,
+    "sha256": "cb157bc6b30f2c4a12335a650381280bdad8d199edff541cba6cbd5e205d3320"
+  }
+]

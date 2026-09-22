@@ -1,0 +1,63 @@
+{
+  "deterministic_artifacts": [
+    {
+      "path": "all_security_audit.csv.gz",
+      "sha256": "e7c58e9c8f2dd743d282fc22392b93242f5bf8678489ab5e815a6cc0ad1572ce",
+      "size": 109156
+    },
+    {
+      "path": "coverage.csv",
+      "sha256": "125a2762cca8443c834f886cd9e070c67161fb7d40fc8bc68f7daf4ad40b045f",
+      "size": 172
+    },
+    {
+      "path": "dated_security_master.csv.gz",
+      "sha256": "6a7b5fa7400b3cc4147856657be9528a32e15144989d51e1beb84ec21ecfe92e",
+      "size": 156703
+    },
+    {
+      "path": "eligibility_12m.csv.gz",
+      "sha256": "f38cbf185b66f504b8df6976ec7f9b470501bf9f19defff20b75f5b74497d8f4",
+      "size": 361180
+    },
+    {
+      "path": "eligibility_36m.csv.gz",
+      "sha256": "ac66ca6efadf2e6df5944689e922859bfc1c37e798fc73ae85637b7ffeac7c08",
+      "size": 362097
+    },
+    {
+      "path": "eligibility_60m.csv.gz",
+      "sha256": "40eb8e83e29ad913e2fbdd528c49b8ac20b84e4352b1847fe3f4816c57aa0f7a",
+      "size": 362638
+    },
+    {
+      "path": "history_quality_audit.csv.gz",
+      "sha256": "d55790839419e8716fa231d1c51b85f269ee624231140475c66f896b775a3d66",
+      "size": 272080
+    },
+    {
+      "path": "official_master_reconciliation.csv.gz",
+      "sha256": "d707966402329b43c44b6a9e8d04dc7b8f99543a774cb8828a502982bad9ed6b",
+      "size": 66756
+    },
+    {
+      "path": "original_36m_reason_breakdown.csv",
+      "sha256": "2fcd50b62743648740dcd8db38018190d72207001a84ff8a77a57112c20c2856",
+      "size": 239
+    },
+    {
+      "path": "terminal_repairs.csv",
+      "sha256": "8f1ae88a8008022ef03671d66d5a1c1d94eb16828b4e81ca2daef86779f89e1a",
+      "size": 597222
+    }
+  ],
+  "fingerprint": "2f9946055088ceee9893849b725d1596064730167f9eec170b5335dbce10d8da",
+  "fingerprint_scope": "Deterministic data artifacts; runtime and resident-memory summary excluded.",
+  "observational_artifacts": [
+    {
+      "path": "summary.json",
+      "sha256": "b2040e8cdbbb3247f9a65a045ece6d309c38bef4ba8f93fdec9c59041e74fe57",
+      "size": 2998
+    }
+  ]
+}

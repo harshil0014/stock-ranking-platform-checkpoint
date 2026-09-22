@@ -1,0 +1,87 @@
+{
+  "artifact_storage_bytes_before_manifest": 2288243,
+  "as_of_date": "2026-09-18",
+  "automatic_delisting_terminal_values": 0,
+  "automatic_merger_splices": 0,
+  "boundaries": [
+    "No missing price is valued at zero",
+    "No delisting receives an invented terminal value",
+    "No current sector is back-projected",
+    "No unresolved ISIN transition splices price series"
+  ],
+  "coverage": [
+    {
+      "ending_available": 3798,
+      "fixed": 2449,
+      "legitimate_ineligibility": 434,
+      "lookback_months": 12,
+      "starting_available": 1349,
+      "status_counts": {
+        "AVAILABLE": 3798,
+        "INSUFFICIENT_HISTORY": 562,
+        "INVALID_HISTORY": 62,
+        "MISSING_EXECUTION_PRICE": 11,
+        "STALE_TERMINAL": 3
+      },
+      "unresolved": 204
+    },
+    {
+      "ending_available": 3368,
+      "fixed": 2135,
+      "legitimate_ineligibility": 727,
+      "lookback_months": 36,
+      "starting_available": 1233,
+      "status_counts": {
+        "AVAILABLE": 3368,
+        "INSUFFICIENT_HISTORY": 1000,
+        "INVALID_HISTORY": 62,
+        "MISSING_EXECUTION_PRICE": 4,
+        "STALE_TERMINAL": 2
+      },
+      "unresolved": 341
+    },
+    {
+      "ending_available": 3020,
+      "fixed": 1889,
+      "legitimate_ineligibility": 988,
+      "lookback_months": 60,
+      "starting_available": 1131,
+      "status_counts": {
+        "AVAILABLE": 3020,
+        "INSUFFICIENT_HISTORY": 1340,
+        "INVALID_HISTORY": 62,
+        "MISSING_EXECUTION_PRICE": 12,
+        "STALE_TERMINAL": 2
+      },
+      "unresolved": 428
+    }
+  ],
+  "cutoff_mii_exact_isin_matches": 2625,
+  "historical_dispositions_preserved": 240,
+  "histories_sanitized": 9,
+  "inputs": {
+    "corporate_actions_sha256": "091f4ce0f75842250301fe4747cd9c5ee8e41d91273ce1b7c98cc28bbc0830e6",
+    "identity_continuity_sha256": "81112096c3465a9399e8a0acd5da84eaeaead1f33182540e0e08300ed3f55387",
+    "live_market_sha256": "ffa2b5153826b08d14ca67020cf60f251d0fba562fb3a43ce519c2e1deb786de",
+    "protected_state": {
+      "data\\company_facts\\accepted_state.json": "c4bd4cb8ef5cc3cd5debd7ebe05030838594d84cc7d56a410154edb2a77c67a1",
+      "data\\live_market\\accepted_state.json": "632dcc4f9069eacfd5228563e28ec6b6006737552b691955fcf45aa5b6026595"
+    }
+  },
+  "invalid_observations_removed": 1059,
+  "official_bridge_price_rows": 27062,
+  "official_identity_evidence_rows": 1331,
+  "protected_state_unchanged": true,
+  "resident_memory_bytes_at_completion": 412594176,
+  "runtime_seconds": 107.71678339999926,
+  "schema_version": "personalized_data_recovery_v1",
+  "sector_history": {
+    "current_sector_present": 4305,
+    "current_securities": 4436,
+    "historical_sector_intervals_recovered": 0,
+    "limitation": "Current classifications retain their observed valid-from date and are never projected backward."
+  },
+  "security_master_rows": 5165,
+  "terminal_repairs": 3369,
+  "universe_count": 4436
+}
