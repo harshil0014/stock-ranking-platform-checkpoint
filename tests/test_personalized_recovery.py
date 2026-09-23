@@ -95,6 +95,73 @@ def test_profile_specific_recent_ipo_is_legitimate_ineligibility(tmp_path):
     assert audit.iloc[0].classification_reason == "LISTED_AFTER_PROFILE_START"
 
 
+def test_complete_official_archive_classifies_late_history_without_inventing_listing_date(tmp_path):
+    facts = _facts(None)
+    pd.DataFrame({"date": ["2025-01-01", "2026-09-18"], "raw_close": [80, 100],
+                  "adjusted_close": [80, 100]}).to_csv(tmp_path / "AAA.csv", index=False)
+    recovered = recover_history_book(facts, tmp_path, _live(), _actions(), as_of_date="2026-09-18")
+    profile = InvestorProfile(lookback_months=36)
+    evidence = pd.DataFrame([{"isin": "INE000A01001", "official_archive_complete": True,
+                              "official_recovery_status": "PROMOTED_TO_CANDIDATE",
+                              "official_recovery_reason": "", "first_official_date": "2025-01-01"}])
+    audit = classify_profile_eligibility(recovered.book.simulate(profile, "2026-09-18"), facts,
+                                         recovered.history_audit, profile, as_of_date="2026-09-18",
+                                         official_history_evidence=evidence)
+    assert audit.iloc[0].eligibility_class == "LEGITIMATE_INELIGIBILITY"
+    assert audit.iloc[0].classification_reason == "OFFICIAL_HISTORY_BEGINS_AFTER_PROFILE_START"
+
+
+def test_complete_official_archive_classifies_real_trading_gap_as_legitimate(tmp_path):
+    pd.DataFrame({"date": ["2023-09-18", "2023-11-01", "2026-09-18"],
+                  "raw_close": [80, 81, 100], "adjusted_close": [80, 81, 100]}).to_csv(tmp_path / "AAA.csv", index=False)
+    recovered = recover_history_book(_facts(), tmp_path, _live(), _actions(), as_of_date="2026-09-18")
+    profile = InvestorProfile(lookback_months=36, interval_days=30)
+    evidence = pd.DataFrame([{"isin": "INE000A01001", "official_archive_complete": True,
+                              "official_recovery_status": "PROMOTED_TO_CANDIDATE",
+                              "official_recovery_reason": "", "first_official_date": "2023-09-18"}])
+    audit = classify_profile_eligibility(recovered.book.simulate(profile, "2026-09-18"), _facts(),
+                                         recovered.history_audit, profile, as_of_date="2026-09-18",
+                                         official_history_evidence=evidence)
+    assert audit.iloc[0].classification_reason == "OFFICIAL_NO_TRADE_WITHIN_EXECUTION_TOLERANCE"
+
+
+def test_quarantined_official_history_cannot_become_legitimate_exclusion(tmp_path):
+    pd.DataFrame({"date": ["2025-01-01", "2026-09-18"], "raw_close": [80, 100],
+                  "adjusted_close": [80, 100]}).to_csv(tmp_path / "AAA.csv", index=False)
+    recovered = recover_history_book(_facts(None), tmp_path, _live(), _actions(), as_of_date="2026-09-18")
+    profile = InvestorProfile(lookback_months=36)
+    evidence = pd.DataFrame([{"isin": "INE000A01001", "official_archive_complete": True,
+                              "official_recovery_status": "QUARANTINED",
+                              "official_recovery_reason": "RIGHTS:unresolved terms",
+                              "first_official_date": "2025-01-01"}])
+    audit = classify_profile_eligibility(recovered.book.simulate(profile, "2026-09-18"), _facts(None),
+                                         recovered.history_audit, profile, as_of_date="2026-09-18",
+                                         official_history_evidence=evidence)
+    assert audit.iloc[0].eligibility_class == "UNRESOLVED"
+    assert audit.iloc[0].classification_reason.startswith("OFFICIAL_HISTORY_QUARANTINED:")
+
+
+def test_quarantined_official_history_cannot_enter_eligible_cohort(tmp_path):
+    dates = pd.date_range("2023-09-18", "2026-09-18", freq="7D").union(
+        pd.DatetimeIndex([pd.Timestamp("2026-09-18")])
+    )
+    prices = pd.Series(range(len(dates)), dtype=float) + 80
+    pd.DataFrame({"date": dates, "raw_close": prices,
+                  "adjusted_close": prices}).to_csv(tmp_path / "AAA.csv", index=False)
+    recovered = recover_history_book(_facts(), tmp_path, _live(), _actions(), as_of_date="2026-09-18")
+    profile = InvestorProfile(lookback_months=36)
+    evidence = pd.DataFrame([{"isin": "INE000A01001", "official_archive_complete": True,
+                              "official_recovery_status": "QUARANTINED",
+                              "official_recovery_reason": "UDIFF_ISIN_CONFLICT",
+                              "first_official_date": "2023-09-18"}])
+    audit = classify_profile_eligibility(recovered.book.simulate(profile, "2026-09-18"), _facts(),
+                                         recovered.history_audit, profile, as_of_date="2026-09-18",
+                                         official_history_evidence=evidence)
+    assert audit.iloc[0].status == "AVAILABLE"
+    assert audit.iloc[0].eligibility_class == "UNRESOLVED"
+    assert audit.iloc[0].classification_reason == "OFFICIAL_HISTORY_QUARANTINED:UDIFF_ISIN_CONFLICT"
+
+
 def test_security_master_preserves_superseded_and_unresolved_departures():
     evidence = pd.DataFrame([{"canonical_isin": "INE000A01001", "evidence_type": "SYMBOL_CHANGE",
                               "historical_symbol": "OLD", "effective_date": "2024-01-01",

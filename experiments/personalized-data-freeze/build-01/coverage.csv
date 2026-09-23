@@ -1,0 +1,4 @@
+lookback_months,starting_available,starting_unresolved,ending_available,global_frozen_included,legitimate_exclusions,unresolved_quarantine,eligible_population_coverage_pct,sector_relative_frozen_included
+12,1349,3087,3813,3808,606,22,99.425587,0
+36,1233,3203,3376,3376,1032,28,99.177438,0
+60,1131,3305,3027,3027,1294,115,96.339911,0

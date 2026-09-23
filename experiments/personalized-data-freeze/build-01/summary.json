@@ -1,0 +1,84 @@
+{
+  "artifact_storage_bytes_before_manifest": 2286193,
+  "as_of_date": "2026-09-18",
+  "boundaries": [
+    "No missing price becomes zero",
+    "No delisting receives an invented terminal value",
+    "No current sector is back-projected",
+    "Quarantined actions and identities never enter frozen cohorts"
+  ],
+  "bse_archive_coverage": {
+    "complete": true,
+    "end": "2026-09-18",
+    "expected_weekdays": 1305,
+    "failed_weekdays": 0,
+    "missing_weekdays": 0,
+    "recorded_weekdays": 1305,
+    "start": "2021-09-18",
+    "status_counts": {
+      "NO_FILE": 70,
+      "OK": 1235
+    }
+  },
+  "bse_official_recovery": {
+    "PROMOTED_TO_CANDIDATE": 319,
+    "QUARANTINED": 14
+  },
+  "coverage": [
+    {
+      "eligible_population_coverage_pct": 99.425587,
+      "ending_available": 3813,
+      "global_frozen_included": 3808,
+      "legitimate_exclusions": 606,
+      "lookback_months": 12,
+      "sector_relative_frozen_included": 0,
+      "starting_available": 1349,
+      "starting_unresolved": 3087,
+      "unresolved_quarantine": 22
+    },
+    {
+      "eligible_population_coverage_pct": 99.177438,
+      "ending_available": 3376,
+      "global_frozen_included": 3376,
+      "legitimate_exclusions": 1032,
+      "lookback_months": 36,
+      "sector_relative_frozen_included": 0,
+      "starting_available": 1233,
+      "starting_unresolved": 3203,
+      "unresolved_quarantine": 28
+    },
+    {
+      "eligible_population_coverage_pct": 96.339911,
+      "ending_available": 3027,
+      "global_frozen_included": 3027,
+      "legitimate_exclusions": 1294,
+      "lookback_months": 60,
+      "sector_relative_frozen_included": 0,
+      "starting_available": 1131,
+      "starting_unresolved": 3305,
+      "unresolved_quarantine": 115
+    }
+  ],
+  "global_model_tournament_readiness": "PASS_WITH_FROZEN_PROFILE_COHORTS",
+  "historical_sector_intervals_recovered": 0,
+  "overall": "PARTIAL",
+  "exact_next_milestone": "Acquire and validate effective-dated historical sector intervals, then freeze sector-relative PIT cohorts.",
+  "input_hashes": {
+    "C:\\Users\\Harshil\\Downloads\\BSE_Final_Actions_Shard1_20260923\\normalized\\events.csv": "3ad350666ab90034e58113a7c26d47757c593dd93c48bbad5b649ab25149133b",
+    "C:\\Users\\Harshil\\Downloads\\BSE_Final_Actions_Shard2_20260923\\normalized\\events.csv": "cb614ccf514c8159c7495c3553f867b695d566338471a94090e75c57a773a32a",
+    "C:\\Users\\Harshil\\Downloads\\BSE_Final_Actions_Shard3_20260923\\normalized\\events.csv": "af2e62b7f5abfac5aa9e434f727290d2ed6cbd2f0c1bbe9ed5dbd25dc83fdbca",
+    "C:\\Users\\Harshil\\Downloads\\BSE_Final_Adjusted_Cache_20260923_audit\\per_code_decision.csv": "476bcc27875a0d1a11af4be30422fd3a4dda564fdfe5b8affeb5b7e15f31c144",
+    "C:\\Users\\Harshil\\Downloads\\BSE_Final_Raw_20260923\\per_code_audit.csv": "df14b38785fcbfad29d75c1e84ab3e22d573bd86d809235ce36379e174638e7d",
+    "C:\\Users\\Harshil\\Downloads\\BSE_Final_Raw_20260923\\source_inventory.csv": "06ebe415d0a4f536ccee59db562fe93d5a0e1df6b7115cd22bb71e205c4b7cd7",
+    "C:\\Users\\Harshil\\Downloads\\BSE_Final_UDIFF_20260923\\state.sqlite": "6750733b1cbe6f1a303041c80757e39f8fbdbf9d78c97928c6094ebb0d02b1fa",
+    "C:\\Users\\Harshil\\Downloads\\BSE_History_Bhavcopy_Fallback\\state\\bhavcopy.sqlite": "7be743b30ad322590d8a21d4204c2dd8893920bf0d81b62e9c193b8dfd8f5525",
+    "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform\\data\\company_facts\\providers\\official_exchange\\automatic-20260920T023321Z\\corporate_actions.csv": "091f4ce0f75842250301fe4747cd9c5ee8e41d91273ce1b7c98cc28bbc0830e6",
+    "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform\\data\\live_market\\snapshots\\2026-09-18-98adc0296bff77fd44fc4c6815692a86033b14763d689791df14752550983eb1\\live_market.csv": "ffa2b5153826b08d14ca67020cf60f251d0fba562fb3a43ce519c2e1deb786de"
+  },
+  "permanent_quarantine_count_any_profile": 115,
+  "protected_state_unchanged": true,
+  "runtime_seconds": 217.32277319999412,
+  "schema_version": "personalized_data_freeze_v1",
+  "sector_relative_model_tournament_readiness": "BLOCKED_NO_HISTORICAL_SECTOR_INTERVALS",
+  "universe_count": 4436
+}

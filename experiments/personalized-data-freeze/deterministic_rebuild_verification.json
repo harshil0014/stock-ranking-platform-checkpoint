@@ -1,0 +1,12 @@
+{
+  "artifact_count": 12,
+  "build_01_fingerprint": "25bba97f1694ea44554886d0994de5f0428bf4cac85da82803adb6a7c4884055",
+  "build_02_fingerprint": "25bba97f1694ea44554886d0994de5f0428bf4cac85da82803adb6a7c4884055",
+  "deterministic_artifacts_match": true,
+  "protected_state": {
+    "data/company_facts/accepted_state.json": "c4bd4cb8ef5cc3cd5debd7ebe05030838594d84cc7d56a410154edb2a77c67a1",
+    "data/live_market/accepted_state.json": "632dcc4f9069eacfd5228563e28ec6b6006737552b691955fcf45aa5b6026595"
+  },
+  "protected_state_unchanged": true,
+  "schema_version": "personalized_data_freeze_determinism_v1"
+}

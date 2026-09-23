@@ -66,13 +66,33 @@ def _date_from_path(path: Path):
     return None
 
 
-def unresolved_mapping(company_fact_root: Path) -> dict[str, dict[str, str]]:
+def unresolved_mapping(company_fact_root: Path, cohort: Path | None = None) -> dict[str, dict[str, str]]:
     bundle = load_company_fact_snapshot(resolve_company_fact_snapshot(company_fact_root))
     facts = bundle.facts
-    selected = facts.loc[
-        facts["primary_exchange"].astype(str).str.upper().eq("BSE")
-        & facts["product_baseline_reason_code"].astype(str).eq("PRICE_HISTORY_UNAVAILABLE")
-    ]
+    selected = facts.loc[facts["primary_exchange"].astype(str).str.upper().eq("BSE")]
+    if cohort is None:
+        selected = selected.loc[
+            selected["product_baseline_reason_code"].astype(str).eq("PRICE_HISTORY_UNAVAILABLE")
+        ]
+    else:
+        with cohort.open("r", encoding="utf-8-sig", newline="") as handle:
+            requested = list(csv.DictReader(handle))
+        if not requested or not {"bse_code", "isin"}.issubset(requested[0]):
+            raise ValueError("--cohort requires bse_code and isin columns")
+        exact = {
+            (str(row["bse_code"]).strip().removesuffix(".0").zfill(6), str(row["isin"]).strip())
+            for row in requested
+        }
+        selected = selected.loc[selected.apply(
+            lambda row: (str(row["exchange_security_id"]).strip().split(".", 1)[0].zfill(6), str(row["isin"]).strip()) in exact,
+            axis=1,
+        )]
+        found = {
+            (str(row["exchange_security_id"]).strip().split(".", 1)[0].zfill(6), str(row["isin"]).strip())
+            for row in selected.to_dict("records")
+        }
+        if found != exact:
+            raise ValueError(f"cohort identities do not exactly match accepted facts: {sorted(exact - found)[:5]}")
     result: dict[str, dict[str, str]] = {}
     for row in selected.to_dict("records"):
         code = str(row["exchange_security_id"]).strip().split(".", 1)[0].zfill(6)
@@ -91,7 +111,9 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
     output = args.output_root.resolve()
     if output.exists():
         raise FileExistsError(f"output must be fresh: {output}")
-    mapping = unresolved_mapping(args.company_fact_root.resolve())
+    mapping = unresolved_mapping(
+        args.company_fact_root.resolve(), args.cohort.resolve() if args.cohort else None
+    )
     wanted = set(mapping)
     rows_by_code: dict[str, list[dict[str, Any]]] = {code: [] for code in wanted}
     file_inventory: list[dict[str, Any]] = []
@@ -199,6 +221,7 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
 def parser() -> argparse.ArgumentParser:
     value = argparse.ArgumentParser(description=__doc__)
     value.add_argument("--company-fact-root", type=Path, default=DEFAULT_FACT_ROOT)
+    value.add_argument("--cohort", type=Path, help="Exact bse_code/isin CSV cohort.")
     value.add_argument(
         "--bhavcopy-root", type=Path, action="append",
         help="Cached bhavcopy root; repeat to merge non-overlapping cache generations.",

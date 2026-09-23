@@ -142,7 +142,10 @@ def action_factor(
         decision = rights.get((code, ex.isoformat()))
         if not decision or decision.get("decision") != "ALLOW":
             return None, "rights terms lack accepted official adjudication"
-        verify_rights_evidence(decision, evidence_root)
+        try:
+            verify_rights_evidence(decision, evidence_root)
+        except ValueError as exc:
+            return None, f"rights evidence unavailable or invalid: {exc}"
         new = finite_positive(decision["rights_shares"], "rights_shares")
         old = finite_positive(decision["existing_shares"], "existing_shares")
         price = finite_positive(decision["issue_price"], "issue_price")
@@ -171,8 +174,18 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
     rights_rows = read_csv(args.rights_decisions.resolve())
     rights = {(row["bse_code"].zfill(6), row["ex_date"]): row for row in rights_rows}
     events_by_code: dict[str, list[dict[str, str]]] = {}
-    for row in read_csv(args.events.resolve()):
-        events_by_code.setdefault(row["bse_code"].zfill(6), []).append(row)
+    event_keys: set[tuple[str, ...]] = set()
+    for source in args.events:
+        for row in read_csv(source.resolve()):
+            code = row["bse_code"].zfill(6)
+            key = (
+                code, row.get("ex_date", ""), row.get("record_date", ""),
+                row.get("purpose", ""), row.get("event_type", ""),
+            )
+            if key in event_keys:
+                continue
+            event_keys.add(key)
+            events_by_code.setdefault(code, []).append(row)
 
     decisions: list[dict[str, Any]] = []
     action_evidence: list[dict[str, Any]] = []
@@ -279,7 +292,10 @@ def parser() -> argparse.ArgumentParser:
     value.add_argument("--existing-cache", type=Path, default=ROOT / "data/live_market/history_cache")
     value.add_argument("--raw-root", type=Path, required=True)
     value.add_argument("--raw-audit", type=Path, required=True)
-    value.add_argument("--events", type=Path, required=True)
+    value.add_argument(
+        "--events", type=Path, action="append", required=True,
+        help="Normalized structured-action CSV; repeat for disjoint acquisition shards.",
+    )
     value.add_argument("--identity-decisions", type=Path, default=ROOT / "marketdata/specifications/bse_history_identity_adjudications.csv")
     value.add_argument("--rights-decisions", type=Path, default=ROOT / "marketdata/specifications/bse_history_rights_adjudications.csv")
     value.add_argument("--evidence-root", type=Path, required=True)

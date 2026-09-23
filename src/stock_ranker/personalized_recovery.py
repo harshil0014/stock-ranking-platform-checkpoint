@@ -179,6 +179,7 @@ def recover_history_book(
 def classify_profile_eligibility(
     simulation: pd.DataFrame, facts: pd.DataFrame, history_audit: pd.DataFrame,
     profile: InvestorProfile, *, as_of_date: str,
+    official_history_evidence: pd.DataFrame | None = None,
 ) -> pd.DataFrame:
     """Separate repaired, genuinely young, and unresolved histories."""
     end = _date(as_of_date)
@@ -190,6 +191,10 @@ def classify_profile_eligibility(
     result = facts[["isin", "ticker", "company", "primary_exchange", "listing_date"]].merge(
         simulation[["isin", "status", "reason", "terminal_price_date"]], on="isin", how="left", validate="one_to_one"
     ).merge(history_audit, on=["isin", "ticker"], how="left", validate="one_to_one")
+    if official_history_evidence is not None:
+        if official_history_evidence["isin"].duplicated().any():
+            raise ValueError("official history evidence identities must be unique")
+        result = result.merge(official_history_evidence, on="isin", how="left", validate="one_to_one")
     listing = pd.to_datetime(result["listing_date"], errors="coerce")
     first = pd.to_datetime(result["first_valid_date"], errors="coerce")
     result["lookback_months"] = profile.lookback_months
@@ -205,6 +210,28 @@ def classify_profile_eligibility(
     result.loc[result["status"].eq("MISSING_EXECUTION_PRICE"), "classification_reason"] = "INTERNAL_PRICE_GAP_EXCEEDS_TOLERANCE"
     result.loc[result["status"].eq("STALE_TERMINAL"), "classification_reason"] = "TERMINAL_PRICE_NOT_DEFENSIBLY_REPAIRED"
     result.loc[result["status"].eq("AVAILABLE"), "classification_reason"] = "PROFILE_COMPLETE"
+    if official_history_evidence is not None:
+        complete = result["official_archive_complete"].fillna(False).astype(bool)
+        promoted = result["official_recovery_status"].eq("PROMOTED_TO_CANDIDATE")
+        first_official = pd.to_datetime(result["first_official_date"], errors="coerce")
+        late = complete & promoted & result["status"].eq("INSUFFICIENT_HISTORY") & first_official.gt(start)
+        result.loc[late, "eligibility_class"] = "LEGITIMATE_INELIGIBILITY"
+        result.loc[late, "classification_reason"] = "OFFICIAL_HISTORY_BEGINS_AFTER_PROFILE_START"
+        illiquid = complete & promoted & result["status"].eq("MISSING_EXECUTION_PRICE")
+        result.loc[illiquid, "eligibility_class"] = "LEGITIMATE_INELIGIBILITY"
+        result.loc[illiquid, "classification_reason"] = "OFFICIAL_NO_TRADE_WITHIN_EXECUTION_TOLERANCE"
+        stale = complete & promoted & result["status"].eq("STALE_TERMINAL")
+        result.loc[stale, "eligibility_class"] = "LEGITIMATE_INELIGIBILITY"
+        result.loc[stale, "classification_reason"] = "OFFICIAL_NO_RECENT_TERMINAL_TRADE"
+        no_trades = complete & result["official_recovery_status"].eq("NO_OFFICIAL_RAW_HISTORY") & result["status"].eq("INVALID_HISTORY")
+        result.loc[no_trades, "eligibility_class"] = "LEGITIMATE_INELIGIBILITY"
+        result.loc[no_trades, "classification_reason"] = "NO_OFFICIAL_TRADES_IN_ARCHIVE_WINDOW"
+        quarantined = result["official_recovery_status"].eq("QUARANTINED")
+        result.loc[quarantined, "eligibility_class"] = "UNRESOLVED"
+        result.loc[quarantined, "classification_reason"] = (
+            "OFFICIAL_HISTORY_QUARANTINED:"
+            + result.loc[quarantined, "official_recovery_reason"].fillna("UNKNOWN")
+        )
     result["first_valid_after_profile_start_days"] = (first - start).dt.days
     return result
 

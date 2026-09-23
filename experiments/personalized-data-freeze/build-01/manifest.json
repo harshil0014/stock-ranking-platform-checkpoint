@@ -1,0 +1,68 @@
+{
+  "deterministic_artifacts": [
+    {
+      "path": "all_security_freeze_audit.csv.gz",
+      "sha256": "81ddfbebf266b69a2fc79dc7099b8f59524d0646be243560950a3d4c890d3a3c",
+      "size": 107258
+    },
+    {
+      "path": "coverage.csv",
+      "sha256": "4bb32ddb20dd9a8957194ef5e1095270b936ef47a857e71c654993df132526c1",
+      "size": 333
+    },
+    {
+      "path": "frozen_cohort_12m.csv.gz",
+      "sha256": "06f7f0d554d223eb0e9bd8fa27770d7d355a0bdd84433f4a9d40091278050bd5",
+      "size": 371127
+    },
+    {
+      "path": "frozen_cohort_36m.csv.gz",
+      "sha256": "30163371475c17c85803aeebae3156225b876757dacc156d9f04b3aa1a7f3dcb",
+      "size": 371984
+    },
+    {
+      "path": "frozen_cohort_60m.csv.gz",
+      "sha256": "3555258d8f04cca5671a08d0a218e5bf88033185094d7d0b2fe46486bfeb0b4f",
+      "size": 372727
+    },
+    {
+      "path": "frozen_dated_security_master.csv.gz",
+      "sha256": "e14d748edf163a35c2a1d97cdf710e8651806dfe62549f9fdd31afd1f951f1c5",
+      "size": 164457
+    },
+    {
+      "path": "history_quality_audit.csv.gz",
+      "sha256": "5f7cb4ad87d928b0f90de8069a2b02093eb80f4579b2d4c1d4ca8a699019c5e5",
+      "size": 274220
+    },
+    {
+      "path": "official_bse_actions.csv.gz",
+      "sha256": "9a2affa6741b3a491b920e2d352fdc4c6a0dd67846d9f0ae83e8c537de7aeb13",
+      "size": 4031
+    },
+    {
+      "path": "official_bse_recovery_evidence.csv.gz",
+      "sha256": "2d1cada9fa667c60a0278e237ce90075627c78e4cc6e06f175230e29e6917bbc",
+      "size": 5695
+    },
+    {
+      "path": "official_bse_source_inventory.csv.gz",
+      "sha256": "45bf9b19a894e718067d946503e14e305a2aff166b1dabf43a98cf864c1d60ff",
+      "size": 61290
+    },
+    {
+      "path": "permanent_quarantine.csv.gz",
+      "sha256": "ee2b2e23d4c7b4ac980afe68e9b6a2152fd70706b4113a6462d5b9a624991ff1",
+      "size": 4352
+    },
+    {
+      "path": "terminal_repairs.csv",
+      "sha256": "f086de36ef942bb2c5e8cb5d523b1997f1570c573fec2dd4a1778d1981eece85",
+      "size": 548719
+    }
+  ],
+  "fingerprint": "25bba97f1694ea44554886d0994de5f0428bf4cac85da82803adb6a7c4884055",
+  "observational_artifacts": [
+    "summary.json"
+  ]
+}

@@ -29,6 +29,7 @@ def _load_runner(name: str):
 
 official_recovery = _load_runner("build_bse_official_history_recovery")
 udiff_downloader = _load_runner("download_bse_udiff_bhavcopies")
+udiff_cohort = _load_runner("download_bse_udiff_cohort")
 
 
 def _history(last_close: float = 105.0, last_adjusted: float = 105.0) -> pd.DataFrame:
@@ -184,3 +185,15 @@ def test_udiff_no_record_html_requires_bse_identity() -> None:
     assert not udiff_downloader.is_bse_no_record_html(
         b"<!doctype html><title>generic proxy error</title>"
     )
+
+
+def test_udiff_cohort_requires_exact_code_isin_mapping(tmp_path: Path) -> None:
+    path = tmp_path / "cohort.csv"
+    path.write_text("bse_code,isin\n544400,INE0MV001018\n", encoding="utf-8")
+    assert udiff_cohort.load_cohort(path) == {"544400": "INE0MV001018"}
+    path.write_text(
+        "bse_code,isin\n544400,INE0MV001018\n544400,INE999A01001\n",
+        encoding="utf-8",
+    )
+    with pytest.raises(ValueError, match="multiple ISINs"):
+        udiff_cohort.load_cohort(path)

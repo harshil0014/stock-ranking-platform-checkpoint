@@ -417,6 +417,10 @@ def parser() -> argparse.ArgumentParser:
     )
     p.add_argument("--from-date", type=date.fromisoformat, default=DEFAULT_FROM)
     p.add_argument("--to-date", type=date.fromisoformat, default=DEFAULT_TO)
+    p.add_argument(
+        "--single-chunk", action="store_true",
+        help="Request the complete date range once per exact scrip (supported by the official endpoint).",
+    )
     p.add_argument("--delay-seconds", type=float, default=0.6)
     p.add_argument("--timeout-seconds", type=int, default=45)
     return p
@@ -446,7 +450,7 @@ def main(argv=None) -> int:
         if missing:
             raise ValueError(f"probe codes missing from source: {sorted(missing)}")
 
-        chunks = yearly_chunks(args.from_date, args.to_date)
+        chunks = [(args.from_date, args.to_date)] if args.single_chunk else yearly_chunks(args.from_date, args.to_date)
         root = args.output_root.resolve()
         raw_root = root / "raw" / "structured_actions"
         out_csv = root / "normalized" / "events.csv"
