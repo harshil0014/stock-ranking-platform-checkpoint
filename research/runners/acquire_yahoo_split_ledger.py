@@ -15,6 +15,8 @@ sys.path.insert(0, str(ROOT / "src"))
 import pandas as pd
 import requests
 
+from stock_ranker.company_facts import load_company_fact_snapshot, resolve_company_fact_snapshot
+
 
 URL = "https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
 PARAMS = {
@@ -26,7 +28,11 @@ PARAMS = {
 }
 
 
-def provider_symbol(ticker: str) -> str:
+def provider_symbol(row: dict) -> str:
+    accepted = row.get("accepted_provider_symbol")
+    if isinstance(accepted, str) and accepted.endswith((".NS", ".BO")):
+        return accepted
+    ticker = str(row["ticker"])
     return f"{ticker[4:]}.BO" if ticker.startswith("BSE-") else f"{ticker}.NS"
 
 
@@ -35,7 +41,7 @@ def digest(path: Path) -> str:
 
 
 def acquire_one(row: dict, raw: Path, retries: int) -> dict:
-    symbol = provider_symbol(str(row["ticker"]))
+    symbol = provider_symbol(row)
     target = raw / f"{symbol}.json"
     source_url = URL.format(symbol=symbol)
     error = None
@@ -100,6 +106,11 @@ def main(args) -> None:
         frame = pd.read_csv(args.frozen_root / f"frozen_cohort_{months}m.csv.gz", usecols=["isin", "ticker", "freeze_status"])
         members.append(frame.loc[frame.freeze_status.eq("INCLUDE_GLOBAL"), ["isin", "ticker"]])
     universe = pd.concat(members).drop_duplicates().sort_values(["ticker", "isin"], kind="stable")
+    facts = load_company_fact_snapshot(resolve_company_fact_snapshot(args.company_facts_root)).facts
+    provider = facts[["isin", "bulk_classification_provider_symbol"]].rename(
+        columns={"bulk_classification_provider_symbol": "accepted_provider_symbol"}
+    )
+    universe = universe.merge(provider, on="isin", how="left", validate="one_to_one")
     if universe["isin"].duplicated().any() or universe["ticker"].duplicated().any():
         raise ValueError("frozen executable universe requires unique exact identities")
     rows = universe.to_dict("records")
@@ -140,6 +151,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--frozen-root", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--company-facts-root", type=Path, default=ROOT / "data/company_facts")
     parser.add_argument("--workers", type=int, default=12)
     parser.add_argument("--retries", type=int, default=3)
     main(parser.parse_args())

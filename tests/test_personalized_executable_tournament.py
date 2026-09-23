@@ -70,4 +70,3 @@ def test_protocol_keeps_exposed_test_supplementary(tmp_path):
     path = tmp_path / "protocol.json"; path.write_text(json.dumps(protocol))
     with pytest.raises(ValueError, match="overlap"):
         load_protocol(path)
-

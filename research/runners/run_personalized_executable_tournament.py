@@ -149,7 +149,8 @@ def turnover(panel):
                       var_name="candidate", value_name="score")
     rows = []
     for (profile, candidate), group in long.groupby(["profile_name", "candidate"]):
-        chosen = [(day, set(one.nlargest(20, "score").isin)) for day, one in group.groupby("decision_date", sort=True)]
+        chosen = [(day, set(one.nlargest(20, "score")["isin"]))
+                  for day, one in group.groupby("decision_date", sort=True)]
         for (before_day, before), (day, after) in zip(chosen, chosen[1:]):
             rows.append({"profile": profile, "candidate": candidate, "from_date": before_day, "date": day,
                          "top20_replacement_fraction": 1 - len(before & after) / 20})
