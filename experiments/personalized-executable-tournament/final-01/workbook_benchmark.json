@@ -1,0 +1,10 @@
+{
+  "amount": 7500,
+  "interval_days": 30,
+  "lookback_months": 36,
+  "purchase_formula": "ROUNDDOWN(amount / execution_price, 0)",
+  "rank_basis": "profit/loss divided by actual amount spent",
+  "source_is_instruction": false,
+  "target_cagr": 0.2,
+  "workbook_sha256": "be2ab62fb41abd4769b5f5d8de7f3df04edc6cfa336bb0d2c5906fc6da2e980b"
+}

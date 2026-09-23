@@ -1,0 +1,102 @@
+{
+  "candidate_decisions": [
+    {
+      "candidate": "professor_whole_share",
+      "reason": "Validation comparison baseline.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "enhanced_no_carry_xirr",
+      "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "enhanced_carry_xirr",
+      "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "enhanced_goal",
+      "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "historical_target_frequency",
+      "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "global_existing",
+      "reason": "Validation comparison baseline.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "enhanced_plus_existing",
+      "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "ridge_executable",
+      "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "ridge_without_amount_features",
+      "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "ridge_without_goal",
+      "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "cluster_rank_aggregation",
+      "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "hist_gradient_boosting",
+      "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "lightgbm_lambdarank",
+      "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "transaction_cost_model",
+      "reason": "Broker and statutory schedules are time-varying; no single historical fee contract was imposed.",
+      "status": "INSUFFICIENT EVIDENCE"
+    },
+    {
+      "candidate": "liquidity_constrained_model",
+      "reason": "The frozen cache has no complete historical volume series.",
+      "status": "INSUFFICIENT EVIDENCE"
+    },
+    {
+      "candidate": "sector_relative_models",
+      "reason": "Historical PIT sector intervals remain unavailable.",
+      "status": "INSUFFICIENT EVIDENCE"
+    }
+  ],
+  "evidence_boundary": "Validation is pre-existing matured development evidence; 2025 locked outcomes were previously exposed and are supplementary only.",
+  "exact_next_milestone": "Prospectively validate the frozen executable candidates on new post-2026-09-18 outcomes; separately acquire historical PIT sector intervals.",
+  "executable_identity_count": 3269,
+  "frozen_cohort_fingerprint": "25bba97f1694ea44554886d0994de5f0428bf4cac85da82803adb6a7c4884055",
+  "historical_sector_used": false,
+  "liquidity_model": null,
+  "overall": "PARTIAL",
+  "protected_state_unchanged": true,
+  "python": "3.12.10",
+  "quarantined_identity_count": 539,
+  "resident_memory_bytes": 1567305728,
+  "runtime_seconds": 283.5128514000098,
+  "schema_version": "personalized_executable_tournament_result_v1",
+  "split_acquisition_status_counts": {
+    "FAILED": 104,
+    "SUCCESS": 3704
+  },
+  "transaction_cost_model": null
+}

@@ -1,0 +1,44 @@
+{
+  "new_supplementary_cluster": {
+    "candidate": "cluster_rank_aggregation_score",
+    "coverage": 1.0,
+    "mean_asset_drawdown_top20": -0.507571782066822,
+    "mean_xirr_top20": 0.24189082276091925,
+    "median_xirr_top20": -0.17131315492316854,
+    "n": 2399.1666666666665,
+    "ndcg20": 0.5110754989415474,
+    "pairwise_accuracy": 0.5246651350598719,
+    "rank_ic": 0.10101135519473285,
+    "target_achievement_top20": 0.3027777777777778,
+    "target_shortfall_top20": 0.19894372314982622,
+    "tie_fraction": 0.004581664134088503
+  },
+  "new_validation_cluster": {
+    "candidate": "cluster_rank_aggregation_score",
+    "coverage": 1.0,
+    "mean_asset_drawdown_top20": -0.4133851323347042,
+    "mean_xirr_top20": 1.7181361102439003,
+    "median_xirr_top20": 0.2588261661357229,
+    "n": 2299.8333333333335,
+    "ndcg20": 0.5006224355745685,
+    "pairwise_accuracy": 0.486220342083153,
+    "rank_ic": -0.0036028420048372875,
+    "target_achievement_top20": 0.5,
+    "target_shortfall_top20": 0.09885765769330358,
+    "tie_fraction": 0.009015519598042846
+  },
+  "previous_fractional_cluster": {
+    "candidate": "cluster_rank_aggregation_score",
+    "coverage": 1.0,
+    "mean_asset_drawdown_top20": -0.4791639386083863,
+    "mean_xirr_top20": 0.3483773119017734,
+    "median_xirr_top20": -0.0211976661091734,
+    "n": 2842.0,
+    "ndcg20": 0.5931670538216988,
+    "pairwise_accuracy": 0.5481770833333334,
+    "rank_ic": 0.1346369474780045,
+    "target_achievement_top20": 0.446875,
+    "target_shortfall_top20": 0.1766659992703959,
+    "tie_fraction": 0.0052422860937788
+  }
+}

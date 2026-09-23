@@ -1,0 +1,19 @@
+{
+  "company_fact_fingerprint": "dba7b068cdc97e01cba00e36d914d0ce97d1d283763247ada544b89486454a0e",
+  "frozen_manifest_sha256": "09a930dc3934b50f444bae853c1edd0df368fc875802217152988e54c45d2da1",
+  "frozen_terminal_repairs_sha256": "f086de36ef942bb2c5e8cb5d523b1997f1570c573fec2dd4a1778d1981eece85",
+  "history_fingerprint": "a8caaddcc2b5635dc7e225d323268f1064ad48672ba27cdf8566e8f134b8af68",
+  "live_market_sha256": "ffa2b5153826b08d14ca67020cf60f251d0fba562fb3a43ce519c2e1deb786de",
+  "protected_state": {
+    "data\\company_facts\\accepted_state.json": "c4bd4cb8ef5cc3cd5debd7ebe05030838594d84cc7d56a410154edb2a77c67a1",
+    "data\\live_market\\accepted_state.json": "632dcc4f9069eacfd5228563e28ec6b6006737552b691955fcf45aa5b6026595"
+  },
+  "protocol_sha256": "55c4314fd9d6a2ecf8644669665d1de8d557f0e085dbf5a20175e27c86c0a916",
+  "source_sha256": {
+    "module": "ff6980f3f47f2a91b37054052b53687ba3b3fdda4de384d061381d7fcef2fc94",
+    "runner": "8a571712f0bd57f7c6604086b963ccbf68672a04363b1a43ac043984de97e3ab"
+  },
+  "split_audit_sha256": "33bbde690b580bed9d77cce2335283ca80ff55d6a0b94bf72143df6e524a78ef",
+  "split_ledger_sha256": "cd2fb1baba3f8593071e56bac1ddf8f721e1d16091e06b7394fd3e397ab18858",
+  "workbook_sha256": "be2ab62fb41abd4769b5f5d8de7f3df04edc6cfa336bb0d2c5906fc6da2e980b"
+}

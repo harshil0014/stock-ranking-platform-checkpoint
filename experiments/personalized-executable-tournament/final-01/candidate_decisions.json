@@ -1,0 +1,82 @@
+[
+  {
+    "candidate": "professor_whole_share",
+    "reason": "Validation comparison baseline.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "enhanced_no_carry_xirr",
+    "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "enhanced_carry_xirr",
+    "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "enhanced_goal",
+    "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "historical_target_frequency",
+    "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "global_existing",
+    "reason": "Validation comparison baseline.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "enhanced_plus_existing",
+    "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "ridge_executable",
+    "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "ridge_without_amount_features",
+    "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "ridge_without_goal",
+    "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "cluster_rank_aggregation",
+    "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "hist_gradient_boosting",
+    "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "lightgbm_lambdarank",
+    "reason": "Directionally useful on the preregistered validation dates; exposed test remains supplementary.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "transaction_cost_model",
+    "reason": "Broker and statutory schedules are time-varying; no single historical fee contract was imposed.",
+    "status": "INSUFFICIENT EVIDENCE"
+  },
+  {
+    "candidate": "liquidity_constrained_model",
+    "reason": "The frozen cache has no complete historical volume series.",
+    "status": "INSUFFICIENT EVIDENCE"
+  },
+  {
+    "candidate": "sector_relative_models",
+    "reason": "Historical PIT sector intervals remain unavailable.",
+    "status": "INSUFFICIENT EVIDENCE"
+  }
+]
