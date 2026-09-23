@@ -54,7 +54,7 @@ def build_rows(executable, fractional_engine, fractional_book, facts, profiles, 
             rank = rank.merge(fractional, on="isin", how="left", validate="one_to_one")
             endpoint = pd.Timestamp(day) + pd.DateOffset(months=profile.horizon_months)
             future = executable.simulate(
-                profile, endpoint, months=profile.horizon_months, mode="enhanced_carry"
+                profile, endpoint, months=profile.horizon_months, mode="enhanced_carry", include_journal=False
             )[["isin", "xirr", "target_shortfall", "price_drawdown"]].rename(columns={
                 "xirr": "future_xirr", "target_shortfall": "future_shortfall",
                 "price_drawdown": "future_drawdown",

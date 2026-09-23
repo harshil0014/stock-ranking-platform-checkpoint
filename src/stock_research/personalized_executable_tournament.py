@@ -95,7 +95,7 @@ class ExecutableHistoryBook:
                 self.errors[row.isin] = str(exc)
 
     def simulate(self, profile: InvestorProfile, end, *, months: int | None = None,
-                 mode: str = "enhanced_carry") -> pd.DataFrame:
+                 mode: str = "enhanced_carry", include_journal: bool = True) -> pd.DataFrame:
         if mode not in {"professor", "enhanced_no_carry", "enhanced_carry"}:
             raise ValueError("unknown executable cash policy")
         end = pd.Timestamp(end).normalize()
@@ -159,17 +159,17 @@ class ExecutableHistoryBook:
                     cash += residual
                 else:
                     excluded_cash += residual
-                journal.append({"scheduled_date": scheduled_day.date().isoformat(),
-                                "execution_date": pd.Timestamp(dates[index]).date().isoformat(),
-                                "execution_price": price, "shares_purchased": quantity,
-                                "residual_cash": residual})
+                if include_journal:
+                    journal.append({"scheduled_date": scheduled_day.date().isoformat(),
+                                    "execution_date": pd.Timestamp(dates[index]).date().isoformat(),
+                                    "execution_price": price, "shares_purchased": quantity,
+                                    "residual_cash": residual})
             holding_value = terminal_shares * float(nominal[last])
             contributed = profile.amount * len(schedule)
             residual_cash = cash if mode != "professor" else 0.0
             wealth = holding_value + residual_cash
             denominator = invested if mode == "professor" else contributed
             profit_pct = wealth / denominator - 1 if denominator > 0 else np.nan
-            rate = None if mode == "professor" else xirr([*schedule, end], [-profile.amount] * len(schedule) + [wealth])
             window_start = min(int(buy[0]), last) if len(buy) else 0
             window = adjusted[window_start:last + 1]
             base.update({
@@ -179,7 +179,7 @@ class ExecutableHistoryBook:
                 "current_holding_value": holding_value, "residual_cash": residual_cash,
                 "unused_cash_excluded_by_professor": excluded_cash if mode == "professor" else 0.0,
                 "total_wealth": wealth, "profit_loss": wealth - denominator,
-                "profit_loss_pct": profit_pct, "xirr": rate,
+                "profit_loss_pct": profit_pct, "xirr": np.nan,
                 "target_attainment": wealth / target if mode != "professor" else np.nan,
                 "target_shortfall": max(0.0, 1 - wealth / target) if mode != "professor" else np.nan,
                 "cash_utilization": invested / contributed if contributed else np.nan,
@@ -188,7 +188,7 @@ class ExecutableHistoryBook:
                 "execution_count": execution_count, "terminal_price": float(nominal[last]),
                 "terminal_price_date": pd.Timestamp(dates[last]).date().isoformat(),
                 "price_drawdown": float(np.min(window / np.maximum.accumulate(window) - 1)),
-                "journal": journal,
+                "journal": journal if include_journal else None,
             })
             for years_back in (3, 5):
                 anchor = np.datetime64((end - pd.DateOffset(years=years_back)).date(), "D")
@@ -199,14 +199,27 @@ class ExecutableHistoryBook:
                     else np.nan
                 )
             records.append(base)
-        return pd.DataFrame(records)
+        result = pd.DataFrame(records)
+        valid = result.status.eq("AVAILABLE") & result.total_wealth.notna() if "total_wealth" in result else pd.Series(False, index=result.index)
+        if mode != "professor" and valid.any():
+            wealth = result.loc[valid, "total_wealth"].to_numpy(float)
+            lo = np.full(len(wealth), -700 / years.max())
+            hi = np.full(len(wealth), 700 / years.max())
+            for _ in range(64):
+                mid = (lo + hi) / 2
+                future = profile.amount * np.exp(years[:, None] * mid).sum(axis=0)
+                higher = future > wealth
+                hi = np.where(higher, mid, hi)
+                lo = np.where(higher, lo, mid)
+            result.loc[valid, "xirr"] = np.expm1((lo + hi) / 2)
+        return result
 
 
 def rank_executable(book: ExecutableHistoryBook, profile: InvestorProfile, end,
                     evidence: pd.DataFrame) -> pd.DataFrame:
-    professor = book.simulate(profile, end, mode="professor")
-    no_carry = book.simulate(profile, end, mode="enhanced_no_carry")
-    carry = book.simulate(profile, end, mode="enhanced_carry")
+    professor = book.simulate(profile, end, mode="professor", include_journal=False)
+    no_carry = book.simulate(profile, end, mode="enhanced_no_carry", include_journal=False)
+    carry = book.simulate(profile, end, mode="enhanced_carry", include_journal=False)
     result = carry.rename(columns={"xirr": "enhanced_carry_xirr_score"})
     result = result.merge(
         no_carry[["isin", "xirr"]].rename(columns={"xirr": "enhanced_no_carry_xirr_score"}),
@@ -222,7 +235,7 @@ def rank_executable(book: ExecutableHistoryBook, profile: InvestorProfile, end,
         offsets = sorted(set(np.linspace(0, profile.lookback_months - profile.horizon_months, 4).astype(int)))
         scenarios = [
             book.simulate(profile, pd.Timestamp(end) - pd.DateOffset(months=int(offset)),
-                          months=profile.horizon_months, mode="enhanced_carry").set_index("isin")["target_shortfall"].rename(offset)
+                          months=profile.horizon_months, mode="enhanced_carry", include_journal=False).set_index("isin")["target_shortfall"].rename(offset)
             for offset in offsets
         ]
     shortfalls = pd.concat(scenarios, axis=1).reindex(result["isin"]) if scenarios else pd.DataFrame(index=result["isin"])
