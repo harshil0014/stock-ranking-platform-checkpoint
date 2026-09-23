@@ -5,7 +5,7 @@ import pandas as pd
 import pytest
 
 from stock_ranker.personalized import InvestorProfile
-from stock_research.personalized_executable_tournament import ExecutableHistoryBook, load_protocol
+from stock_research.personalized_executable_tournament import ExecutableHistoryBook, load_protocol, rank_executable
 
 
 def book(tmp_path, *, split_ratio=2.0):
@@ -70,6 +70,19 @@ def test_all_invalid_forward_window_keeps_metric_schema(tmp_path):
     assert result.status.eq("STALE_TERMINAL").all()
     assert {"xirr", "target_shortfall", "price_drawdown"}.issubset(result.columns)
     assert result[["xirr", "target_shortfall", "price_drawdown"]].isna().all().all()
+
+
+def test_rank_keeps_professor_discarded_cash_column_unambiguous(tmp_path):
+    b = book(tmp_path)
+    evidence = pd.DataFrame({"isin": ["ID"], "global_existing_score": [0.5]})
+    result = rank_executable(
+        b,
+        InvestorProfile(amount=60, interval_days=31, lookback_months=2, horizon_months=1, whole_shares=True),
+        "2020-03-01",
+        evidence,
+    )
+    assert result["unused_cash_excluded_by_professor"].iloc[0] == 70
+    assert not any(column.endswith(("_x", "_y")) for column in result.columns)
 
 
 def test_protocol_keeps_exposed_test_supplementary(tmp_path):

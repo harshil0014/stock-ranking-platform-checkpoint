@@ -237,7 +237,9 @@ def rank_executable(book: ExecutableHistoryBook, profile: InvestorProfile, end,
     professor = book.simulate(profile, end, mode="professor", include_journal=False)
     no_carry = book.simulate(profile, end, mode="enhanced_no_carry", include_journal=False)
     carry = book.simulate(profile, end, mode="enhanced_carry", include_journal=False)
-    result = carry.rename(columns={"xirr": "enhanced_carry_xirr_score"})
+    result = carry.drop(columns=["unused_cash_excluded_by_professor"], errors="ignore").rename(
+        columns={"xirr": "enhanced_carry_xirr_score"}
+    )
     result = result.merge(
         no_carry[["isin", "xirr"]].rename(columns={"xirr": "enhanced_no_carry_xirr_score"}),
         on="isin", validate="one_to_one",

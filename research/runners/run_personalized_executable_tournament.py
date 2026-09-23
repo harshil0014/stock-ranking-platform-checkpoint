@@ -49,6 +49,12 @@ def build_rows(executable, fractional_engine, fractional_book, facts, profiles, 
         checkpoint = checkpoint_root / f"{partition.lower()}-{day}.csv.gz"
         if checkpoint.is_file():
             frame = pd.read_csv(checkpoint)
+            # Migrate checkpoints written before the professor-only cash field
+            # was disambiguated from the enhanced simulator's zero-valued field.
+            if "unused_cash_excluded_by_professor_y" in frame:
+                frame = frame.rename(columns={
+                    "unused_cash_excluded_by_professor_y": "unused_cash_excluded_by_professor"
+                }).drop(columns=["unused_cash_excluded_by_professor_x"], errors="ignore")
             rows.append(frame)
             print(json.dumps({"partition": partition, "decision_date": day,
                               "rows": sum(len(item) for item in rows), "checkpoint": "REUSED"}), flush=True)
