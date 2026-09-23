@@ -82,6 +82,9 @@ def build_rows(executable, fractional_engine, fractional_book, facts, profiles, 
             day_rows.append(rank)
         frame = pd.concat(day_rows, ignore_index=True)
         frame.to_csv(checkpoint, index=False, compression={"method": "gzip", "mtime": 0})
+        # Analyze the serialized representation so a fresh build and a resumed
+        # build take the identical floating-point path.
+        frame = pd.read_csv(checkpoint)
         rows.append(frame)
         print(json.dumps({"partition": partition, "decision_date": day,
                           "rows": sum(len(frame) for frame in rows)}), flush=True)
