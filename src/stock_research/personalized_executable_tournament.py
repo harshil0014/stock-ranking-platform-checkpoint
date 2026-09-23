@@ -56,7 +56,7 @@ class ExecutableHistoryBook:
         ledger["event_date"] = pd.to_datetime(ledger.get("event_date"), errors="coerce")
         grouped = {identity: frame for identity, frame in ledger.groupby("isin")}
         cutoff = np.datetime64(pd.Timestamp(as_of_date).date(), "D")
-        self.arrays, self.errors = {}, {}
+        self.arrays, self.errors, self.cache = {}, {}, {}
         for row in identities[["isin", "ticker"]].sort_values("isin").itertuples(index=False):
             try:
                 if row.isin not in audit.index or audit.loc[row.isin, "status"] != "SUCCESS":
@@ -105,6 +105,16 @@ class ExecutableHistoryBook:
         terminal = np.datetime64(end.date(), "D")
         years = (end - schedule).days.to_numpy() / 365
         target = float(profile.amount * np.power(1 + profile.target_cagr, years).sum())
+        cache_key = (profile.amount, profile.interval_days, profile.max_price_gap_days,
+                     profile.fixed_fee, profile.fee_bps, end.date().isoformat(),
+                     months or profile.lookback_months, mode)
+        if not include_journal and cache_key in self.cache:
+            result = self.cache[cache_key].copy(deep=True)
+            result["target_wealth"] = target
+            if mode != "professor":
+                result["target_attainment"] = result.total_wealth / target
+                result["target_shortfall"] = (1 - result.target_attainment).clip(lower=0)
+            return result
         records = []
         for identity in sorted(set(self.arrays) | set(self.errors)):
             base = {"isin": identity, "status": "INVALID_HISTORY", "mode": mode,
@@ -212,6 +222,8 @@ class ExecutableHistoryBook:
                 hi = np.where(higher, mid, hi)
                 lo = np.where(higher, lo, mid)
             result.loc[valid, "xirr"] = np.expm1((lo + hi) / 2)
+        if not include_journal:
+            self.cache[cache_key] = result.copy(deep=True)
         return result
 
 

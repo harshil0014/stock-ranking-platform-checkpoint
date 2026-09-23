@@ -42,10 +42,19 @@ def write_json(path: Path, value) -> None:
     path.write_text(json.dumps(value, indent=2, sort_keys=True, allow_nan=False) + "\n", encoding="utf-8")
 
 
-def build_rows(executable, fractional_engine, fractional_book, facts, profiles, memberships, dates, partition):
+def build_rows(executable, fractional_engine, fractional_book, facts, profiles, memberships, dates, partition,
+               checkpoint_root: Path):
     rows = []
     for day in dates:
+        checkpoint = checkpoint_root / f"{partition.lower()}-{day}.csv.gz"
+        if checkpoint.is_file():
+            frame = pd.read_csv(checkpoint)
+            rows.append(frame)
+            print(json.dumps({"partition": partition, "decision_date": day,
+                              "rows": sum(len(item) for item in rows), "checkpoint": "REUSED"}), flush=True)
+            continue
         evidence = global_existing_evidence(fractional_book, facts, day)
+        day_rows = []
         for name, profile in profiles.items():
             rank = rank_executable(executable, profile, day, evidence)
             fractional = fractional_engine.rank(replace(profile, whole_shares=False), day)[
@@ -64,7 +73,10 @@ def build_rows(executable, fractional_engine, fractional_book, facts, profiles, 
             rank["decision_date"], rank["endpoint"] = day, endpoint.date().isoformat()
             rank["profile_name"], rank["partition"] = name, partition
             rank = rank.drop(columns=["journal"], errors="ignore")
-            rows.append(rank)
+            day_rows.append(rank)
+        frame = pd.concat(day_rows, ignore_index=True)
+        frame.to_csv(checkpoint, index=False, compression={"method": "gzip", "mtime": 0})
+        rows.append(frame)
         print(json.dumps({"partition": partition, "decision_date": day,
                           "rows": sum(len(frame) for frame in rows)}), flush=True)
     return pd.concat(rows, ignore_index=True)
@@ -188,6 +200,7 @@ def run(args):
     if output.exists():
         raise FileExistsError("fresh executable tournament output required")
     output.mkdir(parents=True)
+    args.checkpoint_root.mkdir(parents=True, exist_ok=True)
     started = time.perf_counter()
     if digest(PROTOCOL) != EXPECTED_PROTOCOL_SHA256:
         raise ValueError("preregistered executable protocol fingerprint drift")
@@ -204,15 +217,16 @@ def run(args):
     fractional_engine = PersonalizedEngine(fractional_book, cache_size=128)
 
     training = build_rows(executable, fractional_engine, fractional_book, facts, profiles, memberships,
-                          protocol["training_decision_dates"], "TRAIN")
+                          protocol["training_decision_dates"], "TRAIN", args.checkpoint_root)
     validation_base = build_rows(executable, fractional_engine, fractional_book, facts, profiles, memberships,
-                                 protocol["validation_decision_dates"], "VALIDATION")
+                                 protocol["validation_decision_dates"], "VALIDATION", args.checkpoint_root)
     validation, validation_audit = fit_fixed_models(training, validation_base, protocol)
     development = pd.concat([training, validation_base], ignore_index=True)
     supplementary_base = build_rows(executable, fractional_engine, fractional_book, facts, profiles, memberships,
-                                    protocol["supplementary_exposed_test_dates"], "SUPPLEMENTARY_EXPOSED_TEST")
+                                    protocol["supplementary_exposed_test_dates"], "SUPPLEMENTARY_EXPOSED_TEST",
+                                    args.checkpoint_root)
     current_base = build_rows(executable, fractional_engine, fractional_book, facts, profiles, memberships,
-                              [protocol["current_profile_date"]], "CURRENT")
+                              [protocol["current_profile_date"]], "CURRENT", args.checkpoint_root)
     combined, final_audit = fit_fixed_models(
         development, pd.concat([supplementary_base.assign(_part="supplementary"),
                                 current_base.assign(_part="current")], ignore_index=True), protocol
@@ -330,4 +344,5 @@ if __name__ == "__main__":
     parser.add_argument("--split-root", type=Path, required=True)
     parser.add_argument("--workbook", type=Path, required=True)
     parser.add_argument("--previous-tournament", type=Path, required=True)
+    parser.add_argument("--checkpoint-root", type=Path, required=True)
     run(parser.parse_args())
