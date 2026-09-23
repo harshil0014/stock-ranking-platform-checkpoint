@@ -63,7 +63,7 @@ def build_rows(engine, book, facts, profiles, memberships, dates, *, locked):
             ].rename(columns={"xirr": "future_xirr", "target_shortfall": "future_shortfall",
                               "price_drawdown": "future_drawdown"})
             rank = rank.merge(future, on="isin", validate="one_to_one")
-            rank = rank.loc[rank.isin.isin(memberships[profile.lookback_months])].copy()
+            rank = rank.loc[rank["isin"].isin(memberships[profile.lookback_months])].copy()
             rank["decision_date"] = day
             rank["endpoint"] = endpoint.date().isoformat()
             rank["profile_name"] = name
@@ -80,7 +80,7 @@ def current_rows(engine, book, facts, profiles, memberships, day):
     for name, profile in profiles.items():
         rank = engine.rank(profile, day, evidence).rename(columns={"production_score": "global_existing_score"})
         rank = add_transparent_candidates(rank)
-        rank = rank.loc[rank.isin.isin(memberships[profile.lookback_months])].copy()
+        rank = rank.loc[rank["isin"].isin(memberships[profile.lookback_months])].copy()
         rank["decision_date"], rank["profile_name"], rank["partition"] = day, name, "CURRENT"
         rows.append(rank)
     return pd.concat(rows, ignore_index=True)
@@ -91,7 +91,7 @@ def turnover(panel):
     for (profile, candidate), group in panel.groupby(["profile_name", "candidate"]):
         chosen = []
         for day, one in group.groupby("decision_date", sort=True):
-            chosen.append((day, set(one.nlargest(20, "score").isin)))
+            chosen.append((day, set(one.nlargest(20, "score")["isin"])))
         for (before_day, before), (day, after) in zip(chosen, chosen[1:]):
             rows.append({"profile": profile, "candidate": candidate, "from_date": before_day,
                          "date": day, "top20_replacement_fraction": 1 - len(before & after) / 20})
