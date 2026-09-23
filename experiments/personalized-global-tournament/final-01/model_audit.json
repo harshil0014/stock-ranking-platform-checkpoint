@@ -1,0 +1,108 @@
+[
+  {
+    "alpha": 100.0,
+    "candidate": "ridge_personalized",
+    "features": [
+      "xirr_score",
+      "goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y"
+    ],
+    "train_rows": 165034
+  },
+  {
+    "alpha": 100.0,
+    "candidate": "ridge_without_risk",
+    "features": [
+      "xirr_score",
+      "goal_score",
+      "cagr_3y",
+      "cagr_5y"
+    ],
+    "train_rows": 165034
+  },
+  {
+    "alpha": 100.0,
+    "candidate": "ridge_without_goal",
+    "features": [
+      "xirr_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y"
+    ],
+    "train_rows": 165034
+  },
+  {
+    "candidate": "cluster_rank_aggregation",
+    "clusters": [
+      [
+        "cagr_3y"
+      ],
+      [
+        "cagr_5y"
+      ],
+      [
+        "goal_score"
+      ],
+      [
+        "price_drawdown"
+      ],
+      [
+        "xirr_score"
+      ]
+    ],
+    "threshold": 0.85
+  },
+  {
+    "candidate": "hist_gradient_boosting",
+    "features": [
+      "xirr_score",
+      "goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y"
+    ],
+    "parameters": {
+      "l2_regularization": 10.0,
+      "learning_rate": 0.05,
+      "max_iter": 100,
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 80
+    },
+    "permutation_importance": {
+      "cagr_3y": 0.05113520006757022,
+      "cagr_5y": 0.06353129622345377,
+      "goal_score": 0.0020552635210715118,
+      "price_drawdown": 0.011676262263081752,
+      "xirr_score": 0.0160323208857089
+    },
+    "train_rows": 165034
+  },
+  {
+    "candidate": "lightgbm_lambdarank",
+    "features": [
+      "xirr_score",
+      "goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y"
+    ],
+    "importance": {
+      "cagr_3y": 93,
+      "cagr_5y": 68,
+      "goal_score": 35,
+      "price_drawdown": 87,
+      "xirr_score": 74
+    },
+    "parameters": {
+      "learning_rate": 0.05,
+      "max_depth": 3,
+      "min_child_samples": 80,
+      "n_estimators": 60,
+      "num_leaves": 7,
+      "reg_lambda": 10.0
+    },
+    "train_rows": 165034
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "candidate": "professor_style",
+    "reason": "Locked comparison baseline; not a promotion candidate.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "xirr",
+    "reason": "Economically redundant with professor profit/loss and no material locked Rank IC separation.",
+    "status": "FAIL"
+  },
+  {
+    "candidate": "goal",
+    "reason": "Useful locked signal, but evidence is mixed or limited to two independent decision-date blocks.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "historical_target_frequency",
+    "reason": "Useful locked signal, but evidence is mixed or limited to two independent decision-date blocks.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "global_existing",
+    "reason": "Locked comparison baseline; not a promotion candidate.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "goal_plus_global_existing",
+    "reason": "Useful locked signal, but evidence is mixed or limited to two independent decision-date blocks.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "ridge_personalized",
+    "reason": "Useful locked signal, but evidence is mixed or limited to two independent decision-date blocks.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "ridge_without_risk",
+    "reason": "Useful locked signal, but evidence is mixed or limited to two independent decision-date blocks.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "ridge_without_goal",
+    "reason": "Did not improve the locked investor-utility or ranking evidence over the simple baselines.",
+    "status": "FAIL"
+  },
+  {
+    "candidate": "cluster_rank_aggregation",
+    "reason": "Cleared the preregistered locked utility, ranking, date-consistency, and drawdown gates.",
+    "status": "PASS FOR FURTHER VALIDATION"
+  },
+  {
+    "candidate": "hist_gradient_boosting",
+    "reason": "Useful locked signal, but evidence is mixed or limited to two independent decision-date blocks.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "lightgbm_lambdarank",
+    "reason": "Did not improve the locked investor-utility or ranking evidence over the simple baselines.",
+    "status": "FAIL"
+  },
+  {
+    "candidate": "quality_valuation_fundamentals",
+    "reason": "Equivalent effective-dated PIT fundamentals are unavailable for the locked historical decisions.",
+    "status": "INSUFFICIENT EVIDENCE"
+  },
+  {
+    "candidate": "sector_relative_models",
+    "reason": "Historical PIT sector intervals remain unavailable; current sectors were not back-projected.",
+    "status": "INSUFFICIENT EVIDENCE"
+  },
+  {
+    "candidate": "whole_share_amount_sensitive",
+    "reason": "A complete executable raw-price/action/volume ledger is unavailable across the frozen global cohorts.",
+    "status": "INSUFFICIENT EVIDENCE"
+  },
+  {
+    "candidate": "xgboost_catboost_interpretml",
+    "reason": "Optional libraries were absent; adding parallel tree learners after lock design would add multiplicity without independent features.",
+    "status": "INSUFFICIENT EVIDENCE"
+  }
+]

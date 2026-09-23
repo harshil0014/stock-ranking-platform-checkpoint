@@ -1,0 +1,14 @@
+{
+  "company_fact_fingerprint": "dba7b068cdc97e01cba00e36d914d0ce97d1d283763247ada544b89486454a0e",
+  "frozen_manifest_sha256": "09a930dc3934b50f444bae853c1edd0df368fc875802217152988e54c45d2da1",
+  "history_fingerprint": "a8caaddcc2b5635dc7e225d323268f1064ad48672ba27cdf8566e8f134b8af68",
+  "protected_state": {
+    "data\\company_facts\\accepted_state.json": "c4bd4cb8ef5cc3cd5debd7ebe05030838594d84cc7d56a410154edb2a77c67a1",
+    "data\\live_market\\accepted_state.json": "632dcc4f9069eacfd5228563e28ec6b6006737552b691955fcf45aa5b6026595"
+  },
+  "protocol_sha256": "dc2113ef684607a293596a68998cc14260bef8526ce6eef5ce8704047131f326",
+  "source_sha256": {
+    "research/runners/run_personalized_global_tournament.py": "cf0f502b5789b2b18219bf0876ee02152613216345b7aa724fb758df29782d45",
+    "src/stock_research/personalized_global_tournament.py": "eab40a566a5d97e8babb02eaa8a03b9f3cf4902b0f762b48f32c98e69e5e4a4a"
+  }
+}

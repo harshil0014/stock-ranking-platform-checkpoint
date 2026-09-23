@@ -1,0 +1,151 @@
+{
+  "boundaries": [
+    "No production writes or model promotion",
+    "No sector labels or current-sector back-projection",
+    "No frozen-cohort changes",
+    "No test-date outcomes used for fitting, feature selection, hyperparameters, or candidate selection",
+    "No missing outcomes are invented",
+    "Fractional adjusted-price simulations do not claim executable whole-share performance"
+  ],
+  "candidate_policy": {
+    "correlation_cluster_threshold": 0.85,
+    "feature_columns": [
+      "xirr_score",
+      "goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y"
+    ],
+    "fixed_candidates": [
+      "professor_style",
+      "xirr",
+      "goal",
+      "historical_target_frequency",
+      "global_existing",
+      "goal_plus_global_existing",
+      "ridge_personalized",
+      "ridge_without_risk",
+      "ridge_without_goal",
+      "cluster_rank_aggregation",
+      "hist_gradient_boosting",
+      "lightgbm_lambdarank"
+    ],
+    "hist_gradient_boosting": {
+      "l2_regularization": 10.0,
+      "learning_rate": 0.05,
+      "max_iter": 100,
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 80
+    },
+    "lightgbm_lambdarank": {
+      "learning_rate": 0.05,
+      "max_depth": 3,
+      "min_child_samples": 80,
+      "n_estimators": 60,
+      "num_leaves": 7,
+      "reg_lambda": 10.0
+    },
+    "ridge_alpha": 100.0,
+    "seed": 20260923
+  },
+  "frozen_cohort_fingerprint": "25bba97f1694ea44554886d0994de5f0428bf4cac85da82803adb6a7c4884055",
+  "latest_prelock_outcome_maturity": "2024-12-31",
+  "locked_test_decision_dates": [
+    "2025-03-31",
+    "2025-06-30"
+  ],
+  "locked_test_opened": true,
+  "outcome_horizon_months": 12,
+  "prelock_decision_dates": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2022-06-30",
+    "2022-12-31",
+    "2023-06-30",
+    "2023-12-31"
+  ],
+  "primary_comparison": "Same-row common cohort across every candidate within each decision-date/profile block",
+  "primary_metrics": [
+    "rank_ic",
+    "ndcg20",
+    "pairwise_accuracy",
+    "target_achievement_top20",
+    "target_shortfall_top20"
+  ],
+  "profiles": {
+    "amount10000": {
+      "amount": 10000,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "target_cagr": 0.2
+    },
+    "base36": {
+      "amount": 7500,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "target_cagr": 0.2
+    },
+    "lookback12": {
+      "amount": 7500,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 12,
+      "target_cagr": 0.2
+    },
+    "lookback60": {
+      "amount": 7500,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 60,
+      "target_cagr": 0.2
+    },
+    "quarterly": {
+      "amount": 7500,
+      "horizon_months": 12,
+      "interval_days": 90,
+      "lookback_months": 36,
+      "target_cagr": 0.2
+    },
+    "target10": {
+      "amount": 7500,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "target_cagr": 0.1
+    },
+    "target30": {
+      "amount": 7500,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "target_cagr": 0.3
+    },
+    "weekly": {
+      "amount": 7500,
+      "horizon_months": 12,
+      "interval_days": 7,
+      "lookback_months": 36,
+      "target_cagr": 0.2
+    }
+  },
+  "protocol_sha256": "dc2113ef684607a293596a68998cc14260bef8526ce6eef5ce8704047131f326",
+  "schema_version": "personalized_global_tournament_v1",
+  "scope": "GLOBAL_ONLY_NO_HISTORICAL_SECTOR_GROUPS",
+  "secondary_metrics": [
+    "mean_xirr_top20",
+    "median_xirr_top20",
+    "mean_asset_drawdown_top20",
+    "turnover",
+    "coverage"
+  ],
+  "status_rules": {
+    "FAIL": "Does not improve either baseline on investor utility and ranking evidence, or introduces an unjustified redundant vote.",
+    "INSUFFICIENT EVIDENCE": "Required PIT inputs or executable evidence are unavailable, or common-cohort coverage is inadequate.",
+    "PASS FOR FURTHER VALIDATION": "Beats both professor_style and global_existing on mean target shortfall, does not lose mean Rank IC to both, improves on both locked dates, and has no material coverage or drawdown regression.",
+    "RESEARCH ONLY": "Shows a useful directional improvement but has only two independent locked date blocks or mixed metric/profile evidence."
+  }
+}

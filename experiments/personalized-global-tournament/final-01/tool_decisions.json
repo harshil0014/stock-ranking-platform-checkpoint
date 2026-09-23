@@ -1,0 +1,19 @@
+{
+  "adopted": [
+    "scikit-learn Ridge",
+    "scikit-learn HistGradientBoostingRegressor",
+    "LightGBM LGBMRanker"
+  ],
+  "official_references": [
+    "https://lightgbm.readthedocs.io/en/stable/pythonapi/lightgbm.LGBMRanker.html",
+    "https://xgboost.readthedocs.io/en/stable/tutorials/learning_to_rank.html",
+    "https://catboost.ai/en/docs/concepts/loss-functions-ranking",
+    "https://interpret.ml/docs/python/api/ExplainableBoostingRegressor.html"
+  ],
+  "rejected_or_deferred": {
+    "CatBoost": "Not installed; no categorical PIT feature family exists in this tournament.",
+    "InterpretML EBM": "Not installed; shallow histogram boosting supplies the preregistered nonlinear check.",
+    "Qlib DoubleEnsemble": "Deferred because the five-feature panel lacks the broad noisy feature set its sample reweighting/selection is intended to address.",
+    "XGBoost": "Not installed; another LambdaMART implementation would add model multiplicity without new evidence."
+  }
+}
