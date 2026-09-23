@@ -210,6 +210,11 @@ class ExecutableHistoryBook:
                 )
             records.append(base)
         result = pd.DataFrame(records)
+        # Keep the result schema stable when every identity fails before metrics
+        # are calculated (for example, an as-yet-unobserved forward endpoint).
+        for column in ("total_wealth", "xirr", "target_shortfall", "price_drawdown"):
+            if column not in result:
+                result[column] = np.nan
         valid = result.status.eq("AVAILABLE") & result.total_wealth.notna() if "total_wealth" in result else pd.Series(False, index=result.index)
         if mode != "professor" and valid.any():
             wealth = result.loc[valid, "total_wealth"].to_numpy(float)

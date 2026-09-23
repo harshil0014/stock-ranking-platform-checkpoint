@@ -59,6 +59,19 @@ def test_complex_split_is_quarantined(tmp_path):
     assert "complex split" in result.reason
 
 
+def test_all_invalid_forward_window_keeps_metric_schema(tmp_path):
+    b = book(tmp_path)
+    result = b.simulate(
+        InvestorProfile(amount=100, interval_days=31, lookback_months=2, whole_shares=True),
+        "2021-03-01",
+        mode="enhanced_carry",
+        include_journal=False,
+    )
+    assert result.status.eq("STALE_TERMINAL").all()
+    assert {"xirr", "target_shortfall", "price_drawdown"}.issubset(result.columns)
+    assert result[["xirr", "target_shortfall", "price_drawdown"]].isna().all().all()
+
+
 def test_protocol_keeps_exposed_test_supplementary(tmp_path):
     protocol = {
         "scope": "GLOBAL_ONLY_FROZEN_COHORTS_WHOLE_SHARES",
