@@ -48,7 +48,7 @@ def load_frozen_memberships(root: str | Path, expected_fingerprint: str) -> dict
     result = {}
     for months in (12, 36, 60):
         frame = pd.read_csv(root / f"frozen_cohort_{months}m.csv.gz", usecols=["isin", "freeze_status"])
-        if frame.isin.duplicated().any():
+        if frame["isin"].duplicated().any():
             raise ValueError("duplicate frozen identity")
         result[months] = set(frame.loc[frame.freeze_status.eq("INCLUDE_GLOBAL"), "isin"])
     return result

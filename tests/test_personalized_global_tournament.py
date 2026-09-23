@@ -8,6 +8,7 @@ import pytest
 
 from stock_research.personalized_global_tournament import (
     add_transparent_candidates,
+    load_frozen_memberships,
     load_protocol,
 )
 
@@ -42,3 +43,16 @@ def test_global_blend_requires_both_components() -> None:
     assert result.loc[:1, "goal_plus_global_existing_score"].notna().all()
     assert pd.isna(result.loc[2, "goal_plus_global_existing_score"])
     assert result.historical_target_frequency_score.tolist() == [0.5, 1.0, 0.0]
+
+
+def test_frozen_memberships_are_bound_to_manifest_fingerprint() -> None:
+    root = ROOT / "experiments/personalized-data-freeze/build-01"
+    manifest = json.loads((root / "manifest.json").read_text())
+    memberships = load_frozen_memberships(root, manifest["fingerprint"])
+    assert {months: len(values) for months, values in memberships.items()} == {
+        12: 3808,
+        36: 3376,
+        60: 3027,
+    }
+    with pytest.raises(ValueError, match="fingerprint drift"):
+        load_frozen_memberships(root, "0" * 64)
