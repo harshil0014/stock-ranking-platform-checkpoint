@@ -247,6 +247,21 @@ def test_exact_identity_and_listing_gate(tmp_path):
         load_history_book(facts, tmp_path)
 
 
+def test_history_book_applies_frozen_terminal_repair(tmp_path):
+    from stock_ranker.personalized_data import load_history_book
+    pd.DataFrame({
+        'date': ['2020-01-01', '2020-01-02'],
+        'adjusted_close': [10.0, 11.0],
+    }).to_csv(tmp_path / 'A.csv', index=False)
+    facts = pd.DataFrame({'isin': ['ID'], 'ticker': ['A'], 'listing_date': [None]})
+    repairs = pd.DataFrame([{
+        'isin': 'ID', 'ticker': 'A', 'appended_date': '2020-01-10', 'appended_price': 12.5,
+    }])
+    book, _ = load_history_book(facts, tmp_path, terminal_repairs=repairs)
+    assert str(book.arrays['ID'][0][-1]) == '2020-01-10'
+    assert book.arrays['ID'][1][-1] == 12.5
+
+
 def test_models_are_deterministic_and_never_impute_unrankable_securities():
     pytest.importorskip('sklearn')
     from stock_research.personalized_validation import FEATURES, fit_challengers

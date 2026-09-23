@@ -8,7 +8,7 @@ from stock_ranker.personalized import InvestorProfile
 from stock_research.personalized_executable_tournament import ExecutableHistoryBook, load_protocol, rank_executable
 
 
-def book(tmp_path, *, split_ratio=2.0):
+def book(tmp_path, *, split_ratio=2.0, repairs=None, raw_terminals=None, as_of="2020-03-01"):
     history = tmp_path / "history"; history.mkdir()
     splits = tmp_path / "splits"; splits.mkdir()
     pd.DataFrame({
@@ -25,7 +25,10 @@ def book(tmp_path, *, split_ratio=2.0):
         "split_ratio": split_ratio, "source_url": "source", "response_sha256": "hash",
     }]).to_csv(splits / "split_ledger.csv", index=False)
     identities = pd.DataFrame([{"isin": "ID", "ticker": "AAA"}])
-    return ExecutableHistoryBook(identities, history, splits, as_of_date="2020-03-01")
+    return ExecutableHistoryBook(
+        identities, history, splits, as_of_date=as_of,
+        terminal_repairs=repairs, terminal_raw_prices=raw_terminals,
+    )
 
 
 def test_professor_and_enhanced_cash_policies_are_separate(tmp_path):
@@ -70,6 +73,20 @@ def test_all_invalid_forward_window_keeps_metric_schema(tmp_path):
     assert result.status.eq("STALE_TERMINAL").all()
     assert {"xirr", "target_shortfall", "price_drawdown"}.issubset(result.columns)
     assert result[["xirr", "target_shortfall", "price_drawdown"]].isna().all().all()
+
+
+def test_frozen_terminal_repair_uses_raw_execution_and_adjusted_return_prices(tmp_path):
+    repairs = pd.DataFrame([{
+        "isin": "ID", "ticker": "AAA", "appended_date": "2020-03-10", "appended_price": 180.0,
+    }])
+    raw_terminals = pd.DataFrame([{
+        "isin": "ID", "trade_date": "2020-03-10", "latest_price": 90.0,
+    }])
+    b = book(tmp_path, repairs=repairs, raw_terminals=raw_terminals, as_of="2020-03-10")
+    dates, raw, adjusted, nominal, _ = b.arrays["ID"]
+    assert str(dates[-1]) == "2020-03-10"
+    assert raw[-1] == nominal[-1] == 90.0
+    assert adjusted[-1] == 180.0
 
 
 def test_rank_keeps_professor_discarded_cash_column_unambiguous(tmp_path):

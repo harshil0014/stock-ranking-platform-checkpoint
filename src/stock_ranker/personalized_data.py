@@ -6,10 +6,16 @@ import pandas as pd
 from stock_ranker.personalized import HistoryBook
 
 
-def load_history_book(facts, history_root):
+def load_history_book(facts, history_root, *, terminal_repairs=None):
     if facts['isin'].isna().any() or facts['isin'].duplicated().any() or facts.ticker.duplicated().any():
         raise ValueError('unique complete security identities required')
     root = Path(history_root).resolve()
+    repairs = {}
+    if terminal_repairs is not None:
+        required = {"isin", "ticker", "appended_date", "appended_price"}
+        if not required.issubset(terminal_repairs.columns) or terminal_repairs["isin"].duplicated().any():
+            raise ValueError("unique frozen terminal repairs required")
+        repairs = terminal_repairs.set_index("isin").to_dict("index")
     book, hashes = HistoryBook({}), {}
     for item in facts.itertuples(index=False):
         path = (root / f'{item.ticker}.csv').resolve()
@@ -23,6 +29,15 @@ def load_history_book(facts, history_root):
         try:
             from io import BytesIO
             frame = pd.read_csv(BytesIO(raw), usecols=['date', 'adjusted_close'])
+            repair = repairs.get(item.isin)
+            if repair is not None:
+                if repair["ticker"] != item.ticker:
+                    raise ValueError("terminal repair identity mismatch")
+                repair_date = pd.Timestamp(repair["appended_date"])
+                if repair_date > pd.to_datetime(frame["date"]).max():
+                    frame = pd.concat([frame, pd.DataFrame({
+                        "date": [repair_date], "adjusted_close": [repair["appended_price"]]
+                    })], ignore_index=True)
             listing = pd.to_datetime(item.listing_date, errors='coerce')
             if pd.notna(listing):
                 frame = frame.loc[pd.to_datetime(frame.date) >= listing]

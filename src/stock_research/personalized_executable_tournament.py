@@ -47,7 +47,9 @@ class ExecutableHistoryBook:
     """Immutable raw/adjusted arrays with split-reconstructed nominal prices."""
 
     def __init__(self, identities: pd.DataFrame, history_root: str | Path,
-                 split_root: str | Path, *, as_of_date: str):
+                 split_root: str | Path, *, as_of_date: str,
+                 terminal_repairs: pd.DataFrame | None = None,
+                 terminal_raw_prices: pd.DataFrame | None = None):
         if identities["isin"].duplicated().any() or identities["ticker"].duplicated().any():
             raise ValueError("executable identities must be unique")
         history_root, split_root = Path(history_root), Path(split_root)
@@ -56,6 +58,17 @@ class ExecutableHistoryBook:
         ledger["event_date"] = pd.to_datetime(ledger.get("event_date"), errors="coerce")
         grouped = {identity: frame for identity, frame in ledger.groupby("isin")}
         cutoff = np.datetime64(pd.Timestamp(as_of_date).date(), "D")
+        repairs, raw_terminals = {}, {}
+        if terminal_repairs is not None:
+            required = {"isin", "ticker", "appended_date", "appended_price"}
+            if not required.issubset(terminal_repairs.columns) or terminal_repairs["isin"].duplicated().any():
+                raise ValueError("unique frozen terminal repairs required")
+            if terminal_raw_prices is None or not {"isin", "trade_date", "latest_price"}.issubset(terminal_raw_prices.columns):
+                raise ValueError("terminal raw prices required for frozen repairs")
+            if terminal_raw_prices["isin"].duplicated().any():
+                raise ValueError("unique terminal raw prices required")
+            repairs = terminal_repairs.set_index("isin").to_dict("index")
+            raw_terminals = terminal_raw_prices.set_index("isin").to_dict("index")
         self.arrays, self.errors, self.cache = {}, {}, {}
         for row in identities[["isin", "ticker"]].sort_values("isin").itertuples(index=False):
             try:
@@ -65,6 +78,20 @@ class ExecutableHistoryBook:
                 if relative.is_absolute() or ".." in relative.parts:
                     raise ValueError("unsafe history path")
                 frame = pd.read_csv(history_root / relative)
+                repair = repairs.get(row.isin)
+                if repair is not None and np.datetime64(pd.Timestamp(repair["appended_date"]).date(), "D") <= cutoff:
+                    terminal_raw = raw_terminals.get(row.isin)
+                    if repair["ticker"] != row.ticker or terminal_raw is None:
+                        raise ValueError("terminal repair identity mismatch")
+                    repair_date = pd.Timestamp(repair["appended_date"]).normalize()
+                    if pd.Timestamp(terminal_raw["trade_date"]).normalize() != repair_date:
+                        raise ValueError("terminal repair date mismatch")
+                    if repair_date > pd.to_datetime(frame["date"]).max():
+                        frame = pd.concat([frame, pd.DataFrame({
+                            "date": [repair_date],
+                            "raw_close": [terminal_raw["latest_price"]],
+                            "adjusted_close": [repair["appended_price"]],
+                        })], ignore_index=True)
                 dates = pd.to_datetime(frame["date"], errors="raise").to_numpy(dtype="datetime64[D]")
                 raw = pd.to_numeric(frame["raw_close"], errors="raise").to_numpy(float)
                 adjusted = pd.to_numeric(frame["adjusted_close"], errors="raise").to_numpy(float)

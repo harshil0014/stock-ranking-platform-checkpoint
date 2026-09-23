@@ -217,9 +217,18 @@ def run(args):
     snapshot = load_company_fact_snapshot(resolve_company_fact_snapshot(ROOT / "data/company_facts"))
     facts = snapshot.facts
     identities = facts.loc[facts["isin"].isin(set.union(*memberships.values())), ["isin", "ticker"]]
+    repairs_path = args.frozen_root / "terminal_repairs.csv"
+    repairs = pd.read_csv(repairs_path)
+    live_state = json.loads((ROOT / "data/live_market/accepted_state.json").read_text(encoding="utf-8"))
+    live_path = ROOT / "data/live_market" / live_state["bundle_path"] / "live_market.csv"
+    live = pd.read_csv(live_path, low_memory=False)
     executable = ExecutableHistoryBook(identities, args.history_cache, args.split_root,
-                                       as_of_date=protocol["current_profile_date"])
-    fractional_book, history_hashes = load_history_book(facts, args.history_cache)
+                                       as_of_date=protocol["current_profile_date"],
+                                       terminal_repairs=repairs,
+                                       terminal_raw_prices=live[["isin", "trade_date", "latest_price"]])
+    fractional_book, history_hashes = load_history_book(
+        facts, args.history_cache, terminal_repairs=repairs
+    )
     fractional_engine = PersonalizedEngine(fractional_book, cache_size=128)
 
     training = build_rows(executable, fractional_engine, fractional_book, facts, profiles, memberships,
@@ -325,6 +334,8 @@ def run(args):
         "history_fingerprint": sha256(json.dumps(history_hashes, sort_keys=True).encode()).hexdigest(),
         "split_audit_sha256": digest(args.split_root / "acquisition_audit.csv"),
         "split_ledger_sha256": digest(args.split_root / "split_ledger.csv"),
+        "frozen_terminal_repairs_sha256": digest(repairs_path),
+        "live_market_sha256": digest(live_path),
         "workbook_sha256": digest(args.workbook), "company_fact_fingerprint": snapshot.manifest["fingerprint"],
         "protected_state": protected_before,
         "source_sha256": {
