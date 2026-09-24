@@ -1,0 +1,133 @@
+{
+  "deterministic_artifacts": [
+    {
+      "path": "amount_effect_by_price.csv",
+      "sha256": "fb17822d60b8c9174ed4bb3504db774e0e86b730a217d8145a9f55f8405ba066",
+      "size": 1791
+    },
+    {
+      "path": "candidate_decisions.json",
+      "sha256": "9a97739a963c26000aeece0fbb9b14e6db405d0f5d8e40fd56fb9b28d30b8408",
+      "size": 2629
+    },
+    {
+      "path": "current_profile_rankings.csv.gz",
+      "sha256": "d9e1706bc9416c3dd0f914bded3f6c2a373bbd23b0c73020a4dd794bb29bd9e0",
+      "size": 7066926
+    },
+    {
+      "path": "executable_coverage.csv",
+      "sha256": "d5f22f162b8ec44b8bd20d73755ecf9ee34e627f7e2d9dffb1b02b68ce18b954",
+      "size": 533
+    },
+    {
+      "path": "execution_diagnostics.csv",
+      "sha256": "a7c71cf33c6def4a6619af84c17cd348368caca74143d8d9ef1df44d94b350db",
+      "size": 15410
+    },
+    {
+      "path": "fractional_vs_whole_professor.csv",
+      "sha256": "0514e9fac571d439bda74d2a854c955d29bb7fa9e0280eb91b4bbb1a40b4cd65",
+      "size": 2512
+    },
+    {
+      "path": "inputs.json",
+      "sha256": "12082aea9497a8a863023b5d3ead4ff4f0f98a2329727c21063e15f99327653d",
+      "size": 1543
+    },
+    {
+      "path": "model_audit.json",
+      "sha256": "fd964d28f6c02bb0264916dc7e11bf7ff5110fc33108e829cecda0decf229fab",
+      "size": 6185
+    },
+    {
+      "path": "previous_policy_validation_comparison.csv",
+      "sha256": "bfff73a0efc529e4d87944c416f5dbb6a65db045ca2bb097f57d3776ac0af4a3",
+      "size": 6087
+    },
+    {
+      "path": "profile_sensitivity.csv",
+      "sha256": "88dc649a89e89991e02331f1c8e7e58a8c7851fe87f56774889bf63bbe44ebd1",
+      "size": 7561
+    },
+    {
+      "path": "protocol.json",
+      "sha256": "fa68a814c7477507b827921b7bb4c189a4dc8773fdf26914b5e28e7cdbd76de4",
+      "size": 7171
+    },
+    {
+      "path": "sector_pit_coverage.csv",
+      "sha256": "a9c9620453d79bf907b56127e9199d89cbb155d2efd113f2db2bb0eebef80f79",
+      "size": 748
+    },
+    {
+      "path": "sector_relative_supplementary_metrics.csv",
+      "sha256": "f4ef479203620037cdef1ab4cdc210f4387bf885056a9fce4d476c5b0f35a1a3",
+      "size": 434
+    },
+    {
+      "path": "supplementary_metrics.csv",
+      "sha256": "69225b1bb784d3de22524a9821733f4cb875795cb75285cbc7c6b86737ee7121",
+      "size": 52157
+    },
+    {
+      "path": "supplementary_paired_deltas.csv",
+      "sha256": "62e5d0f4c1234d738eb198bb14836f039f0ad7b29fe1a25ece1ccf68b088a4e7",
+      "size": 19374
+    },
+    {
+      "path": "supplementary_predictions.csv.gz",
+      "sha256": "8ef0f78414ee1af66d33a4a36d3fc85777dd028b0e748535f400cf482b78091d",
+      "size": 15835430
+    },
+    {
+      "path": "supplementary_summary.csv",
+      "sha256": "7c27b7196aede8e4d994e3aef4d7d8b5dcf97cb4a14e97f8574290a6f080305f",
+      "size": 3116
+    },
+    {
+      "path": "supplementary_turnover.csv",
+      "sha256": "4ff21d785aa6c1d49fb36c820df9a269c1c3e221431c23e88b27a3018ff016f5",
+      "size": 8020
+    },
+    {
+      "path": "supplementary_uncertainty.csv",
+      "sha256": "f200e1c78d916d1dc0da489c4eaca6e7093faab1945ce507367081fbeaa330ad",
+      "size": 2043
+    },
+    {
+      "path": "training_panel.csv.gz",
+      "sha256": "af7b57fcd668d18e9d58356f25b987050bcd15cfe220e3a9dfda3f0df5a0ea3b",
+      "size": 31780007
+    },
+    {
+      "path": "validation_metrics.csv",
+      "sha256": "fc03155eaea58421888908766d9a3ef94e4bae33e2e1887b06562c221c47302c",
+      "size": 53461
+    },
+    {
+      "path": "validation_paired_deltas.csv",
+      "sha256": "0bd7e9ad1a58e2dfe52428f7a743028c86933313859862b4aceebb6cec4d3429",
+      "size": 19299
+    },
+    {
+      "path": "validation_predictions.csv.gz",
+      "sha256": "cb519b8559f064bcacc50b1cc912b9f3e39e4cff6011dbb631f8595ce283f61d",
+      "size": 14836273
+    },
+    {
+      "path": "validation_summary.csv",
+      "sha256": "ff96a1d7fddb296465fbe35a0f0d2cf5c7692ef4512af037c1b8a858da06c970",
+      "size": 3130
+    },
+    {
+      "path": "validation_uncertainty.csv",
+      "sha256": "7050681fa6d6bda53279a197c308834808257ab1190d1f1c3ee86c1ea7bfc1d3",
+      "size": 2068
+    }
+  ],
+  "fingerprint": "9384fececd41f65218ae00f884fc2cfe592f2bce96158fc21b308c48d2247655",
+  "observational_artifacts": [
+    "assessment.json"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "freeze": {
+    "artifact_hashes_match": true,
+    "retained_build": "experiments/personalized-official-action-freeze/build-02",
+    "verification_build": "ephemeral build-03 removed after byte-for-byte comparison",
+    "fingerprint_a": "0930db55b34143fd04f494367255ccb1037478c5a74dc6dcc6e7c7aaae61dc7f",
+    "fingerprint_b": "0930db55b34143fd04f494367255ccb1037478c5a74dc6dcc6e7c7aaae61dc7f",
+    "match": true
+  },
+  "protected_state": {
+    "data/company_facts/accepted_state.json": "a8a2bc2d38ef9d2b87c61928c95bf07dd5b575186864c6703ec3b080be37dfdb",
+    "data/live_market/accepted_state.json": "632dcc4f9069eacfd5228563e28ec6b6006737552b691955fcf45aa5b6026595",
+    "experiments/personalized-data-freeze/build-01/manifest.json": "09a930dc3934b50f444bae853c1edd0df368fc875802217152988e54c45d2da1",
+    "experiments/personalized-executable-tournament/final-01/manifest.json": "9c28e78b1c97c27057fb6abac3a735e44c5e7487dc134439ac6826079e0d823e",
+    "unchanged_from_git_head": true
+  },
+  "tests": {
+    "focused": "13 passed",
+    "full": "877 passed, 1 skipped"
+  },
+  "tournament": {
+    "artifact_hashes_match": true,
+    "retained_build": "experiments/personalized-official-action-tournament/build-03",
+    "verification_build": "ephemeral build-04 removed after byte-for-byte comparison",
+    "fingerprint_a": "9384fececd41f65218ae00f884fc2cfe592f2bce96158fc21b308c48d2247655",
+    "fingerprint_b": "9384fececd41f65218ae00f884fc2cfe592f2bce96158fc21b308c48d2247655",
+    "match": true
+  }
+}

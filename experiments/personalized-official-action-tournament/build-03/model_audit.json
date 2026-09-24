@@ -1,0 +1,256 @@
+{
+  "final_fit": [
+    {
+      "alpha": 100.0,
+      "candidate": "ridge_executable",
+      "features": [
+        "enhanced_carry_xirr_score",
+        "enhanced_goal_score",
+        "price_drawdown",
+        "cagr_3y",
+        "cagr_5y",
+        "cash_utilization",
+        "unaffordable_rate"
+      ],
+      "train_rows": 178515
+    },
+    {
+      "alpha": 100.0,
+      "candidate": "ridge_without_amount_features",
+      "features": [
+        "enhanced_carry_xirr_score",
+        "enhanced_goal_score",
+        "price_drawdown",
+        "cagr_3y",
+        "cagr_5y"
+      ],
+      "train_rows": 178515
+    },
+    {
+      "alpha": 100.0,
+      "candidate": "ridge_without_goal",
+      "features": [
+        "enhanced_carry_xirr_score",
+        "price_drawdown",
+        "cagr_3y",
+        "cagr_5y",
+        "cash_utilization",
+        "unaffordable_rate"
+      ],
+      "train_rows": 178515
+    },
+    {
+      "candidate": "cluster_rank_aggregation",
+      "clusters": [
+        [
+          "cagr_3y"
+        ],
+        [
+          "cagr_5y"
+        ],
+        [
+          "cash_utilization"
+        ],
+        [
+          "enhanced_carry_xirr_score"
+        ],
+        [
+          "enhanced_goal_score"
+        ],
+        [
+          "price_drawdown"
+        ],
+        [
+          "unaffordable_rate"
+        ]
+      ],
+      "threshold": 0.85
+    },
+    {
+      "candidate": "hist_gradient_boosting",
+      "features": [
+        "enhanced_carry_xirr_score",
+        "enhanced_goal_score",
+        "price_drawdown",
+        "cagr_3y",
+        "cagr_5y",
+        "cash_utilization",
+        "unaffordable_rate"
+      ],
+      "parameters": {
+        "l2_regularization": 10.0,
+        "learning_rate": 0.05,
+        "max_iter": 100,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 80
+      },
+      "permutation_importance": {
+        "cagr_3y": 0.062197559330497754,
+        "cagr_5y": 0.06051624847448345,
+        "cash_utilization": 0.004484241220945447,
+        "enhanced_carry_xirr_score": 0.00417424523324154,
+        "enhanced_goal_score": 0.006252008805313625,
+        "price_drawdown": 0.009474464470969002,
+        "unaffordable_rate": 0.00015935476831396844
+      },
+      "train_rows": 178515
+    },
+    {
+      "candidate": "lightgbm_lambdarank",
+      "features": [
+        "enhanced_carry_xirr_score",
+        "enhanced_goal_score",
+        "price_drawdown",
+        "cagr_3y",
+        "cagr_5y",
+        "cash_utilization",
+        "unaffordable_rate"
+      ],
+      "importance": {
+        "cagr_3y": 54,
+        "cagr_5y": 103,
+        "cash_utilization": 50,
+        "enhanced_carry_xirr_score": 64,
+        "enhanced_goal_score": 19,
+        "price_drawdown": 70,
+        "unaffordable_rate": 0
+      },
+      "parameters": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_samples": 80,
+        "n_estimators": 60,
+        "num_leaves": 7,
+        "reg_lambda": 10.0
+      },
+      "train_rows": 178515
+    }
+  ],
+  "validation_fit": [
+    {
+      "alpha": 100.0,
+      "candidate": "ridge_executable",
+      "features": [
+        "enhanced_carry_xirr_score",
+        "enhanced_goal_score",
+        "price_drawdown",
+        "cagr_3y",
+        "cagr_5y",
+        "cash_utilization",
+        "unaffordable_rate"
+      ],
+      "train_rows": 129377
+    },
+    {
+      "alpha": 100.0,
+      "candidate": "ridge_without_amount_features",
+      "features": [
+        "enhanced_carry_xirr_score",
+        "enhanced_goal_score",
+        "price_drawdown",
+        "cagr_3y",
+        "cagr_5y"
+      ],
+      "train_rows": 129377
+    },
+    {
+      "alpha": 100.0,
+      "candidate": "ridge_without_goal",
+      "features": [
+        "enhanced_carry_xirr_score",
+        "price_drawdown",
+        "cagr_3y",
+        "cagr_5y",
+        "cash_utilization",
+        "unaffordable_rate"
+      ],
+      "train_rows": 129377
+    },
+    {
+      "candidate": "cluster_rank_aggregation",
+      "clusters": [
+        [
+          "cagr_3y"
+        ],
+        [
+          "cagr_5y"
+        ],
+        [
+          "cash_utilization"
+        ],
+        [
+          "enhanced_carry_xirr_score"
+        ],
+        [
+          "enhanced_goal_score"
+        ],
+        [
+          "price_drawdown"
+        ],
+        [
+          "unaffordable_rate"
+        ]
+      ],
+      "threshold": 0.85
+    },
+    {
+      "candidate": "hist_gradient_boosting",
+      "features": [
+        "enhanced_carry_xirr_score",
+        "enhanced_goal_score",
+        "price_drawdown",
+        "cagr_3y",
+        "cagr_5y",
+        "cash_utilization",
+        "unaffordable_rate"
+      ],
+      "parameters": {
+        "l2_regularization": 10.0,
+        "learning_rate": 0.05,
+        "max_iter": 100,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 80
+      },
+      "permutation_importance": {
+        "cagr_3y": 0.04688772782069154,
+        "cagr_5y": 0.079186322930574,
+        "cash_utilization": 0.0034616526246550685,
+        "enhanced_carry_xirr_score": 0.014196136402315243,
+        "enhanced_goal_score": 0.004269547371047677,
+        "price_drawdown": 0.016414476012004926,
+        "unaffordable_rate": 0.0
+      },
+      "train_rows": 129377
+    },
+    {
+      "candidate": "lightgbm_lambdarank",
+      "features": [
+        "enhanced_carry_xirr_score",
+        "enhanced_goal_score",
+        "price_drawdown",
+        "cagr_3y",
+        "cagr_5y",
+        "cash_utilization",
+        "unaffordable_rate"
+      ],
+      "importance": {
+        "cagr_3y": 69,
+        "cagr_5y": 106,
+        "cash_utilization": 8,
+        "enhanced_carry_xirr_score": 87,
+        "enhanced_goal_score": 52,
+        "price_drawdown": 38,
+        "unaffordable_rate": 0
+      },
+      "parameters": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_samples": 80,
+        "n_estimators": 60,
+        "num_leaves": 7,
+        "reg_lambda": 10.0
+      },
+      "train_rows": 129377
+    }
+  ]
+}

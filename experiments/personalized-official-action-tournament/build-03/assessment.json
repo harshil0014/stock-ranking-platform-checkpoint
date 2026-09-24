@@ -1,0 +1,102 @@
+{
+  "candidate_decisions": [
+    {
+      "candidate": "professor_whole_share",
+      "reason": "Fixed comparison baseline.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "enhanced_no_carry_xirr",
+      "reason": "Directionally useful on the unchanged validation dates.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "enhanced_carry_xirr",
+      "reason": "Directionally useful on the unchanged validation dates.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "enhanced_goal",
+      "reason": "Directionally useful on the unchanged validation dates.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "historical_target_frequency",
+      "reason": "Directionally useful on the unchanged validation dates.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "global_existing",
+      "reason": "Fixed comparison baseline.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "enhanced_plus_existing",
+      "reason": "Directionally useful on the unchanged validation dates.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "ridge_executable",
+      "reason": "Directionally useful on the unchanged validation dates.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "ridge_without_amount_features",
+      "reason": "Directionally useful on the unchanged validation dates.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "ridge_without_goal",
+      "reason": "Directionally useful on the unchanged validation dates.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "cluster_rank_aggregation",
+      "reason": "Directionally useful on the unchanged validation dates.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "hist_gradient_boosting",
+      "reason": "Directionally useful on the unchanged validation dates.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "lightgbm_lambdarank",
+      "reason": "Directionally useful on the unchanged validation dates.",
+      "status": "RESEARCH ONLY"
+    },
+    {
+      "candidate": "official_exact_date_sector_relative",
+      "reason": "Exact official 2020-2022 observations support a retrospective diagnostic, with current-universe survivorship.",
+      "status": "SUPPLEMENTARY ONLY"
+    },
+    {
+      "candidate": "transaction_cost_model",
+      "reason": "No single complete historical broker and statutory fee contract was supplied.",
+      "status": "INSUFFICIENT EVIDENCE"
+    },
+    {
+      "candidate": "liquidity_constrained_model",
+      "reason": "No complete historical order-book or volume evidence supports a reproducible cap.",
+      "status": "INSUFFICIENT EVIDENCE"
+    }
+  ],
+  "coverage_after": {
+    "12": 3547,
+    "36": 3046,
+    "60": 2631
+  },
+  "evidence_boundary": "Unchanged validation dates are reused development evidence; exposed 2025 outcomes and exact-date sectors are supplementary only.",
+  "exact_next_milestone": "Collect prospective post-2026-09-18 outcomes and event-specific rights/merger/demerger economic terms; acquire effective-dated sector intervals before a full sector tournament.",
+  "executable_identity_count": 3780,
+  "frozen_cohort_fingerprint": "25bba97f1694ea44554886d0994de5f0428bf4cac85da82803adb6a7c4884055",
+  "historical_sector_scope": "Exact official 2020-03-31, 2021-03-31, and 2022-03-31 observations only",
+  "historical_sector_used": true,
+  "history_error_identity_count": 28,
+  "official_action_freeze_fingerprint": "0930db55b34143fd04f494367255ccb1037478c5a74dc6dcc6e7c7aaae61dc7f",
+  "overall": "PARTIAL",
+  "protected_state_unchanged": true,
+  "python": "3.13.4",
+  "runtime_seconds": 4127.867129499995,
+  "schema_version": "personalized_official_action_tournament_result_v1"
+}

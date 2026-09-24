@@ -1,3 +1,15 @@
 experiments/personalized-executable-tournament/final-01/*.csv text eol=lf
 experiments/personalized-executable-tournament/final-01/*.json text eol=lf
 experiments/personalized-executable-tournament/final-01/*.gz binary
+experiments/personalized-official-action-freeze/build-02/*.csv text eol=lf
+experiments/personalized-official-action-freeze/build-02/*.json binary
+experiments/personalized-official-action-freeze/build-02/*.gz binary
+experiments/personalized-official-action-tournament/build-03/*.csv text eol=lf
+experiments/personalized-official-action-tournament/build-03/*.json binary
+experiments/personalized-official-action-tournament/build-03/*.gz binary
+experiments/personalized-official-action-tournament/deterministic_rebuild_verification.json binary
+research/protocols/personalized_official_action_tournament_v1.json text eol=lf
+research/runners/run_personalized_official_action_freeze.py text eol=lf
+research/runners/run_personalized_official_action_tournament.py text eol=lf
+src/stock_research/personalized_official_actions.py text eol=lf
+tests/test_personalized_official_actions.py text eol=lf

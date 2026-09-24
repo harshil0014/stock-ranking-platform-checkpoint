@@ -1,0 +1,17 @@
+{
+  "company_fact_fingerprint": "dba7b068cdc97e01cba00e36d914d0ce97d1d283763247ada544b89486454a0e",
+  "handoff_manifest_sha256": "72f495f59025f87c038509850d659116c896d0de8d8a607e52c3aaf868cb84af",
+  "live_market_sha256": "ffa2b5153826b08d14ca67020cf60f251d0fba562fb3a43ce519c2e1deb786de",
+  "official_source_ledger_sha256": "60c71ee00f10a35f8573abbd34ee75478153a01206b425f494c42e4cb6a5244e",
+  "old_frozen_manifest_sha256": "09a930dc3934b50f444bae853c1edd0df368fc875802217152988e54c45d2da1",
+  "old_tournament_manifest_sha256": "9c28e78b1c97c27057fb6abac3a735e44c5e7487dc134439ac6826079e0d823e",
+  "protected_state": {
+    "data\\company_facts\\accepted_state.json": "a8a2bc2d38ef9d2b87c61928c95bf07dd5b575186864c6703ec3b080be37dfdb",
+    "data\\live_market\\accepted_state.json": "632dcc4f9069eacfd5228563e28ec6b6006737552b691955fcf45aa5b6026595"
+  },
+  "provider_split_ledger_sha256": "0d723a299d346eeffa7160d4108acda8dc609cd7b7e2360f443cdb2cc51c4fcb",
+  "source_sha256": {
+    "module": "3d82a94c444be5ca7e8e3155669d5d068a2d182358654516aced3476ebc342d1",
+    "runner": "d4e8db3005dafc740f9b739309ada0970e42e4fab5ae12863fb4c8b034eb4325"
+  }
+}
