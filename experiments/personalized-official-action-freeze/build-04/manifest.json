@@ -1,0 +1,63 @@
+{
+  "deterministic_artifacts": [
+    {
+      "path": "all_profile_recovery_audit.csv.gz",
+      "sha256": "a55e7b9792f31600c8332b39483783199679ad9b47054051e6b7f7d63451acb0",
+      "size": 1366917
+    },
+    {
+      "path": "executable_coverage.csv",
+      "sha256": "2912edd7ae38351154743b046e1594aaa1e30e7793f72d14eb53d1495b3490e6",
+      "size": 522
+    },
+    {
+      "path": "frozen_executable_cohort_12m.csv.gz",
+      "sha256": "0b0db1aec1891726ebc96d538b9159667195cd057f55e53311dd019ecfc48928",
+      "size": 517243
+    },
+    {
+      "path": "frozen_executable_cohort_36m.csv.gz",
+      "sha256": "78e7db8bbb151297052e9d6fc7ddb2e37b545727614a0115c2871dc07dbff0e4",
+      "size": 455537
+    },
+    {
+      "path": "frozen_executable_cohort_60m.csv.gz",
+      "sha256": "8b47d183023a8050bc967bc3a30a15152e0ce336894896c7a8b8a978c131b084",
+      "size": 396705
+    },
+    {
+      "path": "handoff_target_reconciliation.csv",
+      "sha256": "e4af5e57c18f9a0cbe74facfa9e5073d063cb50afbb746e25135871154b8a90b",
+      "size": 247
+    },
+    {
+      "path": "inputs.json",
+      "sha256": "42ba18d54d987d5852476a6ca83c5cec49496a93dfc0b6e887428a9affb0c2a1",
+      "size": 1367
+    },
+    {
+      "path": "normalized_official_action_ledger.csv.gz",
+      "sha256": "f5170b40ce358840892d317f251d5249af72c457ac09e1c8ee1d1061e92250a7",
+      "size": 42924
+    },
+    {
+      "path": "official_exact_date_sector_panel.csv.gz",
+      "sha256": "efadaf927762f8b5ac6e0e53f50e34ee3b90fe1ad733bd25a6b63f158be46b59",
+      "size": 55777
+    },
+    {
+      "path": "sector_pit_coverage.csv",
+      "sha256": "f7f11f9a982fb62f415235366a411a1d513b3dbd6c2b9584c70608624ed6e53f",
+      "size": 749
+    },
+    {
+      "path": "sector_relative_supplementary_metrics.csv",
+      "sha256": "030320e375369ace689d69977d86e4d820801459afeda5395137cd92b45372da",
+      "size": 441
+    }
+  ],
+  "fingerprint": "67ca9550a6d2921a1d8de27a39fe2f9a8da7c0dc495f5f98d04b6d6d21d45f09",
+  "observational_artifacts": [
+    "summary.json"
+  ]
+}

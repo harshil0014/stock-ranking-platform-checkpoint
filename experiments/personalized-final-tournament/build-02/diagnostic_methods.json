@@ -1,0 +1,6 @@
+{
+  "corporate_action_ablation": "Build-03 versus prior build-02 official-action tournament; descriptive since comparison cohort size changes.",
+  "ml_component_ablation": "Fixed equal goal+ridge ensemble versus pre-registered equal goal+ridge+LambdaRank ensemble on same validation cohort.",
+  "risk_ablation": "Ridge alpha 100 trained on original training dates, excluding price_drawdown, scored on original validation dates and common cohort.",
+  "status": "POST_SELECTION_DIAGNOSTIC_NOT_USED_FOR_MODEL_SELECTION"
+}

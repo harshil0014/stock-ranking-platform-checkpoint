@@ -1,0 +1,14 @@
+{
+  "corrected_selection_after_earlier_workbook_read": true,
+  "corrected_selection_used_no_workbook_inputs": true,
+  "pre_professor_manifest_fingerprint": "23093df45da5a2b66370d8590a98d8bb30269ffa16bae726a2cf07a97fd72c9f",
+  "selection": {
+    "promotion": "INSUFFICIENT_EVIDENCE",
+    "reason": "Previously exposed validation and only two independent decision dates cannot establish prospective benefit.",
+    "status": "RESEARCH_ONLY",
+    "strongest_fixed_ensemble_by_goal_shortfall": "enhanced_goal+ridge_executable+lightgbm_lambdarank@0.333-0.333-0.333",
+    "strongest_individual_by_goal_shortfall": "hist_gradient_boosting_score",
+    "strongest_individual_by_rank_ic": "hist_gradient_boosting_score"
+  },
+  "selection_rule_and_weights_predeclared_before_first_workbook_read": true
+}

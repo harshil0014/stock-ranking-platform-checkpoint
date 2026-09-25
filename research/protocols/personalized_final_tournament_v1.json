@@ -1,0 +1,262 @@
+{
+  "schema_version": "personalized_final_tournament_v1",
+  "scope": "GLOBAL_ONLY_FROZEN_COHORTS_WHOLE_SHARES",
+  "frozen_cohort_fingerprint": "25bba97f1694ea44554886d0994de5f0428bf4cac85da82803adb6a7c4884055",
+  "workbook_sha256": "be2ab62fb41abd4769b5f5d8de7f3df04edc6cfa336bb0d2c5906fc6da2e980b",
+  "outcome_horizon_months": 12,
+  "training_decision_dates": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2022-06-30",
+    "2022-12-31"
+  ],
+  "validation_decision_dates": [
+    "2023-06-30",
+    "2023-12-31"
+  ],
+  "supplementary_exposed_test_dates": [
+    "2025-03-31",
+    "2025-06-30"
+  ],
+  "latest_training_outcome_maturity": "2023-12-31",
+  "latest_validation_outcome_maturity": "2024-12-31",
+  "current_profile_date": "2026-09-18",
+  "profiles": {
+    "amount1000": {
+      "amount": 1000,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "horizon_months": 12,
+      "target_cagr": 0.2
+    },
+    "base7500": {
+      "amount": 7500,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "horizon_months": 12,
+      "target_cagr": 0.2
+    },
+    "amount50000": {
+      "amount": 50000,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "horizon_months": 12,
+      "target_cagr": 0.2
+    },
+    "lookback12": {
+      "amount": 7500,
+      "interval_days": 30,
+      "lookback_months": 12,
+      "horizon_months": 12,
+      "target_cagr": 0.2
+    },
+    "lookback60": {
+      "amount": 7500,
+      "interval_days": 30,
+      "lookback_months": 60,
+      "horizon_months": 12,
+      "target_cagr": 0.2
+    },
+    "weekly": {
+      "amount": 7500,
+      "interval_days": 7,
+      "lookback_months": 36,
+      "horizon_months": 12,
+      "target_cagr": 0.2
+    },
+    "quarterly": {
+      "amount": 7500,
+      "interval_days": 90,
+      "lookback_months": 36,
+      "horizon_months": 12,
+      "target_cagr": 0.2
+    },
+    "target10": {
+      "amount": 7500,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "horizon_months": 12,
+      "target_cagr": 0.1
+    },
+    "target30": {
+      "amount": 7500,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "horizon_months": 12,
+      "target_cagr": 0.3
+    }
+  },
+  "execution_contract": {
+    "price_source": "Frozen Yahoo-derived raw close is the contemporaneous nominal execution price; Yahoo split events only isolate provider split adjustment from distribution adjustment",
+    "corporate_action_authority": "Official NSE symbol and BSE security-code observations mapped across ISIN changes",
+    "automatic_action_policy": "Exact official split, bonus and recovered consolidation ratios; test integer holdings at each consolidation date; fractional settlement value unavailable remains a blocker",
+    "blocking_action_policy": "Recovered passive rights: no subscription and zero separately valued entitlement; withdrawn issue: no allotment; demerger resulting-security and SIYSIL preference valuations remain blocked",
+    "schedule": "Fixed calendar contribution; execute at next observed close within seven calendar days",
+    "professor_mode": "Floor each contribution divided by execution price; do not carry or include residual cash; rank by terminal gain divided by actual spend",
+    "enhanced_no_carry_mode": "Floor each contribution separately; retain but do not reuse residual cash; include cash in terminal wealth and XIRR",
+    "enhanced_carry_mode": "Add contributions to cash; buy maximum integer shares; carry residual cash; include cash in terminal wealth and XIRR",
+    "dividend_policy": "Retain the provider adjusted/raw dividend factor while replacing provider split mechanics with official multipliers",
+    "cost_policy": "Gross core only because a complete reproducible historical broker contract is unavailable",
+    "liquidity_policy": "No slippage or participation cap because complete historical order-book data is unavailable",
+    "maximum_execution_gap_days": 7
+  },
+  "candidate_policy": {
+    "fixed_candidates": [
+      "professor_whole_share",
+      "enhanced_no_carry_xirr",
+      "enhanced_carry_xirr",
+      "enhanced_goal",
+      "historical_target_frequency",
+      "global_existing",
+      "enhanced_plus_existing",
+      "ridge_executable",
+      "ridge_without_amount_features",
+      "ridge_without_goal",
+      "cluster_rank_aggregation",
+      "hist_gradient_boosting",
+      "lightgbm_lambdarank"
+    ],
+    "feature_columns": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate"
+    ],
+    "amount_feature_columns": [
+      "cash_utilization",
+      "unaffordable_rate"
+    ],
+    "correlation_cluster_threshold": 0.85,
+    "ridge_alpha": 100.0,
+    "hist_gradient_boosting": {
+      "learning_rate": 0.05,
+      "max_iter": 100,
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 80,
+      "l2_regularization": 10.0
+    },
+    "lightgbm_lambdarank": {
+      "n_estimators": 60,
+      "learning_rate": 0.05,
+      "num_leaves": 7,
+      "max_depth": 3,
+      "min_child_samples": 80,
+      "reg_lambda": 10.0
+    },
+    "seed": 20260923
+  },
+  "sector_diagnostic": {
+    "evidence_tier": "OFFICIAL_ONLY",
+    "classification_level": "INDUSTRY_AS_REPORTED_BY_NIFTY500",
+    "exact_observation_dates": [
+      "2020-03-31",
+      "2021-03-31",
+      "2022-03-31"
+    ],
+    "minimum_sector_size": 5,
+    "profile": "base7500",
+    "candidate": "enhanced_carry_xirr",
+    "outcome": "future_12m_xirr",
+    "method": "Within-observed-industry percentile ranks on each exact snapshot date",
+    "evidence_boundary": "Retrospective supplementary diagnostic with current-universe survivorship; no tuning or promotion"
+  },
+  "primary_comparison": "Same-row common cohort within each decision-date and investor-profile block",
+  "primary_metrics": [
+    "rank_ic",
+    "ndcg20",
+    "pairwise_accuracy",
+    "target_achievement_top20",
+    "target_shortfall_top20"
+  ],
+  "secondary_metrics": [
+    "mean_xirr_top20",
+    "median_xirr_top20",
+    "mean_asset_drawdown_top20",
+    "top20_turnover",
+    "coverage",
+    "cash_utilization",
+    "unaffordable_rate",
+    "execution_count"
+  ],
+  "evidence_boundary": {
+    "selection_basis": "Previously defined validation dates and fixed parameters only",
+    "supplementary_test": "Previously exposed outcomes; descriptive rerun only and never fresh confirmation",
+    "maximum_candidate_status": "RESEARCH ONLY",
+    "no_promotion": true
+  },
+  "boundaries": [
+    "No production writes, deployment, or model promotion",
+    "No overwrite of prior frozen cohorts or tournament artifacts",
+    "No sector label outside its exact observation date",
+    "No mixing of official and secondary sector evidence tiers",
+    "No fractional shares in executable modes",
+    "No invented actions, prices, dividends, liquidity, proceeds, or fee precision",
+    "No parameter tuning on exposed outcomes"
+  ],
+  "fixed_ensemble_family": {
+    "pairs": [
+      "enhanced_goal_score|global_existing_score",
+      "enhanced_goal_score|ridge_executable_score",
+      "enhanced_goal_score|lightgbm_lambdarank_score",
+      "global_existing_score|ridge_executable_score"
+    ],
+    "triples": [
+      "enhanced_goal_score|global_existing_score|ridge_executable_score",
+      "enhanced_goal_score|global_existing_score|lightgbm_lambdarank_score",
+      "enhanced_goal_score|ridge_executable_score|lightgbm_lambdarank_score"
+    ],
+    "quad": [
+      "enhanced_goal_score|global_existing_score|ridge_executable_score|lightgbm_lambdarank_score"
+    ],
+    "pair_weights": [
+      [
+        0.5,
+        0.5
+      ],
+      [
+        0.67,
+        0.33
+      ],
+      [
+        0.33,
+        0.67
+      ]
+    ],
+    "triple_weights": [
+      [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      [
+        0.5,
+        0.25,
+        0.25
+      ],
+      [
+        0.25,
+        0.5,
+        0.25
+      ],
+      [
+        0.25,
+        0.25,
+        0.5
+      ]
+    ],
+    "quad_weights": [
+      [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ]
+    ],
+    "aggregation": "within decision-date/profile rank percentile"
+  }
+}

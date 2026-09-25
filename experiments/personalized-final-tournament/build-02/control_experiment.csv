@@ -1,0 +1,7 @@
+control,candidate,rank_ic,target_achievement_top20,target_shortfall_top20
+strongest_individual_rank_ic,hist_gradient_boosting_score,0.0345900191747433,0.5611111111111111,0.0551385405507382
+strongest_individual_goal_achievement,cluster_rank_aggregation_score,0.0186729025915854,0.6722222222222222,0.0753874359346806
+strongest_individual_lowest_shortfall,hist_gradient_boosting_score,0.0345900191747433,0.5611111111111111,0.0551385405507382
+strongest_fixed_ensemble_rank_ic,enhanced_goal+ridge_executable+lightgbm_lambdarank@0.250-0.250-0.500,0.0307510383381076,0.6138888888888889,0.0529788038836213
+strongest_fixed_ensemble_goal_achievement,enhanced_goal+ridge_executable+lightgbm_lambdarank@0.333-0.333-0.333,0.0295482532465115,0.6611111111111111,0.0438923284081049
+strongest_fixed_ensemble_lowest_shortfall,enhanced_goal+ridge_executable+lightgbm_lambdarank@0.333-0.333-0.333,0.0295482532465115,0.6611111111111111,0.0438923284081049

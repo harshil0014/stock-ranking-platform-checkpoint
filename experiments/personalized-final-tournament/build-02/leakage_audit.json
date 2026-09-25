@@ -1,0 +1,19 @@
+{
+  "2026_09_23_sector_snapshot_used": false,
+  "current_decision_dates": [
+    "2026-09-18"
+  ],
+  "current_unmatured_outcome_rows_populated": 0,
+  "cutoff": "2026-09-18",
+  "ledger_latest_event": "2026-09-18",
+  "modern_sector_labels_back_projected": false,
+  "post_cutoff_market_outcomes_used": false,
+  "retrospective_event_documents_after_cutoff_allowed_only_for_pre_cutoff_events": true,
+  "sector_exact_observation_dates": [
+    "2020-03-31",
+    "2021-03-31",
+    "2022-03-31"
+  ],
+  "supplementary_latest_maturity": "2026-06-30",
+  "validation_latest_maturity": "2024-12-31"
+}

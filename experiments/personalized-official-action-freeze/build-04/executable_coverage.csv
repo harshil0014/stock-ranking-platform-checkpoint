@@ -1,0 +1,4 @@
+lookback_months,frozen_global_population,executable_available_before,executable_coverage_before_pct,executable_available_after,executable_coverage_after_pct,net_available_change,false_quarantines_removed,true_blocking_events_remaining,corporate_action_blocks,fractional_entitlement_blocks,other_unresolved
+12,3808,3547,93.14600840336135,3550,93.22478991596638,3,3,112,96,16,146
+36,3376,3046,90.22511848341232,3056,90.52132701421802,10,10,305,276,29,15
+60,3027,2631,86.9177403369673,2637,87.1159563924678,6,6,376,339,37,14

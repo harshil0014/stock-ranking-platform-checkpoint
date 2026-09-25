@@ -1,0 +1,68 @@
+{
+  "coverage": [
+    {
+      "corporate_action_blocks": 96,
+      "executable_available_after": 3550,
+      "executable_available_before": 3547,
+      "executable_coverage_after_pct": 93.22478991596638,
+      "executable_coverage_before_pct": 93.14600840336135,
+      "false_quarantines_removed": 3,
+      "fractional_entitlement_blocks": 16,
+      "frozen_global_population": 3808,
+      "lookback_months": 12,
+      "net_available_change": 3,
+      "other_unresolved": 146,
+      "true_blocking_events_remaining": 112
+    },
+    {
+      "corporate_action_blocks": 276,
+      "executable_available_after": 3056,
+      "executable_available_before": 3046,
+      "executable_coverage_after_pct": 90.52132701421802,
+      "executable_coverage_before_pct": 90.22511848341232,
+      "false_quarantines_removed": 10,
+      "fractional_entitlement_blocks": 29,
+      "frozen_global_population": 3376,
+      "lookback_months": 36,
+      "net_available_change": 10,
+      "other_unresolved": 15,
+      "true_blocking_events_remaining": 305
+    },
+    {
+      "corporate_action_blocks": 339,
+      "executable_available_after": 2637,
+      "executable_available_before": 2631,
+      "executable_coverage_after_pct": 87.1159563924678,
+      "executable_coverage_before_pct": 86.9177403369673,
+      "false_quarantines_removed": 6,
+      "fractional_entitlement_blocks": 37,
+      "frozen_global_population": 3027,
+      "lookback_months": 60,
+      "net_available_change": 6,
+      "other_unresolved": 14,
+      "true_blocking_events_remaining": 376
+    }
+  ],
+  "fractional_settlement_policy": "BLOCK_WHEN_CASH_PROCEEDS_CANNOT_BE_REPRODUCED",
+  "recovered_action_application": {
+    "applied_by_type": {
+      "CONSOLIDATION": 6,
+      "DEMERGER": 6,
+      "RIGHTS": 9,
+      "SCHEME_OR_MERGER": 1
+    },
+    "applied_pre_cutoff": 22,
+    "post_cutoff_excluded": 0
+  },
+  "rights_policy": "PASSIVE_NO_SUBSCRIPTION_ZERO_SEPARATELY_VALUED_ENTITLEMENT",
+  "round2_reconciliation": {
+    "complex_recovered": 16,
+    "consolidations_recovered": 6,
+    "core_mechanics_unknown": 0,
+    "covered_union": 445,
+    "official_auto_matches": 112,
+    "previously_covered": 311,
+    "round2_events": 445,
+    "verified_pack_files": 29
+  }
+}

@@ -2,6 +2,9 @@
 from __future__ import annotations
 
 from pathlib import Path
+from hashlib import sha256
+import json
+import math
 import re
 
 import numpy as np
@@ -12,6 +15,120 @@ from stock_research.personalized_executable_tournament import ExecutableHistoryB
 
 AUTO_TYPES = {"BONUS", "SPLIT", "CONSOLIDATION"}
 BLOCKING_TYPES = {"RIGHTS", "DEMERGER", "SCHEME_OR_MERGER"}
+
+
+def affordable_rights_allotment(held_shares: int, available_cash: float,
+                                offered: int, per_held: int, issue_price: float) -> tuple[int, float]:
+    """Cash-constrained exercise; no new contribution is introduced."""
+    if held_shares < 0 or available_cash < 0 or offered <= 0 or per_held <= 0 or issue_price <= 0:
+        raise ValueError("invalid rights exercise inputs")
+    entitled = held_shares * offered // per_held
+    shares = min(entitled, int(available_cash // issue_price))
+    return shares, available_cash - shares * issue_price
+
+
+def validate_recovery_pack(pack: str | Path, round2_root: str | Path) -> dict:
+    """Reconcile the 445 event identities and verify each declared local source."""
+    pack, round2_root = Path(pack), Path(round2_root)
+    manifest = json.loads((pack / "manifest.json").read_text(encoding="utf-8"))
+    for name, expected in manifest["files"].items():
+        path = pack / name
+        if path.stat().st_size != expected["size"] or sha256(path.read_bytes()).hexdigest() != expected["sha256"]:
+            raise ValueError(f"recovery manifest mismatch: {name}")
+    for item in json.loads((pack / "source_inventory.json").read_text(encoding="utf-8")):
+        if not item.get("local_path"):
+            continue
+        path = pack / item["local_path"].replace("\\", "/")
+        if path.stat().st_size != item["bytes"] or sha256(path.read_bytes()).hexdigest() != item["sha256"]:
+            raise ValueError(f"recovery source mismatch: {path}")
+    batches = [pd.read_csv(round2_root / f"batch_{number:02d}" / "parsed_event_terms.csv")
+               for number in range(1, 5)]
+    events = pd.concat(batches, ignore_index=True)
+    if len(events) != 445 or events.event_id.nunique() != 445:
+        raise ValueError("round-two event population differs from frozen 445")
+    auto_rows = pd.read_csv(pack / "auto_action_ledger_reconciliation.csv")
+    auto = set(auto_rows.loc[auto_rows.mechanics_status.eq("AUTO_MULTIPLIER"), "event_id"])
+    complex_terms = pd.read_csv(pack / "critical_event_terms_recovered.csv")
+    consolidation = pd.read_csv(pack / "consolidation_terms_recovered.csv")
+    event_key = lambda frame, date: set(zip(frame["isin"], frame[date], frame["event_type"]))
+    lookup = events.set_index(["isin", "event_date", "event_type"]).event_id
+    critical_ids = {lookup.loc[key] for key in event_key(complex_terms, "ledger_event_date")}
+    consolidation_ids = {lookup.loc[key] for key in event_key(consolidation.rename(columns={"record_date": "event_date"}), "event_date")}
+    residual = set(auto_rows.event_id) | critical_ids | consolidation_ids
+    old = set(events.event_id) - residual
+    web = pd.concat([pd.read_csv(round2_root / f"batch_{number:02d}" / "supplemental_web_terms.csv")
+                     for number in range(1, 5)], ignore_index=True)
+    evidence_keys = event_key(events.loc[events.evidence_grade.ne("NO_ATTACHMENT_TEXT")], "event_date") | event_key(web, "event_date")
+    old_keys = set(events.loc[events.event_id.isin(old), ["isin", "event_date", "event_type"]].itertuples(index=False, name=None))
+    if not old_keys.issubset(evidence_keys):
+        raise ValueError("previously covered event lacks round-two evidence")
+    if len(old) != 311 or len(auto) != 112 or len(critical_ids) != 16 or len(consolidation_ids) != 6:
+        raise ValueError("recovery component count mismatch")
+    covered = old | auto | critical_ids | consolidation_ids
+    if covered != set(events.event_id):
+        raise ValueError(f"uncovered round-two events: {len(set(events.event_id) - covered)}")
+    return {"round2_events": len(events), "previously_covered": len(old),
+            "official_auto_matches": len(auto), "complex_recovered": len(critical_ids),
+            "consolidations_recovered": len(consolidation_ids), "covered_union": len(covered),
+            "core_mechanics_unknown": 0, "verified_pack_files": len(manifest["files"])}
+
+
+def apply_recovered_terms(ledger: pd.DataFrame, residual_pack: str | Path,
+                          *, as_of_date: str) -> tuple[pd.DataFrame, dict]:
+    """Apply dated recovered mechanics without importing post-cutoff events."""
+    pack = Path(residual_pack)
+    cutoff = pd.Timestamp(as_of_date)
+    result = ledger.copy()
+    result["economic_policy"] = "OFFICIAL_MULTIPLIER_OR_EXISTING_BLOCK"
+    result["evidence_url"] = None
+    result["entitlement_terms"] = None
+    result["issue_price_inr"] = np.nan
+    complex_terms = pd.read_csv(pack / "critical_event_terms_recovered.csv")
+    consolidations = pd.read_csv(pack / "consolidation_terms_recovered.csv")
+    applied = []
+    for row in complex_terms.itertuples(index=False):
+        day = pd.Timestamp(row.ledger_event_date)
+        if day > cutoff:
+            continue
+        mask = result["isin"].eq(row.isin) & result.event_date.eq(day.date().isoformat()) & result.event_type.eq(row.event_type)
+        if not mask.any():
+            raise ValueError(f"recovered event missing from normalized ledger: {row.isin} {day.date()} {row.event_type}")
+        if row.event_type == "RIGHTS":
+            policy = "WITHDRAWN_NO_ALLOTMENT" if row.outcome == "WITHDRAWN_NO_ALLOTMENT" else "PASSIVE_NO_SUBSCRIPTION_ZERO_ENTITLEMENT_VALUE"
+            result.loc[mask, "mechanics_status"] = "PASSIVE_RIGHTS"
+            result.loc[mask, "block_reason"] = None
+        elif row.event_type == "DEMERGER":
+            policy = "RESULTING_SECURITY_VALUATION_UNAVAILABLE"
+            result.loc[mask, "block_reason"] = policy
+        else:
+            policy = "PREFERENCE_SHARE_VALUATION_UNAVAILABLE"
+            result.loc[mask, "block_reason"] = policy
+        result.loc[mask, "economic_policy"] = policy
+        result.loc[mask, "evidence_url"] = row.source_url
+        result.loc[mask, "entitlement_terms"] = row.economic_ratio
+        result.loc[mask, "issue_price_inr"] = row.issue_price_inr
+        applied.append((row.isin, row.event_type, policy))
+    for row in consolidations.itertuples(index=False):
+        day = pd.Timestamp(row.record_date)
+        if day > cutoff:
+            continue
+        mask = result["isin"].eq(row.isin) & result.event_date.eq(day.date().isoformat()) & result.event_type.eq("CONSOLIDATION")
+        if not mask.any():
+            raise ValueError(f"recovered consolidation missing from normalized ledger: {row.isin} {day.date()}")
+        result.loc[mask, "mechanics_status"] = "AUTO_MULTIPLIER"
+        result.loc[mask, "block_reason"] = None
+        result.loc[mask, "multiplier_numerator"] = float(row.new_shares)
+        result.loc[mask, "multiplier_denominator"] = float(row.old_shares)
+        result.loc[mask, "total_share_multiplier"] = float(row.new_shares) / float(row.old_shares)
+        result.loc[mask, "economic_policy"] = "FRACTION_REQUIRES_SETTLEMENT_VALUE"
+        result.loc[mask, "evidence_url"] = row.source_url
+        result.loc[mask, "entitlement_terms"] = f"{int(row.old_shares)}_OLD_TO_{int(row.new_shares)}_NEW"
+        applied.append((row.isin, "CONSOLIDATION", "FRACTION_REQUIRES_SETTLEMENT_VALUE"))
+    result = result.sort_values(["isin", "event_date", "mechanics_status", "event_type"], kind="stable").reset_index(drop=True)
+    return result, {"applied_pre_cutoff": len(applied), "applied_by_type": {
+        kind: sum(item[1] == kind for item in applied) for kind in sorted({item[1] for item in applied})},
+        "post_cutoff_excluded": int((pd.to_datetime(complex_terms.ledger_event_date) > cutoff).sum()
+                               + (pd.to_datetime(consolidations.record_date) > cutoff).sum())}
 
 
 def _ratio(pattern: str, text: str) -> tuple[float, float] | None:
@@ -285,5 +402,61 @@ class OfficialActionHistoryBook(ExecutableHistoryBook):
         result.loc[fractional, "status"] = "UNRESOLVED_FRACTIONAL_ENTITLEMENT"
         result.loc[fractional, "reason"] = "OFFICIAL_MULTIPLIER_PRODUCED_FRACTIONAL_SHARES"
         result.loc[fractional, metric_columns] = np.nan
+        # A later split can make a fractional consolidation entitlement look
+        # integral at the terminal date. Inspect the holding at each event.
+        for index in result.index[result.status.eq("AVAILABLE")]:
+            identity = result.at[index, "isin"]
+            events = self.actions.get(identity)
+            if events is None:
+                continue
+            events = events.loc[events.event_date.between(start, end_ts)
+                                & events.mechanics_status.eq("AUTO_MULTIPLIER")].sort_values(
+                                    ["event_date", "event_type"], kind="stable")
+            if not events.event_type.eq("CONSOLIDATION").any():
+                continue
+            reason = self._fractional_consolidation_reason(identity, profile, end_ts,
+                                                            months or profile.lookback_months,
+                                                            mode, events)
+            if reason:
+                result.at[index, "status"] = "UNRESOLVED_FRACTIONAL_ENTITLEMENT"
+                result.at[index, "reason"] = reason
+                result.loc[index, metric_columns] = np.nan
         result["evidence_grade"] = "OFFICIAL_ACTIONS_WITH_YAHOO_PRICE_BASIS_RESEARCH_ONLY"
         return result
+
+    def _fractional_consolidation_reason(self, identity, profile, end, months, mode, events):
+        start = end - pd.DateOffset(months=months)
+        schedule = pd.date_range(start, end - pd.Timedelta(days=1), freq=f"{profile.interval_days}D")
+        dates, _, _, nominal, _ = self.arrays[identity]
+        scheduled = schedule.to_numpy(dtype="datetime64[D]")
+        buy = np.searchsorted(dates, scheduled)
+        last = np.searchsorted(dates, np.datetime64(end.date(), "D"), side="right") - 1
+        actions = list(events.itertuples(index=False))
+        position = 0
+        shares = cash = 0.0
+
+        def apply_through(day):
+            nonlocal position, shares
+            while position < len(actions) and np.datetime64(actions[position].event_date.date(), "D") <= day:
+                action = actions[position]
+                shares *= float(action.total_share_multiplier)
+                if action.event_type == "CONSOLIDATION" and not np.isclose(shares, round(shares), atol=1e-8):
+                    return f"FRACTIONAL_CONSOLIDATION_ENTITLEMENT:{action.event_date.date().isoformat()}"
+                position += 1
+            return None
+
+        for day, price_index in zip(scheduled, buy):
+            if mode == "enhanced_carry":
+                cash += profile.amount
+            if price_index > last:
+                continue
+            executed = dates[price_index]
+            reason = apply_through(executed)
+            if reason:
+                return reason
+            available = cash if mode == "enhanced_carry" else profile.amount
+            quantity = math.floor(available / float(nominal[price_index]))
+            shares += quantity
+            if mode == "enhanced_carry":
+                cash = available - quantity * float(nominal[price_index])
+        return apply_through(np.datetime64(end.date(), "D"))

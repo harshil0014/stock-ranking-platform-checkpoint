@@ -1,0 +1,15 @@
+{
+  "as_of_date": "2026-09-18",
+  "deterministic_rebuild_passed": true,
+  "future_data_leakage_found": false,
+  "independent_validation_date_blocks": 2,
+  "production_changed": false,
+  "professor_comparison_status": "INSUFFICIENT_WORKBOOK_EXECUTION_CACHE",
+  "professor_workbook_exact_identity_matches": 11,
+  "promotion": "INSUFFICIENT_EVIDENCE",
+  "reason": "Previously exposed validation and only two independent decision dates cannot establish prospective benefit.",
+  "status": "RESEARCH_ONLY",
+  "strongest_fixed_ensemble_by_goal_shortfall": "enhanced_goal+ridge_executable+lightgbm_lambdarank@0.333-0.333-0.333",
+  "strongest_individual_by_goal_shortfall": "hist_gradient_boosting_score",
+  "strongest_individual_by_rank_ic": "hist_gradient_boosting_score"
+}

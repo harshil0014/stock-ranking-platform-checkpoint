@@ -17,7 +17,8 @@ import pandas as pd
 from stock_ranker.company_facts import load_company_fact_snapshot, resolve_company_fact_snapshot
 from stock_ranker.personalized import InvestorProfile
 from stock_research.personalized_global_tournament import load_frozen_memberships
-from stock_research.personalized_official_actions import OfficialActionHistoryBook, load_official_action_ledger
+from stock_research.personalized_official_actions import (OfficialActionHistoryBook,
+    load_official_action_ledger, apply_recovered_terms, validate_recovery_pack)
 
 
 def digest(path: Path) -> str:
@@ -122,6 +123,7 @@ def run(args) -> None:
     output.mkdir(parents=True)
     started = time.perf_counter()
     pack_audit = verify_pack(args.evidence_pack.resolve())
+    residual_audit = validate_recovery_pack(args.residual_pack, args.residual_pack.parent / "event_terms_round2")
     handoff = args.evidence_pack / "handoff_for_codex"
     action_source = args.evidence_pack / "corporate_actions/reconciled/official_share_structure_events_2010_2026.csv.gz"
     protected = [ROOT / "data/company_facts/accepted_state.json", ROOT / "data/live_market/accepted_state.json"]
@@ -133,6 +135,7 @@ def run(args) -> None:
     identity_set = set.union(*memberships.values())
     identities = facts.loc[facts["isin"].isin(identity_set), ["isin", "ticker", "primary_exchange"]].copy()
     ledger, mapping_audit = load_official_action_ledger(facts, action_source, as_of_date=args.as_of_date)
+    ledger, recovered_audit = apply_recovered_terms(ledger, args.residual_pack, as_of_date=args.as_of_date)
     supplied_profiles = pd.read_csv(handoff / "corporate_action_profile_status.csv")
     target_ids = set(supplied_profiles["isin"])
     target_rows = []
@@ -166,7 +169,8 @@ def run(args) -> None:
         identities, args.history_cache, args.split_root, ledger, as_of_date=args.as_of_date,
         terminal_repairs=repairs, terminal_raw_prices=live[["isin", "trade_date", "latest_price"]],
     )
-    prior = pd.read_csv(args.previous_tournament / "current_profile_rankings.csv.gz", low_memory=False)
+    prior = pd.concat([pd.read_csv(args.previous_freeze / f"frozen_executable_cohort_{months}m.csv.gz", low_memory=False)
+                       for months in (12, 36, 60)], ignore_index=True)
     profile_names = {12: "lookback12", 36: "base7500", 60: "lookback60"}
     coverage_rows, cohorts = [], []
     for months, profile_name in profile_names.items():
@@ -174,7 +178,7 @@ def run(args) -> None:
                                   horizon_months=12, target_cagr=.2, whole_shares=True)
         result = book.simulate(profile, args.as_of_date, mode="enhanced_carry", include_journal=False)
         result = result.loc[result["isin"].isin(memberships[months])].copy()
-        old = prior.loc[prior.profile_name.eq(profile_name), ["isin", "status"]].rename(columns={"status": "status_before"})
+        old = prior.loc[prior.lookback_months.eq(months), ["isin", "status"]].rename(columns={"status": "status_before"})
         result = result.merge(old, on="isin", how="left", validate="one_to_one")
         result["false_quarantine_removed"] = result.status_before.ne("AVAILABLE") & result.status.eq("AVAILABLE")
         result["true_blocking_event"] = result.status.isin([
@@ -234,6 +238,8 @@ def run(args) -> None:
         "schema_version": "personalized_official_action_freeze_v1",
         "as_of_date": args.as_of_date,
         "pack_verification": pack_audit,
+        "residual_reconciliation": residual_audit,
+        "recovered_action_application": recovered_audit,
         "official_action_mapping": mapping_audit,
         "handoff_target_reconciliation": target_rows,
         "executable_coverage": coverage_rows,
@@ -256,6 +262,8 @@ def run(args) -> None:
         "provider_split_ledger_sha256": digest(args.split_root / "split_ledger.csv"),
         "old_frozen_manifest_sha256": digest(args.frozen_root / "manifest.json"),
         "old_tournament_manifest_sha256": digest(args.previous_tournament / "manifest.json"),
+        "previous_freeze_manifest_sha256": digest(args.previous_freeze / "manifest.json"),
+        "residual_manifest_sha256": digest(args.residual_pack / "manifest.json"),
         "live_market_sha256": digest(live_path),
         "company_fact_fingerprint": snapshot.manifest["fingerprint"],
         "protected_state": protected_before,
@@ -280,6 +288,8 @@ if __name__ == "__main__":
     parser.add_argument("--evidence-pack", type=Path, required=True)
     parser.add_argument("--frozen-root", type=Path, required=True)
     parser.add_argument("--previous-tournament", type=Path, required=True)
+    parser.add_argument("--previous-freeze", type=Path, required=True)
+    parser.add_argument("--residual-pack", type=Path, required=True)
     parser.add_argument("--history-cache", type=Path, required=True)
     parser.add_argument("--split-root", type=Path, required=True)
     parser.add_argument("--as-of-date", default="2026-09-18")

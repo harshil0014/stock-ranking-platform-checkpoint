@@ -81,9 +81,11 @@ def run(args) -> None:
     output.mkdir(parents=True)
     args.checkpoint_root.mkdir(parents=True, exist_ok=True)
     started = time.perf_counter()
-    if digest(PROTOCOL) != EXPECTED_PROTOCOL_SHA256:
+    protocol_path = args.protocol or PROTOCOL
+    expected_protocol = args.protocol_sha256 or EXPECTED_PROTOCOL_SHA256
+    if digest(protocol_path) != expected_protocol:
         raise ValueError("preregistered official-action protocol fingerprint drift")
-    protocol, profiles = load_protocol(PROTOCOL)
+    protocol, profiles = load_protocol(protocol_path)
     memberships = load_frozen_memberships(args.frozen_root, protocol["frozen_cohort_fingerprint"])
     protected = [ROOT / "data/company_facts/accepted_state.json", ROOT / "data/live_market/accepted_state.json"]
     protected_before = {str(path.relative_to(ROOT)): digest(path) for path in protected}
@@ -149,7 +151,7 @@ def run(args) -> None:
         old_validation, on="candidate", how="left", suffixes=("_official", "_old_yahoo_policy"), validate="one_to_one"
     )
     protocol_snapshot = dict(protocol)
-    protocol_snapshot["protocol_sha256"] = EXPECTED_PROTOCOL_SHA256
+    protocol_snapshot["protocol_sha256"] = expected_protocol
     write_json(output / "protocol.json", protocol_snapshot)
     training.to_csv(output / "training_panel.csv.gz", index=False, compression={"method": "gzip", "mtime": 0})
     validation.to_csv(output / "validation_predictions.csv.gz", index=False, compression={"method": "gzip", "mtime": 0})
@@ -201,7 +203,7 @@ def run(args) -> None:
     }
     write_json(output / "assessment.json", assessment)
     write_json(output / "inputs.json", {
-        "protocol_sha256": EXPECTED_PROTOCOL_SHA256,
+        "protocol_sha256": expected_protocol,
         "frozen_manifest_sha256": digest(args.frozen_root / "manifest.json"),
         "official_freeze_manifest_sha256": digest(args.official_freeze / "manifest.json"),
         "official_action_ledger_sha256": digest(ledger_path),
@@ -238,4 +240,6 @@ if __name__ == "__main__":
     parser.add_argument("--workbook", type=Path, required=True)
     parser.add_argument("--previous-tournament", type=Path, required=True)
     parser.add_argument("--checkpoint-root", type=Path, required=True)
+    parser.add_argument("--protocol", type=Path)
+    parser.add_argument("--protocol-sha256")
     run(parser.parse_args())
