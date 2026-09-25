@@ -1,0 +1,73 @@
+{
+  "deterministic_artifacts": [
+    {
+      "path": "all_profile_recovery_audit.csv.gz",
+      "sha256": "9c59b774030e2f5dd0a0ce2360ee37f6d8a2141c1e3cb3fc1014fda5ec088c8f",
+      "size": 1461185
+    },
+    {
+      "path": "executable_coverage.csv",
+      "sha256": "3057e38ab64a71a8984eb9696af1633e14afb1408443ac83deac7bd0cb49d1b4",
+      "size": 526
+    },
+    {
+      "path": "frozen_executable_cohort_12m.csv.gz",
+      "sha256": "eca577c20d88cbfaf3c5a0ef71b6b94698c159af0ced391ef1cc4754d4571f48",
+      "size": 542657
+    },
+    {
+      "path": "frozen_executable_cohort_36m.csv.gz",
+      "sha256": "0d7acd49c0f918a59acdd18ee742a860fb6348f0b63f7b022cf375ebe9a96243",
+      "size": 488835
+    },
+    {
+      "path": "frozen_executable_cohort_60m.csv.gz",
+      "sha256": "7afafa0a62b25f3ad9714346470edf2a034527be5bccda946f4c6762b4e4e8a4",
+      "size": 432381
+    },
+    {
+      "path": "handoff_target_reconciliation.csv",
+      "sha256": "cb1a06ec2f27cfc00a4e52119ce99f5ef57474eefdab79acec28fe85549cc049",
+      "size": 249
+    },
+    {
+      "path": "history_recovery_audit.csv",
+      "sha256": "07530859cb09ff93439ddf102f413e794c4c5cf116fec46ca3ddba93e7111332",
+      "size": 1245694
+    },
+    {
+      "path": "inputs.json",
+      "sha256": "a1be123997fbcd8f848536353f027624ccfdc7117e0a04b5b9ae56bb9ac5593e",
+      "size": 1367
+    },
+    {
+      "path": "normalized_official_action_ledger.csv.gz",
+      "sha256": "ed9fa9054229aca7081a0ec5c34e7e18603bf68b833fa6887829bd10c55d0038",
+      "size": 50352
+    },
+    {
+      "path": "official_exact_date_sector_panel.csv.gz",
+      "sha256": "1c626b4fcb30895108be42dc9a5193cd1e2a67c3427653a806169035f3ed2f05",
+      "size": 56621
+    },
+    {
+      "path": "resulting_equity_terms.csv",
+      "sha256": "10824b8dd28ebf0033b15d976af48b6c0bc9952b9fb09a9c1f4cd5d5ab20f4a2",
+      "size": 19037
+    },
+    {
+      "path": "sector_pit_coverage.csv",
+      "sha256": "4ef9741c5f6d6edb7a400979aac7fcea2557d81dccd9cc13498dac2326ef0f7d",
+      "size": 749
+    },
+    {
+      "path": "sector_relative_supplementary_metrics.csv",
+      "sha256": "00c0440e12a2f17293fe00117cf2f7937870e629fe66592fe79df97152acf4f2",
+      "size": 443
+    }
+  ],
+  "fingerprint": "dd04c7fe0221cd568e86b23db330ff67923db815385ff983be8d90c849f13adf",
+  "observational_artifacts": [
+    "summary.json"
+  ]
+}

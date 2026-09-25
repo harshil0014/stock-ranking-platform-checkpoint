@@ -124,8 +124,28 @@ def apply_recovered_terms(ledger: pd.DataFrame, residual_pack: str | Path,
         result.loc[mask, "evidence_url"] = row.source_url
         result.loc[mask, "entitlement_terms"] = f"{int(row.old_shares)}_OLD_TO_{int(row.new_shares)}_NEW"
         applied.append((row.isin, "CONSOLIDATION", "FRACTION_REQUIRES_SETTLEMENT_VALUE"))
+    supplemental_count = 0
+    for path in sorted((pack.parent / "event_terms_round2").glob("batch_*/supplemental_web_terms.csv")):
+        supplemental = pd.read_csv(path)
+        for term in supplemental.loc[supplemental.event_type.eq("RIGHTS")].itertuples(index=False):
+            mask = result["isin"].eq(term.isin) & result.event_date.eq(term.event_date) & result.event_type.eq("RIGHTS")
+            mask &= result.economic_policy.ne("WITHDRAWN_NO_ALLOTMENT")
+            if not mask.any() or pd.Timestamp(term.event_date) > cutoff:
+                continue
+            result.loc[mask, "entitlement_terms"] = str(term.ratio)
+            result.loc[mask, "issue_price_inr"] = pd.to_numeric(term.issue_price, errors="coerce")
+            result.loc[mask, "evidence_url"] = term.source_url
+            supplemental_count += 1
+    # A deliberate lapse strategy needs no issue-price assumption. This is a
+    # portfolio policy, not an observed zero market price for a tradable RE.
+    passive = result.event_type.eq("RIGHTS") & result.mechanics_status.eq("BLOCKING")
+    result.loc[passive, "mechanics_status"] = "PASSIVE_RIGHTS"
+    result.loc[passive, "block_reason"] = None
+    result.loc[passive, "economic_policy"] = "POLICY_NO_SUBSCRIPTION_NO_RENUNCIATION"
+    result.loc[passive & result.evidence_url.isna(), "evidence_url"] = "https://www.nseindia.com/static/trade/members-faqs-rights-entitlement-trading"
+    result["policy_assumption"] = result.event_type.eq("RIGHTS")
     result = result.sort_values(["isin", "event_date", "mechanics_status", "event_type"], kind="stable").reset_index(drop=True)
-    return result, {"applied_pre_cutoff": len(applied), "applied_by_type": {
+    return result, {"applied_pre_cutoff": len(applied), "additional_passive_rights_events": int(passive.sum()), "supplemental_rights_terms": supplemental_count, "applied_by_type": {
         kind: sum(item[1] == kind for item in applied) for kind in sorted({item[1] for item in applied})},
         "post_cutoff_excluded": int((pd.to_datetime(complex_terms.ledger_event_date) > cutoff).sum()
                                + (pd.to_datetime(consolidations.record_date) > cutoff).sum())}
@@ -277,16 +297,28 @@ class OfficialActionHistoryBook(ExecutableHistoryBook):
     def __init__(self, identities: pd.DataFrame, history_root: str | Path,
                  split_root: str | Path, official_actions: pd.DataFrame, *, as_of_date: str,
                  terminal_repairs: pd.DataFrame | None = None,
-                 terminal_raw_prices: pd.DataFrame | None = None):
+                 terminal_raw_prices: pd.DataFrame | None = None,
+                 resulting_terms: pd.DataFrame | None = None,
+                 history_overlay: str | Path | None = None,
+                 nominal_tickers: set[str] | None = None,
+                 adjustment_dates: dict[str, str] | None = None):
         if identities["isin"].duplicated().any() or identities["ticker"].duplicated().any():
             raise ValueError("executable identities must be unique")
         history_root, split_root = Path(history_root), Path(split_root)
         provider = pd.read_csv(split_root / "split_ledger.csv")
         provider["event_date"] = pd.to_datetime(provider.get("event_date"), errors="coerce").dt.normalize()
         provider_groups = {identity: frame for identity, frame in provider.groupby("isin")}
+        self.resulting_terms = resulting_terms if resulting_terms is not None else pd.DataFrame()
         actions = official_actions.copy()
+        if not self.resulting_terms.empty:
+            for term in self.resulting_terms.itertuples(index=False):
+                match = actions["isin"].eq(term.parent_isin) & actions.event_date.eq(term.event_date) & actions.event_type.eq("DEMERGER")
+                actions.loc[match, "mechanics_status"] = "RESULTING_EQUITY"
+                actions.loc[match, "block_reason"] = None
         actions["event_date"] = pd.to_datetime(actions.event_date, errors="raise").dt.normalize()
+        actions = actions.loc[actions.event_date.le(pd.Timestamp(as_of_date))]
         self.actions = {identity: frame for identity, frame in actions.groupby("isin")}
+        self._window_cache = {}
         cutoff_ts = pd.Timestamp(as_of_date).normalize()
         cutoff = np.datetime64(cutoff_ts.date(), "D")
         repairs, raw_terminals = {}, {}
@@ -304,7 +336,9 @@ class OfficialActionHistoryBook(ExecutableHistoryBook):
                 relative = Path(f"{row.ticker}.csv")
                 if relative.is_absolute() or ".." in relative.parts:
                     raise ValueError("unsafe history path")
-                frame = pd.read_csv(history_root / relative)
+                overlay_path = Path(history_overlay) / relative if history_overlay else None
+                frame = pd.read_csv(overlay_path if overlay_path and overlay_path.exists() else history_root / relative)
+                original_last = pd.Timestamp((adjustment_dates or {}).get(row.ticker, pd.to_datetime(frame["date"]).max()))
                 repair = repairs.get(row.isin)
                 if repair is not None and pd.Timestamp(repair["appended_date"]).normalize() <= cutoff_ts:
                     terminal_raw = raw_terminals.get(row.isin)
@@ -330,7 +364,7 @@ class OfficialActionHistoryBook(ExecutableHistoryBook):
                     raise ValueError("invalid price history")
 
                 provider_events = provider_groups.get(row.isin, pd.DataFrame(columns=provider.columns)).copy()
-                provider_events = provider_events.loc[provider_events.event_date.le(cutoff_ts)].sort_values("event_date")
+                provider_events = provider_events.loc[provider_events.event_date.le(min(cutoff_ts, original_last))].sort_values("event_date")
                 provider_ratios = pd.to_numeric(provider_events.get("split_ratio"), errors="coerce").to_numpy(float)
                 provider_dates = provider_events.event_date.to_numpy(dtype="datetime64[D]")
                 if len(provider_ratios) and (not np.isfinite(provider_ratios).all() or (provider_ratios <= 0).any()):
@@ -339,9 +373,9 @@ class OfficialActionHistoryBook(ExecutableHistoryBook):
                 if len(provider_ratios):
                     provider_suffix[:-1] = np.cumprod(provider_ratios[::-1])[::-1]
                 provider_factor = provider_suffix[np.searchsorted(provider_dates, dates, side="right")]
-                # Yahoo ``raw_close`` is the contemporaneous exchange price.  A
-                # split changes shares held, not the cash paid at that old close.
-                nominal = raw.copy()
+                # Yahoo Close is already split-adjusted (despite our raw_close
+                # column name). Undo the provider factor to recover nominal cash.
+                nominal = raw.copy() if row.ticker in (nominal_tickers or set()) else raw * provider_factor
 
                 identity_actions = self.actions.get(row.isin, pd.DataFrame(columns=actions.columns))
                 automatic = identity_actions.loc[
@@ -359,8 +393,8 @@ class OfficialActionHistoryBook(ExecutableHistoryBook):
                 # Yahoo Adj Close combines distributions and Yahoo's own split
                 # ledger.  Remove the provider split component, then apply only
                 # the official exchange multiplier to the economic return basis.
-                dividend_factor = provider_adjusted / raw * provider_factor
-                economic_adjusted = nominal / official_factor * dividend_factor
+                dividend_factor = provider_adjusted / raw
+                economic_adjusted = nominal / official_factor
                 for array in (dates, raw, economic_adjusted, nominal, official_factor):
                     array.setflags(write=False)
                 self.arrays[row.isin] = (dates, raw, economic_adjusted, nominal, official_factor)
@@ -376,13 +410,21 @@ class OfficialActionHistoryBook(ExecutableHistoryBook):
             result["reason"] = result["reason"].astype(object)
         end_ts = pd.Timestamp(end).normalize()
         start = end_ts - pd.DateOffset(months=months or profile.lookback_months)
-        blocker_ids, action_counts = {}, {}
-        for identity, actions in self.actions.items():
-            window = actions.loc[actions.event_date.between(start, end_ts)]
-            action_counts[identity] = len(window)
-            blocking = window.loc[window.mechanics_status.eq("BLOCKING")]
-            if not blocking.empty:
-                blocker_ids[identity] = "|".join(sorted(set(blocking.block_reason.astype(str))))
+        window_key = (start, end_ts)
+        if window_key not in self._window_cache:
+            blocker_ids, action_counts, fractional_events = {}, {}, {}
+            for identity, actions in self.actions.items():
+                window = actions.loc[actions.event_date.between(start, end_ts)]
+                action_counts[identity] = len(window)
+                blocking = window.loc[window.mechanics_status.eq("BLOCKING")]
+                if not blocking.empty:
+                    blocker_ids[identity] = "|".join(sorted(set(blocking.block_reason.astype(str))))
+                automatic = window.loc[window.mechanics_status.eq("AUTO_MULTIPLIER")]
+                ratios = automatic.total_share_multiplier.to_numpy(float)
+                if len(ratios) and not np.isclose(ratios, np.round(ratios), rtol=0, atol=1e-10).all():
+                    fractional_events[identity] = automatic.sort_values(["event_date", "event_type"])
+            self._window_cache[window_key] = blocker_ids, action_counts, fractional_events
+        blocker_ids, action_counts, fractional_events = self._window_cache[window_key]
         result["official_action_events_in_window"] = result["isin"].map(action_counts).fillna(0).astype(int)
         result["corporate_action_evidence"] = "OFFICIAL_PRIMARY_EXCHANGE_PROFILE_WINDOW"
         metric_columns = [
@@ -397,23 +439,16 @@ class OfficialActionHistoryBook(ExecutableHistoryBook):
         result.loc[blocked, metric_columns] = np.nan
         available = result.status.eq("AVAILABLE")
         fractional = available & result.shares_bought.notna() & ~np.isclose(
-            result.shares_bought, np.round(result.shares_bought), atol=1e-8
+            result.shares_bought, np.round(result.shares_bought), rtol=0, atol=1e-8
         )
         result.loc[fractional, "status"] = "UNRESOLVED_FRACTIONAL_ENTITLEMENT"
         result.loc[fractional, "reason"] = "OFFICIAL_MULTIPLIER_PRODUCED_FRACTIONAL_SHARES"
         result.loc[fractional, metric_columns] = np.nan
         # A later split can make a fractional consolidation entitlement look
         # integral at the terminal date. Inspect the holding at each event.
-        for index in result.index[result.status.eq("AVAILABLE")]:
+        for index in result.index[result.status.eq("AVAILABLE") & result["isin"].isin(fractional_events)]:
             identity = result.at[index, "isin"]
-            events = self.actions.get(identity)
-            if events is None:
-                continue
-            events = events.loc[events.event_date.between(start, end_ts)
-                                & events.mechanics_status.eq("AUTO_MULTIPLIER")].sort_values(
-                                    ["event_date", "event_type"], kind="stable")
-            if not events.event_type.eq("CONSOLIDATION").any():
-                continue
+            events = fractional_events[identity]
             reason = self._fractional_consolidation_reason(identity, profile, end_ts,
                                                             months or profile.lookback_months,
                                                             mode, events)
@@ -421,6 +456,8 @@ class OfficialActionHistoryBook(ExecutableHistoryBook):
                 result.at[index, "status"] = "UNRESOLVED_FRACTIONAL_ENTITLEMENT"
                 result.at[index, "reason"] = reason
                 result.loc[index, metric_columns] = np.nan
+        if not self.resulting_terms.empty:
+            result = self._add_resulting_equity(result, profile, start, end_ts, mode, metric_columns)
         result["evidence_grade"] = "OFFICIAL_ACTIONS_WITH_YAHOO_PRICE_BASIS_RESEARCH_ONLY"
         return result
 
@@ -440,8 +477,8 @@ class OfficialActionHistoryBook(ExecutableHistoryBook):
             while position < len(actions) and np.datetime64(actions[position].event_date.date(), "D") <= day:
                 action = actions[position]
                 shares *= float(action.total_share_multiplier)
-                if action.event_type == "CONSOLIDATION" and not np.isclose(shares, round(shares), atol=1e-8):
-                    return f"FRACTIONAL_CONSOLIDATION_ENTITLEMENT:{action.event_date.date().isoformat()}"
+                if not np.isclose(shares, round(shares), rtol=0, atol=1e-8):
+                    return f"FRACTIONAL_{action.event_type}_ENTITLEMENT:{action.event_date.date().isoformat()}"
                 position += 1
             return None
 
@@ -460,3 +497,74 @@ class OfficialActionHistoryBook(ExecutableHistoryBook):
             if mode == "enhanced_carry":
                 cash = available - quantity * float(nominal[price_index])
         return apply_through(np.datetime64(end.date(), "D"))
+
+    def _add_resulting_equity(self, result, profile, start, end, mode, metric_columns):
+        from stock_ranker.personalized import xirr
+        terms = self.resulting_terms.loc[self.resulting_terms.event_date.between(start.date().isoformat(), end.date().isoformat())]
+        result["resulting_security_value"] = 0.0
+        result["resulting_valuation_policy"] = "BUY_AND_HOLD_PRICE_ONLY_NO_DIVIDEND_CASH"
+        schedule = pd.date_range(start, end - pd.Timedelta(days=1), freq=f"{profile.interval_days}D")
+        for identity, group in terms.groupby("parent_isin"):
+            matches = result.index[result["isin"].eq(identity) & result.status.eq("AVAILABLE")]
+            if not len(matches):
+                continue
+            index = matches[0]
+            dates, _, _, nominal, factors = self.arrays[identity]
+            buy = np.searchsorted(dates, schedule.to_numpy(dtype="datetime64[D]"))
+            last = np.searchsorted(dates, np.datetime64(end.date(), "D"), side="right") - 1
+            quantities, cash = [], 0.0
+            for position in buy:
+                cash += profile.amount
+                if position > last:
+                    quantities.append(0); continue
+                available = cash if mode == "enhanced_carry" else profile.amount
+                q = math.floor(available / nominal[position])
+                quantities.append(q)
+                cash = available - q * nominal[position]
+            extra, reason = 0.0, None
+            for term in group.itertuples(index=False):
+                event = np.datetime64(term.event_date, "D")
+                # Holdings immediately before ex-date; purchases on ex-date have no entitlement.
+                before = np.searchsorted(dates, event, side="left") - 1
+                held = sum(q * factors[pos] / factors[before] for q, pos in zip(quantities, buy)
+                           if pos <= last and dates[pos] < event) if before >= 0 else 0
+                entitlement = held * term.numerator / term.denominator
+                if not np.isclose(entitlement, round(entitlement), atol=1e-8, rtol=0):
+                    reason = "RESULTING_FRACTION_SETTLEMENT_UNAVAILABLE:" + term.child_ticker; break
+                if entitlement == 0:
+                    continue
+                if term.child_isin not in self.arrays:
+                    reason = "RESULTING_HISTORY_UNAVAILABLE:" + term.child_ticker; break
+                child_dates, _, _, child_nominal, child_factors = self.arrays[term.child_isin]
+                terminal = np.searchsorted(child_dates, np.datetime64(end.date(), "D"), side="right") - 1
+                if terminal < 0 or (np.datetime64(end.date(), "D") - child_dates[terminal]).astype(int) > profile.max_price_gap_days:
+                    reason = "RESULTING_TERMINAL_UNAVAILABLE:" + term.child_ticker; break
+                child_actions = self.actions.get(term.child_isin)
+                multiplier = 1.0
+                if child_actions is not None:
+                    window = child_actions.loc[child_actions.event_date.gt(pd.Timestamp(term.event_date)) & child_actions.event_date.le(end)]
+                    if window.mechanics_status.isin(["BLOCKING", "RESULTING_EQUITY"]).any():
+                        reason = "RESULTING_NESTED_ACTION_UNRESOLVED:" + term.child_ticker; break
+                    for action in window.loc[window.mechanics_status.eq("AUTO_MULTIPLIER")].itertuples():
+                        multiplier *= action.total_share_multiplier
+                        if not np.isclose(entitlement * multiplier, round(entitlement * multiplier), atol=1e-8, rtol=0):
+                            reason = "RESULTING_FRACTION_SETTLEMENT_UNAVAILABLE:" + term.child_ticker; break
+                if reason:
+                    break
+                extra += entitlement * multiplier * child_nominal[terminal]
+            if reason:
+                result.at[index, "status"] = "UNRESOLVED_CORPORATE_ACTION"
+                result.at[index, "reason"] = reason
+                result.loc[index, metric_columns] = np.nan
+                continue
+            result.at[index, "resulting_security_value"] = extra
+            for column in ("current_holding_value", "total_wealth", "profit_loss"):
+                result.at[index, column] += extra
+            denominator = result.at[index, "amount_invested"] if mode == "professor" else result.at[index, "amount_contributed"]
+            result.at[index, "profit_loss_pct"] = result.at[index, "total_wealth"] / denominator - 1 if denominator else np.nan
+            if mode != "professor":
+                wealth = result.at[index, "total_wealth"]
+                result.at[index, "xirr"] = xirr([*schedule, end], [-profile.amount] * len(schedule) + [wealth])
+                result.at[index, "target_attainment"] = wealth / result.at[index, "target_wealth"]
+                result.at[index, "target_shortfall"] = max(0, 1 - result.at[index, "target_attainment"])
+        return result

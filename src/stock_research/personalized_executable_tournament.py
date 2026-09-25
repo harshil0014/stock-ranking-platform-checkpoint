@@ -296,6 +296,22 @@ def rank_executable(book: ExecutableHistoryBook, profile: InvestorProfile, end,
     return result
 
 
+def fit_matured_models(training: pd.DataFrame, target: pd.DataFrame, protocol: dict):
+    """Fit each decision with labels fully realized strictly before that date."""
+    predictions, audit = [], []
+    maturity = pd.to_datetime(training["endpoint"], errors="raise")
+    for day, group in target.groupby("decision_date", sort=True):
+        mature = training.loc[maturity.lt(pd.Timestamp(day))].copy()
+        if mature.empty:
+            raise ValueError(f"no matured training outcomes before {day}")
+        fitted, details = fit_fixed_models(mature, group, protocol)
+        predictions.append(fitted)
+        audit.append({"decision_date": str(day), "training_rows": len(mature),
+                      "excluded_immature_rows": len(training) - len(mature),
+                      "latest_training_endpoint": str(mature.endpoint.max()), "models": details})
+    return pd.concat(predictions, ignore_index=True), audit
+
+
 def fit_fixed_models(training: pd.DataFrame, target: pd.DataFrame, protocol: dict) -> tuple[pd.DataFrame, list[dict]]:
     from sklearn.ensemble import HistGradientBoostingRegressor
     from sklearn.impute import SimpleImputer

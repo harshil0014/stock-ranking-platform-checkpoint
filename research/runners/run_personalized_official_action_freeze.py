@@ -165,9 +165,24 @@ def run(args) -> None:
     live_state = json.loads((ROOT / "data/live_market/accepted_state.json").read_text(encoding="utf-8"))
     live_path = ROOT / "data/live_market" / live_state["bundle_path"] / "live_market.csv"
     live = pd.read_csv(live_path, low_memory=False)
+    history_audit = pd.read_csv(ROOT / "research/data/ownership-recovery-20260925/history_recovery_audit.csv")
+    nominal_tickers = set(history_audit.loc[history_audit.raw_basis.eq("OFFICIAL_NOMINAL"), "ticker"])
+    adjustment_dates = history_audit.dropna(subset=["provider_adjustment_through"]).set_index("ticker").provider_adjustment_through.to_dict()
+    history_audit.to_csv(output / "history_recovery_audit.csv", index=False)
+    resulting_terms = pd.read_csv(ROOT / "research/data/ownership-recovery-20260925/resulting_equity_terms.csv")
+    child_ids = set(resulting_terms.child_isin)
+    identities = pd.concat([identities, facts.loc[facts["isin"].isin(child_ids), identities.columns]]).drop_duplicates("isin")
+    for term in resulting_terms.itertuples(index=False):
+        mask = ledger["isin"].eq(term.parent_isin) & ledger.event_date.eq(term.event_date) & ledger.event_type.eq("DEMERGER")
+        ledger.loc[mask, "mechanics_status"] = "RESULTING_EQUITY"
+        ledger.loc[mask, "block_reason"] = None
+        ledger.loc[mask, "economic_policy"] = "RESULTING_EQUITY_HOLD_PRICE_ONLY"
+    resulting_terms.to_csv(output / "resulting_equity_terms.csv", index=False)
     book = OfficialActionHistoryBook(
         identities, args.history_cache, args.split_root, ledger, as_of_date=args.as_of_date,
-        terminal_repairs=repairs, terminal_raw_prices=live[["isin", "trade_date", "latest_price"]],
+        terminal_repairs=repairs, terminal_raw_prices=live[["isin", "trade_date", "latest_price"]], resulting_terms=resulting_terms,
+        history_overlay=ROOT / "external_research_pack/ownership_history_20260925",
+        nominal_tickers=nominal_tickers, adjustment_dates=adjustment_dates,
     )
     prior = pd.concat([pd.read_csv(args.previous_freeze / f"frozen_executable_cohort_{months}m.csv.gz", low_memory=False)
                        for months in (12, 36, 60)], ignore_index=True)

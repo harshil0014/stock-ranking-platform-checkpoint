@@ -1,0 +1,18 @@
+{
+  "scope": "Research-only whole-share, price-return simulation",
+  "execution_assumptions": [
+    "Scheduled contribution at the next observed close within seven calendar days",
+    "Zero fees and zero slippage; quoted close does not guarantee fill",
+    "Buy and hold resulting shares; no external cash for rights",
+    "Provider source-history basis reconstructed using provider split ledger; official actions determine holdings",
+    "Current frozen universe creates survivor bias in historical evaluations"
+  ],
+  "unresolved": [
+    "Actual dividends and payment dates are not included in terminal cash",
+    "Rights record-date proxy exercise is not an executable subscription calendar",
+    "Bonus share credit delays and exchange settlement timing are not modeled",
+    "Unknown fractional distributions remain excluded",
+    "Parent-security drawdown is not combined parent-plus-resulting-company portfolio drawdown"
+  ],
+  "prior_results": "Earlier build-02 results used an incorrect nominal-price basis and unpurged training outcomes; they cannot establish comparative performance gains."
+}

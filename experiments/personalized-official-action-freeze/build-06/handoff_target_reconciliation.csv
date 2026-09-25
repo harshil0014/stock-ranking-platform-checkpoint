@@ -1,0 +1,4 @@
+lookback_months,reconciled_target_identities,supplied_pack_blocking_identities,continuity_mapped_blocking_identities,continuity_mapped_auto_identities,continuity_mapping_additional_blockers
+12,537,20,0,52,-20
+36,537,61,3,148,-58
+60,537,78,8,225,-70

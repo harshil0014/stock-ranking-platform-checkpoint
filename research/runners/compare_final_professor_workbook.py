@@ -33,6 +33,11 @@ def run(args) -> None:
     exact["requested_code"] = exact.apply(
         lambda row: ("NSE:" + str(row.ticker)) if row.primary_exchange == "NSE"
         else ("BOM:" + str(row.ticker).removeprefix("BSE-")), axis=1)
+    # A bare ticker is accepted only when it is unique in the exact security master.
+    aliases = exact.loc[~exact.ticker.duplicated(keep=False)].copy()
+    aliases["requested_code"] = aliases.ticker
+    exact = pd.concat([exact, aliases], ignore_index=True)
+    selected_score = selection["selection"]["strongest_individual_by_goal_shortfall"]
     matched = benchmark.merge(exact[["requested_code", "isin", "ticker", "professor_supplied_rank"]],
                               on="requested_code", how="left", validate="many_to_one")
     current = pd.read_csv(output / "current_profile_rankings.csv.gz", low_memory=False)
@@ -40,7 +45,8 @@ def run(args) -> None:
     keep = ["isin", "status", "reason", "shares_bought", "amount_invested", "residual_cash",
             "current_holding_value", "total_wealth", "profit_loss", "profit_loss_pct", "enhanced_carry_xirr_score",
             "target_attainment", "enhanced_goal_score", "global_existing_score",
-            "hist_gradient_boosting_score"]
+            selected_score]
+    keep = list(dict.fromkeys(keep))
     current = current[keep].rename(columns={key: "research_" + key for key in keep if key != "isin"})
     matched = matched.merge(current, on="isin", how="left", validate="many_to_one")
     matched["research_as_of_date"] = "2026-09-18"
@@ -73,10 +79,11 @@ def run(args) -> None:
                             "corporate_action_difference": "NOT_IDENTIFIABLE_FROM_CACHE",
                             "unexplained_discrepancy": False})
     pd.DataFrame(diagnostics).to_csv(output / "professor_mismatch_diagnostics.csv", index=False, lineterminator="\n")
-    valid = matched.dropna(subset=["professor_supplied_rank", "research_hist_gradient_boosting_score"])
-    rank_agreement = ((-valid.professor_supplied_rank).corr(valid.research_hist_gradient_boosting_score,
+    valid = matched.dropna(subset=["professor_supplied_rank", "research_" + selected_score])
+    rank_agreement = ((-valid.professor_supplied_rank).corr(valid["research_" + selected_score],
                                                         method="spearman") if len(valid) > 2 else None)
     write_json(output / "professor_comparison_summary.json", {
+        "selected_individual": selected_score,
         "workbook_sha256": workbook_audit["workbook_sha256"],
         "workbook_rows": len(matched), "exact_identity_matches": int(matched["isin"].notna().sum()),
         "usable_workbook_purchase_rows": int(matched.status.eq("CACHED_ARITHMETIC_ONLY").sum()),

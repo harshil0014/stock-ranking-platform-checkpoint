@@ -30,8 +30,11 @@ def official_book(tmp_path, actions, *, pre=100.0, post=50.0, provider_ratio=Non
     splits = tmp_path / "splits"; splits.mkdir(parents=True)
     dates = pd.date_range("2020-01-01", "2020-03-01")
     raw = [pre if day < pd.Timestamp("2020-02-01") else post for day in dates]
+    nominal = raw.copy()
+    raw = [value / provider_ratio if provider_ratio and day < pd.Timestamp("2020-02-01") else value
+           for day, value in zip(dates, nominal)]
     adjusted = [value / provider_ratio if provider_ratio and day < pd.Timestamp("2020-02-01") else value
-                for day, value in zip(dates, raw)]
+                for day, value in zip(dates, nominal)]
     pd.DataFrame({"date": dates, "raw_close": raw, "adjusted_close": adjusted}).to_csv(
         history / "AAA.csv", index=False
     )
@@ -75,7 +78,7 @@ def test_official_bonus_reconstructs_return_basis_and_integer_shares(tmp_path):
     assert result.price_drawdown == 0
 
 
-def test_provider_split_does_not_inflate_historical_execution_price(tmp_path):
+def test_provider_split_adjusted_close_restores_nominal_execution_price(tmp_path):
     book = official_book(tmp_path, normalized_action(), provider_ratio=2)
     result = book.simulate(
         InvestorProfile(amount=100, interval_days=31, lookback_months=2, whole_shares=True),

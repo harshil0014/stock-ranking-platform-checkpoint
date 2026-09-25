@@ -1,0 +1,9 @@
+{
+  "protected_head": "097643b73d10f57a32cfb8ceb03d5edd17b6ddfe",
+  "cutoff": "2026-09-18",
+  "rights_policy_source": "https://www.nseindia.com/static/trade/members-faqs-rights-entitlement-trading",
+  "price_basis_evidence": "RELIANCE cached Close 1327.849976 on 2024-10-25 and 1334.349976 on 2024-10-28 around official 1:1 bonus: split-adjusted Close. Undo provider factor before whole-share purchases.",
+  "validation_policy": "Training endpoints strictly before each scoring decision. No reuse of old checkpoints.",
+  "return_scope": "Price capital gains and residual cash, excluding dividend cash; parent-security price-only drawdown/CAGR features. Existing global comparison retains its original adjusted basis.",
+  "history_policy": "Remove invalid observations, retain missing-price execution tests, append exact observed official terminal closes only without known action in the gap. Yahoo factor ends at original last history date; exact official nominal histories are not unadjusted again."
+}

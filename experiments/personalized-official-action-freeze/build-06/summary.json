@@ -1,0 +1,127 @@
+{
+  "as_of_date": "2026-09-18",
+  "exact_next_milestone": "Run the preregistered official-action global rerun and exact-date sector diagnostic, then await prospective post-2026-09-18 outcomes.",
+  "executable_coverage": [
+    {
+      "corporate_action_blocks": 13,
+      "executable_available_after": 3747,
+      "executable_available_before": 3550,
+      "executable_coverage_after_pct": 98.39810924369748,
+      "executable_coverage_before_pct": 93.22478991596638,
+      "false_quarantines_removed": 207,
+      "fractional_entitlement_blocks": 24,
+      "frozen_global_population": 3808,
+      "lookback_months": 12,
+      "net_available_change": 197,
+      "other_unresolved": 24,
+      "true_blocking_events_remaining": 37
+    },
+    {
+      "corporate_action_blocks": 25,
+      "executable_available_after": 3285,
+      "executable_available_before": 3056,
+      "executable_coverage_after_pct": 97.30450236966824,
+      "executable_coverage_before_pct": 90.52132701421802,
+      "false_quarantines_removed": 255,
+      "fractional_entitlement_blocks": 58,
+      "frozen_global_population": 3376,
+      "lookback_months": 36,
+      "net_available_change": 229,
+      "other_unresolved": 8,
+      "true_blocking_events_remaining": 83
+    },
+    {
+      "corporate_action_blocks": 40,
+      "executable_available_after": 2889,
+      "executable_available_before": 2637,
+      "executable_coverage_after_pct": 95.44103072348861,
+      "executable_coverage_before_pct": 87.1159563924678,
+      "false_quarantines_removed": 284,
+      "fractional_entitlement_blocks": 91,
+      "frozen_global_population": 3027,
+      "lookback_months": 60,
+      "net_available_change": 252,
+      "other_unresolved": 7,
+      "true_blocking_events_remaining": 131
+    }
+  ],
+  "false_quarantines_removed_total_profile_rows": 746,
+  "global_tournament_readiness": "READY_RESEARCH_ONLY",
+  "handoff_target_reconciliation": [
+    {
+      "continuity_mapped_auto_identities": 52,
+      "continuity_mapped_blocking_identities": 0,
+      "continuity_mapping_additional_blockers": -20,
+      "lookback_months": 12,
+      "reconciled_target_identities": 537,
+      "supplied_pack_blocking_identities": 20
+    },
+    {
+      "continuity_mapped_auto_identities": 148,
+      "continuity_mapped_blocking_identities": 3,
+      "continuity_mapping_additional_blockers": -58,
+      "lookback_months": 36,
+      "reconciled_target_identities": 537,
+      "supplied_pack_blocking_identities": 61
+    },
+    {
+      "continuity_mapped_auto_identities": 225,
+      "continuity_mapped_blocking_identities": 8,
+      "continuity_mapping_additional_blockers": -70,
+      "lookback_months": 60,
+      "reconciled_target_identities": 537,
+      "supplied_pack_blocking_identities": 78
+    }
+  ],
+  "official_action_mapping": {
+    "automatic_rows": 1699,
+    "blocking_rows": 818,
+    "conflicting_multiplier_groups": 0,
+    "identity_continuity_rows": 771,
+    "mapped_identities": 1534,
+    "mapped_source_rows": 2496,
+    "normalized_rows": 2517,
+    "raw_rows_through_as_of": 4759
+  },
+  "pack_verification": {
+    "manifest_sha256": "72f495f59025f87c038509850d659116c896d0de8d8a607e52c3aaf868cb84af",
+    "verification_failures": 0,
+    "verified_outputs": 7,
+    "verified_source_files": 4001
+  },
+  "protected_state_unchanged": true,
+  "recovered_action_application": {
+    "additional_passive_rights_events": 543,
+    "applied_by_type": {
+      "CONSOLIDATION": 6,
+      "DEMERGER": 6,
+      "RIGHTS": 9,
+      "SCHEME_OR_MERGER": 1
+    },
+    "applied_pre_cutoff": 22,
+    "post_cutoff_excluded": 0,
+    "supplemental_rights_terms": 259
+  },
+  "residual_reconciliation": {
+    "complex_recovered": 16,
+    "consolidations_recovered": 6,
+    "core_mechanics_unknown": 0,
+    "covered_union": 445,
+    "official_auto_matches": 112,
+    "previously_covered": 311,
+    "round2_events": 445,
+    "verified_pack_files": 29
+  },
+  "runtime_seconds": 182.5360811999999,
+  "schema_version": "personalized_official_action_freeze_v1",
+  "sector_current_exact_observation_rows": 0,
+  "sector_current_pit_coverage_pct": 0.0,
+  "sector_evidence_boundary": "Exact observed dates only; secondary evidence remains separate; no back-projection.",
+  "sector_exact_official_dates": [
+    "2020-03-31",
+    "2021-03-31",
+    "2022-03-31"
+  ],
+  "sector_relative_tournament_readiness": "READY_EXACT_DATE_SUPPLEMENTARY_ONLY",
+  "true_blocking_events_remaining_total_profile_rows": 251
+}

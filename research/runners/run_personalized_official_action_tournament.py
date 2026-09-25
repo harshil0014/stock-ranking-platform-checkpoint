@@ -28,7 +28,7 @@ from stock_ranker.company_facts import load_company_fact_snapshot, resolve_compa
 from stock_ranker.personalized import PersonalizedEngine
 from stock_ranker.personalized_data import load_history_book
 from stock_research.personalized_executable_tournament import (
-    BASE_CANDIDATES, common_metrics, fit_fixed_models, load_protocol,
+    BASE_CANDIDATES, common_metrics, fit_matured_models, load_protocol,
 )
 from stock_research.personalized_global_tournament import load_frozen_memberships
 from stock_research.personalized_official_actions import OfficialActionHistoryBook
@@ -99,27 +99,52 @@ def run(args) -> None:
     live_state = json.loads((ROOT / "data/live_market/accepted_state.json").read_text(encoding="utf-8"))
     live_path = ROOT / "data/live_market" / live_state["bundle_path"] / "live_market.csv"
     live = pd.read_csv(live_path, low_memory=False)
+    history_audit = pd.read_csv(ROOT / "research/data/ownership-recovery-20260925/history_recovery_audit.csv")
+    nominal_tickers = set(history_audit.loc[history_audit.raw_basis.eq("OFFICIAL_NOMINAL"), "ticker"])
+    adjustment_dates = history_audit.dropna(subset=["provider_adjustment_through"]).set_index("ticker").provider_adjustment_through.to_dict()
+    history_audit.to_csv(output / "history_recovery_audit.csv", index=False)
+    resulting_terms = pd.read_csv(ROOT / "research/data/ownership-recovery-20260925/resulting_equity_terms.csv")
+    child_ids = set(resulting_terms.child_isin)
+    identities = pd.concat([identities, facts.loc[facts["isin"].isin(child_ids), identities.columns]]).drop_duplicates("isin")
+    for term in resulting_terms.itertuples(index=False):
+        mask = ledger["isin"].eq(term.parent_isin) & ledger.event_date.eq(term.event_date) & ledger.event_type.eq("DEMERGER")
+        ledger.loc[mask, "mechanics_status"] = "RESULTING_EQUITY"
+        ledger.loc[mask, "block_reason"] = None
+        ledger.loc[mask, "economic_policy"] = "RESULTING_EQUITY_HOLD_PRICE_ONLY"
+    resulting_terms.to_csv(output / "resulting_equity_terms.csv", index=False)
     executable = OfficialActionHistoryBook(
         identities, args.history_cache, args.split_root, ledger,
         as_of_date=protocol["current_profile_date"], terminal_repairs=repairs,
-        terminal_raw_prices=live[["isin", "trade_date", "latest_price"]],
+        terminal_raw_prices=live[["isin", "trade_date", "latest_price"]], resulting_terms=resulting_terms,
+        history_overlay=ROOT / "external_research_pack/ownership_history_20260925",
+        nominal_tickers=nominal_tickers, adjustment_dates=adjustment_dates,
     )
     fractional_book, history_hashes = load_history_book(facts, args.history_cache, terminal_repairs=repairs)
     fractional_engine = PersonalizedEngine(fractional_book, cache_size=128)
 
+    checkpoint_inputs = {"protocol": expected_protocol, "freeze": digest(args.official_freeze / "manifest.json"),
+                         "history_recovery": digest(ROOT / "research/data/ownership-recovery-20260925/history_recovery_audit.csv"),
+                         "module": digest(ROOT / "src/stock_research/personalized_official_actions.py"),
+                         "history": sha256(json.dumps(history_hashes, sort_keys=True).encode()).hexdigest()}
+    checkpoint_context = args.checkpoint_root / "input_context.json"
+    if checkpoint_context.exists() and json.loads(checkpoint_context.read_text()) != checkpoint_inputs:
+        raise ValueError("checkpoint inputs differ; use a new checkpoint directory")
+    if not checkpoint_context.exists() and list(args.checkpoint_root.glob("*.csv.gz")):
+        raise ValueError("unverified checkpoints cannot be reused")
+    write_json(checkpoint_context, checkpoint_inputs)
     training = build_rows(executable, fractional_engine, fractional_book, facts, profiles, memberships,
                           protocol["training_decision_dates"], "TRAIN", args.checkpoint_root)
     validation_base = build_rows(executable, fractional_engine, fractional_book, facts, profiles, memberships,
                                  protocol["validation_decision_dates"], "VALIDATION", args.checkpoint_root)
-    validation, validation_audit = fit_fixed_models(training, validation_base, protocol)
-    development = pd.concat([training, validation_base], ignore_index=True)
+    validation, validation_audit = fit_matured_models(training, validation_base, protocol)
+    development = pd.concat([training, validation_base], ignore_index=True).drop_duplicates(["decision_date", "profile_name", "isin"])
     supplementary_base = build_rows(
         executable, fractional_engine, fractional_book, facts, profiles, memberships,
         protocol["supplementary_exposed_test_dates"], "SUPPLEMENTARY_EXPOSED_TEST", args.checkpoint_root,
     )
     current_base = build_rows(executable, fractional_engine, fractional_book, facts, profiles, memberships,
                               [protocol["current_profile_date"]], "CURRENT", args.checkpoint_root)
-    combined, final_audit = fit_fixed_models(
+    combined, final_audit = fit_matured_models(
         development,
         pd.concat([supplementary_base.assign(_part="supplementary"),
                    current_base.assign(_part="current")], ignore_index=True),

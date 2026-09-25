@@ -27,3 +27,23 @@ research/runners/finalize_personalized_tournament.py text eol=lf
 research/runners/rights_policy_sensitivity.py text eol=lf
 research/runners/write_personalized_final_report.py text eol=lf
 docs/PERSONALIZED_FINAL_RESEARCH_20260925.md text eol=lf
+experiments/personalized-official-action-freeze/build-06/*.csv -text
+experiments/personalized-official-action-freeze/build-06/*.json binary
+experiments/personalized-official-action-freeze/build-06/*.gz binary
+experiments/personalized-final-tournament/build-04/*.csv -text
+experiments/personalized-final-tournament/build-04/*.json binary
+experiments/personalized-final-tournament/build-04/*.gz binary
+research/data/ownership-recovery-20260925/*.csv -text
+research/data/ownership-recovery-20260925/*.json binary
+research/protocols/personalized_ownership_tournament_v2.json -text
+research/runners/finalize_ownership_research.py text eol=lf
+research/runners/finish_saved_ownership_run.py text eol=lf
+research/runners/prepare_ownership_recovery.py text eol=lf
+research/runners/recover_ownership_history.py text eol=lf
+research/runners/verify_ownership_inputs.py text eol=lf
+src/stock_research/personalized_executable_tournament.py text eol=lf
+src/stock_research/personalized_rank_blend.py text eol=lf
+tests/test_personalized_ownership_recovery.py text eol=lf
+tests/test_personalized_rank_blend.py text eol=lf
+docs/PERSONALIZED_OWNERSHIP_RESEARCH_20260925.md text eol=lf
+docs/PERSONALIZED_OWNERSHIP_REPRODUCTION.md text eol=lf

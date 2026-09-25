@@ -54,3 +54,13 @@ dist/
 htmlcov/
 experiments/personalized/run-01/
 experiments/personalized/run-02/
+
+# Large local evidence and resumable research panels; compact audits are versioned.
+external_research_pack/
+experiments/ownership-*.log
+experiments/personalized-final-tournament/checkpoints-*/
+experiments/personalized-final-tournament/*/training_panel.csv.gz
+experiments/personalized-final-tournament/*/validation_predictions.csv.gz
+experiments/personalized-final-tournament/*/supplementary_predictions.csv.gz
+experiments/personalized-final-tournament/*/current_profile_rankings.csv.gz
+experiments/personalized-official-action-freeze/*-rebuild-check/

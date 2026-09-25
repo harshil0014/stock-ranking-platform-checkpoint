@@ -48,7 +48,7 @@ def replay(book, identity, profile, end, *, exercise):
                 shares += quantity
                 rights_shares += quantity
                 rights_spend += quantity * float(action.issue_price_inr)
-            elif action.mechanics_status == "BLOCKING":
+            elif action.mechanics_status in {"BLOCKING", "RESULTING_EQUITY"}:
                 raise ValueError("other unresolved action in rights replay")
             position += 1
 
@@ -75,9 +75,13 @@ def run(args):
     repairs = pd.read_csv(args.frozen_root / "terminal_repairs.csv")
     state = json.loads((ROOT / "data/live_market/accepted_state.json").read_text(encoding="utf-8"))
     live = pd.read_csv(ROOT / "data/live_market" / state["bundle_path"] / "live_market.csv", low_memory=False)
+    audit = pd.read_csv(ROOT / "research/data/ownership-recovery-20260925/history_recovery_audit.csv")
     book = OfficialActionHistoryBook(identities, args.history_cache, args.split_root, ledger,
                                      as_of_date=protocol["current_profile_date"], terminal_repairs=repairs,
-                                     terminal_raw_prices=live[["isin", "trade_date", "latest_price"]])
+                                     terminal_raw_prices=live[["isin", "trade_date", "latest_price"]],
+                                     history_overlay=ROOT / "external_research_pack/ownership_history_20260925",
+                                     nominal_tickers=set(audit.loc[audit.raw_basis.eq("OFFICIAL_NOMINAL"), "ticker"]),
+                                     adjustment_dates=audit.dropna(subset=["provider_adjustment_through"]).set_index("ticker").provider_adjustment_through.to_dict())
     rows = []
     for name, profile in profiles.items():
         passive = book.simulate(profile, protocol["current_profile_date"],
