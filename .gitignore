@@ -64,3 +64,6 @@ experiments/personalized-final-tournament/*/validation_predictions.csv.gz
 experiments/personalized-final-tournament/*/supplementary_predictions.csv.gz
 experiments/personalized-final-tournament/*/current_profile_rankings.csv.gz
 experiments/personalized-official-action-freeze/*-rebuild-check/
+experiments/shadow-*.log
+research/shadow_evidence/
+research/shadow_runs/

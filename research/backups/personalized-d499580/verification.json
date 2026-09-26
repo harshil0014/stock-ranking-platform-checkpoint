@@ -1,0 +1,41 @@
+{
+  "archive_file_count": 12964,
+  "archives": [
+    {
+      "name": "reproduction-inputs-01.zip",
+      "sha256": "b8bb33e5c9436324aa4bdeef32862078a0661312c299f9397ff37977a4df717e",
+      "size": 80530026
+    },
+    {
+      "name": "reproduction-inputs-02.zip",
+      "sha256": "6abb788246168a675e597321eea64eeb1786af01e13d54cd5f5e652e0b1da3b5",
+      "size": 274136020
+    },
+    {
+      "name": "reproduction-inputs-03.zip",
+      "sha256": "091fdb83a8b320e6ce97c02a4a07491ddfcb1178722677e1b49b8b8db8dd7102",
+      "size": 132472743
+    },
+    {
+      "name": "reproduction-inputs-04.zip",
+      "sha256": "0b055e0dc34af690cf956e3dd344fe44904518044bde1813c600bc3ac2e55fe5",
+      "size": 97890846
+    }
+  ],
+  "challenger_commit": "d4995807163bef1ec4b297179e6c54a59c71f390",
+  "freeze_fingerprint": "f91c97dc212e0c8e1ceb3cf1c5d7806ddf99f6906b13235a2ce7c409efc162da",
+  "input_manifest_sha256": "1615eadadab51b081f2b3ced6ca2316d3de1fc451ea985512d3bb1e4ea30e74a",
+  "protected_state": {
+    "data\\company_facts\\accepted_state.json": "4bd63f7eb86c64399017ff9979477de54797dcd8f2cd36768829cdc6eb4dc2e0",
+    "data\\live_market\\accepted_state.json": "632dcc4f9069eacfd5228563e28ec6b6006737552b691955fcf45aa5b6026595"
+  },
+  "raw_archive_bytes_verified": true,
+  "test_log_sha256": "93bfa6762bdfbb0822a2f81d3e8365fb8312961e0b39d72fe120bccc772ead9a",
+  "tests": [
+    "..............................................                           [100%]",
+    "=========================== short test summary info ===========================",
+    "SKIPPED [1] tests\\test_nse_snapshot.py:286: supplied external NSE/NIFTY files are not present",
+    "909 passed, 1 skipped in 171.04s (0:02:51)"
+  ],
+  "unbacked_scope": "Unused exploratory PDF collections are not required by the frozen inference and are excluded."
+}

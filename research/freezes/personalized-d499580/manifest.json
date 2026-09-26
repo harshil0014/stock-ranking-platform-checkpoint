@@ -1,0 +1,70 @@
+{
+  "files": [
+    {
+      "path": "config.json",
+      "sha256": "c135f8c1a7f8fc3e92cfeedecdb96289dd6e9ffcaff34f875378a67a1c6a5000",
+      "size": 3633
+    },
+    {
+      "path": "features.csv.gz",
+      "sha256": "c8f2103d2ca4ed1568ec05136fbdc22713da8d867397ba21f6df5c4337fbb9d2",
+      "size": 6103169
+    },
+    {
+      "path": "lambdarank.txt",
+      "sha256": "354be0847b05445da331cda92fc33e2d8522df70798297af82a132214dfa3c1c",
+      "size": 58221
+    },
+    {
+      "path": "original_environment.json",
+      "sha256": "d77562507bda0c00f9e1dc66ecc8f1b87a85b681553b49facd328a0355745fa2",
+      "size": 222
+    },
+    {
+      "path": "original_final_assessment.json",
+      "sha256": "3080fefae5afb645403254927529c4f130a6c0f295fe045d21c0a7588b1b8296",
+      "size": 922
+    },
+    {
+      "path": "original_inputs.json",
+      "sha256": "87c6a917703cb137ae20a1580653ebcd5796cc46d97787a21ca43060b3f06cf9",
+      "size": 3537
+    },
+    {
+      "path": "original_model_audit.json",
+      "sha256": "001ca2d43f5a625c38077146d01ae511aa77d298a2d9dcf0030316f189538b22",
+      "size": 33866
+    },
+    {
+      "path": "original_protocol.json",
+      "sha256": "95f50df5352e3cee5690c84b52636df429f0a24240c0ad121b169c9fb624420c",
+      "size": 8886
+    },
+    {
+      "path": "original_research_conclusion.json",
+      "sha256": "75e53a0e8c2540757b397456bae80f20a609ae36c8fd32af794d52f862283f76",
+      "size": 2603
+    },
+    {
+      "path": "rankings.csv.gz",
+      "sha256": "1e50f4ebee4cce8ce9c05631f1c67c2c279fd90cad9abd7863692dccb2521faf",
+      "size": 8070129
+    },
+    {
+      "path": "reproduction_audit.json",
+      "sha256": "c76a6dd489419c09fb9a6edbec94df6cc68e3bc0047d8d4d4126fd5175caca4f",
+      "size": 2458
+    },
+    {
+      "path": "selection_coverage.csv",
+      "sha256": "7c36ebd29c956a114e53e63343c685731f1b205791f900533d0afe3e6f4a5d8e",
+      "size": 1514
+    },
+    {
+      "path": "selections.csv",
+      "sha256": "d9faafadf247966475bd0adf2a326dbb2f267701b808f410999d03bd56da6a01",
+      "size": 55381
+    }
+  ],
+  "fingerprint": "f91c97dc212e0c8e1ceb3cf1c5d7806ddf99f6906b13235a2ce7c409efc162da"
+}

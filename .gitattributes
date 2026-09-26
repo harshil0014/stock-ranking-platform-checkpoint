@@ -48,3 +48,13 @@ tests/test_personalized_rank_blend.py text eol=lf
 docs/PERSONALIZED_OWNERSHIP_RESEARCH_20260925.md text eol=lf
 docs/PERSONALIZED_OWNERSHIP_REPRODUCTION.md text eol=lf
 research/runners/audit_ownership_result.py text eol=lf
+src/stock_research/personalized_shadow.py text eol=lf
+research/runners/personalized_shadow.py text eol=lf
+research/runners/freeze_personalized_shadow.py text eol=lf
+research/runners/package_shadow_backup.py text eol=lf
+research/runners/github_shadow_backup.py text eol=lf
+research/freezes/personalized-d499580/** -text
+research/backups/personalized-d499580/** -text
+docs/PERSONALIZED_SHADOW.md text eol=lf
+research/environment/requirements-shadow.txt text eol=lf
+tests/test_personalized_shadow.py text eol=lf

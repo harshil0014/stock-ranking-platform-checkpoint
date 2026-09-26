@@ -1,0 +1,11 @@
+{
+  "packages": {
+    "lightgbm": "4.6.0",
+    "numpy": "2.0.2",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0"
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.10"
+}

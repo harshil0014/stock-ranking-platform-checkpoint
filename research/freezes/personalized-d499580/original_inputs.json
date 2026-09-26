@@ -1,0 +1,39 @@
+{
+  "company_fact_fingerprint": "dba7b068cdc97e01cba00e36d914d0ce97d1d283763247ada544b89486454a0e",
+  "finalizer_sources": {
+    "research/runners/compare_final_professor_workbook.py": "504b5296dd21724a4efe7a65d8febbb1c1b06434882574edc4899e15045e24f7",
+    "research/runners/finalize_ownership_research.py": "5429ca3af883f9fdf97c75276eb1224a40b648dd5141175e99c9e54e027e5d70",
+    "research/runners/finalize_personalized_tournament.py": "443f84dd912cee1ca66dc7082a6c2d44302a4e1f0f94c8b63afc3037d53b35b7",
+    "research/runners/rights_policy_sensitivity.py": "3885ef7bbdeae311441cc5a0a712bae9411948ce81811ffefc1e199c023a2878",
+    "research/runners/run_personalized_executable_tournament.py": "8a571712f0bd57f7c6604086b963ccbf68672a04363b1a43ac043984de97e3ab",
+    "src/stock_research/personalized_rank_blend.py": "260ad00f73c418a4b2beaa346d3a9bdcb812a85fbb0ac56c17d553eb6f2b2ddb",
+    "src/stock_research/personalized_validation.py": "18b55048959bc1ddc12e37da0fd84438ddcf8351b1cb7b198cdb613c69f49f18"
+  },
+  "frozen_manifest_sha256": "09a930dc3934b50f444bae853c1edd0df368fc875802217152988e54c45d2da1",
+  "history_fingerprint": "fd9caa47e7fc67595c1e57d751959c20fcad18eeea30fe6e1b23e93681636c30",
+  "live_market_sha256": "ffa2b5153826b08d14ca67020cf60f251d0fba562fb3a43ce519c2e1deb786de",
+  "normalized_recovery_sources": {
+    "research/data/ownership-recovery-20260925/additional_consolidation_evidence.csv": "0a6886151c94d739343dfae746def7257a3f0ce8ac7511c012c04e1b28493332",
+    "research/data/ownership-recovery-20260925/checkpoint_and_policy.json": "b86bfefe9d1256b2960a92b5c9d2faba7b8761f77326ddda7662f29c6cf8b351",
+    "research/data/ownership-recovery-20260925/execution_limitations.json": "2517b292446d2e1a2238321a88b6bfaa47c787647cbbc7a09eadcbf2bda78b83",
+    "research/data/ownership-recovery-20260925/fractional_settlement_conflict.json": "570e1a5f6c8c46bbe4c369c93785abb0210742ccb2e98bf3981f2425d53ef2dd",
+    "research/data/ownership-recovery-20260925/history_recovery_audit.csv": "741230bbe47d77731d4130c6d0f38a1edfada39a178371764a6f1a9b44f76e90",
+    "research/data/ownership-recovery-20260925/residual_evidence_register.csv": "2f4564d391e4bfbcff740eb169254345b2c122ad26d76a89da133bcabad1545c",
+    "research/data/ownership-recovery-20260925/resulting_equity_terms.csv": "10824b8dd28ebf0033b15d976af48b6c0bc9952b9fb09a9c1f4cd5d5ab20f4a2"
+  },
+  "official_action_ledger_sha256": "ed9fa9054229aca7081a0ec5c34e7e18603bf68b833fa6887829bd10c55d0038",
+  "official_freeze_manifest_sha256": "5a79aaf8d815b279b9983176260b7d4f15659f9101f06d875ba4db0c7da4a46e",
+  "protected_state": {
+    "data\\company_facts\\accepted_state.json": "4bd63f7eb86c64399017ff9979477de54797dcd8f2cd36768829cdc6eb4dc2e0",
+    "data\\live_market\\accepted_state.json": "632dcc4f9069eacfd5228563e28ec6b6006737552b691955fcf45aa5b6026595"
+  },
+  "protocol_sha256": "de55e44ab11e2e95778d90cdaae8a0bde950ad896995f710df5de586d401ea96",
+  "provider_split_ledger_sha256": "0d723a299d346eeffa7160d4108acda8dc609cd7b7e2360f443cdb2cc51c4fcb",
+  "source_sha256": {
+    "official_action_module": "37cc68156c5582d0ab54f622c593ae07a9d88eaada3f45b457dd9b8e268e6aaa",
+    "runner": "7c860d959b7ba6b59d5ca387b1bdd0b1541181cafe0d013d26e5f518ddeb6c24",
+    "tournament_module": "4defec28dc3213504fdca751164beb3630dfc5d5730cb88905bb3fbaece87771"
+  },
+  "terminal_repairs_sha256": "f086de36ef942bb2c5e8cb5d523b1997f1570c573fec2dd4a1778d1981eece85",
+  "workbook_sha256": "be2ab62fb41abd4769b5f5d8de7f3df04edc6cfa336bb0d2c5906fc6da2e980b"
+}

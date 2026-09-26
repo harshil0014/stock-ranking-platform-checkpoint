@@ -1,0 +1,25 @@
+{
+  "builder_sha256": "cad6c0c134d3f5937812c1eb7e1c3a54ca4aae1fe7d0acd2ae3cbec9edcf2c3a",
+  "checkpoint_sources": {
+    "experiments/personalized-final-tournament/checkpoints-03/current-2026-09-18.csv.gz": "c8f2103d2ca4ed1568ec05136fbdc22713da8d867397ba21f6df5c4337fbb9d2",
+    "experiments/personalized-final-tournament/checkpoints-03/train-2016-12-31.csv.gz": "a74225f0f5b113c9ff508d31ae7c19ee8105f3e1c9af9c000163193174d6bc63",
+    "experiments/personalized-final-tournament/checkpoints-03/train-2017-12-31.csv.gz": "b2da9befe26a60da5399388959e75bf314c0c15e310feca36ab21275bb88202d",
+    "experiments/personalized-final-tournament/checkpoints-03/train-2018-12-31.csv.gz": "1aacdcebfaf3b324fdb4e7744f7359b1af9624767e7786ea53b5246621a5dc69",
+    "experiments/personalized-final-tournament/checkpoints-03/train-2019-12-31.csv.gz": "8301854b417540498a5c5782f77311184e75b05678c43840a7142af844aad56a",
+    "experiments/personalized-final-tournament/checkpoints-03/train-2022-06-30.csv.gz": "391803c5a801aef9951139810c2f8e17b94074b5ff58d573c01ffe4c3374c7b6",
+    "experiments/personalized-final-tournament/checkpoints-03/train-2022-12-31.csv.gz": "ede85c2f6e0ee6d3e02ebbd200441ccb8d25d4a90e86490c0d740905b1160458",
+    "experiments/personalized-final-tournament/checkpoints-03/validation-2020-06-30.csv.gz": "5d9172e8be9ceae58acf4d0084f79a76f12cd7bdbe2fc35225b5271e0d585c04",
+    "experiments/personalized-final-tournament/checkpoints-03/validation-2021-06-30.csv.gz": "056c5cd152f607241ad4f6df8361ec6bd9ed45801812f0eea95f7d91ffe27e8c",
+    "experiments/personalized-final-tournament/checkpoints-03/validation-2022-06-30.csv.gz": "18ae1e8e2f44bcd11aaa9511eafb9fa2750728064256f90ebd24e198a384351e",
+    "experiments/personalized-final-tournament/checkpoints-03/validation-2023-06-30.csv.gz": "5763fba5cb3a9e23f548833b1d0d6a626a00b7986b353a19fb5b35d3db2639e8",
+    "experiments/personalized-final-tournament/checkpoints-03/validation-2024-06-30.csv.gz": "a61daf3e28c4e1d107347e4d899b60934b36675cd48e1f8862512f7b6c490112",
+    "experiments/personalized-final-tournament/checkpoints-03/validation-2025-06-30.csv.gz": "2d4b57048c1146a070f95ffa49e677104a81e914e4ac00a94c545616c7d1a29c"
+  },
+  "current_future_outcomes_absent": true,
+  "current_terminal_prices_through_cutoff": true,
+  "ensemble_reproduced": true,
+  "lambda_max_abs_error": 9.71445146547012e-17,
+  "model_roundtrip_exact": true,
+  "training_outcomes_strictly_matured": true,
+  "training_rows": 259078
+}

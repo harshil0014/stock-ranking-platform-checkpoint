@@ -1,0 +1,103 @@
+{
+  "budget": "Independent SIP per selected security, not a 20-stock shared-budget portfolio. Each uses the full profile contribution, matching tournament utility.",
+  "challenger_commit": "d4995807163bef1ec4b297179e6c54a59c71f390",
+  "checkpoints": {
+    "12": "2027-09-26",
+    "3": "2026-12-26",
+    "6": "2027-03-26"
+  },
+  "closed_checkpoint_rule": "Run after endpoint calendar date. Do not use future prices. Corrections require new sealed revision directories.",
+  "dividends": "Preserved as separate, non-reinvested received cash; excluded from primary price-only comparison.",
+  "engine_sha256": "b2d6aaddc24b1f2ea48200715b14da8ed4f925b3deb2d172bd1bb9d866999536",
+  "evidence_boundary": "Original model selection is retrospective. Original observations are dated through 2026-09-18, but source publication availability on that historical date is not fully provable. Prospective evaluation begins at registration, never backdated.",
+  "execution": "Next observed nominal close within 7 days; whole shares; carry cash; no fees/slippage; no rights subscription/sale; resulting shares held; unknown economic terms block.",
+  "features": [
+    "enhanced_carry_xirr_score",
+    "enhanced_goal_score",
+    "price_drawdown",
+    "cagr_3y",
+    "cagr_5y",
+    "cash_utilization",
+    "unaffordable_rate"
+  ],
+  "latest_training_endpoint": "2026-06-30",
+  "original_sources": {
+    "research/runners/run_personalized_official_action_tournament.py": "7c860d959b7ba6b59d5ca387b1bdd0b1541181cafe0d013d26e5f518ddeb6c24",
+    "src/stock_research/personalized_executable_tournament.py": "4defec28dc3213504fdca751164beb3630dfc5d5730cb88905bb3fbaece87771",
+    "src/stock_research/personalized_official_actions.py": "37cc68156c5582d0ab54f622c593ae07a9d88eaada3f45b457dd9b8e268e6aaa"
+  },
+  "original_tournament_manifest_sha256": "b15d9319e2077f5eb861266d14000996c57a93398951db12833c53e9cbba7c2f",
+  "prediction_as_of": "2026-09-18",
+  "profiles": {
+    "amount1000": {
+      "amount": 1000,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "target_cagr": 0.2
+    },
+    "amount50000": {
+      "amount": 50000,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "target_cagr": 0.2
+    },
+    "base7500": {
+      "amount": 7500,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "target_cagr": 0.2
+    },
+    "lookback12": {
+      "amount": 7500,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 12,
+      "target_cagr": 0.2
+    },
+    "lookback60": {
+      "amount": 7500,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 60,
+      "target_cagr": 0.2
+    },
+    "quarterly": {
+      "amount": 7500,
+      "horizon_months": 12,
+      "interval_days": 90,
+      "lookback_months": 36,
+      "target_cagr": 0.2
+    },
+    "target10": {
+      "amount": 7500,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "target_cagr": 0.1
+    },
+    "target30": {
+      "amount": 7500,
+      "horizon_months": 12,
+      "interval_days": 30,
+      "lookback_months": 36,
+      "target_cagr": 0.3
+    },
+    "weekly": {
+      "amount": 7500,
+      "horizon_months": 12,
+      "interval_days": 7,
+      "lookback_months": 36,
+      "target_cagr": 0.2
+    }
+  },
+  "prospective_origin": "2026-09-26",
+  "registration_date": "2026-09-26",
+  "selection": "Top 20 per profile/strategy; score descending, ISIN ascending tie break; no replacement or reranking. Baseline eligibility reported separately.",
+  "weights": [
+    0.67,
+    0.33
+  ]
+}
