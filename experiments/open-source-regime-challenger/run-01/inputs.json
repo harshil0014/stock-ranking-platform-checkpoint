@@ -1,0 +1,16 @@
+{
+  "experiment_definition_sha256": "a08d6457ab84417c3e0bdc134bc8fb3f711b896b7121ed340f1866eb2fa019f5",
+  "frozen_control_commit": "d4995807163bef1ec4b297179e6c54a59c71f390",
+  "hashes": {
+    "adapter": "4bf1642e751608bcca670a4803e1cda1ae20995b2a2f8799570a5ac3c29a589c",
+    "market_csv": "9ebc741b291446f14b87387dd0ce99c00ddea3bd1970249ed42a780914072e99",
+    "protocol": "0640f6e0b6e2f9f63d2bfc24360aee9fa75a577f732a7bb0edce456056cfe535",
+    "requirements": "f60d50e42385e0c450a51c4645ddf52c7cff02fe46c4d89bd2bee698cf5a382c",
+    "runner": "ea7caba3d4c661677afc62dfa5782a00bfd30c3183f2d4df5f83612607c8b53e",
+    "training_panel": "5a2fecf3a24cc46386ae17d6e9d68c7de815305e9f31ade6e2f1e5853a713bb8",
+    "validation_predictions": "c4abae98dfc7a85fd34bd000ad8a940c2cf2e98e37bb2e2664d2b79d68606001"
+  },
+  "production_ref_before": "f4d178f84112babc2ef4d4eebafeaf77c6f55ea1",
+  "protocol_sha256": "0640f6e0b6e2f9f63d2bfc24360aee9fa75a577f732a7bb0edce456056cfe535",
+  "source_run": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform\\experiments\\personalized-final-tournament\\build-04"
+}

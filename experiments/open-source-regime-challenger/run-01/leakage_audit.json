@@ -1,0 +1,10 @@
+{
+  "all_market_observations_on_or_before_decision": true,
+  "all_training_endpoints_strictly_before_decision": true,
+  "frozen_control_prediction_max_abs_error": 1.1102230246251565e-16,
+  "frozen_control_tag_target": "d4995807163bef1ec4b297179e6c54a59c71f390",
+  "max_market_observation_lag_days": 2,
+  "snapshots_compared": 7,
+  "status": "PASS",
+  "suffix_truncation_cutoff": "2022-06-30"
+}

@@ -1,0 +1,7 @@
+{
+  "api_compatible": true,
+  "equal_weight_sum": 1.0,
+  "integrated_into_tournament": false,
+  "inverse_volatility_weight_sum": 1.0,
+  "reason": "The frozen estimand ranks independently simulated single-stock contribution plans. A shared-budget optimizer would change the estimand and needs a point-in-time, corporate-action-consistent multi-asset return and whole-share allocation layer."
+}

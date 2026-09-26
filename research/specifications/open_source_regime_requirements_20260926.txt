@@ -1,0 +1,12 @@
+# Isolated Python 3.12 research environment.  Production requirements unchanged.
+numpy==2.0.2
+pandas==2.2.3
+scipy==1.18.0
+scikit-learn==1.9.0
+lightgbm==4.6.0
+jumpmodels==0.1.1
+hmmlearn==0.3.3
+river==0.22.0
+skfolio==1.4.0
+yfinance==0.2.66
+pytest==8.4.2

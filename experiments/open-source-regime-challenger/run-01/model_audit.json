@@ -1,0 +1,872 @@
+[
+  {
+    "candidate": "control",
+    "decision_date": "2020-06-30",
+    "feature_importance": {
+      "cagr_3y": 85,
+      "cagr_5y": 91,
+      "cash_utilization": 25,
+      "enhanced_carry_xirr_score": 28,
+      "enhanced_goal_score": 20,
+      "price_drawdown": 92,
+      "unaffordable_rate": 9
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate"
+    ],
+    "latest_training_endpoint": "2019-12-31",
+    "model_sha256": "7fd6214050822676663b7889dd2322ee26323fcbc17a143108a5490abf18ea4f",
+    "training_rows": 59718
+  },
+  {
+    "candidate": "jump",
+    "decision_date": "2020-06-30",
+    "feature_importance": {
+      "cagr_3y": 79,
+      "cagr_5y": 79,
+      "cash_utilization": 25,
+      "enhanced_carry_xirr_score": 16,
+      "enhanced_goal_score": 18,
+      "jump_bear_state": 30,
+      "price_drawdown": 98,
+      "unaffordable_rate": 5
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "jump_bear_state"
+    ],
+    "latest_training_endpoint": "2019-12-31",
+    "model_sha256": "c82e22d9e197b65f94525cc46776ffabf912d7c9d4af25f45f2fe72416b37bac",
+    "training_rows": 59718
+  },
+  {
+    "candidate": "volatility",
+    "decision_date": "2020-06-30",
+    "feature_importance": {
+      "cagr_3y": 83,
+      "cagr_5y": 58,
+      "cash_utilization": 20,
+      "enhanced_carry_xirr_score": 16,
+      "enhanced_goal_score": 15,
+      "price_drawdown": 97,
+      "unaffordable_rate": 7,
+      "vol_high_probability": 52,
+      "vol_high_state": 0
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "vol_high_probability",
+      "vol_high_state"
+    ],
+    "latest_training_endpoint": "2019-12-31",
+    "model_sha256": "e1cf84e3ee402716947b32c18265c6f010d35cbc9896b1034a9b63be9899985f",
+    "training_rows": 59718
+  },
+  {
+    "candidate": "hmm",
+    "decision_date": "2020-06-30",
+    "feature_importance": {
+      "cagr_3y": 71,
+      "cagr_5y": 70,
+      "cash_utilization": 24,
+      "enhanced_carry_xirr_score": 19,
+      "enhanced_goal_score": 16,
+      "hmm_bear_probability": 60,
+      "hmm_bear_state": 0,
+      "price_drawdown": 86,
+      "unaffordable_rate": 1
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "hmm_bear_probability",
+      "hmm_bear_state"
+    ],
+    "latest_training_endpoint": "2019-12-31",
+    "model_sha256": "bc93f4fe5f9e2f01f7f48b1734ac62e9d333a107b89286e087491ae34d35c9df",
+    "training_rows": 59718
+  },
+  {
+    "candidate": "jump_adwin",
+    "decision_date": "2020-06-30",
+    "feature_importance": {
+      "adwin_drift_count": 0,
+      "adwin_estimation": 37,
+      "adwin_variance": 0,
+      "adwin_width": 0,
+      "cagr_3y": 82,
+      "cagr_5y": 66,
+      "cash_utilization": 22,
+      "enhanced_carry_xirr_score": 11,
+      "enhanced_goal_score": 15,
+      "jump_bear_state": 22,
+      "price_drawdown": 91,
+      "unaffordable_rate": 4
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "jump_bear_state",
+      "adwin_estimation",
+      "adwin_variance",
+      "adwin_width",
+      "adwin_drift_count"
+    ],
+    "latest_training_endpoint": "2019-12-31",
+    "model_sha256": "cb836cf563bfe45f7a67bfc53ffdd8a8330ea78c9a9409c3fc9a97d2fc71ad95",
+    "training_rows": 59718
+  },
+  {
+    "candidate": "control",
+    "decision_date": "2021-06-30",
+    "feature_importance": {
+      "cagr_3y": 65,
+      "cagr_5y": 99,
+      "cash_utilization": 36,
+      "enhanced_carry_xirr_score": 91,
+      "enhanced_goal_score": 17,
+      "price_drawdown": 42,
+      "unaffordable_rate": 8
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate"
+    ],
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "4b7593495cfd4fb25f4d1277f8880f027ae42a511ced78a084834964d09e5792",
+    "training_rows": 81727
+  },
+  {
+    "candidate": "jump",
+    "decision_date": "2021-06-30",
+    "feature_importance": {
+      "cagr_3y": 66,
+      "cagr_5y": 91,
+      "cash_utilization": 40,
+      "enhanced_carry_xirr_score": 73,
+      "enhanced_goal_score": 11,
+      "jump_bear_state": 22,
+      "price_drawdown": 51,
+      "unaffordable_rate": 5
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "jump_bear_state"
+    ],
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "2dea3f697166652c76b6c52d66f8ca29351fc464540f76d5bfa9dd99ab9963b4",
+    "training_rows": 81727
+  },
+  {
+    "candidate": "volatility",
+    "decision_date": "2021-06-30",
+    "feature_importance": {
+      "cagr_3y": 65,
+      "cagr_5y": 95,
+      "cash_utilization": 29,
+      "enhanced_carry_xirr_score": 73,
+      "enhanced_goal_score": 10,
+      "price_drawdown": 51,
+      "unaffordable_rate": 4,
+      "vol_high_probability": 33,
+      "vol_high_state": 0
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "vol_high_probability",
+      "vol_high_state"
+    ],
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "11a3095137f3a6fd1518ad805a84537d196daaba9ca04414fabfe7df0f065ae5",
+    "training_rows": 81727
+  },
+  {
+    "candidate": "hmm",
+    "decision_date": "2021-06-30",
+    "feature_importance": {
+      "cagr_3y": 65,
+      "cagr_5y": 90,
+      "cash_utilization": 35,
+      "enhanced_carry_xirr_score": 76,
+      "enhanced_goal_score": 14,
+      "hmm_bear_probability": 44,
+      "hmm_bear_state": 0,
+      "price_drawdown": 29,
+      "unaffordable_rate": 7
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "hmm_bear_probability",
+      "hmm_bear_state"
+    ],
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "1e6e7ee9c94961cf079c3ac23fced149621229ca49f95671cf57981642995ae9",
+    "training_rows": 81727
+  },
+  {
+    "candidate": "jump_adwin",
+    "decision_date": "2021-06-30",
+    "feature_importance": {
+      "adwin_drift_count": 0,
+      "adwin_estimation": 45,
+      "adwin_variance": 1,
+      "adwin_width": 0,
+      "cagr_3y": 48,
+      "cagr_5y": 80,
+      "cash_utilization": 35,
+      "enhanced_carry_xirr_score": 87,
+      "enhanced_goal_score": 12,
+      "jump_bear_state": 11,
+      "price_drawdown": 38,
+      "unaffordable_rate": 3
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "jump_bear_state",
+      "adwin_estimation",
+      "adwin_variance",
+      "adwin_width",
+      "adwin_drift_count"
+    ],
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "3bb8f5273d32d5b28f6f2f32f33a2cfb66acc0ec4cd3e31f575aeba88be43a49",
+    "training_rows": 81727
+  },
+  {
+    "candidate": "control",
+    "decision_date": "2022-06-30",
+    "feature_importance": {
+      "cagr_3y": 65,
+      "cagr_5y": 99,
+      "cash_utilization": 36,
+      "enhanced_carry_xirr_score": 91,
+      "enhanced_goal_score": 17,
+      "price_drawdown": 42,
+      "unaffordable_rate": 8
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate"
+    ],
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "4b7593495cfd4fb25f4d1277f8880f027ae42a511ced78a084834964d09e5792",
+    "training_rows": 81727
+  },
+  {
+    "candidate": "jump",
+    "decision_date": "2022-06-30",
+    "feature_importance": {
+      "cagr_3y": 66,
+      "cagr_5y": 91,
+      "cash_utilization": 40,
+      "enhanced_carry_xirr_score": 73,
+      "enhanced_goal_score": 11,
+      "jump_bear_state": 22,
+      "price_drawdown": 51,
+      "unaffordable_rate": 5
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "jump_bear_state"
+    ],
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "2dea3f697166652c76b6c52d66f8ca29351fc464540f76d5bfa9dd99ab9963b4",
+    "training_rows": 81727
+  },
+  {
+    "candidate": "volatility",
+    "decision_date": "2022-06-30",
+    "feature_importance": {
+      "cagr_3y": 65,
+      "cagr_5y": 95,
+      "cash_utilization": 29,
+      "enhanced_carry_xirr_score": 73,
+      "enhanced_goal_score": 10,
+      "price_drawdown": 51,
+      "unaffordable_rate": 4,
+      "vol_high_probability": 33,
+      "vol_high_state": 0
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "vol_high_probability",
+      "vol_high_state"
+    ],
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "11a3095137f3a6fd1518ad805a84537d196daaba9ca04414fabfe7df0f065ae5",
+    "training_rows": 81727
+  },
+  {
+    "candidate": "hmm",
+    "decision_date": "2022-06-30",
+    "feature_importance": {
+      "cagr_3y": 65,
+      "cagr_5y": 90,
+      "cash_utilization": 35,
+      "enhanced_carry_xirr_score": 76,
+      "enhanced_goal_score": 14,
+      "hmm_bear_probability": 44,
+      "hmm_bear_state": 0,
+      "price_drawdown": 29,
+      "unaffordable_rate": 7
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "hmm_bear_probability",
+      "hmm_bear_state"
+    ],
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "1e6e7ee9c94961cf079c3ac23fced149621229ca49f95671cf57981642995ae9",
+    "training_rows": 81727
+  },
+  {
+    "candidate": "jump_adwin",
+    "decision_date": "2022-06-30",
+    "feature_importance": {
+      "adwin_drift_count": 0,
+      "adwin_estimation": 45,
+      "adwin_variance": 1,
+      "adwin_width": 0,
+      "cagr_3y": 48,
+      "cagr_5y": 80,
+      "cash_utilization": 35,
+      "enhanced_carry_xirr_score": 87,
+      "enhanced_goal_score": 12,
+      "jump_bear_state": 11,
+      "price_drawdown": 38,
+      "unaffordable_rate": 3
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "jump_bear_state",
+      "adwin_estimation",
+      "adwin_variance",
+      "adwin_width",
+      "adwin_drift_count"
+    ],
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "3bb8f5273d32d5b28f6f2f32f33a2cfb66acc0ec4cd3e31f575aeba88be43a49",
+    "training_rows": 81727
+  },
+  {
+    "candidate": "control",
+    "decision_date": "2023-06-30",
+    "feature_importance": {
+      "cagr_3y": 65,
+      "cagr_5y": 99,
+      "cash_utilization": 36,
+      "enhanced_carry_xirr_score": 91,
+      "enhanced_goal_score": 17,
+      "price_drawdown": 42,
+      "unaffordable_rate": 8
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate"
+    ],
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "4b7593495cfd4fb25f4d1277f8880f027ae42a511ced78a084834964d09e5792",
+    "training_rows": 81727
+  },
+  {
+    "candidate": "jump",
+    "decision_date": "2023-06-30",
+    "feature_importance": {
+      "cagr_3y": 66,
+      "cagr_5y": 91,
+      "cash_utilization": 40,
+      "enhanced_carry_xirr_score": 73,
+      "enhanced_goal_score": 11,
+      "jump_bear_state": 22,
+      "price_drawdown": 51,
+      "unaffordable_rate": 5
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "jump_bear_state"
+    ],
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "2dea3f697166652c76b6c52d66f8ca29351fc464540f76d5bfa9dd99ab9963b4",
+    "training_rows": 81727
+  },
+  {
+    "candidate": "volatility",
+    "decision_date": "2023-06-30",
+    "feature_importance": {
+      "cagr_3y": 65,
+      "cagr_5y": 95,
+      "cash_utilization": 29,
+      "enhanced_carry_xirr_score": 73,
+      "enhanced_goal_score": 10,
+      "price_drawdown": 51,
+      "unaffordable_rate": 4,
+      "vol_high_probability": 33,
+      "vol_high_state": 0
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "vol_high_probability",
+      "vol_high_state"
+    ],
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "11a3095137f3a6fd1518ad805a84537d196daaba9ca04414fabfe7df0f065ae5",
+    "training_rows": 81727
+  },
+  {
+    "candidate": "hmm",
+    "decision_date": "2023-06-30",
+    "feature_importance": {
+      "cagr_3y": 65,
+      "cagr_5y": 90,
+      "cash_utilization": 35,
+      "enhanced_carry_xirr_score": 76,
+      "enhanced_goal_score": 14,
+      "hmm_bear_probability": 44,
+      "hmm_bear_state": 0,
+      "price_drawdown": 29,
+      "unaffordable_rate": 7
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "hmm_bear_probability",
+      "hmm_bear_state"
+    ],
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "1e6e7ee9c94961cf079c3ac23fced149621229ca49f95671cf57981642995ae9",
+    "training_rows": 81727
+  },
+  {
+    "candidate": "jump_adwin",
+    "decision_date": "2023-06-30",
+    "feature_importance": {
+      "adwin_drift_count": 0,
+      "adwin_estimation": 45,
+      "adwin_variance": 1,
+      "adwin_width": 0,
+      "cagr_3y": 48,
+      "cagr_5y": 80,
+      "cash_utilization": 35,
+      "enhanced_carry_xirr_score": 87,
+      "enhanced_goal_score": 12,
+      "jump_bear_state": 11,
+      "price_drawdown": 38,
+      "unaffordable_rate": 3
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "jump_bear_state",
+      "adwin_estimation",
+      "adwin_variance",
+      "adwin_width",
+      "adwin_drift_count"
+    ],
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "3bb8f5273d32d5b28f6f2f32f33a2cfb66acc0ec4cd3e31f575aeba88be43a49",
+    "training_rows": 81727
+  },
+  {
+    "candidate": "control",
+    "decision_date": "2024-06-30",
+    "feature_importance": {
+      "cagr_3y": 114,
+      "cagr_5y": 65,
+      "cash_utilization": 23,
+      "enhanced_carry_xirr_score": 69,
+      "enhanced_goal_score": 11,
+      "price_drawdown": 75,
+      "unaffordable_rate": 0
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate"
+    ],
+    "latest_training_endpoint": "2023-12-31",
+    "model_sha256": "0e105ed4b638ba6c3fde1faa18b73bab760b29d2d39b894fd83c16a236abee55",
+    "training_rows": 132107
+  },
+  {
+    "candidate": "jump",
+    "decision_date": "2024-06-30",
+    "feature_importance": {
+      "cagr_3y": 99,
+      "cagr_5y": 56,
+      "cash_utilization": 28,
+      "enhanced_carry_xirr_score": 72,
+      "enhanced_goal_score": 26,
+      "jump_bear_state": 24,
+      "price_drawdown": 55,
+      "unaffordable_rate": 0
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "jump_bear_state"
+    ],
+    "latest_training_endpoint": "2023-12-31",
+    "model_sha256": "fd2f99f88f6d71a0b0c1047956499210086bd49088eaf39f0c01ee4e73d9abbf",
+    "training_rows": 132107
+  },
+  {
+    "candidate": "volatility",
+    "decision_date": "2024-06-30",
+    "feature_importance": {
+      "cagr_3y": 74,
+      "cagr_5y": 52,
+      "cash_utilization": 19,
+      "enhanced_carry_xirr_score": 58,
+      "enhanced_goal_score": 14,
+      "price_drawdown": 53,
+      "unaffordable_rate": 0,
+      "vol_high_probability": 90,
+      "vol_high_state": 0
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "vol_high_probability",
+      "vol_high_state"
+    ],
+    "latest_training_endpoint": "2023-12-31",
+    "model_sha256": "65b8c0761dfb412151160fa07b32179a24dc0bf09bbbefe25331bcaf5066c561",
+    "training_rows": 132107
+  },
+  {
+    "candidate": "hmm",
+    "decision_date": "2024-06-30",
+    "feature_importance": {
+      "cagr_3y": 71,
+      "cagr_5y": 61,
+      "cash_utilization": 15,
+      "enhanced_carry_xirr_score": 55,
+      "enhanced_goal_score": 19,
+      "hmm_bear_probability": 98,
+      "hmm_bear_state": 0,
+      "price_drawdown": 41,
+      "unaffordable_rate": 0
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "hmm_bear_probability",
+      "hmm_bear_state"
+    ],
+    "latest_training_endpoint": "2023-12-31",
+    "model_sha256": "6993bb8e880241a356e4a5899987746729b2ef29e3c52cfac3ac9683adb24104",
+    "training_rows": 132107
+  },
+  {
+    "candidate": "jump_adwin",
+    "decision_date": "2024-06-30",
+    "feature_importance": {
+      "adwin_drift_count": 0,
+      "adwin_estimation": 55,
+      "adwin_variance": 24,
+      "adwin_width": 0,
+      "cagr_3y": 81,
+      "cagr_5y": 86,
+      "cash_utilization": 14,
+      "enhanced_carry_xirr_score": 43,
+      "enhanced_goal_score": 18,
+      "jump_bear_state": 2,
+      "price_drawdown": 37,
+      "unaffordable_rate": 0
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "jump_bear_state",
+      "adwin_estimation",
+      "adwin_variance",
+      "adwin_width",
+      "adwin_drift_count"
+    ],
+    "latest_training_endpoint": "2023-12-31",
+    "model_sha256": "e805e0cacd63bab816da461cb681dc4c03c34e7ead31914896870f6872413739",
+    "training_rows": 132107
+  },
+  {
+    "candidate": "control",
+    "decision_date": "2025-06-30",
+    "feature_importance": {
+      "cagr_3y": 114,
+      "cagr_5y": 65,
+      "cash_utilization": 23,
+      "enhanced_carry_xirr_score": 69,
+      "enhanced_goal_score": 11,
+      "price_drawdown": 75,
+      "unaffordable_rate": 0
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate"
+    ],
+    "latest_training_endpoint": "2023-12-31",
+    "model_sha256": "0e105ed4b638ba6c3fde1faa18b73bab760b29d2d39b894fd83c16a236abee55",
+    "training_rows": 132107
+  },
+  {
+    "candidate": "jump",
+    "decision_date": "2025-06-30",
+    "feature_importance": {
+      "cagr_3y": 99,
+      "cagr_5y": 56,
+      "cash_utilization": 28,
+      "enhanced_carry_xirr_score": 72,
+      "enhanced_goal_score": 26,
+      "jump_bear_state": 24,
+      "price_drawdown": 55,
+      "unaffordable_rate": 0
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "jump_bear_state"
+    ],
+    "latest_training_endpoint": "2023-12-31",
+    "model_sha256": "fd2f99f88f6d71a0b0c1047956499210086bd49088eaf39f0c01ee4e73d9abbf",
+    "training_rows": 132107
+  },
+  {
+    "candidate": "volatility",
+    "decision_date": "2025-06-30",
+    "feature_importance": {
+      "cagr_3y": 74,
+      "cagr_5y": 52,
+      "cash_utilization": 19,
+      "enhanced_carry_xirr_score": 58,
+      "enhanced_goal_score": 14,
+      "price_drawdown": 53,
+      "unaffordable_rate": 0,
+      "vol_high_probability": 90,
+      "vol_high_state": 0
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "vol_high_probability",
+      "vol_high_state"
+    ],
+    "latest_training_endpoint": "2023-12-31",
+    "model_sha256": "65b8c0761dfb412151160fa07b32179a24dc0bf09bbbefe25331bcaf5066c561",
+    "training_rows": 132107
+  },
+  {
+    "candidate": "hmm",
+    "decision_date": "2025-06-30",
+    "feature_importance": {
+      "cagr_3y": 71,
+      "cagr_5y": 61,
+      "cash_utilization": 15,
+      "enhanced_carry_xirr_score": 55,
+      "enhanced_goal_score": 19,
+      "hmm_bear_probability": 98,
+      "hmm_bear_state": 0,
+      "price_drawdown": 41,
+      "unaffordable_rate": 0
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "hmm_bear_probability",
+      "hmm_bear_state"
+    ],
+    "latest_training_endpoint": "2023-12-31",
+    "model_sha256": "6993bb8e880241a356e4a5899987746729b2ef29e3c52cfac3ac9683adb24104",
+    "training_rows": 132107
+  },
+  {
+    "candidate": "jump_adwin",
+    "decision_date": "2025-06-30",
+    "feature_importance": {
+      "adwin_drift_count": 0,
+      "adwin_estimation": 55,
+      "adwin_variance": 24,
+      "adwin_width": 0,
+      "cagr_3y": 81,
+      "cagr_5y": 86,
+      "cash_utilization": 14,
+      "enhanced_carry_xirr_score": 43,
+      "enhanced_goal_score": 18,
+      "jump_bear_state": 2,
+      "price_drawdown": 37,
+      "unaffordable_rate": 0
+    },
+    "features": [
+      "enhanced_carry_xirr_score",
+      "enhanced_goal_score",
+      "price_drawdown",
+      "cagr_3y",
+      "cagr_5y",
+      "cash_utilization",
+      "unaffordable_rate",
+      "jump_bear_state",
+      "adwin_estimation",
+      "adwin_variance",
+      "adwin_width",
+      "adwin_drift_count"
+    ],
+    "latest_training_endpoint": "2023-12-31",
+    "model_sha256": "e805e0cacd63bab816da461cb681dc4c03c34e7ead31914896870f6872413739",
+    "training_rows": 132107
+  }
+]

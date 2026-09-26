@@ -1,0 +1,105 @@
+{
+  "artifact_set_sha256": "e97f3922764a1fd51b78dc7f037afab2e171ecbbec09d9876ac622880d570934",
+  "artifacts": [
+    {
+      "bytes": 13207564,
+      "path": "common_predictions.csv.gz",
+      "sha256": "2b07931e93e4966b956d34446553b119c00a6c7cc8e2fbabf5a4600db6c70f39"
+    },
+    {
+      "bytes": 1826,
+      "path": "conclusion.json",
+      "sha256": "ed32aae75c2407b5f41a73223dee530d087b525590fb1f53a845b6c0d86ab720"
+    },
+    {
+      "bytes": 7345,
+      "path": "date_stability.csv",
+      "sha256": "466b20a18ba49ed4ce8687795767721cbec1da4da53e7c8a25c6c7d4b41ffe71"
+    },
+    {
+      "bytes": 195,
+      "path": "environment.json",
+      "sha256": "f9ef52c10e28a430441980ceb1f18b733d7bdd2a248b57094d69504f9a83bfb9"
+    },
+    {
+      "bytes": 372,
+      "path": "incremental_signal.csv",
+      "sha256": "989ab52187ca61c93ca938f669a117574fa3fcc9bf0df9e6ae5c162d46769f5a"
+    },
+    {
+      "bytes": 1108,
+      "path": "inputs.json",
+      "sha256": "74da63b58913e6e54ed7b65fa4714599072a53772041a6f423896809e3a02da0"
+    },
+    {
+      "bytes": 404,
+      "path": "leakage_audit.json",
+      "sha256": "1e8e964569e7ad6ae6496b4d022ede86efa63c70efca7317665e5b77fc7a781f"
+    },
+    {
+      "bytes": 1589,
+      "path": "market_state_snapshots.csv",
+      "sha256": "a5d0a9a3458a7ba6ba4f125db61ff301f1ada3a9f9387712407ea35a24a184e0"
+    },
+    {
+      "bytes": 24203,
+      "path": "model_audit.json",
+      "sha256": "cd0f04c33b58b1943022709c77687f17f0f1671972840597fd418f19bef846fc"
+    },
+    {
+      "bytes": 109718,
+      "path": "paired_deltas.csv",
+      "sha256": "04679e37d523eae5263853ebf188983eb155767faf5c14dc9616298236099082"
+    },
+    {
+      "bytes": 11300,
+      "path": "profile_stability.csv",
+      "sha256": "f053c9f02e29830708b6dfdf6f75a169d1a9edc581a35459028972d7ffc2d5fe"
+    },
+    {
+      "bytes": 56580,
+      "path": "query_metrics.csv",
+      "sha256": "66e2d17bc367391b4acd7ef920a704aededcd16db416ee90dd54bc3ad9413580"
+    },
+    {
+      "bytes": 1243,
+      "path": "regime_audit.json",
+      "sha256": "dd466130c144f795511bb2d0bc2ccc5eba75d0976a524f5f00c95e7e2d75a5d8"
+    },
+    {
+      "bytes": 400,
+      "path": "skfolio_compatibility.json",
+      "sha256": "63cfcc4f77149fc3006eb57fc050a700dee22f6291a889e504399ada366ab27f"
+    },
+    {
+      "bytes": 986,
+      "path": "source_provenance.json",
+      "sha256": "e1c30ba4d7ed7d50d5a33f605c8e6297e1b878bcf09082d19f3ada81ffbd0f0b"
+    },
+    {
+      "bytes": 272,
+      "path": "stability_summary.csv",
+      "sha256": "2860a9844255a627b8ad696bbbca765b9a75827a9e58772321b9e2b4fae729f2"
+    },
+    {
+      "bytes": 1813,
+      "path": "summary_metrics.csv",
+      "sha256": "99e473089c105c5b5a4f09474ccb5d0cda1372a0ac2125e995c637453b07d3e1"
+    },
+    {
+      "bytes": 136546,
+      "path": "top20_selections.csv.gz",
+      "sha256": "cab2fe17d49179ca24192cda41e1172873aa575e0da45827d079677c7a456cc0"
+    },
+    {
+      "bytes": 7731,
+      "path": "turnover.csv",
+      "sha256": "e58b6202a57ba3d7eb7d915455488aefe97bc04efd6086bdc3eda58edf083239"
+    }
+  ],
+  "base_commit": "d4995807163bef1ec4b297179e6c54a59c71f390",
+  "frozen_control_commit": "d4995807163bef1ec4b297179e6c54a59c71f390",
+  "git_branch": "personalized-open-source-regimes-20260926",
+  "production_ref_after": "f4d178f84112babc2ef4d4eebafeaf77c6f55ea1",
+  "schema_version": "open_source_regime_challenger_manifest_v1"
+}

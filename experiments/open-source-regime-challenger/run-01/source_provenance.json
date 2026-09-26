@@ -1,0 +1,16 @@
+{
+  "adwin_paper": "Bifet and Gavalda (2007), Learning from Time-Changing Data with Adaptive Windowing",
+  "adwin_research_doi": "10.1137/1.9781611972771.42",
+  "continuous_jump_model_paper_doi": "10.1007/s10479-024-06035-z",
+  "gaussian_mixture_documentation": "https://scikit-learn.org/stable/modules/mixture.html",
+  "gaussian_mixture_em_research_doi": "10.1111/j.2517-6161.1977.tb01600.x",
+  "hmm_research_doi": "10.1109/5.18626",
+  "hmmlearn_documentation": "https://hmmlearn.readthedocs.io/en/stable/",
+  "jump_model_paper_doi": "10.1016/j.eswa.2020.113307",
+  "jumpmodels_repository": "https://github.com/Yizhan-Oliver-Shu/jump-models",
+  "jumpmodels_upstream_commit_inspected": "d0fa00ce10126791695a259a45c5ddd41fbced80",
+  "market_source": "Yahoo Finance ^NSEI via yfinance",
+  "river_adwin_documentation": "https://riverml.xyz/0.22.0/api/drift/ADWIN/",
+  "skfolio_documentation": "https://skfolio.org/",
+  "skfolio_paper": "https://arxiv.org/abs/2507.04176"
+}

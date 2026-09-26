@@ -1,0 +1,108 @@
+{
+  "schema_version": "open_source_regime_challenger_v1",
+  "status": "PREREGISTERED_RESEARCH_ONLY",
+  "frozen_control": {
+    "commit": "d499580",
+    "tag": "personalized-challenger-d499580-20260926",
+    "score": "0.67 * within-query percentile(enhanced_goal_score) + 0.33 * within-query percentile(lightgbm_lambdarank_score)",
+    "mutation_allowed": false
+  },
+  "source_panel": {
+    "run": "experiments/personalized-final-tournament/build-04",
+    "training_file": "training_panel.csv.gz",
+    "validation_file": "validation_predictions.csv.gz",
+    "read_only": true
+  },
+  "market_data": {
+    "instrument": "NIFTY 50 index",
+    "yahoo_symbol": "^NSEI",
+    "start": "2009-01-01",
+    "hard_cutoff": "2026-09-18",
+    "price_field": "Close",
+    "return": "daily close-to-close percentage return",
+    "raw_policy": "cache outside Git; version compact SHA-256 provenance"
+  },
+  "causal_split": {
+    "calibration_start": "2010-01-01",
+    "calibration_end": "2015-12-31",
+    "online_start": "2016-01-01",
+    "rule": "fit every regime estimator and preprocessing transform only on calibration rows; infer each later decision from observations no later than that decision",
+    "retrospective_smoothing": false,
+    "refitting_or_tuning": false
+  },
+  "upstream_systems": {
+    "jump": {
+      "package": "jumpmodels==0.1.1",
+      "implementation": "jumpmodels.jump.JumpModel",
+      "mode": "discrete original jump model",
+      "parameters": {"n_components": 2, "jump_penalty": 50.0, "cont": false},
+      "feature_recipe": "exact nine-feature v0 recipe in the research-author Nasdaq example: EWM return, log EWM downside deviation and EWM Sortino at half-lives 5, 20 and 60",
+      "preprocessing": "jumpmodels DataClipperStd(mul=3) then StandardScalerPD, both fit on calibration only",
+      "state_order": "fit(sort_by='cumret'); package state 1 is lower-cumulative-return bear state",
+      "inference": "predict_online on one expanding post-calibration prefix; never predict/smooth over future rows"
+    },
+    "volatility": {
+      "package": "scikit-learn==1.9.0",
+      "implementation": "sklearn.mixture.GaussianMixture",
+      "parameters": {"n_components": 2, "covariance_type": "full", "n_init": 10, "random_state": 20260923},
+      "input": "calibration-standardized DD-log_20 only",
+      "state_order": "component with larger calibration mean DD-log_20 is high volatility",
+      "inference": "predict_proba independently at each observed day"
+    },
+    "hmm": {
+      "package": "hmmlearn==0.3.3",
+      "implementation": "hmmlearn.hmm.GaussianHMM",
+      "parameters": {"n_components": 2, "covariance_type": "diag", "n_iter": 200, "tol": 0.01, "random_state": 20260923},
+      "input": "same nine calibration-standardized author-example features as JumpModel",
+      "state_order": "state with lower calibration weighted mean market return is bear",
+      "inference": "last posterior from each expanding prefix; the last forward-backward posterior has no later observation"
+    },
+    "adwin": {
+      "package": "river==0.22.0",
+      "implementation": "river.drift.ADWIN",
+      "parameters": {"delta": 0.002, "clock": 32, "max_buckets": 5, "min_window_length": 5, "grace_period": 10},
+      "input": "absolute daily NIFTY 50 return",
+      "inference": "single chronological update stream; snapshot only after processing a date"
+    },
+    "portfolio": {
+      "package": "skfolio==1.4.0",
+      "implementations": ["skfolio.optimization.EqualWeighted", "skfolio.optimization.InverseVolatility"],
+      "decision_rule": "compatibility evaluation only unless a shared-budget, point-in-time, corporate-action-consistent return panel exists without changing the frozen single-stock estimand"
+    }
+  },
+  "challengers": {
+    "control": [],
+    "jump": ["jump_bear_state"],
+    "volatility": ["vol_high_probability", "vol_high_state"],
+    "hmm": ["hmm_bear_probability", "hmm_bear_state"],
+    "jump_adwin": ["jump_bear_state", "adwin_estimation", "adwin_variance", "adwin_width", "adwin_drift_count"]
+  },
+  "ranker": {
+    "base_features": ["enhanced_carry_xirr_score", "enhanced_goal_score", "price_drawdown", "cagr_3y", "cagr_5y", "cash_utilization", "unaffordable_rate"],
+    "implementation": "lightgbm.LGBMRanker",
+    "parameters_from_frozen_protocol": {"n_estimators": 60, "learning_rate": 0.05, "num_leaves": 7, "max_depth": 3, "min_child_samples": 80, "reg_lambda": 10.0, "random_state": 20260923, "n_jobs": 1, "verbosity": -1, "deterministic": true, "force_col_wise": true},
+    "label": "within decision_date/profile percentile future_xirr * 4, clipped to 3 and converted to integer",
+    "maturity": "training endpoint must be strictly before evaluation decision date",
+    "blend": {"goal": 0.67, "ranker": 0.33},
+    "hyperparameter_search": false
+  },
+  "evaluation": {
+    "validation_dates": ["2020-06-30", "2021-06-30", "2022-06-30", "2023-06-30", "2024-06-30", "2025-06-30"],
+    "top_k": 20,
+    "cohort": "exact frozen common cohort: same rows with every frozen BASE_CANDIDATE, every challenger ranker score and observed future outcomes within each date/profile query; compute every 67/33 rank blend only after this filter",
+    "primary_metrics": ["precision_at_20", "recall_at_20", "ndcg_at_20", "pairwise_accuracy", "rank_ic", "goal_attainment_top20", "goal_shortfall_top20"],
+    "secondary_metrics": ["mean_xirr_top20", "terminal_wealth_top20", "mean_drawdown_top20", "turnover_top20", "coverage"],
+    "selection_rule": "prefer lower mean goal shortfall; require no material loss of coverage; report all metrics and date/profile stability",
+    "uncertainty_unit": "decision date, with profiles averaged within date",
+    "sir_workbook_optimization": false
+  },
+  "boundaries": [
+    "Never write production or frozen shadow artifacts",
+    "Never modify or retune d499580",
+    "No market observation after a row's decision date",
+    "No future outcome enters its own model fit",
+    "No silent imputation of market observations",
+    "Preserve source panel blockers and execution semantics",
+    "Do not promote any result to production"
+  ]
+}

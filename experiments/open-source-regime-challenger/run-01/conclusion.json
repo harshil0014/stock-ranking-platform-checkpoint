@@ -1,0 +1,54 @@
+{
+  "candidate_outcomes": {
+    "control": {
+      "coverage": 1.0,
+      "goal_shortfall_delta_vs_control": 0.0,
+      "goal_shortfall_top20": 0.07627221047547908,
+      "ndcg_at_20": 0.4677426511485415,
+      "rank_ic": -0.002885729113256295
+    },
+    "hmm": {
+      "coverage": 1.0,
+      "goal_shortfall_delta_vs_control": 0.017706412517421513,
+      "goal_shortfall_top20": 0.09397862299290059,
+      "ndcg_at_20": 0.4696697134561933,
+      "rank_ic": -0.007677322221136486
+    },
+    "jump": {
+      "coverage": 1.0,
+      "goal_shortfall_delta_vs_control": 0.004349414676643029,
+      "goal_shortfall_top20": 0.08062162515212211,
+      "ndcg_at_20": 0.4767237373013658,
+      "rank_ic": -0.0016053855439950079
+    },
+    "jump_adwin": {
+      "coverage": 1.0,
+      "goal_shortfall_delta_vs_control": 0.013650248940390797,
+      "goal_shortfall_top20": 0.08992245941586988,
+      "ndcg_at_20": 0.4580241635535473,
+      "rank_ic": -0.0052705252669340875
+    },
+    "volatility": {
+      "coverage": 1.0,
+      "goal_shortfall_delta_vs_control": 0.012916166183830874,
+      "goal_shortfall_top20": 0.08918837665930995,
+      "ndcg_at_20": 0.45886412273017535,
+      "rank_ic": -0.001638880448102697
+    }
+  },
+  "control_goal_shortfall_top20": 0.07627221047547908,
+  "control_rank_ic": -0.002885729113256295,
+  "frozen_control_changed": false,
+  "jump_feature_splits": 144,
+  "jump_improved_primary_metric": false,
+  "jump_used_by_lambdarank": true,
+  "production_changed": false,
+  "promotion": "NONE",
+  "river_improved_over_jump": false,
+  "river_integrated": true,
+  "selection_rule_winner": "control",
+  "skfolio_integrated": false,
+  "status": "RESEARCH_ONLY",
+  "winner_goal_shortfall_top20": 0.07627221047547908,
+  "winner_rank_ic": -0.002885729113256295
+}

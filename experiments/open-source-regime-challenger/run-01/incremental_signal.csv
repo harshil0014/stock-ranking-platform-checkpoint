@@ -1,0 +1,5 @@
+candidate,prediction_rows,fraction_ranker_predictions_changed,mean_absolute_ranker_prediction_change,mean_within_query_spearman_vs_control
+jump,133688,1.0,0.08572801043374133,0.8430225461629538
+volatility,133688,1.0,0.1389027015254197,0.7388239736463658
+hmm,133688,1.0,0.1177730175004047,0.6935430993055053
+jump_adwin,133688,1.0,0.1314788621097317,0.6262712032620903
