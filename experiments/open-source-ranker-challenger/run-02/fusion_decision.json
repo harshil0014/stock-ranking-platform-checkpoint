@@ -1,0 +1,4 @@
+{
+  "evaluated": false,
+  "reason": "Neither individual ranker passed the Pareto gate, so rank fusion was not scientifically justified."
+}

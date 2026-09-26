@@ -7,6 +7,8 @@ __pycache__/
 .pytest-final-*/
 .pytest-full-*/
 .pytest-regime-*/
+.pytest-rankers-*/
+experiments/open-source-ranker-challenger/run-01/
 cloudflared.exe
 decentralized-medical-research-network/
 data/output/* 
@@ -20,6 +22,7 @@ data/output/*
 .venv-bse/
 .venv-recovery/
 .venv-regime/
+.venv-rankers/
 data/recovery_packs/
 .pytest_tmp*/
 data/marketdata/

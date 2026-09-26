@@ -1,0 +1,7 @@
+{
+  "catboost_docs": "https://catboost.ai/docs/en/concepts/loss-functions-ranking",
+  "catboost_paper": "https://proceedings.neurips.cc/paper/2018/hash/14491b756b3a51daac41c24863285549-Abstract.html",
+  "xgboost_ltr_docs": "https://xgboost.readthedocs.io/en/stable/tutorials/learning_to_rank.html",
+  "xgboost_paper_doi": "10.1145/2939672.2939785",
+  "yetirank_paper": "https://proceedings.mlr.press/v14/gulin11a.html"
+}

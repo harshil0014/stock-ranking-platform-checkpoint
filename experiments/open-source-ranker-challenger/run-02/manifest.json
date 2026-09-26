@@ -1,0 +1,94 @@
+{
+  "artifact_set_sha256": "48a87a58d6cedc14321b087198f2587197104c7c70edfe9f1aadba79b8017eb1",
+  "artifacts": [
+    {
+      "bytes": 10573697,
+      "path": "common_predictions.csv.gz",
+      "sha256": "95e3075ef4ce9e4828e727a499c577a6bb239b2db9b807183a89c0a2a0912d20"
+    },
+    {
+      "bytes": 215,
+      "path": "conclusion.json",
+      "sha256": "96c92a1bfca1a307d4ebb04007ebf978a1406785f859a7ca1e170eecc8dc0f7a"
+    },
+    {
+      "bytes": 13465,
+      "path": "date_stability.csv",
+      "sha256": "82c25a51bf3b253bc1fe0f8bff5c4b639b505501f5b45ef93f4604205e207186"
+    },
+    {
+      "bytes": 148,
+      "path": "environment.json",
+      "sha256": "be8c270a526d1b96066237871f59142f01d89f7a06319f26848fd5cfebc3bbbb"
+    },
+    {
+      "bytes": 143,
+      "path": "fusion_decision.json",
+      "sha256": "f449c19e09d99391b779dd7bb1e0dcc597c4d06f775a041b946e6d0ce41e9e8d"
+    },
+    {
+      "bytes": 1018,
+      "path": "inputs.json",
+      "sha256": "dccaef0cd2f3f5a8f6f3c88202445cf8e279acdaac171b2e5f898b9ea540ee64"
+    },
+    {
+      "bytes": 506,
+      "path": "leakage_audit.json",
+      "sha256": "1723f3eb56e945b9e244225a3ce9921bc1bc4cef7876dce02024bc7a838b9b97"
+    },
+    {
+      "bytes": 10692,
+      "path": "model_audit.json",
+      "sha256": "9878ee164cc3e89ef592f8fa9bf8ca4500a06bde750151a056f9266a64a92a56"
+    },
+    {
+      "bytes": 197885,
+      "path": "paired_query_deltas.csv",
+      "sha256": "ea82475039f18a0e6bd33f31b4cf9460ffe3f4e366b09ded56c9c08f2f8f656b"
+    },
+    {
+      "bytes": 25244,
+      "path": "pareto_gate.json",
+      "sha256": "07b845245b5cae56b4ade0abe4482e6a910c7ec63c6d8eedc0eee58d811462ef"
+    },
+    {
+      "bytes": 19462,
+      "path": "profile_stability.csv",
+      "sha256": "6c25ad1a3f3ba2d906babf3d2d1091b3405503f1e7d77393e54c2e8aef42219d"
+    },
+    {
+      "bytes": 99242,
+      "path": "query_metrics.csv",
+      "sha256": "03adc650e77d406a739b469d0906d7813bc1fc4d0fc415fed961e5e90c7245e6"
+    },
+    {
+      "bytes": 428,
+      "path": "source_provenance.json",
+      "sha256": "ea5ffd4b1e1af2ad0928ab823b448ec9bf6d2d8c6d260c989d0007dd0bb51a65"
+    },
+    {
+      "bytes": 265,
+      "path": "stability_summary.csv",
+      "sha256": "0248850bd367a6b3eaf1634a3af0852a25c43afdcef6a42538cbb3827c20af0a"
+    },
+    {
+      "bytes": 2855,
+      "path": "summary_metrics.csv",
+      "sha256": "5d9a4baf2fa48d7437e80091709c9b4bf7d1a73ba76e0f17fc33972b3f9e0604"
+    },
+    {
+      "bytes": 6802,
+      "path": "topk_overlap.csv",
+      "sha256": "46793bc14606160fbff15b0bd98e8789a07f43890febeb33a1049ae78a0e111c"
+    },
+    {
+      "bytes": 273628,
+      "path": "topk_selections.csv.gz",
+      "sha256": "210f4f7774520aac3725739a89ae09b72af1c9799b6385f7cf835ca860bcafc0"
+    }
+  ],
+  "frozen_control_commit": "d4995807163bef1ec4b297179e6c54a59c71f390",
+  "git_branch": "personalized-open-source-rankers-20260926",
+  "production_ref_after": "f4d178f84112babc2ef4d4eebafeaf77c6f55ea1",
+  "schema_version": "open_source_ranker_challenger_manifest_v1"
+}

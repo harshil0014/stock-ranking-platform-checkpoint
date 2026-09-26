@@ -1,0 +1,308 @@
+[
+  {
+    "candidate": "control",
+    "decision_date": "2020-06-30",
+    "feature_importance": {
+      "cagr_3y": 85,
+      "cagr_5y": 91,
+      "cash_utilization": 25,
+      "enhanced_carry_xirr_score": 28,
+      "enhanced_goal_score": 20,
+      "price_drawdown": 92,
+      "unaffordable_rate": 9
+    },
+    "latest_training_endpoint": "2019-12-31",
+    "model_sha256": "7fd6214050822676663b7889dd2322ee26323fcbc17a143108a5490abf18ea4f",
+    "query_count": 27,
+    "training_rows": 59718
+  },
+  {
+    "candidate": "catboost_yetirank_pairwise",
+    "decision_date": "2020-06-30",
+    "feature_importance": {
+      "cagr_3y": 1.8653876959703226,
+      "cagr_5y": 6.802404809260927,
+      "cash_utilization": 5.1203966114221995,
+      "enhanced_carry_xirr_score": 19.739254908018104,
+      "enhanced_goal_score": 0.45726843750614976,
+      "price_drawdown": 66.01366339760482,
+      "unaffordable_rate": 0.0016241402174877473
+    },
+    "latest_training_endpoint": "2019-12-31",
+    "model_sha256": "011dd77d0399dd83e5803b40d9f49fd3698bc5385805ef26682a26a700504c4d",
+    "query_count": 27,
+    "training_rows": 59718
+  },
+  {
+    "candidate": "xgboost_rank_ndcg",
+    "decision_date": "2020-06-30",
+    "feature_importance": {
+      "cagr_3y": 5.1043219566345215,
+      "cagr_5y": 5.01432466506958,
+      "cash_utilization": 10.782735824584961,
+      "enhanced_carry_xirr_score": 7.398399353027344,
+      "enhanced_goal_score": 0.9256162643432617,
+      "price_drawdown": 26.61419677734375,
+      "unaffordable_rate": 0.014365820214152336
+    },
+    "latest_training_endpoint": "2019-12-31",
+    "model_sha256": "6e28090446f7b271aa93385e88bfcf4851219cb8b8b4d41ad9cb3a29dd1a06e5",
+    "query_count": 27,
+    "training_rows": 59718
+  },
+  {
+    "candidate": "control",
+    "decision_date": "2021-06-30",
+    "feature_importance": {
+      "cagr_3y": 65,
+      "cagr_5y": 99,
+      "cash_utilization": 36,
+      "enhanced_carry_xirr_score": 91,
+      "enhanced_goal_score": 17,
+      "price_drawdown": 42,
+      "unaffordable_rate": 8
+    },
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "4b7593495cfd4fb25f4d1277f8880f027ae42a511ced78a084834964d09e5792",
+    "query_count": 36,
+    "training_rows": 81727
+  },
+  {
+    "candidate": "catboost_yetirank_pairwise",
+    "decision_date": "2021-06-30",
+    "feature_importance": {
+      "cagr_3y": 9.18155847829174,
+      "cagr_5y": 8.587071774231623,
+      "cash_utilization": 37.1062841145797,
+      "enhanced_carry_xirr_score": 25.731663336253014,
+      "enhanced_goal_score": 0.23931116373141237,
+      "price_drawdown": 19.15228232435781,
+      "unaffordable_rate": 0.0018288085547153606
+    },
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "092c8e262a84c848f79c3051faafc8697c68c39083dd966c3571f3f8ca0e73cb",
+    "query_count": 36,
+    "training_rows": 81727
+  },
+  {
+    "candidate": "xgboost_rank_ndcg",
+    "decision_date": "2021-06-30",
+    "feature_importance": {
+      "cagr_3y": 0.8004445433616638,
+      "cagr_5y": 4.546748638153076,
+      "cash_utilization": 0.8175809383392334,
+      "enhanced_carry_xirr_score": 10.139045715332031,
+      "enhanced_goal_score": 2.998093843460083,
+      "price_drawdown": 0.9295884966850281,
+      "unaffordable_rate": 0.0069609880447387695
+    },
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "0eee59118a8b0b45266c578193959fa35fc28777ece271880dd480a82e6cd023",
+    "query_count": 36,
+    "training_rows": 81727
+  },
+  {
+    "candidate": "control",
+    "decision_date": "2022-06-30",
+    "feature_importance": {
+      "cagr_3y": 65,
+      "cagr_5y": 99,
+      "cash_utilization": 36,
+      "enhanced_carry_xirr_score": 91,
+      "enhanced_goal_score": 17,
+      "price_drawdown": 42,
+      "unaffordable_rate": 8
+    },
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "4b7593495cfd4fb25f4d1277f8880f027ae42a511ced78a084834964d09e5792",
+    "query_count": 36,
+    "training_rows": 81727
+  },
+  {
+    "candidate": "catboost_yetirank_pairwise",
+    "decision_date": "2022-06-30",
+    "feature_importance": {
+      "cagr_3y": 9.18155847829174,
+      "cagr_5y": 8.587071774231623,
+      "cash_utilization": 37.1062841145797,
+      "enhanced_carry_xirr_score": 25.731663336253014,
+      "enhanced_goal_score": 0.23931116373141237,
+      "price_drawdown": 19.15228232435781,
+      "unaffordable_rate": 0.0018288085547153606
+    },
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "092c8e262a84c848f79c3051faafc8697c68c39083dd966c3571f3f8ca0e73cb",
+    "query_count": 36,
+    "training_rows": 81727
+  },
+  {
+    "candidate": "xgboost_rank_ndcg",
+    "decision_date": "2022-06-30",
+    "feature_importance": {
+      "cagr_3y": 0.8004445433616638,
+      "cagr_5y": 4.546748638153076,
+      "cash_utilization": 0.8175809383392334,
+      "enhanced_carry_xirr_score": 10.139045715332031,
+      "enhanced_goal_score": 2.998093843460083,
+      "price_drawdown": 0.9295884966850281,
+      "unaffordable_rate": 0.0069609880447387695
+    },
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "0eee59118a8b0b45266c578193959fa35fc28777ece271880dd480a82e6cd023",
+    "query_count": 36,
+    "training_rows": 81727
+  },
+  {
+    "candidate": "control",
+    "decision_date": "2023-06-30",
+    "feature_importance": {
+      "cagr_3y": 65,
+      "cagr_5y": 99,
+      "cash_utilization": 36,
+      "enhanced_carry_xirr_score": 91,
+      "enhanced_goal_score": 17,
+      "price_drawdown": 42,
+      "unaffordable_rate": 8
+    },
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "4b7593495cfd4fb25f4d1277f8880f027ae42a511ced78a084834964d09e5792",
+    "query_count": 36,
+    "training_rows": 81727
+  },
+  {
+    "candidate": "catboost_yetirank_pairwise",
+    "decision_date": "2023-06-30",
+    "feature_importance": {
+      "cagr_3y": 9.18155847829174,
+      "cagr_5y": 8.587071774231623,
+      "cash_utilization": 37.1062841145797,
+      "enhanced_carry_xirr_score": 25.731663336253014,
+      "enhanced_goal_score": 0.23931116373141237,
+      "price_drawdown": 19.15228232435781,
+      "unaffordable_rate": 0.0018288085547153606
+    },
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "092c8e262a84c848f79c3051faafc8697c68c39083dd966c3571f3f8ca0e73cb",
+    "query_count": 36,
+    "training_rows": 81727
+  },
+  {
+    "candidate": "xgboost_rank_ndcg",
+    "decision_date": "2023-06-30",
+    "feature_importance": {
+      "cagr_3y": 0.8004445433616638,
+      "cagr_5y": 4.546748638153076,
+      "cash_utilization": 0.8175809383392334,
+      "enhanced_carry_xirr_score": 10.139045715332031,
+      "enhanced_goal_score": 2.998093843460083,
+      "price_drawdown": 0.9295884966850281,
+      "unaffordable_rate": 0.0069609880447387695
+    },
+    "latest_training_endpoint": "2020-12-31",
+    "model_sha256": "0eee59118a8b0b45266c578193959fa35fc28777ece271880dd480a82e6cd023",
+    "query_count": 36,
+    "training_rows": 81727
+  },
+  {
+    "candidate": "control",
+    "decision_date": "2024-06-30",
+    "feature_importance": {
+      "cagr_3y": 114,
+      "cagr_5y": 65,
+      "cash_utilization": 23,
+      "enhanced_carry_xirr_score": 69,
+      "enhanced_goal_score": 11,
+      "price_drawdown": 75,
+      "unaffordable_rate": 0
+    },
+    "latest_training_endpoint": "2023-12-31",
+    "model_sha256": "0e105ed4b638ba6c3fde1faa18b73bab760b29d2d39b894fd83c16a236abee55",
+    "query_count": 54,
+    "training_rows": 132107
+  },
+  {
+    "candidate": "catboost_yetirank_pairwise",
+    "decision_date": "2024-06-30",
+    "feature_importance": {
+      "cagr_3y": 3.6917750123931623,
+      "cagr_5y": 11.362526764004956,
+      "cash_utilization": 27.40615866743979,
+      "enhanced_carry_xirr_score": 47.63641123157077,
+      "enhanced_goal_score": 1.4511442476205925,
+      "price_drawdown": 8.40863532364172,
+      "unaffordable_rate": 0.04334875332900838
+    },
+    "latest_training_endpoint": "2023-12-31",
+    "model_sha256": "4fd1b149dc8381d8828364d08d9cf1f559e24366090f197c7c8082479c062c84",
+    "query_count": 54,
+    "training_rows": 132107
+  },
+  {
+    "candidate": "xgboost_rank_ndcg",
+    "decision_date": "2024-06-30",
+    "feature_importance": {
+      "cagr_3y": 2.7796967029571533,
+      "cagr_5y": 4.616424560546875,
+      "cash_utilization": 2.4028162956237793,
+      "enhanced_carry_xirr_score": 8.632630348205566,
+      "enhanced_goal_score": 2.458437919616699,
+      "price_drawdown": 3.3768794536590576,
+      "unaffordable_rate": 0.17425107955932617
+    },
+    "latest_training_endpoint": "2023-12-31",
+    "model_sha256": "fc38485f8cd8f05f7f10ef198932c51ad07040e14a86319fb07581bc91cfcc76",
+    "query_count": 54,
+    "training_rows": 132107
+  },
+  {
+    "candidate": "control",
+    "decision_date": "2025-06-30",
+    "feature_importance": {
+      "cagr_3y": 114,
+      "cagr_5y": 65,
+      "cash_utilization": 23,
+      "enhanced_carry_xirr_score": 69,
+      "enhanced_goal_score": 11,
+      "price_drawdown": 75,
+      "unaffordable_rate": 0
+    },
+    "latest_training_endpoint": "2023-12-31",
+    "model_sha256": "0e105ed4b638ba6c3fde1faa18b73bab760b29d2d39b894fd83c16a236abee55",
+    "query_count": 54,
+    "training_rows": 132107
+  },
+  {
+    "candidate": "catboost_yetirank_pairwise",
+    "decision_date": "2025-06-30",
+    "feature_importance": {
+      "cagr_3y": 3.6917750123931623,
+      "cagr_5y": 11.362526764004956,
+      "cash_utilization": 27.40615866743979,
+      "enhanced_carry_xirr_score": 47.63641123157077,
+      "enhanced_goal_score": 1.4511442476205925,
+      "price_drawdown": 8.40863532364172,
+      "unaffordable_rate": 0.04334875332900838
+    },
+    "latest_training_endpoint": "2023-12-31",
+    "model_sha256": "4fd1b149dc8381d8828364d08d9cf1f559e24366090f197c7c8082479c062c84",
+    "query_count": 54,
+    "training_rows": 132107
+  },
+  {
+    "candidate": "xgboost_rank_ndcg",
+    "decision_date": "2025-06-30",
+    "feature_importance": {
+      "cagr_3y": 2.7796967029571533,
+      "cagr_5y": 4.616424560546875,
+      "cash_utilization": 2.4028162956237793,
+      "enhanced_carry_xirr_score": 8.632630348205566,
+      "enhanced_goal_score": 2.458437919616699,
+      "price_drawdown": 3.3768794536590576,
+      "unaffordable_rate": 0.17425107955932617
+    },
+    "latest_training_endpoint": "2023-12-31",
+    "model_sha256": "fc38485f8cd8f05f7f10ef198932c51ad07040e14a86319fb07581bc91cfcc76",
+    "query_count": 54,
+    "training_rows": 132107
+  }
+]

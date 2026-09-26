@@ -1,0 +1,783 @@
+{
+  "catboost_yetirank_pairwise": {
+    "degraded": [
+      "pairwise_accuracy",
+      "rank_ic",
+      "precision_at_20",
+      "precision_at_50",
+      "recall_at_20",
+      "recall_at_50",
+      "ndcg_at_20",
+      "ndcg_at_50",
+      "goal_attainment_top20",
+      "goal_attainment_top50",
+      "goal_shortfall_top20",
+      "goal_shortfall_top50",
+      "mean_xirr_top5",
+      "mean_xirr_top10",
+      "mean_xirr_top20",
+      "mean_xirr_top50",
+      "median_xirr_top20",
+      "median_xirr_top50",
+      "terminal_wealth_top5",
+      "terminal_wealth_top10",
+      "terminal_wealth_top20",
+      "terminal_wealth_top50"
+    ],
+    "materially_improved": [
+      "ndcg_at_5",
+      "goal_attainment_top5",
+      "goal_attainment_top10",
+      "goal_shortfall_top5",
+      "goal_shortfall_top10",
+      "median_xirr_top5",
+      "mean_drawdown_top5",
+      "mean_drawdown_top10",
+      "mean_drawdown_top20",
+      "mean_drawdown_top50"
+    ],
+    "metrics": [
+      {
+        "candidate": 1.0,
+        "control": 1.0,
+        "direction": "higher",
+        "directional_improvement": 0.0,
+        "material_threshold": 0.001,
+        "metric": "coverage",
+        "status": "TIED"
+      },
+      {
+        "candidate": 0.498100008346866,
+        "control": 0.5000754800910006,
+        "direction": "higher",
+        "directional_improvement": -0.001975471744134538,
+        "material_threshold": 0.005,
+        "metric": "pairwise_accuracy",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": -0.007746530338461389,
+        "control": -0.002885729113256295,
+        "direction": "higher",
+        "directional_improvement": -0.004860801225205094,
+        "material_threshold": 0.005,
+        "metric": "rank_ic",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.0,
+        "control": 0.0,
+        "direction": "higher",
+        "directional_improvement": 0.0,
+        "material_threshold": 0.005,
+        "metric": "precision_at_5",
+        "status": "TIED"
+      },
+      {
+        "candidate": 0.0,
+        "control": 0.0,
+        "direction": "higher",
+        "directional_improvement": 0.0,
+        "material_threshold": 0.005,
+        "metric": "precision_at_10",
+        "status": "TIED"
+      },
+      {
+        "candidate": 0.000925925925925926,
+        "control": 0.010185185185185186,
+        "direction": "higher",
+        "directional_improvement": -0.00925925925925926,
+        "material_threshold": 0.005,
+        "metric": "precision_at_20",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.01074074074074074,
+        "control": 0.018518518518518517,
+        "direction": "higher",
+        "directional_improvement": -0.0077777777777777776,
+        "material_threshold": 0.005,
+        "metric": "precision_at_50",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.0,
+        "control": 0.0,
+        "direction": "higher",
+        "directional_improvement": 0.0,
+        "material_threshold": 0.005,
+        "metric": "recall_at_5",
+        "status": "TIED"
+      },
+      {
+        "candidate": 0.0,
+        "control": 0.0,
+        "direction": "higher",
+        "directional_improvement": 0.0,
+        "material_threshold": 0.005,
+        "metric": "recall_at_10",
+        "status": "TIED"
+      },
+      {
+        "candidate": 0.000925925925925926,
+        "control": 0.010185185185185186,
+        "direction": "higher",
+        "directional_improvement": -0.00925925925925926,
+        "material_threshold": 0.005,
+        "metric": "recall_at_20",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.01074074074074074,
+        "control": 0.018518518518518517,
+        "direction": "higher",
+        "directional_improvement": -0.0077777777777777776,
+        "material_threshold": 0.005,
+        "metric": "recall_at_50",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.4302084459635324,
+        "control": 0.41731746571557615,
+        "direction": "higher",
+        "directional_improvement": 0.012890980247956263,
+        "material_threshold": 0.005,
+        "metric": "ndcg_at_5",
+        "status": "MATERIALLY_IMPROVED"
+      },
+      {
+        "candidate": 0.44296413830505754,
+        "control": 0.44204209788267623,
+        "direction": "higher",
+        "directional_improvement": 0.0009220404223813095,
+        "material_threshold": 0.005,
+        "metric": "ndcg_at_10",
+        "status": "IMPROVED_BELOW_MATERIAL_THRESHOLD"
+      },
+      {
+        "candidate": 0.4574706741272325,
+        "control": 0.4677426511485415,
+        "direction": "higher",
+        "directional_improvement": -0.010271977021308998,
+        "material_threshold": 0.005,
+        "metric": "ndcg_at_20",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.4703538125676622,
+        "control": 0.4790447987340095,
+        "direction": "higher",
+        "directional_improvement": -0.008690986166347336,
+        "material_threshold": 0.005,
+        "metric": "ndcg_at_50",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.3851851851851852,
+        "control": 0.3185185185185185,
+        "direction": "higher",
+        "directional_improvement": 0.06666666666666671,
+        "material_threshold": 0.01,
+        "metric": "goal_attainment_top5",
+        "status": "MATERIALLY_IMPROVED"
+      },
+      {
+        "candidate": 0.40370370370370373,
+        "control": 0.37777777777777777,
+        "direction": "higher",
+        "directional_improvement": 0.025925925925925963,
+        "material_threshold": 0.01,
+        "metric": "goal_attainment_top10",
+        "status": "MATERIALLY_IMPROVED"
+      },
+      {
+        "candidate": 0.4111111111111111,
+        "control": 0.4361111111111111,
+        "direction": "higher",
+        "directional_improvement": -0.025000000000000022,
+        "material_threshold": 0.01,
+        "metric": "goal_attainment_top20",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.41222222222222227,
+        "control": 0.4207407407407407,
+        "direction": "higher",
+        "directional_improvement": -0.008518518518518425,
+        "material_threshold": 0.01,
+        "metric": "goal_attainment_top50",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.08555853289174946,
+        "control": 0.099309042670062,
+        "direction": "lower",
+        "directional_improvement": 0.013750509778312547,
+        "material_threshold": 0.005,
+        "metric": "goal_shortfall_top5",
+        "status": "MATERIALLY_IMPROVED"
+      },
+      {
+        "candidate": 0.08121319398911256,
+        "control": 0.08781610775385916,
+        "direction": "lower",
+        "directional_improvement": 0.006602913764746601,
+        "material_threshold": 0.005,
+        "metric": "goal_shortfall_top10",
+        "status": "MATERIALLY_IMPROVED"
+      },
+      {
+        "candidate": 0.082124557271816,
+        "control": 0.07627221047547908,
+        "direction": "lower",
+        "directional_improvement": -0.005852346796336921,
+        "material_threshold": 0.005,
+        "metric": "goal_shortfall_top20",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.08228401346895335,
+        "control": 0.0795544134055394,
+        "direction": "lower",
+        "directional_improvement": -0.0027296000634139533,
+        "material_threshold": 0.005,
+        "metric": "goal_shortfall_top50",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.19002159506142868,
+        "control": 0.21589812879203443,
+        "direction": "higher",
+        "directional_improvement": -0.02587653373060575,
+        "material_threshold": 0.01,
+        "metric": "mean_xirr_top5",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.2090910879317638,
+        "control": 0.3709004236467908,
+        "direction": "higher",
+        "directional_improvement": -0.161809335715027,
+        "material_threshold": 0.01,
+        "metric": "mean_xirr_top10",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.2826809653617484,
+        "control": 0.4578814761649549,
+        "direction": "higher",
+        "directional_improvement": -0.17520051080320648,
+        "material_threshold": 0.01,
+        "metric": "mean_xirr_top20",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.44611225278284744,
+        "control": 0.5853355125350321,
+        "direction": "higher",
+        "directional_improvement": -0.1392232597521847,
+        "material_threshold": 0.01,
+        "metric": "mean_xirr_top50",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.08869989769355294,
+        "control": 0.049813765850509416,
+        "direction": "higher",
+        "directional_improvement": 0.03888613184304352,
+        "material_threshold": 0.01,
+        "metric": "median_xirr_top5",
+        "status": "MATERIALLY_IMPROVED"
+      },
+      {
+        "candidate": 0.1165247404815865,
+        "control": 0.10920885274449355,
+        "direction": "higher",
+        "directional_improvement": 0.007315887737092949,
+        "material_threshold": 0.01,
+        "metric": "median_xirr_top10",
+        "status": "IMPROVED_BELOW_MATERIAL_THRESHOLD"
+      },
+      {
+        "candidate": 0.1237881031973127,
+        "control": 0.14505757646411266,
+        "direction": "higher",
+        "directional_improvement": -0.021269473266799954,
+        "material_threshold": 0.01,
+        "metric": "median_xirr_top20",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.12495004953416393,
+        "control": 0.13785535971063312,
+        "direction": "higher",
+        "directional_improvement": -0.01290531017646919,
+        "material_threshold": 0.01,
+        "metric": "median_xirr_top50",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 187737.572027193,
+        "control": 188606.25032155117,
+        "direction": "higher",
+        "directional_improvement": -868.6782943581638,
+        "material_threshold": 1886.0625032155117,
+        "metric": "terminal_wealth_top5",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 191169.73111207696,
+        "control": 205414.26769168265,
+        "direction": "higher",
+        "directional_improvement": -14244.536579605687,
+        "material_threshold": 2054.1426769168265,
+        "metric": "terminal_wealth_top10",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 198584.0480784714,
+        "control": 207248.32431251256,
+        "direction": "higher",
+        "directional_improvement": -8664.276234041172,
+        "material_threshold": 2072.4832431251257,
+        "metric": "terminal_wealth_top20",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 210090.52383984838,
+        "control": 212355.4938068533,
+        "direction": "higher",
+        "directional_improvement": -2264.9699670049304,
+        "material_threshold": 2123.554938068533,
+        "metric": "terminal_wealth_top50",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": -0.27554496196136885,
+        "control": -0.32761753053989473,
+        "direction": "higher",
+        "directional_improvement": 0.05207256857852588,
+        "material_threshold": 0.005,
+        "metric": "mean_drawdown_top5",
+        "status": "MATERIALLY_IMPROVED"
+      },
+      {
+        "candidate": -0.28077595291974466,
+        "control": -0.32673097862722716,
+        "direction": "higher",
+        "directional_improvement": 0.0459550257074825,
+        "material_threshold": 0.005,
+        "metric": "mean_drawdown_top10",
+        "status": "MATERIALLY_IMPROVED"
+      },
+      {
+        "candidate": -0.28989229024948965,
+        "control": -0.3161770406888443,
+        "direction": "higher",
+        "directional_improvement": 0.02628475043935463,
+        "material_threshold": 0.005,
+        "metric": "mean_drawdown_top20",
+        "status": "MATERIALLY_IMPROVED"
+      },
+      {
+        "candidate": -0.2997793289895919,
+        "control": -0.310855617987118,
+        "direction": "higher",
+        "directional_improvement": 0.011076288997526107,
+        "material_threshold": 0.005,
+        "metric": "mean_drawdown_top50",
+        "status": "MATERIALLY_IMPROVED"
+      }
+    ],
+    "passed": false
+  },
+  "xgboost_rank_ndcg": {
+    "degraded": [
+      "pairwise_accuracy",
+      "rank_ic",
+      "precision_at_20",
+      "recall_at_20",
+      "ndcg_at_5",
+      "ndcg_at_10",
+      "ndcg_at_20",
+      "ndcg_at_50",
+      "goal_attainment_top20",
+      "goal_shortfall_top5",
+      "goal_shortfall_top10",
+      "goal_shortfall_top20",
+      "goal_shortfall_top50",
+      "mean_xirr_top10",
+      "mean_xirr_top20",
+      "median_xirr_top10",
+      "median_xirr_top20",
+      "terminal_wealth_top10",
+      "terminal_wealth_top20",
+      "mean_drawdown_top5",
+      "mean_drawdown_top10",
+      "mean_drawdown_top20",
+      "mean_drawdown_top50"
+    ],
+    "materially_improved": [
+      "goal_attainment_top5",
+      "goal_attainment_top10",
+      "goal_attainment_top50",
+      "mean_xirr_top50",
+      "median_xirr_top5",
+      "terminal_wealth_top50"
+    ],
+    "metrics": [
+      {
+        "candidate": 1.0,
+        "control": 1.0,
+        "direction": "higher",
+        "directional_improvement": 0.0,
+        "material_threshold": 0.001,
+        "metric": "coverage",
+        "status": "TIED"
+      },
+      {
+        "candidate": 0.4984625838655365,
+        "control": 0.5000754800910006,
+        "direction": "higher",
+        "directional_improvement": -0.0016128962254640666,
+        "material_threshold": 0.005,
+        "metric": "pairwise_accuracy",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": -0.013666219722030973,
+        "control": -0.002885729113256295,
+        "direction": "higher",
+        "directional_improvement": -0.010780490608774678,
+        "material_threshold": 0.005,
+        "metric": "rank_ic",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.0,
+        "control": 0.0,
+        "direction": "higher",
+        "directional_improvement": 0.0,
+        "material_threshold": 0.005,
+        "metric": "precision_at_5",
+        "status": "TIED"
+      },
+      {
+        "candidate": 0.0,
+        "control": 0.0,
+        "direction": "higher",
+        "directional_improvement": 0.0,
+        "material_threshold": 0.005,
+        "metric": "precision_at_10",
+        "status": "TIED"
+      },
+      {
+        "candidate": 0.0027777777777777783,
+        "control": 0.010185185185185186,
+        "direction": "higher",
+        "directional_improvement": -0.007407407407407408,
+        "material_threshold": 0.005,
+        "metric": "precision_at_20",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.01925925925925926,
+        "control": 0.018518518518518517,
+        "direction": "higher",
+        "directional_improvement": 0.0007407407407407432,
+        "material_threshold": 0.005,
+        "metric": "precision_at_50",
+        "status": "IMPROVED_BELOW_MATERIAL_THRESHOLD"
+      },
+      {
+        "candidate": 0.0,
+        "control": 0.0,
+        "direction": "higher",
+        "directional_improvement": 0.0,
+        "material_threshold": 0.005,
+        "metric": "recall_at_5",
+        "status": "TIED"
+      },
+      {
+        "candidate": 0.0,
+        "control": 0.0,
+        "direction": "higher",
+        "directional_improvement": 0.0,
+        "material_threshold": 0.005,
+        "metric": "recall_at_10",
+        "status": "TIED"
+      },
+      {
+        "candidate": 0.0027777777777777783,
+        "control": 0.010185185185185186,
+        "direction": "higher",
+        "directional_improvement": -0.007407407407407408,
+        "material_threshold": 0.005,
+        "metric": "recall_at_20",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.01925925925925926,
+        "control": 0.018518518518518517,
+        "direction": "higher",
+        "directional_improvement": 0.0007407407407407432,
+        "material_threshold": 0.005,
+        "metric": "recall_at_50",
+        "status": "IMPROVED_BELOW_MATERIAL_THRESHOLD"
+      },
+      {
+        "candidate": 0.4149231365042067,
+        "control": 0.41731746571557615,
+        "direction": "higher",
+        "directional_improvement": -0.0023943292113694503,
+        "material_threshold": 0.005,
+        "metric": "ndcg_at_5",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.4290688748327883,
+        "control": 0.44204209788267623,
+        "direction": "higher",
+        "directional_improvement": -0.012973223049887905,
+        "material_threshold": 0.005,
+        "metric": "ndcg_at_10",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.4485241469416004,
+        "control": 0.4677426511485415,
+        "direction": "higher",
+        "directional_improvement": -0.0192185042069411,
+        "material_threshold": 0.005,
+        "metric": "ndcg_at_20",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.4743956554728744,
+        "control": 0.4790447987340095,
+        "direction": "higher",
+        "directional_improvement": -0.004649143261135136,
+        "material_threshold": 0.005,
+        "metric": "ndcg_at_50",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.37407407407407406,
+        "control": 0.3185185185185185,
+        "direction": "higher",
+        "directional_improvement": 0.05555555555555558,
+        "material_threshold": 0.01,
+        "metric": "goal_attainment_top5",
+        "status": "MATERIALLY_IMPROVED"
+      },
+      {
+        "candidate": 0.40370370370370373,
+        "control": 0.37777777777777777,
+        "direction": "higher",
+        "directional_improvement": 0.025925925925925963,
+        "material_threshold": 0.01,
+        "metric": "goal_attainment_top10",
+        "status": "MATERIALLY_IMPROVED"
+      },
+      {
+        "candidate": 0.4175925925925926,
+        "control": 0.4361111111111111,
+        "direction": "higher",
+        "directional_improvement": -0.01851851851851849,
+        "material_threshold": 0.01,
+        "metric": "goal_attainment_top20",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.4366666666666667,
+        "control": 0.4207407407407407,
+        "direction": "higher",
+        "directional_improvement": 0.01592592592592601,
+        "material_threshold": 0.01,
+        "metric": "goal_attainment_top50",
+        "status": "MATERIALLY_IMPROVED"
+      },
+      {
+        "candidate": 0.10004332901344176,
+        "control": 0.099309042670062,
+        "direction": "lower",
+        "directional_improvement": -0.0007342863433797558,
+        "material_threshold": 0.005,
+        "metric": "goal_shortfall_top5",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.09311302659909595,
+        "control": 0.08781610775385916,
+        "direction": "lower",
+        "directional_improvement": -0.005296918845236795,
+        "material_threshold": 0.005,
+        "metric": "goal_shortfall_top10",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.0897581122502156,
+        "control": 0.07627221047547908,
+        "direction": "lower",
+        "directional_improvement": -0.01348590177473652,
+        "material_threshold": 0.005,
+        "metric": "goal_shortfall_top20",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.08628713160066609,
+        "control": 0.0795544134055394,
+        "direction": "lower",
+        "directional_improvement": -0.006732718195126691,
+        "material_threshold": 0.005,
+        "metric": "goal_shortfall_top50",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.22299668106991377,
+        "control": 0.21589812879203443,
+        "direction": "higher",
+        "directional_improvement": 0.007098552277879339,
+        "material_threshold": 0.01,
+        "metric": "mean_xirr_top5",
+        "status": "IMPROVED_BELOW_MATERIAL_THRESHOLD"
+      },
+      {
+        "candidate": 0.26752150727228974,
+        "control": 0.3709004236467908,
+        "direction": "higher",
+        "directional_improvement": -0.10337891637450108,
+        "material_threshold": 0.01,
+        "metric": "mean_xirr_top10",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.36284109800689635,
+        "control": 0.4578814761649549,
+        "direction": "higher",
+        "directional_improvement": -0.09504037815805855,
+        "material_threshold": 0.01,
+        "metric": "mean_xirr_top20",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.6472701974544444,
+        "control": 0.5853355125350321,
+        "direction": "higher",
+        "directional_improvement": 0.06193468491941223,
+        "material_threshold": 0.01,
+        "metric": "mean_xirr_top50",
+        "status": "MATERIALLY_IMPROVED"
+      },
+      {
+        "candidate": 0.09026777373375156,
+        "control": 0.049813765850509416,
+        "direction": "higher",
+        "directional_improvement": 0.04045400788324214,
+        "material_threshold": 0.01,
+        "metric": "median_xirr_top5",
+        "status": "MATERIALLY_IMPROVED"
+      },
+      {
+        "candidate": 0.09156249343224866,
+        "control": 0.10920885274449355,
+        "direction": "higher",
+        "directional_improvement": -0.017646359312244883,
+        "material_threshold": 0.01,
+        "metric": "median_xirr_top10",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.11632975634644634,
+        "control": 0.14505757646411266,
+        "direction": "higher",
+        "directional_improvement": -0.028727820117666322,
+        "material_threshold": 0.01,
+        "metric": "median_xirr_top20",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 0.1453663334329336,
+        "control": 0.13785535971063312,
+        "direction": "higher",
+        "directional_improvement": 0.0075109737223004736,
+        "material_threshold": 0.01,
+        "metric": "median_xirr_top50",
+        "status": "IMPROVED_BELOW_MATERIAL_THRESHOLD"
+      },
+      {
+        "candidate": 188935.4062399914,
+        "control": 188606.25032155117,
+        "direction": "higher",
+        "directional_improvement": 329.15591844022856,
+        "material_threshold": 1886.0625032155117,
+        "metric": "terminal_wealth_top5",
+        "status": "IMPROVED_BELOW_MATERIAL_THRESHOLD"
+      },
+      {
+        "candidate": 195328.89768188004,
+        "control": 205414.26769168265,
+        "direction": "higher",
+        "directional_improvement": -10085.370009802602,
+        "material_threshold": 2054.1426769168265,
+        "metric": "terminal_wealth_top10",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 203933.27050677757,
+        "control": 207248.32431251256,
+        "direction": "higher",
+        "directional_improvement": -3315.0538057349913,
+        "material_threshold": 2072.4832431251257,
+        "metric": "terminal_wealth_top20",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": 220124.29350956247,
+        "control": 212355.4938068533,
+        "direction": "higher",
+        "directional_improvement": 7768.799702709162,
+        "material_threshold": 2123.554938068533,
+        "metric": "terminal_wealth_top50",
+        "status": "MATERIALLY_IMPROVED"
+      },
+      {
+        "candidate": -0.3631758824177479,
+        "control": -0.32761753053989473,
+        "direction": "higher",
+        "directional_improvement": -0.03555835187785317,
+        "material_threshold": 0.005,
+        "metric": "mean_drawdown_top5",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": -0.3567165569520583,
+        "control": -0.32673097862722716,
+        "direction": "higher",
+        "directional_improvement": -0.02998557832483112,
+        "material_threshold": 0.005,
+        "metric": "mean_drawdown_top10",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": -0.3560029998224771,
+        "control": -0.3161770406888443,
+        "direction": "higher",
+        "directional_improvement": -0.03982595913363279,
+        "material_threshold": 0.005,
+        "metric": "mean_drawdown_top20",
+        "status": "DEGRADED"
+      },
+      {
+        "candidate": -0.34753451672962254,
+        "control": -0.310855617987118,
+        "direction": "higher",
+        "directional_improvement": -0.03667889874250452,
+        "material_threshold": 0.005,
+        "metric": "mean_drawdown_top50",
+        "status": "DEGRADED"
+      }
+    ],
+    "passed": false
+  }
+}

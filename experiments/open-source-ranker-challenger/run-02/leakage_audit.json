@@ -1,0 +1,17 @@
+{
+  "all_training_endpoints_strictly_before_decision": true,
+  "features": [
+    "enhanced_carry_xirr_score",
+    "enhanced_goal_score",
+    "price_drawdown",
+    "cagr_3y",
+    "cagr_5y",
+    "cash_utilization",
+    "unaffordable_rate"
+  ],
+  "frozen_aggregate_max_abs_error": 9.497611030973019e-17,
+  "frozen_control_commit": "d4995807163bef1ec4b297179e6c54a59c71f390",
+  "frozen_prediction_max_abs_error": 1.1102230246251565e-16,
+  "future_or_regime_features": [],
+  "status": "PASS"
+}

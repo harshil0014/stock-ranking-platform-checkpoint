@@ -1,0 +1,15 @@
+{
+  "frozen_control_commit": "d4995807163bef1ec4b297179e6c54a59c71f390",
+  "hashes": {
+    "adapter": "c4c061a76ad324e18bccbe0c19e6833625c6e9ff5988b5324ad5ae340cbb253c",
+    "frozen_ensemble_metrics": "818164a1fcb4f4d3d4cc84147e7d2c5e77cf8c9d15b4bfeec418a016dcee5372",
+    "protocol": "56e2a5189f7b6528babba61e0e4935760433c8fcc31dc99a4ac00e63835674f7",
+    "requirements": "893396d2c1aa94dc69f8ea9ee1440983f086fd7f137a8c9e8d616a49e150ebfe",
+    "runner": "6441fff5016581ad10bb207bf1610267f32f85e5238015b90a0d22844a8fc44b",
+    "training_panel": "5a2fecf3a24cc46386ae17d6e9d68c7de815305e9f31ade6e2f1e5853a713bb8",
+    "validation_predictions": "c4abae98dfc7a85fd34bd000ad8a940c2cf2e98e37bb2e2664d2b79d68606001"
+  },
+  "production_ref_before": "f4d178f84112babc2ef4d4eebafeaf77c6f55ea1",
+  "protocol_sha256": "56e2a5189f7b6528babba61e0e4935760433c8fcc31dc99a4ac00e63835674f7",
+  "source_run": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform\\experiments\\personalized-final-tournament\\build-04"
+}

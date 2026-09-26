@@ -1,0 +1,96 @@
+{
+  "schema_version": "open_source_ranker_challenger_v1",
+  "status": "PREREGISTERED_RESEARCH_ONLY",
+  "frozen_control": {
+    "commit": "d4995807163bef1ec4b297179e6c54a59c71f390",
+    "tag": "personalized-challenger-d499580-20260926",
+    "ranker": "lightgbm.LGBMRanker",
+    "blend": {"goal": 0.67, "ranker": 0.33},
+    "mutation_allowed": false
+  },
+  "source_panel": {
+    "run": "experiments/personalized-final-tournament/build-04",
+    "training_file": "training_panel.csv.gz",
+    "validation_file": "validation_predictions.csv.gz",
+    "read_only": true
+  },
+  "shared_contract": {
+    "features": ["enhanced_carry_xirr_score", "enhanced_goal_score", "price_drawdown", "cagr_3y", "cagr_5y", "cash_utilization", "unaffordable_rate"],
+    "label": "within decision_date/profile percentile future_xirr * 4, clipped to 3 and converted to integer",
+    "maturity": "training endpoint strictly earlier than evaluation decision date",
+    "query": "decision_date/profile_name",
+    "blend": "0.67 * within-common-query percentile(enhanced_goal_score) + 0.33 * within-common-query percentile(ranker score)",
+    "cohort": "exact frozen common cohort requiring all frozen BASE_CANDIDATES, every tournament ranker score and observed future outcomes before percentile ranks are calculated",
+    "missing_values": "native estimator handling only; no imputation",
+    "hyperparameter_search": false,
+    "sir_workbook_optimization": false,
+    "seed": 20260923
+  },
+  "rankers": {
+    "control": {
+      "package": "lightgbm==4.6.0",
+      "implementation": "lightgbm.LGBMRanker",
+      "source": "saved build-04 predictions, independently reconstructed",
+      "parameters": {"n_estimators": 60, "learning_rate": 0.05, "num_leaves": 7, "max_depth": 3, "min_child_samples": 80, "reg_lambda": 10.0, "random_state": 20260923, "n_jobs": 1, "verbosity": -1, "deterministic": true, "force_col_wise": true}
+    },
+    "catboost_yetirank_pairwise": {
+      "package": "catboost==1.2.10",
+      "implementation": "catboost.CatBoostRanker",
+      "parameters": {"loss_function": "YetiRankPairwise", "iterations": 60, "learning_rate": 0.05, "depth": 3, "l2_leaf_reg": 10.0, "random_seed": 20260923, "thread_count": 1, "task_type": "CPU", "allow_writing_files": false, "verbose": false}
+    },
+    "xgboost_rank_ndcg": {
+      "package": "xgboost==3.4.1",
+      "implementation": "xgboost.XGBRanker",
+      "parameters": {"objective": "rank:ndcg", "n_estimators": 60, "learning_rate": 0.05, "max_depth": 3, "reg_lambda": 10.0, "tree_method": "hist", "lambdarank_pair_method": "topk", "lambdarank_num_pair_per_sample": 8, "random_state": 20260923, "n_jobs": 1, "verbosity": 0},
+      "pair_construction_basis": "official XGBoost learning-to-rank tutorial example; independent of evaluation K values"
+    }
+  },
+  "evaluation": {
+    "validation_dates": ["2020-06-30", "2021-06-30", "2022-06-30", "2023-06-30", "2024-06-30", "2025-06-30"],
+    "profiles": 9,
+    "top_ks": [5, 10, 20, 50],
+    "protected_metric_families": {
+      "coverage": "higher",
+      "pairwise_accuracy": "higher",
+      "rank_ic": "higher",
+      "precision_at_{k}": "higher",
+      "recall_at_{k}": "higher",
+      "ndcg_at_{k}": "higher",
+      "goal_attainment_top{k}": "higher",
+      "goal_shortfall_top{k}": "lower",
+      "mean_xirr_top{k}": "higher",
+      "median_xirr_top{k}": "higher",
+      "terminal_wealth_top{k}": "higher",
+      "mean_drawdown_top{k}": "higher"
+    },
+    "pareto_equivalence_tolerance": 1e-12,
+    "material_improvement_threshold_families": {
+      "coverage": 0.001,
+      "pairwise_accuracy": 0.005,
+      "rank_ic": 0.005,
+      "precision_at_{k}": 0.005,
+      "recall_at_{k}": 0.005,
+      "ndcg_at_{k}": 0.005,
+      "goal_attainment_top{k}": 0.01,
+      "goal_shortfall_top{k}": 0.005,
+      "mean_xirr_top{k}": 0.01,
+      "median_xirr_top{k}": 0.01,
+      "terminal_wealth_top{k}_relative": 0.01,
+      "mean_drawdown_top{k}": 0.005
+    },
+    "admission_rule": "no protected aggregate metric degrades beyond tolerance and at least one protected metric improves by its material threshold",
+    "stability": "report every date, profile and query delta; flag date/profile goal-shortfall deterioration above 0.02 or attainment/XIRR/drawdown deterioration above 0.05"
+  },
+  "fusion_gate": {
+    "evaluate_after_individuals_only": true,
+    "requirements": "credible maintained upstream rank-fusion implementation, demonstrably complementary rankers, no searched weights, same Pareto gate",
+    "otherwise": "do not run fusion"
+  },
+  "boundaries": [
+    "Do not use JumpModel, HMM, volatility or ADWIN features",
+    "Do not modify production, d499580, immutable tags or prospective shadow artifacts",
+    "Do not alter Goal, labels, execution, corporate-action, whole-share, residual-cash, provenance or blocker rules",
+    "Do not tune on evaluation outcomes",
+    "Do not promote to production"
+  ]
+}
