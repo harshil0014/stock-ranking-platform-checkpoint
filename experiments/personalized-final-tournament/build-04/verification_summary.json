@@ -1,0 +1,14 @@
+{
+  "freeze_rebuild_fingerprint": "dd04c7fe0221cd568e86b23db330ff67923db815385ff983be8d90c849f13adf",
+  "learned_blend_maturity_pass": true,
+  "matured_training_fits": 9,
+  "protected_state_unchanged": true,
+  "raw_and_large_artifacts_outside_git": true,
+  "test_log_sha256": "63928b6deeebd92e85cdc5c3e7cf5c50c8950c10d77ff308c1edc41b6a7f8e3a",
+  "test_log_tail": [
+    "............................                                             [100%]",
+    "=========================== short test summary info ===========================",
+    "SKIPPED [1] tests\\test_nse_snapshot.py:286: supplied external NSE/NIFTY files are not present",
+    "891 passed, 1 skipped in 301.65s (0:05:01)"
+  ]
+}

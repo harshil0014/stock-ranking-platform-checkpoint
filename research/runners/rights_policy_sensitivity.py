@@ -39,7 +39,7 @@ def replay(book, identity, profile, end, *, exercise):
             action = action_rows[position]
             if action.mechanics_status == "AUTO_MULTIPLIER":
                 shares *= float(action.total_share_multiplier)
-                if not np.isclose(shares, round(shares), atol=1e-8):
+                if not np.isclose(shares, round(shares), rtol=0, atol=1e-8):
                     raise ValueError("fractional automatic action in rights replay")
             elif action.mechanics_status == "PASSIVE_RIGHTS" and exercise and action.economic_policy != "WITHDRAWN_NO_ALLOTMENT":
                 offered, held = map(int, str(action.entitlement_terms).split(":"))

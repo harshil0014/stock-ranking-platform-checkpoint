@@ -1,4 +1,4 @@
-"""Print exact frozen research reproduction commands and validate local prerequisites."""
+"""Validate preserved history, overlay, and entitlement source hashes."""
 from pathlib import Path
 from hashlib import sha256
 import argparse,json

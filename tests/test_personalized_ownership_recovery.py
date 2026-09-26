@@ -60,6 +60,20 @@ def test_verified_official_nominal_prices_are_not_unadjusted_twice(tmp_path):
     assert row.shares_bought == 4
 
 
+def test_rights_replay_does_not_round_large_fractional_holdings():
+    import numpy as np
+    import pytest
+    from types import SimpleNamespace
+    from research.runners.rights_policy_sensitivity import replay
+    dates=np.array(['2020-01-01','2020-02-01','2020-03-01'],dtype='datetime64[D]')
+    prices=np.ones(3)
+    actions=pd.DataFrame([{'event_date':pd.Timestamp('2020-02-01'),'mechanics_status':'AUTO_MULTIPLIER','event_type':'BONUS','total_share_multiplier':1.0000005}])
+    book=SimpleNamespace(arrays={'TEST':(dates,prices,prices,prices,prices)},actions={'TEST':actions})
+    profile=InvestorProfile(amount=1000000,interval_days=31,lookback_months=2,whole_shares=True)
+    with pytest.raises(ValueError,match='fractional automatic action'):
+        replay(book,'TEST',profile,'2020-03-01',exercise=True)
+
+
 def test_provider_adjustment_stops_at_original_cache_basis_date(tmp_path):
     actions=normalized_action()
     official_book(tmp_path,actions,provider_ratio=2)

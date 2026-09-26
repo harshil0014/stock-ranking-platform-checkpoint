@@ -47,3 +47,4 @@ tests/test_personalized_ownership_recovery.py text eol=lf
 tests/test_personalized_rank_blend.py text eol=lf
 docs/PERSONALIZED_OWNERSHIP_RESEARCH_20260925.md text eol=lf
 docs/PERSONALIZED_OWNERSHIP_REPRODUCTION.md text eol=lf
+research/runners/audit_ownership_result.py text eol=lf

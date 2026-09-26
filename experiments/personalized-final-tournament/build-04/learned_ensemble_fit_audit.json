@@ -1,0 +1,86 @@
+[
+  {
+    "decision_date": "2020-06-30",
+    "latest_training_endpoint": "2019-12-31",
+    "target": "Within-date/profile percentile of negative future goal shortfall",
+    "training": "Original training panel only; no target-date outcome used",
+    "training_rows": 53943,
+    "weights": {
+      "enhanced_carry_xirr_score": 0.08446576027802064,
+      "enhanced_goal_score": 0.5174055652572075,
+      "global_existing_score": 0.39812867446477196
+    }
+  },
+  {
+    "decision_date": "2021-06-30",
+    "latest_training_endpoint": "2020-12-31",
+    "target": "Within-date/profile percentile of negative future goal shortfall",
+    "training": "Original training panel only; no target-date outcome used",
+    "training_rows": 73128,
+    "weights": {
+      "enhanced_carry_xirr_score": 0.0,
+      "enhanced_goal_score": 0.5098091384626247,
+      "global_existing_score": 0.4901908615373754
+    }
+  },
+  {
+    "decision_date": "2022-06-30",
+    "latest_training_endpoint": "2020-12-31",
+    "target": "Within-date/profile percentile of negative future goal shortfall",
+    "training": "Original training panel only; no target-date outcome used",
+    "training_rows": 73128,
+    "weights": {
+      "enhanced_carry_xirr_score": 0.0,
+      "enhanced_goal_score": 0.5098091384626247,
+      "global_existing_score": 0.4901908615373754
+    }
+  },
+  {
+    "decision_date": "2023-06-30",
+    "latest_training_endpoint": "2020-12-31",
+    "target": "Within-date/profile percentile of negative future goal shortfall",
+    "training": "Original training panel only; no target-date outcome used",
+    "training_rows": 73128,
+    "weights": {
+      "enhanced_carry_xirr_score": 0.0,
+      "enhanced_goal_score": 0.5098091384626247,
+      "global_existing_score": 0.4901908615373754
+    }
+  },
+  {
+    "decision_date": "2024-06-30",
+    "latest_training_endpoint": "2023-12-31",
+    "target": "Within-date/profile percentile of negative future goal shortfall",
+    "training": "Original training panel only; no target-date outcome used",
+    "training_rows": 118135,
+    "weights": {
+      "enhanced_carry_xirr_score": 0.04800622281622645,
+      "enhanced_goal_score": 0.5345706362353971,
+      "global_existing_score": 0.41742314094837635
+    }
+  },
+  {
+    "decision_date": "2025-06-30",
+    "latest_training_endpoint": "2023-12-31",
+    "target": "Within-date/profile percentile of negative future goal shortfall",
+    "training": "Original training panel only; no target-date outcome used",
+    "training_rows": 118135,
+    "weights": {
+      "enhanced_carry_xirr_score": 0.04800622281622645,
+      "enhanced_goal_score": 0.5345706362353971,
+      "global_existing_score": 0.41742314094837635
+    }
+  },
+  {
+    "decision_date": "2026-09-18",
+    "latest_training_endpoint": "2023-12-31",
+    "target": "Within-date/profile percentile of negative future goal shortfall",
+    "training": "Original training panel only; no target-date outcome used",
+    "training_rows": 118135,
+    "weights": {
+      "enhanced_carry_xirr_score": 0.04800622281622645,
+      "enhanced_goal_score": 0.5345706362353971,
+      "global_existing_score": 0.41742314094837635
+    }
+  }
+]

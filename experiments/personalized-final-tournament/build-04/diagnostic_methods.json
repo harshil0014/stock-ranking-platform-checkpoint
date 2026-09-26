@@ -1,0 +1,8 @@
+{
+  "ml": "Remove all ML components from selected fixed ensemble, preserving relative non-ML weights. If selection has no ML, use preregistered equal-weight quartet.",
+  "performance_comparison_to_previous_build": "INVALID_DUE_TO_PRIOR_PRICE_BASIS_AND_TRAINING_MATURITY_ERRORS",
+  "prior_eligibility_panel_sha256": "378503a3a3a2b324bc3728fa0002164385e729294d2d3de25fcc99c4d419dd95",
+  "recovery": "Hold corrected scores and outcomes fixed; compare full corrected common cohort with previously eligible identities on overlapping historical dates. Captures screening/coverage effect, not a causal isolation of corporate actions from history repairs or model refitting. Prior erroneous return values are never reused.",
+  "risk": "Ridge refitted without price_drawdown using only strictly matured training labels at each date.",
+  "status": "POST_SELECTION_DESCRIPTIVE_ONLY"
+}

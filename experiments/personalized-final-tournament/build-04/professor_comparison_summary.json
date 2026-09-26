@@ -1,0 +1,21 @@
+{
+  "corrected_selection_after_earlier_workbook_read": true,
+  "corrected_selection_used_no_workbook_inputs": true,
+  "date_boundary": "Workbook cached date 2026-08-21 and research cutoff 2026-09-18 differ.",
+  "exact_execution_reproductions": 0,
+  "exact_identity_matches": 12,
+  "rank_scope": "Only exact matched supplied identities; supplied list has no known global rank scope.",
+  "selected_individual": "lightgbm_lambdarank_score",
+  "selection_rule_and_fixed_ensemble_family_frozen_before_workbook_read": true,
+  "supplied_rank_pairs_with_selected_individual_score": 10,
+  "supplied_rank_vs_selected_score_spearman_within_overlap": 0.23928181646454103,
+  "usable_workbook_purchase_rows": 0,
+  "workbook_input_boundary": [
+    "GoogleFinance live recalculation and exchange holiday behavior",
+    "Uncached/spilled execution-price cells",
+    "Corporate-action basis of cached prices",
+    "Delisting proceeds and historical membership"
+  ],
+  "workbook_rows": 14,
+  "workbook_sha256": "be2ab62fb41abd4769b5f5d8de7f3df04edc6cfa336bb0d2c5906fc6da2e980b"
+}

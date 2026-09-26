@@ -1,0 +1,9 @@
+evidence_tier,observation_date,observed_full_classifications,score_available,outcome_available,sector_diagnostic_rows,supported_industries_min_5,global_frozen_36m_population,population_coverage_pct,observed_classifications,matched_global_frozen_36m,used_for_official_sector_experiment
+official,2020-03-31,436.0,364.0,432.0,360.0,18.0,3376.0,10.66350710900474,,,
+official,2021-03-31,432.0,373.0,430.0,371.0,18.0,3376.0,10.989336492890995,,,
+official,2022-03-31,436.0,366.0,428.0,358.0,19.0,3376.0,10.604265402843602,,,
+secondary,2021-02-06,,,,,,,,501.0,435.0,False
+secondary,2022-11-15,,,,,,,,501.0,461.0,False
+secondary,2024-09-16,,,,,,,,501.0,462.0,False
+secondary,2024-11-18,,,,,,,,500.0,465.0,False
+secondary,2025-12-25,,,,,,,,501.0,449.0,False

@@ -1,0 +1,18 @@
+{
+  "ensemble_metrics_sha256": "818164a1fcb4f4d3d4cc84147e7d2c5e77cf8c9d15b4bfeec418a016dcee5372",
+  "method": "Minimum mean goal shortfall; strongest IC reported separately. No workbook targets used.",
+  "metrics_sha256": "9e88a4bd097a01a2fa492ee94faa2cb0680524e28f42ec2ad9d9b764a09d9b9c",
+  "selection": {
+    "as_of_date": "2026-09-18",
+    "independent_validation_date_blocks": 6,
+    "professor_comparison_status": "PENDING_AFTER_TOURNAMENT_FREEZE",
+    "promotion": "INSUFFICIENT_EVIDENCE",
+    "reason": "Six annual, retrospectively selected historical evaluation dates with matured-label fitting; current-universe survivorship, price-only wealth, gross execution, and reused historical evidence preclude production promotion.",
+    "status": "RESEARCH_ONLY",
+    "strongest_ensemble_by_goal_shortfall": "enhanced_goal+lightgbm_lambdarank@0.670-0.330",
+    "strongest_fixed_ensemble_by_goal_shortfall": "enhanced_goal+lightgbm_lambdarank@0.670-0.330",
+    "strongest_individual_by_goal_shortfall": "lightgbm_lambdarank_score",
+    "strongest_individual_by_rank_ic": "hist_gradient_boosting_score",
+    "strongest_train_only_learned_ensemble": "learned_rank_blend_score"
+  }
+}

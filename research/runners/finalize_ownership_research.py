@@ -28,6 +28,8 @@ def run(args):
  out=args.tournament;freeze=args.freeze
  freeze_fingerprint=verify(freeze);verify(out)
  assert verify(freeze.with_name(freeze.name+'-rebuild-check'))==freeze_fingerprint
+ from research.runners.rights_policy_sensitivity import run as rights_sensitivity
+ rights_sensitivity(argparse.Namespace(tournament=out,freeze=freeze,protocol=ROOT/'research/protocols/personalized_ownership_tournament_v2.json',frozen_root=ROOT/'experiments/personalized-data-freeze/build-01',history_cache=ROOT/'data/live_market/history_cache',split_root=ROOT/'external_research_pack/corporate_actions/yahoo_secondary'))
  finalize(argparse.Namespace(tournament=out,freeze=freeze))
  assessment=json.loads((out/'final_assessment.json').read_text())
  from stock_research.personalized_rank_blend import fit_matured_rank_blend
@@ -43,6 +45,7 @@ def run(args):
  write(out/'learned_ensemble_fit_audit.json',blend_audit)
  assert all(pd.Timestamp(a['latest_training_endpoint'])<pd.Timestamp(a['decision_date']) for a in blend_audit)
  learned_summary=learned_metrics.groupby('candidate').mean(numeric_only=True)
+ learned_summary.to_csv(out/'learned_ensemble_summary.csv')
  fixed_summary=pd.read_csv(out/'ensemble_metrics.csv').set_index('candidate')
  assessment['strongest_train_only_learned_ensemble']='learned_rank_blend_score'
  assessment['strongest_ensemble_by_goal_shortfall']=pd.concat([fixed_summary,learned_summary]).target_shortfall_top20.idxmin()
@@ -94,8 +97,51 @@ def run(args):
  for metric in ['rank_ic','target_achievement_top20','target_shortfall_top20']:
   sign=-1 if metric=='target_shortfall_top20' else 1
   additions.append({'component':'risk_feature_price_drawdown','full':'ridge_executable_score','without':'ridge_without_risk_score','metric':metric,'improvement':sign*(full[metric]-risk[metric].mean())})
+ # Remove ML components without reoptimizing the remaining weights.
+ ml_columns={'ridge_executable_score','lightgbm_lambdarank_score','hist_gradient_boosting_score'}
+ ml_full=fixed_selected if ml_columns.intersection(fixed_columns) else 'enhanced_goal+global_existing+ridge_executable+lightgbm_lambdarank@0.250-0.250-0.250-0.250'
+ ml_names,ml_weights=ml_full.split('@');ml_columns_full=[c+'_score' for c in ml_names.split('+')]
+ ml_weights=np.array([float(w) for w in ml_weights.split('-')]);ml_weights/=ml_weights.sum()
+ keep=np.array([c not in ml_columns for c in ml_columns_full]);reduced_weights=ml_weights[keep];reduced_weights/=reduced_weights.sum()
+ ml_rows=[]
+ for (day,profile),group in panel.groupby(['decision_date','profile_name']):
+  common=group.dropna(subset=BASE_CANDIDATES+['future_xirr','future_shortfall','future_drawdown']).copy()
+  ranks=common[ml_columns_full].rank(pct=True)
+  common['ml_removed_score']=ranks.loc[:,keep].to_numpy()@reduced_weights
+  ml_rows.append({'decision_date':day,'profile':profile,**ranking_metrics(common,'ml_removed_score')})
+ ml_reduced=pd.DataFrame(ml_rows);ml_reduced.to_csv(out/'ml_removal_metrics.csv',index=False)
+ ml_full_metrics=fixed_summary.loc[ml_full]
+ for metric in ['rank_ic','target_achievement_top20','target_shortfall_top20']:
+  sign=-1 if metric=='target_shortfall_top20' else 1
+  additions.append({'component':'ml_components','full':ml_full,'without':'+'.join(np.array(ml_columns_full)[keep]),'metric':metric,'improvement':sign*(ml_full_metrics[metric]-ml_reduced[metric].mean())})
+ # Isolate the eligibility effect on corrected outcomes. Old performance values
+ # are invalid and are never reused as outcomes or as model scores.
+ old_predictions=ROOT/'experiments/personalized-final-tournament/build-02/validation_predictions.csv.gz'
+ old_panel=pd.read_csv(old_predictions,usecols=['decision_date','profile_name','isin','status','future_xirr'])
+ old_eligible=old_panel.loc[old_panel.status.eq('AVAILABLE') & old_panel.future_xirr.notna(),['decision_date','profile_name','isin']].assign(previously_eligible=True)
+ recovery_rows=[]
+ for (day,profile),group in pd.concat([panel,supplementary]).groupby(['decision_date','profile_name']):
+  if day not in set(old_panel.decision_date):continue
+  common=group.dropna(subset=BASE_CANDIDATES+['future_xirr','future_shortfall','future_drawdown']).copy()
+  common=common.merge(old_eligible,on=['decision_date','profile_name','isin'],how='left',validate='one_to_one')
+  columns=[c+'_score' for c in fixed_selected.split('@')[0].split('+')]
+  common['fixed_policy_score']=common[columns].rank(pct=True).to_numpy()@fixed_weights
+  restricted=common.loc[common.previously_eligible.eq(True)]
+  for scope,frame in [('repaired_eligible',common),('previously_eligible_only',restricted)]:
+   recovery_rows.append({'decision_date':day,'profile':profile,'scope':scope,'rows':len(frame),'candidate':fixed_selected,**ranking_metrics(frame,'fixed_policy_score')})
+ recovery_effect=pd.DataFrame(recovery_rows);recovery_effect.to_csv(out/'recovery_eligibility_ablation.csv',index=False)
+ for metric in ['rank_ic','target_achievement_top20','target_shortfall_top20']:
+  means=recovery_effect.groupby('scope')[metric].mean();sign=-1 if metric=='target_shortfall_top20' else 1
+  additions.append({'component':'recovery_eligibility_on_corrected_outcomes','full':'repaired_eligible','without':'previously_eligible_only','metric':metric,'improvement':sign*(means['repaired_eligible']-means['previously_eligible_only'])})
+ write(out/'diagnostic_methods.json',{'status':'POST_SELECTION_DESCRIPTIVE_ONLY','risk':'Ridge refitted without price_drawdown using only strictly matured training labels at each date.','ml':'Remove all ML components from selected fixed ensemble, preserving relative non-ML weights. If selection has no ML, use preregistered equal-weight quartet.','recovery':'Hold corrected scores and outcomes fixed; compare full corrected common cohort with previously eligible identities on overlapping historical dates. Captures screening/coverage effect, not a causal isolation of corporate actions from history repairs or model refitting. Prior erroneous return values are never reused.','prior_eligibility_panel_sha256':digest(old_predictions),'performance_comparison_to_previous_build':'INVALID_DUE_TO_PRIOR_PRICE_BASIS_AND_TRAINING_MATURITY_ERRORS'})
  pd.concat([ablation,pd.DataFrame(additions)]).to_csv(out/'model_ablation.csv',index=False)
  metrics=pd.concat([pd.read_csv(out/'validation_metrics.csv'),score_ensembles(panel,protocol),learned_metrics])
+ from research.runners.run_personalized_executable_tournament import paired_deltas
+ metrics.groupby(['profile','candidate'],as_index=False).mean(numeric_only=True).to_csv(out/'profile_metrics.csv',index=False)
+ paired_deltas(metrics).to_csv(out/'paired_deltas.csv',index=False)
+ date_metrics=metrics.groupby(['candidate','decision_date'],as_index=False).mean(numeric_only=True)
+ date_metrics.to_csv(out/'date_stability.csv',index=False)
+ date_metrics.groupby('candidate').agg(mean_rank_ic=('rank_ic','mean'),median_rank_ic=('rank_ic','median'),rank_ic_std=('rank_ic','std'),worst_date_rank_ic=('rank_ic','min'),mean_goal_shortfall=('target_shortfall_top20','mean'),worst_date_goal_shortfall=('target_shortfall_top20','max'),mean_goal_achievement=('target_achievement_top20','mean'),worst_date_goal_achievement=('target_achievement_top20','min')).to_csv(out/'model_stability_summary.csv')
  # Utility uncertainty resamples dates, never securities or correlated profiles.
  rng=np.random.default_rng(20260925);uncertainty=[]
  for candidate,g in metrics.groupby('candidate'):
@@ -135,10 +181,13 @@ def run(args):
  normalized=ROOT/'research/data/ownership-recovery-20260925'
  inputs=json.loads((out/'inputs.json').read_text())
  inputs['normalized_recovery_sources']={str(p.relative_to(ROOT)).replace('\\','/'):digest(p) for p in sorted(normalized.iterdir()) if p.is_file()}
- inputs['finalizer_sources']={str(p.relative_to(ROOT)).replace('\\','/'):digest(p) for p in [Path(__file__),ROOT/'src/stock_research/personalized_rank_blend.py',ROOT/'research/runners/compare_final_professor_workbook.py']}
+ inputs['finalizer_sources']={str(p.relative_to(ROOT)).replace('\\','/'):digest(p) for p in [Path(__file__),ROOT/'src/stock_research/personalized_rank_blend.py',ROOT/'src/stock_research/personalized_validation.py',ROOT/'research/runners/compare_final_professor_workbook.py',ROOT/'research/runners/finalize_personalized_tournament.py',ROOT/'research/runners/rights_policy_sensitivity.py',ROOT/'research/runners/run_personalized_executable_tournament.py']}
  write(out/'inputs.json',inputs)
  test_log=ROOT/'experiments/ownership-final-tests.log'
  write(out/'verification_summary.json',{'freeze_rebuild_fingerprint':freeze_fingerprint,'protected_state_unchanged':True,'matured_training_fits':len(fit_audits),'learned_blend_maturity_pass':True,'test_log_tail':test_log.read_text(encoding='utf-8',errors='replace').splitlines()[-4:],'test_log_sha256':digest(test_log),'raw_and_large_artifacts_outside_git':True})
+ import platform
+ from importlib.metadata import version
+ write(out/'environment.json',{'python':platform.python_version(),'platform':platform.platform(),'packages':{p:version(p) for p in ['numpy','pandas','scipy','scikit-learn','lightgbm']}})
  files=[{'path':p.name,'size':p.stat().st_size,'sha256':digest(p)} for p in sorted(out.iterdir()) if p.is_file() and p.name!='manifest.json']
  write(out/'manifest.json',{'deterministic_artifacts':files,'fingerprint':sha256(json.dumps(files,sort_keys=True).encode()).hexdigest()});verify(out)
  print(json.dumps(summary,indent=2))

@@ -1,0 +1,82 @@
+[
+  {
+    "candidate": "professor_whole_share",
+    "reason": "Fixed comparison baseline.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "enhanced_no_carry_xirr",
+    "reason": "Did not improve validation rank or utility over both simple references.",
+    "status": "FAIL"
+  },
+  {
+    "candidate": "enhanced_carry_xirr",
+    "reason": "Did not improve validation rank or utility over both simple references.",
+    "status": "FAIL"
+  },
+  {
+    "candidate": "enhanced_goal",
+    "reason": "Directionally useful on the unchanged validation dates.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "historical_target_frequency",
+    "reason": "Directionally useful on the unchanged validation dates.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "global_existing",
+    "reason": "Fixed comparison baseline.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "enhanced_plus_existing",
+    "reason": "Directionally useful on the unchanged validation dates.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "ridge_executable",
+    "reason": "Directionally useful on the unchanged validation dates.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "ridge_without_amount_features",
+    "reason": "Directionally useful on the unchanged validation dates.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "ridge_without_goal",
+    "reason": "Directionally useful on the unchanged validation dates.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "cluster_rank_aggregation",
+    "reason": "Directionally useful on the unchanged validation dates.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "hist_gradient_boosting",
+    "reason": "Directionally useful on the unchanged validation dates.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "lightgbm_lambdarank",
+    "reason": "Directionally useful on the unchanged validation dates.",
+    "status": "RESEARCH ONLY"
+  },
+  {
+    "candidate": "official_exact_date_sector_relative",
+    "reason": "Exact official 2020-2022 observations support a retrospective diagnostic, with current-universe survivorship.",
+    "status": "SUPPLEMENTARY ONLY"
+  },
+  {
+    "candidate": "transaction_cost_model",
+    "reason": "No single complete historical broker and statutory fee contract was supplied.",
+    "status": "INSUFFICIENT EVIDENCE"
+  },
+  {
+    "candidate": "liquidity_constrained_model",
+    "reason": "No complete historical order-book or volume evidence supports a reproducible cap.",
+    "status": "INSUFFICIENT EVIDENCE"
+  }
+]

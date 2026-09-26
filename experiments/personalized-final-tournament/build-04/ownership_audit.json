@@ -1,0 +1,59 @@
+{
+  "additional_passive_rights_events": 543,
+  "coverage": [
+    {
+      "corporate_action_blocks": 13,
+      "executable_available_after": 3747,
+      "executable_available_before": 3550,
+      "executable_coverage_after_pct": 98.39810924369748,
+      "executable_coverage_before_pct": 93.22478991596638,
+      "false_quarantines_removed": 207,
+      "fractional_entitlement_blocks": 24,
+      "frozen_global_population": 3808,
+      "lookback_months": 12,
+      "net_available_change": 197,
+      "other_unresolved": 24,
+      "true_blocking_events_remaining": 37
+    },
+    {
+      "corporate_action_blocks": 25,
+      "executable_available_after": 3285,
+      "executable_available_before": 3056,
+      "executable_coverage_after_pct": 97.30450236966824,
+      "executable_coverage_before_pct": 90.52132701421802,
+      "false_quarantines_removed": 255,
+      "fractional_entitlement_blocks": 58,
+      "frozen_global_population": 3376,
+      "lookback_months": 36,
+      "net_available_change": 229,
+      "other_unresolved": 8,
+      "true_blocking_events_remaining": 83
+    },
+    {
+      "corporate_action_blocks": 40,
+      "executable_available_after": 2889,
+      "executable_available_before": 2637,
+      "executable_coverage_after_pct": 95.4410307234886,
+      "executable_coverage_before_pct": 87.1159563924678,
+      "false_quarantines_removed": 284,
+      "fractional_entitlement_blocks": 91,
+      "frozen_global_population": 3027,
+      "lookback_months": 60,
+      "net_available_change": 252,
+      "other_unresolved": 7,
+      "true_blocking_events_remaining": 131
+    }
+  ],
+  "deterministic_freeze_rebuild_fingerprint": "dd04c7fe0221cd568e86b23db330ff67923db815385ff983be8d90c849f13adf",
+  "future_outcomes_excluded": true,
+  "histories_with_invalid_observations_removed": 9,
+  "invalid_observations_removed": 1059,
+  "net_profile_rows": 678,
+  "newly_excluded_profile_rows": 68,
+  "prior_performance_not_comparable": "Earlier nominal-price error and immature training labels invalidate direct performance-improvement claims. Compare all models on corrected outcomes instead.",
+  "protected_state_unchanged": true,
+  "recovered_profile_rows": 746,
+  "recovered_unique_identities": 463,
+  "separate_resulting_entitlements": 20,
+  "train_maturity_pass": true
+}

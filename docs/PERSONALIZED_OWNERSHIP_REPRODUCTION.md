@@ -52,6 +52,9 @@ $workbookPath = 'C:\Users\Harshil\Downloads\_Organized\Documents\Copy of OK Stra
   --tournament experiments/personalized-final-tournament/reproduction `
   --freeze experiments/personalized-official-action-freeze/reproduction `
   --workbook $workbookPath
+
+.venv-qlib\Scripts\python.exe research\runners\audit_ownership_result.py `
+  --tournament experiments/personalized-final-tournament/reproduction
 ```
 
 The finalizer requires the independent freeze rebuild, checks protected input hashes and strict training-label maturity, evaluates the fixed and training-only learned ensembles, then compares the selected individual with the workbook. Finalization updates the research report; preserve prior committed reports before running a new investigation. The saved rights sensitivity is descriptive and hypothetical, and is not used for model selection.
@@ -59,7 +62,7 @@ The finalizer requires the independent freeze rebuild, checks protected input ha
 ## Verification and interpretation
 
 ```powershell
-$env:PYTHONPATH = 'src'
+$env:PYTHONPATH = 'src;.'
 .venv-test\Scripts\python.exe -m pytest -q --basetemp .pytest-tmp-ownership-reproduction -p no:cacheprovider
 ```
 

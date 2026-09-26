@@ -1,0 +1,46 @@
+{
+  "audit_runner_sha256": "628de2d9afa61d45b9987b9473d82fff0351b91b6e4f6ee6736e5ed391ef073e",
+  "comparisons": [
+    {
+      "date_count": 6,
+      "dates_with_lower_shortfall": 5,
+      "descriptive_date_bootstrap_high95": 0.12280414989624798,
+      "descriptive_date_bootstrap_low95": 0.041620323393659724,
+      "goal_achievement_difference": 0.09722222222222225,
+      "mean_goal_shortfall_reduction": 0.08166537028891299,
+      "profile_count": 9,
+      "profiles_with_lower_mean_shortfall": 9,
+      "reference": "global_existing_score"
+    },
+    {
+      "date_count": 6,
+      "dates_with_lower_shortfall": 6,
+      "descriptive_date_bootstrap_high95": 0.04720967399966356,
+      "descriptive_date_bootstrap_low95": 0.018061908394059824,
+      "goal_achievement_difference": 0.026851851851851887,
+      "mean_goal_shortfall_reduction": 0.03255728881644496,
+      "profile_count": 9,
+      "profiles_with_lower_mean_shortfall": 9,
+      "reference": "enhanced_goal_score"
+    },
+    {
+      "date_count": 6,
+      "dates_with_lower_shortfall": 4,
+      "descriptive_date_bootstrap_high95": 0.05169270703954095,
+      "descriptive_date_bootstrap_low95": -0.010533243195422806,
+      "goal_achievement_difference": -0.007407407407407349,
+      "mean_goal_shortfall_reduction": 0.019691130250151134,
+      "profile_count": 9,
+      "profiles_with_lower_mean_shortfall": 9,
+      "reference": "lightgbm_lambdarank_score"
+    }
+  ],
+  "control_experiment": "Highest rank IC is gradient boosting, but LambdaRank and the selected ensemble have lower goal shortfall and higher goal achievement. Highest IC did not identify the best investor utility.",
+  "interpretation": "Material retrospective goal-shortfall improvement over corrected existing and simple-goal baselines. The ensemble advantage over standalone LambdaRank and the goal-achievement improvement are not conclusive. No prospective superiority or production readiness is established.",
+  "mean_top20_goal_achievement": 0.43611111111111117,
+  "mean_top20_goal_shortfall": 0.07627221047547905,
+  "next_step": "Shadow-evaluate the frozen 67/33 goal/LambdaRank policy on post-2026-09-18 data, retaining production. Full 12-month prospective outcomes mature on 2027-09-18.",
+  "selected_research_policy": "enhanced_goal+lightgbm_lambdarank@0.670-0.330",
+  "source_hashes_verified": true,
+  "uncertainty_boundary": "Six date blocks; correlated investor profiles are averaged within dates. Descriptive intervals are not adjusted for retrospective model selection or current-universe survivorship."
+}
