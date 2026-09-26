@@ -1,0 +1,8 @@
+{
+  "bundle_sha256": "6b2c67786c67d7e03b0f64c6ce506e6182d1b0cedef737be16daad8d08714eda",
+  "fresh_clone_inference_reproduced": true,
+  "frozen_manifest_sha256": "f9919146a1dc5a0584f5c23a5ab288668b13298cc8f4bbf46a2b89c65d754035",
+  "no_training_on_restore": true,
+  "restore_source": "shadow-system.bundle",
+  "restored_commit": "8f2087cbf0f656b94c19aca48cecc3dd5134c2fd"
+}

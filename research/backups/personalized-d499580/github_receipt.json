@@ -1,0 +1,47 @@
+{
+  "assets": [
+    {
+      "digest": "sha256:1615eadadab51b081f2b3ced6ca2316d3de1fc451ea985512d3bb1e4ea30e74a",
+      "name": "input-backup-manifest.json",
+      "size": 2529832,
+      "url": "https://github.com/harshil0014/stock-ranking-platform-checkpoint/releases/download/personalized-challenger-d499580-20260926/input-backup-manifest.json"
+    },
+    {
+      "digest": "sha256:b8bb33e5c9436324aa4bdeef32862078a0661312c299f9397ff37977a4df717e",
+      "name": "reproduction-inputs-01.zip",
+      "size": 80530026,
+      "url": "https://github.com/harshil0014/stock-ranking-platform-checkpoint/releases/download/personalized-challenger-d499580-20260926/reproduction-inputs-01.zip"
+    },
+    {
+      "digest": "sha256:6abb788246168a675e597321eea64eeb1786af01e13d54cd5f5e652e0b1da3b5",
+      "name": "reproduction-inputs-02.zip",
+      "size": 274136020,
+      "url": "https://github.com/harshil0014/stock-ranking-platform-checkpoint/releases/download/personalized-challenger-d499580-20260926/reproduction-inputs-02.zip"
+    },
+    {
+      "digest": "sha256:091fdb83a8b320e6ce97c02a4a07491ddfcb1178722677e1b49b8b8db8dd7102",
+      "name": "reproduction-inputs-03.zip",
+      "size": 132472743,
+      "url": "https://github.com/harshil0014/stock-ranking-platform-checkpoint/releases/download/personalized-challenger-d499580-20260926/reproduction-inputs-03.zip"
+    },
+    {
+      "digest": "sha256:0b055e0dc34af690cf956e3dd344fe44904518044bde1813c600bc3ac2e55fe5",
+      "name": "reproduction-inputs-04.zip",
+      "size": 97890846,
+      "url": "https://github.com/harshil0014/stock-ranking-platform-checkpoint/releases/download/personalized-challenger-d499580-20260926/reproduction-inputs-04.zip"
+    },
+    {
+      "digest": "sha256:6b2c67786c67d7e03b0f64c6ce506e6182d1b0cedef737be16daad8d08714eda",
+      "name": "shadow-system.bundle",
+      "size": 270565976,
+      "url": "https://github.com/harshil0014/stock-ranking-platform-checkpoint/releases/download/personalized-challenger-d499580-20260926/shadow-system.bundle"
+    }
+  ],
+  "immutable": true,
+  "private": true,
+  "release_id": 397100678,
+  "release_url": "https://github.com/harshil0014/stock-ranking-platform-checkpoint/releases/tag/personalized-challenger-d499580-20260926",
+  "repository": "harshil0014/stock-ranking-platform-checkpoint",
+  "tag": "personalized-challenger-d499580-20260926",
+  "tag_commit": "d4995807163bef1ec4b297179e6c54a59c71f390"
+}

@@ -32,7 +32,7 @@ def api(token, path, method='GET', value=None, data=None, content_type='applicat
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('command', choices=['status', 'publish'])
+    parser.add_argument('command', choices=['status', 'publish', 'verify-release'])
     parser.add_argument('--tag')
     parser.add_argument('--assets', type=Path)
     parser.add_argument('--receipt', type=Path)
@@ -52,6 +52,22 @@ def main():
         tag = api(token, '/git/tags/' + tag['sha'])['object']
     if tag['type'] != 'commit' or tag['sha'] != 'd4995807163bef1ec4b297179e6c54a59c71f390':
         raise ValueError('Remote freeze tag does not resolve to the original challenger')
+    if args.command == 'verify-release':
+        release = api(token, '/releases/tags/' + args.tag)
+        if release['draft'] or not release.get('immutable'):
+            raise ValueError('Published immutable release required')
+        remote_assets = {a['name']: a for a in api(token, f"/releases/{release['id']}/assets?per_page=100")}
+        verified = []
+        for path in assets:
+            expected = 'sha256:' + hashlib.sha256(path.read_bytes()).hexdigest()
+            item = remote_assets[path.name]
+            if item.get('digest') != expected or item['size'] != path.stat().st_size:
+                raise ValueError('Published asset mismatch: ' + path.name)
+            verified.append({'name': path.name, 'size': item['size'], 'digest': expected, 'url': item['browser_download_url']})
+        receipt = {'repository': REPO, 'private': True, 'tag': args.tag, 'tag_commit': tag['sha'], 'release_url': release['html_url'], 'release_id': release['id'], 'immutable': True, 'assets': verified}
+        args.receipt.write_text(json.dumps(receipt, indent=2, sort_keys=True) + '\n', encoding='utf-8')
+        print(json.dumps(receipt, indent=2))
+        return
     api(token, '/immutable-releases', 'PUT')
     enabled = api(token, '/immutable-releases')
     if not enabled.get('enabled'):
@@ -69,6 +85,12 @@ def main():
         expected = 'sha256:' + hashlib.sha256(path.read_bytes()).hexdigest()
         if path.name in existing:
             item = existing[path.name]
+            # GitHub leaves a zero-byte starter asset when a connection is
+            # interrupted. Only remove that incomplete asset on this verified
+            # draft release; never replace a completed or published asset.
+            if item.get('state') == 'starter' and not item.get('digest'):
+                api(token, f"/releases/assets/{item['id']}", 'DELETE')
+                item = api(token, release['upload_url'].split('{')[0] + '?name=' + path.name, 'POST', data=path.read_bytes(), content_type='application/octet-stream')
         else:
             item = api(token, release['upload_url'].split('{')[0] + '?name=' + path.name, 'POST', data=path.read_bytes(), content_type='application/octet-stream')
         if item.get('digest') != expected or item['size'] != path.stat().st_size:
@@ -79,6 +101,12 @@ def main():
     published = api(token, f"/releases/{release['id']}")
     if not published.get('immutable'):
         raise ValueError('GitHub did not confirm immutable release')
+    final_assets = {a['name']: a for a in api(token, f"/releases/{release['id']}/assets?per_page=100")}
+    for item in verified:
+        remote = final_assets[item['name']]
+        if remote.get('digest') != item['digest'] or remote['size'] != item['size']:
+            raise ValueError('Published asset verification failed')
+        item['url'] = remote['browser_download_url']
     receipt = {'repository': REPO, 'private': True, 'tag': args.tag, 'tag_commit': tag['sha'], 'release_url': published['html_url'], 'release_id': published['id'], 'immutable': published['immutable'], 'assets': verified}
     args.receipt.write_text(json.dumps(receipt, indent=2, sort_keys=True) + '\n', encoding='utf-8')
     print(json.dumps(receipt, indent=2))
