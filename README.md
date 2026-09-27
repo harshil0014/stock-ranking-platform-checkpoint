@@ -9,6 +9,11 @@ The primary website exposes two active ranking modes:
   LightGBM LambdaRank with the user's contribution amount, lookback, interval,
   target CAGR, and supported 12-month horizon.
 
+Personalized now shows each genuine result's overall rank and its position among
+genuine Personalized peers in the same accepted product sector. Product fallbacks
+retain their sector and separate Baseline sector rank without receiving a
+Personalized rank. See [the sector-ranking contract and audit](docs/personalized_sector_ranking_20260927.md).
+
 Research V2 and rejected challengers remain versioned as historical research,
 validation, methodology, and provenance evidence. They are not active product
 ranking choices. The large personalized runtime pack is mounted outside Git at

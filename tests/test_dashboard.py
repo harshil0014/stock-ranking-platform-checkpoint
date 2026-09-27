@@ -194,8 +194,12 @@ def test_dashboard_dom_navigation_responsive_and_neutral() -> None:
     assert "View all sector companies" in INDEX_HTML
     assert "showView('live')" in APP_JS
     lowered = rendered.lower()
-    for prohibited in ("buy signal", "sell signal", "target price", "top 4 stocks in india", "overall rank"):
+    for prohibited in ("buy signal", "sell signal", "target price", "top 4 stocks in india"):
         assert prohibited not in lowered
+    dashboard_html = INDEX_HTML.split('<section id="view-dashboard"', 1)[1].split(
+        '<section id="view-personalized"', 1)[0]
+    assert "overall rank" not in dashboard_html.lower()
+    assert "Overall Personalized rank" in INDEX_HTML
 
 
 def test_dashboard_uses_wide_dense_terminal_tables() -> None:

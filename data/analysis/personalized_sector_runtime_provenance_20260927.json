@@ -1,0 +1,116 @@
+{
+  "blend": {
+    "goal": 0.67,
+    "lightgbm_lambdarank": 0.33
+  },
+  "calculate_ast_identical_to_main": true,
+  "calculate_ast_sha256": "75cfd6aecaaa06a03657a3992d6ed439a51e5e3629c43bf64627f7374b650df4",
+  "canonical_pack_bytes": 98546546,
+  "canonical_pack_sha256": "515eac8ffc555a571406a4a41f9d931a016cb6280871a3d89f59846d2692ed0c",
+  "champion_commit": "d4995807163bef1ec4b297179e6c54a59c71f390",
+  "main_runtime_specification_semantically_identical": true,
+  "oracle_discrepancies": 0,
+  "profiles": [
+    {
+      "full_response_rows_sha256": "4dee1c78414407164cc972dfbf60df56a3b73d6c206948d8bd9edcf1649bb2ae",
+      "identical_to_prior_sector_run": true,
+      "profile": {
+        "amount": 7500,
+        "horizon_months": 12,
+        "interval_days": 30,
+        "lookback_months": 36,
+        "target_cagr_percent": 20
+      }
+    },
+    {
+      "full_response_rows_sha256": "4ea4a5a8d5454f2240061ee86174228e34ae3c86fc834d1ede4cdac1f4117c78",
+      "identical_to_prior_sector_run": true,
+      "profile": {
+        "amount": 1000,
+        "horizon_months": 12,
+        "interval_days": 30,
+        "lookback_months": 36,
+        "target_cagr_percent": 20
+      }
+    },
+    {
+      "full_response_rows_sha256": "805263fd627cb188df94bff1574962946e606b78314c3281c57c105fd82bde86",
+      "identical_to_prior_sector_run": true,
+      "profile": {
+        "amount": 50000,
+        "horizon_months": 12,
+        "interval_days": 30,
+        "lookback_months": 36,
+        "target_cagr_percent": 20
+      }
+    },
+    {
+      "full_response_rows_sha256": "a2bdc8dfde5926912a60506c16dfa007a601abb2c50f78f1c309d6e150f5a0f2",
+      "identical_to_prior_sector_run": true,
+      "profile": {
+        "amount": 7500,
+        "horizon_months": 12,
+        "interval_days": 30,
+        "lookback_months": 12,
+        "target_cagr_percent": 20
+      }
+    },
+    {
+      "full_response_rows_sha256": "87659b8044c8fa2412448c335f407cd0bd1a5bfff837e7a0ff6540692de4d9b8",
+      "identical_to_prior_sector_run": true,
+      "profile": {
+        "amount": 7500,
+        "horizon_months": 12,
+        "interval_days": 30,
+        "lookback_months": 60,
+        "target_cagr_percent": 20
+      }
+    },
+    {
+      "full_response_rows_sha256": "56a2afc3baec0678b595161fa8cda15e16a5c91bddee91af074f38f45ae71d99",
+      "identical_to_prior_sector_run": true,
+      "profile": {
+        "amount": 7500,
+        "horizon_months": 12,
+        "interval_days": 7,
+        "lookback_months": 36,
+        "target_cagr_percent": 20
+      }
+    },
+    {
+      "full_response_rows_sha256": "0f2231ba0e394bcb3763fae34a517c51b0eb6951f62140a6fa9aba9c5d8f377e",
+      "identical_to_prior_sector_run": true,
+      "profile": {
+        "amount": 7500,
+        "horizon_months": 12,
+        "interval_days": 90,
+        "lookback_months": 36,
+        "target_cagr_percent": 20
+      }
+    },
+    {
+      "full_response_rows_sha256": "94d68af4896619d88390d0c036d6927c0592120d6a4737f96c264971ee88d444",
+      "identical_to_prior_sector_run": true,
+      "profile": {
+        "amount": 7500,
+        "horizon_months": 12,
+        "interval_days": 30,
+        "lookback_months": 36,
+        "target_cagr_percent": 10
+      }
+    },
+    {
+      "full_response_rows_sha256": "ff1a0a0b26e58cf44ca7a19a244166e390525ed624a3fd6306d178b001961228",
+      "identical_to_prior_sector_run": true,
+      "profile": {
+        "amount": 7500,
+        "horizon_months": 12,
+        "interval_days": 30,
+        "lookback_months": 36,
+        "target_cagr_percent": 30
+      }
+    }
+  ],
+  "sir_benchmark_identical_to_prior_sector_run": true,
+  "status": "PASS"
+}

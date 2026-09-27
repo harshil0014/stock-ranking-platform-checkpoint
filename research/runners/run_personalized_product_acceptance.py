@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path[:0] = [str(ROOT / "src"), str(ROOT)]
 
 from stock_ranker.personalized_product import PersonalizedRankingService, parse_profile
+from run_personalized_ui_browser_acceptance import run as run_browser
 
 
 CODES = ["NSE:KRISHANA", "NSE:GVT&D", "BOM:524717", "NSE:SHAILY", "NSE:WELCORP",
@@ -168,8 +169,13 @@ def run(output: Path):
         raise RuntimeError("frozen evidence changed")
     raw = canonical(report)
     (output / "acceptance.json").write_bytes(json.dumps(report, indent=2, sort_keys=True).encode() + b"\n")
-    manifest = {"acceptance_sha256": sha256((output / "acceptance.json").read_bytes()).hexdigest(),
-                "matrix_profiles": len(matrix), "status": "PASS"}
+    run_browser(output / "browser_acceptance.json")
+    artifacts = [{"path": name, "bytes": (output / name).stat().st_size,
+                  "sha256": sha256((output / name).read_bytes()).hexdigest()}
+                 for name in ("acceptance.json", "browser_acceptance.json")]
+    manifest = {"schema_version": "personalized_product_acceptance_manifest_v1",
+                "status": "PASS", "artifacts": artifacts,
+                "artifact_set_sha256": sha256(canonical(artifacts)).hexdigest()}
     (output / "manifest.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
     print(json.dumps({key: report[key] for key in ("status", "matrix_profiles", "sensitivity", "performance")}, indent=2))
 

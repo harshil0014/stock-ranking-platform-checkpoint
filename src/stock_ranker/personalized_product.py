@@ -146,7 +146,8 @@ def _product_metadata() -> pd.DataFrame:
     from stock_ranker.live_website import _company_facts, _product_view
     product = _product_view().copy()
     facts = _company_facts().facts
-    optional = [column for column in ("screener_nse_code", "screener_bse_code") if column in facts]
+    optional = [column for column in ("screener_nse_code", "screener_bse_code")
+                if column in facts and column not in product]
     if optional:
         product = product.merge(facts[["isin", *optional]], on="isin", how="left", validate="one_to_one")
     return product
@@ -315,7 +316,18 @@ class PersonalizedRankingService:
                 return cached
             calculated, seconds = self._calculate(profile)
             product = self.product_loader().copy()
+            if (product["isin"].isna().any() or product["isin"].duplicated().any()
+                    or product["ticker"].isna().any() or product["ticker"].duplicated().any()
+                    or product["product_sector"].isna().any()
+                    or product["product_sector"].astype(str).str.strip().eq("").any()):
+                raise PersonalizationError("product identities or sector classifications are incomplete or ambiguous")
             facts = product.drop_duplicates("isin").set_index("isin")
+            if calculated["isin"].duplicated().any() or not set(calculated["isin"]).issubset(facts.index):
+                raise PersonalizationError("personalized results do not map uniquely to product identities")
+            scored = calculated.loc[calculated["personalized_score"].notna(), "personalized_rank"]
+            if (scored.isna().any() or scored.duplicated().any()
+                    or sorted(int(value) for value in scored) != list(range(1, len(scored) + 1))):
+                raise PersonalizationError("champion overall ranks are incomplete or duplicated")
             requested: dict[str, str] = {}
             for raw in securities or []:
                 canonical = resolve_security(raw, product)
@@ -340,9 +352,14 @@ class PersonalizedRankingService:
                 execution = by_isin.loc[identity] if identity in by_isin.index else None
                 product_row = facts.loc[identity] if identity in facts.index else pd.Series(dtype=object)
                 score = None if execution is None else _json_value(execution.get("personalized_score"))
-                status = "OUTSIDE_FROZEN_LOOKBACK_COHORT" if execution is None else str(execution.get("status"))
+                execution_status = None if execution is None else str(execution.get("status"))
+                status = "OUTSIDE_FROZEN_LOOKBACK_COHORT" if execution is None else execution_status
+                if execution is not None and score is None and status == "AVAILABLE":
+                    status = "PERSONALIZED_SCORE_UNAVAILABLE"
                 reason = ("Security remains available in the product view but is outside this frozen personalized cohort."
                           if execution is None else _json_value(execution.get("reason")))
+                if score is None and reason is None:
+                    reason = "The frozen champion did not produce all score components for this profile."
                 aliases = {str(product_row.get("ticker") or ""), identity}
                 nse_code, bse_code = _code(product_row.get("screener_nse_code")), _code(product_row.get("screener_bse_code"))
                 exchange_code = _code(product_row.get("exchange_security_id"))
@@ -355,11 +372,21 @@ class PersonalizedRankingService:
                 rows.append({
                     "requested_code": requested.get(identity), "isin": identity,
                     "ticker": _json_value(product_row.get("ticker")), "company": _json_value(product_row.get("company")),
+                    "sector": _json_value(product_row.get("product_sector")),
+                    "sector_classification_source": (
+                        _json_value(product_row.get("product_classification_source"))
+                        or _json_value(product_row.get("complete_sector_method"))
+                    ),
+                    "sector_classification_method": _json_value(product_row.get("complete_sector_method")),
+                    "sector_classification_confidence": _json_value(product_row.get("complete_sector_confidence")),
                     "search_aliases": " ".join(sorted(value for value in aliases if value)),
                     "personalized_available": score is not None,
                     "result_type": "PERSONALIZED_CHAMPION" if score is not None else "PRODUCT_FALLBACK",
-                    "status": status, "blocker": reason,
-                    "personalized_rank": None if execution is None else _json_value(execution.get("personalized_rank")),
+                    "status": status, "execution_status": execution_status, "blocker": reason,
+                    "personalized_rank": None if score is None else _json_value(execution.get("personalized_rank")),
+                    "personalized_sector_rank": None,
+                    "personalized_sector_peer_count": 0,
+                    "sector_security_count": 0,
                     "personalized_score": score,
                     "goal_component_percentile": None if execution is None else _json_value(execution.get("goal_percentile")),
                     "lambdarank_component_percentile": None if execution is None else _json_value(execution.get("lambdarank_percentile")),
@@ -376,9 +403,26 @@ class PersonalizedRankingService:
                     "terminal_price": None if execution is None else _json_value(execution.get("terminal_price")),
                     "corporate_action_evidence": None if execution is None else _json_value(execution.get("corporate_action_evidence")),
                     "baseline_rank": _json_value(product_row.get("product_baseline_sector_rank")),
+                    "baseline_sector_rank": _json_value(product_row.get("product_baseline_sector_rank")),
+                    "baseline_score": _json_value(product_row.get("product_baseline_score")),
                     "research_v2_rank": _json_value(product_row.get("product_research_v2_sector_rank")),
                     "fallback_available": bool(pd.notna(product_row.get("ticker"))),
                 })
+            # The sector order is a projection of the final champion order.  It
+            # never enters scoring and excludes product fallback securities.
+            by_sector: dict[str, list[dict[str, Any]]] = {}
+            for row in rows:
+                by_sector.setdefault(row["sector"], []).append(row)
+            for members in by_sector.values():
+                genuine = sorted(
+                    (row for row in members if row["personalized_available"]),
+                    key=lambda row: row["personalized_rank"],
+                )
+                for row in members:
+                    row["sector_security_count"] = len(members)
+                    row["personalized_sector_peer_count"] = len(genuine)
+                for position, row in enumerate(genuine, start=1):
+                    row["personalized_sector_rank"] = position
             rows.sort(key=lambda row: (row["personalized_rank"] is None,
                                        row["personalized_rank"] or 10**9, row["ticker"] or row["isin"]))
             response = {
@@ -388,6 +432,7 @@ class PersonalizedRankingService:
                 "cache_hit": False, "latency_seconds": seconds,
                 "row_count": len(rows), "personalized_count": sum(row["personalized_available"] for row in rows),
                 "fallback_count": sum(row["result_type"] == "PRODUCT_FALLBACK" for row in rows),
+                "sector_count": len(by_sector),
                 "rows": rows,
             }
             json.dumps(response, allow_nan=False)

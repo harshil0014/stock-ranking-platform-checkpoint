@@ -1,0 +1,95 @@
+{
+  "back_to_back_repeat_exact": true,
+  "console_errors": [],
+  "dashboard_modes": [
+    [
+      "baseline_v1",
+      "Baseline"
+    ],
+    [
+      "personalized",
+      "Personalized"
+    ]
+  ],
+  "defaults": {
+    "personalizedAmount": "7500",
+    "personalizedHorizon": "12",
+    "personalizedInterval": "30",
+    "personalizedLookback": "36",
+    "personalizedTarget": "20"
+  },
+  "defaults_editable": true,
+  "fallback_alias_search": true,
+  "fallback_inspection_explained": true,
+  "fields": [
+    "personalizedAmount",
+    "personalizedLookback",
+    "personalizedInterval",
+    "personalizedTarget",
+    "personalizedHorizon"
+  ],
+  "first_profile_summary": "\u20b97,500 every 30 days \u00b7 36-month lookback \u00b7 20.00% target CAGR \u00b7 12-month horizon",
+  "first_row_cells": [
+    "1",
+    "NYKAA\nFSN E-Commerce Ventures Limited",
+    "Retailing",
+    "1 / 39",
+    "0.989612",
+    "98.8994% / 99.0868%",
+    "37 fills \u00b7 1384 shares",
+    "\u20b9187.55 residual \u00b7 0.0000% unaffordable",
+    "PERSONALIZED CHAMPION",
+    "Inspect"
+  ],
+  "first_run_seconds": 9.23150799999712,
+  "inspection_text": "SECTOR\nRetailing\nSECTOR CLASSIFICATION\nObserved\nSECTOR SOURCE\nAccepted screener market-wide sector export\nOVERALL PERSONALIZED RANK\n1\nPERSONALIZED SECTOR POSITION\n1 of 39 genuine Personalized peers\nSECTOR SECURITIES\n66\nBASELINE SECTOR RANK\n10\nBASELINE SCORE\n0.679186\nPERSONALIZED SCORE\n0.989612\nGOAL COMPONENT\n98.8994%\nLAMBDARANK COMPONENT\n99.0868%\nTARGET ATTAINMENT\n123.9435%\nHISTORICAL XIRR\n36.0479%\nSHARES\n1384\nEXECUTIONS\n37\nAMOUNT INVESTED\n\u20b92,77,312.45\nRESIDUAL CASH\n\u20b9187.55\nCASH UTILIZATION\n99.9324%\nUNAFFORDABLE RATE\n0.0000%\nCORPORATE ACTION EVIDENCE\nOFFICIAL_PRIMARY_EXCHANGE_PROFILE_WINDOW",
+  "invalid_message": "Value must be greater than or equal to 1000.",
+  "live_modes": [
+    [
+      "baseline_v1",
+      "Baseline"
+    ],
+    [
+      "personalized",
+      "Personalized"
+    ]
+  ],
+  "mobile_overflow_elements": [
+    {
+      "className": "",
+      "id": "",
+      "right": 416,
+      "tag": "BUTTON"
+    }
+  ],
+  "mobile_table_cells": true,
+  "mobile_viewport_no_horizontal_overflow": true,
+  "narrow_layout_usable": true,
+  "page_errors": [],
+  "refresh_cleared_result": true,
+  "refresh_defaults": {
+    "personalizedAmount": "7500",
+    "personalizedHorizon": "12",
+    "personalizedInterval": "30",
+    "personalizedLookback": "36",
+    "personalizedTarget": "20"
+  },
+  "repeat_seconds": 0.3898553999970318,
+  "sector_filter_works": true,
+  "sector_headers": [
+    "OVERALL PERSONALIZED RANK",
+    "SECURITY",
+    "SECTOR",
+    "PERSONALIZED SECTOR RANK",
+    "SCORE",
+    "GOAL / LAMBDARANK",
+    "EXECUTION",
+    "CASH / AFFORDABILITY",
+    "AVAILABILITY",
+    "DETAILS"
+  ],
+  "sector_option_count": 59,
+  "status": "PASS",
+  "stock_inspection_visible": true,
+  "target_change_changed_profile": true
+}

@@ -1,0 +1,645 @@
+{
+  "champion_commit": "d4995807163bef1ec4b297179e6c54a59c71f390",
+  "classification_confidence": {
+    "LOW": 82,
+    "MODERATE": 28,
+    "OBSERVED": 4305,
+    "VERY_LOW": 21
+  },
+  "classification_sources": {
+    "Accepted Screener market-wide sector export": 4305,
+    "MISSING": 131
+  },
+  "deterministic_repeat": true,
+  "frozen_profile_reproduction": [
+    {
+      "latency_seconds": 27.191995600005612,
+      "max_abs_errors": {
+        "cagr_3y": 1.7763568394002505e-15,
+        "cagr_5y": 4.440892098500626e-16,
+        "cash_utilization": 1.1102230246251565e-16,
+        "enhanced_carry_xirr_score": 3.552713678800501e-15,
+        "enhanced_goal_score": 9.93129189996722e-17,
+        "lightgbm_lambdarank_score": 9.71445146547012e-17,
+        "price_drawdown": 1.1102230246251565e-16,
+        "selected_ensemble_score": 1.1102230246251565e-16,
+        "unaffordable_rate": 1.1102230246251565e-16
+      },
+      "passed": true,
+      "profile": "amount1000",
+      "rows": 3376
+    },
+    {
+      "latency_seconds": 10.041519299993524,
+      "max_abs_errors": {
+        "cagr_3y": 1.7763568394002505e-15,
+        "cagr_5y": 4.440892098500626e-16,
+        "cash_utilization": 1.1102230246251565e-16,
+        "enhanced_carry_xirr_score": 7.105427357601002e-15,
+        "enhanced_goal_score": 9.974659986866641e-17,
+        "lightgbm_lambdarank_score": 9.367506770274758e-17,
+        "price_drawdown": 1.1102230246251565e-16,
+        "selected_ensemble_score": 1.1102230246251565e-16,
+        "unaffordable_rate": 0.0
+      },
+      "passed": true,
+      "profile": "amount50000",
+      "rows": 3376
+    },
+    {
+      "latency_seconds": 9.806851200002711,
+      "max_abs_errors": {
+        "cagr_3y": 1.7763568394002505e-15,
+        "cagr_5y": 4.440892098500626e-16,
+        "cash_utilization": 1.1102230246251565e-16,
+        "enhanced_carry_xirr_score": 1.7763568394002505e-15,
+        "enhanced_goal_score": 9.974659986866641e-17,
+        "lightgbm_lambdarank_score": 9.71445146547012e-17,
+        "price_drawdown": 1.1102230246251565e-16,
+        "selected_ensemble_score": 1.1102230246251565e-16,
+        "unaffordable_rate": 1.1102230246251565e-16
+      },
+      "passed": true,
+      "profile": "base7500",
+      "rows": 3376
+    },
+    {
+      "latency_seconds": 0.22032469999976456,
+      "max_abs_errors": {
+        "cagr_3y": 1.7763568394002505e-15,
+        "cagr_5y": 4.440892098500626e-16,
+        "cash_utilization": 1.1102230246251565e-16,
+        "enhanced_carry_xirr_score": 1.7763568394002505e-15,
+        "enhanced_goal_score": 9.969238976004213e-17,
+        "lightgbm_lambdarank_score": 9.71445146547012e-17,
+        "price_drawdown": 1.1102230246251565e-16,
+        "selected_ensemble_score": 9.71445146547012e-17,
+        "unaffordable_rate": 8.326672684688674e-17
+      },
+      "passed": true,
+      "profile": "lookback12",
+      "rows": 3808
+    },
+    {
+      "latency_seconds": 17.228949500000454,
+      "max_abs_errors": {
+        "cagr_3y": 1.7763568394002505e-15,
+        "cagr_5y": 4.440892098500626e-16,
+        "cash_utilization": 1.1102230246251565e-16,
+        "enhanced_carry_xirr_score": 4.440892098500626e-16,
+        "enhanced_goal_score": 9.974659986866641e-17,
+        "lightgbm_lambdarank_score": 9.020562075079397e-17,
+        "price_drawdown": 1.1102230246251565e-16,
+        "selected_ensemble_score": 1.1102230246251565e-16,
+        "unaffordable_rate": 8.326672684688674e-17
+      },
+      "passed": true,
+      "profile": "lookback60",
+      "rows": 3027
+    },
+    {
+      "latency_seconds": 8.953815299995767,
+      "max_abs_errors": {
+        "cagr_3y": 1.7763568394002505e-15,
+        "cagr_5y": 4.440892098500626e-16,
+        "cash_utilization": 1.1102230246251565e-16,
+        "enhanced_carry_xirr_score": 7.105427357601002e-15,
+        "enhanced_goal_score": 9.985502008591496e-17,
+        "lightgbm_lambdarank_score": 9.71445146547012e-17,
+        "price_drawdown": 1.1102230246251565e-16,
+        "selected_ensemble_score": 1.1102230246251565e-16,
+        "unaffordable_rate": 8.326672684688674e-17
+      },
+      "passed": true,
+      "profile": "quarterly",
+      "rows": 3376
+    },
+    {
+      "latency_seconds": 0.8866328000003705,
+      "max_abs_errors": {
+        "cagr_3y": 1.7763568394002505e-15,
+        "cagr_5y": 4.440892098500626e-16,
+        "cash_utilization": 1.1102230246251565e-16,
+        "enhanced_carry_xirr_score": 1.7763568394002505e-15,
+        "enhanced_goal_score": 9.974659986866641e-17,
+        "lightgbm_lambdarank_score": 9.71445146547012e-17,
+        "price_drawdown": 1.1102230246251565e-16,
+        "selected_ensemble_score": 1.1102230246251565e-16,
+        "unaffordable_rate": 1.1102230246251565e-16
+      },
+      "passed": true,
+      "profile": "target10",
+      "rows": 3376
+    },
+    {
+      "latency_seconds": 0.8660142000007909,
+      "max_abs_errors": {
+        "cagr_3y": 1.7763568394002505e-15,
+        "cagr_5y": 4.440892098500626e-16,
+        "cash_utilization": 1.1102230246251565e-16,
+        "enhanced_carry_xirr_score": 1.7763568394002505e-15,
+        "enhanced_goal_score": 9.8879238130678e-17,
+        "lightgbm_lambdarank_score": 9.71445146547012e-17,
+        "price_drawdown": 1.1102230246251565e-16,
+        "selected_ensemble_score": 1.1102230246251565e-16,
+        "unaffordable_rate": 1.1102230246251565e-16
+      },
+      "passed": true,
+      "profile": "target30",
+      "rows": 3376
+    },
+    {
+      "latency_seconds": 11.058579500000633,
+      "max_abs_errors": {
+        "cagr_3y": 1.7763568394002505e-15,
+        "cagr_5y": 4.440892098500626e-16,
+        "cash_utilization": 1.1102230246251565e-16,
+        "enhanced_carry_xirr_score": 7.105427357601002e-15,
+        "enhanced_goal_score": 9.8879238130678e-17,
+        "lightgbm_lambdarank_score": 9.71445146547012e-17,
+        "price_drawdown": 1.1102230246251565e-16,
+        "selected_ensemble_score": 1.1102230246251565e-16,
+        "unaffordable_rate": 8.326672684688674e-17
+      },
+      "passed": true,
+      "profile": "weekly",
+      "rows": 3376
+    }
+  ],
+  "profile_audits": [
+    {
+      "errors": [],
+      "fallback_count": 1171,
+      "fallbacks_checked": 1171,
+      "genuine_count": 3265,
+      "memberships_checked": 4436,
+      "product_count": 4436,
+      "profile": {
+        "amount": 7500,
+        "horizon_months": 12,
+        "interval_days": 30,
+        "lookback_months": 36,
+        "target_cagr_percent": 20
+      },
+      "profile_fingerprint": "bd90c2641092a976e8bc9c9a5d1bceacb9882619370bab6f951f791d8d4cd837",
+      "rows_sha256": "4dee1c78414407164cc972dfbf60df56a3b73d6c206948d8bd9edcf1649bb2ae",
+      "score_tie_groups": 18,
+      "sector_count": 58,
+      "sector_positions_checked": 3265
+    },
+    {
+      "errors": [],
+      "fallback_count": 1176,
+      "fallbacks_checked": 1176,
+      "genuine_count": 3260,
+      "memberships_checked": 4436,
+      "product_count": 4436,
+      "profile": {
+        "amount": 1000,
+        "horizon_months": 12,
+        "interval_days": 30,
+        "lookback_months": 36,
+        "target_cagr_percent": 20
+      },
+      "profile_fingerprint": "d7b2c344dc857897348bf7fe7f9e54e3105773b5509b50ea8c8247666952e1ec",
+      "rows_sha256": "4ea4a5a8d5454f2240061ee86174228e34ae3c86fc834d1ede4cdac1f4117c78",
+      "score_tie_groups": 18,
+      "sector_count": 58,
+      "sector_positions_checked": 3260
+    },
+    {
+      "errors": [],
+      "fallback_count": 1172,
+      "fallbacks_checked": 1172,
+      "genuine_count": 3264,
+      "memberships_checked": 4436,
+      "product_count": 4436,
+      "profile": {
+        "amount": 50000,
+        "horizon_months": 12,
+        "interval_days": 30,
+        "lookback_months": 36,
+        "target_cagr_percent": 20
+      },
+      "profile_fingerprint": "54e94999a6fc99698294212af2be8fb8fb01c7b4e3e8c4974fce701848f8cbfb",
+      "rows_sha256": "805263fd627cb188df94bff1574962946e606b78314c3281c57c105fd82bde86",
+      "score_tie_groups": 25,
+      "sector_count": 58,
+      "sector_positions_checked": 3264
+    },
+    {
+      "errors": [],
+      "fallback_count": 689,
+      "fallbacks_checked": 689,
+      "genuine_count": 3747,
+      "memberships_checked": 4436,
+      "product_count": 4436,
+      "profile": {
+        "amount": 7500,
+        "horizon_months": 12,
+        "interval_days": 30,
+        "lookback_months": 12,
+        "target_cagr_percent": 20
+      },
+      "profile_fingerprint": "33e58d0c5bd1feda76c8dce7bc410fed858ad2375a45101cf14d5200b0be2c68",
+      "rows_sha256": "a2bdc8dfde5926912a60506c16dfa007a601abb2c50f78f1c309d6e150f5a0f2",
+      "score_tie_groups": 187,
+      "sector_count": 58,
+      "sector_positions_checked": 3747
+    },
+    {
+      "errors": [],
+      "fallback_count": 1570,
+      "fallbacks_checked": 1570,
+      "genuine_count": 2866,
+      "memberships_checked": 4436,
+      "product_count": 4436,
+      "profile": {
+        "amount": 7500,
+        "horizon_months": 12,
+        "interval_days": 30,
+        "lookback_months": 60,
+        "target_cagr_percent": 20
+      },
+      "profile_fingerprint": "1a2ca4848e6d839fe3779293ceb2e8dc4b77e95512b630db07d4035f26c4d20f",
+      "rows_sha256": "87659b8044c8fa2412448c335f407cd0bd1a5bfff837e7a0ff6540692de4d9b8",
+      "score_tie_groups": 16,
+      "sector_count": 58,
+      "sector_positions_checked": 2866
+    },
+    {
+      "errors": [],
+      "fallback_count": 3239,
+      "fallbacks_checked": 3239,
+      "genuine_count": 1197,
+      "memberships_checked": 4436,
+      "product_count": 4436,
+      "profile": {
+        "amount": 7500,
+        "horizon_months": 12,
+        "interval_days": 7,
+        "lookback_months": 36,
+        "target_cagr_percent": 20
+      },
+      "profile_fingerprint": "06fa12fd2c7695f86aa589ca24988b262c6875e8389b9106f3ef62aed56f1842",
+      "rows_sha256": "56a2afc3baec0678b595161fa8cda15e16a5c91bddee91af074f38f45ae71d99",
+      "score_tie_groups": 4,
+      "sector_count": 58,
+      "sector_positions_checked": 1197
+    },
+    {
+      "errors": [],
+      "fallback_count": 1173,
+      "fallbacks_checked": 1173,
+      "genuine_count": 3263,
+      "memberships_checked": 4436,
+      "product_count": 4436,
+      "profile": {
+        "amount": 7500,
+        "horizon_months": 12,
+        "interval_days": 90,
+        "lookback_months": 36,
+        "target_cagr_percent": 20
+      },
+      "profile_fingerprint": "eb5966528f90ecccc4f856f8eecba5223202d489a50d49dece246cc2e855b9f8",
+      "rows_sha256": "0f2231ba0e394bcb3763fae34a517c51b0eb6951f62140a6fa9aba9c5d8f377e",
+      "score_tie_groups": 20,
+      "sector_count": 58,
+      "sector_positions_checked": 3263
+    },
+    {
+      "errors": [],
+      "fallback_count": 1171,
+      "fallbacks_checked": 1171,
+      "genuine_count": 3265,
+      "memberships_checked": 4436,
+      "product_count": 4436,
+      "profile": {
+        "amount": 7500,
+        "horizon_months": 12,
+        "interval_days": 30,
+        "lookback_months": 36,
+        "target_cagr_percent": 10
+      },
+      "profile_fingerprint": "b598437af02ebbed2edb8c3fcd149b85f08bd1da7a9106e919ec7ce5676cc1e6",
+      "rows_sha256": "94d68af4896619d88390d0c036d6927c0592120d6a4737f96c264971ee88d444",
+      "score_tie_groups": 31,
+      "sector_count": 58,
+      "sector_positions_checked": 3265
+    },
+    {
+      "errors": [],
+      "fallback_count": 1171,
+      "fallbacks_checked": 1171,
+      "genuine_count": 3265,
+      "memberships_checked": 4436,
+      "product_count": 4436,
+      "profile": {
+        "amount": 7500,
+        "horizon_months": 12,
+        "interval_days": 30,
+        "lookback_months": 36,
+        "target_cagr_percent": 30
+      },
+      "profile_fingerprint": "21080a1edfd7f6949e2e7a90a0cad99b6906223694c64fc236b60f7ebd8aec29",
+      "rows_sha256": "ff1a0a0b26e58cf44ca7a19a244166e390525ed624a3fd6306d178b001961228",
+      "score_tie_groups": 12,
+      "sector_count": 58,
+      "sector_positions_checked": 3265
+    }
+  ],
+  "sir": {
+    "boundary": "Descriptive order comparison only. The copied workbook has no cached SIP ranks; its 2026-08-21 evidence and the 2026-09-18 product snapshot have different dates. Fallbacks are excluded from Personalized agreement.",
+    "cohort": [
+      {
+        "baseline_sector_rank": 98,
+        "isin": "INE552U01010",
+        "personalized_available": false,
+        "personalized_rank": null,
+        "personalized_score": null,
+        "personalized_sector_peer_count": 153,
+        "personalized_sector_rank": null,
+        "result_type": "PRODUCT_FALLBACK",
+        "sector": "Pharmaceuticals & Biotechnology",
+        "sir_code": "BOM:539997",
+        "sir_rank": 1,
+        "ticker": "KPL"
+      },
+      {
+        "baseline_sector_rank": 16,
+        "isin": "INE151G01028",
+        "personalized_available": true,
+        "personalized_rank": 3,
+        "personalized_score": 0.9874023639315472,
+        "personalized_sector_peer_count": 170,
+        "personalized_sector_rank": 1,
+        "result_type": "PERSONALIZED_CHAMPION",
+        "sector": "Consumer Durables",
+        "sir_code": "NSE:SHAILY",
+        "sir_rank": 2,
+        "ticker": "SHAILY"
+      },
+      {
+        "baseline_sector_rank": 2,
+        "isin": "INE419M01035",
+        "personalized_available": true,
+        "personalized_rank": 39,
+        "personalized_score": 0.9391831858493556,
+        "personalized_sector_peer_count": 63,
+        "personalized_sector_rank": 3,
+        "result_type": "PERSONALIZED_CHAMPION",
+        "sector": "Electrical Equipment",
+        "sir_code": "NSE:TDPOWERSYS",
+        "sir_rank": 3,
+        "ticker": "TDPOWERSYS"
+      },
+      {
+        "baseline_sector_rank": 7,
+        "isin": "INE200A01026",
+        "personalized_available": true,
+        "personalized_rank": 156,
+        "personalized_score": 0.8916672041141958,
+        "personalized_sector_peer_count": 63,
+        "personalized_sector_rank": 5,
+        "result_type": "PERSONALIZED_CHAMPION",
+        "sector": "Electrical Equipment",
+        "sir_code": "GVT&D",
+        "sir_rank": 4,
+        "ticker": "GVT&D"
+      },
+      {
+        "baseline_sector_rank": 1,
+        "isin": "INE945H01021",
+        "personalized_available": true,
+        "personalized_rank": 86,
+        "personalized_score": 0.9136784639889216,
+        "personalized_sector_peer_count": 39,
+        "personalized_sector_rank": 4,
+        "result_type": "PERSONALIZED_CHAMPION",
+        "sector": "Retailing",
+        "sir_code": "NSE:V2RETAIL",
+        "sir_rank": 5,
+        "ticker": "V2RETAIL"
+      },
+      {
+        "baseline_sector_rank": 9,
+        "isin": "INE150C01029",
+        "personalized_available": true,
+        "personalized_rank": 1222,
+        "personalized_score": 0.57785751637819,
+        "personalized_sector_peer_count": 170,
+        "personalized_sector_rank": 60,
+        "result_type": "PERSONALIZED_CHAMPION",
+        "sector": "Chemicals & Petrochemicals",
+        "sir_code": "BOM:524717",
+        "sir_rank": 6,
+        "ticker": "BSE-524717"
+      },
+      {
+        "baseline_sector_rank": 26,
+        "isin": "INE482B01010",
+        "personalized_available": true,
+        "personalized_rank": 2169,
+        "personalized_score": 0.3691353697708798,
+        "personalized_sector_peer_count": 52,
+        "personalized_sector_rank": 30,
+        "result_type": "PERSONALIZED_CHAMPION",
+        "sector": "IT - Services",
+        "sir_code": "NSE:TERASOFT",
+        "sir_rank": 7,
+        "ticker": "TERASOFT"
+      },
+      {
+        "baseline_sector_rank": 3,
+        "isin": "INE506W01020",
+        "personalized_available": true,
+        "personalized_rank": 267,
+        "personalized_score": 0.8633764226654885,
+        "personalized_sector_peer_count": 47,
+        "personalized_sector_rank": 4,
+        "result_type": "PERSONALIZED_CHAMPION",
+        "sector": "Fertilizers & Agrochemicals",
+        "sir_code": "NSE:KRISHANA",
+        "sir_rank": 8,
+        "ticker": "KRISHANA"
+      },
+      {
+        "baseline_sector_rank": 5,
+        "isin": "INE872H01027",
+        "personalized_available": true,
+        "personalized_rank": 30,
+        "personalized_score": 0.9486763365342872,
+        "personalized_sector_peer_count": 121,
+        "personalized_sector_rank": 3,
+        "result_type": "PERSONALIZED_CHAMPION",
+        "sector": "Auto Components",
+        "sir_code": "NSE:LUMAXTECH",
+        "sir_rank": 9,
+        "ticker": "LUMAXTECH"
+      },
+      {
+        "baseline_sector_rank": 14,
+        "isin": "INE713T01028",
+        "personalized_available": true,
+        "personalized_rank": 141,
+        "personalized_score": 0.8955347840228716,
+        "personalized_sector_peer_count": 18,
+        "personalized_sector_rank": 5,
+        "result_type": "PERSONALIZED_CHAMPION",
+        "sector": "Aerospace & Defense",
+        "sir_code": "NSE:APOLLO",
+        "sir_rank": 10,
+        "ticker": "APOLLO"
+      },
+      {
+        "baseline_sector_rank": 4,
+        "isin": "INE332H01014",
+        "personalized_available": true,
+        "personalized_rank": 1574,
+        "personalized_score": 0.492264919752802,
+        "personalized_sector_peer_count": 63,
+        "personalized_sector_rank": 32,
+        "result_type": "PERSONALIZED_CHAMPION",
+        "sector": "Electrical Equipment",
+        "sir_code": "NSE:INDOTECH",
+        "sir_rank": 11,
+        "ticker": "INDOTECH"
+      },
+      {
+        "baseline_sector_rank": 3,
+        "isin": "INE191B01025",
+        "personalized_available": true,
+        "personalized_rank": 432,
+        "personalized_score": 0.8178687930045272,
+        "personalized_sector_peer_count": 277,
+        "personalized_sector_rank": 41,
+        "result_type": "PERSONALIZED_CHAMPION",
+        "sector": "Industrial Products",
+        "sir_code": "NSE:WELCORP",
+        "sir_rank": 12,
+        "ticker": "WELCORP"
+      },
+      {
+        "baseline_sector_rank": 3,
+        "isin": "INE686A01026",
+        "personalized_available": true,
+        "personalized_rank": 294,
+        "personalized_score": 0.857436343179093,
+        "personalized_sector_peer_count": 87,
+        "personalized_sector_rank": 4,
+        "result_type": "PERSONALIZED_CHAMPION",
+        "sector": "Construction",
+        "sir_code": "NSE:CEMPRO",
+        "sir_rank": 13,
+        "ticker": "CEMPRO"
+      },
+      {
+        "baseline_sector_rank": 71,
+        "isin": "INE572D01014",
+        "personalized_available": false,
+        "personalized_rank": null,
+        "personalized_score": null,
+        "personalized_sector_peer_count": 121,
+        "personalized_sector_rank": null,
+        "result_type": "PRODUCT_FALLBACK",
+        "sector": "Auto Components",
+        "sir_code": "BOM:522195",
+        "sir_rank": 14,
+        "ticker": "FRONTSP"
+      }
+    ],
+    "global_order_on_genuine_overlap": {
+      "agreeing_pairs": 45,
+      "comparable_count": 12,
+      "exact_cohort_positions": 3,
+      "pair_count": 66,
+      "pairwise_agreement": 0.6818181818181818,
+      "spearman": 0.49650349650349657,
+      "top_5_overlap": 0.6
+    },
+    "recorded_order_source": "compare_sir_14_current_reference.py targets",
+    "within_sector_on_genuine_overlap": {
+      "Electrical Equipment": {
+        "agreeing_pairs": 3,
+        "comparable_count": 3,
+        "exact_cohort_positions": 3,
+        "pair_count": 3,
+        "pairwise_agreement": 1.0,
+        "spearman": 1.0,
+        "top_5_overlap": null
+      }
+    },
+    "workbook": {
+      "cached_cagr_vs_personalized": {
+        "workbook_cagr_10y": {
+          "agreeing_pairs": 6,
+          "comparable_count": 5,
+          "exact_cohort_positions": 2,
+          "pair_count": 10,
+          "pairwise_agreement": 0.6,
+          "spearman": 0.3,
+          "top_5_overlap": null
+        },
+        "workbook_cagr_1y": {
+          "agreeing_pairs": 7,
+          "comparable_count": 5,
+          "exact_cohort_positions": 1,
+          "pair_count": 10,
+          "pairwise_agreement": 0.7,
+          "spearman": 0.49999999999999994,
+          "top_5_overlap": null
+        },
+        "workbook_cagr_3y": {
+          "agreeing_pairs": 2,
+          "comparable_count": 5,
+          "exact_cohort_positions": 0,
+          "pair_count": 10,
+          "pairwise_agreement": 0.2,
+          "spearman": -0.7,
+          "top_5_overlap": null
+        },
+        "workbook_cagr_5y": {
+          "agreeing_pairs": 7,
+          "comparable_count": 5,
+          "exact_cohort_positions": 1,
+          "pair_count": 10,
+          "pairwise_agreement": 0.7,
+          "spearman": 0.39999999999999997,
+          "top_5_overlap": null
+        },
+        "workbook_sip_cagr_10y": {
+          "agreeing_pairs": 23,
+          "comparable_count": 9,
+          "exact_cohort_positions": 1,
+          "pair_count": 36,
+          "pairwise_agreement": 0.6388888888888888,
+          "spearman": 0.39999999999999997,
+          "top_5_overlap": 0.6
+        },
+        "workbook_sip_cagr_3y": {
+          "agreeing_pairs": 26,
+          "comparable_count": 11,
+          "exact_cohort_positions": 1,
+          "pair_count": 55,
+          "pairwise_agreement": 0.4727272727272727,
+          "spearman": 0.009090909090909092,
+          "top_5_overlap": 0.4
+        },
+        "workbook_sip_cagr_5y": {
+          "agreeing_pairs": 30,
+          "comparable_count": 11,
+          "exact_cohort_positions": 1,
+          "pair_count": 55,
+          "pairwise_agreement": 0.5454545454545454,
+          "spearman": 0.20909090909090913,
+          "top_5_overlap": 0.6
+        }
+      },
+      "cached_profit_loss_count": 0,
+      "cached_sip_rank_count": 0,
+      "workbook_as_of_date": "2026-08-21",
+      "workbook_sha256": "be2ab62fb41abd4769b5f5d8de7f3df04edc6cfa336bb0d2c5906fc6da2e980b"
+    }
+  },
+  "status": "PASS"
+}
