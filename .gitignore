@@ -33,6 +33,12 @@ data/analysis/vendor_expanded_historical_panel*/
 data/analysis/chronological_ml_benchmark*/
 data/analysis/broad_chronological_price_ml*/
 data/analysis/broad_price_ml_stress*/
+!data/analysis/broad_chronological_price_ml_v2_run_01/
+data/analysis/broad_chronological_price_ml_v2_run_01/*
+!data/analysis/broad_chronological_price_ml_v2_run_01/summary.json
+!data/analysis/broad_price_ml_stress_v1_run_01/
+data/analysis/broad_price_ml_stress_v1_run_01/*
+!data/analysis/broad_price_ml_stress_v1_run_01/summary.json
 data/analysis/current_price_ensemble*/
 !data/analysis/current_price_ensemble_v5_20260918_run_01/
 !data/analysis/current_price_ensemble_v5_20260918_run_01/**

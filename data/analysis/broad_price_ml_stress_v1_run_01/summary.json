@@ -1,0 +1,52 @@
+{
+  "bootstrap_month_delta_95pct": [
+    0.04955177258666173,
+    0.15725626400156914
+  ],
+  "cell_win_fraction": 0.6300813008130082,
+  "cells": 492,
+  "company_rows": 36639,
+  "issuers": 3079,
+  "mean_delta_rank_ic": 0.10443330610518824,
+  "month_win_fraction": 0.8333333333333334,
+  "months": 12,
+  "peer_thresholds": {
+    "10": {
+      "baseline": 0.0393694314438644,
+      "cells": 372,
+      "challenger": 0.11143861192996819,
+      "delta": 0.07206918048610379
+    },
+    "20": {
+      "baseline": 0.045848216857722314,
+      "cells": 228,
+      "challenger": 0.15366831472123926,
+      "delta": 0.10782009786351691
+    },
+    "3": {
+      "baseline": -0.009940406622685652,
+      "cells": 492,
+      "challenger": 0.09345432431626495,
+      "delta": 0.10443330610518824
+    },
+    "5": {
+      "baseline": 0.050114295303951,
+      "cells": 396,
+      "challenger": 0.12780253551203544,
+      "delta": 0.07768824020808443
+    }
+  },
+  "promotion_permitted": false,
+  "reason": "Strong locked comparative result, but current-survivor membership and current sector labels prevent unconditional production promotion.",
+  "schema_version": "broad_price_ml_stress_v1",
+  "sector_positive_fraction": 0.6341463414634146,
+  "selected": [
+    "ridge",
+    "price_multifactor_signal"
+  ],
+  "source_fingerprint": "5ef4e829a279a2fad397d9d6c0635eaf743e9fb37bdb45ab9298bdd6b1c1fafd",
+  "top_bottom": {
+    "baseline": -0.07133626068899929,
+    "challenger": 0.12193987011720216
+  }
+}

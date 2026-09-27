@@ -1,0 +1,83 @@
+{
+  "accepted_company_fingerprint": "09b08a303effa99c8a84a02de7ee3b41a590ea43301a753b8da8eca35b728760",
+  "accepted_market_fingerprint": "ceaec46dc1455c358441429bd525af9bba62f42a41af23ce96dd1c2ea9beb0ee",
+  "eligible_rows": 170679,
+  "history_files": 4479,
+  "limitation": "Current-survivor universe and current sector labels; no delisted-security history. Comparative result is supplementary until prospectively confirmed.",
+  "locked_test_models": {
+    "baseline_signal": {
+      "cells": 492,
+      "mean_rank_ic": -0.009940406622685652,
+      "median_rank_ic": 0.029682547922612428,
+      "positive_fraction": 0.5426829268292683
+    },
+    "extra_trees": {
+      "cells": 492,
+      "mean_rank_ic": 0.03643116965375133,
+      "median_rank_ic": 0.06926109708367773,
+      "positive_fraction": 0.6158536585365854
+    },
+    "lightgbm_lambdarank": {
+      "cells": 492,
+      "mean_rank_ic": -0.01537525963152414,
+      "median_rank_ic": 0.015981619410931472,
+      "positive_fraction": 0.5284552845528455
+    },
+    "lightgbm_regression": {
+      "cells": 492,
+      "mean_rank_ic": 0.04773763996127313,
+      "median_rank_ic": 0.0754055660761361,
+      "positive_fraction": 0.6097560975609756
+    },
+    "mom12_1_signal": {
+      "cells": 492,
+      "mean_rank_ic": -0.008218596239357874,
+      "median_rank_ic": 0.037018585100298464,
+      "positive_fraction": 0.5833333333333334
+    },
+    "mom6_1_signal": {
+      "cells": 492,
+      "mean_rank_ic": 0.011740288517206458,
+      "median_rank_ic": 0.07162304299311001,
+      "positive_fraction": 0.5995934959349594
+    },
+    "price_multifactor_signal": {
+      "cells": 491,
+      "mean_rank_ic": 0.08780361527931607,
+      "median_rank_ic": 0.12295024616792244,
+      "positive_fraction": 0.6965376782077393
+    },
+    "ridge": {
+      "cells": 492,
+      "mean_rank_ic": 0.07974644542284216,
+      "median_rank_ic": 0.13185792690164266,
+      "positive_fraction": 0.6443089430894309
+    },
+    "selected_ensemble": {
+      "cells": 491,
+      "mean_rank_ic": 0.09332677411374934,
+      "median_rank_ic": 0.14111491740216522,
+      "positive_fraction": 0.6741344195519349
+    }
+  },
+  "panel_issuers": 3887,
+  "panel_rows": 206386,
+  "product_default_changed": false,
+  "promotion_permitted": false,
+  "protocol_sha256": "be59b6c3195c6d4d9743b2fcf0e12bc61d4616fa90432dc4db93809e6a42314f",
+  "schema_version": "broad_chronological_price_ml_result_v1",
+  "selected_before_locked_test": [
+    "ridge",
+    "price_multifactor_signal"
+  ],
+  "status": "LOCKED_TEST_COMPLETE",
+  "validation_scores": {
+    "extra_trees": 0.020807413659795104,
+    "lightgbm_lambdarank": 0.003517100802804763,
+    "lightgbm_regression": 0.02199811645566415,
+    "mom12_1_signal": -0.0014681421214330288,
+    "mom6_1_signal": -0.02295672848861416,
+    "price_multifactor_signal": 0.0413884943901025,
+    "ridge": 0.059076877515445436
+  }
+}
