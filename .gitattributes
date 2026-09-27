@@ -65,3 +65,5 @@ research/runners/run_personalized_ui_browser_acceptance.py text eol=lf
 research/runners/verify_personalized_product_acceptance.py text eol=lf
 src/stock_ranker/personalized_product.py text eol=lf
 tests/test_personalized_product.py text eol=lf
+src/stock_ranker/baseline.py text eol=crlf
+research/environment/tra_dependency_lock.txt text eol=crlf
