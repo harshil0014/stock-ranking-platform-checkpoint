@@ -40,6 +40,11 @@ from stock_ranker.research_website import (
     validation,
 )
 from stock_ranker.website import analyze_website_request
+from stock_ranker.personalized_product import (
+    PersonalizationError,
+    personalized_metadata,
+    personalized_rank,
+)
 
 
 MAX_REQUEST_BYTES = 30 * 1024 * 1024
@@ -75,6 +80,7 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
             "/": (INDEX_HTML, "text/html; charset=utf-8"),
             "/dashboard": (INDEX_HTML, "text/html; charset=utf-8"),
             "/live": (INDEX_HTML, "text/html; charset=utf-8"),
+            "/personalized": (INDEX_HTML, "text/html; charset=utf-8"),
             "/overview": (INDEX_HTML, "text/html; charset=utf-8"),
             "/rankings": (INDEX_HTML, "text/html; charset=utf-8"),
             "/historical": (INDEX_HTML, "text/html; charset=utf-8"),
@@ -101,6 +107,10 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
             if not payload["enabled"]:
                 payload["message"] = "Refresh disabled in read-only deployment"
             self._json(HTTPStatus.OK, payload)
+            return
+        if path == "/api/personalized/metadata":
+            payload = personalized_metadata()
+            self._json(HTTPStatus.OK if payload.get("available") else HTTPStatus.SERVICE_UNAVAILABLE, payload)
             return
         live_routes = {
             "/api/live/dashboard": lambda: live_dashboard(
@@ -167,6 +177,24 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
 
     def do_POST(self) -> None:  # noqa: N802 - required by BaseHTTPRequestHandler
         path = urlparse(self.path).path
+        if path == "/api/personalized/rank":
+            if self.headers.get_content_type() != "application/json":
+                self._json(HTTPStatus.UNSUPPORTED_MEDIA_TYPE, {"error": "Content-Type must be application/json"})
+                return
+            try:
+                length = int(self.headers.get("Content-Length", "0"))
+                if length <= 0 or length > 256 * 1024:
+                    raise PersonalizationError("request body is empty or exceeds 256 KiB")
+                payload = json.loads(self.rfile.read(length).decode("utf-8"))
+                result = personalized_rank(payload)
+            except (PersonalizationError, ValueError, TypeError, UnicodeError, json.JSONDecodeError) as exc:
+                self._json(HTTPStatus.BAD_REQUEST, {"available": False, "status": "INVALID PERSONALIZATION INPUT", "error": str(exc)})
+                return
+            except (FileNotFoundError, OSError, ImportError) as exc:
+                self._json(HTTPStatus.SERVICE_UNAVAILABLE, {"available": False, "status": "PERSONALIZED RUNTIME NOT PREPARED", "error": str(exc)})
+                return
+            self._json(HTTPStatus.OK, result)
+            return
         if path == "/api/live/refresh":
             if not self.server.refresh_enabled:  # type: ignore[attr-defined]
                 self._json(HTTPStatus.FORBIDDEN, {

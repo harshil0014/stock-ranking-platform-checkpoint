@@ -38,7 +38,11 @@ def test_registry_contract_manifest_and_environment_commands(tmp_path, capsys):
     assert environment["status"] in {
         "specified_blocked", "python_3_12_available"
     }
-    assert not any(environment["main_environment_imports"].values())
+    assert environment["main_environment_imports"] == {
+        "lightgbm": True,
+        "qlib": False,
+        "torch": False,
+    }
 
 
 def test_qlib_conversion_cli(tmp_path):

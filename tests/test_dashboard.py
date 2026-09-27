@@ -184,7 +184,9 @@ def test_dashboard_fingerprint_poll_is_lightweight_and_deterministic() -> None:
 def test_dashboard_dom_navigation_responsive_and_neutral() -> None:
     rendered = INDEX_HTML + APP_JS + STYLES_CSS
     assert 'id="view-dashboard" class="view"' in INDEX_HTML
-    assert "Dashboard</button><button data-view=\"live\">Explore" in INDEX_HTML
+    assert "Dashboard</button>" in INDEX_HTML
+    assert 'data-view="personalized">Personalized' in INDEX_HTML
+    assert 'data-view="live">Explore' in INDEX_HTML
     assert "dashboard-company-grid" in INDEX_HTML
     assert "repeat(4,minmax(0,1fr))" in STYLES_CSS
     assert "repeat(2,minmax(0,1fr))" in STYLES_CSS

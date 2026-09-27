@@ -46,6 +46,7 @@ research/pickles/
 research/experiment_stores/
 research/output/
 research/generated/
+research/runtime/
 *.pkl
 *.pickle
 build/
@@ -54,6 +55,7 @@ dist/
 htmlcov/
 experiments/personalized/run-01/
 experiments/personalized/run-02/
+experiments/personalized-product-acceptance/run-01/
 
 # Large local evidence and resumable research panels; compact audits are versioned.
 external_research_pack/

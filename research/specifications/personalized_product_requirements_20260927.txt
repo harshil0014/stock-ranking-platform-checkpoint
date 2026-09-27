@@ -1,0 +1,370 @@
+Take full ownership of adding the real personalized-ranking user experience to stock-ranking-platform.
+
+The goal is to expose the inputs that genuinely drive our frozen personalized stock-ranking system, allow real users to enter their own investment parameters, and prove through broad automated simulation that personalization works correctly without weakening, approximating, hardcoding, or changing the champion model.
+
+The immutable personalized champion remains:
+
+67% Goal + 33% LightGBM LambdaRank
+frozen at:
+d4995807163bef1ec4b297179e6c54a59c71f390
+
+Do not retrain, retune, replace, simplify, approximate, reinterpret, or modify that frozen model.
+
+Do not alter production until the new product layer is completely validated.
+
+PRIMARY PRODUCT GOAL
+
+Add a clear Personalized Ranking experience to the website where the USER supplies the investment assumptions instead of the website secretly using the old research profile.
+
+At minimum the user must be able to enter:
+
+- amount invested per contribution
+- historical lookback period
+- contribution / SIP interval
+- desired annual return / target CAGR
+- investment horizon
+
+The UI must make it obvious that these values affect the personalized ranking.
+
+Do not silently hardcode ₹7,500, 36 months, 30 days, 20%, 12 months or any other research-profile value as the user's actual inputs.
+
+Defaults may exist only as visible editable starting values, clearly shown to the user.
+
+The system must use the user's submitted values throughout the personalized calculation wherever that parameter scientifically belongs.
+
+The final ranking shown to the user must be produced by the frozen personalized champion and the existing execution/evidence machinery, not by Baseline V1 or Research V2 pretending to be personalized ranking.
+
+The existing Baseline V1 / Research V2 screens may remain available as separate research/current-market views.
+
+PERSONALIZATION MUST BE REAL
+
+Changing an input must affect exactly the parts of the pipeline that scientifically depend on that input.
+
+Examples include, where applicable:
+
+- whole-share affordability
+- purchase schedule
+- execution count
+- residual cash
+- cash utilization
+- unaffordable contribution rate
+- historical observation window
+- goal-related score
+- target attainment logic
+- personalized feature values
+- final Goal component
+- LambdaRank inputs
+- final 67/33 personalized score and ordering
+
+Do not artificially force rankings to change.
+
+If two legitimate profiles produce the same ranking, preserve that result.
+
+Likewise, do not cache or reuse a ranking from another profile when the user's parameters should require a different calculation.
+
+NO CUSTOM RANKING LOGIC
+
+Do not add:
+- manual bonuses or penalties
+- UI-specific ranking formulas
+- hardcoded stock ordering
+- profile-specific stock exceptions
+- sector exceptions
+- manually chosen overrides
+- rules intended to make the UI appear more responsive to parameter changes
+- interpolation that changes the model's scientific meaning
+- a separate approximate website ranking engine
+
+The website must expose the actual personalized system.
+
+If the frozen model cannot scientifically support an arbitrary value entered by the user, identify the genuine model boundary and handle it explicitly rather than pretending to support it.
+
+Determine from the frozen research artifacts which parameters can be safely evaluated continuously/arbitrarily and which require a defined supported domain.
+
+Preserve those scientific boundaries.
+
+USER EXPERIENCE
+
+The personalized-ranking screen should make the workflow simple:
+
+1. User enters investment parameters.
+2. User runs the personalized ranking.
+3. System clearly shows the active profile used.
+4. User sees ranked securities.
+5. User can inspect an individual security and understand why its personalized position was produced.
+6. User can modify the profile and rerun.
+7. The previous profile must never silently contaminate the new result.
+
+Display enough information to make personalization auditable without overwhelming the user.
+
+Show important execution/profile information where useful, such as:
+- submitted amount
+- lookback
+- interval
+- target
+- horizon
+- whether the stock was executable
+- meaningful blocker if it was not
+- relevant affordability/cash information
+- personalized score/rank
+- provenance/confidence/fallback information where applicable
+
+A stock must never silently disappear because one personalized calculation is unavailable.
+
+Use the existing product availability/fallback principles where scientifically appropriate, while clearly distinguishing a true personalized result from a non-personalized fallback.
+
+INPUT VALIDATION
+
+Treat user inputs as real production inputs.
+
+Handle:
+- blank fields
+- non-numeric values
+- zero
+- negative values
+- decimals
+- extremely small amounts
+- extremely large amounts
+- very short lookbacks
+- long lookbacks
+- unusual SIP intervals
+- edge target returns
+- unsupported horizons
+- combinations that produce zero affordable shares
+- combinations with insufficient history
+- securities affected by existing corporate-action blockers
+
+Never return NaN, Infinity, stack traces, malformed rankings, or silently substituted values.
+
+Reject or explain unsupported input honestly.
+
+Do not silently clamp inputs unless that behavior is explicitly disclosed and scientifically justified.
+
+SIMULATION / STRESS TEST
+
+Build an automated personalization simulation matrix that exercises the UI-facing ranking pipeline with many substantially different legitimate profiles.
+
+Do not merely repeat the nine historical research profiles.
+
+Include combinations spanning the supported space, including examples such as:
+
+Investment amount:
+- very small
+- small
+- ₹7,500 reference
+- medium
+- large
+- very large
+
+Lookback:
+- short
+- medium
+- long
+
+Contribution interval:
+- frequent
+- monthly-like
+- infrequent
+
+Target CAGR:
+- low
+- moderate
+- high
+
+Investment horizon:
+- every scientifically supported horizon
+
+Also test combinations, not just one-variable-at-a-time cases.
+
+Include boundary and adversarial valid profiles.
+
+The simulation must test enough combinations to expose:
+- accidental hardcoding
+- stale state
+- cache contamination
+- accidental reuse of base7500
+- amount-insensitive behavior where amount should matter
+- lookback-insensitive behavior where lookback should matter
+- schedule-insensitive behavior where schedule should matter
+- target-insensitive Goal behavior
+- unsupported parameter combinations
+- numerical instability
+- ranking nondeterminism
+- performance regressions
+- data/blocker regressions
+
+Do not require every changed profile to produce a changed ranking.
+
+Instead verify that every parameter flows correctly into the computations it is supposed to control.
+
+MODEL INTEGRITY
+
+The personalized UI must reproduce the existing frozen research profiles exactly when given the same parameters.
+
+At minimum reproduce and compare the known profiles:
+
+- amount1000
+- base7500
+- amount50000
+- lookback12
+- lookback60
+- weekly
+- quarterly
+- target10
+- target30
+
+For the exact corresponding inputs, the website-facing personalized engine must match the frozen champion artifacts to numerical tolerance.
+
+This is a hard requirement.
+
+There must be no loss of:
+- model ranking quality
+- model semantics
+- coverage
+- execution correctness
+- corporate-action correctness
+- whole-share behavior
+- residual-cash behavior
+- blocker handling
+- causal integrity
+- reproducibility
+
+The UI is an adapter to the champion, not a new model.
+
+EFFICIENCY REQUIREMENT
+
+The personalized website must remain practical to use.
+
+Measure actual execution latency across the simulation matrix.
+
+Identify unnecessary recalculation and performance bottlenecks.
+
+Improve product execution efficiency where possible without changing outputs or scientific behavior.
+
+Never trade ranking correctness for speed.
+
+Repeated execution of the exact same profile and data state must be deterministic.
+
+Different concurrent or sequential profiles must remain isolated from one another.
+
+14-STOCK ACCEPTANCE TEST
+
+Use this exact cohort as a visible end-to-end acceptance test:
+
+NSE:KRISHANA
+NSE:GVT&D
+BOM:524717
+NSE:SHAILY
+NSE:WELCORP
+NSE:V2RETAIL
+NSE:TERASOFT
+NSE:APOLLO
+NSE:LUMAXTECH
+BOM:539997
+NSE:TDPOWERSYS
+NSE:INDOTECH
+NSE:CEMPRO
+BOM:522195
+
+Verify identity resolution, personalized ranking behavior, input changes, availability, fallbacks and explanations across multiple user profiles.
+
+Preserve correct alias/identity handling for BSE/NSE representations.
+
+No requested security should become falsely unavailable merely because personalized execution is blocked when a valid product-level fallback exists.
+
+TEST THE ACTUAL UI
+
+Do not stop at unit-testing backend functions.
+
+Exercise the rendered website automatically.
+
+Test:
+- fields appear
+- labels are understandable
+- defaults are visible/editable
+- form submission works
+- validation appears correctly
+- rankings refresh
+- profile summary updates
+- repeated runs work
+- back-to-back different profiles do not contaminate each other
+- individual stock inspection reflects the current profile
+- browser refresh/state behavior is sensible
+- unsupported input cannot create broken UI
+- mobile/narrow layout remains usable
+- no console/runtime errors occur
+
+Use automated browser/DOM testing rather than relying on manual visual checking.
+
+SCIENTIFIC SAFETY
+
+Do not modify:
+- d499580
+- the immutable freeze tag
+- prospective shadow predictions
+- prospective checkpoint logic
+- historical research outcomes
+
+Do not tune the model using the personalization simulation.
+
+The simulation tests software correctness and profile sensitivity, not model selection.
+
+Do not use Sir's 14-stock ordering as an optimization target.
+
+REPOSITORY QUALITY
+
+Work on an appropriate non-production branch.
+
+Resolve the existing unrelated `4436 vs 4434` website test mismatch if and only if it can be fixed from the actual authoritative data/state without falsifying either count.
+
+Do not hide, skip or weaken the failing test simply to obtain a green suite.
+
+Run the complete repository test suite when finished.
+
+The desired end state is fully green tests.
+
+If the old mismatch represents a legitimate unresolved state inconsistency, document it precisely rather than manufacturing a passing value.
+
+Commit and push the completed work.
+
+SUCCESS CRITERIA
+
+This task is successful only when:
+
+1. The user can enter their own genuine personalization inputs in the website.
+2. Those inputs actually flow into the frozen personalized ranking system.
+3. The website does not secretly use base7500 or another fixed profile.
+4. Known frozen profiles reproduce their stored champion outputs.
+5. Diverse simulated profiles execute correctly and independently.
+6. Invalid/extreme inputs fail safely and understandably.
+7. The frozen 67% Goal + 33% LightGBM model is unchanged.
+8. Ranking/execution semantics are unchanged.
+9. The 14-stock cohort can be tested end-to-end.
+10. Performance remains practical.
+11. Automated UI tests cover the complete workflow.
+12. Production and prospective shadow evidence remain untouched.
+
+At completion report:
+
+- branch and commit
+- exact UI fields added
+- supported domains for each input
+- whether any values remain intentionally fixed and why
+- architecture boundary between UI and frozen champion
+- frozen-profile reproduction results
+- simulation matrix size and coverage
+- representative profile sensitivity results
+- 14-stock acceptance result
+- invalid/boundary-input results
+- deterministic/repeatability result
+- latency/performance result
+- personalized availability/fallback behavior
+- automated browser test result
+- full repository test result
+- status of the 4436/4434 mismatch
+- confirmation that d499580, production and prospective shadow artifacts were untouched
+- any genuine scientific limitation that prevents arbitrary user personalization
+
+Do not stop after adding form fields.
+
+The task is complete only when the fields drive the real personalized champion end-to-end and the complete workflow is proven through automated simulation and UI testing.

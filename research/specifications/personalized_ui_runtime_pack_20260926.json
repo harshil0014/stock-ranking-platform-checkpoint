@@ -1,0 +1,23 @@
+{
+  "as_of_date": "2026-09-18",
+  "challenger_commit": "d4995807163bef1ec4b297179e6c54a59c71f390",
+  "errors": 19,
+  "identities": 3790,
+  "large_raw_data_policy": "NPZ runtime cache remains outside Git; this compact audit is versioned.",
+  "observations": 14644070,
+  "official_action_ledger": "experiments/personalized-official-action-freeze/build-06/normalized_official_action_ledger.csv.gz",
+  "pack_bytes": 98546546,
+  "pack_sha256": "515eac8ffc555a571406a4a41f9d931a016cb6280871a3d89f59846d2692ed0c",
+  "resulting_terms": "research/data/ownership-recovery-20260925/resulting_equity_terms.csv",
+  "schema_version": "personalized_ui_runtime_pack_v1",
+  "source_hashes": {
+    "accepted_live_state": "632dcc4f9069eacfd5228563e28ec6b6006737552b691955fcf45aa5b6026595",
+    "features": "c8f2103d2ca4ed1568ec05136fbdc22713da8d867397ba21f6df5c4337fbb9d2",
+    "freeze_manifest": "f9919146a1dc5a0584f5c23a5ab288668b13298cc8f4bbf46a2b89c65d754035",
+    "history_recovery_audit": "741230bbe47d77731d4130c6d0f38a1edfada39a178371764a6f1a9b44f76e90",
+    "live_market": "ffa2b5153826b08d14ca67020cf60f251d0fba562fb3a43ce519c2e1deb786de",
+    "official_action_ledger": "ed9fa9054229aca7081a0ec5c34e7e18603bf68b833fa6887829bd10c55d0038",
+    "resulting_terms": "10824b8dd28ebf0033b15d976af48b6c0bc9952b9fb09a9c1f4cd5d5ab20f4a2",
+    "terminal_repairs": "4c96e194d665c2afbbc6cf203629ef78c750dc801ff20c771be2d984be975942"
+  }
+}
