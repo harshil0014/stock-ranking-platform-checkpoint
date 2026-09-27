@@ -16,3 +16,12 @@ data/analysis/*
 !data/analysis/release_website_audit_20260920_run_01/
 research/*
 !research/registry/
+!research/freezes/
+research/freezes/*
+!research/freezes/personalized-d499580/
+!research/specifications/
+research/specifications/*
+!research/specifications/personalized_ui_runtime_pack_20260926.json
+!research/data/
+research/data/*
+!research/data/ownership-recovery-20260925/

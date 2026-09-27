@@ -1,0 +1,56 @@
+{
+  "back_to_back_repeat_exact": true,
+  "console_errors": [],
+  "dashboard_modes": [
+    [
+      "baseline_v1",
+      "Baseline"
+    ],
+    [
+      "personalized",
+      "Personalized"
+    ]
+  ],
+  "defaults": {
+    "personalizedAmount": "7500",
+    "personalizedHorizon": "12",
+    "personalizedInterval": "30",
+    "personalizedLookback": "36",
+    "personalizedTarget": "20"
+  },
+  "defaults_editable": true,
+  "fields": [
+    "personalizedAmount",
+    "personalizedLookback",
+    "personalizedInterval",
+    "personalizedTarget",
+    "personalizedHorizon"
+  ],
+  "first_profile_summary": "\u20b97,500 every 30 days \u00b7 36-month lookback \u00b7 20.00% target CAGR \u00b7 12-month horizon",
+  "first_run_seconds": 9.650833399999101,
+  "invalid_message": "Value must be greater than or equal to 1000.",
+  "live_modes": [
+    [
+      "baseline_v1",
+      "Baseline"
+    ],
+    [
+      "personalized",
+      "Personalized"
+    ]
+  ],
+  "narrow_layout_usable": true,
+  "page_errors": [],
+  "refresh_cleared_result": true,
+  "refresh_defaults": {
+    "personalizedAmount": "7500",
+    "personalizedHorizon": "12",
+    "personalizedInterval": "30",
+    "personalizedLookback": "36",
+    "personalizedTarget": "20"
+  },
+  "repeat_seconds": 0.3253218999998353,
+  "status": "PASS",
+  "stock_inspection_visible": true,
+  "target_change_changed_profile": true
+}

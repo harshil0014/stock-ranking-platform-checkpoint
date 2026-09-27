@@ -1,0 +1,17 @@
+{
+  "artifact_set_sha256": "a5a183c4d02fc7a31a97bb2564076d682e21bba0815325d95056b2e6583fdf4a",
+  "artifacts": [
+    {
+      "bytes": 124104,
+      "path": "acceptance.json",
+      "sha256": "1dd008ac78ccd46dfa46928d31b407dfef559872bdc5a54022c38f1a6b94460e"
+    },
+    {
+      "bytes": 1413,
+      "path": "browser_acceptance.json",
+      "sha256": "a1458a81831f1ed654ee109814cf44321eb46d642731388c7b7653f54f78071b"
+    }
+  ],
+  "schema_version": "personalized_product_acceptance_manifest_v1",
+  "status": "PASS"
+}

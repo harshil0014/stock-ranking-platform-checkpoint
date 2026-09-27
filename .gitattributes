@@ -58,7 +58,7 @@ research/backups/personalized-d499580/** -text
 docs/PERSONALIZED_SHADOW.md text eol=lf
 research/environment/requirements-shadow.txt text eol=lf
 tests/test_personalized_shadow.py text eol=lf
-experiments/personalized-product-acceptance/run-03/*.json binary
+experiments/personalized-product-acceptance/run-*/*.json binary
 research/runners/build_personalized_runtime_pack.py text eol=lf
 research/runners/run_personalized_product_acceptance.py text eol=lf
 research/runners/run_personalized_ui_browser_acceptance.py text eol=lf

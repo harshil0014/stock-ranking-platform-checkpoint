@@ -29,6 +29,12 @@ def run(output: Path):
             page.on("pageerror", lambda error: page_errors.append(str(error)))
             page.goto(base + "/personalized", wait_until="domcontentloaded", timeout=60_000)
             page.wait_for_selector("#personalizedForm", state="visible")
+            primary_modes = page.locator("#dashboardModel option").evaluate_all(
+                "options => options.map(option => [option.value, option.textContent])"
+            )
+            live_modes = page.locator("#liveModel option").evaluate_all(
+                "options => options.map(option => [option.value, option.textContent])"
+            )
             fields = ["personalizedAmount", "personalizedLookback", "personalizedInterval",
                       "personalizedTarget", "personalizedHorizon"]
             defaults = {field: page.locator("#" + field).input_value() for field in fields}
@@ -71,6 +77,7 @@ def run(output: Path):
             browser.close()
             result = {
                 "status": "PASS", "fields": fields, "defaults": defaults,
+                "dashboard_modes": primary_modes, "live_modes": live_modes,
                 "defaults_editable": editable, "invalid_message": invalid_message,
                 "first_profile_summary": profile_summary, "first_run_seconds": first_seconds,
                 "target_change_changed_profile": first_fingerprint != second_fingerprint,
@@ -80,7 +87,9 @@ def run(output: Path):
                 "refresh_cleared_result": refresh_cleared_result,
                 "console_errors": console_errors, "page_errors": page_errors,
             }
-            if not all((editable, "1000" in invalid_message,
+            expected_modes = [["baseline_v1", "Baseline"], ["personalized", "Personalized"]]
+            if not all((primary_modes == expected_modes, live_modes == expected_modes,
+                        editable, "1000" in invalid_message,
                         result["target_change_changed_profile"], result["back_to_back_repeat_exact"],
                         inspection_visible, narrow_usable, refresh_cleared_result)) or console_errors or page_errors:
                 result["status"] = "FAIL"

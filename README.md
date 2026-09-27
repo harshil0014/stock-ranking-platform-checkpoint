@@ -1,5 +1,20 @@
 # Stock Ranking Platform
 
+## Canonical product
+
+The primary website exposes two active ranking modes:
+
+- **Baseline**, the reference current-market ranking.
+- **Personalized**, the frozen `d499580` champion using 67% Goal and 33% sealed
+  LightGBM LambdaRank with the user's contribution amount, lookback, interval,
+  target CAGR, and supported 12-month horizon.
+
+Research V2 and rejected challengers remain versioned as historical research,
+validation, methodology, and provenance evidence. They are not active product
+ranking choices. The large personalized runtime pack is mounted outside Git at
+`research/runtime/personalized-ui-d499580.npz` and must match SHA-256
+`515eac8ffc555a571406a4a41f9d931a016cb6280871a3d89f59846d2692ed0c`.
+
 The latest reconciled current-data counts and their exact cohort definitions
 are recorded in
 [docs/current_data_status_20260829.md](docs/current_data_status_20260829.md).

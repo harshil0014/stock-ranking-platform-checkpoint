@@ -184,7 +184,7 @@ def test_dashboard_fingerprint_poll_is_lightweight_and_deterministic() -> None:
 def test_dashboard_dom_navigation_responsive_and_neutral() -> None:
     rendered = INDEX_HTML + APP_JS + STYLES_CSS
     assert 'id="view-dashboard" class="view"' in INDEX_HTML
-    assert "Dashboard</button>" in INDEX_HTML
+    assert "Baseline</button>" in INDEX_HTML
     assert 'data-view="personalized">Personalized' in INDEX_HTML
     assert 'data-view="live">Explore' in INDEX_HTML
     assert "dashboard-company-grid" in INDEX_HTML
@@ -215,7 +215,7 @@ def test_dashboard_http_endpoint_and_default_route() -> None:
     try:
         with urlopen(base + "/", timeout=10) as response:
             assert response.status == 200
-            assert b"Sector rankings" in response.read()
+            assert b"Baseline sector rankings" in response.read()
         query = urlencode({"sector": AUTO, "model": "baseline_v1", "segment": "SMALL"})
         with urlopen(base + "/api/live/dashboard?" + query, timeout=30) as response:
             data = json.load(response)

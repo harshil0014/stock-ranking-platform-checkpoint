@@ -11,6 +11,7 @@ services:
       PORT: "8765"
       STOCK_RANKER_DATA_ROOT: /var/lib/stock-ranking/data
       STOCK_RANKER_RESEARCH_ROOT: /var/lib/stock-ranking/research
+      STOCK_RANKER_PERSONALIZED_RUNTIME_PACK: /var/lib/stock-ranking/research/runtime/personalized-ui-d499580.npz
     ports:
       - "${STOCK_RANKER_HTTP_PORT:-8765}:8765"
     volumes:

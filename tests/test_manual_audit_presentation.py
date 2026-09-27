@@ -41,11 +41,12 @@ def test_factor_display_uses_human_numbers_and_common_contribution_scale() -> No
     assert "Number(f.contribution)/Number(f.weight_percent)" not in APP_JS
 
 
-def test_simple_and_technical_factor_views_are_distinct() -> None:
-    assert "renderFactorSummary(factors" in APP_JS
-    assert "renderFactorDetails($('liveFactorDetails')" in APP_JS
-    assert "Canonical value" in APP_JS
-    assert "Relative scores are within-sector positions" in APP_JS
+def test_product_baseline_and_archived_research_factor_views_are_distinct() -> None:
+    assert "statusItems('liveFactors',data.baseline_v1.factors||{})" in APP_JS
+    assert "if(data.model==='research_v2'&&row.factors)" in APP_JS
+    assert "factor-table" in APP_JS
+    assert "Historical Research V2 rankings" in INDEX_HTML
+    assert "not an active product ranking mode" in INDEX_HTML
 
 
 def test_rank_ic_uses_zero_centered_negative_side_encoding() -> None:

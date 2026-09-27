@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from threading import Thread
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
@@ -78,6 +79,20 @@ def test_ui_exposes_editable_inputs_and_real_champion_workflow():
     assert "personalizedPayload()" in APP_JS
     assert "state.personalized=null" in APP_JS
     assert "PRODUCT FALLBACK" not in INDEX_HTML  # status comes from the actual response
+
+
+def test_primary_product_exposes_only_baseline_and_personalized_modes():
+    for select_id in ("dashboardModel", "liveModel"):
+        match = re.search(rf'<select id="{select_id}">(.*?)</select>', INDEX_HTML)
+        assert match is not None
+        options = re.findall(r'<option value="([^"]+)">([^<]+)</option>', match.group(1))
+        assert options == [("baseline_v1", "Baseline"), ("personalized", "Personalized")]
+        assert "Research V2" not in match.group(1)
+    assert 'data-view="dashboard" class="mode-button">Baseline</button>' in INDEX_HTML
+    assert 'data-view="personalized">Personalized</button>' in INDEX_HTML
+    assert "Historical Research V2 rankings" in INDEX_HTML
+    assert "not an active product ranking mode" in INDEX_HTML
+    assert "value==='personalized'" in APP_JS
 
 
 def test_personalized_http_validation_is_controlled(monkeypatch):
