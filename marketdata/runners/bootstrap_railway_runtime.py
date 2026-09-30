@@ -14,6 +14,7 @@ MARKET_FINGERPRINT = "98adc0296bff77fd44fc4c6815692a86033b14763d689791df14752550
 PERSONALIZED_RUNTIME_KEY = "personalized-ui-d499580.npz"
 PERSONALIZED_RUNTIME_SHA256 = "515eac8ffc555a571406a4a41f9d931a016cb6280871a3d89f59846d2692ed0c"
 PERSONALIZED_RUNTIME_BYTES = 98_546_546
+HISTORY_ARCHIVE_BYTES = 139_162_768
 
 
 def _required(name: str) -> str:
@@ -88,7 +89,10 @@ def main() -> int:
     ready = data_root / "live_market" / "snapshots" / f"2026-09-18-{MARKET_FINGERPRINT}" / "bundle_manifest.json"
     accepted_state = data_root / "live_market" / "accepted_state.json"
     history_root = data_root / "live_market" / "history_cache"
-    history_archive = runtime_root / "history_cache.zip"
+    history_archive = Path(os.environ.get(
+        "STOCK_RANKER_HISTORY_ARCHIVE", str(runtime_root / "history_cache.zip")
+    ))
+    legacy_history_archive = runtime_root / "history_cache.zip"
 
     runtime_root.mkdir(parents=True, exist_ok=True)
     s3 = _client()
@@ -97,14 +101,22 @@ def main() -> int:
     if not ready.is_file() or not accepted_state.is_file():
         _download_and_extract(s3, bucket, "core_runtime.zip", runtime_root)
 
-    # Hosted deployment keeps the large history cache compressed and reads
-    # individual CSV members on demand. This fits the Railway trial volume
-    # without weakening the underlying observed data.
+    # The history archive is reconstructible from the private bucket, so hosted
+    # Railway containers keep it on ephemeral storage rather than spending the
+    # limited persistent volume on a cache. The personalized runtime pack below
+    # remains persistent and integrity-gated.
     if not history_archive.is_file():
-        if history_root.exists():
-            shutil.rmtree(history_root)
+        history_archive.parent.mkdir(parents=True, exist_ok=True)
         print("Downloading compressed history cache...", flush=True)
         s3.download_file(bucket, "history_cache.zip", str(history_archive))
+    if history_archive.stat().st_size != HISTORY_ARCHIVE_BYTES or not zipfile.is_zipfile(history_archive):
+        raise RuntimeError("compressed history cache failed integrity validation")
+
+    if history_root.exists():
+        shutil.rmtree(history_root)
+    if legacy_history_archive != history_archive and legacy_history_archive.is_file():
+        legacy_history_archive.unlink()
+        print("Removed legacy persistent history cache after ephemeral restore.", flush=True)
 
     personalized_runtime = _ensure_personalized_runtime(s3, bucket, runtime_root)
 

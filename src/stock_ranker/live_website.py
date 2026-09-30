@@ -31,7 +31,10 @@ LIVE_BUNDLE_ROOT = LIVE_STATE_ROOT / "snapshots" / (
     "2026-09-18-" + RELEASE["accepted_market_fingerprint"]
 )
 LIVE_HISTORY_ROOT = DATA_ROOT / "live_market/history_cache"
-LIVE_HISTORY_ARCHIVE = Path(os.environ.get("STOCK_RANKER_RUNTIME_ROOT", str(DATA_ROOT.parent))) / "history_cache.zip"
+LIVE_HISTORY_ARCHIVE = Path(os.environ.get(
+    "STOCK_RANKER_HISTORY_ARCHIVE",
+    str(Path(os.environ.get("STOCK_RANKER_RUNTIME_ROOT", str(DATA_ROOT.parent))) / "history_cache.zip"),
+))
 COMPANY_FACT_STATE_ROOT = DATA_ROOT / "company_facts"
 COMPANY_FACT_SNAPSHOT_ROOT = COMPANY_FACT_STATE_ROOT / "snapshots" / (
     "2026-09-18-" + RELEASE["accepted_company_fingerprint"]

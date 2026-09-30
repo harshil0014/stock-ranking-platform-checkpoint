@@ -6,6 +6,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     STOCK_RANKER_PROJECT_ROOT=/app \
     STOCK_RANKER_DATA_ROOT=/var/lib/stock-ranking/data \
     STOCK_RANKER_RESEARCH_ROOT=/var/lib/stock-ranking/research \
+    STOCK_RANKER_HISTORY_ARCHIVE=/tmp/stock-ranking-history-cache.zip \
     STOCK_RANKER_PERSONALIZED_RUNTIME_PACK=/var/lib/stock-ranking/research/runtime/personalized-ui-d499580.npz
 
 WORKDIR /app
