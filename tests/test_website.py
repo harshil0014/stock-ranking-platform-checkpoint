@@ -38,7 +38,8 @@ def test_web_server_starts_and_serves_main_screen() -> None:
             body = response.read().decode("utf-8")
             assert response.status == 200
         assert "Indian Equity Research Platform" in body
-        assert "SYNTHETIC RESEARCH TEST" in body
+        assert 'id="view-personalized" class="view"' in body
+        assert 'id="view-dashboard" class="view hidden"' in body
         with urlopen(f"http://127.0.0.1:{port}/api/health", timeout=5) as response:
             assert json.load(response)["status"] == "ok"
     finally:

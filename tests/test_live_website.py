@@ -120,15 +120,19 @@ def test_number_formatting_does_not_change_stored_values() -> None:
     assert live_website.format_price(None) == "Unavailable"
 
 
-def test_spa_defaults_to_dashboard_and_keeps_live_and_frozen_research_views() -> None:
-    assert 'id="view-dashboard" class="view"' in INDEX_HTML
+def test_spa_defaults_to_personalized_and_keeps_other_views() -> None:
+    assert 'id="view-dashboard" class="view hidden"' in INDEX_HTML
+    assert 'id="view-personalized" class="view"' in INDEX_HTML
     assert 'id="view-live" class="view hidden"' in INDEX_HTML
     assert "LIVE MARKET" in INDEX_HTML
     assert "RESEARCH LAB" in INDEX_HTML
     assert "Indian equity screen" in INDEX_HTML
     for view in ("overview", "rankings", "historical", "validation", "provenance", "methodology", "status"):
         assert f'id="view-{view}"' in INDEX_HTML
-    assert "!name||name==='dashboard'?'dashboard':name" in APP_JS
+    assert "return !name?'personalized':name" in APP_JS
+    assert 'class="brand" href="/"' in INDEX_HTML
+    assert "window.onpopstate=()=>showView(routeView(),false)" in APP_JS
+    assert "ensureViewLoaded(name)" in APP_JS
     assert "guaranteed-return claim" in INDEX_HTML
 
 

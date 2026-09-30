@@ -74,10 +74,18 @@ def test_ui_exposes_editable_inputs_and_real_champion_workflow():
         assert f'id="{field}"' in rendered
     for phrase in ("Amount per contribution", "Historical lookback", "Contribution / SIP interval",
                    "Desired annual return / target CAGR", "Investment horizon",
-                   "67% Goal + 33% LightGBM LambdaRank", "/api/personalized/rank"):
+                   "/api/personalized/rank"):
         assert phrase in rendered
+    product_html = INDEX_HTML.split('<section id="view-personalized"', 1)[1].split(
+        '<section id="view-live"', 1)[0]
+    assert "67% Goal + 33% LightGBM LambdaRank" not in product_html
+    for clutter in ("FROZEN d499580", "scientific_boundary", "personalizedFingerprint",
+                    "personalizedBoundary", "CURRENT PROFILE EXPLANATION"):
+        assert clutter not in product_html
     assert "personalizedPayload()" in APP_JS
     assert "state.personalized=null" in APP_JS
+    assert 'id="personalizedBoundary"' not in INDEX_HTML
+    assert 'id="personalizedFingerprint"' not in INDEX_HTML
     assert "PRODUCT FALLBACK" not in INDEX_HTML  # status comes from the actual response
 
 

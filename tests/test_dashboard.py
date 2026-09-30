@@ -133,7 +133,7 @@ def test_v2_grouped_donut_is_exact_sum_of_existing_contributions() -> None:
     assert len(row["strongest_contributions"]) == 3
 
 
-def test_baseline_ring_uses_rank_position_not_score_share() -> None:
+def test_baseline_rank_position_and_peer_scope_are_preserved() -> None:
     row = live_dashboard(AUTO, "baseline_v1", "ALL")["top_four"][0]
     assert row["canonical_sector_rank"] == 1
     expected_peers = sum(
@@ -144,8 +144,8 @@ def test_baseline_ring_uses_rank_position_not_score_share() -> None:
     )
     assert row["eligible_peer_count"] == expected_peers
     assert row["rank_percentile"] == pytest.approx(100 / expected_peers)
-    assert "SECTOR POSITION" in APP_JS
-    assert "Rank position within the stated evidence-tier comparison scope" in APP_JS
+    assert "row.canonical_sector_rank" in APP_JS
+    assert "row.ranking_tier" in APP_JS
     assert "score share" not in APP_JS.lower()
 
 
@@ -183,7 +183,7 @@ def test_dashboard_fingerprint_poll_is_lightweight_and_deterministic() -> None:
 
 def test_dashboard_dom_navigation_responsive_and_neutral() -> None:
     rendered = INDEX_HTML + APP_JS + STYLES_CSS
-    assert 'id="view-dashboard" class="view"' in INDEX_HTML
+    assert 'id="view-dashboard" class="view hidden"' in INDEX_HTML
     assert "Baseline</button>" in INDEX_HTML
     assert 'data-view="personalized">Personalized' in INDEX_HTML
     assert 'data-view="live">Explore' in INDEX_HTML
@@ -199,14 +199,18 @@ def test_dashboard_dom_navigation_responsive_and_neutral() -> None:
     dashboard_html = INDEX_HTML.split('<section id="view-dashboard"', 1)[1].split(
         '<section id="view-personalized"', 1)[0]
     assert "overall rank" not in dashboard_html.lower()
+    for clutter in ("RESEARCH SUMMARY", "View full validation", "View methodology",
+                    "dashboardFingerprint", "dashboardRankScope", "dashboardResearch"):
+        assert clutter not in dashboard_html
     assert "Overall Personalized rank" in INDEX_HTML
 
 
 def test_dashboard_uses_wide_dense_terminal_tables() -> None:
     assert "function dashboardSectorTable" in APP_JS
     assert "function dashboardCompanyTable" in APP_JS
-    assert "function dashboardResearchTable" in APP_JS
-    assert APP_JS.rfind("function renderDashboard(data)") > APP_JS.find("function renderDashboard(data)")
+    assert 'id="dashboardResearch"' not in INDEX_HTML
+    assert 'id="dashboardFingerprint"' not in INDEX_HTML
+    assert APP_JS.count("function renderDashboard(data)") == 1
     assert "max-width:1580px" in STYLES_CSS
     assert ".dashboard-company-grid,.sector-leader-grid{display:block" in STYLES_CSS
 
@@ -219,7 +223,7 @@ def test_dashboard_http_endpoint_and_default_route() -> None:
     try:
         with urlopen(base + "/", timeout=10) as response:
             assert response.status == 200
-            assert b"Baseline sector rankings" in response.read()
+            assert b"Personalized stock ranking" in response.read()
         query = urlencode({"sector": AUTO, "model": "baseline_v1", "segment": "SMALL"})
         with urlopen(base + "/api/live/dashboard?" + query, timeout=30) as response:
             data = json.load(response)

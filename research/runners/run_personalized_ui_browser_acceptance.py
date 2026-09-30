@@ -28,8 +28,28 @@ def run(output: Path):
             page = browser.new_page(viewport={"width": 1440, "height": 1000})
             page.on("console", lambda message: console_errors.append(message.text) if message.type == "error" else None)
             page.on("pageerror", lambda error: page_errors.append(str(error)))
-            page.goto(base + "/personalized", wait_until="domcontentloaded", timeout=60_000)
+            page.goto(base + "/", wait_until="domcontentloaded", timeout=60_000)
             page.wait_for_selector("#personalizedForm", state="visible")
+            default_landing = page.url == base + "/" and page.locator("#view-dashboard").is_hidden()
+            page.get_by_role("button", name="Baseline", exact=True).first.click()
+            page.wait_for_selector("#view-dashboard:not(.hidden)")
+            page.wait_for_selector("#dashboardSectorLeaders tbody tr", timeout=60_000)
+            baseline_navigation = (page.url.endswith("/dashboard")
+                                   and page.locator("#dashboardSector").is_visible()
+                                   and page.locator("#dashboardSectorLeaders tbody tr").count() > 0)
+            page.locator("#dashboardSector").select_option("Retailing")
+            page.wait_for_selector("#dashboardCompanies tbody tr", timeout=60_000)
+            baseline_filter = (page.locator("#dashboardCompanies tbody tr").count() > 0
+                               and "Retailing sector ranking" in page.locator("#dashboardLeadersTitle").inner_text())
+            page.go_back()
+            page.wait_for_selector("#personalizedForm", state="visible")
+            back_to_home = page.url == base + "/"
+            page.go_forward()
+            page.wait_for_selector("#view-dashboard:not(.hidden)")
+            forward_to_baseline = page.url.endswith("/dashboard")
+            page.locator("a.brand").click()
+            page.wait_for_selector("#personalizedForm", state="visible")
+            brand_home = page.url == base + "/"
             primary_modes = page.locator("#dashboardModel option").evaluate_all(
                 "options => options.map(option => [option.value, option.textContent])"
             )
@@ -49,7 +69,6 @@ def run(output: Path):
             first_started = perf_counter(); page.locator("#personalizedRun").click()
             page.wait_for_selector("#personalizedResults:not(.hidden)", timeout=120_000)
             first_seconds = perf_counter() - first_started
-            first_fingerprint = page.locator("#personalizedFingerprint").inner_text()
             first_top = page.locator("#personalizedRows tr").first.inner_text()
             headers = page.locator("#personalizedRows").locator("xpath=../thead/tr/th").all_inner_texts()
             sector_options = page.locator("#personalizedSector option").count()
@@ -76,14 +95,14 @@ def run(output: Path):
 
             page.locator("#personalizedTarget").fill("30")
             page.locator("#personalizedRun").click()
-            page.wait_for_function("old => document.querySelector('#personalizedFingerprint').textContent !== old",
-                                   arg=first_fingerprint, timeout=120_000)
-            second_fingerprint = page.locator("#personalizedFingerprint").inner_text()
+            page.wait_for_function("() => document.querySelector('#personalizedProfileSummary').textContent.includes('30.00%')",
+                                   timeout=120_000)
+            changed_top = page.locator("#personalizedRows tr").first.inner_text()
 
             page.locator("#personalizedTarget").fill("20")
             repeat_started = perf_counter(); page.locator("#personalizedRun").click()
-            page.wait_for_function("expected => document.querySelector('#personalizedFingerprint').textContent === expected",
-                                   arg=first_fingerprint, timeout=120_000)
+            page.wait_for_function("() => document.querySelector('#personalizedProfileSummary').textContent.includes('20.00%')",
+                                   timeout=120_000)
             repeat_seconds = perf_counter() - repeat_started
             repeated_top = page.locator("#personalizedRows tr").first.inner_text()
 
@@ -103,13 +122,23 @@ def run(output: Path):
               .slice(0,12).map(node => ({tag:node.tagName,id:node.id,className:String(node.className).slice(0,80),right:Math.round(node.getBoundingClientRect().right)}))""")
             page.locator("#personalizedDisplayNote").scroll_into_view_if_needed()
             page.screenshot(path=str(output.with_suffix(".mobile.png")))
+            page.get_by_role("button", name="Baseline", exact=True).first.click()
+            page.wait_for_selector("#view-dashboard:not(.hidden)")
+            page.wait_for_selector("#dashboardSectorLeaders tbody tr", timeout=60_000)
+            mobile_baseline_usable = (page.locator("#dashboardSector").is_visible()
+                                      and page.locator("#dashboardSectorLeaders tbody tr").count() > 0
+                                      and page.evaluate("document.documentElement.scrollWidth <= window.innerWidth"))
+            page.screenshot(path=str(output.with_suffix(".baseline-mobile.png")))
             browser.close()
             result = {
                 "status": "PASS", "fields": fields, "defaults": defaults,
+                "default_landing": default_landing, "baseline_navigation": baseline_navigation,
+                "back_to_home": back_to_home, "forward_to_baseline": forward_to_baseline,
+                "brand_home": brand_home, "baseline_filter": baseline_filter,
                 "dashboard_modes": primary_modes, "live_modes": live_modes,
                 "defaults_editable": editable, "invalid_message": invalid_message,
                 "first_profile_summary": profile_summary, "first_run_seconds": first_seconds,
-                "target_change_changed_profile": first_fingerprint != second_fingerprint,
+                "target_change_changed_result": first_top != changed_top,
                 "back_to_back_repeat_exact": first_top == repeated_top,
                 "repeat_seconds": repeat_seconds, "stock_inspection_visible": inspection_visible,
                 "sector_headers": headers, "sector_option_count": sector_options,
@@ -119,18 +148,22 @@ def run(output: Path):
                 "narrow_layout_usable": narrow_usable, "refresh_defaults": refreshed_defaults,
                 "mobile_table_cells": mobile_table, "mobile_viewport_no_horizontal_overflow": mobile_width,
                 "mobile_overflow_elements": mobile_overflow_elements,
+                "mobile_baseline_usable": mobile_baseline_usable,
                 "refresh_cleared_result": refresh_cleared_result,
                 "console_errors": console_errors, "page_errors": page_errors,
             }
             expected_modes = [["baseline_v1", "Baseline"], ["personalized", "Personalized"]]
-            if not all((primary_modes == expected_modes, live_modes == expected_modes,
+            if not all((default_landing, baseline_navigation, baseline_filter,
+                        back_to_home, forward_to_baseline,
+                        brand_home, primary_modes == expected_modes, live_modes == expected_modes,
                         editable, "1000" in invalid_message,
-                        result["target_change_changed_profile"], result["back_to_back_repeat_exact"],
+                        result["target_change_changed_result"], result["back_to_back_repeat_exact"],
                         inspection_visible, "PERSONALIZED SECTOR RANK" in headers,
                         sector_options > 50, len(first_cells) == 10,
                         "personalized sector position" in inspection.lower(),
                         fallback_search, fallback_explained, sector_filtered,
-                        narrow_usable, mobile_table, mobile_width, refresh_cleared_result)) or console_errors or page_errors:
+                        narrow_usable, mobile_table, mobile_width, mobile_baseline_usable,
+                        refresh_cleared_result)) or console_errors or page_errors:
                 result["status"] = "FAIL"
                 raise RuntimeError(json.dumps(result, indent=2))
     finally:
