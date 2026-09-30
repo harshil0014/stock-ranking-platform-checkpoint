@@ -1,6 +1,7 @@
 """Seed Railway's persistent runtime volume from the private deployment bucket."""
 from __future__ import annotations
 
+from hashlib import sha256
 import os
 from pathlib import Path
 import shutil
@@ -10,6 +11,9 @@ import boto3
 from botocore.config import Config
 
 MARKET_FINGERPRINT = "98adc0296bff77fd44fc4c6815692a86033b14763d689791df14752550983eb1"
+PERSONALIZED_RUNTIME_KEY = "personalized-ui-d499580.npz"
+PERSONALIZED_RUNTIME_SHA256 = "515eac8ffc555a571406a4a41f9d931a016cb6280871a3d89f59846d2692ed0c"
+PERSONALIZED_RUNTIME_BYTES = 98_546_546
 
 
 def _required(name: str) -> str:
@@ -30,6 +34,14 @@ def _client():
     )
 
 
+def _sha(path: Path) -> str:
+    digest = sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
 def _download_and_extract(s3, bucket: str, key: str, runtime_root: Path) -> None:
     archive = Path("/tmp") / key
     print(f"Downloading {key}...", flush=True)
@@ -38,6 +50,36 @@ def _download_and_extract(s3, bucket: str, key: str, runtime_root: Path) -> None
     with zipfile.ZipFile(archive) as handle:
         handle.extractall(runtime_root)
     archive.unlink(missing_ok=True)
+
+
+def _ensure_personalized_runtime(s3, bucket: str, runtime_root: Path) -> Path:
+    target = runtime_root / "research" / "runtime" / PERSONALIZED_RUNTIME_KEY
+
+    if target.is_file():
+        if target.stat().st_size == PERSONALIZED_RUNTIME_BYTES and _sha(target) == PERSONALIZED_RUNTIME_SHA256:
+            print("Personalized runtime pack already verified.", flush=True)
+            return target
+        print("Existing personalized runtime pack failed integrity validation; replacing it.", flush=True)
+
+    target.parent.mkdir(parents=True, exist_ok=True)
+    temporary = target.with_suffix(target.suffix + ".part")
+    temporary.unlink(missing_ok=True)
+
+    print(f"Downloading {PERSONALIZED_RUNTIME_KEY}...", flush=True)
+    s3.download_file(bucket, PERSONALIZED_RUNTIME_KEY, str(temporary))
+
+    actual_size = temporary.stat().st_size
+    actual_sha = _sha(temporary)
+    if actual_size != PERSONALIZED_RUNTIME_BYTES or actual_sha != PERSONALIZED_RUNTIME_SHA256:
+        temporary.unlink(missing_ok=True)
+        raise RuntimeError(
+            "personalized runtime pack failed integrity validation after download "
+            f"(bytes={actual_size}, sha256={actual_sha})"
+        )
+
+    temporary.replace(target)
+    print("Personalized runtime pack verified.", flush=True)
+    return target
 
 
 def main() -> int:
@@ -64,12 +106,16 @@ def main() -> int:
         print("Downloading compressed history cache...", flush=True)
         s3.download_file(bucket, "history_cache.zip", str(history_archive))
 
+    personalized_runtime = _ensure_personalized_runtime(s3, bucket, runtime_root)
+
     if not ready.is_file():
         raise RuntimeError("accepted market bundle is missing after runtime bootstrap")
     if not accepted_state.is_file():
         raise RuntimeError("accepted_state.json is missing after runtime bootstrap")
     if not history_archive.is_file():
         raise RuntimeError("compressed history cache is missing after runtime bootstrap")
+    if not personalized_runtime.is_file():
+        raise RuntimeError("personalized runtime pack is missing after runtime bootstrap")
 
     print("Railway runtime payload ready.", flush=True)
     return 0
