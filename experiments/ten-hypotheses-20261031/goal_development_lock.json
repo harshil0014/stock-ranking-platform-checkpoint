@@ -1,0 +1,12 @@
+{
+  "selected": "goal_combined",
+  "selection": "equal-date/equal-query Top3 goal attainment; deterministic model-name tie break",
+  "development": {
+    "active_champion": 0.5764303469821587,
+    "goal_analogs": 0.5144858792117053,
+    "goal_base": 0.517374041802336,
+    "goal_combined": 0.5210980559121979,
+    "goal_peers": 0.49571717420788347,
+    "goal_volume": 0.5133966026772856
+  }
+}

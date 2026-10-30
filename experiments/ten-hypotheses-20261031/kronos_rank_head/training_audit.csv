@@ -1,0 +1,13 @@
+year,model,max_training_endpoint,training_rows,features,control_replay_error
+2020,matched_head,2019-12-31,22322,70,
+2020,kronos_head,2019-12-31,22322,86,
+2021,matched_head,2020-12-31,31116,70,
+2021,kronos_head,2020-12-31,31116,86,
+2022,matched_head,2021-12-31,40312,70,
+2022,kronos_head,2021-12-31,40312,86,
+2023,matched_head,2022-12-31,49762,70,
+2023,kronos_head,2022-12-31,49762,86,
+2024,matched_head,2023-12-31,59942,70,
+2024,kronos_head,2023-12-31,59942,86,
+2025,matched_head,2024-12-31,70756,70,
+2025,kronos_head,2024-12-31,70756,86,

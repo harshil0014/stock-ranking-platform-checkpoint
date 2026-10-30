@@ -1,0 +1,16 @@
+{
+  "Kronos-mini": {
+    "repo": "NeoQuasar/Kronos-mini",
+    "revision": "f4e68697d9d5aed55cef5c96aabc3376bcad9f81",
+    "path": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\work\\ten-hypotheses-20261031\\Kronos-mini"
+  },
+  "Kronos-Tokenizer-2k": {
+    "repo": "NeoQuasar/Kronos-Tokenizer-2k",
+    "revision": "26966d0035065a0cae0ebad7af8ece35bc1fb51c",
+    "path": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\work\\ten-hypotheses-20261031\\Kronos-Tokenizer-2k"
+  },
+  "_code": {
+    "repository": "https://github.com/shiyu-coder/Kronos",
+    "revision": "67b630e67f6a18c9e9be918d9b4337c960db1e9a"
+  }
+}

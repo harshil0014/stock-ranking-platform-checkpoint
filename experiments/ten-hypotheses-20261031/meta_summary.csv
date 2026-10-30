@@ -1,0 +1,3 @@
+period,ungated_hit_rate,selected_hit_rate,retained_fraction,total_picks,selected_picks,selected_mean_drawdown,ungated_mean_drawdown,queries_with_any_pick,total_queries
+development,0.6242967651195499,0.6242967651195499,1.0,11376,11376,-0.23810614954009632,-0.23810614954009632,3792,3792
+exposed,0.22964912280701755,0.22964912280701755,1.0,17100,17100,-0.3137756620635418,-0.3137756620635418,5700,5700

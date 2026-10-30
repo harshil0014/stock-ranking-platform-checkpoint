@@ -1,0 +1,12 @@
+{
+  "selected": "head_peers",
+  "development_ic": {
+    "active_champion": 0.022318461079257484,
+    "head_analogs": 0.021813127135313973,
+    "head_combined": 0.023486508193463387,
+    "head_control": 0.022318461079257484,
+    "head_peers": 0.0241756798719906,
+    "head_volume": 0.019932776594533512
+  },
+  "baseline": "active_champion"
+}

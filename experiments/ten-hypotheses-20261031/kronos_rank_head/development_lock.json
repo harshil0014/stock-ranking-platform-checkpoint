@@ -1,0 +1,9 @@
+{
+  "selected": "kronos_head",
+  "development_ic": {
+    "active_champion": 0.015452619939867313,
+    "kronos_head": 0.0016925769089480105,
+    "matched_head": 0.006490630622735653
+  },
+  "baseline": "matched_head"
+}

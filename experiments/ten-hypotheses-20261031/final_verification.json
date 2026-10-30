@@ -1,0 +1,9 @@
+{
+  "annual_control_max_error": 1.1102230246251563e-16,
+  "rank_head_round_models": 30,
+  "kronos_rank_head_models": 12,
+  "research_unit_tests_passed": 7,
+  "python_files_parsed": 8,
+  "application_changed": false,
+  "incumbent_runtime_changed": false
+}

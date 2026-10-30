@@ -1,0 +1,40 @@
+{
+  "status": "NOT_TESTABLE_FROM_ACCESSIBLE_LOCAL_DATA",
+  "locations": [
+    {
+      "path": "data/marketdata",
+      "enumerable": false,
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Harshil\\\\Downloads\\\\stock-ranking-platform-fresh-canonical-verified\\\\data\\\\marketdata'"
+    },
+    {
+      "path": "data/company_facts",
+      "enumerable": false,
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Harshil\\\\Downloads\\\\stock-ranking-platform-fresh-canonical-verified\\\\data\\\\company_facts'"
+    },
+    {
+      "path": "data/point_in_time",
+      "enumerable": false,
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Harshil\\\\Downloads\\\\stock-ranking-platform-fresh-canonical-verified\\\\data\\\\point_in_time'"
+    }
+  ],
+  "available_nse_source": "experiments\\v17-refinement-20261004\\actions\\raw\\nse.json",
+  "rows": 132,
+  "fields": [
+    "bcEndDate",
+    "bcStartDate",
+    "caBroadcastDate",
+    "comp",
+    "exDate",
+    "faceVal",
+    "ind",
+    "isin",
+    "ndEndDate",
+    "ndStartDate",
+    "recDate",
+    "series",
+    "subject",
+    "symbol"
+  ],
+  "non_null_action_broadcast_dates": 0,
+  "reason": "Available NSE source is corporate-action metadata; ex-dates are not filing timestamps or period ends. No usable historical filing-submission metadata located in recovered artifacts. No late-filing or announcement-gap features fabricated."
+}

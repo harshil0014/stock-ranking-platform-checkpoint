@@ -72,3 +72,9 @@ data/analysis/release_website_audit_20260920_run_01/sector_website_audit.csv tex
 experiments/personalized-product-acceptance/sector-final-20260927/*.json binary
 
 research/runtime/sector-champion-recency/** -text
+
+# Preserve research receipts and serialized models across platforms
+experiments/ten-hypotheses-20261031/** -text
+research/runners/*ten_hypotheses*20261031.py text eol=lf
+tests/test_ten_hypotheses_20261031.py text eol=lf
+research/reports/ten_hypotheses_20261031.md text eol=lf

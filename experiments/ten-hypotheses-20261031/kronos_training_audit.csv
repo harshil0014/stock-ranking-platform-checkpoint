@@ -1,0 +1,7 @@
+year,max_training_endpoint,max_calibration_endpoint,rows,pca_fit_unique_training_windows,pretrained_temporal_contamination
+2020,2017-12-31,2019-12-31,10798,962,True
+2021,2018-12-31,2020-12-31,10998,1968,True
+2022,2019-12-31,2021-12-31,11547,3037,True
+2023,2020-12-31,2022-12-31,12087,4200,True
+2024,2021-12-31,2023-12-31,12837,5405,True
+2025,2022-12-31,2024-12-31,25996,6636,True

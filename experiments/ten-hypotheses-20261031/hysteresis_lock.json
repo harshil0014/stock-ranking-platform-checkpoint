@@ -1,0 +1,5 @@
+{
+  "margin": 0.02,
+  "ic_loss_budget": 0.001,
+  "snapshot_frequency": "quarterly until2024,monthly2025"
+}

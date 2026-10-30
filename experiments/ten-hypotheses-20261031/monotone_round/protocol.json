@@ -1,0 +1,11 @@
+{
+  "reason": "Initial unrestrained classifier violated probability ordering across target thresholds. Separate mathematical-validity correction; initial run preserved.",
+  "constraints": {
+    "target_cagr": -1,
+    "analog_attainment": 1,
+    "sigmoid_calibration_slope": "nonnegative; negative unconstrained optimum becomes constant calibrated frequency"
+  },
+  "training": "Same folds, 120 trees, 15 leaves, seed, calibration separation, cohorts and development-only selection as initial locked protocol.",
+  "fresh_validation": false,
+  "no_promotion": true
+}

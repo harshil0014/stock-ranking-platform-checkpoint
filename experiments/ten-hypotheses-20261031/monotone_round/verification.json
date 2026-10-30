@@ -1,0 +1,10 @@
+{
+  "annual_models": 30,
+  "strict_training_and_calibration_maturity": true,
+  "analog_maturity": true,
+  "example_self_matches": 0,
+  "classifier_replay_rows": 500,
+  "classifier_replay_max_abs_error": 5.551115123125783e-17,
+  "application_changed": false,
+  "fresh_holdout": false
+}

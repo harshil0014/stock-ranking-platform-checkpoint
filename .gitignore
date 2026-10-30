@@ -91,3 +91,6 @@ tmp/
 
 # Generated experiment panels and acquisition caches; selected compact evidence is versioned.
 experiments/
+
+# Scratch research checkouts and model download caches
+/work/

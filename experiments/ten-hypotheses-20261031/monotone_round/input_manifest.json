@@ -1,0 +1,19 @@
+{
+  "experiments/sector-price-rebuild-20261010/prepared.pkl.gz": "e9cb1fc2568b0577f4a7cd3d765c08ec7fd0750e2e5a3624800cb2aba759da20",
+  "experiments/sector-price-rebuild-20261010/price_features.pkl.gz": "cd5d78793ddbcb249c544ae516a4d29634d292e52b347c38f0786e816ca290f5",
+  "experiments/champion-high-recency-20261017/historical_adjustments.csv.gz": "c3b1b802d437c026eeda824ff1fa859bd1017f6a8310b07af9ac9e1b829df018",
+  "experiments/champion-recency-complements-20261017/historical_adjustments.csv.gz": "93dc44adef3065a1c120b07588d24c85cbaa60ac4e69d1467ee83259d1d778d3",
+  "experiments/champion-sip-profit-20261017/historical_scores.csv.gz": "31b494e8cf375912afafdd2a1fe42f4dc0002a0b1246100be8d7489c1c9dc765",
+  "experiments/sector-price-rebuild-20261010/predictions_2020.csv.gz": "05585d9c36cb09eda63962b5f161f78f3789e29dd6d6705af5c5ed01cce0f182",
+  "experiments/sector-price-rebuild-20261010/predictions_2021.csv.gz": "0e4fd7d40094154ba9b65c0069119d010435a685394956be43ed9b132436e535",
+  "experiments/sector-price-rebuild-20261010/predictions_2022.csv.gz": "8a1f9dcea2b3f26c28cd2775f791ae174af25cdd25fcafb30025a1ec24304a92",
+  "experiments/sector-price-rebuild-20261010/predictions_2023.csv.gz": "52032006f6986ebd762581e933a573c8e243a3b76af437a45922026af87fa241",
+  "experiments/sector-price-rebuild-20261010/predictions_2024.csv.gz": "b111635aa9558acf80480a0af86fe50c6880ca4a5feb34c831f0c6456dc49114",
+  "experiments/sector-price-rebuild-20261010/predictions_2025.csv.gz": "e73b811da2d3ee844f8eb593f3abd04b37a8005b470b7b70d2ca50b83a3bb53f",
+  "experiments/action-guarded-sector-20261008/predictions_2020.csv.gz": "bf32944d4756901d4814c29efc715781196ba36ae8f1c09366d320bd23e6dd91",
+  "experiments/action-guarded-sector-20261008/predictions_2021.csv.gz": "4c39421c87d3276a1f7b30e55e9924887b187a325af026471dc32a009bf0efda",
+  "experiments/action-guarded-sector-20261008/predictions_2022.csv.gz": "10f4874d40a3480e8c15438261702de714574a2c5b40437f97ab0595272d472e",
+  "experiments/action-guarded-sector-20261008/predictions_2023.csv.gz": "49882bac40bc30209fac990eab2783d7a0aa110a4243c3f27da7b32cdb092a45",
+  "experiments/action-guarded-sector-20261008/predictions_2024.csv.gz": "df1ae652538be29ee7850192bcd9c12055db1ce07bfefe4634d17b46b8a706aa",
+  "experiments/action-guarded-sector-20261008/predictions_2025.csv.gz": "a5f30625c8885f26e2db88b2cd238b31b930b6b547207f274ee4ed62bbea7150"
+}

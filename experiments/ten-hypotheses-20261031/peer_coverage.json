@@ -1,0 +1,6 @@
+{
+  "stock_dates_with_peers": 129118,
+  "unclassified_with_peers": 2526,
+  "neighbors": 25,
+  "alignment": "Calendar-aligned observed daily returns; pairwise-complete Pearson with >=200 common observations"
+}

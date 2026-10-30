@@ -1,0 +1,11 @@
+Idea,Decision,Evidence
+1. Noise floor,Use as a measurement control,35 fixed related policies; development 95% lucky-win hurdle 0.01013 IC / 0.630pp attainment. Not a universal future threshold.
+2. Disagreement confidence,Do not activate abstention,Development selected 100% retained coverage; lower disagreement did not improve development pair accuracy.
+3. Rank hysteresis,Promising UI research pilot,"Margin .02: exposed Kendall tau 0.692 -> 0.755; observed IC delta +0.00093. Quarterly/monthly, not daily refresh validation."
+4. Goal probability,Do not replace incumbent,"Corrected selected goal_volume: exposed attainment 22.96% -> 24.07%, selected-asset drawdown -31.38% -> -44.03%; Brier 0.3039 vs climatology 0.2856."
+5. SIP path dependence,Volatility hypothesis not robustly confirmed,Conditional volatility coefficient is uncertain in development; fractional-SIP coefficient is negative there. Recovery-duration association is descriptive and ex-post.
+6. Meta-labeling,Do not activate gate,Mature out-of-time Top3 logistic meta-labeler selected full coverage on development. No successful abstention policy.
+7. Volume / filing metadata,No promotion; filing test blocked,"Volume in original ranking head: IC delta dev -0.00239, exposed +0.00305. Historical filing-submission timestamps unavailable."
+8. Correlation peers,No promotion; gain below noise,"25 calendar-aligned correlation peers. Original-head IC delta dev +0.00186, exposed -0.00203; sector evaluation retained."
+9. Kronos extractor,Do not add this extractor,"Matched original-head IC delta dev -0.00480, exposed -0.00586; exposed attainment delta -0.905pp. Pretraining contamination risk."
+10. Historical look-alikes,No promotion; IC fell in both periods,"50 mature neighbors, PCA8 path embedding, same issuer excluded. Original-head IC delta dev -0.00051, exposed -0.00301. 250 current-snapshot neighbor examples saved."

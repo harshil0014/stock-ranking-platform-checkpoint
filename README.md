@@ -1,5 +1,7 @@
 # Stock Ranking Platform
 
+Research results: [Ten stock-ranking pilots, 31 October 2026](research/reports/ten_hypotheses_20261031.md). The active application and model package are unchanged.
+
 Latest source and research checkpoint: [31 October 2026](docs/github_checkpoint_20261031.md). The current UI offers Baseline, Sector Champion, Closing High, Personalized, and Personalized V17. The sections below retain the earlier canonical baseline documentation.
 
 ## Canonical product

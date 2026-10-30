@@ -1,0 +1,6 @@
+model,matched_stock_dates,probability_changes,rank_changes,monotone_target_probability_fraction
+goal_analogs,84184,48221,43735,1.0
+goal_base,84184,48221,43684,1.0
+goal_combined,84184,60514,54251,1.0
+goal_peers,84184,60514,54742,1.0
+goal_volume,84184,48221,43425,1.0

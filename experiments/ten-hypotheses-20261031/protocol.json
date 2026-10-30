@@ -1,0 +1,36 @@
+{
+  "seed": 20261031,
+  "baseline_commit": "a216d6dd0af742b719cbe449ff2b2d2f4ef2ca5d",
+  "scope": "Research-only. No deployment or automatic model promotion.",
+  "periods": {
+    "development": "2020-2023",
+    "exposed": "2024-2025; already repeatedly examined"
+  },
+  "population": "Saved current-survivor universe and retrospective sectors; finite existing guarded labels/features; same-row comparisons.",
+  "noise_floor": "35 prespecified related score policies: original + 9 high + 6 complements + 15 SIP + 4 confirmation. Center each date-model difference against active incumbent. Circular moving-calendar-block bootstrap, 365 and 730 days, 4000 replicates, preserve simultaneous model/sector/profile dependence. Familywise 95th percentile maximum mean delta, not a universal future guarantee.",
+  "confidence": "Dispersion of within-query percentile ranks across 35 policies; sampled pair agreement and selective pair accuracy. Development chooses retained fraction among .5,.75,1 maximizing accuracy with >=50% pairs retained; one exposed replay.",
+  "hysteresis": "Adjacent prior-order swaps only if challenger score gap exceeds fixed margin. Margins 0,.0025,.005,.01,.02. Select max development stability subject IC loss <=.001. Quarterly/monthly historical snapshots, not live daily refresh validation.",
+  "goal": "Binary future_xirr >= target_cagr (1e-7 tolerance), not the old composite utility. Annual folds. Base learner endpoint strictly before calibration-year January1; independent calibration outcomes mature strictly before test-year January1. Sigmoid calibration; equal query weights. Fixed 120 trees, 15 leaves, regularization30, seed fixed.",
+  "path": "Explanatory association using REALIZED forward path, endpoint-return spline + sector/date fixed effects. Not tradable future features. Base7500 saved outcomes plus independent fractional monthly-SIP mechanism simulation.",
+  "meta": "Predict success of incumbent Top3 using prior out-of-time predictions with fully mature outcomes. Liquidity, risk, market regime, agreement, and score gap. Annual folds; development selects .5,.75,1 coverage threshold; abstention compared with identical ungated picks.",
+  "volume": "21/252 and5/252 mean-volume ratios, high proximity interaction, volume trend, zero-volume fraction, log median traded value. All inputs <= decision date, guarded by original price eligibility.",
+  "filing": "Require actual filing broadcast timestamps, covered-period ends and historic observation coverage. Corporate-action ex-dates are not filing dates. No proxy fabrication.",
+  "peers": "25 nearest same-date stocks by 252-observation daily return correlation, exclude self, >=200 jointly observed daily returns. Includes Unclassified/small sectors when evidence permits. Fixed peer-return/lag features; original sector evaluation preserved.",
+  "kronos": "Frozen tokenizer and Kronos-mini hidden representation, last252 actual OHLCV observations. Outcome-independent hash sample512 stocks for bounded pilot; matched LightGBM base/augmented. Pretrained temporal contamination makes historical scores diagnostic only; no promotion.",
+  "analogs": "Learned linear path embedding (PCA8 of64 normalized252-observation log-price samples), fit only on outcome-mature historical library at each calendar-year cutoff. Nearest50 cosine neighbors, exclude same issuer, require neighbor endpoint strictly before cutoff. Match profile outcomes. No future-path input.",
+  "model_variants": [
+    "goal_base",
+    "goal_volume",
+    "goal_peers",
+    "goal_analogs",
+    "goal_combined"
+  ],
+  "promotion": "None in this run. Later research must exceed measured multiplicity threshold and preserve calibration/coverage/risk; exposed-period improvement is not fresh evidence.",
+  "sources": [
+    "https://scikit-learn.org/stable/modules/calibration.html",
+    "https://github.com/shiyu-coder/Kronos",
+    "https://doi.org/10.1111/0022-1082.00349",
+    "https://doi.org/10.1093/rfs/hhm003"
+  ],
+  "fresh_validation": false
+}
