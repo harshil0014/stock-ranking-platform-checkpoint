@@ -1,0 +1,36 @@
+{
+  "locked_at": "2026-10-03T17:41:22.466743+00:00",
+  "families": [
+    "xendcg",
+    "huber_return",
+    "median_return",
+    "multitask",
+    "recent_utility",
+    "regime_utility",
+    "specialist_utility",
+    "robust_shallow",
+    "neural_moe",
+    "return_ranker"
+  ],
+  "betas": [
+    0.05,
+    0.1
+  ],
+  "seed": 20261003,
+  "annual_training": "All mature endpoints strictly before first target date in each year; expanding2015+ history. Development2020\u20132023; earlier trainable decisions get post-selection contextual evaluation. Earliest dates without mature labels explicitly unavailable.",
+  "selection": "Must pass original V17 strict champion gates AND V17-relative aggregate return>=0, drawdown>=-0.005, achievement>=-0.005, shortfall<=0.0025, NDCG>=0; every profile return>=-0.025 and drawdown>=-0.01; utility gain>=0.002; improvement utility in >=3 of4 calendar years. Utility uses .45NDCG+.20achievement-.25shortfall+.10drawdown+.10medianXIRR; meanXIRR zero. Rank eligible by utility then lower beta.",
+  "round2": "Exactly top3 round1 families by development utility, independent of eligibility; equal pairs and triple, beta0.05/0.10. Additional seed-averagedV17, component-agreement confidence, and short-history confidence controls. Stop after this registered space and robustness; no threshold chasing.",
+  "stopping": "10 trained families,20 single-model strengths,8 ensemble combinations,6 baseline/confidence controls; maximum34 selection configurations. Finalist robustness alternate seed and per-date refit; if no defensible eligible finalist survives, V17 remains best.",
+  "exposed_current_policy": "No2024\u20132025 outcome or current inference until final selection lock; previous exposure acknowledged. No identity, current fundamentals/industry, or source shortcuts.",
+  "point_in_time_limit": "Price-derived features and maturity-purged labels; fixed-universe survivorship and source-revision limits remain.",
+  "fundamentals_peers": "Only if dated source available. Existing panels have no valid dated fundamentals/industry history; current-only diagnostic layer retained.",
+  "training_parameters": {
+    "trees": 160,
+    "learning_rate": 0.035,
+    "leaves": 15,
+    "depth": 4,
+    "min_child": 300,
+    "l2": 40
+  },
+  "neural": "Two-expert MLP32/16, soft gate over user/regime inputs; pairwise utility + pointwise utility;8 epochs,600 pairs/query; seed fixed."
+}

@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-10-04T12:19:29.261203+00:00",
+  "features": [
+    "high52_freshness",
+    "nonzero_fraction",
+    "volume_active_fraction",
+    "high_support",
+    "momentum_12_1",
+    "quote_freshness",
+    "traded_value",
+    "long_peak_freshness"
+  ],
+  "alphas": [
+    0.05,
+    0.1,
+    0.2,
+    0.35
+  ],
+  "direct_age_penalty": 0.005,
+  "selection": "Highest utility among aggregate median XIRR, NDCG, drawdown, achievement nonnegative and shortfall nonpositive versus V17 refined. Profile tradeoffs reported, current overlap not required.",
+  "exposure": "Hypothesis follows prior historical/current inspection; no blind-validation claim.",
+  "sources": [
+    "https://academic.oup.com/rfs/article-abstract/12/5/1113/1565408",
+    "https://www.sciencedirect.com/science/article/abs/pii/S0378426613002446",
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4587697"
+  ]
+}

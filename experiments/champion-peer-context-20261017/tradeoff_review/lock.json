@@ -1,0 +1,16 @@
+{
+  "stage": "development",
+  "model": "peer_risk_strength1.0",
+  "scope": "expanded",
+  "treatment": "capped",
+  "top_n": 3,
+  "utility": 0.1750868692182881,
+  "ranking_utility": 0.2988867927885176,
+  "equal_utility": 0.01780453136416206,
+  "xirr": -0.005022038788142447,
+  "drawdown": -0.0011818099598931986,
+  "achievement": -0.0034438368648895823,
+  "shortfall": -0.0004618624627794679,
+  "ndcg": -0.00027144747916962864,
+  "rank_ic": 0.00624918333493998
+}

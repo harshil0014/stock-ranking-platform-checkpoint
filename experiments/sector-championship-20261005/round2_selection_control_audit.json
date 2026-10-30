@@ -1,0 +1,31 @@
+{
+  "winner": {
+    "name": "local_h0.5_d0.2",
+    "family": "local",
+    "high": 0.5,
+    "downside": 0.2,
+    "gate": true,
+    "utility": 0.0,
+    "sector_win_fraction": 1.0,
+    "top1_xirr_delta": 0.0,
+    "top1_drawdown_delta": 0.0,
+    "top1_achievement_delta": 0.0,
+    "top1_shortfall_delta": 0.0,
+    "top1_ndcg_delta": 0.0,
+    "top1_rank_ic_delta": 0.0,
+    "top3_xirr_delta": 0.0,
+    "top3_drawdown_delta": 0.0,
+    "top3_achievement_delta": 0.0,
+    "top3_shortfall_delta": 0.0,
+    "top3_ndcg_delta": 0.0,
+    "top3_rank_ic_delta": 0.0,
+    "top5_xirr_delta": 0.0,
+    "top5_drawdown_delta": 0.0,
+    "top5_achievement_delta": 0.0,
+    "top5_shortfall_delta": 0.0,
+    "top5_ndcg_delta": 0.0,
+    "top5_rank_ic_delta": 0.0
+  },
+  "trials": 60,
+  "protocol_sha256": "8377d43a22b3984bcdb5f7227da145e92611212e71ce159a76a8870f4c2ae02a"
+}

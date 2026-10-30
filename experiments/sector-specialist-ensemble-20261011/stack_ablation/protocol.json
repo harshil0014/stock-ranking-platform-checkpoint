@@ -1,0 +1,63 @@
+{
+  "stack": "stack_breadth_balanced_w1.0",
+  "removals": {
+    "ebm_additive": [
+      "ebm_additive_return",
+      "ebm_additive_risk",
+      "ebm_additive_goal"
+    ],
+    "ebm_interactions": [
+      "ebm_interactions_return",
+      "ebm_interactions_risk",
+      "ebm_interactions_goal"
+    ],
+    "extra_trees": [
+      "extra_trees_return",
+      "extra_trees_risk",
+      "extra_trees_goal"
+    ],
+    "ridge": [
+      "ridge_return",
+      "ridge_risk",
+      "ridge_goal"
+    ],
+    "tabm_compact": [
+      "tabm_compact_return",
+      "tabm_compact_risk",
+      "tabm_compact_goal"
+    ],
+    "tabm_embedded": [
+      "tabm_embedded_return",
+      "tabm_embedded_risk",
+      "tabm_embedded_goal"
+    ],
+    "tabpfn": [
+      "pfn_balanced_absolute_soft1.0_d3_w0.1"
+    ],
+    "legacy_controls": [
+      "lgb_return_full_d3_w0.1",
+      "lgb_return_full_d3_w0.5",
+      "pfn_balanced_absolute_soft1.0_d3_w0.1",
+      "catpair_return_uniform_w0.1"
+    ],
+    "risk_heads": [
+      "ebm_additive_risk",
+      "ebm_interactions_risk",
+      "extra_trees_risk",
+      "ridge_risk",
+      "tabm_compact_risk",
+      "tabm_embedded_risk"
+    ],
+    "goal_heads": [
+      "ebm_additive_goal",
+      "ebm_interactions_goal",
+      "extra_trees_goal",
+      "ridge_goal",
+      "tabm_compact_goal",
+      "tabm_embedded_goal"
+    ]
+  },
+  "method": "Use saved annual learned weights. Set removed coefficients to zero and return their mass to champion percentile; no reoptimization or renormalization. Breadth thresholds and regional shrinkage remain fixed. Use no new future labels for weights. This tests reliance of the fitted architecture, not optimal retrained importance.",
+  "comparison": "All already-exposed periods,9profiles,matched common/expanded populations,raw/capped,Top1/3/5. Reference is the intact stack; positive oriented delta means removal helps. No finalist reselection.",
+  "fresh_validation": false
+}

@@ -1,0 +1,39 @@
+{
+  "selected": "near_high_age_0.001",
+  "accept_research_patch": false,
+  "development": {
+    "stage": "development",
+    "scope": "expanded",
+    "treatment": "capped",
+    "model": "near_high_age_0.001",
+    "top_n": 3,
+    "utility": 0.003560043040083463,
+    "ranking_utility": 0.0022669325723343597,
+    "equal_utility": 0.0035837758382403773,
+    "xirr": 1.729362714214533e-05,
+    "drawdown": -3.1287774597821283e-06,
+    "achievement": 0.0001315789473683715,
+    "shortfall": 5.399970556742295e-06,
+    "ndcg": 1.6659943951946588e-05,
+    "rank_ic": 2.8678707494740607e-05
+  },
+  "recent": {
+    "stage": "recent",
+    "scope": "expanded",
+    "treatment": "capped",
+    "model": "near_high_age_0.001",
+    "top_n": 3,
+    "utility": -0.00754300971786942,
+    "ranking_utility": -0.0038950965659340087,
+    "equal_utility": -0.010064090774339896,
+    "xirr": -0.00024409644714866972,
+    "drawdown": -6.416891011984394e-05,
+    "achievement": -0.00029239766081873286,
+    "shortfall": -6.87360364597378e-05,
+    "ndcg": -8.587212753030649e-05,
+    "rank_ic": 7.970196211626313e-06
+  },
+  "coverage": 4436,
+  "website_changed": false,
+  "fresh_validation": false
+}

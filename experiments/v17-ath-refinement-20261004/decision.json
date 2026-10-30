@@ -1,0 +1,33 @@
+{
+  "winner": "V17 refined retained",
+  "verdict": "V17 REMAINS BEST CHALLENGER",
+  "accepted": false,
+  "candidate": null,
+  "rejected_diagnostic": {
+    "family": "age_monotone",
+    "strength": 0.1,
+    "scope": "all",
+    "name": "age_monotone_0.1_all",
+    "eligible": false,
+    "utility": 0.0069116984635967,
+    "coverage": 0.0,
+    "ndcg20": 0.0068228134035119,
+    "target_achievement_top20": 0.0010416666666666,
+    "target_shortfall_top20": -0.0030000472638194,
+    "median_xirr_top20": 0.0132454734229598,
+    "mean_asset_drawdown_top20": 0.0155853994043216,
+    "rank_ic": 0.0032249510282476,
+    "pairwise_accuracy": 0.001053823819322,
+    "gate": null
+  },
+  "trials": 120,
+  "development_passes": 0,
+  "current_stability_pass": false,
+  "all44_dates": 44,
+  "profiles": 9,
+  "current_universe": 4436,
+  "protected_unchanged": true,
+  "website_changed": false,
+  "mean_xirr_selection_weight": 0,
+  "no_unexposed_validation": true
+}

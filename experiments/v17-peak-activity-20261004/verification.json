@@ -1,0 +1,10 @@
+{
+  "score_and_rank_reproduced": true,
+  "identical_benchmark_universe_per_query": true,
+  "date_profile_queries": 396,
+  "minimum_eligible_basket": 478,
+  "full_universe_rows_preserved": 39924,
+  "baseline_hashes_unchanged": true,
+  "all_top_exports_verified": true,
+  "recent_positive_volume_enforced": true
+}

@@ -1,0 +1,54 @@
+{
+  "families": [
+    {
+      "name": "return_leaves7",
+      "target": "return",
+      "leaves": 7
+    },
+    {
+      "name": "return_leaves15",
+      "target": "return",
+      "leaves": 15
+    },
+    {
+      "name": "balanced_leaves7",
+      "target": "balanced",
+      "leaves": 7
+    },
+    {
+      "name": "balanced_leaves15",
+      "target": "balanced",
+      "leaves": 15
+    }
+  ],
+  "alphas": [
+    0.05,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "features": [
+    "sector_base",
+    "sector_high",
+    "closing_high_component",
+    "sector_downside",
+    "sector_momentum",
+    "sector_goal",
+    "support",
+    "annual_high",
+    "risk_adjusted_momentum",
+    "professor",
+    "momentum6",
+    "tail_risk"
+  ],
+  "training": "For each 2020-2023 year, outcomes must mature strictly before the first decision of that year. No current company financials.",
+  "selection": "Same Top1/3/5 strict nonworseness gate as round2, positive utility required; no feature/parameter changes after testing",
+  "params": {
+    "trees": 120,
+    "learning_rate": 0.035,
+    "min_child_samples": 150,
+    "reg_lambda": 40,
+    "seed": 20261005
+  },
+  "exposure": "All dates previously researched; not independent validation"
+}

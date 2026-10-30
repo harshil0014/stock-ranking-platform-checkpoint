@@ -1,0 +1,4 @@
+# Install in an isolated target. Existing system numpy/pandas/sklearn/torch are reused.
+tabm==0.0.3
+rtdl-num-embeddings==0.0.12
+interpret-core==0.7.8

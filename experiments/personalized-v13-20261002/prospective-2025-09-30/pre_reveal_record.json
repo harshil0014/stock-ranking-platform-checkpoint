@@ -1,0 +1,19 @@
+{
+  "schema": "personalized_v13_prospective_pre_reveal_v1",
+  "decision_date": "2025-09-30",
+  "endpoint": "2026-09-30",
+  "selection_lock_sha256": "dad3ce68b22a1f744650e501505a3ebc78dc7c4bd39c3247982c4ed84bcac13b",
+  "blind_plan_sha256": "caa3262177ff174357d04c7b63caa6a9c8f2ab6eb660945333f400afeeee57fb",
+  "v12_prepared_sha256": "b5fa0a1f0229bde692b2c07e0a05cfe91f7501a9deeba6c4bcd9109f00d36fb7",
+  "decision_features_without_outcomes_sha256": "20082303872e87d2b148f07d6f4bdd026ffc78e62938f7bbf9836bea0ae048c4",
+  "scores_before_reveal_sha256": "5040171dd8a88f9202a89dadba4538537a3571d0eba6bcec0f631634c5a49926",
+  "score_rows": 30305,
+  "available_score_rows": 28185,
+  "null_scores_for_available_rows": 104,
+  "null_scores_for_unavailable_rows": 2224,
+  "provider_ledger_sha256": "eb4d839e4dc8edf21f3b71098bdf5a6ee215d9c99f0c265ec592a1da2e6be452",
+  "outcome_columns_loaded": false,
+  "outcome_simulation_run": false,
+  "selection_changed": false,
+  "accepted_production_data_mutated": false
+}

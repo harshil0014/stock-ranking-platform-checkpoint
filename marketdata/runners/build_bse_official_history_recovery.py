@@ -68,7 +68,8 @@ def finite_positive(value: Any, label: str) -> float:
 
 
 def load_facts(root: Path) -> tuple[dict[str, dict[str, Any]], str]:
-    bundle = load_company_fact_snapshot(resolve_company_fact_snapshot(root))
+    snapshot = root if (root / "manifest.json").is_file() else resolve_company_fact_snapshot(root)
+    bundle = load_company_fact_snapshot(snapshot)
     mapping: dict[str, dict[str, Any]] = {}
     for row in bundle.facts.loc[
         bundle.facts["primary_exchange"].astype(str).str.upper().eq("BSE")

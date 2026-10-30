@@ -1,0 +1,56 @@
+EVAL development 0 common False
+EVAL development 0 common True
+EVAL development 0 expanded False
+EVAL development 0 expanded True
+EVAL development 12 common False
+EVAL development 12 common True
+EVAL development 12 expanded False
+EVAL development 12 expanded True
+EVAL development 24 common False
+EVAL development 24 common True
+EVAL development 24 expanded False
+EVAL development 24 expanded True
+EVAL development 36 common False
+EVAL development 36 common True
+EVAL development 36 expanded False
+EVAL development 36 expanded True
+EVAL development 48 common False
+EVAL development 48 common True
+EVAL development 48 expanded False
+EVAL development 48 expanded True
+EVAL development 60 common False
+EVAL development 60 common True
+EVAL development 60 expanded False
+EVAL development 60 expanded True
+EVAL development 72 common False
+EVAL development 72 common True
+EVAL development 72 expanded False
+EVAL development 72 expanded True
+EVAL development 84 common False
+EVAL development 84 common True
+EVAL development 84 expanded False
+EVAL development 84 expanded True
+EVAL development 96 common False
+EVAL development 96 common True
+EVAL development 96 expanded False
+EVAL development 96 expanded True
+EVAL development 108 common False
+EVAL development 108 common True
+EVAL development 108 expanded False
+EVAL development 108 expanded True
+                      model  improved  regressed  comparisons  top3_nonreturn_regressions  nonreturn_regressions  rank_ic
+        ridge_balanced_w1.0       406        242          648                          68                    227 0.045467
+          ridge_return_w1.0       417        231          648                          76                    229 0.044325
+            ridge_goal_w1.0       460        188          648                          33                    172 0.043510
+           mean_return_w1.0       282        366          648                         122                    334 0.042678
+         median_return_w1.0       286        362          648                         120                    329 0.040928
+       median_balanced_w1.0       363        285          648                          96                    240 0.039154
+  tabm_embedded_return_w1.0       402        246          648                          85                    245 0.038736
+           median_goal_w1.0       363        285          648                         100                    243 0.037978
+stack_breadth_balanced_w1.0       392        256          648                         102                    235 0.037531
+         mean_balanced_w1.0       379        269          648                          72                    210 0.037151
+ stack_global_balanced_w1.0       394        254          648                         102                    238 0.036563
+          ridge_return_w0.3       345        303          648                          68                    259 0.035758
+   tabm_compact_return_w0.3       332        316          648                          91                    271 0.035242
+  stack_breadth_return_w1.0       372        276          648                         106                    257 0.035056
+  tabm_embedded_return_w0.3       400        248          648                          93                    221 0.035026

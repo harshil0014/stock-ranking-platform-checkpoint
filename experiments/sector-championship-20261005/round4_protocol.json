@@ -1,0 +1,297 @@
+{
+  "candidates": [
+    {
+      "name": "momentum6_w0.05_risk0.025",
+      "family": "momentum6",
+      "weight": 0.05,
+      "risk_weight": 0.025
+    },
+    {
+      "name": "momentum6_w0.05_risk0.05",
+      "family": "momentum6",
+      "weight": 0.05,
+      "risk_weight": 0.05
+    },
+    {
+      "name": "momentum6_w0.05_risk0.1",
+      "family": "momentum6",
+      "weight": 0.05,
+      "risk_weight": 0.1
+    },
+    {
+      "name": "momentum6_w0.05_risk0.15",
+      "family": "momentum6",
+      "weight": 0.05,
+      "risk_weight": 0.15
+    },
+    {
+      "name": "momentum6_w0.1_risk0.025",
+      "family": "momentum6",
+      "weight": 0.1,
+      "risk_weight": 0.025
+    },
+    {
+      "name": "momentum6_w0.1_risk0.05",
+      "family": "momentum6",
+      "weight": 0.1,
+      "risk_weight": 0.05
+    },
+    {
+      "name": "momentum6_w0.1_risk0.1",
+      "family": "momentum6",
+      "weight": 0.1,
+      "risk_weight": 0.1
+    },
+    {
+      "name": "momentum6_w0.1_risk0.15",
+      "family": "momentum6",
+      "weight": 0.1,
+      "risk_weight": 0.15
+    },
+    {
+      "name": "momentum6_w0.15_risk0.025",
+      "family": "momentum6",
+      "weight": 0.15,
+      "risk_weight": 0.025
+    },
+    {
+      "name": "momentum6_w0.15_risk0.05",
+      "family": "momentum6",
+      "weight": 0.15,
+      "risk_weight": 0.05
+    },
+    {
+      "name": "momentum6_w0.15_risk0.1",
+      "family": "momentum6",
+      "weight": 0.15,
+      "risk_weight": 0.1
+    },
+    {
+      "name": "momentum6_w0.15_risk0.15",
+      "family": "momentum6",
+      "weight": 0.15,
+      "risk_weight": 0.15
+    },
+    {
+      "name": "momentum6_w0.2_risk0.025",
+      "family": "momentum6",
+      "weight": 0.2,
+      "risk_weight": 0.025
+    },
+    {
+      "name": "momentum6_w0.2_risk0.05",
+      "family": "momentum6",
+      "weight": 0.2,
+      "risk_weight": 0.05
+    },
+    {
+      "name": "momentum6_w0.2_risk0.1",
+      "family": "momentum6",
+      "weight": 0.2,
+      "risk_weight": 0.1
+    },
+    {
+      "name": "momentum6_w0.2_risk0.15",
+      "family": "momentum6",
+      "weight": 0.2,
+      "risk_weight": 0.15
+    },
+    {
+      "name": "annual_high_w0.05_risk0.025",
+      "family": "annual_high",
+      "weight": 0.05,
+      "risk_weight": 0.025
+    },
+    {
+      "name": "annual_high_w0.05_risk0.05",
+      "family": "annual_high",
+      "weight": 0.05,
+      "risk_weight": 0.05
+    },
+    {
+      "name": "annual_high_w0.05_risk0.1",
+      "family": "annual_high",
+      "weight": 0.05,
+      "risk_weight": 0.1
+    },
+    {
+      "name": "annual_high_w0.05_risk0.15",
+      "family": "annual_high",
+      "weight": 0.05,
+      "risk_weight": 0.15
+    },
+    {
+      "name": "annual_high_w0.1_risk0.025",
+      "family": "annual_high",
+      "weight": 0.1,
+      "risk_weight": 0.025
+    },
+    {
+      "name": "annual_high_w0.1_risk0.05",
+      "family": "annual_high",
+      "weight": 0.1,
+      "risk_weight": 0.05
+    },
+    {
+      "name": "annual_high_w0.1_risk0.1",
+      "family": "annual_high",
+      "weight": 0.1,
+      "risk_weight": 0.1
+    },
+    {
+      "name": "annual_high_w0.1_risk0.15",
+      "family": "annual_high",
+      "weight": 0.1,
+      "risk_weight": 0.15
+    },
+    {
+      "name": "annual_high_w0.15_risk0.025",
+      "family": "annual_high",
+      "weight": 0.15,
+      "risk_weight": 0.025
+    },
+    {
+      "name": "annual_high_w0.15_risk0.05",
+      "family": "annual_high",
+      "weight": 0.15,
+      "risk_weight": 0.05
+    },
+    {
+      "name": "annual_high_w0.15_risk0.1",
+      "family": "annual_high",
+      "weight": 0.15,
+      "risk_weight": 0.1
+    },
+    {
+      "name": "annual_high_w0.15_risk0.15",
+      "family": "annual_high",
+      "weight": 0.15,
+      "risk_weight": 0.15
+    },
+    {
+      "name": "annual_high_w0.2_risk0.025",
+      "family": "annual_high",
+      "weight": 0.2,
+      "risk_weight": 0.025
+    },
+    {
+      "name": "annual_high_w0.2_risk0.05",
+      "family": "annual_high",
+      "weight": 0.2,
+      "risk_weight": 0.05
+    },
+    {
+      "name": "annual_high_w0.2_risk0.1",
+      "family": "annual_high",
+      "weight": 0.2,
+      "risk_weight": 0.1
+    },
+    {
+      "name": "annual_high_w0.2_risk0.15",
+      "family": "annual_high",
+      "weight": 0.2,
+      "risk_weight": 0.15
+    },
+    {
+      "name": "risk_adjusted_momentum_w0.05_risk0.025",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.05,
+      "risk_weight": 0.025
+    },
+    {
+      "name": "risk_adjusted_momentum_w0.05_risk0.05",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.05,
+      "risk_weight": 0.05
+    },
+    {
+      "name": "risk_adjusted_momentum_w0.05_risk0.1",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.05,
+      "risk_weight": 0.1
+    },
+    {
+      "name": "risk_adjusted_momentum_w0.05_risk0.15",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.05,
+      "risk_weight": 0.15
+    },
+    {
+      "name": "risk_adjusted_momentum_w0.1_risk0.025",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.1,
+      "risk_weight": 0.025
+    },
+    {
+      "name": "risk_adjusted_momentum_w0.1_risk0.05",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.1,
+      "risk_weight": 0.05
+    },
+    {
+      "name": "risk_adjusted_momentum_w0.1_risk0.1",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.1,
+      "risk_weight": 0.1
+    },
+    {
+      "name": "risk_adjusted_momentum_w0.1_risk0.15",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.1,
+      "risk_weight": 0.15
+    },
+    {
+      "name": "risk_adjusted_momentum_w0.15_risk0.025",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.15,
+      "risk_weight": 0.025
+    },
+    {
+      "name": "risk_adjusted_momentum_w0.15_risk0.05",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.15,
+      "risk_weight": 0.05
+    },
+    {
+      "name": "risk_adjusted_momentum_w0.15_risk0.1",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.15,
+      "risk_weight": 0.1
+    },
+    {
+      "name": "risk_adjusted_momentum_w0.15_risk0.15",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.15,
+      "risk_weight": 0.15
+    },
+    {
+      "name": "risk_adjusted_momentum_w0.2_risk0.025",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.2,
+      "risk_weight": 0.025
+    },
+    {
+      "name": "risk_adjusted_momentum_w0.2_risk0.05",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.2,
+      "risk_weight": 0.05
+    },
+    {
+      "name": "risk_adjusted_momentum_w0.2_risk0.1",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.2,
+      "risk_weight": 0.1
+    },
+    {
+      "name": "risk_adjusted_momentum_w0.2_risk0.15",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.2,
+      "risk_weight": 0.15
+    }
+  ],
+  "reason": "Round2 momentum/annual-high proxies can raise returns while worsening drawdown or shortfall; test explicit within-sector risk offsets.",
+  "formula": "(1-weight-risk_weight)*incumbent + weight*signal + risk_weight*sector_downside",
+  "gate": "Strict aggregate nonworseness for six metrics at Top1/3/5; positive utility; Top3 profile and sector safeguards from round2",
+  "selection": "2020-2023 only; early/recent evaluation after lock; all historical outcomes previously exposed",
+  "stopping_rule": "No promotion without gate; stop this sequence after these prespecified interactions, retain frontier and require new dated evidence rather than infinite tuning on exposed data."
+}

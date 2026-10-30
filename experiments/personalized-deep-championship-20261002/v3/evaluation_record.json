@@ -1,0 +1,41 @@
+{
+  "locked_selection_sha256": "b0e7f8e94570fd7dd70a1da6f3a4bfa35c59a30653d283cc1f53489c458d3615",
+  "winner": {
+    "phase": "development",
+    "candidate": "score_adjustment|age_downside|none",
+    "goal_weight": 0.67,
+    "alpha": 0.0,
+    "age_penalty": 0.2,
+    "delta_coverage": 0.0,
+    "delta_rank_ic": 0.000149485298817,
+    "delta_ndcg20": 0.0404449692364111,
+    "delta_pairwise_accuracy": 0.0001278203541468,
+    "delta_target_achievement_top20": 0.0142361111111111,
+    "delta_target_shortfall_top20": -0.0093209031761907,
+    "delta_mean_xirr_top20": 1.4901287648192172,
+    "delta_median_xirr_top20": 0.0660647937114695,
+    "delta_mean_asset_drawdown_top20": 0.0339232830660978,
+    "utility": 0.0085890198569052,
+    "aggregate_utility": 0.1388893266354512,
+    "robustness_penalty": 0.130300306778546,
+    "eligible": true,
+    "worst_profile_shortfall_delta": -0.0015778374235474,
+    "worst_profile_achievement_delta": -0.040625,
+    "worst_date_shortfall_delta": 0.020101483730961,
+    "worst_date_achievement_delta": -0.0611111111111112,
+    "worst_date_median_xirr_delta": -0.1239910026378744,
+    "worst_date_drawdown_delta": -0.0224638324855985,
+    "age_coefficient": 0.05
+  },
+  "final_evaluated_once": true,
+  "untouched_final_dates": [
+    "2025-01-31",
+    "2025-08-31"
+  ],
+  "partitions": [
+    "postlock_2024_diagnostics",
+    "untouched_final_2025",
+    "postfinal_2025_diagnostics"
+  ],
+  "selection_unchanged_after_lock": true
+}

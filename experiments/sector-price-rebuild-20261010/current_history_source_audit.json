@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "path": "research\\runtime\\personalized-v17\\history.npz",
+      "sha256": "d99b11eeef4fa38965e90b181827ae19a7bb40d3d55767bd4958229647650494",
+      "basis": "raw provider split-adjusted Close, not reconstructed nominal or economic series"
+    },
+    {
+      "path": "research\\runtime\\personalized-v17\\peak_history.npz",
+      "sha256": "7a5a460d058891319e6c4566bcc2521809e6d9af813dd6b4a70b1eca520c428d",
+      "basis": "raw provider split-adjusted Close, not reconstructed nominal or economic series"
+    },
+    {
+      "path": "experiments\\sector-price-rebuild-20261010\\current_input_rescue\\accepted_features.csv",
+      "sha256": "5c8214a88a72c26786d7587d429ef3c5223bb252f3efbf9640c8f2079d570684",
+      "basis": "Current-only provider receipts from verified identity mappings; unresolved splits excluded."
+    }
+  ],
+  "reason": "Historical CSV cache ends September18. Current-only features use later runtime source receipts, without using later observations in training.",
+  "input_status": {
+    "USABLE_PROVIDER_BASIS": 4303,
+    "NO_PRICE": 118,
+    "UNRESOLVED_ACTION_IN_FEATURE_WINDOW": 15
+  }
+}

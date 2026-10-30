@@ -1,0 +1,8 @@
+{
+  "url": "http://127.0.0.1:8765/closing-high",
+  "model_id": "closing_high_reviewed",
+  "eligible": 1747,
+  "recovery_rank_verified": true,
+  "recovered_history_verified": true,
+  "unverified_sme_figures_suppressed": true
+}

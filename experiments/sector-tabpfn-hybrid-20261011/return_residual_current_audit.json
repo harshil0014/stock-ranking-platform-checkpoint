@@ -1,0 +1,32 @@
+{
+  "rows": 4096,
+  "context_rows": 768,
+  "features": [
+    "champion_percentile",
+    "rank_xendcg_balanced",
+    "guarded_percentile",
+    "q_high_gap252",
+    "q_high_age252",
+    "q_momentum12_1",
+    "q_downside252",
+    "q_drawdown252",
+    "q_zero_fraction",
+    "q_largest_jump_share",
+    "q_trend_r2",
+    "q_efficiency126",
+    "evidence_fraction",
+    "sector_breadth",
+    "log_amount",
+    "lookback_months",
+    "log_interval",
+    "target_cagr"
+  ],
+  "estimators": 2,
+  "checkpoint_sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+  "seconds": 92.5921088999894,
+  "replay_256_max_error": 0.0,
+  "context_sha256": "98e9821a9d9d64b012bef65797e9d38fe86269a56dcb57a5a67d4061d7fcc54c",
+  "inputs_sha256": "e94b593611ac4a61b9c105804b598ba0c077584c6bfa391e53b5dcbf5da53835",
+  "mode": "DIRECT_ENSEMBLE_NO_GRID",
+  "telemetry_disabled": true
+}

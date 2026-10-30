@@ -1,0 +1,207 @@
+{
+  "configs": [
+    {
+      "name": "lgb_balanced_pool_d3",
+      "teacher": null,
+      "target": "balanced",
+      "data": "pool",
+      "depth": 3,
+      "alpha": 0.0
+    },
+    {
+      "name": "lgb_balanced_pool_d5",
+      "teacher": null,
+      "target": "balanced",
+      "data": "pool",
+      "depth": 5,
+      "alpha": 0.0
+    },
+    {
+      "name": "lgb_balanced_full_d3",
+      "teacher": null,
+      "target": "balanced",
+      "data": "full",
+      "depth": 3,
+      "alpha": 0.0
+    },
+    {
+      "name": "lgb_balanced_full_d5",
+      "teacher": null,
+      "target": "balanced",
+      "data": "full",
+      "depth": 5,
+      "alpha": 0.0
+    },
+    {
+      "name": "lgb_return_pool_d3",
+      "teacher": null,
+      "target": "return",
+      "data": "pool",
+      "depth": 3,
+      "alpha": 0.0
+    },
+    {
+      "name": "lgb_return_pool_d5",
+      "teacher": null,
+      "target": "return",
+      "data": "pool",
+      "depth": 5,
+      "alpha": 0.0
+    },
+    {
+      "name": "lgb_return_full_d3",
+      "teacher": null,
+      "target": "return",
+      "data": "full",
+      "depth": 3,
+      "alpha": 0.0
+    },
+    {
+      "name": "lgb_return_full_d5",
+      "teacher": null,
+      "target": "return",
+      "data": "full",
+      "depth": 5,
+      "alpha": 0.0
+    },
+    {
+      "name": "pfn_balanced_absolute_soft0.5_d3",
+      "teacher": "balanced_absolute",
+      "target": "balanced",
+      "data": "pool",
+      "depth": 3,
+      "alpha": 0.5
+    },
+    {
+      "name": "pfn_balanced_absolute_soft0.5_d5",
+      "teacher": "balanced_absolute",
+      "target": "balanced",
+      "data": "pool",
+      "depth": 5,
+      "alpha": 0.5
+    },
+    {
+      "name": "pfn_balanced_absolute_soft1.0_d3",
+      "teacher": "balanced_absolute",
+      "target": "balanced",
+      "data": "pool",
+      "depth": 3,
+      "alpha": 1.0
+    },
+    {
+      "name": "pfn_balanced_absolute_soft1.0_d5",
+      "teacher": "balanced_absolute",
+      "target": "balanced",
+      "data": "pool",
+      "depth": 5,
+      "alpha": 1.0
+    },
+    {
+      "name": "pfn_balanced_residual_soft0.5_d3",
+      "teacher": "balanced_residual",
+      "target": "balanced",
+      "data": "pool",
+      "depth": 3,
+      "alpha": 0.5
+    },
+    {
+      "name": "pfn_balanced_residual_soft0.5_d5",
+      "teacher": "balanced_residual",
+      "target": "balanced",
+      "data": "pool",
+      "depth": 5,
+      "alpha": 0.5
+    },
+    {
+      "name": "pfn_balanced_residual_soft1.0_d3",
+      "teacher": "balanced_residual",
+      "target": "balanced",
+      "data": "pool",
+      "depth": 3,
+      "alpha": 1.0
+    },
+    {
+      "name": "pfn_balanced_residual_soft1.0_d5",
+      "teacher": "balanced_residual",
+      "target": "balanced",
+      "data": "pool",
+      "depth": 5,
+      "alpha": 1.0
+    },
+    {
+      "name": "pfn_return_residual_soft0.5_d3",
+      "teacher": "return_residual",
+      "target": "return",
+      "data": "pool",
+      "depth": 3,
+      "alpha": 0.5
+    },
+    {
+      "name": "pfn_return_residual_soft0.5_d5",
+      "teacher": "return_residual",
+      "target": "return",
+      "data": "pool",
+      "depth": 5,
+      "alpha": 0.5
+    },
+    {
+      "name": "pfn_return_residual_soft1.0_d3",
+      "teacher": "return_residual",
+      "target": "return",
+      "data": "pool",
+      "depth": 3,
+      "alpha": 1.0
+    },
+    {
+      "name": "pfn_return_residual_soft1.0_d5",
+      "teacher": "return_residual",
+      "target": "return",
+      "data": "pool",
+      "depth": 5,
+      "alpha": 1.0
+    }
+  ],
+  "weights": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "features": [
+    "champion_percentile",
+    "rank_xendcg_balanced",
+    "guarded_percentile",
+    "q_high_gap252",
+    "q_high_age252",
+    "q_momentum12_1",
+    "q_downside252",
+    "q_drawdown252",
+    "q_zero_fraction",
+    "q_largest_jump_share",
+    "q_trend_r2",
+    "q_efficiency126",
+    "evidence_fraction",
+    "sector_breadth",
+    "log_amount",
+    "lookback_months",
+    "log_interval",
+    "target_cagr"
+  ],
+  "teacher_context": 768,
+  "teacher_estimators": 2,
+  "student_pool": 4096,
+  "training": "Completed out-of-time component predictions only; annual endpoint cutoff January1. 2020/2021 anchor fallback. Current cutoff October3. Finite usable price features, known sector and >=5 peers in teacher/student training.",
+  "teacher": "Original TabPFN v2, richer inputs, two-member internal ensemble; in-context adaptation, not gradient fine tuning. Exact batched inference, no grid. Equal-query context sample; student pool excludes context identities.",
+  "student": "Open-source LightGBM residual regression. Targets mix hard historical outcome percentiles and TabPFN soft predictions. Pool-only and full-data controls isolate teacher contribution. Normalized inverse query-size sample weights.",
+  "target": "Return percentile or .5 return+.25 drawdown+.25 inverse shortfall, minus point-in-time champion within-sector percentile. Absolute teacher is converted to residual by subtracting champion percentile.",
+  "score": "champion sector percentile + weight*predicted residual for usable features; zero correction otherwise. Champion score retained for fallback years. All-stock finite ranking, missing evidence flagged.",
+  "selection": "Evaluate all60 on development2020-23 first. Lock three finalists: best teacher/student candidate, best full-data control, best pool-only control; fewest development Top3 regressions vs champion, then all development regressions, then higher expanded raw rankIC, then name. Evaluate only these3 on exposed2024-25.",
+  "benchmark": "Same common/expanded cohorts, raw/capped XIRR,9profiles,Top1/3/5 and6metrics. Pair-order diagnostic for finalists. Active years separated from fallback.",
+  "promotion": "Retain champion unless development-selected hybrid passes no-regression comparison to champion in every full benchmark cell with at least one improvement. All other tradeoffs explicitly reported.",
+  "fresh_validation": false,
+  "sources": [
+    "https://www.nature.com/articles/s41586-024-08328-6",
+    "https://github.com/PriorLabs/TabPFN",
+    "https://arxiv.org/abs/1503.02531",
+    "https://lightgbm.readthedocs.io/en/latest/Parameters.html"
+  ]
+}

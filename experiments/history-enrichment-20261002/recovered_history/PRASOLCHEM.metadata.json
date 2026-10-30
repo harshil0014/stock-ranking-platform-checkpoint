@@ -1,0 +1,19 @@
+{
+  "ticker": "PRASOLCHEM",
+  "isin": "INE455U01024",
+  "provider": "PRASOLCHEM.NS",
+  "trade_date": "2026-09-18",
+  "official_price": 703.4,
+  "status": "RECOVERED",
+  "rows": 3,
+  "first_date": "2026-09-16",
+  "last_date": "2026-09-18",
+  "terminal_lag_days": 0,
+  "terminal_relative_difference": 3.470864731694252e-08,
+  "listing_date": "2026-09-16",
+  "history_precedes_listing_date": false,
+  "csv_sha256": "4ca9024d154bc28791714cbcc3d67ea052404d607b57346afdb40f1bc3b6b349",
+  "source": "Yahoo Finance secondary history",
+  "identity_mapping": "exact NSE ticker -> .NS",
+  "accepted_for_research_overlay": true
+}

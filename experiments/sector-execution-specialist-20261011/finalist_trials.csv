@@ -1,0 +1,7 @@
+model,improved,regressed,ties,strict_gate
+balanced_l1_base_w1.0,534,762,0,False
+balanced_l1_activity_w1.0,513,783,0,False
+return_q25_base_w0.1,572,718,6,False
+return_q25_activity_w0.1,526,764,6,False
+balanced_l1_base_w0.1,789,485,22,False
+balanced_l1_activity_w0.1,774,508,14,False

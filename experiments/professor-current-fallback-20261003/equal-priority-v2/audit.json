@@ -1,0 +1,12 @@
+{
+  "schema": "professor_current_equal_priority_audit_v1",
+  "status": "PASS",
+  "rows": 4436,
+  "direct_fills_verified": 1497,
+  "original_nonmissing_cells_preserved": true,
+  "accepted_state_sha256": "79462a7499ef120f530652b077274c70cec5c6ee1379e9d5c88bef2c6dd412c0",
+  "accepted_company_facts_sha256": "d0436b9f79eda4de11524f22e7be985ae6d3a06c7ef3c72151973498c3f08301",
+  "base_overlay_sha256": "3f6c55a7b931adbbc1b6cd7ec2f10a53001f07765d22d5fa8803db3edd61ff1f",
+  "equal_priority_overlay_sha256": "632ebce3d1c19e027ea558029b40b32c11162935ddf30efb545075414d73b7c9",
+  "historical_or_production_files_modified": false
+}

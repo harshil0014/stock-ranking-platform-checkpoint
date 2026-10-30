@@ -1,0 +1,17 @@
+{
+  "features": [
+    "open_model",
+    "profile_defensive_15",
+    "rank_xendcg_balanced"
+  ],
+  "weights": [
+    0.743659826722922,
+    0.0,
+    0.25634017327707803
+  ],
+  "raw_weights": [
+    0.703909735867315,
+    0.0,
+    0.2426382832306464
+  ]
+}

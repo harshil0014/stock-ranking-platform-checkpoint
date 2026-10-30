@@ -1,0 +1,38 @@
+opponent,regressions,comparisons,top3_regressions,top3_comparisons,all_cells_nonworse
+Archived catboost_yetirank_pairwise_blend_score,125,648,27,216,False
+Archived hmm_blend_score,138,648,44,216,False
+Archived jump_adwin_blend_score,130,648,34,216,False
+Archived jump_blend_score,153,648,41,216,False
+Archived volatility_blend_score,150,648,46,216,False
+Archived xgboost_rank_ndcg_blend_score,125,648,36,216,False
+Baseline four-factor formula replay,83,648,27,216,False
+Closing High confirmation,77,648,21,216,False
+Closing High priority,63,648,18,216,False
+Deep championship V1,99,648,35,216,False
+Executable cluster_rank_aggregation_score,178,648,53,216,False
+Executable enhanced_carry_xirr_score,74,648,20,216,False
+Executable enhanced_goal_score,100,648,30,216,False
+Executable enhanced_no_carry_xirr_score,76,648,21,216,False
+Executable enhanced_plus_existing_score,74,648,19,216,False
+Executable global_existing_score,80,648,25,216,False
+Executable hist_gradient_boosting_score,140,648,44,216,False
+Executable historical_target_frequency_score,171,648,47,216,False
+Executable lightgbm_lambdarank_score,39,648,12,216,False
+Executable professor_whole_share_score,73,648,20,216,False
+Executable ridge_executable_score,81,648,27,216,False
+Executable ridge_without_amount_features_score,81,648,27,216,False
+Executable ridge_without_goal_score,74,648,26,216,False
+Original Personalized policy,162,648,48,216,False
+Prior reviewed closing-high policy,78,648,21,216,False
+Production sector champion,87,648,26,216,False
+Professor whole-share project policy,73,648,20,216,False
+V12,161,648,49,216,False
+V13 policy replay,162,648,50,216,False
+V14,180,324,60,108,False
+V15,221,648,69,216,False
+V16,218,648,68,216,False
+V17,236,648,73,216,False
+V17 ATH diagnostic,265,648,84,216,False
+V17 peak context,262,648,84,216,False
+V17 refined,250,648,79,216,False
+V18 rejected candidate,263,648,84,216,False

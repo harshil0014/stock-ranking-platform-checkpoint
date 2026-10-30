@@ -1,0 +1,31 @@
+{
+  "locked_at": "2026-10-03T21:30:22.359478+00:00",
+  "choice": {
+    "name": "extended_bag60_mean_1.0_a0.35_regime_0.1",
+    "aggregation": "mean",
+    "share": 1.0,
+    "family": "regime_utility",
+    "beta": 0.1,
+    "gate": "broad",
+    "long_kind": "original",
+    "long_alpha": 0.35,
+    "eligible": true,
+    "utility": 0.0136828070156748,
+    "coverage": 0.0,
+    "ndcg20": 0.0161011635691319,
+    "target_achievement_top20": 0.0104166666666666,
+    "target_shortfall_top20": -0.0032315041209097,
+    "median_xirr_top20": 0.012526657091991,
+    "mean_asset_drawdown_top20": 0.0229340833680558,
+    "rank_ic": 0.0062636300233041,
+    "pairwise_accuracy": 0.0021687053619666,
+    "highvol_return": 0.0148152296762657,
+    "highvol_drawdown": 0.0037687832724479
+  },
+  "accepted_model_repair": true,
+  "stability_pass": true,
+  "data_repairs_accepted": true,
+  "name": "V17 refined ensemble",
+  "newV18_earned": false,
+  "current_stability_veto_only": true
+}

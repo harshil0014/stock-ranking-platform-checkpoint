@@ -1,0 +1,39 @@
+{
+  "accepted_company_facts_sha256": "d0436b9f79eda4de11524f22e7be985ae6d3a06c7ef3c72151973498c3f08301",
+  "accepted_snapshot": "snapshots/2026-09-18-dba7b068cdc97e01cba00e36d914d0ce97d1d283763247ada544b89486454a0e",
+  "accepted_state_sha256": "79462a7499ef120f530652b077274c70cec5c6ee1379e9d5c88bef2c6dd412c0",
+  "ambiguous_source_rows": 7,
+  "ath_note": "Workbook ATH is a raw price reference; adjusted-history recorded_high and derived baseline days since high are not overwritten.",
+  "cagr_note": "Workbook CAGR occupies professor_workbook fields only; product baseline CAGRs remain on their accepted adjusted-history method.",
+  "company_rows": 4436,
+  "conflicting_field_values": 0,
+  "filled_by_field": {
+    "professor_industry": 4375,
+    "professor_workbook_ath_date": 784,
+    "professor_workbook_ath_price": 784,
+    "professor_workbook_cagr_10y": 2783,
+    "professor_workbook_cagr_1y": 4087,
+    "professor_workbook_cagr_3y": 3687,
+    "professor_workbook_cagr_5y": 3429,
+    "professor_workbook_cagr_7y": 3235,
+    "professor_workbook_current_price": 18,
+    "professor_workbook_market_cap": 18
+  },
+  "filled_cells": 23200,
+  "historical_v12_v13_changed": false,
+  "matched_source_rows": 5220,
+  "matched_unique_stocks": 4393,
+  "overlay_is_current_only": true,
+  "product_baseline_metrics_changed": false,
+  "production_pointer_changed": false,
+  "schema": "professor_current_fallback_v1",
+  "source_rows": {
+    "ATH": 796,
+    "ATH_RETURNS": 5424,
+    "CAGR": 40
+  },
+  "source_workbook_file_modified_utc": "2026-09-02T09:52:05.704178+00:00",
+  "source_workbook_sha256": "be2ab62fb41abd4769b5f5d8de7f3df04edc6cfa336bb0d2c5906fc6da2e980b",
+  "stocks_with_fills": 4392,
+  "unmatched_source_rows": 1033
+}

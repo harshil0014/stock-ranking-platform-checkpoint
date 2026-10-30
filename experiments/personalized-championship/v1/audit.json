@@ -1,0 +1,25 @@
+{
+  "frozen_score_max_error": 1.1102230246251565e-16,
+  "qualification_dates": [
+    "2019-12-31",
+    "2022-06-30",
+    "2022-12-31"
+  ],
+  "development_dates": [
+    "2023-06-30",
+    "2023-12-31"
+  ],
+  "contaminated_dates": [
+    "2025-03-31",
+    "2025-06-30"
+  ],
+  "genuinely_untouched_dates": [],
+  "audit_ticker": "NYKAA",
+  "source_hashes": {
+    "research\\protocols\\personalized_championship_v1.json": "aa2d3fed5be87d6e6d478a83264ff91caff03ea216ce7849d7bc7495babb51e1",
+    "experiments\\personalized-official-action-tournament\\build-03\\training_panel.csv.gz": "af7b57fcd668d18e9d58356f25b987050bcd15cfe220e3a9dfda3f0df5a0ea3b",
+    "experiments\\personalized-official-action-tournament\\build-03\\validation_predictions.csv.gz": "cb519b8559f064bcacc50b1cc912b9f3e39e4cff6011dbb631f8595ce283f61d",
+    "experiments\\personalized-official-action-tournament\\build-03\\supplementary_predictions.csv.gz": "8ef0f78414ee1af66d33a4a36d3fc85777dd028b0e748535f400cf482b78091d",
+    "research\\freezes\\personalized-d499580\\rankings.csv.gz": "1e50f4ebee4cce8ce9c05631f1c67c2c279fd90cad9abd7863692dccb2521faf"
+  }
+}

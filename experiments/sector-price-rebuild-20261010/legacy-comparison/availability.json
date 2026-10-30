@@ -1,0 +1,387 @@
+[
+  {
+    "opponent": "Original Personalized policy",
+    "joined_rows": 797443,
+    "finite_matched_rows": 691668,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/v17-refinement-20261004/early_refined_scores.csv.gz",
+      "experiments/v17-refinement-20261004/development_refined_scores.csv.gz",
+      "experiments/v17-refinement-20261004/exposed_refined_scores.csv.gz"
+    ]
+  },
+  {
+    "opponent": "V17",
+    "joined_rows": 797443,
+    "finite_matched_rows": 691668,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/v17-refinement-20261004/early_refined_scores.csv.gz",
+      "experiments/v17-refinement-20261004/development_refined_scores.csv.gz",
+      "experiments/v17-refinement-20261004/exposed_refined_scores.csv.gz"
+    ]
+  },
+  {
+    "opponent": "V17 refined",
+    "joined_rows": 797443,
+    "finite_matched_rows": 691668,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/v17-refinement-20261004/early_refined_scores.csv.gz",
+      "experiments/v17-refinement-20261004/development_refined_scores.csv.gz",
+      "experiments/v17-refinement-20261004/exposed_refined_scores.csv.gz"
+    ]
+  },
+  {
+    "opponent": "V18 rejected candidate",
+    "joined_rows": 797443,
+    "finite_matched_rows": 691668,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-v18-20261003/early_all_scores.csv.gz",
+      "experiments/personalized-v18-20261003/development_scores.csv.gz",
+      "experiments/personalized-v18-20261003/exposed_scores.csv.gz"
+    ]
+  },
+  {
+    "opponent": "V15",
+    "joined_rows": 797443,
+    "finite_matched_rows": 691668,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-v16-20261003/development_scores.csv.gz",
+      "experiments/personalized-v16-20261003/exposed_2024_2025_scores.csv.gz"
+    ]
+  },
+  {
+    "opponent": "V16",
+    "joined_rows": 797443,
+    "finite_matched_rows": 691668,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-v16-20261003/development_scores.csv.gz",
+      "experiments/personalized-v16-20261003/exposed_2024_2025_scores.csv.gz"
+    ]
+  },
+  {
+    "opponent": "V14",
+    "joined_rows": 356305,
+    "finite_matched_rows": 314937,
+    "matched_dates": 12,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-v14-ml-20261003/known_evaluation_scores.csv.gz"
+    ]
+  },
+  {
+    "opponent": "V17 ATH diagnostic",
+    "joined_rows": 797443,
+    "finite_matched_rows": 691668,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/v17-ath-refinement-20261004/early_diagnostic_scores.csv.gz",
+      "experiments/v17-ath-refinement-20261004/development_diagnostic_scores.csv.gz",
+      "experiments/v17-ath-refinement-20261004/exposed_diagnostic_scores.csv.gz"
+    ]
+  },
+  {
+    "opponent": "V17 peak context",
+    "joined_rows": 797443,
+    "finite_matched_rows": 691668,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/v17-peak-context-20261004/early_scores.csv.gz",
+      "experiments/v17-peak-context-20261004/development_scores.csv.gz",
+      "experiments/v17-peak-context-20261004/exposed_scores.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Closing High confirmation",
+    "joined_rows": 797443,
+    "finite_matched_rows": 353352,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/v17-peak-confirmation-20261004/early_scores.csv.gz",
+      "experiments/v17-peak-confirmation-20261004/development_scores.csv.gz",
+      "experiments/v17-peak-confirmation-20261004/exposed_scores.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Closing High priority",
+    "joined_rows": 797443,
+    "finite_matched_rows": 353352,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/v17-peak-activity-20261004/priority_early_scores.csv.gz",
+      "experiments/v17-peak-activity-20261004/priority_development_scores.csv.gz",
+      "experiments/v17-peak-activity-20261004/priority_exposed_scores.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Deep championship V1",
+    "joined_rows": 450802,
+    "finite_matched_rows": 386579,
+    "matched_dates": 16,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-deep-championship-20261002/v1/development_winner_scores.csv.gz",
+      "experiments/personalized-deep-championship-20261002/v1/clean_2024_holdout_scores.csv.gz",
+      "experiments/personalized-deep-championship-20261002/v1/exposed_2025_diagnostic_scores.csv.gz"
+    ]
+  },
+  {
+    "opponent": "V12",
+    "joined_rows": 797443,
+    "finite_matched_rows": 691668,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-deep-championship-20261002/v3/development_winner_scores.csv.gz",
+      "experiments/personalized-deep-championship-20261002/v3/postlock_2024_diagnostics_scores.csv.gz",
+      "experiments/personalized-deep-championship-20261002/v3/untouched_final_2025_scores.csv.gz",
+      "experiments/personalized-deep-championship-20261002/v3/postfinal_2025_diagnostics_scores.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Archived catboost_yetirank_pairwise_blend_score",
+    "joined_rows": 131002,
+    "finite_matched_rows": 129024,
+    "matched_dates": 6,
+    "profiles": 9,
+    "source_artifacts": [
+      "research/reports/all-models-audit-20261004/archived/rankers.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Archived xgboost_rank_ndcg_blend_score",
+    "joined_rows": 131002,
+    "finite_matched_rows": 129024,
+    "matched_dates": 6,
+    "profiles": 9,
+    "source_artifacts": [
+      "research/reports/all-models-audit-20261004/archived/rankers.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Archived jump_blend_score",
+    "joined_rows": 131002,
+    "finite_matched_rows": 129024,
+    "matched_dates": 6,
+    "profiles": 9,
+    "source_artifacts": [
+      "research/reports/all-models-audit-20261004/archived/regimes.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Archived volatility_blend_score",
+    "joined_rows": 131002,
+    "finite_matched_rows": 129024,
+    "matched_dates": 6,
+    "profiles": 9,
+    "source_artifacts": [
+      "research/reports/all-models-audit-20261004/archived/regimes.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Archived hmm_blend_score",
+    "joined_rows": 131002,
+    "finite_matched_rows": 129024,
+    "matched_dates": 6,
+    "profiles": 9,
+    "source_artifacts": [
+      "research/reports/all-models-audit-20261004/archived/regimes.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Archived jump_adwin_blend_score",
+    "joined_rows": 131002,
+    "finite_matched_rows": 129024,
+    "matched_dates": 6,
+    "profiles": 9,
+    "source_artifacts": [
+      "research/reports/all-models-audit-20261004/archived/regimes.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Executable enhanced_carry_xirr_score",
+    "joined_rows": 797443,
+    "finite_matched_rows": 694500,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Executable enhanced_no_carry_xirr_score",
+    "joined_rows": 797443,
+    "finite_matched_rows": 694642,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Executable professor_whole_share_score",
+    "joined_rows": 797443,
+    "finite_matched_rows": 689064,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Executable enhanced_goal_score",
+    "joined_rows": 797443,
+    "finite_matched_rows": 693856,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Executable historical_target_frequency_score",
+    "joined_rows": 797443,
+    "finite_matched_rows": 764125,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Executable global_existing_score",
+    "joined_rows": 797443,
+    "finite_matched_rows": 642059,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Executable enhanced_plus_existing_score",
+    "joined_rows": 797443,
+    "finite_matched_rows": 619941,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Executable ridge_executable_score",
+    "joined_rows": 797443,
+    "finite_matched_rows": 97480,
+    "matched_dates": 4,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Executable ridge_without_amount_features_score",
+    "joined_rows": 797443,
+    "finite_matched_rows": 97480,
+    "matched_dates": 4,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Executable ridge_without_goal_score",
+    "joined_rows": 797443,
+    "finite_matched_rows": 97480,
+    "matched_dates": 4,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Executable cluster_rank_aggregation_score",
+    "joined_rows": 797443,
+    "finite_matched_rows": 90911,
+    "matched_dates": 4,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Executable hist_gradient_boosting_score",
+    "joined_rows": 797443,
+    "finite_matched_rows": 97480,
+    "matched_dates": 4,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Executable lightgbm_lambdarank_score",
+    "joined_rows": 797443,
+    "finite_matched_rows": 97480,
+    "matched_dates": 4,
+    "profiles": 9,
+    "source_artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ]
+  },
+  {
+    "opponent": "V13 policy replay",
+    "joined_rows": 797443,
+    "finite_matched_rows": 691668,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": [
+      "research/reports/all-models-audit-20261004/v13_policy_replayed.csv.gz"
+    ]
+  },
+  {
+    "opponent": "Baseline four-factor formula replay",
+    "joined_rows": 797443,
+    "finite_matched_rows": 320191,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": []
+  },
+  {
+    "opponent": "Production sector champion",
+    "joined_rows": 797443,
+    "finite_matched_rows": 353352,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": []
+  },
+  {
+    "opponent": "Prior reviewed closing-high policy",
+    "joined_rows": 797443,
+    "finite_matched_rows": 353352,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": []
+  },
+  {
+    "opponent": "Professor whole-share project policy",
+    "joined_rows": 797443,
+    "finite_matched_rows": 689064,
+    "matched_dates": 28,
+    "profiles": 9,
+    "source_artifacts": []
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "champion": ".75*(.8*open_model+.2*profile_defensive_15)+.25*rank_xendcg_balanced",
+  "configs": [
+    {
+      "name": "nnls_outer_return",
+      "scope": "outer",
+      "target": "return",
+      "kind": "nnls"
+    },
+    {
+      "name": "nnls_outer_balanced",
+      "scope": "outer",
+      "target": "balanced",
+      "kind": "nnls"
+    },
+    {
+      "name": "nnls_nested_return",
+      "scope": "nested",
+      "target": "return",
+      "kind": "nnls"
+    },
+    {
+      "name": "nnls_nested_balanced",
+      "scope": "nested",
+      "target": "balanced",
+      "kind": "nnls"
+    },
+    {
+      "name": "tabpfn_v2_context256",
+      "kind": "tabpfn",
+      "target": "balanced",
+      "context": 256
+    },
+    {
+      "name": "tabpfn_v2_context768",
+      "kind": "tabpfn",
+      "target": "balanced",
+      "context": 768
+    }
+  ],
+  "scope": "Only replace blending of retained champion components. Feature/price safeguards retained.",
+  "training": "Annual meta fits use saved out-of-time component predictions whose outcomes end strictly before January1. 2020 and 2021 retain anchor because no mature out-of-time labels exist. Current fit cutoff October3.",
+  "nnls": "scikit-learn nonnegative least squares, normalized coefficients; temporal stacking inspired by Super Learner, not a literal reproduction of its CV protocol.",
+  "tabpfn": "Original pretrained v2 regressor, local CPU, one ensemble member, balanced target, equal-query weighted context sampling without replacement. No gradient fine tuning. Two component scores as inputs; replaces outer blend.",
+  "tabpfn_scaling": "Evaluate pretrained function on 33x33 score grid, refine to65/129 if direct prediction MAE on128 label-free probe points exceeds .003 or max error exceeds .02; scipy bilinear interpolation. Explicit approximation, not direct per-row foundation inference. Exact direct prediction for out-of-grid rows.",
+  "selection": "Fewest development Top3 regressions against current champion, then all development regressions, then name. Evaluate common/expanded raw/capped Top1/3/5 all9profiles six metrics. Recent results do not select.",
+  "promotion": "Only replace retained champion if no metric/profile/scope/period comparison regresses and at least one improves. Otherwise retain champion and export research challenger separately.",
+  "fresh_validation": false,
+  "sources": [
+    "https://www.nature.com/articles/s41586-024-08328-6",
+    "https://github.com/PriorLabs/TabPFN",
+    "https://biostats.bepress.com/ucbbiostat/paper222/"
+  ]
+}

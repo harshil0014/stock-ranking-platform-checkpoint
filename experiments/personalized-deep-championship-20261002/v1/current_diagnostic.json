@@ -1,0 +1,22 @@
+{
+  "champion": {
+    "coverage": 3265,
+    "universe_missing_true_5y": 0.07963246554364471,
+    "top20_missing_true_5y": 0.9,
+    "top50_missing_true_5y": 0.46,
+    "top100_missing_true_5y": 0.29,
+    "nykaa_global_rank": 1,
+    "nykaa_retail_rank": 1,
+    "nykaa_score": 0.9896124095936478
+  },
+  "challenger": {
+    "coverage": 3265,
+    "universe_missing_true_5y": 0.07963246554364471,
+    "top20_missing_true_5y": 0.2,
+    "top50_missing_true_5y": 0.24,
+    "top100_missing_true_5y": 0.21,
+    "nykaa_global_rank": 35,
+    "nykaa_retail_rank": 1,
+    "nykaa_score": 0.8884832695608798
+  }
+}

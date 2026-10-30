@@ -1,0 +1,62 @@
+[
+  {
+    "ticker": "KPL",
+    "isin": "INE552U01010",
+    "bse_code": 539997,
+    "provider_symbol": "KPL.BO",
+    "overlap_observations": 32,
+    "median_close_difference": 0.000910708878324451,
+    "p95_close_difference": 0.003015253813913604,
+    "usable_start": "2018-01-01",
+    "observed_months": 104.96919917864476,
+    "scope": "Continuous BSE series; not spliced. History before retained start is not certified.",
+    "excluded_older_action": "2017 bonus",
+    "verified_actions": []
+  },
+  {
+    "ticker": "FRONTSP",
+    "isin": "INE572D01014",
+    "bse_code": 522195,
+    "provider_symbol": "FRONTSP.BO",
+    "overlap_observations": 32,
+    "median_close_difference": 0.0007973107038762306,
+    "p95_close_difference": 0.0030114423681396104,
+    "usable_start": "2000-01-01",
+    "observed_months": 320.91991786447636,
+    "scope": "Continuous BSE series; not spliced. History before retained start is not certified.",
+    "excluded_older_action": null,
+    "verified_actions": [
+      "2026-03-13"
+    ]
+  },
+  {
+    "ticker": "PTCIL",
+    "isin": "INE596F01018",
+    "bse_code": 539006,
+    "provider_symbol": "PTCIL.BO",
+    "overlap_observations": 818,
+    "median_close_difference": 0.0011419766792467034,
+    "p95_close_difference": 0.008333117328910011,
+    "usable_start": "2022-07-25",
+    "observed_months": 50.234086242299796,
+    "scope": "Continuous BSE series; not spliced. History before retained start is not certified.",
+    "excluded_older_action": "2022 rights subscription",
+    "verified_actions": []
+  },
+  {
+    "ticker": "STEELCAS",
+    "isin": "INE124E01038",
+    "bse_code": 513517,
+    "provider_symbol": "STEELCAS.BO",
+    "overlap_observations": 1204,
+    "median_close_difference": 0.0022986365768002948,
+    "p95_close_difference": 0.013234970031715408,
+    "usable_start": "2020-01-01",
+    "observed_months": 80.98562628336755,
+    "scope": "Continuous BSE series; not spliced. History before retained start is not certified.",
+    "excluded_older_action": "2012 split",
+    "verified_actions": [
+      "2025-08-29"
+    ]
+  }
+]

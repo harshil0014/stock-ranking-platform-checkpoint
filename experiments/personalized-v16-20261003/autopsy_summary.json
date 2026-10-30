@@ -1,0 +1,14 @@
+{
+  "classification": "B: systematic growth/history interaction, with regime dependence; not proof of a single causal feature",
+  "concentration": {
+    "negative_return_dates": 7,
+    "negative_drawdown_dates": 13,
+    "substitutions": 231,
+    "unique_promoted_isins": 151,
+    "worst3_share_gross_return_losses": 0.5600437988981707,
+    "worst3_share_gross_drawdown_losses": 0.4897852860344657
+  },
+  "median_attribution_method": "512 fixed-seed random permutations of deterministic rank-paired exit/entry substitutions. Paired Shapley approximation; median is nonadditive. Pairing affects attribution; within-date sums reproduce exact observed median delta.",
+  "drawdown_attribution_method": "(entrant realized asset drawdown minus exit realized asset drawdown)/20, exact additive contribution. Mean across16 dates.",
+  "industry": "No valid historically dated classification mapping was supplied; sector attribution unavailable. Current classifications not backfilled."
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-W",
+    "ignore",
+    "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\research\\runners\\sector_specialist_combinations_20261011.py",
+    "development"
+  ],
+  "script_sha256": "c6ab79b18ff6caa3ead726b74429edc47ffa05a55d9dba1bfa7146cc36f76d6c",
+  "log": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\sector-specialist-ensemble-20261011\\sector_specialist_combinations_20261011.py_development.resume.1791721872885114700.log",
+  "log_sha256": "04401b5d23d30429ca83f89159a2ec2ba29de85ce090065f0003061aab5a5754",
+  "exit_code": 0
+}

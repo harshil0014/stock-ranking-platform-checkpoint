@@ -1,0 +1,11 @@
+{
+  "kind": "record_of_observed_terminal_execution",
+  "executable": "C:/Users/Harshil/AppData/Local/Programs/Python/Python313/python.exe",
+  "arguments": ["-m", "pytest", "tests/test_sector_execution_activity_join.py", "tests/test_sector_specialist_ensemble.py", "tests/test_specialist_stability_equivalence.py", "tests/test_global_score_transport.py", "tests/test_sector_price_rebuild.py", "tests/test_sector_pair_accuracy.py", "tests/test_sector_action_integrity.py", "tests/test_sector_conservative_router.py", "tests/test_sector_pair_correction.py", "tests/test_sector_tabpfn_hybrid.py", "-q"],
+  "exit_code": 0,
+  "passed": 25,
+  "warnings": 1,
+  "seconds_reported_by_pytest": 11.93,
+  "warning_explanation": "Expected SciPy ConstantInputWarning in the stability-equivalence reference test; undefined constant-input correlation is tested explicitly.",
+  "scope": "Focused regression suite, not every test in the repository. All model replay results have separate receipts."
+}

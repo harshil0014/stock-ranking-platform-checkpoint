@@ -1,0 +1,49 @@
+{
+  "winner": {
+    "candidate": "no_goal_risk|utility4|top20",
+    "goal_weight": 0.6,
+    "alpha": 0.35,
+    "age_penalty": 0.0,
+    "delta_coverage": 0.0,
+    "delta_rank_ic": 0.0016334360447566552,
+    "delta_ndcg20": -0.006589588140579694,
+    "delta_pairwise_accuracy": 0.00047405042509235384,
+    "delta_target_achievement_top20": 0.007870370370370305,
+    "delta_target_shortfall_top20": -0.005293973279757072,
+    "delta_mean_xirr_top20": -0.4841837176951471,
+    "delta_median_xirr_top20": -0.018821567135170747,
+    "delta_mean_asset_drawdown_top20": 0.0015231364542486747,
+    "utility": 0.0034825603043797254,
+    "eligible": true,
+    "worst_profile_shortfall_delta": 0.0033488696201426776,
+    "worst_profile_achievement_delta": -0.01666666666666672
+  },
+  "selection_dates": [
+    "2020-03-31",
+    "2020-09-30",
+    "2021-03-31",
+    "2021-09-30",
+    "2022-03-31",
+    "2022-06-30",
+    "2022-09-30",
+    "2022-12-31",
+    "2023-03-31",
+    "2023-06-30",
+    "2023-09-30",
+    "2023-12-31"
+  ],
+  "holdout_dates": [
+    "2024-03-31",
+    "2024-09-30"
+  ],
+  "exposed_diagnostic_dates": [
+    "2025-03-31",
+    "2025-06-30"
+  ],
+  "protocol_sha256": "e209c2e9d89d57d6691da26c0c77fe75b94248d872161c4443b44ad9cfa88659",
+  "panel_sha256": "3d15f785025b4ec2a165078518192674e01a32fde17d62389453e2507c8c6a43",
+  "development_tournament_sha256": "a756a0ed03b372acd83a81040c3d650cb59f78f0b735ef1467b5c9ea7cc0a51f",
+  "holdout_evaluated": false,
+  "selection_uses_holdout": false,
+  "selection_uses_exposed_2025": false
+}

@@ -1,0 +1,11 @@
+{
+  "fits": 15,
+  "rows": 4436,
+  "fallback_rows": 133,
+  "paired_query_populations": true,
+  "source_hashes": {
+    "experiments\\sector-price-rebuild-20261010\\prepared.pkl.gz": "e9cb1fc2568b0577f4a7cd3d765c08ec7fd0750e2e5a3624800cb2aba759da20",
+    "experiments\\sector-price-rebuild-20261010\\current_all_stock_rankings.csv": "0336186a6e8b5810cc2132ae5ffdad6b531fa79a5d13064667800dd945141eaa",
+    "research\\runners\\champion_peer_context_20261017.py": "a7b0ae64662d01a67dc813168e246fa23c0016e03b42e16fbcd84d1a78335306"
+  }
+}

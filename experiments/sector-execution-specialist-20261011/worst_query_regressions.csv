@@ -1,0 +1,721 @@
+period,date,profile,sector,top_n,scope,return_treatment,oriented_delta,model,metric
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,expanded,raw,-81.65314926039616,balanced_l1_base_w1.0,xirr
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,common,raw,-81.62615091998896,balanced_l1_base_w1.0,xirr
+development,2022-12-31,amount50000,Other Utilities,1,expanded,raw,-26.255915474948115,balanced_l1_base_w1.0,xirr
+development,2022-12-31,target30,Other Utilities,1,expanded,raw,-26.115702612812562,balanced_l1_base_w1.0,xirr
+development,2022-12-31,target10,Other Utilities,1,expanded,raw,-26.115702612812562,balanced_l1_base_w1.0,xirr
+development,2022-12-31,base7500,Other Utilities,1,expanded,raw,-26.115702612812562,balanced_l1_base_w1.0,xirr
+development,2022-12-31,lookback12,Other Utilities,1,expanded,raw,-26.115702612812562,balanced_l1_base_w1.0,xirr
+development,2022-12-31,weekly,Other Utilities,1,expanded,raw,-25.59942124138144,balanced_l1_base_w1.0,xirr
+development,2022-12-31,amount1000,Other Utilities,1,expanded,raw,-24.590160552519734,balanced_l1_base_w1.0,xirr
+development,2022-12-31,quarterly,Other Utilities,1,expanded,raw,-19.40305466557615,balanced_l1_base_w1.0,xirr
+exposed,2025-03-31,lookback60,Capital Markets,1,common,raw,-16.827382545951398,balanced_l1_base_w1.0,xirr
+exposed,2025-03-31,lookback12,Capital Markets,1,common,raw,-16.827382545951398,balanced_l1_base_w1.0,xirr
+exposed,2025-03-31,lookback60,Capital Markets,1,expanded,raw,-16.827382545951398,balanced_l1_base_w1.0,xirr
+exposed,2025-03-31,lookback12,Capital Markets,1,expanded,raw,-16.827382545951398,balanced_l1_base_w1.0,xirr
+exposed,2025-03-31,quarterly,Capital Markets,3,common,raw,-14.623768460954619,balanced_l1_base_w1.0,xirr
+exposed,2025-03-31,quarterly,Capital Markets,3,expanded,raw,-14.623768460954619,balanced_l1_base_w1.0,xirr
+exposed,2025-03-31,weekly,Capital Markets,3,common,raw,-14.27345869540277,balanced_l1_base_w1.0,xirr
+exposed,2025-03-31,weekly,Capital Markets,3,expanded,raw,-14.27345869540277,balanced_l1_base_w1.0,xirr
+exposed,2025-03-31,lookback12,Capital Markets,3,common,raw,-13.442052223847194,balanced_l1_base_w1.0,xirr
+exposed,2025-03-31,target30,Capital Markets,3,common,raw,-13.442052223847194,balanced_l1_base_w1.0,xirr
+development,2020-12-31,amount1000,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-12-31,lookback60,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-12-31,weekly,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-12-31,target30,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-12-31,quarterly,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-12-31,target10,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-12-31,base7500,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-12-31,lookback12,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-12-31,amount50000,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-12-31,amount1000,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-12-31,lookback60,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-12-31,weekly,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-12-31,target30,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-12-31,quarterly,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-12-31,target10,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-12-31,base7500,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-12-31,lookback12,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-12-31,amount50000,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_base_w1.0,drawdown
+development,2020-06-30,amount1000,Electrical Equipment,1,expanded,raw,-0.8150353894676287,balanced_l1_base_w1.0,drawdown
+development,2020-06-30,lookback60,Electrical Equipment,1,expanded,raw,-0.8150353894676287,balanced_l1_base_w1.0,drawdown
+development,2020-03-31,amount1000,Realty,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,amount1000,Industrial Products,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,amount1000,Finance,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,amount1000,Entertainment,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,target10,Realty,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,target10,Entertainment,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,quarterly,Realty,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,quarterly,Industrial Products,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,quarterly,Entertainment,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,target30,Realty,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,target30,Industrial Products,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,target30,Minerals & Mining,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,target30,Entertainment,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,weekly,Realty,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,weekly,Industrial Products,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,weekly,Auto Components,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,weekly,Minerals & Mining,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,weekly,Entertainment,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,lookback60,Realty,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-03-31,lookback60,Industrial Products,1,common,raw,-1.0,balanced_l1_base_w1.0,achievement
+development,2020-06-30,weekly,Electrical Equipment,1,expanded,raw,-0.8539623395357858,balanced_l1_base_w1.0,shortfall
+development,2020-06-30,weekly,Electrical Equipment,1,expanded,capped,-0.8539623395357858,balanced_l1_base_w1.0,shortfall
+development,2020-06-30,target30,Electrical Equipment,1,expanded,raw,-0.8515258545679905,balanced_l1_base_w1.0,shortfall
+development,2020-06-30,target30,Electrical Equipment,1,expanded,capped,-0.8515258545679905,balanced_l1_base_w1.0,shortfall
+development,2020-06-30,amount50000,Electrical Equipment,1,expanded,raw,-0.8454684054449741,balanced_l1_base_w1.0,shortfall
+development,2020-06-30,amount50000,Electrical Equipment,1,expanded,capped,-0.8454684054449741,balanced_l1_base_w1.0,shortfall
+development,2020-06-30,lookback60,Electrical Equipment,1,expanded,raw,-0.8451182433882475,balanced_l1_base_w1.0,shortfall
+development,2020-06-30,base7500,Electrical Equipment,1,expanded,raw,-0.8451182433882475,balanced_l1_base_w1.0,shortfall
+development,2020-06-30,lookback12,Electrical Equipment,1,expanded,raw,-0.8451182433882475,balanced_l1_base_w1.0,shortfall
+development,2020-06-30,lookback60,Electrical Equipment,1,expanded,capped,-0.8451182433882475,balanced_l1_base_w1.0,shortfall
+development,2020-06-30,base7500,Electrical Equipment,1,expanded,capped,-0.8451182433882475,balanced_l1_base_w1.0,shortfall
+development,2020-06-30,lookback12,Electrical Equipment,1,expanded,capped,-0.8451182433882475,balanced_l1_base_w1.0,shortfall
+development,2020-06-30,amount1000,Electrical Equipment,1,expanded,raw,-0.8425495635816778,balanced_l1_base_w1.0,shortfall
+development,2020-06-30,amount1000,Electrical Equipment,1,expanded,capped,-0.8425495635816778,balanced_l1_base_w1.0,shortfall
+development,2020-06-30,target10,Electrical Equipment,1,expanded,raw,-0.8379499056702033,balanced_l1_base_w1.0,shortfall
+development,2020-06-30,target10,Electrical Equipment,1,expanded,capped,-0.8379499056702033,balanced_l1_base_w1.0,shortfall
+exposed,2024-06-30,weekly,Finance,1,expanded,raw,-0.8160040689882793,balanced_l1_base_w1.0,shortfall
+exposed,2024-06-30,weekly,Finance,1,expanded,capped,-0.8160040689882793,balanced_l1_base_w1.0,shortfall
+exposed,2024-06-30,target30,Finance,1,expanded,raw,-0.7915891368902476,balanced_l1_base_w1.0,shortfall
+exposed,2024-06-30,target30,Finance,1,expanded,capped,-0.7915891368902476,balanced_l1_base_w1.0,shortfall
+development,2022-09-30,quarterly,Finance,1,expanded,capped,-0.9903225806451613,balanced_l1_base_w1.0,ndcg
+development,2022-09-30,lookback12,Finance,1,expanded,capped,-0.9903225806451613,balanced_l1_base_w1.0,ndcg
+development,2022-09-30,target30,Finance,1,expanded,capped,-0.9902912621359224,balanced_l1_base_w1.0,ndcg
+development,2022-09-30,target10,Finance,1,expanded,capped,-0.9902912621359224,balanced_l1_base_w1.0,ndcg
+development,2022-09-30,base7500,Finance,1,expanded,capped,-0.9902912621359224,balanced_l1_base_w1.0,ndcg
+development,2022-09-30,amount50000,Finance,1,expanded,capped,-0.9902912621359224,balanced_l1_base_w1.0,ndcg
+development,2022-09-30,weekly,Finance,1,expanded,capped,-0.9902755267423015,balanced_l1_base_w1.0,ndcg
+development,2022-09-30,lookback60,Finance,1,expanded,capped,-0.9901153212520594,balanced_l1_base_w1.0,ndcg
+exposed,2025-06-30,lookback12,Electrical Equipment,1,expanded,capped,-0.9836065573770492,balanced_l1_base_w1.0,ndcg
+exposed,2025-06-30,amount1000,Electrical Equipment,1,expanded,capped,-0.9813084112149533,balanced_l1_base_w1.0,ndcg
+exposed,2025-06-30,quarterly,Electrical Equipment,1,expanded,capped,-0.980952380952381,balanced_l1_base_w1.0,ndcg
+exposed,2025-06-30,base7500,Electrical Equipment,1,expanded,capped,-0.980952380952381,balanced_l1_base_w1.0,ndcg
+exposed,2025-06-30,weekly,Electrical Equipment,1,expanded,capped,-0.980952380952381,balanced_l1_base_w1.0,ndcg
+exposed,2025-06-30,target30,Electrical Equipment,1,expanded,capped,-0.980952380952381,balanced_l1_base_w1.0,ndcg
+exposed,2025-06-30,target10,Electrical Equipment,1,expanded,capped,-0.980952380952381,balanced_l1_base_w1.0,ndcg
+exposed,2025-06-30,amount50000,Electrical Equipment,1,expanded,capped,-0.980952380952381,balanced_l1_base_w1.0,ndcg
+development,2020-09-30,lookback12,Leisure Services,1,expanded,capped,-0.978494623655914,balanced_l1_base_w1.0,ndcg
+exposed,2025-06-30,lookback60,Electrical Equipment,1,expanded,capped,-0.978494623655914,balanced_l1_base_w1.0,ndcg
+development,2020-09-30,weekly,Leisure Services,1,expanded,capped,-0.9782608695652174,balanced_l1_base_w1.0,ndcg
+development,2020-09-30,amount50000,Leisure Services,1,expanded,capped,-0.9782608695652174,balanced_l1_base_w1.0,ndcg
+exposed,2025-03-31,lookback12,Telecom -  Equipment & Accessories,1,common,raw,-1.3928571428571428,balanced_l1_base_w1.0,rank_ic
+exposed,2025-03-31,lookback12,Telecom -  Equipment & Accessories,3,common,raw,-1.3928571428571428,balanced_l1_base_w1.0,rank_ic
+exposed,2025-03-31,lookback12,Telecom -  Equipment & Accessories,5,common,raw,-1.3928571428571428,balanced_l1_base_w1.0,rank_ic
+exposed,2025-03-31,quarterly,Telecom -  Equipment & Accessories,1,common,raw,-1.3928571428571428,balanced_l1_base_w1.0,rank_ic
+exposed,2025-03-31,quarterly,Telecom -  Equipment & Accessories,3,common,raw,-1.3928571428571428,balanced_l1_base_w1.0,rank_ic
+exposed,2025-03-31,quarterly,Telecom -  Equipment & Accessories,5,common,raw,-1.3928571428571428,balanced_l1_base_w1.0,rank_ic
+exposed,2025-03-31,lookback12,Telecom -  Equipment & Accessories,1,common,capped,-1.3928571428571428,balanced_l1_base_w1.0,rank_ic
+exposed,2025-03-31,lookback12,Telecom -  Equipment & Accessories,3,common,capped,-1.3928571428571428,balanced_l1_base_w1.0,rank_ic
+exposed,2025-03-31,lookback12,Telecom -  Equipment & Accessories,5,common,capped,-1.3928571428571428,balanced_l1_base_w1.0,rank_ic
+exposed,2025-03-31,quarterly,Telecom -  Equipment & Accessories,1,common,capped,-1.3928571428571428,balanced_l1_base_w1.0,rank_ic
+exposed,2025-03-31,quarterly,Telecom -  Equipment & Accessories,3,common,capped,-1.3928571428571428,balanced_l1_base_w1.0,rank_ic
+exposed,2025-03-31,quarterly,Telecom -  Equipment & Accessories,5,common,capped,-1.3928571428571428,balanced_l1_base_w1.0,rank_ic
+development,2021-03-31,lookback12,Other Consumer Services,1,common,capped,-1.2175191748701415,balanced_l1_base_w1.0,rank_ic
+development,2021-03-31,lookback12,Other Consumer Services,3,common,capped,-1.2175191748701415,balanced_l1_base_w1.0,rank_ic
+development,2021-03-31,lookback12,Other Consumer Services,5,common,capped,-1.2175191748701415,balanced_l1_base_w1.0,rank_ic
+exposed,2025-03-31,lookback60,Telecom -  Equipment & Accessories,1,common,raw,-1.2142857142857142,balanced_l1_base_w1.0,rank_ic
+exposed,2025-03-31,lookback60,Telecom -  Equipment & Accessories,3,common,raw,-1.2142857142857142,balanced_l1_base_w1.0,rank_ic
+exposed,2025-03-31,lookback60,Telecom -  Equipment & Accessories,5,common,raw,-1.2142857142857142,balanced_l1_base_w1.0,rank_ic
+exposed,2025-03-31,lookback60,Telecom -  Equipment & Accessories,1,common,capped,-1.2142857142857142,balanced_l1_base_w1.0,rank_ic
+exposed,2025-03-31,lookback60,Telecom -  Equipment & Accessories,3,common,capped,-1.2142857142857142,balanced_l1_base_w1.0,rank_ic
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,expanded,raw,-81.65314926039616,balanced_l1_activity_w1.0,xirr
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,common,raw,-81.30795982415243,balanced_l1_activity_w1.0,xirr
+development,2022-12-31,amount50000,Other Utilities,1,expanded,raw,-26.255915474948115,balanced_l1_activity_w1.0,xirr
+development,2022-12-31,target30,Other Utilities,1,expanded,raw,-26.115702612812562,balanced_l1_activity_w1.0,xirr
+development,2022-12-31,target10,Other Utilities,1,expanded,raw,-26.115702612812562,balanced_l1_activity_w1.0,xirr
+development,2022-12-31,base7500,Other Utilities,1,expanded,raw,-26.115702612812562,balanced_l1_activity_w1.0,xirr
+development,2022-12-31,lookback12,Other Utilities,1,expanded,raw,-26.115702612812562,balanced_l1_activity_w1.0,xirr
+development,2022-12-31,weekly,Other Utilities,1,expanded,raw,-25.59942124138144,balanced_l1_activity_w1.0,xirr
+development,2022-12-31,amount1000,Other Utilities,1,expanded,raw,-24.590160552519734,balanced_l1_activity_w1.0,xirr
+development,2022-12-31,quarterly,Other Utilities,1,expanded,raw,-19.40305466557615,balanced_l1_activity_w1.0,xirr
+exposed,2025-03-31,lookback60,Capital Markets,1,common,raw,-16.827382545951398,balanced_l1_activity_w1.0,xirr
+exposed,2025-03-31,lookback12,Capital Markets,1,common,raw,-16.827382545951398,balanced_l1_activity_w1.0,xirr
+exposed,2025-03-31,lookback60,Capital Markets,1,expanded,raw,-16.827382545951398,balanced_l1_activity_w1.0,xirr
+exposed,2025-03-31,lookback12,Capital Markets,1,expanded,raw,-16.827382545951398,balanced_l1_activity_w1.0,xirr
+exposed,2025-03-31,quarterly,Capital Markets,3,common,raw,-14.623768460954619,balanced_l1_activity_w1.0,xirr
+exposed,2025-03-31,quarterly,Capital Markets,3,expanded,raw,-14.623768460954619,balanced_l1_activity_w1.0,xirr
+exposed,2025-03-31,weekly,Capital Markets,3,common,raw,-14.27345869540277,balanced_l1_activity_w1.0,xirr
+exposed,2025-03-31,weekly,Capital Markets,3,expanded,raw,-14.27345869540277,balanced_l1_activity_w1.0,xirr
+exposed,2025-03-31,lookback12,Capital Markets,3,common,raw,-13.442052223847194,balanced_l1_activity_w1.0,xirr
+exposed,2025-03-31,target30,Capital Markets,3,common,raw,-13.442052223847194,balanced_l1_activity_w1.0,xirr
+development,2020-12-31,amount1000,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+development,2020-12-31,lookback60,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+development,2020-12-31,weekly,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+development,2020-12-31,target30,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+development,2020-12-31,quarterly,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+development,2020-12-31,target10,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+development,2020-12-31,base7500,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+development,2020-12-31,lookback12,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+development,2020-12-31,amount50000,Electrical Equipment,1,expanded,raw,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+development,2020-12-31,amount1000,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+development,2020-12-31,lookback60,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+development,2020-12-31,weekly,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+development,2020-12-31,target30,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+development,2020-12-31,quarterly,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+development,2020-12-31,target10,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+development,2020-12-31,base7500,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+development,2020-12-31,lookback12,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+development,2020-12-31,amount50000,Electrical Equipment,1,expanded,capped,-0.8546765965510854,balanced_l1_activity_w1.0,drawdown
+exposed,2025-08-31,amount1000,Electrical Equipment,1,expanded,raw,-0.7350366083881396,balanced_l1_activity_w1.0,drawdown
+exposed,2025-08-31,quarterly,Electrical Equipment,1,expanded,raw,-0.7350366083881396,balanced_l1_activity_w1.0,drawdown
+development,2020-03-31,amount1000,Realty,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,amount1000,Industrial Products,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,amount1000,Textiles & Apparels,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,amount1000,Entertainment,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,target10,Realty,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,target10,Entertainment,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,quarterly,Realty,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,quarterly,Industrial Products,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,quarterly,Personal Products,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,quarterly,Entertainment,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,target30,Realty,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,target30,Industrial Products,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,target30,Personal Products,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,target30,Entertainment,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,weekly,Realty,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,weekly,Industrial Products,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,weekly,Personal Products,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,weekly,Entertainment,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,lookback60,Realty,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+development,2020-03-31,lookback60,Industrial Products,1,common,raw,-1.0,balanced_l1_activity_w1.0,achievement
+exposed,2024-06-30,weekly,Finance,1,expanded,raw,-0.8160040689882793,balanced_l1_activity_w1.0,shortfall
+exposed,2024-06-30,weekly,Finance,1,expanded,capped,-0.8160040689882793,balanced_l1_activity_w1.0,shortfall
+exposed,2024-06-30,target30,Finance,1,expanded,raw,-0.7915891368902476,balanced_l1_activity_w1.0,shortfall
+exposed,2024-06-30,target30,Finance,1,expanded,capped,-0.7915891368902476,balanced_l1_activity_w1.0,shortfall
+exposed,2024-06-30,amount50000,Finance,1,expanded,raw,-0.7829255631344852,balanced_l1_activity_w1.0,shortfall
+exposed,2024-06-30,amount50000,Finance,1,expanded,capped,-0.7829255631344852,balanced_l1_activity_w1.0,shortfall
+exposed,2024-06-30,lookback60,Finance,1,expanded,raw,-0.7825948721140045,balanced_l1_activity_w1.0,shortfall
+exposed,2024-06-30,lookback12,Finance,1,expanded,raw,-0.7825948721140045,balanced_l1_activity_w1.0,shortfall
+exposed,2024-06-30,base7500,Finance,1,expanded,raw,-0.7825948721140045,balanced_l1_activity_w1.0,shortfall
+exposed,2024-06-30,lookback60,Finance,1,expanded,capped,-0.7825948721140045,balanced_l1_activity_w1.0,shortfall
+exposed,2024-06-30,lookback12,Finance,1,expanded,capped,-0.7825948721140045,balanced_l1_activity_w1.0,shortfall
+exposed,2024-06-30,base7500,Finance,1,expanded,capped,-0.7825948721140045,balanced_l1_activity_w1.0,shortfall
+exposed,2024-06-30,target10,Finance,1,expanded,raw,-0.7725327872538231,balanced_l1_activity_w1.0,shortfall
+exposed,2024-06-30,target10,Finance,1,expanded,capped,-0.7725327872538231,balanced_l1_activity_w1.0,shortfall
+exposed,2024-06-30,quarterly,Finance,1,expanded,raw,-0.7442716843177155,balanced_l1_activity_w1.0,shortfall
+exposed,2024-06-30,quarterly,Finance,1,expanded,capped,-0.7442716843177155,balanced_l1_activity_w1.0,shortfall
+exposed,2024-06-30,amount1000,Finance,1,expanded,raw,-0.6915332810642248,balanced_l1_activity_w1.0,shortfall
+exposed,2024-06-30,amount1000,Finance,1,expanded,capped,-0.6915332810642248,balanced_l1_activity_w1.0,shortfall
+development,2023-03-31,weekly,Media,1,common,raw,-0.602964311166514,balanced_l1_activity_w1.0,shortfall
+development,2023-03-31,weekly,Media,1,common,capped,-0.602964311166514,balanced_l1_activity_w1.0,shortfall
+development,2022-09-30,quarterly,Finance,1,expanded,capped,-0.9903225806451613,balanced_l1_activity_w1.0,ndcg
+development,2022-09-30,lookback12,Finance,1,expanded,capped,-0.9903225806451613,balanced_l1_activity_w1.0,ndcg
+development,2022-09-30,target30,Finance,1,expanded,capped,-0.9902912621359224,balanced_l1_activity_w1.0,ndcg
+development,2022-09-30,target10,Finance,1,expanded,capped,-0.9902912621359224,balanced_l1_activity_w1.0,ndcg
+development,2022-09-30,base7500,Finance,1,expanded,capped,-0.9902912621359224,balanced_l1_activity_w1.0,ndcg
+development,2022-09-30,amount50000,Finance,1,expanded,capped,-0.9902912621359224,balanced_l1_activity_w1.0,ndcg
+development,2022-09-30,weekly,Finance,1,expanded,capped,-0.9902755267423015,balanced_l1_activity_w1.0,ndcg
+development,2022-09-30,lookback60,Finance,1,expanded,capped,-0.9901153212520594,balanced_l1_activity_w1.0,ndcg
+development,2021-09-30,amount50000,Auto Components,1,common,raw,-0.9803921568627451,balanced_l1_activity_w1.0,ndcg
+development,2021-09-30,amount50000,Auto Components,1,common,capped,-0.9797979797979798,balanced_l1_activity_w1.0,ndcg
+development,2020-06-30,amount1000,Textiles & Apparels,1,common,capped,-0.9759036144578314,balanced_l1_activity_w1.0,ndcg
+development,2020-03-31,weekly,Finance,1,expanded,capped,-0.9753954305799649,balanced_l1_activity_w1.0,ndcg
+development,2020-09-30,quarterly,Realty,1,expanded,capped,-0.9740259740259741,balanced_l1_activity_w1.0,ndcg
+development,2020-09-30,amount1000,Realty,1,expanded,capped,-0.9735099337748345,balanced_l1_activity_w1.0,ndcg
+development,2020-09-30,weekly,Realty,1,expanded,capped,-0.9735099337748345,balanced_l1_activity_w1.0,ndcg
+development,2020-09-30,target30,Realty,1,expanded,capped,-0.9735099337748345,balanced_l1_activity_w1.0,ndcg
+development,2020-09-30,target10,Realty,1,expanded,capped,-0.9735099337748345,balanced_l1_activity_w1.0,ndcg
+development,2020-09-30,base7500,Realty,1,expanded,capped,-0.9735099337748345,balanced_l1_activity_w1.0,ndcg
+development,2020-09-30,lookback12,Realty,1,expanded,capped,-0.9735099337748345,balanced_l1_activity_w1.0,ndcg
+development,2020-09-30,amount50000,Realty,1,expanded,capped,-0.9735099337748345,balanced_l1_activity_w1.0,ndcg
+development,2022-12-31,lookback60,Other Consumer Services,1,common,raw,-1.3714285714285714,balanced_l1_activity_w1.0,rank_ic
+development,2022-12-31,lookback60,Other Consumer Services,3,common,raw,-1.3714285714285714,balanced_l1_activity_w1.0,rank_ic
+development,2022-12-31,lookback60,Other Consumer Services,5,common,raw,-1.3714285714285714,balanced_l1_activity_w1.0,rank_ic
+development,2021-03-31,amount50000,"Agricultural, Commercial & Construction Vehicles",1,common,raw,-1.25,balanced_l1_activity_w1.0,rank_ic
+development,2021-03-31,amount50000,"Agricultural, Commercial & Construction Vehicles",3,common,raw,-1.25,balanced_l1_activity_w1.0,rank_ic
+development,2021-03-31,amount50000,"Agricultural, Commercial & Construction Vehicles",5,common,raw,-1.25,balanced_l1_activity_w1.0,rank_ic
+development,2021-03-31,amount50000,"Agricultural, Commercial & Construction Vehicles",1,common,capped,-1.25,balanced_l1_activity_w1.0,rank_ic
+development,2021-03-31,amount50000,"Agricultural, Commercial & Construction Vehicles",3,common,capped,-1.25,balanced_l1_activity_w1.0,rank_ic
+development,2021-03-31,amount50000,"Agricultural, Commercial & Construction Vehicles",5,common,capped,-1.25,balanced_l1_activity_w1.0,rank_ic
+development,2022-12-31,target10,Other Consumer Services,1,common,capped,-1.2170221268090642,balanced_l1_activity_w1.0,rank_ic
+development,2022-12-31,target10,Other Consumer Services,3,common,capped,-1.2170221268090642,balanced_l1_activity_w1.0,rank_ic
+development,2022-12-31,target10,Other Consumer Services,5,common,capped,-1.2170221268090642,balanced_l1_activity_w1.0,rank_ic
+development,2022-12-31,target30,Other Consumer Services,1,common,capped,-1.2170221268090642,balanced_l1_activity_w1.0,rank_ic
+development,2022-12-31,target30,Other Consumer Services,3,common,capped,-1.2170221268090642,balanced_l1_activity_w1.0,rank_ic
+development,2022-12-31,target30,Other Consumer Services,5,common,capped,-1.2170221268090642,balanced_l1_activity_w1.0,rank_ic
+development,2022-12-31,base7500,Other Consumer Services,1,common,capped,-1.2170221268090642,balanced_l1_activity_w1.0,rank_ic
+development,2022-12-31,base7500,Other Consumer Services,3,common,capped,-1.2170221268090642,balanced_l1_activity_w1.0,rank_ic
+development,2022-12-31,base7500,Other Consumer Services,5,common,capped,-1.2170221268090642,balanced_l1_activity_w1.0,rank_ic
+development,2022-12-31,lookback60,Other Consumer Services,1,common,capped,-1.217022126809064,balanced_l1_activity_w1.0,rank_ic
+development,2022-12-31,lookback60,Other Consumer Services,3,common,capped,-1.217022126809064,balanced_l1_activity_w1.0,rank_ic
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,common,raw,-81.67727404503282,return_q25_base_w0.1,xirr
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,expanded,raw,-81.67727404503282,return_q25_base_w0.1,xirr
+development,2022-12-31,lookback60,Fertilizers & Agrochemicals,1,common,raw,-3.8476639805624804,return_q25_base_w0.1,xirr
+development,2022-12-31,lookback12,Fertilizers & Agrochemicals,1,common,raw,-3.8476639805624804,return_q25_base_w0.1,xirr
+development,2022-12-31,base7500,Fertilizers & Agrochemicals,1,common,raw,-3.8476639805624804,return_q25_base_w0.1,xirr
+development,2021-12-31,amount50000,Fertilizers & Agrochemicals,1,expanded,raw,-2.8218190720003986,return_q25_base_w0.1,xirr
+development,2022-09-30,weekly,Other Consumer Services,3,expanded,raw,-2.8136201996032866,return_q25_base_w0.1,xirr
+development,2021-12-31,lookback60,Fertilizers & Agrochemicals,1,expanded,raw,-2.8129746161518874,return_q25_base_w0.1,xirr
+development,2022-09-30,target30,Other Consumer Services,3,expanded,raw,-2.5764159321564795,return_q25_base_w0.1,xirr
+development,2022-09-30,target10,Other Consumer Services,3,expanded,raw,-2.5764159321564795,return_q25_base_w0.1,xirr
+development,2022-09-30,base7500,Other Consumer Services,3,expanded,raw,-2.5764159321564795,return_q25_base_w0.1,xirr
+development,2022-09-30,lookback12,Other Consumer Services,3,expanded,raw,-2.5764159321564795,return_q25_base_w0.1,xirr
+development,2023-03-31,weekly,Capital Markets,1,expanded,raw,-2.5752174631069713,return_q25_base_w0.1,xirr
+development,2023-03-31,quarterly,Capital Markets,1,expanded,raw,-2.56930764711427,return_q25_base_w0.1,xirr
+development,2023-03-31,amount50000,Capital Markets,1,expanded,raw,-2.5521121871067023,return_q25_base_w0.1,xirr
+exposed,2025-06-30,amount50000,Industrial Products,1,common,raw,-2.5407067369336773,return_q25_base_w0.1,xirr
+exposed,2025-06-30,amount50000,Industrial Products,1,expanded,raw,-2.5407067369336773,return_q25_base_w0.1,xirr
+development,2023-03-31,lookback12,Capital Markets,1,common,raw,-2.5180936233077422,return_q25_base_w0.1,xirr
+development,2023-03-31,target30,Capital Markets,1,expanded,raw,-2.5180936233077422,return_q25_base_w0.1,xirr
+development,2023-03-31,target10,Capital Markets,1,expanded,raw,-2.5180936233077422,return_q25_base_w0.1,xirr
+development,2020-06-30,lookback12,Finance,1,common,raw,-0.601625655623693,return_q25_base_w0.1,drawdown
+development,2020-06-30,lookback12,Finance,1,common,capped,-0.601625655623693,return_q25_base_w0.1,drawdown
+exposed,2025-08-31,lookback60,Industrial Products,1,expanded,raw,-0.48682956195353877,return_q25_base_w0.1,drawdown
+exposed,2025-08-31,lookback60,Industrial Products,1,expanded,capped,-0.48682956195353877,return_q25_base_w0.1,drawdown
+development,2022-12-31,amount1000,Other Consumer Services,1,expanded,raw,-0.47707733215847276,return_q25_base_w0.1,drawdown
+development,2022-12-31,target30,Other Consumer Services,1,expanded,raw,-0.47707733215847276,return_q25_base_w0.1,drawdown
+development,2022-12-31,quarterly,Other Consumer Services,1,expanded,raw,-0.47707733215847276,return_q25_base_w0.1,drawdown
+development,2022-12-31,target10,Other Consumer Services,1,expanded,raw,-0.47707733215847276,return_q25_base_w0.1,drawdown
+development,2022-12-31,base7500,Other Consumer Services,1,expanded,raw,-0.47707733215847276,return_q25_base_w0.1,drawdown
+development,2022-12-31,lookback12,Other Consumer Services,1,expanded,raw,-0.47707733215847276,return_q25_base_w0.1,drawdown
+development,2022-12-31,amount50000,Other Consumer Services,1,expanded,raw,-0.47707733215847276,return_q25_base_w0.1,drawdown
+development,2022-12-31,amount1000,Other Consumer Services,1,expanded,capped,-0.47707733215847276,return_q25_base_w0.1,drawdown
+development,2022-12-31,target30,Other Consumer Services,1,expanded,capped,-0.47707733215847276,return_q25_base_w0.1,drawdown
+development,2022-12-31,quarterly,Other Consumer Services,1,expanded,capped,-0.47707733215847276,return_q25_base_w0.1,drawdown
+development,2022-12-31,target10,Other Consumer Services,1,expanded,capped,-0.47707733215847276,return_q25_base_w0.1,drawdown
+development,2022-12-31,base7500,Other Consumer Services,1,expanded,capped,-0.47707733215847276,return_q25_base_w0.1,drawdown
+development,2022-12-31,lookback12,Other Consumer Services,1,expanded,capped,-0.47707733215847276,return_q25_base_w0.1,drawdown
+development,2022-12-31,amount50000,Other Consumer Services,1,expanded,capped,-0.47707733215847276,return_q25_base_w0.1,drawdown
+development,2020-03-31,lookback60,Commercial Services & Supplies,1,expanded,raw,-0.43096873746683395,return_q25_base_w0.1,drawdown
+development,2020-03-31,lookback60,Commercial Services & Supplies,1,expanded,capped,-0.43096873746683395,return_q25_base_w0.1,drawdown
+development,2020-03-31,amount1000,Entertainment,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2020-03-31,target10,Entertainment,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2020-03-31,quarterly,Entertainment,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2020-03-31,target30,Entertainment,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2020-03-31,weekly,Entertainment,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2020-03-31,lookback60,Entertainment,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2020-03-31,lookback12,Industrial Manufacturing,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2020-03-31,lookback12,Entertainment,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2020-03-31,base7500,Entertainment,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2021-03-31,lookback12,Leisure Services,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2022-03-31,amount1000,Commercial Services & Supplies,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2022-03-31,amount1000,IT - Services,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2022-03-31,target10,Commercial Services & Supplies,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2022-03-31,target10,Leisure Services,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2022-03-31,quarterly,Commercial Services & Supplies,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2022-03-31,weekly,Commercial Services & Supplies,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2022-03-31,lookback60,Commercial Services & Supplies,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2022-03-31,lookback12,Commercial Services & Supplies,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2022-03-31,amount50000,Commercial Services & Supplies,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+development,2022-03-31,base7500,Commercial Services & Supplies,1,common,raw,-1.0,return_q25_base_w0.1,achievement
+exposed,2025-08-31,target30,Entertainment,1,expanded,raw,-0.4209474800046549,return_q25_base_w0.1,shortfall
+exposed,2025-08-31,target30,Entertainment,1,expanded,capped,-0.4209474800046549,return_q25_base_w0.1,shortfall
+exposed,2025-08-31,weekly,Entertainment,1,expanded,raw,-0.4002520866790456,return_q25_base_w0.1,shortfall
+exposed,2025-08-31,weekly,Entertainment,1,expanded,capped,-0.4002520866790456,return_q25_base_w0.1,shortfall
+exposed,2025-08-31,lookback60,Entertainment,1,expanded,raw,-0.3959576517083907,return_q25_base_w0.1,shortfall
+exposed,2025-08-31,lookback12,Entertainment,1,expanded,raw,-0.3959576517083907,return_q25_base_w0.1,shortfall
+exposed,2025-08-31,base7500,Entertainment,1,expanded,raw,-0.3959576517083907,return_q25_base_w0.1,shortfall
+exposed,2025-08-31,lookback60,Entertainment,1,expanded,capped,-0.3959576517083907,return_q25_base_w0.1,shortfall
+exposed,2025-08-31,lookback12,Entertainment,1,expanded,capped,-0.3959576517083907,return_q25_base_w0.1,shortfall
+exposed,2025-08-31,base7500,Entertainment,1,expanded,capped,-0.3959576517083907,return_q25_base_w0.1,shortfall
+exposed,2025-08-31,amount1000,Entertainment,1,common,raw,-0.3959556910621303,return_q25_base_w0.1,shortfall
+exposed,2025-08-31,amount1000,Entertainment,1,common,capped,-0.3959556910621303,return_q25_base_w0.1,shortfall
+exposed,2025-08-31,amount1000,Entertainment,1,expanded,raw,-0.3959556910621303,return_q25_base_w0.1,shortfall
+exposed,2025-08-31,amount1000,Entertainment,1,expanded,capped,-0.3959556910621303,return_q25_base_w0.1,shortfall
+exposed,2025-08-31,quarterly,Entertainment,1,expanded,raw,-0.3953287091197913,return_q25_base_w0.1,shortfall
+exposed,2025-08-31,quarterly,Entertainment,1,expanded,capped,-0.3953287091197913,return_q25_base_w0.1,shortfall
+exposed,2025-08-31,target10,Entertainment,1,expanded,raw,-0.3680009727341921,return_q25_base_w0.1,shortfall
+exposed,2025-08-31,target10,Entertainment,1,expanded,capped,-0.3680009727341921,return_q25_base_w0.1,shortfall
+exposed,2025-03-31,amount50000,Finance,1,common,raw,-0.3062937906265557,return_q25_base_w0.1,shortfall
+exposed,2025-03-31,amount50000,Finance,1,common,capped,-0.3062937906265557,return_q25_base_w0.1,shortfall
+development,2021-09-30,amount50000,Auto Components,1,common,raw,-0.9803921568627451,return_q25_base_w0.1,ndcg
+development,2021-09-30,amount50000,Auto Components,1,common,capped,-0.9797979797979798,return_q25_base_w0.1,ndcg
+development,2021-09-30,lookback12,Auto Components,1,common,capped,-0.9689922480620156,return_q25_base_w0.1,ndcg
+development,2021-09-30,lookback12,Auto Components,1,expanded,capped,-0.9615384615384616,return_q25_base_w0.1,ndcg
+development,2021-09-30,amount50000,Auto Components,1,expanded,capped,-0.961352657004831,return_q25_base_w0.1,ndcg
+development,2021-09-30,lookback12,Auto Components,1,common,raw,-0.9402985074626865,return_q25_base_w0.1,ndcg
+development,2021-09-30,amount50000,Auto Components,1,expanded,raw,-0.908256880733945,return_q25_base_w0.1,ndcg
+development,2021-09-30,lookback12,Auto Components,1,expanded,raw,-0.890909090909091,return_q25_base_w0.1,ndcg
+development,2021-09-30,quarterly,Finance,1,expanded,capped,-0.8161290322580645,return_q25_base_w0.1,ndcg
+development,2021-09-30,quarterly,Finance,1,common,raw,-0.8115942028985508,return_q25_base_w0.1,ndcg
+development,2021-09-30,quarterly,Finance,1,common,capped,-0.8115942028985508,return_q25_base_w0.1,ndcg
+development,2021-09-30,amount1000,Finance,1,common,capped,-0.8085106382978724,return_q25_base_w0.1,ndcg
+development,2021-09-30,lookback12,Finance,1,common,raw,-0.8082191780821918,return_q25_base_w0.1,ndcg
+development,2021-09-30,lookback12,Finance,1,common,capped,-0.8082191780821918,return_q25_base_w0.1,ndcg
+exposed,2025-06-30,weekly,Food Products,1,expanded,capped,-0.8000000000000002,return_q25_base_w0.1,ndcg
+development,2021-09-30,lookback60,Finance,1,common,raw,-0.7962962962962963,return_q25_base_w0.1,ndcg
+development,2021-09-30,lookback60,Finance,1,common,capped,-0.7962962962962963,return_q25_base_w0.1,ndcg
+development,2021-09-30,target10,Finance,1,common,raw,-0.7941176470588236,return_q25_base_w0.1,ndcg
+development,2021-09-30,target30,Finance,1,common,raw,-0.7941176470588236,return_q25_base_w0.1,ndcg
+development,2021-09-30,base7500,Finance,1,common,raw,-0.7941176470588236,return_q25_base_w0.1,ndcg
+development,2021-03-31,lookback12,Household Products,1,common,raw,-0.28571428571428575,return_q25_base_w0.1,rank_ic
+development,2021-03-31,lookback12,Household Products,3,common,raw,-0.28571428571428575,return_q25_base_w0.1,rank_ic
+development,2021-03-31,lookback12,Household Products,5,common,raw,-0.28571428571428575,return_q25_base_w0.1,rank_ic
+development,2021-03-31,lookback12,Household Products,1,common,capped,-0.28571428571428575,return_q25_base_w0.1,rank_ic
+development,2021-03-31,lookback12,Household Products,3,common,capped,-0.28571428571428575,return_q25_base_w0.1,rank_ic
+development,2021-03-31,lookback12,Household Products,5,common,capped,-0.28571428571428575,return_q25_base_w0.1,rank_ic
+development,2020-06-30,amount50000,Capital Markets,1,common,capped,-0.22360679774997902,return_q25_base_w0.1,rank_ic
+development,2020-06-30,amount50000,Capital Markets,3,common,capped,-0.22360679774997902,return_q25_base_w0.1,rank_ic
+development,2020-06-30,amount50000,Capital Markets,5,common,capped,-0.22360679774997902,return_q25_base_w0.1,rank_ic
+exposed,2024-03-31,amount50000,Non - Ferrous Metals,1,common,raw,-0.20000000000000007,return_q25_base_w0.1,rank_ic
+exposed,2024-03-31,amount50000,Non - Ferrous Metals,3,common,raw,-0.20000000000000007,return_q25_base_w0.1,rank_ic
+exposed,2024-03-31,amount50000,Non - Ferrous Metals,5,common,raw,-0.20000000000000007,return_q25_base_w0.1,rank_ic
+exposed,2024-03-31,amount50000,Non - Ferrous Metals,1,common,capped,-0.20000000000000007,return_q25_base_w0.1,rank_ic
+exposed,2024-03-31,amount50000,Non - Ferrous Metals,3,common,capped,-0.20000000000000007,return_q25_base_w0.1,rank_ic
+exposed,2024-03-31,amount50000,Non - Ferrous Metals,5,common,capped,-0.20000000000000007,return_q25_base_w0.1,rank_ic
+development,2020-06-30,amount50000,Capital Markets,1,common,raw,-0.19999999999999998,return_q25_base_w0.1,rank_ic
+development,2020-06-30,amount50000,Capital Markets,3,common,raw,-0.19999999999999998,return_q25_base_w0.1,rank_ic
+development,2020-06-30,amount50000,Capital Markets,5,common,raw,-0.19999999999999998,return_q25_base_w0.1,rank_ic
+development,2023-06-30,lookback12,Minerals & Mining,1,common,capped,-0.18531232916527532,return_q25_base_w0.1,rank_ic
+development,2023-06-30,lookback12,Minerals & Mining,3,common,capped,-0.18531232916527532,return_q25_base_w0.1,rank_ic
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,common,raw,-81.67727404503282,return_q25_activity_w0.1,xirr
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,expanded,raw,-81.67727404503282,return_q25_activity_w0.1,xirr
+development,2020-09-30,weekly,IT - Hardware,1,expanded,raw,-4.874543269271653,return_q25_activity_w0.1,xirr
+development,2020-09-30,amount50000,IT - Hardware,1,expanded,raw,-4.651199746280572,return_q25_activity_w0.1,xirr
+development,2020-09-30,target30,IT - Hardware,1,expanded,raw,-4.64436023693805,return_q25_activity_w0.1,xirr
+development,2020-09-30,target10,IT - Hardware,1,expanded,raw,-4.64436023693805,return_q25_activity_w0.1,xirr
+development,2020-09-30,base7500,IT - Hardware,1,expanded,raw,-4.64436023693805,return_q25_activity_w0.1,xirr
+development,2020-09-30,amount1000,IT - Hardware,1,expanded,raw,-4.527876424967333,return_q25_activity_w0.1,xirr
+development,2020-09-30,quarterly,IT - Hardware,1,expanded,raw,-3.8491727744827613,return_q25_activity_w0.1,xirr
+development,2022-12-31,lookback60,Fertilizers & Agrochemicals,1,common,raw,-3.8476639805624804,return_q25_activity_w0.1,xirr
+development,2022-12-31,lookback12,Fertilizers & Agrochemicals,1,common,raw,-3.8476639805624804,return_q25_activity_w0.1,xirr
+development,2022-12-31,base7500,Fertilizers & Agrochemicals,1,common,raw,-3.8476639805624804,return_q25_activity_w0.1,xirr
+development,2022-09-30,amount1000,Other Consumer Services,1,expanded,raw,-2.8272839668860374,return_q25_activity_w0.1,xirr
+development,2021-12-31,amount50000,Fertilizers & Agrochemicals,1,expanded,raw,-2.8218190720003986,return_q25_activity_w0.1,xirr
+development,2022-09-30,weekly,Other Consumer Services,3,expanded,raw,-2.8136201996032866,return_q25_activity_w0.1,xirr
+development,2021-12-31,lookback60,Fertilizers & Agrochemicals,1,expanded,raw,-2.8129746161518874,return_q25_activity_w0.1,xirr
+development,2022-09-30,target30,Other Consumer Services,3,expanded,raw,-2.5764159321564795,return_q25_activity_w0.1,xirr
+development,2022-09-30,target10,Other Consumer Services,3,expanded,raw,-2.5764159321564795,return_q25_activity_w0.1,xirr
+development,2022-09-30,base7500,Other Consumer Services,3,expanded,raw,-2.5764159321564795,return_q25_activity_w0.1,xirr
+development,2022-09-30,lookback12,Other Consumer Services,3,expanded,raw,-2.5764159321564795,return_q25_activity_w0.1,xirr
+development,2020-06-30,weekly,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,return_q25_activity_w0.1,drawdown
+development,2020-06-30,target30,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,return_q25_activity_w0.1,drawdown
+development,2020-06-30,quarterly,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,return_q25_activity_w0.1,drawdown
+development,2020-06-30,target10,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,return_q25_activity_w0.1,drawdown
+development,2020-06-30,base7500,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,return_q25_activity_w0.1,drawdown
+development,2020-06-30,lookback12,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,return_q25_activity_w0.1,drawdown
+development,2020-06-30,amount50000,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,return_q25_activity_w0.1,drawdown
+development,2020-06-30,weekly,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,return_q25_activity_w0.1,drawdown
+development,2020-06-30,target30,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,return_q25_activity_w0.1,drawdown
+development,2020-06-30,quarterly,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,return_q25_activity_w0.1,drawdown
+development,2020-06-30,target10,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,return_q25_activity_w0.1,drawdown
+development,2020-06-30,base7500,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,return_q25_activity_w0.1,drawdown
+development,2020-06-30,lookback12,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,return_q25_activity_w0.1,drawdown
+development,2020-06-30,amount50000,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,return_q25_activity_w0.1,drawdown
+development,2020-06-30,amount1000,Commercial Services & Supplies,1,expanded,raw,-0.6774308054285902,return_q25_activity_w0.1,drawdown
+development,2020-06-30,lookback60,Commercial Services & Supplies,1,expanded,raw,-0.6774308054285902,return_q25_activity_w0.1,drawdown
+development,2020-06-30,amount1000,Commercial Services & Supplies,1,expanded,capped,-0.6774308054285902,return_q25_activity_w0.1,drawdown
+development,2020-06-30,lookback60,Commercial Services & Supplies,1,expanded,capped,-0.6774308054285902,return_q25_activity_w0.1,drawdown
+development,2020-06-30,lookback12,Finance,1,common,raw,-0.601625655623693,return_q25_activity_w0.1,drawdown
+development,2020-06-30,lookback12,Finance,1,common,capped,-0.601625655623693,return_q25_activity_w0.1,drawdown
+development,2020-03-31,amount1000,Entertainment,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2020-03-31,target10,Entertainment,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2020-03-31,quarterly,Entertainment,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2020-03-31,target30,Entertainment,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2020-03-31,weekly,Entertainment,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2020-03-31,lookback60,Entertainment,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2020-03-31,lookback12,Industrial Manufacturing,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2020-03-31,lookback12,Entertainment,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2020-03-31,base7500,Entertainment,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2021-03-31,lookback12,Leisure Services,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2022-03-31,amount1000,Commercial Services & Supplies,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2022-03-31,amount1000,IT - Services,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2022-03-31,target10,Commercial Services & Supplies,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2022-03-31,target10,Leisure Services,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2022-03-31,quarterly,Commercial Services & Supplies,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2022-03-31,weekly,Commercial Services & Supplies,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2022-03-31,lookback60,Commercial Services & Supplies,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2022-03-31,lookback12,Commercial Services & Supplies,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2022-03-31,amount50000,Commercial Services & Supplies,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+development,2022-03-31,base7500,Commercial Services & Supplies,1,common,raw,-1.0,return_q25_activity_w0.1,achievement
+exposed,2025-08-31,target30,Entertainment,1,expanded,raw,-0.4209474800046549,return_q25_activity_w0.1,shortfall
+exposed,2025-08-31,target30,Entertainment,1,expanded,capped,-0.4209474800046549,return_q25_activity_w0.1,shortfall
+exposed,2025-08-31,weekly,Entertainment,1,expanded,raw,-0.4002520866790456,return_q25_activity_w0.1,shortfall
+exposed,2025-08-31,weekly,Entertainment,1,expanded,capped,-0.4002520866790456,return_q25_activity_w0.1,shortfall
+exposed,2025-08-31,lookback60,Entertainment,1,expanded,raw,-0.3959576517083907,return_q25_activity_w0.1,shortfall
+exposed,2025-08-31,lookback12,Entertainment,1,expanded,raw,-0.3959576517083907,return_q25_activity_w0.1,shortfall
+exposed,2025-08-31,base7500,Entertainment,1,expanded,raw,-0.3959576517083907,return_q25_activity_w0.1,shortfall
+exposed,2025-08-31,lookback60,Entertainment,1,expanded,capped,-0.3959576517083907,return_q25_activity_w0.1,shortfall
+exposed,2025-08-31,lookback12,Entertainment,1,expanded,capped,-0.3959576517083907,return_q25_activity_w0.1,shortfall
+exposed,2025-08-31,base7500,Entertainment,1,expanded,capped,-0.3959576517083907,return_q25_activity_w0.1,shortfall
+exposed,2025-08-31,amount1000,Entertainment,1,common,raw,-0.3959556910621303,return_q25_activity_w0.1,shortfall
+exposed,2025-08-31,amount1000,Entertainment,1,common,capped,-0.3959556910621303,return_q25_activity_w0.1,shortfall
+exposed,2025-08-31,amount1000,Entertainment,1,expanded,raw,-0.3959556910621303,return_q25_activity_w0.1,shortfall
+exposed,2025-08-31,amount1000,Entertainment,1,expanded,capped,-0.3959556910621303,return_q25_activity_w0.1,shortfall
+exposed,2025-08-31,quarterly,Entertainment,1,expanded,raw,-0.3953287091197913,return_q25_activity_w0.1,shortfall
+exposed,2025-08-31,quarterly,Entertainment,1,expanded,capped,-0.3953287091197913,return_q25_activity_w0.1,shortfall
+development,2021-03-31,amount1000,Leisure Services,1,expanded,raw,-0.3888980726914098,return_q25_activity_w0.1,shortfall
+development,2021-03-31,amount1000,Leisure Services,1,expanded,capped,-0.3888980726914098,return_q25_activity_w0.1,shortfall
+development,2020-06-30,lookback60,Commercial Services & Supplies,1,expanded,raw,-0.3795100999884107,return_q25_activity_w0.1,shortfall
+development,2020-06-30,lookback60,Commercial Services & Supplies,1,expanded,capped,-0.3795100999884107,return_q25_activity_w0.1,shortfall
+development,2021-09-30,amount50000,Auto Components,1,common,raw,-0.9803921568627451,return_q25_activity_w0.1,ndcg
+development,2021-09-30,amount50000,Auto Components,1,common,capped,-0.9797979797979798,return_q25_activity_w0.1,ndcg
+development,2021-09-30,lookback12,Auto Components,1,common,capped,-0.9689922480620156,return_q25_activity_w0.1,ndcg
+development,2021-09-30,lookback12,Auto Components,1,expanded,capped,-0.9615384615384616,return_q25_activity_w0.1,ndcg
+development,2021-09-30,amount50000,Auto Components,1,expanded,capped,-0.961352657004831,return_q25_activity_w0.1,ndcg
+development,2021-09-30,lookback12,Auto Components,1,common,raw,-0.9402985074626865,return_q25_activity_w0.1,ndcg
+development,2021-09-30,amount50000,Auto Components,1,expanded,raw,-0.908256880733945,return_q25_activity_w0.1,ndcg
+development,2021-09-30,lookback12,Auto Components,1,expanded,raw,-0.890909090909091,return_q25_activity_w0.1,ndcg
+development,2022-09-30,amount50000,Finance,1,common,capped,-0.8636363636363638,return_q25_activity_w0.1,ndcg
+development,2021-09-30,quarterly,Finance,1,expanded,capped,-0.8161290322580645,return_q25_activity_w0.1,ndcg
+development,2021-09-30,quarterly,Finance,1,common,raw,-0.8115942028985508,return_q25_activity_w0.1,ndcg
+development,2021-09-30,quarterly,Finance,1,common,capped,-0.8115942028985508,return_q25_activity_w0.1,ndcg
+development,2021-09-30,amount1000,Finance,1,common,capped,-0.8085106382978724,return_q25_activity_w0.1,ndcg
+development,2021-09-30,lookback12,Finance,1,common,raw,-0.8082191780821918,return_q25_activity_w0.1,ndcg
+development,2021-09-30,lookback12,Finance,1,common,capped,-0.8082191780821918,return_q25_activity_w0.1,ndcg
+exposed,2025-06-30,weekly,Food Products,1,expanded,capped,-0.8000000000000002,return_q25_activity_w0.1,ndcg
+development,2021-09-30,lookback60,Finance,1,common,raw,-0.7962962962962963,return_q25_activity_w0.1,ndcg
+development,2021-09-30,lookback60,Finance,1,common,capped,-0.7962962962962963,return_q25_activity_w0.1,ndcg
+development,2021-09-30,target10,Finance,1,common,raw,-0.7941176470588236,return_q25_activity_w0.1,ndcg
+development,2021-09-30,target30,Finance,1,common,raw,-0.7941176470588236,return_q25_activity_w0.1,ndcg
+development,2021-03-31,lookback12,Household Products,1,common,raw,-0.28571428571428575,return_q25_activity_w0.1,rank_ic
+development,2021-03-31,lookback12,Household Products,3,common,raw,-0.28571428571428575,return_q25_activity_w0.1,rank_ic
+development,2021-03-31,lookback12,Household Products,5,common,raw,-0.28571428571428575,return_q25_activity_w0.1,rank_ic
+development,2021-03-31,lookback12,Household Products,1,common,capped,-0.28571428571428575,return_q25_activity_w0.1,rank_ic
+development,2021-03-31,lookback12,Household Products,3,common,capped,-0.28571428571428575,return_q25_activity_w0.1,rank_ic
+development,2021-03-31,lookback12,Household Products,5,common,capped,-0.28571428571428575,return_q25_activity_w0.1,rank_ic
+development,2020-06-30,amount50000,Capital Markets,1,common,capped,-0.22360679774997902,return_q25_activity_w0.1,rank_ic
+development,2020-06-30,amount50000,Capital Markets,3,common,capped,-0.22360679774997902,return_q25_activity_w0.1,rank_ic
+development,2020-06-30,amount50000,Capital Markets,5,common,capped,-0.22360679774997902,return_q25_activity_w0.1,rank_ic
+exposed,2024-03-31,amount50000,Non - Ferrous Metals,1,common,raw,-0.20000000000000007,return_q25_activity_w0.1,rank_ic
+exposed,2024-03-31,amount50000,Non - Ferrous Metals,3,common,raw,-0.20000000000000007,return_q25_activity_w0.1,rank_ic
+exposed,2024-03-31,amount50000,Non - Ferrous Metals,5,common,raw,-0.20000000000000007,return_q25_activity_w0.1,rank_ic
+exposed,2024-03-31,amount50000,Non - Ferrous Metals,1,common,capped,-0.20000000000000007,return_q25_activity_w0.1,rank_ic
+exposed,2024-03-31,amount50000,Non - Ferrous Metals,3,common,capped,-0.20000000000000007,return_q25_activity_w0.1,rank_ic
+exposed,2024-03-31,amount50000,Non - Ferrous Metals,5,common,capped,-0.20000000000000007,return_q25_activity_w0.1,rank_ic
+development,2020-06-30,amount50000,Capital Markets,1,common,raw,-0.19999999999999998,return_q25_activity_w0.1,rank_ic
+development,2020-06-30,amount50000,Capital Markets,3,common,raw,-0.19999999999999998,return_q25_activity_w0.1,rank_ic
+development,2020-06-30,amount50000,Capital Markets,5,common,raw,-0.19999999999999998,return_q25_activity_w0.1,rank_ic
+development,2023-06-30,lookback12,Minerals & Mining,1,common,capped,-0.18531232916527532,return_q25_activity_w0.1,rank_ic
+development,2023-06-30,lookback12,Minerals & Mining,3,common,capped,-0.18531232916527532,return_q25_activity_w0.1,rank_ic
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,common,raw,-81.30712753987083,balanced_l1_base_w0.1,xirr
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,expanded,raw,-81.30712753987083,balanced_l1_base_w0.1,xirr
+development,2023-06-30,weekly,Petroleum Products,1,common,raw,-3.9206714469187434,balanced_l1_base_w0.1,xirr
+development,2023-06-30,amount50000,Petroleum Products,1,common,raw,-3.644434586715875,balanced_l1_base_w0.1,xirr
+development,2023-06-30,target10,Petroleum Products,1,common,raw,-3.643408538456167,balanced_l1_base_w0.1,xirr
+development,2023-06-30,target30,Petroleum Products,1,common,raw,-3.643408538456167,balanced_l1_base_w0.1,xirr
+development,2023-06-30,base7500,Petroleum Products,1,common,raw,-3.643408538456167,balanced_l1_base_w0.1,xirr
+development,2023-06-30,amount1000,Petroleum Products,1,common,raw,-3.582878766361743,balanced_l1_base_w0.1,xirr
+development,2021-12-31,amount50000,Fertilizers & Agrochemicals,1,expanded,raw,-2.8218190720003986,balanced_l1_base_w0.1,xirr
+development,2021-03-31,lookback60,Other Consumer Services,1,expanded,raw,-2.7211354034991007,balanced_l1_base_w0.1,xirr
+exposed,2025-06-30,amount50000,Industrial Products,1,common,raw,-2.5407067369336773,balanced_l1_base_w0.1,xirr
+exposed,2025-06-30,amount50000,Industrial Products,1,expanded,raw,-2.5407067369336773,balanced_l1_base_w0.1,xirr
+development,2022-12-31,weekly,Retailing,3,expanded,raw,-1.9657962526826223,balanced_l1_base_w0.1,xirr
+development,2023-12-31,lookback12,Finance,1,common,raw,-1.9316080978057324,balanced_l1_base_w0.1,xirr
+development,2023-12-31,lookback12,Finance,1,expanded,raw,-1.9316080978057324,balanced_l1_base_w0.1,xirr
+exposed,2025-08-31,lookback12,Industrial Products,1,common,raw,-1.875124725134952,balanced_l1_base_w0.1,xirr
+exposed,2025-08-31,lookback12,Industrial Products,1,expanded,raw,-1.875124725134952,balanced_l1_base_w0.1,xirr
+development,2022-12-31,target30,Retailing,3,expanded,raw,-1.8663468637263045,balanced_l1_base_w0.1,xirr
+development,2022-12-31,target10,Retailing,3,expanded,raw,-1.8663468637263045,balanced_l1_base_w0.1,xirr
+development,2022-12-31,base7500,Retailing,3,expanded,raw,-1.8663468637263045,balanced_l1_base_w0.1,xirr
+development,2020-06-30,lookback12,Finance,1,common,raw,-0.601625655623693,balanced_l1_base_w0.1,drawdown
+development,2020-06-30,lookback12,Finance,1,common,capped,-0.601625655623693,balanced_l1_base_w0.1,drawdown
+development,2020-09-30,lookback12,"Paper, Forest & Jute Products",1,expanded,raw,-0.3633039496610127,balanced_l1_base_w0.1,drawdown
+development,2020-09-30,lookback12,"Paper, Forest & Jute Products",1,expanded,capped,-0.3633039496610127,balanced_l1_base_w0.1,drawdown
+development,2022-06-30,weekly,Commercial Services & Supplies,1,expanded,raw,-0.35645776394376905,balanced_l1_base_w0.1,drawdown
+development,2022-06-30,target30,Commercial Services & Supplies,1,expanded,raw,-0.35645776394376905,balanced_l1_base_w0.1,drawdown
+development,2022-06-30,quarterly,Commercial Services & Supplies,1,expanded,raw,-0.35645776394376905,balanced_l1_base_w0.1,drawdown
+development,2022-06-30,target10,Commercial Services & Supplies,1,expanded,raw,-0.35645776394376905,balanced_l1_base_w0.1,drawdown
+development,2022-06-30,base7500,Commercial Services & Supplies,1,expanded,raw,-0.35645776394376905,balanced_l1_base_w0.1,drawdown
+development,2022-06-30,weekly,Commercial Services & Supplies,1,expanded,capped,-0.35645776394376905,balanced_l1_base_w0.1,drawdown
+development,2022-06-30,target30,Commercial Services & Supplies,1,expanded,capped,-0.35645776394376905,balanced_l1_base_w0.1,drawdown
+development,2022-06-30,quarterly,Commercial Services & Supplies,1,expanded,capped,-0.35645776394376905,balanced_l1_base_w0.1,drawdown
+development,2022-06-30,target10,Commercial Services & Supplies,1,expanded,capped,-0.35645776394376905,balanced_l1_base_w0.1,drawdown
+development,2022-06-30,base7500,Commercial Services & Supplies,1,expanded,capped,-0.35645776394376905,balanced_l1_base_w0.1,drawdown
+development,2020-12-31,lookback60,Commercial Services & Supplies,1,expanded,raw,-0.34628122419257135,balanced_l1_base_w0.1,drawdown
+development,2020-12-31,lookback60,Commercial Services & Supplies,1,expanded,capped,-0.34628122419257135,balanced_l1_base_w0.1,drawdown
+development,2021-03-31,amount1000,Commercial Services & Supplies,1,expanded,raw,-0.3319852342665285,balanced_l1_base_w0.1,drawdown
+development,2021-03-31,amount1000,Commercial Services & Supplies,1,expanded,capped,-0.3319852342665285,balanced_l1_base_w0.1,drawdown
+exposed,2025-07-31,base7500,Industrial Manufacturing,1,common,raw,-0.29312660006943553,balanced_l1_base_w0.1,drawdown
+exposed,2025-07-31,target10,Industrial Manufacturing,1,common,raw,-0.29312660006943553,balanced_l1_base_w0.1,drawdown
+development,2020-03-31,amount1000,Realty,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2020-03-31,amount1000,Industrial Products,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2021-06-30,amount1000,Leisure Services,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2021-06-30,target10,Leisure Services,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2021-06-30,quarterly,Leisure Services,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2021-06-30,target30,Leisure Services,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2021-06-30,weekly,Leisure Services,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2021-06-30,lookback60,Leisure Services,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2021-06-30,base7500,Leisure Services,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2021-03-31,amount1000,IT - Services,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2021-03-31,target10,IT - Services,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2021-03-31,quarterly,IT - Services,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2021-03-31,target30,IT - Services,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2021-03-31,weekly,IT - Services,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2021-03-31,base7500,IT - Services,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2022-03-31,amount1000,Commercial Services & Supplies,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2022-03-31,target10,Commercial Services & Supplies,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2022-03-31,quarterly,Commercial Services & Supplies,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2022-03-31,weekly,Commercial Services & Supplies,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+development,2022-03-31,lookback60,Commercial Services & Supplies,1,common,raw,-1.0,balanced_l1_base_w0.1,achievement
+exposed,2025-03-31,lookback60,Finance,1,common,raw,-0.30215101428270597,balanced_l1_base_w0.1,shortfall
+exposed,2025-03-31,lookback60,Finance,1,common,capped,-0.30215101428270597,balanced_l1_base_w0.1,shortfall
+exposed,2025-03-31,lookback60,Finance,1,expanded,raw,-0.30215101428270597,balanced_l1_base_w0.1,shortfall
+exposed,2025-03-31,lookback60,Finance,1,expanded,capped,-0.30215101428270597,balanced_l1_base_w0.1,shortfall
+exposed,2025-03-31,amount1000,Finance,1,common,raw,-0.2972444952104879,balanced_l1_base_w0.1,shortfall
+exposed,2025-03-31,amount1000,Finance,1,common,capped,-0.2972444952104879,balanced_l1_base_w0.1,shortfall
+exposed,2025-03-31,amount1000,Finance,1,expanded,raw,-0.2972444952104879,balanced_l1_base_w0.1,shortfall
+exposed,2025-03-31,amount1000,Finance,1,expanded,capped,-0.2972444952104879,balanced_l1_base_w0.1,shortfall
+development,2021-06-30,target30,Leisure Services,1,common,raw,-0.2943595319222177,balanced_l1_base_w0.1,shortfall
+development,2021-06-30,target30,Leisure Services,1,common,capped,-0.2943595319222177,balanced_l1_base_w0.1,shortfall
+development,2021-06-30,target30,Leisure Services,1,expanded,raw,-0.2943595319222177,balanced_l1_base_w0.1,shortfall
+development,2021-06-30,target30,Leisure Services,1,expanded,capped,-0.2943595319222177,balanced_l1_base_w0.1,shortfall
+exposed,2025-02-28,amount1000,Commercial Services & Supplies,1,common,raw,-0.2923835110868886,balanced_l1_base_w0.1,shortfall
+exposed,2025-02-28,amount1000,Commercial Services & Supplies,1,common,capped,-0.2923835110868886,balanced_l1_base_w0.1,shortfall
+exposed,2025-02-28,amount1000,Commercial Services & Supplies,1,expanded,raw,-0.2923835110868886,balanced_l1_base_w0.1,shortfall
+exposed,2025-02-28,amount1000,Commercial Services & Supplies,1,expanded,capped,-0.2923835110868886,balanced_l1_base_w0.1,shortfall
+development,2020-06-30,amount50000,Electrical Equipment,3,expanded,raw,-0.2818228018149913,balanced_l1_base_w0.1,shortfall
+development,2020-06-30,amount50000,Electrical Equipment,3,expanded,capped,-0.2818228018149913,balanced_l1_base_w0.1,shortfall
+development,2020-06-30,lookback12,Electrical Equipment,3,expanded,raw,-0.2817060811294158,balanced_l1_base_w0.1,shortfall
+development,2020-06-30,lookback12,Electrical Equipment,3,expanded,capped,-0.2817060811294158,balanced_l1_base_w0.1,shortfall
+development,2021-09-30,quarterly,Finance,1,expanded,capped,-0.8161290322580645,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,quarterly,Finance,1,common,raw,-0.8115942028985508,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,quarterly,Finance,1,common,capped,-0.8115942028985508,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,amount1000,Finance,1,common,capped,-0.8085106382978724,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,lookback12,Finance,1,common,raw,-0.8082191780821918,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,lookback12,Finance,1,common,capped,-0.8082191780821918,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,lookback60,Finance,1,common,raw,-0.7962962962962963,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,lookback60,Finance,1,common,capped,-0.7962962962962963,balanced_l1_base_w0.1,ndcg
+development,2020-06-30,lookback12,Realty,1,expanded,capped,-0.794701986754967,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,target10,Finance,1,common,raw,-0.7941176470588236,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,target30,Finance,1,common,raw,-0.7941176470588236,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,base7500,Finance,1,common,raw,-0.7941176470588236,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,target10,Finance,1,common,capped,-0.7941176470588236,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,target30,Finance,1,common,capped,-0.7941176470588236,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,base7500,Finance,1,common,capped,-0.7941176470588236,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,amount1000,Finance,1,expanded,capped,-0.7906602254428342,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,lookback12,Finance,1,expanded,capped,-0.7899838449111471,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,amount1000,Finance,1,common,raw,-0.7894736842105265,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,lookback60,Finance,1,expanded,capped,-0.7893030794165317,balanced_l1_base_w0.1,ndcg
+development,2021-09-30,target30,Finance,1,expanded,capped,-0.7893030794165317,balanced_l1_base_w0.1,ndcg
+development,2020-12-31,amount50000,IT - Services,1,common,capped,-0.1821530222156749,balanced_l1_base_w0.1,rank_ic
+development,2020-12-31,amount50000,IT - Services,3,common,capped,-0.1821530222156749,balanced_l1_base_w0.1,rank_ic
+development,2020-12-31,amount50000,IT - Services,5,common,capped,-0.1821530222156749,balanced_l1_base_w0.1,rank_ic
+development,2020-09-30,amount50000,Transport Services,1,common,capped,-0.17407765595569807,balanced_l1_base_w0.1,rank_ic
+development,2020-09-30,amount50000,Transport Services,3,common,capped,-0.17407765595569807,balanced_l1_base_w0.1,rank_ic
+development,2020-09-30,amount50000,Transport Services,5,common,capped,-0.17407765595569807,balanced_l1_base_w0.1,rank_ic
+development,2020-12-31,amount50000,IT - Services,1,common,raw,-0.1714285714285714,balanced_l1_base_w0.1,rank_ic
+development,2020-12-31,amount50000,IT - Services,3,common,raw,-0.1714285714285714,balanced_l1_base_w0.1,rank_ic
+development,2020-12-31,amount50000,IT - Services,5,common,raw,-0.1714285714285714,balanced_l1_base_w0.1,rank_ic
+development,2020-09-30,amount50000,Transport Services,1,common,raw,-0.13333333333333347,balanced_l1_base_w0.1,rank_ic
+development,2020-09-30,amount50000,Transport Services,3,common,raw,-0.13333333333333347,balanced_l1_base_w0.1,rank_ic
+development,2020-09-30,amount50000,Transport Services,5,common,raw,-0.13333333333333347,balanced_l1_base_w0.1,rank_ic
+development,2020-09-30,target10,Transport Services,1,common,capped,-0.12999538020846385,balanced_l1_base_w0.1,rank_ic
+development,2020-09-30,target10,Transport Services,3,common,capped,-0.12999538020846385,balanced_l1_base_w0.1,rank_ic
+development,2020-09-30,target10,Transport Services,5,common,capped,-0.12999538020846385,balanced_l1_base_w0.1,rank_ic
+development,2020-09-30,quarterly,Transport Services,1,common,capped,-0.12999538020846385,balanced_l1_base_w0.1,rank_ic
+development,2020-09-30,quarterly,Transport Services,3,common,capped,-0.12999538020846385,balanced_l1_base_w0.1,rank_ic
+development,2020-09-30,quarterly,Transport Services,5,common,capped,-0.12999538020846385,balanced_l1_base_w0.1,rank_ic
+development,2022-12-31,quarterly,Other Consumer Services,1,common,capped,-0.11595420713048965,balanced_l1_base_w0.1,rank_ic
+development,2022-12-31,quarterly,Other Consumer Services,3,common,capped,-0.11595420713048965,balanced_l1_base_w0.1,rank_ic
+development,2023-06-30,weekly,Petroleum Products,1,common,raw,-3.9206714469187434,balanced_l1_activity_w0.1,xirr
+development,2022-12-31,lookback60,Fertilizers & Agrochemicals,1,common,raw,-3.8476639805624804,balanced_l1_activity_w0.1,xirr
+development,2022-12-31,lookback12,Fertilizers & Agrochemicals,1,common,raw,-3.8476639805624804,balanced_l1_activity_w0.1,xirr
+development,2022-12-31,base7500,Fertilizers & Agrochemicals,1,common,raw,-3.8476639805624804,balanced_l1_activity_w0.1,xirr
+development,2023-06-30,amount50000,Petroleum Products,1,common,raw,-3.644434586715875,balanced_l1_activity_w0.1,xirr
+development,2023-06-30,target10,Petroleum Products,1,common,raw,-3.643408538456167,balanced_l1_activity_w0.1,xirr
+development,2023-06-30,target30,Petroleum Products,1,common,raw,-3.643408538456167,balanced_l1_activity_w0.1,xirr
+development,2023-06-30,base7500,Petroleum Products,1,common,raw,-3.643408538456167,balanced_l1_activity_w0.1,xirr
+development,2023-06-30,amount1000,Petroleum Products,1,common,raw,-3.582878766361743,balanced_l1_activity_w0.1,xirr
+development,2022-09-30,amount1000,Other Consumer Services,1,expanded,raw,-2.8272839668860374,balanced_l1_activity_w0.1,xirr
+development,2021-12-31,amount50000,Fertilizers & Agrochemicals,1,expanded,raw,-2.8218190720003986,balanced_l1_activity_w0.1,xirr
+development,2021-12-31,lookback60,Fertilizers & Agrochemicals,1,expanded,raw,-2.8129746161518874,balanced_l1_activity_w0.1,xirr
+exposed,2025-06-30,amount50000,Industrial Products,1,common,raw,-2.5407067369336773,balanced_l1_activity_w0.1,xirr
+exposed,2025-06-30,amount50000,Industrial Products,1,expanded,raw,-2.5407067369336773,balanced_l1_activity_w0.1,xirr
+development,2022-12-31,weekly,Retailing,3,expanded,raw,-1.9657962526826223,balanced_l1_activity_w0.1,xirr
+development,2023-12-31,lookback12,Finance,1,common,raw,-1.9316080978057324,balanced_l1_activity_w0.1,xirr
+development,2023-12-31,lookback12,Finance,1,expanded,raw,-1.9316080978057324,balanced_l1_activity_w0.1,xirr
+exposed,2025-08-31,lookback12,Industrial Products,1,common,raw,-1.875124725134952,balanced_l1_activity_w0.1,xirr
+exposed,2025-08-31,lookback12,Industrial Products,1,expanded,raw,-1.875124725134952,balanced_l1_activity_w0.1,xirr
+development,2022-12-31,target30,Retailing,3,expanded,raw,-1.8663468637263045,balanced_l1_activity_w0.1,xirr
+development,2020-06-30,lookback12,Finance,1,common,raw,-0.601625655623693,balanced_l1_activity_w0.1,drawdown
+development,2020-06-30,lookback12,Finance,1,common,capped,-0.601625655623693,balanced_l1_activity_w0.1,drawdown
+development,2020-09-30,lookback12,"Paper, Forest & Jute Products",1,expanded,raw,-0.3633039496610127,balanced_l1_activity_w0.1,drawdown
+development,2020-09-30,lookback12,"Paper, Forest & Jute Products",1,expanded,capped,-0.3633039496610127,balanced_l1_activity_w0.1,drawdown
+development,2022-06-30,weekly,Commercial Services & Supplies,1,expanded,raw,-0.35645776394376905,balanced_l1_activity_w0.1,drawdown
+development,2022-06-30,target30,Commercial Services & Supplies,1,expanded,raw,-0.35645776394376905,balanced_l1_activity_w0.1,drawdown
+development,2022-06-30,quarterly,Commercial Services & Supplies,1,expanded,raw,-0.35645776394376905,balanced_l1_activity_w0.1,drawdown
+development,2022-06-30,target10,Commercial Services & Supplies,1,expanded,raw,-0.35645776394376905,balanced_l1_activity_w0.1,drawdown
+development,2022-06-30,base7500,Commercial Services & Supplies,1,expanded,raw,-0.35645776394376905,balanced_l1_activity_w0.1,drawdown
+development,2022-06-30,weekly,Commercial Services & Supplies,1,expanded,capped,-0.35645776394376905,balanced_l1_activity_w0.1,drawdown
+development,2022-06-30,target30,Commercial Services & Supplies,1,expanded,capped,-0.35645776394376905,balanced_l1_activity_w0.1,drawdown
+development,2022-06-30,quarterly,Commercial Services & Supplies,1,expanded,capped,-0.35645776394376905,balanced_l1_activity_w0.1,drawdown
+development,2022-06-30,target10,Commercial Services & Supplies,1,expanded,capped,-0.35645776394376905,balanced_l1_activity_w0.1,drawdown
+development,2022-06-30,base7500,Commercial Services & Supplies,1,expanded,capped,-0.35645776394376905,balanced_l1_activity_w0.1,drawdown
+development,2021-03-31,lookback60,Finance,1,expanded,raw,-0.3474063487535112,balanced_l1_activity_w0.1,drawdown
+development,2021-03-31,weekly,Finance,1,expanded,raw,-0.3474063487535112,balanced_l1_activity_w0.1,drawdown
+development,2021-03-31,lookback60,Finance,1,expanded,capped,-0.3474063487535112,balanced_l1_activity_w0.1,drawdown
+development,2021-03-31,weekly,Finance,1,expanded,capped,-0.3474063487535112,balanced_l1_activity_w0.1,drawdown
+development,2020-12-31,lookback60,Commercial Services & Supplies,1,expanded,raw,-0.34628122419257135,balanced_l1_activity_w0.1,drawdown
+development,2020-12-31,lookback60,Commercial Services & Supplies,1,expanded,capped,-0.34628122419257135,balanced_l1_activity_w0.1,drawdown
+development,2020-03-31,amount1000,Realty,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2020-03-31,amount1000,Industrial Products,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2020-03-31,amount1000,Entertainment,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2020-03-31,target10,Entertainment,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2020-03-31,quarterly,Entertainment,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2020-03-31,target30,Entertainment,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2020-03-31,weekly,Entertainment,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2020-03-31,lookback60,Entertainment,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2020-03-31,lookback12,Entertainment,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2020-03-31,base7500,Entertainment,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2021-06-30,amount1000,Leisure Services,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2021-06-30,target10,Leisure Services,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2021-06-30,quarterly,Leisure Services,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2021-06-30,target30,Leisure Services,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2021-06-30,weekly,Leisure Services,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2021-06-30,lookback60,Leisure Services,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2021-06-30,base7500,Leisure Services,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2021-03-31,target10,Entertainment,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2021-03-31,target30,Entertainment,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2021-03-31,lookback12,Entertainment,1,common,raw,-1.0,balanced_l1_activity_w0.1,achievement
+development,2022-03-31,weekly,Other Consumer Services,1,expanded,raw,-0.3014857741829714,balanced_l1_activity_w0.1,shortfall
+development,2022-03-31,weekly,Other Consumer Services,1,expanded,capped,-0.3014857741829714,balanced_l1_activity_w0.1,shortfall
+development,2021-06-30,target30,Leisure Services,1,common,raw,-0.2943595319222177,balanced_l1_activity_w0.1,shortfall
+development,2021-06-30,target30,Leisure Services,1,common,capped,-0.2943595319222177,balanced_l1_activity_w0.1,shortfall
+development,2021-06-30,target30,Leisure Services,1,expanded,raw,-0.2943595319222177,balanced_l1_activity_w0.1,shortfall
+development,2021-06-30,target30,Leisure Services,1,expanded,capped,-0.2943595319222177,balanced_l1_activity_w0.1,shortfall
+development,2021-06-30,weekly,Leisure Services,1,common,raw,-0.2725760375761376,balanced_l1_activity_w0.1,shortfall
+development,2021-06-30,weekly,Leisure Services,1,common,capped,-0.2725760375761376,balanced_l1_activity_w0.1,shortfall
+development,2021-06-30,weekly,Leisure Services,1,expanded,raw,-0.2725760375761376,balanced_l1_activity_w0.1,shortfall
+development,2021-06-30,weekly,Leisure Services,1,expanded,capped,-0.2725760375761376,balanced_l1_activity_w0.1,shortfall
+development,2021-06-30,lookback60,Leisure Services,1,common,raw,-0.263906622164911,balanced_l1_activity_w0.1,shortfall
+development,2021-06-30,base7500,Leisure Services,1,common,raw,-0.263906622164911,balanced_l1_activity_w0.1,shortfall
+development,2021-06-30,lookback60,Leisure Services,1,common,capped,-0.263906622164911,balanced_l1_activity_w0.1,shortfall
+development,2021-06-30,base7500,Leisure Services,1,common,capped,-0.263906622164911,balanced_l1_activity_w0.1,shortfall
+development,2021-06-30,lookback60,Leisure Services,1,expanded,raw,-0.263906622164911,balanced_l1_activity_w0.1,shortfall
+development,2021-06-30,base7500,Leisure Services,1,expanded,raw,-0.263906622164911,balanced_l1_activity_w0.1,shortfall
+development,2021-06-30,lookback60,Leisure Services,1,expanded,capped,-0.263906622164911,balanced_l1_activity_w0.1,shortfall
+development,2021-06-30,base7500,Leisure Services,1,expanded,capped,-0.263906622164911,balanced_l1_activity_w0.1,shortfall
+development,2023-03-31,amount50000,Chemicals & Petrochemicals,1,common,raw,-0.24928108475299343,balanced_l1_activity_w0.1,shortfall
+development,2023-03-31,amount50000,Chemicals & Petrochemicals,1,common,capped,-0.24928108475299343,balanced_l1_activity_w0.1,shortfall
+development,2020-03-31,quarterly,Other Construction Materials,1,expanded,capped,-0.8571428571428572,balanced_l1_activity_w0.1,ndcg
+development,2020-03-31,amount1000,Other Construction Materials,1,expanded,capped,-0.8518518518518519,balanced_l1_activity_w0.1,ndcg
+development,2020-03-31,lookback60,Other Construction Materials,1,expanded,capped,-0.8518518518518519,balanced_l1_activity_w0.1,ndcg
+development,2020-03-31,target30,Other Construction Materials,1,expanded,capped,-0.8518518518518519,balanced_l1_activity_w0.1,ndcg
+development,2020-03-31,target10,Other Construction Materials,1,expanded,capped,-0.8518518518518519,balanced_l1_activity_w0.1,ndcg
+development,2020-03-31,base7500,Other Construction Materials,1,expanded,capped,-0.8518518518518519,balanced_l1_activity_w0.1,ndcg
+development,2020-03-31,lookback12,Other Construction Materials,1,expanded,capped,-0.8518518518518519,balanced_l1_activity_w0.1,ndcg
+development,2020-06-30,lookback12,Realty,1,expanded,capped,-0.794701986754967,balanced_l1_activity_w0.1,ndcg
+development,2021-09-30,quarterly,Leisure Services,1,expanded,capped,-0.7864077669902914,balanced_l1_activity_w0.1,ndcg
+development,2021-09-30,weekly,Leisure Services,1,expanded,capped,-0.7692307692307693,balanced_l1_activity_w0.1,ndcg
+development,2021-09-30,target30,Leisure Services,1,expanded,capped,-0.7692307692307693,balanced_l1_activity_w0.1,ndcg
+development,2021-09-30,target10,Leisure Services,1,expanded,capped,-0.7692307692307693,balanced_l1_activity_w0.1,ndcg
+development,2021-09-30,base7500,Leisure Services,1,expanded,capped,-0.7692307692307693,balanced_l1_activity_w0.1,ndcg
+development,2021-09-30,lookback60,Leisure Services,1,expanded,capped,-0.7647058823529412,balanced_l1_activity_w0.1,ndcg
+development,2021-12-31,amount50000,Fertilizers & Agrochemicals,1,expanded,capped,-0.7600000000000001,balanced_l1_activity_w0.1,ndcg
+development,2021-09-30,quarterly,Leisure Services,1,common,capped,-0.75,balanced_l1_activity_w0.1,ndcg
+development,2022-09-30,amount1000,Other Consumer Services,1,expanded,capped,-0.75,balanced_l1_activity_w0.1,ndcg
+development,2021-12-31,lookback60,Fertilizers & Agrochemicals,1,expanded,capped,-0.7464788732394366,balanced_l1_activity_w0.1,ndcg
+development,2021-12-31,amount50000,Fertilizers & Agrochemicals,1,expanded,raw,-0.7380952380952382,balanced_l1_activity_w0.1,ndcg
+exposed,2025-07-31,lookback12,Industrial Manufacturing,1,common,capped,-0.7333333333333334,balanced_l1_activity_w0.1,ndcg
+development,2023-09-30,amount50000,IT - Hardware,1,common,raw,-0.20000000000000007,balanced_l1_activity_w0.1,rank_ic
+development,2023-09-30,amount50000,IT - Hardware,3,common,raw,-0.20000000000000007,balanced_l1_activity_w0.1,rank_ic
+development,2023-09-30,amount50000,IT - Hardware,5,common,raw,-0.20000000000000007,balanced_l1_activity_w0.1,rank_ic
+development,2023-09-30,amount50000,IT - Hardware,1,common,capped,-0.20000000000000007,balanced_l1_activity_w0.1,rank_ic
+development,2023-09-30,amount50000,IT - Hardware,3,common,capped,-0.20000000000000007,balanced_l1_activity_w0.1,rank_ic
+development,2023-09-30,amount50000,IT - Hardware,5,common,capped,-0.20000000000000007,balanced_l1_activity_w0.1,rank_ic
+development,2020-09-30,lookback60,IT - Services,1,common,raw,-0.1666666666666667,balanced_l1_activity_w0.1,rank_ic
+development,2020-09-30,lookback60,IT - Services,3,common,raw,-0.1666666666666667,balanced_l1_activity_w0.1,rank_ic
+development,2020-09-30,lookback60,IT - Services,5,common,raw,-0.1666666666666667,balanced_l1_activity_w0.1,rank_ic
+development,2020-09-30,amount50000,Transport Services,1,common,capped,-0.15666989036012824,balanced_l1_activity_w0.1,rank_ic
+development,2020-09-30,amount50000,Transport Services,3,common,capped,-0.15666989036012824,balanced_l1_activity_w0.1,rank_ic
+development,2020-09-30,amount50000,Transport Services,5,common,capped,-0.15666989036012824,balanced_l1_activity_w0.1,rank_ic
+development,2020-12-31,lookback60,Retailing,1,common,raw,-0.1428571428571428,balanced_l1_activity_w0.1,rank_ic
+development,2020-12-31,lookback60,Retailing,3,common,raw,-0.1428571428571428,balanced_l1_activity_w0.1,rank_ic
+development,2020-12-31,lookback60,Retailing,5,common,raw,-0.1428571428571428,balanced_l1_activity_w0.1,rank_ic
+development,2020-12-31,lookback60,Retailing,1,common,capped,-0.1428571428571428,balanced_l1_activity_w0.1,rank_ic
+development,2020-12-31,lookback60,Retailing,3,common,capped,-0.1428571428571428,balanced_l1_activity_w0.1,rank_ic
+development,2020-12-31,lookback60,Retailing,5,common,capped,-0.1428571428571428,balanced_l1_activity_w0.1,rank_ic
+development,2020-09-30,lookback60,IT - Services,1,common,capped,-0.13638618139749525,balanced_l1_activity_w0.1,rank_ic
+development,2020-09-30,lookback60,IT - Services,3,common,capped,-0.13638618139749525,balanced_l1_activity_w0.1,rank_ic

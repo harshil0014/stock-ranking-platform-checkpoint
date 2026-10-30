@@ -1,0 +1,135 @@
+{
+  "goal_status": "active",
+  "previous_goal_turn_classification": "progress",
+  "full_objective_complete": false,
+  "specialist_training": [
+    {
+      "year": 2020,
+      "family": "ebm_additive",
+      "training_rows": 263659
+    },
+    {
+      "year": 2020,
+      "family": "ebm_interactions",
+      "training_rows": 263659
+    },
+    {
+      "year": 2020,
+      "family": "extra_trees",
+      "training_rows": 263659
+    },
+    {
+      "year": 2020,
+      "family": "ridge",
+      "training_rows": 263659
+    },
+    {
+      "year": 2020,
+      "family": "tabm_compact",
+      "training_rows": 263659
+    },
+    {
+      "year": 2020,
+      "family": "tabm_embedded",
+      "training_rows": 263659
+    },
+    {
+      "year": 2021,
+      "family": "ebm_additive",
+      "training_rows": 360312
+    },
+    {
+      "year": 2021,
+      "family": "ebm_interactions",
+      "training_rows": 360312
+    },
+    {
+      "year": 2021,
+      "family": "extra_trees",
+      "training_rows": 360312
+    },
+    {
+      "year": 2021,
+      "family": "ridge",
+      "training_rows": 360312
+    },
+    {
+      "year": 2021,
+      "family": "tabm_compact",
+      "training_rows": 360312
+    },
+    {
+      "year": 2021,
+      "family": "tabm_embedded",
+      "training_rows": 360312
+    },
+    {
+      "year": 2022,
+      "family": "ebm_additive",
+      "training_rows": 459088
+    },
+    {
+      "year": 2022,
+      "family": "ebm_interactions",
+      "training_rows": 459088
+    }
+  ],
+  "confirmed_live_processes": [
+    {
+      "pid": 3484,
+      "created": 1791712615.4442189,
+      "cmdline": [
+        "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "research/runners/sector_specialist_ensemble_20261011.py",
+        "learn"
+      ],
+      "cpu_seconds": 3591.90625
+    },
+    {
+      "pid": 33580,
+      "created": 1791713116.0825489,
+      "cmdline": [
+        "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "research/runners/run_sector_specialist_pipeline_20261011.py",
+        "3484"
+      ],
+      "cpu_seconds": 0.171875
+    },
+    {
+      "pid": 22280,
+      "created": 1791713679.4286964,
+      "cmdline": [
+        "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "research/runners/sector_execution_specialist_20261011.py"
+      ],
+      "cpu_seconds": 633.1875
+    },
+    {
+      "pid": 19232,
+      "created": 1791713843.154424,
+      "cmdline": [
+        "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "research/runners/run_sector_execution_pipeline_20261011.py",
+        "22280"
+      ],
+      "cpu_seconds": 0.15625
+    }
+  ],
+  "next_actions": [
+    "Recheck both live trainer/controller identities before taking action; do not restart live jobs.",
+    "Inspect dependent pipeline logs; repair any genuine terminal-stage error and resume from receipts.",
+    "Complete all specialist/combination and execution-feature evaluations and replay audits.",
+    "Inspect results, perform complementary-model follow-ups warranted by evidence, then final financial review and complete requirement audit."
+  ],
+  "tests": "3 specialist safeguards passed;3 pairwise safeguards passed;new modules compile",
+  "constraints": [
+    "No deployment",
+    "No production replacement",
+    "MeanXIRR zero selection weight",
+    "All reused historical evaluation remains exposed"
+  ],
+  "website_hashes_now": {
+    "src/stock_ranker/webapp.py": "094f04ab3261403252f1c07b61bb5620583bc777d4fdd89f056756f0040868b8",
+    "src/stock_ranker/web_assets.py": "8df118f877925dfffd47abf75aa330008cb49ff9d378ca09ccfb14d3c8734c7d"
+  }
+}

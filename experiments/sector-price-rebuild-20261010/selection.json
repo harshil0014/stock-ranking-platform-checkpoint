@@ -1,0 +1,19 @@
+{
+  "model": "rank_xendcg_balanced_blend0.25",
+  "strict_gate": false,
+  "regressing_cells": 761,
+  "total_cells": 4536,
+  "top3_regressing_cells": 202,
+  "top3_cells": 1512,
+  "development_top3_regressions": 86,
+  "development_regressions": 336,
+  "status": "RESEARCH_ONLY",
+  "fresh_validation": false,
+  "production_replaced": false,
+  "current_rows": 4436,
+  "input_usable": 4303,
+  "current_snapshot": "2026-10-03",
+  "current_training_rows": 1115140,
+  "max_training_endpoint": "2026-08-31",
+  "current_replay_exact": true
+}

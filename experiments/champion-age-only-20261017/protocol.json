@@ -1,0 +1,85 @@
+{
+  "anchor": "Active recency plus risk-confirmed SIP champion. Only add inverse high-age percentile; SIP, proximity, momentum and learned components unchanged.",
+  "configs": {
+    "dual_age_0.001": [
+      "dual_age",
+      0.001
+    ],
+    "dual_age_0.002": [
+      "dual_age",
+      0.002
+    ],
+    "dual_age_0.004": [
+      "dual_age",
+      0.004
+    ],
+    "dual_age_0.008": [
+      "dual_age",
+      0.008
+    ],
+    "rolling_age_0.001": [
+      "rolling_age",
+      0.001
+    ],
+    "rolling_age_0.002": [
+      "rolling_age",
+      0.002
+    ],
+    "rolling_age_0.004": [
+      "rolling_age",
+      0.004
+    ],
+    "rolling_age_0.008": [
+      "rolling_age",
+      0.008
+    ],
+    "recorded_age_0.001": [
+      "recorded_age",
+      0.001
+    ],
+    "recorded_age_0.002": [
+      "recorded_age",
+      0.002
+    ],
+    "recorded_age_0.004": [
+      "recorded_age",
+      0.004
+    ],
+    "recorded_age_0.008": [
+      "recorded_age",
+      0.008
+    ],
+    "near_high_age_0.001": [
+      "near_high_age",
+      0.001
+    ],
+    "near_high_age_0.002": [
+      "near_high_age",
+      0.002
+    ],
+    "near_high_age_0.004": [
+      "near_high_age",
+      0.004
+    ],
+    "near_high_age_0.008": [
+      "near_high_age",
+      0.008
+    ]
+  },
+  "strength": "Extra age coefficient .001/.002/.004/.008 gives maximum extra +/- .0005/.001/.002/.004. Existing dual age coefficient .006 retained. Dual-age additions imply total .007/.008/.010/.014.",
+  "signals": "Inverse within-date/profile/sector age percentile for rolling52week, recorded available-history high, equal dual, or rolling age times proximity gate max(0,min(1,1+52w_gap/.2)). Guards: >=252obs,365days,80%active volume,positive volume <=14days,usable evidence,known sector,>=5 valid peers.",
+  "selection": "16 fixed candidates. 2020-23 expanded capped equal-sector/profile Top3 utility, lock one before 2024-25. Same utility weights as prior experiments.",
+  "activation": "Positive utility, positive ranking-only and equal-five sensitivities in BOTH periods; XIRR/drawdown/achievement/directional-shortfall losses each <=0.001 (0.1pp). Allows small individual tradeoffs. Otherwise retain current champion.",
+  "fresh_validation": false,
+  "sources": [
+    "https://doi.org/10.1016/j.jbankfin.2013.05.025",
+    "https://doi.org/10.1111/j.1540-6261.2004.00695.x"
+  ],
+  "limits": "Literature supports testing rolling-high recency/proximity, not these coefficients or a lifetime ATH-age penalty. Recorded high is limited to available history. Previously exposed historical dates, gross returns, retrospective sectors and survivor bias remain.",
+  "source_hashes": {
+    "experiments\\champion-sip-profit-20261017\\historical_scores.csv.gz": "31b494e8cf375912afafdd2a1fe42f4dc0002a0b1246100be8d7489c1c9dc765",
+    "experiments\\personalized-deep-championship-20261002\\v3\\prepared.pkl.gz": "b5fa0a1f0229bde692b2c07e0a05cfe91f7501a9deeba6c4bcd9109f00d36fb7",
+    "experiments\\v17-peak-activity-20261004\\dated_features.csv.gz": "0d4d97bc6f3cf8cbefe1546357ecdff5df13b41db7f04a55cfa64011a2051ef9",
+    "experiments\\sector-price-rebuild-20261010\\prepared.pkl.gz": "e9cb1fc2568b0577f4a7cd3d765c08ec7fd0750e2e5a3624800cb2aba759da20"
+  }
+}

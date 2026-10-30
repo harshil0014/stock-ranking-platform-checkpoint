@@ -1,0 +1,83 @@
+{
+  "anchor": "Active dual_w0.01, not original champion. Recency adjustment and all original component coefficients stay fixed.",
+  "configs": {
+    "sip_plain_0.01": [
+      "plain",
+      0.01
+    ],
+    "sip_plain_0.025": [
+      "plain",
+      0.025
+    ],
+    "sip_plain_0.05": [
+      "plain",
+      0.05
+    ],
+    "sip_plain_0.1": [
+      "plain",
+      0.1
+    ],
+    "sip_plain_0.2": [
+      "plain",
+      0.2
+    ],
+    "sip_invested_0.01": [
+      "invested",
+      0.01
+    ],
+    "sip_invested_0.025": [
+      "invested",
+      0.025
+    ],
+    "sip_invested_0.05": [
+      "invested",
+      0.05
+    ],
+    "sip_invested_0.1": [
+      "invested",
+      0.1
+    ],
+    "sip_invested_0.2": [
+      "invested",
+      0.2
+    ],
+    "sip_risk_confirmed_0.01": [
+      "risk_confirmed",
+      0.01
+    ],
+    "sip_risk_confirmed_0.025": [
+      "risk_confirmed",
+      0.025
+    ],
+    "sip_risk_confirmed_0.05": [
+      "risk_confirmed",
+      0.05
+    ],
+    "sip_risk_confirmed_0.1": [
+      "risk_confirmed",
+      0.1
+    ],
+    "sip_risk_confirmed_0.2": [
+      "risk_confirmed",
+      0.2
+    ]
+  },
+  "formula": "active_champion + w * centered sector SIP-profit percentile; optional reliability multiplier. w is an additive coefficient, not a normalized total weight.",
+  "profit": "Stored trailing professor-mode gain / actual amount spent, excluding unused cash. Uses project schedule and corporate-action treatment; not exact Google Sheets price/date replication.",
+  "reliability": "invested: multiply adjustment by invested budget fraction. risk_confirmed: additionally multiply by inverse downside percentile. Never changes sign of SIP preference.",
+  "guard": "No usable price evidence, missing profit, profit below -100%, unclassified, inactive volume, stale positive volume, fewer than five peers, or unresolved provider/official event in trailing lookback => zero SIP adjustment.",
+  "selection": "15 fixed configs. Select maximum 2020-23 equal-sector/profile expanded capped Top3 utility; lock before 2024-25. Same utility weights .4 rankIC .25 NDCG .15 achievement .1 inverse shortfall .1 drawdown.",
+  "activation": "Positive weighted utility AND all six primary aggregate metrics nonworse in BOTH periods (tolerance 1e-12), full finite current coverage. Otherwise retain active champion. All profiles/raw/common/Top1/5 diagnostics reported.",
+  "fresh_validation": false,
+  "source_hashes": {
+    "experiments\\personalized-deep-history-20261002\\real-panel-v12\\deep_panel.csv.gz": "c0b2f5f66836c487340237cc1df231e2f3d2835febcb09b84c0adffb1ab57371",
+    "experiments\\sector-action-integrity-20261008\\provider_official_alignment.csv": "b090e247e6704c04a52871dd0865f2f9ed9daa6a684a9c352260d258932e9b65",
+    "research\\runtime\\personalized-v17\\peak_current.csv.gz": "da3f165f06e21eebbb884574338e08657dac153c7e645fb21a2a870bcc8822bd",
+    "research\\protocols\\personalized_official_action_tournament_v1.json": "4ada6978b7ed14de41fb9a550782553d0d65a25f865936965ef24c13123395fd"
+  },
+  "sources": [
+    "https://www.sciencedirect.com/science/article/pii/S0304405X05000747",
+    "https://www.finra.org/sites/default/files/2020-06/Regulatory-Notice-20-21.pdf"
+  ],
+  "limits": "Previously exposed dates, current-survivor universe and retrospective sectors. Gross SIP outcomes, incomplete corporate-action certification. Hypothesis adaptation, not a paper replication."
+}

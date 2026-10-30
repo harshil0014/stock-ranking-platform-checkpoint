@@ -1,0 +1,10 @@
+profile,cohort_rows,scored_old,scored_new,rows_with_3y_filled,rows_with_5y_filled,directly_filled_rows,directly_filled_scored_rows,rank_changed_rows,directly_filled_rank_changed,indirect_rank_changed,median_abs_rank_change,max_abs_rank_change
+amount1000,3376,3260,3260,19,103,104,78,3208,78,3130,13.0,1274
+amount50000,3376,3264,3264,19,103,104,79,3208,79,3129,13.0,1275
+base7500,3376,3265,3265,19,103,104,79,3228,79,3149,13.0,1278
+lookback12,3808,3747,3747,87,169,172,150,3716,150,3566,26.0,1388
+lookback60,3027,2866,2866,18,18,18,0,0,0,0,0.0,0
+quarterly,3376,3263,3263,20,104,105,78,3212,78,3134,13.0,1274
+target10,3376,3265,3265,19,103,104,79,3226,79,3147,13.0,1314
+target30,3376,3265,3265,19,103,104,79,3220,79,3141,13.0,1229
+weekly,3376,1197,1197,85,159,170,19,1111,19,1092,3.0,374

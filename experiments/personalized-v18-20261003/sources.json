@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://lightgbm.readthedocs.io/en/stable/Parameters.html",
+    "use": "Ranking, quantile, robust regression and constraints."
+  },
+  {
+    "url": "https://arxiv.org/abs/2312.15235",
+    "use": "Market-conditioned feature relevance; adapted as regime features and neural gating, not replication."
+  },
+  {
+    "url": "https://arxiv.org/abs/2012.07149",
+    "use": "Pairwise/listwise asset ranking alternatives."
+  },
+  {
+    "url": "https://www.nber.org/papers/w25398",
+    "use": "Nonlinear return predictors."
+  },
+  {
+    "url": "https://escholarship.org/uc/item/4w1110bb",
+    "use": "Bounded ledger and explicit adaptive development limitations."
+  }
+]

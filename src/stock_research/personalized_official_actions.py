@@ -301,7 +301,8 @@ class OfficialActionHistoryBook(ExecutableHistoryBook):
                  resulting_terms: pd.DataFrame | None = None,
                  history_overlay: str | Path | None = None,
                  nominal_tickers: set[str] | None = None,
-                 adjustment_dates: dict[str, str] | None = None):
+                 adjustment_dates: dict[str, str] | None = None,
+                 enforce_provider_alignment: bool = True):
         if identities["isin"].duplicated().any() or identities["ticker"].duplicated().any():
             raise ValueError("executable identities must be unique")
         history_root, split_root = Path(history_root), Path(split_root)
@@ -318,6 +319,7 @@ class OfficialActionHistoryBook(ExecutableHistoryBook):
         actions["event_date"] = pd.to_datetime(actions.event_date, errors="raise").dt.normalize()
         actions = actions.loc[actions.event_date.le(pd.Timestamp(as_of_date))]
         self.actions = {identity: frame for identity, frame in actions.groupby("isin")}
+        self.provider_alignment_blocks = {}
         self._window_cache = {}
         cutoff_ts = pd.Timestamp(as_of_date).normalize()
         cutoff = np.datetime64(cutoff_ts.date(), "D")
@@ -386,6 +388,22 @@ class OfficialActionHistoryBook(ExecutableHistoryBook):
                 official_dates = automatic.event_date.to_numpy(dtype="datetime64[D]")
                 if len(official_ratios) and (not np.isfinite(official_ratios).all() or (official_ratios <= 0).any()):
                     raise ValueError("invalid official multiplier")
+                # Unadjusting provider prices without the corresponding holdings
+                # adjustment can manufacture enormous returns. Withhold windows
+                # crossing unresolved events; never assume the provider is right.
+                # The opt-out is only for explicit forensic replay of old labels.
+                if enforce_provider_alignment and row.ticker not in (nominal_tickers or set()):
+                    unresolved = []
+                    for event in provider_events.itertuples(index=False):
+                        nearby = automatic.loc[automatic.event_date.between(
+                            event.event_date - pd.Timedelta(days=7),
+                            event.event_date + pd.Timedelta(days=7))]
+                        if nearby.empty or not np.isclose(
+                                nearby.total_share_multiplier.prod(), event.split_ratio,
+                                rtol=.002, atol=1e-9):
+                            unresolved.append(event.event_date)
+                    if unresolved:
+                        self.provider_alignment_blocks[row.isin] = unresolved
                 official_suffix = np.ones(len(official_ratios) + 1)
                 if len(official_ratios):
                     official_suffix[:-1] = np.cumprod(official_ratios[::-1])[::-1]
@@ -403,6 +421,25 @@ class OfficialActionHistoryBook(ExecutableHistoryBook):
 
     def simulate(self, profile, end, *, months: int | None = None,
                  mode: str = "enhanced_carry", include_journal: bool = True) -> pd.DataFrame:
+        # Frozen runtime packages construct this class without __init__. Recover
+        # the provider-factor transitions from their immutable arrays so they
+        # receive the alignment guard too, instead of crashing or bypassing it.
+        if not hasattr(self, "provider_alignment_blocks"):
+            self.provider_alignment_blocks = {}
+            for identity, arrays in self.arrays.items():
+                dates, raw, _, nominal, _ = arrays
+                basis = nominal / raw
+                ratios = basis[:-1] / basis[1:]
+                changes = np.flatnonzero(~np.isclose(ratios, 1., rtol=1e-7, atol=1e-9))
+                actions = self.actions.get(identity)
+                for index in changes:
+                    day = pd.Timestamp(dates[index + 1])
+                    nearby = actions.loc[
+                        actions.mechanics_status.eq("AUTO_MULTIPLIER")
+                        & actions.event_date.between(day-pd.Timedelta(days=7), day+pd.Timedelta(days=7))
+                    ] if actions is not None else pd.DataFrame()
+                    if nearby.empty or not np.isclose(nearby.total_share_multiplier.prod(), ratios[index], rtol=.002, atol=1e-9):
+                        self.provider_alignment_blocks.setdefault(identity, []).append(day)
         result = super().simulate(profile, end, months=months, mode=mode, include_journal=include_journal)
         if "reason" not in result:
             result["reason"] = None
@@ -423,6 +460,11 @@ class OfficialActionHistoryBook(ExecutableHistoryBook):
                 ratios = automatic.total_share_multiplier.to_numpy(float)
                 if len(ratios) and not np.isclose(ratios, np.round(ratios), rtol=0, atol=1e-10).all():
                     fractional_events[identity] = automatic.sort_values(["event_date", "event_type"])
+            for identity, dates in self.provider_alignment_blocks.items():
+                unresolved = [d.date().isoformat() for d in dates if start < d <= end_ts]
+                if unresolved:
+                    reason = 'PROVIDER_OFFICIAL_MULTIPLIER_MISMATCH:' + ','.join(unresolved)
+                    blocker_ids[identity] = '|'.join(filter(None, [blocker_ids.get(identity), reason]))
             self._window_cache[window_key] = blocker_ids, action_counts, fractional_events
         blocker_ids, action_counts, fractional_events = self._window_cache[window_key]
         result["official_action_events_in_window"] = result["isin"].map(action_counts).fillna(0).astype(int)

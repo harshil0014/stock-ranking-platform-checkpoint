@@ -1,0 +1,31 @@
+{
+  "schema": "current_data_recovery_v1",
+  "cutoff": "2026-09-18",
+  "input": "experiments\\professor-current-fallback-20261003\\equal-priority-v2\\current_company_facts_equal_priority.csv.gz",
+  "output": "experiments\\current-data-recovery-20261003\\current_company_facts_recovered.csv.gz",
+  "filled_cells": 755,
+  "stocks_filled": 575,
+  "missing_before": {
+    "product_baseline_yoy_growth": 302,
+    "product_baseline_cagr_3y": 669,
+    "product_baseline_cagr_5y": 890,
+    "product_baseline_days_since_recorded_high": 449,
+    "current_cagr_7y": 1201,
+    "current_cagr_10y": 1640
+  },
+  "missing_after": {
+    "product_baseline_yoy_growth": 284,
+    "product_baseline_cagr_3y": 649,
+    "product_baseline_cagr_5y": 873,
+    "product_baseline_days_since_recorded_high": 117,
+    "current_cagr_7y": 1043,
+    "current_cagr_10y": 1476
+  },
+  "existing_nonblank_overwritten": 0,
+  "historical_training_modified": false,
+  "production_modified": false,
+  "sources": [
+    "PROFESSOR_EXCEL",
+    "YAHOO_FINANCE_ADJUSTED_CLOSE"
+  ]
+}

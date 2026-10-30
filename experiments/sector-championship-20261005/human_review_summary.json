@@ -1,0 +1,7 @@
+{
+  "stocks": 177,
+  "flagged": 97,
+  "unique_sectors": 57,
+  "rubric": "Execution, price continuity, business continuity, available history, financial concerns, old-high recovery, peer count",
+  "limitations": "Rule-based evidence review informed by prior due diligence. Not independent alpha labels or a guarantee that unflagged stocks are good investments."
+}

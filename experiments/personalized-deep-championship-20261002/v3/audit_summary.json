@@ -1,0 +1,284 @@
+{
+  "winner": {
+    "phase": "development",
+    "candidate": "score_adjustment|age_downside|none",
+    "goal_weight": 0.67,
+    "alpha": 0.0,
+    "age_penalty": 0.2,
+    "delta_coverage": 0.0,
+    "delta_rank_ic": 0.000149485298817,
+    "delta_ndcg20": 0.0404449692364111,
+    "delta_pairwise_accuracy": 0.0001278203541468,
+    "delta_target_achievement_top20": 0.0142361111111111,
+    "delta_target_shortfall_top20": -0.0093209031761907,
+    "delta_mean_xirr_top20": 1.4901287648192172,
+    "delta_median_xirr_top20": 0.0660647937114695,
+    "delta_mean_asset_drawdown_top20": 0.0339232830660978,
+    "utility": 0.0085890198569052,
+    "aggregate_utility": 0.1388893266354512,
+    "robustness_penalty": 0.130300306778546,
+    "eligible": true,
+    "worst_profile_shortfall_delta": -0.0015778374235474,
+    "worst_profile_achievement_delta": -0.040625,
+    "worst_date_shortfall_delta": 0.020101483730961,
+    "worst_date_achievement_delta": -0.0611111111111112,
+    "worst_date_median_xirr_delta": -0.1239910026378744,
+    "worst_date_drawdown_delta": -0.0224638324855985,
+    "age_coefficient": 0.05
+  },
+  "aggregate": {
+    "development": {
+      "coverage": {
+        "champion": 0.7928981023785329,
+        "challenger": 0.7928981023785329,
+        "delta": 0.0
+      },
+      "rank_ic": {
+        "champion": -0.028197433318613598,
+        "challenger": -0.028047948019796504,
+        "delta": 0.00014948529881709388
+      },
+      "ndcg20": {
+        "champion": 0.5253932604241903,
+        "challenger": 0.5658382296606016,
+        "delta": 0.04044496923641128
+      },
+      "pairwise_accuracy": {
+        "champion": 0.4913038718618767,
+        "challenger": 0.49143169221602356,
+        "delta": 0.0001278203541468792
+      },
+      "target_achievement_top20": {
+        "champion": 0.5618055555555556,
+        "challenger": 0.5760416666666667,
+        "delta": 0.014236111111111116
+      },
+      "target_shortfall_top20": {
+        "champion": 0.08278652833962233,
+        "challenger": 0.07346562516343158,
+        "delta": -0.009320903176190748
+      },
+      "mean_xirr_top20": {
+        "champion": 4.164983008518998,
+        "challenger": 5.6551117733382155,
+        "delta": 1.4901287648192172
+      },
+      "median_xirr_top20": {
+        "champion": 0.35009193512138437,
+        "challenger": 0.416156728832854,
+        "delta": 0.06606479371146962
+      },
+      "mean_asset_drawdown_top20": {
+        "champion": -0.3539601495212686,
+        "challenger": -0.3200368664551707,
+        "delta": 0.033923283066097876
+      }
+    },
+    "postlock_2024": {
+      "coverage": {
+        "champion": 0.8757275552740097,
+        "challenger": 0.8757275552740097,
+        "delta": 0.0
+      },
+      "rank_ic": {
+        "champion": 0.07871552935844049,
+        "challenger": 0.08406808660419583,
+        "delta": 0.0053525572457553405
+      },
+      "ndcg20": {
+        "champion": 0.5312987929406369,
+        "challenger": 0.5944947089541941,
+        "delta": 0.06319591601355723
+      },
+      "pairwise_accuracy": {
+        "champion": 0.5315437909505036,
+        "challenger": 0.5336454178347653,
+        "delta": 0.0021016268842616315
+      },
+      "target_achievement_top20": {
+        "champion": 0.27777777777777773,
+        "challenger": 0.34722222222222215,
+        "delta": 0.06944444444444442
+      },
+      "target_shortfall_top20": {
+        "champion": 0.14204308613444547,
+        "challenger": 0.1292226669162887,
+        "delta": -0.01282041921815677
+      },
+      "mean_xirr_top20": {
+        "champion": 0.5411336889758294,
+        "challenger": 1.0838122646374577,
+        "delta": 0.5426785756616284
+      },
+      "median_xirr_top20": {
+        "champion": -0.08796320454085721,
+        "challenger": 0.0036871442538637727,
+        "delta": 0.09165034879472098
+      },
+      "mean_asset_drawdown_top20": {
+        "champion": -0.4398220612911517,
+        "challenger": -0.4125291992570308,
+        "delta": 0.0272928620341209
+      }
+    },
+    "untouched_final_2025": {
+      "coverage": {
+        "champion": 0.9030233437421482,
+        "challenger": 0.9030233437421482,
+        "delta": 0.0
+      },
+      "rank_ic": {
+        "champion": 0.08890147276038017,
+        "challenger": 0.0926841920247304,
+        "delta": 0.003782719264350226
+      },
+      "ndcg20": {
+        "champion": 0.533540783261966,
+        "challenger": 0.6240971737656573,
+        "delta": 0.09055639050369135
+      },
+      "pairwise_accuracy": {
+        "champion": 0.5376757866889447,
+        "challenger": 0.5388422445001393,
+        "delta": 0.001166457811194621
+      },
+      "target_achievement_top20": {
+        "champion": 0.3138888888888889,
+        "challenger": 0.4055555555555556,
+        "delta": 0.09166666666666673
+      },
+      "target_shortfall_top20": {
+        "champion": 0.1437637702239554,
+        "challenger": 0.12637755161293737,
+        "delta": -0.017386218611018023
+      },
+      "mean_xirr_top20": {
+        "champion": 1.7866595455926984,
+        "challenger": 3.4017384230768255,
+        "delta": 1.6150788774841272
+      },
+      "median_xirr_top20": {
+        "champion": -0.10104061406381006,
+        "challenger": 0.040158086307615984,
+        "delta": 0.14119870037142604
+      },
+      "mean_asset_drawdown_top20": {
+        "champion": -0.4457956031155439,
+        "challenger": -0.43113379131334634,
+        "delta": 0.014661811802197555
+      }
+    },
+    "postfinal_2025": {
+      "coverage": {
+        "champion": 0.8793784281155994,
+        "challenger": 0.8793784281155994,
+        "delta": 0.0
+      },
+      "rank_ic": {
+        "champion": 0.1242463229520256,
+        "challenger": 0.12734339570105396,
+        "delta": 0.0030970727490283595
+      },
+      "ndcg20": {
+        "champion": 0.5998929542007988,
+        "challenger": 0.6971219059384473,
+        "delta": 0.09722895173764845
+      },
+      "pairwise_accuracy": {
+        "champion": 0.5388888823635393,
+        "challenger": 0.5396443669515156,
+        "delta": 0.0007554845879763628
+      },
+      "target_achievement_top20": {
+        "champion": 0.40092592592592596,
+        "challenger": 0.47592592592592586,
+        "delta": 0.0749999999999999
+      },
+      "target_shortfall_top20": {
+        "champion": 0.1281398423125522,
+        "challenger": 0.1035954588169111,
+        "delta": -0.024544383495641114
+      },
+      "mean_xirr_top20": {
+        "champion": 24.0296536070534,
+        "challenger": 32.74382119083407,
+        "delta": 8.714167583780668
+      },
+      "median_xirr_top20": {
+        "champion": 0.02666043650855637,
+        "challenger": 0.23187743720328843,
+        "delta": 0.20521700069473206
+      },
+      "mean_asset_drawdown_top20": {
+        "champion": -0.443852305243423,
+        "challenger": -0.41902376887558535,
+        "delta": 0.02482853636783766
+      }
+    }
+  },
+  "robustness": {
+    "development": {
+      "worst_profile_shortfall_delta": -0.001577837423547404,
+      "worst_profile_achievement_delta": -0.04062500000000002,
+      "worst_profile_median_xirr_delta": -0.05131731998220773,
+      "worst_profile_drawdown_delta": 0.022568790663770488,
+      "worst_date_shortfall_delta": 0.020101483730960962,
+      "worst_date_achievement_delta": -0.06111111111111123,
+      "worst_date_median_xirr_delta": -0.12399100263787444
+    },
+    "postfinal_2025_diagnostics": {
+      "worst_profile_shortfall_delta": -0.005284206387246068,
+      "worst_profile_achievement_delta": 0.008333333333333304,
+      "worst_profile_median_xirr_delta": 0.006578403786254489,
+      "worst_profile_drawdown_delta": 0.0006699695932774197,
+      "worst_date_shortfall_delta": -0.01105196170150112,
+      "worst_date_achievement_delta": 0.0444444444444444,
+      "worst_date_median_xirr_delta": 0.05400912796775109
+    },
+    "postlock_2024_diagnostics": {
+      "worst_profile_shortfall_delta": 0.0052103256425033995,
+      "worst_profile_achievement_delta": -0.025000000000000022,
+      "worst_profile_median_xirr_delta": 0.0133870798253799,
+      "worst_profile_drawdown_delta": -0.0032368874690462124,
+      "worst_date_shortfall_delta": -0.0030339698520993053,
+      "worst_date_achievement_delta": 0.011111111111111127,
+      "worst_date_median_xirr_delta": 0.027207593289000912
+    },
+    "untouched_final_2025": {
+      "worst_profile_shortfall_delta": 0.026117263755089604,
+      "worst_profile_achievement_delta": -0.025000000000000022,
+      "worst_profile_median_xirr_delta": 0.016133744931164457,
+      "worst_profile_drawdown_delta": -0.02645281171493985,
+      "worst_date_shortfall_delta": 0.006140987150716107,
+      "worst_date_achievement_delta": 0.06111111111111117,
+      "worst_date_median_xirr_delta": 0.12418345044168731
+    }
+  },
+  "current": {
+    "champion": {
+      "coverage": 3265,
+      "universe_missing_true_5y": 0.07963246554364471,
+      "top20_missing_true_5y": 0.9,
+      "top50_missing_true_5y": 0.46,
+      "top100_missing_true_5y": 0.29,
+      "nykaa_global_rank": 1,
+      "nykaa_retail_rank": 1
+    },
+    "challenger": {
+      "coverage": 3265,
+      "universe_missing_true_5y": 0.07963246554364471,
+      "top20_missing_true_5y": 0.75,
+      "top50_missing_true_5y": 0.46,
+      "top100_missing_true_5y": 0.28,
+      "nykaa_global_rank": 1,
+      "nykaa_retail_rank": 1
+    }
+  },
+  "untouched_final_dates": [
+    "2025-01-31",
+    "2025-08-31"
+  ],
+  "selection_uses_untouched_final": false,
+  "production_mutated": false,
+  "frozen_champion_mutated": false
+}

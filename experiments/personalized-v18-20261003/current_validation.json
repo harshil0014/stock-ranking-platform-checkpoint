@@ -1,0 +1,34 @@
+{
+  "v17_reproduction_max_error": 1.1102230246251565e-16,
+  "universe": 4436,
+  "profile_rows": 39924,
+  "winner_scored_rows": 29295,
+  "new_scored_rows": 29295,
+  "identical_coverage": true,
+  "choice": {
+    "candidate": "regime_utility+neural_moe__0.1",
+    "family": "regime_utility+neural_moe",
+    "beta": 0.1,
+    "eligible": false,
+    "utility_gain": 0.01314196085941748,
+    "coverage": 0.0,
+    "ndcg20": 0.016836633970160404,
+    "target_achievement_top20": 0.007638888888888894,
+    "target_shortfall_top20": -0.005106771068066274,
+    "median_xirr_top20": -0.011871766934742619,
+    "mean_asset_drawdown_top20": 0.03948181721525214,
+    "rank_ic": 0.008433535242561706,
+    "pairwise_accuracy": 0.002874345780529081
+  },
+  "winner": {
+    "family": "v17",
+    "beta": 0.0,
+    "candidate": "frozen_v17"
+  },
+  "inference_after_selection": true,
+  "current_date": [
+    "2026-10-03"
+  ],
+  "new_reproduction_max_error": 3.3306690738754696e-16,
+  "identity_and_age_label_only_max_error": 0.0
+}

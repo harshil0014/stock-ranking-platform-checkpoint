@@ -1,0 +1,15 @@
+{
+  "accepted_state_mutated": false,
+  "company_fact_fingerprint": "dba7b068cdc97e01cba00e36d914d0ce97d1d283763247ada544b89486454a0e",
+  "created_at_utc": "2026-10-02T03:17:55.687249+00:00",
+  "cutoff": "2026-09-18",
+  "exact_scrip_code_requested": true,
+  "failed": 0,
+  "official_source": "https://api.bseindia.com/BseIndiaAPI/api/StockpricesearchData/w",
+  "post_cutoff_rows_retained": 0,
+  "raw_rows": 3945,
+  "recovered": 48,
+  "requested_codes": 48,
+  "schema_version": "bse_official_missing_history_recovery_v1",
+  "start": "2021-09-01"
+}

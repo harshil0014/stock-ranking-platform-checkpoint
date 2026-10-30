@@ -1,0 +1,19 @@
+{
+  "ticker": "MPIMANIPAL",
+  "isin": "INE241U01028",
+  "provider": "MPIMANIPAL.NS",
+  "trade_date": "2026-09-18",
+  "official_price": 341.35,
+  "status": "RECOVERED",
+  "rows": 2,
+  "first_date": "2026-09-17",
+  "last_date": "2026-09-18",
+  "terminal_lag_days": 0,
+  "terminal_relative_difference": 1.7880520293723837e-08,
+  "listing_date": "2026-09-17",
+  "history_precedes_listing_date": false,
+  "csv_sha256": "0d750ffd6d7f4ef6780d79d86aaba337486752b5df393ee8c542e78afd6347b6",
+  "source": "Yahoo Finance secondary history",
+  "identity_mapping": "exact NSE ticker -> .NS",
+  "accepted_for_research_overlay": true
+}

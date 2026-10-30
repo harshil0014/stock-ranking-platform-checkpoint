@@ -1,0 +1,364 @@
+scope,sector,model,rubric
+common,Aerospace & Defense,rebuilt_score,0.6142116121426466
+common,Aerospace & Defense,guarded_model_score,0.6142116121426466
+common,Aerospace & Defense,open_model_score,0.6142116121426466
+common,Aerospace & Defense,sector_incumbent,0.5358370173887416
+common,Agricultural Food & other Products,rebuilt_score,0.6328565378571532
+common,Agricultural Food & other Products,guarded_model_score,0.6328565378571532
+common,Agricultural Food & other Products,open_model_score,0.6328565378571532
+common,Agricultural Food & other Products,sector_incumbent,0.6020726934732603
+common,"Agricultural, Commercial & Construction Vehicles",rebuilt_score,0.5348717948717949
+common,"Agricultural, Commercial & Construction Vehicles",guarded_model_score,0.5348717948717949
+common,"Agricultural, Commercial & Construction Vehicles",open_model_score,0.5348717948717948
+common,"Agricultural, Commercial & Construction Vehicles",sector_incumbent,0.5153357753357753
+common,Auto Components,rebuilt_score,0.5508304253983898
+common,Auto Components,guarded_model_score,0.5508304253983898
+common,Auto Components,open_model_score,0.5508304253983898
+common,Auto Components,sector_incumbent,0.5366710528346844
+common,Automobiles,rebuilt_score,0.6100586358945492
+common,Automobiles,guarded_model_score,0.6100586358945492
+common,Automobiles,open_model_score,0.5401238390092878
+common,Automobiles,sector_incumbent,0.6100586358945492
+common,Banks,rebuilt_score,0.5157129455909943
+common,Banks,guarded_model_score,0.5157129455909943
+common,Banks,open_model_score,0.5157129455909943
+common,Banks,sector_incumbent,0.5189701897018969
+common,Beverages,rebuilt_score,0.5643879433909419
+common,Beverages,guarded_model_score,0.5643879433909419
+common,Beverages,open_model_score,0.5319550847286979
+common,Beverages,sector_incumbent,0.5319550847286979
+common,Capital Markets,rebuilt_score,0.5634337068160598
+common,Capital Markets,guarded_model_score,0.5634337068160598
+common,Capital Markets,open_model_score,0.6155905695611579
+common,Capital Markets,sector_incumbent,0.5146840958605664
+common,Cement & Cement Products,rebuilt_score,0.5312686741363212
+common,Cement & Cement Products,guarded_model_score,0.5312686741363212
+common,Cement & Cement Products,open_model_score,0.5312686741363212
+common,Cement & Cement Products,sector_incumbent,0.5312686741363212
+common,Chemicals & Petrochemicals,rebuilt_score,0.6070562069131475
+common,Chemicals & Petrochemicals,guarded_model_score,0.6070562069131475
+common,Chemicals & Petrochemicals,open_model_score,0.5789476396277139
+common,Chemicals & Petrochemicals,sector_incumbent,0.5271211547020721
+common,Commercial Services & Supplies,rebuilt_score,0.537073665516342
+common,Commercial Services & Supplies,guarded_model_score,0.5452997618828873
+common,Commercial Services & Supplies,open_model_score,0.537073665516342
+common,Commercial Services & Supplies,sector_incumbent,0.584928798015549
+common,Construction,rebuilt_score,0.5591554044522921
+common,Construction,guarded_model_score,0.5591554044522921
+common,Construction,open_model_score,0.5591554044522921
+common,Construction,sector_incumbent,0.5547239231073436
+common,Consumer Durables,rebuilt_score,0.5698093081783981
+common,Consumer Durables,guarded_model_score,0.5698093081783981
+common,Consumer Durables,open_model_score,0.5718717938746843
+common,Consumer Durables,sector_incumbent,0.5814087657022712
+common,Diversified,rebuilt_score,0.5256798756798757
+common,Diversified,guarded_model_score,0.5256798756798757
+common,Diversified,open_model_score,0.5256798756798757
+common,Diversified,sector_incumbent,0.5256798756798757
+common,Electrical Equipment,rebuilt_score,0.4405307504938047
+common,Electrical Equipment,guarded_model_score,0.4405307504938047
+common,Electrical Equipment,open_model_score,0.4405307504938047
+common,Electrical Equipment,sector_incumbent,0.4405307504938047
+common,Entertainment,rebuilt_score,0.668568274372082
+common,Entertainment,guarded_model_score,0.668568274372082
+common,Entertainment,open_model_score,0.668568274372082
+common,Entertainment,sector_incumbent,0.6062353485208614
+common,Ferrous Metals,rebuilt_score,0.5792639331994172
+common,Ferrous Metals,guarded_model_score,0.5792639331994172
+common,Ferrous Metals,open_model_score,0.5792639331994172
+common,Ferrous Metals,sector_incumbent,0.6010745204616174
+common,Fertilizers & Agrochemicals,rebuilt_score,0.5480868135297996
+common,Fertilizers & Agrochemicals,guarded_model_score,0.5480868135297996
+common,Fertilizers & Agrochemicals,open_model_score,0.5431823050909735
+common,Fertilizers & Agrochemicals,sector_incumbent,0.606323928302326
+common,Finance,rebuilt_score,0.5974710210528159
+common,Finance,guarded_model_score,0.5974710210528159
+common,Finance,open_model_score,0.5974710210528159
+common,Finance,sector_incumbent,0.5975272366426324
+common,Food Products,rebuilt_score,0.5706265177228224
+common,Food Products,guarded_model_score,0.5706265177228224
+common,Food Products,open_model_score,0.5706265177228224
+common,Food Products,sector_incumbent,0.5099306817220911
+common,Gas,rebuilt_score,0.5277777777777778
+common,Gas,guarded_model_score,0.5277777777777778
+common,Gas,open_model_score,0.5277777777777778
+common,Gas,sector_incumbent,0.5277777777777778
+common,Healthcare Services,rebuilt_score,0.5172781838645231
+common,Healthcare Services,guarded_model_score,0.5172781838645231
+common,Healthcare Services,open_model_score,0.5172781838645231
+common,Healthcare Services,sector_incumbent,0.5134208198294538
+common,Household Products,rebuilt_score,0.5579625439919558
+common,Household Products,guarded_model_score,0.5579625439919558
+common,Household Products,open_model_score,0.5579625439919558
+common,Household Products,sector_incumbent,0.5579625439919558
+common,IT - Hardware,rebuilt_score,0.579602785558668
+common,IT - Hardware,guarded_model_score,0.579602785558668
+common,IT - Hardware,open_model_score,0.579602785558668
+common,IT - Hardware,sector_incumbent,0.6210103485838782
+common,IT - Services,rebuilt_score,0.47978034284582893
+common,IT - Services,guarded_model_score,0.47978034284582893
+common,IT - Services,open_model_score,0.47978034284582893
+common,IT - Services,sector_incumbent,0.47978034284582893
+common,IT - Software,rebuilt_score,0.5587403430751151
+common,IT - Software,guarded_model_score,0.5587403430751151
+common,IT - Software,open_model_score,0.5587403430751151
+common,IT - Software,sector_incumbent,0.5587403430751151
+common,Industrial Manufacturing,rebuilt_score,0.47742896922816386
+common,Industrial Manufacturing,guarded_model_score,0.47742896922816386
+common,Industrial Manufacturing,open_model_score,0.44558292086365764
+common,Industrial Manufacturing,sector_incumbent,0.4303235215928351
+common,Industrial Products,rebuilt_score,0.6116110774534922
+common,Industrial Products,guarded_model_score,0.5932674911941065
+common,Industrial Products,open_model_score,0.5932674911941065
+common,Industrial Products,sector_incumbent,0.6102370042725217
+common,Insurance,rebuilt_score,0.4230769230769231
+common,Insurance,guarded_model_score,0.4230769230769231
+common,Insurance,open_model_score,0.4230769230769231
+common,Insurance,sector_incumbent,0.4230769230769231
+common,Leisure Services,rebuilt_score,0.5760225066579368
+common,Leisure Services,guarded_model_score,0.5760225066579368
+common,Leisure Services,open_model_score,0.5163714094186406
+common,Leisure Services,sector_incumbent,0.558263605297616
+common,Media,rebuilt_score,0.5466791600212653
+common,Media,guarded_model_score,0.5466791600212653
+common,Media,open_model_score,0.5466791600212653
+common,Media,sector_incumbent,0.5749936204146731
+common,Minerals & Mining,rebuilt_score,0.6082850482850484
+common,Minerals & Mining,guarded_model_score,0.6082850482850484
+common,Minerals & Mining,open_model_score,0.6082850482850484
+common,Minerals & Mining,sector_incumbent,0.6082850482850483
+common,Non - Ferrous Metals,rebuilt_score,0.5737349751697578
+common,Non - Ferrous Metals,guarded_model_score,0.5737349751697578
+common,Non - Ferrous Metals,open_model_score,0.5737349751697578
+common,Non - Ferrous Metals,sector_incumbent,0.5737349751697578
+common,Oil,rebuilt_score,0.6217020697167758
+common,Oil,guarded_model_score,0.6217020697167758
+common,Oil,open_model_score,0.599057734204793
+common,Oil,sector_incumbent,0.599057734204793
+common,Other Consumer Services,rebuilt_score,0.47217774192190215
+common,Other Consumer Services,guarded_model_score,0.47217774192190215
+common,Other Consumer Services,open_model_score,0.47217774192190215
+common,Other Consumer Services,sector_incumbent,0.5496213945490921
+common,Other Utilities,rebuilt_score,0.46974673202614375
+common,Other Utilities,guarded_model_score,0.46974673202614375
+common,Other Utilities,open_model_score,0.46974673202614375
+common,Other Utilities,sector_incumbent,0.4327491830065359
+common,"Paper, Forest & Jute Products",rebuilt_score,0.584942013853901
+common,"Paper, Forest & Jute Products",guarded_model_score,0.5849420138539011
+common,"Paper, Forest & Jute Products",open_model_score,0.5849420138539011
+common,"Paper, Forest & Jute Products",sector_incumbent,0.606587353584347
+common,Personal Products,rebuilt_score,0.5276388888888889
+common,Personal Products,guarded_model_score,0.5276388888888889
+common,Personal Products,open_model_score,0.5276388888888889
+common,Personal Products,sector_incumbent,0.5420238095238096
+common,Petroleum Products,rebuilt_score,0.6125480162825364
+common,Petroleum Products,guarded_model_score,0.6125480162825364
+common,Petroleum Products,open_model_score,0.6125480162825364
+common,Petroleum Products,sector_incumbent,0.656125300997592
+common,Pharmaceuticals & Biotechnology,rebuilt_score,0.5999441948196303
+common,Pharmaceuticals & Biotechnology,guarded_model_score,0.5623868558723489
+common,Pharmaceuticals & Biotechnology,open_model_score,0.5999441948196303
+common,Pharmaceuticals & Biotechnology,sector_incumbent,0.5068442924582448
+common,Power,rebuilt_score,0.580556296150006
+common,Power,guarded_model_score,0.580556296150006
+common,Power,open_model_score,0.580556296150006
+common,Power,sector_incumbent,0.6017123275146382
+common,Realty,rebuilt_score,0.6137098424910001
+common,Realty,guarded_model_score,0.6137098424910001
+common,Realty,open_model_score,0.6137098424910001
+common,Realty,sector_incumbent,0.6257797685824316
+common,Retailing,rebuilt_score,0.5263266575041466
+common,Retailing,guarded_model_score,0.5263266575041466
+common,Retailing,open_model_score,0.5263266575041466
+common,Retailing,sector_incumbent,0.5290352074304142
+common,Telecom -  Equipment & Accessories,rebuilt_score,0.6020526695526696
+common,Telecom -  Equipment & Accessories,guarded_model_score,0.6020526695526696
+common,Telecom -  Equipment & Accessories,open_model_score,0.6329954304954305
+common,Telecom -  Equipment & Accessories,sector_incumbent,0.6329954304954305
+common,Telecom - Services,rebuilt_score,0.6749030381383324
+common,Telecom - Services,guarded_model_score,0.6749030381383324
+common,Telecom - Services,open_model_score,0.6749030381383324
+common,Telecom - Services,sector_incumbent,0.6749030381383324
+common,Textiles & Apparels,rebuilt_score,0.5387837804765551
+common,Textiles & Apparels,guarded_model_score,0.5454803176766725
+common,Textiles & Apparels,open_model_score,0.5624751548818624
+common,Textiles & Apparels,sector_incumbent,0.568483966510633
+common,Transport Infrastructure,rebuilt_score,0.5949361749361749
+common,Transport Infrastructure,guarded_model_score,0.5949361749361749
+common,Transport Infrastructure,open_model_score,0.5949361749361749
+common,Transport Infrastructure,sector_incumbent,0.594936174936175
+common,Transport Services,rebuilt_score,0.5550192175287784
+common,Transport Services,guarded_model_score,0.5550192175287784
+common,Transport Services,open_model_score,0.5456288820011087
+common,Transport Services,sector_incumbent,0.5861381076999892
+expanded,Aerospace & Defense,rebuilt_score,0.6142116121426466
+expanded,Aerospace & Defense,guarded_model_score,0.6142116121426466
+expanded,Aerospace & Defense,open_model_score,0.6142116121426466
+expanded,Agricultural Food & other Products,rebuilt_score,0.6328565378571532
+expanded,Agricultural Food & other Products,guarded_model_score,0.6328565378571532
+expanded,Agricultural Food & other Products,open_model_score,0.6328565378571532
+expanded,"Agricultural, Commercial & Construction Vehicles",rebuilt_score,0.5348717948717949
+expanded,"Agricultural, Commercial & Construction Vehicles",guarded_model_score,0.5348717948717949
+expanded,"Agricultural, Commercial & Construction Vehicles",open_model_score,0.5348717948717948
+expanded,Auto Components,rebuilt_score,0.5508304253983898
+expanded,Auto Components,guarded_model_score,0.5508304253983898
+expanded,Auto Components,open_model_score,0.5508304253983898
+expanded,Automobiles,rebuilt_score,0.5402711323763955
+expanded,Automobiles,guarded_model_score,0.5402711323763955
+expanded,Automobiles,open_model_score,0.5402711323763955
+expanded,Banks,rebuilt_score,0.5157129455909943
+expanded,Banks,guarded_model_score,0.5157129455909943
+expanded,Banks,open_model_score,0.5157129455909943
+expanded,Beverages,rebuilt_score,0.5643879433909419
+expanded,Beverages,guarded_model_score,0.5643879433909419
+expanded,Beverages,open_model_score,0.5319550847286979
+expanded,Capital Markets,rebuilt_score,0.5384897292250234
+expanded,Capital Markets,guarded_model_score,0.5384897292250234
+expanded,Capital Markets,open_model_score,0.6155905695611579
+expanded,Cement & Cement Products,rebuilt_score,0.5312686741363212
+expanded,Cement & Cement Products,guarded_model_score,0.5312686741363212
+expanded,Cement & Cement Products,open_model_score,0.5312686741363212
+expanded,Chemicals & Petrochemicals,rebuilt_score,0.6070562069131475
+expanded,Chemicals & Petrochemicals,guarded_model_score,0.6070562069131475
+expanded,Chemicals & Petrochemicals,open_model_score,0.5789476396277139
+expanded,Cigarettes & Tobacco Products,rebuilt_score,0.65
+expanded,Cigarettes & Tobacco Products,guarded_model_score,0.5966666666666668
+expanded,Cigarettes & Tobacco Products,open_model_score,0.65
+expanded,Commercial Services & Supplies,rebuilt_score,0.508412604237018
+expanded,Commercial Services & Supplies,guarded_model_score,0.508412604237018
+expanded,Commercial Services & Supplies,open_model_score,0.5232653889728236
+expanded,Construction,rebuilt_score,0.5591554044522921
+expanded,Construction,guarded_model_score,0.5765739623452871
+expanded,Construction,open_model_score,0.5765739623452871
+expanded,Consumable Fuels,rebuilt_score,0.58
+expanded,Consumable Fuels,guarded_model_score,0.58
+expanded,Consumable Fuels,open_model_score,0.6966666666666668
+expanded,Consumer Durables,rebuilt_score,0.5698093081783981
+expanded,Consumer Durables,guarded_model_score,0.5698093081783981
+expanded,Consumer Durables,open_model_score,0.5718717938746843
+expanded,Diversified,rebuilt_score,0.5872960372960374
+expanded,Diversified,guarded_model_score,0.4722804972804973
+expanded,Diversified,open_model_score,0.4722804972804973
+expanded,Diversified FMCG,rebuilt_score,0.6866666666666666
+expanded,Diversified FMCG,guarded_model_score,0.6866666666666666
+expanded,Diversified FMCG,open_model_score,0.6866666666666666
+expanded,Diversified Metals,rebuilt_score,0.57
+expanded,Diversified Metals,guarded_model_score,0.605
+expanded,Diversified Metals,open_model_score,0.605
+expanded,Electrical Equipment,rebuilt_score,0.4405307504938047
+expanded,Electrical Equipment,guarded_model_score,0.4405307504938047
+expanded,Electrical Equipment,open_model_score,0.4405307504938047
+expanded,Entertainment,rebuilt_score,0.668568274372082
+expanded,Entertainment,guarded_model_score,0.668568274372082
+expanded,Entertainment,open_model_score,0.6312460244538259
+expanded,Ferrous Metals,rebuilt_score,0.5792639331994172
+expanded,Ferrous Metals,guarded_model_score,0.5792639331994172
+expanded,Ferrous Metals,open_model_score,0.5792639331994172
+expanded,Fertilizers & Agrochemicals,rebuilt_score,0.5292990094603439
+expanded,Fertilizers & Agrochemicals,guarded_model_score,0.5292990094603439
+expanded,Fertilizers & Agrochemicals,open_model_score,0.5292990094603439
+expanded,Finance,rebuilt_score,0.5974710210528159
+expanded,Finance,guarded_model_score,0.5974710210528159
+expanded,Finance,open_model_score,0.5974710210528159
+expanded,Financial Technology (Fintech),rebuilt_score,0.6585016835016836
+expanded,Financial Technology (Fintech),guarded_model_score,0.6553872053872055
+expanded,Financial Technology (Fintech),open_model_score,0.6016835016835017
+expanded,Food Products,rebuilt_score,0.5706265177228224
+expanded,Food Products,guarded_model_score,0.5706265177228224
+expanded,Food Products,open_model_score,0.5706265177228224
+expanded,Gas,rebuilt_score,0.5277777777777778
+expanded,Gas,guarded_model_score,0.5277777777777778
+expanded,Gas,open_model_score,0.5277777777777778
+expanded,Healthcare Equipment & Supplies,rebuilt_score,0.5084027777777779
+expanded,Healthcare Equipment & Supplies,guarded_model_score,0.5084027777777779
+expanded,Healthcare Equipment & Supplies,open_model_score,0.5084027777777779
+expanded,Healthcare Services,rebuilt_score,0.5213042953313259
+expanded,Healthcare Services,guarded_model_score,0.5213042953313259
+expanded,Healthcare Services,open_model_score,0.5213042953313259
+expanded,Household Products,rebuilt_score,0.5433289341377577
+expanded,Household Products,guarded_model_score,0.5433289341377577
+expanded,Household Products,open_model_score,0.5433289341377577
+expanded,IT - Hardware,rebuilt_score,0.6599011826953004
+expanded,IT - Hardware,guarded_model_score,0.6599011826953004
+expanded,IT - Hardware,open_model_score,0.6342631497043262
+expanded,IT - Services,rebuilt_score,0.512405927764431
+expanded,IT - Services,guarded_model_score,0.512405927764431
+expanded,IT - Services,open_model_score,0.512405927764431
+expanded,IT - Software,rebuilt_score,0.5587403430751151
+expanded,IT - Software,guarded_model_score,0.5587403430751151
+expanded,IT - Software,open_model_score,0.5587403430751151
+expanded,Industrial Manufacturing,rebuilt_score,0.47742896922816386
+expanded,Industrial Manufacturing,guarded_model_score,0.47742896922816386
+expanded,Industrial Manufacturing,open_model_score,0.44558292086365764
+expanded,Industrial Products,rebuilt_score,0.6116110774534922
+expanded,Industrial Products,guarded_model_score,0.5932674911941065
+expanded,Industrial Products,open_model_score,0.5932674911941065
+expanded,Insurance,rebuilt_score,0.4711538461538461
+expanded,Insurance,guarded_model_score,0.4711538461538461
+expanded,Insurance,open_model_score,0.4711538461538461
+expanded,Leisure Services,rebuilt_score,0.563441339988764
+expanded,Leisure Services,guarded_model_score,0.5372198693577211
+expanded,Leisure Services,open_model_score,0.563441339988764
+expanded,Media,rebuilt_score,0.5447958532695375
+expanded,Media,guarded_model_score,0.5447958532695375
+expanded,Media,open_model_score,0.6266408825093035
+expanded,Metals & Minerals Trading,rebuilt_score,0.5451465201465202
+expanded,Metals & Minerals Trading,guarded_model_score,0.5451465201465203
+expanded,Metals & Minerals Trading,open_model_score,0.5451465201465203
+expanded,Minerals & Mining,rebuilt_score,0.6082850482850484
+expanded,Minerals & Mining,guarded_model_score,0.6082850482850484
+expanded,Minerals & Mining,open_model_score,0.6082850482850484
+expanded,Non - Ferrous Metals,rebuilt_score,0.5491506030201683
+expanded,Non - Ferrous Metals,guarded_model_score,0.6241744197831154
+expanded,Non - Ferrous Metals,open_model_score,0.6241744197831154
+expanded,Oil,rebuilt_score,0.6217020697167758
+expanded,Oil,guarded_model_score,0.6217020697167758
+expanded,Oil,open_model_score,0.599057734204793
+expanded,Other Construction Materials,rebuilt_score,0.6506993177387914
+expanded,Other Construction Materials,guarded_model_score,0.5669517543859649
+expanded,Other Construction Materials,open_model_score,0.5652826510721248
+expanded,Other Consumer Services,rebuilt_score,0.6081485805011946
+expanded,Other Consumer Services,guarded_model_score,0.6081485805011946
+expanded,Other Consumer Services,open_model_score,0.5429589042770355
+expanded,Other Utilities,rebuilt_score,0.5205514705882353
+expanded,Other Utilities,guarded_model_score,0.5205514705882353
+expanded,Other Utilities,open_model_score,0.5205514705882353
+expanded,"Paper, Forest & Jute Products",rebuilt_score,0.584942013853901
+expanded,"Paper, Forest & Jute Products",guarded_model_score,0.5849420138539011
+expanded,"Paper, Forest & Jute Products",open_model_score,0.5849420138539011
+expanded,Personal Products,rebuilt_score,0.5467460317460319
+expanded,Personal Products,guarded_model_score,0.5467460317460319
+expanded,Personal Products,open_model_score,0.49767857142857147
+expanded,Petroleum Products,rebuilt_score,0.6125480162825364
+expanded,Petroleum Products,guarded_model_score,0.6125480162825364
+expanded,Petroleum Products,open_model_score,0.6125480162825364
+expanded,Pharmaceuticals & Biotechnology,rebuilt_score,0.5999441948196303
+expanded,Pharmaceuticals & Biotechnology,guarded_model_score,0.5623868558723489
+expanded,Pharmaceuticals & Biotechnology,open_model_score,0.5999441948196303
+expanded,Power,rebuilt_score,0.580556296150006
+expanded,Power,guarded_model_score,0.580556296150006
+expanded,Power,open_model_score,0.566623163600057
+expanded,Printing & Publication,rebuilt_score,0.7607936507936509
+expanded,Printing & Publication,guarded_model_score,0.7607936507936509
+expanded,Printing & Publication,open_model_score,0.7607936507936509
+expanded,Realty,rebuilt_score,0.6137098424910001
+expanded,Realty,guarded_model_score,0.6137098424910001
+expanded,Realty,open_model_score,0.6137098424910001
+expanded,Retailing,rebuilt_score,0.545299219960932
+expanded,Retailing,guarded_model_score,0.545299219960932
+expanded,Retailing,open_model_score,0.545299219960932
+expanded,Telecom -  Equipment & Accessories,rebuilt_score,0.736384078884079
+expanded,Telecom -  Equipment & Accessories,guarded_model_score,0.736384078884079
+expanded,Telecom -  Equipment & Accessories,open_model_score,0.736384078884079
+expanded,Telecom - Services,rebuilt_score,0.6749030381383324
+expanded,Telecom - Services,guarded_model_score,0.6749030381383324
+expanded,Telecom - Services,open_model_score,0.6749030381383324
+expanded,Textiles & Apparels,rebuilt_score,0.5306818481520045
+expanded,Textiles & Apparels,guarded_model_score,0.5454803176766725
+expanded,Textiles & Apparels,open_model_score,0.5624751548818624
+expanded,Transport Infrastructure,rebuilt_score,0.5949361749361749
+expanded,Transport Infrastructure,guarded_model_score,0.5949361749361749
+expanded,Transport Infrastructure,open_model_score,0.5949361749361749
+expanded,Transport Services,rebuilt_score,0.6039861043657863
+expanded,Transport Services,guarded_model_score,0.6039861043657863
+expanded,Transport Services,open_model_score,0.6039861043657863

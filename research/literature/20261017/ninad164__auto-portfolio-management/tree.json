@@ -1,0 +1,662 @@
+{
+  "sha": "669b17e1e0374701b02a447184fff1a7b40bb250",
+  "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/trees/669b17e1e0374701b02a447184fff1a7b40bb250",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2e82c027a59c8a0a4020ba4d3d14d4f6bf620dd",
+      "size": 1846,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/a2e82c027a59c8a0a4020ba4d3d14d4f6bf620dd"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14fac913ccf80234b1848540089a3bbcb6e5283d",
+      "size": 1056,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/14fac913ccf80234b1848540089a3bbcb6e5283d"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "deacbbf3fb905034eecd1cbdf2a9179503f4a89b",
+      "size": 9532,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/deacbbf3fb905034eecd1cbdf2a9179503f4a89b"
+    },
+    {
+      "path": "data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "704d6bcc973536a0e6f5d97cf5726f6be4060177",
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/trees/704d6bcc973536a0e6f5d97cf5726f6be4060177"
+    },
+    {
+      "path": "data/processed",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5ca77f8e4e03d70ce474c374974ce1ceb3cc0d15",
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/trees/5ca77f8e4e03d70ce474c374974ce1ceb3cc0d15"
+    },
+    {
+      "path": "data/processed/dataset_metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a55217ca66b4a5bf13cc481a2cc5b6e69ef09605",
+      "size": 836,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/a55217ca66b4a5bf13cc481a2cc5b6e69ef09605"
+    },
+    {
+      "path": "data/processed/fundamentals_pti.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f65b8be960913455e5819ceca0d0c520669dbcb9",
+      "size": 46193,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/f65b8be960913455e5819ceca0d0c520669dbcb9"
+    },
+    {
+      "path": "data/processed/universe.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "560d28aefcd631d71757604327c72ba70100efed",
+      "size": 92755,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/560d28aefcd631d71757604327c72ba70100efed"
+    },
+    {
+      "path": "data/universe_snapshots",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f907bfc320d8fe375dab410f2f34dd6b57bb34b",
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/trees/1f907bfc320d8fe375dab410f2f34dd6b57bb34b"
+    },
+    {
+      "path": "data/universe_snapshots/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "size": 1,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/8b137891791fe96927ad78e64b0aad7bded08bdc"
+    },
+    {
+      "path": "data/universe_snapshots/sources_manifest.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9962a1656a5517ef5b165e96f5827867f9a9fa6e",
+      "size": 80,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/9962a1656a5517ef5b165e96f5827867f9a9fa6e"
+    },
+    {
+      "path": "reports",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3bfdb8be11a5c3baca053fc186c51f3a6a8970ca",
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/trees/3bfdb8be11a5c3baca053fc186c51f3a6a8970ca"
+    },
+    {
+      "path": "reports/price_only_v1_2015_2025",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5348618b051f92411038a5969a34b74f040aea95",
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/trees/5348618b051f92411038a5969a34b74f040aea95"
+    },
+    {
+      "path": "reports/price_only_v1_2015_2025/daily_equity_curve.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9dbe5302184163a7e9fc4abdce107d93eccc75f2",
+      "size": 253301,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/9dbe5302184163a7e9fc4abdce107d93eccc75f2"
+    },
+    {
+      "path": "reports/price_only_v1_2015_2025/monthly_holdings.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45b429142e7839daf0769e4e8d830bc0ed5788b4",
+      "size": 73717,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/45b429142e7839daf0769e4e8d830bc0ed5788b4"
+    },
+    {
+      "path": "reports/price_only_v1_2015_2025/monthly_performance.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82703da90c20122d5d5fdaaf6dc2f4f216a5a275",
+      "size": 7612,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/82703da90c20122d5d5fdaaf6dc2f4f216a5a275"
+    },
+    {
+      "path": "reports/price_only_v1_2015_2025/monthly_returns.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "774271abb34bd5cf667cc582a2aca12b25065635",
+      "size": 2644,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/774271abb34bd5cf667cc582a2aca12b25065635"
+    },
+    {
+      "path": "reports/price_only_v1_2015_2025/report.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afbce9388b404af4cdbedc4a6a888196e6365008",
+      "size": 2336,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/afbce9388b404af4cdbedc4a6a888196e6365008"
+    },
+    {
+      "path": "reports/price_only_v1_2015_2025/run_config.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55ef36bc2ac9c2487b4506f47d370e54c88b87ed",
+      "size": 1274,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/55ef36bc2ac9c2487b4506f47d370e54c88b87ed"
+    },
+    {
+      "path": "reports/price_only_v1_2015_2025/summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bc5f93439fce81ed690ae2765d7e1be7d645ce4",
+      "size": 404,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/7bc5f93439fce81ed690ae2765d7e1be7d645ce4"
+    },
+    {
+      "path": "reports/price_only_v1_2015_2025/trades.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4d257e6e21c605d4960fa992500cfff9cffde8f",
+      "size": 104717,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/a4d257e6e21c605d4960fa992500cfff9cffde8f"
+    },
+    {
+      "path": "reports/price_only_v1_2015_2025/warnings.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cf8d913c6642b18dfb9f9c9dce946f803e2c944",
+      "size": 292,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/1cf8d913c6642b18dfb9f9c9dce946f803e2c944"
+    },
+    {
+      "path": "reports/price_only_v1_historical_universe",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "acb2fcf82dcbb81d41204cb034f0ed45542034e4",
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/trees/acb2fcf82dcbb81d41204cb034f0ed45542034e4"
+    },
+    {
+      "path": "reports/price_only_v1_historical_universe/benchmark_summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3d10a421c0dc1fae729cb0fe31b6855ca347e80",
+      "size": 641,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/f3d10a421c0dc1fae729cb0fe31b6855ca347e80"
+    },
+    {
+      "path": "reports/price_only_v1_historical_universe/daily_equity_curve.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b44ff652259248b2f209fb7ed810752ae188169",
+      "size": 664300,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/9b44ff652259248b2f209fb7ed810752ae188169"
+    },
+    {
+      "path": "reports/price_only_v1_historical_universe/dataset_metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a55217ca66b4a5bf13cc481a2cc5b6e69ef09605",
+      "size": 836,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/a55217ca66b4a5bf13cc481a2cc5b6e69ef09605"
+    },
+    {
+      "path": "reports/price_only_v1_historical_universe/eligible_universe_by_month.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5026f27712e3df64ce674cbf2d56b7df7daf6312",
+      "size": 12794,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/5026f27712e3df64ce674cbf2d56b7df7daf6312"
+    },
+    {
+      "path": "reports/price_only_v1_historical_universe/monthly_holdings.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11c3cfd3d0400d10ba6c80edc6865143f1cf3842",
+      "size": 318823,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/11c3cfd3d0400d10ba6c80edc6865143f1cf3842"
+    },
+    {
+      "path": "reports/price_only_v1_historical_universe/monthly_performance.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b5ae0bb3badbfd63c3c64f10956901be375df50",
+      "size": 23214,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/5b5ae0bb3badbfd63c3c64f10956901be375df50"
+    },
+    {
+      "path": "reports/price_only_v1_historical_universe/monthly_returns.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a239c16b9354a0eba0e4764667f6e8084b5fc7c8",
+      "size": 6965,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/a239c16b9354a0eba0e4764667f6e8084b5fc7c8"
+    },
+    {
+      "path": "reports/price_only_v1_historical_universe/rejected_tickers_by_month.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94f3094dd43a75fde4b6fba40aef1f4b35c3cea3",
+      "size": 3503205,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/94f3094dd43a75fde4b6fba40aef1f4b35c3cea3"
+    },
+    {
+      "path": "reports/price_only_v1_historical_universe/report.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6691d8989ce8f65ac54f0f6d9e252d6963864535",
+      "size": 2319,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/6691d8989ce8f65ac54f0f6d9e252d6963864535"
+    },
+    {
+      "path": "reports/price_only_v1_historical_universe/run_config.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "315879f6921e076a410a31521859a491fdbd2185",
+      "size": 35701,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/315879f6921e076a410a31521859a491fdbd2185"
+    },
+    {
+      "path": "reports/price_only_v1_historical_universe/selected_holdings_by_month.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca00f1868b78055a07dbbd11a06fcb054601eef0",
+      "size": 705723,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/ca00f1868b78055a07dbbd11a06fcb054601eef0"
+    },
+    {
+      "path": "reports/price_only_v1_historical_universe/summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbfefa82436e82f95e718fe6a69ccfaa923810c0",
+      "size": 406,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/fbfefa82436e82f95e718fe6a69ccfaa923810c0"
+    },
+    {
+      "path": "reports/price_only_v1_historical_universe/trades.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e923a04e4efc73234dc412e78bdd995712e6b06b",
+      "size": 478769,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/e923a04e4efc73234dc412e78bdd995712e6b06b"
+    },
+    {
+      "path": "reports/price_only_v1_historical_universe/universe_coverage_summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b50ae51e10bb8ff79d537e7c63652fb3de06bd1",
+      "size": 26294,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/4b50ae51e10bb8ff79d537e7c63652fb3de06bd1"
+    },
+    {
+      "path": "reports/price_only_v1_historical_universe/validation_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "accf33a132d4c741f6947a1d5b6dad42ddba643f",
+      "size": 30692,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/accf33a132d4c741f6947a1d5b6dad42ddba643f"
+    },
+    {
+      "path": "reports/price_only_v1_historical_universe/warnings.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a20a585d0de2a1c25794f8d4f42a23ea949af8a",
+      "size": 216,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/9a20a585d0de2a1c25794f8d4f42a23ea949af8a"
+    },
+    {
+      "path": "reports/price_only_v1_real_data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1e59bb47a6bc31c5c3fafb42c18e43a37ff2fe7c",
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/trees/1e59bb47a6bc31c5c3fafb42c18e43a37ff2fe7c"
+    },
+    {
+      "path": "reports/price_only_v1_real_data/benchmark_summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3d10a421c0dc1fae729cb0fe31b6855ca347e80",
+      "size": 641,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/f3d10a421c0dc1fae729cb0fe31b6855ca347e80"
+    },
+    {
+      "path": "reports/price_only_v1_real_data/daily_equity_curve.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d23eadb9ffed9ea3de987e9e618eb304ab5c56da",
+      "size": 664229,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/d23eadb9ffed9ea3de987e9e618eb304ab5c56da"
+    },
+    {
+      "path": "reports/price_only_v1_real_data/dataset_metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3c3251e2f35856b1f04096eb4b4fad6fae3ef44",
+      "size": 487,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/b3c3251e2f35856b1f04096eb4b4fad6fae3ef44"
+    },
+    {
+      "path": "reports/price_only_v1_real_data/monthly_holdings.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73ab68d5bf60ef2014025a1f420d30103345ccc9",
+      "size": 318830,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/73ab68d5bf60ef2014025a1f420d30103345ccc9"
+    },
+    {
+      "path": "reports/price_only_v1_real_data/monthly_performance.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "388451017687e93b9c2b2b24b05e19edf0266607",
+      "size": 23205,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/388451017687e93b9c2b2b24b05e19edf0266607"
+    },
+    {
+      "path": "reports/price_only_v1_real_data/monthly_returns.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9b0b402d5fc67397f815aae96e38d2610cd344f",
+      "size": 6965,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/c9b0b402d5fc67397f815aae96e38d2610cd344f"
+    },
+    {
+      "path": "reports/price_only_v1_real_data/report.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36f3eafa4d5ce3953628c019d8db6327fea56181",
+      "size": 2177,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/36f3eafa4d5ce3953628c019d8db6327fea56181"
+    },
+    {
+      "path": "reports/price_only_v1_real_data/run_config.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "027a9424050f8d0d59ff8d2ef181d3b8e77ab792",
+      "size": 2828,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/027a9424050f8d0d59ff8d2ef181d3b8e77ab792"
+    },
+    {
+      "path": "reports/price_only_v1_real_data/summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1160aae68216b7c6c58659afdacfd94088844a7e",
+      "size": 403,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/1160aae68216b7c6c58659afdacfd94088844a7e"
+    },
+    {
+      "path": "reports/price_only_v1_real_data/trades.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00638eb1932b3d2d2aebd441edc7819131a2a0ed",
+      "size": 478794,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/00638eb1932b3d2d2aebd441edc7819131a2a0ed"
+    },
+    {
+      "path": "reports/price_only_v1_real_data/validation_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "555af024e30a3322f601476300e13fec509aa827",
+      "size": 836,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/555af024e30a3322f601476300e13fec509aa827"
+    },
+    {
+      "path": "reports/price_only_v1_real_data/warnings.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "162af20021512393eb852f33c8e0eef6db669828",
+      "size": 76,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/162af20021512393eb852f33c8e0eef6db669828"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5176809459e32082968a011b80cb999b0d093e8",
+      "size": 104,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/b5176809459e32082968a011b80cb999b0d093e8"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dea6ea543035e2f3c5caebdca22c3331a9af3e9b",
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/trees/dea6ea543035e2f3c5caebdca22c3331a9af3e9b"
+    },
+    {
+      "path": "src/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b194be4e22e1ca49aedd2e71022afc394233874d",
+      "size": 49,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/b194be4e22e1ca49aedd2e71022afc394233874d"
+    },
+    {
+      "path": "src/backtester.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "037949977d0f9355c1811e3dafbb398a60c0116e",
+      "size": 21542,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/037949977d0f9355c1811e3dafbb398a60c0116e"
+    },
+    {
+      "path": "src/build_universe_history.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef620eb7aae6114d87bd272d6b237a905cf999d2",
+      "size": 11054,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/ef620eb7aae6114d87bd272d6b237a905cf999d2"
+    },
+    {
+      "path": "src/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00836f3105199a109dd0f6f6c49412054dd73740",
+      "size": 2948,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/00836f3105199a109dd0f6f6c49412054dd73740"
+    },
+    {
+      "path": "src/data_loader.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d726137896c08c8fc6789bd99f13c567d35cd2d",
+      "size": 12190,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/1d726137896c08c8fc6789bd99f13c567d35cd2d"
+    },
+    {
+      "path": "src/dataset_metadata.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9386b666fa8bede9da771735ba2eb84b06b0d68e",
+      "size": 7429,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/9386b666fa8bede9da771735ba2eb84b06b0d68e"
+    },
+    {
+      "path": "src/demo_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1f45b703e40bb642e442c81a067266ea162a9df",
+      "size": 7082,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/e1f45b703e40bb642e442c81a067266ea162a9df"
+    },
+    {
+      "path": "src/download_nifty500_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "207acc0f771f1e2b256c7fa45a33bab45a8861d5",
+      "size": 3029,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/207acc0f771f1e2b256c7fa45a33bab45a8861d5"
+    },
+    {
+      "path": "src/download_prices.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "769ba4c403500d3f38ed28b71baab51a6b60cc65",
+      "size": 2122,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/769ba4c403500d3f38ed28b71baab51a6b60cc65"
+    },
+    {
+      "path": "src/features.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69c9acff03557fddb38f6b2264d2f6e58604d1ec",
+      "size": 6280,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/69c9acff03557fddb38f6b2264d2f6e58604d1ec"
+    },
+    {
+      "path": "src/import_universe_snapshots.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94bc6302c10e83e9038c3c45e97d79e08c817dd4",
+      "size": 8375,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/94bc6302c10e83e9038c3c45e97d79e08c817dd4"
+    },
+    {
+      "path": "src/metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7469702c7fc81734166564c9d8336c6078b50731",
+      "size": 5380,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/7469702c7fc81734166564c9d8336c6078b50731"
+    },
+    {
+      "path": "src/plots.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "901fd80d81050e0e135b135b992ccd19860b16af",
+      "size": 2394,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/901fd80d81050e0e135b135b992ccd19860b16af"
+    },
+    {
+      "path": "src/portfolio.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4626f177f33e9d0420c0d62e2b6636083c1b4eef",
+      "size": 7679,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/4626f177f33e9d0420c0d62e2b6636083c1b4eef"
+    },
+    {
+      "path": "src/price_only_v1.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bc1bd03211656ede1d582d31e8716b61735caf3",
+      "size": 25683,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/8bc1bd03211656ede1d582d31e8716b61735caf3"
+    },
+    {
+      "path": "src/real_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee9d0bf60168155b30237ca2fb93e4d209d225de",
+      "size": 4681,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/ee9d0bf60168155b30237ca2fb93e4d209d225de"
+    },
+    {
+      "path": "src/scoring.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de401c00f1dff20860a22c7f7dbfc8832b8d6c02",
+      "size": 1724,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/de401c00f1dff20860a22c7f7dbfc8832b8d6c02"
+    },
+    {
+      "path": "src/universe_history.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fec2ec20d66d9e5daea4eba018865e573417d787",
+      "size": 6055,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/fec2ec20d66d9e5daea4eba018865e573417d787"
+    },
+    {
+      "path": "src/validate_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36cdfcf8a74a27211a026290379906d22b7ff97e",
+      "size": 3058,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/36cdfcf8a74a27211a026290379906d22b7ff97e"
+    },
+    {
+      "path": "src/validation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aeb999b644ff74e0fa2c60bb408a4ec5a08d8f64",
+      "size": 12283,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/aeb999b644ff74e0fa2c60bb408a4ec5a08d8f64"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3d4fac13d9f01ff265dd5d276dd785d94c59ae66",
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/trees/3d4fac13d9f01ff265dd5d276dd785d94c59ae66"
+    },
+    {
+      "path": "tests/test_features.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f64ddc92fd2da5e7bb5fc04d26f05b2735cab00",
+      "size": 4514,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/1f64ddc92fd2da5e7bb5fc04d26f05b2735cab00"
+    },
+    {
+      "path": "tests/test_import_universe_snapshots.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96955877a2dbc668bf4d99a718e8a49cbc93864a",
+      "size": 3220,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/96955877a2dbc668bf4d99a718e8a49cbc93864a"
+    },
+    {
+      "path": "tests/test_metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b28e79c6f8f0f99f77ed78de1a50e3c3894bf61",
+      "size": 252,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/1b28e79c6f8f0f99f77ed78de1a50e3c3894bf61"
+    },
+    {
+      "path": "tests/test_portfolio.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56e100c3991c1c5610d8e085fa6eda91a260f303",
+      "size": 2545,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/56e100c3991c1c5610d8e085fa6eda91a260f303"
+    },
+    {
+      "path": "tests/test_price_only_v1.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea03dc5090c8316e656405b042182aa564362b18",
+      "size": 2735,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/ea03dc5090c8316e656405b042182aa564362b18"
+    },
+    {
+      "path": "tests/test_scoring.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25a1cd1a6cac2b7b66ae25d3f18efed3cc2276f1",
+      "size": 890,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/25a1cd1a6cac2b7b66ae25d3f18efed3cc2276f1"
+    },
+    {
+      "path": "tests/test_universe_history.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7408da053fd2734ebd17591b4d4291f17475cf6",
+      "size": 4495,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/d7408da053fd2734ebd17591b4d4291f17475cf6"
+    },
+    {
+      "path": "tests/test_validation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "141d5b45137b96e16973978e769c415211e4a9e5",
+      "size": 2539,
+      "url": "https://api.github.com/repos/ninad164/auto-portfolio-management/git/blobs/141d5b45137b96e16973978e769c415211e4a9e5"
+    }
+  ],
+  "truncated": false
+}

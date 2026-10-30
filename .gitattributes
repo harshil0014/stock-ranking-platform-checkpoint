@@ -70,3 +70,5 @@ research/environment/tra_dependency_lock.txt text eol=lf
 data/analysis/**/*.csv text eol=lf
 data/analysis/release_website_audit_20260920_run_01/sector_website_audit.csv text eol=crlf
 experiments/personalized-product-acceptance/sector-final-20260927/*.json binary
+
+research/runtime/sector-champion-recency/** -text

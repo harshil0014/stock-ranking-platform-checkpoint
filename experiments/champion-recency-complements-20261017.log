@@ -1,0 +1,48 @@
+EVALUATE development common raw
+EVALUATE development common capped
+EVALUATE development expanded raw
+EVALUATE development expanded capped
+EVALUATE recent common raw
+EVALUATE recent common capped
+EVALUATE recent expanded raw
+EVALUATE recent expanded capped
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\champion_recency_complements_20261017.py:52: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  current=pd.read_csv(h.p.OUT/'current_all_stock_rankings.csv');current[h.base.ANCHOR]=current.rebuilt_score
+{
+  "selected": "continuity_0.001",
+  "accept_research_patch": false,
+  "development": {
+    "stage": "development",
+    "scope": "expanded",
+    "treatment": "capped",
+    "model": "continuity_0.001",
+    "top_n": 3,
+    "utility": -0.021873709064032104,
+    "ranking_utility": -0.036103646675286066,
+    "equal_utility": -0.016682381035165728,
+    "xirr": 2.212157368158829e-05,
+    "drawdown": -0.0002767931946205393,
+    "achievement": 0.000175438596491162,
+    "shortfall": -1.0691520123187748e-05,
+    "ndcg": -0.00048349843175110596,
+    "rank_ic": -0.00023857450175461536
+  },
+  "recent": {
+    "stage": "recent",
+    "scope": "expanded",
+    "treatment": "capped",
+    "top_n": 3,
+    "utility": 0.0006936130985536748,
+    "ranking_utility": 0.016071526677673142,
+    "equal_utility": -0.012778326978582222,
+    "xirr": -0.0005081474523757792,
+    "drawdown": -0.00038038611632679187,
+    "achievement": -0.000350877192982435,
+    "shortfall": -0.00022908357317334704,
+    "ndcg": 5.371689692312831e-05,
+    "rank_ic": 0.00026771363663033454
+  },
+  "coverage": 4436,
+  "fresh_validation": false,
+  "website_changed": false
+}

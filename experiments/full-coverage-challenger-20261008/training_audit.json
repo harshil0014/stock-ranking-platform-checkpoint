@@ -1,0 +1,338 @@
+[
+  {
+    "year": 2020,
+    "model": "lambdarank_return_7",
+    "train_rows": 29772,
+    "max_training_endpoint": "2019-12-31",
+    "test_start": "2020-03-31"
+  },
+  {
+    "year": 2020,
+    "model": "lambdarank_return_15",
+    "train_rows": 29772,
+    "max_training_endpoint": "2019-12-31",
+    "test_start": "2020-03-31"
+  },
+  {
+    "year": 2020,
+    "model": "lambdarank_balanced_7",
+    "train_rows": 29772,
+    "max_training_endpoint": "2019-12-31",
+    "test_start": "2020-03-31"
+  },
+  {
+    "year": 2020,
+    "model": "lambdarank_balanced_15",
+    "train_rows": 29772,
+    "max_training_endpoint": "2019-12-31",
+    "test_start": "2020-03-31"
+  },
+  {
+    "year": 2020,
+    "model": "rank_xendcg_return_7",
+    "train_rows": 29772,
+    "max_training_endpoint": "2019-12-31",
+    "test_start": "2020-03-31"
+  },
+  {
+    "year": 2020,
+    "model": "rank_xendcg_return_15",
+    "train_rows": 29772,
+    "max_training_endpoint": "2019-12-31",
+    "test_start": "2020-03-31"
+  },
+  {
+    "year": 2020,
+    "model": "rank_xendcg_balanced_7",
+    "train_rows": 29772,
+    "max_training_endpoint": "2019-12-31",
+    "test_start": "2020-03-31"
+  },
+  {
+    "year": 2020,
+    "model": "rank_xendcg_balanced_15",
+    "train_rows": 29772,
+    "max_training_endpoint": "2019-12-31",
+    "test_start": "2020-03-31"
+  },
+  {
+    "year": 2021,
+    "model": "lambdarank_return_7",
+    "train_rows": 40723,
+    "max_training_endpoint": "2020-12-31",
+    "test_start": "2021-03-31"
+  },
+  {
+    "year": 2021,
+    "model": "lambdarank_return_15",
+    "train_rows": 40723,
+    "max_training_endpoint": "2020-12-31",
+    "test_start": "2021-03-31"
+  },
+  {
+    "year": 2021,
+    "model": "lambdarank_balanced_7",
+    "train_rows": 40723,
+    "max_training_endpoint": "2020-12-31",
+    "test_start": "2021-03-31"
+  },
+  {
+    "year": 2021,
+    "model": "lambdarank_balanced_15",
+    "train_rows": 40723,
+    "max_training_endpoint": "2020-12-31",
+    "test_start": "2021-03-31"
+  },
+  {
+    "year": 2021,
+    "model": "rank_xendcg_return_7",
+    "train_rows": 40723,
+    "max_training_endpoint": "2020-12-31",
+    "test_start": "2021-03-31"
+  },
+  {
+    "year": 2021,
+    "model": "rank_xendcg_return_15",
+    "train_rows": 40723,
+    "max_training_endpoint": "2020-12-31",
+    "test_start": "2021-03-31"
+  },
+  {
+    "year": 2021,
+    "model": "rank_xendcg_balanced_7",
+    "train_rows": 40723,
+    "max_training_endpoint": "2020-12-31",
+    "test_start": "2021-03-31"
+  },
+  {
+    "year": 2021,
+    "model": "rank_xendcg_balanced_15",
+    "train_rows": 40723,
+    "max_training_endpoint": "2020-12-31",
+    "test_start": "2021-03-31"
+  },
+  {
+    "year": 2022,
+    "model": "lambdarank_return_7",
+    "train_rows": 51977,
+    "max_training_endpoint": "2021-12-31",
+    "test_start": "2022-03-31"
+  },
+  {
+    "year": 2022,
+    "model": "lambdarank_return_15",
+    "train_rows": 51977,
+    "max_training_endpoint": "2021-12-31",
+    "test_start": "2022-03-31"
+  },
+  {
+    "year": 2022,
+    "model": "lambdarank_balanced_7",
+    "train_rows": 51977,
+    "max_training_endpoint": "2021-12-31",
+    "test_start": "2022-03-31"
+  },
+  {
+    "year": 2022,
+    "model": "lambdarank_balanced_15",
+    "train_rows": 51977,
+    "max_training_endpoint": "2021-12-31",
+    "test_start": "2022-03-31"
+  },
+  {
+    "year": 2022,
+    "model": "rank_xendcg_return_7",
+    "train_rows": 51977,
+    "max_training_endpoint": "2021-12-31",
+    "test_start": "2022-03-31"
+  },
+  {
+    "year": 2022,
+    "model": "rank_xendcg_return_15",
+    "train_rows": 51977,
+    "max_training_endpoint": "2021-12-31",
+    "test_start": "2022-03-31"
+  },
+  {
+    "year": 2022,
+    "model": "rank_xendcg_balanced_7",
+    "train_rows": 51977,
+    "max_training_endpoint": "2021-12-31",
+    "test_start": "2022-03-31"
+  },
+  {
+    "year": 2022,
+    "model": "rank_xendcg_balanced_15",
+    "train_rows": 51977,
+    "max_training_endpoint": "2021-12-31",
+    "test_start": "2022-03-31"
+  },
+  {
+    "year": 2023,
+    "model": "lambdarank_return_7",
+    "train_rows": 63545,
+    "max_training_endpoint": "2022-12-31",
+    "test_start": "2023-03-31"
+  },
+  {
+    "year": 2023,
+    "model": "lambdarank_return_15",
+    "train_rows": 63545,
+    "max_training_endpoint": "2022-12-31",
+    "test_start": "2023-03-31"
+  },
+  {
+    "year": 2023,
+    "model": "lambdarank_balanced_7",
+    "train_rows": 63545,
+    "max_training_endpoint": "2022-12-31",
+    "test_start": "2023-03-31"
+  },
+  {
+    "year": 2023,
+    "model": "lambdarank_balanced_15",
+    "train_rows": 63545,
+    "max_training_endpoint": "2022-12-31",
+    "test_start": "2023-03-31"
+  },
+  {
+    "year": 2023,
+    "model": "rank_xendcg_return_7",
+    "train_rows": 63545,
+    "max_training_endpoint": "2022-12-31",
+    "test_start": "2023-03-31"
+  },
+  {
+    "year": 2023,
+    "model": "rank_xendcg_return_15",
+    "train_rows": 63545,
+    "max_training_endpoint": "2022-12-31",
+    "test_start": "2023-03-31"
+  },
+  {
+    "year": 2023,
+    "model": "rank_xendcg_balanced_7",
+    "train_rows": 63545,
+    "max_training_endpoint": "2022-12-31",
+    "test_start": "2023-03-31"
+  },
+  {
+    "year": 2023,
+    "model": "rank_xendcg_balanced_15",
+    "train_rows": 63545,
+    "max_training_endpoint": "2022-12-31",
+    "test_start": "2023-03-31"
+  },
+  {
+    "year": 2024,
+    "model": "lambdarank_return_7",
+    "train_rows": 75572,
+    "max_training_endpoint": "2023-12-31",
+    "test_start": "2024-03-31"
+  },
+  {
+    "year": 2024,
+    "model": "lambdarank_return_15",
+    "train_rows": 75572,
+    "max_training_endpoint": "2023-12-31",
+    "test_start": "2024-03-31"
+  },
+  {
+    "year": 2024,
+    "model": "lambdarank_balanced_7",
+    "train_rows": 75572,
+    "max_training_endpoint": "2023-12-31",
+    "test_start": "2024-03-31"
+  },
+  {
+    "year": 2024,
+    "model": "lambdarank_balanced_15",
+    "train_rows": 75572,
+    "max_training_endpoint": "2023-12-31",
+    "test_start": "2024-03-31"
+  },
+  {
+    "year": 2024,
+    "model": "rank_xendcg_return_7",
+    "train_rows": 75572,
+    "max_training_endpoint": "2023-12-31",
+    "test_start": "2024-03-31"
+  },
+  {
+    "year": 2024,
+    "model": "rank_xendcg_return_15",
+    "train_rows": 75572,
+    "max_training_endpoint": "2023-12-31",
+    "test_start": "2024-03-31"
+  },
+  {
+    "year": 2024,
+    "model": "rank_xendcg_balanced_7",
+    "train_rows": 75572,
+    "max_training_endpoint": "2023-12-31",
+    "test_start": "2024-03-31"
+  },
+  {
+    "year": 2024,
+    "model": "rank_xendcg_balanced_15",
+    "train_rows": 75572,
+    "max_training_endpoint": "2023-12-31",
+    "test_start": "2024-03-31"
+  },
+  {
+    "year": 2025,
+    "model": "lambdarank_return_7",
+    "train_rows": 88030,
+    "max_training_endpoint": "2024-12-31",
+    "test_start": "2025-01-31"
+  },
+  {
+    "year": 2025,
+    "model": "lambdarank_return_15",
+    "train_rows": 88030,
+    "max_training_endpoint": "2024-12-31",
+    "test_start": "2025-01-31"
+  },
+  {
+    "year": 2025,
+    "model": "lambdarank_balanced_7",
+    "train_rows": 88030,
+    "max_training_endpoint": "2024-12-31",
+    "test_start": "2025-01-31"
+  },
+  {
+    "year": 2025,
+    "model": "lambdarank_balanced_15",
+    "train_rows": 88030,
+    "max_training_endpoint": "2024-12-31",
+    "test_start": "2025-01-31"
+  },
+  {
+    "year": 2025,
+    "model": "rank_xendcg_return_7",
+    "train_rows": 88030,
+    "max_training_endpoint": "2024-12-31",
+    "test_start": "2025-01-31"
+  },
+  {
+    "year": 2025,
+    "model": "rank_xendcg_return_15",
+    "train_rows": 88030,
+    "max_training_endpoint": "2024-12-31",
+    "test_start": "2025-01-31"
+  },
+  {
+    "year": 2025,
+    "model": "rank_xendcg_balanced_7",
+    "train_rows": 88030,
+    "max_training_endpoint": "2024-12-31",
+    "test_start": "2025-01-31"
+  },
+  {
+    "year": 2025,
+    "model": "rank_xendcg_balanced_15",
+    "train_rows": 88030,
+    "max_training_endpoint": "2024-12-31",
+    "test_start": "2025-01-31"
+  }
+]

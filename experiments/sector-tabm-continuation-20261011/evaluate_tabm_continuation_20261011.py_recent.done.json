@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\.venv-gpu-research-20261011\\Scripts\\python.exe",
+    "-W",
+    "ignore",
+    "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\research\\runners\\evaluate_tabm_continuation_20261011.py",
+    "recent"
+  ],
+  "exit_code": 0,
+  "source_sha256": "f23022d85a646b250bd73a489c85ca5ab6e2e4879af91ce413eedffe19b9491a",
+  "log": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\sector-tabm-continuation-20261011\\evaluate_tabm_continuation_20261011.py_recent.1791733108355401400.log",
+  "log_sha256": "8a5ab4ebe759b63bb7e998c73cdb13298964f0a0ad7aff8a8211fb4947a369bf"
+}

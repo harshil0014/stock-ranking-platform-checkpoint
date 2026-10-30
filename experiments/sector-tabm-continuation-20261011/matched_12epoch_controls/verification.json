@@ -1,0 +1,13 @@
+{
+  "rows": 797443,
+  "mapping": {
+    "tabm_compact_e24_return_w0.3": "tabm_compact_return_w0.3",
+    "tabm_compact_e48_return_w0.3": "tabm_compact_return_w0.3",
+    "tabm_embedded_e24_return_w1.0": "tabm_embedded_return_w1.0",
+    "tabm_embedded_e48_return_w1.0": "tabm_embedded_return_w1.0",
+    "tabm_embedded_e48_return_w0.1": "tabm_embedded_return_w0.1"
+  },
+  "selection_changed": false,
+  "fresh_validation": false,
+  "qualification": "Same source checkpoint, features, training rows, target heads, and blend weights. Continuation also changes learning rate, batch size, gradient clipping, optimizer state, device and PyTorch version; the comparison measures the continuation recipe, not an isolated causal epoch effect."
+}

@@ -1,0 +1,7 @@
+{
+  "recovered_rows": 161,
+  "original_scores_unchanged": true,
+  "missing_goal_windows_imputed": false,
+  "missing_window_uncertainty_shrinkage": true,
+  "current_only_no_backfill": true
+}

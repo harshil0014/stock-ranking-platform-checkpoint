@@ -1,0 +1,19 @@
+{
+  "ticker": "PRANAV",
+  "isin": "INE0H4201019",
+  "provider": "PRANAV.NS",
+  "trade_date": "2026-09-18",
+  "official_price": 107.55,
+  "status": "RECOVERED",
+  "rows": 4,
+  "first_date": "2026-09-15",
+  "last_date": "2026-09-18",
+  "terminal_lag_days": 0,
+  "terminal_relative_difference": 2.8375247004576208e-08,
+  "listing_date": "2026-09-15",
+  "history_precedes_listing_date": false,
+  "csv_sha256": "05561447530023f826e15b31d6ba4c52b1e5406d5ddd3154bf269bcad07b031d",
+  "source": "Yahoo Finance secondary history",
+  "identity_mapping": "exact NSE ticker -> .NS",
+  "accepted_for_research_overlay": true
+}

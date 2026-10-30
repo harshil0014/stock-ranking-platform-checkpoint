@@ -1,0 +1,11 @@
+field,missing_before,missing_after,filled,nonmissing_before,nonmissing_after
+professor_workbook_cagr_10y,4423,1640,2783,13,2796
+professor_workbook_cagr_5y,4421,992,3429,15,3444
+professor_workbook_cagr_3y,4419,732,3687,17,3704
+professor_workbook_cagr_1y,4419,332,4087,17,4104
+professor_workbook_current_price,4418,4400,18,18,36
+professor_workbook_market_cap,4418,4400,18,18,36
+professor_industry,4419,44,4375,17,4392
+professor_workbook_ath_price,4436,3652,784,0,784
+professor_workbook_ath_date,4436,3652,784,0,784
+professor_workbook_cagr_7y,4436,1201,3235,0,3235

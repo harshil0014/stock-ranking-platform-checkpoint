@@ -1,0 +1,30 @@
+{
+  "current_company_facts_recovered_v7_yahoo_full.csv.gz": {
+    "bytes": 4812819,
+    "sha256": "f8dc2e75c8d23377261b6f8aec98414523fcfe77da0e62b539383ddf8589e82c"
+  },
+  "yahoo_full_current_metrics.csv.gz": {
+    "bytes": 759197,
+    "sha256": "e01ef6c130a5d8e666bed8f0de1abf0a446e96be3d5f41d8e5043b52a93a607b"
+  },
+  "yahoo_full_filled_cells.csv": {
+    "bytes": 42598,
+    "sha256": "696f7def8bffdccbb0e66015f8b69e3c615f5e60bd69735e889cb9c7a0537b77"
+  },
+  "yahoo_full_unresolved_rows.csv": {
+    "bytes": 12815,
+    "sha256": "02557d9690cacbb9a3bdde8119d7ec4008fff7020e8dc0cc32f06aa221062e86"
+  },
+  "yahoo_full_remaining_core_gaps.csv": {
+    "bytes": 400168,
+    "sha256": "2b702a8bbdd5ebb3d8fdcc6cf009be9f8fea0623623839527ed5de33c6c66ebc"
+  },
+  "yahoo_fastinfo_gap_attempts.csv": {
+    "bytes": 477,
+    "sha256": "77ec3f9f657b7b6d83d116cb2dad972bb51b1fe466aa3659f3f311729685669d"
+  },
+  "yahoo_full_summary.json": {
+    "bytes": 2869,
+    "sha256": "5225cf07bcf82a703722fc5395154e36192a2f4d7fe5083a8d562c7cc81d782b"
+  }
+}

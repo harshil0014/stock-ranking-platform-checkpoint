@@ -1,0 +1,98 @@
+[
+  {
+    "seed": 20261006,
+    "max_endpoint": "2019-12-31",
+    "min_decision": "2020-03-31",
+    "rows": 33860
+  },
+  {
+    "seed": 20261006,
+    "max_endpoint": "2020-12-31",
+    "min_decision": "2021-03-31",
+    "rows": 42162
+  },
+  {
+    "seed": 20261006,
+    "max_endpoint": "2021-12-31",
+    "min_decision": "2022-03-31",
+    "rows": 50985
+  },
+  {
+    "seed": 20261006,
+    "max_endpoint": "2022-12-31",
+    "min_decision": "2023-03-31",
+    "rows": 60241
+  },
+  {
+    "seed": 20261007,
+    "max_endpoint": "2019-12-31",
+    "min_decision": "2020-03-31",
+    "rows": 33860
+  },
+  {
+    "seed": 20261007,
+    "max_endpoint": "2020-12-31",
+    "min_decision": "2021-03-31",
+    "rows": 42162
+  },
+  {
+    "seed": 20261007,
+    "max_endpoint": "2021-12-31",
+    "min_decision": "2022-03-31",
+    "rows": 50985
+  },
+  {
+    "seed": 20261007,
+    "max_endpoint": "2022-12-31",
+    "min_decision": "2023-03-31",
+    "rows": 60241
+  },
+  {
+    "seed": 20261008,
+    "max_endpoint": "2019-12-31",
+    "min_decision": "2020-03-31",
+    "rows": 33860
+  },
+  {
+    "seed": 20261008,
+    "max_endpoint": "2020-12-31",
+    "min_decision": "2021-03-31",
+    "rows": 42162
+  },
+  {
+    "seed": 20261008,
+    "max_endpoint": "2021-12-31",
+    "min_decision": "2022-03-31",
+    "rows": 50985
+  },
+  {
+    "seed": 20261008,
+    "max_endpoint": "2022-12-31",
+    "min_decision": "2023-03-31",
+    "rows": 60241
+  },
+  {
+    "seed": 20261009,
+    "max_endpoint": "2019-12-31",
+    "min_decision": "2020-03-31",
+    "rows": 33860
+  },
+  {
+    "seed": 20261009,
+    "max_endpoint": "2020-12-31",
+    "min_decision": "2021-03-31",
+    "rows": 42162
+  },
+  {
+    "seed": 20261009,
+    "max_endpoint": "2021-12-31",
+    "min_decision": "2022-03-31",
+    "rows": 50985
+  },
+  {
+    "seed": 20261009,
+    "max_endpoint": "2022-12-31",
+    "min_decision": "2023-03-31",
+    "rows": 60241
+  }
+]

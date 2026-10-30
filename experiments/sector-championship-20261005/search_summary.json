@@ -1,0 +1,6 @@
+{
+  "trials": 124,
+  "strict_improvements": 1,
+  "frontier_candidates": 91,
+  "note": "Finite tested search; not proof of an absolute optimum. Identical control is not an improvement."
+}

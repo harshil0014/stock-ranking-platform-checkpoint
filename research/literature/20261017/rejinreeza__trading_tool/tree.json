@@ -1,0 +1,234 @@
+{
+  "sha": "3e037198d962775b45ffdb5e6d55f771f31385fc",
+  "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/trees/3e037198d962775b45ffdb5e6d55f771f31385fc",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "094aa0cf11d77b6a1d623e74405a04d1fd338204",
+      "size": 351,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/094aa0cf11d77b6a1d623e74405a04d1fd338204"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81f879db1ccf4c9f8459ae4452a6da3e05095c67",
+      "size": 16745,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/81f879db1ccf4c9f8459ae4452a6da3e05095c67"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29a89c8d165a8e94ab4e298d925cb9f67341afa0",
+      "size": 501,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/29a89c8d165a8e94ab4e298d925cb9f67341afa0"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e6e431e75389c008db87c827f88b8adcc631b717",
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/trees/e6e431e75389c008db87c827f88b8adcc631b717"
+    },
+    {
+      "path": "src/trading_tool",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2efa0a0a7d419496c870a6f278b02c53511f4c1e",
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/trees/2efa0a0a7d419496c870a6f278b02c53511f4c1e"
+    },
+    {
+      "path": "src/trading_tool/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8497f6d618882e092106e7c11f63842d72e898a",
+      "size": 92,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/f8497f6d618882e092106e7c11f63842d72e898a"
+    },
+    {
+      "path": "src/trading_tool/__main__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb53e2f31b2f703ad32ef64b8a41faa3e7d18e08",
+      "size": 48,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/eb53e2f31b2f703ad32ef64b8a41faa3e7d18e08"
+    },
+    {
+      "path": "src/trading_tool/backtest",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ba9f6e346836c02fcd3f6baf58fdbc9b517a3f8a",
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/trees/ba9f6e346836c02fcd3f6baf58fdbc9b517a3f8a"
+    },
+    {
+      "path": "src/trading_tool/backtest/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfb40bcd829f43e257bdbb59eef5758f109847eb",
+      "size": 282,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/dfb40bcd829f43e257bdbb59eef5758f109847eb"
+    },
+    {
+      "path": "src/trading_tool/backtest/costs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac42a207cc023960ed6dab025d9baf66bed38b5f",
+      "size": 2025,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/ac42a207cc023960ed6dab025d9baf66bed38b5f"
+    },
+    {
+      "path": "src/trading_tool/backtest/engine.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5c6f8d391c06afb77be1d105b1bc77bc4595bf4",
+      "size": 5742,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/e5c6f8d391c06afb77be1d105b1bc77bc4595bf4"
+    },
+    {
+      "path": "src/trading_tool/backtest/metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c1a9c6d01e432aa2694511f9a3b590071aee7b6",
+      "size": 4387,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/9c1a9c6d01e432aa2694511f9a3b590071aee7b6"
+    },
+    {
+      "path": "src/trading_tool/cli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffe7368a75ea7b3c415f5a56c3541cf09173c727",
+      "size": 17011,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/ffe7368a75ea7b3c415f5a56c3541cf09173c727"
+    },
+    {
+      "path": "src/trading_tool/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ccfd19d08689750078f07144b42709ea1fee121",
+      "size": 2116,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/3ccfd19d08689750078f07144b42709ea1fee121"
+    },
+    {
+      "path": "src/trading_tool/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "99382f586ca76a96c627c260941cfc3e3950a1b4",
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/trees/99382f586ca76a96c627c260941cfc3e3950a1b4"
+    },
+    {
+      "path": "src/trading_tool/data/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "518f462935d887d973269b49e9b2c85f156d6b96",
+      "size": 117,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/518f462935d887d973269b49e9b2c85f156d6b96"
+    },
+    {
+      "path": "src/trading_tool/data/loader.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5bc62111da727c899ed90b5901c74543aa53716",
+      "size": 5111,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/f5bc62111da727c899ed90b5901c74543aa53716"
+    },
+    {
+      "path": "src/trading_tool/fundamentals.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af450fb03efea28bac5318e2058d4ef3f5756ca3",
+      "size": 9454,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/af450fb03efea28bac5318e2058d4ef3f5756ca3"
+    },
+    {
+      "path": "src/trading_tool/nse.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92d34d0648ca21f5460e13a29cfdd588f6c4a4eb",
+      "size": 14071,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/92d34d0648ca21f5460e13a29cfdd588f6c4a4eb"
+    },
+    {
+      "path": "src/trading_tool/report.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cf8c3adefa12ccb8c17cab963fb1d7e15e11488",
+      "size": 10529,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/6cf8c3adefa12ccb8c17cab963fb1d7e15e11488"
+    },
+    {
+      "path": "src/trading_tool/screener_import.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bab9c3d96c0bda7b684cb01dbaf3b043b832da9",
+      "size": 7124,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/1bab9c3d96c0bda7b684cb01dbaf3b043b832da9"
+    },
+    {
+      "path": "src/trading_tool/strategies",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2418780e36715472ec72aac0919933ec2e22c885",
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/trees/2418780e36715472ec72aac0919933ec2e22c885"
+    },
+    {
+      "path": "src/trading_tool/strategies/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d72899cf4c4f504528b5ff72dc04bbd53a909da4",
+      "size": 1016,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/d72899cf4c4f504528b5ff72dc04bbd53a909da4"
+    },
+    {
+      "path": "src/trading_tool/strategies/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4890ce37ebba5fb5ccac9d92ec28c84c5ad8817f",
+      "size": 2094,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/4890ce37ebba5fb5ccac9d92ec28c84c5ad8817f"
+    },
+    {
+      "path": "src/trading_tool/strategies/fundamental.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c67bb9950d4c2e13d75956cea2da151c4c9da20",
+      "size": 5510,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/4c67bb9950d4c2e13d75956cea2da151c4c9da20"
+    },
+    {
+      "path": "src/trading_tool/strategies/indicators.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7d725e4654f13e3a5baf9bae7d91e55a6483126",
+      "size": 2021,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/c7d725e4654f13e3a5baf9bae7d91e55a6483126"
+    },
+    {
+      "path": "src/trading_tool/strategies/trend.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00d058f1cb034dddb442fb7f2ca22ee81e034d8c",
+      "size": 3074,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/00d058f1cb034dddb442fb7f2ca22ee81e034d8c"
+    },
+    {
+      "path": "src/trading_tool/universe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a286ec220d042d4b37d26a22df57e49592eb5a74",
+      "size": 3766,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/a286ec220d042d4b37d26a22df57e49592eb5a74"
+    },
+    {
+      "path": "uv.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25a79979a7eb2d1133dca42c5b2cf261169b28f3",
+      "size": 284395,
+      "url": "https://api.github.com/repos/rejinreeza/trading_tool/git/blobs/25a79979a7eb2d1133dca42c5b2cf261169b28f3"
+    }
+  ],
+  "truncated": false
+}

@@ -1,0 +1,6 @@
+model,rank_ic,improved,regressed,nonreturn_regressions,top3_nonreturn_regressions
+tabm_compact_e24_return_w0.3,0.14571508105968217,114,534,442,172
+tabm_compact_e48_return_w0.3,0.1478433788606005,128,520,428,152
+tabm_embedded_e24_return_w1.0,0.10134616336059134,148,500,454,148
+tabm_embedded_e48_return_w1.0,0.09145040305328568,127,521,468,154
+tabm_embedded_e48_return_w0.1,0.15397642366264624,358,288,215,88

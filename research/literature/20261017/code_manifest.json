@@ -1,0 +1,38 @@
+[
+  {
+    "repo": "microsoft/qlib",
+    "path": "qlib/contrib/model/double_ensemble.py",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/qlib/contrib/model/double_ensemble.py",
+    "sha256": "699cfd4bf09bae95fc9d95994551d0660d62ebcebde88c7358857aca95641669"
+  },
+  {
+    "repo": "SJTU-DMTai/MASTER",
+    "path": "base_model.py",
+    "url": "https://raw.githubusercontent.com/SJTU-DMTai/MASTER/de8f58557096abde4216a701b35fc4368158d111/base_model.py",
+    "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+  },
+  {
+    "repo": "rejinreeza/trading_tool",
+    "path": "src/trading_tool/fundamentals.py",
+    "url": "https://raw.githubusercontent.com/rejinreeza/trading_tool/3e037198d962775b45ffdb5e6d55f771f31385fc/src/trading_tool/fundamentals.py",
+    "sha256": "dd8b22262e4814cb86bb425ff464c06b28f209e018ce9d08f7c49933c2c762bc"
+  },
+  {
+    "repo": "ninad164/auto-portfolio-management",
+    "path": "src/universe_history.py",
+    "url": "https://raw.githubusercontent.com/ninad164/auto-portfolio-management/669b17e1e0374701b02a447184fff1a7b40bb250/src/universe_history.py",
+    "sha256": "26e7c76131fa30a4e02a161244a494205a617da7f876699db2af0a0454936cbb"
+  },
+  {
+    "repo": "ninad164/auto-portfolio-management",
+    "path": "data/universe_snapshots/sources_manifest.csv",
+    "url": "https://raw.githubusercontent.com/ninad164/auto-portfolio-management/669b17e1e0374701b02a447184fff1a7b40bb250/data/universe_snapshots/sources_manifest.csv",
+    "sha256": "77803cbbe56f1b6fce1d9743e9b5bd0f47dd2e2997d5e555a9108e2b295feaa3"
+  },
+  {
+    "repo": "raogaurav17/Nifty-Quant",
+    "path": "conf/universe/nifty50_timeline.json",
+    "url": "https://raw.githubusercontent.com/raogaurav17/Nifty-Quant/879db8c1a1b532c184280f4b9702b94b41cebc3b/conf/universe/nifty50_timeline.json",
+    "sha256": "dd4ca69ca7d3e7b8c0ae9b187ef07f20a0659d3057a4b10ef5fa3b3e55d83ffe"
+  }
+]

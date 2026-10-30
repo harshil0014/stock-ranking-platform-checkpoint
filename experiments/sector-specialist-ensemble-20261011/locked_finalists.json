@@ -1,0 +1,20 @@
+{
+  "finalists": [
+    "ebm_additive_return_w0.3",
+    "ebm_interactions_return_w0.3",
+    "extra_trees_return_w0.3",
+    "ridge_balanced_w1.0",
+    "tabm_compact_return_w0.3",
+    "tabm_embedded_return_w1.0",
+    "mean_return_w1.0",
+    "stack_breadth_balanced_w1.0",
+    "ridge_goal_w1.0",
+    "lgb_return_full_d3_w0.1",
+    "lgb_return_full_d3_w0.5",
+    "pfn_balanced_absolute_soft1.0_d3_w0.1",
+    "catpair_return_uniform_w0.1"
+  ],
+  "conservative": "ridge_goal_w1.0",
+  "development_sha256": "1426510b480258c18b9c07e4c1054c935ba00c78eaf2dd152855e8a441e75865",
+  "selection_mean_xirr_weight": 0
+}

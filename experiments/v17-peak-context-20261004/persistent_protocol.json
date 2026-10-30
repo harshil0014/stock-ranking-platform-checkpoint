@@ -1,0 +1,48 @@
+{
+  "created_at": "2026-10-04T12:14:09.218877+00:00",
+  "motivation": "Current-universe review exposed old/deep peaks near the top. This is an exploratory response to that general diagnostic, not a company-specific rule. Previous current rankings have been viewed.",
+  "candidates": [
+    {
+      "name": "log_age_0.005",
+      "kind": "log_age",
+      "weight": 0.005
+    },
+    {
+      "name": "log_age_0.01",
+      "kind": "log_age",
+      "weight": 0.01
+    },
+    {
+      "name": "log_age_0.02",
+      "kind": "log_age",
+      "weight": 0.02
+    },
+    {
+      "name": "log_age_0.04",
+      "kind": "log_age",
+      "weight": 0.04
+    },
+    {
+      "name": "log_age_depth_0.005",
+      "kind": "log_age_depth",
+      "weight": 0.005
+    },
+    {
+      "name": "log_age_depth_0.01",
+      "kind": "log_age_depth",
+      "weight": 0.01
+    },
+    {
+      "name": "log_age_depth_0.02",
+      "kind": "log_age_depth",
+      "weight": 0.02
+    },
+    {
+      "name": "log_age_depth_0.04",
+      "kind": "log_age_depth",
+      "weight": 0.04
+    }
+  ],
+  "selection": "Same aggregate five-metric directions versus V17 refined; greatest utility. Show all profile tradeoffs. Exposed-period performance is not used to select weight.",
+  "no_guarantee": "Research exposure prevents a fresh validation claim."
+}

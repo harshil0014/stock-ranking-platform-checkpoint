@@ -1,0 +1,20 @@
+{
+  "family": "rebuilt",
+  "model": "regression_l1_balanced_blend1.0",
+  "development_mean_rank_ic": 0.03481688740619378,
+  "status": "ACCURACY_RESEARCH_LEADER_NOT_UNIVERSAL_CHAMPION",
+  "fresh_validation": false,
+  "production_replaced": false,
+  "strict_gate": false,
+  "regressing_cells": 1990,
+  "total_cells": 4536,
+  "top3_regressing_cells": 674,
+  "top3_cells": 1512,
+  "development_top3_regressions": 256,
+  "development_regressions": 729,
+  "current_rows": 4436,
+  "input_usable": 4303,
+  "current_snapshot": "2026-10-03",
+  "max_training_endpoint": "2026-08-31",
+  "current_replay_tolerance": 1e-15
+}

@@ -1,0 +1,227 @@
+{
+  "winner": {
+    "candidate": "duration_only|utility4|shallow",
+    "goal_weight": 0.67,
+    "delta_coverage": 0.0,
+    "delta_rank_ic": -0.009304872111477975,
+    "delta_ndcg20": 0.0472113440308346,
+    "delta_pairwise_accuracy": -0.0066045913648867804,
+    "delta_target_achievement_top20": 0.0444444444444444,
+    "delta_target_shortfall_top20": -0.01780181075637352,
+    "delta_mean_xirr_top20": 0.8308496363975484,
+    "delta_median_xirr_top20": -0.0007457661247908254,
+    "delta_mean_asset_drawdown_top20": 0.0717352438401408,
+    "worst_profile_shortfall_delta": 0.006247002071228261,
+    "worst_profile_achievement_delta": -0.07499999999999996,
+    "utility": 0.16157784711884426,
+    "eligible": true,
+    "alpha": 0.85,
+    "age_penalty": 0.0
+  },
+  "metrics": {
+    "development_2023": {
+      "coverage": {
+        "champion": 0.8024290118511328,
+        "challenger": 0.8024290118511328,
+        "delta": 0.0
+      },
+      "rank_ic": {
+        "champion": 0.027566708531109665,
+        "challenger": 0.01826183641963169,
+        "delta": -0.00930487211147798
+      },
+      "ndcg20": {
+        "champion": 0.5011656077997737,
+        "challenger": 0.5483769518306083,
+        "delta": 0.04721134403083466
+      },
+      "pairwise_accuracy": {
+        "champion": 0.5193970562007773,
+        "challenger": 0.5127924648358905,
+        "delta": -0.006604591364886709
+      },
+      "target_achievement_top20": {
+        "champion": 0.5833333333333334,
+        "challenger": 0.6277777777777778,
+        "delta": 0.04444444444444444
+      },
+      "target_shortfall_top20": {
+        "champion": 0.06028830862418252,
+        "challenger": 0.042486497867808996,
+        "delta": -0.017801810756373534
+      },
+      "mean_xirr_top20": {
+        "champion": 1.3208859727946292,
+        "challenger": 2.1517356091921775,
+        "delta": 0.8308496363975483
+      },
+      "median_xirr_top20": {
+        "champion": 0.33910242457395134,
+        "challenger": 0.3383566584491605,
+        "delta": -0.0007457661247907575
+      },
+      "mean_asset_drawdown_top20": {
+        "champion": -0.3455785079117421,
+        "challenger": -0.2738432640716013,
+        "delta": 0.07173524384014085
+      }
+    },
+    "exposed_2025": {
+      "coverage": {
+        "champion": 0.8296925650328719,
+        "challenger": 0.8296925650328719,
+        "delta": 0.0
+      },
+      "rank_ic": {
+        "champion": 0.15466992010877303,
+        "challenger": 0.15995708391826416,
+        "delta": 0.0052871638094910845
+      },
+      "ndcg20": {
+        "champion": 0.6268166256340981,
+        "challenger": 0.6637638040489734,
+        "delta": 0.03694717841487524
+      },
+      "pairwise_accuracy": {
+        "champion": 0.5487049595635153,
+        "challenger": 0.5484010736828243,
+        "delta": -0.0003038858806909313
+      },
+      "target_achievement_top20": {
+        "champion": 0.39722222222222225,
+        "challenger": 0.3333333333333333,
+        "delta": -0.06388888888888888
+      },
+      "target_shortfall_top20": {
+        "champion": 0.12896251665195343,
+        "challenger": 0.1312711605811185,
+        "delta": 0.0023086439291650704
+      },
+      "mean_xirr_top20": {
+        "champion": 8.697590875320293,
+        "challenger": 1.7794642716190003,
+        "delta": -6.918126603701292
+      },
+      "median_xirr_top20": {
+        "champion": 0.04660713144373174,
+        "challenger": -0.06797901491670649,
+        "delta": -0.11458614636043823
+      },
+      "mean_asset_drawdown_top20": {
+        "champion": -0.42578693776518634,
+        "challenger": -0.3745163016042352,
+        "delta": 0.05127063616095115
+      }
+    }
+  },
+  "current_audit": {
+    "champion": {
+      "scored": 3265,
+      "universe_missing_true_5y": 0.07963246554364471,
+      "top20_missing_true_5y": 0.9,
+      "top50_missing_true_5y": 0.46,
+      "top100_missing_true_5y": 0.29,
+      "nykaa_rank": 1,
+      "nykaa_sector_rank": 1,
+      "nykaa_score": 0.9896124095936478,
+      "retailing_top10": [
+        "NYKAA",
+        "ETERNAL",
+        "V2RETAIL",
+        "CARTRADE",
+        "NAUKRI",
+        "MEDPLUS",
+        "ARVINDFASN",
+        "VMART",
+        "DMART",
+        "TRENT"
+      ],
+      "top20_isins": [
+        "INE388Y01029",
+        "INE284S01014",
+        "INE151G01028",
+        "INE0HLJ01013",
+        "INE0IZQ01016",
+        "INE0MKA01014",
+        "INE596F01018",
+        "INE982J01020",
+        "INE0OWC01011",
+        "INE07RO01027",
+        "INE0LCL01028",
+        "INE404A01024",
+        "INE803D01021",
+        "INE0JO301016",
+        "INE673U01014",
+        "INE0IX101010",
+        "INE045601023",
+        "INE124E01038",
+        "INE102B01014",
+        "INE381N01019"
+      ]
+    },
+    "challenger": {
+      "scored": 3265,
+      "universe_missing_true_5y": 0.07963246554364471,
+      "top20_missing_true_5y": 0.05,
+      "top50_missing_true_5y": 0.1,
+      "top100_missing_true_5y": 0.06,
+      "nykaa_rank": 30,
+      "nykaa_sector_rank": 1,
+      "nykaa_score": 0.9397457429269811,
+      "retailing_top10": [
+        "NYKAA",
+        "V2RETAIL",
+        "NAUKRI",
+        "ETERNAL",
+        "CARTRADE",
+        "DMART",
+        "JUSTDIAL",
+        "ARVINDFASN",
+        "VMART",
+        "MEDPLUS"
+      ],
+      "top20_isins": [
+        "INE00FF01025",
+        "INE947Q01028",
+        "INE554H01021",
+        "INE722N01014",
+        "INE622Q01027",
+        "INE777X01017",
+        "INE944F01028",
+        "INE0OWC01011",
+        "INE280A01028",
+        "INE171A01029",
+        "INE673U01014",
+        "INE019A01038",
+        "INE047A01021",
+        "INE381N01019",
+        "INE296A01032",
+        "INE066A01021",
+        "INE685A01028",
+        "INE695C01015",
+        "INE526E01018",
+        "INE196A01026"
+      ]
+    }
+  },
+  "input_sha256": {
+    "experiments\\history-enrichment-20261002\\final-data-quality-v3\\history_enrichment.csv.gz": "1f10fda726905af1816c9d57475b2488d360072c3fb229809d89771f36a79817",
+    "experiments\\personalized-championship\\v1\\history_features.csv.gz": "0def26f81aa5e3d8754ae525a4cf0afb356492df667b61d4079064409b541ad9",
+    "research\\freezes\\personalized-d499580\\rankings.csv.gz": "1e50f4ebee4cce8ce9c05631f1c67c2c279fd90cad9abd7863692dccb2521faf",
+    "experiments\\personalized-official-action-tournament\\build-03\\training_panel.csv.gz": "af7b57fcd668d18e9d58356f25b987050bcd15cfe220e3a9dfda3f0df5a0ea3b",
+    "experiments\\personalized-official-action-tournament\\build-03\\validation_predictions.csv.gz": "cb519b8559f064bcacc50b1cc912b9f3e39e4cff6011dbb631f8595ce283f61d",
+    "experiments\\personalized-official-action-tournament\\build-03\\supplementary_predictions.csv.gz": "8ef0f78414ee1af66d33a4a36d3fc85777dd028b0e748535f400cf482b78091d"
+  },
+  "frozen_score_max_error": 2.220446049250313e-16,
+  "production_mutated": false,
+  "frozen_champion_mutated": false,
+  "selection_dates": [
+    "2023-06-30",
+    "2023-12-31"
+  ],
+  "exposed_diagnostic_dates": [
+    "2025-03-31",
+    "2025-06-30"
+  ],
+  "untouched_holdout_dates": []
+}

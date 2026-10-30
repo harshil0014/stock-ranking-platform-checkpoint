@@ -1,0 +1,18 @@
+feature,column,before,after,new
+1Y,product_baseline_yoy_growth,4185,4186,1
+3Y,product_baseline_cagr_3y,3805,3807,2
+5Y,product_baseline_cagr_5y,3573,3577,4
+7Y,current_cagr_7y,3393,3404,11
+10Y,current_cagr_10y,2960,2981,21
+history_months,current_history_months,0,4345,4345
+52W high,high_52w,4374,4422,48
+52W low,low_52w,4374,4422,48
+ATH,recorded_high,4397,4422,25
+ATH date,recorded_high_date,4397,4422,25
+days since ATH,product_baseline_days_since_recorded_high,4397,4422,25
+distance below ATH,current_distance_from_recorded_high,0,4345,4345
+max drawdown,current_full_history_max_drawdown,0,4345,4345
+current drawdown,yahoo_current_drawdown,0,4345,4345
+underwater duration,current_drawdown_duration_days,0,4345,4345
+downside volatility,current_downside_volatility_1y,0,4047,4047
+realized volatility,current_realized_volatility_1y,0,4047,4047

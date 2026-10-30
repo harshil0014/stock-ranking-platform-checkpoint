@@ -1,0 +1,17 @@
+EVALUATED development common False
+EVALUATED development common True
+EVALUATED development expanded False
+EVALUATED development expanded True
+                    model   rank_ic  regressed  improved  nonreturn_regressions  top3_nonreturn_regressions
+    balanced_l1_base_w0.1  0.027260        357       285                    273                          85
+    balanced_l1_base_w0.3  0.033347        415       233                    322                          99
+    balanced_l1_base_w1.0  0.043104        350       298                    292                          96
+balanced_l1_activity_w0.1  0.026977        417       231                    322                          96
+balanced_l1_activity_w0.3  0.032181        410       238                    320                         102
+balanced_l1_activity_w1.0  0.040603        383       265                    312                         100
+     return_q25_base_w0.1  0.025138        425       219                    351                         126
+     return_q25_base_w0.3  0.020548        526       122                    430                         136
+     return_q25_base_w1.0 -0.011640        582        66                    528                         180
+ return_q25_activity_w0.1  0.025524        468       176                    380                         120
+ return_q25_activity_w0.3  0.020701        509       139                    414                         126
+ return_q25_activity_w1.0 -0.011791        573        75                    518                         180

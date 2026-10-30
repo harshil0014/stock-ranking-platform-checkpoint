@@ -1,0 +1,34 @@
+{
+  "profile": "base7500",
+  "amount": 7500,
+  "lookback_months": 36,
+  "interval_days": 30,
+  "model_target_cagr": 0.2,
+  "model_forward_horizon_months": 12,
+  "workbook_CAGR_field_is_highlight_not_target": true,
+  "workbook_rows": 14,
+  "mapped_rows": 14,
+  "ranked_rows": 12,
+  "top20_members": [],
+  "top50_members": [],
+  "top100_members": [
+    "SHAILY",
+    "WELCORP",
+    "LUMAXTECH"
+  ],
+  "screenshot_valid_comparable_n": 9,
+  "screenshot_spearman": 0.8666666666666667,
+  "screenshot_pair_agreement": 0.8611111111111112,
+  "same_current_data_professor_style_n": 12,
+  "same_current_data_spearman": 0.7412587412587414,
+  "same_current_data_pair_agreement": 0.803030303030303,
+  "source_sha256": "be2ab62fb41abd4769b5f5d8de7f3df04edc6cfa336bb0d2c5906fc6da2e980b",
+  "frozen_current_rankings_sha256": "ceab9f25ac17dfb618b376b4b635ee1ca11f3eecaa994d68eb1c72a9db80fc0c",
+  "limitations": [
+    "Screenshot is undated and not the same snapshot/list as workbook.",
+    "All 14 workbook SIP invested-value caches are zero and ranks #N/A.",
+    "Current professor-style score follows our price/action/calendar implementation; not an exact Google Sheets replay.",
+    "Current V7 includes professor-derived current-only growth fallback fields, so input sources are not independent.",
+    "No model selection, training, deployment or workbook changes."
+  ]
+}

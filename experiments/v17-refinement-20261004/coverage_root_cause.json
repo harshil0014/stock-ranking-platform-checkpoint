@@ -1,0 +1,10 @@
+{
+  "available_unranked": 161,
+  "missing_goal_score": 161,
+  "goal_windows": {
+    "3": 152,
+    "2": 9
+  },
+  "root_cause": "rank_executable requires all historical goal windows nonmissing, despite AVAILABLE current simulation. Missing scenario windows null enhanced_goal_score, then champion blend and V17 becomeNaN.",
+  "repair": "Recompute actual scenario shortfalls, retain valid windows, shrink mean squared shortfall toward same-profile contemporaneous full-window median by observed/expected count. Mark incomplete window evidence. Preserve all fully observed scores via original empirical-CDF anchors."
+}

@@ -1,0 +1,19 @@
+{
+  "ticker": "KANOHAR",
+  "isin": "INE877D01025",
+  "provider": "KANOHAR.NS",
+  "trade_date": "2026-09-18",
+  "official_price": 786.7999999999998,
+  "status": "RECOVERED",
+  "rows": 3,
+  "first_date": "2026-09-16",
+  "last_date": "2026-09-18",
+  "terminal_lag_days": 0,
+  "terminal_relative_difference": 1.5514782779408272e-08,
+  "listing_date": "2026-09-16",
+  "history_precedes_listing_date": false,
+  "csv_sha256": "83f9dfd0e357baa4da7aae6d4517533c65c5ea8d35d052d8eea348c9c40e9b5b",
+  "source": "Yahoo Finance secondary history",
+  "identity_mapping": "exact NSE ticker -> .NS",
+  "accepted_for_research_overlay": true
+}

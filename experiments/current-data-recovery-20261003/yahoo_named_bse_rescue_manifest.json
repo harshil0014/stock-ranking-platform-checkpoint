@@ -1,0 +1,26 @@
+{
+  "current_company_facts_recovered_v8_yahoo_rescued.csv.gz": {
+    "bytes": 4808116,
+    "sha256": "f94efe03ddff045c1a9b296d9ae5371c4ba556aa18eb2964f91584e3ef329df0"
+  },
+  "yahoo_named_bse_search_audit.csv": {
+    "bytes": 57577,
+    "sha256": "37aa372b7b9a9c1757b4a919aed29ded4b7f17104adc8df4738a63e083663251"
+  },
+  "yahoo_named_bse_rescue_metrics.csv": {
+    "bytes": 24615,
+    "sha256": "ba584cf1198357d1f21bcf7ff98f715f19f70a578a4e740ac5c1648f1cc24767"
+  },
+  "yahoo_named_bse_rescue_filled_cells.csv": {
+    "bytes": 16217,
+    "sha256": "98da575ef03e0789c9e6ec76665ea7d9bfd0fbfb38348b3fa6d0fc8ac820ee81"
+  },
+  "yahoo_final_unresolved_rows.csv": {
+    "bytes": 7891,
+    "sha256": "9e5f9d8323a348f5554bf13cc39c9195d3a27f265916206265a05aeee6b4008a"
+  },
+  "yahoo_named_bse_rescue_summary.json": {
+    "bytes": 1708,
+    "sha256": "ce177f9588362f25e0cd434f9fe0c96bb9a2d753dbd3bf097e01a2f02e91774e"
+  }
+}

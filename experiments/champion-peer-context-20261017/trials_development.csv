@@ -1,0 +1,4 @@
+model,nonreturn_regressions,nonreturn_improvements,top3_nonreturn_regressions,xirr_regressions,rank_ic,passes
+peer_risk,310,228,127,59,0.032393763256900326,False
+peer_strength,363,177,141,54,0.02610276583103418,False
+peer_both,392,148,150,54,0.024180187082597615,False

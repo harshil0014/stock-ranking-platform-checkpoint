@@ -1,0 +1,8 @@
+model,improvements,regressions,comparisons,strict_gate
+pfn_balanced_absolute_soft1.0_d3_w0.1,614,264,1296,False
+lgb_return_full_d3_w0.1,761,465,1296,False
+lgb_balanced_pool_d5_w0.1,725,549,1296,False
+pfn_balanced_residual_soft1.0_d5_w0.5,556,730,1296,False
+lgb_return_full_d3_w0.5,551,745,1296,False
+lgb_balanced_pool_d3_w0.1,720,538,1296,False
+lgb_balanced_pool_d5_w0.5,206,1088,1296,False

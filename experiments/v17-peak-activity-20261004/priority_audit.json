@@ -1,0 +1,9 @@
+{
+  "decision_dates": 44,
+  "current_universe": 4436,
+  "current_eligible_default": 1773,
+  "older_ath_score_never_increases": true,
+  "sensitivity_rows": 29817,
+  "website_changed": false,
+  "status": "Preference-aligned experimental model; backtest tradeoffs are published"
+}

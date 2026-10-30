@@ -1,0 +1,9 @@
+## Verdict: FROZEN CHAMPION RETAINS TITLE
+
+The deep panel expands the evidence from **10 to 20 decision dates** and from **304,670 to 601,730 matured observations**: **+10 dates and +297,060 observations**. The [development selection was locked](</C:/Users/Harshil/Downloads/stock-ranking-platform-fresh-canonical-verified/experiments/personalized-deep-championship-20261002/v1/locked_selection.json>) before the clean 2024 holdout was evaluated once. The 2025 dates remained diagnostics.
+
+The locked challenger improved every reported *aggregate* robust metric on the clean 2024 holdout at equal coverage. For example, NDCG@20 rose **0.5234 → 0.6067**, Top-20 target achievement rose **29.17% → 34.44%**, shortfall fell **16.60% → 14.26%**, and median Top-20 XIRR rose **−11.68% → −3.34%**.
+
+It does not qualify as a broadly stronger champion. The clean holdout’s 60M profile lost **12.2 percentage points** of median XIRR. Development dates 2020-03-31 and 2022-06-30 had large achievement and shortfall regressions. The exposed 2025 12M profile also worsened across achievement, shortfall, median return, NDCG, and drawdown. Mean XIRR outliers had no selection weight.
+
+The [final report](</C:/Users/Harshil/Downloads/stock-ranking-platform-fresh-canonical-verified/research/reports/personalized_deep_championship_20261002.md>) contains the provenance and leakage audit, all profile and date results, turnover, missing-history concentration, and NYKAA diagnostic. The [tournament runner](</C:/Users/Harshil/Downloads/stock-ranking-platform-fresh-canonical-verified/research/runners/personalized_deep_championship.py>) and [audit runner](</C:/Users/Harshil/Downloads/stock-ranking-platform-fresh-canonical-verified/research/runners/audit_personalized_deep_championship.py>) reproduce the research artifacts. **18 focused tests passed.** No production, Railway, or frozen-champion artifact was changed.

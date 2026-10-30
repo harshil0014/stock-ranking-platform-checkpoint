@@ -1,0 +1,8 @@
+{
+  "rows": 155607,
+  "stocks": 4081,
+  "dates": 51,
+  "minimum_observations": 40,
+  "no_future_prices": true,
+  "limits": "Current-universe symbol mapping and retrospectively adjusted provider history inherit survivorship and revision limits of this research. Sparse observations are counted; no forward fill or zero-volume imputation."
+}

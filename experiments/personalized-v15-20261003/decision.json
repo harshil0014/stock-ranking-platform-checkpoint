@@ -1,0 +1,63 @@
+{
+  "verdict": "FROZEN CHAMPION RETAINS",
+  "selected": {
+    "candidate": "balanced_return__confidence_only__0.2",
+    "label": "balanced_return",
+    "recipe": "confidence_only",
+    "alpha": 0.2,
+    "eligible": false,
+    "utility": 0.04793849331005247,
+    "top20_overlap": 0.396875,
+    "coverage_delta": 0.0,
+    "ndcg20_delta": 0.03514245966184921,
+    "target_achievement_top20_delta": 0.04722222222222222,
+    "target_shortfall_top20_delta": -0.020019017139610486,
+    "median_xirr_top20_delta": 0.1718910989869692,
+    "mean_asset_drawdown_top20_delta": 0.004860778341763319,
+    "rank_ic_delta": 0.0258088095294937,
+    "pairwise_accuracy_delta": 0.009148686671921723
+  },
+  "development_gate_pass": false,
+  "known_evaluation_gate_pass": true,
+  "evaluation": {
+    "eligible": true,
+    "utility": 0.0830342736158938,
+    "checks": {
+      "return_floor": true,
+      "profile_return_floor": true,
+      "weekly_12m_return_floor": true,
+      "ndcg": true,
+      "achievement": true,
+      "shortfall": true,
+      "drawdown": true,
+      "coverage": true,
+      "profile_shortfall": true,
+      "weekly_12m_shortfall": true,
+      "weekly_12m_drawdown": true,
+      "year_return_floor": true,
+      "turnover": true,
+      "positive_utility": true
+    },
+    "delta": {
+      "coverage": 0.0,
+      "ndcg20": 0.07624728125380341,
+      "target_achievement_top20": 0.10462962962962964,
+      "target_shortfall_top20": -0.02637588891779202,
+      "median_xirr_top20": 0.18129112282264373,
+      "mean_asset_drawdown_top20": 0.030739866140439467,
+      "rank_ic": 0.011422626183021868,
+      "pairwise_accuracy": 0.005084930588810522
+    },
+    "top20_overlap": 0.4967592592592593,
+    "worst_profile_return": 0.05672934053284043,
+    "worst_profile_shortfall": -0.012019200150022809
+  },
+  "ath_influential": true,
+  "history_dominates": false,
+  "risk_dominates": false,
+  "user_personalization_present": true,
+  "promotion_candidate": false,
+  "deployment": false,
+  "new_champion_not_claimed": "All outcomes already exposed; requires genuinely unexposed prospective validation and refreshed official corporate-action evidence",
+  "production_champion_retained": "d499580"
+}

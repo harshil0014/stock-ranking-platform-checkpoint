@@ -1,0 +1,38 @@
+{
+  "freeze_time_utc": "2026-10-08T16:43:46Z",
+  "feature_snapshot": "2026-10-03",
+  "scope": "base7500, fixed within-sector stock rankings",
+  "stocks": 4436,
+  "status": "FROZEN_RESEARCH_FORECASTS_NOT_A_PRODUCTION_PROMOTION",
+  "models": {
+    "production": "sector_incumbent",
+    "prior_full_coverage": "challenger_score",
+    "new_full_coverage": "open_model_score"
+  },
+  "future_evaluation_start": "First verified trading session strictly after freeze_time_utc; never backdate evaluation to the feature snapshot",
+  "outcome_horizon_months": 12,
+  "primary_cutoff": 3,
+  "secondary_cutoffs": [
+    1,
+    5
+  ],
+  "minimum_common_sector_peers": 5,
+  "comparison_scopes": [
+    "identical stocks with production scores",
+    "expanded full-coverage stock universe"
+  ],
+  "missing_data_policy": "Keep missing-price, unclassified, sparse-history and unverified-execution identities in the coverage ledger; do not fabricate returns or silently remove them after observing outcomes",
+  "outcome_contract": "Reuse the existing executable whole-share SIP outcome definitions and base7500 settings; reconcile corporate actions and execution eligibility before accepting outcomes. Report all five outcome metrics and rank IC. Preserve raw and capped sensitivity results separately.",
+  "selection_rule": "No change to frozen ranks, weights, tie rules, cutoffs or primary metrics after future outcomes are observed",
+  "fresh_outcomes_available": false,
+  "sha256": {
+    "experiments\\full-coverage-open-models-20261008\\current_all_stock_rankings.csv": "b9782ae57adfd3213977aa5884a78e444beb91a8fe0789602ce6422318a85c1e",
+    "experiments\\full-coverage-open-models-20261008\\selection.json": "cc1440c0bcb5f1434d91bb45b4e33351162281aaa08b5c9fb7056dd1bea05dcf",
+    "experiments\\full-coverage-open-models-20261008\\current_catboost_defensive.pkl": "120b75775cbba07df00a6d9400c193de72a54d959ef80e7069e0b2f1d5d9a75e",
+    "experiments\\full-coverage-open-models-20261008\\current_ridge_defensive.pkl": "1c8dcc3a06446c3fbf3c78dc30363a05393078f63a52d7ec14bf09e3bc8410ad",
+    "experiments\\full-coverage-open-models-20261008\\frozen_anchor\\active_selection.json": "f5e682911219450f7ab200342e688e15d530b78941f8aa04129bcd420a83a3e4",
+    "experiments\\full-coverage-open-models-20261008\\frozen_anchor\\current_training.json": "1390ce1d72eceac4025ac6513c26a6869088e8736140fb0bd21bb6f89f876fd1",
+    "experiments\\full-coverage-open-models-20261008\\frozen_anchor\\selected_rank_xendcg_balanced_15.txt": "c7a61b3435d23c3123087f10eb793803574252c8f66e7ab5d322cfeaa2d6fbe4",
+    "experiments\\full-coverage-open-models-20261008\\frozen_anchor\\selected_rank_xendcg_return_15.txt": "b43eac01d646be2494b6e3d16320e5309834bb5431b6e57705ecd854c94e2714"
+  }
+}

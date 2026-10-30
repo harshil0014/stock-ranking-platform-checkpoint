@@ -1,0 +1,23 @@
+{
+  "anchor": "Active dual_w0.01 + sip_risk_confirmed_0.01",
+  "candidates": [
+    "double_both",
+    "agree_only",
+    "agree_soft",
+    "strong_both"
+  ],
+  "formula": "active + gate*(original high adjustment + original SIP adjustment). Each overlay now bounded +/-0.01. gate=1, same-sign agreement, same-sign times weaker absolute signal/.005, or same-sign and both absolute signals >=.0025.",
+  "interpretation": "Double both everywhere or condition the extra weight on confirmation. Existing coefficients are never reduced. Conditional versions do not double every stock.",
+  "sources": [
+    "https://doi.org/10.1016/j.jbankfin.2013.05.025",
+    "https://doi.org/10.1016/j.jfineco.2004.10.006"
+  ],
+  "literature_boundary": "Recency/proximity conditioning and gains-relative-to-acquisition-cost motivate confirmation experiments. These gates and weights are engineering hypotheses, not paper replications.",
+  "selection": "Four fixed candidates; 2020-23 capped expanded equal-sector/profile Top3 utility, then lock before 2024-25. Same .4 IC/.25 NDCG/.15 achievement/.1 inverse shortfall/.1 drawdown weights, deltas/.01.",
+  "activation": "Positive utility and all six primary aggregate metrics nonworse in both periods. Otherwise keep active website unchanged. No stock-specific tuning.",
+  "fresh_validation": false,
+  "source_hashes": {
+    "experiments\\champion-high-recency-20261017\\historical_adjustments.csv.gz": "c3b1b802d437c026eeda824ff1fa859bd1017f6a8310b07af9ac9e1b829df018",
+    "experiments\\champion-sip-profit-20261017\\historical_scores.csv.gz": "31b494e8cf375912afafdd2a1fe42f4dc0002a0b1246100be8d7489c1c9dc765"
+  }
+}

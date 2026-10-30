@@ -1,0 +1,6 @@
+{
+  "profiles": 9,
+  "emrock_excluded_all_profiles": true,
+  "default_ranked": 1746,
+  "sector_review_source": "research/runtime/personalized-v17/sector_review.json"
+}

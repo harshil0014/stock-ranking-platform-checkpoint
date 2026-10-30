@@ -1,0 +1,112 @@
+{
+  "model": "age_momentum_0.005",
+  "results": {
+    "development": {
+      "utility": 0.0072582687658141335,
+      "delta": {
+        "coverage": 0.0,
+        "ndcg20": 0.007064794455623919,
+        "target_achievement_top20": 0.001388888888888889,
+        "target_shortfall_top20": -0.0026870303785715,
+        "median_xirr_top20": 0.015258286662972916,
+        "mean_asset_drawdown_top20": 0.016037472220654256,
+        "rank_ic": 0.002870673616065348,
+        "pairwise_accuracy": 0.0009621497317506124
+      },
+      "profile_return": {
+        "amount1000": 0.0191699824205417,
+        "amount50000": 0.03316758811695496,
+        "base7500": -0.03641189132601869,
+        "lookback12": 0.12207317832861087,
+        "lookback60": -0.03913077868127373,
+        "quarterly": 0.01471946357264528,
+        "target10": 0.02318246269654481,
+        "target30": -0.009395442294331174,
+        "weekly": 0.009950017133082212
+      },
+      "metrics": {
+        "coverage": 0.7928981023785329,
+        "ndcg20": 0.6042755275516642,
+        "target_achievement_top20": 0.6131944444444444,
+        "target_shortfall_top20": 0.05476291289431106,
+        "median_xirr_top20": 0.6015727303729246,
+        "mean_asset_drawdown_top20": -0.2674198490354731,
+        "rank_ic": 0.008100386065931085,
+        "pairwise_accuracy": 0.5041615062304508
+      }
+    },
+    "early": {
+      "utility": -2.220550602288632e-05,
+      "delta": {
+        "coverage": 0.0,
+        "ndcg20": 0.0006859320740387495,
+        "target_achievement_top20": -0.004166666666666669,
+        "target_shortfall_top20": 0.0009700654566040664,
+        "median_xirr_top20": 0.0015044276017699575,
+        "mean_asset_drawdown_top20": 0.005945319979670311,
+        "rank_ic": 0.0020652691913171342,
+        "pairwise_accuracy": 0.0006631219130712467
+      },
+      "profile_return": {
+        "amount1000": -0.003878338093056862,
+        "amount50000": 0.02955658949337717,
+        "base7500": 0.014846856335087802,
+        "lookback12": -0.010073541557225512,
+        "lookback60": 0.022761566309832736,
+        "quarterly": -0.004212451287623984,
+        "target10": -0.01751329138439671,
+        "target30": -0.0033157685217345663,
+        "weekly": -0.014631772878330469
+      },
+      "metrics": {
+        "coverage": 0.654520608743498,
+        "ndcg20": 0.5321782137683722,
+        "target_achievement_top20": 0.2875,
+        "target_shortfall_top20": 0.13929522735823419,
+        "median_xirr_top20": -0.03124417769109951,
+        "mean_asset_drawdown_top20": -0.33317213618668695,
+        "rank_ic": 0.005205689163078018,
+        "pairwise_accuracy": 0.49874737531941665
+      }
+    },
+    "exposed": {
+      "utility": 0.013767953530312092,
+      "delta": {
+        "coverage": 0.0,
+        "ndcg20": 0.009182522982949802,
+        "target_achievement_top20": 0.011111111111111113,
+        "target_shortfall_top20": -0.0028974755954015857,
+        "median_xirr_top20": 0.06600320585451568,
+        "mean_asset_drawdown_top20": 0.0008890648146049477,
+        "rank_ic": 0.005793643014949963,
+        "pairwise_accuracy": 0.0015924232655892762
+      },
+      "profile_return": {
+        "amount1000": 0.11823900803796837,
+        "amount50000": 0.048072178952159955,
+        "base7500": 0.010331416793554843,
+        "lookback12": 0.1056870784217941,
+        "lookback60": 0.06415465365588348,
+        "quarterly": 0.023555038151531038,
+        "target10": 0.1934766204235073,
+        "target30": 0.010738547443467838,
+        "weekly": 0.019774310810774142
+      },
+      "metrics": {
+        "coverage": 0.8821022897728276,
+        "ndcg20": 0.728142745738881,
+        "target_achievement_top20": 0.5722222222222223,
+        "target_shortfall_top20": 0.0876126402974258,
+        "median_xirr_top20": 0.597719457468759,
+        "mean_asset_drawdown_top20": -0.40441055107438023,
+        "rank_ic": 0.14312625625307573,
+        "pairwise_accuracy": 0.5501327513659554
+      }
+    }
+  },
+  "decision_dates": 44,
+  "current_universe": 4436,
+  "baseline_files_unchanged": true,
+  "website_changed": false,
+  "status": "experimental ranking; all historical windows previously researched"
+}

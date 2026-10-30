@@ -1,0 +1,57 @@
+{
+  "configs": {
+    "rolling_w0.01": [
+      "rolling",
+      0.01
+    ],
+    "rolling_w0.025": [
+      "rolling",
+      0.025
+    ],
+    "rolling_w0.05": [
+      "rolling",
+      0.05
+    ],
+    "recorded_w0.01": [
+      "recorded",
+      0.01
+    ],
+    "recorded_w0.025": [
+      "recorded",
+      0.025
+    ],
+    "recorded_w0.05": [
+      "recorded",
+      0.05
+    ],
+    "dual_w0.01": [
+      "dual",
+      0.01
+    ],
+    "dual_w0.025": [
+      "dual",
+      0.025
+    ],
+    "dual_w0.05": [
+      "dual",
+      0.05
+    ]
+  },
+  "formula": "C + w*(H-.5); H=.60 recency percentile+.25 high-proximity percentile+.15 momentum percentile. C and all existing component weights unchanged. Recency carries most of added adjustment, not most of entire champion.",
+  "recency": "Rolling: inverse calendar days since 52-week closing high. Recorded: inverse days since recorded closing high. Dual: average of both inverse-age percentiles. Within date/profile/sector eligible peers, average ties.",
+  "eligibility": "Usable champion evidence, >=252 observations, >=365 history days, >=80% active volume, last positive volume <=14 days, valid nonnegative ages, valid proximity and momentum; >=5 eligible sector peers. Recorded high is available-history high, not certified lifetime ATH.",
+  "missing": "Zero correction for ineligible rows; missing high age is never a recent high.",
+  "selection": "2020-23 expanded capped Top3 preference utility with rankIC .4 NDCG .25 achievement .15 inverse shortfall .1 drawdown .1, normalized by .01; zero XIRR selection weight. Lock one before later evaluation. Same utility as user-authorized previous round.",
+  "acceptance": "Positive development and later utility, positive later ranking-only and equal-five utility; later drawdown and achievement loss each <=1pp; report all sector/profile tradeoffs.",
+  "fresh_validation": false,
+  "sources": [
+    "https://www.sciencedirect.com/science/article/pii/S0378426613002446",
+    "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-6261.2004.00695.x"
+  ],
+  "adaptation": "Transparent signal adjustment, not paper replication or imported pretrained model. All strength/mixture choices are engineering hypotheses.",
+  "source_hashes": {
+    "experiments\\personalized-deep-championship-20261002\\v3\\prepared.pkl.gz": "b5fa0a1f0229bde692b2c07e0a05cfe91f7501a9deeba6c4bcd9109f00d36fb7",
+    "experiments\\v17-peak-activity-20261004\\dated_features.csv.gz": "0d4d97bc6f3cf8cbefe1546357ecdff5df13b41db7f04a55cfa64011a2051ef9",
+    "experiments\\v17-peak-activity-20261004\\priority_current_rankings.csv.gz": "9c935eaa6afa4ca4cd1a19fd8d86ce5325f5a81a8be4de72904376a60b92c83c"
+  }
+}

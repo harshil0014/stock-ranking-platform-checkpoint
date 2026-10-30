@@ -1,0 +1,11 @@
+{
+  "finalists": [
+    "catpair_return_mistakes_w0.1",
+    "catpair_return_uniform_w0.1",
+    "lgb_return_full_d3_w0.1",
+    "lgb_return_full_d3_w0.5"
+  ],
+  "accuracy_leader": "catpair_return_mistakes_w0.1",
+  "conservative_leader": "catpair_return_uniform_w0.1",
+  "development_sha256": "e4a3450b46186b550a0ee62b0559169f1315c47a18a6571b56315c1be65c71f8"
+}

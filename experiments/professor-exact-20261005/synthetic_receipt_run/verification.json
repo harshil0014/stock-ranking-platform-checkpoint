@@ -1,0 +1,18 @@
+{
+  "cached_cells_compared": 84,
+  "cached_cells_matched": 84,
+  "source_formula_definitions_checked": 82,
+  "screenshot_ranks_compared": 14,
+  "screenshot_ranks_matched": 14,
+  "cached_valid_ranks": 0,
+  "as_of_for_new_schedule": "2026-10-05",
+  "new_schedule_rows_per_stock": 36,
+  "receipt_ranking_computed": true,
+  "live_googlefinance_validated": false,
+  "model_imports": [],
+  "source_workbook_sha256": "be2ab62fb41abd4769b5f5d8de7f3df04edc6cfa336bb0d2c5906fc6da2e980b",
+  "receipt_inputs": {
+    "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\professor-exact-20261005\\synthetic_receipt_run\\price_cells_template.csv": "3b599adbc3f101571ee8bc6bcc0cb323b5ca1d09062c232bf9493c15a2ec71b2",
+    "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\professor-exact-20261005\\synthetic_receipt_run\\quotes_template.csv": "6c136f9b7d4d559c6479423d37089433d9b78a8a890e2769597ec56b1fac2118"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "sectors": 53,
+  "stocks": 3164,
+  "shared_slots": 89,
+  "slots": 265,
+  "mean_overlap": 1.679245283018868,
+  "mean_percent": 33.58490566037736,
+  "distribution": {
+    "0": 19,
+    "1": 8,
+    "2": 10,
+    "3": 5,
+    "4": 9,
+    "5": 2
+  }
+}

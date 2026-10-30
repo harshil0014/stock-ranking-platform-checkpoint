@@ -1,0 +1,31 @@
+{
+  "finalists": [
+    "tabm_compact_e24_return_w0.3",
+    "tabm_compact_e48_return_w0.3",
+    "tabm_embedded_e24_return_w1.0",
+    "tabm_embedded_e48_return_w1.0",
+    "tabm_embedded_e48_return_w0.1"
+  ],
+  "selection_changed": false,
+  "selection_sha256": "372e4b51423980efa4a5077b6874881eea3e3e6c88543b6e02da169f524ceee7",
+  "scope": "Global ordering of the actual saved sector-trained scores. Sector percentile targets are not a calibration of cross-sector expected returns. This audit measures that limitation; it does not silently introduce a different global model.",
+  "top_ns": [
+    1,
+    3,
+    20,
+    100
+  ],
+  "reference": "current_champion",
+  "cohorts": [
+    "common",
+    "expanded"
+  ],
+  "return_treatments": [
+    "raw",
+    "capped"
+  ],
+  "fresh_validation": false,
+  "mean_xirr_selection_weight": 0,
+  "snapshot": "2026-10-03",
+  "timing": "Supplemental audit after locked finalist selection; no ranking adjustment from these outcomes."
+}

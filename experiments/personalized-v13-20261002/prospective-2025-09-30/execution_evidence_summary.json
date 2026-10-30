@@ -1,0 +1,44 @@
+{
+  "schema": "v13_prospective_execution_evidence_v1",
+  "decision_date": "2025-09-30",
+  "endpoint": "2026-09-30",
+  "official_price_rows": 34410,
+  "action": {
+    "old_rows": 2517,
+    "new_rows": 4,
+    "source_event_rows": 4,
+    "bse_success": 1858,
+    "bse_failed_codes": [
+      "511664",
+      "511692",
+      "526373"
+    ],
+    "mapping": {
+      "raw_rows_through_as_of": 4,
+      "mapped_source_rows": 4,
+      "normalized_rows": 4,
+      "mapped_identities": 4,
+      "automatic_rows": 4,
+      "blocking_rows": 0,
+      "identity_continuity_rows": 0,
+      "conflicting_multiplier_groups": 0
+    },
+    "frozen_ledger_sha256": "ed9fa9054229aca7081a0ec5c34e7e18603bf68b833fa6887829bd10c55d0038",
+    "nse_raw_sha256": "043819536eb3e9c9ffd5dd451ec9ab4b7fac1d833ab4d4a9f451650d16445a4f"
+  },
+  "provider": {
+    "prior_rows": 1816,
+    "new_rows": 2,
+    "old_ledger_sha256": "eb4d839e4dc8edf21f3b71098bdf5a6ee215d9c99f0c265ec592a1da2e6be452"
+  },
+  "overlay": {
+    "official_price_rows_appended": 34025,
+    "base_missing_identities": 62,
+    "overlay_files": 4374,
+    "overlay_source_priority": "validated recovered history, then frozen cache; official UDiFF close for new dates"
+  },
+  "no_outcome_columns_loaded": true,
+  "selection_lock_sha256": "dad3ce68b22a1f744650e501505a3ebc78dc7c4bd39c3247982c4ed84bcac13b",
+  "pre_reveal_record_sha256": "e870f44a8f20965bb1eb81c8fdee26d34b28867642f42a9e7fc2a0a27b454939",
+  "accepted_data_mutated": false
+}

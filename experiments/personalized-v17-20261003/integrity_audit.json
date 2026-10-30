@@ -1,0 +1,12 @@
+{
+  "verified_at": "2026-10-03T17:28:36.677044+00:00",
+  "protected_count": 23137,
+  "changed": [],
+  "production_head": "c12dd9b189bc71684bfac52606eb89abd5e383c7",
+  "frozen_champion_v14_v15_v16_unchanged": true,
+  "production_website_railway": "No deployment/network service mutation. Tracked source/config hashes unchanged.",
+  "model_identity_features": false,
+  "current_values_backfilled": false,
+  "future_labels_as_features": false,
+  "known_exposed_evaluation_not_used_for_selection": true
+}

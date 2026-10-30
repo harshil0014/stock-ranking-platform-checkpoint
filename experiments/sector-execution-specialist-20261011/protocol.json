@@ -1,0 +1,44 @@
+{
+  "configs": [
+    [
+      "balanced_l1",
+      "base"
+    ],
+    [
+      "balanced_l1",
+      "activity"
+    ],
+    [
+      "return_q25",
+      "base"
+    ],
+    [
+      "return_q25",
+      "activity"
+    ]
+  ],
+  "weights": [
+    0.1,
+    0.3,
+    1.0
+  ],
+  "extra_features": [
+    "volume_active_fraction",
+    "traded_value",
+    "last_positive_volume_lag_days",
+    "execution_quote_lag",
+    "activity_available",
+    "log_contribution_to_traded_value"
+  ],
+  "source_sha256": "0d4d97bc6f3cf8cbefe1546357ecdff5df13b41db7f04a55cfa64011a2051ef9",
+  "design": "Matched base70features versus plus6execution features, same training rows. LightGBM balanced percentile L1 and capped future SIP-XIRR lower25th-quantile specialists. 240trees,depth4,leaves15,minchild120,L2=40,lr.03,threads3,seed20261011.",
+  "training": "Entire guarded historical prepared panel, endpoint<annualJan1/currentOct3, known sectors with5peers, usable primary inputs, equal query weight. No future trade observations. Missing activity remains missing; no zero volume fabrication.",
+  "scoring": "Rank model outputs within sector/date/profile; missing primary evidence retains champion percentile; test standalone1 and .1/.3 champion blends. Quantile is a fitted conditional quantile, not a calibrated guarantee.",
+  "limitations": "Provider raw-close times volume median is an approximate historical activity signal, not executable orderbook capacity. The contribution ratio is log(amount+1)-log(median reported traded value+1); it is not slippage. Current-universe mapping and corporate-action revision limits remain.",
+  "selection": "Development2020-23 whole-sector rankIC and non-return Top3 regressions; meanXIRR weight0. Recent2024-25 exposed. Exact feature-matched controls retained for any finalists.",
+  "fresh_validation": false,
+  "sources": [
+    "https://lightgbm.readthedocs.io/en/latest/Parameters.html",
+    "https://academic.oup.com/rfs/article-abstract/12/5/1113/1565408"
+  ]
+}

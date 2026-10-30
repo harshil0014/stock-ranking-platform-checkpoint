@@ -1,0 +1,19 @@
+{
+  "ticker": "RENTOMOJO",
+  "isin": "INE08T701025",
+  "provider": "RENTOMOJO.NS",
+  "trade_date": "2026-09-18",
+  "official_price": 512.75,
+  "status": "RECOVERED",
+  "rows": 2,
+  "first_date": "2026-09-17",
+  "last_date": "2026-09-18",
+  "terminal_lag_days": 0,
+  "terminal_relative_difference": 0.0,
+  "listing_date": "2026-09-17",
+  "history_precedes_listing_date": false,
+  "csv_sha256": "70c015d338bc4a5c4e710f88c989017e9f8c6401b5c09e5f41302a38963b982e",
+  "source": "Yahoo Finance secondary history",
+  "identity_mapping": "exact NSE ticker -> .NS",
+  "accepted_for_research_overlay": true
+}

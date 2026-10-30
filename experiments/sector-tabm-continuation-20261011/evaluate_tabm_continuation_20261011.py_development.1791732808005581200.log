@@ -1,0 +1,65 @@
+EVALUATED development 0 common False
+EVALUATED development 0 common True
+EVALUATED development 0 expanded False
+EVALUATED development 0 expanded True
+EVALUATED development 12 common False
+EVALUATED development 12 common True
+EVALUATED development 12 expanded False
+EVALUATED development 12 expanded True
+EVALUATED development 24 common False
+EVALUATED development 24 common True
+EVALUATED development 24 expanded False
+EVALUATED development 24 expanded True
+EVALUATED development 36 common False
+EVALUATED development 36 common True
+EVALUATED development 36 expanded False
+EVALUATED development 36 expanded True
+                          model   rank_ic  improved  regressed  nonreturn_regressions  top3_nonreturn_regressions
+  tabm_embedded_e48_return_w1.0  0.044849       404        244                    243                          79
+    tabm_embedded_e48_goal_w1.0  0.041350       404        244                    241                          86
+  tabm_embedded_e24_return_w1.0  0.038137       408        240                    239                          80
+tabm_embedded_e48_balanced_w1.0  0.037711       429        219                    214                          76
+    tabm_embedded_e24_goal_w1.0  0.036114       387        261                    256                          89
+  tabm_embedded_e48_return_w0.3  0.035410       395        251                    230                         112
+  tabm_embedded_e24_return_w0.3  0.033572       304        344                    291                         128
+   tabm_compact_e48_return_w0.3  0.033340       353        295                    263                          89
+   tabm_compact_e24_return_w0.3  0.033267       321        327                    283                          98
+    tabm_embedded_e48_goal_w0.3  0.032902       423        225                    184                          84
+tabm_embedded_e24_balanced_w1.0  0.032399       404        244                    239                          92
+   tabm_compact_e48_return_w1.0  0.032096       270        378                    366                         131
+    tabm_embedded_e24_goal_w0.3  0.031862       393        253                    198                          88
+tabm_embedded_e48_balanced_w0.3  0.030483       422        226                    183                          73
+     tabm_compact_e48_goal_w0.3  0.030285       282        366                    300                          93
+ tabm_compact_e48_balanced_w0.3  0.029901       342        306                    248                          79
+ tabm_compact_e24_balanced_w0.3  0.029283       295        353                    284                          86
+   tabm_compact_e24_return_w1.0  0.029260       215        433                    417                         139
+     tabm_compact_e24_goal_w0.3  0.029054       284        364                    292                          80
+tabm_embedded_e24_balanced_w0.3  0.029030       361        287                    219                          74
+  tabm_embedded_e48_return_w0.1  0.027855       444        204                    168                          43
+   tabm_compact_e48_return_w0.1  0.027750       328        318                    253                          71
+  tabm_embedded_e24_return_w0.1  0.027631       364        274                    220                          91
+   tabm_compact_e24_return_w0.1  0.027620       260        386                    318                          96
+    tabm_embedded_e48_goal_w0.1  0.027485       408        234                    180                          52
+tabm_embedded_e48_balanced_w0.1  0.027316       393        251                    200                          60
+    tabm_embedded_e24_goal_w0.1  0.027262       386        260                    203                          72
+     tabm_compact_e48_goal_w0.1  0.027037       322        324                    250                          66
+tabm_embedded_e24_balanced_w0.1  0.026922       385        257                    197                          64
+     tabm_compact_e24_goal_w0.1  0.026745       328        320                    246                          59
+ tabm_compact_e48_balanced_w0.1  0.026638       274        372                    293                          90
+ tabm_compact_e24_balanced_w0.1  0.026530       290        354                    278                          90
+    tabm_embedded_e48_risk_w0.1  0.025585       212        436                    341                         106
+    tabm_embedded_e24_risk_w0.1  0.025515       238        408                    317                          95
+     tabm_compact_e24_risk_w0.1  0.025008       209        437                    336                         112
+     tabm_compact_e48_risk_w0.1  0.024992       201        447                    352                         118
+ tabm_compact_e48_balanced_w1.0  0.024705       232        416                    382                         126
+     tabm_compact_e48_goal_w1.0  0.023540       223        425                    395                         141
+    tabm_embedded_e48_risk_w0.3  0.021534       228        420                    328                         109
+    tabm_embedded_e24_risk_w0.3  0.021135       255        393                    308                         111
+ tabm_compact_e24_balanced_w1.0  0.018935       151        497                    451                         162
+     tabm_compact_e24_goal_w1.0  0.018884       174        474                    443                         154
+     tabm_compact_e24_risk_w0.3  0.016885       206        442                    343                         107
+     tabm_compact_e48_risk_w0.3  0.016279       160        488                    385                         121
+    tabm_embedded_e24_risk_w1.0  0.000822       216        432                    346                         112
+    tabm_embedded_e48_risk_w1.0 -0.000467       228        420                    337                         111
+     tabm_compact_e48_risk_w1.0 -0.012628       214        434                    354                         116
+     tabm_compact_e24_risk_w1.0 -0.014663       219        429                    348                         115

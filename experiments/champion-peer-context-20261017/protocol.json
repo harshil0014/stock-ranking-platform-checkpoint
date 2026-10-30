@@ -1,0 +1,33 @@
+{
+  "scope": "Improve existing rank_xendcg component; all inherited components and .75/.25 blend fixed",
+  "configs": {
+    "peer_strength": [
+      "peer_z_momentum12_1",
+      "peer_z_high_gap252",
+      "peer_z_near_high_fraction"
+    ],
+    "peer_risk": [
+      "peer_z_downside252",
+      "peer_z_drawdown252"
+    ],
+    "peer_both": [
+      "peer_z_momentum12_1",
+      "peer_z_high_gap252",
+      "peer_z_near_high_fraction",
+      "peer_z_downside252",
+      "peer_z_drawdown252"
+    ]
+  },
+  "feature_definition": "Leave-one-out sector/date standardized deviation, >=4 valid other companies, clipped +/-5; constant peers/missing evidence => NaN",
+  "selection": "Development 2020-23: minimize Top3 non-XIRR metric regressions, then all non-XIRR regressions, then maximize expanded capped rankIC; deterministic name tie break. Lock one patch before recent evaluation.",
+  "promotion": "Both development and recent: no non-XIRR metric/profile/scope/top-k cell regresses beyond 1e-12, at least one improves; XIRR no selection weight but report all return regressions as additional veto.",
+  "training": "Existing 180-tree balanced rank_xendcg hyperparameters and exact mature-label filters; annual endpoint < January1, current endpoint < October3 2026",
+  "coverage": "Same champion fallback score exactly where evidence_fraction <=0; no new data coverage claims",
+  "sources": [
+    "https://arxiv.org/abs/2106.10159",
+    "https://arxiv.org/abs/2110.13716"
+  ],
+  "adaptation": "Simple peer-statistics features inspired by relationship research; no graph network, imported weights, or claimed paper reproduction",
+  "fresh_validation": false,
+  "website_changed": false
+}

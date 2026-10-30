@@ -1,0 +1,177 @@
+[
+  {
+    "repo": "microsoft/qlib",
+    "review_date": "2026-10-17",
+    "files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/LICENSE",
+        "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/README.md",
+        "sha256": "e9f7cc8eeb60e3fe3784ec496e350ecb584157c3240cda0651c20acb26fd9037"
+      }
+    ],
+    "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+    "license": "MIT",
+    "archived": false
+  },
+  {
+    "repo": "SJTU-DMTai/MASTER",
+    "review_date": "2026-10-17",
+    "files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/SJTU-DMTai/MASTER/de8f58557096abde4216a701b35fc4368158d111/LICENSE",
+        "sha256": "092708495d13ce475c76f1a25b52f3aa15ae0bae490a245eb2378d0d543ab736"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/SJTU-DMTai/MASTER/de8f58557096abde4216a701b35fc4368158d111/README.md",
+        "sha256": "a958de1bb78303747ed739c95d2f1a13242a235a735d7273de6f88b0f21d9150"
+      }
+    ],
+    "commit": "de8f58557096abde4216a701b35fc4368158d111",
+    "license": "MIT",
+    "archived": false
+  },
+  {
+    "repo": "SJTU-DMTai/DoubleAdapt",
+    "review_date": "2026-10-17",
+    "files": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/SJTU-DMTai/DoubleAdapt/e20b6e46ccbd2b6b8180ff3db62f68b16721684c/README.md",
+        "sha256": "3d92f6456f317bb5a6b0a6c8d73bdabfceb6f2e9b831fd605eaa096368544960"
+      }
+    ],
+    "commit": "e20b6e46ccbd2b6b8180ff3db62f68b16721684c",
+    "license": null,
+    "archived": false
+  },
+  {
+    "repo": "Wentao-Xu/HIST",
+    "review_date": "2026-10-17",
+    "files": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/Wentao-Xu/HIST/149114c47fbd7f997be9a5a2f79c65de95603711/README.md",
+        "sha256": "b026ca0f62728732dd57ff7be1887ccede907bdfe5f306aec842423fd13e20b9"
+      }
+    ],
+    "commit": "149114c47fbd7f997be9a5a2f79c65de95603711",
+    "license": null,
+    "archived": false
+  },
+  {
+    "repo": "OpenSourceAP/CrossSection",
+    "review_date": "2026-10-17",
+    "files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/OpenSourceAP/CrossSection/5c2a1647dafb0a429a6b28e3d1793865ba0f9a83/LICENSE",
+        "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/OpenSourceAP/CrossSection/5c2a1647dafb0a429a6b28e3d1793865ba0f9a83/README.md",
+        "sha256": "fa651540b7d0ec77dee319f14841b0be993066ad945c025a675c45831d0539e4"
+      }
+    ],
+    "commit": "5c2a1647dafb0a429a6b28e3d1793865ba0f9a83",
+    "license": "GPL-2.0",
+    "archived": false
+  },
+  {
+    "repo": "rejinreeza/trading_tool",
+    "review_date": "2026-10-17",
+    "files": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/rejinreeza/trading_tool/3e037198d962775b45ffdb5e6d55f771f31385fc/README.md",
+        "sha256": "c8bbb73362467b840fe42e097adb79d6c389b03670efffd2be2fac53f9cc1817"
+      }
+    ],
+    "commit": "3e037198d962775b45ffdb5e6d55f771f31385fc",
+    "license": null,
+    "archived": false
+  },
+  {
+    "repo": "ninad164/auto-portfolio-management",
+    "review_date": "2026-10-17",
+    "files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/ninad164/auto-portfolio-management/669b17e1e0374701b02a447184fff1a7b40bb250/LICENSE",
+        "sha256": "1126322e2cc8d165adc4c792eeb195717de2bcc7b39be1ce77959d78e87ef685"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/ninad164/auto-portfolio-management/669b17e1e0374701b02a447184fff1a7b40bb250/README.md",
+        "sha256": "8c9a322b6b5ded21c9e999ef6d1f3d8940a8559c2cff4250640498bbe510b836"
+      }
+    ],
+    "commit": "669b17e1e0374701b02a447184fff1a7b40bb250",
+    "license": "MIT",
+    "archived": false
+  },
+  {
+    "repo": "raogaurav17/Nifty-Quant",
+    "review_date": "2026-10-17",
+    "files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/raogaurav17/Nifty-Quant/879db8c1a1b532c184280f4b9702b94b41cebc3b/LICENSE",
+        "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/raogaurav17/Nifty-Quant/879db8c1a1b532c184280f4b9702b94b41cebc3b/README.md",
+        "sha256": "afcb2a2368d5d687604c333105d794631dfd863b624dd6dcd615b3a4429008b2"
+      }
+    ],
+    "commit": "879db8c1a1b532c184280f4b9702b94b41cebc3b",
+    "license": "GPL-2.0",
+    "archived": false
+  },
+  {
+    "repo": "shiyu-coder/Kronos",
+    "review_date": "2026-10-17",
+    "files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/shiyu-coder/Kronos/67b630e67f6a18c9e9be918d9b4337c960db1e9a/LICENSE",
+        "sha256": "acb2d194d378204e5f2be4dcd24d39ecac437903620c790c3315a96dab388fdc"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/shiyu-coder/Kronos/67b630e67f6a18c9e9be918d9b4337c960db1e9a/README.md",
+        "sha256": "b815b608192afa4b805a11bcbb66268f3e3db55736218964944318da7865357e"
+      }
+    ],
+    "commit": "67b630e67f6a18c9e9be918d9b4337c960db1e9a",
+    "license": "MIT",
+    "archived": false
+  },
+  {
+    "repo": "microsoft/RD-Agent",
+    "review_date": "2026-10-17",
+    "files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/microsoft/RD-Agent/484776c211e4fbbeef03e0ec00d6bbee7362a4f4/LICENSE",
+        "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/microsoft/RD-Agent/484776c211e4fbbeef03e0ec00d6bbee7362a4f4/README.md",
+        "sha256": "b68ff14551944e1821023ae54a090fc0aabaad58170165cc9c17c6e0e7290c13"
+      }
+    ],
+    "commit": "484776c211e4fbbeef03e0ec00d6bbee7362a4f4",
+    "license": "MIT",
+    "archived": false
+  }
+]

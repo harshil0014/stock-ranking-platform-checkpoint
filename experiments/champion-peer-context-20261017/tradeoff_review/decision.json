@@ -1,0 +1,38 @@
+{
+  "selected": "peer_risk_strength1.0",
+  "accept_research_patch": false,
+  "development": {
+    "stage": "development",
+    "model": "peer_risk_strength1.0",
+    "scope": "expanded",
+    "treatment": "capped",
+    "top_n": 3,
+    "utility": 0.1750868692182881,
+    "ranking_utility": 0.2988867927885176,
+    "equal_utility": 0.01780453136416206,
+    "xirr": -0.005022038788142447,
+    "drawdown": -0.0011818099598931986,
+    "achievement": -0.0034438368648895823,
+    "shortfall": -0.0004618624627794679,
+    "ndcg": -0.00027144747916962864,
+    "rank_ic": 0.00624918333493998
+  },
+  "recent": {
+    "stage": "recent",
+    "model": "peer_risk_strength1.0",
+    "scope": "expanded",
+    "treatment": "capped",
+    "top_n": 3,
+    "utility": -0.3246621050516016,
+    "ranking_utility": -0.39878507265132257,
+    "equal_utility": -0.25159152631011567,
+    "xirr": -0.0035935873660449856,
+    "drawdown": -0.0008592796402706604,
+    "achievement": -0.0019883040935672336,
+    "shortfall": -0.0017562911286414379,
+    "ndcg": -0.00335641481080573,
+    "rank_ic": -0.004619286642220721
+  },
+  "fresh_validation": false,
+  "website_changed": false
+}

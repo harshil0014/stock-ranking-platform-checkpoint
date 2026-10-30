@@ -1,0 +1,6 @@
+model,original,improved,regressed,ties
+tabm_compact_e24_return_w0.3,tabm_compact_return_w0.3,490,804,2
+tabm_compact_e48_return_w0.3,tabm_compact_return_w0.3,579,715,2
+tabm_embedded_e24_return_w1.0,tabm_embedded_return_w1.0,931,365,0
+tabm_embedded_e48_return_w1.0,tabm_embedded_return_w1.0,781,515,0
+tabm_embedded_e48_return_w0.1,tabm_embedded_return_w0.1,679,613,4

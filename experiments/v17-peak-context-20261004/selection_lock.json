@@ -1,0 +1,43 @@
+{
+  "winner": {
+    "name": "age_momentum_0.005",
+    "kind": "age_momentum",
+    "beta": 0.005,
+    "utility": 0.0072582687658141335,
+    "delta": {
+      "coverage": 0.0,
+      "ndcg20": 0.007064794455623919,
+      "target_achievement_top20": 0.001388888888888889,
+      "target_shortfall_top20": -0.0026870303785715,
+      "median_xirr_top20": 0.015258286662972916,
+      "mean_asset_drawdown_top20": 0.016037472220654256,
+      "rank_ic": 0.002870673616065348,
+      "pairwise_accuracy": 0.0009621497317506124
+    },
+    "profile_return": {
+      "amount1000": 0.0191699824205417,
+      "amount50000": 0.03316758811695496,
+      "base7500": -0.03641189132601869,
+      "lookback12": 0.12207317832861087,
+      "lookback60": -0.03913077868127373,
+      "quarterly": 0.01471946357264528,
+      "target10": 0.02318246269654481,
+      "target30": -0.009395442294331174,
+      "weekly": 0.009950017133082212
+    },
+    "metrics": {
+      "coverage": 0.7928981023785329,
+      "ndcg20": 0.6042755275516642,
+      "target_achievement_top20": 0.6131944444444444,
+      "target_shortfall_top20": 0.05476291289431106,
+      "median_xirr_top20": 0.6015727303729246,
+      "mean_asset_drawdown_top20": -0.2674198490354731,
+      "rank_ic": 0.008100386065931085,
+      "pairwise_accuracy": 0.5041615062304508
+    },
+    "eligible": true
+  },
+  "trial_count": 12,
+  "selected_at": "2026-10-04T12:05:52.396045+00:00",
+  "protocol_sha256": "178794e1abb20f2dfbf0eeb8555c327347a58fb22b441ade0e10039671e71fc2"
+}

@@ -1,0 +1,6 @@
+{
+  "predictor_storage": "float32; outcomes retain source precision",
+  "reason": "Reduced temporary/cache footprint after the C drive filled",
+  "effect": "Applies consistently to all four profile-aware configurations; no label or gate changes",
+  "archived_models": "../full-coverage-open-models-20261008/extra_trees_fitted_models.zip"
+}

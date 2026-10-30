@@ -1,0 +1,14 @@
+{
+  "features": [
+    "guarded_previous",
+    "rank_xendcg_balanced"
+  ],
+  "weights": [
+    0.7747001230140637,
+    0.22529987698593634
+  ],
+  "raw_weights": [
+    0.7258090239593674,
+    0.21108126739042665
+  ]
+}

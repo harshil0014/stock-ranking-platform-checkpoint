@@ -1,0 +1,30 @@
+{
+  "locked_at": "2026-10-03T21:13:51.407739+00:00",
+  "hypothesis": "Full-feature deterministic specialist loses risk quality. Preserve the V17 ATH-constrained recipe and average a larger fixed seed set to reduce feature-subsampling variance.",
+  "seeds": [
+    20261003,
+    20261004,
+    20261005,
+    20261006,
+    20261007,
+    20261008,
+    20261009
+  ],
+  "aggregations": [
+    "mean",
+    "median"
+  ],
+  "new_share": [
+    0.5,
+    0.75,
+    1.0
+  ],
+  "lookback60_correction_alpha": 0.3,
+  "lookback36_regime_beta": [
+    0.05,
+    0.1
+  ],
+  "lookback12": "unchanged",
+  "candidate_count": 12,
+  "acceptance": "Same return/profile/highvol gates. Additionally every leave-one-seed-out60M result must retain nonnegative medianreturn vs champion and no more than0.005 drawdown regression vs originalV17. Per-date refits for finalists. No current or exposed outcome selection."
+}

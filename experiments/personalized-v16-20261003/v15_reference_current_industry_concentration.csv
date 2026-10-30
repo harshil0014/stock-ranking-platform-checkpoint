@@ -1,0 +1,55 @@
+profile,model,top_n,industry_hhi,largest_industry,largest_share
+amount1000,champion,20,0.06500000000000002,Auto Components & Equipments,0.1
+amount1000,champion,50,0.045599999999999995,Pharmaceuticals,0.12
+amount1000,champion,100,0.03600000000000002,Pharmaceuticals,0.12
+amount1000,v15,20,0.055000000000000014,Castings & Forgings,0.1
+amount1000,v15,50,0.03040000000000001,Pharmaceuticals,0.06
+amount1000,v15,100,0.0336,Pharmaceuticals,0.11
+amount50000,champion,20,0.06500000000000002,Auto Components & Equipments,0.1
+amount50000,champion,50,0.04800000000000001,Pharmaceuticals,0.14
+amount50000,champion,100,0.03560000000000001,Pharmaceuticals,0.11
+amount50000,v15,20,0.06500000000000002,Castings & Forgings,0.15
+amount50000,v15,50,0.035199999999999995,Pharmaceuticals,0.08
+amount50000,v15,100,0.03380000000000002,Pharmaceuticals,0.11
+base7500,champion,20,0.06500000000000002,Auto Components & Equipments,0.1
+base7500,champion,50,0.0488,Pharmaceuticals,0.14
+base7500,champion,100,0.03580000000000001,Pharmaceuticals,0.11
+base7500,v15,20,0.06500000000000002,Castings & Forgings,0.15
+base7500,v15,50,0.034399999999999986,Pharmaceuticals,0.08
+base7500,v15,100,0.03280000000000002,Pharmaceuticals,0.1
+lookback12,champion,20,0.055000000000000014,Pharmaceuticals,0.1
+lookback12,champion,50,0.050399999999999986,Pharmaceuticals,0.14
+lookback12,champion,100,0.037399999999999996,Pharmaceuticals,0.11
+lookback12,v15,20,0.07,"Residential, Commercial Projects",0.1
+lookback12,v15,50,0.037599999999999995,Industrial Products,0.1
+lookback12,v15,100,0.0344,Industrial Products,0.08
+lookback60,champion,20,0.06000000000000001,Heavy Electrical Equipment,0.1
+lookback60,champion,50,0.047199999999999985,Auto Components & Equipments,0.1
+lookback60,champion,100,0.03580000000000001,Auto Components & Equipments,0.08
+lookback60,v15,20,0.07500000000000001,Heavy Electrical Equipment,0.15
+lookback60,v15,50,0.04559999999999999,Non Banking Financial Company (NBFC),0.08
+lookback60,v15,100,0.04160000000000001,Pharmaceuticals,0.1
+quarterly,champion,20,0.07,Pharmaceuticals,0.15
+quarterly,champion,50,0.048,Pharmaceuticals,0.12
+quarterly,champion,100,0.03620000000000001,Pharmaceuticals,0.11
+quarterly,v15,20,0.07,Castings & Forgings,0.15
+quarterly,v15,50,0.0416,Pharmaceuticals,0.12
+quarterly,v15,100,0.03260000000000002,Pharmaceuticals,0.1
+target10,champion,20,0.06500000000000002,Auto Components & Equipments,0.1
+target10,champion,50,0.04159999999999999,Pharmaceuticals,0.12
+target10,champion,100,0.0366,Pharmaceuticals,0.11
+target10,v15,20,0.07,Castings & Forgings,0.15
+target10,v15,50,0.03679999999999999,Pharmaceuticals,0.1
+target10,v15,100,0.03260000000000002,Pharmaceuticals,0.1
+target30,champion,20,0.08500000000000002,Auto Components & Equipments,0.15
+target30,champion,50,0.0456,Pharmaceuticals,0.14
+target30,champion,100,0.034000000000000016,Pharmaceuticals,0.1
+target30,v15,20,0.06500000000000002,Castings & Forgings,0.15
+target30,v15,50,0.03359999999999999,Pharmaceuticals,0.08
+target30,v15,100,0.03420000000000002,Pharmaceuticals,0.11
+weekly,champion,20,0.06000000000000001,Auto Components & Equipments,0.1
+weekly,champion,50,0.0456,Pharmaceuticals,0.12
+weekly,champion,100,0.0374,Pharmaceuticals,0.11
+weekly,v15,20,0.06500000000000002,Castings & Forgings,0.15
+weekly,v15,50,0.035199999999999995,Pharmaceuticals,0.08
+weekly,v15,100,0.03380000000000002,Pharmaceuticals,0.1

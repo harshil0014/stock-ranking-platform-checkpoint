@@ -1,0 +1,21 @@
+{
+  "current_rows": 4436,
+  "historical_rows": 797443,
+  "catboost_variants": 12,
+  "catboost_fits": 20,
+  "usable_current_price_features": 4303,
+  "serialized_replay_max_error": 2.220446049250313e-16,
+  "cutoffs_verified": true,
+  "pair_orientation_and_query_boundaries_verified": true,
+  "benchmark_cohorts_verified": true,
+  "controls_reproduced": true,
+  "strict_gate_passes": 0,
+  "fresh_validation": false,
+  "production_replaced": false,
+  "sha256": {
+    "protocol.json": "8291a36d9760dc72e55f8c1d5d359279c93dcfaae5e71d7ed447d3798252c4eb",
+    "locked_finalists.json": "9d6890a048b926961fcdf03930e6508f42a461598934198c0b6fe0db60e920b2",
+    "finalist_trials.csv": "ee77f9529d81446755c384aabc5f969d7e9f511eb2d559b84bac71ee6426d338",
+    "finalists_all_4436.csv": "8cede31dad8759eebc613313490f1a6f04e0e103d4039f92f5a4073852fac7e3"
+  }
+}

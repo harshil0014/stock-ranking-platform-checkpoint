@@ -1,0 +1,25 @@
+{
+  "champion_score_as_model_input": false,
+  "feature_contract_sha256": "90924166beeb51a2067e9df7f5d9ffa14bfdbf3b1364566c208e30de18f29acd",
+  "final_training_endpoint_rule": "endpoint < 2024-03-31",
+  "goal_percentile_weight": 0.25,
+  "label_weights": {
+    "achievement": 0.15,
+    "drawdown": 0.2,
+    "shortfall": 0.25,
+    "xirr": 0.4
+  },
+  "lightgbm_parameters": {
+    "colsample_bytree": 0.8,
+    "lambdarank_truncation_level": 30,
+    "learning_rate": 0.035,
+    "max_depth": 4,
+    "min_child_samples": 250,
+    "n_estimators": 120,
+    "num_leaves": 11,
+    "reg_lambda": 30
+  },
+  "model_sha256": "756efd4c426265013b5fe862cf7f4b634e201c667162a2542f918bc57b6de31a",
+  "selected_label": "balanced",
+  "training_seed": 20261003
+}

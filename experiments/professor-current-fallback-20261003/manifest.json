@@ -1,0 +1,69 @@
+{
+  "schema": "professor_current_fallback_manifest_v2",
+  "manifest_excludes_itself": true,
+  "source_workbook_sha256": "be2ab62fb41abd4769b5f5d8de7f3df04edc6cfa336bb0d2c5906fc6da2e980b",
+  "accepted_company_facts_sha256": "d0436b9f79eda4de11524f22e7be985ae6d3a06c7ef3c72151973498c3f08301",
+  "accepted_state_sha256": "79462a7499ef120f530652b077274c70cec5c6ee1379e9d5c88bef2c6dd412c0",
+  "files": [
+    {
+      "path": "experiments/professor-current-fallback-20261003/ambiguous_rows.csv",
+      "bytes": 751,
+      "sha256": "69bbcad8c5d2a4645a25efb37bc5435cc9c5ba320527dc6b3bf5d6cb600b79c1"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/conflicting_values.csv",
+      "bytes": 31,
+      "sha256": "60cbe2a96c31a5352d11946aa07e262e23678bf414896b9acfb428c6d08a8489"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/coverage_before_after.csv",
+      "bytes": 573,
+      "sha256": "6fce922736a2648ff0d053184dbf7d81b6cbe90712d993f9f88f5800ee8f76a1"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/current_company_facts_professor_overlay.csv.gz",
+      "bytes": 4225041,
+      "sha256": "3f6c55a7b931adbbc1b6cd7ec2f10a53001f07765d22d5fa8803db3edd61ff1f"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/filled_cells.csv",
+      "bytes": 6310720,
+      "sha256": "fb5e7626b249dc2b4c36fa4fa0dff5aa365be16eebcbce10c644a8bfea21bd02"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/roundtrip_audit.json",
+      "bytes": 678,
+      "sha256": "7173ab9d2cabb6ed22c915fe225dcee71a1061c737db9ca9fb0c2f10f10f19fc"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/summary.json",
+      "bytes": 1761,
+      "sha256": "aae94b1724468c1d76c7c825357cf04b6e5f9389fafc5ec01d0906dc40c6bf65"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/unmatched_rows.csv",
+      "bytes": 51972,
+      "sha256": "02fa06ca753cd4c74818975930e50a7723854411b77f0dfac7c981ca856861d2"
+    },
+    {
+      "path": "research/runners/build_professor_current_fallback_20261003.py",
+      "bytes": 18931,
+      "sha256": "9efebbc9a15315f13cf65e466e245f078c12609a27f2a4a9c6bc213c99af6b1a"
+    },
+    {
+      "path": "research/runners/audit_professor_current_fallback_20261003.py",
+      "bytes": 7436,
+      "sha256": "4f80d61590a078029ea5475bfd814b63db05ecbe3c18ad3257a6824d2c4a74a6"
+    },
+    {
+      "path": "research/runners/manifest_professor_current_fallback_20261003.py",
+      "bytes": 1783,
+      "sha256": "15f1a57c89be2f32d5490f5fbce3a033c90a9bedab65883a5a3ac769f2ea216c"
+    },
+    {
+      "path": "research/reports/professor_current_fallback_20261003.md",
+      "bytes": 4961,
+      "sha256": "8702ee8f0be602a9144932c6abe9d68dc51e1a3cbd87739702d125fb38751269"
+    }
+  ]
+}

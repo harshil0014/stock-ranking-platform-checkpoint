@@ -1,0 +1,14 @@
+{
+  "current_company_facts_recovered_v3_screener.csv.gz": {
+    "bytes": 3897975,
+    "sha256": "13d64b44361f602afbd96f321e7410ee5ad9666ae58f9c6da5125afee00114f4"
+  },
+  "screener_premium_filled_cells.csv": {
+    "bytes": 1120742,
+    "sha256": "026222cd586202f301967ce8b20cfd79e61c8d7ce18f6fbd1e9f36eccd2bfedf"
+  },
+  "screener_premium_summary.json": {
+    "bytes": 1879,
+    "sha256": "1c38e5476c802f66498814b18301e9c811f071257f3952d264c72f005a59e741"
+  }
+}

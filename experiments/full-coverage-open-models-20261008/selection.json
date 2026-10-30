@@ -1,0 +1,25 @@
+{
+  "name": "pair__catboost_defensive__ridge_defensive__0.05",
+  "status": "RESEARCH_CANDIDATE_WITH_REGRESSIONS",
+  "production_replaced": false,
+  "fresh_holdout": false,
+  "configs": [
+    {
+      "name": "catboost_defensive",
+      "family": "catboost",
+      "target": "defensive"
+    },
+    {
+      "name": "ridge_defensive",
+      "family": "ridge",
+      "target": "defensive"
+    }
+  ],
+  "weight": 0.05,
+  "as_of": "2026-10-03",
+  "regressing_base_cells": 24,
+  "profile_comparison_cells": 2160,
+  "profile_regressing_cells": 465,
+  "full_coverage": 4436,
+  "current_export_sha256": "b9782ae57adfd3213977aa5884a78e444beb91a8fe0789602ce6422318a85c1e"
+}

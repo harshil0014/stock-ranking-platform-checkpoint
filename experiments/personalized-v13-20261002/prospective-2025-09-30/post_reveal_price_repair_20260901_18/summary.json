@@ -1,0 +1,26 @@
+{
+  "schema": "v13_post_reveal_execution_price_repair_v1",
+  "reason": "September 1-18 daily price gaps cause weekly MISSING_EXECUTION_PRICE",
+  "first_reveal_sha256": "a714c2a994ea64f624aa3dae6e70ef001024ba245fe49d78d75a728bcfef17ca",
+  "locked_scores_sha256": "5040171dd8a88f9202a89dadba4538537a3571d0eba6bcec0f631634c5a49926",
+  "official_source_files": 26,
+  "absent_exchange_days": [
+    {
+      "day": "2026-09-14",
+      "exchange": "NSE",
+      "source_url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260914_F_0000.csv.zip"
+    },
+    {
+      "day": "2026-09-14",
+      "exchange": "BSE",
+      "source_url": "https://www.bseindia.com/download/BhavCopy/Equity/BhavCopy_BSE_CM_0_0_0_20260914_F_0000.csv"
+    }
+  ],
+  "official_price_rows": 55895,
+  "overlay_files": 4373,
+  "newly_filled_dates": 22465,
+  "official_replacements": 33095,
+  "first_reveal_overwritten": false,
+  "selection_changed": false,
+  "accepted_data_mutated": false
+}

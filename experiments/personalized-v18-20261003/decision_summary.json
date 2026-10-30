@@ -1,0 +1,191 @@
+{
+  "verdict": "V17 REMAINS BEST CHALLENGER",
+  "winner": "V17 targeted ATH60 ensemble",
+  "new_candidate": {
+    "candidate": "regime_utility+neural_moe__0.1",
+    "family": "regime_utility+neural_moe",
+    "beta": 0.1,
+    "eligible": false,
+    "utility_gain": 0.01314196085941748,
+    "coverage": 0.0,
+    "ndcg20": 0.016836633970160404,
+    "target_achievement_top20": 0.007638888888888894,
+    "target_shortfall_top20": -0.005106771068066274,
+    "median_xirr_top20": -0.011871766934742619,
+    "mean_asset_drawdown_top20": 0.03948181721525214,
+    "rank_ic": 0.008433535242561706,
+    "pairwise_accuracy": 0.002874345780529081
+  },
+  "selection_checks": {
+    "champion_strict": false,
+    "v17_return": false,
+    "v17_drawdown": true,
+    "v17_achievement": true,
+    "v17_shortfall": true,
+    "v17_ndcg": true,
+    "profile_return": false,
+    "profile_drawdown": true,
+    "utility_gain": true,
+    "three_years": true
+  },
+  "development_new_vs_v17": {
+    "coverage": 0.0,
+    "ndcg20": 0.016836633970160404,
+    "target_achievement_top20": 0.007638888888888894,
+    "target_shortfall_top20": -0.005106771068066274,
+    "median_xirr_top20": -0.011871766934742619,
+    "mean_asset_drawdown_top20": 0.03948181721525214,
+    "rank_ic": 0.008433535242561706,
+    "pairwise_accuracy": 0.002874345780529081
+  },
+  "worst_new_vs_v17_profile": {
+    "period": "development_2020_2023",
+    "model": "new",
+    "reference": "v17",
+    "profile": "lookback12",
+    "coverage_delta": 0.0,
+    "ndcg20_delta": 0.0023135795100145493,
+    "target_achievement_top20_delta": 0.012500000000000022,
+    "target_shortfall_top20_delta": 0.0011198617264659436,
+    "median_xirr_top20_delta": -0.04366236319588914,
+    "mean_asset_drawdown_top20_delta": 0.026281186114870136,
+    "rank_ic_delta": 0.00770944190223755,
+    "pairwise_accuracy_delta": 0.0020315793557042624
+  },
+  "trial_count": 34,
+  "eligible_count": 0,
+  "date_coverage": {
+    "scored_dates": [
+      "2016-03-31",
+      "2016-06-30",
+      "2016-09-30",
+      "2016-12-31",
+      "2017-03-31",
+      "2017-06-30",
+      "2017-09-30",
+      "2017-12-31",
+      "2018-03-31",
+      "2018-06-30",
+      "2018-09-30",
+      "2018-12-31",
+      "2019-03-31",
+      "2019-06-30",
+      "2019-09-30",
+      "2019-12-31",
+      "2020-03-31",
+      "2020-06-30",
+      "2020-09-30",
+      "2020-12-31",
+      "2021-03-31",
+      "2021-06-30",
+      "2021-09-30",
+      "2021-12-31",
+      "2022-03-31",
+      "2022-06-30",
+      "2022-09-30",
+      "2022-12-31",
+      "2023-03-31",
+      "2023-06-30",
+      "2023-09-30",
+      "2023-12-31",
+      "2024-03-31",
+      "2024-06-30",
+      "2024-09-30",
+      "2024-12-31",
+      "2025-01-31",
+      "2025-02-28",
+      "2025-03-31",
+      "2025-04-30",
+      "2025-05-31",
+      "2025-06-30",
+      "2025-07-31",
+      "2025-08-31"
+    ],
+    "scored_date_count": 44,
+    "profiles": [
+      "amount1000",
+      "amount50000",
+      "base7500",
+      "lookback12",
+      "lookback60",
+      "quarterly",
+      "target10",
+      "target30",
+      "weekly"
+    ],
+    "no_prior_labels": [
+      {
+        "date": "2015-01-31",
+        "reason": "No strictly matured prior labels; cannot fit an honest supervised model."
+      },
+      {
+        "date": "2015-02-28",
+        "reason": "No strictly matured prior labels; cannot fit an honest supervised model."
+      },
+      {
+        "date": "2015-03-31",
+        "reason": "No strictly matured prior labels; cannot fit an honest supervised model."
+      },
+      {
+        "date": "2015-06-30",
+        "reason": "No strictly matured prior labels; cannot fit an honest supervised model."
+      },
+      {
+        "date": "2015-09-30",
+        "reason": "No strictly matured prior labels; cannot fit an honest supervised model."
+      },
+      {
+        "date": "2015-12-31",
+        "reason": "No strictly matured prior labels; cannot fit an honest supervised model."
+      }
+    ],
+    "all_valid_dates": true,
+    "early_results_contextual_not_selection": true,
+    "exposed_results_not_selection": true
+  },
+  "current_validation": {
+    "v17_reproduction_max_error": 1.1102230246251565e-16,
+    "universe": 4436,
+    "profile_rows": 39924,
+    "winner_scored_rows": 29295,
+    "new_scored_rows": 29295,
+    "identical_coverage": true,
+    "choice": {
+      "candidate": "regime_utility+neural_moe__0.1",
+      "family": "regime_utility+neural_moe",
+      "beta": 0.1,
+      "eligible": false,
+      "utility_gain": 0.01314196085941748,
+      "coverage": 0.0,
+      "ndcg20": 0.016836633970160404,
+      "target_achievement_top20": 0.007638888888888894,
+      "target_shortfall_top20": -0.005106771068066274,
+      "median_xirr_top20": -0.011871766934742619,
+      "mean_asset_drawdown_top20": 0.03948181721525214,
+      "rank_ic": 0.008433535242561706,
+      "pairwise_accuracy": 0.002874345780529081
+    },
+    "winner": {
+      "family": "v17",
+      "beta": 0.0,
+      "candidate": "frozen_v17"
+    },
+    "inference_after_selection": true,
+    "current_date": [
+      "2026-10-03"
+    ],
+    "new_reproduction_max_error": 3.3306690738754696e-16,
+    "identity_and_age_label_only_max_error": 0.0
+  },
+  "production_champion": "d4995807163bef1ec4b297179e6c54a59c71f390",
+  "deployed": false,
+  "mean_xirr_selection_weight": 0,
+  "fundamentals_peer_scope": "Current-only explanatory context; historical dated inputs unavailable. Not a historically validated fundamental/industry model.",
+  "limitations": [
+    "Development adaptivity:39 prior V17 and34 additional V18 configurations. No untouched validation.",
+    "Fixed-universe survivorship and provider revision risks remain.",
+    "Current corporate-action completeness after2026-09-18 remains unproved; existing quarantine retained.",
+    "Small number of calendar regimes; block intervals do not adjust for adaptive selection."
+  ],
+  "completed_at": "2026-10-03T21:03:17.528860+00:00"
+}

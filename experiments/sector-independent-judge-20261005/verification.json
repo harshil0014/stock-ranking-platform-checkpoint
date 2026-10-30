@@ -1,0 +1,71 @@
+{
+  "all_project_stocks_accounted_for": 4436,
+  "schedule_rows_reconciled": 159696,
+  "share_cost_score_and_rank_reconciliation": true,
+  "date_window_and_no_future_quotes": true,
+  "unit_tests": "26 passed",
+  "all_sector_rows": 59,
+  "missing_window_counts": {
+    "2023-10-30": 3408,
+    "2023-11-29": 3423,
+    "2023-12-28": 3433,
+    "2024-01-26": 0,
+    "2024-02-27": 3458,
+    "2024-03-28": 3476,
+    "2024-04-25": 3484,
+    "2024-05-27": 3496,
+    "2024-06-26": 3512,
+    "2024-07-25": 3522,
+    "2024-08-23": 3541,
+    "2024-09-24": 3570,
+    "2024-10-24": 3585,
+    "2024-11-21": 3597,
+    "2024-12-23": 3616,
+    "2025-01-22": 3643,
+    "2025-02-20": 3668,
+    "2025-03-21": 3677,
+    "2025-04-22": 3686,
+    "2025-05-22": 3690,
+    "2025-06-19": 3702,
+    "2025-07-21": 3733,
+    "2025-08-20": 3762,
+    "2025-09-18": 3789,
+    "2025-10-17": 3844,
+    "2025-11-18": 3862,
+    "2025-12-18": 3896,
+    "2026-01-15": 3909,
+    "2026-02-16": 3926,
+    "2026-03-18": 3945,
+    "2026-04-16": 3973,
+    "2026-05-15": 3996,
+    "2026-06-16": 4018,
+    "2026-07-16": 4045,
+    "2026-08-13": 4085,
+    "2026-09-14": 4313
+  },
+  "primary_top3_delta_bootstrap_95": [
+    0.00361433246421737,
+    0.05292414294055538
+  ],
+  "bootstrap_interpretation": "Descriptive resampling of 47 current sectors; NOT future-return confidence, independent markets or model-selection-adjusted inference.",
+  "mean_delta_excluding_two_largest_advantages": 0.01622559845836968,
+  "complete_fundamentals": {
+    "common_sectors": 47,
+    "mean_delta": 0.0045283889709499875,
+    "verdicts": {
+      "PRACTICAL_TIE": 21,
+      "SIR": 15,
+      "INSUFFICIENT_COMPARABLE_STOCKS": 12,
+      "CURRENT": 11
+    }
+  },
+  "broader_financial_treatment": {
+    "mean_delta": 0.028688837011772113,
+    "verdicts": {
+      "PRACTICAL_TIE": 18,
+      "CURRENT": 17,
+      "SIR": 12,
+      "INSUFFICIENT_COMPARABLE_STOCKS": 12
+    }
+  }
+}

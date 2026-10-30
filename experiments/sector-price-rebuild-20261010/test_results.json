@@ -1,0 +1,20 @@
+{
+  "feature_and_integrity_tests": {
+    "command": "PYTHONPATH=src python -m pytest tests/test_sector_price_rebuild.py tests/test_sector_action_integrity.py -q",
+    "passed": 7
+  },
+  "feature_simulator_ownership_tests": {
+    "command": "PYTHONPATH=src python -m pytest tests/test_personalized_official_actions.py tests/test_personalized_ownership_recovery.py tests/test_sector_price_rebuild.py -q",
+    "passed": 28
+  },
+  "website_custom_profile_test": {
+    "command": "PYTHONPATH=src python -m pytest tests/test_personalized_peak_product.py -k custom_profile -q",
+    "passed": 1,
+    "deselected": 3
+  },
+  "distinct_tests_passed": 33,
+  "pair_accuracy_tests": {
+    "command": "PYTHONPATH=src python -m pytest tests/test_sector_pair_accuracy.py -q",
+    "passed": 2
+  }
+}

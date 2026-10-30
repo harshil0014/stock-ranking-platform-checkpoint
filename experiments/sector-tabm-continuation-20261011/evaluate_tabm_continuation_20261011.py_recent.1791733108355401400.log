@@ -1,0 +1,10 @@
+EVALUATED recent 0 common False
+EVALUATED recent 0 common True
+EVALUATED recent 0 expanded False
+EVALUATED recent 0 expanded True
+                        model  rank_ic  improved  regressed  nonreturn_regressions  top3_nonreturn_regressions
+tabm_embedded_e48_return_w0.1 0.153976       358        288                    215                          88
+ tabm_compact_e48_return_w0.3 0.147843       128        520                    428                         152
+ tabm_compact_e24_return_w0.3 0.145715       114        534                    442                         172
+tabm_embedded_e24_return_w1.0 0.101346       148        500                    454                         148
+tabm_embedded_e48_return_w1.0 0.091450       127        521                    468                         154

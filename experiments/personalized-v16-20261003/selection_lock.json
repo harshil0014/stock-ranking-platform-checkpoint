@@ -1,0 +1,55 @@
+{
+  "locked_at": "2026-10-03T16:23:33.966450+00:00",
+  "selected": {
+    "candidate": "growth_retained_0",
+    "growth_retained": 0.0,
+    "eligible": true,
+    "utility": 0.05299240853476181,
+    "coverage": 0.0,
+    "ndcg20": 0.040111208998935215,
+    "target_achievement_top20": 0.04965277777777778,
+    "target_shortfall_top20": -0.02145059233956877,
+    "median_xirr_top20": 0.18534201523850707,
+    "mean_asset_drawdown_top20": 0.01114959320942505,
+    "rank_ic": 0.025194925224805438,
+    "pairwise_accuracy": 0.008880646262297676
+  },
+  "details": {
+    "eligible": true,
+    "utility": 0.05299240853476181,
+    "checks": {
+      "return_floor": true,
+      "profile_return_floor": true,
+      "weekly_12m_return_floor": true,
+      "ndcg": true,
+      "achievement": true,
+      "shortfall": true,
+      "drawdown": true,
+      "coverage": true,
+      "profile_shortfall": true,
+      "weekly_12m_shortfall": true,
+      "weekly_12m_drawdown": true,
+      "year_return_floor": true,
+      "turnover": true,
+      "positive_utility": true
+    },
+    "delta": {
+      "coverage": 0.0,
+      "ndcg20": 0.040111208998935215,
+      "target_achievement_top20": 0.04965277777777778,
+      "target_shortfall_top20": -0.02145059233956877,
+      "median_xirr_top20": 0.18534201523850707,
+      "mean_asset_drawdown_top20": 0.01114959320942505,
+      "rank_ic": 0.025194925224805438,
+      "pairwise_accuracy": 0.008880646262297676
+    },
+    "top20_overlap": 0.40138888888888885,
+    "worst_profile_return": 0.05442755539233405,
+    "worst_profile_shortfall": -0.006464649644748667
+  },
+  "hypothesis_sha256": "828c1b0551dc24159d852f383c8b6d1380068ba3b99ea738acf7b0ef6ef4b391",
+  "candidate_definitions_sha256": "b9bfe77256d11395f07a0927b1a81d2bd71ebb875e26c962b630babb4181f461",
+  "development_results_sha256": "f18362e06c32465a330238545ddc5e8a4b26a50ff10ff86d78ee7a0f6d770ece",
+  "selected_before_current_and_exposed_evaluation": true,
+  "no_2024_2025_or_current_used_for_selection": true
+}

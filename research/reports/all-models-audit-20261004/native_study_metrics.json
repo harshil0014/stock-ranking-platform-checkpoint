@@ -1,0 +1,602 @@
+[
+  {
+    "path": "data/analysis/broad_chronological_price_ml_v2_run_01/summary.json",
+    "model": "baseline_signal",
+    "native_metrics": {
+      "cells": 492,
+      "mean_rank_ic": -0.009940406622685652,
+      "median_rank_ic": 0.029682547922612428,
+      "positive_fraction": 0.5426829268292683
+    }
+  },
+  {
+    "path": "data/analysis/broad_chronological_price_ml_v2_run_01/summary.json",
+    "model": "extra_trees",
+    "native_metrics": {
+      "cells": 492,
+      "mean_rank_ic": 0.03643116965375133,
+      "median_rank_ic": 0.06926109708367773,
+      "positive_fraction": 0.6158536585365854
+    }
+  },
+  {
+    "path": "data/analysis/broad_chronological_price_ml_v2_run_01/summary.json",
+    "model": "lightgbm_lambdarank",
+    "native_metrics": {
+      "cells": 492,
+      "mean_rank_ic": -0.01537525963152414,
+      "median_rank_ic": 0.015981619410931472,
+      "positive_fraction": 0.5284552845528455
+    }
+  },
+  {
+    "path": "data/analysis/broad_chronological_price_ml_v2_run_01/summary.json",
+    "model": "lightgbm_regression",
+    "native_metrics": {
+      "cells": 492,
+      "mean_rank_ic": 0.04773763996127313,
+      "median_rank_ic": 0.0754055660761361,
+      "positive_fraction": 0.6097560975609756
+    }
+  },
+  {
+    "path": "data/analysis/broad_chronological_price_ml_v2_run_01/summary.json",
+    "model": "mom12_1_signal",
+    "native_metrics": {
+      "cells": 492,
+      "mean_rank_ic": -0.008218596239357874,
+      "median_rank_ic": 0.037018585100298464,
+      "positive_fraction": 0.5833333333333334
+    }
+  },
+  {
+    "path": "data/analysis/broad_chronological_price_ml_v2_run_01/summary.json",
+    "model": "mom6_1_signal",
+    "native_metrics": {
+      "cells": 492,
+      "mean_rank_ic": 0.011740288517206458,
+      "median_rank_ic": 0.07162304299311001,
+      "positive_fraction": 0.5995934959349594
+    }
+  },
+  {
+    "path": "data/analysis/broad_chronological_price_ml_v2_run_01/summary.json",
+    "model": "price_multifactor_signal",
+    "native_metrics": {
+      "cells": 491,
+      "mean_rank_ic": 0.08780361527931607,
+      "median_rank_ic": 0.12295024616792244,
+      "positive_fraction": 0.6965376782077393
+    }
+  },
+  {
+    "path": "data/analysis/broad_chronological_price_ml_v2_run_01/summary.json",
+    "model": "ridge",
+    "native_metrics": {
+      "cells": 492,
+      "mean_rank_ic": 0.07974644542284216,
+      "median_rank_ic": 0.13185792690164266,
+      "positive_fraction": 0.6443089430894309
+    }
+  },
+  {
+    "path": "data/analysis/broad_chronological_price_ml_v2_run_01/summary.json",
+    "model": "selected_ensemble",
+    "native_metrics": {
+      "cells": 491,
+      "mean_rank_ic": 0.09332677411374934,
+      "median_rank_ic": 0.14111491740216522,
+      "positive_fraction": 0.6741344195519349
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v1_run_01/summary.json",
+    "model": "baseline_mom12m_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.07281433737482634,
+      "median_rank_ic": 0.15,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v1_run_01/summary.json",
+    "model": "baseline_v1",
+    "native_metrics": {
+      "mean_rank_ic": -0.011350098038654763,
+      "median_rank_ic": -0.12564945880212885,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v1_run_01/summary.json",
+    "model": "baseline_v2_mom12m_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.03928601170585437,
+      "median_rank_ic": -0.19999999999999998,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v1_run_01/summary.json",
+    "model": "opensourceap_mom12m",
+    "native_metrics": {
+      "mean_rank_ic": 0.1,
+      "median_rank_ic": -0.09999999999999999,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v1_run_01/summary.json",
+    "model": "research_v2",
+    "native_metrics": {
+      "mean_rank_ic": -0.049999999999999975,
+      "median_rank_ic": -0.049999999999999996,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v1_run_01/summary.json",
+    "model": "v2_mom12m_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.011909287984755781,
+      "median_rank_ic": -0.20519567041703082,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v2_run_01/summary.json",
+    "model": "baseline_mom12m_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.07281433737482634,
+      "median_rank_ic": 0.15,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v2_run_01/summary.json",
+    "model": "baseline_price_multifactor_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.09375000000000003,
+      "median_rank_ic": 0.05,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v2_run_01/summary.json",
+    "model": "baseline_v1",
+    "native_metrics": {
+      "mean_rank_ic": -0.011350098038654763,
+      "median_rank_ic": -0.12564945880212885,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v2_run_01/summary.json",
+    "model": "baseline_v2_mom12m_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.03928601170585437,
+      "median_rank_ic": -0.19999999999999998,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v2_run_01/summary.json",
+    "model": "expanding_ridge_meta_model",
+    "native_metrics": {
+      "evaluation_dates": [
+        "2023-08-07",
+        "2024-08-07",
+        "2025-08-07"
+      ],
+      "mean_rank_ic": -0.03333333333333332,
+      "median_rank_ic": -0.15,
+      "training_rule": "fixed alpha=1 ridge; standardized on strictly earlier ranking dates only",
+      "valid_sector_dates": 12
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v2_run_01/summary.json",
+    "model": "low_volatility_12m",
+    "native_metrics": {
+      "mean_rank_ic": -0.056249999999999994,
+      "median_rank_ic": -0.3,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v2_run_01/summary.json",
+    "model": "mom6m",
+    "native_metrics": {
+      "mean_rank_ic": 0.23125,
+      "median_rank_ic": 0.44999999999999996,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v2_run_01/summary.json",
+    "model": "opensourceap_mom12m",
+    "native_metrics": {
+      "mean_rank_ic": 0.1,
+      "median_rank_ic": -0.09999999999999999,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v2_run_01/summary.json",
+    "model": "research_v2",
+    "native_metrics": {
+      "mean_rank_ic": -0.049999999999999975,
+      "median_rank_ic": -0.049999999999999996,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v2_run_01/summary.json",
+    "model": "shallow_drawdown_12m",
+    "native_metrics": {
+      "mean_rank_ic": 0.049999999999999996,
+      "median_rank_ic": -0.09999999999999999,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v2_run_01/summary.json",
+    "model": "short_term_reversal",
+    "native_metrics": {
+      "mean_rank_ic": 0.14375,
+      "median_rank_ic": 0.39999999999999997,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v2_run_01/summary.json",
+    "model": "v2_mom12m_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.011909287984755781,
+      "median_rank_ic": -0.20519567041703082,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_01/summary.json",
+    "model": "baseline_mom12m_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.07281433737482634,
+      "median_rank_ic": 0.15,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_01/summary.json",
+    "model": "baseline_price_multifactor_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.09375000000000003,
+      "median_rank_ic": 0.05,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_01/summary.json",
+    "model": "baseline_v1",
+    "native_metrics": {
+      "mean_rank_ic": -0.011350098038654763,
+      "median_rank_ic": -0.12564945880212885,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_01/summary.json",
+    "model": "baseline_v2_mom12m_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.03928601170585437,
+      "median_rank_ic": -0.19999999999999998,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_01/summary.json",
+    "model": "expanding_ridge_meta_model",
+    "native_metrics": {
+      "evaluation_dates": [
+        "2023-08-07",
+        "2024-08-07",
+        "2025-08-07"
+      ],
+      "mean_rank_ic": 0.07500000000000001,
+      "median_rank_ic": 0.049999999999999996,
+      "training_rule": "fixed alpha=1 ridge; train-only standardization; every sector target endpoint strictly before decision day",
+      "valid_sector_dates": 12
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_01/summary.json",
+    "model": "low_volatility_12m",
+    "native_metrics": {
+      "mean_rank_ic": -0.056249999999999994,
+      "median_rank_ic": -0.3,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_01/summary.json",
+    "model": "mom6m",
+    "native_metrics": {
+      "mean_rank_ic": 0.23125,
+      "median_rank_ic": 0.44999999999999996,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_01/summary.json",
+    "model": "opensourceap_mom12m",
+    "native_metrics": {
+      "mean_rank_ic": 0.1,
+      "median_rank_ic": -0.09999999999999999,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_01/summary.json",
+    "model": "research_v2",
+    "native_metrics": {
+      "mean_rank_ic": -0.049999999999999975,
+      "median_rank_ic": -0.049999999999999996,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_01/summary.json",
+    "model": "shallow_drawdown_12m",
+    "native_metrics": {
+      "mean_rank_ic": 0.049999999999999996,
+      "median_rank_ic": -0.09999999999999999,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_01/summary.json",
+    "model": "short_term_reversal",
+    "native_metrics": {
+      "mean_rank_ic": 0.14375,
+      "median_rank_ic": 0.39999999999999997,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_01/summary.json",
+    "model": "v2_mom12m_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.011909287984755781,
+      "median_rank_ic": -0.20519567041703082,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_02/summary.json",
+    "model": "baseline_mom12m_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.07281433737482634,
+      "median_rank_ic": 0.15,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_02/summary.json",
+    "model": "baseline_price_multifactor_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.09375000000000003,
+      "median_rank_ic": 0.05,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_02/summary.json",
+    "model": "baseline_v1",
+    "native_metrics": {
+      "mean_rank_ic": -0.011350098038654763,
+      "median_rank_ic": -0.12564945880212885,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_02/summary.json",
+    "model": "baseline_v2_mom12m_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.03928601170585437,
+      "median_rank_ic": -0.19999999999999998,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_02/summary.json",
+    "model": "expanding_ridge_meta_model",
+    "native_metrics": {
+      "evaluation_dates": [
+        "2023-08-07",
+        "2024-08-07",
+        "2025-08-07"
+      ],
+      "mean_rank_ic": 0.07500000000000001,
+      "median_rank_ic": 0.049999999999999996,
+      "training_rule": "fixed alpha=1 ridge; train-only standardization; every sector target endpoint strictly before decision day",
+      "valid_sector_dates": 12
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_02/summary.json",
+    "model": "low_volatility_12m",
+    "native_metrics": {
+      "mean_rank_ic": -0.056249999999999994,
+      "median_rank_ic": -0.3,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_02/summary.json",
+    "model": "mom6m",
+    "native_metrics": {
+      "mean_rank_ic": 0.23125,
+      "median_rank_ic": 0.44999999999999996,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_02/summary.json",
+    "model": "opensourceap_mom12m",
+    "native_metrics": {
+      "mean_rank_ic": 0.1,
+      "median_rank_ic": -0.09999999999999999,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_02/summary.json",
+    "model": "research_v2",
+    "native_metrics": {
+      "mean_rank_ic": -0.049999999999999975,
+      "median_rank_ic": -0.049999999999999996,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_02/summary.json",
+    "model": "shallow_drawdown_12m",
+    "native_metrics": {
+      "mean_rank_ic": 0.049999999999999996,
+      "median_rank_ic": -0.09999999999999999,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_02/summary.json",
+    "model": "short_term_reversal",
+    "native_metrics": {
+      "mean_rank_ic": 0.14375,
+      "median_rank_ic": 0.39999999999999997,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_02/summary.json",
+    "model": "v2_mom12m_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.011909287984755781,
+      "median_rank_ic": -0.20519567041703082,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_03/summary.json",
+    "model": "baseline_mom12m_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.07281433737482634,
+      "median_rank_ic": 0.15,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_03/summary.json",
+    "model": "baseline_price_multifactor_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.09375000000000003,
+      "median_rank_ic": 0.05,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_03/summary.json",
+    "model": "baseline_v1",
+    "native_metrics": {
+      "mean_rank_ic": -0.011350098038654763,
+      "median_rank_ic": -0.12564945880212885,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_03/summary.json",
+    "model": "baseline_v2_mom12m_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.03928601170585437,
+      "median_rank_ic": -0.19999999999999998,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_03/summary.json",
+    "model": "expanding_ridge_meta_model",
+    "native_metrics": {
+      "evaluation_dates": [
+        "2023-08-07",
+        "2024-08-07",
+        "2025-08-07"
+      ],
+      "mean_rank_ic": 0.07500000000000001,
+      "median_rank_ic": 0.049999999999999996,
+      "training_rule": "fixed alpha=1 ridge; train-only standardization; every sector target endpoint strictly before decision day",
+      "valid_sector_dates": 12
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_03/summary.json",
+    "model": "low_volatility_12m",
+    "native_metrics": {
+      "mean_rank_ic": -0.056249999999999994,
+      "median_rank_ic": -0.3,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_03/summary.json",
+    "model": "mom6m",
+    "native_metrics": {
+      "mean_rank_ic": 0.23125,
+      "median_rank_ic": 0.44999999999999996,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_03/summary.json",
+    "model": "opensourceap_mom12m",
+    "native_metrics": {
+      "mean_rank_ic": 0.1,
+      "median_rank_ic": -0.09999999999999999,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_03/summary.json",
+    "model": "research_v2",
+    "native_metrics": {
+      "mean_rank_ic": -0.049999999999999975,
+      "median_rank_ic": -0.049999999999999996,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_03/summary.json",
+    "model": "shallow_drawdown_12m",
+    "native_metrics": {
+      "mean_rank_ic": 0.049999999999999996,
+      "median_rank_ic": -0.09999999999999999,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_03/summary.json",
+    "model": "short_term_reversal",
+    "native_metrics": {
+      "mean_rank_ic": 0.14375,
+      "median_rank_ic": 0.39999999999999997,
+      "valid_sector_dates": 16
+    }
+  },
+  {
+    "path": "data/walk_forward/exploratory_model_benchmark_v3_run_03/summary.json",
+    "model": "v2_mom12m_equal_weight",
+    "native_metrics": {
+      "mean_rank_ic": 0.011909287984755781,
+      "median_rank_ic": -0.20519567041703082,
+      "valid_sector_dates": 16
+    }
+  }
+]

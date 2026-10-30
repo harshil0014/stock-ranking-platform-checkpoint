@@ -1,0 +1,143 @@
+{
+  "rows": 4436,
+  "company_fact_fingerprint": "dba7b068cdc97e01cba00e36d914d0ce97d1d283763247ada544b89486454a0e",
+  "history_source_counts": {
+    "ACCEPTED_HISTORY_CACHE": 4372,
+    "RECOVERY_OVERLAY": 58,
+    "NO_VALID_PRICE_HISTORY": 4,
+    "RECOVERY_OVERLAY_REFRESH": 2
+  },
+  "history_quality_counts": {
+    "ACCEPTED": 4372,
+    "RECOVERED_VALIDATED": 60,
+    "MISSING": 4
+  },
+  "long_term_growth_source_counts": {
+    "OBSERVED_ADJUSTED_5Y_CAGR": 3129,
+    "ESTIMATED_HISTORY_SECTOR_SHRUNK": 1295,
+    "ESTIMATED_SECTOR_MEDIAN_ONLY": 12
+  },
+  "true_5y_count": 3129,
+  "estimated_5y_count": 1307,
+  "no_valid_history_count": 4,
+  "invalid_history_count": 0,
+  "coverage": {
+    "history_months": {
+      "present": 4432,
+      "missing": 4,
+      "coverage": 0.9990982867448152
+    },
+    "strict_cagr_1y": {
+      "present": 3827,
+      "missing": 609,
+      "coverage": 0.8627141568981064
+    },
+    "strict_cagr_3y": {
+      "present": 3421,
+      "missing": 1015,
+      "coverage": 0.771190261496844
+    },
+    "strict_cagr_5y": {
+      "present": 3129,
+      "missing": 1307,
+      "coverage": 0.7053651938683498
+    },
+    "long_term_growth_value": {
+      "present": 4436,
+      "missing": 0,
+      "coverage": 1.0
+    },
+    "recorded_high_price": {
+      "present": 4432,
+      "missing": 4,
+      "coverage": 0.9990982867448152
+    },
+    "days_since_recorded_high": {
+      "present": 4432,
+      "missing": 4,
+      "coverage": 0.9990982867448152
+    },
+    "distance_from_recorded_high": {
+      "present": 4432,
+      "missing": 4,
+      "coverage": 0.9990982867448152
+    },
+    "distance_from_52w_high": {
+      "present": 4432,
+      "missing": 4,
+      "coverage": 0.9990982867448152
+    },
+    "full_history_max_drawdown": {
+      "present": 4432,
+      "missing": 4,
+      "coverage": 0.9990982867448152
+    },
+    "current_drawdown_duration_days": {
+      "present": 4432,
+      "missing": 4,
+      "coverage": 0.9990982867448152
+    },
+    "max_drawdown_duration_days": {
+      "present": 4432,
+      "missing": 4,
+      "coverage": 0.9990982867448152
+    },
+    "recovery_from_worst_trough": {
+      "present": 4432,
+      "missing": 4,
+      "coverage": 0.9990982867448152
+    },
+    "realized_volatility_1y": {
+      "present": 4400,
+      "missing": 36,
+      "coverage": 0.9918845807033363
+    },
+    "downside_volatility_1y": {
+      "present": 4400,
+      "missing": 36,
+      "coverage": 0.9918845807033363
+    }
+  },
+  "nykaa": {
+    "isin": "INE388Y01029",
+    "ticker": "NYKAA",
+    "sector": "Retailing",
+    "history_source": "ACCEPTED_HISTORY_CACHE",
+    "history_quality": "ACCEPTED",
+    "history_path": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\data\\live_market\\history_cache\\NYKAA.csv",
+    "screener_return_3y_pct": 30.91,
+    "screener_return_5y_pct": NaN,
+    "screener_all_time_high_price": 429.0,
+    "history_start_date": "2021-11-10",
+    "history_end_date": "2026-09-18",
+    "history_observation_count": 1206.0,
+    "history_span_days": 1773.0,
+    "history_months": 58.25051334702259,
+    "terminal_lag_days": 0.0,
+    "terminal_history_quality": "CURRENT_0_7D",
+    "history_start_cagr": -0.020678459070834838,
+    "listing_date_consistent_with_history_start": true,
+    "strict_cagr_1y": 0.3505875809721597,
+    "strict_cagr_3y": 0.3057090072908811,
+    "strict_cagr_5y": NaN,
+    "recorded_high_price": 415.51666259765625,
+    "recorded_high_date": "2021-12-01",
+    "days_since_recorded_high": 1752.0,
+    "distance_from_recorded_high": -0.20063375600871058,
+    "distance_from_52w_high": -0.04977827064548501,
+    "full_history_max_drawdown": -0.7209498261192084,
+    "current_drawdown_duration_days": 1752.0,
+    "max_drawdown_duration_days": 1752.0,
+    "recovery_from_worst_trough": 1.864596831725227,
+    "realized_volatility_1y": 0.2774031453082155,
+    "downside_volatility_1y": 0.16925497347099153,
+    "high_metric_source": "ACCEPTED_HISTORY_CACHE",
+    "cagr_5y_observed": 0,
+    "sector_median_observed_cagr_5y": -0.008908394140415152,
+    "long_term_growth_value": -0.020335266212494058,
+    "long_term_growth_source": "ESTIMATED_HISTORY_SECTOR_SHRUNK",
+    "long_term_growth_is_observed": false,
+    "screener_5y_crosscheck": NaN,
+    "screener_5y_minus_observed_cagr": NaN
+  }
+}

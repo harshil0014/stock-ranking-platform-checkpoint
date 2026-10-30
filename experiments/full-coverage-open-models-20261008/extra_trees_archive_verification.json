@@ -1,0 +1,24 @@
+{
+  "verified_models": [
+    "extra_trees_balanced_2020.pkl",
+    "extra_trees_balanced_2021.pkl",
+    "extra_trees_balanced_2022.pkl",
+    "extra_trees_balanced_2023.pkl",
+    "extra_trees_balanced_2024.pkl",
+    "extra_trees_balanced_2025.pkl",
+    "extra_trees_defensive_2020.pkl",
+    "extra_trees_defensive_2021.pkl",
+    "extra_trees_defensive_2022.pkl",
+    "extra_trees_defensive_2023.pkl",
+    "extra_trees_defensive_2024.pkl",
+    "extra_trees_defensive_2025.pkl",
+    "extra_trees_return_2020.pkl",
+    "extra_trees_return_2021.pkl",
+    "extra_trees_return_2022.pkl",
+    "extra_trees_return_2023.pkl",
+    "extra_trees_return_2024.pkl",
+    "extra_trees_return_2025.pkl"
+  ],
+  "original_bytes": 117848199,
+  "archive_bytes": 49788304
+}

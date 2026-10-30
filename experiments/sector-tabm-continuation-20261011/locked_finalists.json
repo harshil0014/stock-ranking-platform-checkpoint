@@ -1,0 +1,12 @@
+{
+  "finalists": [
+    "tabm_compact_e24_return_w0.3",
+    "tabm_compact_e48_return_w0.3",
+    "tabm_embedded_e24_return_w1.0",
+    "tabm_embedded_e48_return_w1.0",
+    "tabm_embedded_e48_return_w0.1"
+  ],
+  "conservative": "tabm_embedded_e48_return_w0.1",
+  "development_sha256": "4d16bb150d394bdbc0c93b22d762c99e59fa33414b837d1105401bcfe6b76e19",
+  "selection_mean_xirr_weight": 0
+}

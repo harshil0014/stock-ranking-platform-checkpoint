@@ -1,0 +1,28 @@
+{
+  "name": "profile_defensive_15_blend0.2",
+  "status": "RESEARCH_ONLY_NOT_APPROVED",
+  "selection_rule": "Fewest Top3 regressions, then fewest full-panel regressions; adaptive selection.",
+  "weight": 0.2,
+  "as_of": "2026-10-03",
+  "current_profile": "base7500",
+  "stocks": 4436,
+  "training_profiles": 9,
+  "training_rows": 1125928,
+  "max_training_endpoint": "2026-08-31",
+  "training_outcome_guard": true,
+  "top3_regressing_cells": 208,
+  "top3_comparisons": 1080,
+  "all_regressing_cells": 737,
+  "all_comparisons": 3240,
+  "saved_model_inference_reproduced_exactly": true,
+  "production_replaced": false,
+  "fresh_validation": false,
+  "limits": "Input history not fully repaired; anchor trained on original labels; current export is base7500 only. Missing price evidence receives a neutral prior.",
+  "neutral_no_price_stocks": 17,
+  "sha256": {
+    "experiments\\action-guarded-sector-20261008\\current_guarded_ranker.txt": "229226658c3f5a73d6381798876a846e5c56e1fd0636822f40a2fb243d4756c0",
+    "experiments\\action-guarded-sector-20261008\\current_all_stock_rankings.csv": "5596de88759890bba90715344558555b094e3615b33a25fd4f1d7ddb96de49dd",
+    "experiments\\full-coverage-open-models-20261008\\current_all_stock_rankings.csv": "b9782ae57adfd3213977aa5884a78e444beb91a8fe0789602ce6422318a85c1e",
+    "experiments\\action-guarded-sector-20261008\\trials.csv": "9d0ed267da542a9d83dab7ffbc8dccc35f466ad9a3defac23791da57c30c3749"
+  }
+}

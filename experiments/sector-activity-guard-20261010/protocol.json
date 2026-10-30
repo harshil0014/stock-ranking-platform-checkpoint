@@ -1,0 +1,6 @@
+{
+  "trigger": "At least 63 observed returns and more than 80% exactly zero price changes in the trailing feature window.",
+  "ranking": "Flagged stocks remain covered, ordered below unflagged stocks: score = original score - 1. This is a price-activity proxy, not verified trading volume or a delisting conclusion.",
+  "origin": "Current KALYANI review showed 99.6% flat changes and sector rank 1. Threshold fixed before this diagnostic; no selection over thresholds. Current evidence informed the hypothesis, so no fresh-validation claim.",
+  "source": "https://www.kalyanicommercials.com/files/annual-reports/KC_AR_2024-25.pdf"
+}

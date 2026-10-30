@@ -1,0 +1,4 @@
+GLOBAL neural common False
+GLOBAL neural common True
+GLOBAL neural expanded False
+GLOBAL neural expanded True

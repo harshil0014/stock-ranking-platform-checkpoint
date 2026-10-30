@@ -1,0 +1,5 @@
+model,regressions,improvements,comparisons,top3_regressions,rank_ic
+catpair_return_mistakes_w0.1,304,334,648,138,0.15198075583279078
+catpair_return_uniform_w0.1,354,280,648,148,0.15221868500785943
+lgb_return_full_d3_w0.1,274,340,648,42,0.15223038509199566
+lgb_return_full_d3_w0.5,410,238,648,165,0.15261033479398858

@@ -1,0 +1,26 @@
+{
+  "locked_at": "2026-10-03T16:23:02.476388+00:00",
+  "candidates": [
+    {
+      "name": "growth_retained_0",
+      "growth_retained": 0,
+      "alpha": 0.2,
+      "base_correction": "frozen V15 balanced_return confidence_only",
+      "training": "unchanged maturity-purged V15 models"
+    },
+    {
+      "name": "growth_retained_0.25",
+      "growth_retained": 0.25,
+      "alpha": 0.2,
+      "base_correction": "frozen V15 balanced_return confidence_only",
+      "training": "unchanged maturity-purged V15 models"
+    },
+    {
+      "name": "growth_retained_0.5",
+      "growth_retained": 0.5,
+      "alpha": 0.2,
+      "base_correction": "frozen V15 balanced_return confidence_only",
+      "training": "unchanged maturity-purged V15 models"
+    }
+  ]
+}

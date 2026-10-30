@@ -1,0 +1,11 @@
+model,strict_gate,regressions,comparisons,parent_regressions,parent_improvements,development_top3_regressions,development_regressions
+conservative_n8_w0.5,False,1188,5832,430,470,166,496
+conservative_n4_w0.5,False,1182,5832,441,641,167,548
+conservative_n4_w1.0,False,1220,5832,481,689,173,535
+conservative_n8_w1.0,False,1239,5832,482,458,176,537
+utility_n8_w1.0,False,1624,5832,756,532,215,673
+utility_n8_w0.5,False,1596,5832,772,506,215,722
+goal_aware_l1_blend0.1,False,2234,5832,975,315,570,1295
+goal_aware_l1_blend0.25,False,2283,5832,927,369,647,1488
+goal_aware_l1_blend0.5,False,3828,5832,1099,195,737,1885
+goal_aware_l1_blend1.0,False,5036,5832,1149,147,811,2425

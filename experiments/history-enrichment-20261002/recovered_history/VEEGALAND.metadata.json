@@ -1,0 +1,19 @@
+{
+  "ticker": "VEEGALAND",
+  "isin": "INE1JTV01015",
+  "provider": "VEEGALAND.NS",
+  "trade_date": "2026-09-18",
+  "official_price": 146.3,
+  "status": "RECOVERED",
+  "rows": 1,
+  "first_date": "2026-09-18",
+  "last_date": "2026-09-18",
+  "terminal_lag_days": 0,
+  "terminal_relative_difference": 2.085958852447926e-08,
+  "listing_date": "2026-09-18",
+  "history_precedes_listing_date": false,
+  "csv_sha256": "96c5fb7d9287e6c6ac10ee6e622f2fe95161b712a12669c381ea92a01b7c6e4a",
+  "source": "Yahoo Finance secondary history",
+  "identity_mapping": "exact NSE ticker -> .NS",
+  "accepted_for_research_overlay": true
+}

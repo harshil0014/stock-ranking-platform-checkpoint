@@ -1,0 +1,16 @@
+{
+  "files": {
+    "peak_current.csv.gz": "da3f165f06e21eebbb884574338e08657dac153c7e645fb21a2a870bcc8822bd",
+    "peak_features_reviewed.csv.gz": "3e35d36172b55bc19de7898bdfce0999ab65eff46632757125b8f26f7152c023",
+    "peak_actions.csv.gz": "74ba94c5a1be078a95a84708d26fb8bbdec6fd25ab140d67bc875951fc203361",
+    "peak_history.npz": "7a5a460d058891319e6c4566bcc2521809e6d9af813dd6b4a70b1eca520c428d",
+    "history_validation.json": "f11b2b645881fcb2196b697f189a9dc9bf633573f1cc891c780a38a47aa9311a"
+  },
+  "source_receipts": {
+    "FRONTSP.csv.gz": "a36b913ddb1a8658cbd116689f62b2f058093beea36143853de76ddac4073c59",
+    "KPL.csv.gz": "60991d8cc89f374935058322c82c44912755c70fa02e615fe900e9d486a1b085",
+    "PTCIL.csv.gz": "c25aabc5ce1a01f273c79d88ec0a39ddabb40875c850af553a78919de46fb474",
+    "STEELCAS.csv.gz": "514e94dcbfc7ef4aa091fd151e7e30b93a1b43e1f199fb0878a3cfc947f6d806"
+  },
+  "bonus_notice_sha256": "23ad43b3e0509d6deae40b80ce075b80f94f19e1cdfc3ecb6e8e1f7536b6c004"
+}

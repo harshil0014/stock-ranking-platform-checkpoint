@@ -1,0 +1,46 @@
+CONTINUE THE HISTORICAL-DEPTH TASK. The first pass correctly stopped because the provider split ledger was absent. That blocker is now being resolved with the repository's own real Yahoo acquisition runner, not the estimated official-action bridge.
+
+REAL REACQUIRED PROVIDER LEDGER LOCATION:
+experiments/personalized-deep-history-20261002/yahoo-split-ledger-v1/
+
+Expected files after acquisition:
+- split_ledger.csv
+- acquisition_audit.csv
+- summary.json
+- raw/ provider responses
+
+The original prior research recorded provider_split_ledger_sha256:
+0d723a299d346eeffa7160d4108acda8dc609cd7b7e2360f443cdb2cc51c4fcb
+
+IMPORTANT:
+- Do NOT use the ESTIMATED_OFFICIAL_ACTION_MATCHED_PROVIDER_FACTOR bridge for champion comparison.
+- Replace/parameterize the deep-panel builder to use the real reacquired Yahoo split ledger.
+- Verify reacquisition provenance and integrity. If byte hash differs from the old hash because response_sha256/raw response metadata changed, compare canonical split event identity/date/ratio coverage and document the difference; do not pretend byte identity.
+- Use real observed provider split events only.
+- Preserve the source-gate report as historical audit or update it to say the gate was subsequently resolved; do not leave a false final conclusion that the ledger is unavailable.
+- Preserve all prior uncommitted research work.
+
+PRIMARY GOAL REMAINS:
+Build substantially deeper leakage-safe historical training/validation evidence, then aggressively try to produce a genuinely stronger successor to the frozen 67% Goal / 33% LambdaRank champion.
+
+Do this end to end:
+1. Build the real extended executable panel using the reacquired provider split ledger.
+2. Materially increase matured decision dates/observations.
+3. Quantify 12-month overlap/dependence.
+4. Define the cleanest possible chronological train/development/final evaluation split. Do not reuse already exposed 2025-03-31 and 2025-06-30 as an untouched final set.
+5. Prefer genuinely never-inspected added dates for final evaluation where possible. Keep the final set sealed during candidate selection.
+6. Use the authoritative history enrichment:
+   experiments/history-enrichment-20261002/final-data-quality-v3/
+7. Run a serious successor championship on the deeper panel. You may redesign features/models/blends and exploit the enriched history/risk information without leakage.
+8. Optimize broad robustness, not one metric or huge mean-XIRR outliers.
+9. Evaluate NDCG@20, Rank IC, pairwise accuracy, Top20 target achievement, target shortfall, median and mean XIRR, drawdown, coverage, turnover/stability, amount/interval profiles, 10/20/30 targets, 12/36/60M lookbacks, date/regime robustness, missing-history concentration, and NYKAA diagnostic.
+10. Run tests and leakage/provenance audits.
+11. Do not deploy or change production/frozen champion.
+
+Promotion gate:
+A new champion must be broadly stronger with no major target-shortfall, drawdown, median-return, coverage, or important-profile failures. Small secondary regressions may be accepted only when clearly outweighed by broad gains.
+
+Do not stop merely because the first gate report said the ledger was missing. That source is now being reacquired. Finish the actual deeper-panel + championship work.
+
+Final deliverable must state exact date/observation increase, source audit, split, metrics, regressions, and one verdict:
+NEW CHAMPION / PROMISING CHALLENGER / FROZEN CHAMPION RETAINS TITLE.

@@ -1,0 +1,10 @@
+{
+  "decision_dated_feature_windows": true,
+  "training_endpoint_strictly_before_evaluation": true,
+  "current_fundamentals_or_provenance_historical_features": false,
+  "future_outcomes_predictor_features": false,
+  "historical_universe_membership_reconstructed": false,
+  "survivorship_bias_eliminated": false,
+  "contemporaneous_provider_revision_availability_proven": false,
+  "evaluation_outcomes_previously_exposed": true
+}

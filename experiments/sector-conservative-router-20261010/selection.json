@@ -1,0 +1,10 @@
+{
+  "model": "conservative_n8_w0.5",
+  "strict_gate": false,
+  "regressions": 1188,
+  "comparisons": 5832,
+  "parent_regressions": 430,
+  "parent_improvements": 470,
+  "development_top3_regressions": 166,
+  "development_regressions": 496
+}

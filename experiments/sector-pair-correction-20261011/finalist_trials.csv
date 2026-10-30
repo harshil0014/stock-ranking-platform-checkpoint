@@ -1,0 +1,5 @@
+model,improved,regressed,tied,strict_gate
+catpair_return_mistakes_w0.1,650,628,18,False
+catpair_return_uniform_w0.1,659,615,22,False
+lgb_return_full_d3_w0.1,761,465,70,False
+lgb_return_full_d3_w0.5,551,745,0,False

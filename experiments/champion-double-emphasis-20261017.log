@@ -1,0 +1,50 @@
+EVALUATE development common raw
+EVALUATE development common capped
+EVALUATE development expanded raw
+EVALUATE development expanded capped
+LOCKED strong_both
+EVALUATE recent common raw
+EVALUATE recent common capped
+EVALUATE recent expanded raw
+EVALUATE recent expanded capped
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\champion_double_emphasis_20261017.py:48: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  z['high_delta']=z['dual_w0.01']-z.rebuilt_score;z['sip_delta']=z['sip_risk_confirmed_0.01']-z['dual_w0.01']
+{
+  "selected": "strong_both",
+  "accept_research_patch": false,
+  "development": {
+    "stage": "development",
+    "scope": "expanded",
+    "treatment": "capped",
+    "model": "strong_both",
+    "top_n": 3,
+    "utility": 0.0011130668270801355,
+    "ranking_utility": -0.004844838900422421,
+    "equal_utility": 0.00695639139474305,
+    "xirr": 8.103644974427615e-05,
+    "drawdown": 4.891763117303993e-05,
+    "achievement": 0.000350877192982324,
+    "shortfall": 4.492152359023699e-05,
+    "ndcg": 8.084076632997039e-05,
+    "rank_ic": -0.00017773754433841882
+  },
+  "recent": {
+    "stage": "recent",
+    "scope": "expanded",
+    "treatment": "capped",
+    "model": "strong_both",
+    "top_n": 3,
+    "utility": -0.028432934658634557,
+    "ranking_utility": -0.03397852554312131,
+    "equal_utility": -0.0318024996486127,
+    "xirr": -0.0002442637022644499,
+    "drawdown": -0.000550777974749006,
+    "achievement": 5.8479532163757675e-05,
+    "shortfall": -0.00041825602898296066,
+    "ndcg": -0.0005042021887150527,
+    "rank_ic": -0.0001753683221473734
+  },
+  "coverage": 4436,
+  "website_changed": false,
+  "fresh_validation": false
+}

@@ -1,0 +1,7 @@
+model,queries,switches
+conservative_n4_w0.5,14868,313
+conservative_n4_w1.0,14868,313
+conservative_n8_w0.5,14868,159
+conservative_n8_w1.0,14868,159
+utility_n8_w0.5,14868,5246
+utility_n8_w1.0,14868,5246

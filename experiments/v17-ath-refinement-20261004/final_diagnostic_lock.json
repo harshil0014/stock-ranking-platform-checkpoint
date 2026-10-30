@@ -1,0 +1,21 @@
+{
+  "accepted_candidate": null,
+  "diagnostic_candidate": {
+    "family": "age_monotone",
+    "strength": 0.1,
+    "scope": "all",
+    "name": "age_monotone_0.1_all",
+    "eligible": false,
+    "utility": 0.0069116984635967,
+    "coverage": 0.0,
+    "ndcg20": 0.0068228134035119,
+    "target_achievement_top20": 0.0010416666666666,
+    "target_shortfall_top20": -0.0030000472638194,
+    "median_xirr_top20": 0.0132454734229598,
+    "mean_asset_drawdown_top20": 0.0155853994043216,
+    "rank_ic": 0.0032249510282476,
+    "pairwise_accuracy": 0.001053823819322,
+    "gate": null
+  },
+  "purpose": "Post-lock contextual evaluation; diagnostic candidate remains rejected unless all previously specified gates passed."
+}

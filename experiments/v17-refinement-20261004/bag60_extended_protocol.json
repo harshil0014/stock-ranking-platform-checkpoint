@@ -1,0 +1,21 @@
+{
+  "locked_at": "2026-10-03T21:18:55.533147+00:00",
+  "hypothesis": "The fixed champion contribution may dominate the 60M specialist. Test stronger confidence-weighted learned correction after averaging seeds; no new inputs or age penalties.",
+  "alphas": [
+    0.35,
+    0.4,
+    0.5
+  ],
+  "aggregations": [
+    "mean",
+    "median"
+  ],
+  "share": 1.0,
+  "regime_beta": [
+    0.05,
+    0.1
+  ],
+  "configurations": 12,
+  "same_gates_and_leave_one_seed_out": true,
+  "stop": "End60M score-weight search after this extension; do not relax gates."
+}

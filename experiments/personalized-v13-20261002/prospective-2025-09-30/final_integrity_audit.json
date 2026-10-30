@@ -1,0 +1,18 @@
+{
+  "decision_sha256": "583f38a30c6d9941f775f8a8400c10613ccdcc5a6f5d33c2efd34abed6ffa8fb",
+  "first_reveal_record_sha256": "a714c2a994ea64f624aa3dae6e70ef001024ba245fe49d78d75a728bcfef17ca",
+  "original_reveal_preserved": true,
+  "post_reveal_repair_audit_sha256": "80837cf7c9eca570627827415be1e826f4ec63da35122435b4cb5ffb406b3921",
+  "pre_reveal_audit_sha256": "24b367b90b38a3907afe5667e1b7c8429f88426214a87f0f8d85ae22d3ffca6f",
+  "pre_reveal_record_sha256": "e870f44a8f20965bb1eb81c8fdee26d34b28867642f42a9e7fc2a0a27b454939",
+  "production_head": "c12dd9b189bc71684bfac52606eb89abd5e383c7",
+  "production_head_unchanged": true,
+  "production_mutated": false,
+  "repair_is_post_reveal_not_fresh_blind": true,
+  "repaired_evaluation_sha256": "271751fb8883420b429af465d3505d3d3e68a6f7de8186b73d1f780a435a61bb",
+  "report_sha256": "e1f253a3cc818b70ff101fec2f3a6d982491371e9ad8a3e16bae55c690b6b6db",
+  "schema": "v13_prospective_final_integrity_audit_v1",
+  "scores_and_selection_unchanged": true,
+  "scores_before_reveal_sha256": "5040171dd8a88f9202a89dadba4538537a3571d0eba6bcec0f631634c5a49926",
+  "selection_lock_sha256": "dad3ce68b22a1f744650e501505a3ebc78dc7c4bd39c3247982c4ed84bcac13b"
+}

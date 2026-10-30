@@ -1,0 +1,20 @@
+{
+  "verdict": "PROMISING CHALLENGER",
+  "replace_d499580": false,
+  "production_champion": "d499580",
+  "selected_candidate": "growth_retained_0",
+  "development_gates_pass": true,
+  "12m_return_loss_repaired": true,
+  "12m_drawdown_recovery_fraction": 0.8704042370370373,
+  "development_all_other_profiles_unchanged": true,
+  "exposed_supporting_only": true,
+  "no_deployment": true,
+  "limitations": [
+    "Wide four-year block intervals include regression",
+    "12M June2021 return deficit worsens and March2023 deficit remains",
+    "Only 40.14% aggregate development Top20 overlap with champion; gate uses pre-existing high-turnover exception",
+    "Current official-action completeness after September18 unproved",
+    "No new unexposed validation; frozen research universe and provider-history revision exposure remain"
+  ],
+  "completed_at": "2026-10-03T16:38:32.636570+00:00"
+}

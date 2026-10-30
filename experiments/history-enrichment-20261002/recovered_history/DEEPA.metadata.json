@@ -1,0 +1,19 @@
+{
+  "ticker": "DEEPA",
+  "isin": "INE1M2N01020",
+  "provider": "DEEPA.NS",
+  "trade_date": "2026-09-18",
+  "official_price": 188.31,
+  "status": "RECOVERED",
+  "rows": 9,
+  "first_date": "2026-09-08",
+  "last_date": "2026-09-18",
+  "terminal_lag_days": 0,
+  "terminal_relative_difference": 1.2964825300163224e-08,
+  "listing_date": "2026-09-08",
+  "history_precedes_listing_date": false,
+  "csv_sha256": "5498088f4dbb906414df11652b803e70006587b4ca3515ba3bb30bb45d4f4e06",
+  "source": "Yahoo Finance secondary history",
+  "identity_mapping": "exact NSE ticker -> .NS",
+  "accepted_for_research_overlay": true
+}

@@ -1,0 +1,105 @@
+{
+  "advanced": [
+    "hist|full_risk|percentile",
+    "hist|high_drawdown|percentile",
+    "lgbm|drawdown_core|utility4",
+    "lgbm|drawdown_core|xirr8",
+    "ridge|high_drawdown|percentile",
+    "ridge|full_risk|percentile",
+    "lgbm|high_core|xirr8"
+  ],
+  "eliminated": [
+    {
+      "candidate": "hist|proxy_age|percentile",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|full_risk|xirr8",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|high_drawdown|xirr8",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|no_growth|xirr4",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|full_risk|xirr4",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "ridge|proxy_age|percentile",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|no_goal_in_ranker|utility4",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|high_drawdown|utility4",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|high_vol|xirr4",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|no_growth|utility4",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|proxy_age|utility4",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|proxy_age|xirr8",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|no_goal_in_ranker|xirr8",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|full_risk|utility4",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|drawdown_core|xirr4",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|high_drawdown|xirr4",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|no_goal_in_ranker|xirr4",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|no_growth|xirr8",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|high_vol|xirr8",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|high_vol|utility4",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|high_core|xirr4",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|high_core|utility4",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    },
+    {
+      "candidate": "lgbm|proxy_age|xirr4",
+      "reason": "Lower qualification utility or larger worst-date shortfall than advancing families"
+    }
+  ]
+}

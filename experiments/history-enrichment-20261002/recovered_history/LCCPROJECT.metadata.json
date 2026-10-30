@@ -1,0 +1,19 @@
+{
+  "ticker": "LCCPROJECT",
+  "isin": "INE1FPN01026",
+  "provider": "LCCPROJECT.NS",
+  "trade_date": "2026-09-18",
+  "official_price": 155.78,
+  "status": "RECOVERED",
+  "rows": 1,
+  "first_date": "2026-09-18",
+  "last_date": "2026-09-18",
+  "terminal_lag_days": 0,
+  "terminal_relative_difference": 7.836070908568934e-09,
+  "listing_date": "2026-09-17",
+  "history_precedes_listing_date": false,
+  "csv_sha256": "1dba7aceae6238f045ce3dff0071bf2c5ef85edfa0ae4b379116ab894a7c6b21",
+  "source": "Yahoo Finance secondary history",
+  "identity_mapping": "exact NSE ticker -> .NS",
+  "accepted_for_research_overlay": true
+}

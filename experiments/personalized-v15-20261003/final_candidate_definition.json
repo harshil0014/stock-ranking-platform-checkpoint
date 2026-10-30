@@ -1,0 +1,26 @@
+{
+  "selected": {
+    "candidate": "balanced_return__confidence_only__0.2",
+    "label": "balanced_return",
+    "recipe": "confidence_only",
+    "alpha": 0.2,
+    "eligible": false,
+    "utility": 0.04793849331005247,
+    "top20_overlap": 0.396875,
+    "coverage_delta": 0.0,
+    "ndcg20_delta": 0.03514245966184921,
+    "target_achievement_top20_delta": 0.04722222222222222,
+    "target_shortfall_top20_delta": -0.020019017139610486,
+    "median_xirr_top20_delta": 0.1718910989869692,
+    "mean_asset_drawdown_top20_delta": 0.004860778341763319,
+    "rank_ic_delta": 0.0258088095294937,
+    "pairwise_accuracy_delta": 0.009148686671921723
+  },
+  "formula": "champion_score*(1-alpha*confidence) + learned_correction_percentile*alpha*confidence",
+  "confidence": "observed fraction of eight growth/ATH/risk fields; no negative missingness penalty",
+  "evaluation_model": "evaluation_model.txt",
+  "current_model": "current_model.txt",
+  "foundation": "frozen d499580; original core parameters and .67/.33 goal/ranker blend",
+  "fundamentals_peers": "Diagnostic only, no training features",
+  "current_execution_limit": "Official action authority ends 2026-09-18; later unchanged nominal basis verified, but absence of other actions not proven"
+}

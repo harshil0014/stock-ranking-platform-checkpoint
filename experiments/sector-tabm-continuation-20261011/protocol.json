@@ -1,0 +1,23 @@
+{
+  "families": [
+    "tabm_compact",
+    "tabm_embedded"
+  ],
+  "checkpoints_total_epochs": [
+    24,
+    48
+  ],
+  "initial_epochs": 12,
+  "hypothesis": "Original twelve-epoch training losses continued decreasing; that alone does not prove underfitting. Compare fixed additional training budgets before rejecting TabM. No inference labels control optimization or stopping.",
+  "training": "Load original frozen model/preprocessor, verify hashes and exact training identities. Restart AdamW at lr.0003, weight_decay.001; 36additional epochs, checkpoints after12/36. Batch4096, query-weighted three-head MSE, clip_grad_norm1. Seed20261011. Same original annual endpoint cutoff and full valid training rows.",
+  "controls": "Original CPU twelve-epoch predictions remain controls. GPU PyTorch2.11 versus original CPU2.12 is disclosed; before optimization compare GPU inference to saved base on each annual query and record native differences. This is a continuation with a new optimizer, not uninterrupted original training.",
+  "scoring": "Sector percentiles per target; balanced=.5return+.25risk+.25goal retained as a target-tradeoff hypothesis. Weights .1/.3/1 relative to reference percentile; no company-specific tuning. Missing primary evidence falls back to reference.",
+  "selection": "Development2020-23 only: lock highest expanded raw Top3 rankIC per family/checkpoint; tie-break non-return regressions then name. Also lock candidate with fewest development Top3 non-return regressions. MeanXIRR selection weight0. Recent2024-25 exposed; no fresh validation.",
+  "status": "Adaptive research after viewing original specialist outcomes. Full gates, global calibration sensitivity and financial review still required.",
+  "sources": [
+    "https://github.com/yandex-research/tabm",
+    "https://pytorch.org/get-started/locally/"
+  ],
+  "production_change": false,
+  "fresh_validation": false
+}

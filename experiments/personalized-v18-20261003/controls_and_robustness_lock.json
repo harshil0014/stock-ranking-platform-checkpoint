@@ -1,0 +1,12 @@
+{
+  "locked_at": "2026-10-03T17:44:58.149772+00:00",
+  "controls": [
+    "average original V17 with seed20261004 V17",
+    "average original V17 with seed20261005 V17",
+    "agreement attenuation0.5",
+    "agreement attenuation1.0",
+    "confidence attenuation0.5",
+    "confidence attenuation1.0"
+  ],
+  "robustness": "For eligible finalists in utility order, run seed20261004 and per-date refits. Must retain original champion gates, nonnegative12M return/drawdown, all-profile return vs champion >=-0.025, all-profile drawdown >=-0.01; versus matched V17 variant aggregate return>=0, drawdown>=-0.005, achievement>=-0.005, shortfall<=0.0025, NDCG>=0 and utilitygain>0. No threshold changes. Stop at first survivor; all registered candidates remain in ledger."
+}

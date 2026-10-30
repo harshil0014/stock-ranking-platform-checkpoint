@@ -1,0 +1,33 @@
+{
+  "schema_version": "personalized_deeper_walkforward_v2",
+  "created": "2026-10-02",
+  "panel": "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz",
+  "outcome_horizon_months": 12,
+  "initial_history_dates": [
+    "2015-01-31","2015-02-28","2015-03-31","2015-06-30","2015-09-30","2015-12-31",
+    "2016-03-31","2016-06-30","2016-09-30","2016-12-31",
+    "2017-03-31","2017-06-30","2017-09-30","2017-12-31",
+    "2018-03-31","2018-06-30","2018-09-30","2018-12-31",
+    "2019-03-31","2019-06-30","2019-09-30","2019-12-31"
+  ],
+  "development_selection_dates": [
+    "2020-03-31","2020-06-30","2020-09-30","2020-12-31",
+    "2021-03-31","2021-06-30","2021-09-30","2021-12-31",
+    "2022-03-31","2022-06-30","2022-09-30","2022-12-31",
+    "2023-03-31","2023-06-30","2023-09-30","2023-12-31"
+  ],
+  "postlock_2024_diagnostics": [
+    "2024-03-31","2024-06-30","2024-09-30","2024-12-31"
+  ],
+  "untouched_final_dates": ["2025-01-31","2025-08-31"],
+  "postfinal_2025_diagnostics": [
+    "2025-02-28","2025-03-31","2025-04-30","2025-05-31","2025-06-30","2025-07-31"
+  ],
+  "training_rule": "For every scored decision date, train only on rows whose 12-month endpoint is strictly earlier than the decision date.",
+  "selection_rule": "Architecture, feature recipe, label objective, hyperparameters, score blend and penalties are selected only on 2020-2023 development_selection_dates. All 2024 and 2025 labels remain sealed until a locked selection exists. Untouched final dates are evaluated once and cannot influence selection.",
+  "final_integrity_rule": "The final 2025-01-31 and 2025-08-31 outcomes must not be read, summarized, or used in any search before locked_selection.json is written. They are new to prior championship research.",
+  "current_facts_policy": "Current company facts may map ISIN to a price-history file only; no present-day sector or fundamental value may be a historical model feature.",
+  "promotion_rule": "A replacement requires broad improvement across robust aggregate metrics without material profile/date regressions; extreme mean XIRR has zero selection weight.",
+  "production_mutated": false,
+  "frozen_champion_mutated": false
+}

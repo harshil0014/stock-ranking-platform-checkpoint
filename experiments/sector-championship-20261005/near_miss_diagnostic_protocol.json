@@ -1,0 +1,9 @@
+{
+  "candidate": {
+    "name": "balanced_strength_0.2",
+    "family": "balanced_strength",
+    "weight": 0.2
+  },
+  "status": "Diagnostic only: failed prespecified sector consistency gate; not a promotion candidate",
+  "reason": "Only nonidentical trial improving all 18 development aggregate checks"
+}

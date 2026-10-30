@@ -1,0 +1,13 @@
+{
+  "rows": 39924,
+  "universe": 4436,
+  "decision_date": "2026-10-03",
+  "action_checked_through": "2026-10-04",
+  "prices": "Frozen V7 observed closes through latest trading date; no future prices",
+  "partial_goal_recovered": 161,
+  "available": 29817,
+  "carry_present": 29817,
+  "goal_present": 29899,
+  "actions_sha256": "a8170277f7db407a79409af56e66d1937a2c130e4f9eb34c26568b23b955d114",
+  "split_ledger_sha256": "60d7790fcd3ec2eda26fbdf465893465dc3ff811796742740ba0304992442062"
+}

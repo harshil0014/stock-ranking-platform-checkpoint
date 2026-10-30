@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\.venv-gpu-research-20261011\\Scripts\\python.exe",
+    "-W",
+    "ignore",
+    "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\research\\runners\\specialist_date_block_audit_20261011.py",
+    "neural"
+  ],
+  "exit_code": 0,
+  "source_sha256": "ecb0b8cf13e4e1992a82a4676db924f540aa84cba2a48e776a30ae8ea2baab67",
+  "log": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\sector-tabm-continuation-20261011\\specialist_date_block_audit_20261011.py_neural.1791733733561143700.log",
+  "log_sha256": "a4483bbb581d41337d169072f2be8ec1074ddd01de6656f7bd139759c4721619"
+}

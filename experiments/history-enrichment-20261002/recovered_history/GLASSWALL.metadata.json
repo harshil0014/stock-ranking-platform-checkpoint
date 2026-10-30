@@ -1,0 +1,19 @@
+{
+  "ticker": "GLASSWALL",
+  "isin": "INE644Q01039",
+  "provider": "GLASSWALL.NS",
+  "trade_date": "2026-09-18",
+  "official_price": 269.51,
+  "status": "RECOVERED",
+  "rows": 3,
+  "first_date": "2026-09-16",
+  "last_date": "2026-09-18",
+  "terminal_lag_days": 0,
+  "terminal_relative_difference": 3.6234740859689614e-08,
+  "listing_date": "2026-09-16",
+  "history_precedes_listing_date": false,
+  "csv_sha256": "7d23e037635c5817c565d1847eadcf0551e656eb07489af45d8a38fd1d5b5f97",
+  "source": "Yahoo Finance secondary history",
+  "identity_mapping": "exact NSE ticker -> .NS",
+  "accepted_for_research_overlay": true
+}

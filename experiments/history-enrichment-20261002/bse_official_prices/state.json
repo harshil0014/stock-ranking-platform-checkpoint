@@ -1,0 +1,1753 @@
+{
+  "505685|19/09/2021|18/09/2022": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2021-2022\\BSE_505685_19-09-2021_to_18-09-2022.csv",
+    "method": "FORM",
+    "rows": 7,
+    "sha256": "b213dc9a73bb59dd1c97e0e2bae70807f3dff49b60a25e6eff0568d45ae8c48a",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=505685&FDates=19/09/2021&TDates=18/09/2022&Seg=C&sortorder=true"
+  },
+  "505685|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_505685_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 14,
+    "sha256": "90f068e061db5b9323c671eea32335b2ae46e261f556f0e7bf5b19e51df61da3",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=505685&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "505685|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_505685_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 22,
+    "sha256": "8228473be079bbbe6dee1184c13282f8b4a619d91ed054b37182d2da44655fe2",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=505685&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "505685|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_505685_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 31,
+    "sha256": "e88a551e7e2ae670a6b28118c97faa61a171058354c26af0d23577398cbe1021",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=505685&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "505685|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_505685_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 36,
+    "sha256": "a1c3fc09f16483101ac2afa0868edfc911980f3348fc7cf5616bdda12678b537",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=505685&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "513460|19/09/2021|18/09/2022": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2021-2022\\BSE_513460_19-09-2021_to_18-09-2022.csv",
+    "method": "SESSION_API",
+    "rows": 237,
+    "sha256": "6472869c0d5ad02425c47070732bcbb156ad7a9404e9f29fe3a85e37071bc693",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=513460&FDates=19%2F09%2F2021&TDates=18%2F09%2F2022&Seg=C&sortorder=true"
+  },
+  "513460|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_513460_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 228,
+    "sha256": "0d23b57c727953ddeb18e6c6a96c455265428d8b17297f9788c8e225fdf69bd4",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=513460&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "513460|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_513460_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 214,
+    "sha256": "dce30eaa5ea936dad12b9d8803a601afc8fd534e2578e7373ebcaa4bf89cf7c6",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=513460&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "513460|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_513460_19-09-2024_to_18-09-2025.csv",
+    "method": "FORM",
+    "rows": 216,
+    "sha256": "60307b1e7322f14f8700e631b36903d8a659cc6348f6bae9294b59e640f2d232",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=513460&FDates=19/09/2024&TDates=18/09/2025&Seg=C&sortorder=true"
+  },
+  "513460|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_513460_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 211,
+    "sha256": "b5cc827dd400e025ca47782d24a6cf13097da029dcdb1f1d9d05144be13aea40",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=513460&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "519353|19/09/2021|18/09/2022": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2021-2022\\BSE_519353_19-09-2021_to_18-09-2022.csv",
+    "method": "FORM",
+    "rows": 53,
+    "sha256": "6fe7b72a0fa40c58258e37296c93cdc13cfdb942c1f53a32c8632b1bc11a28e2",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=519353&FDates=19/09/2021&TDates=18/09/2022&Seg=C&sortorder=true"
+  },
+  "519353|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_519353_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 36,
+    "sha256": "9cf45ccd060d48efe43fdcf449623217fdccc1a641a434a04fc7ced5f51edbb0",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=519353&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "519353|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_519353_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 48,
+    "sha256": "74598e506d89eab387c84877c28f09de3e8248db53cbbdbe2f18d601cddf5739",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=519353&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "519353|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_519353_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 17,
+    "sha256": "cba3b600fa21d760fbc29da4f10e317e89db4ecc07fd662ec67690eb76f298bb",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=519353&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "519353|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_519353_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 67,
+    "sha256": "d6dd1fa1593e543601730c41fa5ab220bad129766704cb181e9199fe97fffa61",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=519353&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "520081|19/09/2021|18/09/2022": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2021-2022\\BSE_520081_19-09-2021_to_18-09-2022.csv",
+    "method": "SESSION_API",
+    "rows": 6,
+    "sha256": "33e774cd45e23b3009aa18302272542caa2f1201b3ef3b92aac1000f05609be7",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=520081&FDates=19%2F09%2F2021&TDates=18%2F09%2F2022&Seg=C&sortorder=true"
+  },
+  "520081|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_520081_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 11,
+    "sha256": "f4f8237015565e74070ea4afbeb7584c214b6cc0c7ac60d2e223fcc26e0631ae",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=520081&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "520081|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_520081_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 74,
+    "sha256": "9d6576878a0b48df80fcc46f8793e30939caea18ee445daea365bcda4091546f",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=520081&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "520081|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_520081_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 74,
+    "sha256": "d2f53477f185f9482c476b2993ebf4381de1384126fe1dec730e0c03a2f95357",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=520081&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "520081|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_520081_19-09-2025_to_18-09-2026.csv",
+    "method": "FORM",
+    "rows": 52,
+    "sha256": "070736176d0afbf49eadf1e89028a75468fadc67db80f297d149f651759f5d31",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=520081&FDates=19/09/2025&TDates=18/09/2026&Seg=C&sortorder=true"
+  },
+  "520131|19/09/2021|18/09/2022": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2021-2022\\BSE_520131_19-09-2021_to_18-09-2022.csv",
+    "method": "SESSION_API",
+    "rows": 109,
+    "sha256": "9c1abccaa14efb32ba1f06c28b8210c796a66ef1963a2d74c7f326e8ae0851f9",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=520131&FDates=19%2F09%2F2021&TDates=18%2F09%2F2022&Seg=C&sortorder=true"
+  },
+  "520131|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_520131_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 135,
+    "sha256": "b3dcb61b691d92214141dd913abd5e38ea01478077691f3203696f19aafa2f34",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=520131&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "520131|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_520131_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 107,
+    "sha256": "c6f7e67f5c6664e9391723c45ab6b4d185458be70ff2011c2e16352422e9d2fc",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=520131&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "520131|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_520131_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 79,
+    "sha256": "32b1d7922743417f15dd741ec2b696905259775baa0ef6ed1d9ff333598597d7",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=520131&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "520131|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_520131_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 75,
+    "sha256": "fcc19feb9b8bb40a444a36cfc171fb9c564b47c942f13effca706879409e18df",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=520131&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "521068|19/09/2021|18/09/2022": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2021-2022\\BSE_521068_19-09-2021_to_18-09-2022.csv",
+    "method": "SESSION_API",
+    "rows": 129,
+    "sha256": "8f700ad59552c2178b6580811f72efa941072fe8657a0c7fff079e5eeb75dabd",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=521068&FDates=19%2F09%2F2021&TDates=18%2F09%2F2022&Seg=C&sortorder=true"
+  },
+  "521068|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_521068_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 153,
+    "sha256": "728abde4ce4bcabd52b8bb700dbdca04204ff25b0da9375c76051017aeaa77b8",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=521068&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "521068|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_521068_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 123,
+    "sha256": "a69a72ad7ca29f4f6013ceaba1c2a7642257a0e1a1102749138d07ed69a98649",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=521068&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "521068|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_521068_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 105,
+    "sha256": "fee5e152ccdef01b5cb6d779ea779dc132947364738a1d47d9d97134fbfd383f",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=521068&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "521068|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_521068_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 99,
+    "sha256": "32b147e9e90fc07865e4b08e03c7e082a55234930f5aeff406d0cbb62bd2d27c",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=521068&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "521133|19/09/2021|18/09/2022": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2021-2022\\BSE_521133_19-09-2021_to_18-09-2022.csv",
+    "method": "SESSION_API",
+    "rows": 76,
+    "sha256": "3c69d36a68204daf522c7afe7603d5b991a8c36a93cc817477a3bff24d454f27",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=521133&FDates=19%2F09%2F2021&TDates=18%2F09%2F2022&Seg=C&sortorder=true"
+  },
+  "521133|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_521133_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 76,
+    "sha256": "92c8aa0ab43d06bb98f9859b7726f3ef76f6dee900cb241035ca56da50f99098",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=521133&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "521133|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_521133_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 98,
+    "sha256": "d8f7dfa35601b38c4404cce3befa79f56063c134873c25569c56187a61ed6309",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=521133&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "521133|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_521133_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 112,
+    "sha256": "40509a80d385fb3fdf5d85875d663deb667d3d23f9e415a2461bbe51882c952e",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=521133&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "521133|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_521133_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 67,
+    "sha256": "3fc1a8f96ab00492dccd272952834980b0e7401b3996da2a034433628590230a",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=521133&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "526115|19/09/2021|18/09/2022": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2021-2022\\BSE_526115_19-09-2021_to_18-09-2022.csv",
+    "method": "SESSION_API",
+    "rows": 130,
+    "sha256": "e777bb2c8aed056763e49da686cc7cdaffc48f370ee54ae94390c3efa188ed52",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=526115&FDates=19%2F09%2F2021&TDates=18%2F09%2F2022&Seg=C&sortorder=true"
+  },
+  "526115|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_526115_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 139,
+    "sha256": "755bc4313b2ce671f00fcbc45026442920042edfddcad9a5c5e6cfbb6abc0aaf",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=526115&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "526115|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_526115_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 188,
+    "sha256": "8ce174c2b5b947c125cb8e08f2b0683981ae1dd6093f24ced9014559b42b3f98",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=526115&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "526115|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_526115_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 191,
+    "sha256": "20c9f76db74f5bce3d32e9efd896f7cede3c758056741a8ed153f220520483fe",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=526115&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "526115|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_526115_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 229,
+    "sha256": "44772cb9bbd1abab2061c2824179c440f2858f1344d0577575caca493d97e63b",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=526115&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "526331|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "526331|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "526331|19/09/2023|18/09/2024": {
+    "error": "fast:RuntimeError:BSE CSV curl fallback failed (22): curl: (22) The requested URL returned error: 403 | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "526331|19/09/2024|18/09/2025": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "526331|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_526331_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 5,
+    "sha256": "e93818b6e82415db6329f6fcc6fe3def083553b9677a251fd47b0f3edeeb0fad",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=526331&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "530601|19/09/2021|18/09/2022": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2021-2022\\BSE_530601_19-09-2021_to_18-09-2022.csv",
+    "method": "SESSION_API",
+    "rows": 65,
+    "sha256": "bc82d73e97f878d74e66ae21921ce6dfc326bf8705f947a016e7e798189c90c8",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=530601&FDates=19%2F09%2F2021&TDates=18%2F09%2F2022&Seg=C&sortorder=true"
+  },
+  "530601|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_530601_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 70,
+    "sha256": "7b492af0f2858a1ca8d097d0aa0ab2f548f5bfeae4f700d02b8b2c6c2c822c1a",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=530601&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "530601|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_530601_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 139,
+    "sha256": "41f713e121607c2d97a0b967da4e542c312bd711ca627bafb619d1a71ea4d89a",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=530601&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "530601|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_530601_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 243,
+    "sha256": "3edb226523bc027202fdc5a07ae574a26010b8ed619413f4f6eca4cb1ff000f8",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=530601&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "530601|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_530601_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 222,
+    "sha256": "a4e017cc3bb581ed5b0f6146d1fb87571c37997300d2513d2c759704fce5ffef",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=530601&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "530755|19/09/2021|18/09/2022": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2021-2022\\BSE_530755_19-09-2021_to_18-09-2022.csv",
+    "method": "SESSION_API",
+    "rows": 227,
+    "sha256": "b10e1798bb64d24c73b9701cff6b75a3eaeca7a411957859636d19c80149ed9c",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=530755&FDates=19%2F09%2F2021&TDates=18%2F09%2F2022&Seg=C&sortorder=true"
+  },
+  "530755|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_530755_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 249,
+    "sha256": "3c7e4ee493d8efdc25a9615292bea290e6bd21b0a23c2b1455db7fd56588b8a6",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=530755&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "530755|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_530755_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 242,
+    "sha256": "235de26724214c92ad6522ad72c831e7c974732568aa8cb44a250fbd5457a6e5",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=530755&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "530755|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_530755_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 238,
+    "sha256": "0415175e6329837a444875496ffcf06e8b331878e1b89abaf6eec5c26343b851",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=530755&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "530755|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_530755_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 183,
+    "sha256": "08033c83aa26384572b4a339658dc8cbd278ab6b4c27e10e193a7f2a6c712f98",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=530755&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "531334|19/09/2021|18/09/2022": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2021-2022\\BSE_531334_19-09-2021_to_18-09-2022.csv",
+    "method": "SESSION_API",
+    "rows": 236,
+    "sha256": "5955a71097ba4080fc9556a91a2ec06f149638479564166ab0aaa5f6d101a887",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=531334&FDates=19%2F09%2F2021&TDates=18%2F09%2F2022&Seg=C&sortorder=true"
+  },
+  "531334|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_531334_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 209,
+    "sha256": "769efbba693280228ea16fb76b0f2ab4f1e8e8fdb7e9c05181e59b9cbef3e97a",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=531334&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "531334|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_531334_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 232,
+    "sha256": "0a2a8e7b784b49aa3e5ee901fea339980ab48a8350dcf190d18833eae4e609cc",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=531334&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "531334|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_531334_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 129,
+    "sha256": "56b534499293ce242488afeb513b6998c385d98cf7ffaaa5faa353517f2ef003",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=531334&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "531334|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_531334_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 112,
+    "sha256": "cb6db3461e3752eb26044193b7fdcc077438168e7993945279f000e151898c4f",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=531334&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "531585|19/09/2021|18/09/2022": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2021-2022\\BSE_531585_19-09-2021_to_18-09-2022.csv",
+    "method": "SESSION_API",
+    "rows": 246,
+    "sha256": "f72118c08dd48d9c6ec11f0a2d9300ec2d1b88718541db6e7ed28331563425c2",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=531585&FDates=19%2F09%2F2021&TDates=18%2F09%2F2022&Seg=C&sortorder=true"
+  },
+  "531585|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_531585_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 215,
+    "sha256": "f389b3ef6ab3da3ec7ebdefa31d0be10b85a6511d7d147cd7993d7a9dfca8424",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=531585&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "531585|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_531585_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 203,
+    "sha256": "8c08f8ca5db3faeeff16744022255afbed6e25aa4690aced1290e8eacef3b8d4",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=531585&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "531585|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_531585_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 218,
+    "sha256": "26373ea170226b137466201102135c7af48497da3446193aa06f0320ef242800",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=531585&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "531585|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_531585_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 189,
+    "sha256": "cf3e00d60801f23a3f39830bb75d13e5dad25e18d00b4d06a95be116471d130f",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=531585&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "531600|19/09/2021|18/09/2022": {
+    "error": "fast:RuntimeError:BSE CSV curl fallback failed (22): curl: (22) The requested URL returned error: 403 | form1:RuntimeError:BSE CSV curl fallback failed (22): curl: (22) The requested URL returned error: 403 | form2:RuntimeError:BSE CSV curl fallback failed (22): curl: (22) The requested URL returned error: 403",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "531600|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_531600_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 142,
+    "sha256": "3234f235aaa6f8a34f5f9aee084b3b2517b5e745e4354bcf7aefacbe40a33a27",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=531600&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "531600|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_531600_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 226,
+    "sha256": "51141b28fb3a7eae9df672bf5827b70ec8cde8d0db98dd517439131233cd2561",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=531600&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "531600|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_531600_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 145,
+    "sha256": "b11f371d041332f7300ecf4126a199ef2438de53280cb9b8d0ee13343e68487a",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=531600&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "531600|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_531600_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 90,
+    "sha256": "80cef4cc624d42c50a05b8c801b33400c473d324ae8b78ebed5f1f1328db051b",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=531600&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "534920|19/09/2021|18/09/2022": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2021-2022\\BSE_534920_19-09-2021_to_18-09-2022.csv",
+    "method": "SESSION_API",
+    "rows": 38,
+    "sha256": "1fa4937fb96f1eb8f323e105ff0c020d5b4f7e9e6dd37a66928a7c124a5eae31",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=534920&FDates=19%2F09%2F2021&TDates=18%2F09%2F2022&Seg=C&sortorder=true"
+  },
+  "534920|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_534920_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 46,
+    "sha256": "675e0ca27a44542fe950d70f91cbc8cff5b85040872d125f68466abb7d32841e",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=534920&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "534920|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_534920_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 25,
+    "sha256": "2e0eb92022ec56e6eda0be9c70ed97d8e3fb7ca4811c81a6485d64bf299a9a26",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=534920&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "534920|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_534920_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 48,
+    "sha256": "59ea893ed8aa45b235d64b8337d3424ae589a03d8ae8bdd3c5898557ec5338a9",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=534920&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "534920|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_534920_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 212,
+    "sha256": "989dfc8236172cfa99a4d4116a1c4a38caa81cccd0cd240b823da54bb47034b2",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=534920&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "536737|19/09/2021|18/09/2022": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2021-2022\\BSE_536737_19-09-2021_to_18-09-2022.csv",
+    "method": "SESSION_API",
+    "rows": 6,
+    "sha256": "9d1b77dc5bb6b769f957b92d129f50bcc9589f1006a806f281ab896813b5b821",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=536737&FDates=19%2F09%2F2021&TDates=18%2F09%2F2022&Seg=C&sortorder=true"
+  },
+  "536737|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "536737|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_536737_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 4,
+    "sha256": "dbd06336c423bee8fff199668cab88c5a0533e1b5b18e6d26ee3e16622ac4e8a",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=536737&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "536737|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_536737_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 2,
+    "sha256": "28e5db8fad4b1c36d79a27ae603fb1c26a3d0179b96734232486264a01ac9abe",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=536737&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "536737|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_536737_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 41,
+    "sha256": "70555e876f80b1f23aae87b549d84b6262a0b0e9ec383c78bce4b250090da10c",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=536737&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "539167|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "539167|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "539167|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_539167_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 117,
+    "sha256": "9c462d7f6417c8fddcdf48966b85161926279cf423c5d5af4d42d55edeef3a20",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=539167&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "539167|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_539167_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 213,
+    "sha256": "b43997fa6943c851ca4ade207bbbf8e3fe1d1c17bf8806f6858b7798e9ec6394",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=539167&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "539167|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_539167_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 200,
+    "sha256": "31beaefd83c6d7a9ad5c2c06c5aeaf1db03da88c81ccb972b1fd027bdde7dbbf",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=539167&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "540269|19/09/2021|18/09/2022": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2021-2022\\BSE_540269_19-09-2021_to_18-09-2022.csv",
+    "method": "SESSION_API",
+    "rows": 80,
+    "sha256": "2d7c141276e2b08a9519e677dae7a45b5bc2c42fb501b118606075a36e6f48cd",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=540269&FDates=19%2F09%2F2021&TDates=18%2F09%2F2022&Seg=C&sortorder=true"
+  },
+  "540269|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_540269_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 58,
+    "sha256": "83ca6b89d919af5bc266180d2a7497197500d6fb3125030791465b0e30227709",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=540269&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "540269|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_540269_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 56,
+    "sha256": "ad7d3576feeeda8adac0a378be673d3e9c81cc0333cd0ff3214359a331b77d9c",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=540269&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "540269|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_540269_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 21,
+    "sha256": "303761343bdc1fa76ad65955d6e9164a304c66b9c2bf86fb31bd9f5623d33787",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=540269&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "540269|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_540269_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 45,
+    "sha256": "e84e8569b4c46170c46bfc66aa7bbdff507b78b85783c2cb56f6cc17f4cd9f44",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=540269&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "540332|19/09/2021|18/09/2022": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2021-2022\\BSE_540332_19-09-2021_to_18-09-2022.csv",
+    "method": "SESSION_API",
+    "rows": 85,
+    "sha256": "94c28bfadeaa209b52b9c790e00230eb8999581071dacd11cbe3d86492f8e3f6",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=540332&FDates=19%2F09%2F2021&TDates=18%2F09%2F2022&Seg=C&sortorder=true"
+  },
+  "540332|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_540332_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 125,
+    "sha256": "c210304027403a37a716b4030f673620cd5f21fcbc4bdcb3ace1f24802f3ccd2",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=540332&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "540332|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_540332_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 125,
+    "sha256": "484ca5d057d92f474cd96b96327c6f23e24c021d6e631155ce31a1fbc7eaeed7",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=540332&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "540332|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_540332_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 116,
+    "sha256": "78f4ec4734d98c78ae36c252b2689c5fa83e94903067d5f27563944d22cec9e2",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=540332&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "540332|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_540332_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 115,
+    "sha256": "12ca4bca91557487836d977622667e6ec6705b6dac5af3350a0a5abaf9c692d1",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=540332&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "543765|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "543765|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_543765_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 149,
+    "sha256": "24fe8ae17db37c841e731e5bda3c6962eb2492a5dbe91b2cfb160024c005921c",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=543765&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "543765|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_543765_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 219,
+    "sha256": "8d4756dd3783d8ed9184cf16f3e82c35be46919021d1a1f74c01161d9acd9181",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=543765&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "543765|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_543765_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 151,
+    "sha256": "154d1e109232b776bb354063078c83cc65b4ccee24967d6f1347defd5da5877f",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=543765&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "543765|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_543765_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 98,
+    "sha256": "ade62c3be136beafc17d1844e463eee175c7a8b2dcd0103598a165989202f753",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=543765&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "543970|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "543970|19/09/2022|18/09/2023": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2022-2023\\BSE_543970_19-09-2022_to_18-09-2023.csv",
+    "method": "SESSION_API",
+    "rows": 10,
+    "sha256": "e61370c6c2a429531f82559ac151b6473e444b8901243fbc95b4c9d7a3309f77",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=543970&FDates=19%2F09%2F2022&TDates=18%2F09%2F2023&Seg=C&sortorder=true"
+  },
+  "543970|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_543970_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 131,
+    "sha256": "e7454322f5d9687f7bb114a695f84d087de71dbf8cb272548f0f8d30464cf022",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=543970&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "543970|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_543970_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 134,
+    "sha256": "4e38097bd5985b3d44ba74ee6f6ab42595b078a1f294aafd386b8567e1da63db",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=543970&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "543970|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_543970_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 133,
+    "sha256": "8567b24dd46b3d8c71085dc6ea4766e41b5d37d05c38577002e39ab16c5240d1",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=543970&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544183|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544183|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544183|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_544183_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 63,
+    "sha256": "69ac0b43b8d751c4ed78826768ddec23b7cea37d4261535f405b7a3fb5dff2db",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544183&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "544183|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_544183_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 204,
+    "sha256": "7f1915659b132514193fca0544f83f763d38eac176e06c8218e087893540f2f5",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544183&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "544183|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544183_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 126,
+    "sha256": "74048be2aabf68fdec76860e5338c05f5e70ff243610b3b28a20423c134400ef",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544183&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544195|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544195|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544195|19/09/2023|18/09/2024": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2023-2024\\BSE_544195_19-09-2023_to_18-09-2024.csv",
+    "method": "SESSION_API",
+    "rows": 60,
+    "sha256": "2ce3b7ce0972ab979e1e948e68497a81500119803ef746fa4638fab3a94053cd",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544195&FDates=19%2F09%2F2023&TDates=18%2F09%2F2024&Seg=C&sortorder=true"
+  },
+  "544195|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_544195_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 229,
+    "sha256": "1bb178b479f17076d2d3c4f48b625585aa1d2a5b93e043c60a284158490aced5",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544195&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "544195|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544195_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 175,
+    "sha256": "e6c85c43460a2dbcc0cf408dd1a024e3629de274889cd1429abfb3d5d0c18c53",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544195&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544221|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544221|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544221|19/09/2023|18/09/2024": {
+    "error": "fast:RuntimeError:BSE CSV curl fallback failed (22): curl: (22) The requested URL returned error: 403 | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544221|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_544221_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 183,
+    "sha256": "67965969dfedf94d975ba5dccbf97775b015acd6fe2fd6700f2c8fe8a513aecd",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544221&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "544221|19/09/2025|18/09/2026": {
+    "error": "fast:RuntimeError:BSE CSV curl fallback failed (22): curl: (22) The requested URL returned error: 403 | form1:RuntimeError:BSE CSV curl fallback failed (22): curl: (22) The requested URL returned error: 403 | form2:RuntimeError:BSE CSV curl fallback failed (22): curl: (22) The requested URL returned error: 403",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544257|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544257|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544257|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544257|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_544257_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 215,
+    "sha256": "27d9cfbf922027c373f952eb8c2d1bd7424c059b9de9a8654fd48281561444e8",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544257&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "544257|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544257_19-09-2025_to_18-09-2026.csv",
+    "method": "FORM",
+    "rows": 176,
+    "sha256": "0b0ac893f2af1852b95e9e77234cb8b5ef2c956fdb0ba915285569614c05190b",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544257&FDates=19/09/2025&TDates=18/09/2026&Seg=C&sortorder=true"
+  },
+  "544331|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544331|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544331|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544331|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_544331_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 156,
+    "sha256": "75dcd97a88d7c8fff604dcd6a46c8e9260a5193d664f6e379072e2aef29d30bf",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544331&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "544331|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544331_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 131,
+    "sha256": "fdf43ed24536548058378665268fdef1a25a3cca1d10732a5f4404c60fcc5b0f",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544331&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544365|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544365|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544365|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544365|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_544365_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 133,
+    "sha256": "fa1305574f5b49f8f1afc64bce7562d34c99d039be4447628330b5325a997bc4",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544365&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "544365|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544365_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 197,
+    "sha256": "51fd9f481c459c18c544accc693ce0079aa4500b1a70f48fcc86afef728072d2",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544365&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544373|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544373|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544373|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:BSE autocomplete returned no exact result for code 544373 | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544373|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_544373_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 93,
+    "sha256": "3c450fec45d6e998640993cb6a53343f4921b5bfcbc0791defa9ab03cf3c0ac5",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544373&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "544373|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544373_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 115,
+    "sha256": "2ed118c75bd89899752c5dadfafc88ac70e5907c7ea201690197a51e78e6d03a",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544373&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544393|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544393|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544393|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544393|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_544393_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 109,
+    "sha256": "73ff693ab33e372267c60f196b3db687422b4b57d5e3cbd13f2e83208a1fd2bf",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544393&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "544393|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544393_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 194,
+    "sha256": "768650848410d1f3ea7e3ac75eedfdd7c3b18bfbac2557b68c024e284547ceb6",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544393&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544436|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544436|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544436|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544436|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_544436_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 47,
+    "sha256": "d99621b851e9ef607cbe4da845a74a1f234bcac2a5ed8c86f4c6dc9279a5c47f",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544436&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "544436|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544436_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 223,
+    "sha256": "57bade587c7b9c554348b1d66983774b90b3d4b842b0ea28a3911f859c95bf0a",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544436&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544474|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544474|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544474|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544474|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_544474_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 26,
+    "sha256": "b18c87a3d0ba31006e8a9158518354095af5aa4cd98b810766df6cfce9cb31b7",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544474&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "544474|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544474_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 155,
+    "sha256": "736a658c7009171aced82bc84bd8a6409fcdd13dc912254e4958309b1e444ff5",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544474&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544503|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544503|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544503|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544503|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_544503_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 9,
+    "sha256": "4072abc3e3a390ddddf9390e64d9009e7911ad3628779187d2349a1eb8dd12a4",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544503&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "544503|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544503_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 213,
+    "sha256": "3a49088e8c3970cfbc709d5258491b019d0b657265d8cac614f9030f55dbc66e",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544503&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544509|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544509|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544509|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544509|19/09/2024|18/09/2025": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2024-2025\\BSE_544509_19-09-2024_to_18-09-2025.csv",
+    "method": "SESSION_API",
+    "rows": 3,
+    "sha256": "d1f72a71a7f639af8eeefd4c600902de3990ea0239488dd24df4a49d2467c008",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544509&FDates=19%2F09%2F2024&TDates=18%2F09%2F2025&Seg=C&sortorder=true"
+  },
+  "544509|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544509_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 174,
+    "sha256": "b4de022d0e3d741f8ac9cba0bd73fbc32d73ba77e8276eb47d25c98b0099092d",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544509&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544565|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544565|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544565|19/09/2023|18/09/2024": {
+    "error": "fast:RuntimeError:BSE CSV curl fallback failed (22): curl: (22) The requested URL returned error: 403 | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544565|19/09/2024|18/09/2025": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544565|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544565_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 173,
+    "sha256": "b514545f8630471f7d053f6184cb47a6d241b5e282f96d183035f63406a21f68",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544565&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544585|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544585|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544585|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544585|19/09/2024|18/09/2025": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544585|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544585_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 108,
+    "sha256": "d7a7fdd86b05f448fc8db536a4584234646fbc084dca7f8e2ad4e0cb64dc5843",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544585&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544616|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544616|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544616|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544616|19/09/2024|18/09/2025": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544616|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544616_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 178,
+    "sha256": "123e832410d2bc2555d5c828a506f16985b539b04b9e5dd43124ad7b25a51a54",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544616&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544659|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544659|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544659|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544659|19/09/2024|18/09/2025": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544659|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544659_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 77,
+    "sha256": "5c223b5a7bcaa0cf5b35de8da8dc84b7cda6b83fb00ab1b0587c1406960e9179",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544659&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544665|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544665|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544665|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544665|19/09/2024|18/09/2025": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544665|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544665_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 127,
+    "sha256": "c390797839b9e52d30806be96b9d9454f201006b7650777419d7ce0c81149897",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544665&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544810|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544810|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544810|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544810|19/09/2024|18/09/2025": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544810|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544810_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 50,
+    "sha256": "0fcdca64ce90a59f93ffc30abd8b0a6192f7b21b63018626c58a96d8e9b71fd5",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544810&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544813|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544813|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544813|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544813|19/09/2024|18/09/2025": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544813|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544813_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 45,
+    "sha256": "50b2f914c4bb16dbafae6ea36e1207b19b396eff83917dd2103048e675946de4",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544813&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544904|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544904|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544904|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544904|19/09/2024|18/09/2025": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544904|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544904_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 8,
+    "sha256": "e8d5726eb0e31d5d0968a91e24156c35558b4d08476be34aa445cccdcd5cd7fd",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544904&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544910|19/09/2021|18/09/2022": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544910|19/09/2022|18/09/2023": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544910|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544910|19/09/2024|18/09/2025": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544910|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544910_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 4,
+    "sha256": "7a3889d1e37497c41c6618f26d16903db2c5d89beb728d8854cdf841153c7428",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544910&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  },
+  "544919|19/09/2023|18/09/2024": {
+    "error": "fast:ValueError:CSV response is empty or implausibly small | form1:RuntimeError:Timed out waiting for BSE result or No Record Found | form2:RuntimeError:Timed out waiting for BSE result or No Record Found",
+    "method": "",
+    "rows": 0,
+    "status": "FAILED",
+    "url": ""
+  },
+  "544919|19/09/2024|18/09/2025": {
+    "error": "",
+    "method": "FORM",
+    "rows": 0,
+    "status": "NO_RECORD",
+    "url": ""
+  },
+  "544919|19/09/2025|18/09/2026": {
+    "error": "",
+    "file": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\history-enrichment-20261002\\bse_official_prices\\raw\\2025-2026\\BSE_544919_19-09-2025_to_18-09-2026.csv",
+    "method": "SESSION_API",
+    "rows": 2,
+    "sha256": "fe46c31d993fe2fe2fe3bb9881e8bd3a0cccc9d38d60737f7662193f1d9d43b2",
+    "status": "DOWNLOADED",
+    "url": "https://api.bseindia.com/BseIndiaAPI/api/StockPriceCSVDownload/w?pageType=0&rbType=D&Scode=544919&FDates=19%2F09%2F2025&TDates=18%2F09%2F2026&Seg=C&sortorder=true"
+  }
+}

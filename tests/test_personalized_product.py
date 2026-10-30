@@ -89,18 +89,22 @@ def test_ui_exposes_editable_inputs_and_real_champion_workflow():
     assert "PRODUCT FALLBACK" not in INDEX_HTML  # status comes from the actual response
 
 
-def test_primary_product_exposes_only_baseline_and_personalized_modes():
+def test_primary_product_exposes_baseline_and_both_personalized_modes():
     for select_id in ("dashboardModel", "liveModel"):
         match = re.search(rf'<select id="{select_id}">(.*?)</select>', INDEX_HTML)
         assert match is not None
         options = re.findall(r'<option value="([^"]+)">([^<]+)</option>', match.group(1))
-        assert options == [("baseline_v1", "Baseline"), ("personalized", "Personalized")]
+        assert options == [("baseline_v1", "Baseline"), ("sector-champion", "Sector Champion"),
+                           ("closing-high", "Closing High"),
+                           ("personalized", "Personalized"), ("personalized-v17", "Personalized V17")]
         assert "Research V2" not in match.group(1)
     assert 'data-view="dashboard" class="mode-button">Baseline</button>' in INDEX_HTML
     assert 'data-view="personalized">Personalized</button>' in INDEX_HTML
+    assert 'data-view="closing-high">Closing High</button>' in INDEX_HTML
+    assert 'data-view="closing-high">Open Closing High</button>' in INDEX_HTML
     assert "Historical Research V2 rankings" in INDEX_HTML
     assert "not an active product ranking mode" in INDEX_HTML
-    assert "value==='personalized'" in APP_JS
+    assert "['personalized','personalized-v17','closing-high','sector-champion'].includes" in APP_JS
 
 
 def test_personalized_http_validation_is_controlled(monkeypatch):

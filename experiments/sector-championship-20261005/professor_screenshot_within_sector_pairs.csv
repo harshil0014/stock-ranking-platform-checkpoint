@@ -1,0 +1,5 @@
+sector,a,b,screenshot_usable,current_order_agrees_with_screenshot
+Auto Components,LUMAXTECH,FRONTSP,False,
+Electrical Equipment,GVT&D,TDPOWERSYS,True,False
+Electrical Equipment,GVT&D,INDOTECH,False,
+Electrical Equipment,TDPOWERSYS,INDOTECH,False,

@@ -1,0 +1,346 @@
+{
+  "created_at": "2026-10-04T08:13:32.849652+00:00",
+  "reason": "Separate bounded extension to test economically motivated conditional influence rather than uniform blending. No exposed-period or current-rank results have been examined.",
+  "candidates": [
+    {
+      "family": "age_monotone",
+      "strength": 0.05,
+      "scope": "all",
+      "gate": "age_context",
+      "name": "age_monotone_0.05_all_age_context"
+    },
+    {
+      "family": "age_monotone",
+      "strength": 0.05,
+      "scope": "all",
+      "gate": "goal_uncertainty",
+      "name": "age_monotone_0.05_all_goal_uncertainty"
+    },
+    {
+      "family": "age_monotone",
+      "strength": 0.05,
+      "scope": "36",
+      "gate": "age_context",
+      "name": "age_monotone_0.05_36_age_context"
+    },
+    {
+      "family": "age_monotone",
+      "strength": 0.05,
+      "scope": "36",
+      "gate": "goal_uncertainty",
+      "name": "age_monotone_0.05_36_goal_uncertainty"
+    },
+    {
+      "family": "age_monotone",
+      "strength": 0.1,
+      "scope": "all",
+      "gate": "age_context",
+      "name": "age_monotone_0.1_all_age_context"
+    },
+    {
+      "family": "age_monotone",
+      "strength": 0.1,
+      "scope": "all",
+      "gate": "goal_uncertainty",
+      "name": "age_monotone_0.1_all_goal_uncertainty"
+    },
+    {
+      "family": "age_monotone",
+      "strength": 0.1,
+      "scope": "36",
+      "gate": "age_context",
+      "name": "age_monotone_0.1_36_age_context"
+    },
+    {
+      "family": "age_monotone",
+      "strength": 0.1,
+      "scope": "36",
+      "gate": "goal_uncertainty",
+      "name": "age_monotone_0.1_36_goal_uncertainty"
+    },
+    {
+      "family": "age_monotone",
+      "strength": 0.2,
+      "scope": "all",
+      "gate": "age_context",
+      "name": "age_monotone_0.2_all_age_context"
+    },
+    {
+      "family": "age_monotone",
+      "strength": 0.2,
+      "scope": "all",
+      "gate": "goal_uncertainty",
+      "name": "age_monotone_0.2_all_goal_uncertainty"
+    },
+    {
+      "family": "age_monotone",
+      "strength": 0.2,
+      "scope": "36",
+      "gate": "age_context",
+      "name": "age_monotone_0.2_36_age_context"
+    },
+    {
+      "family": "age_monotone",
+      "strength": 0.2,
+      "scope": "36",
+      "gate": "goal_uncertainty",
+      "name": "age_monotone_0.2_36_goal_uncertainty"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.05,
+      "scope": "all",
+      "gate": "age_context",
+      "name": "age_return_0.05_all_age_context"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.05,
+      "scope": "all",
+      "gate": "goal_uncertainty",
+      "name": "age_return_0.05_all_goal_uncertainty"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.05,
+      "scope": "36",
+      "gate": "age_context",
+      "name": "age_return_0.05_36_age_context"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.05,
+      "scope": "36",
+      "gate": "goal_uncertainty",
+      "name": "age_return_0.05_36_goal_uncertainty"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.1,
+      "scope": "all",
+      "gate": "age_context",
+      "name": "age_return_0.1_all_age_context"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.1,
+      "scope": "all",
+      "gate": "goal_uncertainty",
+      "name": "age_return_0.1_all_goal_uncertainty"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.1,
+      "scope": "36",
+      "gate": "age_context",
+      "name": "age_return_0.1_36_age_context"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.1,
+      "scope": "36",
+      "gate": "goal_uncertainty",
+      "name": "age_return_0.1_36_goal_uncertainty"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.2,
+      "scope": "all",
+      "gate": "age_context",
+      "name": "age_return_0.2_all_age_context"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.2,
+      "scope": "all",
+      "gate": "goal_uncertainty",
+      "name": "age_return_0.2_all_goal_uncertainty"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.2,
+      "scope": "36",
+      "gate": "age_context",
+      "name": "age_return_0.2_36_age_context"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.2,
+      "scope": "36",
+      "gate": "goal_uncertainty",
+      "name": "age_return_0.2_36_goal_uncertainty"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.05,
+      "scope": "all",
+      "gate": "age_context",
+      "name": "age_residual_0.05_all_age_context"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.05,
+      "scope": "all",
+      "gate": "goal_uncertainty",
+      "name": "age_residual_0.05_all_goal_uncertainty"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.05,
+      "scope": "36",
+      "gate": "age_context",
+      "name": "age_residual_0.05_36_age_context"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.05,
+      "scope": "36",
+      "gate": "goal_uncertainty",
+      "name": "age_residual_0.05_36_goal_uncertainty"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.1,
+      "scope": "all",
+      "gate": "age_context",
+      "name": "age_residual_0.1_all_age_context"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.1,
+      "scope": "all",
+      "gate": "goal_uncertainty",
+      "name": "age_residual_0.1_all_goal_uncertainty"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.1,
+      "scope": "36",
+      "gate": "age_context",
+      "name": "age_residual_0.1_36_age_context"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.1,
+      "scope": "36",
+      "gate": "goal_uncertainty",
+      "name": "age_residual_0.1_36_goal_uncertainty"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.2,
+      "scope": "all",
+      "gate": "age_context",
+      "name": "age_residual_0.2_all_age_context"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.2,
+      "scope": "all",
+      "gate": "goal_uncertainty",
+      "name": "age_residual_0.2_all_goal_uncertainty"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.2,
+      "scope": "36",
+      "gate": "age_context",
+      "name": "age_residual_0.2_36_age_context"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.2,
+      "scope": "36",
+      "gate": "goal_uncertainty",
+      "name": "age_residual_0.2_36_goal_uncertainty"
+    },
+    {
+      "family": "age_consensus",
+      "strength": 0.05,
+      "scope": "all",
+      "gate": "age_context",
+      "name": "age_consensus_0.05_all_age_context"
+    },
+    {
+      "family": "age_consensus",
+      "strength": 0.05,
+      "scope": "all",
+      "gate": "goal_uncertainty",
+      "name": "age_consensus_0.05_all_goal_uncertainty"
+    },
+    {
+      "family": "age_consensus",
+      "strength": 0.05,
+      "scope": "36",
+      "gate": "age_context",
+      "name": "age_consensus_0.05_36_age_context"
+    },
+    {
+      "family": "age_consensus",
+      "strength": 0.05,
+      "scope": "36",
+      "gate": "goal_uncertainty",
+      "name": "age_consensus_0.05_36_goal_uncertainty"
+    },
+    {
+      "family": "age_consensus",
+      "strength": 0.1,
+      "scope": "all",
+      "gate": "age_context",
+      "name": "age_consensus_0.1_all_age_context"
+    },
+    {
+      "family": "age_consensus",
+      "strength": 0.1,
+      "scope": "all",
+      "gate": "goal_uncertainty",
+      "name": "age_consensus_0.1_all_goal_uncertainty"
+    },
+    {
+      "family": "age_consensus",
+      "strength": 0.1,
+      "scope": "36",
+      "gate": "age_context",
+      "name": "age_consensus_0.1_36_age_context"
+    },
+    {
+      "family": "age_consensus",
+      "strength": 0.1,
+      "scope": "36",
+      "gate": "goal_uncertainty",
+      "name": "age_consensus_0.1_36_goal_uncertainty"
+    },
+    {
+      "family": "age_consensus",
+      "strength": 0.2,
+      "scope": "all",
+      "gate": "age_context",
+      "name": "age_consensus_0.2_all_age_context"
+    },
+    {
+      "family": "age_consensus",
+      "strength": 0.2,
+      "scope": "all",
+      "gate": "goal_uncertainty",
+      "name": "age_consensus_0.2_all_goal_uncertainty"
+    },
+    {
+      "family": "age_consensus",
+      "strength": 0.2,
+      "scope": "36",
+      "gate": "age_context",
+      "name": "age_consensus_0.2_36_age_context"
+    },
+    {
+      "family": "age_consensus",
+      "strength": 0.2,
+      "scope": "36",
+      "gate": "goal_uncertainty",
+      "name": "age_consensus_0.2_36_goal_uncertainty"
+    }
+  ],
+  "consensus": "Equal within-date/profile prediction percentiles of monotone, return and residual models.",
+  "gates": "age_context=.25+.75*(age/(age+365))*sqrt(ATHdepth); goal_uncertainty=.25+.75*(1-goal_percentile).",
+  "unchanged": "Identical outcome-maturity rules, original 72-trial ledger retained, identical performance gates, mean XIRR zero, all-profile checks, current stability post-selection veto, no NYKAA tuning.",
+  "stop": "48 conditional blends, then final robustness/evaluation; no additional strength tuning."
+}

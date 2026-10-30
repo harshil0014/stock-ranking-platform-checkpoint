@@ -1,0 +1,11 @@
+{
+  "schema": "v13_prospective_bse_actions_v1",
+  "retrieved_at": "2026-10-02T16:24:18.293828+00:00",
+  "start": "2026-09-19",
+  "end": "2026-09-30",
+  "codes": 1861,
+  "success": 1858,
+  "failed": 3,
+  "relevant_events": 2,
+  "source": "https://api.bseindia.com/BseIndiaAPI/api/DefaultData/w"
+}

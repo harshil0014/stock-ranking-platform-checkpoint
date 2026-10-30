@@ -1,0 +1,19 @@
+{
+  "ticker": "KARAMTARA",
+  "isin": "INE590T01012",
+  "provider": "KARAMTARA.NS",
+  "trade_date": "2026-09-18",
+  "official_price": 355.55,
+  "status": "RECOVERED",
+  "rows": 2,
+  "first_date": "2026-09-17",
+  "last_date": "2026-09-18",
+  "terminal_lag_days": 0,
+  "terminal_relative_difference": 3.4332811872784936e-08,
+  "listing_date": "2026-09-17",
+  "history_precedes_listing_date": false,
+  "csv_sha256": "5dd856be0a4210db52ae4b6b6e09e3efa97036b3275ca5eedaac489e728f8118",
+  "source": "Yahoo Finance secondary history",
+  "identity_mapping": "exact NSE ticker -> .NS",
+  "accepted_for_research_overlay": true
+}

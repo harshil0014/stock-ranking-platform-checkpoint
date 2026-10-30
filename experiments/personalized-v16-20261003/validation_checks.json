@@ -1,0 +1,10 @@
+{
+  "completed_at": "2026-10-03T16:32:17.645160+00:00",
+  "selection_unchanged": true,
+  "hypothesis_hash_valid": true,
+  "only_three_candidates": true,
+  "non12m_dev_score_error": 0.0,
+  "missing_inputs_preserved_in_growth_calibration": true,
+  "original_evidence_confidence_preserved": true,
+  "short_lookback_growth_signal": "Correction growth levels calibrated; champion carry-XIRR, goal, CAGR3/5 foundation untouched; missingness remains available to correction. This intentionally weakens direct strict1Y/momentum influence only in short-lookback correction."
+}

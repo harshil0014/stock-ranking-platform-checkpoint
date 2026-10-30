@@ -1,0 +1,170 @@
+{
+  "candidates": [
+    {
+      "balanced": 0.15,
+      "returns": 0.05,
+      "continuity_weight": 0.2,
+      "name": "dual_b0.15_r0.05_c0.2"
+    },
+    {
+      "balanced": 0.15,
+      "returns": 0.05,
+      "continuity_weight": 0.3,
+      "name": "dual_b0.15_r0.05_c0.3"
+    },
+    {
+      "balanced": 0.15,
+      "returns": 0.05,
+      "continuity_weight": 0.4,
+      "name": "dual_b0.15_r0.05_c0.4"
+    },
+    {
+      "balanced": 0.15,
+      "returns": 0.1,
+      "continuity_weight": 0.2,
+      "name": "dual_b0.15_r0.1_c0.2"
+    },
+    {
+      "balanced": 0.15,
+      "returns": 0.1,
+      "continuity_weight": 0.3,
+      "name": "dual_b0.15_r0.1_c0.3"
+    },
+    {
+      "balanced": 0.15,
+      "returns": 0.1,
+      "continuity_weight": 0.4,
+      "name": "dual_b0.15_r0.1_c0.4"
+    },
+    {
+      "balanced": 0.15,
+      "returns": 0.15,
+      "continuity_weight": 0.2,
+      "name": "dual_b0.15_r0.15_c0.2"
+    },
+    {
+      "balanced": 0.15,
+      "returns": 0.15,
+      "continuity_weight": 0.3,
+      "name": "dual_b0.15_r0.15_c0.3"
+    },
+    {
+      "balanced": 0.15,
+      "returns": 0.15,
+      "continuity_weight": 0.4,
+      "name": "dual_b0.15_r0.15_c0.4"
+    },
+    {
+      "balanced": 0.25,
+      "returns": 0.05,
+      "continuity_weight": 0.2,
+      "name": "dual_b0.25_r0.05_c0.2"
+    },
+    {
+      "balanced": 0.25,
+      "returns": 0.05,
+      "continuity_weight": 0.3,
+      "name": "dual_b0.25_r0.05_c0.3"
+    },
+    {
+      "balanced": 0.25,
+      "returns": 0.05,
+      "continuity_weight": 0.4,
+      "name": "dual_b0.25_r0.05_c0.4"
+    },
+    {
+      "balanced": 0.25,
+      "returns": 0.1,
+      "continuity_weight": 0.2,
+      "name": "dual_b0.25_r0.1_c0.2"
+    },
+    {
+      "balanced": 0.25,
+      "returns": 0.1,
+      "continuity_weight": 0.3,
+      "name": "dual_b0.25_r0.1_c0.3"
+    },
+    {
+      "balanced": 0.25,
+      "returns": 0.1,
+      "continuity_weight": 0.4,
+      "name": "dual_b0.25_r0.1_c0.4"
+    },
+    {
+      "balanced": 0.25,
+      "returns": 0.15,
+      "continuity_weight": 0.2,
+      "name": "dual_b0.25_r0.15_c0.2"
+    },
+    {
+      "balanced": 0.25,
+      "returns": 0.15,
+      "continuity_weight": 0.3,
+      "name": "dual_b0.25_r0.15_c0.3"
+    },
+    {
+      "balanced": 0.25,
+      "returns": 0.15,
+      "continuity_weight": 0.4,
+      "name": "dual_b0.25_r0.15_c0.4"
+    },
+    {
+      "balanced": 0.35,
+      "returns": 0.05,
+      "continuity_weight": 0.2,
+      "name": "dual_b0.35_r0.05_c0.2"
+    },
+    {
+      "balanced": 0.35,
+      "returns": 0.05,
+      "continuity_weight": 0.3,
+      "name": "dual_b0.35_r0.05_c0.3"
+    },
+    {
+      "balanced": 0.35,
+      "returns": 0.05,
+      "continuity_weight": 0.4,
+      "name": "dual_b0.35_r0.05_c0.4"
+    },
+    {
+      "balanced": 0.35,
+      "returns": 0.1,
+      "continuity_weight": 0.2,
+      "name": "dual_b0.35_r0.1_c0.2"
+    },
+    {
+      "balanced": 0.35,
+      "returns": 0.1,
+      "continuity_weight": 0.3,
+      "name": "dual_b0.35_r0.1_c0.3"
+    },
+    {
+      "balanced": 0.35,
+      "returns": 0.1,
+      "continuity_weight": 0.4,
+      "name": "dual_b0.35_r0.1_c0.4"
+    },
+    {
+      "balanced": 0.35,
+      "returns": 0.15,
+      "continuity_weight": 0.2,
+      "name": "dual_b0.35_r0.15_c0.2"
+    },
+    {
+      "balanced": 0.35,
+      "returns": 0.15,
+      "continuity_weight": 0.3,
+      "name": "dual_b0.35_r0.15_c0.3"
+    },
+    {
+      "balanced": 0.35,
+      "returns": 0.15,
+      "continuity_weight": 0.4,
+      "name": "dual_b0.35_r0.15_c0.4"
+    }
+  ],
+  "reason": "Balanced ranker lowers drawdown but sometimes misses target attainment; return ranker has complementary strengths. Test convex blend with continuity.",
+  "formula": "(1-b-r)*anchor + b*balanced15 + r*return15 - c*(1-continuity)",
+  "selection": "Same clipped-return gates; all periods exposed; no independent-validation claim.",
+  "stopping": "Complete this prespecified ensemble round, select best passing strict/tolerance candidate across rounds 2-5. Retain challenger only if diagnostics regress."
+}

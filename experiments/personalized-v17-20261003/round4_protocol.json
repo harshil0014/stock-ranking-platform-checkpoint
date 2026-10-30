@@ -1,0 +1,11 @@
+{
+  "locked_at": "2026-10-03T17:20:11.788766+00:00",
+  "hypothesis": "ATH constrained ensemble preserves all profile returns/risk but fails turnover. Bound absolute champion score displacement, retaining learned direction.",
+  "caps": [
+    0.025,
+    0.05,
+    0.075
+  ],
+  "alpha": 0.3,
+  "gates": "Unchanged strict gates; no current/exposed use"
+}

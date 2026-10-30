@@ -91,6 +91,46 @@ def test_provider_split_adjusted_close_restores_nominal_execution_price(tmp_path
     assert result.price_drawdown == 0
 
 
+def test_missing_official_multiplier_withholds_manufactured_return(tmp_path):
+    book = official_book(tmp_path, normalized_action().iloc[:0],
+                         pre=1, post=335.5, provider_ratio=1/335.5)
+    profile = InvestorProfile(amount=100, interval_days=31, lookback_months=2, whole_shares=True)
+    row = book.simulate(profile, '2020-03-01').iloc[0]
+    assert row.status == 'UNRESOLVED_CORPORATE_ACTION'
+    assert 'PROVIDER_OFFICIAL_MULTIPLIER_MISMATCH:2020-02-01' in row.reason
+    assert pd.isna(row.xirr) and pd.isna(row.total_wealth)
+    # The event at the first investment date does not alter existing holdings.
+    later = book.simulate(profile, '2020-03-01', months=1).iloc[0]
+    assert later.status == 'AVAILABLE'
+
+
+def test_conflicting_provider_multiplier_is_not_silently_accepted(tmp_path):
+    book = official_book(tmp_path, normalized_action(), provider_ratio=3)
+    row = book.simulate(InvestorProfile(amount=100, interval_days=31,
+                       lookback_months=2, whole_shares=True), '2020-03-01').iloc[0]
+    assert row.status == 'UNRESOLVED_CORPORATE_ACTION'
+    assert pd.isna(row.profit_loss_pct)
+
+
+def test_frozen_runtime_without_constructor_still_enforces_alignment(tmp_path):
+    book = official_book(tmp_path, normalized_action().iloc[:0],
+                         pre=1, post=335.5, provider_ratio=1/335.5)
+    del book.provider_alignment_blocks
+    row = book.simulate(InvestorProfile(amount=100, interval_days=31,
+                       lookback_months=2, whole_shares=True), '2020-03-01').iloc[0]
+    assert row.status == 'UNRESOLVED_CORPORATE_ACTION'
+    assert pd.isna(row.xirr)
+
+
+def test_frozen_runtime_matching_adjustment_keeps_valid_result(tmp_path):
+    book = official_book(tmp_path, normalized_action(), provider_ratio=2)
+    del book.provider_alignment_blocks
+    row = book.simulate(InvestorProfile(amount=100, interval_days=31,
+                       lookback_months=2, whole_shares=True), '2020-03-01').iloc[0]
+    assert row.status == 'AVAILABLE'
+    assert row.total_wealth == 200
+
+
 def test_official_blocker_is_profile_window_specific(tmp_path):
     blocker = normalized_action(
         event_date="2018-01-01", event_type="RIGHTS", status="BLOCKING",

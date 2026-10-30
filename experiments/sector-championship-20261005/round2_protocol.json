@@ -1,0 +1,320 @@
+{
+  "candidates": [
+    {
+      "name": "support_0.025",
+      "family": "support",
+      "weight": 0.025
+    },
+    {
+      "name": "support_0.05",
+      "family": "support",
+      "weight": 0.05
+    },
+    {
+      "name": "support_0.1",
+      "family": "support",
+      "weight": 0.1
+    },
+    {
+      "name": "support_0.15",
+      "family": "support",
+      "weight": 0.15
+    },
+    {
+      "name": "support_0.2",
+      "family": "support",
+      "weight": 0.2
+    },
+    {
+      "name": "support_0.3",
+      "family": "support",
+      "weight": 0.3
+    },
+    {
+      "name": "annual_high_0.025",
+      "family": "annual_high",
+      "weight": 0.025
+    },
+    {
+      "name": "annual_high_0.05",
+      "family": "annual_high",
+      "weight": 0.05
+    },
+    {
+      "name": "annual_high_0.1",
+      "family": "annual_high",
+      "weight": 0.1
+    },
+    {
+      "name": "annual_high_0.15",
+      "family": "annual_high",
+      "weight": 0.15
+    },
+    {
+      "name": "annual_high_0.2",
+      "family": "annual_high",
+      "weight": 0.2
+    },
+    {
+      "name": "annual_high_0.3",
+      "family": "annual_high",
+      "weight": 0.3
+    },
+    {
+      "name": "risk_adjusted_momentum_0.025",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.025
+    },
+    {
+      "name": "risk_adjusted_momentum_0.05",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.05
+    },
+    {
+      "name": "risk_adjusted_momentum_0.1",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.1
+    },
+    {
+      "name": "risk_adjusted_momentum_0.15",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.15
+    },
+    {
+      "name": "risk_adjusted_momentum_0.2",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.2
+    },
+    {
+      "name": "risk_adjusted_momentum_0.3",
+      "family": "risk_adjusted_momentum",
+      "weight": 0.3
+    },
+    {
+      "name": "professor_0.025",
+      "family": "professor",
+      "weight": 0.025
+    },
+    {
+      "name": "professor_0.05",
+      "family": "professor",
+      "weight": 0.05
+    },
+    {
+      "name": "professor_0.1",
+      "family": "professor",
+      "weight": 0.1
+    },
+    {
+      "name": "professor_0.15",
+      "family": "professor",
+      "weight": 0.15
+    },
+    {
+      "name": "professor_0.2",
+      "family": "professor",
+      "weight": 0.2
+    },
+    {
+      "name": "professor_0.3",
+      "family": "professor",
+      "weight": 0.3
+    },
+    {
+      "name": "momentum6_0.025",
+      "family": "momentum6",
+      "weight": 0.025
+    },
+    {
+      "name": "momentum6_0.05",
+      "family": "momentum6",
+      "weight": 0.05
+    },
+    {
+      "name": "momentum6_0.1",
+      "family": "momentum6",
+      "weight": 0.1
+    },
+    {
+      "name": "momentum6_0.15",
+      "family": "momentum6",
+      "weight": 0.15
+    },
+    {
+      "name": "momentum6_0.2",
+      "family": "momentum6",
+      "weight": 0.2
+    },
+    {
+      "name": "momentum6_0.3",
+      "family": "momentum6",
+      "weight": 0.3
+    },
+    {
+      "name": "tail_risk_0.025",
+      "family": "tail_risk",
+      "weight": 0.025
+    },
+    {
+      "name": "tail_risk_0.05",
+      "family": "tail_risk",
+      "weight": 0.05
+    },
+    {
+      "name": "tail_risk_0.1",
+      "family": "tail_risk",
+      "weight": 0.1
+    },
+    {
+      "name": "tail_risk_0.15",
+      "family": "tail_risk",
+      "weight": 0.15
+    },
+    {
+      "name": "tail_risk_0.2",
+      "family": "tail_risk",
+      "weight": 0.2
+    },
+    {
+      "name": "tail_risk_0.3",
+      "family": "tail_risk",
+      "weight": 0.3
+    },
+    {
+      "name": "trend_confirmation_0.025",
+      "family": "trend_confirmation",
+      "weight": 0.025
+    },
+    {
+      "name": "trend_confirmation_0.05",
+      "family": "trend_confirmation",
+      "weight": 0.05
+    },
+    {
+      "name": "trend_confirmation_0.1",
+      "family": "trend_confirmation",
+      "weight": 0.1
+    },
+    {
+      "name": "trend_confirmation_0.15",
+      "family": "trend_confirmation",
+      "weight": 0.15
+    },
+    {
+      "name": "trend_confirmation_0.2",
+      "family": "trend_confirmation",
+      "weight": 0.2
+    },
+    {
+      "name": "trend_confirmation_0.3",
+      "family": "trend_confirmation",
+      "weight": 0.3
+    },
+    {
+      "name": "balanced_strength_0.025",
+      "family": "balanced_strength",
+      "weight": 0.025
+    },
+    {
+      "name": "balanced_strength_0.05",
+      "family": "balanced_strength",
+      "weight": 0.05
+    },
+    {
+      "name": "balanced_strength_0.1",
+      "family": "balanced_strength",
+      "weight": 0.1
+    },
+    {
+      "name": "balanced_strength_0.15",
+      "family": "balanced_strength",
+      "weight": 0.15
+    },
+    {
+      "name": "balanced_strength_0.2",
+      "family": "balanced_strength",
+      "weight": 0.2
+    },
+    {
+      "name": "balanced_strength_0.3",
+      "family": "balanced_strength",
+      "weight": 0.3
+    },
+    {
+      "name": "local_h0.4_d0.1",
+      "family": "local",
+      "high": 0.4,
+      "downside": 0.1
+    },
+    {
+      "name": "local_h0.4_d0.15",
+      "family": "local",
+      "high": 0.4,
+      "downside": 0.15
+    },
+    {
+      "name": "local_h0.4_d0.2",
+      "family": "local",
+      "high": 0.4,
+      "downside": 0.2
+    },
+    {
+      "name": "local_h0.45_d0.1",
+      "family": "local",
+      "high": 0.45,
+      "downside": 0.1
+    },
+    {
+      "name": "local_h0.45_d0.15",
+      "family": "local",
+      "high": 0.45,
+      "downside": 0.15
+    },
+    {
+      "name": "local_h0.45_d0.2",
+      "family": "local",
+      "high": 0.45,
+      "downside": 0.2
+    },
+    {
+      "name": "local_h0.5_d0.1",
+      "family": "local",
+      "high": 0.5,
+      "downside": 0.1
+    },
+    {
+      "name": "local_h0.5_d0.15",
+      "family": "local",
+      "high": 0.5,
+      "downside": 0.15
+    },
+    {
+      "name": "local_h0.5_d0.2",
+      "family": "local",
+      "high": 0.5,
+      "downside": 0.2
+    },
+    {
+      "name": "local_h0.55_d0.1",
+      "family": "local",
+      "high": 0.55,
+      "downside": 0.1
+    },
+    {
+      "name": "local_h0.55_d0.15",
+      "family": "local",
+      "high": 0.55,
+      "downside": 0.15
+    },
+    {
+      "name": "local_h0.55_d0.2",
+      "family": "local",
+      "high": 0.55,
+      "downside": 0.2
+    }
+  ],
+  "selection": "2020-2023 only; lock before evaluating early/recent",
+  "gate": "Top1/3/5: all six aggregate metrics nonworse; each profile Top3 return loss <=1pp and shortfall increase <=0.5pp; sector utility positive in >=55% of sectors",
+  "objective": "Mean utility across Top1/3/5; within-sector only",
+  "interpretation": "Historical price/professor proxies, not financial quality or true regression residual momentum. All dates previously exposed."
+}

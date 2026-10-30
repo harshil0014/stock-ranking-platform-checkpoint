@@ -1,0 +1,5 @@
+model,strict_gate,regressing_cells,total_cells,top3_regressing_cells,top3_cells,development_top3_regressions,development_regressions
+goal_aware_l1_blend0.1,False,1259,4536,535,1512,363,761
+goal_aware_l1_blend0.25,False,1356,4536,567,1512,436,923
+goal_aware_l1_blend0.5,False,2729,4536,1059,1512,535,1309
+goal_aware_l1_blend1.0,False,3887,4536,1298,1512,618,1847

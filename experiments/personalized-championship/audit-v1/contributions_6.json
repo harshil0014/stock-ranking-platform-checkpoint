@@ -1,0 +1,21 @@
+{
+  "candidate": "lgbm|drawdown_core|utility4@top20@0.73",
+  "ticker": "NYKAA",
+  "feature_contributions": {
+    "enhanced_carry_xirr_score": -0.003975122432878773,
+    "enhanced_goal_score": 0.044143085897150096,
+    "price_drawdown": -0.06520389827599296,
+    "cagr_3y": 0.031018710096469147,
+    "cagr_5y": 0.12604478825223148,
+    "cash_utilization": -0.005361431547782549,
+    "unaffordable_rate": 0.0,
+    "history_months": -0.007642103678256786,
+    "since_listing_cagr": -0.006691336863504545,
+    "cagr_5y_observed": 0.0,
+    "full_history_max_drawdown": 0.023650993280694435,
+    "current_drawdown_duration_days": -0.01617724847204793,
+    "max_drawdown_duration_days": -0.022033867287873102,
+    "recovery_from_worst_trough": 0.006080385660470969,
+    "bias": -0.6359078012382482
+  }
+}

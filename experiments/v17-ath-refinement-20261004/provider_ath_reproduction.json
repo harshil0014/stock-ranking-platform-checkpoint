@@ -1,0 +1,20 @@
+{
+  "rows": 4345,
+  "age_exact": 4345,
+  "distance_match": 4345,
+  "repeated_high_date_cases": 203,
+  "nykaa": [
+    {
+      "isin": "INE388Y01029",
+      "ticker": "NYKAA",
+      "stored_age": 1765.0,
+      "reproduced_age": 1765,
+      "age_since_latest_equal_high": 1765,
+      "first_high_date": "2021-12-01",
+      "last_equal_high_date": "2021-12-01",
+      "distance": -0.21796153690789644,
+      "stored_distance": -0.2179615369078964
+    }
+  ],
+  "note": "Exact provider adjusted-close basis; economic execution basis differs because dividends and adjustments are not identical. Repeated equal highs use first occurrence in frozen historical/current feature definitions; no unilateral current-only change applied."
+}

@@ -1,0 +1,57 @@
+{
+  "as_of": "2026-10-03",
+  "amount": 7500,
+  "lookback_months": 36,
+  "interval_days": 30,
+  "objective": "Within-sector fundamental investment-quality judgment; not future-return truth",
+  "primary_weights": {
+    "profitability": 0.2,
+    "growth": 0.2,
+    "safety": 0.2,
+    "cash": 0.2,
+    "valuation": 0.2
+  },
+  "sensitivity_weights": {
+    "quality": {
+      "profitability": 0.3,
+      "growth": 0.15,
+      "safety": 0.2,
+      "cash": 0.25,
+      "valuation": 0.1
+    },
+    "growth": {
+      "profitability": 0.2,
+      "growth": 0.35,
+      "safety": 0.1,
+      "cash": 0.15,
+      "valuation": 0.2
+    },
+    "value": {
+      "profitability": 0.2,
+      "growth": 0.15,
+      "safety": 0.15,
+      "cash": 0.15,
+      "valuation": 0.35
+    }
+  },
+  "missing_values": "Within-block missing metrics neutral .5; coverage >= .6 for judged rank. Missingness exported.",
+  "financial_sectors": "Banks/Finance/Insurance omit corporate leverage and cash-conversion metrics; reweight remaining blocks.",
+  "primary_comparison": "Top-3 mean judge score, same stocks per sector; 2 points/100 practical tie band",
+  "also_report": [
+    "Spearman over all common stocks",
+    "NDCG@3",
+    "top1",
+    "top10",
+    "coverage",
+    "weight sensitivity"
+  ],
+  "small_sectors": "Fewer than 5 common judged stocks: no comparative verdict",
+  "sir_data_adapter": "Stored raw_close; first observation in inclusive [request_start, request_start+1 calendar day]; latest close <= as_of. No search beyond window.",
+  "sir_scope": "Generalize independent per-stock SIP arithmetic to all identities; workbook slot-specific cross-references have no natural full-universe equivalent.",
+  "no_training": true,
+  "no_price_momentum_or_high_age_in_judge": true,
+  "sources": [
+    "https://www.aqr.com/-/media/AQR/Documents/Insights/Working-Papers/Quality-Minus-Junk.pdf",
+    "https://support.google.com/docs/answer/3093281?hl=en"
+  ]
+}

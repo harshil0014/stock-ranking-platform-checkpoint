@@ -1,0 +1,7 @@
+model,regressions,improvements,comparisons,strict_gate,development_top3_regressions,development_regressions
+nnls_outer_return,692,574,1296,False,138,401
+nnls_outer_balanced,800,486,1296,False,144,458
+tabpfn_v2_context256,1050,244,1296,False,156,440
+nnls_nested_return,936,356,1296,False,190,517
+nnls_nested_balanced,925,363,1296,False,192,520
+tabpfn_v2_context768,1097,199,1296,False,194,569

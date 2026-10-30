@@ -1,0 +1,252 @@
+{
+  "schema": "yahoo_full_recovery_v1",
+  "cutoff": "2026-10-03",
+  "total_stocks": 4436,
+  "symbol_resolved": 4346,
+  "symbol_unresolved": 90,
+  "successful_history_download": 4346,
+  "current_history": 4345,
+  "stale_history": 0,
+  "failed_history_download": 90,
+  "insufficient_history_rows": 1,
+  "no_verified_symbol": 90,
+  "insufficient_true_5y_history": 1237,
+  "nse_current": 2575,
+  "bse_current": 1770,
+  "true_5y_history": 3108,
+  "true_7y_history": 2931,
+  "true_10y_history": 2524,
+  "structurally_under_5y": 985,
+  "new_existing_blank_cells_filled": 25686,
+  "v6_existing_field_blank_fills": 212,
+  "new_current_alias_cells": 25474,
+  "new_yahoo_diagnostic_cells": 229961,
+  "total_new_nonblank_cells": 277827,
+  "stocks_improved": 4345,
+  "v6_nonblank_unchanged": true,
+  "production_modified": false,
+  "historical_panels_modified": false,
+  "coverage": [
+    {
+      "feature": "1Y",
+      "column": "product_baseline_yoy_growth",
+      "before": 4185,
+      "after": 4186,
+      "new": 1
+    },
+    {
+      "feature": "3Y",
+      "column": "product_baseline_cagr_3y",
+      "before": 3805,
+      "after": 3807,
+      "new": 2
+    },
+    {
+      "feature": "5Y",
+      "column": "product_baseline_cagr_5y",
+      "before": 3573,
+      "after": 3577,
+      "new": 4
+    },
+    {
+      "feature": "7Y",
+      "column": "current_cagr_7y",
+      "before": 3393,
+      "after": 3404,
+      "new": 11
+    },
+    {
+      "feature": "10Y",
+      "column": "current_cagr_10y",
+      "before": 2960,
+      "after": 2981,
+      "new": 21
+    },
+    {
+      "feature": "history_months",
+      "column": "current_history_months",
+      "before": 0,
+      "after": 4345,
+      "new": 4345
+    },
+    {
+      "feature": "52W high",
+      "column": "high_52w",
+      "before": 4374,
+      "after": 4422,
+      "new": 48
+    },
+    {
+      "feature": "52W low",
+      "column": "low_52w",
+      "before": 4374,
+      "after": 4422,
+      "new": 48
+    },
+    {
+      "feature": "ATH",
+      "column": "recorded_high",
+      "before": 4397,
+      "after": 4422,
+      "new": 25
+    },
+    {
+      "feature": "ATH date",
+      "column": "recorded_high_date",
+      "before": 4397,
+      "after": 4422,
+      "new": 25
+    },
+    {
+      "feature": "days since ATH",
+      "column": "product_baseline_days_since_recorded_high",
+      "before": 4397,
+      "after": 4422,
+      "new": 25
+    },
+    {
+      "feature": "distance below ATH",
+      "column": "current_distance_from_recorded_high",
+      "before": 0,
+      "after": 4345,
+      "new": 4345
+    },
+    {
+      "feature": "max drawdown",
+      "column": "current_full_history_max_drawdown",
+      "before": 0,
+      "after": 4345,
+      "new": 4345
+    },
+    {
+      "feature": "current drawdown",
+      "column": "yahoo_current_drawdown",
+      "before": 0,
+      "after": 4345,
+      "new": 4345
+    },
+    {
+      "feature": "underwater duration",
+      "column": "current_drawdown_duration_days",
+      "before": 0,
+      "after": 4345,
+      "new": 4345
+    },
+    {
+      "feature": "downside volatility",
+      "column": "current_downside_volatility_1y",
+      "before": 0,
+      "after": 4047,
+      "new": 4047
+    },
+    {
+      "feature": "realized volatility",
+      "column": "current_realized_volatility_1y",
+      "before": 0,
+      "after": 4047,
+      "new": 4047
+    }
+  ],
+  "reason_counts": [
+    {
+      "horizon_years": 1,
+      "reason_code": "LISTED_LESS_THAN_HORIZON",
+      "count": 124
+    },
+    {
+      "horizon_years": 1,
+      "reason_code": "YAHOO_HISTORY_SHORTER_THAN_HORIZON",
+      "count": 108
+    },
+    {
+      "horizon_years": 1,
+      "reason_code": "YAHOO_NO_DATA_OR_DELISTED",
+      "count": 17
+    },
+    {
+      "horizon_years": 1,
+      "reason_code": "STRICT_ANCHOR_MISSING_OVER_7D",
+      "count": 1
+    },
+    {
+      "horizon_years": 3,
+      "reason_code": "LISTED_LESS_THAN_HORIZON",
+      "count": 340
+    },
+    {
+      "horizon_years": 3,
+      "reason_code": "YAHOO_HISTORY_SHORTER_THAN_HORIZON",
+      "count": 255
+    },
+    {
+      "horizon_years": 3,
+      "reason_code": "YAHOO_NO_DATA_OR_DELISTED",
+      "count": 30
+    },
+    {
+      "horizon_years": 3,
+      "reason_code": "STRICT_ANCHOR_MISSING_OVER_7D",
+      "count": 4
+    },
+    {
+      "horizon_years": 5,
+      "reason_code": "LISTED_LESS_THAN_HORIZON",
+      "count": 483
+    },
+    {
+      "horizon_years": 5,
+      "reason_code": "YAHOO_HISTORY_SHORTER_THAN_HORIZON",
+      "count": 330
+    },
+    {
+      "horizon_years": 5,
+      "reason_code": "YAHOO_NO_DATA_OR_DELISTED",
+      "count": 35
+    },
+    {
+      "horizon_years": 5,
+      "reason_code": "STRICT_ANCHOR_MISSING_OVER_7D",
+      "count": 11
+    },
+    {
+      "horizon_years": 7,
+      "reason_code": "LISTED_LESS_THAN_HORIZON",
+      "count": 601
+    },
+    {
+      "horizon_years": 7,
+      "reason_code": "YAHOO_HISTORY_SHORTER_THAN_HORIZON",
+      "count": 365
+    },
+    {
+      "horizon_years": 7,
+      "reason_code": "YAHOO_NO_DATA_OR_DELISTED",
+      "count": 49
+    },
+    {
+      "horizon_years": 7,
+      "reason_code": "STRICT_ANCHOR_MISSING_OVER_7D",
+      "count": 17
+    },
+    {
+      "horizon_years": 10,
+      "reason_code": "LISTED_LESS_THAN_HORIZON",
+      "count": 904
+    },
+    {
+      "horizon_years": 10,
+      "reason_code": "YAHOO_HISTORY_SHORTER_THAN_HORIZON",
+      "count": 491
+    },
+    {
+      "horizon_years": 10,
+      "reason_code": "YAHOO_NO_DATA_OR_DELISTED",
+      "count": 50
+    },
+    {
+      "horizon_years": 10,
+      "reason_code": "STRICT_ANCHOR_MISSING_OVER_7D",
+      "count": 10
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "personalized_v13_blind_evaluation_v1",
+  "selection_lock_sha256": "dad3ce68b22a1f744650e501505a3ebc78dc7c4bd39c3247982c4ed84bcac13b",
+  "blind_plan_sha256": "caa3262177ff174357d04c7b63caa6a9c8f2ab6eb660945333f400afeeee57fb",
+  "scores_before_reveal_sha256": "10991d59639659cc7b1ae2a93f43893d10e1e458cec1334245ebe05dbaea3c99",
+  "raw_checkpoint_sha256": "7f1af7975c9f27d7381198fffabb6fbde8ceec0f72eec108d6dcb61198438df2",
+  "decision_date": "2024-01-31",
+  "endpoint": "2025-01-31",
+  "outcomes_revealed_once": true,
+  "selection_changed_after_reveal": false,
+  "aggregate": {
+    "coverage": {
+      "champion": 0.8545208991624971,
+      "v13": 0.8545208991624971,
+      "delta": 0.0
+    },
+    "rank_ic": {
+      "champion": 0.054484491307879905,
+      "v13": 0.05442034477164576,
+      "delta": -6.41465362341484e-05
+    },
+    "ndcg20": {
+      "champion": 0.6088283039720344,
+      "v13": 0.6249179792528867,
+      "delta": 0.016089675280852367
+    },
+    "pairwise_accuracy": {
+      "champion": 0.5072626605421304,
+      "v13": 0.5076365203875449,
+      "delta": 0.0003738598454144926
+    },
+    "target_achievement_top20": {
+      "champion": 0.43333333333333335,
+      "v13": 0.45000000000000007,
+      "delta": 0.01666666666666672
+    },
+    "target_shortfall_top20": {
+      "champion": 0.08484315177757966,
+      "v13": 0.08406614127450028,
+      "delta": -0.0007770105030793784
+    },
+    "mean_xirr_top20": {
+      "champion": 0.9391457964571086,
+      "v13": 1.4241156878529269,
+      "delta": 0.48496989139581825
+    },
+    "median_xirr_top20": {
+      "champion": 0.14372143759787484,
+      "v13": 0.14953656059124215,
+      "delta": 0.005815122993367311
+    },
+    "mean_asset_drawdown_top20": {
+      "champion": -0.33484027564022195,
+      "v13": -0.30810049629194114,
+      "delta": 0.026739779348280812
+    }
+  },
+  "profile_focus": {
+    "weekly": {
+      "achievement_delta": 0.15000000000000002,
+      "shortfall_delta": -0.03712454460087703,
+      "median_xirr_delta": 0.19480520886345368,
+      "drawdown_delta": 0.023507301509453737
+    },
+    "lookback60": {
+      "achievement_delta": 0.050000000000000044,
+      "shortfall_delta": -0.0007229109706877873,
+      "median_xirr_delta": 0.0,
+      "drawdown_delta": -0.016242235701366403
+    }
+  },
+  "promotion_interpretation": "Independent post-development holdout evidence; true prospective 2025-09-30 decision remains deferred.",
+  "production_mutated": false,
+  "frozen_champion_mutated": false
+}

@@ -1,0 +1,13 @@
+{
+  "completed_at": "2026-10-03T16:29:49.147201+00:00",
+  "selection_lock_sha256": "6a9439469a879731c2f846644371d43271f369e027871a42d36097661a0551b5",
+  "v7_sha256": "5520707e233680d4e25589d8549d8f8b07367dc87cf4cfa12cf46857c4c6e5e1",
+  "v15_feature_replay_sha256": "ef8781e97a9660a5edceeffc9bb1e58bef42fdf0fe990d6e758a690e09d28910",
+  "current_model_sha256": "056469e424ced8ee556b05db0b60d2d74c53ac2e572eae38116781c3d61f4a98",
+  "v15_reconstruction_max_error": 3.3306690738754696e-16,
+  "non12m_score_difference": 0.0,
+  "rows": 39924,
+  "scored": 29295,
+  "replay": "Immutable V15 V7 whole-share replay reused and score reproduction verified; no new source acquisition. Current diagnostics only after lock.",
+  "action_limitation": "Official ledger ends September18; post-ledger corporate-action completeness not proved. Conditional research only; V15 quarantine preserved."
+}

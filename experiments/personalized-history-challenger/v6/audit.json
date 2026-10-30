@@ -1,0 +1,201 @@
+{
+  "winner": "risk_core__shallow",
+  "goal_weight": 0.6,
+  "features": [
+    "enhanced_carry_xirr_score",
+    "enhanced_goal_score",
+    "price_drawdown",
+    "cagr_3y",
+    "cagr_5y",
+    "cash_utilization",
+    "unaffordable_rate",
+    "days_since_recorded_high",
+    "distance_from_recorded_high",
+    "full_history_max_drawdown",
+    "history_months",
+    "since_listing_cagr",
+    "cagr_5y_observed"
+  ],
+  "parameters": [
+    80,
+    0.04,
+    7,
+    3,
+    120,
+    15.0
+  ],
+  "frozen_reproduction_max_error": 2.220446049250313e-16,
+  "current": {
+    "champion": {
+      "universe_short_history_share": 0.07993874425727412,
+      "top_short_history_share": {
+        "20": 0.9,
+        "50": 0.46,
+        "100": 0.29
+      },
+      "nykaa_overall_position": 1,
+      "nykaa_retailing_position": 1,
+      "retailing_top10": [
+        {
+          "ticker": "NYKAA",
+          "sector_position": 1,
+          "selected_ensemble_score": 0.9896124095936478
+        },
+        {
+          "ticker": "ETERNAL",
+          "sector_position": 2,
+          "selected_ensemble_score": 0.9169317986065452
+        },
+        {
+          "ticker": "V2RETAIL",
+          "sector_position": 3,
+          "selected_ensemble_score": 0.9136784639889216
+        },
+        {
+          "ticker": "CARTRADE",
+          "sector_position": 4,
+          "selected_ensemble_score": 0.8955347840228716
+        },
+        {
+          "ticker": "NAUKRI",
+          "sector_position": 5,
+          "selected_ensemble_score": 0.7820887751640612
+        },
+        {
+          "ticker": "MEDPLUS",
+          "sector_position": 6,
+          "selected_ensemble_score": 0.6702803396109996
+        },
+        {
+          "ticker": "ARVINDFASN",
+          "sector_position": 7,
+          "selected_ensemble_score": 0.6357740682265209
+        },
+        {
+          "ticker": "VMART",
+          "sector_position": 8,
+          "selected_ensemble_score": 0.6020456495367482
+        },
+        {
+          "ticker": "DMART",
+          "sector_position": 9,
+          "selected_ensemble_score": 0.5951921228339818
+        },
+        {
+          "ticker": "TRENT",
+          "sector_position": 10,
+          "selected_ensemble_score": 0.5247838553554204
+        }
+      ]
+    },
+    "challenger": {
+      "universe_short_history_share": 0.07993874425727412,
+      "top_short_history_share": {
+        "20": 0.05,
+        "50": 0.06,
+        "100": 0.09
+      },
+      "nykaa_overall_position": 316,
+      "nykaa_retailing_position": 4,
+      "retailing_top10": [
+        {
+          "ticker": "ETERNAL",
+          "sector_position": 1,
+          "challenger_score": 0.8952541289231926
+        },
+        {
+          "ticker": "CARTRADE",
+          "sector_position": 2,
+          "challenger_score": 0.8896522225898269
+        },
+        {
+          "ticker": "V2RETAIL",
+          "sector_position": 3,
+          "challenger_score": 0.8836285479098409
+        },
+        {
+          "ticker": "NYKAA",
+          "sector_position": 4,
+          "challenger_score": 0.8767450688607554
+        },
+        {
+          "ticker": "NAUKRI",
+          "sector_position": 5,
+          "challenger_score": 0.749710341374572
+        },
+        {
+          "ticker": "ARVINDFASN",
+          "sector_position": 6,
+          "challenger_score": 0.7015873547670199
+        },
+        {
+          "ticker": "VMART",
+          "sector_position": 7,
+          "challenger_score": 0.6118462369599176
+        },
+        {
+          "ticker": "JUSTDIAL",
+          "sector_position": 8,
+          "challenger_score": 0.5910667193411778
+        },
+        {
+          "ticker": "DMART",
+          "sector_position": 9,
+          "challenger_score": 0.576088359165714
+        },
+        {
+          "ticker": "TRENT",
+          "sector_position": 10,
+          "challenger_score": 0.42898520134738793
+        }
+      ]
+    },
+    "nykaa_contributions": {
+      "champion": {
+        "enhanced_carry_xirr_score": 0.05083704703183575,
+        "enhanced_goal_score": 0.005898420399509765,
+        "price_drawdown": 0.15818964729860396,
+        "cagr_3y": 0.07930536955754305,
+        "cagr_5y": 0.3058108315933076,
+        "cash_utilization": -0.0042136983790175275,
+        "unaffordable_rate": 0.0,
+        "bias": -0.41149247464395056
+      },
+      "challenger": {
+        "enhanced_carry_xirr_score": 0.03412225640729957,
+        "enhanced_goal_score": 0.02058198134301952,
+        "price_drawdown": 0.01750675236003258,
+        "cagr_3y": 0.0009470378013253576,
+        "cagr_5y": -0.0038515193259558668,
+        "cash_utilization": 0.0002665415677900656,
+        "unaffordable_rate": 0.0,
+        "days_since_recorded_high": -0.06490847137054571,
+        "distance_from_recorded_high": 0.09014217017639231,
+        "full_history_max_drawdown": 0.00531886523278495,
+        "history_months": -0.07334195904562012,
+        "since_listing_cagr": 0.004140984031980062,
+        "cagr_5y_observed": 0.00022386141645081841,
+        "bias": -0.45440151929274936
+      },
+      "original_missing_cagr_5y": true,
+      "new_cagr_5y_source": "ESTIMATED",
+      "new_cagr_5y": -0.020335266212494058,
+      "missing_value_feature_contributions": {
+        "cagr_5y": 0.3058108315933076
+      }
+    },
+    "missing_value_contributions": {
+      "missing_cagr_5y_count": 260,
+      "missing_cagr_5y_mean_contribution": 0.23483104133759272,
+      "missing_cagr_5y_median_contribution": 0.22740830107158477,
+      "observed_cagr_5y_mean_contribution": -0.04054515720506851,
+      "challenger_missing_cagr_5y_count": 0
+    }
+  },
+  "source_sha256": {
+    "experiments\\personalized-official-action-tournament\\build-03\\training_panel.csv.gz": "af7b57fcd668d18e9d58356f25b987050bcd15cfe220e3a9dfda3f0df5a0ea3b",
+    "experiments\\personalized-official-action-tournament\\build-03\\validation_predictions.csv.gz": "cb519b8559f064bcacc50b1cc912b9f3e39e4cff6011dbb631f8595ce283f61d",
+    "experiments\\personalized-official-action-tournament\\build-03\\supplementary_predictions.csv.gz": "8ef0f78414ee1af66d33a4a36d3fc85777dd028b0e748535f400cf482b78091d",
+    "research\\freezes\\personalized-d499580\\rankings.csv.gz": "1e50f4ebee4cce8ce9c05631f1c67c2c279fd90cad9abd7863692dccb2521faf"
+  }
+}

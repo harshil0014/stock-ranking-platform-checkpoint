@@ -1,0 +1,42 @@
+{
+  "finalists": [
+    "ebm_additive_return_w0.3",
+    "ebm_interactions_return_w0.3",
+    "extra_trees_return_w0.3",
+    "ridge_balanced_w1.0",
+    "tabm_compact_return_w0.3",
+    "tabm_embedded_return_w1.0",
+    "mean_return_w1.0",
+    "stack_breadth_balanced_w1.0",
+    "ridge_goal_w1.0",
+    "lgb_return_full_d3_w0.1",
+    "lgb_return_full_d3_w0.5",
+    "pfn_balanced_absolute_soft1.0_d3_w0.1",
+    "catpair_return_uniform_w0.1"
+  ],
+  "selection_changed": false,
+  "selection_sha256": "5cdcde0ef4b0b65b13ed4db73240843a6ea71dfea41019769f6bb9e0978311fd",
+  "scope": "Outcome-free empirical quantile calibration within date/profile/sector: map each learned candidate rank to the reference sector score quantile. Preserve reference cross-sector score scale while testing candidate within-sector ordering. Candidate ties average ranks; duplicated reference scores can retain ties.",
+  "top_ns": [
+    1,
+    3,
+    20,
+    100
+  ],
+  "reference": "current_champion",
+  "cohorts": [
+    "common",
+    "expanded"
+  ],
+  "return_treatments": [
+    "raw",
+    "capped"
+  ],
+  "fresh_validation": false,
+  "mean_xirr_selection_weight": 0,
+  "snapshot": "2026-10-03",
+  "timing": "Supplemental audit after locked finalist selection; no ranking adjustment from these outcomes.",
+  "adaptation": "Monotonic empirical distribution mapping, analogous to uniform quantile transform followed by inverse reference transform. No learned financial-factor percentages or company-specific exceptions.",
+  "hypothesis": "Direct sector percentile sorting damages global selection by changing cross-sector scale. This is an adaptive follow-up after viewing execution global diagnostics, with all dates still exposed.",
+  "source": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.QuantileTransformer.html"
+}

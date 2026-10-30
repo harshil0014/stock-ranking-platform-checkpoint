@@ -1,0 +1,41 @@
+{
+  "snapshot": "2026-10-03",
+  "model": "rank_xendcg_balanced_blend0.25",
+  "rubric_weights": {
+    "primary": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "quality": [
+      0.3,
+      0.15,
+      0.2,
+      0.25,
+      0.1
+    ],
+    "growth": [
+      0.2,
+      0.35,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "value": [
+      0.2,
+      0.15,
+      0.15,
+      0.15,
+      0.35
+    ]
+  },
+  "primary": "20% each profitability,growth,safety,cash,valuation; financial sectors omit corporate cash/leverage inputs and redistribute applicable weights. At least60% input coverage.",
+  "scope": "All4436 identities inspected; exclude Unclassified and fewer than5 judged peers from percentages. Headline comparison uses identical stocks with finite Sir/model/rubric scores.",
+  "percentages": "Pair agreement: correctly ordered stock pairs, ties half credit, equal sector mean primary. Reasonably placed: absolute rank-percentile difference<=0.10. These are benchmark agreement, not proven correctness or return prediction.",
+  "sources": "Previously collected company fundamentals and isolated professor-formula replication; no new4436-company due diligence claimed. Neither model score nor Sir score enters the rubric.",
+  "sensitivity": "quality/growth/value weights; fully covered fundamentals; Sir>=24observations and quote<=14days old.",
+  "sir_limit": "Generalized independent per-stock workbook arithmetic; workbook slot-specific cross-references are not a full-universe strategy. All numeric Sir results have partial price observations.",
+  "ranking_changes": false
+}

@@ -1,0 +1,27 @@
+{
+  "controller_pid": 12212,
+  "controller_created": 1791721245.8879263,
+  "dependencies": [
+    {
+      "pid": 12324,
+      "created": 1791720532.4050958,
+      "command": [
+        "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "research/runners/sector_specialist_combinations_20261011.py",
+        "combine"
+      ]
+    },
+    {
+      "pid": 1196,
+      "created": 1791721072.7561934,
+      "command": [
+        "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-W",
+        "ignore",
+        "research/runners/finish_sector_execution_specialist_20261011.py",
+        "audit"
+      ]
+    }
+  ],
+  "goal_complete": false
+}

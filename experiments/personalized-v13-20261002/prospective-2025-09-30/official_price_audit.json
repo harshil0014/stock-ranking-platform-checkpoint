@@ -1,0 +1,19 @@
+{
+  "schema": "v13_prospective_official_price_audit_v1",
+  "dates": [
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-28",
+    "2026-09-29",
+    "2026-09-30"
+  ],
+  "comparison_rows": 27887,
+  "exact_within_1pct": 27824,
+  "over_1pct": 63,
+  "over_5pct": 30,
+  "endpoint_matched": 3457,
+  "official_source_manifest_sha256": "ebab61f7dc537d133da363c47615bc38fa740847c39bdb02831e5cd619a90171"
+}

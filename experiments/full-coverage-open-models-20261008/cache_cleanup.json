@@ -1,0 +1,47 @@
+[
+  {
+    "path": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\profile-aware-sector-20261008\\prepared.pkl.gz",
+    "bytes": 148587721,
+    "reason": "Incomplete preparation or redundant regenerable per-run prediction cache; fitted models and trial summaries retained"
+  },
+  {
+    "path": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\full-coverage-open-models-20261008\\predictions.pkl.gz",
+    "bytes": 51386371,
+    "reason": "Incomplete preparation or redundant regenerable per-run prediction cache; fitted models and trial summaries retained"
+  },
+  {
+    "path": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\sector-local-experts-20261008\\predictions.pkl.gz",
+    "bytes": 40634916,
+    "reason": "Incomplete preparation or redundant regenerable per-run prediction cache; fitted models and trial summaries retained"
+  },
+  {
+    "path": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\full-coverage-open-models-20261008\\predictions_2020.pkl.gz",
+    "bytes": 3518069,
+    "reason": "Incomplete preparation or redundant regenerable per-run prediction cache; fitted models and trial summaries retained"
+  },
+  {
+    "path": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\full-coverage-open-models-20261008\\predictions_2021.pkl.gz",
+    "bytes": 3809568,
+    "reason": "Incomplete preparation or redundant regenerable per-run prediction cache; fitted models and trial summaries retained"
+  },
+  {
+    "path": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\full-coverage-open-models-20261008\\predictions_2022.pkl.gz",
+    "bytes": 4106524,
+    "reason": "Incomplete preparation or redundant regenerable per-run prediction cache; fitted models and trial summaries retained"
+  },
+  {
+    "path": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\full-coverage-open-models-20261008\\predictions_2023.pkl.gz",
+    "bytes": 4219542,
+    "reason": "Incomplete preparation or redundant regenerable per-run prediction cache; fitted models and trial summaries retained"
+  },
+  {
+    "path": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\full-coverage-open-models-20261008\\predictions_2024.pkl.gz",
+    "bytes": 4084128,
+    "reason": "Incomplete preparation or redundant regenerable per-run prediction cache; fitted models and trial summaries retained"
+  },
+  {
+    "path": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\full-coverage-open-models-20261008\\predictions_2025.pkl.gz",
+    "bytes": 7968166,
+    "reason": "Incomplete preparation or redundant regenerable per-run prediction cache; fitted models and trial summaries retained"
+  }
+]

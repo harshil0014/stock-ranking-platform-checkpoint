@@ -1,0 +1,78 @@
+Finish the historical-depth phase end to end.
+
+PRIMARY GOAL:
+Use the substantially deeper leakage-safe historical evidence already built in this repository to produce the strongest legitimate successor possible to the frozen 67% Goal / 33% LambdaRank champion. The objective is a genuinely more robust model, not a prettier backtest.
+
+AUTHORITATIVE DEEP PANEL:
+experiments/personalized-deep-history-20261002/real-panel-v7/deep_panel.csv.gz
+experiments/personalized-deep-history-20261002/real-panel-v7/summary.json
+
+AUTHORITATIVE WALK-FORWARD PROTOCOL:
+research/protocols/personalized_deep_walkforward_v1.json
+
+AUTHORITATIVE ENRICHMENT:
+experiments/history-enrichment-20261002/final-data-quality-v3/
+
+CURRENT SUCCESSOR RESEARCH:
+experiments/personalized-successor-20261002/v3/
+research/reports/personalized_successor_20261002.md
+
+The deep panel already expands the evidence to 20 historical decision dates and 601,730 matured observations. Treat the reacquired Yahoo split ledger and its integrity audit as the valid provider split source. Preserve the 104 failed provider lookups as quarantined.
+
+Do the remaining work, not another plan.
+
+GOAL:
+Create a proper deep walk-forward championship using the expanded panel. Select only on the designated historical/development dates, keep the declared 2024 clean holdout sealed until selection is locked, and use already-exposed 2025 dates only as diagnostics.
+
+Aggressively search for a model that is broadly stronger than the frozen champion. You may redesign research features, ranking model, ensemble, objective, weighting, training strategy, history conditioning, risk treatment, or validation structure when justified by the evidence.
+
+Optimize broad investor robustness, especially:
+- NDCG@20
+- Rank IC
+- pairwise accuracy
+- Top-20 target achievement
+- Top-20 target shortfall
+- median Top-20 XIRR
+- drawdown
+- coverage
+- turnover/stability
+- 10/20/30% targets
+- 12/36/60M lookbacks
+- amount and interval profiles
+- date/regime robustness
+- missing-history fairness
+
+Do not let giant mean XIRR outliers select the winner.
+
+The enriched history information should be exploited where it legitimately helps, including history length, observed/estimated long-term growth provenance, days/distance from high, full-history drawdown, drawdown duration/recovery, and volatility, but do not force any particular architecture.
+
+HARD RULES:
+- no future leakage
+- no current fundamentals/sectors backfilled into historical rows
+- no fabricated historical values
+- no stock-specific hardcoding
+- NYKAA diagnostic only
+- no repeated selection on the clean 2024 holdout
+- no selection on exposed 2025 diagnostics
+- no production changes
+- no Railway changes
+- no overwrite of frozen champion
+- preserve all existing uncommitted research
+
+A new champion must be broadly stronger. Large regressions in target shortfall, drawdown, median return, coverage, or important profile slices disqualify it. Small secondary regressions are acceptable only when clearly outweighed by robust improvements across the deeper evidence.
+
+At completion produce:
+1. exact deep-panel date/observation increase;
+2. provenance and leakage audit;
+3. locked selection record written before holdout evaluation;
+4. development metrics;
+5. one-time clean 2024 holdout metrics;
+6. exposed 2025 diagnostic metrics;
+7. all important profile/date/regime regressions;
+8. missing-history concentration audit;
+9. NYKAA diagnostic;
+10. reproducible tournament code/config/artifacts;
+11. tests;
+12. final report and one verdict: NEW CHAMPION / PROMISING CHALLENGER / FROZEN CHAMPION RETAINS TITLE.
+
+Do not stop at the first decent candidate. Push the deeper evidence as far as is technically defensible. If the champion still wins, establish that with the expanded holdout evidence rather than assumption.

@@ -1,0 +1,60 @@
+{
+  "features": [
+    "champion_percentile",
+    "rank_xendcg_balanced",
+    "guarded_percentile",
+    "q_high_gap252",
+    "q_high_age252",
+    "q_momentum12_1",
+    "q_downside252",
+    "q_drawdown252",
+    "q_zero_fraction",
+    "q_largest_jump_share",
+    "q_trend_r2",
+    "q_efficiency126",
+    "evidence_fraction",
+    "sector_breadth",
+    "log_amount",
+    "lookback_months",
+    "log_interval",
+    "target_cagr"
+  ],
+  "configs": [
+    [
+      "return",
+      "uniform"
+    ],
+    [
+      "return",
+      "mistakes"
+    ],
+    [
+      "balanced",
+      "uniform"
+    ],
+    [
+      "balanced",
+      "mistakes"
+    ]
+  ],
+  "weights": [
+    0.1,
+    0.3,
+    0.6
+  ],
+  "controls": [
+    "lgb_return_full_d3_w0.1",
+    "lgb_return_full_d3_w0.5"
+  ],
+  "algorithm": "CatBoost 1.2.10 PairLogit, 160 trees, depth4, LR.035, L2=20, CPU4 threads, seed20261011. Champion sector percentile supplied as training baseline; inference adds only tree correction. Existing YetiRank experiment used a different objective and role.",
+  "pairs": "Sample up to1500 complete sector/date/profile queries with equal query probability, seed20261011. Up to64 unique unordered stock pairs per query, ties excluded. Orient by return or balanced outcome target. Equal total pair weight per query; mistakes mode doubles weights of champion misorders before query normalization.",
+  "training": "Use completed out-of-time component predictions only, endpoint strictly before annual January1 or frozen current October3. Reuse existing guarded labels/features. Evidence>0, classified sector, >=5 usable peers. 2020/21 champion fallback. Missing current features receive zero correction.",
+  "selection": "Development2020-23 only: select highest expanded raw whole-sector rankIC CatBoost candidate and lowest Top3 regression-count CatBoost candidate; retain both fixed LightGBM controls. Tie breaks use fewer regressions then name. Lock before evaluating exposed2024-25.",
+  "evaluation": "Same common/expanded cohorts; raw/capped returns;9profiles;Top1/3/5;6metrics. Pair order accuracy and descriptive sector bootstrap for finalists. No-regression gate across1296cells required for promotion. All historical dates are reused research, not new holdout.",
+  "sources": [
+    "https://proceedings.neurips.cc/paper/2018/hash/14491b756b3a51daac41c24863285549-Abstract.html",
+    "https://catboost.ai/docs/en/concepts/loss-functions-ranking",
+    "https://catboost.ai/docs/en/concepts/python-usages-examples"
+  ],
+  "fresh_validation": false
+}

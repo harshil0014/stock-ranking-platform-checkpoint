@@ -1,0 +1,152 @@
+{
+  "candidates": [
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.1,
+      "continuity_weight": 0.05,
+      "name": "rank_xendcg_return_15_blend0.1_continuity0.05"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.1,
+      "continuity_weight": 0.1,
+      "name": "rank_xendcg_return_15_blend0.1_continuity0.1"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.1,
+      "continuity_weight": 0.2,
+      "name": "rank_xendcg_return_15_blend0.1_continuity0.2"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.1,
+      "continuity_weight": 0.3,
+      "name": "rank_xendcg_return_15_blend0.1_continuity0.3"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.25,
+      "continuity_weight": 0.05,
+      "name": "rank_xendcg_return_15_blend0.25_continuity0.05"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.25,
+      "continuity_weight": 0.1,
+      "name": "rank_xendcg_return_15_blend0.25_continuity0.1"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.25,
+      "continuity_weight": 0.2,
+      "name": "rank_xendcg_return_15_blend0.25_continuity0.2"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.25,
+      "continuity_weight": 0.3,
+      "name": "rank_xendcg_return_15_blend0.25_continuity0.3"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.5,
+      "continuity_weight": 0.05,
+      "name": "rank_xendcg_return_15_blend0.5_continuity0.05"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.5,
+      "continuity_weight": 0.1,
+      "name": "rank_xendcg_return_15_blend0.5_continuity0.1"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.5,
+      "continuity_weight": 0.2,
+      "name": "rank_xendcg_return_15_blend0.5_continuity0.2"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.5,
+      "continuity_weight": 0.3,
+      "name": "rank_xendcg_return_15_blend0.5_continuity0.3"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.1,
+      "continuity_weight": 0.05,
+      "name": "rank_xendcg_balanced_15_blend0.1_continuity0.05"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.1,
+      "continuity_weight": 0.1,
+      "name": "rank_xendcg_balanced_15_blend0.1_continuity0.1"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.1,
+      "continuity_weight": 0.2,
+      "name": "rank_xendcg_balanced_15_blend0.1_continuity0.2"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.1,
+      "continuity_weight": 0.3,
+      "name": "rank_xendcg_balanced_15_blend0.1_continuity0.3"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.25,
+      "continuity_weight": 0.05,
+      "name": "rank_xendcg_balanced_15_blend0.25_continuity0.05"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.25,
+      "continuity_weight": 0.1,
+      "name": "rank_xendcg_balanced_15_blend0.25_continuity0.1"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.25,
+      "continuity_weight": 0.2,
+      "name": "rank_xendcg_balanced_15_blend0.25_continuity0.2"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.25,
+      "continuity_weight": 0.3,
+      "name": "rank_xendcg_balanced_15_blend0.25_continuity0.3"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.5,
+      "continuity_weight": 0.05,
+      "name": "rank_xendcg_balanced_15_blend0.5_continuity0.05"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.5,
+      "continuity_weight": 0.1,
+      "name": "rank_xendcg_balanced_15_blend0.5_continuity0.1"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.5,
+      "continuity_weight": 0.2,
+      "name": "rank_xendcg_balanced_15_blend0.5_continuity0.2"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.5,
+      "continuity_weight": 0.3,
+      "name": "rank_xendcg_balanced_15_blend0.5_continuity0.3"
+    }
+  ],
+  "reason": "Low observed volatility can reward inactive prices; add soft continuity cost without rejecting any stock.",
+  "continuity": "volume_active_fraction * min(observations_1y/120,1); missing factors=.5",
+  "score": "(1-alpha)*champion_or_high_strength + alpha*ranker - continuity_weight*(1-continuity)",
+  "selection": "Same clipped-return gates as round2/3, previously exposed 2020-2025; no independent-validation claim."
+}

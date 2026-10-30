@@ -1,0 +1,66 @@
+{
+  "locked_at": "2026-10-03T17:56:59.846703+00:00",
+  "top3": [
+    "regime_utility",
+    "neural_moe",
+    "specialist_utility"
+  ],
+  "choices": [
+    {
+      "family": "regime_utility+neural_moe",
+      "beta": 0.05
+    },
+    {
+      "family": "regime_utility+neural_moe",
+      "beta": 0.1
+    },
+    {
+      "family": "regime_utility+specialist_utility",
+      "beta": 0.05
+    },
+    {
+      "family": "regime_utility+specialist_utility",
+      "beta": 0.1
+    },
+    {
+      "family": "neural_moe+specialist_utility",
+      "beta": 0.05
+    },
+    {
+      "family": "neural_moe+specialist_utility",
+      "beta": 0.1
+    },
+    {
+      "family": "regime_utility+neural_moe+specialist_utility",
+      "beta": 0.05
+    },
+    {
+      "family": "regime_utility+neural_moe+specialist_utility",
+      "beta": 0.1
+    },
+    {
+      "family": "seed_average20261004",
+      "beta": 0.5
+    },
+    {
+      "family": "seed_average20261005",
+      "beta": 0.5
+    },
+    {
+      "family": "confidence_agreement",
+      "beta": 0.5
+    },
+    {
+      "family": "confidence_agreement",
+      "beta": 1.0
+    },
+    {
+      "family": "confidence_squared",
+      "beta": 0.5
+    },
+    {
+      "family": "confidence_squared",
+      "beta": 1.0
+    }
+  ]
+}

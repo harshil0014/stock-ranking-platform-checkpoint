@@ -1,0 +1,79 @@
+{
+  "reason": "Original current export had entirely missing volume_active_fraction; dated source has values. Saved-input replay proves source of mismatch.",
+  "available_before": 0,
+  "available_after": 4061,
+  "backup_hashes": {
+    "predictions_current.csv.gz": "65af6143b0caa0e97a4425ba694a6de71773c88a91efb0240cb04b1267dc9206",
+    "all_4436_all_candidates.csv": "a6ba0acc6f1f6f327008ad5f0853ee6ac4c314ea9f4e33e75a03ff1a67777907",
+    "audit_current.json": "6d7af29ad2cfffd9d887818203f75498359727a0546d705bae71fb0f5ff63068"
+  },
+  "new_hashes": {
+    "predictions_current.csv.gz": "0f0eac09621c1ccd2d4b93db83fed7ce5b61a30227ed123e1e701eefa419abdb",
+    "all_4436_all_candidates.csv": "383fd45f4d399c48468ad93c40ef6e91bd95061e828cc9108caebf846e70641f"
+  },
+  "changes": [
+    {
+      "model": "balanced_l1_base_w0.1",
+      "changed_rows": 0,
+      "maximum_score_change": 1.1102230246251565e-16
+    },
+    {
+      "model": "balanced_l1_base_w0.3",
+      "changed_rows": 0,
+      "maximum_score_change": 1.1102230246251565e-16
+    },
+    {
+      "model": "balanced_l1_base_w1.0",
+      "changed_rows": 0,
+      "maximum_score_change": 1.1102230246251565e-16
+    },
+    {
+      "model": "balanced_l1_activity_w0.1",
+      "changed_rows": 3464,
+      "maximum_score_change": 0.039999999999999925
+    },
+    {
+      "model": "balanced_l1_activity_w0.3",
+      "changed_rows": 3464,
+      "maximum_score_change": 0.11999999999999988
+    },
+    {
+      "model": "balanced_l1_activity_w1.0",
+      "changed_rows": 3464,
+      "maximum_score_change": 0.39999999999999997
+    },
+    {
+      "model": "return_q25_base_w0.1",
+      "changed_rows": 0,
+      "maximum_score_change": 1.1102230246251565e-16
+    },
+    {
+      "model": "return_q25_base_w0.3",
+      "changed_rows": 0,
+      "maximum_score_change": 1.1102230246251565e-16
+    },
+    {
+      "model": "return_q25_base_w1.0",
+      "changed_rows": 0,
+      "maximum_score_change": 1.1102230246251565e-16
+    },
+    {
+      "model": "return_q25_activity_w0.1",
+      "changed_rows": 3996,
+      "maximum_score_change": 0.09000000000000019
+    },
+    {
+      "model": "return_q25_activity_w0.3",
+      "changed_rows": 3996,
+      "maximum_score_change": 0.27
+    },
+    {
+      "model": "return_q25_activity_w1.0",
+      "changed_rows": 3996,
+      "maximum_score_change": 0.9
+    }
+  ],
+  "models_retrained": false,
+  "selection_changed": false,
+  "historical_predictions_changed": false
+}

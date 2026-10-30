@@ -1,0 +1,5 @@
+{
+  "role": "Hindsight feasibility only, never used for training or model selection",
+  "claim": "For an infeasible query no available stock can simultaneously match the best return, drawdown and shortfall among the stocks selected by reference models. This rules out per-query Top1 universal dominance on that cohort.",
+  "not_claimed": "Does not prove the aggregate promotion gate impossible. Does not address diversification, different horizons or trading execution. Outcome data limitations still apply."
+}

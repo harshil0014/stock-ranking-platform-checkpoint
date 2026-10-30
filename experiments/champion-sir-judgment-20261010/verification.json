@@ -1,0 +1,42 @@
+{
+  "all_stocks": 4436,
+  "native_judged_stocks": 4190,
+  "paired_stocks": 4092,
+  "paired_sectors": 56,
+  "sir_numeric_scores": 4293,
+  "sir_status_counts": {
+    "PARTIAL_OBSERVATIONS": 4293,
+    "NO_HISTORY": 107,
+    "NO_INVESTMENT": 36
+  },
+  "native_placement_counts": {
+    "RANKED_TOO_HIGH_VS_RUBRIC": 1721,
+    "RANKED_TOO_LOW_VS_RUBRIC": 1554,
+    "WITHIN_10_PERCENTILE_POINTS": 915,
+    "UNCLASSIFIED": 132,
+    "INSUFFICIENT_FUNDAMENTALS": 112,
+    "TOO_FEW_JUDGED_PEERS": 2
+  },
+  "pair_sector_verdict_counts": {
+    "CHAMPION": 28,
+    "WITHIN_2_PERCENTAGE_POINTS": 19,
+    "SIR": 9
+  },
+  "top3_sector_verdict_counts": {
+    "CHAMPION": 36,
+    "SIR": 12,
+    "WITHIN_2_POINTS_ON_100_SCALE": 8
+  },
+  "rubric_recalculation_verified": true,
+  "per_stock_pair_aggregation_verified": true,
+  "fresh_company_due_diligence": false,
+  "live_model_changed": false,
+  "sha256": {
+    "experiments\\sector-independent-judge-20261005\\all_stock_sector_judgments.csv": "0a73aadca835e8bb522e0e807562fe78b6d95cca3cd6a97417955dd6762769c2",
+    "experiments\\sector-research-final-20261010\\all_4436_sector_rankings.csv": "a8b51291953ce18af9c040618fe4a98ac9c7a8f4914362358d1db546016e1d4f",
+    "experiments\\champion-sir-judgment-20261010\\protocol.json": "95f222a4459ff4a54970d37fd8a6e4ef8de449c8f4011761c5306631386b0129",
+    "experiments\\champion-sir-judgment-20261010\\all_4436_stock_audit.csv": "ec7e655e35aeb7a52b57e6c84840e35a54c3f4c3eccd6abfe42505f3b1f3369c",
+    "experiments\\champion-sir-judgment-20261010\\summary.csv": "70fb0728d66cad67d6880239f615274823689c2cd01d6ed207c32183696267a2"
+  },
+  "sir_159696_trade_rows_replayed": true
+}

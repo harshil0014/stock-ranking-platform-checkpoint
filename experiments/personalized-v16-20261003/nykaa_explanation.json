@@ -1,0 +1,39 @@
+{
+  "diagnostic_only": true,
+  "v16_base_rank": 6.0,
+  "v15_reference_explanation": {
+    "diagnostic_only": true,
+    "identity_used_for_training_or_selection": false,
+    "v15_rank": 6.0,
+    "refreshed_champion_rank": 5.0,
+    "frozen_champion_rank": 1.0,
+    "days_since_high": 1765.0,
+    "below_high": -0.21796153,
+    "underwater_days": 1765.0,
+    "growth1y": 0.3505876,
+    "growth3y": 0.30602714,
+    "true_5y": false,
+    "volatility": 0.27747282,
+    "historical_plan_attainment": 1.2106234,
+    "goal_windows_achieved_fraction": 0.75,
+    "cash_utilization": 0.99959743,
+    "roce_pct": 17.23,
+    "roe_pct": 15.29,
+    "industry": "E-Retail/ E-Commerce",
+    "peer_count": 15,
+    "broad_peer_group": "Retailing",
+    "broad_peer_count": 69,
+    "roce_peer_percentile": 0.8666666666666667,
+    "roe_peer_percentile": 0.8666666666666667,
+    "growth3y_retailing_percentile": 0.8541666666666666,
+    "correction_family_shap": {
+      "goal_user": -0.0428260037826752,
+      "growth": -0.0145321514158296,
+      "ath": 0.0799452791234391,
+      "risk": -0.0406958313590499,
+      "history": 0.0
+    },
+    "interpretation": "Strong recent growth and historical plan fit preserve a high champion foundation. The bounded learned correction lowers the refreshed rank by one. ATH-family TreeSHAP is positive conditional on the other inputs; V15 did not learn a blanket old-high penalty. Current fundamentals/peers are diagnostics, not explanations of model causality."
+  },
+  "rule": "No identity-specific rule; base profile is unchanged V15; lookback12 alone receives selected growth calibration."
+}

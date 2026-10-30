@@ -1,0 +1,55 @@
+PROTOCOL LOCKED
+FEATURES 797443 nonzero 553472
+EVALUATE development common raw
+EVALUATE development common capped
+EVALUATE development expanded raw
+EVALUATE development expanded capped
+LOCKED sip_risk_confirmed_0.01 -0.012648137297469261
+EVALUATE recent common raw
+EVALUATE recent common capped
+EVALUATE recent expanded raw
+EVALUATE recent expanded capped
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\champion_sip_profit_20261017.py:20: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  x['sip_invested_fraction']=1-x.unused_cash_excluded_by_professor/x.amount_contributed.where(x.amount_contributed.gt(0))
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\champion_sip_profit_20261017.py:22: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  x['sip_action_blocked']=False
+{
+  "selected": "sip_risk_confirmed_0.01",
+  "accept_research_patch": false,
+  "development": {
+    "stage": "development",
+    "scope": "expanded",
+    "treatment": "capped",
+    "model": "sip_risk_confirmed_0.01",
+    "top_n": 3,
+    "utility": -0.012648137297469261,
+    "ranking_utility": -0.01381721100812295,
+    "equal_utility": -0.01498380217710836,
+    "xirr": -0.0007435922093716463,
+    "drawdown": -0.00023335765674625808,
+    "achievement": -0.000175438596491162,
+    "shortfall": -6.404963545553893e-05,
+    "ndcg": -0.0002674188918942999,
+    "rank_ic": -8.925328268159088e-06
+  },
+  "recent": {
+    "stage": "recent",
+    "scope": "expanded",
+    "treatment": "capped",
+    "model": "sip_risk_confirmed_0.01",
+    "top_n": 3,
+    "utility": 0.003797617761347875,
+    "ranking_utility": -0.0047925935589221424,
+    "equal_utility": 0.0027613381253768776,
+    "xirr": -6.060650374372419e-05,
+    "drawdown": -0.00033388828342834076,
+    "achievement": 0.0007017543859649256,
+    "shortfall": -0.00013394732508929807,
+    "ndcg": -0.00011891552694587304,
+    "rank_ic": 2.306365576743019e-05
+  },
+  "current_coverage": 4436,
+  "current_nonzero_sip_adjustment": 2968,
+  "website_changed": false,
+  "fresh_validation": false
+}

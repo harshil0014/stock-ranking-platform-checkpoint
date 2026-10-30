@@ -1,0 +1,217 @@
+{
+  "source_sha256": "cba2b639cdc4209426679a5f2343127e279d588b0fe1150f70c8fcbddf33e23a",
+  "scope": "base7500 frozen 2026-10-03; diagnostic only, all other components fixed",
+  "eligible": 1773,
+  "top100_oldest_ath_days": 232.0,
+  "top100_ath_over_365": 0,
+  "top100_history_under_60_months": 30,
+  "top100_history_under_36_months": 1,
+  "top100_missing_true5y": 30,
+  "top100_history_median_months": 142.73511293634496,
+  "top100_ath_median_days": 28.0,
+  "scenarios": {
+    "remove_explicit_age": {
+      "top100_overlap": 87,
+      "old_ath_ge730_top100": 6,
+      "entries": [
+        {
+          "ticker": "TEGA",
+          "new_rank": 177.0,
+          "remove_explicit_age_rank": 66.0
+        },
+        {
+          "ticker": "EICHERMOT",
+          "new_rank": 127.0,
+          "remove_explicit_age_rank": 97.0
+        },
+        {
+          "ticker": "GLAND",
+          "new_rank": 312.0,
+          "remove_explicit_age_rank": 69.0
+        },
+        {
+          "ticker": "POWERINDIA",
+          "new_rank": 108.0,
+          "remove_explicit_age_rank": 100.0
+        },
+        {
+          "ticker": "ICICIBANK",
+          "new_rank": 152.0,
+          "remove_explicit_age_rank": 79.0
+        },
+        {
+          "ticker": "CHOICEIN",
+          "new_rank": 135.0,
+          "remove_explicit_age_rank": 91.0
+        },
+        {
+          "ticker": "NYKAA",
+          "new_rank": 172.0,
+          "remove_explicit_age_rank": 7.0
+        },
+        {
+          "ticker": "NAZARA",
+          "new_rank": 231.0,
+          "remove_explicit_age_rank": 29.0
+        },
+        {
+          "ticker": "STARHEALTH",
+          "new_rank": 293.0,
+          "remove_explicit_age_rank": 54.0
+        },
+        {
+          "ticker": "LALPATHLAB",
+          "new_rank": 207.0,
+          "remove_explicit_age_rank": 12.0
+        },
+        {
+          "ticker": "MANKIND",
+          "new_rank": 195.0,
+          "remove_explicit_age_rank": 81.0
+        },
+        {
+          "ticker": "TECHM",
+          "new_rank": 131.0,
+          "remove_explicit_age_rank": 92.0
+        },
+        {
+          "ticker": "ONEPOINT",
+          "new_rank": 201.0,
+          "remove_explicit_age_rank": 67.0
+        }
+      ]
+    },
+    "replace_age_with_rolling_same_decay": {
+      "top100_overlap": 89,
+      "old_ath_ge730_top100": 8,
+      "entries": [
+        {
+          "ticker": "ZYDUSLIFE",
+          "new_rank": 252.0,
+          "replace_age_with_rolling_same_decay_rank": 98.0
+        },
+        {
+          "ticker": "TEGA",
+          "new_rank": 177.0,
+          "replace_age_with_rolling_same_decay_rank": 57.0
+        },
+        {
+          "ticker": "GLAND",
+          "new_rank": 312.0,
+          "replace_age_with_rolling_same_decay_rank": 61.0
+        },
+        {
+          "ticker": "ICICIBANK",
+          "new_rank": 152.0,
+          "replace_age_with_rolling_same_decay_rank": 81.0
+        },
+        {
+          "ticker": "NYKAA",
+          "new_rank": 172.0,
+          "replace_age_with_rolling_same_decay_rank": 7.0
+        },
+        {
+          "ticker": "NAZARA",
+          "new_rank": 231.0,
+          "replace_age_with_rolling_same_decay_rank": 26.0
+        },
+        {
+          "ticker": "BSE-524218",
+          "new_rank": 366.0,
+          "replace_age_with_rolling_same_decay_rank": 96.0
+        },
+        {
+          "ticker": "STARHEALTH",
+          "new_rank": 293.0,
+          "replace_age_with_rolling_same_decay_rank": 60.0
+        },
+        {
+          "ticker": "LALPATHLAB",
+          "new_rank": 207.0,
+          "replace_age_with_rolling_same_decay_rank": 10.0
+        },
+        {
+          "ticker": "MANKIND",
+          "new_rank": 195.0,
+          "replace_age_with_rolling_same_decay_rank": 84.0
+        },
+        {
+          "ticker": "ONEPOINT",
+          "new_rank": 201.0,
+          "replace_age_with_rolling_same_decay_rank": 55.0
+        }
+      ]
+    },
+    "replace_age_with_rolling_freshness": {
+      "top100_overlap": 87,
+      "old_ath_ge730_top100": 9,
+      "entries": [
+        {
+          "ticker": "ZYDUSLIFE",
+          "new_rank": 252.0,
+          "replace_age_with_rolling_freshness_rank": 83.0
+        },
+        {
+          "ticker": "TEGA",
+          "new_rank": 177.0,
+          "replace_age_with_rolling_freshness_rank": 52.0
+        },
+        {
+          "ticker": "BSE-500422",
+          "new_rank": 102.0,
+          "replace_age_with_rolling_freshness_rank": 99.0
+        },
+        {
+          "ticker": "GLAND",
+          "new_rank": 312.0,
+          "replace_age_with_rolling_freshness_rank": 59.0
+        },
+        {
+          "ticker": "ICICIBANK",
+          "new_rank": 152.0,
+          "replace_age_with_rolling_freshness_rank": 91.0
+        },
+        {
+          "ticker": "HARSHA",
+          "new_rank": 267.0,
+          "replace_age_with_rolling_freshness_rank": 87.0
+        },
+        {
+          "ticker": "NYKAA",
+          "new_rank": 172.0,
+          "replace_age_with_rolling_freshness_rank": 7.0
+        },
+        {
+          "ticker": "NAZARA",
+          "new_rank": 231.0,
+          "replace_age_with_rolling_freshness_rank": 20.0
+        },
+        {
+          "ticker": "BSE-524218",
+          "new_rank": 366.0,
+          "replace_age_with_rolling_freshness_rank": 80.0
+        },
+        {
+          "ticker": "STARHEALTH",
+          "new_rank": 293.0,
+          "replace_age_with_rolling_freshness_rank": 69.0
+        },
+        {
+          "ticker": "LALPATHLAB",
+          "new_rank": 207.0,
+          "replace_age_with_rolling_freshness_rank": 8.0
+        },
+        {
+          "ticker": "MANKIND",
+          "new_rank": 195.0,
+          "replace_age_with_rolling_freshness_rank": 94.0
+        },
+        {
+          "ticker": "ONEPOINT",
+          "new_rank": 201.0,
+          "replace_age_with_rolling_freshness_rank": 47.0
+        }
+      ]
+    }
+  }
+}

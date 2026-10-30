@@ -1,0 +1,41 @@
+{
+  "schema": "personalized_v13_development_search_v1",
+  "development_dates": [
+    "2020-03-31",
+    "2020-06-30",
+    "2020-09-30",
+    "2020-12-31",
+    "2021-03-31",
+    "2021-06-30",
+    "2021-09-30",
+    "2021-12-31",
+    "2022-03-31",
+    "2022-06-30",
+    "2022-09-30",
+    "2022-12-31",
+    "2023-03-31",
+    "2023-06-30",
+    "2023-09-30",
+    "2023-12-31"
+  ],
+  "candidate_count": 48,
+  "passing_count": 0,
+  "post_2023_outcomes_loaded": false,
+  "current_structural_diagnostic_used": true,
+  "v12_development_baseline_sha256": "9a0a5cf64ea0d6ef208c85878462295d3d681148352568d19fe36a1d2647e562",
+  "v3_enrichment_sha256": "1f10fda726905af1816c9d57475b2488d360072c3fb229809d89771f36a79817",
+  "search_sha256": "19c99cdcd7f6c9d3a896d431e0e35f50832b3e81d2e4340faf4a062b251d63ad",
+  "selection_rule": {
+    "weekly_shortfall_delta_max": 0.0,
+    "weekly_drawdown_delta_min": 0.0,
+    "weekly_achievement_delta_min": -0.02,
+    "lookback60_shortfall_delta_max": 0.005,
+    "lookback60_drawdown_delta_min": -0.01,
+    "lookback60_achievement_delta_min": -0.05,
+    "current_top20_missing_true_5y_max": 0.5,
+    "current_top50_missing_true_5y_max": 0.35,
+    "base_v12_eligible_required": true,
+    "utility_positive_required": true,
+    "ranking": "highest V12 development robustness-adjusted utility among passing candidates"
+  }
+}

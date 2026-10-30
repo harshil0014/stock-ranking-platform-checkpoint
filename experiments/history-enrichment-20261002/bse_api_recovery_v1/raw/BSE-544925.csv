@@ -1,0 +1,2 @@
+date,bse_code,isin,close,open,high,low,volume,trade_count,source
+2026-09-18,544925,INE0SVD01012,262.5000000000,250.00,262.50,240.00,2304000,1805,BSE_STOCK_PRICE_API_EXACT_SCRIP

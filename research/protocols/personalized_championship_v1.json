@@ -1,0 +1,23 @@
+{
+  "schema_version": "personalized_championship_v1",
+  "seed": 20261001,
+  "scope": "RESEARCH_ONLY_NO_PRODUCTION_WRITES",
+  "qualification_dates": ["2019-12-31", "2022-06-30", "2022-12-31"],
+  "development_dates": ["2023-06-30", "2023-12-31"],
+  "contaminated_diagnostic_dates": ["2025-03-31", "2025-06-30"],
+  "current_date": "2026-09-18",
+  "no_untouched_historical_holdout": true,
+  "maturity_rule": "training endpoint strictly before decision date",
+  "current_champion_sha256_from_freeze": true,
+  "round1_goal_weight": 0.67,
+  "round2_goal_weights": [0.60, 0.63, 0.67, 0.70, 0.73, 0.75],
+  "round2_parameter_sets": {
+    "frozen": {"n_estimators": 60, "learning_rate": 0.05, "num_leaves": 7, "max_depth": 3, "min_child_samples": 80, "reg_lambda": 10, "lambdarank_truncation_level": 30},
+    "top20": {"n_estimators": 80, "learning_rate": 0.04, "num_leaves": 7, "max_depth": 3, "min_child_samples": 120, "reg_lambda": 15, "lambdarank_truncation_level": 25},
+    "regularized": {"n_estimators": 100, "learning_rate": 0.03, "num_leaves": 5, "max_depth": 3, "min_child_samples": 160, "reg_lambda": 20, "lambdarank_truncation_level": 40}
+  },
+  "baseline": "frozen 67/33 policy, chronological predictions on historical decisions; exact sealed 2026-09-18 rows",
+  "selection_boundary": "No exposed 2025 labels influence rounds 1 or 2. Exposed dates are run once for finalists and treated as diagnostics only.",
+  "current_universe_survivorship": true,
+  "portfolio_contract": "independent whole-share SIP per selected stock; gross price-only return"
+}

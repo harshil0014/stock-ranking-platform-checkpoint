@@ -1,0 +1,7 @@
+{
+  "python": "3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit (AMD64)]",
+  "numpy": "2.3.0",
+  "pandas": "3.0.3",
+  "lightgbm": "4.6.0",
+  "torch": "2.12.0+cpu"
+}

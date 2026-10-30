@@ -1,0 +1,34 @@
+FIT 2020 peer_strength 104542
+FIT 2020 peer_risk 104542
+FIT 2020 peer_both 104542
+FIT 2021 peer_strength 107752
+FIT 2021 peer_risk 107752
+FIT 2021 peer_both 107752
+FIT 2022 peer_strength 112401
+FIT 2022 peer_risk 112401
+FIT 2022 peer_both 112401
+FIT 2023 peer_strength 116443
+FIT 2023 peer_risk 116443
+FIT 2023 peer_both 116443
+METRICS development common raw
+METRICS development common capped
+METRICS development expanded raw
+METRICS development expanded capped
+FIT 2024 peer_risk 118313
+FIT 2025 peer_risk 237992
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\champion_peer_context_20261017.py:78: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  z[ANCHOR]=z.rebuilt_score; z['guarded_previous']=z.guarded_model_score
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\champion_peer_context_20261017.py:85: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  m,cols=fit(x,cutoff,name,year); z[name]=infer(m,z,cols)
+FIT current peer_risk 4436
+Traceback (most recent call last):
+  File "C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\champion_peer_context_20261017.py", line 135, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\champion_peer_context_20261017.py", line 129, in main
+    for year in [2024,2025,'current']:learn_year(x,ref,year,[name])
+                                      ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\champion_peer_context_20261017.py", line 92, in learn_year
+    assert len(z)==4436 and z.isin.is_unique
+                            ^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'is_unique'

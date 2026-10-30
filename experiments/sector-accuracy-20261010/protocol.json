@@ -1,0 +1,11 @@
+{
+  "role": "Additional whole-sector accuracy diagnostic requested by user; never substitutes for the unchanged broad promotion gate.",
+  "selection": "Highest development mean rank IC across nine profiles, equal sectors and dates, both common and expanded scopes; raw outcomes only. No recent-period input into this choice. All dates previously exposed by earlier research.",
+  "pair_accuracy": "Within date/profile/sector, one point per correctly ordered stock pair, zero for reversed pair, half for score/outcome ties. Equal date then sector/profile aggregation; not a probability of stock gains.",
+  "coverage": "At least five finite outcome-covered peers; common universe matches production, expanded compares only full-coverage policies. Current full-universe export separate.",
+  "fresh_validation": false,
+  "source_families": [
+    "rebuilt",
+    "yeti"
+  ]
+}

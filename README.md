@@ -1,5 +1,7 @@
 # Stock Ranking Platform
 
+Latest source and research checkpoint: [31 October 2026](docs/github_checkpoint_20261031.md). The current UI offers Baseline, Sector Champion, Closing High, Personalized, and Personalized V17. The sections below retain the earlier canonical baseline documentation.
+
 ## Canonical product
 
 The primary website exposes two active ranking modes:

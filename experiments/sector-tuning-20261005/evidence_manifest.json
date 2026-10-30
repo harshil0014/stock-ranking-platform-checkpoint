@@ -1,0 +1,100 @@
+{
+  "tests_passed": 8,
+  "serving_profiles": 9,
+  "custom_profile": 8250,
+  "live_model": "closing_high_sector",
+  "artifacts": [
+    {
+      "path": "experiments/sector-tuning-20261005/current_sector_top3.csv",
+      "sha256": "8c0b16500ffd889aa39ec930abb5f75289041578b1d69eceed575d95592e21b2"
+    },
+    {
+      "path": "experiments/sector-tuning-20261005/development_sector_profile_metrics.csv",
+      "sha256": "4343a27305cb86cdd31e80d368e5563e1046fe71babfaa28f0a94a15ebafecb4"
+    },
+    {
+      "path": "experiments/sector-tuning-20261005/early_sector_profile_metrics.csv",
+      "sha256": "43d7ee85ec8a5beffa076968fb503927f6958a0f34162e416305d2d014a29ab9"
+    },
+    {
+      "path": "experiments/sector-tuning-20261005/exposed_sector_profile_metrics.csv",
+      "sha256": "bf4d1cd84fd7722260b448520fd5424411ed01f9cfc14ec904f3378e9c23bef8"
+    },
+    {
+      "path": "experiments/sector-tuning-20261005/profile_summary.csv",
+      "sha256": "cdfc238b9dfe71b3eb97a81dedb7dff65d46cd0c0ad118a251127e841dd45fa3"
+    },
+    {
+      "path": "experiments/sector-tuning-20261005/summary.csv",
+      "sha256": "ee6a25b036fa5b7f7f5d21527793871096160a88ecf65e78252b03d795c11663"
+    },
+    {
+      "path": "experiments/sector-tuning-20261005/top1_top5_sensitivity.csv",
+      "sha256": "8f5e8b8f8dd0258a6d70ba79e53df825adeb4b75933f06060d00fa512899242b"
+    },
+    {
+      "path": "experiments/sector-tuning-20261005/trials.csv",
+      "sha256": "14c3144ba5ccebff469fc668cda62a0f9a3ad1f930ed8481a553db9172c999fd"
+    },
+    {
+      "path": "experiments/sector-tuning-20261005/development_sector_metrics.csv.gz",
+      "sha256": "0012e54d00cf2ab5664f71398422af72807a9be232cdf12b2950312ba25c6560"
+    },
+    {
+      "path": "experiments/sector-tuning-20261005/early_sector_metrics.csv.gz",
+      "sha256": "f9474bb5ba86c871f5dcfeff7dd810f87159123d466d7171905606a03f474a2e"
+    },
+    {
+      "path": "experiments/sector-tuning-20261005/exposed_sector_metrics.csv.gz",
+      "sha256": "ae96ecf3b670d962fd5703a411c08af86ce88e87dd105a7f16a89c69e55f90cb"
+    },
+    {
+      "path": "experiments/sector-tuning-20261005/browser_verification.json",
+      "sha256": "641df44ecd4f125b30b22387a1703775309ec06444e607a8176794b9574bf109"
+    },
+    {
+      "path": "experiments/sector-tuning-20261005/protocol.json",
+      "sha256": "8bb03b2e349a6c3a4963f937a2f18de4213d3c6873dabd7920c1a046eb2447e9"
+    },
+    {
+      "path": "experiments/sector-tuning-20261005/selection_lock.json",
+      "sha256": "0bed68d73f03e4ea089289f150bfb37842893bf6265820826e5119f109139bbf"
+    },
+    {
+      "path": "experiments/sector-tuning-20261005/serving_verification.json",
+      "sha256": "d0df1d56c61c697890cf2bd345987eee6a6d6451f2f4654bfa2aaaf66b6d3978"
+    },
+    {
+      "path": "src/stock_ranker/sector_scoring.py",
+      "sha256": "e7bb114103c3c400461a87410d75b53fd6f699c579ca84dd5f2c111b1dfd2f16"
+    },
+    {
+      "path": "src/stock_ranker/personalized_peak_product.py",
+      "sha256": "eca68fcd438248e3695b4bcca5e832b4ffedc66ee90dc1f5a5124b7d3dc3d36d"
+    },
+    {
+      "path": "src/stock_ranker/web_assets.py",
+      "sha256": "8df118f877925dfffd47abf75aa330008cb49ff9d378ca09ccfb14d3c8734c7d"
+    },
+    {
+      "path": "research/runners/sector_tuning_20261005.py",
+      "sha256": "c8bd136fa539ee5766ac271e03008fc90d7860d21862cb4978841cc1049cfb2b"
+    },
+    {
+      "path": "research/runners/finalize_sector_tuning_20261005.py",
+      "sha256": "7932a560b130209dfcf8c0f35987a75902da27d7901ac3f29edefde4c5a96dbc"
+    },
+    {
+      "path": "research/runtime/personalized-v17/sector_selection.json",
+      "sha256": "3c51e0dc18d97d846a5627cd2d39fa9e31f08c2a8dd91653886e3b776c79578c"
+    },
+    {
+      "path": "research/runtime/personalized-v17/manifest.json",
+      "sha256": "24f1e4a1aec9cb13747d2b08c570679666c493ee908b817cf493ce752d47b96b"
+    },
+    {
+      "path": "research/reports/sector_champion_20261005.md",
+      "sha256": "a87ac6ef684ceb3e1374826a6971328e9181c31a14ddf53c6c574e87f419d813"
+    }
+  ]
+}

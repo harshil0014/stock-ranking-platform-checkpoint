@@ -1,0 +1,8 @@
+{
+  "horizon_lookback_separation": true,
+  "no_score_penalty_when_all_correction_evidence_missing": true,
+  "correction_bounded_by_alpha": true,
+  "current_no_future_price_dates": true,
+  "current_unique_keys": true,
+  "frozen_champion_reproduction": true
+}

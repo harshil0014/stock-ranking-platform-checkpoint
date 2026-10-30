@@ -75,3 +75,19 @@ experiments/personalized-official-action-freeze/*-rebuild-check/
 experiments/shadow-*.log
 research/shadow_evidence/
 research/shadow_runs/
+experiments/model_dependencies_20261008/
+
+# Local environments, credentials, and transient caches
+.researchvenv/
+.venv-*/
+.env
+.env.*
+!.env.example
+**/pytest_tmp*/
+**/.pytest_cache/
+local_backups/
+tmp/
+
+
+# Generated experiment panels and acquisition caches; selected compact evidence is versioned.
+experiments/

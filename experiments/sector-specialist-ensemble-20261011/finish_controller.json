@@ -1,0 +1,15 @@
+{
+  "pid": 22752,
+  "created": 1791730835.247563,
+  "dependency": {
+    "pid": 33188,
+    "created": 1791730535.8129568,
+    "command": [
+      "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-W",
+      "ignore",
+      "research/runners/audit_sector_specialist_ensemble_20261011.py",
+      "evaluate"
+    ]
+  }
+}

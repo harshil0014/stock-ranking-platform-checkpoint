@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://arxiv.org/abs/2012.07149",
+    "use": "Compare direct ranking with regression; no claimed transfer of published profitability."
+  },
+  {
+    "url": "https://www.nber.org/papers/w25398",
+    "use": "Nonlinear momentum/volatility interactions; compare models on own dated data."
+  },
+  {
+    "url": "https://arxiv.org/abs/2204.01500",
+    "use": "Ranking loss choice and objective alignment matter."
+  },
+  {
+    "url": "https://lightgbm.readthedocs.io/en/stable/Parameters.html",
+    "use": "Linear label gain and monotone constraints supported; no click-position bias correction applied to stock data."
+  },
+  {
+    "url": "https://escholarship.org/uc/item/4w1110bb",
+    "use": "Multiple testing and backtest overfitting; keep trial ledger and no claims of blind evidence."
+  },
+  {
+    "url": "https://www.nature.com/articles/s41586-024-08328-6",
+    "use": "Tabular foundation model evaluated; published small-data scale differs from million-row SIP panel, pretrained financial contamination needs audit."
+  }
+]

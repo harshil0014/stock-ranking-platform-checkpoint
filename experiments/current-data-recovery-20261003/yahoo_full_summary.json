@@ -1,0 +1,82 @@
+{
+  "schema": "yahoo_full_current_recovery_v1",
+  "cutoff": "2026-10-03",
+  "source": "Yahoo Finance via yfinance",
+  "current_rows": 4436,
+  "rows_with_usable_yahoo_history": 4284,
+  "rows_without_usable_yahoo_history": 152,
+  "filled_existing_blank_cells": 325,
+  "stocks_with_existing_blank_fills": 58,
+  "new_yahoo_metric_columns": 34,
+  "missing_before": {
+    "product_baseline_yoy_growth": 251,
+    "product_baseline_cagr_3y": 631,
+    "product_baseline_cagr_5y": 863,
+    "current_cagr_7y": 1043,
+    "current_cagr_10y": 1476,
+    "high_52w": 62,
+    "low_52w": 62,
+    "recorded_high": 39,
+    "recorded_high_date": 39,
+    "product_baseline_days_since_recorded_high": 39,
+    "current_history_months": 4436,
+    "current_distance_from_recorded_high": 4436,
+    "current_full_history_max_drawdown": 4436,
+    "current_drawdown_duration_days": 4436,
+    "current_downside_volatility_1y": 4436,
+    "current_realized_volatility_1y": 4436
+  },
+  "missing_after": {
+    "product_baseline_yoy_growth": 251,
+    "product_baseline_cagr_3y": 631,
+    "product_baseline_cagr_5y": 863,
+    "current_cagr_7y": 1038,
+    "current_cagr_10y": 1459,
+    "high_52w": 26,
+    "low_52w": 26,
+    "recorded_high": 26,
+    "recorded_high_date": 26,
+    "product_baseline_days_since_recorded_high": 26,
+    "current_history_months": 152,
+    "current_distance_from_recorded_high": 152,
+    "current_full_history_max_drawdown": 152,
+    "current_drawdown_duration_days": 152,
+    "current_downside_volatility_1y": 152,
+    "current_realized_volatility_1y": 152
+  },
+  "remaining_reason_counts": {
+    "product_baseline_yoy_growth": {
+      "missing": 251,
+      "no_usable_yahoo_history": 30,
+      "yahoo_history_shorter_than_horizon": 197,
+      "history_long_enough_but_strict_anchor_unavailable_or_other": 24
+    },
+    "product_baseline_cagr_3y": {
+      "missing": 631,
+      "no_usable_yahoo_history": 60,
+      "yahoo_history_shorter_than_horizon": 561,
+      "history_long_enough_but_strict_anchor_unavailable_or_other": 10
+    },
+    "product_baseline_cagr_5y": {
+      "missing": 863,
+      "no_usable_yahoo_history": 71,
+      "yahoo_history_shorter_than_horizon": 776,
+      "history_long_enough_but_strict_anchor_unavailable_or_other": 16
+    },
+    "current_cagr_7y": {
+      "missing": 1038,
+      "no_usable_yahoo_history": 88,
+      "yahoo_history_shorter_than_horizon": 926,
+      "history_long_enough_but_strict_anchor_unavailable_or_other": 24
+    },
+    "current_cagr_10y": {
+      "missing": 1459,
+      "no_usable_yahoo_history": 88,
+      "yahoo_history_shorter_than_horizon": 1353,
+      "history_long_enough_but_strict_anchor_unavailable_or_other": 18
+    }
+  },
+  "existing_nonblank_overwritten": 0,
+  "historical_training_modified": false,
+  "production_modified": false
+}

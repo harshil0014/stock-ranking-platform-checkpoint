@@ -1,0 +1,21 @@
+{
+  "winner": {
+    "high": 0.5,
+    "downside": 0.2,
+    "momentum": 0.05,
+    "goal": 0,
+    "relative_high": 0.5,
+    "name": "h0.5_d0.2_m0.05_g0_r0.5",
+    "utility": 0.027713705670222768,
+    "gate": true,
+    "sector_utility_win_fraction": 0.6078431372549019,
+    "xirr_delta": 0.014657116104258572,
+    "drawdown_delta": 0.011739074009047501,
+    "achievement_delta": 0.004617332111463535,
+    "shortfall_delta": -0.003382140957831639,
+    "ndcg_delta": 0.007481227739385199
+  },
+  "trial_count": 48,
+  "protocol_sha256": "8bb03b2e349a6c3a4963f937a2f18de4213d3c6873dabd7920c1a046eb2447e9",
+  "exposure": "Development-only selection in this round; historical data previously exposed"
+}

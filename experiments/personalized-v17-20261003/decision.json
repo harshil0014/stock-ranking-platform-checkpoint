@@ -1,0 +1,77 @@
+{
+  "verdict": "PROMISING CHALLENGER",
+  "research_model_improved": true,
+  "production_replacement_authorized": false,
+  "production_deployed": false,
+  "candidate": {
+    "kind": "blend_targeted_monotone",
+    "alpha": 0.3,
+    "name": "targeted_ath60_ensemble",
+    "strong_eligible": true,
+    "eligible": true,
+    "utility": 0.06564173563871344
+  },
+  "development_all_profiles_return_and_drawdown_positive": true,
+  "strict_selection_gates_pass": true,
+  "development_delta": {
+    "coverage": 0.0,
+    "ndcg20": 0.05571630910271799,
+    "target_achievement_top20": 0.03958333333333333,
+    "target_shortfall_top20": -0.02210508094583005,
+    "median_xirr_top20": 0.22369585149657617,
+    "mean_asset_drawdown_top20": 0.0475687448970854,
+    "rank_ic": 0.02716351917146561,
+    "pairwise_accuracy": 0.009726779274856828
+  },
+  "exposed_supporting_delta": {
+    "coverage": 0.0,
+    "ndcg20": 0.14133865630462156,
+    "target_achievement_top20": 0.19212962962962962,
+    "target_shortfall_top20": -0.04029461635274538,
+    "median_xirr_top20": 0.3897521697661533,
+    "mean_asset_drawdown_top20": 0.03449724128290671,
+    "rank_ic": 0.022946880750691487,
+    "pairwise_accuracy": 0.00860522237133354
+  },
+  "robustness": [
+    {
+      "variant": "seed20261004",
+      "original_gates_pass": true,
+      "strict_gates_pass": false,
+      "median_return_delta": 0.21161063484619674,
+      "drawdown_delta": 0.045181499915176546,
+      "12m_return_delta": 0.4065411449533515,
+      "12m_drawdown_delta": 0.022267542925868553,
+      "worst_profile_return_delta": -0.016110573997628656
+    },
+    {
+      "variant": "seed20261005",
+      "original_gates_pass": true,
+      "strict_gates_pass": false,
+      "median_return_delta": 0.1545036154383443,
+      "drawdown_delta": 0.04730644957956103,
+      "12m_return_delta": 0.42450819319274863,
+      "12m_drawdown_delta": 0.006319482270156839,
+      "worst_profile_return_delta": -0.004048999076947821
+    },
+    {
+      "variant": "per_date",
+      "original_gates_pass": true,
+      "strict_gates_pass": false,
+      "median_return_delta": 0.17561577494729586,
+      "drawdown_delta": 0.050032272339436724,
+      "12m_return_delta": 0.42096683599757706,
+      "12m_drawdown_delta": 0.010684410955703435,
+      "worst_profile_return_delta": -0.018284600941370098
+    }
+  ],
+  "no_claim_of_unexposed_validation": true,
+  "limitations": [
+    "39 adaptively chosen development configurations: multiple testing exposure, bootstrap intervals are conditional and not selection-adjusted",
+    "Annual and per-date refresh comparisons differ; variant-specific profile results retained",
+    "High-volatility within-cohort drawdown can regress even when overall selected basket improves",
+    "Current corporate-action completeness after2026-09-18 unproved; original quarantines preserved",
+    "Frozen universe survivorship and provider publication/revision limitations remain"
+  ],
+  "completed_at": "2026-10-03T17:27:37.885904+00:00"
+}

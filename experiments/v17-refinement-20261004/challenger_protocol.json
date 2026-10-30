@@ -1,0 +1,131 @@
+{
+  "locked_at": "2026-10-03T21:31:00.404038+00:00",
+  "benchmark": "V17 refined ensemble",
+  "candidates": [
+    {
+      "family": "neural_moe",
+      "beta": 0.025,
+      "gate": "broad",
+      "name": "neural_moe_0.025_broad"
+    },
+    {
+      "family": "neural_moe",
+      "beta": 0.025,
+      "gate": "volatility",
+      "name": "neural_moe_0.025_volatility"
+    },
+    {
+      "family": "neural_moe",
+      "beta": 0.05,
+      "gate": "broad",
+      "name": "neural_moe_0.05_broad"
+    },
+    {
+      "family": "neural_moe",
+      "beta": 0.05,
+      "gate": "volatility",
+      "name": "neural_moe_0.05_volatility"
+    },
+    {
+      "family": "huber_return",
+      "beta": 0.025,
+      "gate": "broad",
+      "name": "huber_return_0.025_broad"
+    },
+    {
+      "family": "huber_return",
+      "beta": 0.025,
+      "gate": "volatility",
+      "name": "huber_return_0.025_volatility"
+    },
+    {
+      "family": "huber_return",
+      "beta": 0.05,
+      "gate": "broad",
+      "name": "huber_return_0.05_broad"
+    },
+    {
+      "family": "huber_return",
+      "beta": 0.05,
+      "gate": "volatility",
+      "name": "huber_return_0.05_volatility"
+    },
+    {
+      "family": "return_ranker",
+      "beta": 0.025,
+      "gate": "broad",
+      "name": "return_ranker_0.025_broad"
+    },
+    {
+      "family": "return_ranker",
+      "beta": 0.025,
+      "gate": "volatility",
+      "name": "return_ranker_0.025_volatility"
+    },
+    {
+      "family": "return_ranker",
+      "beta": 0.05,
+      "gate": "broad",
+      "name": "return_ranker_0.05_broad"
+    },
+    {
+      "family": "return_ranker",
+      "beta": 0.05,
+      "gate": "volatility",
+      "name": "return_ranker_0.05_volatility"
+    },
+    {
+      "family": "xendcg",
+      "beta": 0.025,
+      "gate": "broad",
+      "name": "xendcg_0.025_broad"
+    },
+    {
+      "family": "xendcg",
+      "beta": 0.025,
+      "gate": "volatility",
+      "name": "xendcg_0.025_volatility"
+    },
+    {
+      "family": "xendcg",
+      "beta": 0.05,
+      "gate": "broad",
+      "name": "xendcg_0.05_broad"
+    },
+    {
+      "family": "xendcg",
+      "beta": 0.05,
+      "gate": "volatility",
+      "name": "xendcg_0.05_volatility"
+    },
+    {
+      "family": "specialist_utility",
+      "beta": 0.025,
+      "gate": "broad",
+      "name": "specialist_utility_0.025_broad"
+    },
+    {
+      "family": "specialist_utility",
+      "beta": 0.025,
+      "gate": "volatility",
+      "name": "specialist_utility_0.025_volatility"
+    },
+    {
+      "family": "specialist_utility",
+      "beta": 0.05,
+      "gate": "broad",
+      "name": "specialist_utility_0.05_broad"
+    },
+    {
+      "family": "specialist_utility",
+      "beta": 0.05,
+      "gate": "volatility",
+      "name": "specialist_utility_0.05_volatility"
+    }
+  ],
+  "architecture": "Incremental confidence-weighted expert blend for36M only; retained12M and repaired60M exact. Reuse honestly purged family training from first tournament, no exposed retraining for selection.",
+  "clean_win": "Original strict champion gates; medianXIRR,NDCG,drawdown and achievement nonnegative vs refinedV17; shortfall nonpositive; every profile medianreturn>=-0.005 and drawdown>=-0.005; highvolreturn/drawdown nonnegative; utility>=.002 and3of4yearspositive. Alternate seed/perdate checks same aggregate directions; currentTop20 overlap>=.85.",
+  "mean_xirr_weight": 0,
+  "stop": "20 complementary residual configurations then stop; no exposed-driven changes.",
+  "conditional": "Only candidates passing all checks may be calledV18."
+}

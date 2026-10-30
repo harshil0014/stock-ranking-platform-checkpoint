@@ -1,0 +1,45 @@
+{
+  "stocks": 4436,
+  "sectors_including_unclassified": 59,
+  "top3_rows_including_ties": 176,
+  "flags": {
+    "NO_USABLE_REBUILT_INPUT": {
+      "all_stocks": 133,
+      "sector_top3": 0
+    },
+    "SHORT_PRICE_HISTORY": {
+      "all_stocks": 495,
+      "sector_top3": 5
+    },
+    "SMALL_SECTOR_NOT_BENCHMARKED": {
+      "all_stocks": 2,
+      "sector_top3": 2
+    },
+    "UNCLASSIFIED_NOT_BENCHMARKED": {
+      "all_stocks": 132,
+      "sector_top3": 3
+    },
+    "MORE_THAN_HALF_ZERO_PRICE_CHANGES": {
+      "all_stocks": 112,
+      "sector_top3": 2
+    },
+    "ONE_DAY_DOMINATES_PRICE_PATH": {
+      "all_stocks": 43,
+      "sector_top3": 0
+    },
+    "DRAWDOWN_BELOW_MINUS_50_PERCENT": {
+      "all_stocks": 1040,
+      "sector_top3": 2
+    },
+    "NEAR_RECENT_ROLLING_HIGH": {
+      "all_stocks": 224,
+      "sector_top3": 29
+    },
+    "OLD_RECORDED_HIGH_ANCHOR_ONLY": {
+      "all_stocks": 1469,
+      "sector_top3": 20
+    }
+  },
+  "interpretation": "Diagnostic thresholds, not trained penalties or proof of a bad stock. Recent rolling highs are positive context. Recorded ATH age is inherited anchor evidence and is not certified by this price rebuild. No automatic rank changes applied.",
+  "human_review_scope": "All stocks receive structural checks. Existing company rubric is separate; this is not 4436 new company due-diligence investigations."
+}

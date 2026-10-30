@@ -1,0 +1,94 @@
+{
+  "created_at": "2026-10-04T12:05:08.456837+00:00",
+  "status": "exploratory; older and later dates are exposed context",
+  "hypothesis": "Blend the age-aware learned expert at 10% and add an explicit adjusted-closing-high-age penalty. Test whether 52-week-high distance, momentum, or downside volatility helps condition the penalty.",
+  "candidate_count": 12,
+  "candidates": [
+    {
+      "name": "age_only_0.005",
+      "kind": "age_only",
+      "beta": 0.005
+    },
+    {
+      "name": "age_only_0.01",
+      "kind": "age_only",
+      "beta": 0.01
+    },
+    {
+      "name": "age_only_0.02",
+      "kind": "age_only",
+      "beta": 0.02
+    },
+    {
+      "name": "age_52w_0.005",
+      "kind": "age_52w",
+      "beta": 0.005
+    },
+    {
+      "name": "age_52w_0.01",
+      "kind": "age_52w",
+      "beta": 0.01
+    },
+    {
+      "name": "age_52w_0.02",
+      "kind": "age_52w",
+      "beta": 0.02
+    },
+    {
+      "name": "age_momentum_0.005",
+      "kind": "age_momentum",
+      "beta": 0.005
+    },
+    {
+      "name": "age_momentum_0.01",
+      "kind": "age_momentum",
+      "beta": 0.01
+    },
+    {
+      "name": "age_momentum_0.02",
+      "kind": "age_momentum",
+      "beta": 0.02
+    },
+    {
+      "name": "age_risk_0.005",
+      "kind": "age_risk",
+      "beta": 0.005
+    },
+    {
+      "name": "age_risk_0.01",
+      "kind": "age_risk",
+      "beta": 0.01
+    },
+    {
+      "name": "age_risk_0.02",
+      "kind": "age_risk",
+      "beta": 0.02
+    }
+  ],
+  "age_weight": "10% age-aware learned expert plus 0.5%, 1%, or 2% maximum direct closing-high-age penalty",
+  "selection_dates": [
+    "2020-03-31",
+    "2020-06-30",
+    "2020-09-30",
+    "2020-12-31",
+    "2021-03-31",
+    "2021-06-30",
+    "2021-09-30",
+    "2021-12-31",
+    "2022-03-31",
+    "2022-06-30",
+    "2022-09-30",
+    "2022-12-31",
+    "2023-03-31",
+    "2023-06-30",
+    "2023-09-30",
+    "2023-12-31"
+  ],
+  "selection": "Among candidates with positive aggregate median XIRR, NDCG, drawdown and achievement deltas and nonpositive shortfall against V17 refined, select highest original utility. No all-profile or current-overlap veto because user explicitly permits ranking changes. If none passes, keep the existing learned expert as exploratory comparison.",
+  "source_limits": "Published 52-week-high and historical-high momentum evidence motivates variables; it does not prove this Indian SIP strategy. 2020-2023 has prior research exposure; 2016-2019 and 2024-2025 are contextual, not blind.",
+  "sources": [
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4587697",
+    "https://www.sciencedirect.com/science/article/abs/pii/S0378426613002446",
+    "https://www.sciencedirect.com/science/article/pii/S1544612324012455"
+  ]
+}

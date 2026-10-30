@@ -1,0 +1,15 @@
+{
+  "schema_version": "personalized_deep_walkforward_v1",
+  "created": "2026-10-02",
+  "panel": "experiments/personalized-deep-history-20261002/real-panel-v7/deep_panel.csv.gz",
+  "outcome_horizon_months": 12,
+  "initial_history_dates": ["2016-12-31","2017-12-31","2018-12-31","2019-12-31"],
+  "development_selection_dates": ["2020-03-31","2020-09-30","2021-03-31","2021-09-30","2022-03-31","2022-06-30","2022-09-30","2022-12-31","2023-03-31","2023-06-30","2023-09-30","2023-12-31"],
+  "clean_holdout_dates": ["2024-03-31","2024-09-30"],
+  "exposed_diagnostic_dates": ["2025-03-31","2025-06-30"],
+  "training_rule": "For each scored decision date, train only on rows whose 12-month endpoint is strictly earlier than that decision date.",
+  "selection_rule": "Feature family, LambdaRank parameters and Goal/ranker blend are selected only on development_selection_dates. clean_holdout_dates are evaluated only after locked_selection.json is written.",
+  "current_facts_policy": "Current company facts may map ISIN to a price-history file only; no current sector or fundamental value may be a historical model feature.",
+  "production_mutated": false,
+  "frozen_champion_mutated": false
+}

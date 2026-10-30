@@ -1,0 +1,68 @@
+{
+  "schema": "personalized_v13_selection_lock_v1",
+  "phase": "development_locked_before_new_final_collection",
+  "winner": {
+    "family": "smooth_history_confidence_plus_downside_weekly",
+    "formula": "champion_score - 0.06*sqrt((1-min(history_months/60,1))*I(no observed true 5Y CAGR)) - 0.20*normalized_downside_volatility_1y - 0.15*I(weekly profile)*normalized_downside_volatility_1y",
+    "history_sqrt_coefficient": 0.06,
+    "downside_coefficient": 0.2,
+    "weekly_extra_downside": 0.15,
+    "development_utility": 0.0054421392118689,
+    "delta_ndcg20": 0.0429921678896537,
+    "delta_target_achievement_top20": 0.0184027777777778,
+    "delta_target_shortfall_top20": -0.011317276802932,
+    "delta_median_xirr_top20": 0.0628756851096056,
+    "delta_mean_asset_drawdown_top20": 0.0354243768330955,
+    "weekly_shortfall_delta": -0.0200822630513669,
+    "weekly_achievement_delta": 0.040625,
+    "weekly_drawdown_delta": 0.0516568724323602,
+    "lookback60_shortfall_delta": -0.0037959573488886,
+    "lookback60_achievement_delta": -0.040625,
+    "lookback60_drawdown_delta": 0.0509993069561426,
+    "current_top20_missing_true_5y": 0.5,
+    "current_top50_missing_true_5y": 0.38,
+    "current_top100_missing_true_5y": 0.24
+  },
+  "selection_evidence": {
+    "outcome_dates": "2020-2023 development only",
+    "post_2023_outcomes_loaded": false,
+    "current_2026_09_18_structure_used": true,
+    "mean_xirr_selection_weight": 0
+  },
+  "guardrails": {
+    "initial_strict_gate": {
+      "top20_missing_max": 0.5,
+      "top50_missing_max": 0.35,
+      "passing_candidates": 0
+    },
+    "documented_revised_gate": {
+      "top20_missing_max": 0.5,
+      "top50_missing_max": 0.4,
+      "passing_candidates": 3,
+      "reason": "35% Top-50 gate admitted no positive-development-utility candidate; 40% still requires material reduction from V12 challenger 46% while preserving weekly and broad development gates."
+    },
+    "weekly_shortfall_delta_max": 0.0,
+    "weekly_drawdown_delta_min": 0.0,
+    "weekly_achievement_delta_min": -0.02,
+    "lookback60_shortfall_delta_max": 0.005,
+    "lookback60_drawdown_delta_min": -0.01,
+    "lookback60_achievement_delta_min": -0.05
+  },
+  "future_blind_validation": {
+    "target_decision_date": "2025-09-30",
+    "target_endpoint": "2026-09-30",
+    "required_data_cutoff_at_least": "2026-09-30",
+    "outcome_values_seen_before_lock": false,
+    "evaluate_once_after_verified_data_extension": true
+  },
+  "source_sha256": {
+    "v12_development_baseline.pkl.gz": "9a0a5cf64ea0d6ef208c85878462295d3d681148352568d19fe36a1d2647e562",
+    "development_search.csv": "19c99cdcd7f6c9d3a896d431e0e35f50832b3e81d2e4340faf4a062b251d63ad",
+    "smooth_development_search.csv": "d3e5e05ecd352e37526f6f2e1de9e47098e6062bc9d9901dc6aa544f8a828067",
+    "personalized_v13_history_weekly_probe.py": "af9ac75069385dc613768b90fee7e73e312f18e88012ef3e0b74754011323a6a",
+    "personalized_v13_smooth_history_probe.py": "8a6d9fb3a9bd889cc9cb07ff7bce8652563b848ffbee25bf3e20a7830f053954"
+  },
+  "production_mutated": false,
+  "frozen_champion_mutated": false,
+  "v12_final_reused_for_selection": false
+}

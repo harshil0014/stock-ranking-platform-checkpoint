@@ -1,0 +1,6 @@
+model,improved,regressed,ties,strict_gate
+tabm_compact_e24_return_w0.3,435,861,0,False
+tabm_compact_e48_return_w0.3,481,815,0,False
+tabm_embedded_e24_return_w1.0,556,740,0,False
+tabm_embedded_e48_return_w1.0,531,765,0,False
+tabm_embedded_e48_return_w0.1,802,492,2,False

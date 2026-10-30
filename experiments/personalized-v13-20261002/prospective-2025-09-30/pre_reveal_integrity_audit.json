@@ -1,0 +1,23 @@
+{
+  "schema": "v13_prospective_prereveal_integrity_audit_v1",
+  "selection_lock_sha256": "dad3ce68b22a1f744650e501505a3ebc78dc7c4bd39c3247982c4ed84bcac13b",
+  "scores_before_reveal_sha256": "5040171dd8a88f9202a89dadba4538537a3571d0eba6bcec0f631634c5a49926",
+  "pre_reveal_record_sha256": "e870f44a8f20965bb1eb81c8fdee26d34b28867642f42a9e7fc2a0a27b454939",
+  "decision_rows": 30305,
+  "profiles": 9,
+  "frozen_action_rows_byte_semantics_preserved": 2517,
+  "new_official_action_rows": 4,
+  "frozen_provider_split_rows_preserved": 1816,
+  "new_provider_split_rows": 2,
+  "bse_action_success": 1858,
+  "bse_action_failed_codes_quarantined": [
+    "511664",
+    "511692",
+    "526373"
+  ],
+  "official_price_files_verified": 16,
+  "execution_price_rows_verified": 34025,
+  "outcome_values_loaded": false,
+  "outcome_file_exists": false,
+  "accepted_data_mutated": false
+}

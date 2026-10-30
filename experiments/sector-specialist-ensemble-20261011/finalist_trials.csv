@@ -1,0 +1,14 @@
+model,improved,regressed,ties,strict_gate
+ebm_additive_return_w0.3,431,865,0,False
+ebm_interactions_return_w0.3,411,885,0,False
+extra_trees_return_w0.3,637,655,4,False
+ridge_balanced_w1.0,639,657,0,False
+tabm_compact_return_w0.3,471,821,4,False
+tabm_embedded_return_w1.0,526,770,0,False
+mean_return_w1.0,422,874,0,False
+stack_breadth_balanced_w1.0,943,347,6,False
+ridge_goal_w1.0,616,678,2,False
+lgb_return_full_d3_w0.1,721,473,102,False
+lgb_return_full_d3_w0.5,556,738,2,False
+pfn_balanced_absolute_soft1.0_d3_w0.1,453,126,717,False
+catpair_return_uniform_w0.1,658,622,16,False

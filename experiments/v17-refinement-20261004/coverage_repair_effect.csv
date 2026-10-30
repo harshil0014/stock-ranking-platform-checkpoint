@@ -1,0 +1,10 @@
+profile,before,after,top20_overlap,newly_ranked_top20
+amount1000,3246,3268,1.0,0
+amount50000,3244,3260,1.0,0
+base7500,3238,3257,1.0,0
+lookback12,3687,3687,1.0,0
+lookback60,2913,2936,1.0,0
+quarterly,3245,3268,1.0,0
+target10,3238,3257,1.0,0
+target30,3238,3257,1.0,0
+weekly,3246,3266,1.0,0

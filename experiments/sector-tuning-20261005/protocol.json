@@ -1,0 +1,395 @@
+{
+  "objective": "Within-sector Top 3, equal sector and profile weights; global ranking excluded",
+  "selection_period": "2020-2023 previously exposed development dates",
+  "candidates": [
+    {
+      "high": 0.3,
+      "downside": 0.1,
+      "momentum": 0.05,
+      "goal": 0,
+      "relative_high": 0,
+      "name": "h0.3_d0.1_m0.05_g0_r0"
+    },
+    {
+      "high": 0.3,
+      "downside": 0.1,
+      "momentum": 0.05,
+      "goal": 0,
+      "relative_high": 0.5,
+      "name": "h0.3_d0.1_m0.05_g0_r0.5"
+    },
+    {
+      "high": 0.3,
+      "downside": 0.1,
+      "momentum": 0.05,
+      "goal": 0.1,
+      "relative_high": 0,
+      "name": "h0.3_d0.1_m0.05_g0.1_r0"
+    },
+    {
+      "high": 0.3,
+      "downside": 0.1,
+      "momentum": 0.05,
+      "goal": 0.1,
+      "relative_high": 0.5,
+      "name": "h0.3_d0.1_m0.05_g0.1_r0.5"
+    },
+    {
+      "high": 0.3,
+      "downside": 0.1,
+      "momentum": 0.1,
+      "goal": 0,
+      "relative_high": 0,
+      "name": "h0.3_d0.1_m0.1_g0_r0"
+    },
+    {
+      "high": 0.3,
+      "downside": 0.1,
+      "momentum": 0.1,
+      "goal": 0,
+      "relative_high": 0.5,
+      "name": "h0.3_d0.1_m0.1_g0_r0.5"
+    },
+    {
+      "high": 0.3,
+      "downside": 0.1,
+      "momentum": 0.1,
+      "goal": 0.1,
+      "relative_high": 0,
+      "name": "h0.3_d0.1_m0.1_g0.1_r0"
+    },
+    {
+      "high": 0.3,
+      "downside": 0.1,
+      "momentum": 0.1,
+      "goal": 0.1,
+      "relative_high": 0.5,
+      "name": "h0.3_d0.1_m0.1_g0.1_r0.5"
+    },
+    {
+      "high": 0.3,
+      "downside": 0.2,
+      "momentum": 0.05,
+      "goal": 0,
+      "relative_high": 0,
+      "name": "h0.3_d0.2_m0.05_g0_r0"
+    },
+    {
+      "high": 0.3,
+      "downside": 0.2,
+      "momentum": 0.05,
+      "goal": 0,
+      "relative_high": 0.5,
+      "name": "h0.3_d0.2_m0.05_g0_r0.5"
+    },
+    {
+      "high": 0.3,
+      "downside": 0.2,
+      "momentum": 0.05,
+      "goal": 0.1,
+      "relative_high": 0,
+      "name": "h0.3_d0.2_m0.05_g0.1_r0"
+    },
+    {
+      "high": 0.3,
+      "downside": 0.2,
+      "momentum": 0.05,
+      "goal": 0.1,
+      "relative_high": 0.5,
+      "name": "h0.3_d0.2_m0.05_g0.1_r0.5"
+    },
+    {
+      "high": 0.3,
+      "downside": 0.2,
+      "momentum": 0.1,
+      "goal": 0,
+      "relative_high": 0,
+      "name": "h0.3_d0.2_m0.1_g0_r0"
+    },
+    {
+      "high": 0.3,
+      "downside": 0.2,
+      "momentum": 0.1,
+      "goal": 0,
+      "relative_high": 0.5,
+      "name": "h0.3_d0.2_m0.1_g0_r0.5"
+    },
+    {
+      "high": 0.3,
+      "downside": 0.2,
+      "momentum": 0.1,
+      "goal": 0.1,
+      "relative_high": 0,
+      "name": "h0.3_d0.2_m0.1_g0.1_r0"
+    },
+    {
+      "high": 0.3,
+      "downside": 0.2,
+      "momentum": 0.1,
+      "goal": 0.1,
+      "relative_high": 0.5,
+      "name": "h0.3_d0.2_m0.1_g0.1_r0.5"
+    },
+    {
+      "high": 0.4,
+      "downside": 0.1,
+      "momentum": 0.05,
+      "goal": 0,
+      "relative_high": 0,
+      "name": "h0.4_d0.1_m0.05_g0_r0"
+    },
+    {
+      "high": 0.4,
+      "downside": 0.1,
+      "momentum": 0.05,
+      "goal": 0,
+      "relative_high": 0.5,
+      "name": "h0.4_d0.1_m0.05_g0_r0.5"
+    },
+    {
+      "high": 0.4,
+      "downside": 0.1,
+      "momentum": 0.05,
+      "goal": 0.1,
+      "relative_high": 0,
+      "name": "h0.4_d0.1_m0.05_g0.1_r0"
+    },
+    {
+      "high": 0.4,
+      "downside": 0.1,
+      "momentum": 0.05,
+      "goal": 0.1,
+      "relative_high": 0.5,
+      "name": "h0.4_d0.1_m0.05_g0.1_r0.5"
+    },
+    {
+      "high": 0.4,
+      "downside": 0.1,
+      "momentum": 0.1,
+      "goal": 0,
+      "relative_high": 0,
+      "name": "h0.4_d0.1_m0.1_g0_r0"
+    },
+    {
+      "high": 0.4,
+      "downside": 0.1,
+      "momentum": 0.1,
+      "goal": 0,
+      "relative_high": 0.5,
+      "name": "h0.4_d0.1_m0.1_g0_r0.5"
+    },
+    {
+      "high": 0.4,
+      "downside": 0.1,
+      "momentum": 0.1,
+      "goal": 0.1,
+      "relative_high": 0,
+      "name": "h0.4_d0.1_m0.1_g0.1_r0"
+    },
+    {
+      "high": 0.4,
+      "downside": 0.1,
+      "momentum": 0.1,
+      "goal": 0.1,
+      "relative_high": 0.5,
+      "name": "h0.4_d0.1_m0.1_g0.1_r0.5"
+    },
+    {
+      "high": 0.4,
+      "downside": 0.2,
+      "momentum": 0.05,
+      "goal": 0,
+      "relative_high": 0,
+      "name": "h0.4_d0.2_m0.05_g0_r0"
+    },
+    {
+      "high": 0.4,
+      "downside": 0.2,
+      "momentum": 0.05,
+      "goal": 0,
+      "relative_high": 0.5,
+      "name": "h0.4_d0.2_m0.05_g0_r0.5"
+    },
+    {
+      "high": 0.4,
+      "downside": 0.2,
+      "momentum": 0.05,
+      "goal": 0.1,
+      "relative_high": 0,
+      "name": "h0.4_d0.2_m0.05_g0.1_r0"
+    },
+    {
+      "high": 0.4,
+      "downside": 0.2,
+      "momentum": 0.05,
+      "goal": 0.1,
+      "relative_high": 0.5,
+      "name": "h0.4_d0.2_m0.05_g0.1_r0.5"
+    },
+    {
+      "high": 0.4,
+      "downside": 0.2,
+      "momentum": 0.1,
+      "goal": 0,
+      "relative_high": 0,
+      "name": "h0.4_d0.2_m0.1_g0_r0"
+    },
+    {
+      "high": 0.4,
+      "downside": 0.2,
+      "momentum": 0.1,
+      "goal": 0,
+      "relative_high": 0.5,
+      "name": "h0.4_d0.2_m0.1_g0_r0.5"
+    },
+    {
+      "high": 0.4,
+      "downside": 0.2,
+      "momentum": 0.1,
+      "goal": 0.1,
+      "relative_high": 0,
+      "name": "h0.4_d0.2_m0.1_g0.1_r0"
+    },
+    {
+      "high": 0.4,
+      "downside": 0.2,
+      "momentum": 0.1,
+      "goal": 0.1,
+      "relative_high": 0.5,
+      "name": "h0.4_d0.2_m0.1_g0.1_r0.5"
+    },
+    {
+      "high": 0.5,
+      "downside": 0.1,
+      "momentum": 0.05,
+      "goal": 0,
+      "relative_high": 0,
+      "name": "h0.5_d0.1_m0.05_g0_r0"
+    },
+    {
+      "high": 0.5,
+      "downside": 0.1,
+      "momentum": 0.05,
+      "goal": 0,
+      "relative_high": 0.5,
+      "name": "h0.5_d0.1_m0.05_g0_r0.5"
+    },
+    {
+      "high": 0.5,
+      "downside": 0.1,
+      "momentum": 0.05,
+      "goal": 0.1,
+      "relative_high": 0,
+      "name": "h0.5_d0.1_m0.05_g0.1_r0"
+    },
+    {
+      "high": 0.5,
+      "downside": 0.1,
+      "momentum": 0.05,
+      "goal": 0.1,
+      "relative_high": 0.5,
+      "name": "h0.5_d0.1_m0.05_g0.1_r0.5"
+    },
+    {
+      "high": 0.5,
+      "downside": 0.1,
+      "momentum": 0.1,
+      "goal": 0,
+      "relative_high": 0,
+      "name": "h0.5_d0.1_m0.1_g0_r0"
+    },
+    {
+      "high": 0.5,
+      "downside": 0.1,
+      "momentum": 0.1,
+      "goal": 0,
+      "relative_high": 0.5,
+      "name": "h0.5_d0.1_m0.1_g0_r0.5"
+    },
+    {
+      "high": 0.5,
+      "downside": 0.1,
+      "momentum": 0.1,
+      "goal": 0.1,
+      "relative_high": 0,
+      "name": "h0.5_d0.1_m0.1_g0.1_r0"
+    },
+    {
+      "high": 0.5,
+      "downside": 0.1,
+      "momentum": 0.1,
+      "goal": 0.1,
+      "relative_high": 0.5,
+      "name": "h0.5_d0.1_m0.1_g0.1_r0.5"
+    },
+    {
+      "high": 0.5,
+      "downside": 0.2,
+      "momentum": 0.05,
+      "goal": 0,
+      "relative_high": 0,
+      "name": "h0.5_d0.2_m0.05_g0_r0"
+    },
+    {
+      "high": 0.5,
+      "downside": 0.2,
+      "momentum": 0.05,
+      "goal": 0,
+      "relative_high": 0.5,
+      "name": "h0.5_d0.2_m0.05_g0_r0.5"
+    },
+    {
+      "high": 0.5,
+      "downside": 0.2,
+      "momentum": 0.05,
+      "goal": 0.1,
+      "relative_high": 0,
+      "name": "h0.5_d0.2_m0.05_g0.1_r0"
+    },
+    {
+      "high": 0.5,
+      "downside": 0.2,
+      "momentum": 0.05,
+      "goal": 0.1,
+      "relative_high": 0.5,
+      "name": "h0.5_d0.2_m0.05_g0.1_r0.5"
+    },
+    {
+      "high": 0.5,
+      "downside": 0.2,
+      "momentum": 0.1,
+      "goal": 0,
+      "relative_high": 0,
+      "name": "h0.5_d0.2_m0.1_g0_r0"
+    },
+    {
+      "high": 0.5,
+      "downside": 0.2,
+      "momentum": 0.1,
+      "goal": 0,
+      "relative_high": 0.5,
+      "name": "h0.5_d0.2_m0.1_g0_r0.5"
+    },
+    {
+      "high": 0.5,
+      "downside": 0.2,
+      "momentum": 0.1,
+      "goal": 0.1,
+      "relative_high": 0,
+      "name": "h0.5_d0.2_m0.1_g0.1_r0"
+    },
+    {
+      "high": 0.5,
+      "downside": 0.2,
+      "momentum": 0.1,
+      "goal": 0.1,
+      "relative_high": 0.5,
+      "name": "h0.5_d0.2_m0.1_g0.1_r0.5"
+    }
+  ],
+  "sector_mapping": "Current runtime product_sector; retrospective, not historical PIT membership",
+  "gate": "All five development averages nonworse; each profile XIRR/drawdown loss <=1pp, shortfall increase <=0.5pp; >=55% sectors nonnegative utility",
+  "utility": "delta XIRR +0.5 delta drawdown +0.5 delta achievement -delta shortfall +0.2 delta NDCG",
+  "fallback": "Unknown sectors or fewer than five eligible peers retain previous reviewed score",
+  "evaluation": "Lock before early/exposed diagnostics; no new independent-validation claim"
+}

@@ -1,0 +1,11 @@
+{
+  "http_base_rows": 4436,
+  "default_score_max_error": 2.7755575615628914e-16,
+  "exact_sector_ranks": true,
+  "invalid_input_http400": true,
+  "amount_field_changes_execution_for_stocks": 3387,
+  "numerical_coverage": 4436,
+  "evidence_fallbacks": 133,
+  "profile_changes_stock_order": false,
+  "browser_visual_check": "Unavailable: local browser disabled in Work settings"
+}

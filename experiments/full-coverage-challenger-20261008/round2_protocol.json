@@ -1,0 +1,150 @@
+{
+  "candidates": [
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.01,
+      "name": "rank_xendcg_return_7_blend0.01"
+    },
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.025,
+      "name": "rank_xendcg_return_7_blend0.025"
+    },
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.05,
+      "name": "rank_xendcg_return_7_blend0.05"
+    },
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.075,
+      "name": "rank_xendcg_return_7_blend0.075"
+    },
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.1,
+      "name": "rank_xendcg_return_7_blend0.1"
+    },
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.15,
+      "name": "rank_xendcg_return_7_blend0.15"
+    },
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.25,
+      "name": "rank_xendcg_return_7_blend0.25"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.01,
+      "name": "rank_xendcg_return_15_blend0.01"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.025,
+      "name": "rank_xendcg_return_15_blend0.025"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.05,
+      "name": "rank_xendcg_return_15_blend0.05"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.075,
+      "name": "rank_xendcg_return_15_blend0.075"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.1,
+      "name": "rank_xendcg_return_15_blend0.1"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.15,
+      "name": "rank_xendcg_return_15_blend0.15"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.25,
+      "name": "rank_xendcg_return_15_blend0.25"
+    },
+    {
+      "source": "rank_xendcg_balanced_7",
+      "alpha": 0.01,
+      "name": "rank_xendcg_balanced_7_blend0.01"
+    },
+    {
+      "source": "rank_xendcg_balanced_7",
+      "alpha": 0.025,
+      "name": "rank_xendcg_balanced_7_blend0.025"
+    },
+    {
+      "source": "rank_xendcg_balanced_7",
+      "alpha": 0.05,
+      "name": "rank_xendcg_balanced_7_blend0.05"
+    },
+    {
+      "source": "rank_xendcg_balanced_7",
+      "alpha": 0.075,
+      "name": "rank_xendcg_balanced_7_blend0.075"
+    },
+    {
+      "source": "rank_xendcg_balanced_7",
+      "alpha": 0.1,
+      "name": "rank_xendcg_balanced_7_blend0.1"
+    },
+    {
+      "source": "rank_xendcg_balanced_7",
+      "alpha": 0.15,
+      "name": "rank_xendcg_balanced_7_blend0.15"
+    },
+    {
+      "source": "rank_xendcg_balanced_7",
+      "alpha": 0.25,
+      "name": "rank_xendcg_balanced_7_blend0.25"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.01,
+      "name": "rank_xendcg_balanced_15_blend0.01"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.025,
+      "name": "rank_xendcg_balanced_15_blend0.025"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.05,
+      "name": "rank_xendcg_balanced_15_blend0.05"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.075,
+      "name": "rank_xendcg_balanced_15_blend0.075"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.1,
+      "name": "rank_xendcg_balanced_15_blend0.1"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.15,
+      "name": "rank_xendcg_balanced_15_blend0.15"
+    },
+    {
+      "source": "rank_xendcg_balanced_15",
+      "alpha": 0.25,
+      "name": "rank_xendcg_balanced_15_blend0.25"
+    }
+  ],
+  "reason": "Large learned residual lost recent common-stock returns; investigate small residuals and return-tail sensitivity.",
+  "selection_exposure": "Both 2020-2023 and previously inspected 2024-2025 now used for refinement; NOT independent validation.",
+  "primary_returns": "XIRR clipped to [-100%,+100%] to stop extreme observations dominating model selection; raw sensitivity separately.",
+  "strict_gate": "All five Top3 metrics nonworse in both periods and both common/expanded scopes, with a strict improvement.",
+  "secondary_gate": "Positive utility every period/scope; each XIRR loss <=0.5pp, drawdown loss <=0.5pp, achievement loss <=1pp, shortfall increase <=0.25pp, NDCG loss <=0.5pp.",
+  "tie_break": "Highest mean utility, then smaller alpha; no gate changes after results."
+}

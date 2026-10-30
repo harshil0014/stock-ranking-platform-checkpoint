@@ -1,0 +1,49 @@
+LEARNED 2020 nnls_outer_return NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2020 nnls_outer_balanced NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2020 nnls_nested_return NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2020 nnls_nested_balanced NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2020 tabpfn_v2_context256 NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2020 tabpfn_v2_context768 NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2021 nnls_outer_return NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2021 nnls_outer_balanced NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2021 nnls_nested_return NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2021 nnls_nested_balanced NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2021 tabpfn_v2_context256 NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2021 tabpfn_v2_context768 NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2022 nnls_outer_return FIT
+LEARNED 2022 nnls_outer_balanced FIT
+LEARNED 2022 nnls_nested_return FIT
+LEARNED 2022 nnls_nested_balanced FIT
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\experiments\premodel_dependencies_20261010\tabpfn\regressor.py:563: UserWarning: Running on CPU with more than 200 samples may be slow.
+Consider using a GPU or the tabpfn-client API: https://github.com/PriorLabs/tabpfn-client
+  check_cpu_warning(
+TABPFN LOADED tabpfn_v2_context256_2022 context 256
+TABPFN GRID tabpfn_v2_context256_2022 {'grid': 33, 'probe_mae': 0.001940641766628213, 'probe_max': 0.0059790163593453904} 28.5
+TABPFN COMPLETE tabpfn_v2_context256_2022 28.637301100003242
+LEARNED 2022 tabpfn_v2_context256 FIT_GRID_APPROXIMATION
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\experiments\premodel_dependencies_20261010\tabpfn\regressor.py:563: UserWarning: Running on CPU with more than 200 samples may be slow.
+Consider using a GPU or the tabpfn-client API: https://github.com/PriorLabs/tabpfn-client
+  check_cpu_warning(
+TABPFN LOADED tabpfn_v2_context768_2022 context 768
+TABPFN GRID tabpfn_v2_context768_2022 {'grid': 33, 'probe_mae': 0.0012666697794296413, 'probe_max': 0.007022864477767898} 9.6
+TABPFN COMPLETE tabpfn_v2_context768_2022 9.79875439999887
+LEARNED 2022 tabpfn_v2_context768 FIT_GRID_APPROXIMATION
+LEARNED 2023 nnls_outer_return FIT
+LEARNED 2023 nnls_outer_balanced FIT
+LEARNED 2023 nnls_nested_return FIT
+LEARNED 2023 nnls_nested_balanced FIT
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\experiments\premodel_dependencies_20261010\tabpfn\regressor.py:563: UserWarning: Running on CPU with more than 200 samples may be slow.
+Consider using a GPU or the tabpfn-client API: https://github.com/PriorLabs/tabpfn-client
+  check_cpu_warning(
+TABPFN LOADED tabpfn_v2_context256_2023 context 256
+TABPFN GRID tabpfn_v2_context256_2023 {'grid': 33, 'probe_mae': 0.001200967627483545, 'probe_max': 0.004364077365283214} 8.8
+TABPFN COMPLETE tabpfn_v2_context256_2023 8.985554700004286
+LEARNED 2023 tabpfn_v2_context256 FIT_GRID_APPROXIMATION
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\experiments\premodel_dependencies_20261010\tabpfn\regressor.py:563: UserWarning: Running on CPU with more than 200 samples may be slow.
+Consider using a GPU or the tabpfn-client API: https://github.com/PriorLabs/tabpfn-client
+  check_cpu_warning(
+TABPFN LOADED tabpfn_v2_context768_2023 context 768
+TABPFN GRID tabpfn_v2_context768_2023 {'grid': 33, 'probe_mae': 0.007378491286166497, 'probe_max': 0.03333452905746803} 10.7
+TABPFN GRID tabpfn_v2_context768_2023 {'grid': 65, 'probe_mae': 0.006827838970822429, 'probe_max': 0.02813474076295952} 18.1
+TABPFN GRID tabpfn_v2_context768_2023 {'grid': 129, 'probe_mae': 0.007201091514921247, 'probe_max': 0.02789376751147199} 47.6

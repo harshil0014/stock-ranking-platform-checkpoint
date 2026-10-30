@@ -1,0 +1,20 @@
+{
+  "review_date": "2026-10-08",
+  "isin": "INE955I01044",
+  "company": "Sejal Glass Limited",
+  "cached_decision_date": "2021-03-31",
+  "cached_outcome_endpoint": "2022-03-31",
+  "cached_future_xirr_decimal": 9086.008636,
+  "primary_source": "https://sejalglass.co.in/document/Annual%20Report%202021-2022.pdf",
+  "source_document_period": "2021-2022",
+  "source_facts": {
+    "existing_shares_before_consolidation": 33550000,
+    "existing_shares_after_consolidation": 100000,
+    "record_date": "2021-05-10",
+    "trading_resumption": "2021-12-13"
+  },
+  "status": "CORPORATE_ACTION_RECONCILIATION_REQUIRED",
+  "interpretation": "The source documents a share-count discontinuity inside the cached outcome window. It does not by itself establish the correct SIP XIRR or prove whether the cache already adjusted holdings. Reconcile transaction dates, holdings, suspension and prices before claiming the extreme outcome.",
+  "input_data_modified": false,
+  "note": "Capped-return diagnostics are sensitivity tests and do not repair cash flows. This review is not used as a historical ranking feature."
+}

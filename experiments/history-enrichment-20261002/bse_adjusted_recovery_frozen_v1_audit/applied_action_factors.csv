@@ -1,0 +1,3 @@
+bse_code,ex_date,factor,event_type,purpose,method,prior_trade_date,prior_raw_close
+539167,2025-05-16,0.5,SPLIT,Stock  Split From Rs.10/- to Rs.5/-,face_value:10->5,,
+544565,2026-09-08,0.9726027397260274,DIVIDEND,Final Dividend - Rs. - 1.0000,cash_dividend_rs:1,2026-09-04,36.5

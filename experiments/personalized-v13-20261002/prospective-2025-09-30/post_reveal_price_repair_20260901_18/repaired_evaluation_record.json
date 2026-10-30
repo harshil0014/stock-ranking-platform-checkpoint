@@ -1,0 +1,699 @@
+{
+  "schema": "v13_post_reveal_price_repair_sensitivity_v1",
+  "status": "POST_REVEAL_STRUCTURAL_DATA_REPAIR_NOT_FRESH_BLIND_VALIDATION",
+  "selection_changed": false,
+  "scores_changed": false,
+  "first_reveal_sha256": "a714c2a994ea64f624aa3dae6e70ef001024ba245fe49d78d75a728bcfef17ca",
+  "repair_summary_sha256": "9f1bed6845c457cb8d907fb10d0cf1c66d531c9a53f8a9ac0928ea08496288e2",
+  "repair_structural_audit_sha256": "80837cf7c9eca570627827415be1e826f4ec63da35122435b4cb5ffb406b3921",
+  "scores_before_reveal_sha256": "5040171dd8a88f9202a89dadba4538537a3571d0eba6bcec0f631634c5a49926",
+  "repaired_outcomes_sha256": "b93ff13bb1d41404331215d3108d91a471add411f4825e1755dd99af0653e960",
+  "rows": 30305,
+  "outcome_available_rows": 29884,
+  "aggregate": {
+    "coverage": {
+      "champion": 0.9162729587207203,
+      "v13": 0.9162729587207203,
+      "delta": 0.0
+    },
+    "rank_ic": {
+      "champion": 0.0436072978200706,
+      "v13": 0.04306402400784889,
+      "delta": -0.0005432738122217104
+    },
+    "ndcg20": {
+      "champion": 0.5203038154988844,
+      "v13": 0.6048526636409136,
+      "delta": 0.08454884814202923
+    },
+    "pairwise_accuracy": {
+      "champion": 0.508438501721652,
+      "v13": 0.506681327091209,
+      "delta": -0.0017571746304428926
+    },
+    "target_achievement_top20": {
+      "champion": 0.3277777777777777,
+      "v13": 0.38333333333333336,
+      "delta": 0.055555555555555636
+    },
+    "target_shortfall_top20": {
+      "champion": 0.1265183080639908,
+      "v13": 0.1128377354942728,
+      "delta": -0.01368057256971801
+    },
+    "mean_xirr_top20": {
+      "champion": 1.412848571042683,
+      "v13": 4.8609094323978566,
+      "delta": 3.4480608613551738
+    },
+    "median_xirr_top20": {
+      "champion": -0.0037251291077202205,
+      "v13": -0.0028629418226709677,
+      "delta": 0.0008621872850492528
+    },
+    "mean_asset_drawdown_top20": {
+      "champion": -0.4807153721055686,
+      "v13": -0.4785856293184865,
+      "delta": 0.0021297427870820562
+    }
+  },
+  "profile_deltas": {
+    "amount1000": {
+      "coverage": 0.0,
+      "rank_ic": -0.0005339342601564379,
+      "ndcg20": 0.1610662095920503,
+      "pairwise_accuracy": -0.002819584205315806,
+      "target_achievement_top20": 0.19999999999999998,
+      "target_shortfall_top20": -0.033015917751092444,
+      "mean_xirr_top20": 0.3190839734536571,
+      "median_xirr_top20": 0.04535120283143221,
+      "mean_asset_drawdown_top20": 0.01536746627658836
+    },
+    "amount50000": {
+      "coverage": 0.0,
+      "rank_ic": -0.0006358008082544137,
+      "ndcg20": 0.14663063522758202,
+      "pairwise_accuracy": -0.0005576441102757013,
+      "target_achievement_top20": 0.15000000000000002,
+      "target_shortfall_top20": -0.04468352582889831,
+      "mean_xirr_top20": 9.36237185595061,
+      "median_xirr_top20": 0.08117468227491303,
+      "mean_asset_drawdown_top20": -0.00538913887822523
+    },
+    "base7500": {
+      "coverage": 0.0,
+      "rank_ic": -0.0006723457420646228,
+      "ndcg20": 0.10788972199492786,
+      "pairwise_accuracy": -0.0028884711779448846,
+      "target_achievement_top20": 0.04999999999999999,
+      "target_shortfall_top20": -0.02557267191043487,
+      "mean_xirr_top20": 0.06529336899179772,
+      "median_xirr_top20": 0.000907265294754947,
+      "mean_asset_drawdown_top20": -0.003035606749869413
+    },
+    "lookback12": {
+      "coverage": 0.0,
+      "rank_ic": -0.0022972166181593756,
+      "ndcg20": -0.023194466136062908,
+      "pairwise_accuracy": 0.0007456140350876606,
+      "target_achievement_top20": -0.04999999999999993,
+      "target_shortfall_top20": 0.01422507141641803,
+      "mean_xirr_top20": 1.3602098077974976,
+      "median_xirr_top20": -0.14785410137924265,
+      "mean_asset_drawdown_top20": 0.01217587868613712
+    },
+    "lookback60": {
+      "coverage": 0.0,
+      "rank_ic": 0.0008196941380038073,
+      "ndcg20": 0.020752983984285156,
+      "pairwise_accuracy": -0.0019987468671679443,
+      "target_achievement_top20": 0.0,
+      "target_shortfall_top20": -0.016079961370489462,
+      "mean_xirr_top20": 0.026820021764006885,
+      "median_xirr_top20": 0.0,
+      "mean_asset_drawdown_top20": 0.022003534828974658
+    },
+    "quarterly": {
+      "coverage": 0.0,
+      "rank_ic": -0.00019629411815137027,
+      "ndcg20": 0.08435156434524194,
+      "pairwise_accuracy": -0.001685463659147901,
+      "target_achievement_top20": 0.0,
+      "target_shortfall_top20": -0.0012110674628582896,
+      "mean_xirr_top20": 0.11691849424819084,
+      "median_xirr_top20": 0.007233427541420215,
+      "mean_asset_drawdown_top20": 0.02557822807831328
+    },
+    "target10": {
+      "coverage": 0.0,
+      "rank_ic": -0.0005692592866056931,
+      "ndcg20": 0.07048589774199793,
+      "pairwise_accuracy": -0.002932330827067675,
+      "target_achievement_top20": 0.04999999999999999,
+      "target_shortfall_top20": -0.021625014714895835,
+      "mean_xirr_top20": 9.179282716556356,
+      "median_xirr_top20": 0.010335183650516333,
+      "mean_asset_drawdown_top20": -0.028524261701099896
+    },
+    "target30": {
+      "coverage": 0.0,
+      "rank_ic": -0.0005216199345623035,
+      "ndcg20": 0.0667377910116635,
+      "pairwise_accuracy": -0.002738095238095317,
+      "target_achievement_top20": 0.0,
+      "target_shortfall_top20": 0.0069279609956565125,
+      "mean_xirr_top20": 0.09076030704275045,
+      "median_xirr_top20": -0.020950805628344393,
+      "mean_asset_drawdown_top20": 0.015895656806866054
+    },
+    "weekly": {
+      "coverage": 0.0,
+      "rank_ic": -0.0002826876800449754,
+      "ndcg20": 0.12621929551657762,
+      "pairwise_accuracy": -0.0009398496240601295,
+      "target_achievement_top20": 0.10000000000000003,
+      "target_shortfall_top20": -0.0020900265008674673,
+      "mean_xirr_top20": 10.511807206391685,
+      "median_xirr_top20": 0.031562830979993586,
+      "mean_asset_drawdown_top20": -0.03490407226394654
+    }
+  },
+  "top20_history_champion": {
+    "amount1000": {
+      "top20_isins": [
+        "INE558R01013",
+        "INE419E01024",
+        "INE133C01033",
+        "INE970C01012",
+        "INE743D01011",
+        "INE524N01014",
+        "INE385W01011",
+        "INE899E01019",
+        "INE813V01022",
+        "INE213P01027",
+        "INE169A01031",
+        "INE277A01016",
+        "INE414G01012",
+        "INE659A01023",
+        "INE898E01011",
+        "INE565L01011",
+        "INE451L01014",
+        "INE102B01014",
+        "INE432N01010",
+        "INE216I01017"
+      ],
+      "top20_missing_true_5y_share": 0.15,
+      "top20_history_months_median": 170.4969199178645,
+      "scored_available": 3084
+    },
+    "amount50000": {
+      "top20_isins": [
+        "INE419E01024",
+        "INE558R01013",
+        "INE743D01011",
+        "INE899E01019",
+        "INE898E01011",
+        "INE565L01011",
+        "INE736P01019",
+        "INE813V01022",
+        "INE173V01013",
+        "INE079C01012",
+        "INE524N01014",
+        "INE892C01018",
+        "INE561D01025",
+        "INE954E01012",
+        "INE335G01019",
+        "INE393H01016",
+        "INE429B01011",
+        "INE487B01019",
+        "INE716M01034",
+        "INE682B01023"
+      ],
+      "top20_missing_true_5y_share": 0.05,
+      "top20_history_months_median": 161.93839835728954,
+      "scored_available": 3079
+    },
+    "base7500": {
+      "top20_isins": [
+        "INE419E01024",
+        "INE385W01011",
+        "INE970C01012",
+        "INE558R01013",
+        "INE743D01011",
+        "INE813V01022",
+        "INE359A01012",
+        "INE682B01023",
+        "INE899E01019",
+        "INE213P01027",
+        "INE414G01012",
+        "INE203A01020",
+        "INE788D01016",
+        "INE335G01019",
+        "INE565L01011",
+        "INE133C01033",
+        "INE173V01013",
+        "INE736P01019",
+        "INE892C01018",
+        "INE381N01019"
+      ],
+      "top20_missing_true_5y_share": 0.05,
+      "top20_history_months_median": 170.4969199178645,
+      "scored_available": 3080
+    },
+    "lookback12": {
+      "top20_isins": [
+        "INE05BN01027",
+        "INE173V01013",
+        "INE946K01023",
+        "INE700V01021",
+        "INE216Q01010",
+        "INE336H01023",
+        "INE567L01025",
+        "INE986W01016",
+        "INE565L01011",
+        "INE834C01028",
+        "INE01FR01028",
+        "INE743D01011",
+        "INE551W01018",
+        "INE797D01017",
+        "INE682B01023",
+        "INE730E01016",
+        "INE736P01019",
+        "INE234J01018",
+        "INE813V01022",
+        "INE213P01027"
+      ],
+      "top20_missing_true_5y_share": 0.05,
+      "top20_history_months_median": 127.49075975359341,
+      "scored_available": 3489
+    },
+    "lookback60": {
+      "top20_isins": [
+        "INE216Q01010",
+        "INE158C01014",
+        "INE05BN01027",
+        "INE534A01028",
+        "INE424Z01011",
+        "INE970C01012",
+        "INE427E01027",
+        "INE446D01011",
+        "INE721D01017",
+        "INE671D01014",
+        "INE683A01023",
+        "INE01MO01013",
+        "INE335G01019",
+        "INE561D01025",
+        "INE688J01023",
+        "INE971A01014",
+        "INE147D01015",
+        "INE697C01011",
+        "INE022C01012",
+        "INE485K01022"
+      ],
+      "top20_missing_true_5y_share": 0.0,
+      "top20_history_months_median": 272.1478439425051,
+      "scored_available": 2727
+    },
+    "quarterly": {
+      "top20_isins": [
+        "INE419E01024",
+        "INE558R01013",
+        "INE958C01025",
+        "INE898E01011",
+        "INE743D01011",
+        "INE899E01019",
+        "INE970C01012",
+        "INE565L01011",
+        "INE813V01022",
+        "INE0JNA01014",
+        "INE554H01021",
+        "INE385W01011",
+        "INE513E01024",
+        "INE079C01012",
+        "INE982C01033",
+        "INE580D01017",
+        "INE424Z01011",
+        "INE736P01019",
+        "INE169A01031",
+        "INE277A01016"
+      ],
+      "top20_missing_true_5y_share": 0.1,
+      "top20_history_months_median": 202.38193018480493,
+      "scored_available": 3077
+    },
+    "target10": {
+      "top20_isins": [
+        "INE813V01022",
+        "INE743D01011",
+        "INE419E01024",
+        "INE385W01011",
+        "INE970C01012",
+        "INE213P01027",
+        "INE558R01013",
+        "INE682B01023",
+        "INE524N01014",
+        "INE359A01012",
+        "INE565L01011",
+        "INE899E01019",
+        "INE173V01013",
+        "INE381N01019",
+        "INE414G01012",
+        "INE203A01020",
+        "INE317F01035",
+        "INE697C01011",
+        "INE788D01016",
+        "INE931B01016"
+      ],
+      "top20_missing_true_5y_share": 0.05,
+      "top20_history_months_median": 175.0965092402464,
+      "scored_available": 3080
+    },
+    "target30": {
+      "top20_isins": [
+        "INE419E01024",
+        "INE558R01013",
+        "INE970C01012",
+        "INE385W01011",
+        "INE743D01011",
+        "INE813V01022",
+        "INE899E01019",
+        "INE788D01016",
+        "INE133C01033",
+        "INE213P01027",
+        "INE359A01012",
+        "INE173V01013",
+        "INE565L01011",
+        "INE682B01023",
+        "INE414G01012",
+        "INE736P01019",
+        "INE335G01019",
+        "INE243E01010",
+        "INE892C01018",
+        "INE674M01019"
+      ],
+      "top20_missing_true_5y_share": 0.05,
+      "top20_history_months_median": 170.4969199178645,
+      "scored_available": 3080
+    },
+    "weekly": {
+      "top20_isins": [
+        "INE419E01024",
+        "INE558R01013",
+        "INE743D01011",
+        "INE899E01019",
+        "INE173V01013",
+        "INE736P01019",
+        "INE370C01015",
+        "INE243E01010",
+        "INE813V01022",
+        "INE340D01016",
+        "INE731C01018",
+        "INE830Q01018",
+        "INE213P01027",
+        "INE892C01018",
+        "INE380C01014",
+        "INE578R01011",
+        "INE674M01019",
+        "INE594H01019",
+        "INE413C01013",
+        "INE682B01023"
+      ],
+      "top20_missing_true_5y_share": 0.05,
+      "top20_history_months_median": 147.5811088295688,
+      "scored_available": 3077
+    }
+  },
+  "top20_history_v13": {
+    "amount1000": {
+      "top20_isins": [
+        "INE899E01019",
+        "INE898E01011",
+        "INE558R01013",
+        "INE674M01019",
+        "INE133C01033",
+        "INE419E01024",
+        "INE554H01021",
+        "INE414G01012",
+        "INE075H01019",
+        "INE970C01012",
+        "INE169A01031",
+        "INE743D01011",
+        "INE277A01016",
+        "INE432N01010",
+        "INE451L01014",
+        "INE659A01023",
+        "INE813V01022",
+        "INE982C01033",
+        "INE381N01019",
+        "INE685A01028"
+      ],
+      "top20_missing_true_5y_share": 0.1,
+      "top20_history_months_median": 255.01437371663246,
+      "scored_available": 3084
+    },
+    "amount50000": {
+      "top20_isins": [
+        "INE899E01019",
+        "INE898E01011",
+        "INE558R01013",
+        "INE419E01024",
+        "INE743D01011",
+        "INE716M01034",
+        "INE674M01019",
+        "INE554H01021",
+        "INE381N01019",
+        "INE079C01012",
+        "INE565L01011",
+        "INE173V01013",
+        "INE813V01022",
+        "INE736P01019",
+        "INE075H01019",
+        "INE892C01018",
+        "INE567L01025",
+        "INE335G01019",
+        "INE561D01025",
+        "INE982C01033"
+      ],
+      "top20_missing_true_5y_share": 0.05,
+      "top20_history_months_median": 172.74743326488706,
+      "scored_available": 3079
+    },
+    "base7500": {
+      "top20_isins": [
+        "INE899E01019",
+        "INE419E01024",
+        "INE385W01011",
+        "INE970C01012",
+        "INE558R01013",
+        "INE381N01019",
+        "INE743D01011",
+        "INE674M01019",
+        "INE554H01021",
+        "INE898E01011",
+        "INE813V01022",
+        "INE414G01012",
+        "INE203A01020",
+        "INE982C01033",
+        "INE359A01012",
+        "INE682B01023",
+        "INE335G01019",
+        "INE213P01027",
+        "INE173V01013",
+        "INE788D01016"
+      ],
+      "top20_missing_true_5y_share": 0.05,
+      "top20_history_months_median": 201.39630390143736,
+      "scored_available": 3080
+    },
+    "lookback12": {
+      "top20_isins": [
+        "INE567L01025",
+        "INE834C01028",
+        "INE147D01015",
+        "INE059Q01014",
+        "INE05BN01027",
+        "INE114D01015",
+        "INE700V01021",
+        "INE671D01014",
+        "INE946K01023",
+        "INE551W01018",
+        "INE173V01013",
+        "INE116E01018",
+        "INE216A01030",
+        "INE695C01015",
+        "INE982C01033",
+        "INE986W01016",
+        "INE491D01017",
+        "INE199A01012",
+        "INE215D01010",
+        "INE768C01028"
+      ],
+      "top20_missing_true_5y_share": 0.0,
+      "top20_history_months_median": 166.4065708418891,
+      "scored_available": 3489
+    },
+    "lookback60": {
+      "top20_isins": [
+        "INE534A01028",
+        "INE05BN01027",
+        "INE01MO01013",
+        "INE147D01015",
+        "INE671D01014",
+        "INE216Q01010",
+        "INE424Z01011",
+        "INE683A01023",
+        "INE158C01014",
+        "INE721D01017",
+        "INE970C01012",
+        "INE335G01019",
+        "INE688J01023",
+        "INE427E01027",
+        "INE446D01011",
+        "INE561D01025",
+        "INE971A01014",
+        "INE597J01018",
+        "INE079C01012",
+        "INE460H01021"
+      ],
+      "top20_missing_true_5y_share": 0.0,
+      "top20_history_months_median": 201.19917864476386,
+      "scored_available": 2727
+    },
+    "quarterly": {
+      "top20_isins": [
+        "INE898E01011",
+        "INE899E01019",
+        "INE958C01025",
+        "INE554H01021",
+        "INE558R01013",
+        "INE674M01019",
+        "INE419E01024",
+        "INE982C01033",
+        "INE743D01011",
+        "INE970C01012",
+        "INE565L01011",
+        "INE414G01012",
+        "INE381N01019",
+        "INE079C01012",
+        "INE813V01022",
+        "INE169A01031",
+        "INE203A01020",
+        "INE277A01016",
+        "INE075H01019",
+        "INE216I01017"
+      ],
+      "top20_missing_true_5y_share": 0.05,
+      "top20_history_months_median": 228.69815195071868,
+      "scored_available": 3077
+    },
+    "target10": {
+      "top20_isins": [
+        "INE813V01022",
+        "INE743D01011",
+        "INE899E01019",
+        "INE381N01019",
+        "INE419E01024",
+        "INE385W01011",
+        "INE213P01027",
+        "INE970C01012",
+        "INE558R01013",
+        "INE682B01023",
+        "INE567L01025",
+        "INE674M01019",
+        "INE982C01033",
+        "INE554H01021",
+        "INE898E01011",
+        "INE414G01012",
+        "INE317F01035",
+        "INE203A01020",
+        "INE679E01015",
+        "INE524N01014"
+      ],
+      "top20_missing_true_5y_share": 0.05,
+      "top20_history_months_median": 170.4969199178645,
+      "scored_available": 3080
+    },
+    "target30": {
+      "top20_isins": [
+        "INE899E01019",
+        "INE419E01024",
+        "INE558R01013",
+        "INE674M01019",
+        "INE970C01012",
+        "INE898E01011",
+        "INE743D01011",
+        "INE385W01011",
+        "INE813V01022",
+        "INE381N01019",
+        "INE982C01033",
+        "INE414G01012",
+        "INE173V01013",
+        "INE788D01016",
+        "INE213P01027",
+        "INE554H01021",
+        "INE133C01033",
+        "INE565L01011",
+        "INE203A01020",
+        "INE335G01019"
+      ],
+      "top20_missing_true_5y_share": 0.05,
+      "top20_history_months_median": 201.39630390143736,
+      "scored_available": 3080
+    },
+    "weekly": {
+      "top20_isins": [
+        "INE899E01019",
+        "INE674M01019",
+        "INE381N01019",
+        "INE898E01011",
+        "INE419E01024",
+        "INE743D01011",
+        "INE558R01013",
+        "INE982C01033",
+        "INE567L01025",
+        "INE173V01013",
+        "INE736P01019",
+        "INE534A01028",
+        "INE243E01010",
+        "INE340D01016",
+        "INE830Q01018",
+        "INE594H01019",
+        "INE813V01022",
+        "INE716M01034",
+        "INE892C01018",
+        "INE731C01018"
+      ],
+      "top20_missing_true_5y_share": 0.05,
+      "top20_history_months_median": 166.4065708418891,
+      "scored_available": 3077
+    }
+  },
+  "first_reveal_aggregate": {
+    "coverage": {
+      "champion": 0.8521474872099003,
+      "v13": 0.8521474872099003,
+      "delta": 0.0
+    },
+    "rank_ic": {
+      "champion": 0.04134502454876373,
+      "v13": 0.04015408433448646,
+      "delta": -0.001190940214277271
+    },
+    "ndcg20": {
+      "champion": 0.5023022314246701,
+      "v13": 0.5810322747665987,
+      "delta": 0.07873004334192857
+    },
+    "pairwise_accuracy": {
+      "champion": 0.5084127428801035,
+      "v13": 0.5069403078765056,
+      "delta": -0.0014724350035979494
+    },
+    "target_achievement_top20": {
+      "champion": 0.3055555555555555,
+      "v13": 0.35,
+      "delta": 0.04444444444444445
+    },
+    "target_shortfall_top20": {
+      "champion": 0.1368492830970361,
+      "v13": 0.11999715174301412,
+      "delta": -0.01685213135402197
+    },
+    "mean_xirr_top20": {
+      "champion": 2.4814323665378897,
+      "v13": 4.767567982606028,
+      "delta": 2.2861356160681385
+    },
+    "median_xirr_top20": {
+      "champion": -0.02651000814465896,
+      "v13": -0.022755127648735676,
+      "delta": 0.0037548804959232837
+    },
+    "mean_asset_drawdown_top20": {
+      "champion": -0.4856643186668368,
+      "v13": -0.4720842379893673,
+      "delta": 0.01358008067746952
+    }
+  },
+  "production_mutated": false
+}

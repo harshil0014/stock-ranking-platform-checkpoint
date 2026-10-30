@@ -1,0 +1,99 @@
+{
+  "schema_version": "deep_personalized_execution_panel_v1",
+  "cutoff": "2026-09-18",
+  "additional_dates": [
+    "2015-03-31",
+    "2015-06-30",
+    "2015-09-30",
+    "2015-12-31",
+    "2016-03-31",
+    "2016-06-30",
+    "2016-09-30",
+    "2017-03-31",
+    "2017-06-30",
+    "2017-09-30"
+  ],
+  "source_dates": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2022-06-30",
+    "2022-12-31",
+    "2023-06-30",
+    "2023-12-31",
+    "2025-03-31",
+    "2025-06-30"
+  ],
+  "all_dates": [
+    "2015-03-31",
+    "2015-06-30",
+    "2015-09-30",
+    "2015-12-31",
+    "2016-03-31",
+    "2016-06-30",
+    "2016-09-30",
+    "2016-12-31",
+    "2017-03-31",
+    "2017-06-30",
+    "2017-09-30",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2022-06-30",
+    "2022-12-31",
+    "2023-06-30",
+    "2023-12-31",
+    "2025-03-31",
+    "2025-06-30"
+  ],
+  "decision_date_increase": 10,
+  "matured_observation_increase": 303050,
+  "total_matured_observations": 607720,
+  "outcome_horizon_months": 12,
+  "overlap": {
+    "adjacent_mean_fraction": 0.387384176764077,
+    "pairs_with_overlap": 46,
+    "total_pairs": 190
+  },
+  "provenance": {
+    "prices": "Frozen local Yahoo-derived raw price cache; official-action simulator uses dated official action ledger.",
+    "corporate_actions": "experiments\\personalized-official-action-freeze\\build-06\\normalized_official_action_ledger.csv.gz",
+    "provider_split_ledger": "experiments\\personalized-deep-history-20261002\\yahoo-split-ledger-v2",
+    "provider_split_events": "Observed Yahoo chart split events; no official-action-derived provider bridge was used.",
+    "membership": "Frozen 12/36/60-month global cohorts; current-survivor limitation retained.",
+    "fundamentals": "None attached to added decision rows; no current fundamentals or sectors backfilled."
+  },
+  "leakage_checks": {
+    "all_endpoints_at_or_before_cutoff": true,
+    "decision_strictly_before_endpoint": true,
+    "added_rows_use_current_facts": false,
+    "provider_split_ledger_is_observed": true
+  },
+  "provider_reacquisition_audit": {
+    "ledger_sha256": "eb4d839e4dc8edf21f3b71098bdf5a6ee215d9c99f0c265ec592a1da2e6be452",
+    "audit_sha256": "1a42e7194ef9f80ff5666f5324609c3aef3f30eac9d0adc176262710749faf49",
+    "prior_ledger_sha256": "0d723a299d346eeffa7160d4108acda8dc609cd7b7e2360f443cdb2cc51c4fcb",
+    "byte_identity_with_prior": false,
+    "canonical_observed_event_count": 1816,
+    "canonical_event_identity_sha256": "91c58ed5be971e6b2e489a54c815a5fe4892240730d3f53ff83106d22d77f941",
+    "successful_responses": 3790,
+    "failed_responses": 18,
+    "raw_response_integrity_verified": true,
+    "acquisition_source": "Yahoo Finance chart splits; V2 recovers BSE failures with exact frozen official BSE symbols",
+    "parameters": {
+      "events": "splits",
+      "includeAdjustedClose": "false",
+      "interval": "3mo",
+      "period1": 1262304000,
+      "period2": 1789776000
+    },
+    "failed_identities_quarantined": 18
+  },
+  "input_sha256": {
+    "research\\protocols\\personalized_official_action_tournament_v1.json": "4ada6978b7ed14de41fb9a550782553d0d65a25f865936965ef24c13123395fd",
+    "experiments\\personalized-official-action-freeze\\build-06\\normalized_official_action_ledger.csv.gz": "ed9fa9054229aca7081a0ec5c34e7e18603bf68b833fa6887829bd10c55d0038",
+    "experiments\\personalized-official-action-tournament\\build-03\\training_panel.csv.gz": "af7b57fcd668d18e9d58356f25b987050bcd15cfe220e3a9dfda3f0df5a0ea3b"
+  },
+  "history_cache_fingerprint": "fd9caa47e7fc67595c1e57d751959c20fcad18eeea30fe6e1b23e93681636c30"
+}

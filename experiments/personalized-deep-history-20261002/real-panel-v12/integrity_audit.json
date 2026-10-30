@@ -1,0 +1,35 @@
+{
+  "schema": "personalized_v12_structural_audit_v1",
+  "sealed_outcome_columns_loaded": false,
+  "panel_sha256": "c0b2f5f66836c487340237cc1df231e2f3d2835febcb09b84c0adffb1ab57371",
+  "rows": 1516870,
+  "decision_dates": 50,
+  "profiles": 9,
+  "source_dates": 10,
+  "source_rows_structurally_identical_to_v11": 304670,
+  "reconstructed_dates": 40,
+  "reconstructed_rows": 1212200,
+  "duplicate_keys": 0,
+  "invalid_maturity_rows": 0,
+  "earliest_decision": "2015-01-31",
+  "latest_decision": "2025-08-31",
+  "status_counts": {
+    "AVAILABLE": 1150607,
+    "INSUFFICIENT_HISTORY": 317247,
+    "UNRESOLVED_CORPORATE_ACTION": 25674,
+    "UNRESOLVED_FRACTIONAL_ENTITLEMENT": 16208,
+    "MISSING_EXECUTION_PRICE": 3087,
+    "STALE_TERMINAL": 2053,
+    "INVALID_HISTORY": 1994
+  },
+  "sealed_final_structural_rows": {
+    "2025-01-31": 30305,
+    "2025-08-31": 30305
+  },
+  "overlap_pairs": 212,
+  "total_date_pairs": 1225,
+  "provider_ledger_sha256": "eb4d839e4dc8edf21f3b71098bdf5a6ee215d9c99f0c265ec592a1da2e6be452",
+  "provider_audit_sha256": "1a42e7194ef9f80ff5666f5324609c3aef3f30eac9d0adc176262710749faf49",
+  "checkpoint_hashes_verified": 40,
+  "action_ledger_sha256": "ed9fa9054229aca7081a0ec5c34e7e18603bf68b833fa6887829bd10c55d0038"
+}

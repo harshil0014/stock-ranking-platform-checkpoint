@@ -1,0 +1,16 @@
+{
+  "year": 2021,
+  "family": "extra_trees",
+  "training_rows": 360312,
+  "training_queries": 7115,
+  "training_min_date": "2016-03-31",
+  "maximum_endpoint": "2020-12-31",
+  "cutoff": "2021-01-01",
+  "inference_rows": 107752,
+  "seconds": 190.68318152427673,
+  "replay_max_error": 3.3306690738754696e-16,
+  "model_sha256": "71424de9401ff88dcf967e58b4be808eaa2dd402c9c10436504af587839950bb",
+  "prediction_sha256": "2c6b8ab655ba13ea3062f097403ab9b1b5e97433cb622533aee49d5f019fcafa",
+  "training_identity_sha256": "74537019bfb9552c0a30fd255fd31ad674b3f7b7c6c703952e2a267ef830abfb",
+  "training_loss": null
+}

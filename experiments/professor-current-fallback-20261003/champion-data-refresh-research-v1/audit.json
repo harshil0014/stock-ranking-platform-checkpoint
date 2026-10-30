@@ -1,0 +1,12 @@
+{
+  "schema": "frozen_d499580_professor_current_audit_v1",
+  "status": "PASS",
+  "frozen_champion_sha256_unchanged": true,
+  "baseline_scores_reproduced": true,
+  "only_missing_cagr_3y_and_cagr_5y_changed": true,
+  "rank_coverage_preserved": true,
+  "all_top20_top50_top100_lists_verified": true,
+  "profile_rows": 30467,
+  "directly_affected_unique_stocks": 243,
+  "model_or_production_modified": false
+}

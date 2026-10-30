@@ -1,0 +1,475 @@
+{
+  "created_at": "2026-10-04T08:01:37.033688+00:00",
+  "objective": "Increase sensitivity to ATH age where defensible while preserving refined V17 returns, personalization, history treatment and stability.",
+  "benchmarks": [
+    "d499580",
+    "original V17",
+    "V17 refined"
+  ],
+  "selection_dates": [
+    "2020-03-31",
+    "2020-06-30",
+    "2020-09-30",
+    "2020-12-31",
+    "2021-03-31",
+    "2021-06-30",
+    "2021-09-30",
+    "2021-12-31",
+    "2022-03-31",
+    "2022-06-30",
+    "2022-09-30",
+    "2022-12-31",
+    "2023-03-31",
+    "2023-06-30",
+    "2023-09-30",
+    "2023-12-31"
+  ],
+  "training": "Expanding annual fits; endpoint strictly before first decision in scored year. No 2024+ labels for candidate selection. All source features point-in-time from frozen panel.",
+  "known_exposure": "2020-2023 repeatedly researched; 2024-2025 exposed contextual only. No new blind test claimed.",
+  "candidates": [
+    {
+      "family": "age",
+      "strength": 0.005,
+      "scope": "all",
+      "name": "age_0.005_all"
+    },
+    {
+      "family": "age",
+      "strength": 0.005,
+      "scope": "36",
+      "name": "age_0.005_36"
+    },
+    {
+      "family": "age",
+      "strength": 0.01,
+      "scope": "all",
+      "name": "age_0.01_all"
+    },
+    {
+      "family": "age",
+      "strength": 0.01,
+      "scope": "36",
+      "name": "age_0.01_36"
+    },
+    {
+      "family": "age",
+      "strength": 0.025,
+      "scope": "all",
+      "name": "age_0.025_all"
+    },
+    {
+      "family": "age",
+      "strength": 0.025,
+      "scope": "36",
+      "name": "age_0.025_36"
+    },
+    {
+      "family": "age",
+      "strength": 0.05,
+      "scope": "all",
+      "name": "age_0.05_all"
+    },
+    {
+      "family": "age",
+      "strength": 0.05,
+      "scope": "36",
+      "name": "age_0.05_36"
+    },
+    {
+      "family": "age",
+      "strength": 0.1,
+      "scope": "all",
+      "name": "age_0.1_all"
+    },
+    {
+      "family": "age",
+      "strength": 0.1,
+      "scope": "36",
+      "name": "age_0.1_36"
+    },
+    {
+      "family": "age",
+      "strength": 0.2,
+      "scope": "all",
+      "name": "age_0.2_all"
+    },
+    {
+      "family": "age",
+      "strength": 0.2,
+      "scope": "36",
+      "name": "age_0.2_36"
+    },
+    {
+      "family": "age_depth",
+      "strength": 0.005,
+      "scope": "all",
+      "name": "age_depth_0.005_all"
+    },
+    {
+      "family": "age_depth",
+      "strength": 0.005,
+      "scope": "36",
+      "name": "age_depth_0.005_36"
+    },
+    {
+      "family": "age_depth",
+      "strength": 0.01,
+      "scope": "all",
+      "name": "age_depth_0.01_all"
+    },
+    {
+      "family": "age_depth",
+      "strength": 0.01,
+      "scope": "36",
+      "name": "age_depth_0.01_36"
+    },
+    {
+      "family": "age_depth",
+      "strength": 0.025,
+      "scope": "all",
+      "name": "age_depth_0.025_all"
+    },
+    {
+      "family": "age_depth",
+      "strength": 0.025,
+      "scope": "36",
+      "name": "age_depth_0.025_36"
+    },
+    {
+      "family": "age_depth",
+      "strength": 0.05,
+      "scope": "all",
+      "name": "age_depth_0.05_all"
+    },
+    {
+      "family": "age_depth",
+      "strength": 0.05,
+      "scope": "36",
+      "name": "age_depth_0.05_36"
+    },
+    {
+      "family": "age_depth",
+      "strength": 0.1,
+      "scope": "all",
+      "name": "age_depth_0.1_all"
+    },
+    {
+      "family": "age_depth",
+      "strength": 0.1,
+      "scope": "36",
+      "name": "age_depth_0.1_36"
+    },
+    {
+      "family": "age_depth",
+      "strength": 0.2,
+      "scope": "all",
+      "name": "age_depth_0.2_all"
+    },
+    {
+      "family": "age_depth",
+      "strength": 0.2,
+      "scope": "36",
+      "name": "age_depth_0.2_36"
+    },
+    {
+      "family": "age_recovery",
+      "strength": 0.005,
+      "scope": "all",
+      "name": "age_recovery_0.005_all"
+    },
+    {
+      "family": "age_recovery",
+      "strength": 0.005,
+      "scope": "36",
+      "name": "age_recovery_0.005_36"
+    },
+    {
+      "family": "age_recovery",
+      "strength": 0.01,
+      "scope": "all",
+      "name": "age_recovery_0.01_all"
+    },
+    {
+      "family": "age_recovery",
+      "strength": 0.01,
+      "scope": "36",
+      "name": "age_recovery_0.01_36"
+    },
+    {
+      "family": "age_recovery",
+      "strength": 0.025,
+      "scope": "all",
+      "name": "age_recovery_0.025_all"
+    },
+    {
+      "family": "age_recovery",
+      "strength": 0.025,
+      "scope": "36",
+      "name": "age_recovery_0.025_36"
+    },
+    {
+      "family": "age_recovery",
+      "strength": 0.05,
+      "scope": "all",
+      "name": "age_recovery_0.05_all"
+    },
+    {
+      "family": "age_recovery",
+      "strength": 0.05,
+      "scope": "36",
+      "name": "age_recovery_0.05_36"
+    },
+    {
+      "family": "age_recovery",
+      "strength": 0.1,
+      "scope": "all",
+      "name": "age_recovery_0.1_all"
+    },
+    {
+      "family": "age_recovery",
+      "strength": 0.1,
+      "scope": "36",
+      "name": "age_recovery_0.1_36"
+    },
+    {
+      "family": "age_recovery",
+      "strength": 0.2,
+      "scope": "all",
+      "name": "age_recovery_0.2_all"
+    },
+    {
+      "family": "age_recovery",
+      "strength": 0.2,
+      "scope": "36",
+      "name": "age_recovery_0.2_36"
+    },
+    {
+      "family": "age_momentum",
+      "strength": 0.005,
+      "scope": "all",
+      "name": "age_momentum_0.005_all"
+    },
+    {
+      "family": "age_momentum",
+      "strength": 0.005,
+      "scope": "36",
+      "name": "age_momentum_0.005_36"
+    },
+    {
+      "family": "age_momentum",
+      "strength": 0.01,
+      "scope": "all",
+      "name": "age_momentum_0.01_all"
+    },
+    {
+      "family": "age_momentum",
+      "strength": 0.01,
+      "scope": "36",
+      "name": "age_momentum_0.01_36"
+    },
+    {
+      "family": "age_momentum",
+      "strength": 0.025,
+      "scope": "all",
+      "name": "age_momentum_0.025_all"
+    },
+    {
+      "family": "age_momentum",
+      "strength": 0.025,
+      "scope": "36",
+      "name": "age_momentum_0.025_36"
+    },
+    {
+      "family": "age_momentum",
+      "strength": 0.05,
+      "scope": "all",
+      "name": "age_momentum_0.05_all"
+    },
+    {
+      "family": "age_momentum",
+      "strength": 0.05,
+      "scope": "36",
+      "name": "age_momentum_0.05_36"
+    },
+    {
+      "family": "age_momentum",
+      "strength": 0.1,
+      "scope": "all",
+      "name": "age_momentum_0.1_all"
+    },
+    {
+      "family": "age_momentum",
+      "strength": 0.1,
+      "scope": "36",
+      "name": "age_momentum_0.1_36"
+    },
+    {
+      "family": "age_momentum",
+      "strength": 0.2,
+      "scope": "all",
+      "name": "age_momentum_0.2_all"
+    },
+    {
+      "family": "age_momentum",
+      "strength": 0.2,
+      "scope": "36",
+      "name": "age_momentum_0.2_36"
+    },
+    {
+      "family": "age_monotone",
+      "strength": 0.025,
+      "scope": "all",
+      "name": "age_monotone_0.025_all"
+    },
+    {
+      "family": "age_monotone",
+      "strength": 0.025,
+      "scope": "36",
+      "name": "age_monotone_0.025_36"
+    },
+    {
+      "family": "age_monotone",
+      "strength": 0.05,
+      "scope": "all",
+      "name": "age_monotone_0.05_all"
+    },
+    {
+      "family": "age_monotone",
+      "strength": 0.05,
+      "scope": "36",
+      "name": "age_monotone_0.05_36"
+    },
+    {
+      "family": "age_monotone",
+      "strength": 0.1,
+      "scope": "all",
+      "name": "age_monotone_0.1_all"
+    },
+    {
+      "family": "age_monotone",
+      "strength": 0.1,
+      "scope": "36",
+      "name": "age_monotone_0.1_36"
+    },
+    {
+      "family": "age_interactions",
+      "strength": 0.025,
+      "scope": "all",
+      "name": "age_interactions_0.025_all"
+    },
+    {
+      "family": "age_interactions",
+      "strength": 0.025,
+      "scope": "36",
+      "name": "age_interactions_0.025_36"
+    },
+    {
+      "family": "age_interactions",
+      "strength": 0.05,
+      "scope": "all",
+      "name": "age_interactions_0.05_all"
+    },
+    {
+      "family": "age_interactions",
+      "strength": 0.05,
+      "scope": "36",
+      "name": "age_interactions_0.05_36"
+    },
+    {
+      "family": "age_interactions",
+      "strength": 0.1,
+      "scope": "all",
+      "name": "age_interactions_0.1_all"
+    },
+    {
+      "family": "age_interactions",
+      "strength": 0.1,
+      "scope": "36",
+      "name": "age_interactions_0.1_36"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.025,
+      "scope": "all",
+      "name": "age_return_0.025_all"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.025,
+      "scope": "36",
+      "name": "age_return_0.025_36"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.05,
+      "scope": "all",
+      "name": "age_return_0.05_all"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.05,
+      "scope": "36",
+      "name": "age_return_0.05_36"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.1,
+      "scope": "all",
+      "name": "age_return_0.1_all"
+    },
+    {
+      "family": "age_return",
+      "strength": 0.1,
+      "scope": "36",
+      "name": "age_return_0.1_36"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.025,
+      "scope": "all",
+      "name": "age_residual_0.025_all"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.025,
+      "scope": "36",
+      "name": "age_residual_0.025_36"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.05,
+      "scope": "all",
+      "name": "age_residual_0.05_all"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.05,
+      "scope": "36",
+      "name": "age_residual_0.05_36"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.1,
+      "scope": "all",
+      "name": "age_residual_0.1_all"
+    },
+    {
+      "family": "age_residual",
+      "strength": 0.1,
+      "scope": "36",
+      "name": "age_residual_0.1_36"
+    }
+  ],
+  "mean_xirr_selection_weight": 0,
+  "formulas": "Smooth age a=days/(days+365), depth d=clip(-ATHdistance,0,1). age penalty=a; age_depth=a*sqrt(d); age_recovery=a*sqrt(d)/(1+max(recovery,0)); age_momentum=a*sqrt(d)*(1-clip(momentum,0,1)). Missing age contributes zero adjustment, no history-length penalty. Learned experts add corresponding positive recency transforms to V17 normalized features.",
+  "gates": "Against refined V17: aggregate median XIRR, NDCG, drawdown and achievement nonnegative; shortfall nonpositive; worst profile return/drawdown >=-0.005; highvol return/drawdown >=0; utility>=0.002; positive utility in >=3/4 development years. Retain original strict d499580 gates. Current all-profile Top20 overlap>=0.85 is post-selection veto only.",
+  "robustness": "Passing learned candidates: alternate seed and per-date refresh; passing score adjustments: alternate-seed and per-date refined baseline artifacts. Same aggregate directions, all-profile floors. Evaluate 7 cohort groups and all44 valid decision dates after lock. Current inference full4436.",
+  "selection": "Highest passing utility; lower strength tie-break. Do not optimize current NYKAA rank. No identity predictors.",
+  "stop": "48 smooth score adjustments and24 learned expert blends; evaluate gate-passing finalists. If none pass retain refined V17. No post-exposure gate weakening.",
+  "references": [
+    "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-6261.2004.00695.x",
+    "https://www.sciencedirect.com/science/article/pii/S0378426613002446",
+    "https://www.nykaa.com/media/wysiwyg/2021/Investors-Relations/pdfs/stock-exchange-filling/Intimation-of-Record-date-for-Bonus-Issue.pdf"
+  ],
+  "reference_limit": "52-week-high findings motivate recency hypotheses; they do not establish that penalizing all-time-high age improves Indian SIP ranking."
+}

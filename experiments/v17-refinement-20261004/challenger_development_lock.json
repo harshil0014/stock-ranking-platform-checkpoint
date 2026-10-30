@@ -1,0 +1,23 @@
+{
+  "locked_at": "2026-10-03T21:35:05.103307+00:00",
+  "candidates": [
+    {
+      "family": "specialist_utility",
+      "beta": 0.05,
+      "gate": "broad",
+      "name": "specialist_utility_0.05_broad",
+      "eligible": true,
+      "utility": 0.004421877917190783,
+      "coverage": 0.0,
+      "ndcg20": 0.004431489845235556,
+      "target_achievement_top20": 0.0013888888888888863,
+      "target_shortfall_top20": -0.001663211160472659,
+      "median_xirr_top20": 0.011058784309062375,
+      "mean_asset_drawdown_top20": 0.006282484880326022,
+      "rank_ic": 0.0014980832280548108,
+      "pairwise_accuracy": 0.0005176533749624999
+    }
+  ],
+  "count": 20,
+  "none_passed": false
+}

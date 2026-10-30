@@ -1,0 +1,8 @@
+{
+  "synthetic_only": true,
+  "ranks_checked": 14,
+  "profit_formulas_checked": 14,
+  "share_totals_checked": 14,
+  "input_files_preserved": true,
+  "uncaptured_input_rejected": true
+}

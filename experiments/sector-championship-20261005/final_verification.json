@@ -1,0 +1,136 @@
+{
+  "paired_opponents": 33,
+  "query_identity_and_population_checks": true,
+  "finite_metrics": true,
+  "trials": 124,
+  "promoted_weight_changes": false,
+  "classification_correction": {
+    "profiles": 9,
+    "emrock_excluded_all_profiles": true,
+    "default_ranked": 1746,
+    "sector_review_source": "research/runtime/personalized-v17/sector_review.json"
+  },
+  "tests_passed": 5,
+  "artifacts": [
+    {
+      "path": "experiments/sector-championship-20261005/all_previous_sector_summary.csv",
+      "sha256": "aa23753269f2d3d43a2c191146eac906faea74eed954603c46036fb074d76977"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/baseline_formula_summary.csv",
+      "sha256": "9e9dab78eae86bb40903dbc7d953d4a39ac7b4559c2c9fbe5ab722f9a01e732e"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/candidate_frontier.csv",
+      "sha256": "ccfccbbcfe25c04cdfbc59749147d9595b7270acd32088c5778527e246a0926b"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/complete_trial_ledger.csv",
+      "sha256": "ee7b828b691d28542733ed2c5609cd7155b15b4ce4bba0235835dfcdb4a60b7f"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/corrected_sector_top3.csv",
+      "sha256": "7535b949fa7a6bee8ec11bd6c48d0af58f4867c50080f7414146cac833375379"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/human_reasoning_benchmark.csv",
+      "sha256": "a95a2c48a5fd33b09930222d3328e95d716959a6e88f7a78f9763f24e4d3ca86"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/near_miss_summary.csv",
+      "sha256": "d1a19f01f9af3d702fbf8a3161a6ceb0b7b85bdbdc7eff0faf02fed205dab536"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/professor_screenshot_within_sector_pairs.csv",
+      "sha256": "f9cef05f4a168cf27e55b346724a78095c8cf69c81314749b0fcb7681e5c8318"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/professor_workbook_sector_comparison.csv",
+      "sha256": "5c8b78c4582f2838dedc6affb478f8542490542e2df04035ec40b8024cc02bbc"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/round2_trials.csv",
+      "sha256": "349bd04253aa2dbfeae95906a100397fa40fd13bddd3ef7f899ba9fb0a30db11"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/round3_trials.csv",
+      "sha256": "4253076a8fe91c0584f8397f92de25697efdf2d76758c101ab04659bb8229597"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/round4_trials.csv",
+      "sha256": "10a5e36dbabe7c3741e2fbc361b9ead78aae536bf657abab84ce3cf17ec6b21e"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/benchmark_sources.json",
+      "sha256": "df158575a56ba3048af4c49d843acbd16c83b64ce9328400d8b15d45d2c6c8d7"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/correction_verification.json",
+      "sha256": "9573cc614a0f47482f01cd791ad86d2e6cdac24b8d527294127f42c0af271d71"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/human_review_summary.json",
+      "sha256": "2981b7bcad625cebddab50f1f1d3840e7e10327601c5b686db3c6f2897904f06"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/near_miss_diagnostic_protocol.json",
+      "sha256": "684a4c58405b6acbedd64cdf08b3a39240303b942805c140f6e8e6c6d5f15190"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/round2_protocol.json",
+      "sha256": "8377d43a22b3984bcdb5f7227da145e92611212e71ce159a76a8870f4c2ae02a"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/round2_selection.json",
+      "sha256": "2cfeb5ac15b64392188bd6a6858b4e5111936ef07b4f30a5f23088e385f2f9ad"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/round2_selection_control_audit.json",
+      "sha256": "dca749479c91ae26dce20476dc7419911caf14f69faece8d22b1df8b9f3af075"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/round3_protocol.json",
+      "sha256": "df0726461a5e563baa8df19f75664e019947263380731aff40624a19b47eaf35"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/round3_selection.json",
+      "sha256": "a1eed2ed3e65fd445e486f49b91372b017c497fc21ec4aeba6810898b1320b1b"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/round3_training_audit.json",
+      "sha256": "7010adda9c5021f5ef50e7f086cb142d9c73e917ba8ab559babce54e0ce9d1b7"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/round4_protocol.json",
+      "sha256": "33b9f81dc25422c06316f5d04b686b6a946d3e0265cc2d89ad660bef77901385"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/round4_selection.json",
+      "sha256": "163435a722c6285797a4ba44307d5a1ac111bf8d81d3c8d16a6d9240519b6bab"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/search_summary.json",
+      "sha256": "90532760124c17f02a8d04644c518d0de2976eae50a9b6154c2c5853b166bad6"
+    },
+    {
+      "path": "experiments/sector-championship-20261005/workbook_audit.json",
+      "sha256": "9481c14ef5e0aeb267d5f01f69624b9ce41f98ca14b61bf3b2d439411519c6a6"
+    },
+    {
+      "path": "research/reports/sector_championship_20261005.md",
+      "sha256": "6d5b350adda004b58d9c787429cd09ce259e9e7a703f9ff1c57ee4f59bcfe8ce"
+    },
+    {
+      "path": "research/runners/sector_championship_20261005.py",
+      "sha256": "b705649fb029c8473bcbf9e7e552a9c157e16634fd53e96c822378cb9def9908"
+    },
+    {
+      "path": "src/stock_ranker/personalized_peak_product.py",
+      "sha256": "ff6c0be2dfb03438c487de0580e31867c3b8d5697601f651128508c8f8586e1f"
+    },
+    {
+      "path": "research/runtime/personalized-v17/sector_review.json",
+      "sha256": "642f865e2bd3ce70cd8df576af7d3136489352699bbed3099c41cbb0f77df604"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "hypothesis": "Base-only ranker transfer loses across contribution, lookback and target settings. Learn all nine profiles with explicit settings and equal date/profile/sector query weights.",
+  "configs": [
+    {
+      "name": "profile_balanced_7",
+      "target": "balanced",
+      "leaves": 7
+    },
+    {
+      "name": "profile_balanced_15",
+      "target": "balanced",
+      "leaves": 15
+    },
+    {
+      "name": "profile_defensive_7",
+      "target": "defensive",
+      "leaves": 7
+    },
+    {
+      "name": "profile_defensive_15",
+      "target": "defensive",
+      "leaves": 15
+    }
+  ],
+  "features": [
+    "days_since_recorded_high",
+    "distance_from_recorded_high",
+    "high52_freshness",
+    "downside_volatility_1y",
+    "momentum_12_1",
+    "distance_from_52w_high",
+    "full_history_max_drawdown",
+    "history_months",
+    "cagr_3y",
+    "observed_cagr_5y",
+    "high_support",
+    "strict_cagr_1y",
+    "momentum_6m",
+    "downside_frequency_1y",
+    "q_days_since_recorded_high",
+    "q_distance_from_recorded_high",
+    "q_high52_freshness",
+    "q_downside_volatility_1y",
+    "q_momentum_12_1",
+    "q_distance_from_52w_high",
+    "q_full_history_max_drawdown",
+    "q_history_months",
+    "q_cagr_3y",
+    "q_observed_cagr_5y",
+    "q_high_support",
+    "q_strict_cagr_1y",
+    "q_momentum_6m",
+    "q_downside_frequency_1y",
+    "evidence_fraction",
+    "volume_active_fraction",
+    "observations_1y",
+    "log_amount",
+    "lookback_months",
+    "log_interval",
+    "target_cagr"
+  ],
+  "trees": 120,
+  "learning_rate": 0.035,
+  "folds": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "purge": "Actual outcome endpoint strictly before test-year January 1.",
+  "selection": "All dates previously exposed. No fresh-holdout claim. 24 blends evaluated across all profiles, raw/capped, Top1/3/5 and rank IC.",
+  "blends": [
+    0.025,
+    0.05,
+    0.1,
+    0.2,
+    0.35,
+    0.5
+  ],
+  "anchor": "Frozen CatBoost/ridge blend from previous round; no profile-specific manual overrides.",
+  "data_limits": "Current-survivor universe and current sector classifications; extreme/corporate-action label concerns remain. Nine profiles share stocks/outcomes and are not independent samples."
+}

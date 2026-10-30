@@ -1,0 +1,50 @@
+[
+  {
+    "year": 2023,
+    "model": "catpair_return_uniform",
+    "cutoff": "2023-01-01",
+    "maximum_endpoint": "2022-12-31",
+    "training_rows": 82814,
+    "queries": 1500,
+    "pairs": 86734,
+    "model_sha256": "53c8b07c76476919967eae8a188229d153047b20cbf9d10ec5e131a1ca68ae87",
+    "serialized_replay_exact": true,
+    "baseline_semantics_verified": true
+  },
+  {
+    "year": 2023,
+    "model": "catpair_return_mistakes",
+    "cutoff": "2023-01-01",
+    "maximum_endpoint": "2022-12-31",
+    "training_rows": 82814,
+    "queries": 1500,
+    "pairs": 86734,
+    "model_sha256": "37c81d62296706441c3895d22b286a04a84dfa767797cfd8e5d28aacac57c46a",
+    "serialized_replay_exact": true,
+    "baseline_semantics_verified": true
+  },
+  {
+    "year": 2023,
+    "model": "catpair_balanced_uniform",
+    "cutoff": "2023-01-01",
+    "maximum_endpoint": "2022-12-31",
+    "training_rows": 82814,
+    "queries": 1500,
+    "pairs": 85962,
+    "model_sha256": "dc116ab7dbe5c73b3bb2789af1e1d154deb455ee0983a70414859959072841e4",
+    "serialized_replay_exact": true,
+    "baseline_semantics_verified": true
+  },
+  {
+    "year": 2023,
+    "model": "catpair_balanced_mistakes",
+    "cutoff": "2023-01-01",
+    "maximum_endpoint": "2022-12-31",
+    "training_rows": 82814,
+    "queries": 1500,
+    "pairs": 85962,
+    "model_sha256": "e1b5f6788769144f1f95b4ad87a3be07df7b9cc661794211cc72ebd8e505e68e",
+    "serialized_replay_exact": true,
+    "baseline_semantics_verified": true
+  }
+]

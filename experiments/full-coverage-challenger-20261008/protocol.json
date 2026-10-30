@@ -1,0 +1,95 @@
+{
+  "objective": "Within-sector full-coverage stock strength; trading suitability separate",
+  "coverage": "Every current identity receives finite score; no usable price evidence gets neutral prior and LOW/NO_PRICE confidence; Unclassified is not a verified sector",
+  "training": "Base7500 outcomes only; train endpoint strictly before Jan 1 of test year; annual forward folds 2020-2025",
+  "selection": "2020-2023 only. 2024-2025 locked diagnostic after selection. All dates previously researched, not fresh holdout.",
+  "families": [
+    {
+      "name": "lambdarank_return_7",
+      "objective": "lambdarank",
+      "target": "return",
+      "leaves": 7
+    },
+    {
+      "name": "lambdarank_return_15",
+      "objective": "lambdarank",
+      "target": "return",
+      "leaves": 15
+    },
+    {
+      "name": "lambdarank_balanced_7",
+      "objective": "lambdarank",
+      "target": "balanced",
+      "leaves": 7
+    },
+    {
+      "name": "lambdarank_balanced_15",
+      "objective": "lambdarank",
+      "target": "balanced",
+      "leaves": 15
+    },
+    {
+      "name": "rank_xendcg_return_7",
+      "objective": "rank_xendcg",
+      "target": "return",
+      "leaves": 7
+    },
+    {
+      "name": "rank_xendcg_return_15",
+      "objective": "rank_xendcg",
+      "target": "return",
+      "leaves": 15
+    },
+    {
+      "name": "rank_xendcg_balanced_7",
+      "objective": "rank_xendcg",
+      "target": "balanced",
+      "leaves": 7
+    },
+    {
+      "name": "rank_xendcg_balanced_15",
+      "objective": "rank_xendcg",
+      "target": "balanced",
+      "leaves": 15
+    }
+  ],
+  "trees": 160,
+  "features": [
+    "days_since_recorded_high",
+    "distance_from_recorded_high",
+    "high52_freshness",
+    "downside_volatility_1y",
+    "momentum_12_1",
+    "distance_from_52w_high",
+    "full_history_max_drawdown",
+    "history_months",
+    "cagr_3y",
+    "observed_cagr_5y",
+    "high_support",
+    "strict_cagr_1y",
+    "momentum_6m",
+    "downside_frequency_1y"
+  ],
+  "rule_families": [
+    "high_strength",
+    "balanced_strength",
+    "risk_strength"
+  ],
+  "blend_weights": [
+    0,
+    0.1,
+    0.25,
+    0.5,
+    1
+  ],
+  "primary": "Equal-sector/date Top3 SIP-XIRR, drawdown, achievement, shortfall, NDCG; evaluate common and expanded populations on same query dates",
+  "gate": "Both common and expanded development: nonnegative utility; XIRR>=champion, drawdown loss <=1pp, shortfall increase <=0.5pp, achievement/NDCG loss <=1pp. Coverage 100%.",
+  "utility": "delta xirr + .5 delta drawdown + .5 delta achievement - delta shortfall + .2 delta ndcg",
+  "limits": "Current sector labels and surviving universe; pre-existing historical outcomes and adjustment conventions; no historical current-fundamental leakage.",
+  "research_sources": [
+    "https://lightgbm.readthedocs.io/en/latest/Parameters.html",
+    "https://lightgbm.readthedocs.io/en/latest/Advanced-Topics.html",
+    "https://catboost.ai/docs/en/concepts/loss-functions-ranking",
+    "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html"
+  ]
+}

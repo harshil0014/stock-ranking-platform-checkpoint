@@ -1,0 +1,43 @@
+{
+  "profile": "base7500",
+  "decision_date": [
+    "2026-10-03"
+  ],
+  "universe_rows": 4436,
+  "eligible_rows": 1773,
+  "workbook_rows": 14,
+  "matched_workbook_rows": 14,
+  "ranked_workbook_rows": 12,
+  "screenshot_unique_companies": 13,
+  "screenshot_usable_comparison_n": 9,
+  "screenshot_spearman": 0.8333333333333333,
+  "screenshot_pair_agreement": {
+    "agree": 30,
+    "pairs": 36,
+    "fraction": 0.8333333333333334
+  },
+  "same_current_shortlist_n": 12,
+  "same_current_shortlist_spearman": 0.6713286713286714,
+  "same_current_shortlist_pair_agreement": {
+    "agree": 50,
+    "pairs": 66,
+    "fraction": 0.7575757575757576
+  },
+  "same_current_full_eligible_spearman": 0.766383756228251,
+  "source_sha256": "be2ab62fb41abd4769b5f5d8de7f3df04edc6cfa336bb0d2c5906fc6da2e980b",
+  "ranking_sha256": "cba2b639cdc4209426679a5f2343127e279d588b0fe1150f70c8fcbddf33e23a",
+  "workbook_top20_members": [],
+  "same_universe_top20_overlap": 1,
+  "workbook_top50_members": [
+    "WELCORP"
+  ],
+  "same_universe_top50_overlap": 4,
+  "workbook_top100_members": [
+    "WELCORP",
+    "LUMAXTECH"
+  ],
+  "same_universe_top100_overlap": 18,
+  "same_current_full_comparable_n": 1755,
+  "professor_score_missing_in_eligible": 18,
+  "source_unchanged": true
+}

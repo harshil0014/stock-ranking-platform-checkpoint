@@ -1,0 +1,66 @@
+{
+  "stocks": 4436,
+  "sectors": 59,
+  "common_stocks": 1725,
+  "current_ranked": 1746,
+  "sir_ranked": 4293,
+  "judge_ranked": 4316,
+  "comparable_sectors": 47,
+  "sector_verdict_counts": {
+    "PRACTICAL_TIE": 18,
+    "CURRENT": 17,
+    "SIR": 12,
+    "INSUFFICIENT_COMPARABLE_STOCKS": 12
+  },
+  "sir_data_status": {
+    "PARTIAL_OBSERVATIONS": 4293,
+    "NO_HISTORY": 107,
+    "NO_INVESTMENT": 36
+  },
+  "weight_sensitive_sectors": 12,
+  "sensitivity_mean_top3_delta": {
+    "quality": 0.036396386368643466,
+    "growth": 0.014923446054598466,
+    "value": 0.030470432236732705
+  },
+  "sector_equal_mean": {
+    "current_top1": 0.548528840460358,
+    "sir_top1": 0.5119761517846069,
+    "current_top3": 0.5581471800896182,
+    "sir_top3": 0.5309283270525234,
+    "current_top10": 0.5500204379086014,
+    "sir_top10": 0.5311669980443681,
+    "current_rho": 0.2890745464207554,
+    "sir_rho": 0.06962165717259927,
+    "current_ndcg3": 0.8101553784435083,
+    "sir_ndcg3": 0.7665832121333885
+  },
+  "workbook_unique_codes": 5441,
+  "workbook_tables": {
+    "ATH prices": 796,
+    "Industry and CAGR": 5424
+  },
+  "workbook_matched_unique_codes": 4387,
+  "protocol_sha256": "52e0305d68a1d538c7230085478216cfff626702ffef8b877784344f39f8dacf",
+  "source_hashes": {
+    "research\\runtime\\personalized-v17\\facts.csv.gz": "5520707e233680d4e25589d8549d8f8b07367dc87cf4cfa12cf46857c4c6e5e1",
+    "research\\runtime\\personalized-v17\\history.npz": "d99b11eeef4fa38965e90b181827ae19a7bb40d3d55767bd4958229647650494",
+    "research\\runtime\\personalized-v17\\peak_history.npz": "7a5a460d058891319e6c4566bcc2521809e6d9af813dd6b4a70b1eca520c428d",
+    "experiments\\sector-championship-20261005\\corrected_current_rankings.csv.gz": "9d3f2048c47f6e63c7746d0c5b984cfae00d011e570eb5ca1b29a2a9a55ebe26",
+    "C:\\Users\\Harshil\\Downloads\\_Organized\\Documents\\Copy of OK Strategy - Master Sheet v4.3 (1).xlsx": "be2ab62fb41abd4769b5f5d8de7f3df04edc6cfa336bb0d2c5906fc6da2e980b"
+  },
+  "workbook_reference_formulas": {
+    "A1": "IFERROR(__xludf.DUMMYFUNCTION(\"importrange(\"\"https://docs.google.com/spreadsheets/d/1lYPFzleflUK5sNpD6CKc63OaCMqh_qqitTAbE3WMT_o\"\",\"\"ATH!A:E\"\")\"),\"Symbol\")",
+    "B1": "IFERROR(__xludf.DUMMYFUNCTION(\"\"\"COMPUTED_VALUE\"\"\"),\"Google Code\")",
+    "C1": "IFERROR(__xludf.DUMMYFUNCTION(\"\"\"COMPUTED_VALUE\"\"\"),\"Name\")",
+    "I1": "IFERROR(__xludf.DUMMYFUNCTION(\"query(importrange(\"\"https://docs.google.com/spreadsheets/d/1JrHwQElETQQd6hczr4dtY20A8SgIXFtLDari0EFgoCQ/\"\",\"\"Data!A:L\"\"), \"\"Select Col1, Col4,Col8/100,Col9/100,Col10/100,Col11/100,Col12/100\"\")\"),\" NSE:NSE Code\")",
+    "J1": "IFERROR(__xludf.DUMMYFUNCTION(\"\"\"COMPUTED_VALUE\"\"\"),\" Industry Group\")"
+  },
+  "limitations": [
+    "Judge is a declared fundamental rubric, not omniscient AI labels or individually researched company valuations.",
+    "Sir uses an explicit local price adapter, not verified live GoogleFinance parity.",
+    "Only 1746 stocks receive current-model scores; all others remain visible as abstentions.",
+    "Snapshot fundamentals may contain stale/misaligned or bad vendor fields; cash flow and profit periods need scrutiny.",
+    "This is not evidence of greater future-return accuracy."
+  ]
+}

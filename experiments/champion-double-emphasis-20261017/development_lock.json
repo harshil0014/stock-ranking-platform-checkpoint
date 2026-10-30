@@ -1,0 +1,16 @@
+{
+  "stage": "development",
+  "scope": "expanded",
+  "treatment": "capped",
+  "model": "strong_both",
+  "top_n": 3,
+  "utility": 0.0011130668270801355,
+  "ranking_utility": -0.004844838900422421,
+  "equal_utility": 0.00695639139474305,
+  "xirr": 8.103644974427615e-05,
+  "drawdown": 4.891763117303993e-05,
+  "achievement": 0.000350877192982324,
+  "shortfall": 4.492152359023699e-05,
+  "ndcg": 8.084076632997039e-05,
+  "rank_ic": -0.00017773754433841882
+}

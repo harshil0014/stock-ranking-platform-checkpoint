@@ -1,0 +1,17 @@
+{
+  "model": "yeti_ndcg3_balanced_blend0.1",
+  "strict_gate": false,
+  "regressing_cells": 1147,
+  "total_cells": 4536,
+  "top3_regressing_cells": 417,
+  "top3_cells": 1512,
+  "development_top3_regressions": 245,
+  "development_regressions": 660,
+  "status": "RESEARCH_ONLY",
+  "fresh_validation": false,
+  "production_replaced": false,
+  "current_rows": 4436,
+  "max_training_endpoint": "2026-08-31",
+  "current_replay_exact": true,
+  "input_usable": 4303
+}

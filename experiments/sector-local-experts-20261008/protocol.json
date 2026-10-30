@@ -1,0 +1,23 @@
+{
+  "hypothesis": "Sector-specific feature effects can improve within-sector ordering; shrink local predictions toward a global ridge model to reduce small-sector variance.",
+  "targets": [
+    "return",
+    "balanced",
+    "defensive"
+  ],
+  "local_weights": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "minimum_local_rows": 120,
+  "minimum_local_dates": 4,
+  "ridge_alpha": 100,
+  "training": "Annual endpoint-purged 2020\u20132025; base7500; no future/current fundamentals.",
+  "candidate_blends": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "comparison": "Both prior champions, raw/capped, two periods/scopes, Top1/3/5, five metrics. All dates previously exposed; no fresh holdout."
+}

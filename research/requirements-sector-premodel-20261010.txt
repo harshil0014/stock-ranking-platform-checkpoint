@@ -1,0 +1,10 @@
+# Isolated worker packages; use --no-deps --target experiments/premodel_dependencies_20261010.
+# Shared system versions are recorded in experiments/sector-learned-blend-20261010/dependencies.json.
+# Do not install these older pandas/sklearn versions into the application's environment.
+tabpfn==2.2.1
+tabpfn-common-utils==0.1.9
+scikit-learn==1.6.1
+pandas==2.2.3
+posthog==6.7.11
+backoff==2.2.1
+eval-type-backport==0.2.2

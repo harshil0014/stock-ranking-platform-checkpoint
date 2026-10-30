@@ -1,0 +1,16 @@
+{
+  "year": 2023,
+  "family": "ridge",
+  "training_rows": 560469,
+  "training_queries": 10742,
+  "training_min_date": "2016-03-31",
+  "maximum_endpoint": "2022-12-31",
+  "cutoff": "2023-01-01",
+  "inference_rows": 116443,
+  "seconds": 15.060730218887329,
+  "replay_max_error": 0.0,
+  "model_sha256": "b786dddcb17afb4edb3221a44431e2ec42a74fe2f16cc8d644a232ba259d4cf3",
+  "prediction_sha256": "072183193573863cb2422330ae9dcb63158be16a8230f5454b30676937ec85b0",
+  "training_identity_sha256": "13b114c98094e4c37b30a7de48a6fa319f3c7968cd0cd95e39aa31aaac72ef58",
+  "training_loss": null
+}

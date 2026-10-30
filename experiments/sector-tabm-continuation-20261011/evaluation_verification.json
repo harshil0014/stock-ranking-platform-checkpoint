@@ -1,0 +1,10 @@
+{
+  "current_rows": 4436,
+  "historical_rows": 797443,
+  "benchmark_cohorts_verified": true,
+  "champion_reference_reproduced": true,
+  "current_ranks_verified": true,
+  "strict_gate_passes": 0,
+  "fresh_validation": false,
+  "production_replaced": false
+}

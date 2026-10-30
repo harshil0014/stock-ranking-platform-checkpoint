@@ -1,0 +1,209 @@
+[
+  {
+    "year": 2022,
+    "model": "balanced_absolute",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 768,
+    "teacher_seconds": 101.67783070000587,
+    "status": "DIRECT_TEACHER"
+  },
+  {
+    "year": 2022,
+    "model": "balanced_residual",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 768,
+    "teacher_seconds": 106.82612370001152,
+    "status": "DIRECT_TEACHER"
+  },
+  {
+    "year": 2022,
+    "model": "return_residual",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 768,
+    "teacher_seconds": 107.39524579999852,
+    "status": "DIRECT_TEACHER"
+  },
+  {
+    "year": 2022,
+    "model": "lgb_balanced_pool_d3",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 4096,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "lgb_balanced_pool_d5",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 4096,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "lgb_balanced_full_d3",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 98776,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "lgb_balanced_full_d5",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 98776,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "lgb_return_pool_d3",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 4096,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "lgb_return_pool_d5",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 4096,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "lgb_return_full_d3",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 98776,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "lgb_return_full_d5",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 98776,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "pfn_balanced_absolute_soft0.5_d3",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 4096,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "pfn_balanced_absolute_soft0.5_d5",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 4096,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "pfn_balanced_absolute_soft1.0_d3",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 4096,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "pfn_balanced_absolute_soft1.0_d5",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 4096,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "pfn_balanced_residual_soft0.5_d3",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 4096,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "pfn_balanced_residual_soft0.5_d5",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 4096,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "pfn_balanced_residual_soft1.0_d3",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 4096,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "pfn_balanced_residual_soft1.0_d5",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 4096,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "pfn_return_residual_soft0.5_d3",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 4096,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "pfn_return_residual_soft0.5_d5",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 4096,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "pfn_return_residual_soft1.0_d3",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 4096,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  },
+  {
+    "year": 2022,
+    "model": "pfn_return_residual_soft1.0_d5",
+    "cutoff": "2022-01-01",
+    "maximum_endpoint": "2021-12-31",
+    "training_rows": 4096,
+    "status": "STUDENT_OR_CONTROL",
+    "replay_exact": true
+  }
+]

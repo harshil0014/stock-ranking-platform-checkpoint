@@ -1,0 +1,11 @@
+REPLAY 2020 ebm_additive 1.1102230246251565e-16
+REPLAY 2020 ebm_interactions 1.1102230246251565e-16
+REPLAY 2020 extra_trees 3.3306690738754696e-16
+Traceback (most recent call last):
+  File "C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\audit_sector_specialist_ensemble_20261011.py", line 168, in <module>
+    {'replay':replay,'evaluate':evaluate,'company':company_audit,'ledger':ledger}[sys.argv[1]]()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\audit_sector_specialist_ensemble_20261011.py", line 45, in replay
+    error=float(np.max(np.abs(pred-raw[s.TARGETS].to_numpy())));assert error<=tol,(year,family,error)
+                                                                       ^^^^^^^^^^
+AssertionError: (2020, 'ridge', 5.5778503371683996e-08)

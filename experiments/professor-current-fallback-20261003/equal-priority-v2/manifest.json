@@ -1,0 +1,56 @@
+{
+  "schema": "professor_current_equal_priority_v2_manifest",
+  "manifest_excludes_itself": true,
+  "files": [
+    {
+      "path": "experiments/professor-current-fallback-20261003/equal-priority-v2/audit.json",
+      "bytes": 634,
+      "sha256": "47c91da7497939e4f5b2469c6405a540a4c8a38f11833d61fe208f03d5188249"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/equal-priority-v2/coverage_before_after.csv",
+      "bytes": 162,
+      "sha256": "0386ef4d822f616a03be9e20e4b0566a0b880d4f738a98e7231d55a71b0fd0cb"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/equal-priority-v2/current_company_facts_equal_priority.csv.gz",
+      "bytes": 4232763,
+      "sha256": "632ebce3d1c19e027ea558029b40b32c11162935ddf30efb545075414d73b7c9"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/equal-priority-v2/direct_filled_cells.csv",
+      "bytes": 443840,
+      "sha256": "34901ef6ab4b0cf7af7f7aead4434e52164310112e7d0caf8e538a69ce5867c0"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/equal-priority-v2/summary.json",
+      "bytes": 1520,
+      "sha256": "c1ad3c971954a2c04fc17af5fb29cef091bdcf74422b1c5324a111905ecb694c"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/manifest.json",
+      "bytes": 2898,
+      "sha256": "9b6e18a9f00a6a7ea4c79a609f8301681de43f8108a85279254c02208a9b1164"
+    },
+    {
+      "path": "research/reports/professor_current_equal_priority_v2_20261003.md",
+      "bytes": 2750,
+      "sha256": "7b08e14ab386a743b9ac0c99b6dd1558909438635e9e385bdaac74b93f05404d"
+    },
+    {
+      "path": "research/runners/promote_professor_current_fallback_v2_20261003.py",
+      "bytes": 6099,
+      "sha256": "8ed2a5e42a0ea63e623debfa25f3f8ca4f5026234ea71df9a101f04f8a014a2a"
+    },
+    {
+      "path": "research/runners/audit_professor_current_fallback_v2_20261003.py",
+      "bytes": 3569,
+      "sha256": "3208e81112077e1edb4b5ced426e609f1028720033061ee2573bc9e2ad21e789"
+    },
+    {
+      "path": "research/runners/manifest_professor_current_fallback_v2_20261003.py",
+      "bytes": 1372,
+      "sha256": "e200bb424548f3b1ff533803cb83a8a8dc16562425fe0ca5a6677dca4f4c742d"
+    }
+  ]
+}

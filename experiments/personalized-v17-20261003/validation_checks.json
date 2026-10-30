@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-03T17:26:57.441325+00:00",
+  "current_score_reproduction_max_error": 1.1102230246251565e-16,
+  "no_identity_future_current_fundamental_or_sector_predictors": true,
+  "normalized_missing_value": 0.5,
+  "confidence": "Original observed-field fraction; missing evidence shrinks correction toward champion, no prescribed negative age penalty",
+  "seed": 20261003,
+  "current_source_hash_verified": true,
+  "selection_before_exposed_and_current": true
+}

@@ -1,0 +1,14 @@
+{
+  "parent": "rank_xendcg_balanced_blend0.25",
+  "model": "activity_guard",
+  "strict_gate": false,
+  "regressions": 1272,
+  "comparisons": 5832,
+  "parent_regressions": 362,
+  "parent_comparisons": 1296,
+  "parent_improvements": 224,
+  "current_flagged": 13,
+  "current_stocks": 4436,
+  "fresh_validation": false,
+  "production_replaced": false
+}

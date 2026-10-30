@@ -1,0 +1,11 @@
+{
+  "interpretation": "Standalone versus blended outcome comparisons from actual completed evaluations. Learned nonnegative coefficients describe the fitted stack; correlated component weights are not causal importance. Recent table contains only development-locked finalists. Unrun recent standalone cells are intentionally absent.",
+  "metrics": "Top3, expanded, capped, equal sector/profile averages; positive oriented deltas favor candidate; no mean XIRR selection weight.",
+  "sources": {
+    "summary_development.csv": "b964baa27adbe77840c63e966210a6961ceaf447f44cc0ce71b86ecda162d7b6",
+    "summary_recent.csv": "fa7ec5c3830e76eeb4c2498b2e22b24dc09a6d00552882da7310b3bc8224be4d",
+    "locked_finalists.json": "5cdcde0ef4b0b65b13ed4db73240843a6ea71dfea41019769f6bb9e0978311fd"
+  },
+  "full_ablation": false,
+  "remaining": "A component-removal experiment is required to claim marginal ensemble contribution; coefficient size alone does not prove it."
+}

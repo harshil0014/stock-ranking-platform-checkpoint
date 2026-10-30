@@ -1,0 +1,48 @@
+{
+  "model": {
+    "name": "downside_h0.3_q0.1",
+    "family": "downside",
+    "high": 0.3,
+    "weight": 0.1,
+    "utility": 0.02260609333117155,
+    "delta": {
+      "coverage": 0.0,
+      "ndcg20": 0.01909861635351769,
+      "target_achievement_top20": 0.024652777777777784,
+      "target_shortfall_top20": -0.01184370889982406,
+      "median_xirr_top20": 0.038494428863618264,
+      "mean_asset_drawdown_top20": 0.022707903052151916,
+      "rank_ic": 0.0025586191476166054,
+      "pairwise_accuracy": 0.0006087178078716497
+    },
+    "profile_return": {
+      "amount1000": 0.056849600859023366,
+      "amount50000": 0.0416299709080927,
+      "base7500": 0.04075905452684525,
+      "lookback12": 0.03065901982344401,
+      "lookback60": 0.02200195340797638,
+      "quarterly": 0.049048151090694735,
+      "target10": 0.026966756185873245,
+      "target30": 0.032126252239377,
+      "weekly": 0.04640910073123767
+    },
+    "metrics": {
+      "coverage": 0.3446859225903432,
+      "ndcg20": 0.4438029496763709,
+      "target_achievement_top20": 0.48020833333333335,
+      "target_shortfall_top20": 0.069766706759279,
+      "median_xirr_top20": 0.2180439381508392,
+      "mean_asset_drawdown_top20": -0.26838909949152967,
+      "rank_ic": -0.04081967264226781,
+      "pairwise_accuracy": 0.4850906136627763
+    },
+    "eligible": true
+  },
+  "dates": 44,
+  "profiles": 9,
+  "universe": 4436,
+  "identical_eligible_universe": true,
+  "older_ath_cannot_increase_score": true,
+  "status": "Exploratory continuation; not fresh validation",
+  "website_changed": false
+}

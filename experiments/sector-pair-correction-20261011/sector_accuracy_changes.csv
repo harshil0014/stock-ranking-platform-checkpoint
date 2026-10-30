@@ -1,0 +1,833 @@
+scope,period,sector,champion_accuracy,candidate_accuracy,delta,model
+common,development,Aerospace & Defense,0.4913170101992853,0.49240961615300244,0.0010926059537171295,catpair_return_mistakes_w0.1
+common,development,Agricultural Food & other Products,0.46009284213108437,0.45992077329819936,-0.0001720688328850084,catpair_return_mistakes_w0.1
+common,development,"Agricultural, Commercial & Construction Vehicles",0.49437830687830686,0.49437830687830686,0.0,catpair_return_mistakes_w0.1
+common,development,Auto Components,0.4649153702639184,0.46569716121015425,0.0007817909462358719,catpair_return_mistakes_w0.1
+common,development,Automobiles,0.39194775132275134,0.39194775132275134,0.0,catpair_return_mistakes_w0.1
+common,development,Banks,0.4746787497122885,0.47628663609400795,0.0016078863817194367,catpair_return_mistakes_w0.1
+common,development,Beverages,0.5031781490114823,0.5032107167523834,3.2567740901101594e-05,catpair_return_mistakes_w0.1
+common,development,Capital Markets,0.4935692194474808,0.495298496219774,0.0017292767722932312,catpair_return_mistakes_w0.1
+common,development,Cement & Cement Products,0.4328753542130281,0.43382382991412743,0.0009484757010993494,catpair_return_mistakes_w0.1
+common,development,Chemicals & Petrochemicals,0.5140453673705899,0.5143671033124899,0.0003217359418999921,catpair_return_mistakes_w0.1
+common,development,Commercial Services & Supplies,0.5651838059176968,0.5642639947850883,-0.0009198111326085279,catpair_return_mistakes_w0.1
+common,development,Construction,0.5113860723553737,0.511281098188263,-0.00010497416711074958,catpair_return_mistakes_w0.1
+common,development,Consumer Durables,0.45246616019602165,0.45291104692711925,0.00044488673109760457,catpair_return_mistakes_w0.1
+common,development,Diversified,0.5752725669392337,0.5752725669392337,0.0,catpair_return_mistakes_w0.1
+common,development,Electrical Equipment,0.45171693474985475,0.45200673807998254,0.00028980333012779136,catpair_return_mistakes_w0.1
+common,development,Entertainment,0.5233649410842083,0.5227851818896249,-0.000579759194583418,catpair_return_mistakes_w0.1
+common,development,Ferrous Metals,0.5225332456899626,0.52034914076491,-0.00218410492505261,catpair_return_mistakes_w0.1
+common,development,Fertilizers & Agrochemicals,0.4500604144958913,0.45107747708286383,0.0010170625869725392,catpair_return_mistakes_w0.1
+common,development,Finance,0.5418980423105267,0.5400059586051109,-0.0018920837054158257,catpair_return_mistakes_w0.1
+common,development,Food Products,0.5467711804227641,0.5473599530255239,0.0005887726027598017,catpair_return_mistakes_w0.1
+common,development,Gas,0.4568055555555556,0.4568055555555556,0.0,catpair_return_mistakes_w0.1
+common,development,Healthcare Services,0.6090815349591066,0.6095726847473382,0.0004911497882316151,catpair_return_mistakes_w0.1
+common,development,Household Products,0.5524840954900478,0.5533098129824321,0.0008257174923842481,catpair_return_mistakes_w0.1
+common,development,IT - Hardware,0.6130743484910153,0.6128814472564472,-0.00019290123456805475,catpair_return_mistakes_w0.1
+common,development,IT - Services,0.5049455918163122,0.5043910258755561,-0.000554565940756091,catpair_return_mistakes_w0.1
+common,development,IT - Software,0.49389313589533174,0.493362498112829,-0.0005306377825027297,catpair_return_mistakes_w0.1
+common,development,Industrial Manufacturing,0.4567788693460806,0.45644456395658284,-0.0003343053894977466,catpair_return_mistakes_w0.1
+common,development,Industrial Products,0.500053758143474,0.4990988566085455,-0.0009549015349284429,catpair_return_mistakes_w0.1
+common,development,Insurance,0.47054164970831636,0.47054164970831636,0.0,catpair_return_mistakes_w0.1
+common,development,Leisure Services,0.48376237405274225,0.48254661242637886,-0.0012157616263633875,catpair_return_mistakes_w0.1
+common,development,Media,0.5418765108348442,0.5394429875679876,-0.002433523266856641,catpair_return_mistakes_w0.1
+common,development,Metals & Minerals Trading,0.575,0.575,0.0,catpair_return_mistakes_w0.1
+common,development,Minerals & Mining,0.5027927374653565,0.4991354875283447,-0.003657249937011775,catpair_return_mistakes_w0.1
+common,development,Non - Ferrous Metals,0.4923629482657261,0.4912312610229277,-0.0011316872427983848,catpair_return_mistakes_w0.1
+common,development,Oil,0.5752637151942708,0.5738257241729463,-0.0014379910213244695,catpair_return_mistakes_w0.1
+common,development,Other Construction Materials,0.5481481481481482,0.5481481481481482,0.0,catpair_return_mistakes_w0.1
+common,development,Other Consumer Services,0.6101918480824731,0.6242647543428793,0.014072906260406248,catpair_return_mistakes_w0.1
+common,development,Other Utilities,0.22500000000000003,0.22500000000000003,0.0,catpair_return_mistakes_w0.1
+common,development,"Paper, Forest & Jute Products",0.5746283599966521,0.5734108708437914,-0.0012174891528606846,catpair_return_mistakes_w0.1
+common,development,Personal Products,0.5046682098765432,0.5026840828924163,-0.001984126984126866,catpair_return_mistakes_w0.1
+common,development,Petroleum Products,0.4328790422540422,0.4357919472502806,0.0029129049962383635,catpair_return_mistakes_w0.1
+common,development,Pharmaceuticals & Biotechnology,0.5102703750781603,0.5120612324693022,0.0017908573911419312,catpair_return_mistakes_w0.1
+common,development,Power,0.4820384060722318,0.4832313602084937,0.0011929541362619145,catpair_return_mistakes_w0.1
+common,development,Realty,0.49447141833644515,0.49480744013505057,0.0003360217986054237,catpair_return_mistakes_w0.1
+common,development,Retailing,0.5540060604972231,0.5515754405761379,-0.0024306199210851753,catpair_return_mistakes_w0.1
+common,development,Telecom -  Equipment & Accessories,0.44633176053810975,0.4457648671140735,-0.0005668934240362633,catpair_return_mistakes_w0.1
+common,development,Telecom - Services,0.5123167727334395,0.5160405181238514,0.003723745390411981,catpair_return_mistakes_w0.1
+common,development,Textiles & Apparels,0.5041243367227499,0.5036331606142648,-0.0004911761084851474,catpair_return_mistakes_w0.1
+common,development,Transport Infrastructure,0.6382902591235925,0.6382902591235925,0.0,catpair_return_mistakes_w0.1
+common,development,Transport Services,0.5492445613875842,0.5481336148530421,-0.0011109465345420233,catpair_return_mistakes_w0.1
+common,exposed,Aerospace & Defense,0.4226296896640034,0.4226296896640034,0.0,catpair_return_mistakes_w0.1
+common,exposed,Agricultural Food & other Products,0.6162862335986797,0.6174824568887565,0.0011962232900767367,catpair_return_mistakes_w0.1
+common,exposed,"Agricultural, Commercial & Construction Vehicles",0.5162992357436802,0.5162992357436802,0.0,catpair_return_mistakes_w0.1
+common,exposed,Auto Components,0.5926126185124034,0.5925982859111003,-1.4332601303124193e-05,catpair_return_mistakes_w0.1
+common,exposed,Automobiles,0.5463403880070546,0.5463403880070546,0.0,catpair_return_mistakes_w0.1
+common,exposed,Banks,0.5968727190440709,0.5973321899252692,0.00045947088119824286,catpair_return_mistakes_w0.1
+common,exposed,Beverages,0.5985886029939178,0.5986903530956679,0.00010175010175006438,catpair_return_mistakes_w0.1
+common,exposed,Capital Markets,0.574880279346532,0.573616210663767,-0.0012640686827649628,catpair_return_mistakes_w0.1
+common,exposed,Cement & Cement Products,0.5778421879784729,0.5780016434569982,0.00015945547852536102,catpair_return_mistakes_w0.1
+common,exposed,Chemicals & Petrochemicals,0.551641108871322,0.5522439439910635,0.0006028351197414628,catpair_return_mistakes_w0.1
+common,exposed,Commercial Services & Supplies,0.5549946883442247,0.5555452259669773,0.0005505376227525893,catpair_return_mistakes_w0.1
+common,exposed,Construction,0.575434827885737,0.5740386966207608,-0.0013961312649761748,catpair_return_mistakes_w0.1
+common,exposed,Consumer Durables,0.571773002333718,0.5722614818911564,0.0004884795574384704,catpair_return_mistakes_w0.1
+common,exposed,Diversified,0.5412591523702636,0.5412591523702636,0.0,catpair_return_mistakes_w0.1
+common,exposed,Electrical Equipment,0.6209895129623172,0.621737034325115,0.000747521362797765,catpair_return_mistakes_w0.1
+common,exposed,Entertainment,0.5858835331820305,0.5854663246194721,-0.0004172085625583355,catpair_return_mistakes_w0.1
+common,exposed,Ferrous Metals,0.6040472886469619,0.6057654868542381,0.0017181982072762558,catpair_return_mistakes_w0.1
+common,exposed,Fertilizers & Agrochemicals,0.5379270581779165,0.5382699165865171,0.00034285840860059924,catpair_return_mistakes_w0.1
+common,exposed,Finance,0.6225284640977917,0.6229325637734721,0.0004040996756803361,catpair_return_mistakes_w0.1
+common,exposed,Financial Technology (Fintech),0.7479166666666668,0.7479166666666668,0.0,catpair_return_mistakes_w0.1
+common,exposed,Food Products,0.539837194367319,0.5386886835538802,-0.0011485108134388078,catpair_return_mistakes_w0.1
+common,exposed,Gas,0.4848471487360377,0.4848471487360377,0.0,catpair_return_mistakes_w0.1
+common,exposed,Healthcare Equipment & Supplies,0.2554799697656841,0.2554799697656841,0.0,catpair_return_mistakes_w0.1
+common,exposed,Healthcare Services,0.5527023934140418,0.5516651530253789,-0.00103724038866293,catpair_return_mistakes_w0.1
+common,exposed,Household Products,0.5671716143938367,0.5666888666888666,-0.0004827477049700324,catpair_return_mistakes_w0.1
+common,exposed,IT - Hardware,0.5320612515056959,0.5320612515056959,0.0,catpair_return_mistakes_w0.1
+common,exposed,IT - Services,0.5410078320133234,0.5406146635457291,-0.0003931684675942959,catpair_return_mistakes_w0.1
+common,exposed,IT - Software,0.5631204437771965,0.5638731187653435,0.0007526749881470174,catpair_return_mistakes_w0.1
+common,exposed,Industrial Manufacturing,0.5231962592704669,0.5230654338017319,-0.00013082546873499634,catpair_return_mistakes_w0.1
+common,exposed,Industrial Products,0.5855626668822285,0.5858524688216008,0.0002898019393723361,catpair_return_mistakes_w0.1
+common,exposed,Insurance,0.42061421089198864,0.42061421089198864,0.0,catpair_return_mistakes_w0.1
+common,exposed,Leisure Services,0.5453480739941265,0.5445962852594248,-0.0007517887347017194,catpair_return_mistakes_w0.1
+common,exposed,Media,0.5180583819472708,0.518226732115621,0.00016835016835015093,catpair_return_mistakes_w0.1
+common,exposed,Metals & Minerals Trading,0.47380952380952385,0.47380952380952385,0.0,catpair_return_mistakes_w0.1
+common,exposed,Minerals & Mining,0.5474099460210571,0.5474099460210571,0.0,catpair_return_mistakes_w0.1
+common,exposed,Non - Ferrous Metals,0.5509562967896301,0.5522423050200829,0.0012860082304527731,catpair_return_mistakes_w0.1
+common,exposed,Oil,0.5100642670087114,0.5100642670087114,0.0,catpair_return_mistakes_w0.1
+common,exposed,Other Construction Materials,0.6263888888888889,0.6263888888888889,0.0,catpair_return_mistakes_w0.1
+common,exposed,Other Consumer Services,0.5934765851432517,0.599562371784594,0.0060857866413422945,catpair_return_mistakes_w0.1
+common,exposed,Other Utilities,0.494551917989418,0.494551917989418,0.0,catpair_return_mistakes_w0.1
+common,exposed,"Paper, Forest & Jute Products",0.5643316619859746,0.5644632687604301,0.00013160677445545055,catpair_return_mistakes_w0.1
+common,exposed,Personal Products,0.3355599647266314,0.3351484420928865,-0.0004115226337448874,catpair_return_mistakes_w0.1
+common,exposed,Petroleum Products,0.5050015827793605,0.5050015827793605,0.0,catpair_return_mistakes_w0.1
+common,exposed,Pharmaceuticals & Biotechnology,0.5701863185860215,0.5708182150862103,0.0006318965001888,catpair_return_mistakes_w0.1
+common,exposed,Power,0.6289970104227127,0.6280765959196652,-0.0009204145030474731,catpair_return_mistakes_w0.1
+common,exposed,Realty,0.5359119595910947,0.5358822762008306,-2.9683390264101384e-05,catpair_return_mistakes_w0.1
+common,exposed,Retailing,0.6256055484750784,0.6255215307930495,-8.401768202892512e-05,catpair_return_mistakes_w0.1
+common,exposed,Telecom -  Equipment & Accessories,0.6163780663780664,0.6163780663780664,0.0,catpair_return_mistakes_w0.1
+common,exposed,Telecom - Services,0.5805022652244874,0.5805022652244874,0.0,catpair_return_mistakes_w0.1
+common,exposed,Textiles & Apparels,0.5694349930207169,0.5684130665364711,-0.0010219264842458164,catpair_return_mistakes_w0.1
+common,exposed,Transport Infrastructure,0.7590856481481482,0.7590856481481482,0.0,catpair_return_mistakes_w0.1
+common,exposed,Transport Services,0.6241386376626176,0.6239022571660459,-0.00023638049657170868,catpair_return_mistakes_w0.1
+expanded,development,Aerospace & Defense,0.5392502559169225,0.5411406902828472,0.0018904343659246203,catpair_return_mistakes_w0.1
+expanded,development,Agricultural Food & other Products,0.5013126137160689,0.5032115762878308,0.0018989625717618086,catpair_return_mistakes_w0.1
+expanded,development,"Agricultural, Commercial & Construction Vehicles",0.48820546737213405,0.48820546737213405,0.0,catpair_return_mistakes_w0.1
+expanded,development,Auto Components,0.4835688803620672,0.4834008231696216,-0.00016805719244561423,catpair_return_mistakes_w0.1
+expanded,development,Automobiles,0.4355930335097002,0.4355930335097002,0.0,catpair_return_mistakes_w0.1
+expanded,development,Banks,0.48130500565517337,0.48199717298014516,0.000692167324971793,catpair_return_mistakes_w0.1
+expanded,development,Beverages,0.4980899755326084,0.49861204247979607,0.0005220669471876493,catpair_return_mistakes_w0.1
+expanded,development,Capital Markets,0.477299455446638,0.47654395523137416,-0.0007555002152638268,catpair_return_mistakes_w0.1
+expanded,development,Cement & Cement Products,0.45295794664667216,0.45519870300813925,0.002240756361467089,catpair_return_mistakes_w0.1
+expanded,development,Chemicals & Petrochemicals,0.5195629333414189,0.5199046478275797,0.0003417144861608268,catpair_return_mistakes_w0.1
+expanded,development,Commercial Services & Supplies,0.5120101173291449,0.5125006246272086,0.0004905072980636582,catpair_return_mistakes_w0.1
+expanded,development,Construction,0.511073132603818,0.5115180685857751,0.00044493598195705086,catpair_return_mistakes_w0.1
+expanded,development,Consumer Durables,0.48146774268034354,0.48218937550781443,0.0007216328274708972,catpair_return_mistakes_w0.1
+expanded,development,Diversified,0.5390116442199776,0.5392641694725028,0.0002525252525251709,catpair_return_mistakes_w0.1
+expanded,development,Electrical Equipment,0.47899146063006115,0.47845112475318924,-0.0005403358768719113,catpair_return_mistakes_w0.1
+expanded,development,Entertainment,0.5183579850601943,0.5189612306392604,0.0006032455790661029,catpair_return_mistakes_w0.1
+expanded,development,Ferrous Metals,0.5420423789173789,0.5401710950080515,-0.001871283909327448,catpair_return_mistakes_w0.1
+expanded,development,Fertilizers & Agrochemicals,0.48379035618469335,0.4845920169947302,0.0008016608100368527,catpair_return_mistakes_w0.1
+expanded,development,Finance,0.498362819313001,0.49956540810410455,0.0012025887911035205,catpair_return_mistakes_w0.1
+expanded,development,Financial Technology (Fintech),0.5767857142857142,0.5767857142857142,0.0,catpair_return_mistakes_w0.1
+expanded,development,Food Products,0.527852316402117,0.528650620324521,0.0007983039224039867,catpair_return_mistakes_w0.1
+expanded,development,Gas,0.4577270723104056,0.4577270723104056,0.0,catpair_return_mistakes_w0.1
+expanded,development,Healthcare Equipment & Supplies,0.5987974987974988,0.5987974987974988,0.0,catpair_return_mistakes_w0.1
+expanded,development,Healthcare Services,0.5483078655655935,0.5485610407776669,0.00025317521207335325,catpair_return_mistakes_w0.1
+expanded,development,Household Products,0.5473290598290599,0.5493131868131869,0.001984126984126977,catpair_return_mistakes_w0.1
+expanded,development,IT - Hardware,0.5836786477411477,0.5847368487993488,0.0010582010582010914,catpair_return_mistakes_w0.1
+expanded,development,IT - Services,0.507728643848146,0.507911894528259,0.00018325068011304513,catpair_return_mistakes_w0.1
+expanded,development,IT - Software,0.5111196420050416,0.5114869313390555,0.000367289334013976,catpair_return_mistakes_w0.1
+expanded,development,Industrial Manufacturing,0.4905479377180343,0.4903984269437167,-0.00014951077431757387,catpair_return_mistakes_w0.1
+expanded,development,Industrial Products,0.5119134335122413,0.5117317972122893,-0.0001816362999519372,catpair_return_mistakes_w0.1
+expanded,development,Insurance,0.49349647266313934,0.49503968253968256,0.0015432098765432167,catpair_return_mistakes_w0.1
+expanded,development,Leisure Services,0.4999329923341185,0.49878423818513984,-0.0011487541489786368,catpair_return_mistakes_w0.1
+expanded,development,Media,0.4884321696821697,0.48754440004440003,-0.0008877696377696531,catpair_return_mistakes_w0.1
+expanded,development,Metals & Minerals Trading,0.49014550264550266,0.48816137566137563,-0.0019841269841270326,catpair_return_mistakes_w0.1
+expanded,development,Minerals & Mining,0.519505957005957,0.518019943019943,-0.001486013986014001,catpair_return_mistakes_w0.1
+expanded,development,Non - Ferrous Metals,0.48458265250544663,0.4852010711692084,0.0006184186637617772,catpair_return_mistakes_w0.1
+expanded,development,Oil,0.5347733285233285,0.5337949087949088,-0.0009784197284197216,catpair_return_mistakes_w0.1
+expanded,development,Other Construction Materials,0.49391680283224404,0.49692946623093687,0.0030126633986928275,catpair_return_mistakes_w0.1
+expanded,development,Other Consumer Services,0.5358822232596743,0.5371015194576856,0.0012192961980113104,catpair_return_mistakes_w0.1
+expanded,development,Other Utilities,0.4583049886621315,0.4583049886621315,0.0,catpair_return_mistakes_w0.1
+expanded,development,"Paper, Forest & Jute Products",0.5293977998232919,0.5297802129463983,0.0003824131231063843,catpair_return_mistakes_w0.1
+expanded,development,Personal Products,0.4978254769921436,0.4968153759820426,-0.001010101010100961,catpair_return_mistakes_w0.1
+expanded,development,Petroleum Products,0.4631011111709642,0.4654465632406809,0.0023454520697167025,catpair_return_mistakes_w0.1
+expanded,development,Pharmaceuticals & Biotechnology,0.5072337117967525,0.5075606071193131,0.00032689532256058307,catpair_return_mistakes_w0.1
+expanded,development,Power,0.5193668688544361,0.5210906580386934,0.0017237891842573072,catpair_return_mistakes_w0.1
+expanded,development,Printing & Publication,0.5192129629629629,0.5192129629629629,0.0,catpair_return_mistakes_w0.1
+expanded,development,Realty,0.5171116246130766,0.5166142071952353,-0.0004974174178412616,catpair_return_mistakes_w0.1
+expanded,development,Retailing,0.5433563219688483,0.5424051808560828,-0.0009511411127655078,catpair_return_mistakes_w0.1
+expanded,development,Telecom -  Equipment & Accessories,0.5050505050505051,0.5030513468013468,-0.001999158249158306,catpair_return_mistakes_w0.1
+expanded,development,Telecom - Services,0.5302293192918194,0.5307234432234432,0.0004941239316238466,catpair_return_mistakes_w0.1
+expanded,development,Textiles & Apparels,0.5063862987154499,0.5066782980621878,0.0002919993467378479,catpair_return_mistakes_w0.1
+expanded,development,Transport Infrastructure,0.5631578683662017,0.5631578683662017,0.0,catpair_return_mistakes_w0.1
+expanded,development,Transport Services,0.5392405432649267,0.5396734659356833,0.0004329226707566747,catpair_return_mistakes_w0.1
+expanded,exposed,Aerospace & Defense,0.4529994814394539,0.4529453337244875,-5.414771496642379e-05,catpair_return_mistakes_w0.1
+expanded,exposed,Agricultural Food & other Products,0.5815706220317093,0.5814380146976862,-0.00013260733402309377,catpair_return_mistakes_w0.1
+expanded,exposed,"Agricultural, Commercial & Construction Vehicles",0.5425598578376357,0.5425598578376357,0.0,catpair_return_mistakes_w0.1
+expanded,exposed,Auto Components,0.5948795718205329,0.5951743244126578,0.0002947525921249694,catpair_return_mistakes_w0.1
+expanded,exposed,Automobiles,0.6491919089141311,0.6491919089141311,0.0,catpair_return_mistakes_w0.1
+expanded,exposed,Banks,0.612281700320979,0.6126326120077537,0.00035091168677470197,catpair_return_mistakes_w0.1
+expanded,exposed,Beverages,0.605473827550567,0.6061618548569517,0.0006880273063847309,catpair_return_mistakes_w0.1
+expanded,exposed,Capital Markets,0.5767487916339593,0.5760956647775438,-0.000653126856415498,catpair_return_mistakes_w0.1
+expanded,exposed,Cement & Cement Products,0.5724527260474973,0.5722663572132526,-0.00018636883424472117,catpair_return_mistakes_w0.1
+expanded,exposed,Chemicals & Petrochemicals,0.5409875920485531,0.5414439438838757,0.0004563518353226659,catpair_return_mistakes_w0.1
+expanded,exposed,Commercial Services & Supplies,0.547444674247431,0.548380919916854,0.0009362456694229637,catpair_return_mistakes_w0.1
+expanded,exposed,Construction,0.5500632392381336,0.5489183412930798,-0.001144897945053791,catpair_return_mistakes_w0.1
+expanded,exposed,Consumer Durables,0.567260647616244,0.5670616753677403,-0.00019897224850362605,catpair_return_mistakes_w0.1
+expanded,exposed,Diversified,0.5568462401795735,0.5568462401795735,0.0,catpair_return_mistakes_w0.1
+expanded,exposed,Electrical Equipment,0.6026899076212234,0.6040484460344621,0.0013585384132386302,catpair_return_mistakes_w0.1
+expanded,exposed,Entertainment,0.5496603277008206,0.5495435662516331,-0.00011676144918748577,catpair_return_mistakes_w0.1
+expanded,exposed,Ferrous Metals,0.5934840873327185,0.5939378174160783,0.0004537300833598046,catpair_return_mistakes_w0.1
+expanded,exposed,Fertilizers & Agrochemicals,0.5183219401702863,0.5183583760871873,3.6435916900945386e-05,catpair_return_mistakes_w0.1
+expanded,exposed,Finance,0.5726734472794409,0.5733976042921658,0.0007241570127248798,catpair_return_mistakes_w0.1
+expanded,exposed,Financial Technology (Fintech),0.726140873015873,0.726140873015873,0.0,catpair_return_mistakes_w0.1
+expanded,exposed,Food Products,0.5548694485969382,0.5551675644954608,0.00029811589852257736,catpair_return_mistakes_w0.1
+expanded,exposed,Gas,0.5042254556143445,0.5042254556143445,0.0,catpair_return_mistakes_w0.1
+expanded,exposed,Healthcare Equipment & Supplies,0.3525960664849554,0.3525960664849554,0.0,catpair_return_mistakes_w0.1
+expanded,exposed,Healthcare Services,0.5627822817387467,0.5630910391391626,0.0003087574004159155,catpair_return_mistakes_w0.1
+expanded,exposed,Household Products,0.5494157848324516,0.5485618321402634,-0.0008539526921881313,catpair_return_mistakes_w0.1
+expanded,exposed,IT - Hardware,0.5673383652206322,0.5673383652206322,0.0,catpair_return_mistakes_w0.1
+expanded,exposed,IT - Services,0.541338788031952,0.5406878483946332,-0.0006509396373187704,catpair_return_mistakes_w0.1
+expanded,exposed,IT - Software,0.5538552884245163,0.5542503716710885,0.0003950832465722254,catpair_return_mistakes_w0.1
+expanded,exposed,Industrial Manufacturing,0.5397313207382326,0.5401419218786869,0.0004106011404543253,catpair_return_mistakes_w0.1
+expanded,exposed,Industrial Products,0.5793319270270458,0.579949038600446,0.0006171115734001642,catpair_return_mistakes_w0.1
+expanded,exposed,Insurance,0.4503914809470365,0.4503914809470365,0.0,catpair_return_mistakes_w0.1
+expanded,exposed,Leisure Services,0.5468367548350781,0.546585673629392,-0.0002510812056860656,catpair_return_mistakes_w0.1
+expanded,exposed,Media,0.5126174433772472,0.5137246075154572,0.0011071641382099928,catpair_return_mistakes_w0.1
+expanded,exposed,Metals & Minerals Trading,0.4726965421409866,0.4726965421409866,0.0,catpair_return_mistakes_w0.1
+expanded,exposed,Minerals & Mining,0.6564037814037813,0.6564037814037813,0.0,catpair_return_mistakes_w0.1
+expanded,exposed,Non - Ferrous Metals,0.5372564149116437,0.5376195231178892,0.00036310820624552154,catpair_return_mistakes_w0.1
+expanded,exposed,Oil,0.47034148676305537,0.47034148676305537,0.0,catpair_return_mistakes_w0.1
+expanded,exposed,Other Construction Materials,0.49420539820866616,0.49481814330670537,0.0006127450980392135,catpair_return_mistakes_w0.1
+expanded,exposed,Other Consumer Services,0.5501310620378538,0.55099028485644,0.0008592228185861917,catpair_return_mistakes_w0.1
+expanded,exposed,Other Utilities,0.5251822251822252,0.5251822251822252,0.0,catpair_return_mistakes_w0.1
+expanded,exposed,"Paper, Forest & Jute Products",0.5891497324348276,0.5888366762865475,-0.00031305614828014416,catpair_return_mistakes_w0.1
+expanded,exposed,Personal Products,0.4020892687559354,0.39862514029180696,-0.0034641284641284686,catpair_return_mistakes_w0.1
+expanded,exposed,Petroleum Products,0.5352474323062558,0.5352474323062558,0.0,catpair_return_mistakes_w0.1
+expanded,exposed,Pharmaceuticals & Biotechnology,0.5595925258677268,0.559574850641471,-1.7675226255731147e-05,catpair_return_mistakes_w0.1
+expanded,exposed,Power,0.6253644801273738,0.6250137515446441,-0.0003507285827296647,catpair_return_mistakes_w0.1
+expanded,exposed,Printing & Publication,0.4645061728395061,0.4645061728395061,0.0,catpair_return_mistakes_w0.1
+expanded,exposed,Realty,0.5211674642617031,0.5210992229604778,-6.824130122529137e-05,catpair_return_mistakes_w0.1
+expanded,exposed,Retailing,0.5905387089032716,0.59007022842211,-0.0004684804811616594,catpair_return_mistakes_w0.1
+expanded,exposed,Telecom -  Equipment & Accessories,0.5800317994762438,0.5800317994762438,0.0,catpair_return_mistakes_w0.1
+expanded,exposed,Telecom - Services,0.5767549066160177,0.5770635485913264,0.00030864197530866555,catpair_return_mistakes_w0.1
+expanded,exposed,Textiles & Apparels,0.5556102534165389,0.5558676483778933,0.00025739496135435136,catpair_return_mistakes_w0.1
+expanded,exposed,Transport Infrastructure,0.6889917695473251,0.6889917695473251,0.0,catpair_return_mistakes_w0.1
+expanded,exposed,Transport Services,0.6031142407242749,0.6032400551577622,0.000125814433487359,catpair_return_mistakes_w0.1
+common,development,Aerospace & Defense,0.4913170101992853,0.49110156206717054,-0.00021544813211477054,catpair_return_uniform_w0.1
+common,development,Agricultural Food & other Products,0.46009284213108437,0.45996473378030456,-0.00012810835077980975,catpair_return_uniform_w0.1
+common,development,"Agricultural, Commercial & Construction Vehicles",0.49437830687830686,0.49437830687830686,0.0,catpair_return_uniform_w0.1
+common,development,Auto Components,0.4649153702639184,0.4654129176024684,0.0004975473385500084,catpair_return_uniform_w0.1
+common,development,Automobiles,0.39194775132275134,0.39194775132275134,0.0,catpair_return_uniform_w0.1
+common,development,Banks,0.4746787497122885,0.47624581853587816,0.0015670688235896457,catpair_return_uniform_w0.1
+common,development,Beverages,0.5031781490114823,0.5031492427325761,-2.8906278906171146e-05,catpair_return_uniform_w0.1
+common,development,Capital Markets,0.4935692194474808,0.4944286348679012,0.0008594154204203952,catpair_return_uniform_w0.1
+common,development,Cement & Cement Products,0.4328753542130281,0.4331148768019516,0.00023952258892351308,catpair_return_uniform_w0.1
+common,development,Chemicals & Petrochemicals,0.5140453673705899,0.5141515584555747,0.0001061910849847747,catpair_return_uniform_w0.1
+common,development,Commercial Services & Supplies,0.5651838059176968,0.5643154263158414,-0.0008683796018553736,catpair_return_uniform_w0.1
+common,development,Construction,0.5113860723553737,0.5111634409522413,-0.0002226314031323895,catpair_return_uniform_w0.1
+common,development,Consumer Durables,0.45246616019602165,0.4531191607281564,0.0006530005321347399,catpair_return_uniform_w0.1
+common,development,Diversified,0.5752725669392337,0.5752725669392337,0.0,catpair_return_uniform_w0.1
+common,development,Electrical Equipment,0.45171693474985475,0.4520143840861549,0.00029744933630015957,catpair_return_uniform_w0.1
+common,development,Entertainment,0.5233649410842083,0.5227280169972656,-0.000636924086942714,catpair_return_uniform_w0.1
+common,development,Ferrous Metals,0.5225332456899626,0.5208740974277638,-0.0016591482621988174,catpair_return_uniform_w0.1
+common,development,Fertilizers & Agrochemicals,0.4500604144958913,0.45201715665157205,0.0019567421556807574,catpair_return_uniform_w0.1
+common,development,Finance,0.5418980423105267,0.540344275371577,-0.0015537669389497077,catpair_return_uniform_w0.1
+common,development,Food Products,0.5467711804227641,0.5470646448841845,0.00029346446142042293,catpair_return_uniform_w0.1
+common,development,Gas,0.4568055555555556,0.4568055555555556,0.0,catpair_return_uniform_w0.1
+common,development,Healthcare Services,0.6090815349591066,0.6095196789611695,0.0004381440020629901,catpair_return_uniform_w0.1
+common,development,Household Products,0.5524840954900478,0.5535362840422364,0.001052188552188582,catpair_return_uniform_w0.1
+common,development,IT - Hardware,0.6130743484910153,0.6128814472564472,-0.00019290123456805475,catpair_return_uniform_w0.1
+common,development,IT - Services,0.5049455918163122,0.5044014443589537,-0.0005441474573584237,catpair_return_uniform_w0.1
+common,development,IT - Software,0.49389313589533174,0.4930477529724509,-0.0008453829228808329,catpair_return_uniform_w0.1
+common,development,Industrial Manufacturing,0.4567788693460806,0.4568632147873026,8.434544122198906e-05,catpair_return_uniform_w0.1
+common,development,Industrial Products,0.500053758143474,0.4992486649102241,-0.0008050932332498428,catpair_return_uniform_w0.1
+common,development,Insurance,0.47054164970831636,0.47054164970831636,0.0,catpair_return_uniform_w0.1
+common,development,Leisure Services,0.48376237405274225,0.4827251972320096,-0.001037176820732677,catpair_return_uniform_w0.1
+common,development,Media,0.5418765108348442,0.5417502482085816,-0.00012626262626258544,catpair_return_uniform_w0.1
+common,development,Metals & Minerals Trading,0.575,0.575,0.0,catpair_return_uniform_w0.1
+common,development,Minerals & Mining,0.5027927374653565,0.5027927374653565,0.0,catpair_return_uniform_w0.1
+common,development,Non - Ferrous Metals,0.4923629482657261,0.4923629482657261,0.0,catpair_return_uniform_w0.1
+common,development,Oil,0.5752637151942708,0.5752637151942708,0.0,catpair_return_uniform_w0.1
+common,development,Other Construction Materials,0.5481481481481482,0.5481481481481482,0.0,catpair_return_uniform_w0.1
+common,development,Other Consumer Services,0.6101918480824731,0.6178832885864136,0.00769144050394055,catpair_return_uniform_w0.1
+common,development,Other Utilities,0.22500000000000003,0.22500000000000003,0.0,catpair_return_uniform_w0.1
+common,development,"Paper, Forest & Jute Products",0.5746283599966521,0.5731586002886958,-0.001469759707956264,catpair_return_uniform_w0.1
+common,development,Personal Products,0.5046682098765432,0.5046682098765432,0.0,catpair_return_uniform_w0.1
+common,development,Petroleum Products,0.4328790422540422,0.4328790422540422,0.0,catpair_return_uniform_w0.1
+common,development,Pharmaceuticals & Biotechnology,0.5102703750781603,0.5112257427230691,0.0009553676449087778,catpair_return_uniform_w0.1
+common,development,Power,0.4820384060722318,0.48331037112197844,0.0012719650497466373,catpair_return_uniform_w0.1
+common,development,Realty,0.49447141833644515,0.4941017059846023,-0.00036971235184285467,catpair_return_uniform_w0.1
+common,development,Retailing,0.5540060604972231,0.5519490021912258,-0.002057058305997339,catpair_return_uniform_w0.1
+common,development,Telecom -  Equipment & Accessories,0.44633176053810975,0.44633176053810975,0.0,catpair_return_uniform_w0.1
+common,development,Telecom - Services,0.5123167727334395,0.5159257794674461,0.003609006734006659,catpair_return_uniform_w0.1
+common,development,Textiles & Apparels,0.5041243367227499,0.5036054276816924,-0.0005189090410575581,catpair_return_uniform_w0.1
+common,development,Transport Infrastructure,0.6382902591235925,0.6382902591235925,0.0,catpair_return_uniform_w0.1
+common,development,Transport Services,0.5492445613875842,0.5485446513983523,-0.0006999099892318617,catpair_return_uniform_w0.1
+common,exposed,Aerospace & Defense,0.4226296896640034,0.4226296896640034,0.0,catpair_return_uniform_w0.1
+common,exposed,Agricultural Food & other Products,0.6162862335986797,0.617218730291249,0.0009324966925692291,catpair_return_uniform_w0.1
+common,exposed,"Agricultural, Commercial & Construction Vehicles",0.5162992357436802,0.5162992357436802,0.0,catpair_return_uniform_w0.1
+common,exposed,Auto Components,0.5926126185124034,0.5926337006833996,2.108217099616727e-05,catpair_return_uniform_w0.1
+common,exposed,Automobiles,0.5463403880070546,0.5463403880070546,0.0,catpair_return_uniform_w0.1
+common,exposed,Banks,0.5968727190440709,0.597369816071223,0.0004970970271520603,catpair_return_uniform_w0.1
+common,exposed,Beverages,0.5985886029939178,0.5985886029939178,0.0,catpair_return_uniform_w0.1
+common,exposed,Capital Markets,0.574880279346532,0.5744087114373344,-0.00047156790919755665,catpair_return_uniform_w0.1
+common,exposed,Cement & Cement Products,0.5778421879784729,0.5779845853393757,0.00014239736090282396,catpair_return_uniform_w0.1
+common,exposed,Chemicals & Petrochemicals,0.551641108871322,0.5523025576729967,0.0006614488016747355,catpair_return_uniform_w0.1
+common,exposed,Commercial Services & Supplies,0.5549946883442247,0.5553755640410558,0.00038087569683109557,catpair_return_uniform_w0.1
+common,exposed,Construction,0.575434827885737,0.5737315201027736,-0.001703307782963348,catpair_return_uniform_w0.1
+common,exposed,Consumer Durables,0.571773002333718,0.5720758709496622,0.00030286861594419623,catpair_return_uniform_w0.1
+common,exposed,Diversified,0.5412591523702636,0.5412591523702636,0.0,catpair_return_uniform_w0.1
+common,exposed,Electrical Equipment,0.6209895129623172,0.6213037753967722,0.0003142624344549816,catpair_return_uniform_w0.1
+common,exposed,Entertainment,0.5858835331820305,0.5855924152086072,-0.0002911179734232938,catpair_return_uniform_w0.1
+common,exposed,Ferrous Metals,0.6040472886469619,0.6044815996505883,0.00043431100362645303,catpair_return_uniform_w0.1
+common,exposed,Fertilizers & Agrochemicals,0.5379270581779165,0.5380229604609136,9.590228299705128e-05,catpair_return_uniform_w0.1
+common,exposed,Finance,0.6225284640977917,0.6229136160747653,0.0003851519769735301,catpair_return_uniform_w0.1
+common,exposed,Financial Technology (Fintech),0.7479166666666668,0.7479166666666668,0.0,catpair_return_uniform_w0.1
+common,exposed,Food Products,0.539837194367319,0.5392633293030487,-0.0005738650642703735,catpair_return_uniform_w0.1
+common,exposed,Gas,0.4848471487360377,0.4848471487360377,0.0,catpair_return_uniform_w0.1
+common,exposed,Healthcare Equipment & Supplies,0.2554799697656841,0.2554799697656841,0.0,catpair_return_uniform_w0.1
+common,exposed,Healthcare Services,0.5527023934140418,0.5521767692869012,-0.0005256241271406337,catpair_return_uniform_w0.1
+common,exposed,Household Products,0.5671716143938367,0.5671716143938367,0.0,catpair_return_uniform_w0.1
+common,exposed,IT - Hardware,0.5320612515056959,0.5320612515056959,0.0,catpair_return_uniform_w0.1
+common,exposed,IT - Services,0.5410078320133234,0.5403176076394977,-0.0006902243738257097,catpair_return_uniform_w0.1
+common,exposed,IT - Software,0.5631204437771965,0.5635729958373745,0.0004525520601780242,catpair_return_uniform_w0.1
+common,exposed,Industrial Manufacturing,0.5231962592704669,0.5231283156345764,-6.794363589046615e-05,catpair_return_uniform_w0.1
+common,exposed,Industrial Products,0.5855626668822285,0.5859045656407005,0.00034189875847201456,catpair_return_uniform_w0.1
+common,exposed,Insurance,0.42061421089198864,0.42061421089198864,0.0,catpair_return_uniform_w0.1
+common,exposed,Leisure Services,0.5453480739941265,0.5450476910764448,-0.00030038291768175185,catpair_return_uniform_w0.1
+common,exposed,Media,0.5180583819472708,0.5180583819472708,0.0,catpair_return_uniform_w0.1
+common,exposed,Metals & Minerals Trading,0.47380952380952385,0.47380952380952385,0.0,catpair_return_uniform_w0.1
+common,exposed,Minerals & Mining,0.5474099460210571,0.5474099460210571,0.0,catpair_return_uniform_w0.1
+common,exposed,Non - Ferrous Metals,0.5509562967896301,0.5509562967896301,0.0,catpair_return_uniform_w0.1
+common,exposed,Oil,0.5100642670087114,0.5100642670087114,0.0,catpair_return_uniform_w0.1
+common,exposed,Other Construction Materials,0.6263888888888889,0.6263888888888889,0.0,catpair_return_uniform_w0.1
+common,exposed,Other Consumer Services,0.5934765851432517,0.5958147819258931,0.0023381967826413552,catpair_return_uniform_w0.1
+common,exposed,Other Utilities,0.494551917989418,0.494551917989418,0.0,catpair_return_uniform_w0.1
+common,exposed,"Paper, Forest & Jute Products",0.5643316619859746,0.5645740365469355,0.0002423745609608785,catpair_return_uniform_w0.1
+common,exposed,Personal Products,0.3355599647266314,0.3355599647266314,0.0,catpair_return_uniform_w0.1
+common,exposed,Petroleum Products,0.5050015827793605,0.5050015827793605,0.0,catpair_return_uniform_w0.1
+common,exposed,Pharmaceuticals & Biotechnology,0.5701863185860215,0.5703249709690419,0.00013865238302035454,catpair_return_uniform_w0.1
+common,exposed,Power,0.6289970104227127,0.6285187819546485,-0.0004782284680642235,catpair_return_uniform_w0.1
+common,exposed,Realty,0.5359119595910947,0.5359861178846358,7.415829354107117e-05,catpair_return_uniform_w0.1
+common,exposed,Retailing,0.6256055484750784,0.6259251378863804,0.00031958941130194596,catpair_return_uniform_w0.1
+common,exposed,Telecom -  Equipment & Accessories,0.6163780663780664,0.6163780663780664,0.0,catpair_return_uniform_w0.1
+common,exposed,Telecom - Services,0.5805022652244874,0.5805022652244874,0.0,catpair_return_uniform_w0.1
+common,exposed,Textiles & Apparels,0.5694349930207169,0.5688274172655459,-0.0006075757551710081,catpair_return_uniform_w0.1
+common,exposed,Transport Infrastructure,0.7590856481481482,0.7590856481481482,0.0,catpair_return_uniform_w0.1
+common,exposed,Transport Services,0.6241386376626176,0.6244177183444681,0.0002790806818505631,catpair_return_uniform_w0.1
+expanded,development,Aerospace & Defense,0.5392502559169225,0.5400043039748922,0.0007540480579696363,catpair_return_uniform_w0.1
+expanded,development,Agricultural Food & other Products,0.5013126137160689,0.5032504025598105,0.001937788843741517,catpair_return_uniform_w0.1
+expanded,development,"Agricultural, Commercial & Construction Vehicles",0.48820546737213405,0.48820546737213405,0.0,catpair_return_uniform_w0.1
+expanded,development,Auto Components,0.4835688803620672,0.4832874454429316,-0.0002814349191355703,catpair_return_uniform_w0.1
+expanded,development,Automobiles,0.4355930335097002,0.4355930335097002,0.0,catpair_return_uniform_w0.1
+expanded,development,Banks,0.48130500565517337,0.48189361149242477,0.0005886058372513991,catpair_return_uniform_w0.1
+expanded,development,Beverages,0.4980899755326084,0.4993849463293908,0.0012949707967823687,catpair_return_uniform_w0.1
+expanded,development,Capital Markets,0.477299455446638,0.47707661371485266,-0.00022284173178532818,catpair_return_uniform_w0.1
+expanded,development,Cement & Cement Products,0.45295794664667216,0.4542227760211829,0.001264829374510723,catpair_return_uniform_w0.1
+expanded,development,Chemicals & Petrochemicals,0.5195629333414189,0.5197337278902284,0.0001707945488095275,catpair_return_uniform_w0.1
+expanded,development,Commercial Services & Supplies,0.5120101173291449,0.5126494036582497,0.0006392863291048156,catpair_return_uniform_w0.1
+expanded,development,Construction,0.511073132603818,0.5112926216632674,0.0002194890594493515,catpair_return_uniform_w0.1
+expanded,development,Consumer Durables,0.48146774268034354,0.48224947157804743,0.0007817288977038928,catpair_return_uniform_w0.1
+expanded,development,Diversified,0.5390116442199776,0.5381278058361392,-0.0008838383838384312,catpair_return_uniform_w0.1
+expanded,development,Electrical Equipment,0.47899146063006115,0.47831636018562546,-0.0006751004444356945,catpair_return_uniform_w0.1
+expanded,development,Entertainment,0.5183579850601943,0.5191505823162008,0.0007925972560065553,catpair_return_uniform_w0.1
+expanded,development,Ferrous Metals,0.5420423789173789,0.5403740090424872,-0.0016683698748917175,catpair_return_uniform_w0.1
+expanded,development,Fertilizers & Agrochemicals,0.48379035618469335,0.48490343349015447,0.0011130773054611187,catpair_return_uniform_w0.1
+expanded,development,Finance,0.498362819313001,0.49939224929932163,0.001029429986320607,catpair_return_uniform_w0.1
+expanded,development,Financial Technology (Fintech),0.5767857142857142,0.5767857142857142,0.0,catpair_return_uniform_w0.1
+expanded,development,Food Products,0.527852316402117,0.5286048030961141,0.0007524866939970787,catpair_return_uniform_w0.1
+expanded,development,Gas,0.4577270723104056,0.4577270723104056,0.0,catpair_return_uniform_w0.1
+expanded,development,Healthcare Equipment & Supplies,0.5987974987974988,0.5987974987974988,0.0,catpair_return_uniform_w0.1
+expanded,development,Healthcare Services,0.5483078655655935,0.548508562087938,0.00020069652234444568,catpair_return_uniform_w0.1
+expanded,development,Household Products,0.5473290598290599,0.5495115995115996,0.002182539682539675,catpair_return_uniform_w0.1
+expanded,development,IT - Hardware,0.5836786477411477,0.5837447853072852,6.613756613749189e-05,catpair_return_uniform_w0.1
+expanded,development,IT - Services,0.507728643848146,0.5081431304748508,0.00041448662670484637,catpair_return_uniform_w0.1
+expanded,development,IT - Software,0.5111196420050416,0.5113949944299238,0.00027535242488219147,catpair_return_uniform_w0.1
+expanded,development,Industrial Manufacturing,0.4905479377180343,0.4906989763548102,0.000151038636775902,catpair_return_uniform_w0.1
+expanded,development,Industrial Products,0.5119134335122413,0.5117927008368772,-0.00012073267536405474,catpair_return_uniform_w0.1
+expanded,development,Insurance,0.49349647266313934,0.49349647266313934,0.0,catpair_return_uniform_w0.1
+expanded,development,Leisure Services,0.4999329923341185,0.49952450616530025,-0.00040848616881822286,catpair_return_uniform_w0.1
+expanded,development,Media,0.4884321696821697,0.48915713915713915,0.0007249694749694724,catpair_return_uniform_w0.1
+expanded,development,Metals & Minerals Trading,0.49014550264550266,0.49014550264550266,0.0,catpair_return_uniform_w0.1
+expanded,development,Minerals & Mining,0.519505957005957,0.5186431623931624,-0.0008627946127945929,catpair_return_uniform_w0.1
+expanded,development,Non - Ferrous Metals,0.48458265250544663,0.4855482933914306,0.0009656408859839427,catpair_return_uniform_w0.1
+expanded,development,Oil,0.5347733285233285,0.5348327598327598,5.9431309431312584e-05,catpair_return_uniform_w0.1
+expanded,development,Other Construction Materials,0.49391680283224404,0.49600694444444443,0.0020901416122003913,catpair_return_uniform_w0.1
+expanded,development,Other Consumer Services,0.5358822232596743,0.5361059494460553,0.0002237261863810014,catpair_return_uniform_w0.1
+expanded,development,Other Utilities,0.4583049886621315,0.4583049886621315,0.0,catpair_return_uniform_w0.1
+expanded,development,"Paper, Forest & Jute Products",0.5293977998232919,0.5300369298069341,0.0006391299836421283,catpair_return_uniform_w0.1
+expanded,development,Personal Products,0.4978254769921436,0.4978254769921436,0.0,catpair_return_uniform_w0.1
+expanded,development,Petroleum Products,0.4631011111709642,0.4629664045105221,-0.00013470666044207436,catpair_return_uniform_w0.1
+expanded,development,Pharmaceuticals & Biotechnology,0.5072337117967525,0.5073330745129255,9.936271617305703e-05,catpair_return_uniform_w0.1
+expanded,development,Power,0.5193668688544361,0.5208204437736774,0.0014535749192413627,catpair_return_uniform_w0.1
+expanded,development,Printing & Publication,0.5192129629629629,0.5192129629629629,0.0,catpair_return_uniform_w0.1
+expanded,development,Realty,0.5171116246130766,0.5167185088712517,-0.00039311574182487874,catpair_return_uniform_w0.1
+expanded,development,Retailing,0.5433563219688483,0.5424576936532921,-0.0008986283155562047,catpair_return_uniform_w0.1
+expanded,development,Telecom -  Equipment & Accessories,0.5050505050505051,0.5042087542087542,-0.0008417508417508657,catpair_return_uniform_w0.1
+expanded,development,Telecom - Services,0.5302293192918194,0.5307711385836387,0.0005418192918192899,catpair_return_uniform_w0.1
+expanded,development,Textiles & Apparels,0.5063862987154499,0.506582179211328,0.00019588049587804246,catpair_return_uniform_w0.1
+expanded,development,Transport Infrastructure,0.5631578683662017,0.5631578683662017,0.0,catpair_return_uniform_w0.1
+expanded,development,Transport Services,0.5392405432649267,0.5397970420485977,0.0005564987836710333,catpair_return_uniform_w0.1
+expanded,exposed,Aerospace & Defense,0.4529994814394539,0.4529453337244875,-5.414771496642379e-05,catpair_return_uniform_w0.1
+expanded,exposed,Agricultural Food & other Products,0.5815706220317093,0.581453737557242,-0.00011688447446733807,catpair_return_uniform_w0.1
+expanded,exposed,"Agricultural, Commercial & Construction Vehicles",0.5425598578376357,0.5425598578376357,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Auto Components,0.5948795718205329,0.5952211386022591,0.00034156678172625465,catpair_return_uniform_w0.1
+expanded,exposed,Automobiles,0.6491919089141311,0.6491919089141311,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Banks,0.612281700320979,0.6127195976011284,0.0004378972801494241,catpair_return_uniform_w0.1
+expanded,exposed,Beverages,0.605473827550567,0.6058479369504413,0.0003741093998742562,catpair_return_uniform_w0.1
+expanded,exposed,Capital Markets,0.5767487916339593,0.5767355249437318,-1.3266690227498046e-05,catpair_return_uniform_w0.1
+expanded,exposed,Cement & Cement Products,0.5724527260474973,0.5721202323939252,-0.0003324936535721301,catpair_return_uniform_w0.1
+expanded,exposed,Chemicals & Petrochemicals,0.5409875920485531,0.5414744030869577,0.00048681103840464424,catpair_return_uniform_w0.1
+expanded,exposed,Commercial Services & Supplies,0.547444674247431,0.5477760744318085,0.00033140018437749497,catpair_return_uniform_w0.1
+expanded,exposed,Construction,0.5500632392381336,0.5487813148640591,-0.0012819243740744835,catpair_return_uniform_w0.1
+expanded,exposed,Consumer Durables,0.567260647616244,0.5671699518464781,-9.069576976583615e-05,catpair_return_uniform_w0.1
+expanded,exposed,Diversified,0.5568462401795735,0.5568462401795735,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Electrical Equipment,0.6026899076212234,0.6038316190219043,0.001141711400680867,catpair_return_uniform_w0.1
+expanded,exposed,Entertainment,0.5496603277008206,0.5493803072147387,-0.0002800204860818889,catpair_return_uniform_w0.1
+expanded,exposed,Ferrous Metals,0.5934840873327185,0.5933743479637199,-0.00010973936899860703,catpair_return_uniform_w0.1
+expanded,exposed,Fertilizers & Agrochemicals,0.5183219401702863,0.5185160134978473,0.00019407332756093965,catpair_return_uniform_w0.1
+expanded,exposed,Finance,0.5726734472794409,0.5731799175874899,0.0005064703080489563,catpair_return_uniform_w0.1
+expanded,exposed,Financial Technology (Fintech),0.726140873015873,0.726140873015873,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Food Products,0.5548694485969382,0.5551862499103353,0.00031680131339706374,catpair_return_uniform_w0.1
+expanded,exposed,Gas,0.5042254556143445,0.5042254556143445,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Healthcare Equipment & Supplies,0.3525960664849554,0.3525960664849554,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Healthcare Services,0.5627822817387467,0.5633476621358164,0.0005653803970697702,catpair_return_uniform_w0.1
+expanded,exposed,Household Products,0.5494157848324516,0.5494157848324516,0.0,catpair_return_uniform_w0.1
+expanded,exposed,IT - Hardware,0.5673383652206322,0.5675928594809743,0.00025449426034207523,catpair_return_uniform_w0.1
+expanded,exposed,IT - Services,0.541338788031952,0.5409495087701596,-0.0003892792617924412,catpair_return_uniform_w0.1
+expanded,exposed,IT - Software,0.5538552884245163,0.5541289750591294,0.000273686634613135,catpair_return_uniform_w0.1
+expanded,exposed,Industrial Manufacturing,0.5397313207382326,0.5398417547437977,0.00011043400556509653,catpair_return_uniform_w0.1
+expanded,exposed,Industrial Products,0.5793319270270458,0.5797963073600774,0.00046438033303153325,catpair_return_uniform_w0.1
+expanded,exposed,Insurance,0.4503914809470365,0.4503914809470365,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Leisure Services,0.5468367548350781,0.546701254911528,-0.00013549992355010865,catpair_return_uniform_w0.1
+expanded,exposed,Media,0.5126174433772472,0.5126174433772472,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Metals & Minerals Trading,0.4726965421409866,0.4726965421409866,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Minerals & Mining,0.6564037814037813,0.6564037814037813,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Non - Ferrous Metals,0.5372564149116437,0.5372564149116437,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Oil,0.47034148676305537,0.47034148676305537,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Other Construction Materials,0.49420539820866616,0.4942734809973372,6.808278867104223e-05,catpair_return_uniform_w0.1
+expanded,exposed,Other Consumer Services,0.5501310620378538,0.5505819572741993,0.00045089523634556095,catpair_return_uniform_w0.1
+expanded,exposed,Other Utilities,0.5251822251822252,0.5251822251822252,0.0,catpair_return_uniform_w0.1
+expanded,exposed,"Paper, Forest & Jute Products",0.5891497324348276,0.5888113906405346,-0.00033834179429304,catpair_return_uniform_w0.1
+expanded,exposed,Personal Products,0.4020892687559354,0.4020892687559354,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Petroleum Products,0.5352474323062558,0.5352474323062558,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Pharmaceuticals & Biotechnology,0.5595925258677268,0.5594397028617051,-0.00015282300602170729,catpair_return_uniform_w0.1
+expanded,exposed,Power,0.6253644801273738,0.6250316898494762,-0.00033279027789756555,catpair_return_uniform_w0.1
+expanded,exposed,Printing & Publication,0.4645061728395061,0.4645061728395061,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Realty,0.5211674642617031,0.5206075596381073,-0.0005599046235957861,catpair_return_uniform_w0.1
+expanded,exposed,Retailing,0.5905387089032716,0.5899612254291413,-0.0005774834741303358,catpair_return_uniform_w0.1
+expanded,exposed,Telecom -  Equipment & Accessories,0.5800317994762438,0.5800317994762438,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Telecom - Services,0.5767549066160177,0.5767549066160177,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Textiles & Apparels,0.5556102534165389,0.5558657437447012,0.0002554903281623,catpair_return_uniform_w0.1
+expanded,exposed,Transport Infrastructure,0.6889917695473251,0.6889917695473251,0.0,catpair_return_uniform_w0.1
+expanded,exposed,Transport Services,0.6031142407242749,0.6038941640413454,0.0007799233170705522,catpair_return_uniform_w0.1
+common,development,Aerospace & Defense,0.4913170101992853,0.4913170101992853,0.0,lgb_return_full_d3_w0.1
+common,development,Agricultural Food & other Products,0.46009284213108437,0.4602244366700677,0.00013159453898331508,lgb_return_full_d3_w0.1
+common,development,"Agricultural, Commercial & Construction Vehicles",0.49437830687830686,0.49437830687830686,0.0,lgb_return_full_d3_w0.1
+common,development,Auto Components,0.4649153702639184,0.4649887560475062,7.338578358784265e-05,lgb_return_full_d3_w0.1
+common,development,Automobiles,0.39194775132275134,0.39194775132275134,0.0,lgb_return_full_d3_w0.1
+common,development,Banks,0.4746787497122885,0.4748084970474571,0.00012974733516857295,lgb_return_full_d3_w0.1
+common,development,Beverages,0.5031781490114823,0.5031781490114823,0.0,lgb_return_full_d3_w0.1
+common,development,Capital Markets,0.4935692194474808,0.49402492306966267,0.0004557036221818911,lgb_return_full_d3_w0.1
+common,development,Cement & Cement Products,0.4328753542130281,0.43301398999790325,0.00013863578487516293,lgb_return_full_d3_w0.1
+common,development,Chemicals & Petrochemicals,0.5140453673705899,0.5140640806568398,1.8713286249916194e-05,lgb_return_full_d3_w0.1
+common,development,Commercial Services & Supplies,0.5651838059176968,0.5650062662858997,-0.00017753963179711896,lgb_return_full_d3_w0.1
+common,development,Construction,0.5113860723553737,0.5111704844158973,-0.00021558793947640265,lgb_return_full_d3_w0.1
+common,development,Consumer Durables,0.45246616019602165,0.4525659157744253,9.975557840363747e-05,lgb_return_full_d3_w0.1
+common,development,Diversified,0.5752725669392337,0.5752725669392337,0.0,lgb_return_full_d3_w0.1
+common,development,Electrical Equipment,0.45171693474985475,0.45183677990291243,0.00011984515305768495,lgb_return_full_d3_w0.1
+common,development,Entertainment,0.5233649410842083,0.523469506406165,0.00010456532195668444,lgb_return_full_d3_w0.1
+common,development,Ferrous Metals,0.5225332456899626,0.5225332456899626,0.0,lgb_return_full_d3_w0.1
+common,development,Fertilizers & Agrochemicals,0.4500604144958913,0.4500604144958913,0.0,lgb_return_full_d3_w0.1
+common,development,Finance,0.5418980423105267,0.5415545158897868,-0.0003435264207399813,lgb_return_full_d3_w0.1
+common,development,Food Products,0.5467711804227641,0.5466774464194022,-9.373400336187832e-05,lgb_return_full_d3_w0.1
+common,development,Gas,0.4568055555555556,0.4568055555555556,0.0,lgb_return_full_d3_w0.1
+common,development,Healthcare Services,0.6090815349591066,0.6090815349591066,0.0,lgb_return_full_d3_w0.1
+common,development,Household Products,0.5524840954900478,0.5524840954900478,0.0,lgb_return_full_d3_w0.1
+common,development,IT - Hardware,0.6130743484910153,0.6130743484910153,0.0,lgb_return_full_d3_w0.1
+common,development,IT - Services,0.5049455918163122,0.504902407681683,-4.318413462911508e-05,lgb_return_full_d3_w0.1
+common,development,IT - Software,0.49389313589533174,0.4940598391615225,0.0001667032661907819,lgb_return_full_d3_w0.1
+common,development,Industrial Manufacturing,0.4567788693460806,0.4569555789701378,0.00017670962405719193,lgb_return_full_d3_w0.1
+common,development,Industrial Products,0.500053758143474,0.49992452501320656,-0.00012923313026741434,lgb_return_full_d3_w0.1
+common,development,Insurance,0.47054164970831636,0.47054164970831636,0.0,lgb_return_full_d3_w0.1
+common,development,Leisure Services,0.48376237405274225,0.4837433061657308,-1.9067887011448015e-05,lgb_return_full_d3_w0.1
+common,development,Media,0.5418765108348442,0.5418765108348442,0.0,lgb_return_full_d3_w0.1
+common,development,Metals & Minerals Trading,0.575,0.575,0.0,lgb_return_full_d3_w0.1
+common,development,Minerals & Mining,0.5027927374653565,0.5027927374653565,0.0,lgb_return_full_d3_w0.1
+common,development,Non - Ferrous Metals,0.4923629482657261,0.4923629482657261,0.0,lgb_return_full_d3_w0.1
+common,development,Oil,0.5752637151942708,0.5752637151942708,0.0,lgb_return_full_d3_w0.1
+common,development,Other Construction Materials,0.5481481481481482,0.5481481481481482,0.0,lgb_return_full_d3_w0.1
+common,development,Other Consumer Services,0.6101918480824731,0.6101918480824731,0.0,lgb_return_full_d3_w0.1
+common,development,Other Utilities,0.22500000000000003,0.22500000000000003,0.0,lgb_return_full_d3_w0.1
+common,development,"Paper, Forest & Jute Products",0.5746283599966521,0.5746283599966521,0.0,lgb_return_full_d3_w0.1
+common,development,Personal Products,0.5046682098765432,0.5046682098765432,0.0,lgb_return_full_d3_w0.1
+common,development,Petroleum Products,0.4328790422540422,0.4328790422540422,0.0,lgb_return_full_d3_w0.1
+common,development,Pharmaceuticals & Biotechnology,0.5102703750781603,0.5105900888061837,0.0003197137280234186,lgb_return_full_d3_w0.1
+common,development,Power,0.4820384060722318,0.4820384060722318,0.0,lgb_return_full_d3_w0.1
+common,development,Realty,0.49447141833644515,0.49465311585673966,0.00018169752029451036,lgb_return_full_d3_w0.1
+common,development,Retailing,0.5540060604972231,0.5539786121002095,-2.7448397013629666e-05,lgb_return_full_d3_w0.1
+common,development,Telecom -  Equipment & Accessories,0.44633176053810975,0.44633176053810975,0.0,lgb_return_full_d3_w0.1
+common,development,Telecom - Services,0.5123167727334395,0.5123167727334395,0.0,lgb_return_full_d3_w0.1
+common,development,Textiles & Apparels,0.5041243367227499,0.5041181124413048,-6.2242814451440864e-06,lgb_return_full_d3_w0.1
+common,development,Transport Infrastructure,0.6382902591235925,0.6382902591235925,0.0,lgb_return_full_d3_w0.1
+common,development,Transport Services,0.5492445613875842,0.5492445613875842,0.0,lgb_return_full_d3_w0.1
+common,exposed,Aerospace & Defense,0.4226296896640034,0.4226296896640034,0.0,lgb_return_full_d3_w0.1
+common,exposed,Agricultural Food & other Products,0.6162862335986797,0.6165576606576407,0.0002714270589609935,lgb_return_full_d3_w0.1
+common,exposed,"Agricultural, Commercial & Construction Vehicles",0.5162992357436802,0.5162992357436802,0.0,lgb_return_full_d3_w0.1
+common,exposed,Auto Components,0.5926126185124034,0.5925852752628904,-2.734324951303435e-05,lgb_return_full_d3_w0.1
+common,exposed,Automobiles,0.5463403880070546,0.5463403880070546,0.0,lgb_return_full_d3_w0.1
+common,exposed,Banks,0.5968727190440709,0.5968727190440709,0.0,lgb_return_full_d3_w0.1
+common,exposed,Beverages,0.5985886029939178,0.5985886029939178,0.0,lgb_return_full_d3_w0.1
+common,exposed,Capital Markets,0.574880279346532,0.574880279346532,0.0,lgb_return_full_d3_w0.1
+common,exposed,Cement & Cement Products,0.5778421879784729,0.5777190570670174,-0.00012313091145543797,lgb_return_full_d3_w0.1
+common,exposed,Chemicals & Petrochemicals,0.551641108871322,0.5516396720613969,-1.4368099251482747e-06,lgb_return_full_d3_w0.1
+common,exposed,Commercial Services & Supplies,0.5549946883442247,0.5550911806747665,9.64923305417642e-05,lgb_return_full_d3_w0.1
+common,exposed,Construction,0.575434827885737,0.5754797632739828,4.4935388245792574e-05,lgb_return_full_d3_w0.1
+common,exposed,Consumer Durables,0.571773002333718,0.5718135445699689,4.054223625094e-05,lgb_return_full_d3_w0.1
+common,exposed,Diversified,0.5412591523702636,0.5412591523702636,0.0,lgb_return_full_d3_w0.1
+common,exposed,Electrical Equipment,0.6209895129623172,0.621100597719785,0.00011108475746779423,lgb_return_full_d3_w0.1
+common,exposed,Entertainment,0.5858835331820305,0.5858835331820305,0.0,lgb_return_full_d3_w0.1
+common,exposed,Ferrous Metals,0.6040472886469619,0.6040472886469619,0.0,lgb_return_full_d3_w0.1
+common,exposed,Fertilizers & Agrochemicals,0.5379270581779165,0.5379270581779165,0.0,lgb_return_full_d3_w0.1
+common,exposed,Finance,0.6225284640977917,0.6226277535268012,9.9289429009497e-05,lgb_return_full_d3_w0.1
+common,exposed,Financial Technology (Fintech),0.7479166666666668,0.7479166666666668,0.0,lgb_return_full_d3_w0.1
+common,exposed,Food Products,0.539837194367319,0.539837194367319,0.0,lgb_return_full_d3_w0.1
+common,exposed,Gas,0.4848471487360377,0.4848471487360377,0.0,lgb_return_full_d3_w0.1
+common,exposed,Healthcare Equipment & Supplies,0.2554799697656841,0.2554799697656841,0.0,lgb_return_full_d3_w0.1
+common,exposed,Healthcare Services,0.5527023934140418,0.5527023934140418,0.0,lgb_return_full_d3_w0.1
+common,exposed,Household Products,0.5671716143938367,0.5671716143938367,0.0,lgb_return_full_d3_w0.1
+common,exposed,IT - Hardware,0.5320612515056959,0.5320612515056959,0.0,lgb_return_full_d3_w0.1
+common,exposed,IT - Services,0.5410078320133234,0.5410078320133234,0.0,lgb_return_full_d3_w0.1
+common,exposed,IT - Software,0.5631204437771965,0.5631406716774862,2.0227900289659928e-05,lgb_return_full_d3_w0.1
+common,exposed,Industrial Manufacturing,0.5231962592704669,0.5232779239899252,8.166471945836307e-05,lgb_return_full_d3_w0.1
+common,exposed,Industrial Products,0.5855626668822285,0.5857233751071257,0.00016070822489722136,lgb_return_full_d3_w0.1
+common,exposed,Insurance,0.42061421089198864,0.42061421089198864,0.0,lgb_return_full_d3_w0.1
+common,exposed,Leisure Services,0.5453480739941265,0.5453408266959592,-7.247298167367688e-06,lgb_return_full_d3_w0.1
+common,exposed,Media,0.5180583819472708,0.5180583819472708,0.0,lgb_return_full_d3_w0.1
+common,exposed,Metals & Minerals Trading,0.47380952380952385,0.47380952380952385,0.0,lgb_return_full_d3_w0.1
+common,exposed,Minerals & Mining,0.5474099460210571,0.5474099460210571,0.0,lgb_return_full_d3_w0.1
+common,exposed,Non - Ferrous Metals,0.5509562967896301,0.5509562967896301,0.0,lgb_return_full_d3_w0.1
+common,exposed,Oil,0.5100642670087114,0.5100642670087114,0.0,lgb_return_full_d3_w0.1
+common,exposed,Other Construction Materials,0.6263888888888889,0.6263888888888889,0.0,lgb_return_full_d3_w0.1
+common,exposed,Other Consumer Services,0.5934765851432517,0.5934765851432517,0.0,lgb_return_full_d3_w0.1
+common,exposed,Other Utilities,0.494551917989418,0.494551917989418,0.0,lgb_return_full_d3_w0.1
+common,exposed,"Paper, Forest & Jute Products",0.5643316619859746,0.5643316619859746,0.0,lgb_return_full_d3_w0.1
+common,exposed,Personal Products,0.3355599647266314,0.3355599647266314,0.0,lgb_return_full_d3_w0.1
+common,exposed,Petroleum Products,0.5050015827793605,0.5050015827793605,0.0,lgb_return_full_d3_w0.1
+common,exposed,Pharmaceuticals & Biotechnology,0.5701863185860215,0.5703936131630782,0.00020729457705670473,lgb_return_full_d3_w0.1
+common,exposed,Power,0.6289970104227127,0.6289970104227127,0.0,lgb_return_full_d3_w0.1
+common,exposed,Realty,0.5359119595910947,0.5359076451582514,-4.3144328433220025e-06,lgb_return_full_d3_w0.1
+common,exposed,Retailing,0.6256055484750784,0.6256055484750784,0.0,lgb_return_full_d3_w0.1
+common,exposed,Telecom -  Equipment & Accessories,0.6163780663780664,0.6163780663780664,0.0,lgb_return_full_d3_w0.1
+common,exposed,Telecom - Services,0.5805022652244874,0.5805022652244874,0.0,lgb_return_full_d3_w0.1
+common,exposed,Textiles & Apparels,0.5694349930207169,0.5692092449585825,-0.0002257480621343788,lgb_return_full_d3_w0.1
+common,exposed,Transport Infrastructure,0.7590856481481482,0.7590856481481482,0.0,lgb_return_full_d3_w0.1
+common,exposed,Transport Services,0.6241386376626176,0.6241386376626176,0.0,lgb_return_full_d3_w0.1
+expanded,development,Aerospace & Defense,0.5392502559169225,0.5392502559169225,0.0,lgb_return_full_d3_w0.1
+expanded,development,Agricultural Food & other Products,0.5013126137160689,0.5016329369805401,0.0003203232644711784,lgb_return_full_d3_w0.1
+expanded,development,"Agricultural, Commercial & Construction Vehicles",0.48820546737213405,0.48820546737213405,0.0,lgb_return_full_d3_w0.1
+expanded,development,Auto Components,0.4835688803620672,0.4835424464698327,-2.6433892234500878e-05,lgb_return_full_d3_w0.1
+expanded,development,Automobiles,0.4355930335097002,0.4355930335097002,0.0,lgb_return_full_d3_w0.1
+expanded,development,Banks,0.48130500565517337,0.4814000937404575,9.508808528413404e-05,lgb_return_full_d3_w0.1
+expanded,development,Beverages,0.4980899755326084,0.4980899755326084,0.0,lgb_return_full_d3_w0.1
+expanded,development,Capital Markets,0.477299455446638,0.47747747954193137,0.00017802409529338314,lgb_return_full_d3_w0.1
+expanded,development,Cement & Cement Products,0.45295794664667216,0.4530891975898103,0.00013125094313815033,lgb_return_full_d3_w0.1
+expanded,development,Chemicals & Petrochemicals,0.5195629333414189,0.5196703075448396,0.00010737420342066262,lgb_return_full_d3_w0.1
+expanded,development,Commercial Services & Supplies,0.5120101173291449,0.512221455233861,0.00021133790471605796,lgb_return_full_d3_w0.1
+expanded,development,Construction,0.511073132603818,0.5111560231082806,8.289050446252944e-05,lgb_return_full_d3_w0.1
+expanded,development,Consumer Durables,0.48146774268034354,0.48158234053475346,0.00011459785440992576,lgb_return_full_d3_w0.1
+expanded,development,Diversified,0.5390116442199776,0.5390116442199776,0.0,lgb_return_full_d3_w0.1
+expanded,development,Electrical Equipment,0.47899146063006115,0.4790091904798144,1.7729849753234106e-05,lgb_return_full_d3_w0.1
+expanded,development,Entertainment,0.5183579850601943,0.5184948092869847,0.00013682422679039963,lgb_return_full_d3_w0.1
+expanded,development,Ferrous Metals,0.5420423789173789,0.5420423789173789,0.0,lgb_return_full_d3_w0.1
+expanded,development,Fertilizers & Agrochemicals,0.48379035618469335,0.4838184545297598,2.8098345066451813e-05,lgb_return_full_d3_w0.1
+expanded,development,Finance,0.498362819313001,0.49869817479365164,0.00033535548065061205,lgb_return_full_d3_w0.1
+expanded,development,Financial Technology (Fintech),0.5767857142857142,0.5767857142857142,0.0,lgb_return_full_d3_w0.1
+expanded,development,Food Products,0.527852316402117,0.5277834974243754,-6.881897774169143e-05,lgb_return_full_d3_w0.1
+expanded,development,Gas,0.4577270723104056,0.4577270723104056,0.0,lgb_return_full_d3_w0.1
+expanded,development,Healthcare Equipment & Supplies,0.5987974987974988,0.5987974987974988,0.0,lgb_return_full_d3_w0.1
+expanded,development,Healthcare Services,0.5483078655655935,0.5484314952791866,0.000123629713593032,lgb_return_full_d3_w0.1
+expanded,development,Household Products,0.5473290598290599,0.5473290598290599,0.0,lgb_return_full_d3_w0.1
+expanded,development,IT - Hardware,0.5836786477411477,0.5836786477411477,0.0,lgb_return_full_d3_w0.1
+expanded,development,IT - Services,0.507728643848146,0.5077311854237734,2.5415756274016488e-06,lgb_return_full_d3_w0.1
+expanded,development,IT - Software,0.5111196420050416,0.5113396221845434,0.00021998017950186632,lgb_return_full_d3_w0.1
+expanded,development,Industrial Manufacturing,0.4905479377180343,0.49062981914160325,8.188142356896355e-05,lgb_return_full_d3_w0.1
+expanded,development,Industrial Products,0.5119134335122413,0.511927776199677,1.434268743571998e-05,lgb_return_full_d3_w0.1
+expanded,development,Insurance,0.49349647266313934,0.49349647266313934,0.0,lgb_return_full_d3_w0.1
+expanded,development,Leisure Services,0.4999329923341185,0.500000300619646,6.73082855274787e-05,lgb_return_full_d3_w0.1
+expanded,development,Media,0.4884321696821697,0.4884321696821697,0.0,lgb_return_full_d3_w0.1
+expanded,development,Metals & Minerals Trading,0.49014550264550266,0.49014550264550266,0.0,lgb_return_full_d3_w0.1
+expanded,development,Minerals & Mining,0.519505957005957,0.519505957005957,0.0,lgb_return_full_d3_w0.1
+expanded,development,Non - Ferrous Metals,0.48458265250544663,0.48458265250544663,0.0,lgb_return_full_d3_w0.1
+expanded,development,Oil,0.5347733285233285,0.5347733285233285,0.0,lgb_return_full_d3_w0.1
+expanded,development,Other Construction Materials,0.49391680283224404,0.49391680283224404,0.0,lgb_return_full_d3_w0.1
+expanded,development,Other Consumer Services,0.5358822232596743,0.5358822232596743,0.0,lgb_return_full_d3_w0.1
+expanded,development,Other Utilities,0.4583049886621315,0.4583049886621315,0.0,lgb_return_full_d3_w0.1
+expanded,development,"Paper, Forest & Jute Products",0.5293977998232919,0.5292525424893311,-0.0001452573339608687,lgb_return_full_d3_w0.1
+expanded,development,Personal Products,0.4978254769921436,0.4978254769921436,0.0,lgb_return_full_d3_w0.1
+expanded,development,Petroleum Products,0.4631011111709642,0.4631011111709642,0.0,lgb_return_full_d3_w0.1
+expanded,development,Pharmaceuticals & Biotechnology,0.5072337117967525,0.5072729344702704,3.922267351796904e-05,lgb_return_full_d3_w0.1
+expanded,development,Power,0.5193668688544361,0.5193668688544361,0.0,lgb_return_full_d3_w0.1
+expanded,development,Printing & Publication,0.5192129629629629,0.5192129629629629,0.0,lgb_return_full_d3_w0.1
+expanded,development,Realty,0.5171116246130766,0.5170719421179917,-3.968249508490285e-05,lgb_return_full_d3_w0.1
+expanded,development,Retailing,0.5433563219688483,0.5432679238541344,-8.83981147139501e-05,lgb_return_full_d3_w0.1
+expanded,development,Telecom -  Equipment & Accessories,0.5050505050505051,0.5050505050505051,0.0,lgb_return_full_d3_w0.1
+expanded,development,Telecom - Services,0.5302293192918194,0.5302293192918194,0.0,lgb_return_full_d3_w0.1
+expanded,development,Textiles & Apparels,0.5063862987154499,0.5065955888776963,0.0002092901622463561,lgb_return_full_d3_w0.1
+expanded,development,Transport Infrastructure,0.5631578683662017,0.5631578683662017,0.0,lgb_return_full_d3_w0.1
+expanded,development,Transport Services,0.5392405432649267,0.539263587193894,2.304392896734786e-05,lgb_return_full_d3_w0.1
+expanded,exposed,Aerospace & Defense,0.4529994814394539,0.4529994814394539,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Agricultural Food & other Products,0.5815706220317093,0.5817567133330259,0.00018609130131663765,lgb_return_full_d3_w0.1
+expanded,exposed,"Agricultural, Commercial & Construction Vehicles",0.5425598578376357,0.5425598578376357,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Auto Components,0.5948795718205329,0.5948616058469282,-1.7965973604705532e-05,lgb_return_full_d3_w0.1
+expanded,exposed,Automobiles,0.6491919089141311,0.6491919089141311,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Banks,0.612281700320979,0.612281700320979,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Beverages,0.605473827550567,0.605473827550567,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Capital Markets,0.5767487916339593,0.5767487916339593,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Cement & Cement Products,0.5724527260474973,0.5723611630474376,-9.156300005974671e-05,lgb_return_full_d3_w0.1
+expanded,exposed,Chemicals & Petrochemicals,0.5409875920485531,0.5411366176392849,0.00014902559073182164,lgb_return_full_d3_w0.1
+expanded,exposed,Commercial Services & Supplies,0.547444674247431,0.5477047499058991,0.0002600756584680841,lgb_return_full_d3_w0.1
+expanded,exposed,Construction,0.5500632392381336,0.5500430489153281,-2.0190322805535565e-05,lgb_return_full_d3_w0.1
+expanded,exposed,Consumer Durables,0.567260647616244,0.567271835414899,1.1187798655054593e-05,lgb_return_full_d3_w0.1
+expanded,exposed,Diversified,0.5568462401795735,0.5568462401795735,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Electrical Equipment,0.6026899076212234,0.602789916332047,0.00010000871082360696,lgb_return_full_d3_w0.1
+expanded,exposed,Entertainment,0.5496603277008206,0.5496933995542979,3.307185347722896e-05,lgb_return_full_d3_w0.1
+expanded,exposed,Ferrous Metals,0.5934840873327185,0.5934840873327185,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Fertilizers & Agrochemicals,0.5183219401702863,0.5183219401702863,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Finance,0.5726734472794409,0.5729403957355098,0.00026694845606889395,lgb_return_full_d3_w0.1
+expanded,exposed,Financial Technology (Fintech),0.726140873015873,0.726140873015873,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Food Products,0.5548694485969382,0.5548630600501578,-6.388546780367044e-06,lgb_return_full_d3_w0.1
+expanded,exposed,Gas,0.5042254556143445,0.5042254556143445,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Healthcare Equipment & Supplies,0.3525960664849554,0.3525960664849554,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Healthcare Services,0.5627822817387467,0.5627822817387467,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Household Products,0.5494157848324516,0.5494157848324516,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,IT - Hardware,0.5673383652206322,0.5673383652206322,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,IT - Services,0.541338788031952,0.5412924353835346,-4.635264841745812e-05,lgb_return_full_d3_w0.1
+expanded,exposed,IT - Software,0.5538552884245163,0.5540248423035306,0.00016955387901429475,lgb_return_full_d3_w0.1
+expanded,exposed,Industrial Manufacturing,0.5397313207382326,0.5398127648569314,8.144411869881463e-05,lgb_return_full_d3_w0.1
+expanded,exposed,Industrial Products,0.5793319270270458,0.5795880554053215,0.00025612837827571067,lgb_return_full_d3_w0.1
+expanded,exposed,Insurance,0.4503914809470365,0.4503914809470365,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Leisure Services,0.5468367548350781,0.546771329661795,-6.542517328311792e-05,lgb_return_full_d3_w0.1
+expanded,exposed,Media,0.5126174433772472,0.5126174433772472,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Metals & Minerals Trading,0.4726965421409866,0.4726965421409866,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Minerals & Mining,0.6564037814037813,0.6564037814037813,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Non - Ferrous Metals,0.5372564149116437,0.5372564149116437,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Oil,0.47034148676305537,0.47034148676305537,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Other Construction Materials,0.49420539820866616,0.49420539820866616,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Other Consumer Services,0.5501310620378538,0.5501310620378538,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Other Utilities,0.5251822251822252,0.5251822251822252,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,"Paper, Forest & Jute Products",0.5891497324348276,0.5890718938246826,-7.783861014498683e-05,lgb_return_full_d3_w0.1
+expanded,exposed,Personal Products,0.4020892687559354,0.4020892687559354,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Petroleum Products,0.5352474323062558,0.5352474323062558,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Pharmaceuticals & Biotechnology,0.5595925258677268,0.5596853190928676,9.279322514077482e-05,lgb_return_full_d3_w0.1
+expanded,exposed,Power,0.6253644801273738,0.6253644801273738,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Printing & Publication,0.4645061728395061,0.4645061728395061,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Realty,0.5211674642617031,0.5211913594051345,2.389514343137389e-05,lgb_return_full_d3_w0.1
+expanded,exposed,Retailing,0.5905387089032716,0.5905305003400986,-8.20856317307328e-06,lgb_return_full_d3_w0.1
+expanded,exposed,Telecom -  Equipment & Accessories,0.5800317994762438,0.5800317994762438,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Telecom - Services,0.5767549066160177,0.5767549066160177,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Textiles & Apparels,0.5556102534165389,0.555707161359403,9.690794286409954e-05,lgb_return_full_d3_w0.1
+expanded,exposed,Transport Infrastructure,0.6889917695473251,0.6889917695473251,0.0,lgb_return_full_d3_w0.1
+expanded,exposed,Transport Services,0.6031142407242749,0.6031212235743949,6.982850120018647e-06,lgb_return_full_d3_w0.1
+common,development,Aerospace & Defense,0.4913170101992853,0.48782590254151104,-0.003491107657774273,lgb_return_full_d3_w0.5
+common,development,Agricultural Food & other Products,0.46009284213108437,0.4604595296453176,0.00036668751423324375,lgb_return_full_d3_w0.5
+common,development,"Agricultural, Commercial & Construction Vehicles",0.49437830687830686,0.49808201058201057,0.003703703703703709,lgb_return_full_d3_w0.5
+common,development,Auto Components,0.4649153702639184,0.46762199101751456,0.0027066207535961784,lgb_return_full_d3_w0.5
+common,development,Automobiles,0.39194775132275134,0.3957506613756614,0.003802910052910058,lgb_return_full_d3_w0.5
+common,development,Banks,0.4746787497122885,0.4820609787314638,0.00738222901917529,lgb_return_full_d3_w0.5
+common,development,Beverages,0.5031781490114823,0.5058829673413007,0.0027048183298183925,lgb_return_full_d3_w0.5
+common,development,Capital Markets,0.4935692194474808,0.4947864994268349,0.0012172799793541134,lgb_return_full_d3_w0.5
+common,development,Cement & Cement Products,0.4328753542130281,0.43599536372671577,0.0031200095136876826,lgb_return_full_d3_w0.5
+common,development,Chemicals & Petrochemicals,0.5140453673705899,0.5158042675551489,0.0017589001845589314,lgb_return_full_d3_w0.5
+common,development,Commercial Services & Supplies,0.5651838059176968,0.564199780169258,-0.0009840257484388104,lgb_return_full_d3_w0.5
+common,development,Construction,0.5113860723553737,0.5127718861961665,0.0013858138407928378,lgb_return_full_d3_w0.5
+common,development,Consumer Durables,0.45246616019602165,0.4538703163918123,0.0014041561957906512,lgb_return_full_d3_w0.5
+common,development,Diversified,0.5752725669392337,0.5690377986211319,-0.006234768318101769,lgb_return_full_d3_w0.5
+common,development,Electrical Equipment,0.45171693474985475,0.45385222575895895,0.002135291009104201,lgb_return_full_d3_w0.5
+common,development,Entertainment,0.5233649410842083,0.5242235102005943,0.0008585691163860432,lgb_return_full_d3_w0.5
+common,development,Ferrous Metals,0.5225332456899626,0.5171573519248873,-0.005375893765075301,lgb_return_full_d3_w0.5
+common,development,Fertilizers & Agrochemicals,0.4500604144958913,0.4562056506361311,0.006145236140239818,lgb_return_full_d3_w0.5
+common,development,Finance,0.5418980423105267,0.5405039216059897,-0.0013941207045370385,lgb_return_full_d3_w0.5
+common,development,Food Products,0.5467711804227641,0.5458584653917157,-0.0009127150310483945,lgb_return_full_d3_w0.5
+common,development,Gas,0.4568055555555556,0.45655092592592594,-0.0002546296296296324,lgb_return_full_d3_w0.5
+common,development,Healthcare Services,0.6090815349591066,0.6069847049893434,-0.0020968299697631254,lgb_return_full_d3_w0.5
+common,development,Household Products,0.5524840954900478,0.549756421929041,-0.0027276735610068936,lgb_return_full_d3_w0.5
+common,development,IT - Hardware,0.6130743484910153,0.6067536398786398,-0.006320708612375436,lgb_return_full_d3_w0.5
+common,development,IT - Services,0.5049455918163122,0.5038419716667366,-0.001103620149575546,lgb_return_full_d3_w0.5
+common,development,IT - Software,0.49389313589533174,0.49326346719672237,-0.0006296686986093647,lgb_return_full_d3_w0.5
+common,development,Industrial Manufacturing,0.4567788693460806,0.45848722654945273,0.0017083572033721461,lgb_return_full_d3_w0.5
+common,development,Industrial Products,0.500053758143474,0.4999751323368515,-7.862580662248986e-05,lgb_return_full_d3_w0.5
+common,development,Insurance,0.47054164970831636,0.4694058641975309,-0.0011357855107854697,lgb_return_full_d3_w0.5
+common,development,Leisure Services,0.48376237405274225,0.4820713601259178,-0.0016910139268244695,lgb_return_full_d3_w0.5
+common,development,Media,0.5418765108348442,0.5366569079069079,-0.005219602927936329,lgb_return_full_d3_w0.5
+common,development,Metals & Minerals Trading,0.575,0.6,0.025000000000000022,lgb_return_full_d3_w0.5
+common,development,Minerals & Mining,0.5027927374653565,0.49829302091206856,-0.004499716553287902,lgb_return_full_d3_w0.5
+common,development,Non - Ferrous Metals,0.4923629482657261,0.4967757936507937,0.004412845385067643,lgb_return_full_d3_w0.5
+common,development,Oil,0.5752637151942708,0.5693616054727166,-0.0059021097215541385,lgb_return_full_d3_w0.5
+common,development,Other Construction Materials,0.5481481481481482,0.5333333333333333,-0.014814814814814836,lgb_return_full_d3_w0.5
+common,development,Other Consumer Services,0.6101918480824731,0.6161050321206571,0.005913184038184083,lgb_return_full_d3_w0.5
+common,development,Other Utilities,0.22500000000000003,0.22500000000000003,0.0,lgb_return_full_d3_w0.5
+common,development,"Paper, Forest & Jute Products",0.5746283599966521,0.5712390681882425,-0.0033892918084095225,lgb_return_full_d3_w0.5
+common,development,Personal Products,0.5046682098765432,0.4984347442680776,-0.006233465608465549,lgb_return_full_d3_w0.5
+common,development,Petroleum Products,0.4328790422540422,0.4336601669935003,0.0007811247394580723,lgb_return_full_d3_w0.5
+common,development,Pharmaceuticals & Biotechnology,0.5102703750781603,0.5132315000494247,0.0029611249712644394,lgb_return_full_d3_w0.5
+common,development,Power,0.4820384060722318,0.48479509749511135,0.0027566914228795425,lgb_return_full_d3_w0.5
+common,development,Realty,0.49447141833644515,0.49493459185003197,0.0004631735135868231,lgb_return_full_d3_w0.5
+common,development,Retailing,0.5540060604972231,0.5470182174793187,-0.006987843017904449,lgb_return_full_d3_w0.5
+common,development,Telecom -  Equipment & Accessories,0.44633176053810975,0.4441247699977859,-0.002206990540323861,lgb_return_full_d3_w0.5
+common,development,Telecom - Services,0.5123167727334395,0.5042597063430397,-0.008057066390399714,lgb_return_full_d3_w0.5
+common,development,Textiles & Apparels,0.5041243367227499,0.5034455434082249,-0.000678793314525028,lgb_return_full_d3_w0.5
+common,development,Transport Infrastructure,0.6382902591235925,0.6316538631121964,-0.006636396011396095,lgb_return_full_d3_w0.5
+common,development,Transport Services,0.5492445613875842,0.5495340763300525,0.00028951494246831633,lgb_return_full_d3_w0.5
+common,exposed,Aerospace & Defense,0.4226296896640034,0.428941994219772,0.006312304555768644,lgb_return_full_d3_w0.5
+common,exposed,Agricultural Food & other Products,0.6162862335986797,0.617816156818452,0.0015299232197723,lgb_return_full_d3_w0.5
+common,exposed,"Agricultural, Commercial & Construction Vehicles",0.5162992357436802,0.5113462669018225,-0.004952968841857697,lgb_return_full_d3_w0.5
+common,exposed,Auto Components,0.5926126185124034,0.5916371845453707,-0.0009754339670327017,lgb_return_full_d3_w0.5
+common,exposed,Automobiles,0.5463403880070546,0.5456937095825984,-0.000646678424456204,lgb_return_full_d3_w0.5
+common,exposed,Banks,0.5968727190440709,0.597090649838686,0.00021793079461507325,lgb_return_full_d3_w0.5
+common,exposed,Beverages,0.5985886029939178,0.5969957993693804,-0.0015928036245373978,lgb_return_full_d3_w0.5
+common,exposed,Capital Markets,0.574880279346532,0.5711552354636573,-0.0037250438828746457,lgb_return_full_d3_w0.5
+common,exposed,Cement & Cement Products,0.5778421879784729,0.5773343445665753,-0.0005078434118975794,lgb_return_full_d3_w0.5
+common,exposed,Chemicals & Petrochemicals,0.551641108871322,0.5528232120032394,0.0011821031319173558,lgb_return_full_d3_w0.5
+common,exposed,Commercial Services & Supplies,0.5549946883442247,0.5547555520108561,-0.00023913633336858364,lgb_return_full_d3_w0.5
+common,exposed,Construction,0.575434827885737,0.5728575456640956,-0.0025772822216413305,lgb_return_full_d3_w0.5
+common,exposed,Consumer Durables,0.571773002333718,0.5713346400785312,-0.00043836225518678607,lgb_return_full_d3_w0.5
+common,exposed,Diversified,0.5412591523702636,0.5422144727700283,0.0009553203997647586,lgb_return_full_d3_w0.5
+common,exposed,Electrical Equipment,0.6209895129623172,0.6229691420903409,0.001979629128023741,lgb_return_full_d3_w0.5
+common,exposed,Entertainment,0.5858835331820305,0.5825921153194895,-0.0032914178625409463,lgb_return_full_d3_w0.5
+common,exposed,Ferrous Metals,0.6040472886469619,0.6064152914922609,0.002368002845299033,lgb_return_full_d3_w0.5
+common,exposed,Fertilizers & Agrochemicals,0.5379270581779165,0.5402076077292235,0.002280549551306965,lgb_return_full_d3_w0.5
+common,exposed,Finance,0.6225284640977917,0.6220276887871546,-0.0005007753106370805,lgb_return_full_d3_w0.5
+common,exposed,Financial Technology (Fintech),0.7479166666666668,0.7437500000000001,-0.004166666666666652,lgb_return_full_d3_w0.5
+common,exposed,Food Products,0.539837194367319,0.53906171785518,-0.0007754765121390506,lgb_return_full_d3_w0.5
+common,exposed,Gas,0.4848471487360377,0.4726557907113463,-0.012191358024691401,lgb_return_full_d3_w0.5
+common,exposed,Healthcare Equipment & Supplies,0.2554799697656841,0.2554799697656841,0.0,lgb_return_full_d3_w0.5
+common,exposed,Healthcare Services,0.5527023934140418,0.5518471765903633,-0.0008552168236785063,lgb_return_full_d3_w0.5
+common,exposed,Household Products,0.5671716143938367,0.5631104492215603,-0.004061165172276393,lgb_return_full_d3_w0.5
+common,exposed,IT - Hardware,0.5320612515056959,0.5341473341473342,0.0020860826416382316,lgb_return_full_d3_w0.5
+common,exposed,IT - Services,0.5410078320133234,0.5390722312382421,-0.0019356007750812587,lgb_return_full_d3_w0.5
+common,exposed,IT - Software,0.5631204437771965,0.5650707235286648,0.0019502797514683312,lgb_return_full_d3_w0.5
+common,exposed,Industrial Manufacturing,0.5231962592704669,0.5228144550819036,-0.0003818041885632617,lgb_return_full_d3_w0.5
+common,exposed,Industrial Products,0.5855626668822285,0.5864960324057892,0.0009333655235607141,lgb_return_full_d3_w0.5
+common,exposed,Insurance,0.42061421089198864,0.41752779113890226,-0.003086419753086378,lgb_return_full_d3_w0.5
+common,exposed,Leisure Services,0.5453480739941265,0.5431600822791918,-0.0021879917149347783,lgb_return_full_d3_w0.5
+common,exposed,Media,0.5180583819472708,0.5174861147083369,-0.0005722672389338879,lgb_return_full_d3_w0.5
+common,exposed,Metals & Minerals Trading,0.47380952380952385,0.47380952380952385,0.0,lgb_return_full_d3_w0.5
+common,exposed,Minerals & Mining,0.5474099460210571,0.5444364277697611,-0.0029735182512959923,lgb_return_full_d3_w0.5
+common,exposed,Non - Ferrous Metals,0.5509562967896301,0.5553607400829623,0.0044044432933322275,lgb_return_full_d3_w0.5
+common,exposed,Oil,0.5100642670087114,0.5106536467647579,0.0005893797560464487,lgb_return_full_d3_w0.5
+common,exposed,Other Construction Materials,0.6263888888888889,0.6263888888888889,0.0,lgb_return_full_d3_w0.5
+common,exposed,Other Consumer Services,0.5934765851432517,0.5981867926312371,0.004710207487985341,lgb_return_full_d3_w0.5
+common,exposed,Other Utilities,0.494551917989418,0.4944113756613757,-0.00014054232804228128,lgb_return_full_d3_w0.5
+common,exposed,"Paper, Forest & Jute Products",0.5643316619859746,0.5614511527817491,-0.0028805092042255565,lgb_return_full_d3_w0.5
+common,exposed,Personal Products,0.3355599647266314,0.33499412110523225,-0.0005658436213991647,lgb_return_full_d3_w0.5
+common,exposed,Petroleum Products,0.5050015827793605,0.5012963374074485,-0.0037052453719119693,lgb_return_full_d3_w0.5
+common,exposed,Pharmaceuticals & Biotechnology,0.5701863185860215,0.5699859872212539,-0.00020033136476760305,lgb_return_full_d3_w0.5
+common,exposed,Power,0.6289970104227127,0.626869575320969,-0.0021274351017437354,lgb_return_full_d3_w0.5
+common,exposed,Realty,0.5359119595910947,0.5342240182200061,-0.0016879413710886304,lgb_return_full_d3_w0.5
+common,exposed,Retailing,0.6256055484750784,0.62230732948322,-0.003298218991858448,lgb_return_full_d3_w0.5
+common,exposed,Telecom -  Equipment & Accessories,0.6163780663780664,0.6158496339051894,-0.0005284324728769274,lgb_return_full_d3_w0.5
+common,exposed,Telecom - Services,0.5805022652244874,0.5789107497440831,-0.0015915154804043707,lgb_return_full_d3_w0.5
+common,exposed,Textiles & Apparels,0.5694349930207169,0.5660102081906309,-0.003424784830086014,lgb_return_full_d3_w0.5
+common,exposed,Transport Infrastructure,0.7590856481481482,0.7587962962962963,-0.0002893518518518601,lgb_return_full_d3_w0.5
+common,exposed,Transport Services,0.6241386376626176,0.6238286629381006,-0.0003099747245169926,lgb_return_full_d3_w0.5
+expanded,development,Aerospace & Defense,0.5392502559169225,0.5401487673546497,0.000898511437727123,lgb_return_full_d3_w0.5
+expanded,development,Agricultural Food & other Products,0.5013126137160689,0.5051104834231777,0.003797869707108714,lgb_return_full_d3_w0.5
+expanded,development,"Agricultural, Commercial & Construction Vehicles",0.48820546737213405,0.4973544973544974,0.009149029982363333,lgb_return_full_d3_w0.5
+expanded,development,Auto Components,0.4835688803620672,0.4842807837321974,0.000711903370130218,lgb_return_full_d3_w0.5
+expanded,development,Automobiles,0.4355930335097002,0.432390873015873,-0.003202160493827211,lgb_return_full_d3_w0.5
+expanded,development,Banks,0.48130500565517337,0.4857510006471565,0.004445994991983115,lgb_return_full_d3_w0.5
+expanded,development,Beverages,0.4980899755326084,0.5040048180929824,0.005914842560373945,lgb_return_full_d3_w0.5
+expanded,development,Capital Markets,0.477299455446638,0.47680920099373697,-0.0004902544529010178,lgb_return_full_d3_w0.5
+expanded,development,Cement & Cement Products,0.45295794664667216,0.4591034277768346,0.006145481130162445,lgb_return_full_d3_w0.5
+expanded,development,Chemicals & Petrochemicals,0.5195629333414189,0.5213910910072506,0.0018281576658316645,lgb_return_full_d3_w0.5
+expanded,development,Commercial Services & Supplies,0.5120101173291449,0.5137772839646808,0.0017671666355358884,lgb_return_full_d3_w0.5
+expanded,development,Construction,0.511073132603818,0.5122712951172889,0.001198162513470824,lgb_return_full_d3_w0.5
+expanded,development,Consumer Durables,0.48146774268034354,0.48329657602192405,0.0018288333415805158,lgb_return_full_d3_w0.5
+expanded,development,Diversified,0.5390116442199776,0.53768588664422,-0.0013257575757575912,lgb_return_full_d3_w0.5
+expanded,development,Electrical Equipment,0.47899146063006115,0.4789985675481778,7.106918116672745e-06,lgb_return_full_d3_w0.5
+expanded,development,Entertainment,0.5183579850601943,0.5196101535170339,0.0012521684568396196,lgb_return_full_d3_w0.5
+expanded,development,Ferrous Metals,0.5420423789173789,0.5374256781865479,-0.0046167007308310914,lgb_return_full_d3_w0.5
+expanded,development,Fertilizers & Agrochemicals,0.48379035618469335,0.4851750847003251,0.0013847285156317612,lgb_return_full_d3_w0.5
+expanded,development,Finance,0.498362819313001,0.501704456711652,0.003341637398650954,lgb_return_full_d3_w0.5
+expanded,development,Financial Technology (Fintech),0.5767857142857142,0.5760416666666667,-0.0007440476190475609,lgb_return_full_d3_w0.5
+expanded,development,Food Products,0.527852316402117,0.5290571426749857,0.0012048262728686643,lgb_return_full_d3_w0.5
+expanded,development,Gas,0.4577270723104056,0.46249448853615516,0.0047674162257495545,lgb_return_full_d3_w0.5
+expanded,development,Healthcare Equipment & Supplies,0.5987974987974988,0.6004810004810005,0.0016835016835017313,lgb_return_full_d3_w0.5
+expanded,development,Healthcare Services,0.5483078655655935,0.54728487586624,-0.0010229896993535492,lgb_return_full_d3_w0.5
+expanded,development,Household Products,0.5473290598290599,0.5535866910866911,0.006257631257631235,lgb_return_full_d3_w0.5
+expanded,development,IT - Hardware,0.5836786477411477,0.5903509106634107,0.006672262922262973,lgb_return_full_d3_w0.5
+expanded,development,IT - Services,0.507728643848146,0.5067208234786675,-0.0010078203694784404,lgb_return_full_d3_w0.5
+expanded,development,IT - Software,0.5111196420050416,0.5113321475086863,0.000212505503644711,lgb_return_full_d3_w0.5
+expanded,development,Industrial Manufacturing,0.4905479377180343,0.49192592715277417,0.0013779894347398791,lgb_return_full_d3_w0.5
+expanded,development,Industrial Products,0.5119134335122413,0.5122990316322844,0.0003855981200431291,lgb_return_full_d3_w0.5
+expanded,development,Insurance,0.49349647266313934,0.49413029100529104,0.0006338183421517041,lgb_return_full_d3_w0.5
+expanded,development,Leisure Services,0.4999329923341185,0.49885393015121426,-0.0010790621829042113,lgb_return_full_d3_w0.5
+expanded,development,Media,0.4884321696821697,0.4888061013061013,0.0003739316239316226,lgb_return_full_d3_w0.5
+expanded,development,Metals & Minerals Trading,0.49014550264550266,0.4838624338624338,-0.006283068783068835,lgb_return_full_d3_w0.5
+expanded,development,Minerals & Mining,0.519505957005957,0.5129807692307692,-0.006525187775187846,lgb_return_full_d3_w0.5
+expanded,development,Non - Ferrous Metals,0.48458265250544663,0.48977169571532314,0.005189043209876509,lgb_return_full_d3_w0.5
+expanded,development,Oil,0.5347733285233285,0.5338346838346838,-0.0009386446886446853,lgb_return_full_d3_w0.5
+expanded,development,Other Construction Materials,0.49391680283224404,0.49837282135076255,0.004456018518518512,lgb_return_full_d3_w0.5
+expanded,development,Other Consumer Services,0.5358822232596743,0.5343420847871312,-0.0015401384725430844,lgb_return_full_d3_w0.5
+expanded,development,Other Utilities,0.4583049886621315,0.44862528344671204,-0.009679705215419443,lgb_return_full_d3_w0.5
+expanded,development,"Paper, Forest & Jute Products",0.5293977998232919,0.5318523632293958,0.002454563406103838,lgb_return_full_d3_w0.5
+expanded,development,Personal Products,0.4978254769921436,0.4960157126823794,-0.0018097643097642058,lgb_return_full_d3_w0.5
+expanded,development,Petroleum Products,0.4631011111709642,0.4655978042926573,0.0024966931216930943,lgb_return_full_d3_w0.5
+expanded,development,Pharmaceuticals & Biotechnology,0.5072337117967525,0.5079708597155289,0.0007371479187764374,lgb_return_full_d3_w0.5
+expanded,development,Power,0.5193668688544361,0.5228759917183976,0.0035091228639615446,lgb_return_full_d3_w0.5
+expanded,development,Printing & Publication,0.5192129629629629,0.518287037037037,-0.0009259259259258856,lgb_return_full_d3_w0.5
+expanded,development,Realty,0.5171116246130766,0.5154695999967537,-0.0016420246163229013,lgb_return_full_d3_w0.5
+expanded,development,Retailing,0.5433563219688483,0.5431788554196271,-0.00017746654922123906,lgb_return_full_d3_w0.5
+expanded,development,Telecom -  Equipment & Accessories,0.5050505050505051,0.5011574074074074,-0.0038930976430976427,lgb_return_full_d3_w0.5
+expanded,development,Telecom - Services,0.5302293192918194,0.5228848697598697,-0.007344449531949682,lgb_return_full_d3_w0.5
+expanded,development,Textiles & Apparels,0.5063862987154499,0.5071806825980142,0.0007943838825642535,lgb_return_full_d3_w0.5
+expanded,development,Transport Infrastructure,0.5631578683662017,0.5604572510822511,-0.002700617283950657,lgb_return_full_d3_w0.5
+expanded,development,Transport Services,0.5392405432649267,0.5423262753247301,0.0030857320598034477,lgb_return_full_d3_w0.5
+expanded,exposed,Aerospace & Defense,0.4529994814394539,0.45655828105948504,0.003558799620031139,lgb_return_full_d3_w0.5
+expanded,exposed,Agricultural Food & other Products,0.5815706220317093,0.5819230638439319,0.0003524418122226036,lgb_return_full_d3_w0.5
+expanded,exposed,"Agricultural, Commercial & Construction Vehicles",0.5425598578376357,0.5392162364384587,-0.003343621399176988,lgb_return_full_d3_w0.5
+expanded,exposed,Auto Components,0.5948795718205329,0.5933839704530582,-0.0014956013674746194,lgb_return_full_d3_w0.5
+expanded,exposed,Automobiles,0.6491919089141311,0.6493843091065313,0.00019240019240018835,lgb_return_full_d3_w0.5
+expanded,exposed,Banks,0.612281700320979,0.6121912292533879,-9.047106759108026e-05,lgb_return_full_d3_w0.5
+expanded,exposed,Beverages,0.605473827550567,0.606579908616668,0.0011060810661009945,lgb_return_full_d3_w0.5
+expanded,exposed,Capital Markets,0.5767487916339593,0.5746973549944515,-0.0020514366395077976,lgb_return_full_d3_w0.5
+expanded,exposed,Cement & Cement Products,0.5724527260474973,0.5708538622550061,-0.0015988637924911897,lgb_return_full_d3_w0.5
+expanded,exposed,Chemicals & Petrochemicals,0.5409875920485531,0.5431586884155516,0.002171096366998526,lgb_return_full_d3_w0.5
+expanded,exposed,Commercial Services & Supplies,0.547444674247431,0.549351412566923,0.0019067383194919518,lgb_return_full_d3_w0.5
+expanded,exposed,Construction,0.5500632392381336,0.5487485808971048,-0.0013146583410288404,lgb_return_full_d3_w0.5
+expanded,exposed,Consumer Durables,0.567260647616244,0.5675817260993795,0.00032107848313556175,lgb_return_full_d3_w0.5
+expanded,exposed,Diversified,0.5568462401795735,0.5570052375607931,0.0001589973812196055,lgb_return_full_d3_w0.5
+expanded,exposed,Electrical Equipment,0.6026899076212234,0.6062673827087979,0.0035774750875744443,lgb_return_full_d3_w0.5
+expanded,exposed,Entertainment,0.5496603277008206,0.5486674731357594,-0.000992854565061263,lgb_return_full_d3_w0.5
+expanded,exposed,Ferrous Metals,0.5934840873327185,0.594374331906538,0.0008902445738194764,lgb_return_full_d3_w0.5
+expanded,exposed,Fertilizers & Agrochemicals,0.5183219401702863,0.520560954102189,0.0022390139319027336,lgb_return_full_d3_w0.5
+expanded,exposed,Finance,0.5726734472794409,0.5750296521914884,0.002356204912047466,lgb_return_full_d3_w0.5
+expanded,exposed,Financial Technology (Fintech),0.726140873015873,0.726140873015873,0.0,lgb_return_full_d3_w0.5
+expanded,exposed,Food Products,0.5548694485969382,0.557554365598052,0.00268491700111384,lgb_return_full_d3_w0.5
+expanded,exposed,Gas,0.5042254556143445,0.4931290417401529,-0.011096413874191635,lgb_return_full_d3_w0.5
+expanded,exposed,Healthcare Equipment & Supplies,0.3525960664849554,0.3525960664849554,0.0,lgb_return_full_d3_w0.5
+expanded,exposed,Healthcare Services,0.5627822817387467,0.5643449856864383,0.001562703947691646,lgb_return_full_d3_w0.5
+expanded,exposed,Household Products,0.5494157848324516,0.5492040548413097,-0.0002117299911418291,lgb_return_full_d3_w0.5
+expanded,exposed,IT - Hardware,0.5673383652206322,0.5667350163437195,-0.0006033488769127127,lgb_return_full_d3_w0.5
+expanded,exposed,IT - Services,0.541338788031952,0.5389977693791999,-0.002341018652752158,lgb_return_full_d3_w0.5
+expanded,exposed,IT - Software,0.5538552884245163,0.5568500111193201,0.002994722694803831,lgb_return_full_d3_w0.5
+expanded,exposed,Industrial Manufacturing,0.5397313207382326,0.5422448371998362,0.002513516461603582,lgb_return_full_d3_w0.5
+expanded,exposed,Industrial Products,0.5793319270270458,0.5812025270665387,0.001870600039492909,lgb_return_full_d3_w0.5
+expanded,exposed,Insurance,0.4503914809470365,0.4486191277857945,-0.001772353161242024,lgb_return_full_d3_w0.5
+expanded,exposed,Leisure Services,0.5468367548350781,0.5469936885453901,0.00015693371031200165,lgb_return_full_d3_w0.5
+expanded,exposed,Media,0.5126174433772472,0.5186488469168208,0.006031403539573543,lgb_return_full_d3_w0.5
+expanded,exposed,Metals & Minerals Trading,0.4726965421409866,0.4790390679279568,0.006342525786970199,lgb_return_full_d3_w0.5
+expanded,exposed,Minerals & Mining,0.6564037814037813,0.6550764050764051,-0.0013273763273762285,lgb_return_full_d3_w0.5
+expanded,exposed,Non - Ferrous Metals,0.5372564149116437,0.5405546477850399,0.0032982328733962563,lgb_return_full_d3_w0.5
+expanded,exposed,Oil,0.47034148676305537,0.4684988123713614,-0.0018426743916939992,lgb_return_full_d3_w0.5
+expanded,exposed,Other Construction Materials,0.49420539820866616,0.5039276204308885,0.009722222222222299,lgb_return_full_d3_w0.5
+expanded,exposed,Other Consumer Services,0.5501310620378538,0.5507493455099309,0.0006182834720771524,lgb_return_full_d3_w0.5
+expanded,exposed,Other Utilities,0.5251822251822252,0.5294300606800607,0.004247835497835473,lgb_return_full_d3_w0.5
+expanded,exposed,"Paper, Forest & Jute Products",0.5891497324348276,0.587465241887404,-0.0016844905474235894,lgb_return_full_d3_w0.5
+expanded,exposed,Personal Products,0.4020892687559354,0.4023482690149357,0.0002590002590002749,lgb_return_full_d3_w0.5
+expanded,exposed,Petroleum Products,0.5352474323062558,0.5332040841027769,-0.0020433482034789563,lgb_return_full_d3_w0.5
+expanded,exposed,Pharmaceuticals & Biotechnology,0.5595925258677268,0.5600058023958795,0.0004132765281527062,lgb_return_full_d3_w0.5
+expanded,exposed,Power,0.6253644801273738,0.6248529423668071,-0.0005115377605666716,lgb_return_full_d3_w0.5
+expanded,exposed,Printing & Publication,0.4645061728395061,0.4645061728395061,0.0,lgb_return_full_d3_w0.5
+expanded,exposed,Realty,0.5211674642617031,0.5223412553559797,0.0011737910942766216,lgb_return_full_d3_w0.5
+expanded,exposed,Retailing,0.5905387089032716,0.5861059168981586,-0.00443279200511304,lgb_return_full_d3_w0.5
+expanded,exposed,Telecom -  Equipment & Accessories,0.5800317994762438,0.5800037411148522,-2.805836139163631e-05,lgb_return_full_d3_w0.5
+expanded,exposed,Telecom - Services,0.5767549066160177,0.5759693193516724,-0.0007855872643452999,lgb_return_full_d3_w0.5
+expanded,exposed,Textiles & Apparels,0.5556102534165389,0.5551390681761676,-0.0004711852403712635,lgb_return_full_d3_w0.5
+expanded,exposed,Transport Infrastructure,0.6889917695473251,0.6886410400299289,-0.00035072951739623104,lgb_return_full_d3_w0.5
+expanded,exposed,Transport Services,0.6031142407242749,0.6007645386006579,-0.002349702123616959,lgb_return_full_d3_w0.5

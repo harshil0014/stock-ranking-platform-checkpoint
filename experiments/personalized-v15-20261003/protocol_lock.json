@@ -1,0 +1,81 @@
+{
+  "rules": {
+    "aggregate_median_xirr_delta_min": -0.025,
+    "all_profile_median_xirr_delta_min": -0.05,
+    "weekly_and_12m_median_xirr_delta_min": -0.025,
+    "aggregate_ndcg_delta_min": -0.01,
+    "aggregate_achievement_delta_min": -0.02,
+    "aggregate_shortfall_delta_max": 0.005,
+    "aggregate_drawdown_delta_min": -0.01,
+    "coverage_delta_min": -0.001,
+    "worst_profile_shortfall_delta_max": 0.02,
+    "weekly_and_12m_shortfall_delta_max": 0.005,
+    "weekly_and_12m_drawdown_delta_min": -0.01,
+    "worst_year_median_xirr_delta_min": -0.1,
+    "top20_overlap_min": 0.6,
+    "large_turnover_exception": "NDCG gain >= .03 AND shortfall improvement >= .02",
+    "utility": ".45*NDCG + .20*achievement - .25*shortfall + .10*drawdown + .10*median_XIRR deltas",
+    "require_positive_utility": true
+  },
+  "champion_only_floor_evidence": {
+    "robust_date_sigma": 0.41365576750535327,
+    "floor": 0.025,
+    "source_sha256": "3d5497a4366c62f8e570a29f628f502c6254718db3792e42200987c5738e0558"
+  },
+  "labels": {
+    "return": {
+      "xirr": 0.75,
+      "shortfall": 0.15,
+      "drawdown": 0.05,
+      "achievement": 0.05
+    },
+    "balanced_return": {
+      "xirr": 0.6,
+      "shortfall": 0.25,
+      "drawdown": 0.1,
+      "achievement": 0.05
+    }
+  },
+  "alphas": [
+    0.05,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "params": {
+    "n_estimators": 100,
+    "learning_rate": 0.04,
+    "num_leaves": 7,
+    "max_depth": 3,
+    "min_child_samples": 400,
+    "reg_lambda": 30,
+    "colsample_bytree": 0.9,
+    "lambdarank_truncation_level": 30
+  },
+  "seed": 20261003,
+  "candidate_count": 16,
+  "development_dates": [
+    "2020-03-31",
+    "2020-06-30",
+    "2020-09-30",
+    "2020-12-31",
+    "2021-03-31",
+    "2021-06-30",
+    "2021-09-30",
+    "2021-12-31",
+    "2022-03-31",
+    "2022-06-30",
+    "2022-09-30",
+    "2022-12-31",
+    "2023-03-31",
+    "2023-06-30",
+    "2023-09-30",
+    "2023-12-31"
+  ],
+  "development_training": "endpoint strictly before 2020-03-31",
+  "evaluation_training": "endpoint strictly before 2024-03-31",
+  "evaluation": "All 2024-2025 dates already exposed; retrospective research only",
+  "selection": "Highest eligible development utility; if none eligible, highest utility diagnostic only; lower alpha wins ties",
+  "no_current_ranks_or_NYKAA_used_for_selection": true,
+  "new_champion_requires_unexposed_validation": true
+}

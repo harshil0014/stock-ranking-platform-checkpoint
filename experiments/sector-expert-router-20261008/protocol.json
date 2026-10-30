@@ -1,0 +1,131 @@
+{
+  "configs": [
+    {
+      "name": "router_y2_s8_t0.03_w0.1",
+      "years": 2,
+      "shrink": 8,
+      "temp": 0.03,
+      "weight": 0.1
+    },
+    {
+      "name": "router_y2_s8_t0.03_w0.25",
+      "years": 2,
+      "shrink": 8,
+      "temp": 0.03,
+      "weight": 0.25
+    },
+    {
+      "name": "router_y2_s8_t0.1_w0.1",
+      "years": 2,
+      "shrink": 8,
+      "temp": 0.1,
+      "weight": 0.1
+    },
+    {
+      "name": "router_y2_s8_t0.1_w0.25",
+      "years": 2,
+      "shrink": 8,
+      "temp": 0.1,
+      "weight": 0.25
+    },
+    {
+      "name": "router_y2_s24_t0.03_w0.1",
+      "years": 2,
+      "shrink": 24,
+      "temp": 0.03,
+      "weight": 0.1
+    },
+    {
+      "name": "router_y2_s24_t0.03_w0.25",
+      "years": 2,
+      "shrink": 24,
+      "temp": 0.03,
+      "weight": 0.25
+    },
+    {
+      "name": "router_y2_s24_t0.1_w0.1",
+      "years": 2,
+      "shrink": 24,
+      "temp": 0.1,
+      "weight": 0.1
+    },
+    {
+      "name": "router_y2_s24_t0.1_w0.25",
+      "years": 2,
+      "shrink": 24,
+      "temp": 0.1,
+      "weight": 0.25
+    },
+    {
+      "name": "router_y5_s8_t0.03_w0.1",
+      "years": 5,
+      "shrink": 8,
+      "temp": 0.03,
+      "weight": 0.1
+    },
+    {
+      "name": "router_y5_s8_t0.03_w0.25",
+      "years": 5,
+      "shrink": 8,
+      "temp": 0.03,
+      "weight": 0.25
+    },
+    {
+      "name": "router_y5_s8_t0.1_w0.1",
+      "years": 5,
+      "shrink": 8,
+      "temp": 0.1,
+      "weight": 0.1
+    },
+    {
+      "name": "router_y5_s8_t0.1_w0.25",
+      "years": 5,
+      "shrink": 8,
+      "temp": 0.1,
+      "weight": 0.25
+    },
+    {
+      "name": "router_y5_s24_t0.03_w0.1",
+      "years": 5,
+      "shrink": 24,
+      "temp": 0.03,
+      "weight": 0.1
+    },
+    {
+      "name": "router_y5_s24_t0.03_w0.25",
+      "years": 5,
+      "shrink": 24,
+      "temp": 0.03,
+      "weight": 0.25
+    },
+    {
+      "name": "router_y5_s24_t0.1_w0.1",
+      "years": 5,
+      "shrink": 24,
+      "temp": 0.1,
+      "weight": 0.1
+    },
+    {
+      "name": "router_y5_s24_t0.1_w0.25",
+      "years": 5,
+      "shrink": 24,
+      "temp": 0.1,
+      "weight": 0.25
+    }
+  ],
+  "experts": [
+    "new_expert",
+    "prior_expert",
+    "v17_expert",
+    "professor_expert",
+    "balanced_expert",
+    "defensive_expert"
+  ],
+  "primary": "Within-sector Top3, with Top1/5 and all nine profiles as safeguards.",
+  "weight_rule": "Softmax of sector mean completed Top3 utility, shrunk toward equal-sector mean utility. Earlier outcomes only; no same-date or uncompleted feedback.",
+  "utility": "capped XIRR + .5 drawdown + .5 achievement - shortfall + .2 NDCG; fit routing on common production universe.",
+  "fallback": "No completed feedback: new expert only. Missing individual expert score: new expert sector percentile. Every identity remains scored.",
+  "selection_exposure": "Expert families and hyperparameters researched after prior outcomes seen. Endpoint filtering prevents direct future-feedback use but does not establish fresh validation.",
+  "source": "https://proceedings.mlr.press/v128/korotin20a.html",
+  "relationship": "Inspired by expert aggregation with delayed feedback, not a replication or claimed regret bound."
+}

@@ -1,0 +1,8 @@
+model,regressions,improvements,comparisons,top3_regressions,rank_ic,strict_gate
+pfn_balanced_absolute_soft1.0_d3_w0.1,190,342,648,36,0.15216466393699382,False
+lgb_balanced_pool_d3_w0.1,309,323,648,38,0.1521391367932919,False
+lgb_return_full_d3_w0.1,274,340,648,42,0.15223038509199566,False
+lgb_balanced_pool_d5_w0.1,359,277,648,86,0.15214279362948022,False
+lgb_return_full_d3_w0.5,410,238,648,165,0.15261033479398858,False
+pfn_balanced_residual_soft1.0_d5_w0.5,411,233,648,170,0.151534844970442,False
+lgb_balanced_pool_d5_w0.5,576,70,648,205,0.15060035650118217,False

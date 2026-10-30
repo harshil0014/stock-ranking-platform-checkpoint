@@ -1,0 +1,26 @@
+REPLAY 2020
+REPLAY 2021
+REPLAY 2022
+REPLAY 2023
+REPLAY 2024
+REPLAY 2025
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\sector_tabpfn_hybrid_20261011.py:63: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  z[ANCHOR]=z.rebuilt_score;z['guarded_previous']=z.guarded_model_score;z['rank_xendcg_balanced']=z.rebuilt_pure_score
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\sector_tabpfn_hybrid_20261011.py:41: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  z['champion_percentile']=g[ANCHOR].rank(pct=True)
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\sector_tabpfn_hybrid_20261011.py:42: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  z['guarded_percentile']=g.guarded_previous.rank(pct=True)
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\sector_execution_specialist_20261011.py:21: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  z['execution_quote_lag']=lag;z['activity_available']=z.traded_value.notna().astype(float)
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\sector_execution_specialist_20261011.py:21: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  z['execution_quote_lag']=lag;z['activity_available']=z.traded_value.notna().astype(float)
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\sector_execution_specialist_20261011.py:22: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  z['log_contribution_to_traded_value']=z.log_amount-z.traded_value
+Traceback (most recent call last):
+  File "C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\finish_sector_execution_specialist_20261011.py", line 82, in <module>
+    elif sys.argv[1]=='replay':replay()
+                               ~~~~~~^^
+  File "C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\finish_sector_execution_specialist_20261011.py", line 73, in replay
+    assert error<1e-12;errors.append(error)
+           ^^^^^^^^^^^
+AssertionError

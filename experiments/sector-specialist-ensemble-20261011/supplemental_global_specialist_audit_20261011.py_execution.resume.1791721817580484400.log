@@ -1,0 +1,4 @@
+GLOBAL execution common False
+GLOBAL execution common True
+GLOBAL execution expanded False
+GLOBAL execution expanded True

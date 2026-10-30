@@ -1,0 +1,21 @@
+{
+  "selected": {
+    "name": "rank_xendcg_balanced_15",
+    "gate": true,
+    "utility": 0.23372982755957475,
+    "common_xirr_delta": 0.006492429678082334,
+    "common_drawdown_delta": 0.0161426923617371,
+    "common_achievement_delta": 0.011581296953637299,
+    "common_shortfall_delta": -0.007168858150242936,
+    "common_ndcg_delta": 0.013483692280252813,
+    "expanded_xirr_delta": 0.410159162913534,
+    "expanded_drawdown_delta": 0.01321656543063826,
+    "expanded_achievement_delta": 0.005489811606832817,
+    "expanded_shortfall_delta": -0.005798048175767366,
+    "expanded_ndcg_delta": 0.05964617284524776
+  },
+  "passing_count": 5,
+  "promotion_eligible_on_development": true,
+  "trial_count": 45,
+  "protocol_sha256": "69f098395a6b9515599b5bddfb405f57702e45bf55bd3320ffbe304f8455842d"
+}

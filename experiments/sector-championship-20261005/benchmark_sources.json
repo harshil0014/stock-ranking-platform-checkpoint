@@ -1,0 +1,355 @@
+[
+  {
+    "file": "benchmark_00.csv.gz",
+    "opponent": "Original Personalized policy",
+    "artifacts": [
+      "experiments/v17-refinement-20261004/early_refined_scores.csv.gz",
+      "experiments/v17-refinement-20261004/development_refined_scores.csv.gz",
+      "experiments/v17-refinement-20261004/exposed_refined_scores.csv.gz"
+    ],
+    "score_column": "champion_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_01.csv.gz",
+    "opponent": "V17",
+    "artifacts": [
+      "experiments/v17-refinement-20261004/early_refined_scores.csv.gz",
+      "experiments/v17-refinement-20261004/development_refined_scores.csv.gz",
+      "experiments/v17-refinement-20261004/exposed_refined_scores.csv.gz"
+    ],
+    "score_column": "v17_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_02.csv.gz",
+    "opponent": "V17 refined",
+    "artifacts": [
+      "experiments/v17-refinement-20261004/early_refined_scores.csv.gz",
+      "experiments/v17-refinement-20261004/development_refined_scores.csv.gz",
+      "experiments/v17-refinement-20261004/exposed_refined_scores.csv.gz"
+    ],
+    "score_column": "repair_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_03.csv.gz",
+    "opponent": "V18 rejected candidate",
+    "artifacts": [
+      "experiments/personalized-v18-20261003/early_all_scores.csv.gz",
+      "experiments/personalized-v18-20261003/development_scores.csv.gz",
+      "experiments/personalized-v18-20261003/exposed_scores.csv.gz"
+    ],
+    "score_column": "new_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_04.csv.gz",
+    "opponent": "V15",
+    "artifacts": [
+      "experiments/personalized-v16-20261003/development_scores.csv.gz",
+      "experiments/personalized-v16-20261003/exposed_2024_2025_scores.csv.gz"
+    ],
+    "score_column": "v15_score",
+    "rows_joined": 849512,
+    "decision_dates": 28
+  },
+  {
+    "file": "benchmark_05.csv.gz",
+    "opponent": "V16",
+    "artifacts": [
+      "experiments/personalized-v16-20261003/development_scores.csv.gz",
+      "experiments/personalized-v16-20261003/exposed_2024_2025_scores.csv.gz"
+    ],
+    "score_column": "v16_score",
+    "rows_joined": 849512,
+    "decision_dates": 28
+  },
+  {
+    "file": "benchmark_06.csv.gz",
+    "opponent": "V14",
+    "artifacts": [
+      "experiments/personalized-v14-ml-20261003/known_evaluation_scores.csv.gz"
+    ],
+    "score_column": "v14_score",
+    "rows_joined": 363984,
+    "decision_dates": 12
+  },
+  {
+    "file": "benchmark_07.csv.gz",
+    "opponent": "V17 ATH diagnostic",
+    "artifacts": [
+      "experiments/v17-ath-refinement-20261004/early_diagnostic_scores.csv.gz",
+      "experiments/v17-ath-refinement-20261004/development_diagnostic_scores.csv.gz",
+      "experiments/v17-ath-refinement-20261004/exposed_diagnostic_scores.csv.gz"
+    ],
+    "score_column": "candidate_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_08.csv.gz",
+    "opponent": "V17 peak context",
+    "artifacts": [
+      "experiments/v17-peak-context-20261004/early_scores.csv.gz",
+      "experiments/v17-peak-context-20261004/development_scores.csv.gz",
+      "experiments/v17-peak-context-20261004/exposed_scores.csv.gz"
+    ],
+    "score_column": "candidate_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_09.csv.gz",
+    "opponent": "Closing High confirmation",
+    "artifacts": [
+      "experiments/v17-peak-confirmation-20261004/early_scores.csv.gz",
+      "experiments/v17-peak-confirmation-20261004/development_scores.csv.gz",
+      "experiments/v17-peak-confirmation-20261004/exposed_scores.csv.gz"
+    ],
+    "score_column": "new_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_10.csv.gz",
+    "opponent": "Closing High priority",
+    "artifacts": [
+      "experiments/v17-peak-activity-20261004/priority_early_scores.csv.gz",
+      "experiments/v17-peak-activity-20261004/priority_development_scores.csv.gz",
+      "experiments/v17-peak-activity-20261004/priority_exposed_scores.csv.gz"
+    ],
+    "score_column": "priority_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_11.csv.gz",
+    "opponent": "Deep championship V1",
+    "artifacts": [
+      "experiments/personalized-deep-championship-20261002/v1/development_winner_scores.csv.gz",
+      "experiments/personalized-deep-championship-20261002/v1/clean_2024_holdout_scores.csv.gz",
+      "experiments/personalized-deep-championship-20261002/v1/exposed_2025_diagnostic_scores.csv.gz"
+    ],
+    "score_column": "candidate_score",
+    "rows_joined": 479862,
+    "decision_dates": 16
+  },
+  {
+    "file": "benchmark_12.csv.gz",
+    "opponent": "V12",
+    "artifacts": [
+      "experiments/personalized-deep-championship-20261002/v3/development_winner_scores.csv.gz",
+      "experiments/personalized-deep-championship-20261002/v3/postlock_2024_diagnostics_scores.csv.gz",
+      "experiments/personalized-deep-championship-20261002/v3/untouched_final_2025_scores.csv.gz",
+      "experiments/personalized-deep-championship-20261002/v3/postfinal_2025_diagnostics_scores.csv.gz"
+    ],
+    "score_column": "candidate_score",
+    "rows_joined": 849512,
+    "decision_dates": 28
+  },
+  {
+    "file": "benchmark_13.csv.gz",
+    "opponent": "Archived catboost_yetirank_pairwise_blend_score",
+    "artifacts": [
+      "research/reports/all-models-audit-20261004/archived/rankers.csv.gz"
+    ],
+    "score_column": "catboost_yetirank_pairwise_blend_score",
+    "rows_joined": 133256,
+    "decision_dates": 6
+  },
+  {
+    "file": "benchmark_14.csv.gz",
+    "opponent": "Archived xgboost_rank_ndcg_blend_score",
+    "artifacts": [
+      "research/reports/all-models-audit-20261004/archived/rankers.csv.gz"
+    ],
+    "score_column": "xgboost_rank_ndcg_blend_score",
+    "rows_joined": 133256,
+    "decision_dates": 6
+  },
+  {
+    "file": "benchmark_15.csv.gz",
+    "opponent": "Archived jump_blend_score",
+    "artifacts": [
+      "research/reports/all-models-audit-20261004/archived/regimes.csv.gz"
+    ],
+    "score_column": "jump_blend_score",
+    "rows_joined": 133256,
+    "decision_dates": 6
+  },
+  {
+    "file": "benchmark_16.csv.gz",
+    "opponent": "Archived volatility_blend_score",
+    "artifacts": [
+      "research/reports/all-models-audit-20261004/archived/regimes.csv.gz"
+    ],
+    "score_column": "volatility_blend_score",
+    "rows_joined": 133256,
+    "decision_dates": 6
+  },
+  {
+    "file": "benchmark_17.csv.gz",
+    "opponent": "Archived hmm_blend_score",
+    "artifacts": [
+      "research/reports/all-models-audit-20261004/archived/regimes.csv.gz"
+    ],
+    "score_column": "hmm_blend_score",
+    "rows_joined": 133256,
+    "decision_dates": 6
+  },
+  {
+    "file": "benchmark_18.csv.gz",
+    "opponent": "Archived jump_adwin_blend_score",
+    "artifacts": [
+      "research/reports/all-models-audit-20261004/archived/regimes.csv.gz"
+    ],
+    "score_column": "jump_adwin_blend_score",
+    "rows_joined": 133256,
+    "decision_dates": 6
+  },
+  {
+    "file": "benchmark_19.csv.gz",
+    "opponent": "Executable enhanced_carry_xirr_score",
+    "artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ],
+    "score_column": "enhanced_carry_xirr_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_20.csv.gz",
+    "opponent": "Executable enhanced_no_carry_xirr_score",
+    "artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ],
+    "score_column": "enhanced_no_carry_xirr_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_21.csv.gz",
+    "opponent": "Executable professor_whole_share_score",
+    "artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ],
+    "score_column": "professor_whole_share_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_22.csv.gz",
+    "opponent": "Executable enhanced_goal_score",
+    "artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ],
+    "score_column": "enhanced_goal_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_23.csv.gz",
+    "opponent": "Executable historical_target_frequency_score",
+    "artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ],
+    "score_column": "historical_target_frequency_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_24.csv.gz",
+    "opponent": "Executable global_existing_score",
+    "artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ],
+    "score_column": "global_existing_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_25.csv.gz",
+    "opponent": "Executable enhanced_plus_existing_score",
+    "artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ],
+    "score_column": "enhanced_plus_existing_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_26.csv.gz",
+    "opponent": "Executable ridge_executable_score",
+    "artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ],
+    "score_column": "ridge_executable_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_27.csv.gz",
+    "opponent": "Executable ridge_without_amount_features_score",
+    "artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ],
+    "score_column": "ridge_without_amount_features_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_28.csv.gz",
+    "opponent": "Executable ridge_without_goal_score",
+    "artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ],
+    "score_column": "ridge_without_goal_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_29.csv.gz",
+    "opponent": "Executable cluster_rank_aggregation_score",
+    "artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ],
+    "score_column": "cluster_rank_aggregation_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_30.csv.gz",
+    "opponent": "Executable hist_gradient_boosting_score",
+    "artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ],
+    "score_column": "hist_gradient_boosting_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_31.csv.gz",
+    "opponent": "Executable lightgbm_lambdarank_score",
+    "artifacts": [
+      "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz"
+    ],
+    "score_column": "lightgbm_lambdarank_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  },
+  {
+    "file": "benchmark_32.csv.gz",
+    "opponent": "V13 policy replay",
+    "artifacts": [
+      "research/reports/all-models-audit-20261004/v13_policy_replayed.csv.gz"
+    ],
+    "score_column": "v13_replayed_score",
+    "rows_joined": 1335040,
+    "decision_dates": 44
+  }
+]

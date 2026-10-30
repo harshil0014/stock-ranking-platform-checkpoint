@@ -1,0 +1,12 @@
+{
+  "finalists": [
+    "balanced_l1_base_w1.0",
+    "balanced_l1_activity_w1.0",
+    "return_q25_base_w0.1",
+    "return_q25_activity_w0.1",
+    "balanced_l1_base_w0.1",
+    "balanced_l1_activity_w0.1"
+  ],
+  "development_sha256": "9ebfb97f6c29d85f09bc70504fb5ec49bc29f5f4277b53b005605a23cdd29fcb",
+  "selection_mean_xirr_weight": 0
+}

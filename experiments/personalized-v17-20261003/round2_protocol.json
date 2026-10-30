@@ -1,0 +1,57 @@
+{
+  "locked_at": "2026-10-03T16:58:19.079747+00:00",
+  "evidence_sha256": "ecc73164f7ef163466d1739b793ec81bb4959ef4a6b0fb911f6656c1a16d6e48",
+  "hypothesis": "Constrained return model repairs short-lookback return and drawdown, but loses return at long-lookback/low-target settings. Raw specialists retain broad return signal but worsen12M drawdown. Test explicit short-lookback routing and equal-weight percentile ensembles of these complementary predictions, without additional fitted thresholds.",
+  "candidates": [
+    {
+      "name": "short_monotone_v15__0.1",
+      "kind": "short_monotone_v15",
+      "alpha": 0.1
+    },
+    {
+      "name": "short_monotone_v15__0.2",
+      "kind": "short_monotone_v15",
+      "alpha": 0.2
+    },
+    {
+      "name": "short_monotone_v15__0.3",
+      "kind": "short_monotone_v15",
+      "alpha": 0.3
+    },
+    {
+      "name": "blend_specialist_monotone__0.1",
+      "kind": "blend_specialist_monotone",
+      "alpha": 0.1
+    },
+    {
+      "name": "blend_specialist_monotone__0.2",
+      "kind": "blend_specialist_monotone",
+      "alpha": 0.2
+    },
+    {
+      "name": "blend_specialist_monotone__0.3",
+      "kind": "blend_specialist_monotone",
+      "alpha": 0.3
+    },
+    {
+      "name": "blend_refresh_monotone__0.1",
+      "kind": "blend_refresh_monotone",
+      "alpha": 0.1
+    },
+    {
+      "name": "blend_refresh_monotone__0.2",
+      "kind": "blend_refresh_monotone",
+      "alpha": 0.2
+    },
+    {
+      "name": "blend_refresh_monotone__0.3",
+      "kind": "blend_refresh_monotone",
+      "alpha": 0.3
+    }
+  ],
+  "routing": "short_monotone_v15 uses monotone_utility at lookback<=12 and frozen V15 at longer lookbacks. Both blend kinds average correction prediction percentiles50/50 then use common alpha and original evidence confidence.",
+  "selection": "Highest strong-eligible development utility, then lowest negative-return date fraction, then lower alpha. If none pass, continue a separately locked development research round.",
+  "unchanged_gates": "Original V15 gates plus all-profile return >=0, all-profile drawdown >=-0.01, 12M return/drawdown >=0, weekly return>=0. Select on development utility and lower adverse-date concentration; no exposed/current selection. Failures trigger a documented new development-only research round, not threshold changes.",
+  "no_current_or_exposed_results": true,
+  "next_checks": "Selected architecture will be checked with per-date refresh and independent random seeds; these are robustness checks, not blind tests."
+}

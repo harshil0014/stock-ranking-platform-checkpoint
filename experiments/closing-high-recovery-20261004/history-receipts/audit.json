@@ -1,0 +1,38 @@
+[
+  {
+    "ticker": "KPL",
+    "symbol": "KPL.BO",
+    "promoted": false,
+    "rows": 2520,
+    "start": "2016-07-18 00:00:00+05:30",
+    "end": "2026-10-01 00:00:00+05:30",
+    "status": "REQUIRES_IDENTITY_ACTION_AND_OVERLAP_VALIDATION"
+  },
+  {
+    "ticker": "FRONTSP",
+    "symbol": "FRONTSP.BO",
+    "promoted": false,
+    "rows": 6676,
+    "start": "2000-01-03 00:00:00+05:30",
+    "end": "2026-10-01 00:00:00+05:30",
+    "status": "REQUIRES_IDENTITY_ACTION_AND_OVERLAP_VALIDATION"
+  },
+  {
+    "ticker": "PTCIL",
+    "symbol": "PTCIL.BO",
+    "promoted": false,
+    "rows": 2794,
+    "start": "2015-06-10 00:00:00+05:30",
+    "end": "2026-10-01 00:00:00+05:30",
+    "status": "REQUIRES_IDENTITY_ACTION_AND_OVERLAP_VALIDATION"
+  },
+  {
+    "ticker": "STEELCAS",
+    "symbol": "STEELCAS.BO",
+    "promoted": false,
+    "rows": 6104,
+    "start": "2002-03-12 00:00:00+05:30",
+    "end": "2026-10-01 00:00:00+05:30",
+    "status": "REQUIRES_IDENTITY_ACTION_AND_OVERLAP_VALIDATION"
+  }
+]

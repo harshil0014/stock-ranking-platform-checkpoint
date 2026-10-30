@@ -1,0 +1,21 @@
+{
+  "rows": 4329,
+  "within_3_calendar_days": 3968,
+  "distance_matches_1pct": 3493,
+  "nykaa": [
+    {
+      "isin": "INE388Y01029",
+      "ticker": "NYKAA",
+      "price_basis": "official-action-adjusted closing price",
+      "recomputed_high_date": "2021-12-01",
+      "recomputed_high": 415.51666259765625,
+      "days_at_decision": 1767,
+      "days_at_last_price": 1765,
+      "stored_days": 1765.0,
+      "stored_distance": -0.21796153,
+      "recomputed_distance": -0.21796153690789644
+    }
+  ],
+  "definition": "Highest adjusted daily CLOSE in observed history, not intraday high; days field can be measured at last quote date rather than decision date.",
+  "corporate_action_reference": "Official issuer 5-for-1 bonus record date11Nov2022; use adjusted history, never compare nominal IPO high directly to post-bonus price."
+}

@@ -1,0 +1,30 @@
+{
+  "variants_development": 60,
+  "finalists_recent": 7,
+  "accuracy_leaders": [
+    "pfn_balanced_residual_soft1.0_d5_w0.5",
+    "lgb_return_full_d3_w0.5"
+  ],
+  "teacher_fits": 15,
+  "student_control_fits": 100,
+  "historical_rows": 797443,
+  "current_rows": 4436,
+  "usable_current_price_inputs": 4303,
+  "selected_hybrid": "pfn_balanced_absolute_soft1.0_d3_w0.1",
+  "strict_gate_passes": 0,
+  "retained_champion": "rank_xendcg_balanced_blend0.25",
+  "max_student_replay_error": 1.1102230246251565e-16,
+  "teacher_context_rows_audited": 11520,
+  "teacher_context_pool_disjoint": true,
+  "teacher_input_label_sources_verified": true,
+  "training_cutoffs_verified": true,
+  "benchmark_populations_verified": true,
+  "fresh_validation": false,
+  "production_replaced": false,
+  "sha256": {
+    "protocol.json": "1be7fdd845da48aa4a0e31e302b2690e2501d2878f3f9294e2179a04ac68bfc0",
+    "locked_finalists.json": "da6d319ddf5bb62bae31edc06939965cebe80c21f3be05552bc6cbc4968ae9e5",
+    "finalist_trials.csv": "b9ff4e7b2f6f9f723a2844119d63a8a185e46825ffe8867b36b3eda13b012a89",
+    "finalists_all_4436.csv": "b475d95d04fa17950c2865ac54ac93dd464f6dfe8e4c86fedb9f6de68e49f9b5"
+  }
+}

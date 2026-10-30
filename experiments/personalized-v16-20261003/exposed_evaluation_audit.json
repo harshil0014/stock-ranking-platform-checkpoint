@@ -1,0 +1,41 @@
+{
+  "completed_at": "2026-10-03T16:30:24.863574+00:00",
+  "known_exposed_not_blind": true,
+  "not_used_for_selection": true,
+  "selection_lock_sha256": "6a9439469a879731c2f846644371d43271f369e027871a42d36097661a0551b5",
+  "v15_score_reconstruction_max_error": 1.1102230246251565e-16,
+  "model_sha256": "52d56bf7e35633e01d6fc64dcc83ad970a7bbb85d5166e466f7b92f5cd89e6aa",
+  "results": {
+    "eligible": true,
+    "utility": 0.0873602185601868,
+    "checks": {
+      "return_floor": true,
+      "profile_return_floor": true,
+      "weekly_12m_return_floor": true,
+      "ndcg": true,
+      "achievement": true,
+      "shortfall": true,
+      "drawdown": true,
+      "coverage": true,
+      "profile_shortfall": true,
+      "weekly_12m_shortfall": true,
+      "weekly_12m_drawdown": true,
+      "year_return_floor": true,
+      "turnover": true,
+      "positive_utility": true
+    },
+    "delta": {
+      "coverage": 0.0,
+      "ndcg20": 0.07975045887939267,
+      "target_achievement_top20": 0.11064814814814816,
+      "target_shortfall_top20": -0.02845483944683871,
+      "median_xirr_top20": 0.18994422311226217,
+      "mean_asset_drawdown_top20": 0.03234750261894569,
+      "rank_ic": 0.011890081233500957,
+      "pairwise_accuracy": 0.005339211870796646
+    },
+    "top20_overlap": 0.49074074074074076,
+    "worst_profile_return": 0.05672934053284043,
+    "worst_profile_shortfall": -0.012019200150022809
+  }
+}

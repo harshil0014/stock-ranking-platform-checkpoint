@@ -1,0 +1,109 @@
+model,profile,top_n,hhi,largest_industry,largest_share
+champion,amount1000,20,0.06500000000000002,Financial Products Distributor,0.1
+champion,amount1000,50,0.045599999999999995,Pharmaceuticals,0.12
+champion,amount1000,100,0.03600000000000002,Pharmaceuticals,0.12
+champion,amount50000,20,0.06500000000000002,Financial Products Distributor,0.1
+champion,amount50000,50,0.04800000000000001,Pharmaceuticals,0.14
+champion,amount50000,100,0.03560000000000001,Pharmaceuticals,0.11
+champion,base7500,20,0.06500000000000002,Financial Products Distributor,0.1
+champion,base7500,50,0.0488,Pharmaceuticals,0.14
+champion,base7500,100,0.03580000000000001,Pharmaceuticals,0.11
+champion,lookback12,20,0.055000000000000014,Pharmaceuticals,0.1
+champion,lookback12,50,0.050399999999999986,Pharmaceuticals,0.14
+champion,lookback12,100,0.037399999999999996,Pharmaceuticals,0.11
+champion,lookback60,20,0.06000000000000001,Private Sector Bank,0.1
+champion,lookback60,50,0.047199999999999985,Auto Components & Equipments,0.1
+champion,lookback60,100,0.03580000000000001,Auto Components & Equipments,0.08
+champion,quarterly,20,0.07,Pharmaceuticals,0.15
+champion,quarterly,50,0.048,Pharmaceuticals,0.12
+champion,quarterly,100,0.03620000000000001,Pharmaceuticals,0.11
+champion,target10,20,0.06500000000000002,Financial Products Distributor,0.1
+champion,target10,50,0.04159999999999999,Pharmaceuticals,0.12
+champion,target10,100,0.0366,Pharmaceuticals,0.11
+champion,target30,20,0.08500000000000002,Pharmaceuticals,0.15
+champion,target30,50,0.0456,Pharmaceuticals,0.14
+champion,target30,100,0.034000000000000016,Pharmaceuticals,0.1
+champion,weekly,20,0.06000000000000001,Pharmaceuticals,0.1
+champion,weekly,50,0.0456,Pharmaceuticals,0.12
+champion,weekly,100,0.0374,Pharmaceuticals,0.11
+v15,amount1000,20,0.055000000000000014,Castings & Forgings,0.1
+v15,amount1000,50,0.03040000000000001,Auto Components & Equipments,0.06
+v15,amount1000,100,0.0336,Pharmaceuticals,0.11
+v15,amount50000,20,0.06500000000000002,Castings & Forgings,0.15
+v15,amount50000,50,0.035199999999999995,Pharmaceuticals,0.08
+v15,amount50000,100,0.03380000000000002,Pharmaceuticals,0.11
+v15,base7500,20,0.06500000000000002,Castings & Forgings,0.15
+v15,base7500,50,0.034399999999999986,Pharmaceuticals,0.08
+v15,base7500,100,0.03280000000000002,Pharmaceuticals,0.1
+v15,lookback12,20,0.07,"Residential, Commercial Projects",0.1
+v15,lookback12,50,0.037599999999999995,Industrial Products,0.1
+v15,lookback12,100,0.0344,Pharmaceuticals,0.08
+v15,lookback60,20,0.07500000000000001,Heavy Electrical Equipment,0.15
+v15,lookback60,50,0.04559999999999999,Pharmaceuticals,0.08
+v15,lookback60,100,0.04160000000000001,Pharmaceuticals,0.1
+v15,quarterly,20,0.07,Castings & Forgings,0.15
+v15,quarterly,50,0.0416,Pharmaceuticals,0.12
+v15,quarterly,100,0.03260000000000002,Pharmaceuticals,0.1
+v15,target10,20,0.07,Castings & Forgings,0.15
+v15,target10,50,0.03679999999999999,Pharmaceuticals,0.1
+v15,target10,100,0.03260000000000002,Pharmaceuticals,0.1
+v15,target30,20,0.06500000000000002,Castings & Forgings,0.15
+v15,target30,50,0.03359999999999999,Pharmaceuticals,0.08
+v15,target30,100,0.03420000000000002,Pharmaceuticals,0.11
+v15,weekly,20,0.06500000000000002,Castings & Forgings,0.15
+v15,weekly,50,0.035199999999999995,Pharmaceuticals,0.08
+v15,weekly,100,0.03380000000000002,Pharmaceuticals,0.1
+v16,amount1000,20,0.055000000000000014,Castings & Forgings,0.1
+v16,amount1000,50,0.03040000000000001,Auto Components & Equipments,0.06
+v16,amount1000,100,0.0336,Pharmaceuticals,0.11
+v16,amount50000,20,0.06500000000000002,Castings & Forgings,0.15
+v16,amount50000,50,0.035199999999999995,Pharmaceuticals,0.08
+v16,amount50000,100,0.03380000000000002,Pharmaceuticals,0.11
+v16,base7500,20,0.06500000000000002,Castings & Forgings,0.15
+v16,base7500,50,0.034399999999999986,Pharmaceuticals,0.08
+v16,base7500,100,0.03280000000000002,Pharmaceuticals,0.1
+v16,lookback12,20,0.06000000000000001,"Residential, Commercial Projects",0.1
+v16,lookback12,50,0.04719999999999999,"Gems, Jewellery And Watches",0.08
+v16,lookback12,100,0.041200000000000014,Pharmaceuticals,0.13
+v16,lookback60,20,0.07500000000000001,Heavy Electrical Equipment,0.15
+v16,lookback60,50,0.04559999999999999,Pharmaceuticals,0.08
+v16,lookback60,100,0.04160000000000001,Pharmaceuticals,0.1
+v16,quarterly,20,0.07,Castings & Forgings,0.15
+v16,quarterly,50,0.0416,Pharmaceuticals,0.12
+v16,quarterly,100,0.03260000000000002,Pharmaceuticals,0.1
+v16,target10,20,0.07,Castings & Forgings,0.15
+v16,target10,50,0.03679999999999999,Pharmaceuticals,0.1
+v16,target10,100,0.03260000000000002,Pharmaceuticals,0.1
+v16,target30,20,0.06500000000000002,Castings & Forgings,0.15
+v16,target30,50,0.03359999999999999,Pharmaceuticals,0.08
+v16,target30,100,0.03420000000000002,Pharmaceuticals,0.11
+v16,weekly,20,0.06500000000000002,Castings & Forgings,0.15
+v16,weekly,50,0.035199999999999995,Pharmaceuticals,0.08
+v16,weekly,100,0.03380000000000002,Pharmaceuticals,0.1
+v17,amount1000,20,0.07,Pharmaceuticals,0.15
+v17,amount1000,50,0.050400000000000014,Pharmaceuticals,0.14
+v17,amount1000,100,0.036400000000000016,Pharmaceuticals,0.12
+v17,amount50000,20,0.07,Pharmaceuticals,0.15
+v17,amount50000,50,0.05679999999999999,Pharmaceuticals,0.16
+v17,amount50000,100,0.034000000000000016,Pharmaceuticals,0.11
+v17,base7500,20,0.07,Pharmaceuticals,0.15
+v17,base7500,50,0.055199999999999985,Pharmaceuticals,0.16
+v17,base7500,100,0.03500000000000001,Pharmaceuticals,0.11
+v17,lookback12,20,0.07500000000000001,"Residential, Commercial Projects",0.15
+v17,lookback12,50,0.04559999999999998,Pharmaceuticals,0.08
+v17,lookback12,100,0.032799999999999996,Pharmaceuticals,0.08
+v17,lookback60,20,0.08500000000000002,Non Banking Financial Company (NBFC),0.15
+v17,lookback60,50,0.042399999999999986,Auto Components & Equipments,0.08
+v17,lookback60,100,0.03920000000000001,Auto Components & Equipments,0.11
+v17,quarterly,20,0.07,Pharmaceuticals,0.15
+v17,quarterly,50,0.055999999999999994,Pharmaceuticals,0.16
+v17,quarterly,100,0.03380000000000002,Pharmaceuticals,0.1
+v17,target10,20,0.07,Pharmaceuticals,0.15
+v17,target10,50,0.05599999999999999,Pharmaceuticals,0.16
+v17,target10,100,0.03800000000000002,Pharmaceuticals,0.13
+v17,target30,20,0.07,Pharmaceuticals,0.15
+v17,target30,50,0.048,Pharmaceuticals,0.14
+v17,target30,100,0.03660000000000001,Pharmaceuticals,0.12
+v17,weekly,20,0.06500000000000002,Pharmaceuticals,0.15
+v17,weekly,50,0.049600000000000005,Pharmaceuticals,0.14
+v17,weekly,100,0.03260000000000002,Pharmaceuticals,0.1

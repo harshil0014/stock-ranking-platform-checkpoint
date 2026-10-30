@@ -1,0 +1,8 @@
+{
+  "locked_at": "2026-10-03T17:21:22.616769+00:00",
+  "hypothesis": "Use ATH constraints only for the60M specialist that exhibited wrong-direction average behavior. Other lookback specialists already have negative old/deep ATH effects. Broad constraints reduce shortfall gains; targeted repair avoids changing unrelated learned relationships.",
+  "candidate_count": 1,
+  "alpha": 0.3,
+  "mixture": "Equal monotone utility and lookback specialist prediction percentiles. Raw specialist for12/36; ATH constrained specialist for60.",
+  "gates": "Same strict gates, no exceptions added."
+}

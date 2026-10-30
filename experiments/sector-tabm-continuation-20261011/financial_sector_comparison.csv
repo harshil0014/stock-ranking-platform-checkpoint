@@ -1,0 +1,1569 @@
+rubric,sector,model,stocks,pair_agreement,top3_rubric
+judge_primary,Aerospace & Defense,current_champion,30,0.6114942528735632,0.6061007957559682
+judge_primary,Aerospace & Defense,sir_score,30,0.3793103448275862,0.3500766283524905
+judge_primary,Aerospace & Defense,tabm_compact_e24_return_w0.3,30,0.6068965517241379,0.6477217801355732
+judge_primary,Aerospace & Defense,tabm_compact_e48_return_w0.3,30,0.6183908045977011,0.6477217801355732
+judge_primary,Aerospace & Defense,tabm_embedded_e24_return_w1.0,30,0.5264367816091954,0.5638653109342765
+judge_primary,Aerospace & Defense,tabm_embedded_e48_return_w1.0,30,0.5172413793103449,0.665509873268494
+judge_primary,Aerospace & Defense,tabm_embedded_e48_return_w0.1,30,0.6022988505747127,0.6061007957559682
+judge_primary,Agricultural Food & other Products,current_champion,144,0.5568181818181818,0.6511354045448614
+judge_primary,Agricultural Food & other Products,sir_score,144,0.5781857031857032,0.5454865290447893
+judge_primary,Agricultural Food & other Products,tabm_compact_e24_return_w0.3,144,0.5415695415695416,0.5422485471589577
+judge_primary,Agricultural Food & other Products,tabm_compact_e48_return_w0.3,144,0.5456973581973582,0.5919764432151362
+judge_primary,Agricultural Food & other Products,tabm_embedded_e24_return_w1.0,144,0.4745532245532246,0.4498027395247178
+judge_primary,Agricultural Food & other Products,tabm_embedded_e48_return_w1.0,144,0.4703768453768454,0.4165949101239581
+judge_primary,Agricultural Food & other Products,tabm_embedded_e48_return_w0.1,144,0.5507478632478633,0.6511354045448614
+judge_primary,"Agricultural, Commercial & Construction Vehicles",current_champion,14,0.5494505494505495,0.5348717948717949
+judge_primary,"Agricultural, Commercial & Construction Vehicles",sir_score,14,0.4725274725274725,0.43770451770451774
+judge_primary,"Agricultural, Commercial & Construction Vehicles",tabm_compact_e24_return_w0.3,14,0.5659340659340659,0.5348717948717949
+judge_primary,"Agricultural, Commercial & Construction Vehicles",tabm_compact_e48_return_w0.3,14,0.5934065934065934,0.5348717948717949
+judge_primary,"Agricultural, Commercial & Construction Vehicles",tabm_embedded_e24_return_w1.0,14,0.6043956043956044,0.6601098901098901
+judge_primary,"Agricultural, Commercial & Construction Vehicles",tabm_embedded_e48_return_w1.0,14,0.6043956043956044,0.6601098901098902
+judge_primary,"Agricultural, Commercial & Construction Vehicles",tabm_embedded_e48_return_w0.1,14,0.554945054945055,0.5348717948717949
+judge_primary,Auto Components,current_champion,149,0.5942318157083257,0.5508304253983898
+judge_primary,Auto Components,sir_score,149,0.5916016687828768,0.33497577336756507
+judge_primary,Auto Components,tabm_compact_e24_return_w0.3,149,0.5726918193361147,0.5118604801872356
+judge_primary,Auto Components,tabm_compact_e48_return_w0.3,149,0.5718302194812261,0.5118604801872356
+judge_primary,Auto Components,tabm_embedded_e24_return_w1.0,149,0.5220388173408308,0.43471284299964846
+judge_primary,Auto Components,tabm_embedded_e48_return_w1.0,149,0.5396335933248685,0.5559566798956356
+judge_primary,Auto Components,tabm_embedded_e48_return_w0.1,149,0.5910575004534736,0.5150940003781275
+judge_primary,Automobiles,current_champion,19,0.5497076023391813,0.5402711323763956
+judge_primary,Automobiles,sir_score,19,0.5847953216374269,0.5620588235294118
+judge_primary,Automobiles,tabm_compact_e24_return_w0.3,19,0.5730994152046783,0.608055164649592
+judge_primary,Automobiles,tabm_compact_e48_return_w0.3,19,0.5380116959064327,0.5731119241955156
+judge_primary,Automobiles,tabm_embedded_e24_return_w1.0,19,0.5497076023391813,0.6079078712824842
+judge_primary,Automobiles,tabm_embedded_e48_return_w1.0,19,0.5087719298245614,0.6079078712824842
+judge_primary,Automobiles,tabm_embedded_e48_return_w0.1,19,0.543859649122807,0.5402711323763956
+judge_primary,Banks,current_champion,41,0.5963414634146341,0.5157129455909943
+judge_primary,Banks,sir_score,41,0.552439024390244,0.4589066082968522
+judge_primary,Banks,tabm_compact_e24_return_w0.3,41,0.5804878048780487,0.4421252866374817
+judge_primary,Banks,tabm_compact_e48_return_w0.3,41,0.5640243902439024,0.4421252866374817
+judge_primary,Banks,tabm_embedded_e24_return_w1.0,41,0.5817073170731707,0.3508442776735459
+judge_primary,Banks,tabm_embedded_e48_return_w1.0,41,0.5878048780487805,0.3508442776735459
+judge_primary,Banks,tabm_embedded_e48_return_w0.1,41,0.5957317073170731,0.5602981029810298
+judge_primary,Beverages,current_champion,28,0.5740740740740741,0.5643879433909419
+judge_primary,Beverages,sir_score,28,0.5052910052910053,0.5319550847286979
+judge_primary,Beverages,tabm_compact_e24_return_w0.3,28,0.5357142857142857,0.5643879433909419
+judge_primary,Beverages,tabm_compact_e48_return_w0.3,28,0.5582010582010581,0.5643879433909419
+judge_primary,Beverages,tabm_embedded_e24_return_w1.0,28,0.4814814814814815,0.4876003573304923
+judge_primary,Beverages,tabm_embedded_e48_return_w1.0,28,0.48412698412698413,0.4876003573304923
+judge_primary,Beverages,tabm_embedded_e48_return_w0.1,28,0.5740740740740741,0.5643879433909419
+judge_primary,Capital Markets,current_champion,67,0.4893713251922207,0.5384897292250234
+judge_primary,Capital Markets,sir_score,67,0.4943464495703302,0.6045269218798631
+judge_primary,Capital Markets,tabm_compact_e24_return_w0.3,67,0.48258706467661694,0.5494086523498288
+judge_primary,Capital Markets,tabm_compact_e48_return_w0.3,67,0.4893713251922207,0.5494086523498288
+judge_primary,Capital Markets,tabm_embedded_e24_return_w1.0,67,0.4690185436454093,0.45683395580454406
+judge_primary,Capital Markets,tabm_embedded_e48_return_w1.0,67,0.48213478064224335,0.5337605042016808
+judge_primary,Capital Markets,tabm_embedded_e48_return_w0.1,67,0.4893713251922207,0.5384897292250234
+judge_primary,Cement & Cement Products,current_champion,34,0.607843137254902,0.46819483348895113
+judge_primary,Cement & Cement Products,sir_score,34,0.5204991087344029,0.5766701680672269
+judge_primary,Cement & Cement Products,tabm_compact_e24_return_w0.3,34,0.6122994652406417,0.504347961406785
+judge_primary,Cement & Cement Products,tabm_compact_e48_return_w0.3,34,0.6212121212121212,0.504347961406785
+judge_primary,Cement & Cement Products,tabm_embedded_e24_return_w1.0,34,0.5828877005347594,0.5834726112667289
+judge_primary,Cement & Cement Products,tabm_embedded_e48_return_w1.0,34,0.6024955436720143,0.4937453314659197
+judge_primary,Cement & Cement Products,tabm_embedded_e48_return_w0.1,34,0.6105169340463459,0.46819483348895113
+judge_primary,Chemicals & Petrochemicals,current_champion,215,0.5893501412736362,0.6070562069131475
+judge_primary,Chemicals & Petrochemicals,sir_score,215,0.5763529667463595,0.5279474485921759
+judge_primary,Chemicals & Petrochemicals,tabm_compact_e24_return_w0.3,215,0.5655292327754836,0.5448077109476765
+judge_primary,Chemicals & Petrochemicals,tabm_compact_e48_return_w0.3,215,0.5684199087154966,0.6226360321089172
+judge_primary,Chemicals & Petrochemicals,tabm_embedded_e24_return_w1.0,215,0.5531188871984352,0.3987743891018898
+judge_primary,Chemicals & Petrochemicals,tabm_embedded_e48_return_w1.0,215,0.5595088024342534,0.5212749835389101
+judge_primary,Chemicals & Petrochemicals,tabm_embedded_e48_return_w0.1,215,0.5885677026733319,0.5811266433535147
+judge_primary,Cigarettes & Tobacco Products,current_champion,5,0.5,0.5866666666666668
+judge_primary,Cigarettes & Tobacco Products,sir_score,5,0.30000000000000004,0.545
+judge_primary,Cigarettes & Tobacco Products,tabm_compact_e24_return_w0.3,5,0.6,0.5866666666666668
+judge_primary,Cigarettes & Tobacco Products,tabm_compact_e48_return_w0.3,5,0.6,0.5866666666666668
+judge_primary,Cigarettes & Tobacco Products,tabm_embedded_e24_return_w1.0,5,0.5,0.5966666666666668
+judge_primary,Cigarettes & Tobacco Products,tabm_embedded_e48_return_w1.0,5,0.6,0.6350000000000001
+judge_primary,Cigarettes & Tobacco Products,tabm_embedded_e48_return_w0.1,5,0.5,0.5866666666666668
+judge_primary,Commercial Services & Supplies,current_champion,249,0.510785075787019,0.5299988179605849
+judge_primary,Commercial Services & Supplies,sir_score,249,0.5135056354450058,0.502658509963326
+judge_primary,Commercial Services & Supplies,tabm_compact_e24_return_w0.3,249,0.4948503692188107,0.5221997941753923
+judge_primary,Commercial Services & Supplies,tabm_compact_e48_return_w0.3,249,0.49859113874854255,0.5221997941753923
+judge_primary,Commercial Services & Supplies,tabm_embedded_e24_return_w1.0,249,0.45436585049876926,0.4760418005164094
+judge_primary,Commercial Services & Supplies,tabm_embedded_e48_return_w1.0,249,0.45967741935483875,0.4760418005164094
+judge_primary,Commercial Services & Supplies,tabm_embedded_e48_return_w0.1,249,0.5071576629097033,0.5020568090254033
+judge_primary,Construction,current_champion,124,0.5886441122475741,0.5765739623452871
+judge_primary,Construction,sir_score,124,0.5937581956464726,0.40973063601976434
+judge_primary,Construction,tabm_compact_e24_return_w0.3,124,0.5763834251245739,0.6247775399802004
+judge_primary,Construction,tabm_compact_e48_return_w0.3,124,0.5754655127196433,0.5416247325233182
+judge_primary,Construction,tabm_embedded_e24_return_w1.0,124,0.5512063991607657,0.5005438948210904
+judge_primary,Construction,tabm_embedded_e48_return_w1.0,124,0.5696957776029373,0.5913614139130455
+judge_primary,Construction,tabm_embedded_e48_return_w0.1,124,0.5904143718856543,0.5303679491375027
+judge_primary,Consumable Fuels,current_champion,5,0.7,0.6900000000000001
+judge_primary,Consumable Fuels,sir_score,5,0.6,0.66
+judge_primary,Consumable Fuels,tabm_compact_e24_return_w0.3,5,0.7,0.6900000000000001
+judge_primary,Consumable Fuels,tabm_compact_e48_return_w0.3,5,0.7,0.6900000000000001
+judge_primary,Consumable Fuels,tabm_embedded_e24_return_w1.0,5,0.5,0.5733333333333334
+judge_primary,Consumable Fuels,tabm_embedded_e48_return_w1.0,5,0.6,0.61
+judge_primary,Consumable Fuels,tabm_embedded_e48_return_w0.1,5,0.7,0.6900000000000001
+judge_primary,Consumer Durables,current_champion,220,0.6035699460356995,0.5664012669356673
+judge_primary,Consumer Durables,sir_score,220,0.565296803652968,0.4463590844011756
+judge_primary,Consumer Durables,tabm_compact_e24_return_w0.3,220,0.5898505603985056,0.5118195604167313
+judge_primary,Consumer Durables,tabm_compact_e48_return_w0.3,220,0.5908883354088833,0.5118195604167313
+judge_primary,Consumer Durables,tabm_embedded_e24_return_w1.0,220,0.547156496471565,0.4903721698466319
+judge_primary,Consumer Durables,tabm_embedded_e48_return_w1.0,220,0.549813200498132,0.4903721698466319
+judge_primary,Consumer Durables,tabm_embedded_e48_return_w0.1,220,0.6014736405147364,0.5782924826909319
+judge_primary,Diversified,current_champion,12,0.5606060606060606,0.4722804972804973
+judge_primary,Diversified,sir_score,12,0.5606060606060606,0.48504273504273504
+judge_primary,Diversified,tabm_compact_e24_return_w0.3,12,0.5303030303030303,0.6332167832167833
+judge_primary,Diversified,tabm_compact_e48_return_w0.3,12,0.5454545454545454,0.5061188811188811
+judge_primary,Diversified,tabm_embedded_e24_return_w1.0,12,0.5454545454545454,0.5800893550893551
+judge_primary,Diversified,tabm_embedded_e48_return_w1.0,12,0.5606060606060606,0.5800893550893551
+judge_primary,Diversified,tabm_embedded_e48_return_w0.1,12,0.5606060606060606,0.4722804972804973
+judge_primary,Diversified FMCG,current_champion,5,0.7,0.6866666666666666
+judge_primary,Diversified FMCG,sir_score,5,0.4,0.6366666666666667
+judge_primary,Diversified FMCG,tabm_compact_e24_return_w0.3,5,0.6,0.6866666666666666
+judge_primary,Diversified FMCG,tabm_compact_e48_return_w0.3,5,0.6,0.6866666666666666
+judge_primary,Diversified FMCG,tabm_embedded_e24_return_w1.0,5,0.30000000000000004,0.55
+judge_primary,Diversified FMCG,tabm_embedded_e48_return_w1.0,5,0.4,0.5766666666666668
+judge_primary,Diversified FMCG,tabm_embedded_e48_return_w0.1,5,0.7,0.6866666666666666
+judge_primary,Diversified Metals,current_champion,5,0.4,0.5700000000000001
+judge_primary,Diversified Metals,sir_score,5,0.4,0.605
+judge_primary,Diversified Metals,tabm_compact_e24_return_w0.3,5,0.5,0.6283333333333334
+judge_primary,Diversified Metals,tabm_compact_e48_return_w0.3,5,0.5,0.6283333333333334
+judge_primary,Diversified Metals,tabm_embedded_e24_return_w1.0,5,0.6,0.5950000000000001
+judge_primary,Diversified Metals,tabm_embedded_e48_return_w1.0,5,0.6,0.5950000000000001
+judge_primary,Diversified Metals,tabm_embedded_e48_return_w0.1,5,0.4,0.5700000000000001
+judge_primary,Electrical Equipment,current_champion,97,0.5124570446735395,0.3958089700272744
+judge_primary,Electrical Equipment,sir_score,97,0.5070876288659794,0.4587860408971376
+judge_primary,Electrical Equipment,tabm_compact_e24_return_w0.3,97,0.5085910652920962,0.4040739487420846
+judge_primary,Electrical Equipment,tabm_compact_e48_return_w0.3,97,0.5069802405498282,0.3958089700272744
+judge_primary,Electrical Equipment,tabm_embedded_e24_return_w1.0,97,0.49398625429553267,0.5025982580973506
+judge_primary,Electrical Equipment,tabm_embedded_e48_return_w1.0,97,0.5064432989690721,0.4585313047077371
+judge_primary,Electrical Equipment,tabm_embedded_e48_return_w0.1,97,0.5119201030927835,0.3958089700272744
+judge_primary,Entertainment,current_champion,57,0.6090225563909775,0.668568274372082
+judge_primary,Entertainment,sir_score,57,0.5758145363408521,0.5872531024595314
+judge_primary,Entertainment,tabm_compact_e24_return_w0.3,57,0.5899122807017544,0.668568274372082
+judge_primary,Entertainment,tabm_compact_e48_return_w0.3,57,0.5980576441102757,0.668568274372082
+judge_primary,Entertainment,tabm_embedded_e24_return_w1.0,57,0.4536340852130326,0.4767310133889923
+judge_primary,Entertainment,tabm_embedded_e48_return_w1.0,57,0.4699248120300752,0.6284099925584653
+judge_primary,Entertainment,tabm_embedded_e48_return_w0.1,57,0.5980576441102757,0.6191602057363433
+judge_primary,Ferrous Metals,current_champion,27,0.6153846153846154,0.5516853361692072
+judge_primary,Ferrous Metals,sir_score,27,0.5270655270655271,0.5163383354996258
+judge_primary,Ferrous Metals,tabm_compact_e24_return_w0.3,27,0.586894586894587,0.5516853361692072
+judge_primary,Ferrous Metals,tabm_compact_e48_return_w0.3,27,0.6068376068376069,0.5766443735475995
+judge_primary,Ferrous Metals,tabm_embedded_e24_return_w1.0,27,0.5498575498575499,0.5792639331994172
+judge_primary,Ferrous Metals,tabm_embedded_e48_return_w1.0,27,0.5641025641025641,0.5792639331994172
+judge_primary,Ferrous Metals,tabm_embedded_e48_return_w0.1,27,0.6239316239316239,0.5516853361692072
+judge_primary,Fertilizers & Agrochemicals,current_champion,54,0.612858141160028,0.5480868135297996
+judge_primary,Fertilizers & Agrochemicals,sir_score,54,0.5604472396925227,0.606323928302326
+judge_primary,Fertilizers & Agrochemicals,tabm_compact_e24_return_w0.3,54,0.5922431865828092,0.551301869369958
+judge_primary,Fertilizers & Agrochemicals,tabm_compact_e48_return_w0.3,54,0.5904961565338924,0.551301869369958
+judge_primary,Fertilizers & Agrochemicals,tabm_embedded_e24_return_w1.0,54,0.5276030747728861,0.5086309499147892
+judge_primary,Fertilizers & Agrochemicals,tabm_embedded_e48_return_w1.0,54,0.5317959468902865,0.5086309499147892
+judge_primary,Fertilizers & Agrochemicals,tabm_embedded_e48_return_w0.1,54,0.6072676450034941,0.5292990094603439
+judge_primary,Finance,current_champion,419,0.5478297609939363,0.5701560767098995
+judge_primary,Finance,sir_score,419,0.5708967580591748,0.6480740444450084
+judge_primary,Finance,tabm_compact_e24_return_w0.3,419,0.5301412568087609,0.4760728227548514
+judge_primary,Finance,tabm_compact_e48_return_w0.3,419,0.5337897249089311,0.4760728227548514
+judge_primary,Finance,tabm_embedded_e24_return_w1.0,419,0.49506686003357275,0.3559368128150302
+judge_primary,Finance,tabm_embedded_e48_return_w1.0,419,0.5006509004122369,0.4332074947678082
+judge_primary,Finance,tabm_embedded_e48_return_w0.1,419,0.5458370921880531,0.5643621201556879
+judge_primary,Financial Technology (Fintech),current_champion,11,0.6909090909090909,0.6430134680134681
+judge_primary,Financial Technology (Fintech),sir_score,11,0.6181818181818182,0.6333333333333334
+judge_primary,Financial Technology (Fintech),tabm_compact_e24_return_w0.3,11,0.7090909090909091,0.7029461279461279
+judge_primary,Financial Technology (Fintech),tabm_compact_e48_return_w0.3,11,0.7272727272727273,0.7029461279461279
+judge_primary,Financial Technology (Fintech),tabm_embedded_e24_return_w1.0,11,0.509090909090909,0.6430134680134681
+judge_primary,Financial Technology (Fintech),tabm_embedded_e48_return_w1.0,11,0.4181818181818182,0.5797138047138047
+judge_primary,Financial Technology (Fintech),tabm_embedded_e48_return_w0.1,11,0.6909090909090909,0.6430134680134681
+judge_primary,Food Products,current_champion,100,0.522020202020202,0.5683255648115482
+judge_primary,Food Products,sir_score,100,0.5058585858585859,0.5346594098128887
+judge_primary,Food Products,tabm_compact_e24_return_w0.3,100,0.5054545454545455,0.49622422011901596
+judge_primary,Food Products,tabm_compact_e48_return_w0.3,100,0.5062626262626263,0.49622422011901596
+judge_primary,Food Products,tabm_embedded_e24_return_w1.0,100,0.4623232323232323,0.5961989796039519
+judge_primary,Food Products,tabm_embedded_e48_return_w1.0,100,0.472020202020202,0.5961989796039519
+judge_primary,Food Products,tabm_embedded_e48_return_w0.1,100,0.5196969696969697,0.5099306817220911
+judge_primary,Gas,current_champion,9,0.4722222222222222,0.5611111111111112
+judge_primary,Gas,sir_score,9,0.2222222222222222,0.5185185185185185
+judge_primary,Gas,tabm_compact_e24_return_w0.3,9,0.4722222222222222,0.5611111111111112
+judge_primary,Gas,tabm_compact_e48_return_w0.3,9,0.4444444444444444,0.5611111111111112
+judge_primary,Gas,tabm_embedded_e24_return_w1.0,9,0.5833333333333334,0.5611111111111112
+judge_primary,Gas,tabm_embedded_e48_return_w1.0,9,0.6111111111111112,0.5611111111111112
+judge_primary,Gas,tabm_embedded_e48_return_w0.1,9,0.4722222222222222,0.5611111111111112
+judge_primary,Healthcare Equipment & Supplies,current_champion,16,0.3416666666666667,0.5170352564102565
+judge_primary,Healthcare Equipment & Supplies,sir_score,16,0.4583333333333333,0.5702991452991454
+judge_primary,Healthcare Equipment & Supplies,tabm_compact_e24_return_w0.3,16,0.3458333333333333,0.44490918803418805
+judge_primary,Healthcare Equipment & Supplies,tabm_compact_e48_return_w0.3,16,0.3208333333333333,0.44490918803418805
+judge_primary,Healthcare Equipment & Supplies,tabm_embedded_e24_return_w1.0,16,0.43333333333333335,0.5763194444444445
+judge_primary,Healthcare Equipment & Supplies,tabm_embedded_e48_return_w1.0,16,0.475,0.5799839743589744
+judge_primary,Healthcare Equipment & Supplies,tabm_embedded_e48_return_w0.1,16,0.3333333333333333,0.5170352564102565
+judge_primary,Healthcare Services,current_champion,68,0.5452151009657594,0.5213042953313259
+judge_primary,Healthcare Services,sir_score,68,0.5228270412642669,0.3963444150092002
+judge_primary,Healthcare Services,tabm_compact_e24_return_w0.3,68,0.5342405618964003,0.5213945818661844
+judge_primary,Healthcare Services,tabm_compact_e48_return_w0.3,68,0.5351185250219491,0.5213945818661844
+judge_primary,Healthcare Services,tabm_embedded_e24_return_w1.0,68,0.6284021071115014,0.5231457772938503
+judge_primary,Healthcare Services,tabm_embedded_e48_return_w1.0,68,0.6367427568042142,0.46538405612574407
+judge_primary,Healthcare Services,tabm_embedded_e48_return_w0.1,68,0.5553116769095698,0.5213042953313259
+judge_primary,Household Products,current_champion,17,0.625,0.5652633232780292
+judge_primary,Household Products,sir_score,17,0.6176470588235294,0.6356548516842634
+judge_primary,Household Products,tabm_compact_e24_return_w0.3,17,0.6176470588235294,0.5652633232780292
+judge_primary,Household Products,tabm_compact_e48_return_w0.3,17,0.6213235294117647,0.5652633232780292
+judge_primary,Household Products,tabm_embedded_e24_return_w1.0,17,0.4338235294117647,0.46748114630467574
+judge_primary,Household Products,tabm_embedded_e48_return_w1.0,17,0.5147058823529411,0.5433289341377577
+judge_primary,Household Products,tabm_embedded_e48_return_w0.1,17,0.625,0.5652633232780292
+judge_primary,IT - Hardware,current_champion,19,0.5614035087719298,0.6599011826953004
+judge_primary,IT - Hardware,sir_score,19,0.543859649122807,0.6127237005913476
+judge_primary,IT - Hardware,tabm_compact_e24_return_w0.3,19,0.5614035087719298,0.5554306722689075
+judge_primary,IT - Hardware,tabm_compact_e48_return_w0.3,19,0.5497076023391813,0.5554306722689076
+judge_primary,IT - Hardware,tabm_embedded_e24_return_w1.0,19,0.4970760233918129,0.5412974634298163
+judge_primary,IT - Hardware,tabm_embedded_e48_return_w1.0,19,0.4678362573099415,0.5494483348895113
+judge_primary,IT - Hardware,tabm_embedded_e48_return_w0.1,19,0.5497076023391813,0.6599011826953004
+judge_primary,IT - Services,current_champion,82,0.6347485697079193,0.5683836553368796
+judge_primary,IT - Services,sir_score,82,0.5832580548027703,0.5588580939299282
+judge_primary,IT - Services,tabm_compact_e24_return_w0.3,82,0.6419753086419753,0.5715021045579014
+judge_primary,IT - Services,tabm_compact_e48_return_w0.3,82,0.6341463414634146,0.5715021045579014
+judge_primary,IT - Services,tabm_embedded_e24_return_w1.0,82,0.6878952122854562,0.6528513462629734
+judge_primary,IT - Services,tabm_embedded_e48_return_w1.0,82,0.6767539897621199,0.6350806661752201
+judge_primary,IT - Services,tabm_embedded_e48_return_w0.1,82,0.6377597109304426,0.5683836553368796
+judge_primary,IT - Software,current_champion,125,0.5743225806451613,0.5587403430751151
+judge_primary,IT - Software,sir_score,125,0.49483870967741933,0.4602144764256093
+judge_primary,IT - Software,tabm_compact_e24_return_w0.3,125,0.5683225806451613,0.5374316777080033
+judge_primary,IT - Software,tabm_compact_e48_return_w0.3,125,0.5718709677419355,0.5374316777080033
+judge_primary,IT - Software,tabm_embedded_e24_return_w1.0,125,0.5152903225806451,0.6015883706334116
+judge_primary,IT - Software,tabm_embedded_e48_return_w1.0,125,0.5236774193548387,0.6015883706334116
+judge_primary,IT - Software,tabm_embedded_e48_return_w0.1,125,0.5706451612903226,0.5650521122725679
+judge_primary,Industrial Manufacturing,current_champion,147,0.5123474047153108,0.5868042508040024
+judge_primary,Industrial Manufacturing,sir_score,147,0.5358307706644302,0.4292891358029967
+judge_primary,Industrial Manufacturing,tabm_compact_e24_return_w0.3,147,0.5021433230826577,0.6429661322806525
+judge_primary,Industrial Manufacturing,tabm_compact_e48_return_w0.3,147,0.5020501351225422,0.6429661322806525
+judge_primary,Industrial Manufacturing,tabm_embedded_e24_return_w1.0,147,0.501444413381791,0.5050648980171175
+judge_primary,Industrial Manufacturing,tabm_embedded_e48_return_w1.0,147,0.5239958997297549,0.5177052492100553
+judge_primary,Industrial Manufacturing,tabm_embedded_e48_return_w0.1,147,0.5136054421768708,0.5582509938338434
+judge_primary,Industrial Products,current_champion,348,0.5757229454437047,0.5932674911941065
+judge_primary,Industrial Products,sir_score,348,0.557520951339892,0.42900492871740653
+judge_primary,Industrial Products,tabm_compact_e24_return_w0.3,348,0.5645682202126603,0.5754438525748514
+judge_primary,Industrial Products,tabm_compact_e48_return_w0.3,348,0.5662824207492796,0.5754438525748514
+judge_primary,Industrial Products,tabm_embedded_e24_return_w1.0,348,0.5213819603166716,0.46491443333903293
+judge_primary,Industrial Products,tabm_embedded_e48_return_w1.0,348,0.5200900990426977,0.5646577674284061
+judge_primary,Industrial Products,tabm_embedded_e48_return_w0.1,348,0.5728411010633012,0.5677526737540419
+judge_primary,Insurance,current_champion,13,0.3653846153846154,0.358974358974359
+judge_primary,Insurance,sir_score,13,0.3653846153846154,0.358974358974359
+judge_primary,Insurance,tabm_compact_e24_return_w0.3,13,0.3653846153846154,0.36217948717948717
+judge_primary,Insurance,tabm_compact_e48_return_w0.3,13,0.3782051282051282,0.36217948717948717
+judge_primary,Insurance,tabm_embedded_e24_return_w1.0,13,0.4423076923076923,0.46153846153846145
+judge_primary,Insurance,tabm_embedded_e48_return_w1.0,13,0.4294871794871795,0.4615384615384615
+judge_primary,Insurance,tabm_embedded_e48_return_w0.1,13,0.3653846153846154,0.358974358974359
+judge_primary,Leisure Services,current_champion,94,0.5458705101807366,0.5576837642033778
+judge_primary,Leisure Services,sir_score,94,0.45939144360558226,0.5162740068137505
+judge_primary,Leisure Services,tabm_compact_e24_return_w0.3,94,0.5478151452756806,0.48132849843036213
+judge_primary,Leisure Services,tabm_compact_e48_return_w0.3,94,0.5462136810798445,0.5576837642033777
+judge_primary,Leisure Services,tabm_embedded_e24_return_w1.0,94,0.5010295126973233,0.4920952104995571
+judge_primary,Leisure Services,tabm_embedded_e48_return_w1.0,94,0.4914207275223061,0.6016101941802734
+judge_primary,Leisure Services,tabm_embedded_e48_return_w0.1,94,0.5420956302905514,0.5702649308725506
+judge_primary,Media,current_champion,23,0.525691699604743,0.5447958532695375
+judge_primary,Media,sir_score,23,0.4308300395256917,0.5164819245082403
+judge_primary,Media,tabm_compact_e24_return_w0.3,23,0.5158102766798419,0.5844335459861776
+judge_primary,Media,tabm_compact_e48_return_w0.3,23,0.5138339920948617,0.5447958532695375
+judge_primary,Media,tabm_embedded_e24_return_w1.0,23,0.3794466403162055,0.49012519936204146
+judge_primary,Media,tabm_embedded_e48_return_w1.0,23,0.41106719367588934,0.49012519936204146
+judge_primary,Media,tabm_embedded_e48_return_w0.1,23,0.5177865612648221,0.5889736842105263
+judge_primary,Metals & Minerals Trading,current_champion,14,0.5054945054945055,0.5451465201465202
+judge_primary,Metals & Minerals Trading,sir_score,14,0.5274725274725275,0.5996825396825397
+judge_primary,Metals & Minerals Trading,tabm_compact_e24_return_w0.3,14,0.4835164835164835,0.5451465201465202
+judge_primary,Metals & Minerals Trading,tabm_compact_e48_return_w0.3,14,0.5,0.5451465201465202
+judge_primary,Metals & Minerals Trading,tabm_embedded_e24_return_w1.0,14,0.3956043956043956,0.4888705738705739
+judge_primary,Metals & Minerals Trading,tabm_embedded_e48_return_w1.0,14,0.37362637362637363,0.5720512820512821
+judge_primary,Metals & Minerals Trading,tabm_embedded_e48_return_w0.1,14,0.5054945054945055,0.5451465201465202
+judge_primary,Minerals & Mining,current_champion,14,0.7142857142857143,0.6082850482850483
+judge_primary,Minerals & Mining,sir_score,14,0.6703296703296704,0.5970596070596071
+judge_primary,Minerals & Mining,tabm_compact_e24_return_w0.3,14,0.7142857142857143,0.5971228771228771
+judge_primary,Minerals & Mining,tabm_compact_e48_return_w0.3,14,0.7252747252747253,0.5971228771228771
+judge_primary,Minerals & Mining,tabm_embedded_e24_return_w1.0,14,0.5934065934065934,0.5149433899433901
+judge_primary,Minerals & Mining,tabm_embedded_e48_return_w1.0,14,0.5494505494505495,0.5012887112887113
+judge_primary,Minerals & Mining,tabm_embedded_e48_return_w0.1,14,0.7252747252747253,0.6082850482850483
+judge_primary,Non - Ferrous Metals,current_champion,25,0.62,0.5491506030201683
+judge_primary,Non - Ferrous Metals,sir_score,25,0.6066666666666667,0.48086946386946394
+judge_primary,Non - Ferrous Metals,tabm_compact_e24_return_w0.3,25,0.5766666666666667,0.5491506030201683
+judge_primary,Non - Ferrous Metals,tabm_compact_e48_return_w0.3,25,0.59,0.5070059795277188
+judge_primary,Non - Ferrous Metals,tabm_embedded_e24_return_w1.0,25,0.46,0.48516671734063044
+judge_primary,Non - Ferrous Metals,tabm_embedded_e48_return_w1.0,25,0.45333333333333337,0.48516671734063044
+judge_primary,Non - Ferrous Metals,tabm_embedded_e48_return_w0.1,25,0.6133333333333333,0.5491506030201683
+judge_primary,Oil,current_champion,19,0.6900584795321637,0.6201525054466231
+judge_primary,Oil,sir_score,19,0.5263157894736842,0.4941476034858388
+judge_primary,Oil,tabm_compact_e24_return_w0.3,19,0.7660818713450293,0.6201525054466231
+judge_primary,Oil,tabm_compact_e48_return_w0.3,19,0.7543859649122807,0.6201525054466231
+judge_primary,Oil,tabm_embedded_e24_return_w1.0,19,0.4678362573099415,0.43123638344226584
+judge_primary,Oil,tabm_embedded_e48_return_w1.0,19,0.5730994152046783,0.48600490196078433
+judge_primary,Oil,tabm_embedded_e48_return_w0.1,19,0.6929824561403508,0.6201525054466231
+judge_primary,Other Construction Materials,current_champion,16,0.5833333333333334,0.5652826510721247
+judge_primary,Other Construction Materials,sir_score,16,0.5083333333333333,0.4336793372319688
+judge_primary,Other Construction Materials,tabm_compact_e24_return_w0.3,16,0.6,0.5652826510721248
+judge_primary,Other Construction Materials,tabm_compact_e48_return_w0.3,16,0.6,0.5652826510721248
+judge_primary,Other Construction Materials,tabm_embedded_e24_return_w1.0,16,0.575,0.5590570175438597
+judge_primary,Other Construction Materials,tabm_embedded_e48_return_w1.0,16,0.5583333333333333,0.49228557504873294
+judge_primary,Other Construction Materials,tabm_embedded_e48_return_w0.1,16,0.575,0.5652826510721247
+judge_primary,Other Consumer Services,current_champion,30,0.49195402298850577,0.5510895636312766
+judge_primary,Other Consumer Services,sir_score,30,0.5448275862068965,0.5450342668084605
+judge_primary,Other Consumer Services,tabm_compact_e24_return_w0.3,30,0.4517241379310345,0.5510895636312766
+judge_primary,Other Consumer Services,tabm_compact_e48_return_w0.3,30,0.47586206896551725,0.5609575012800819
+judge_primary,Other Consumer Services,tabm_embedded_e24_return_w1.0,30,0.4528735632183908,0.570637901833675
+judge_primary,Other Consumer Services,tabm_embedded_e48_return_w1.0,30,0.45057471264367815,0.4587664967587104
+judge_primary,Other Consumer Services,tabm_embedded_e48_return_w0.1,30,0.4896551724137931,0.5510895636312766
+judge_primary,Other Utilities,current_champion,17,0.5147058823529411,0.5205514705882353
+judge_primary,Other Utilities,sir_score,17,0.6029411764705882,0.5943668300653595
+judge_primary,Other Utilities,tabm_compact_e24_return_w0.3,17,0.4852941176470588,0.49106209150326796
+judge_primary,Other Utilities,tabm_compact_e48_return_w0.3,17,0.49264705882352944,0.49106209150326796
+judge_primary,Other Utilities,tabm_embedded_e24_return_w1.0,17,0.5588235294117647,0.6202532679738563
+judge_primary,Other Utilities,tabm_embedded_e48_return_w1.0,17,0.5735294117647058,0.6202532679738563
+judge_primary,Other Utilities,tabm_embedded_e48_return_w0.1,17,0.5220588235294118,0.5205514705882353
+judge_primary,"Paper, Forest & Jute Products",current_champion,43,0.5880398671096345,0.584942013853901
+judge_primary,"Paper, Forest & Jute Products",sir_score,43,0.5503875968992248,0.5684291349208094
+judge_primary,"Paper, Forest & Jute Products",tabm_compact_e24_return_w0.3,43,0.5802879291251384,0.5337610335505804
+judge_primary,"Paper, Forest & Jute Products",tabm_compact_e48_return_w0.3,43,0.5741971207087486,0.5337610335505804
+judge_primary,"Paper, Forest & Jute Products",tabm_embedded_e24_return_w1.0,43,0.4983388704318937,0.43581775177751125
+judge_primary,"Paper, Forest & Jute Products",tabm_embedded_e48_return_w1.0,43,0.5182724252491694,0.48335630580542704
+judge_primary,"Paper, Forest & Jute Products",tabm_embedded_e48_return_w0.1,43,0.5891472868217054,0.5926330535396216
+judge_primary,Personal Products,current_champion,15,0.5142857142857142,0.570218253968254
+judge_primary,Personal Products,sir_score,15,0.4095238095238095,0.518015873015873
+judge_primary,Personal Products,tabm_compact_e24_return_w0.3,15,0.5333333333333333,0.570218253968254
+judge_primary,Personal Products,tabm_compact_e48_return_w0.3,15,0.5333333333333333,0.570218253968254
+judge_primary,Personal Products,tabm_embedded_e24_return_w1.0,15,0.38095238095238093,0.46424603174603174
+judge_primary,Personal Products,tabm_embedded_e48_return_w1.0,15,0.4380952380952381,0.48582341269841267
+judge_primary,Personal Products,tabm_embedded_e48_return_w0.1,15,0.5047619047619047,0.570218253968254
+judge_primary,Petroleum Products,current_champion,18,0.6797385620915033,0.6125480162825364
+judge_primary,Petroleum Products,sir_score,18,0.5555555555555556,0.5605148492145396
+judge_primary,Petroleum Products,tabm_compact_e24_return_w0.3,18,0.7222222222222222,0.656125300997592
+judge_primary,Petroleum Products,tabm_compact_e48_return_w0.3,18,0.7091503267973857,0.5696744926040592
+judge_primary,Petroleum Products,tabm_embedded_e24_return_w1.0,18,0.6535947712418301,0.522217922256622
+judge_primary,Petroleum Products,tabm_embedded_e48_return_w1.0,18,0.607843137254902,0.5752185815846808
+judge_primary,Petroleum Products,tabm_embedded_e48_return_w0.1,18,0.6797385620915033,0.6125480162825364
+judge_primary,Pharmaceuticals & Biotechnology,current_champion,190,0.5901977165135059,0.5623868558723489
+judge_primary,Pharmaceuticals & Biotechnology,sir_score,190,0.5441381230854915,0.5015215622186099
+judge_primary,Pharmaceuticals & Biotechnology,tabm_compact_e24_return_w0.3,190,0.5979392926761348,0.5503149617621115
+judge_primary,Pharmaceuticals & Biotechnology,tabm_compact_e48_return_w0.3,190,0.5996379838485102,0.5673002570920442
+judge_primary,Pharmaceuticals & Biotechnology,tabm_embedded_e24_return_w1.0,190,0.5976329713171818,0.5031258424226972
+judge_primary,Pharmaceuticals & Biotechnology,tabm_embedded_e48_return_w1.0,190,0.5878028404344193,0.5031258424226972
+judge_primary,Pharmaceuticals & Biotechnology,tabm_embedded_e48_return_w0.1,190,0.5915343915343916,0.5623868558723489
+judge_primary,Power,current_champion,42,0.5586527293844367,0.5592607770207257
+judge_primary,Power,sir_score,42,0.5423925667828107,0.5391109940789017
+judge_primary,Power,tabm_compact_e24_return_w0.3,42,0.5168408826945412,0.5964781168054595
+judge_primary,Power,tabm_compact_e48_return_w0.3,42,0.5249709639953543,0.5964781168054595
+judge_primary,Power,tabm_embedded_e24_return_w1.0,42,0.5598141695702671,0.5551966781138796
+judge_primary,Power,tabm_embedded_e48_return_w1.0,42,0.5412311265969802,0.5551966781138796
+judge_primary,Power,tabm_embedded_e48_return_w0.1,42,0.5551684088269454,0.5592607770207257
+judge_primary,Realty,current_champion,142,0.5758665467985216,0.5942660984425436
+judge_primary,Realty,sir_score,142,0.5583857756467885,0.6747114529071302
+judge_primary,Realty,tabm_compact_e24_return_w0.3,142,0.5693736889421637,0.5977796160070102
+judge_primary,Realty,tabm_compact_e48_return_w0.3,142,0.5660773149535511,0.5977796160070102
+judge_primary,Realty,tabm_embedded_e24_return_w1.0,142,0.5342123663969633,0.4712025513956668
+judge_primary,Realty,tabm_embedded_e48_return_w1.0,142,0.5221256617720508,0.506104552103578
+judge_primary,Realty,tabm_embedded_e48_return_w0.1,142,0.5727200079912097,0.5942660984425436
+judge_primary,Retailing,current_champion,60,0.5305084745762711,0.5238026659240105
+judge_primary,Retailing,sir_score,60,0.5135593220338983,0.44866812409124907
+judge_primary,Retailing,tabm_compact_e24_return_w0.3,60,0.5290960451977401,0.45255459041733775
+judge_primary,Retailing,tabm_compact_e48_return_w0.3,60,0.5262711864406779,0.45255459041733775
+judge_primary,Retailing,tabm_embedded_e24_return_w1.0,60,0.47231638418079097,0.5602699048425622
+judge_primary,Retailing,tabm_embedded_e48_return_w1.0,60,0.4940677966101695,0.535943888814956
+judge_primary,Retailing,tabm_embedded_e48_return_w0.1,60,0.5276836158192091,0.5238026659240105
+judge_primary,Telecom -  Equipment & Accessories,current_champion,11,0.7272727272727273,0.736384078884079
+judge_primary,Telecom -  Equipment & Accessories,sir_score,11,0.6363636363636364,0.5966281866281867
+judge_primary,Telecom -  Equipment & Accessories,tabm_compact_e24_return_w0.3,11,0.7272727272727273,0.6990632515632517
+judge_primary,Telecom -  Equipment & Accessories,tabm_compact_e48_return_w0.3,11,0.6909090909090909,0.6329954304954305
+judge_primary,Telecom -  Equipment & Accessories,tabm_embedded_e24_return_w1.0,11,0.6363636363636364,0.5776899951899952
+judge_primary,Telecom -  Equipment & Accessories,tabm_embedded_e48_return_w1.0,11,0.6181818181818182,0.5776899951899952
+judge_primary,Telecom -  Equipment & Accessories,tabm_embedded_e48_return_w0.1,11,0.7181818181818181,0.736384078884079
+judge_primary,Telecom - Services,current_champion,19,0.5906432748538012,0.6749030381383324
+judge_primary,Telecom - Services,sir_score,19,0.5029239766081871,0.3875615887380593
+judge_primary,Telecom - Services,tabm_compact_e24_return_w0.3,19,0.5497076023391813,0.5579192702722114
+judge_primary,Telecom - Services,tabm_compact_e48_return_w0.3,19,0.5497076023391813,0.5579192702722114
+judge_primary,Telecom - Services,tabm_embedded_e24_return_w1.0,19,0.47953216374269003,0.5656744236156
+judge_primary,Telecom - Services,tabm_embedded_e48_return_w1.0,19,0.4678362573099415,0.462353659412483
+judge_primary,Telecom - Services,tabm_embedded_e48_return_w0.1,19,0.5906432748538012,0.6749030381383324
+judge_primary,Textiles & Apparels,current_champion,241,0.5556016597510374,0.5325227595992333
+judge_primary,Textiles & Apparels,sir_score,241,0.576625172890733,0.42408384989098363
+judge_primary,Textiles & Apparels,tabm_compact_e24_return_w0.3,241,0.5367047026279391,0.5463653774865397
+judge_primary,Textiles & Apparels,tabm_compact_e48_return_w0.3,241,0.5395055325034578,0.5463653774865397
+judge_primary,Textiles & Apparels,tabm_embedded_e24_return_w1.0,241,0.5117392807745504,0.5537343702999289
+judge_primary,Textiles & Apparels,tabm_embedded_e48_return_w1.0,241,0.5249827109266944,0.52223163541022
+judge_primary,Textiles & Apparels,tabm_embedded_e48_return_w0.1,241,0.5546161825726141,0.5325227595992333
+judge_primary,Transport Infrastructure,current_champion,14,0.5824175824175825,0.5949361749361749
+judge_primary,Transport Infrastructure,sir_score,14,0.5934065934065934,0.5414563214563215
+judge_primary,Transport Infrastructure,tabm_compact_e24_return_w0.3,14,0.554945054945055,0.6032034632034632
+judge_primary,Transport Infrastructure,tabm_compact_e48_return_w0.3,14,0.5879120879120879,0.6032034632034632
+judge_primary,Transport Infrastructure,tabm_embedded_e24_return_w1.0,14,0.5934065934065934,0.6032034632034632
+judge_primary,Transport Infrastructure,tabm_embedded_e48_return_w1.0,14,0.5384615384615384,0.6060326710326711
+judge_primary,Transport Infrastructure,tabm_embedded_e48_return_w0.1,14,0.5824175824175825,0.5949361749361749
+judge_primary,Transport Services,current_champion,70,0.5966873706004141,0.6039861043657863
+judge_primary,Transport Services,sir_score,70,0.6115942028985507,0.6239429707701013
+judge_primary,Transport Services,tabm_compact_e24_return_w0.3,70,0.5631469979296067,0.6140962324357662
+judge_primary,Transport Services,tabm_compact_e48_return_w0.3,70,0.5625258799171843,0.5639698793896649
+judge_primary,Transport Services,tabm_embedded_e24_return_w1.0,70,0.530848861283644,0.6246957129278078
+judge_primary,Transport Services,tabm_embedded_e48_return_w1.0,70,0.5494824016563147,0.6463285323154224
+judge_primary,Transport Services,tabm_embedded_e48_return_w0.1,70,0.5925465838509316,0.6039861043657863
+judge_variant_quality,Aerospace & Defense,current_champion,30,0.6229885057471264,0.6322892720306514
+judge_variant_quality,Aerospace & Defense,sir_score,30,0.3816091954022989,0.34589080459770116
+judge_variant_quality,Aerospace & Defense,tabm_compact_e24_return_w0.3,30,0.6183908045977011,0.6623084291187741
+judge_variant_quality,Aerospace & Defense,tabm_compact_e48_return_w0.3,30,0.6344827586206896,0.6623084291187741
+judge_variant_quality,Aerospace & Defense,tabm_embedded_e24_return_w1.0,30,0.5379310344827586,0.5781233421750664
+judge_variant_quality,Aerospace & Defense,tabm_embedded_e48_return_w1.0,30,0.5241379310344828,0.6923695844385501
+judge_variant_quality,Aerospace & Defense,tabm_embedded_e48_return_w0.1,30,0.6137931034482759,0.6322892720306513
+judge_variant_quality,Agricultural Food & other Products,current_champion,144,0.557012432012432,0.6831962737405811
+judge_variant_quality,Agricultural Food & other Products,sir_score,144,0.5682789432789432,0.523984168746573
+judge_variant_quality,Agricultural Food & other Products,tabm_compact_e24_return_w0.3,144,0.5396270396270396,0.5533833734211618
+judge_variant_quality,Agricultural Food & other Products,tabm_compact_e48_return_w0.3,144,0.5452117327117327,0.631328965881178
+judge_variant_quality,Agricultural Food & other Products,tabm_embedded_e24_return_w1.0,144,0.47513597513597516,0.4448770626578045
+judge_variant_quality,Agricultural Food & other Products,tabm_embedded_e48_return_w1.0,144,0.47095959595959597,0.387358552901018
+judge_variant_quality,Agricultural Food & other Products,tabm_embedded_e48_return_w0.1,144,0.5503593628593628,0.6831962737405811
+judge_variant_quality,"Agricultural, Commercial & Construction Vehicles",current_champion,14,0.5054945054945055,0.5497863247863249
+judge_variant_quality,"Agricultural, Commercial & Construction Vehicles",sir_score,14,0.45054945054945056,0.4581990231990232
+judge_variant_quality,"Agricultural, Commercial & Construction Vehicles",tabm_compact_e24_return_w0.3,14,0.521978021978022,0.5497863247863249
+judge_variant_quality,"Agricultural, Commercial & Construction Vehicles",tabm_compact_e48_return_w0.3,14,0.5494505494505495,0.5497863247863249
+judge_variant_quality,"Agricultural, Commercial & Construction Vehicles",tabm_embedded_e24_return_w1.0,14,0.5604395604395604,0.6593040293040294
+judge_variant_quality,"Agricultural, Commercial & Construction Vehicles",tabm_embedded_e48_return_w1.0,14,0.5604395604395604,0.6593040293040294
+judge_variant_quality,"Agricultural, Commercial & Construction Vehicles",tabm_embedded_e48_return_w0.1,14,0.510989010989011,0.5497863247863249
+judge_variant_quality,Auto Components,current_champion,149,0.6109196444766914,0.5666644844368666
+judge_variant_quality,Auto Components,sir_score,149,0.6037547614728822,0.3371249454734859
+judge_variant_quality,Auto Components,tabm_compact_e24_return_w0.3,149,0.586568111735897,0.5289506664742935
+judge_variant_quality,Auto Components,tabm_compact_e48_return_w0.3,149,0.5871576274260838,0.5289506664742933
+judge_variant_quality,Auto Components,tabm_embedded_e24_return_w1.0,149,0.526573553419191,0.47019759624226615
+judge_variant_quality,Auto Components,tabm_embedded_e48_return_w1.0,149,0.542535824415019,0.583842364421485
+judge_variant_quality,Auto Components,tabm_embedded_e48_return_w0.1,149,0.6074732450571376,0.537417650601284
+judge_variant_quality,Automobiles,current_champion,19,0.5497076023391813,0.5391048644338118
+judge_variant_quality,Automobiles,sir_score,19,0.5614035087719298,0.5556417112299464
+judge_variant_quality,Automobiles,tabm_compact_e24_return_w0.3,19,0.5730994152046783,0.6119549207242706
+judge_variant_quality,Automobiles,tabm_compact_e48_return_w0.3,19,0.5380116959064327,0.5831761891359415
+judge_variant_quality,Automobiles,tabm_embedded_e24_return_w1.0,19,0.5614035087719298,0.5980387465991183
+judge_variant_quality,Automobiles,tabm_embedded_e48_return_w1.0,19,0.52046783625731,0.5980387465991183
+judge_variant_quality,Automobiles,tabm_embedded_e48_return_w0.1,19,0.543859649122807,0.5391048644338118
+judge_variant_quality,Banks,current_champion,41,0.6371951219512195,0.5716489472587035
+judge_variant_quality,Banks,sir_score,41,0.5810975609756097,0.4858244736293517
+judge_variant_quality,Banks,tabm_compact_e24_return_w0.3,41,0.6164634146341463,0.4894725870335627
+judge_variant_quality,Banks,tabm_compact_e48_return_w0.3,41,0.6048780487804878,0.4894725870335627
+judge_variant_quality,Banks,tabm_embedded_e24_return_w1.0,41,0.598170731707317,0.36278924327704815
+judge_variant_quality,Banks,tabm_embedded_e48_return_w1.0,41,0.6115853658536585,0.36278924327704815
+judge_variant_quality,Banks,tabm_embedded_e48_return_w0.1,41,0.6390243902439025,0.6197831978319784
+judge_variant_quality,Beverages,current_champion,28,0.5925925925925926,0.5766552895713316
+judge_variant_quality,Beverages,sir_score,28,0.48677248677248675,0.5293327191715499
+judge_variant_quality,Beverages,tabm_compact_e24_return_w0.3,28,0.5436507936507936,0.5766552895713316
+judge_variant_quality,Beverages,tabm_compact_e48_return_w0.3,28,0.5661375661375662,0.5766552895713316
+judge_variant_quality,Beverages,tabm_embedded_e24_return_w1.0,28,0.46825396825396826,0.44121929877552074
+judge_variant_quality,Beverages,tabm_embedded_e48_return_w1.0,28,0.47619047619047616,0.44121929877552074
+judge_variant_quality,Beverages,tabm_embedded_e48_return_w0.1,28,0.5873015873015873,0.5766552895713316
+judge_variant_quality,Capital Markets,current_champion,67,0.5162822252374492,0.543936741363212
+judge_variant_quality,Capital Markets,sir_score,67,0.5076888285843509,0.6105683940242765
+judge_variant_quality,Capital Markets,tabm_compact_e24_return_w0.3,67,0.5049751243781094,0.5453489729225024
+judge_variant_quality,Capital Markets,tabm_compact_e48_return_w0.3,67,0.5126639529624605,0.5453489729225024
+judge_variant_quality,Capital Markets,tabm_embedded_e24_return_w1.0,67,0.4895974672094075,0.49197595704948643
+judge_variant_quality,Capital Markets,tabm_embedded_e48_return_w1.0,67,0.5040705563093623,0.5352591036414566
+judge_variant_quality,Capital Markets,tabm_embedded_e48_return_w0.1,67,0.5162822252374492,0.543936741363212
+judge_variant_quality,Cement & Cement Products,current_champion,34,0.572192513368984,0.461849128540305
+judge_variant_quality,Cement & Cement Products,sir_score,34,0.49554367201426025,0.5733485060690943
+judge_variant_quality,Cement & Cement Products,tabm_compact_e24_return_w0.3,34,0.5730837789661319,0.4757415188297542
+judge_variant_quality,Cement & Cement Products,tabm_compact_e48_return_w0.3,34,0.5819964349376114,0.4757415188297542
+judge_variant_quality,Cement & Cement Products,tabm_embedded_e24_return_w1.0,34,0.5614973262032086,0.5871070650482415
+judge_variant_quality,Cement & Cement Products,tabm_embedded_e48_return_w1.0,34,0.5739750445632799,0.46739379084967325
+judge_variant_quality,Cement & Cement Products,tabm_embedded_e48_return_w0.1,34,0.5748663101604278,0.461849128540305
+judge_variant_quality,Chemicals & Petrochemicals,current_champion,215,0.5991740925885677,0.6505103110423793
+judge_variant_quality,Chemicals & Petrochemicals,sir_score,215,0.5793088459030645,0.5189954007245025
+judge_variant_quality,Chemicals & Petrochemicals,tabm_compact_e24_return_w0.3,215,0.572049554444686,0.5769290157355945
+judge_variant_quality,Chemicals & Petrochemicals,tabm_compact_e48_return_w0.3,215,0.5754183873071071,0.6562759481566455
+judge_variant_quality,Chemicals & Petrochemicals,tabm_embedded_e24_return_w1.0,215,0.5592914583786134,0.4090832320122555
+judge_variant_quality,Chemicals & Petrochemicals,tabm_embedded_e48_return_w1.0,215,0.5671593131927842,0.5480085302012255
+judge_variant_quality,Chemicals & Petrochemicals,tabm_embedded_e48_return_w0.1,215,0.5982612475548794,0.6170403593897146
+judge_variant_quality,Cigarettes & Tobacco Products,current_champion,5,0.6,0.6208333333333335
+judge_variant_quality,Cigarettes & Tobacco Products,sir_score,5,0.2,0.5275000000000001
+judge_variant_quality,Cigarettes & Tobacco Products,tabm_compact_e24_return_w0.3,5,0.7,0.6208333333333335
+judge_variant_quality,Cigarettes & Tobacco Products,tabm_compact_e48_return_w0.3,5,0.7,0.6208333333333335
+judge_variant_quality,Cigarettes & Tobacco Products,tabm_embedded_e24_return_w1.0,5,0.6,0.6279166666666668
+judge_variant_quality,Cigarettes & Tobacco Products,tabm_embedded_e48_return_w1.0,5,0.7,0.6291666666666668
+judge_variant_quality,Cigarettes & Tobacco Products,tabm_embedded_e48_return_w0.1,5,0.6,0.6208333333333335
+judge_variant_quality,Commercial Services & Supplies,current_champion,249,0.5114004404715636,0.5482596878171195
+judge_variant_quality,Commercial Services & Supplies,sir_score,249,0.5122425184609405,0.5074689900643556
+judge_variant_quality,Commercial Services & Supplies,tabm_compact_e24_return_w0.3,249,0.49604871097292397,0.5181181144976715
+judge_variant_quality,Commercial Services & Supplies,tabm_compact_e48_return_w0.3,249,0.5004372328021764,0.5181181144976715
+judge_variant_quality,Commercial Services & Supplies,tabm_embedded_e24_return_w1.0,249,0.449183832102604,0.4684637236013973
+judge_variant_quality,Commercial Services & Supplies,tabm_embedded_e48_return_w1.0,249,0.45705402254178,0.4684637236013973
+judge_variant_quality,Commercial Services & Supplies,tabm_embedded_e48_return_w0.1,249,0.5083236170488405,0.5122477656309327
+judge_variant_quality,Construction,current_champion,124,0.5967741935483871,0.5966890078296933
+judge_variant_quality,Construction,sir_score,124,0.6008392341987936,0.41253480557055583
+judge_variant_quality,Construction,tabm_compact_e24_return_w0.3,124,0.5826776816155258,0.642591777725607
+judge_variant_quality,Construction,tabm_compact_e48_return_w0.3,124,0.5820220298977183,0.556971917988497
+judge_variant_quality,Construction,tabm_embedded_e24_return_w1.0,124,0.5567138735903489,0.5109055238991594
+judge_variant_quality,Construction,tabm_embedded_e48_return_w1.0,124,0.5752032520325203,0.5957820655680853
+judge_variant_quality,Construction,tabm_embedded_e48_return_w0.1,124,0.5982821924993443,0.5470891976952966
+judge_variant_quality,Consumable Fuels,current_champion,5,0.8,0.7208333333333335
+judge_variant_quality,Consumable Fuels,sir_score,5,0.7,0.66
+judge_variant_quality,Consumable Fuels,tabm_compact_e24_return_w0.3,5,0.8,0.7208333333333335
+judge_variant_quality,Consumable Fuels,tabm_compact_e48_return_w0.3,5,0.8,0.7208333333333335
+judge_variant_quality,Consumable Fuels,tabm_embedded_e24_return_w1.0,5,0.6,0.5833333333333335
+judge_variant_quality,Consumable Fuels,tabm_embedded_e48_return_w1.0,5,0.7,0.6141666666666669
+judge_variant_quality,Consumable Fuels,tabm_embedded_e48_return_w0.1,5,0.8,0.7208333333333335
+judge_variant_quality,Consumer Durables,current_champion,220,0.6201743462017435,0.6161658844608321
+judge_variant_quality,Consumer Durables,sir_score,220,0.5540888335408883,0.40485085755333006
+judge_variant_quality,Consumer Durables,tabm_compact_e24_return_w0.3,220,0.6025944375259443,0.5389668784778952
+judge_variant_quality,Consumer Durables,tabm_compact_e48_return_w0.3,220,0.6042133665421336,0.5389668784778952
+judge_variant_quality,Consumer Durables,tabm_embedded_e24_return_w1.0,220,0.5604400166044001,0.47446955729202456
+judge_variant_quality,Consumer Durables,tabm_embedded_e48_return_w1.0,220,0.5607721046077211,0.47446955729202456
+judge_variant_quality,Consumer Durables,tabm_embedded_e48_return_w0.1,220,0.6181195516811955,0.6058457460576606
+judge_variant_quality,Diversified,current_champion,12,0.5606060606060606,0.4671620046620048
+judge_variant_quality,Diversified,sir_score,12,0.5606060606060606,0.4690705128205129
+judge_variant_quality,Diversified,tabm_compact_e24_return_w0.3,12,0.5606060606060606,0.628598484848485
+judge_variant_quality,Diversified,tabm_compact_e48_return_w0.3,12,0.5757575757575757,0.5065996503496505
+judge_variant_quality,Diversified,tabm_embedded_e24_return_w1.0,12,0.5454545454545454,0.5736305361305363
+judge_variant_quality,Diversified,tabm_embedded_e48_return_w1.0,12,0.5606060606060606,0.5736305361305363
+judge_variant_quality,Diversified,tabm_embedded_e48_return_w0.1,12,0.5606060606060606,0.4671620046620048
+judge_variant_quality,Diversified FMCG,current_champion,5,0.7,0.6933333333333335
+judge_variant_quality,Diversified FMCG,sir_score,5,0.4,0.6333333333333334
+judge_variant_quality,Diversified FMCG,tabm_compact_e24_return_w0.3,5,0.6,0.6933333333333335
+judge_variant_quality,Diversified FMCG,tabm_compact_e48_return_w0.3,5,0.6,0.6933333333333335
+judge_variant_quality,Diversified FMCG,tabm_embedded_e24_return_w1.0,5,0.30000000000000004,0.5500000000000002
+judge_variant_quality,Diversified FMCG,tabm_embedded_e48_return_w1.0,5,0.4,0.5700000000000002
+judge_variant_quality,Diversified FMCG,tabm_embedded_e48_return_w0.1,5,0.7,0.6933333333333335
+judge_variant_quality,Diversified Metals,current_champion,5,0.4,0.5558333333333335
+judge_variant_quality,Diversified Metals,sir_score,5,0.4,0.6004166666666668
+judge_variant_quality,Diversified Metals,tabm_compact_e24_return_w0.3,5,0.5,0.6212500000000002
+judge_variant_quality,Diversified Metals,tabm_compact_e48_return_w0.3,5,0.5,0.6212500000000002
+judge_variant_quality,Diversified Metals,tabm_embedded_e24_return_w1.0,5,0.6,0.5979166666666668
+judge_variant_quality,Diversified Metals,tabm_embedded_e48_return_w1.0,5,0.6,0.5979166666666668
+judge_variant_quality,Diversified Metals,tabm_embedded_e48_return_w0.1,5,0.4,0.5558333333333335
+judge_variant_quality,Electrical Equipment,current_champion,97,0.5609965635738832,0.405108403033604
+judge_variant_quality,Electrical Equipment,sir_score,97,0.5427405498281787,0.49697037811164724
+judge_variant_quality,Electrical Equipment,tabm_compact_e24_return_w0.3,97,0.5541237113402062,0.4146086826635181
+judge_variant_quality,Electrical Equipment,tabm_compact_e48_return_w0.3,97,0.5546606529209622,0.405108403033604
+judge_variant_quality,Electrical Equipment,tabm_embedded_e24_return_w1.0,97,0.5365120274914089,0.5386206536456083
+judge_variant_quality,Electrical Equipment,tabm_embedded_e48_return_w1.0,97,0.5489690721649485,0.48039022062761366
+judge_variant_quality,Electrical Equipment,tabm_embedded_e48_return_w0.1,97,0.560889175257732,0.405108403033604
+judge_variant_quality,Entertainment,current_champion,57,0.6221804511278196,0.6876377984786236
+judge_variant_quality,Entertainment,sir_score,57,0.5776942355889725,0.5980743795165492
+judge_variant_quality,Entertainment,tabm_compact_e24_return_w0.3,57,0.6030701754385965,0.6876377984786236
+judge_variant_quality,Entertainment,tabm_compact_e48_return_w0.3,57,0.6099624060150376,0.6876377984786236
+judge_variant_quality,Entertainment,tabm_embedded_e24_return_w1.0,57,0.4630325814536341,0.4537652426448982
+judge_variant_quality,Entertainment,tabm_embedded_e48_return_w1.0,57,0.4755639097744361,0.609891068433412
+judge_variant_quality,Entertainment,tabm_embedded_e48_return_w0.1,57,0.6112155388471178,0.6358990055409185
+judge_variant_quality,Ferrous Metals,current_champion,27,0.6068376068376069,0.5660856768679351
+judge_variant_quality,Ferrous Metals,sir_score,27,0.5242165242165242,0.4997323841033519
+judge_variant_quality,Ferrous Metals,tabm_compact_e24_return_w0.3,27,0.5897435897435898,0.5660856768679351
+judge_variant_quality,Ferrous Metals,tabm_compact_e48_return_w0.3,27,0.6096866096866097,0.5861111308046792
+judge_variant_quality,Ferrous Metals,tabm_embedded_e24_return_w1.0,27,0.5925925925925926,0.5833114340856277
+judge_variant_quality,Ferrous Metals,tabm_embedded_e48_return_w1.0,27,0.584045584045584,0.5833114340856277
+judge_variant_quality,Ferrous Metals,tabm_embedded_e48_return_w0.1,27,0.6153846153846154,0.5660856768679351
+judge_variant_quality,Fertilizers & Agrochemicals,current_champion,54,0.6191474493361286,0.5800841792450352
+judge_variant_quality,Fertilizers & Agrochemicals,sir_score,54,0.5583508036338225,0.6229361465740328
+judge_variant_quality,Fertilizers & Agrochemicals,tabm_compact_e24_return_w0.3,54,0.5915443745632425,0.5415563365932522
+judge_variant_quality,Fertilizers & Agrochemicals,tabm_compact_e48_return_w0.3,54,0.5911949685534591,0.5415563365932522
+judge_variant_quality,Fertilizers & Agrochemicals,tabm_embedded_e24_return_w1.0,54,0.5422781271837875,0.5096410279073664
+judge_variant_quality,Fertilizers & Agrochemicals,tabm_embedded_e48_return_w1.0,54,0.546470999301188,0.5096410279073664
+judge_variant_quality,Fertilizers & Agrochemicals,tabm_embedded_e48_return_w0.1,54,0.6121593291404612,0.5446995445611115
+judge_variant_quality,Finance,current_champion,419,0.5584154571718948,0.6176994920461615
+judge_variant_quality,Finance,sir_score,419,0.5705427595893617,0.6587283807656008
+judge_variant_quality,Finance,tabm_compact_e24_return_w0.3,419,0.5390140571650432,0.4845174292677567
+judge_variant_quality,Finance,tabm_compact_e48_return_w0.3,419,0.5427995569309475,0.4845174292677567
+judge_variant_quality,Finance,tabm_embedded_e24_return_w1.0,419,0.49190371241621084,0.3728935604181644
+judge_variant_quality,Finance,tabm_embedded_e48_return_w1.0,419,0.4979902022359,0.44411732648937347
+judge_variant_quality,Finance,tabm_embedded_e48_return_w0.1,419,0.5559774354523758,0.599416381127933
+judge_variant_quality,Financial Technology (Fintech),current_champion,11,0.7090909090909091,0.6277146464646465
+judge_variant_quality,Financial Technology (Fintech),sir_score,11,0.6363636363636364,0.6299242424242425
+judge_variant_quality,Financial Technology (Fintech),tabm_compact_e24_return_w0.3,11,0.7272727272727273,0.7025883838383841
+judge_variant_quality,Financial Technology (Fintech),tabm_compact_e48_return_w0.3,11,0.7454545454545455,0.7025883838383841
+judge_variant_quality,Financial Technology (Fintech),tabm_embedded_e24_return_w1.0,11,0.5272727272727272,0.6277146464646465
+judge_variant_quality,Financial Technology (Fintech),tabm_embedded_e48_return_w1.0,11,0.43636363636363634,0.5817550505050505
+judge_variant_quality,Financial Technology (Fintech),tabm_embedded_e48_return_w0.1,11,0.7090909090909091,0.6277146464646465
+judge_variant_quality,Food Products,current_champion,100,0.5543434343434344,0.6346141947655699
+judge_variant_quality,Food Products,sir_score,100,0.5228282828282829,0.552994583618824
+judge_variant_quality,Food Products,tabm_compact_e24_return_w0.3,100,0.5357575757575758,0.5348603130834075
+judge_variant_quality,Food Products,tabm_compact_e48_return_w0.3,100,0.5383838383838384,0.5348603130834075
+judge_variant_quality,Food Products,tabm_embedded_e24_return_w1.0,100,0.4918181818181818,0.5998574301654472
+judge_variant_quality,Food Products,tabm_embedded_e48_return_w1.0,100,0.4912121212121212,0.5998574301654472
+judge_variant_quality,Food Products,tabm_embedded_e48_return_w0.1,100,0.5520202020202021,0.5572773432060031
+judge_variant_quality,Gas,current_champion,9,0.4166666666666667,0.5435185185185186
+judge_variant_quality,Gas,sir_score,9,0.33333333333333337,0.5222222222222223
+judge_variant_quality,Gas,tabm_compact_e24_return_w0.3,9,0.4166666666666667,0.5435185185185186
+judge_variant_quality,Gas,tabm_compact_e48_return_w0.3,9,0.3888888888888889,0.5435185185185186
+judge_variant_quality,Gas,tabm_embedded_e24_return_w1.0,9,0.5277777777777778,0.5435185185185186
+judge_variant_quality,Gas,tabm_embedded_e48_return_w1.0,9,0.5,0.5435185185185186
+judge_variant_quality,Gas,tabm_embedded_e48_return_w0.1,9,0.4166666666666667,0.5435185185185186
+judge_variant_quality,Healthcare Equipment & Supplies,current_champion,16,0.38333333333333336,0.5343215811965812
+judge_variant_quality,Healthcare Equipment & Supplies,sir_score,16,0.45,0.5561965811965813
+judge_variant_quality,Healthcare Equipment & Supplies,tabm_compact_e24_return_w0.3,16,0.37083333333333335,0.46741452991453
+judge_variant_quality,Healthcare Equipment & Supplies,tabm_compact_e48_return_w0.3,16,0.36249999999999993,0.46741452991453
+judge_variant_quality,Healthcare Equipment & Supplies,tabm_embedded_e24_return_w1.0,16,0.3416666666666667,0.5197916666666668
+judge_variant_quality,Healthcare Equipment & Supplies,tabm_embedded_e48_return_w1.0,16,0.4,0.535630341880342
+judge_variant_quality,Healthcare Equipment & Supplies,tabm_embedded_e48_return_w0.1,16,0.375,0.5343215811965812
+judge_variant_quality,Healthcare Services,current_champion,68,0.5974539069359087,0.5456899893890591
+judge_variant_quality,Healthcare Services,sir_score,68,0.5320456540825286,0.37630960557409104
+judge_variant_quality,Healthcare Services,tabm_compact_e24_return_w0.3,68,0.5812115891132572,0.5481400024459379
+judge_variant_quality,Healthcare Services,tabm_compact_e48_return_w0.3,68,0.5838454784899034,0.5481400024459379
+judge_variant_quality,Healthcare Services,tabm_embedded_e24_return_w1.0,68,0.6586918349429324,0.5274254952992057
+judge_variant_quality,Healthcare Services,tabm_embedded_e48_return_w1.0,68,0.6608867427568041,0.48941818624683076
+judge_variant_quality,Healthcare Services,tabm_embedded_e48_return_w0.1,68,0.6049165935030729,0.545689989389059
+judge_variant_quality,Household Products,current_champion,17,0.625,0.5590035822021118
+judge_variant_quality,Household Products,sir_score,17,0.6323529411764706,0.6420644796380092
+judge_variant_quality,Household Products,tabm_compact_e24_return_w0.3,17,0.6029411764705882,0.5590035822021118
+judge_variant_quality,Household Products,tabm_compact_e48_return_w0.3,17,0.6213235294117647,0.5590035822021118
+judge_variant_quality,Household Products,tabm_embedded_e24_return_w1.0,17,0.3897058823529412,0.4428808446455506
+judge_variant_quality,Household Products,tabm_embedded_e48_return_w1.0,17,0.4852941176470588,0.5080929487179489
+judge_variant_quality,Household Products,tabm_embedded_e48_return_w0.1,17,0.625,0.5590035822021118
+judge_variant_quality,IT - Hardware,current_champion,19,0.5087719298245614,0.633942382508559
+judge_variant_quality,IT - Hardware,sir_score,19,0.5029239766081871,0.6128967281356988
+judge_variant_quality,IT - Hardware,tabm_compact_e24_return_w0.3,19,0.52046783625731,0.5372581115779645
+judge_variant_quality,IT - Hardware,tabm_compact_e48_return_w0.3,19,0.5087719298245614,0.5372581115779645
+judge_variant_quality,IT - Hardware,tabm_embedded_e24_return_w1.0,19,0.47953216374269003,0.5363426898537194
+judge_variant_quality,IT - Hardware,tabm_embedded_e48_return_w1.0,19,0.4619883040935673,0.5456639044506693
+judge_variant_quality,IT - Hardware,tabm_embedded_e48_return_w0.1,19,0.4970760233918129,0.633942382508559
+judge_variant_quality,IT - Services,current_champion,82,0.6501053899427883,0.5849288887474655
+judge_variant_quality,IT - Services,sir_score,82,0.5931948208370973,0.5683452416308247
+judge_variant_quality,IT - Services,tabm_compact_e24_return_w0.3,82,0.6603432700993677,0.5967754040733495
+judge_variant_quality,IT - Services,tabm_compact_e48_return_w0.3,82,0.6519120746763023,0.5967754040733495
+judge_variant_quality,IT - Services,tabm_embedded_e24_return_w1.0,82,0.6785606744956338,0.6583451492636258
+judge_variant_quality,IT - Services,tabm_embedded_e48_return_w1.0,82,0.6686239084613068,0.6342865610586962
+judge_variant_quality,IT - Services,tabm_embedded_e48_return_w0.1,82,0.6510087323095453,0.5849288887474655
+judge_variant_quality,IT - Software,current_champion,125,0.6091612903225806,0.5929001494073313
+judge_variant_quality,IT - Software,sir_score,125,0.4958709677419355,0.48330277733850746
+judge_variant_quality,IT - Software,tabm_compact_e24_return_w0.3,125,0.598,0.5783136188962893
+judge_variant_quality,IT - Software,tabm_compact_e48_return_w0.3,125,0.6028387096774194,0.5783136188962893
+judge_variant_quality,IT - Software,tabm_embedded_e24_return_w1.0,125,0.5372258064516129,0.625808162740428
+judge_variant_quality,IT - Software,tabm_embedded_e48_return_w1.0,125,0.5463870967741935,0.6258081627404279
+judge_variant_quality,IT - Software,tabm_embedded_e48_return_w0.1,125,0.6054838709677419,0.6021749414704908
+judge_variant_quality,Industrial Manufacturing,current_champion,147,0.5441244991147144,0.5800125990831154
+judge_variant_quality,Industrial Manufacturing,sir_score,147,0.5661168577019849,0.3982855969381351
+judge_variant_quality,Industrial Manufacturing,tabm_compact_e24_return_w0.3,147,0.5277700121144349,0.6530754039370351
+judge_variant_quality,Industrial Manufacturing,tabm_compact_e48_return_w0.3,147,0.5291678315161681,0.653075403937035
+judge_variant_quality,Industrial Manufacturing,tabm_embedded_e24_return_w1.0,147,0.5101108936725375,0.4644078810550285
+judge_variant_quality,Industrial Manufacturing,tabm_embedded_e48_return_w1.0,147,0.5330351318609635,0.48894246643662953
+judge_variant_quality,Industrial Manufacturing,tabm_embedded_e48_return_w0.1,147,0.5430528375733855,0.5627860506065383
+judge_variant_quality,Industrial Products,current_champion,348,0.5982973930901985,0.6122401115236161
+judge_variant_quality,Industrial Products,sir_score,348,0.5705223756997582,0.4004920377768011
+judge_variant_quality,Industrial Products,tabm_compact_e24_return_w0.3,348,0.5849564410878134,0.5885639134995202
+judge_variant_quality,Industrial Products,tabm_compact_e48_return_w0.3,348,0.5870184504289642,0.5885639134995202
+judge_variant_quality,Industrial Products,tabm_embedded_e24_return_w1.0,348,0.5286528205637815,0.4337147445142644
+judge_variant_quality,Industrial Products,tabm_embedded_e48_return_w1.0,348,0.5290171916923383,0.543677070552106
+judge_variant_quality,Industrial Products,tabm_embedded_e48_return_w0.1,348,0.5956474212461493,0.5788835626483921
+judge_variant_quality,Insurance,current_champion,13,0.3653846153846154,0.36068376068376073
+judge_variant_quality,Insurance,sir_score,13,0.3653846153846154,0.36068376068376073
+judge_variant_quality,Insurance,tabm_compact_e24_return_w0.3,13,0.3653846153846154,0.3923076923076924
+judge_variant_quality,Insurance,tabm_compact_e48_return_w0.3,13,0.3782051282051282,0.3923076923076924
+judge_variant_quality,Insurance,tabm_embedded_e24_return_w1.0,13,0.46794871794871795,0.47264957264957275
+judge_variant_quality,Insurance,tabm_embedded_e48_return_w1.0,13,0.4294871794871795,0.47264957264957275
+judge_variant_quality,Insurance,tabm_embedded_e48_return_w0.1,13,0.3653846153846154,0.36068376068376073
+judge_variant_quality,Leisure Services,current_champion,94,0.5589110043468314,0.5627920536477674
+judge_variant_quality,Leisure Services,sir_score,94,0.46419583619309085,0.530034287696545
+judge_variant_quality,Leisure Services,tabm_compact_e24_return_w0.3,94,0.5530770990619995,0.48935748222025904
+judge_variant_quality,Leisure Services,tabm_compact_e48_return_w0.3,94,0.5542210020590254,0.5627920536477674
+judge_variant_quality,Leisure Services,tabm_embedded_e24_return_w1.0,94,0.515442690459849,0.49863128624743736
+judge_variant_quality,Leisure Services,tabm_embedded_e48_return_w1.0,94,0.5072065888812629,0.5656043048697351
+judge_variant_quality,Leisure Services,tabm_embedded_e48_return_w0.1,94,0.5555936856554564,0.5808779587491041
+judge_variant_quality,Media,current_champion,23,0.5454545454545454,0.536116028708134
+judge_variant_quality,Media,sir_score,23,0.43478260869565216,0.5392589712918662
+judge_variant_quality,Media,tabm_compact_e24_return_w0.3,23,0.5355731225296443,0.5871959728867625
+judge_variant_quality,Media,tabm_compact_e48_return_w0.3,23,0.5335968379446641,0.536116028708134
+judge_variant_quality,Media,tabm_embedded_e24_return_w1.0,23,0.4150197628458498,0.4875352870813398
+judge_variant_quality,Media,tabm_embedded_e48_return_w1.0,23,0.43873517786561267,0.4875352870813398
+judge_variant_quality,Media,tabm_embedded_e48_return_w0.1,23,0.5454545454545454,0.5930504385964913
+judge_variant_quality,Metals & Minerals Trading,current_champion,14,0.5054945054945055,0.5686813186813188
+judge_variant_quality,Metals & Minerals Trading,sir_score,14,0.5274725274725275,0.6261507936507938
+judge_variant_quality,Metals & Minerals Trading,tabm_compact_e24_return_w0.3,14,0.46153846153846156,0.5686813186813188
+judge_variant_quality,Metals & Minerals Trading,tabm_compact_e48_return_w0.3,14,0.47802197802197804,0.5686813186813188
+judge_variant_quality,Metals & Minerals Trading,tabm_embedded_e24_return_w1.0,14,0.43956043956043955,0.5102045177045178
+judge_variant_quality,Metals & Minerals Trading,tabm_embedded_e48_return_w1.0,14,0.43956043956043955,0.593919413919414
+judge_variant_quality,Metals & Minerals Trading,tabm_embedded_e48_return_w0.1,14,0.5054945054945055,0.5686813186813188
+judge_variant_quality,Minerals & Mining,current_champion,14,0.7142857142857143,0.6095654345654347
+judge_variant_quality,Minerals & Mining,sir_score,14,0.6483516483516484,0.59998334998335
+judge_variant_quality,Minerals & Mining,tabm_compact_e24_return_w0.3,14,0.7362637362637363,0.5996003996003997
+judge_variant_quality,Minerals & Mining,tabm_compact_e48_return_w0.3,14,0.7472527472527473,0.5996003996003997
+judge_variant_quality,Minerals & Mining,tabm_embedded_e24_return_w1.0,14,0.5274725274725275,0.5113220113220115
+judge_variant_quality,Minerals & Mining,tabm_embedded_e48_return_w1.0,14,0.5054945054945055,0.5054903429903431
+judge_variant_quality,Minerals & Mining,tabm_embedded_e48_return_w0.1,14,0.7252747252747253,0.6095654345654347
+judge_variant_quality,Non - Ferrous Metals,current_champion,25,0.6333333333333333,0.5639613357656836
+judge_variant_quality,Non - Ferrous Metals,sir_score,25,0.6133333333333333,0.44313509678727075
+judge_variant_quality,Non - Ferrous Metals,tabm_compact_e24_return_w0.3,25,0.5766666666666667,0.5639613357656836
+judge_variant_quality,Non - Ferrous Metals,tabm_compact_e48_return_w0.3,25,0.59,0.5343230465186988
+judge_variant_quality,Non - Ferrous Metals,tabm_embedded_e24_return_w1.0,25,0.4266666666666667,0.49613256308908493
+judge_variant_quality,Non - Ferrous Metals,tabm_embedded_e48_return_w1.0,25,0.4266666666666667,0.49613256308908493
+judge_variant_quality,Non - Ferrous Metals,tabm_embedded_e48_return_w0.1,25,0.62,0.5639613357656836
+judge_variant_quality,Oil,current_champion,19,0.6842105263157895,0.6298134531590415
+judge_variant_quality,Oil,sir_score,19,0.4736842105263158,0.47905977668845323
+judge_variant_quality,Oil,tabm_compact_e24_return_w0.3,19,0.7836257309941521,0.6298134531590415
+judge_variant_quality,Oil,tabm_compact_e48_return_w0.3,19,0.7719298245614036,0.6298134531590415
+judge_variant_quality,Oil,tabm_embedded_e24_return_w1.0,19,0.4736842105263158,0.4451171023965142
+judge_variant_quality,Oil,tabm_embedded_e48_return_w1.0,19,0.5906432748538012,0.49721200980392166
+judge_variant_quality,Oil,tabm_embedded_e48_return_w0.1,19,0.6871345029239766,0.6298134531590415
+judge_variant_quality,Other Construction Materials,current_champion,16,0.575,0.5347563352826511
+judge_variant_quality,Other Construction Materials,sir_score,16,0.5,0.4256310916179338
+judge_variant_quality,Other Construction Materials,tabm_compact_e24_return_w0.3,16,0.5916666666666667,0.5347563352826511
+judge_variant_quality,Other Construction Materials,tabm_compact_e48_return_w0.3,16,0.5916666666666667,0.5347563352826511
+judge_variant_quality,Other Construction Materials,tabm_embedded_e24_return_w1.0,16,0.5833333333333334,0.5482492690058479
+judge_variant_quality,Other Construction Materials,tabm_embedded_e48_return_w1.0,16,0.5666666666666667,0.48243908382066275
+judge_variant_quality,Other Construction Materials,tabm_embedded_e48_return_w0.1,16,0.5666666666666667,0.5347563352826511
+judge_variant_quality,Other Consumer Services,current_champion,30,0.5011494252873563,0.5665262277581523
+judge_variant_quality,Other Consumer Services,sir_score,30,0.5310344827586206,0.5571775178226792
+judge_variant_quality,Other Consumer Services,tabm_compact_e24_return_w0.3,30,0.46091954022988507,0.5665262277581523
+judge_variant_quality,Other Consumer Services,tabm_compact_e48_return_w0.3,30,0.4850574712643678,0.573625192012289
+judge_variant_quality,Other Consumer Services,tabm_embedded_e24_return_w1.0,30,0.43908045977011495,0.5904046451015307
+judge_variant_quality,Other Consumer Services,tabm_embedded_e48_return_w1.0,30,0.4367816091954023,0.4272136113793512
+judge_variant_quality,Other Consumer Services,tabm_embedded_e48_return_w0.1,30,0.49885057471264366,0.5665262277581523
+judge_variant_quality,Other Utilities,current_champion,17,0.5073529411764706,0.5110906862745099
+judge_variant_quality,Other Utilities,sir_score,17,0.5808823529411765,0.5923611111111113
+judge_variant_quality,Other Utilities,tabm_compact_e24_return_w0.3,17,0.4632352941176471,0.46713643790849674
+judge_variant_quality,Other Utilities,tabm_compact_e48_return_w0.3,17,0.47058823529411764,0.46713643790849674
+judge_variant_quality,Other Utilities,tabm_embedded_e24_return_w1.0,17,0.5514705882352942,0.6201388888888889
+judge_variant_quality,Other Utilities,tabm_embedded_e48_return_w1.0,17,0.5661764705882353,0.6201388888888889
+judge_variant_quality,Other Utilities,tabm_embedded_e48_return_w0.1,17,0.5147058823529411,0.5110906862745099
+judge_variant_quality,"Paper, Forest & Jute Products",current_champion,43,0.592469545957918,0.6144777748324812
+judge_variant_quality,"Paper, Forest & Jute Products",sir_score,43,0.5348837209302325,0.5613243548506038
+judge_variant_quality,"Paper, Forest & Jute Products",tabm_compact_e24_return_w0.3,43,0.5825027685492802,0.5461280996011569
+judge_variant_quality,"Paper, Forest & Jute Products",tabm_compact_e48_return_w0.3,43,0.5764119601328903,0.5461280996011569
+judge_variant_quality,"Paper, Forest & Jute Products",tabm_embedded_e24_return_w1.0,43,0.49169435215946844,0.4273205008999412
+judge_variant_quality,"Paper, Forest & Jute Products",tabm_embedded_e48_return_w1.0,43,0.5027685492801772,0.47108971256808907
+judge_variant_quality,"Paper, Forest & Jute Products",tabm_embedded_e48_return_w0.1,43,0.5869324473975637,0.5902781212378808
+judge_variant_quality,Personal Products,current_champion,15,0.5142857142857142,0.5641964285714287
+judge_variant_quality,Personal Products,sir_score,15,0.37142857142857144,0.5062351190476191
+judge_variant_quality,Personal Products,tabm_compact_e24_return_w0.3,15,0.5333333333333333,0.5641964285714287
+judge_variant_quality,Personal Products,tabm_compact_e48_return_w0.3,15,0.5333333333333333,0.5641964285714287
+judge_variant_quality,Personal Products,tabm_embedded_e24_return_w1.0,15,0.38095238095238093,0.45857142857142863
+judge_variant_quality,Personal Products,tabm_embedded_e48_return_w1.0,15,0.41904761904761906,0.48205357142857147
+judge_variant_quality,Personal Products,tabm_embedded_e48_return_w0.1,15,0.5047619047619047,0.5641964285714287
+judge_variant_quality,Petroleum Products,current_champion,18,0.6535947712418301,0.6472535761380577
+judge_variant_quality,Petroleum Products,sir_score,18,0.5163398692810458,0.5326467721591561
+judge_variant_quality,Petroleum Products,tabm_compact_e24_return_w0.3,18,0.6830065359477124,0.6714512742231397
+judge_variant_quality,Petroleum Products,tabm_compact_e48_return_w0.3,18,0.6699346405228759,0.5787078245040708
+judge_variant_quality,Petroleum Products,tabm_embedded_e24_return_w1.0,18,0.6405228758169935,0.5184823271413829
+judge_variant_quality,Petroleum Products,tabm_embedded_e48_return_w1.0,18,0.6339869281045751,0.5724950908726064
+judge_variant_quality,Petroleum Products,tabm_embedded_e48_return_w0.1,18,0.6535947712418301,0.6472535761380577
+judge_variant_quality,Pharmaceuticals & Biotechnology,current_champion,190,0.6232247284878863,0.5693050870811014
+judge_variant_quality,Pharmaceuticals & Biotechnology,sir_score,190,0.5617933723196881,0.5016137923731253
+judge_variant_quality,Pharmaceuticals & Biotechnology,tabm_compact_e24_return_w0.3,190,0.6275689223057644,0.5798182211186069
+judge_variant_quality,Pharmaceuticals & Biotechnology,tabm_compact_e48_return_w0.3,190,0.6293233082706767,0.5802568831729545
+judge_variant_quality,Pharmaceuticals & Biotechnology,tabm_embedded_e24_return_w1.0,190,0.6270955165692008,0.4799714860173385
+judge_variant_quality,Pharmaceuticals & Biotechnology,tabm_embedded_e48_return_w1.0,190,0.6182678919521025,0.4799714860173385
+judge_variant_quality,Pharmaceuticals & Biotechnology,tabm_embedded_e48_return_w0.1,190,0.6252297410192147,0.5693050870811014
+judge_variant_quality,Power,current_champion,42,0.5795586527293844,0.5678192190660099
+judge_variant_quality,Power,sir_score,42,0.5679442508710801,0.536524024518248
+judge_variant_quality,Power,tabm_compact_e24_return_w0.3,42,0.5423925667828107,0.623098112307034
+judge_variant_quality,Power,tabm_compact_e48_return_w0.3,42,0.5505226480836237,0.623098112307034
+judge_variant_quality,Power,tabm_embedded_e24_return_w1.0,42,0.5830429732868757,0.5682165274166238
+judge_variant_quality,Power,tabm_embedded_e48_return_w1.0,42,0.5667828106852497,0.5682165274166238
+judge_variant_quality,Power,tabm_embedded_e48_return_w0.1,42,0.5760743321718931,0.5678192190660099
+judge_variant_quality,Realty,current_champion,142,0.5856557786434922,0.6113066343701763
+judge_variant_quality,Realty,sir_score,142,0.5661772050744182,0.66707325836571
+judge_variant_quality,Realty,tabm_compact_e24_return_w0.3,142,0.5798621516332034,0.6332359070278174
+judge_variant_quality,Realty,tabm_compact_e48_return_w0.3,142,0.5771651183697932,0.6332359070278174
+judge_variant_quality,Realty,tabm_embedded_e24_return_w1.0,142,0.5469983018679453,0.45295426592963944
+judge_variant_quality,Realty,tabm_embedded_e48_return_w1.0,142,0.5305164319248826,0.47958320188867926
+judge_variant_quality,Realty,tabm_embedded_e48_return_w0.1,142,0.5831085805613825,0.6113066343701763
+judge_variant_quality,Retailing,current_champion,60,0.5542372881355933,0.5403797605086239
+judge_variant_quality,Retailing,sir_score,60,0.5180790960451978,0.43230297295166187
+judge_variant_quality,Retailing,tabm_compact_e24_return_w0.3,60,0.553954802259887,0.4635081523107492
+judge_variant_quality,Retailing,tabm_compact_e48_return_w0.3,60,0.5505649717514124,0.4635081523107492
+judge_variant_quality,Retailing,tabm_embedded_e24_return_w1.0,60,0.4768361581920904,0.5382884297595835
+judge_variant_quality,Retailing,tabm_embedded_e48_return_w1.0,60,0.49519774011299433,0.5148833077919691
+judge_variant_quality,Retailing,tabm_embedded_e48_return_w0.1,60,0.5502824858757063,0.5403797605086239
+judge_variant_quality,Telecom -  Equipment & Accessories,current_champion,11,0.7272727272727273,0.7431926406926408
+judge_variant_quality,Telecom -  Equipment & Accessories,sir_score,11,0.6727272727272727,0.6082936507936509
+judge_variant_quality,Telecom -  Equipment & Accessories,tabm_compact_e24_return_w0.3,11,0.7272727272727273,0.7274675324675327
+judge_variant_quality,Telecom -  Equipment & Accessories,tabm_compact_e48_return_w0.3,11,0.6909090909090909,0.6450974025974027
+judge_variant_quality,Telecom -  Equipment & Accessories,tabm_embedded_e24_return_w1.0,11,0.5272727272727272,0.5594083694083696
+judge_variant_quality,Telecom -  Equipment & Accessories,tabm_embedded_e48_return_w1.0,11,0.509090909090909,0.5594083694083696
+judge_variant_quality,Telecom -  Equipment & Accessories,tabm_embedded_e48_return_w0.1,11,0.7181818181818181,0.7431926406926408
+judge_variant_quality,Telecom - Services,current_champion,19,0.6140350877192983,0.6877920527185234
+judge_variant_quality,Telecom - Services,sir_score,19,0.5263157894736842,0.38097644185879487
+judge_variant_quality,Telecom - Services,tabm_compact_e24_return_w0.3,19,0.5730994152046783,0.5633173525820586
+judge_variant_quality,Telecom - Services,tabm_compact_e48_return_w0.3,19,0.5730994152046783,0.5633173525820586
+judge_variant_quality,Telecom - Services,tabm_embedded_e24_return_w1.0,19,0.5029239766081871,0.5787826797385621
+judge_variant_quality,Telecom - Services,tabm_embedded_e48_return_w1.0,19,0.5029239766081871,0.4831968684909862
+judge_variant_quality,Telecom - Services,tabm_embedded_e48_return_w0.1,19,0.6140350877192983,0.6877920527185234
+judge_variant_quality,Textiles & Apparels,current_champion,241,0.5723374827109267,0.5572876261475822
+judge_variant_quality,Textiles & Apparels,sir_score,241,0.5867911479944675,0.4095929628106248
+judge_variant_quality,Textiles & Apparels,tabm_compact_e24_return_w0.3,241,0.5546853388658368,0.5407466916232703
+judge_variant_quality,Textiles & Apparels,tabm_compact_e48_return_w0.3,241,0.5589038727524205,0.5407466916232703
+judge_variant_quality,Textiles & Apparels,tabm_embedded_e24_return_w1.0,241,0.5199688796680498,0.5350464773724243
+judge_variant_quality,Textiles & Apparels,tabm_embedded_e48_return_w1.0,241,0.5315525587828492,0.4999982137237801
+judge_variant_quality,Textiles & Apparels,tabm_embedded_e48_return_w0.1,241,0.5708679114799446,0.5572876261475822
+judge_variant_quality,Transport Infrastructure,current_champion,14,0.5824175824175825,0.5930924630924631
+judge_variant_quality,Transport Infrastructure,sir_score,14,0.5934065934065934,0.5511968586968587
+judge_variant_quality,Transport Infrastructure,tabm_compact_e24_return_w0.3,14,0.554945054945055,0.5987987012987014
+judge_variant_quality,Transport Infrastructure,tabm_compact_e48_return_w0.3,14,0.5879120879120879,0.5987987012987014
+judge_variant_quality,Transport Infrastructure,tabm_embedded_e24_return_w1.0,14,0.5934065934065934,0.5987987012987014
+judge_variant_quality,Transport Infrastructure,tabm_embedded_e48_return_w1.0,14,0.5384615384615384,0.6009644984644986
+judge_variant_quality,Transport Infrastructure,tabm_embedded_e48_return_w0.1,14,0.5824175824175825,0.5930924630924631
+judge_variant_quality,Transport Services,current_champion,70,0.6057971014492753,0.6388154324364352
+judge_variant_quality,Transport Services,sir_score,70,0.6057971014492753,0.6655182547786826
+judge_variant_quality,Transport Services,tabm_compact_e24_return_w0.3,70,0.5697722567287785,0.6246889680896802
+judge_variant_quality,Transport Services,tabm_compact_e48_return_w0.3,70,0.5666666666666667,0.5815946883364965
+judge_variant_quality,Transport Services,tabm_embedded_e24_return_w1.0,70,0.5366459627329192,0.6446096873328613
+judge_variant_quality,Transport Services,tabm_embedded_e48_return_w1.0,70,0.5420289855072464,0.6428993871839217
+judge_variant_quality,Transport Services,tabm_embedded_e48_return_w0.1,70,0.5983436853002071,0.6388154324364352
+judge_variant_growth,Aerospace & Defense,current_champion,30,0.6,0.588860153256705
+judge_variant_growth,Aerospace & Defense,sir_score,30,0.4459770114942529,0.40707854406130267
+judge_variant_growth,Aerospace & Defense,tabm_compact_e24_return_w0.3,30,0.5862068965517242,0.6207567049808429
+judge_variant_growth,Aerospace & Defense,tabm_compact_e48_return_w0.3,30,0.6022988505747127,0.6207567049808429
+judge_variant_growth,Aerospace & Defense,tabm_embedded_e24_return_w1.0,30,0.5609195402298851,0.549787798408488
+judge_variant_growth,Aerospace & Defense,tabm_embedded_e48_return_w1.0,30,0.542528735632184,0.6580290303566165
+judge_variant_growth,Aerospace & Defense,tabm_embedded_e48_return_w0.1,30,0.6,0.588860153256705
+judge_variant_growth,Agricultural Food & other Products,current_champion,144,0.5324397824397824,0.6518330667765859
+judge_variant_growth,Agricultural Food & other Products,sir_score,144,0.5846930846930847,0.613926563598017
+judge_variant_growth,Agricultural Food & other Products,tabm_compact_e24_return_w0.3,144,0.5178710178710179,0.5452957555923331
+judge_variant_growth,Agricultural Food & other Products,tabm_compact_e48_return_w0.3,144,0.5201534576534577,0.59010851763853
+judge_variant_growth,Agricultural Food & other Products,tabm_embedded_e24_return_w1.0,144,0.4548368298368298,0.4307121465836656
+judge_variant_growth,Agricultural Food & other Products,tabm_embedded_e48_return_w1.0,144,0.45435120435120435,0.40487348461440126
+judge_variant_growth,Agricultural Food & other Products,tabm_embedded_e48_return_w0.1,144,0.5253982128982129,0.6518330667765859
+judge_variant_growth,"Agricultural, Commercial & Construction Vehicles",current_champion,14,0.5714285714285714,0.5307264957264958
+judge_variant_growth,"Agricultural, Commercial & Construction Vehicles",sir_score,14,0.5384615384615384,0.4489194139194139
+judge_variant_growth,"Agricultural, Commercial & Construction Vehicles",tabm_compact_e24_return_w0.3,14,0.5879120879120879,0.5307264957264957
+judge_variant_growth,"Agricultural, Commercial & Construction Vehicles",tabm_compact_e48_return_w0.3,14,0.6153846153846154,0.5307264957264957
+judge_variant_growth,"Agricultural, Commercial & Construction Vehicles",tabm_embedded_e24_return_w1.0,14,0.6263736263736264,0.6566849816849817
+judge_variant_growth,"Agricultural, Commercial & Construction Vehicles",tabm_embedded_e48_return_w1.0,14,0.6483516483516484,0.6566849816849817
+judge_variant_growth,"Agricultural, Commercial & Construction Vehicles",tabm_embedded_e48_return_w0.1,14,0.5769230769230769,0.5307264957264958
+judge_variant_growth,Auto Components,current_champion,149,0.599673499002358,0.5932746353177752
+judge_variant_growth,Auto Components,sir_score,149,0.6209867585706512,0.3666550895264043
+judge_variant_growth,Auto Components,tabm_compact_e24_return_w0.3,149,0.5745964084890259,0.5403888219867713
+judge_variant_growth,Auto Components,tabm_compact_e48_return_w0.3,149,0.5741882822419735,0.5403888219867713
+judge_variant_growth,Auto Components,tabm_embedded_e24_return_w1.0,149,0.5334663522582985,0.4422971422265191
+judge_variant_growth,Auto Components,tabm_embedded_e48_return_w1.0,149,0.5485216760384546,0.6102828120242717
+judge_variant_growth,Auto Components,tabm_embedded_e48_return_w0.1,149,0.5986758570651188,0.5499505542311005
+judge_variant_growth,Automobiles,current_champion,19,0.5906432748538012,0.5600578149920256
+judge_variant_growth,Automobiles,sir_score,19,0.6140350877192983,0.5835516934046346
+judge_variant_growth,Automobiles,tabm_compact_e24_return_w0.3,19,0.6023391812865497,0.6061330800262689
+judge_variant_growth,Automobiles,tabm_compact_e48_return_w0.3,19,0.5789473684210527,0.6000492541514214
+judge_variant_growth,Automobiles,tabm_embedded_e24_return_w1.0,19,0.5906432748538012,0.6036382399849892
+judge_variant_growth,Automobiles,tabm_embedded_e48_return_w1.0,19,0.5497076023391813,0.6036382399849892
+judge_variant_growth,Automobiles,tabm_embedded_e48_return_w0.1,19,0.5847953216374269,0.5600578149920256
+judge_variant_growth,Banks,current_champion,41,0.5902439024390244,0.5187065445315086
+judge_variant_growth,Banks,sir_score,41,0.5414634146341464,0.4674674122306833
+judge_variant_growth,Banks,tabm_compact_e24_return_w0.3,41,0.5719512195121951,0.43337134728813337
+judge_variant_growth,Banks,tabm_compact_e48_return_w0.3,41,0.5554878048780487,0.43337134728813337
+judge_variant_growth,Banks,tabm_embedded_e24_return_w1.0,41,0.5536585365853659,0.3418496854651803
+judge_variant_growth,Banks,tabm_embedded_e48_return_w1.0,41,0.5646341463414635,0.3418496854651803
+judge_variant_growth,Banks,tabm_embedded_e48_return_w0.1,41,0.5871951219512195,0.567750677506775
+judge_variant_growth,Beverages,current_champion,28,0.5793650793650793,0.5867913067275886
+judge_variant_growth,Beverages,sir_score,28,0.537037037037037,0.5936803347410544
+judge_variant_growth,Beverages,tabm_compact_e24_return_w0.3,28,0.5462962962962963,0.5867913067275886
+judge_variant_growth,Beverages,tabm_compact_e48_return_w0.3,28,0.5634920634920635,0.5867913067275886
+judge_variant_growth,Beverages,tabm_embedded_e24_return_w1.0,28,0.4973544973544973,0.5101132858479186
+judge_variant_growth,Beverages,tabm_embedded_e48_return_w1.0,28,0.5105820105820106,0.5101132858479186
+judge_variant_growth,Beverages,tabm_embedded_e48_return_w0.1,28,0.5793650793650793,0.5867913067275886
+judge_variant_growth,Capital Markets,current_champion,67,0.49163274536408863,0.5452450980392157
+judge_variant_growth,Capital Markets,sir_score,67,0.5463591135232926,0.6497031590413943
+judge_variant_growth,Capital Markets,tabm_compact_e24_return_w0.3,67,0.4839439167797377,0.5209831154684096
+judge_variant_growth,Capital Markets,tabm_compact_e48_return_w0.3,67,0.49072817729534146,0.5209831154684096
+judge_variant_growth,Capital Markets,tabm_embedded_e24_return_w1.0,67,0.46494798733604703,0.45437363834422656
+judge_variant_growth,Capital Markets,tabm_embedded_e48_return_w1.0,67,0.4862053369516056,0.5751715686274509
+judge_variant_growth,Capital Markets,tabm_embedded_e48_return_w0.1,67,0.4898236092265943,0.5452450980392157
+judge_variant_growth,Cement & Cement Products,current_champion,34,0.6167557932263815,0.48346599751011504
+judge_variant_growth,Cement & Cement Products,sir_score,34,0.5294117647058824,0.6121562791783379
+judge_variant_growth,Cement & Cement Products,tabm_compact_e24_return_w0.3,34,0.6283422459893049,0.530948490507314
+judge_variant_growth,Cement & Cement Products,tabm_compact_e48_return_w0.3,34,0.6372549019607843,0.530948490507314
+judge_variant_growth,Cement & Cement Products,tabm_embedded_e24_return_w1.0,34,0.6096256684491979,0.5973945689386865
+judge_variant_growth,Cement & Cement Products,tabm_embedded_e48_return_w1.0,34,0.6221033868092691,0.5227830298786181
+judge_variant_growth,Cement & Cement Products,tabm_embedded_e48_return_w0.1,34,0.6194295900178254,0.48346599751011504
+judge_variant_growth,Chemicals & Petrochemicals,current_champion,215,0.5744838078678548,0.6436453957760918
+judge_variant_growth,Chemicals & Petrochemicals,sir_score,215,0.5933058030862856,0.5413020223184976
+judge_variant_growth,Chemicals & Petrochemicals,tabm_compact_e24_return_w0.3,215,0.5577483155835687,0.5254371844420497
+judge_variant_growth,Chemicals & Petrochemicals,tabm_compact_e48_return_w0.3,215,0.5598130841121496,0.6144716177572488
+judge_variant_growth,Chemicals & Petrochemicals,tabm_embedded_e24_return_w1.0,215,0.5461638774179526,0.41014064881425377
+judge_variant_growth,Chemicals & Petrochemicals,tabm_embedded_e48_return_w1.0,215,0.5575961747446208,0.5036931153751292
+judge_variant_growth,Chemicals & Petrochemicals,tabm_embedded_e48_return_w0.1,215,0.575135840034775,0.6202144052258286
+judge_variant_growth,Cigarettes & Tobacco Products,current_champion,5,0.4,0.5825
+judge_variant_growth,Cigarettes & Tobacco Products,sir_score,5,0.6,0.5750000000000001
+judge_variant_growth,Cigarettes & Tobacco Products,tabm_compact_e24_return_w0.3,5,0.5,0.5825
+judge_variant_growth,Cigarettes & Tobacco Products,tabm_compact_e48_return_w0.3,5,0.5,0.5825
+judge_variant_growth,Cigarettes & Tobacco Products,tabm_embedded_e24_return_w1.0,5,0.2,0.5737500000000001
+judge_variant_growth,Cigarettes & Tobacco Products,tabm_embedded_e48_return_w1.0,5,0.30000000000000004,0.6083333333333334
+judge_variant_growth,Cigarettes & Tobacco Products,tabm_embedded_e48_return_w0.1,5,0.4,0.5825
+judge_variant_growth,Commercial Services & Supplies,current_champion,249,0.5077082523642958,0.5553159204385714
+judge_variant_growth,Commercial Services & Supplies,sir_score,249,0.5270760461199637,0.5287253408847908
+judge_variant_growth,Commercial Services & Supplies,tabm_compact_e24_return_w0.3,249,0.49280994947532064,0.5115488631478452
+judge_variant_growth,Commercial Services & Supplies,tabm_compact_e48_return_w0.3,249,0.4963240057002202,0.5115488631478452
+judge_variant_growth,Commercial Services & Supplies,tabm_embedded_e24_return_w1.0,249,0.459936520274647,0.4755458165688095
+judge_variant_growth,Commercial Services & Supplies,tabm_embedded_e48_return_w1.0,249,0.4643736235263635,0.4755458165688095
+judge_variant_growth,Commercial Services & Supplies,tabm_embedded_e48_return_w0.1,249,0.5053763440860215,0.5096763553808336
+judge_variant_growth,Construction,current_champion,124,0.5803829006031995,0.5810369305791343
+judge_variant_growth,Construction,sir_score,124,0.6007081038552321,0.39946052906282326
+judge_variant_growth,Construction,tabm_compact_e24_return_w0.3,124,0.5757277734067663,0.6565717889937327
+judge_variant_growth,Construction,tabm_compact_e48_return_w0.3,124,0.5742853396275898,0.5637573844898456
+judge_variant_growth,Construction,tabm_embedded_e24_return_w1.0,124,0.5497639653815893,0.5034657911064961
+judge_variant_growth,Construction,tabm_embedded_e48_return_w1.0,124,0.5690401258851299,0.5754635153194682
+judge_variant_growth,Construction,tabm_embedded_e48_return_w0.1,124,0.5824154209284028,0.5483275272416631
+judge_variant_growth,Consumable Fuels,current_champion,5,0.6,0.6825
+judge_variant_growth,Consumable Fuels,sir_score,5,0.7,0.6699999999999999
+judge_variant_growth,Consumable Fuels,tabm_compact_e24_return_w0.3,5,0.6,0.6825
+judge_variant_growth,Consumable Fuels,tabm_compact_e48_return_w0.3,5,0.6,0.6825
+judge_variant_growth,Consumable Fuels,tabm_embedded_e24_return_w1.0,5,0.4,0.5599999999999999
+judge_variant_growth,Consumable Fuels,tabm_embedded_e48_return_w1.0,5,0.5,0.5924999999999999
+judge_variant_growth,Consumable Fuels,tabm_embedded_e48_return_w0.1,5,0.6,0.6825
+judge_variant_growth,Consumer Durables,current_champion,220,0.5898298048982981,0.5748103853530792
+judge_variant_growth,Consumer Durables,sir_score,220,0.588667496886675,0.44118163930611204
+judge_variant_growth,Consumer Durables,tabm_compact_e24_return_w0.3,220,0.578310502283105,0.5102761661745634
+judge_variant_growth,Consumer Durables,tabm_compact_e48_return_w0.3,220,0.5782689912826899,0.5102761661745634
+judge_variant_growth,Consumer Durables,tabm_embedded_e24_return_w1.0,220,0.5352428393524284,0.4934460083590449
+judge_variant_growth,Consumer Durables,tabm_embedded_e48_return_w1.0,220,0.5383146533831465,0.493446008359045
+judge_variant_growth,Consumer Durables,tabm_embedded_e48_return_w0.1,220,0.5870693233706932,0.5779554212180718
+judge_variant_growth,Diversified,current_champion,12,0.5606060606060606,0.4856837606837607
+judge_variant_growth,Diversified,sir_score,12,0.5909090909090909,0.5089209401709401
+judge_variant_growth,Diversified,tabm_compact_e24_return_w0.3,12,0.5606060606060606,0.6429050116550116
+judge_variant_growth,Diversified,tabm_compact_e48_return_w0.3,12,0.5454545454545454,0.4909819347319347
+judge_variant_growth,Diversified,tabm_embedded_e24_return_w1.0,12,0.48484848484848486,0.5747280497280497
+judge_variant_growth,Diversified,tabm_embedded_e48_return_w1.0,12,0.5303030303030303,0.5747280497280497
+judge_variant_growth,Diversified,tabm_embedded_e48_return_w0.1,12,0.5606060606060606,0.4856837606837607
+judge_variant_growth,Diversified FMCG,current_champion,5,0.8,0.7033333333333335
+judge_variant_growth,Diversified FMCG,sir_score,5,0.5,0.6550000000000001
+judge_variant_growth,Diversified FMCG,tabm_compact_e24_return_w0.3,5,0.7,0.7033333333333335
+judge_variant_growth,Diversified FMCG,tabm_compact_e48_return_w0.3,5,0.7,0.7033333333333335
+judge_variant_growth,Diversified FMCG,tabm_embedded_e24_return_w1.0,5,0.4,0.5616666666666668
+judge_variant_growth,Diversified FMCG,tabm_embedded_e48_return_w1.0,5,0.30000000000000004,0.555
+judge_variant_growth,Diversified FMCG,tabm_embedded_e48_return_w0.1,5,0.8,0.7033333333333335
+judge_variant_growth,Diversified Metals,current_champion,5,0.30000000000000004,0.5291666666666667
+judge_variant_growth,Diversified Metals,sir_score,5,0.30000000000000004,0.6054166666666667
+judge_variant_growth,Diversified Metals,tabm_compact_e24_return_w0.3,5,0.4,0.61625
+judge_variant_growth,Diversified Metals,tabm_compact_e48_return_w0.3,5,0.4,0.61625
+judge_variant_growth,Diversified Metals,tabm_embedded_e24_return_w1.0,5,0.7,0.5829166666666666
+judge_variant_growth,Diversified Metals,tabm_embedded_e48_return_w1.0,5,0.7,0.5829166666666666
+judge_variant_growth,Diversified Metals,tabm_embedded_e48_return_w0.1,5,0.30000000000000004,0.5291666666666667
+judge_variant_growth,Electrical Equipment,current_champion,97,0.4793814432989691,0.38503838514014815
+judge_variant_growth,Electrical Equipment,sir_score,97,0.5040807560137457,0.4569442407799616
+judge_variant_growth,Electrical Equipment,tabm_compact_e24_return_w0.3,97,0.4845360824742268,0.3933581440789115
+judge_variant_growth,Electrical Equipment,tabm_compact_e48_return_w0.3,97,0.48249570446735396,0.38503838514014815
+judge_variant_growth,Electrical Equipment,tabm_embedded_e24_return_w1.0,97,0.46692439862542956,0.4492659690413774
+judge_variant_growth,Electrical Equipment,tabm_embedded_e48_return_w1.0,97,0.4768041237113402,0.4087366585644068
+judge_variant_growth,Electrical Equipment,tabm_embedded_e48_return_w0.1,97,0.4779853951890034,0.38503838514014815
+judge_variant_growth,Entertainment,current_champion,57,0.5958646616541353,0.6922880875220908
+judge_variant_growth,Entertainment,sir_score,57,0.5939849624060151,0.6236562220267932
+judge_variant_growth,Entertainment,tabm_compact_e24_return_w0.3,57,0.5755012531328321,0.6922880875220908
+judge_variant_growth,Entertainment,tabm_compact_e48_return_w0.3,57,0.5899122807017544,0.6922880875220908
+judge_variant_growth,Entertainment,tabm_embedded_e24_return_w1.0,57,0.4542606516290727,0.4929355772450255
+judge_variant_growth,Entertainment,tabm_embedded_e48_return_w1.0,57,0.4755639097744361,0.669965219149954
+judge_variant_growth,Entertainment,tabm_embedded_e48_return_w0.1,57,0.5848997493734336,0.6498332082128134
+judge_variant_growth,Ferrous Metals,current_champion,27,0.6296296296296297,0.565698461932333
+judge_variant_growth,Ferrous Metals,sir_score,27,0.5982905982905983,0.5534818031430935
+judge_variant_growth,Ferrous Metals,tabm_compact_e24_return_w0.3,27,0.6125356125356125,0.565698461932333
+judge_variant_growth,Ferrous Metals,tabm_compact_e48_return_w0.3,27,0.6381766381766382,0.6071883295915554
+judge_variant_growth,Ferrous Metals,tabm_embedded_e24_return_w1.0,27,0.5698005698005698,0.6046656426011264
+judge_variant_growth,Ferrous Metals,tabm_embedded_e48_return_w1.0,27,0.5897435897435898,0.6046656426011264
+judge_variant_growth,Ferrous Metals,tabm_embedded_e48_return_w0.1,27,0.6381766381766382,0.565698461932333
+judge_variant_growth,Fertilizers & Agrochemicals,current_champion,54,0.6184486373165619,0.5662832473965232
+judge_variant_growth,Fertilizers & Agrochemicals,sir_score,54,0.5981830887491265,0.6662743475824552
+judge_variant_growth,Fertilizers & Agrochemicals,tabm_compact_e24_return_w0.3,54,0.5936408106219426,0.5477533312199706
+judge_variant_growth,Fertilizers & Agrochemicals,tabm_compact_e48_return_w0.3,54,0.5897973445143256,0.5477533312199706
+judge_variant_growth,Fertilizers & Agrochemicals,tabm_embedded_e24_return_w1.0,54,0.5178197064989518,0.504332530942457
+judge_variant_growth,Fertilizers & Agrochemicals,tabm_embedded_e48_return_w1.0,54,0.5262054507337526,0.504332530942457
+judge_variant_growth,Fertilizers & Agrochemicals,tabm_embedded_e48_return_w0.1,54,0.612858141160028,0.5380597636015328
+judge_variant_growth,Finance,current_champion,419,0.5302326112525836,0.5457003234213619
+judge_variant_growth,Finance,sir_score,419,0.5777140834294459,0.6931052104661969
+judge_variant_growth,Finance,tabm_compact_e24_return_w0.3,419,0.5134804901165911,0.4560854044415901
+judge_variant_growth,Finance,tabm_compact_e48_return_w0.3,419,0.5174258601591851,0.4560854044415901
+judge_variant_growth,Finance,tabm_embedded_e24_return_w1.0,419,0.48192323942857795,0.32446212357037557
+judge_variant_growth,Finance,tabm_embedded_e48_return_w1.0,419,0.4875301184181978,0.400879720013517
+judge_variant_growth,Finance,tabm_embedded_e48_return_w0.1,419,0.5277146543947198,0.5350375947350635
+judge_variant_growth,Financial Technology (Fintech),current_champion,11,0.6909090909090909,0.6491372053872053
+judge_variant_growth,Financial Technology (Fintech),sir_score,11,0.6181818181818182,0.634469696969697
+judge_variant_growth,Financial Technology (Fintech),tabm_compact_e24_return_w0.3,11,0.7090909090909091,0.71121632996633
+judge_variant_growth,Financial Technology (Fintech),tabm_compact_e48_return_w0.3,11,0.7272727272727273,0.71121632996633
+judge_variant_growth,Financial Technology (Fintech),tabm_embedded_e24_return_w1.0,11,0.509090909090909,0.6491372053872053
+judge_variant_growth,Financial Technology (Fintech),tabm_embedded_e48_return_w1.0,11,0.45454545454545453,0.580787037037037
+judge_variant_growth,Financial Technology (Fintech),tabm_embedded_e48_return_w0.1,11,0.6909090909090909,0.6491372053872053
+judge_variant_growth,Food Products,current_champion,100,0.501010101010101,0.5387352258904406
+judge_variant_growth,Food Products,sir_score,100,0.48727272727272725,0.5470412292128104
+judge_variant_growth,Food Products,tabm_compact_e24_return_w0.3,100,0.48323232323232324,0.46496144342256973
+judge_variant_growth,Food Products,tabm_compact_e48_return_w0.3,100,0.48363636363636364,0.46496144342256973
+judge_variant_growth,Food Products,tabm_embedded_e24_return_w1.0,100,0.4687878787878788,0.606682744918107
+judge_variant_growth,Food Products,tabm_embedded_e48_return_w1.0,100,0.4825252525252525,0.606682744918107
+judge_variant_growth,Food Products,tabm_embedded_e48_return_w0.1,100,0.49828282828282827,0.4890281190435443
+judge_variant_growth,Gas,current_champion,9,0.5,0.5462962962962963
+judge_variant_growth,Gas,sir_score,9,0.3055555555555556,0.5333333333333333
+judge_variant_growth,Gas,tabm_compact_e24_return_w0.3,9,0.5,0.5462962962962963
+judge_variant_growth,Gas,tabm_compact_e48_return_w0.3,9,0.4722222222222222,0.5462962962962963
+judge_variant_growth,Gas,tabm_embedded_e24_return_w1.0,9,0.6111111111111112,0.5462962962962963
+judge_variant_growth,Gas,tabm_embedded_e48_return_w1.0,9,0.5833333333333334,0.5462962962962963
+judge_variant_growth,Gas,tabm_embedded_e48_return_w0.1,9,0.5,0.5462962962962963
+judge_variant_growth,Healthcare Equipment & Supplies,current_champion,16,0.35833333333333334,0.4770860042735043
+judge_variant_growth,Healthcare Equipment & Supplies,sir_score,16,0.4083333333333333,0.5931623931623932
+judge_variant_growth,Healthcare Equipment & Supplies,tabm_compact_e24_return_w0.3,16,0.35416666666666663,0.43534455128205124
+judge_variant_growth,Healthcare Equipment & Supplies,tabm_compact_e48_return_w0.3,16,0.3458333333333333,0.43534455128205124
+judge_variant_growth,Healthcare Equipment & Supplies,tabm_embedded_e24_return_w1.0,16,0.5166666666666667,0.5941319444444444
+judge_variant_growth,Healthcare Equipment & Supplies,tabm_embedded_e48_return_w1.0,16,0.5583333333333333,0.6113434829059828
+judge_variant_growth,Healthcare Equipment & Supplies,tabm_embedded_e48_return_w0.1,16,0.35,0.4770860042735043
+judge_variant_growth,Healthcare Services,current_champion,68,0.5430201931518877,0.5475067858227748
+judge_variant_growth,Healthcare Services,sir_score,68,0.5452151009657594,0.4124990267789456
+judge_variant_growth,Healthcare Services,tabm_compact_e24_return_w0.3,68,0.5215100965759438,0.5186538916370691
+judge_variant_growth,Healthcare Services,tabm_compact_e48_return_w0.3,68,0.5215100965759438,0.5186538916370691
+judge_variant_growth,Healthcare Services,tabm_embedded_e24_return_w1.0,68,0.62928007023705,0.4965703430221906
+judge_variant_growth,Healthcare Services,tabm_embedded_e48_return_w1.0,68,0.6380597014925373,0.4625543155338551
+judge_variant_growth,Healthcare Services,tabm_embedded_e48_return_w0.1,68,0.5513608428446005,0.5475067858227748
+judge_variant_growth,Household Products,current_champion,17,0.625,0.5722542735042736
+judge_variant_growth,Household Products,sir_score,17,0.6764705882352942,0.6503154851684264
+judge_variant_growth,Household Products,tabm_compact_e24_return_w0.3,17,0.6323529411764706,0.5722542735042736
+judge_variant_growth,Household Products,tabm_compact_e48_return_w0.3,17,0.6286764705882353,0.5722542735042736
+judge_variant_growth,Household Products,tabm_embedded_e24_return_w1.0,17,0.47794117647058826,0.48306184012066367
+judge_variant_growth,Household Products,tabm_embedded_e48_return_w1.0,17,0.5294117647058824,0.5609382855706385
+judge_variant_growth,Household Products,tabm_embedded_e48_return_w0.1,17,0.625,0.5722542735042736
+judge_variant_growth,IT - Hardware,current_champion,19,0.5555555555555556,0.6644084578275754
+judge_variant_growth,IT - Hardware,sir_score,19,0.5847953216374269,0.6567432111733583
+judge_variant_growth,IT - Hardware,tabm_compact_e24_return_w0.3,19,0.5555555555555556,0.5443344421101775
+judge_variant_growth,IT - Hardware,tabm_compact_e48_return_w0.3,19,0.543859649122807,0.5443344421101775
+judge_variant_growth,IT - Hardware,tabm_embedded_e24_return_w1.0,19,0.5146198830409356,0.5646522914721444
+judge_variant_growth,IT - Hardware,tabm_embedded_e48_return_w1.0,19,0.4970760233918129,0.5655230703392468
+judge_variant_growth,IT - Hardware,tabm_embedded_e48_return_w0.1,19,0.543859649122807,0.6644084578275754
+judge_variant_growth,IT - Services,current_champion,82,0.6043360433604336,0.5969155251141552
+judge_variant_growth,IT - Services,sir_score,82,0.6028304727491719,0.5882060455878532
+judge_variant_growth,IT - Services,tabm_compact_e24_return_w0.3,82,0.601927130382415,0.6037842836990014
+judge_variant_growth,IT - Services,tabm_compact_e48_return_w0.3,82,0.5971093044263776,0.6037842836990014
+judge_variant_growth,IT - Services,tabm_embedded_e24_return_w1.0,82,0.6532670882264379,0.6720216987786317
+judge_variant_growth,IT - Services,tabm_embedded_e48_return_w1.0,82,0.6493526046371575,0.6747114006756506
+judge_variant_growth,IT - Services,tabm_embedded_e48_return_w0.1,82,0.6067449563384523,0.5969155251141552
+judge_variant_growth,IT - Software,current_champion,125,0.5464516129032259,0.5367883255896776
+judge_variant_growth,IT - Software,sir_score,125,0.5067096774193548,0.484655109353221
+judge_variant_growth,IT - Software,tabm_compact_e24_return_w0.3,125,0.5405806451612903,0.5229021296991152
+judge_variant_growth,IT - Software,tabm_compact_e48_return_w0.3,125,0.5456774193548387,0.5229021296991152
+judge_variant_growth,IT - Software,tabm_embedded_e24_return_w1.0,125,0.4961935483870968,0.6053610095794619
+judge_variant_growth,IT - Software,tabm_embedded_e48_return_w1.0,125,0.5081935483870967,0.6053610095794619
+judge_variant_growth,IT - Software,tabm_embedded_e48_return_w0.1,125,0.5436774193548387,0.5377455771247382
+judge_variant_growth,Industrial Manufacturing,current_champion,147,0.5084335103904576,0.5897041426555106
+judge_variant_growth,Industrial Manufacturing,sir_score,147,0.5639735346193272,0.49175599453705404
+judge_variant_growth,Industrial Manufacturing,tabm_compact_e24_return_w0.3,147,0.4958065417948001,0.6283431058970935
+judge_variant_growth,Industrial Manufacturing,tabm_compact_e48_return_w0.3,147,0.4966452334358401,0.6283431058970935
+judge_variant_growth,Industrial Manufacturing,tabm_embedded_e24_return_w1.0,147,0.4928711210511602,0.49077894666936395
+judge_variant_growth,Industrial Manufacturing,tabm_embedded_e48_return_w1.0,147,0.5174727425216662,0.5203898653951305
+judge_variant_growth,Industrial Manufacturing,tabm_embedded_e48_return_w0.1,147,0.507920976609822,0.5376416783473325
+judge_variant_growth,Industrial Products,current_champion,348,0.5553678492166021,0.599883152844984
+judge_variant_growth,Industrial Products,sir_score,348,0.583341614495346,0.46767331406056806
+judge_variant_growth,Industrial Products,tabm_compact_e24_return_w0.3,348,0.5434512570803935,0.5486958633361715
+judge_variant_growth,Industrial Products,tabm_compact_e48_return_w0.3,348,0.5456126403656961,0.5486958633361715
+judge_variant_growth,Industrial Products,tabm_embedded_e24_return_w1.0,348,0.5021531021232899,0.4764646471301072
+judge_variant_growth,Industrial Products,tabm_embedded_e48_return_w1.0,348,0.5043558912186558,0.564938710203879
+judge_variant_growth,Industrial Products,tabm_embedded_e48_return_w0.1,348,0.5522210076517937,0.5733392738065041
+judge_variant_growth,Insurance,current_champion,13,0.32051282051282054,0.3574660633484162
+judge_variant_growth,Insurance,sir_score,13,0.32051282051282054,0.3574660633484162
+judge_variant_growth,Insurance,tabm_compact_e24_return_w0.3,13,0.34615384615384615,0.3672699849170436
+judge_variant_growth,Insurance,tabm_compact_e48_return_w0.3,13,0.35897435897435903,0.3672699849170436
+judge_variant_growth,Insurance,tabm_embedded_e24_return_w1.0,13,0.4230769230769231,0.4366515837104072
+judge_variant_growth,Insurance,tabm_embedded_e48_return_w1.0,13,0.41025641025641024,0.4366515837104072
+judge_variant_growth,Insurance,tabm_embedded_e48_return_w0.1,13,0.32051282051282054,0.3574660633484162
+judge_variant_growth,Leisure Services,current_champion,94,0.5607412491420728,0.5778290806035589
+judge_variant_growth,Leisure Services,sir_score,94,0.475177304964539,0.5053478266687835
+judge_variant_growth,Leisure Services,tabm_compact_e24_return_w0.3,94,0.557652711050103,0.4869996980972571
+judge_variant_growth,Leisure Services,tabm_compact_e48_return_w0.3,94,0.5560512468542668,0.5778290806035589
+judge_variant_growth,Leisure Services,tabm_embedded_e24_return_w1.0,94,0.5085792724776939,0.48704648331760403
+judge_variant_growth,Leisure Services,tabm_embedded_e48_return_w1.0,94,0.5012582932967284,0.6427670411045745
+judge_variant_growth,Leisure Services,tabm_embedded_e48_return_w0.1,94,0.5587966140471288,0.5953877027764667
+judge_variant_growth,Media,current_champion,23,0.4980237154150198,0.5005514354066986
+judge_variant_growth,Media,sir_score,23,0.46640316205533594,0.5262680090377458
+judge_variant_growth,Media,tabm_compact_e24_return_w0.3,23,0.5,0.5625625332270069
+judge_variant_growth,Media,tabm_compact_e48_return_w0.3,23,0.5019762845849802,0.5005514354066986
+judge_variant_growth,Media,tabm_embedded_e24_return_w1.0,23,0.383399209486166,0.481222687400319
+judge_variant_growth,Media,tabm_embedded_e48_return_w1.0,23,0.4308300395256917,0.481222687400319
+judge_variant_growth,Media,tabm_embedded_e48_return_w0.1,23,0.4901185770750988,0.5576469298245613
+judge_variant_growth,Metals & Minerals Trading,current_champion,14,0.5494505494505495,0.5691849816849818
+judge_variant_growth,Metals & Minerals Trading,sir_score,14,0.5714285714285714,0.6210714285714286
+judge_variant_growth,Metals & Minerals Trading,tabm_compact_e24_return_w0.3,14,0.5274725274725275,0.5691849816849818
+judge_variant_growth,Metals & Minerals Trading,tabm_compact_e48_return_w0.3,14,0.5439560439560439,0.5691849816849818
+judge_variant_growth,Metals & Minerals Trading,tabm_embedded_e24_return_w1.0,14,0.3956043956043956,0.5163369963369964
+judge_variant_growth,Metals & Minerals Trading,tabm_embedded_e48_return_w1.0,14,0.41758241758241754,0.5862087912087913
+judge_variant_growth,Metals & Minerals Trading,tabm_embedded_e48_return_w0.1,14,0.5494505494505495,0.5691849816849818
+judge_variant_growth,Minerals & Mining,current_champion,14,0.7032967032967032,0.665945720945721
+judge_variant_growth,Minerals & Mining,sir_score,14,0.7032967032967032,0.6365850815850816
+judge_variant_growth,Minerals & Mining,tabm_compact_e24_return_w0.3,14,0.6593406593406593,0.6445621045621047
+judge_variant_growth,Minerals & Mining,tabm_compact_e48_return_w0.3,14,0.6703296703296704,0.6445621045621047
+judge_variant_growth,Minerals & Mining,tabm_embedded_e24_return_w1.0,14,0.6263736263736264,0.5211829836829837
+judge_variant_growth,Minerals & Mining,tabm_embedded_e48_return_w1.0,14,0.6043956043956044,0.5218706293706293
+judge_variant_growth,Minerals & Mining,tabm_embedded_e48_return_w0.1,14,0.7142857142857143,0.665945720945721
+judge_variant_growth,Non - Ferrous Metals,current_champion,25,0.5866666666666667,0.5234313367791629
+judge_variant_growth,Non - Ferrous Metals,sir_score,25,0.62,0.5168992094861661
+judge_variant_growth,Non - Ferrous Metals,tabm_compact_e24_return_w0.3,25,0.5433333333333333,0.5234313367791629
+judge_variant_growth,Non - Ferrous Metals,tabm_compact_e48_return_w0.3,25,0.57,0.4846434073173203
+judge_variant_growth,Non - Ferrous Metals,tabm_embedded_e24_return_w1.0,25,0.46,0.46718556805513334
+judge_variant_growth,Non - Ferrous Metals,tabm_embedded_e48_return_w1.0,25,0.44666666666666666,0.4671855680551333
+judge_variant_growth,Non - Ferrous Metals,tabm_embedded_e48_return_w0.1,25,0.58,0.5234313367791629
+judge_variant_growth,Oil,current_champion,19,0.631578947368421,0.5934381808278867
+judge_variant_growth,Oil,sir_score,19,0.5847953216374269,0.5141796023965141
+judge_variant_growth,Oil,tabm_compact_e24_return_w0.3,19,0.695906432748538,0.5934381808278867
+judge_variant_growth,Oil,tabm_compact_e48_return_w0.3,19,0.6783625730994152,0.5934381808278867
+judge_variant_growth,Oil,tabm_embedded_e24_return_w1.0,19,0.47953216374269003,0.3945479302832244
+judge_variant_growth,Oil,tabm_embedded_e48_return_w1.0,19,0.5964912280701754,0.4803002450980392
+judge_variant_growth,Oil,tabm_embedded_e48_return_w0.1,19,0.6461988304093567,0.5934381808278867
+judge_variant_growth,Other Construction Materials,current_champion,16,0.6166666666666667,0.6041325536062377
+judge_variant_growth,Other Construction Materials,sir_score,16,0.5083333333333333,0.4248440545808967
+judge_variant_growth,Other Construction Materials,tabm_compact_e24_return_w0.3,16,0.65,0.6041325536062377
+judge_variant_growth,Other Construction Materials,tabm_compact_e48_return_w0.3,16,0.65,0.6041325536062377
+judge_variant_growth,Other Construction Materials,tabm_embedded_e24_return_w1.0,16,0.575,0.5733698830409356
+judge_variant_growth,Other Construction Materials,tabm_embedded_e48_return_w1.0,16,0.5416666666666666,0.5008576998050682
+judge_variant_growth,Other Construction Materials,tabm_embedded_e48_return_w0.1,16,0.6083333333333334,0.6041325536062377
+judge_variant_growth,Other Consumer Services,current_champion,30,0.5172413793103449,0.5093313218730349
+judge_variant_growth,Other Consumer Services,sir_score,30,0.5839080459770115,0.5343047185789122
+judge_variant_growth,Other Consumer Services,tabm_compact_e24_return_w0.3,30,0.4770114942528736,0.5093313218730349
+judge_variant_growth,Other Consumer Services,tabm_compact_e48_return_w0.3,30,0.5011494252873563,0.5335765488991295
+judge_variant_growth,Other Consumer Services,tabm_embedded_e24_return_w1.0,30,0.4781609195402299,0.5694901606859338
+judge_variant_growth,Other Consumer Services,tabm_embedded_e48_return_w1.0,30,0.4804597701149425,0.48199909749131103
+judge_variant_growth,Other Consumer Services,tabm_embedded_e48_return_w0.1,30,0.5149425287356322,0.5093313218730349
+judge_variant_growth,Other Utilities,current_champion,17,0.5220588235294118,0.5165012254901961
+judge_variant_growth,Other Utilities,sir_score,17,0.5808823529411765,0.6089031862745098
+judge_variant_growth,Other Utilities,tabm_compact_e24_return_w0.3,17,0.5073529411764706,0.512781862745098
+judge_variant_growth,Other Utilities,tabm_compact_e48_return_w0.3,17,0.5,0.512781862745098
+judge_variant_growth,Other Utilities,tabm_embedded_e24_return_w1.0,17,0.5661764705882353,0.6100122549019608
+judge_variant_growth,Other Utilities,tabm_embedded_e48_return_w1.0,17,0.5808823529411765,0.6100122549019608
+judge_variant_growth,Other Utilities,tabm_embedded_e48_return_w0.1,17,0.5294117647058824,0.5165012254901961
+judge_variant_growth,"Paper, Forest & Jute Products",current_champion,43,0.5725359911406422,0.5409284313484707
+judge_variant_growth,"Paper, Forest & Jute Products",sir_score,43,0.5681063122923589,0.5678028886152151
+judge_variant_growth,"Paper, Forest & Jute Products",tabm_compact_e24_return_w0.3,43,0.5780730897009967,0.492781593141792
+judge_variant_growth,"Paper, Forest & Jute Products",tabm_compact_e48_return_w0.3,43,0.5719822812846068,0.492781593141792
+judge_variant_growth,"Paper, Forest & Jute Products",tabm_embedded_e24_return_w1.0,43,0.4983388704318937,0.4242987945792061
+judge_variant_growth,"Paper, Forest & Jute Products",tabm_embedded_e48_return_w1.0,43,0.5116279069767442,0.4822959890657623
+judge_variant_growth,"Paper, Forest & Jute Products",tabm_embedded_e48_return_w0.1,43,0.5714285714285714,0.5689954435976637
+judge_variant_growth,Personal Products,current_champion,15,0.49523809523809526,0.6190873015873015
+judge_variant_growth,Personal Products,sir_score,15,0.4666666666666667,0.5703521825396826
+judge_variant_growth,Personal Products,tabm_compact_e24_return_w0.3,15,0.5333333333333333,0.6190873015873015
+judge_variant_growth,Personal Products,tabm_compact_e48_return_w0.3,15,0.5333333333333333,0.6190873015873015
+judge_variant_growth,Personal Products,tabm_embedded_e24_return_w1.0,15,0.38095238095238093,0.4681150793650793
+judge_variant_growth,Personal Products,tabm_embedded_e48_return_w1.0,15,0.41904761904761906,0.49039186507936505
+judge_variant_growth,Personal Products,tabm_embedded_e48_return_w0.1,15,0.4857142857142857,0.6190873015873015
+judge_variant_growth,Petroleum Products,current_champion,18,0.6535947712418301,0.619691513301227
+judge_variant_growth,Petroleum Products,sir_score,18,0.5555555555555556,0.5523635477582846
+judge_variant_growth,Petroleum Products,tabm_compact_e24_return_w0.3,18,0.696078431372549,0.6680822511753238
+judge_variant_growth,Petroleum Products,tabm_compact_e48_return_w0.3,18,0.6830065359477124,0.5816382510606583
+judge_variant_growth,Petroleum Products,tabm_embedded_e24_return_w1.0,18,0.6274509803921569,0.5239045837633299
+judge_variant_growth,Petroleum Products,tabm_embedded_e48_return_w1.0,18,0.5816993464052288,0.5748593552918243
+judge_variant_growth,Petroleum Products,tabm_embedded_e48_return_w0.1,18,0.6535947712418301,0.619691513301227
+judge_variant_growth,Pharmaceuticals & Biotechnology,current_champion,190,0.5715956558061821,0.5870011931504403
+judge_variant_growth,Pharmaceuticals & Biotechnology,sir_score,190,0.5739905318852687,0.5169553582295694
+judge_variant_growth,Pharmaceuticals & Biotechnology,tabm_compact_e24_return_w0.3,190,0.5783347257031468,0.5742344440251724
+judge_variant_growth,Pharmaceuticals & Biotechnology,tabm_compact_e48_return_w0.3,190,0.5811473127262601,0.5730360813139909
+judge_variant_growth,Pharmaceuticals & Biotechnology,tabm_embedded_e24_return_w1.0,190,0.582818156502367,0.4737951155404787
+judge_variant_growth,Pharmaceuticals & Biotechnology,tabm_embedded_e48_return_w1.0,190,0.5745474798106377,0.47379511554047876
+judge_variant_growth,Pharmaceuticals & Biotechnology,tabm_embedded_e48_return_w0.1,190,0.5733778891673629,0.5870011931504403
+judge_variant_growth,Power,current_champion,42,0.5458768873403019,0.5495874660332299
+judge_variant_growth,Power,sir_score,42,0.5691056910569106,0.563800886153261
+judge_variant_growth,Power,tabm_compact_e24_return_w0.3,42,0.5040650406504065,0.5776319583877351
+judge_variant_growth,Power,tabm_compact_e48_return_w0.3,42,0.5168408826945412,0.5776319583877351
+judge_variant_growth,Power,tabm_embedded_e24_return_w1.0,42,0.5563298490127758,0.5807327107768377
+judge_variant_growth,Power,tabm_embedded_e48_return_w1.0,42,0.5493612078977933,0.5807327107768377
+judge_variant_growth,Power,tabm_embedded_e48_return_w0.1,42,0.5423925667828107,0.5495874660332299
+judge_variant_growth,Realty,current_champion,142,0.5681750074917591,0.6127081473608861
+judge_variant_growth,Realty,sir_score,142,0.5750674258315852,0.7297638708778384
+judge_variant_growth,Realty,tabm_compact_e24_return_w0.3,142,0.5573868744381181,0.5700224943136106
+judge_variant_growth,Realty,tabm_compact_e48_return_w0.3,142,0.5531914893617021,0.5700224943136106
+judge_variant_growth,Realty,tabm_embedded_e24_return_w1.0,142,0.5241234641893917,0.5338022989875664
+judge_variant_growth,Realty,tabm_embedded_e48_return_w1.0,142,0.5102387373888723,0.5439065018737567
+judge_variant_growth,Realty,tabm_embedded_e48_return_w0.1,142,0.564828688442713,0.6127081473608861
+judge_variant_growth,Retailing,current_champion,60,0.5711864406779661,0.5424409270354339
+judge_variant_growth,Retailing,sir_score,60,0.5598870056497175,0.4927141364407364
+judge_variant_growth,Retailing,tabm_compact_e24_return_w0.3,60,0.5601694915254237,0.46638167704237393
+judge_variant_growth,Retailing,tabm_compact_e48_return_w0.3,60,0.5573446327683615,0.46638167704237393
+judge_variant_growth,Retailing,tabm_embedded_e24_return_w1.0,60,0.5141242937853108,0.562627877207439
+judge_variant_growth,Retailing,tabm_embedded_e48_return_w1.0,60,0.5290960451977401,0.547813604418311
+judge_variant_growth,Retailing,tabm_embedded_e48_return_w0.1,60,0.5740112994350283,0.5424409270354339
+judge_variant_growth,Telecom -  Equipment & Accessories,current_champion,11,0.6909090909090909,0.7401016113516112
+judge_variant_growth,Telecom -  Equipment & Accessories,sir_score,11,0.6,0.576494708994709
+judge_variant_growth,Telecom -  Equipment & Accessories,tabm_compact_e24_return_w0.3,11,0.6909090909090909,0.6729864117364118
+judge_variant_growth,Telecom -  Equipment & Accessories,tabm_compact_e48_return_w0.3,11,0.6545454545454545,0.6012259499759499
+judge_variant_growth,Telecom -  Equipment & Accessories,tabm_embedded_e24_return_w1.0,11,0.6363636363636364,0.5770785233285233
+judge_variant_growth,Telecom -  Equipment & Accessories,tabm_embedded_e48_return_w1.0,11,0.6181818181818182,0.5770785233285233
+judge_variant_growth,Telecom -  Equipment & Accessories,tabm_embedded_e48_return_w0.1,11,0.6818181818181819,0.7401016113516112
+judge_variant_growth,Telecom - Services,current_champion,19,0.5906432748538012,0.6841663973281621
+judge_variant_growth,Telecom - Services,sir_score,19,0.5146198830409356,0.3798567119155354
+judge_variant_growth,Telecom - Services,tabm_compact_e24_return_w0.3,19,0.5497076023391813,0.559283020900668
+judge_variant_growth,Telecom - Services,tabm_compact_e48_return_w0.3,19,0.5497076023391813,0.559283020900668
+judge_variant_growth,Telecom - Services,tabm_embedded_e24_return_w1.0,19,0.47953216374269003,0.5725584464555054
+judge_variant_growth,Telecom - Services,tabm_embedded_e48_return_w1.0,19,0.4678362573099415,0.44020864756158873
+judge_variant_growth,Telecom - Services,tabm_embedded_e48_return_w0.1,19,0.5906432748538012,0.6841663973281621
+judge_variant_growth,Textiles & Apparels,current_champion,241,0.5297372060857538,0.509108332237649
+judge_variant_growth,Textiles & Apparels,sir_score,241,0.5912863070539419,0.44771058818690385
+judge_variant_growth,Textiles & Apparels,tabm_compact_e24_return_w0.3,241,0.5093879668049792,0.5705587999419356
+judge_variant_growth,Textiles & Apparels,tabm_compact_e48_return_w0.3,241,0.5121887966804979,0.5705587999419356
+judge_variant_growth,Textiles & Apparels,tabm_embedded_e24_return_w1.0,241,0.48580567081604425,0.5680442487932812
+judge_variant_growth,Textiles & Apparels,tabm_embedded_e48_return_w1.0,241,0.5029218533886584,0.5203337445653372
+judge_variant_growth,Textiles & Apparels,tabm_embedded_e48_return_w0.1,241,0.5289591977869986,0.509108332237649
+judge_variant_growth,Transport Infrastructure,current_champion,14,0.5934065934065934,0.619067599067599
+judge_variant_growth,Transport Infrastructure,sir_score,14,0.6263736263736264,0.5629778554778555
+judge_variant_growth,Transport Infrastructure,tabm_compact_e24_return_w0.3,14,0.5659340659340659,0.6126731601731601
+judge_variant_growth,Transport Infrastructure,tabm_compact_e48_return_w0.3,14,0.5989010989010989,0.6126731601731601
+judge_variant_growth,Transport Infrastructure,tabm_embedded_e24_return_w1.0,14,0.5604395604395604,0.6126731601731601
+judge_variant_growth,Transport Infrastructure,tabm_embedded_e48_return_w1.0,14,0.5054945054945055,0.6051825951825952
+judge_variant_growth,Transport Infrastructure,tabm_embedded_e48_return_w0.1,14,0.5934065934065934,0.619067599067599
+judge_variant_growth,Transport Services,current_champion,70,0.5933747412008281,0.6020092835747737
+judge_variant_growth,Transport Services,sir_score,70,0.6422360248447205,0.629252026889934
+judge_variant_growth,Transport Services,tabm_compact_e24_return_w0.3,70,0.567287784679089,0.6326801822469484
+judge_variant_growth,Transport Services,tabm_compact_e48_return_w0.3,70,0.5641821946169773,0.5588423020906355
+judge_variant_growth,Transport Services,tabm_embedded_e24_return_w1.0,70,0.5167701863354037,0.6133207255845684
+judge_variant_growth,Transport Services,tabm_embedded_e48_return_w1.0,70,0.5403726708074534,0.6728338167368465
+judge_variant_growth,Transport Services,tabm_embedded_e48_return_w0.1,70,0.5884057971014492,0.6020092835747737
+judge_variant_value,Aerospace & Defense,current_champion,30,0.6183908045977011,0.6106867079280872
+judge_variant_value,Aerospace & Defense,sir_score,30,0.41379310344827586,0.34339080459770116
+judge_variant_value,Aerospace & Defense,tabm_compact_e24_return_w0.3,30,0.6137931034482759,0.6671802239905688
+judge_variant_value,Aerospace & Defense,tabm_compact_e48_return_w0.3,30,0.6252873563218391,0.6671802239905688
+judge_variant_value,Aerospace & Defense,tabm_embedded_e24_return_w1.0,30,0.5195402298850574,0.5476212054229296
+judge_variant_value,Aerospace & Defense,tabm_embedded_e48_return_w1.0,30,0.5195402298850574,0.6549657382847037
+judge_variant_value,Aerospace & Defense,tabm_embedded_e48_return_w0.1,30,0.6091954022988506,0.6106867079280872
+judge_variant_value,Agricultural Food & other Products,current_champion,144,0.5454545454545454,0.6344762620333545
+judge_variant_value,Agricultural Food & other Products,sir_score,144,0.574009324009324,0.5453328455015406
+judge_variant_value,Agricultural Food & other Products,tabm_compact_e24_return_w0.3,144,0.5335081585081585,0.5155927817755895
+judge_variant_value,Agricultural Food & other Products,tabm_compact_e48_return_w0.3,144,0.5387043512043512,0.5577401024191221
+judge_variant_value,Agricultural Food & other Products,tabm_embedded_e24_return_w1.0,144,0.4732905982905983,0.4369829792744629
+judge_variant_value,Agricultural Food & other Products,tabm_embedded_e48_return_w1.0,144,0.4696969696969697,0.40531720046398645
+judge_variant_value,Agricultural Food & other Products,tabm_embedded_e48_return_w0.1,144,0.5413267288267288,0.6344762620333545
+judge_variant_value,"Agricultural, Commercial & Construction Vehicles",current_champion,14,0.5274725274725275,0.5360683760683761
+judge_variant_value,"Agricultural, Commercial & Construction Vehicles",sir_score,14,0.4725274725274725,0.42883394383394385
+judge_variant_value,"Agricultural, Commercial & Construction Vehicles",tabm_compact_e24_return_w0.3,14,0.5439560439560439,0.5360683760683761
+judge_variant_value,"Agricultural, Commercial & Construction Vehicles",tabm_compact_e48_return_w0.3,14,0.5714285714285714,0.5360683760683761
+judge_variant_value,"Agricultural, Commercial & Construction Vehicles",tabm_embedded_e24_return_w1.0,14,0.6703296703296704,0.6770054945054945
+judge_variant_value,"Agricultural, Commercial & Construction Vehicles",tabm_embedded_e48_return_w1.0,14,0.6703296703296704,0.6770054945054945
+judge_variant_value,"Agricultural, Commercial & Construction Vehicles",tabm_embedded_e48_return_w0.1,14,0.532967032967033,0.5360683760683761
+judge_variant_value,Auto Components,current_champion,149,0.57527661890078,0.521935388570483
+judge_variant_value,Auto Components,sir_score,149,0.5644839470342826,0.3109898945418028
+judge_variant_value,Auto Components,tabm_compact_e24_return_w0.3,149,0.5540994014148377,0.47760874538328907
+judge_variant_value,Auto Components,tabm_compact_e48_return_w0.3,149,0.5529657173952476,0.4776087453832891
+judge_variant_value,Auto Components,tabm_embedded_e24_return_w1.0,149,0.511971703246871,0.3822072314340151
+judge_variant_value,Auto Components,tabm_embedded_e48_return_w1.0,149,0.5308362053328496,0.5186110026914709
+judge_variant_value,Auto Components,tabm_embedded_e48_return_w0.1,149,0.573099945583167,0.47732902827766305
+judge_variant_value,Automobiles,current_champion,19,0.5614035087719298,0.5690291068580542
+judge_variant_value,Automobiles,sir_score,19,0.5847953216374269,0.5436274509803921
+judge_variant_value,Automobiles,tabm_compact_e24_return_w0.3,19,0.5964912280701754,0.6296777371235575
+judge_variant_value,Automobiles,tabm_compact_e48_return_w0.3,19,0.5614035087719298,0.5760460643587578
+judge_variant_value,Automobiles,tabm_embedded_e24_return_w1.0,19,0.5847953216374269,0.6509309034618632
+judge_variant_value,Automobiles,tabm_embedded_e48_return_w1.0,19,0.543859649122807,0.6509309034618632
+judge_variant_value,Automobiles,tabm_embedded_e48_return_w0.1,19,0.5555555555555556,0.5690291068580542
+judge_variant_value,Banks,current_champion,41,0.5658536585365854,0.4663760438509363
+judge_variant_value,Banks,sir_score,41,0.5487804878048781,0.45066769672221607
+judge_variant_value,Banks,tabm_compact_e24_return_w0.3,41,0.552439024390244,0.3909980502519958
+judge_variant_value,Banks,tabm_compact_e48_return_w0.3,41,0.5384146341463415,0.3909980502519958
+judge_variant_value,Banks,tabm_embedded_e24_return_w1.0,41,0.5536585365853659,0.2983482323511018
+judge_variant_value,Banks,tabm_embedded_e48_return_w1.0,41,0.5573170731707316,0.2983482323511018
+judge_variant_value,Banks,tabm_embedded_e48_return_w0.1,41,0.5652439024390243,0.5160210425633669
+judge_variant_value,Beverages,current_champion,28,0.5396825396825397,0.5535473677996167
+judge_variant_value,Beverages,sir_score,28,0.46031746031746035,0.5255261426063526
+judge_variant_value,Beverages,tabm_compact_e24_return_w0.3,28,0.5066137566137566,0.5535473677996167
+judge_variant_value,Beverages,tabm_compact_e48_return_w0.3,28,0.5291005291005291,0.5535473677996167
+judge_variant_value,Beverages,tabm_embedded_e24_return_w1.0,28,0.4470899470899471,0.5189908662884674
+judge_variant_value,Beverages,tabm_embedded_e48_return_w1.0,28,0.44973544973544977,0.5189908662884674
+judge_variant_value,Beverages,tabm_embedded_e48_return_w0.1,28,0.5396825396825397,0.5535473677996167
+judge_variant_value,Capital Markets,current_champion,67,0.46720940750791495,0.5357300420168066
+judge_variant_value,Capital Markets,sir_score,67,0.4794210764360018,0.5673657796451913
+judge_variant_value,Capital Markets,tabm_compact_e24_return_w0.3,67,0.46449570330167345,0.5618113912231558
+judge_variant_value,Capital Markets,tabm_compact_e48_return_w0.3,67,0.4690185436454093,0.5618113912231558
+judge_variant_value,Capital Markets,tabm_embedded_e24_return_w1.0,67,0.4531886024423338,0.419953898225957
+judge_variant_value,Capital Markets,tabm_embedded_e48_return_w1.0,67,0.47444595205789236,0.5175997899159664
+judge_variant_value,Capital Markets,tabm_embedded_e48_return_w0.1,67,0.4690185436454093,0.5357300420168066
+judge_variant_value,Cement & Cement Products,current_champion,34,0.6381461675579323,0.48495739962651724
+judge_variant_value,Cement & Cement Products,sir_score,34,0.5365418894830659,0.5840957633053221
+judge_variant_value,Cement & Cement Products,tabm_compact_e24_return_w0.3,34,0.6461675579322639,0.5605648926237161
+judge_variant_value,Cement & Cement Products,tabm_compact_e48_return_w0.3,34,0.6550802139037433,0.5605648926237161
+judge_variant_value,Cement & Cement Products,tabm_embedded_e24_return_w1.0,34,0.6096256684491979,0.5776657329598506
+judge_variant_value,Cement & Cement Products,tabm_embedded_e48_return_w1.0,34,0.625668449197861,0.5026987044817927
+judge_variant_value,Cement & Cement Products,tabm_embedded_e48_return_w0.1,34,0.6372549019607843,0.48495739962651724
+judge_variant_value,Chemicals & Petrochemicals,current_champion,215,0.5823951314931537,0.558492901103557
+judge_variant_value,Chemicals & Petrochemicals,sir_score,215,0.5600086937622256,0.5419815901370889
+judge_variant_value,Chemicals & Petrochemicals,tabm_compact_e24_return_w0.3,215,0.5570962834166485,0.53919596023822
+judge_variant_value,Chemicals & Petrochemicals,tabm_compact_e48_return_w0.3,215,0.561204086068246,0.6073478585141155
+judge_variant_value,Chemicals & Petrochemicals,tabm_embedded_e24_return_w1.0,215,0.5475983481851772,0.3579858374021962
+judge_variant_value,Chemicals & Petrochemicals,tabm_embedded_e48_return_w1.0,215,0.552597261464899,0.5171632264287656
+judge_variant_value,Chemicals & Petrochemicals,tabm_embedded_e48_return_w0.1,215,0.5814388176483373,0.5309785591146847
+judge_variant_value,Cigarettes & Tobacco Products,current_champion,5,0.4,0.555
+judge_variant_value,Cigarettes & Tobacco Products,sir_score,5,0.2,0.555
+judge_variant_value,Cigarettes & Tobacco Products,tabm_compact_e24_return_w0.3,5,0.5,0.555
+judge_variant_value,Cigarettes & Tobacco Products,tabm_compact_e48_return_w0.3,5,0.5,0.555
+judge_variant_value,Cigarettes & Tobacco Products,tabm_embedded_e24_return_w1.0,5,0.6,0.5895833333333335
+judge_variant_value,Cigarettes & Tobacco Products,tabm_embedded_e48_return_w1.0,5,0.7,0.6525
+judge_variant_value,Cigarettes & Tobacco Products,tabm_embedded_e48_return_w0.1,5,0.4,0.555
+judge_variant_value,Commercial Services & Supplies,current_champion,249,0.5142181629744785,0.5338983866626724
+judge_variant_value,Commercial Services & Supplies,sir_score,249,0.510720300557067,0.4860519205401728
+judge_variant_value,Commercial Services & Supplies,tabm_compact_e24_return_w0.3,249,0.4999028371550719,0.5350102239529323
+judge_variant_value,Commercial Services & Supplies,tabm_compact_e48_return_w0.3,249,0.5040322580645161,0.5350102239529323
+judge_variant_value,Commercial Services & Supplies,tabm_embedded_e24_return_w1.0,249,0.4601632335794792,0.5075857095514781
+judge_variant_value,Commercial Services & Supplies,tabm_embedded_e48_return_w1.0,249,0.4683573001684156,0.5075857095514781
+judge_variant_value,Commercial Services & Supplies,tabm_embedded_e48_return_w0.1,249,0.511724316621324,0.48345996883821124
+judge_variant_value,Construction,current_champion,124,0.575006556517178,0.5703484613556687
+judge_variant_value,Construction,sir_score,124,0.5735641227380015,0.40230433833797846
+judge_variant_value,Construction,tabm_compact_e24_return_w0.3,124,0.5686467348544453,0.6192981001539223
+judge_variant_value,Construction,tabm_compact_e48_return_w0.3,124,0.5672043010752688,0.5432228728404384
+judge_variant_value,Construction,tabm_embedded_e24_return_w1.0,124,0.5464857067925518,0.4554755875798227
+judge_variant_value,Construction,tabm_embedded_e48_return_w1.0,124,0.5678599527930763,0.5835867002825627
+judge_variant_value,Construction,tabm_embedded_e48_return_w0.1,124,0.5775635982166273,0.5207561010141079
+judge_variant_value,Consumable Fuels,current_champion,5,0.7,0.6641666666666667
+judge_variant_value,Consumable Fuels,sir_score,5,0.6,0.6466666666666666
+judge_variant_value,Consumable Fuels,tabm_compact_e24_return_w0.3,5,0.7,0.6641666666666667
+judge_variant_value,Consumable Fuels,tabm_compact_e48_return_w0.3,5,0.7,0.6641666666666667
+judge_variant_value,Consumable Fuels,tabm_embedded_e24_return_w1.0,5,0.5,0.5533333333333333
+judge_variant_value,Consumable Fuels,tabm_embedded_e48_return_w1.0,5,0.6,0.6241666666666666
+judge_variant_value,Consumable Fuels,tabm_embedded_e48_return_w0.1,5,0.7,0.6641666666666667
+judge_variant_value,Consumer Durables,current_champion,220,0.5882108758821087,0.5365668240580703
+judge_variant_value,Consumer Durables,sir_score,220,0.563802407638024,0.4756308150517006
+judge_variant_value,Consumer Durables,tabm_compact_e24_return_w0.3,220,0.5796803652968037,0.4952149894134181
+judge_variant_value,Consumer Durables,tabm_compact_e48_return_w0.3,220,0.5802200083022001,0.4952149894134181
+judge_variant_value,Consumer Durables,tabm_embedded_e24_return_w1.0,220,0.5315483603154836,0.48125549132939954
+judge_variant_value,Consumer Durables,tabm_embedded_e48_return_w1.0,220,0.536197592361976,0.48125549132939954
+judge_variant_value,Consumer Durables,tabm_embedded_e48_return_w0.1,220,0.5857824823578248,0.580961116225812
+judge_variant_value,Diversified,current_champion,12,0.5757575757575757,0.48866550116550106
+judge_variant_value,Diversified,sir_score,12,0.6363636363636364,0.5205662393162392
+judge_variant_value,Diversified,tabm_compact_e24_return_w0.3,12,0.5757575757575757,0.6570172882672882
+judge_variant_value,Diversified,tabm_compact_e48_return_w0.3,12,0.5606060606060606,0.5191190753690753
+judge_variant_value,Diversified,tabm_embedded_e24_return_w1.0,12,0.5,0.5751845376845376
+judge_variant_value,Diversified,tabm_embedded_e48_return_w1.0,12,0.5454545454545454,0.5751845376845376
+judge_variant_value,Diversified,tabm_embedded_e48_return_w0.1,12,0.5757575757575757,0.48866550116550106
+judge_variant_value,Diversified FMCG,current_champion,5,0.7,0.6883333333333335
+judge_variant_value,Diversified FMCG,sir_score,5,0.4,0.6258333333333334
+judge_variant_value,Diversified FMCG,tabm_compact_e24_return_w0.3,5,0.6,0.6883333333333335
+judge_variant_value,Diversified FMCG,tabm_compact_e48_return_w0.3,5,0.6,0.6883333333333335
+judge_variant_value,Diversified FMCG,tabm_embedded_e24_return_w1.0,5,0.30000000000000004,0.5508333333333334
+judge_variant_value,Diversified FMCG,tabm_embedded_e48_return_w1.0,5,0.4,0.5925
+judge_variant_value,Diversified FMCG,tabm_embedded_e48_return_w0.1,5,0.7,0.6883333333333335
+judge_variant_value,Diversified Metals,current_champion,5,0.4,0.5808333333333333
+judge_variant_value,Diversified Metals,sir_score,5,0.4,0.6020833333333333
+judge_variant_value,Diversified Metals,tabm_compact_e24_return_w0.3,5,0.5,0.64625
+judge_variant_value,Diversified Metals,tabm_compact_e48_return_w0.3,5,0.5,0.64625
+judge_variant_value,Diversified Metals,tabm_embedded_e24_return_w1.0,5,0.6,0.5962500000000001
+judge_variant_value,Diversified Metals,tabm_embedded_e48_return_w1.0,5,0.6,0.5962500000000001
+judge_variant_value,Diversified Metals,tabm_embedded_e48_return_w0.1,5,0.4,0.5808333333333333
+judge_variant_value,Electrical Equipment,current_champion,97,0.45124570446735396,0.3800317216560411
+judge_variant_value,Electrical Equipment,sir_score,97,0.4630584192439863,0.3968194157303244
+judge_variant_value,Electrical Equipment,tabm_compact_e24_return_w0.3,97,0.45081615120274915,0.3626740791185307
+judge_variant_value,Electrical Equipment,tabm_compact_e48_return_w0.3,97,0.4485609965635739,0.380031721656041
+judge_variant_value,Electrical Equipment,tabm_embedded_e24_return_w1.0,97,0.4379295532646048,0.4695663728286233
+judge_variant_value,Electrical Equipment,tabm_embedded_e48_return_w1.0,97,0.4478092783505154,0.4328890172750362
+judge_variant_value,Electrical Equipment,tabm_embedded_e48_return_w0.1,97,0.45027920962199314,0.3800317216560411
+judge_variant_value,Entertainment,current_champion,57,0.6033834586466166,0.6785358106550596
+judge_variant_value,Entertainment,sir_score,57,0.568922305764411,0.5406132190262373
+judge_variant_value,Entertainment,tabm_compact_e24_return_w0.3,57,0.5917919799498746,0.6785358106550596
+judge_variant_value,Entertainment,tabm_compact_e48_return_w0.3,57,0.6011904761904762,0.6785358106550596
+judge_variant_value,Entertainment,tabm_embedded_e24_return_w1.0,57,0.45802005012531327,0.4938371419248884
+judge_variant_value,Entertainment,tabm_embedded_e48_return_w1.0,57,0.4680451127819549,0.648041416234738
+judge_variant_value,Entertainment,tabm_embedded_e48_return_w0.1,57,0.5949248120300752,0.6226535717045273
+judge_variant_value,Ferrous Metals,current_champion,27,0.5954415954415955,0.5507160285950609
+judge_variant_value,Ferrous Metals,sir_score,27,0.5128205128205128,0.5319601205246366
+judge_variant_value,Ferrous Metals,tabm_compact_e24_return_w0.3,27,0.5726495726495726,0.5507160285950609
+judge_variant_value,Ferrous Metals,tabm_compact_e48_return_w0.3,27,0.5925925925925926,0.5775928748670683
+judge_variant_value,Ferrous Metals,tabm_embedded_e24_return_w1.0,27,0.5356125356125356,0.5788234668557248
+judge_variant_value,Ferrous Metals,tabm_embedded_e48_return_w1.0,27,0.5555555555555556,0.5788234668557248
+judge_variant_value,Ferrous Metals,tabm_embedded_e48_return_w0.1,27,0.6096866096866097,0.5507160285950609
+judge_variant_value,Fertilizers & Agrochemicals,current_champion,54,0.6072676450034941,0.5540536962176966
+judge_variant_value,Fertilizers & Agrochemicals,sir_score,54,0.5450733752620545,0.5867660070233901
+judge_variant_value,Fertilizers & Agrochemicals,tabm_compact_e24_return_w0.3,54,0.5866526904262753,0.572380431843448
+judge_variant_value,Fertilizers & Agrochemicals,tabm_compact_e48_return_w0.3,54,0.583508036338225,0.572380431843448
+judge_variant_value,Fertilizers & Agrochemicals,tabm_embedded_e24_return_w1.0,54,0.5150244584206848,0.5169029818281253
+judge_variant_value,Fertilizers & Agrochemicals,tabm_embedded_e48_return_w1.0,54,0.5192173305380853,0.5169029818281254
+judge_variant_value,Fertilizers & Agrochemicals,tabm_embedded_e48_return_w0.1,54,0.6016771488469601,0.5354205650384212
+judge_variant_value,Finance,current_champion,419,0.5567139806556965,0.577171908741193
+judge_variant_value,Finance,sir_score,419,0.5579929428692146,0.6256135171274395
+judge_variant_value,Finance,tabm_compact_e24_return_w0.3,419,0.5378264493953477,0.47829539468876453
+judge_variant_value,Finance,tabm_compact_e48_return_w0.3,419,0.5414520788845623,0.47829539468876453
+judge_variant_value,Finance,tabm_embedded_e24_return_w1.0,419,0.5033801144214409,0.33199238118044855
+judge_variant_value,Finance,tabm_embedded_e48_return_w1.0,419,0.5090098320220164,0.4354004343636042
+judge_variant_value,Finance,tabm_embedded_e48_return_w0.1,419,0.5547784083772025,0.5833268390168712
+judge_variant_value,Financial Technology (Fintech),current_champion,11,0.6727272727272727,0.657260101010101
+judge_variant_value,Financial Technology (Fintech),sir_score,11,0.6363636363636364,0.6522727272727272
+judge_variant_value,Financial Technology (Fintech),tabm_compact_e24_return_w0.3,11,0.7272727272727273,0.7302398989898989
+judge_variant_value,Financial Technology (Fintech),tabm_compact_e48_return_w0.3,11,0.7454545454545455,0.7302398989898989
+judge_variant_value,Financial Technology (Fintech),tabm_embedded_e24_return_w1.0,11,0.5272727272727272,0.657260101010101
+judge_variant_value,Financial Technology (Fintech),tabm_embedded_e48_return_w1.0,11,0.4,0.5673611111111111
+judge_variant_value,Financial Technology (Fintech),tabm_embedded_e48_return_w0.1,11,0.6727272727272727,0.657260101010101
+judge_variant_value,Food Products,current_champion,100,0.49656565656565654,0.5526322512306757
+judge_variant_value,Food Products,sir_score,100,0.4795959595959596,0.520665345262055
+judge_variant_value,Food Products,tabm_compact_e24_return_w0.3,100,0.4771717171717172,0.47281068845374796
+judge_variant_value,Food Products,tabm_compact_e48_return_w0.3,100,0.47838383838383836,0.47281068845374796
+judge_variant_value,Food Products,tabm_embedded_e24_return_w1.0,100,0.4308080808080808,0.5928341061982908
+judge_variant_value,Food Products,tabm_embedded_e48_return_w1.0,100,0.4481818181818182,0.5928341061982908
+judge_variant_value,Food Products,tabm_embedded_e48_return_w0.1,100,0.49343434343434345,0.4860597714161789
+judge_variant_value,Gas,current_champion,9,0.6388888888888888,0.6106481481481482
+judge_variant_value,Gas,sir_score,9,0.33333333333333337,0.5194444444444444
+judge_variant_value,Gas,tabm_compact_e24_return_w0.3,9,0.6388888888888888,0.6106481481481482
+judge_variant_value,Gas,tabm_compact_e48_return_w0.3,9,0.6111111111111112,0.6106481481481482
+judge_variant_value,Gas,tabm_embedded_e24_return_w1.0,9,0.75,0.6106481481481482
+judge_variant_value,Gas,tabm_embedded_e48_return_w1.0,9,0.7777777777777778,0.6106481481481482
+judge_variant_value,Gas,tabm_embedded_e48_return_w0.1,9,0.6388888888888888,0.6106481481481482
+judge_variant_value,Healthcare Equipment & Supplies,current_champion,16,0.3416666666666667,0.4898597756410257
+judge_variant_value,Healthcare Equipment & Supplies,sir_score,16,0.4583333333333333,0.574599358974359
+judge_variant_value,Healthcare Equipment & Supplies,tabm_compact_e24_return_w0.3,16,0.36249999999999993,0.4206610576923077
+judge_variant_value,Healthcare Equipment & Supplies,tabm_compact_e48_return_w0.3,16,0.3375,0.4206610576923077
+judge_variant_value,Healthcare Equipment & Supplies,tabm_embedded_e24_return_w1.0,16,0.5,0.6072395833333333
+judge_variant_value,Healthcare Equipment & Supplies,tabm_embedded_e48_return_w1.0,16,0.49166666666666664,0.5959254807692308
+judge_variant_value,Healthcare Equipment & Supplies,tabm_embedded_e48_return_w0.1,16,0.3333333333333333,0.4898597756410257
+judge_variant_value,Healthcare Services,current_champion,68,0.5237050043898156,0.511539815701393
+judge_variant_value,Healthcare Services,sir_score,68,0.4863915715539947,0.3433825975985778
+judge_variant_value,Healthcare Services,tabm_compact_e24_return_w0.3,68,0.5162423178226514,0.5314115490478596
+judge_variant_value,Healthcare Services,tabm_compact_e48_return_w0.3,68,0.5149253731343284,0.5314115490478596
+judge_variant_value,Healthcare Services,tabm_embedded_e24_return_w1.0,68,0.5792361720807726,0.5093938081570367
+judge_variant_value,Healthcare Services,tabm_embedded_e48_return_w1.0,68,0.590649692712906,0.4375069705088886
+judge_variant_value,Healthcare Services,tabm_embedded_e48_return_w0.1,68,0.5302897278314311,0.511539815701393
+judge_variant_value,Household Products,current_champion,17,0.6029411764705882,0.577777149321267
+judge_variant_value,Household Products,sir_score,17,0.5955882352941176,0.645920060331825
+judge_variant_value,Household Products,tabm_compact_e24_return_w0.3,17,0.5955882352941176,0.577777149321267
+judge_variant_value,Household Products,tabm_compact_e48_return_w0.3,17,0.5992647058823529,0.577777149321267
+judge_variant_value,Household Products,tabm_embedded_e24_return_w1.0,17,0.4411764705882353,0.4829638009049774
+judge_variant_value,Household Products,tabm_embedded_e48_return_w1.0,17,0.5073529411764706,0.597539592760181
+judge_variant_value,Household Products,tabm_embedded_e48_return_w0.1,17,0.6029411764705882,0.577777149321267
+judge_variant_value,IT - Hardware,current_champion,19,0.5964912280701754,0.7076954948646126
+judge_variant_value,IT - Hardware,sir_score,19,0.543859649122807,0.6345672852474323
+judge_variant_value,IT - Hardware,tabm_compact_e24_return_w0.3,19,0.5964912280701754,0.5966955532212885
+judge_variant_value,IT - Hardware,tabm_compact_e48_return_w0.3,19,0.5847953216374269,0.5966955532212885
+judge_variant_value,IT - Hardware,tabm_embedded_e24_return_w1.0,19,0.4970760233918129,0.546781921101774
+judge_variant_value,IT - Hardware,tabm_embedded_e48_return_w1.0,19,0.47953216374269003,0.5531156629318393
+judge_variant_value,IT - Hardware,tabm_embedded_e48_return_w0.1,19,0.5847953216374269,0.7076954948646126
+judge_variant_value,IT - Services,current_champion,82,0.5826558265582655,0.5110993946191908
+judge_variant_value,IT - Services,sir_score,82,0.5420054200542005,0.5172533265450071
+judge_variant_value,IT - Services,tabm_compact_e24_return_w0.3,82,0.594700391448359,0.5240412125647675
+judge_variant_value,IT - Services,tabm_compact_e48_return_w0.3,82,0.5862691960252936,0.5240412125647675
+judge_variant_value,IT - Services,tabm_embedded_e24_return_w1.0,82,0.6568804576934658,0.6289420327324604
+judge_variant_value,IT - Services,tabm_embedded_e48_return_w1.0,82,0.6526648599819331,0.6474839413658325
+judge_variant_value,IT - Services,tabm_embedded_e48_return_w0.1,82,0.587473652514303,0.5110993946191908
+judge_variant_value,IT - Software,current_champion,125,0.5454193548387096,0.5472899430129958
+judge_variant_value,IT - Software,sir_score,125,0.46722580645161293,0.42988270882505697
+judge_variant_value,IT - Software,tabm_compact_e24_return_w0.3,125,0.542,0.5167732111036369
+judge_variant_value,IT - Software,tabm_compact_e48_return_w0.3,125,0.543741935483871,0.5167732111036368
+judge_variant_value,IT - Software,tabm_embedded_e24_return_w1.0,125,0.5036774193548387,0.5937899256017325
+judge_variant_value,IT - Software,tabm_embedded_e48_return_w1.0,125,0.5110322580645161,0.5937899256017324
+judge_variant_value,IT - Software,tabm_embedded_e48_return_w0.1,125,0.542258064516129,0.5608314348427995
+judge_variant_value,Industrial Manufacturing,current_champion,147,0.4836455129997204,0.5808364242988552
+judge_variant_value,Industrial Manufacturing,sir_score,147,0.49445531637312456,0.410067510565783
+judge_variant_value,Industrial Manufacturing,tabm_compact_e24_return_w0.3,147,0.4743733109682229,0.6349527963995735
+judge_variant_value,Industrial Manufacturing,tabm_compact_e48_return_w0.3,147,0.47409374708787627,0.6349527963995735
+judge_variant_value,Industrial Manufacturing,tabm_embedded_e24_return_w1.0,147,0.49119373776908026,0.5263577148873334
+judge_variant_value,Industrial Manufacturing,tabm_embedded_e48_return_w1.0,147,0.5103904575528841,0.5185463685318622
+judge_variant_value,Industrial Manufacturing,tabm_embedded_e48_return_w0.1,147,0.48564905414220483,0.5519028129618196
+judge_variant_value,Industrial Products,current_champion,348,0.5444864023319752,0.578584096086921
+judge_variant_value,Industrial Products,sir_score,348,0.5147901553545994,0.40463551010236104
+judge_variant_value,Industrial Products,tabm_compact_e24_return_w0.3,348,0.5386978700851304,0.5798783956198198
+judge_variant_value,Industrial Products,tabm_compact_e48_return_w0.3,348,0.5399648878730663,0.5798783956198198
+judge_variant_value,Industrial Products,tabm_embedded_e24_return_w1.0,348,0.5076352313756667,0.474794140292857
+judge_variant_value,Industrial Products,tabm_embedded_e48_return_w1.0,348,0.5035940243134917,0.6014569085905255
+judge_variant_value,Industrial Products,tabm_embedded_e48_return_w0.1,348,0.5416376825996224,0.5664498810473463
+judge_variant_value,Insurance,current_champion,13,0.33974358974358976,0.34539969834087475
+judge_variant_value,Insurance,sir_score,13,0.33974358974358976,0.34539969834087486
+judge_variant_value,Insurance,tabm_compact_e24_return_w0.3,13,0.3141025641025641,0.3235294117647059
+judge_variant_value,Insurance,tabm_compact_e48_return_w0.3,13,0.326923076923077,0.3235294117647059
+judge_variant_value,Insurance,tabm_embedded_e24_return_w1.0,13,0.4166666666666667,0.44947209653092
+judge_variant_value,Insurance,tabm_embedded_e48_return_w1.0,13,0.40384615384615385,0.4494720965309201
+judge_variant_value,Insurance,tabm_embedded_e48_return_w0.1,13,0.33974358974358976,0.34539969834087475
+judge_variant_value,Leisure Services,current_champion,94,0.5493022191718142,0.5561919482909607
+judge_variant_value,Leisure Services,sir_score,94,0.4527568062228323,0.5173925799402448
+judge_variant_value,Leisure Services,tabm_compact_e24_return_w0.3,94,0.5551361244566461,0.46982804602653677
+judge_variant_value,Leisure Services,tabm_compact_e48_return_w0.3,94,0.5519331960649737,0.5561919482909607
+judge_variant_value,Leisure Services,tabm_embedded_e24_return_w1.0,94,0.5035460992907801,0.4731945687669316
+judge_variant_value,Leisure Services,tabm_embedded_e48_return_w1.0,94,0.47883779455502173,0.6114018395918575
+judge_variant_value,Leisure Services,tabm_embedded_e48_return_w0.1,94,0.5452985586822238,0.5615066399357765
+judge_variant_value,Media,current_champion,23,0.5059288537549407,0.5841802232854864
+judge_variant_value,Media,sir_score,23,0.43478260869565216,0.47094477671451357
+judge_variant_value,Media,tabm_compact_e24_return_w0.3,23,0.5079051383399209,0.5977418261562998
+judge_variant_value,Media,tabm_compact_e48_return_w0.3,23,0.5098814229249012,0.5841802232854864
+judge_variant_value,Media,tabm_embedded_e24_return_w1.0,23,0.39920948616600793,0.5191772328548644
+judge_variant_value,Media,tabm_embedded_e48_return_w1.0,23,0.43873517786561267,0.5191772328548644
+judge_variant_value,Media,tabm_embedded_e48_return_w0.1,23,0.4980237154150198,0.5962302631578947
+judge_variant_value,Metals & Minerals Trading,current_champion,14,0.5714285714285714,0.5433836996336997
+judge_variant_value,Metals & Minerals Trading,sir_score,14,0.5494505494505495,0.5979761904761905
+judge_variant_value,Metals & Minerals Trading,tabm_compact_e24_return_w0.3,14,0.5494505494505495,0.5433836996336997
+judge_variant_value,Metals & Minerals Trading,tabm_compact_e48_return_w0.3,14,0.5659340659340659,0.5433836996336997
+judge_variant_value,Metals & Minerals Trading,tabm_embedded_e24_return_w1.0,14,0.41758241758241754,0.4815338827838828
+judge_variant_value,Metals & Minerals Trading,tabm_embedded_e48_return_w1.0,14,0.41758241758241754,0.5617765567765568
+judge_variant_value,Metals & Minerals Trading,tabm_embedded_e48_return_w0.1,14,0.5714285714285714,0.5433836996336997
+judge_variant_value,Minerals & Mining,current_champion,14,0.7032967032967032,0.6238419913419913
+judge_variant_value,Minerals & Mining,sir_score,14,0.6373626373626373,0.6027397602397602
+judge_variant_value,Minerals & Mining,tabm_compact_e24_return_w0.3,14,0.7032967032967032,0.6057634032634033
+judge_variant_value,Minerals & Mining,tabm_compact_e48_return_w0.3,14,0.7142857142857143,0.6057634032634033
+judge_variant_value,Minerals & Mining,tabm_embedded_e24_return_w1.0,14,0.6043956043956044,0.5025079087579087
+judge_variant_value,Minerals & Mining,tabm_embedded_e48_return_w1.0,14,0.5604395604395604,0.5050416250416251
+judge_variant_value,Minerals & Mining,tabm_embedded_e48_return_w0.1,14,0.7142857142857143,0.6238419913419913
+judge_variant_value,Non - Ferrous Metals,current_champion,25,0.5833333333333333,0.567869083814736
+judge_variant_value,Non - Ferrous Metals,sir_score,25,0.5833333333333333,0.49533715921759397
+judge_variant_value,Non - Ferrous Metals,tabm_compact_e24_return_w0.3,25,0.5599999999999999,0.567869083814736
+judge_variant_value,Non - Ferrous Metals,tabm_compact_e48_return_w0.3,25,0.5666666666666667,0.5306586095064355
+judge_variant_value,Non - Ferrous Metals,tabm_embedded_e24_return_w1.0,25,0.49,0.48969722306678826
+judge_variant_value,Non - Ferrous Metals,tabm_embedded_e48_return_w1.0,25,0.48333333333333334,0.48969722306678826
+judge_variant_value,Non - Ferrous Metals,tabm_embedded_e48_return_w0.1,25,0.5833333333333333,0.567869083814736
+judge_variant_value,Oil,current_champion,19,0.7076023391812866,0.6783088235294118
+judge_variant_value,Oil,sir_score,19,0.48538011695906436,0.4990829248366013
+judge_variant_value,Oil,tabm_compact_e24_return_w0.3,19,0.760233918128655,0.6783088235294118
+judge_variant_value,Oil,tabm_compact_e48_return_w0.3,19,0.760233918128655,0.6783088235294118
+judge_variant_value,Oil,tabm_embedded_e24_return_w1.0,19,0.42690058479532167,0.3818995098039215
+judge_variant_value,Oil,tabm_embedded_e48_return_w1.0,19,0.543859649122807,0.4603370098039215
+judge_variant_value,Oil,tabm_embedded_e48_return_w0.1,19,0.7046783625730993,0.6783088235294118
+judge_variant_value,Other Construction Materials,current_champion,16,0.625,0.5920540935672515
+judge_variant_value,Other Construction Materials,sir_score,16,0.5166666666666667,0.4346345029239765
+judge_variant_value,Other Construction Materials,tabm_compact_e24_return_w0.3,16,0.6416666666666666,0.5920540935672515
+judge_variant_value,Other Construction Materials,tabm_compact_e48_return_w0.3,16,0.6416666666666666,0.5920540935672515
+judge_variant_value,Other Construction Materials,tabm_embedded_e24_return_w1.0,16,0.5666666666666667,0.5741447368421052
+judge_variant_value,Other Construction Materials,tabm_embedded_e48_return_w1.0,16,0.55,0.4837426900584794
+judge_variant_value,Other Construction Materials,tabm_embedded_e48_return_w0.1,16,0.6166666666666667,0.5920540935672515
+judge_variant_value,Other Consumer Services,current_champion,30,0.48735632183908045,0.5647817630089599
+judge_variant_value,Other Consumer Services,sir_score,30,0.5448275862068965,0.539689678600969
+judge_variant_value,Other Consumer Services,tabm_compact_e24_return_w0.3,30,0.4471264367816092,0.5647817630089599
+judge_variant_value,Other Consumer Services,tabm_compact_e48_return_w0.3,30,0.47126436781609193,0.5752880184331798
+judge_variant_value,Other Consumer Services,tabm_embedded_e24_return_w1.0,30,0.46206896551724136,0.5442465020148557
+judge_variant_value,Other Consumer Services,tabm_embedded_e48_return_w1.0,30,0.45517241379310347,0.4900935970777461
+judge_variant_value,Other Consumer Services,tabm_embedded_e48_return_w0.1,30,0.4850574712643678,0.5647817630089599
+judge_variant_value,Other Utilities,current_champion,17,0.5294117647058824,0.507202818627451
+judge_variant_value,Other Utilities,sir_score,17,0.5882352941176471,0.572092524509804
+judge_variant_value,Other Utilities,tabm_compact_e24_return_w0.3,17,0.5294117647058824,0.5210232843137255
+judge_variant_value,Other Utilities,tabm_compact_e48_return_w0.3,17,0.5367647058823529,0.5210232843137255
+judge_variant_value,Other Utilities,tabm_embedded_e24_return_w1.0,17,0.5588235294117647,0.623890931372549
+judge_variant_value,Other Utilities,tabm_embedded_e48_return_w1.0,17,0.6029411764705882,0.623890931372549
+judge_variant_value,Other Utilities,tabm_embedded_e48_return_w0.1,17,0.5367647058823529,0.507202818627451
+judge_variant_value,"Paper, Forest & Jute Products",current_champion,43,0.6079734219269103,0.5953603716985424
+judge_variant_value,"Paper, Forest & Jute Products",sir_score,43,0.5592469545957918,0.5636642467776833
+judge_variant_value,"Paper, Forest & Jute Products",tabm_compact_e24_return_w0.3,43,0.6157253599114064,0.5435733362346452
+judge_variant_value,"Paper, Forest & Jute Products",tabm_compact_e48_return_w0.3,43,0.6096345514950166,0.5435733362346452
+judge_variant_value,"Paper, Forest & Jute Products",tabm_embedded_e24_return_w1.0,43,0.5049833887043189,0.42538084732407117
+judge_variant_value,"Paper, Forest & Jute Products",tabm_embedded_e48_return_w1.0,43,0.5249169435215947,0.46817128766770305
+judge_variant_value,"Paper, Forest & Jute Products",tabm_embedded_e48_return_w0.1,43,0.6090808416389811,0.6094570596582622
+judge_variant_value,Personal Products,current_champion,15,0.47619047619047616,0.5649900793650793
+judge_variant_value,Personal Products,sir_score,15,0.3904761904761905,0.5233382936507937
+judge_variant_value,Personal Products,tabm_compact_e24_return_w0.3,15,0.49523809523809526,0.5649900793650793
+judge_variant_value,Personal Products,tabm_compact_e48_return_w0.3,15,0.49523809523809526,0.5649900793650793
+judge_variant_value,Personal Products,tabm_embedded_e24_return_w1.0,15,0.38095238095238093,0.4830456349206349
+judge_variant_value,Personal Products,tabm_embedded_e48_return_w1.0,15,0.4380952380952381,0.4912078373015873
+judge_variant_value,Personal Products,tabm_embedded_e48_return_w0.1,15,0.4666666666666667,0.5649900793650793
+judge_variant_value,Petroleum Products,current_champion,18,0.6143790849673203,0.5814956355349157
+judge_variant_value,Petroleum Products,sir_score,18,0.6470588235294118,0.6046224630202958
+judge_variant_value,Petroleum Products,tabm_compact_e24_return_w0.3,18,0.6568627450980392,0.6666295794633643
+judge_variant_value,Petroleum Products,tabm_compact_e48_return_w0.3,18,0.6437908496732025,0.5555582430340557
+judge_variant_value,Petroleum Products,tabm_embedded_e24_return_w1.0,18,0.5490196078431373,0.48678728070175437
+judge_variant_value,Petroleum Products,tabm_embedded_e48_return_w1.0,18,0.5163398692810458,0.5563365368077055
+judge_variant_value,Petroleum Products,tabm_embedded_e48_return_w0.1,18,0.6143790849673203,0.5814956355349157
+judge_variant_value,Pharmaceuticals & Biotechnology,current_champion,190,0.5647451963241437,0.5733616102798537
+judge_variant_value,Pharmaceuticals & Biotechnology,sir_score,190,0.507880813143971,0.4817467256715733
+judge_variant_value,Pharmaceuticals & Biotechnology,tabm_compact_e24_return_w0.3,190,0.5757170704539125,0.5509509050775044
+judge_variant_value,Pharmaceuticals & Biotechnology,tabm_compact_e48_return_w0.3,190,0.5778056251740462,0.5720849727020089
+judge_variant_value,Pharmaceuticals & Biotechnology,tabm_embedded_e24_return_w1.0,190,0.5637148426622111,0.5294933090948161
+judge_variant_value,Pharmaceuticals & Biotechnology,tabm_embedded_e48_return_w1.0,190,0.5532163742690058,0.5294933090948161
+judge_variant_value,Pharmaceuticals & Biotechnology,tabm_embedded_e48_return_w0.1,190,0.5650236702868282,0.5733616102798537
+judge_variant_value,Power,current_champion,42,0.5644599303135889,0.5983629616829232
+judge_variant_value,Power,sir_score,42,0.5342624854819977,0.5465412227671534
+judge_variant_value,Power,tabm_compact_e24_return_w0.3,42,0.5133565621370499,0.6228286730741801
+judge_variant_value,Power,tabm_compact_e48_return_w0.3,42,0.521486643437863,0.6228286730741801
+judge_variant_value,Power,tabm_embedded_e24_return_w1.0,42,0.5563298490127758,0.5480712977591989
+judge_variant_value,Power,tabm_embedded_e48_return_w1.0,42,0.5307781649245064,0.5480712977591989
+judge_variant_value,Power,tabm_embedded_e48_return_w0.1,42,0.5586527293844367,0.5983629616829232
+judge_variant_value,Realty,current_champion,142,0.5678753371291579,0.5850455334278672
+judge_variant_value,Realty,sir_score,142,0.5434022575167315,0.6982924280641859
+judge_variant_value,Realty,tabm_compact_e24_return_w0.3,142,0.5620817101188692,0.5882715806921263
+judge_variant_value,Realty,tabm_compact_e48_return_w0.3,142,0.5596843472180602,0.5882715806921263
+judge_variant_value,Realty,tabm_embedded_e24_return_w1.0,142,0.5326141244630906,0.4847781761730127
+judge_variant_value,Realty,tabm_embedded_e48_return_w1.0,142,0.5215263210468485,0.5400165453908148
+judge_variant_value,Realty,tabm_embedded_e48_return_w0.1,142,0.5655279192887823,0.5850455334278672
+judge_variant_value,Retailing,current_champion,60,0.4994350282485876,0.4668148421558506
+judge_variant_value,Retailing,sir_score,60,0.4903954802259887,0.44558298340032704
+judge_variant_value,Retailing,tabm_compact_e24_return_w0.3,60,0.502542372881356,0.4107633454104058
+judge_variant_value,Retailing,tabm_compact_e48_return_w0.3,60,0.4963276836158192,0.4107633454104058
+judge_variant_value,Retailing,tabm_embedded_e24_return_w1.0,60,0.4694915254237288,0.5798750476795407
+judge_variant_value,Retailing,tabm_embedded_e48_return_w1.0,60,0.4901129943502825,0.5154454707237712
+judge_variant_value,Retailing,tabm_embedded_e48_return_w0.1,60,0.49548022598870056,0.4668148421558506
+judge_variant_value,Telecom -  Equipment & Accessories,current_champion,11,0.7454545454545455,0.7497417628667629
+judge_variant_value,Telecom -  Equipment & Accessories,sir_score,11,0.6545454545454545,0.6132118807118808
+judge_variant_value,Telecom -  Equipment & Accessories,tabm_compact_e24_return_w0.3,11,0.7454545454545455,0.6907326238576239
+judge_variant_value,Telecom -  Equipment & Accessories,tabm_compact_e48_return_w0.3,11,0.7090909090909091,0.6529873136123135
+judge_variant_value,Telecom -  Equipment & Accessories,tabm_embedded_e24_return_w1.0,11,0.6909090909090909,0.5939156445406445
+judge_variant_value,Telecom -  Equipment & Accessories,tabm_embedded_e48_return_w1.0,11,0.6727272727272727,0.5939156445406445
+judge_variant_value,Telecom -  Equipment & Accessories,tabm_embedded_e48_return_w0.1,11,0.7363636363636363,0.7497417628667629
+judge_variant_value,Telecom - Services,current_champion,19,0.6081871345029239,0.6891443115707822
+judge_variant_value,Telecom - Services,sir_score,19,0.52046783625731,0.3823225957049486
+judge_variant_value,Telecom - Services,tabm_compact_e24_return_w0.3,19,0.5672514619883041,0.5746970839617899
+judge_variant_value,Telecom - Services,tabm_compact_e48_return_w0.3,19,0.5672514619883041,0.5746970839617899
+judge_variant_value,Telecom - Services,tabm_embedded_e24_return_w1.0,19,0.4385964912280702,0.5597869532428356
+judge_variant_value,Telecom - Services,tabm_embedded_e48_return_w1.0,19,0.42690058479532167,0.44879515908927675
+judge_variant_value,Telecom - Services,tabm_embedded_e48_return_w0.1,19,0.6081871345029239,0.6891443115707822
+judge_variant_value,Textiles & Apparels,current_champion,241,0.5458160442600276,0.5260973926331961
+judge_variant_value,Textiles & Apparels,sir_score,241,0.5560511756569848,0.39299774761710643
+judge_variant_value,Textiles & Apparels,tabm_compact_e24_return_w0.3,241,0.5285788381742739,0.5525074531112558
+judge_variant_value,Textiles & Apparels,tabm_compact_e48_return_w0.3,241,0.5303423236514523,0.5525074531112558
+judge_variant_value,Textiles & Apparels,tabm_embedded_e24_return_w1.0,241,0.5109439834024896,0.5587751095074681
+judge_variant_value,Textiles & Apparels,tabm_embedded_e48_return_w1.0,241,0.5260546334716459,0.528645908869287
+judge_variant_value,Textiles & Apparels,tabm_embedded_e48_return_w0.1,241,0.5448997233748272,0.5260973926331961
+judge_variant_value,Transport Infrastructure,current_champion,14,0.5824175824175825,0.575011655011655
+judge_variant_value,Transport Infrastructure,sir_score,14,0.5714285714285714,0.5247827172827172
+judge_variant_value,Transport Infrastructure,tabm_compact_e24_return_w0.3,14,0.5769230769230769,0.5987121212121211
+judge_variant_value,Transport Infrastructure,tabm_compact_e48_return_w0.3,14,0.5879120879120879,0.5987121212121211
+judge_variant_value,Transport Infrastructure,tabm_embedded_e24_return_w1.0,14,0.5934065934065934,0.5987121212121211
+judge_variant_value,Transport Infrastructure,tabm_embedded_e48_return_w1.0,14,0.5604395604395604,0.618334027084027
+judge_variant_value,Transport Infrastructure,tabm_embedded_e48_return_w0.1,14,0.5824175824175825,0.575011655011655
+judge_variant_value,Transport Services,current_champion,70,0.5706004140786749,0.6015554235313614
+judge_variant_value,Transport Services,sir_score,70,0.5946169772256729,0.6061660251099025
+judge_variant_value,Transport Services,tabm_compact_e24_return_w0.3,70,0.5420289855072464,0.5982245325674181
+judge_variant_value,Transport Services,tabm_compact_e48_return_w0.3,70,0.5422360248447204,0.5561219511426726
+judge_variant_value,Transport Services,tabm_embedded_e24_return_w1.0,70,0.5304347826086957,0.6427831784425436
+judge_variant_value,Transport Services,tabm_embedded_e48_return_w1.0,70,0.5449275362318841,0.6531983070267099
+judge_variant_value,Transport Services,tabm_embedded_e48_return_w0.1,70,0.567287784679089,0.6015554235313614

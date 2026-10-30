@@ -1,0 +1,11 @@
+EVALUATED recent common False
+EVALUATED recent common True
+EVALUATED recent expanded False
+EVALUATED recent expanded True
+                    model  rank_ic  regressed  improved  nonreturn_regressions  top3_nonreturn_regressions
+    balanced_l1_base_w1.0 0.135398        412       236                    360                         124
+balanced_l1_activity_w1.0 0.145089        400       248                    346                         120
+     return_q25_base_w0.1 0.152939        293       353                    207                          92
+ return_q25_activity_w0.1 0.152788        296       350                    214                          87
+    balanced_l1_base_w0.1 0.153454        128       504                     73                          32
+balanced_l1_activity_w0.1 0.154005         91       543                     52                          32

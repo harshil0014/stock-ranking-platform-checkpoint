@@ -1,0 +1,31 @@
+kind,sector,top20_count
+champion,Consumer Cyclical,2
+champion,Consumer Defensive,2
+champion,Aerospace & Defense,2
+champion,Basic Materials,2
+champion,Real Estate,1
+champion,Consumer Durables,1
+champion,Retailing,1
+champion,Industrial Products,1
+champion,Healthcare,1
+champion,Financial Technology (Fintech),1
+champion,Pharmaceuticals & Biotechnology,1
+champion,Capital Markets,1
+champion,Electrical Equipment,1
+champion,Healthcare Services,1
+champion,Finance,1
+challenger,Consumer Defensive,2
+challenger,Consumer Cyclical,2
+challenger,Basic Materials,2
+challenger,Finance,2
+challenger,Consumer Durables,1
+challenger,Real Estate,1
+challenger,Retailing,1
+challenger,Healthcare,1
+challenger,Financial Technology (Fintech),1
+challenger,Industrial Products,1
+challenger,Capital Markets,1
+challenger,Pharmaceuticals & Biotechnology,1
+challenger,Chemicals & Petrochemicals,1
+challenger,Auto Components,1
+challenger,Aerospace & Defense,1

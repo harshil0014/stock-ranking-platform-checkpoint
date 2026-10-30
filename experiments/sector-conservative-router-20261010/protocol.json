@@ -1,0 +1,57 @@
+{
+  "configs": [
+    {
+      "name": "conservative_n4_w0.5",
+      "minimum": 4,
+      "weight": 0.5,
+      "guard": true
+    },
+    {
+      "name": "conservative_n4_w1.0",
+      "minimum": 4,
+      "weight": 1.0,
+      "guard": true
+    },
+    {
+      "name": "conservative_n8_w0.5",
+      "minimum": 8,
+      "weight": 0.5,
+      "guard": true
+    },
+    {
+      "name": "conservative_n8_w1.0",
+      "minimum": 8,
+      "weight": 1.0,
+      "guard": true
+    },
+    {
+      "name": "utility_n8_w0.5",
+      "minimum": 8,
+      "weight": 0.5,
+      "guard": false
+    },
+    {
+      "name": "utility_n8_w1.0",
+      "minimum": 8,
+      "weight": 1.0,
+      "guard": false
+    }
+  ],
+  "experts": [
+    "rank_xendcg_balanced_blend0.25",
+    "guarded_previous",
+    "lambdarank_balanced_blend0.25",
+    "lambdarank_return_blend0.1",
+    "regression_l1_balanced_blend0.25",
+    "yeti_ndcg3_balanced_blend0.1"
+  ],
+  "anchor": "rank_xendcg_balanced_blend0.25",
+  "feedback": "Expanded cohort, capped outcomes, Top3. Only same-profile/same-sector query outcomes with maximum endpoint strictly earlier than decision. Latest five years.",
+  "selection": "Fewest development Top3 regressions then all development regressions; recent period excluded. All dates previously exposed.",
+  "scope": "Original four references plus current anchor, raw/capped, common/expanded, all9profiles Top1/3/5 sixmetrics.",
+  "sources": [
+    "https://proceedings.mlr.press/v97/laroche19a.html",
+    "https://proceedings.mlr.press/v128/korotin20a.html"
+  ],
+  "guarantee": false
+}

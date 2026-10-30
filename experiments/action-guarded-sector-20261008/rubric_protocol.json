@@ -1,0 +1,7 @@
+{
+  "source": "Existing company-evidence rubric; reused, not newly verified fundamentals or future-return truth.",
+  "common": "Stocks with production scores and finite rubric/model values; sectors with at least five such stocks.",
+  "expanded": "All stocks with finite rubric/model values; sectors with at least five such stocks, even if production has fewer than five. No production comparator here.",
+  "aggregation": "Top-three stocks per sector, then equal sector mean. Excludes Unclassified. Expanded sector set can differ from the common set and older restricted-sector reports.",
+  "snapshot": "2026-10-03"
+}

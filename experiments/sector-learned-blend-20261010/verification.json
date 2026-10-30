@@ -1,0 +1,41 @@
+{
+  "current_rows": 4436,
+  "historical_rows": 797443,
+  "variants": 6,
+  "fitted_replacements": 30,
+  "anchor_fallback_years": [
+    2020,
+    2021
+  ],
+  "usable_current_price_inputs": 4303,
+  "development_selected": "nnls_outer_return",
+  "strict_gate_passes": 0,
+  "score_replay_max_error": 2.980194091506405e-08,
+  "training_cutoffs_verified": true,
+  "same_benchmark_population_verified": true,
+  "fresh_validation": false,
+  "production_replaced": false,
+  "retained_champion": "rank_xendcg_balanced_blend0.25",
+  "current_neural_replays": [
+    {
+      "model": "tabpfn_v2_context256",
+      "rows": 4436,
+      "maximum_replay_error": 2.978210444926077e-08
+    },
+    {
+      "model": "tabpfn_v2_context768",
+      "rows": 4436,
+      "maximum_replay_error": 2.9799652079276484e-08
+    }
+  ],
+  "tabpfn_fit_modes": {
+    "BILINEAR_GRID": 5,
+    "DIRECT_GRID_REJECTED": 5
+  },
+  "sha256": {
+    "protocol.json": "985d559e1d7f1829c6fdd4ce5940589905535bb2901542f09bb23544d4ca1ff0",
+    "trials.csv": "507f405c5598ac18acc3a943184dd1f226066e313c8c351945063eccb3a6d837",
+    "selected_current_all_4436.csv": "5ac205bee73c8165855594af42815832220d0cff7685f7ae2714eacaf76fd092",
+    "tabpfn-v2-regressor.ckpt": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+  }
+}

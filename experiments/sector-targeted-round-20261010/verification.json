@@ -1,0 +1,20 @@
+{
+  "new_variants": 10,
+  "goal_annual_fits": 6,
+  "strict_gate_passes": 0,
+  "development_selected": "conservative_n8_w0.5",
+  "current_goal_stock_coverage": 4436,
+  "goal_annual_replay_max_error": 1.1102230246251565e-16,
+  "feedback_and_training_cutoffs_verified": true,
+  "matching_benchmark_cohorts_verified": true,
+  "fresh_validation": false,
+  "production_replaced": false,
+  "sha256": {
+    "experiments\\sector-targeted-round-20261010\\trials.csv": "5b6b089383e17ca6654c9875802ea0d52e6e3393407c0ac0b916de0c5079f12c",
+    "experiments\\sector-goal-aware-20261010\\protocol.json": "3ea3fd2c40676b7583e74d7a95e5768474818f1f6f7060eb4060ce7bc6d4bf52",
+    "experiments\\sector-goal-aware-20261010\\current_model.txt": "440962f157c0d8689bcfc0795d61c905cd7bc5a10a17c879fc60f013ac23e570",
+    "experiments\\sector-goal-aware-20261010\\current_all_stock_rankings.csv": "2c1b64ebb45c051d2244478e7d9fa50fc4de5fa0e8e93bc071d66b4d013dbdf6",
+    "experiments\\sector-goal-aware-20261010\\training_audit.csv": "d4f67db4618c2c376f22580b6ffa02c22b1d2e9b94f02501cfcccb8c49de21bb",
+    "experiments\\sector-conservative-router-20261010\\verification.json": "168b4488020e186842de9fab08226c1971f46430f9e018a32e06995dd617f222"
+  }
+}

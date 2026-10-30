@@ -1,0 +1,19 @@
+{
+  "ticker": "STEAMHOUSE",
+  "isin": "INE0FRO01022",
+  "provider": "STEAMHOUSE.NS",
+  "trade_date": "2026-09-18",
+  "official_price": 97.98,
+  "status": "RECOVERED",
+  "rows": 2,
+  "first_date": "2026-09-17",
+  "last_date": "2026-09-18",
+  "terminal_lag_days": 0,
+  "terminal_relative_difference": 3.426141651123659e-08,
+  "listing_date": "2026-09-17",
+  "history_precedes_listing_date": false,
+  "csv_sha256": "af6bebe11e28430037473f2fe1be446f6d704e00a943d8fdd9839ff11ecd9120",
+  "source": "Yahoo Finance secondary history",
+  "identity_mapping": "exact NSE ticker -> .NS",
+  "accepted_for_research_overlay": true
+}

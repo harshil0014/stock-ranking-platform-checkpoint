@@ -1,0 +1,101 @@
+{
+  "growth_retained_0": {
+    "eligible": true,
+    "utility": 0.05299240853476181,
+    "checks": {
+      "return_floor": true,
+      "profile_return_floor": true,
+      "weekly_12m_return_floor": true,
+      "ndcg": true,
+      "achievement": true,
+      "shortfall": true,
+      "drawdown": true,
+      "coverage": true,
+      "profile_shortfall": true,
+      "weekly_12m_shortfall": true,
+      "weekly_12m_drawdown": true,
+      "year_return_floor": true,
+      "turnover": true,
+      "positive_utility": true
+    },
+    "delta": {
+      "coverage": 0.0,
+      "ndcg20": 0.040111208998935215,
+      "target_achievement_top20": 0.04965277777777778,
+      "target_shortfall_top20": -0.02145059233956877,
+      "median_xirr_top20": 0.18534201523850707,
+      "mean_asset_drawdown_top20": 0.01114959320942505,
+      "rank_ic": 0.025194925224805438,
+      "pairwise_accuracy": 0.008880646262297676
+    },
+    "top20_overlap": 0.40138888888888885,
+    "worst_profile_return": 0.05442755539233405,
+    "worst_profile_shortfall": -0.006464649644748667
+  },
+  "growth_retained_0.25": {
+    "eligible": false,
+    "utility": 0.052939167104098885,
+    "checks": {
+      "return_floor": true,
+      "profile_return_floor": true,
+      "weekly_12m_return_floor": true,
+      "ndcg": true,
+      "achievement": true,
+      "shortfall": true,
+      "drawdown": true,
+      "coverage": true,
+      "profile_shortfall": true,
+      "weekly_12m_shortfall": true,
+      "weekly_12m_drawdown": false,
+      "year_return_floor": true,
+      "turnover": true,
+      "positive_utility": true
+    },
+    "delta": {
+      "coverage": 0.0,
+      "ndcg20": 0.03996441342583686,
+      "target_achievement_top20": 0.049305555555555554,
+      "target_shortfall_top20": -0.02170775268702366,
+      "median_xirr_top20": 0.18761104838390827,
+      "mean_asset_drawdown_top20": 0.009060269412144384,
+      "rank_ic": 0.025678849894782085,
+      "pairwise_accuracy": 0.009026125590445189
+    },
+    "top20_overlap": 0.39548611111111115,
+    "worst_profile_return": 0.055156190165889636,
+    "worst_profile_shortfall": -0.008779092771842672
+  },
+  "growth_retained_0.5": {
+    "eligible": false,
+    "utility": 0.05002509560361412,
+    "checks": {
+      "return_floor": true,
+      "profile_return_floor": true,
+      "weekly_12m_return_floor": true,
+      "ndcg": true,
+      "achievement": true,
+      "shortfall": true,
+      "drawdown": true,
+      "coverage": true,
+      "profile_shortfall": true,
+      "weekly_12m_shortfall": true,
+      "weekly_12m_drawdown": false,
+      "year_return_floor": true,
+      "turnover": true,
+      "positive_utility": true
+    },
+    "delta": {
+      "coverage": 0.0,
+      "ndcg20": 0.03756550280064664,
+      "target_achievement_top20": 0.046527777777777786,
+      "target_shortfall_top20": -0.020629184791159588,
+      "median_xirr_top20": 0.1814793396037505,
+      "mean_asset_drawdown_top20": 0.005098336296026351,
+      "rank_ic": 0.025512460371954968,
+      "pairwise_accuracy": 0.009036830992999114
+    },
+    "top20_overlap": 0.39479166666666665,
+    "worst_profile_return": 0.01966347467952475,
+    "worst_profile_shortfall": 0.0009280182909339985
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "reproduction_max_error": 4.440892098500626e-16,
+  "identity_and_age_label_only_max_error": 0.0,
+  "all4436": true,
+  "all9profiles": true,
+  "unique_keys": true,
+  "scored_rows": 29817,
+  "available_unranked": 0,
+  "no_hard_ath_age_penalty": true,
+  "counterfactuals": "Original reference empirical-CDF anchors; champion/confidence/regime held fixed. Conditional sensitivity, not causal or necessarily realizable."
+}

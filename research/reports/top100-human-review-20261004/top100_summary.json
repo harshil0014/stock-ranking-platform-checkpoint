@@ -1,0 +1,38 @@
+{
+  "snapshot": "2026-10-03",
+  "review_date": "2026-10-04",
+  "profile": "base7500",
+  "top100_rows": 100,
+  "eligible_universe": 1773,
+  "flag_counts": {
+    "pe_above_60": 28,
+    "negative_cfo_nonfinancial": 11,
+    "debt_equity_above_1_nonfinancial": 11,
+    "pledge_above_20": 5,
+    "model_history_under_60_months": 30,
+    "model_history_under_36_months": 1,
+    "bse_M_series_in_snapshot": 3,
+    "recent_7day_high": 21,
+    "downside_volatility_above_30pct": 3
+  },
+  "assessment_counts": {
+    "Plausible candidate": 32,
+    "Valuation sensitive": 30,
+    "Verify before use": 11,
+    "Short-history review": 9,
+    "Cycle review": 7,
+    "Challenge placement": 5,
+    "Cash-flow review": 3,
+    "Sector-specific review": 2,
+    "Execution review": 1
+  },
+  "median_pe": 38.51,
+  "pe_available": 99,
+  "healthcare_combined": 20,
+  "oldest_top100_ath_days": 232.0,
+  "flag_interpretation": "Attention thresholds chosen for this review, not validated exclusion rules or a new ranking.",
+  "source_sha256": {
+    "experiments\\v17-peak-confirmation-20261004\\current_rankings.csv.gz": "cba2b639cdc4209426679a5f2343127e279d588b0fe1150f70c8fcbddf33e23a",
+    "experiments\\current-data-recovery-20261003\\current_company_facts_recovered_v7_full_yahoo.csv.gz": "5520707e233680d4e25589d8549d8f8b07367dc87cf4cfa12cf46857c4c6e5e1"
+  }
+}

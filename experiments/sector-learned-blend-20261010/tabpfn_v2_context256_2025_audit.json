@@ -1,0 +1,31 @@
+{
+  "mode": "DIRECT_GRID_REJECTED",
+  "grid_trials": [
+    {
+      "grid": 33,
+      "probe_mae": 0.008717860827819526,
+      "probe_max": 0.03664710526601245
+    },
+    {
+      "grid": 65,
+      "probe_mae": 0.009249815209007929,
+      "probe_max": 0.05056605699650113
+    },
+    {
+      "grid": 129,
+      "probe_mae": 0.008264165208487235,
+      "probe_max": 0.0471028852766569
+    }
+  ],
+  "rows": 237992,
+  "context_rows": 256,
+  "n_estimators": 1,
+  "seconds": 384.79566799999884,
+  "torch": "2.12.0+cpu",
+  "device": "cpu",
+  "tabpfn": "2.2.1",
+  "checkpoint_sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+  "context_sha256": "211ffd8c6f3bc1ce94d1e860ef318622c8c64bc04b90d47ecffe5ee04cd47487",
+  "inputs_sha256": "b86bd68826d91c567a37a75736ad9ebf43d5d6200da7a097e9c9e063d4df3855",
+  "telemetry_disabled": true
+}

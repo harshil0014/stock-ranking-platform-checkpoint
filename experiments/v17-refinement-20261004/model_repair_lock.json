@@ -1,0 +1,10 @@
+{
+  "locked_at": "2026-10-03T21:21:00.137458+00:00",
+  "choice": null,
+  "accepted_model_repair": false,
+  "tested": 106,
+  "eligible_development": 4,
+  "originalV17_unchanged": true,
+  "current_stability_veto_pending": false,
+  "remaining_if_none": "Coverage and action repairs survive independently; further architecture challenge uses same gates."
+}

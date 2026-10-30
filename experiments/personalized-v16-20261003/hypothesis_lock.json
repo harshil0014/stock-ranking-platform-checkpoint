@@ -1,0 +1,68 @@
+{
+  "locked_at": "2026-10-03T16:23:02.461942+00:00",
+  "hypothesis": "For short investor lookbacks, the frozen correction over-rewards a growth pattern associated with long-lived deeply underwater stocks, despite weaker recent plan returns than displaced champion picks. Missing-field confidence does not detect this interaction. Calibrate the growth inputs in the correction toward contemporaneous query medians, retaining champion growth and realized historical plan return inputs, ATH, risk, goal/user, and missing-evidence shrinkage. This is a reliability experiment, not a proven causal identification.",
+  "evidence": {
+    "12m_xirr_delta": -0.06663069087150725,
+    "12m_drawdown_delta": -0.06502649160076093,
+    "growth_median_counterfactual_xirr_delta": 0.114803,
+    "growth_median_counterfactual_drawdown_delta": -0.003798,
+    "entry_evidence_confidence": 0.998918,
+    "entry_mean_days_since_high": 4611.05,
+    "entry_mean_ath_distance": -0.911276,
+    "short_history_substitutions": 1,
+    "substitutions": 231
+  },
+  "candidate_grid": [
+    0,
+    0.25,
+    0.5
+  ],
+  "candidate_parameter": "Retained deviation from the within-decision/profile growth median. Missing inputs stay missing. Only lookback <=12 months is calibrated; all longer lookbacks are byte-equivalent V15 scores. No new model fit or identity rule. Alpha remains .2 times original evidence confidence.",
+  "rules": {
+    "aggregate_median_xirr_delta_min": -0.025,
+    "all_profile_median_xirr_delta_min": -0.05,
+    "weekly_and_12m_median_xirr_delta_min": -0.025,
+    "aggregate_ndcg_delta_min": -0.01,
+    "aggregate_achievement_delta_min": -0.02,
+    "aggregate_shortfall_delta_max": 0.005,
+    "aggregate_drawdown_delta_min": -0.01,
+    "coverage_delta_min": -0.001,
+    "worst_profile_shortfall_delta_max": 0.02,
+    "weekly_and_12m_shortfall_delta_max": 0.005,
+    "weekly_and_12m_drawdown_delta_min": -0.01,
+    "worst_year_median_xirr_delta_min": -0.1,
+    "top20_overlap_min": 0.6,
+    "large_turnover_exception": "NDCG gain >= .03 AND shortfall improvement >= .02",
+    "utility": ".45*NDCG + .20*achievement - .25*shortfall + .10*drawdown + .10*median_XIRR deltas",
+    "require_positive_utility": true
+  },
+  "selection": "Highest eligible utility under unchanged V15 development gates; if none eligible, highest utility diagnostic. Ties choose greatest retained growth weight. Exactly three candidates; no expansion after results.",
+  "development_dates": [
+    "2020-03-31",
+    "2020-06-30",
+    "2020-09-30",
+    "2020-12-31",
+    "2021-03-31",
+    "2021-06-30",
+    "2021-09-30",
+    "2021-12-31",
+    "2022-03-31",
+    "2022-06-30",
+    "2022-09-30",
+    "2022-12-31",
+    "2023-03-31",
+    "2023-06-30",
+    "2023-09-30",
+    "2023-12-31"
+  ],
+  "inputs_sha256": {
+    "autopsy_12m_dates.csv": "f7eedbe8477bfe0acf6395729e0229f7893fee45a20f0fa7e2123711cd4b737f",
+    "autopsy_12m_substitutions.csv": "04e33b0bee896cd54f92cbf7bd68a2a3034ab6927616079154e257bf96cacb8a",
+    "autopsy_family_ranking_counterfactuals.csv": "befdd1ce9edaf368bc7bd27e8a8f881a8195f23d6d0f6a8c5792eec5596200ca",
+    "good_bad_profiles.csv": "07c9a1207f66d385c0d0bf5c639d088a5efb147a4bca642f77258b11cc54abe4",
+    "autopsy_state_attribution.csv": "e517c1b13c6cbef9815b264747705542399c4df680c6b240ddb316466ce067ec"
+  },
+  "current_and_exposed_evaluation_accessed_for_v16_selection": false,
+  "fundamentals_industry": "No valid historical industry/fundamental mapping: unavailable, never backfill current classifications.",
+  "limitation": "All profiles have forward horizon12 months; this calibrates investor lookback, not future holding horizon."
+}

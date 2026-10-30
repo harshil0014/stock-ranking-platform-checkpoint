@@ -1,0 +1,10 @@
+{
+  "trainer_pid": 3484,
+  "trainer_created": 1791712615.4442189,
+  "command": [
+    "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "research/runners/sector_specialist_ensemble_20261011.py",
+    "learn"
+  ],
+  "controller_pid": 33580
+}

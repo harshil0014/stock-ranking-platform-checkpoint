@@ -1,0 +1,13 @@
+year,model,training_rows,max_training_endpoint,profiles
+2020,yeti_ndcg3_return,263659,2019-12-31,9
+2020,yeti_ndcg3_balanced,263659,2019-12-31,9
+2021,yeti_ndcg3_return,360312,2020-12-31,9
+2021,yeti_ndcg3_balanced,360312,2020-12-31,9
+2022,yeti_ndcg3_return,459088,2021-12-31,9
+2022,yeti_ndcg3_balanced,459088,2021-12-31,9
+2023,yeti_ndcg3_return,560469,2022-12-31,9
+2023,yeti_ndcg3_balanced,560469,2022-12-31,9
+2024,yeti_ndcg3_return,665999,2023-12-31,9
+2024,yeti_ndcg3_balanced,665999,2023-12-31,9
+2025,yeti_ndcg3_return,775624,2024-12-31,9
+2025,yeti_ndcg3_balanced,775624,2024-12-31,9

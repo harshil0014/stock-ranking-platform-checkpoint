@@ -1,0 +1,80 @@
+{
+  "schema": "personalized_v13_decision_v1",
+  "verdict": "PROMISING_RESEARCH_CANDIDATE",
+  "production_replacement_safe": false,
+  "frozen_champion_remains_production": true,
+  "selection_lock_sha256": "dad3ce68b22a1f744650e501505a3ebc78dc7c4bd39c3247982c4ed84bcac13b",
+  "selected_policy": {
+    "formula": "champion_score - 0.06*sqrt((1-min(history_months/60,1))*I(no observed true 5Y CAGR)) - 0.20*normalized_downside_volatility_1y - 0.15*I(weekly profile)*normalized_downside_volatility_1y",
+    "stock_specific_rules": false
+  },
+  "development": {
+    "ndcg20_delta": 0.0429921678896537,
+    "target_achievement_top20_delta": 0.0184027777777778,
+    "target_shortfall_top20_delta": -0.011317276802932,
+    "median_xirr_top20_delta": 0.0628756851096056,
+    "mean_asset_drawdown_top20_delta": 0.0354243768330955,
+    "weekly_shortfall_delta": -0.0200822630513669,
+    "weekly_achievement_delta": 0.040625,
+    "weekly_drawdown_delta": 0.0516568724323602
+  },
+  "current_structure": {
+    "v12_top20_missing_true_5y": 0.75,
+    "v13_top20_missing_true_5y": 0.5,
+    "v12_top50_missing_true_5y": 0.46,
+    "v13_top50_missing_true_5y": 0.38,
+    "v12_top100_missing_true_5y": 0.28,
+    "v13_top100_missing_true_5y": 0.24
+  },
+  "blind_holdout_2024_01_31": {
+    "independent_from_selection": true,
+    "selection_changed_after_reveal": false,
+    "ndcg20": {
+      "champion": 0.6088283039720344,
+      "v13": 0.6249179792528867
+    },
+    "target_achievement_top20": {
+      "champion": 0.43333333333333335,
+      "v13": 0.45000000000000007
+    },
+    "target_shortfall_top20": {
+      "champion": 0.08484315177757966,
+      "v13": 0.08406614127450028
+    },
+    "median_xirr_top20": {
+      "champion": 0.14372143759787484,
+      "v13": 0.14953656059124215
+    },
+    "mean_asset_drawdown_top20": {
+      "champion": -0.33484027564022195,
+      "v13": -0.30810049629194114
+    },
+    "weekly": {
+      "achievement_delta": 0.15,
+      "shortfall_delta": -0.03712454460087703,
+      "median_xirr_delta": 0.19480520886345368,
+      "drawdown_delta": 0.023507301509453737
+    },
+    "lookback60": {
+      "achievement_delta": 0.05,
+      "shortfall_delta": -0.0007229109706877873,
+      "median_xirr_delta": 0,
+      "drawdown_delta": -0.016242235701366403
+    }
+  },
+  "known_2025_retrospective_stress": {
+    "diagnostic_only": true,
+    "used_for_selection": false,
+    "weekly": {
+      "achievement_delta": 0,
+      "shortfall_delta": 0.019668723514010715,
+      "median_xirr_delta": 0.005316373515337841,
+      "drawdown_delta": -0.03294149906109134
+    }
+  },
+  "prospective_2025_09_30": {
+    "status": "DEFERRED_PENDING_VERIFIED_PRICE_AND_CORPORATE_ACTION_EVIDENCE_THROUGH_2026_09_30"
+  },
+  "production_mutated": false,
+  "frozen_champion_mutated": false
+}

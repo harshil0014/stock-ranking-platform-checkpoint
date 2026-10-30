@@ -1,0 +1,40 @@
+{
+  "fixed_patch": "C + .01*(.60 dual recency + .25 dual proximity + .15 momentum - .5); unchanged from prior round",
+  "configs": {
+    "continuity_0.001": [
+      "continuity",
+      0.001
+    ],
+    "continuity_0.003": [
+      "continuity",
+      0.003
+    ],
+    "risk_0.001": [
+      "risk",
+      0.001
+    ],
+    "risk_0.003": [
+      "risk",
+      0.003
+    ],
+    "combined_0.001": [
+      "combined",
+      0.001
+    ],
+    "combined_0.003": [
+      "combined",
+      0.003
+    ]
+  },
+  "complements": "Within date/profile/sector percentiles. Continuity: equal efficiency126, trend_r2, inverse largest_jump_share. Risk: equal inverse downside252, inverse volatility252, drawdown252. Combined: equal continuity/risk.",
+  "weight_constraint": "Added total weight <=.003, less than fixed recency coefficient .006; no normalization or dilution of recency.",
+  "sources": [
+    "https://doi.org/10.1093/rfs/hhu003",
+    "https://doi.org/10.1016/j.jfineco.2015.12.002"
+  ],
+  "adaptation": "Continuity and stock-level risk proxies motivated by literature; not exact paper replication or portfolio volatility targeting.",
+  "selection": "Same development 2020-23 equal-sector/profile capped Top3 utility as previous round; six fixed candidates, lock one before 2024-25. Previously exposed historical dates.",
+  "acceptance": "Same tradeoff rule as previous round; positive development/recent weighted utility, positive recent ranking-only and equal-five utility, no >1pp drawdown/achievement loss.",
+  "fresh_validation": false,
+  "website_changed": false
+}

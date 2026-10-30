@@ -1,0 +1,11 @@
+{
+  "locked_at": "2026-10-03T17:17:58.640272+00:00",
+  "reason": "60M old/deep ATH audit shows positive effects in raw specialist. Constrain raw ATH age/depth bundle signs during training; preserve growth/goal interactions.",
+  "alphas": [
+    0.2,
+    0.3
+  ],
+  "mixture": "Equal percentile mixture constrained utility and ATH-constrained lookback specialists",
+  "gates": "Unchanged strict_stats; no exposed or current use",
+  "seed": 20261003
+}

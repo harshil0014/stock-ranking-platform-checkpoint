@@ -1,0 +1,2567 @@
+{
+  "sha256": "be2ab62fb41abd4769b5f5d8de7f3df04edc6cfa336bb0d2c5906fc6da2e980b",
+  "source_unchanged": true,
+  "matched_workbook_names": 14,
+  "ranked": 14,
+  "cached_ranks": [
+    "#N/A",
+    "#N/A",
+    "#N/A",
+    "#N/A",
+    "#N/A",
+    "#N/A",
+    "#N/A",
+    "#N/A",
+    "#N/A",
+    "#N/A",
+    "#N/A",
+    "#N/A",
+    "#N/A",
+    "#N/A"
+  ],
+  "same_sector_screenshot_pairs": 4,
+  "usable_pairs": 1,
+  "interpretation": "Screenshot agreement is descriptive, not accuracy. Different snapshot; duplicate CEMPRO and missing quotes excluded. Current professor formula is evaluated separately on historical outcomes.",
+  "cells": {
+    "A1": {
+      "value": "StaticAmount to Invest",
+      "formula": null
+    },
+    "B1": {
+      "value": "7500.0",
+      "formula": null
+    },
+    "C1": {
+      "value": "Either enter Number of Stocks or Amount - IF static number entered only that will be considered",
+      "formula": null
+    },
+    "D1": {
+      "value": null,
+      "formula": null
+    },
+    "E1": {
+      "value": "Edit only fields in this color",
+      "formula": null
+    },
+    "F1": {
+      "value": null,
+      "formula": null
+    },
+    "G1": {
+      "value": null,
+      "formula": null
+    },
+    "H1": {
+      "value": null,
+      "formula": null
+    },
+    "I1": {
+      "value": null,
+      "formula": null
+    },
+    "J1": {
+      "value": null,
+      "formula": null
+    },
+    "K1": {
+      "value": null,
+      "formula": null
+    },
+    "L1": {
+      "value": null,
+      "formula": null
+    },
+    "M1": {
+      "value": null,
+      "formula": null
+    },
+    "N1": {
+      "value": null,
+      "formula": null
+    },
+    "O1": {
+      "value": " CAGR (for Highlight)",
+      "formula": null
+    },
+    "P1": {
+      "value": "0.2",
+      "formula": null
+    },
+    "Q1": {
+      "value": null,
+      "formula": null
+    },
+    "R1": {
+      "value": null,
+      "formula": null
+    },
+    "S1": {
+      "value": null,
+      "formula": null
+    },
+    "T1": {
+      "value": null,
+      "formula": null
+    },
+    "U1": {
+      "value": null,
+      "formula": null
+    },
+    "V1": {
+      "value": null,
+      "formula": null
+    },
+    "W1": {
+      "value": null,
+      "formula": null
+    },
+    "X1": {
+      "value": null,
+      "formula": null
+    },
+    "Y1": {
+      "value": null,
+      "formula": null
+    },
+    "Z1": {
+      "value": null,
+      "formula": null
+    },
+    "AA1": {
+      "value": null,
+      "formula": null
+    },
+    "AB1": {
+      "value": null,
+      "formula": null
+    },
+    "AC1": {
+      "value": null,
+      "formula": null
+    },
+    "A2": {
+      "value": "Lookback Period (Months)",
+      "formula": null
+    },
+    "B2": {
+      "value": "36.0",
+      "formula": null
+    },
+    "C2": {
+      "value": "Increased look back  and SIP interval  cause slowness in loading",
+      "formula": null
+    },
+    "D2": {
+      "value": null,
+      "formula": null
+    },
+    "E2": {
+      "value": null,
+      "formula": null
+    },
+    "F2": {
+      "value": null,
+      "formula": null
+    },
+    "G2": {
+      "value": null,
+      "formula": null
+    },
+    "H2": {
+      "value": null,
+      "formula": null
+    },
+    "I2": {
+      "value": null,
+      "formula": null
+    },
+    "J2": {
+      "value": null,
+      "formula": null
+    },
+    "K2": {
+      "value": null,
+      "formula": null
+    },
+    "L2": {
+      "value": null,
+      "formula": null
+    },
+    "M2": {
+      "value": null,
+      "formula": null
+    },
+    "N2": {
+      "value": null,
+      "formula": null
+    },
+    "O2": {
+      "value": null,
+      "formula": null
+    },
+    "P2": {
+      "value": null,
+      "formula": null
+    },
+    "Q2": {
+      "value": null,
+      "formula": null
+    },
+    "R2": {
+      "value": null,
+      "formula": null
+    },
+    "S2": {
+      "value": null,
+      "formula": null
+    },
+    "T2": {
+      "value": null,
+      "formula": null
+    },
+    "U2": {
+      "value": null,
+      "formula": null
+    },
+    "V2": {
+      "value": null,
+      "formula": null
+    },
+    "W2": {
+      "value": null,
+      "formula": null
+    },
+    "X2": {
+      "value": null,
+      "formula": null
+    },
+    "Y2": {
+      "value": null,
+      "formula": null
+    },
+    "Z2": {
+      "value": null,
+      "formula": null
+    },
+    "AA2": {
+      "value": null,
+      "formula": null
+    },
+    "AB2": {
+      "value": null,
+      "formula": null
+    },
+    "AC2": {
+      "value": null,
+      "formula": null
+    },
+    "A3": {
+      "value": "SIP Interval (days)",
+      "formula": null
+    },
+    "B3": {
+      "value": "30.0",
+      "formula": null
+    },
+    "D3": {
+      "value": null,
+      "formula": null
+    },
+    "E3": {
+      "value": null,
+      "formula": null
+    },
+    "F3": {
+      "value": null,
+      "formula": null
+    },
+    "G3": {
+      "value": null,
+      "formula": null
+    },
+    "H3": {
+      "value": null,
+      "formula": null
+    },
+    "I3": {
+      "value": null,
+      "formula": null
+    },
+    "J3": {
+      "value": null,
+      "formula": null
+    },
+    "K3": {
+      "value": null,
+      "formula": null
+    },
+    "L3": {
+      "value": null,
+      "formula": null
+    },
+    "M3": {
+      "value": null,
+      "formula": null
+    },
+    "N3": {
+      "value": null,
+      "formula": null
+    },
+    "O3": {
+      "value": null,
+      "formula": null
+    },
+    "P3": {
+      "value": null,
+      "formula": null
+    },
+    "Q3": {
+      "value": null,
+      "formula": null
+    },
+    "R3": {
+      "value": null,
+      "formula": null
+    },
+    "S3": {
+      "value": null,
+      "formula": null
+    },
+    "T3": {
+      "value": null,
+      "formula": null
+    },
+    "U3": {
+      "value": null,
+      "formula": null
+    },
+    "V3": {
+      "value": null,
+      "formula": null
+    },
+    "W3": {
+      "value": null,
+      "formula": null
+    },
+    "X3": {
+      "value": null,
+      "formula": null
+    },
+    "Y3": {
+      "value": null,
+      "formula": null
+    },
+    "Z3": {
+      "value": null,
+      "formula": null
+    },
+    "AA3": {
+      "value": null,
+      "formula": null
+    },
+    "AB3": {
+      "value": null,
+      "formula": null
+    },
+    "AC3": {
+      "value": null,
+      "formula": null
+    },
+    "C4": {
+      "value": null,
+      "formula": null
+    },
+    "D4": {
+      "value": null,
+      "formula": null
+    },
+    "E4": {
+      "value": null,
+      "formula": null
+    },
+    "F4": {
+      "value": null,
+      "formula": null
+    },
+    "G4": {
+      "value": null,
+      "formula": null
+    },
+    "H4": {
+      "value": null,
+      "formula": null
+    },
+    "I4": {
+      "value": null,
+      "formula": null
+    },
+    "J4": {
+      "value": null,
+      "formula": null
+    },
+    "K4": {
+      "value": null,
+      "formula": null
+    },
+    "L4": {
+      "value": null,
+      "formula": null
+    },
+    "M4": {
+      "value": null,
+      "formula": null
+    },
+    "N4": {
+      "value": null,
+      "formula": null
+    },
+    "O4": {
+      "value": null,
+      "formula": null
+    },
+    "P4": {
+      "value": null,
+      "formula": null
+    },
+    "Q4": {
+      "value": null,
+      "formula": null
+    },
+    "R4": {
+      "value": null,
+      "formula": null
+    },
+    "S4": {
+      "value": null,
+      "formula": null
+    },
+    "T4": {
+      "value": null,
+      "formula": null
+    },
+    "U4": {
+      "value": null,
+      "formula": null
+    },
+    "V4": {
+      "value": null,
+      "formula": null
+    },
+    "W4": {
+      "value": null,
+      "formula": null
+    },
+    "X4": {
+      "value": null,
+      "formula": null
+    },
+    "Y4": {
+      "value": null,
+      "formula": null
+    },
+    "Z4": {
+      "value": null,
+      "formula": null
+    },
+    "AA4": {
+      "value": null,
+      "formula": null
+    },
+    "AB4": {
+      "value": null,
+      "formula": null
+    },
+    "AC4": {
+      "value": null,
+      "formula": null
+    },
+    "A5": {
+      "value": null,
+      "formula": null
+    },
+    "B5": {
+      "value": null,
+      "formula": null
+    },
+    "C5": {
+      "value": null,
+      "formula": null
+    },
+    "D5": {
+      "value": null,
+      "formula": null
+    },
+    "E5": {
+      "value": null,
+      "formula": null
+    },
+    "F5": {
+      "value": null,
+      "formula": null
+    },
+    "G5": {
+      "value": null,
+      "formula": null
+    },
+    "H5": {
+      "value": null,
+      "formula": null
+    },
+    "I5": {
+      "value": null,
+      "formula": null
+    },
+    "J5": {
+      "value": "CAGR",
+      "formula": null
+    },
+    "K5": {
+      "value": null,
+      "formula": null
+    },
+    "L5": {
+      "value": null,
+      "formula": null
+    },
+    "M5": {
+      "value": null,
+      "formula": null
+    },
+    "N5": {
+      "value": null,
+      "formula": null
+    },
+    "O5": {
+      "value": null,
+      "formula": null
+    },
+    "P5": {
+      "value": null,
+      "formula": null
+    },
+    "Q5": {
+      "value": null,
+      "formula": null
+    },
+    "R5": {
+      "value": null,
+      "formula": null
+    },
+    "S5": {
+      "value": null,
+      "formula": null
+    },
+    "T5": {
+      "value": null,
+      "formula": null
+    },
+    "U5": {
+      "value": null,
+      "formula": null
+    },
+    "V5": {
+      "value": null,
+      "formula": null
+    },
+    "W5": {
+      "value": null,
+      "formula": null
+    },
+    "X5": {
+      "value": null,
+      "formula": null
+    },
+    "Y5": {
+      "value": null,
+      "formula": null
+    },
+    "Z5": {
+      "value": null,
+      "formula": null
+    },
+    "AA5": {
+      "value": null,
+      "formula": null
+    },
+    "AB5": {
+      "value": null,
+      "formula": null
+    },
+    "AC5": {
+      "value": null,
+      "formula": null
+    },
+    "A6": {
+      "value": null,
+      "formula": null
+    },
+    "B6": {
+      "value": "Stock Code",
+      "formula": null
+    },
+    "C6": {
+      "value": "Name",
+      "formula": null
+    },
+    "D6": {
+      "value": "CMP",
+      "formula": null
+    },
+    "E6": {
+      "value": "Shares Bought",
+      "formula": null
+    },
+    "F6": {
+      "value": "Average Price",
+      "formula": null
+    },
+    "G6": {
+      "value": "Value Invested",
+      "formula": null
+    },
+    "H6": {
+      "value": "Value Current",
+      "formula": null
+    },
+    "I6": {
+      "value": "Profit / Loss",
+      "formula": null
+    },
+    "J6": {
+      "value": "10y",
+      "formula": null
+    },
+    "K6": {
+      "value": "5y",
+      "formula": null
+    },
+    "L6": {
+      "value": "3y",
+      "formula": null
+    },
+    "M6": {
+      "value": null,
+      "formula": null
+    },
+    "N6": {
+      "value": "Rank",
+      "formula": null
+    },
+    "O6": {
+      "value": null,
+      "formula": null
+    },
+    "P6": {
+      "value": null,
+      "formula": null
+    },
+    "Q6": {
+      "value": null,
+      "formula": null
+    },
+    "R6": {
+      "value": null,
+      "formula": null
+    },
+    "S6": {
+      "value": null,
+      "formula": null
+    },
+    "T6": {
+      "value": null,
+      "formula": null
+    },
+    "U6": {
+      "value": null,
+      "formula": null
+    },
+    "V6": {
+      "value": null,
+      "formula": null
+    },
+    "W6": {
+      "value": null,
+      "formula": null
+    },
+    "X6": {
+      "value": null,
+      "formula": null
+    },
+    "Y6": {
+      "value": null,
+      "formula": null
+    },
+    "Z6": {
+      "value": null,
+      "formula": null
+    },
+    "AA6": {
+      "value": null,
+      "formula": null
+    },
+    "AB6": {
+      "value": null,
+      "formula": null
+    },
+    "AC6": {
+      "value": null,
+      "formula": null
+    },
+    "A7": {
+      "value": null,
+      "formula": null
+    },
+    "B7": {
+      "value": "NSE:KRISHANA",
+      "formula": null
+    },
+    "C7": {
+      "value": "Krishana Phoschem Ltd",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B7,\"\"Name\"\"),\"\"\"\")\"),\"Krishana Phoschem Ltd\")"
+    },
+    "D7": {
+      "value": "188.35",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B7),\"\"\"\")\"),188.35)"
+    },
+    "E7": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B7),\"\", SUM(StockHistoryData!F:F))"
+    },
+    "F7": {
+      "value": "#DIV/0!",
+      "formula": "G7/E7"
+    },
+    "G7": {
+      "value": "0",
+      "formula": "sum(StockHistoryData!G3:G2499)"
+    },
+    "H7": {
+      "value": "0",
+      "formula": "D7*E7"
+    },
+    "I7": {
+      "value": null,
+      "formula": "iferror((H7-G7)/G7,\"\")"
+    },
+    "J7": {
+      "value": null,
+      "formula": "MAP(B7:B20,LAMBDA(STOCKCODE,choosecols(index(ATH!I:O,match(STOCKCODE,ATH!I:I,0)),3,5,6)))"
+    },
+    "K7": {
+      "value": "0.6573",
+      "formula": null
+    },
+    "L7": {
+      "value": "0.6522",
+      "formula": null
+    },
+    "M7": {
+      "value": null,
+      "formula": null
+    },
+    "N7": {
+      "value": "#N/A",
+      "formula": "rank(I7,$I$7:$I$20)"
+    },
+    "O7": {
+      "value": null,
+      "formula": null
+    },
+    "P7": {
+      "value": null,
+      "formula": null
+    },
+    "Q7": {
+      "value": null,
+      "formula": null
+    },
+    "R7": {
+      "value": null,
+      "formula": null
+    },
+    "S7": {
+      "value": null,
+      "formula": null
+    },
+    "T7": {
+      "value": null,
+      "formula": null
+    },
+    "U7": {
+      "value": null,
+      "formula": null
+    },
+    "V7": {
+      "value": null,
+      "formula": null
+    },
+    "W7": {
+      "value": null,
+      "formula": null
+    },
+    "X7": {
+      "value": null,
+      "formula": null
+    },
+    "Y7": {
+      "value": null,
+      "formula": null
+    },
+    "Z7": {
+      "value": null,
+      "formula": null
+    },
+    "AA7": {
+      "value": null,
+      "formula": null
+    },
+    "AB7": {
+      "value": null,
+      "formula": null
+    },
+    "AC7": {
+      "value": null,
+      "formula": null
+    },
+    "A8": {
+      "value": null,
+      "formula": null
+    },
+    "B8": {
+      "value": "GVT&D",
+      "formula": null
+    },
+    "C8": {
+      "value": "GE Vernova T&D India Ltd",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B8,\"\"Name\"\"),\"\"\"\")\"),\"GE Vernova T&D India Ltd\")"
+    },
+    "D8": {
+      "value": "4235",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B8),\"\"\"\")\"),4235.0)"
+    },
+    "E8": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B8),\"\", SUM(StockHistoryData!J:J))"
+    },
+    "F8": {
+      "value": "0",
+      "formula": "IFERROR(G8/E8,0)"
+    },
+    "G8": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B8),\"\",sum(StockHistoryData!K3:K2499))"
+    },
+    "H8": {
+      "value": "0",
+      "formula": null
+    },
+    "I8": {
+      "value": null,
+      "formula": null
+    },
+    "J8": {
+      "value": "#VALUE!",
+      "formula": null
+    },
+    "K8": {
+      "value": null,
+      "formula": null
+    },
+    "L8": {
+      "value": null,
+      "formula": null
+    },
+    "M8": {
+      "value": null,
+      "formula": null
+    },
+    "N8": {
+      "value": "#N/A",
+      "formula": null
+    },
+    "O8": {
+      "value": null,
+      "formula": null
+    },
+    "P8": {
+      "value": null,
+      "formula": null
+    },
+    "Q8": {
+      "value": null,
+      "formula": null
+    },
+    "R8": {
+      "value": null,
+      "formula": null
+    },
+    "S8": {
+      "value": null,
+      "formula": null
+    },
+    "T8": {
+      "value": null,
+      "formula": null
+    },
+    "U8": {
+      "value": null,
+      "formula": null
+    },
+    "V8": {
+      "value": null,
+      "formula": null
+    },
+    "W8": {
+      "value": null,
+      "formula": null
+    },
+    "X8": {
+      "value": null,
+      "formula": null
+    },
+    "Y8": {
+      "value": null,
+      "formula": null
+    },
+    "Z8": {
+      "value": null,
+      "formula": null
+    },
+    "AA8": {
+      "value": null,
+      "formula": null
+    },
+    "AB8": {
+      "value": null,
+      "formula": null
+    },
+    "AC8": {
+      "value": null,
+      "formula": null
+    },
+    "A9": {
+      "value": null,
+      "formula": null
+    },
+    "B9": {
+      "value": "BOM:524717",
+      "formula": null
+    },
+    "C9": {
+      "value": "Titan Biotech Ltd",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B9,\"\"Name\"\"),\"\"\"\")\"),\"Titan Biotech Ltd\")"
+    },
+    "D9": {
+      "value": "414.85",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B9),\"\"\"\")\"),414.85)"
+    },
+    "E9": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B9),\"\", SUM(StockHistoryData!N:N))"
+    },
+    "F9": {
+      "value": "0",
+      "formula": null
+    },
+    "G9": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B9),\"\",sum(StockHistoryData!O3:O2499))"
+    },
+    "H9": {
+      "value": "0",
+      "formula": null
+    },
+    "I9": {
+      "value": null,
+      "formula": null
+    },
+    "J9": {
+      "value": "0.48469999999999996",
+      "formula": null
+    },
+    "K9": {
+      "value": "0.4067",
+      "formula": null
+    },
+    "L9": {
+      "value": "0.7049",
+      "formula": null
+    },
+    "M9": {
+      "value": null,
+      "formula": null
+    },
+    "N9": {
+      "value": "#N/A",
+      "formula": null
+    },
+    "O9": {
+      "value": null,
+      "formula": null
+    },
+    "P9": {
+      "value": null,
+      "formula": null
+    },
+    "Q9": {
+      "value": null,
+      "formula": null
+    },
+    "R9": {
+      "value": null,
+      "formula": null
+    },
+    "S9": {
+      "value": null,
+      "formula": null
+    },
+    "T9": {
+      "value": null,
+      "formula": null
+    },
+    "U9": {
+      "value": null,
+      "formula": null
+    },
+    "V9": {
+      "value": null,
+      "formula": null
+    },
+    "W9": {
+      "value": null,
+      "formula": null
+    },
+    "X9": {
+      "value": null,
+      "formula": null
+    },
+    "Y9": {
+      "value": null,
+      "formula": null
+    },
+    "Z9": {
+      "value": null,
+      "formula": null
+    },
+    "AA9": {
+      "value": null,
+      "formula": null
+    },
+    "AB9": {
+      "value": null,
+      "formula": null
+    },
+    "AC9": {
+      "value": null,
+      "formula": null
+    },
+    "A10": {
+      "value": null,
+      "formula": null
+    },
+    "B10": {
+      "value": "NSE:SHAILY",
+      "formula": null
+    },
+    "C10": {
+      "value": "Shaily Engineering Plastics Ltd",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B10,\"\"Name\"\"),\"\"\"\")\"),\"Shaily Engineering Plastics Ltd\")"
+    },
+    "D10": {
+      "value": "3266",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B10),\"\"\"\")\"),3266.0)"
+    },
+    "E10": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B10),\"\", SUM(StockHistoryData!R:R))"
+    },
+    "F10": {
+      "value": "0",
+      "formula": null
+    },
+    "G10": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B10),\"\",sum(StockHistoryData!S3:S2499))"
+    },
+    "H10": {
+      "value": "0",
+      "formula": null
+    },
+    "I10": {
+      "value": null,
+      "formula": null
+    },
+    "J10": {
+      "value": "0.4127",
+      "formula": null
+    },
+    "K10": {
+      "value": "0.5586",
+      "formula": null
+    },
+    "L10": {
+      "value": "1.1416",
+      "formula": null
+    },
+    "M10": {
+      "value": null,
+      "formula": null
+    },
+    "N10": {
+      "value": "#N/A",
+      "formula": null
+    },
+    "O10": {
+      "value": null,
+      "formula": null
+    },
+    "P10": {
+      "value": null,
+      "formula": null
+    },
+    "Q10": {
+      "value": null,
+      "formula": null
+    },
+    "R10": {
+      "value": null,
+      "formula": null
+    },
+    "S10": {
+      "value": null,
+      "formula": null
+    },
+    "T10": {
+      "value": null,
+      "formula": null
+    },
+    "U10": {
+      "value": null,
+      "formula": null
+    },
+    "V10": {
+      "value": null,
+      "formula": null
+    },
+    "W10": {
+      "value": null,
+      "formula": null
+    },
+    "X10": {
+      "value": null,
+      "formula": null
+    },
+    "Y10": {
+      "value": null,
+      "formula": null
+    },
+    "Z10": {
+      "value": null,
+      "formula": null
+    },
+    "AA10": {
+      "value": null,
+      "formula": null
+    },
+    "AB10": {
+      "value": null,
+      "formula": null
+    },
+    "AC10": {
+      "value": null,
+      "formula": null
+    },
+    "A11": {
+      "value": null,
+      "formula": null
+    },
+    "B11": {
+      "value": "NSE:WELCORP",
+      "formula": null
+    },
+    "C11": {
+      "value": "Welspun Corp Ltd",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B11,\"\"Name\"\"),\"\"\"\")\"),\"Welspun Corp Ltd\")"
+    },
+    "D11": {
+      "value": "2401.9",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B11),\"\"\"\")\"),2401.9)"
+    },
+    "E11": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B11),\"\", SUM(StockHistoryData!V:V))"
+    },
+    "F11": {
+      "value": "0",
+      "formula": null
+    },
+    "G11": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B10),\"\",sum(StockHistoryData!W3:W2499))"
+    },
+    "H11": {
+      "value": "0",
+      "formula": null
+    },
+    "I11": {
+      "value": null,
+      "formula": null
+    },
+    "J11": {
+      "value": "0.4011",
+      "formula": null
+    },
+    "K11": {
+      "value": "0.8176000000000001",
+      "formula": null
+    },
+    "L11": {
+      "value": "0.9190999999999999",
+      "formula": null
+    },
+    "M11": {
+      "value": null,
+      "formula": null
+    },
+    "N11": {
+      "value": "#N/A",
+      "formula": null
+    },
+    "O11": {
+      "value": null,
+      "formula": null
+    },
+    "P11": {
+      "value": null,
+      "formula": null
+    },
+    "Q11": {
+      "value": null,
+      "formula": null
+    },
+    "R11": {
+      "value": null,
+      "formula": null
+    },
+    "S11": {
+      "value": null,
+      "formula": null
+    },
+    "T11": {
+      "value": null,
+      "formula": null
+    },
+    "U11": {
+      "value": null,
+      "formula": null
+    },
+    "V11": {
+      "value": null,
+      "formula": null
+    },
+    "W11": {
+      "value": null,
+      "formula": null
+    },
+    "X11": {
+      "value": null,
+      "formula": null
+    },
+    "Y11": {
+      "value": null,
+      "formula": null
+    },
+    "Z11": {
+      "value": null,
+      "formula": null
+    },
+    "AA11": {
+      "value": null,
+      "formula": null
+    },
+    "AB11": {
+      "value": null,
+      "formula": null
+    },
+    "AC11": {
+      "value": null,
+      "formula": null
+    },
+    "A12": {
+      "value": null,
+      "formula": null
+    },
+    "B12": {
+      "value": "NSE:V2RETAIL",
+      "formula": null
+    },
+    "C12": {
+      "value": "V2 Retail Ltd",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B12,\"\"Name\"\"),\"\"\"\")\"),\"V2 Retail Ltd\")"
+    },
+    "D12": {
+      "value": "218.3",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B12),\"\"\"\")\"),218.3)"
+    },
+    "E12": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B12),\"\", SUM(StockHistoryData!Z:Z))"
+    },
+    "F12": {
+      "value": "0",
+      "formula": null
+    },
+    "G12": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B11),\"\",sum(StockHistoryData!AA3:AA2499))"
+    },
+    "H12": {
+      "value": "0",
+      "formula": null
+    },
+    "I12": {
+      "value": null,
+      "formula": null
+    },
+    "J12": {
+      "value": "0.38020000000000004",
+      "formula": null
+    },
+    "K12": {
+      "value": "0.8288",
+      "formula": null
+    },
+    "L12": {
+      "value": "1.4828999999999999",
+      "formula": null
+    },
+    "M12": {
+      "value": null,
+      "formula": null
+    },
+    "N12": {
+      "value": "#N/A",
+      "formula": null
+    },
+    "O12": {
+      "value": null,
+      "formula": null
+    },
+    "P12": {
+      "value": null,
+      "formula": null
+    },
+    "Q12": {
+      "value": null,
+      "formula": null
+    },
+    "R12": {
+      "value": null,
+      "formula": null
+    },
+    "S12": {
+      "value": null,
+      "formula": null
+    },
+    "T12": {
+      "value": null,
+      "formula": null
+    },
+    "U12": {
+      "value": null,
+      "formula": null
+    },
+    "V12": {
+      "value": null,
+      "formula": null
+    },
+    "W12": {
+      "value": null,
+      "formula": null
+    },
+    "X12": {
+      "value": null,
+      "formula": null
+    },
+    "Y12": {
+      "value": null,
+      "formula": null
+    },
+    "Z12": {
+      "value": null,
+      "formula": null
+    },
+    "AA12": {
+      "value": null,
+      "formula": null
+    },
+    "AB12": {
+      "value": null,
+      "formula": null
+    },
+    "AC12": {
+      "value": null,
+      "formula": null
+    },
+    "A13": {
+      "value": null,
+      "formula": null
+    },
+    "B13": {
+      "value": "NSE:TERASOFT",
+      "formula": null
+    },
+    "C13": {
+      "value": "Tera Software Ltd",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B13,\"\"Name\"\"),\"\"\"\")\"),\"Tera Software Ltd\")"
+    },
+    "D13": {
+      "value": "290.05",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B13),\"\"\"\")\"),290.05)"
+    },
+    "E13": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B13),\"\", SUM(StockHistoryData!AD:AD))"
+    },
+    "F13": {
+      "value": "0",
+      "formula": null
+    },
+    "G13": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B12),\"\",sum(StockHistoryData!AE3:AE2499))"
+    },
+    "H13": {
+      "value": "0",
+      "formula": null
+    },
+    "I13": {
+      "value": null,
+      "formula": null
+    },
+    "J13": {
+      "value": "0.1454",
+      "formula": null
+    },
+    "K13": {
+      "value": "0.4102",
+      "formula": null
+    },
+    "L13": {
+      "value": "0.9327",
+      "formula": null
+    },
+    "M13": {
+      "value": null,
+      "formula": null
+    },
+    "N13": {
+      "value": "#N/A",
+      "formula": null
+    },
+    "O13": {
+      "value": null,
+      "formula": null
+    },
+    "P13": {
+      "value": null,
+      "formula": null
+    },
+    "Q13": {
+      "value": null,
+      "formula": null
+    },
+    "R13": {
+      "value": null,
+      "formula": null
+    },
+    "S13": {
+      "value": null,
+      "formula": null
+    },
+    "T13": {
+      "value": null,
+      "formula": null
+    },
+    "U13": {
+      "value": null,
+      "formula": null
+    },
+    "V13": {
+      "value": null,
+      "formula": null
+    },
+    "W13": {
+      "value": null,
+      "formula": null
+    },
+    "X13": {
+      "value": null,
+      "formula": null
+    },
+    "Y13": {
+      "value": null,
+      "formula": null
+    },
+    "Z13": {
+      "value": null,
+      "formula": null
+    },
+    "AA13": {
+      "value": null,
+      "formula": null
+    },
+    "AB13": {
+      "value": null,
+      "formula": null
+    },
+    "AC13": {
+      "value": null,
+      "formula": null
+    },
+    "A14": {
+      "value": null,
+      "formula": null
+    },
+    "B14": {
+      "value": "NSE:APOLLO",
+      "formula": null
+    },
+    "C14": {
+      "value": "Apollo Micro Systems Ltd",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B14,\"\"Name\"\"),\"\"\"\")\"),\"Apollo Micro Systems Ltd\")"
+    },
+    "D14": {
+      "value": "383.3",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B14),\"\"\"\")\"),383.3)"
+    },
+    "E14": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B14),\"\", SUM(StockHistoryData!AH:AH))"
+    },
+    "F14": {
+      "value": "0",
+      "formula": null
+    },
+    "G14": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B13),\"\",sum(StockHistoryData!AI3:AI2499))"
+    },
+    "H14": {
+      "value": "0",
+      "formula": null
+    },
+    "I14": {
+      "value": null,
+      "formula": null
+    },
+    "J14": {
+      "value": null,
+      "formula": null
+    },
+    "K14": {
+      "value": "1.0214",
+      "formula": null
+    },
+    "L14": {
+      "value": "0.917",
+      "formula": null
+    },
+    "M14": {
+      "value": null,
+      "formula": null
+    },
+    "N14": {
+      "value": "#N/A",
+      "formula": null
+    },
+    "O14": {
+      "value": null,
+      "formula": null
+    },
+    "P14": {
+      "value": null,
+      "formula": null
+    },
+    "Q14": {
+      "value": null,
+      "formula": null
+    },
+    "R14": {
+      "value": null,
+      "formula": null
+    },
+    "S14": {
+      "value": null,
+      "formula": null
+    },
+    "T14": {
+      "value": null,
+      "formula": null
+    },
+    "U14": {
+      "value": null,
+      "formula": null
+    },
+    "V14": {
+      "value": null,
+      "formula": null
+    },
+    "W14": {
+      "value": null,
+      "formula": null
+    },
+    "X14": {
+      "value": null,
+      "formula": null
+    },
+    "Y14": {
+      "value": null,
+      "formula": null
+    },
+    "Z14": {
+      "value": null,
+      "formula": null
+    },
+    "AA14": {
+      "value": null,
+      "formula": null
+    },
+    "AB14": {
+      "value": null,
+      "formula": null
+    },
+    "AC14": {
+      "value": null,
+      "formula": null
+    },
+    "A15": {
+      "value": null,
+      "formula": null
+    },
+    "B15": {
+      "value": "NSE:LUMAXTECH",
+      "formula": null
+    },
+    "C15": {
+      "value": "Lumax AutoTechnologies Ltd",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B15,\"\"Name\"\"),\"\"\"\")\"),\"Lumax AutoTechnologies Ltd\")"
+    },
+    "D15": {
+      "value": "1985",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B15),\"\"\"\")\"),1985.0)"
+    },
+    "E15": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B15),\"\", SUM(StockHistoryData!AL:AL))"
+    },
+    "F15": {
+      "value": "0",
+      "formula": null
+    },
+    "G15": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B14),\"\",sum(StockHistoryData!AM3:AM2499))"
+    },
+    "H15": {
+      "value": "0",
+      "formula": null
+    },
+    "I15": {
+      "value": null,
+      "formula": null
+    },
+    "J15": {
+      "value": "0.371",
+      "formula": null
+    },
+    "K15": {
+      "value": "0.6890000000000001",
+      "formula": null
+    },
+    "L15": {
+      "value": "0.7467",
+      "formula": null
+    },
+    "M15": {
+      "value": null,
+      "formula": null
+    },
+    "N15": {
+      "value": "#N/A",
+      "formula": null
+    },
+    "O15": {
+      "value": null,
+      "formula": null
+    },
+    "P15": {
+      "value": null,
+      "formula": null
+    },
+    "Q15": {
+      "value": null,
+      "formula": null
+    },
+    "R15": {
+      "value": null,
+      "formula": null
+    },
+    "S15": {
+      "value": null,
+      "formula": null
+    },
+    "T15": {
+      "value": null,
+      "formula": null
+    },
+    "U15": {
+      "value": null,
+      "formula": null
+    },
+    "V15": {
+      "value": null,
+      "formula": null
+    },
+    "W15": {
+      "value": null,
+      "formula": null
+    },
+    "X15": {
+      "value": null,
+      "formula": null
+    },
+    "Y15": {
+      "value": null,
+      "formula": null
+    },
+    "Z15": {
+      "value": null,
+      "formula": null
+    },
+    "AA15": {
+      "value": null,
+      "formula": null
+    },
+    "AB15": {
+      "value": null,
+      "formula": null
+    },
+    "AC15": {
+      "value": null,
+      "formula": null
+    },
+    "A16": {
+      "value": null,
+      "formula": null
+    },
+    "B16": {
+      "value": "BOM:539997",
+      "formula": null
+    },
+    "C16": {
+      "value": "Kwality Pharmaceuticals Ltd",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B16,\"\"Name\"\"),\"\"\"\")\"),\"Kwality Pharmaceuticals Ltd\")"
+    },
+    "D16": {
+      "value": "3397.65",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B16),\"\"\"\")\"),3397.65)"
+    },
+    "E16": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B16),\"\", SUM(StockHistoryData!AP:AP))"
+    },
+    "F16": {
+      "value": "0",
+      "formula": null
+    },
+    "G16": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B15),\"\",sum(StockHistoryData!AQ3:AQ2499))"
+    },
+    "H16": {
+      "value": "0",
+      "formula": null
+    },
+    "I16": {
+      "value": null,
+      "formula": null
+    },
+    "J16": {
+      "value": "#VALUE!",
+      "formula": null
+    },
+    "K16": {
+      "value": null,
+      "formula": null
+    },
+    "L16": {
+      "value": null,
+      "formula": null
+    },
+    "M16": {
+      "value": null,
+      "formula": null
+    },
+    "N16": {
+      "value": "#N/A",
+      "formula": null
+    },
+    "O16": {
+      "value": null,
+      "formula": null
+    },
+    "P16": {
+      "value": null,
+      "formula": null
+    },
+    "Q16": {
+      "value": null,
+      "formula": null
+    },
+    "R16": {
+      "value": null,
+      "formula": null
+    },
+    "S16": {
+      "value": null,
+      "formula": null
+    },
+    "T16": {
+      "value": null,
+      "formula": null
+    },
+    "U16": {
+      "value": null,
+      "formula": null
+    },
+    "V16": {
+      "value": null,
+      "formula": null
+    },
+    "W16": {
+      "value": null,
+      "formula": null
+    },
+    "X16": {
+      "value": null,
+      "formula": null
+    },
+    "Y16": {
+      "value": null,
+      "formula": null
+    },
+    "Z16": {
+      "value": null,
+      "formula": null
+    },
+    "AA16": {
+      "value": null,
+      "formula": null
+    },
+    "AB16": {
+      "value": null,
+      "formula": null
+    },
+    "AC16": {
+      "value": null,
+      "formula": null
+    },
+    "A17": {
+      "value": null,
+      "formula": null
+    },
+    "B17": {
+      "value": "NSE:TDPOWERSYS",
+      "formula": null
+    },
+    "C17": {
+      "value": "TD Power Systems Ltd",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B17,\"\"Name\"\"),\"\"\"\")\"),\"TD Power Systems Ltd\")"
+    },
+    "D17": {
+      "value": "734.95",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B17),\"\"\"\")\"),734.95)"
+    },
+    "E17": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B17),\"\", SUM(StockHistoryData!AT:AT))"
+    },
+    "F17": {
+      "value": "0",
+      "formula": null
+    },
+    "G17": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B16),\"\",sum(StockHistoryData!AU3:AU2499))"
+    },
+    "H17": {
+      "value": "0",
+      "formula": null
+    },
+    "I17": {
+      "value": null,
+      "formula": null
+    },
+    "J17": {
+      "value": "0.442",
+      "formula": null
+    },
+    "K17": {
+      "value": "0.9277",
+      "formula": null
+    },
+    "L17": {
+      "value": "0.7962",
+      "formula": null
+    },
+    "M17": {
+      "value": null,
+      "formula": null
+    },
+    "N17": {
+      "value": "#N/A",
+      "formula": null
+    },
+    "O17": {
+      "value": null,
+      "formula": null
+    },
+    "P17": {
+      "value": null,
+      "formula": null
+    },
+    "Q17": {
+      "value": null,
+      "formula": null
+    },
+    "R17": {
+      "value": null,
+      "formula": null
+    },
+    "S17": {
+      "value": null,
+      "formula": null
+    },
+    "T17": {
+      "value": null,
+      "formula": null
+    },
+    "U17": {
+      "value": null,
+      "formula": null
+    },
+    "V17": {
+      "value": null,
+      "formula": null
+    },
+    "W17": {
+      "value": null,
+      "formula": null
+    },
+    "X17": {
+      "value": null,
+      "formula": null
+    },
+    "Y17": {
+      "value": null,
+      "formula": null
+    },
+    "Z17": {
+      "value": null,
+      "formula": null
+    },
+    "AA17": {
+      "value": null,
+      "formula": null
+    },
+    "AB17": {
+      "value": null,
+      "formula": null
+    },
+    "AC17": {
+      "value": null,
+      "formula": null
+    },
+    "A18": {
+      "value": null,
+      "formula": null
+    },
+    "B18": {
+      "value": "NSE:INDOTECH",
+      "formula": null
+    },
+    "C18": {
+      "value": "Indo Tech Transformers Limited",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B18,\"\"Name\"\"),\"\"\"\")\"),\"Indo Tech Transformers Limited\")"
+    },
+    "D18": {
+      "value": "3561.9",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B18),\"\"\"\")\"),3561.9)"
+    },
+    "E18": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B18),\"\", SUM(StockHistoryData!AX:AX))"
+    },
+    "F18": {
+      "value": "0",
+      "formula": null
+    },
+    "G18": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B17),\"\",sum(StockHistoryData!AY3:AY2499))"
+    },
+    "H18": {
+      "value": "0",
+      "formula": null
+    },
+    "I18": {
+      "value": null,
+      "formula": null
+    },
+    "J18": {
+      "value": "0.3417",
+      "formula": null
+    },
+    "K18": {
+      "value": "0.8533",
+      "formula": null
+    },
+    "L18": {
+      "value": "1.0225",
+      "formula": null
+    },
+    "M18": {
+      "value": null,
+      "formula": null
+    },
+    "N18": {
+      "value": "#N/A",
+      "formula": null
+    },
+    "O18": {
+      "value": null,
+      "formula": null
+    },
+    "P18": {
+      "value": null,
+      "formula": null
+    },
+    "Q18": {
+      "value": null,
+      "formula": null
+    },
+    "R18": {
+      "value": null,
+      "formula": null
+    },
+    "S18": {
+      "value": null,
+      "formula": null
+    },
+    "T18": {
+      "value": null,
+      "formula": null
+    },
+    "U18": {
+      "value": null,
+      "formula": null
+    },
+    "V18": {
+      "value": null,
+      "formula": null
+    },
+    "W18": {
+      "value": null,
+      "formula": null
+    },
+    "X18": {
+      "value": null,
+      "formula": null
+    },
+    "Y18": {
+      "value": null,
+      "formula": null
+    },
+    "Z18": {
+      "value": null,
+      "formula": null
+    },
+    "AA18": {
+      "value": null,
+      "formula": null
+    },
+    "AB18": {
+      "value": null,
+      "formula": null
+    },
+    "AC18": {
+      "value": null,
+      "formula": null
+    },
+    "A19": {
+      "value": null,
+      "formula": null
+    },
+    "B19": {
+      "value": "NSE:CEMPRO",
+      "formula": null
+    },
+    "C19": {
+      "value": "Cemindia Projects Ltd",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B19,\"\"Name\"\"),\"\"\"\")\"),\"Cemindia Projects Ltd\")"
+    },
+    "D19": {
+      "value": "1239.1",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B19),\"\"\"\")\"),1239.1)"
+    },
+    "E19": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B19),\"\", SUM(StockHistoryData!BB:BB))"
+    },
+    "F19": {
+      "value": "0",
+      "formula": null
+    },
+    "G19": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B18),\"\",sum(StockHistoryData!BC3:BC2499))"
+    },
+    "H19": {
+      "value": "0",
+      "formula": null
+    },
+    "I19": {
+      "value": null,
+      "formula": null
+    },
+    "J19": {
+      "value": "0.2433",
+      "formula": null
+    },
+    "K19": {
+      "value": "0.7415999999999999",
+      "formula": null
+    },
+    "L19": {
+      "value": "0.8138",
+      "formula": null
+    },
+    "M19": {
+      "value": null,
+      "formula": null
+    },
+    "N19": {
+      "value": "#N/A",
+      "formula": null
+    },
+    "O19": {
+      "value": null,
+      "formula": null
+    },
+    "P19": {
+      "value": null,
+      "formula": null
+    },
+    "Q19": {
+      "value": null,
+      "formula": null
+    },
+    "R19": {
+      "value": null,
+      "formula": null
+    },
+    "S19": {
+      "value": null,
+      "formula": null
+    },
+    "T19": {
+      "value": null,
+      "formula": null
+    },
+    "U19": {
+      "value": null,
+      "formula": null
+    },
+    "V19": {
+      "value": null,
+      "formula": null
+    },
+    "W19": {
+      "value": null,
+      "formula": null
+    },
+    "X19": {
+      "value": null,
+      "formula": null
+    },
+    "Y19": {
+      "value": null,
+      "formula": null
+    },
+    "Z19": {
+      "value": null,
+      "formula": null
+    },
+    "AA19": {
+      "value": null,
+      "formula": null
+    },
+    "AB19": {
+      "value": null,
+      "formula": null
+    },
+    "AC19": {
+      "value": null,
+      "formula": null
+    },
+    "A20": {
+      "value": null,
+      "formula": null
+    },
+    "B20": {
+      "value": "BOM:522195",
+      "formula": null
+    },
+    "C20": {
+      "value": "Frontier Springs Ltd",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B20,\"\"Name\"\"),\"\"\"\")\"),\"Frontier Springs Ltd\")"
+    },
+    "D20": {
+      "value": "1257",
+      "formula": "IFERROR(__xludf.DUMMYFUNCTION(\"iferror(GOOGLEFINANCE(B20),\"\"\"\")\"),1257.0)"
+    },
+    "E20": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B20),\"\", SUM(StockHistoryData!BF:BF))"
+    },
+    "F20": {
+      "value": "0",
+      "formula": null
+    },
+    "G20": {
+      "value": "0",
+      "formula": "IF(ISBLANK(B19),\"\",sum(StockHistoryData!BG3:BG2499))"
+    },
+    "H20": {
+      "value": "0",
+      "formula": null
+    },
+    "I20": {
+      "value": null,
+      "formula": null
+    },
+    "J20": {
+      "value": "#VALUE!",
+      "formula": null
+    },
+    "K20": {
+      "value": null,
+      "formula": null
+    },
+    "L20": {
+      "value": null,
+      "formula": null
+    },
+    "M20": {
+      "value": null,
+      "formula": null
+    },
+    "N20": {
+      "value": "#N/A",
+      "formula": null
+    },
+    "O20": {
+      "value": null,
+      "formula": null
+    },
+    "P20": {
+      "value": null,
+      "formula": null
+    },
+    "Q20": {
+      "value": null,
+      "formula": null
+    },
+    "R20": {
+      "value": null,
+      "formula": null
+    },
+    "S20": {
+      "value": null,
+      "formula": null
+    },
+    "T20": {
+      "value": null,
+      "formula": null
+    },
+    "U20": {
+      "value": null,
+      "formula": null
+    },
+    "V20": {
+      "value": null,
+      "formula": null
+    },
+    "W20": {
+      "value": null,
+      "formula": null
+    },
+    "X20": {
+      "value": null,
+      "formula": null
+    },
+    "Y20": {
+      "value": null,
+      "formula": null
+    },
+    "Z20": {
+      "value": null,
+      "formula": null
+    },
+    "AA20": {
+      "value": null,
+      "formula": null
+    },
+    "AB20": {
+      "value": null,
+      "formula": null
+    },
+    "AC20": {
+      "value": null,
+      "formula": null
+    },
+    "A21": {
+      "value": null,
+      "formula": null
+    },
+    "B21": {
+      "value": "Total",
+      "formula": null
+    },
+    "C21": {
+      "value": null,
+      "formula": null
+    },
+    "D21": {
+      "value": null,
+      "formula": null
+    },
+    "E21": {
+      "value": null,
+      "formula": null
+    },
+    "F21": {
+      "value": null,
+      "formula": null
+    },
+    "G21": {
+      "value": "0",
+      "formula": "SUM(G7:G20)"
+    },
+    "H21": {
+      "value": "0",
+      "formula": null
+    },
+    "I21": {
+      "value": null,
+      "formula": null
+    },
+    "J21": {
+      "value": "From SCREENER",
+      "formula": null
+    },
+    "K21": {
+      "value": null,
+      "formula": null
+    },
+    "L21": {
+      "value": null,
+      "formula": null
+    },
+    "M21": {
+      "value": null,
+      "formula": null
+    },
+    "N21": {
+      "value": null,
+      "formula": null
+    },
+    "O21": {
+      "value": null,
+      "formula": null
+    },
+    "P21": {
+      "value": null,
+      "formula": null
+    },
+    "Q21": {
+      "value": null,
+      "formula": null
+    },
+    "R21": {
+      "value": null,
+      "formula": null
+    },
+    "S21": {
+      "value": null,
+      "formula": null
+    },
+    "T21": {
+      "value": null,
+      "formula": null
+    },
+    "U21": {
+      "value": null,
+      "formula": null
+    },
+    "V21": {
+      "value": null,
+      "formula": null
+    },
+    "W21": {
+      "value": null,
+      "formula": null
+    },
+    "X21": {
+      "value": null,
+      "formula": null
+    },
+    "Y21": {
+      "value": null,
+      "formula": null
+    },
+    "Z21": {
+      "value": null,
+      "formula": null
+    },
+    "AA21": {
+      "value": null,
+      "formula": null
+    },
+    "AB21": {
+      "value": null,
+      "formula": null
+    },
+    "AC21": {
+      "value": null,
+      "formula": null
+    },
+    "A22": {
+      "value": null,
+      "formula": null
+    },
+    "B22": {
+      "value": null,
+      "formula": null
+    },
+    "C22": {
+      "value": null,
+      "formula": null
+    },
+    "D22": {
+      "value": null,
+      "formula": null
+    },
+    "E22": {
+      "value": null,
+      "formula": null
+    },
+    "F22": {
+      "value": null,
+      "formula": null
+    },
+    "G22": {
+      "value": null,
+      "formula": null
+    },
+    "H22": {
+      "value": null,
+      "formula": null
+    },
+    "I22": {
+      "value": null,
+      "formula": null
+    },
+    "J22": {
+      "value": null,
+      "formula": null
+    },
+    "K22": {
+      "value": null,
+      "formula": null
+    },
+    "L22": {
+      "value": null,
+      "formula": null
+    },
+    "M22": {
+      "value": null,
+      "formula": null
+    },
+    "N22": {
+      "value": null,
+      "formula": null
+    },
+    "O22": {
+      "value": null,
+      "formula": null
+    },
+    "P22": {
+      "value": null,
+      "formula": null
+    },
+    "Q22": {
+      "value": null,
+      "formula": null
+    },
+    "R22": {
+      "value": null,
+      "formula": null
+    },
+    "S22": {
+      "value": null,
+      "formula": null
+    },
+    "T22": {
+      "value": null,
+      "formula": null
+    },
+    "U22": {
+      "value": null,
+      "formula": null
+    },
+    "V22": {
+      "value": null,
+      "formula": null
+    },
+    "W22": {
+      "value": null,
+      "formula": null
+    },
+    "X22": {
+      "value": null,
+      "formula": null
+    },
+    "Y22": {
+      "value": null,
+      "formula": null
+    },
+    "Z22": {
+      "value": null,
+      "formula": null
+    },
+    "AA22": {
+      "value": null,
+      "formula": null
+    },
+    "AB22": {
+      "value": null,
+      "formula": null
+    },
+    "AC22": {
+      "value": null,
+      "formula": null
+    }
+  }
+}

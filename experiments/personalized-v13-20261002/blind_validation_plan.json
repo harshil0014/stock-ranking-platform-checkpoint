@@ -1,0 +1,19 @@
+{
+  "schema": "personalized_v13_blind_validation_plan_v1",
+  "selection_lock_sha256": "dad3ce68b22a1f744650e501505a3ebc78dc7c4bd39c3247982c4ed84bcac13b",
+  "immediate_unseen_holdout": {
+    "decision_date": "2024-01-31",
+    "endpoint": "2025-01-31",
+    "rationale": "Post-development date absent from the V12 50-date panel and absent from all V13 selection searches; its 12-month calendar window precedes the old 2025 final decision windows, providing substantially more independent evidence.",
+    "outcome_values_seen_before_plan": false,
+    "evaluate_once": true
+  },
+  "prospective_reserved_holdout": {
+    "decision_date": "2025-09-30",
+    "endpoint": "2026-09-30",
+    "status": "DEFERRED_PENDING_VERIFIED_PRICE_AND_CORPORATE_ACTION_EVIDENCE_THROUGH_ENDPOINT",
+    "outcome_values_seen": false
+  },
+  "production_mutated": false,
+  "frozen_champion_mutated": false
+}

@@ -1,0 +1,9 @@
+{
+  "annual_fits_replayed": 72,
+  "candidate_configurations": 50,
+  "metric_rows_checked_including_repeated_references": 1440,
+  "tolerance": 1e-12,
+  "match": true,
+  "retrained": false,
+  "prediction_caches_restored": true
+}

@@ -1,0 +1,27 @@
+{
+  "locked_at": "2026-10-03T17:58:51.539144+00:00",
+  "choice": {
+    "family": "v17",
+    "beta": 0.0,
+    "candidate": "frozen_v17"
+  },
+  "new_model_survived": false,
+  "trial_count": 34,
+  "best_rejected": {
+    "candidate": "regime_utility+neural_moe__0.1",
+    "family": "regime_utility+neural_moe",
+    "beta": 0.1,
+    "eligible": false,
+    "utility_gain": 0.01314196085941748,
+    "coverage": 0.0,
+    "ndcg20": 0.016836633970160404,
+    "target_achievement_top20": 0.007638888888888894,
+    "target_shortfall_top20": -0.005106771068066274,
+    "median_xirr_top20": -0.011871766934742619,
+    "mean_asset_drawdown_top20": 0.03948181721525214,
+    "rank_ic": 0.008433535242561706,
+    "pairwise_accuracy": 0.002874345780529081
+  },
+  "exposed_outcomes_used_for_selection": false,
+  "research_only": true
+}

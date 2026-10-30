@@ -1,0 +1,128 @@
+{
+  "status": "RESEARCH_COMPLETE_NO_CHAMPION_PROMOTION",
+  "retained_reference": "rank_xendcg_balanced_blend0.25",
+  "promising_challenger": "stack_breadth_balanced_w1.0",
+  "production_replaced": false,
+  "fresh_validation": false,
+  "as_of": "2026-10-03",
+  "current_profile": "base7500",
+  "historical_profiles": [
+    "amount1000",
+    "amount50000",
+    "base7500",
+    "lookback12",
+    "lookback60",
+    "quarterly",
+    "target10",
+    "target30",
+    "weekly"
+  ],
+  "historical_rows": 797443,
+  "current_stocks": 4436,
+  "current_groups": 59,
+  "checks": [
+    {
+      "study": "sector-execution-specialist-20261011",
+      "replay": {
+        "models": 28,
+        "maximum_csv_replay_error": 1.1102230246251565e-16,
+        "cutoffs_verified": true,
+        "source_sha256": "0d4d97bc6f3cf8cbefe1546357ecdff5df13b41db7f04a55cfa64011a2051ef9"
+      },
+      "evaluation": {
+        "current_rows": 4436,
+        "historical_rows": 797443,
+        "benchmark_cohorts_verified": true,
+        "champion_reference_reproduced": true,
+        "current_ranks_verified": true,
+        "strict_gate_passes": 0,
+        "fresh_validation": false,
+        "production_replaced": false
+      },
+      "profiles": [
+        "amount1000",
+        "amount50000",
+        "base7500",
+        "lookback12",
+        "lookback60",
+        "quarterly",
+        "target10",
+        "target30",
+        "weekly"
+      ]
+    },
+    {
+      "study": "sector-specialist-ensemble-20261011",
+      "replay": {
+        "fits": 42,
+        "max_error": 4.440892098500626e-16,
+        "source_identities_verified": true,
+        "cutoffs_verified": true
+      },
+      "evaluation": {
+        "current_rows": 4436,
+        "historical_rows": 797443,
+        "benchmark_cohorts_verified": true,
+        "champion_reference_reproduced": true,
+        "current_ranks_verified": true,
+        "strict_gate_passes": 0,
+        "fresh_validation": false,
+        "production_replaced": false
+      },
+      "profiles": [
+        "amount1000",
+        "amount50000",
+        "base7500",
+        "lookback12",
+        "lookback60",
+        "quarterly",
+        "target10",
+        "target30",
+        "weekly"
+      ]
+    },
+    {
+      "study": "sector-tabm-continuation-20261011",
+      "replay": {
+        "fits": 28,
+        "native_predictions_exact": true,
+        "cutoffs_verified": true,
+        "source_identities_verified": true
+      },
+      "evaluation": {
+        "current_rows": 4436,
+        "historical_rows": 797443,
+        "benchmark_cohorts_verified": true,
+        "champion_reference_reproduced": true,
+        "current_ranks_verified": true,
+        "strict_gate_passes": 0,
+        "fresh_validation": false,
+        "production_replaced": false
+      },
+      "profiles": [
+        "amount1000",
+        "amount50000",
+        "base7500",
+        "lookback12",
+        "lookback60",
+        "quarterly",
+        "target10",
+        "target30",
+        "weekly"
+      ]
+    }
+  ],
+  "archive_sources": 81,
+  "archive_records": 3175,
+  "archive_read_errors": [
+    {
+      "path": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\personalized-deep-championship-20261002\\v1\\pytest_tmp2",
+      "error": "[WinError 5] Access is denied: 'C:\\\\Users\\\\Harshil\\\\Downloads\\\\stock-ranking-platform-fresh-canonical-verified\\\\experiments\\\\personalized-deep-championship-20261002\\\\v1\\\\pytest_tmp2'"
+    }
+  ],
+  "website_sha256": {
+    "src/stock_ranker/webapp.py": "094f04ab3261403252f1c07b61bb5620583bc777d4fdd89f056756f0040868b8",
+    "src/stock_ranker/web_assets.py": "8df118f877925dfffd47abf75aa330008cb49ff9d378ca09ccfb14d3c8734c7d"
+  },
+  "qualification": "Completed research outcome and deliverable package, not achievement of universal superiority, full PIT data reconstruction, or authorization to invest. No new deployment."
+}

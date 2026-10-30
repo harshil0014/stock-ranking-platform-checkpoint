@@ -418,6 +418,11 @@ class BSEBrowser:
         self.page.locator("#Period").select_option("D")
         dates = self.page.locator('input[placeholder="DD/MM/YYYY"]')
         if dates.count() != 2:
+            # BSE's current form (Oct 2026) renders the same two controls as
+            # name="datepicker" with a whitespace placeholder. Keep the old
+            # selector first so historical/browser fixtures remain valid.
+            dates = self.page.locator('input[name="datepicker"]')
+        if dates.count() != 2:
             raise RuntimeError("BSE Daily form did not expose exactly two date inputs")
         dates.nth(0).fill(task.from_date)
         dates.nth(1).fill(task.to_date)

@@ -1,0 +1,11 @@
+{
+  "model": "nnls_outer_return",
+  "regressions": 692,
+  "improvements": 574,
+  "comparisons": 1296,
+  "strict_gate": false,
+  "development_top3_regressions": 138,
+  "development_regressions": 401,
+  "fresh_validation": false,
+  "production_replaced": false
+}

@@ -1,0 +1,218 @@
+{
+  "champion": {
+    "scored": 3265,
+    "short_history_universe_share": 0.07993874425727412,
+    "top20_short_history_share": 0.9,
+    "top50_short_history_share": 0.46,
+    "top100_short_history_share": 0.29,
+    "nykaa_global_rank": 1,
+    "nykaa_retail_rank": 1,
+    "nykaa_score": 0.9896124095936478,
+    "top10": [
+      {
+        "rank": 1,
+        "ticker": "NYKAA",
+        "score": 0.9896124095936478,
+        "observed5": 0
+      },
+      {
+        "rank": 2,
+        "ticker": "SJS",
+        "score": 0.9878544187260678,
+        "observed5": 0
+      },
+      {
+        "rank": 3,
+        "ticker": "SHAILY",
+        "score": 0.9874023639315472,
+        "observed5": 0
+      },
+      {
+        "rank": 4,
+        "ticker": "BSE-543373",
+        "score": 0.9869000808265244,
+        "observed5": 0
+      },
+      {
+        "rank": 5,
+        "ticker": "BSE-543543",
+        "score": 0.9869000808265244,
+        "observed5": 0
+      },
+      {
+        "rank": 6,
+        "ticker": "BSE-543616",
+        "score": 0.9800049696446844,
+        "observed5": 0
+      },
+      {
+        "rank": 7,
+        "ticker": "PTCIL",
+        "score": 0.9780923767604895,
+        "observed5": 0
+      },
+      {
+        "rank": 8,
+        "ticker": "PAYTM",
+        "score": 0.9769548753470724,
+        "observed5": 0
+      },
+      {
+        "rank": 9,
+        "ticker": "BSE-543953",
+        "score": 0.976302355416145,
+        "observed5": 0
+      },
+      {
+        "rank": 10,
+        "ticker": "SUPRIYA",
+        "score": 0.97193893898086,
+        "observed5": 0
+      }
+    ]
+  },
+  "repaired_retrained": {
+    "scored": 3265,
+    "short_history_universe_share": 0.07993874425727412,
+    "top20_short_history_share": 0.1,
+    "top50_short_history_share": 0.1,
+    "top100_short_history_share": 0.12,
+    "nykaa_global_rank": 18,
+    "nykaa_retail_rank": 1,
+    "nykaa_score": 0.9394845557123692,
+    "top10": [
+      {
+        "rank": 1,
+        "ticker": "BSE-543172",
+        "score": 0.9555073867625976,
+        "observed5": 1
+      },
+      {
+        "rank": 2,
+        "ticker": "BSE-539682",
+        "score": 0.9555073867625976,
+        "observed5": 1
+      },
+      {
+        "rank": 3,
+        "ticker": "BSE-540718",
+        "score": 0.9551557885890816,
+        "observed5": 1
+      },
+      {
+        "rank": 4,
+        "ticker": "THYROCARE",
+        "score": 0.9473201721507254,
+        "observed5": 1
+      },
+      {
+        "rank": 5,
+        "ticker": "ACUTAAS",
+        "score": 0.945311039730634,
+        "observed5": 1
+      },
+      {
+        "rank": 6,
+        "ticker": "SHAILY",
+        "score": 0.945311039730634,
+        "observed5": 0
+      },
+      {
+        "rank": 7,
+        "ticker": "TDPOWERSYS",
+        "score": 0.945311039730634,
+        "observed5": 1
+      },
+      {
+        "rank": 8,
+        "ticker": "MAHASTEEL",
+        "score": 0.945311039730634,
+        "observed5": 1
+      },
+      {
+        "rank": 9,
+        "ticker": "BSE-501151",
+        "score": 0.945311039730634,
+        "observed5": 1
+      },
+      {
+        "rank": 10,
+        "ticker": "SHRIPISTON",
+        "score": 0.945311039730634,
+        "observed5": 1
+      }
+    ]
+  },
+  "repaired_frozen_tree": {
+    "scored": 3265,
+    "short_history_universe_share": 0.07993874425727412,
+    "top20_short_history_share": 0.15,
+    "top50_short_history_share": 0.16,
+    "top100_short_history_share": 0.1,
+    "nykaa_global_rank": 1,
+    "nykaa_retail_rank": 1,
+    "nykaa_score": 0.9723338707808624,
+    "top10": [
+      {
+        "rank": 1,
+        "ticker": "NYKAA",
+        "score": 0.9723338707808624,
+        "observed5": 0
+      },
+      {
+        "rank": 2,
+        "ticker": "PRIVISCL",
+        "score": 0.971379532881319,
+        "observed5": 1
+      },
+      {
+        "rank": 3,
+        "ticker": "SHRIRAMFIN",
+        "score": 0.9705758799132824,
+        "observed5": 1
+      },
+      {
+        "rank": 4,
+        "ticker": "SHRIPISTON",
+        "score": 0.9695713137032368,
+        "observed5": 1
+      },
+      {
+        "rank": 5,
+        "ticker": "THYROCARE",
+        "score": 0.9688178890457024,
+        "observed5": 1
+      },
+      {
+        "rank": 6,
+        "ticker": "ACUTAAS",
+        "score": 0.9671603547991272,
+        "observed5": 1
+      },
+      {
+        "rank": 7,
+        "ticker": "BSE-531049",
+        "score": 0.9671603547991272,
+        "observed5": 1
+      },
+      {
+        "rank": 8,
+        "ticker": "LUMAXTECH",
+        "score": 0.9671603547991272,
+        "observed5": 1
+      },
+      {
+        "rank": 9,
+        "ticker": "LAURUSLABS",
+        "score": 0.9671603547991272,
+        "observed5": 1
+      },
+      {
+        "rank": 10,
+        "ticker": "BSE-519413",
+        "score": 0.9661110673707928,
+        "observed5": 1
+      }
+    ]
+  }
+}

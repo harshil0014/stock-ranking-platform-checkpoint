@@ -1,0 +1,16 @@
+{
+  "year": "current",
+  "family": "ebm_interactions",
+  "training_rows": 1115140,
+  "training_queries": 20234,
+  "training_min_date": "2016-03-31",
+  "maximum_endpoint": "2026-08-31",
+  "cutoff": "2026-10-03",
+  "inference_rows": 4436,
+  "seconds": 101.79040241241455,
+  "replay_max_error": 0.0,
+  "model_sha256": "6ec7edb0e484993df4d1a8eb47c9db8d4f8d9499d8aa2c802fe0fb70d25b40ce",
+  "prediction_sha256": "3bd5f4056fce83da0f066791aff66e73964955e0e5d51b26381417f0cf1666bd",
+  "training_identity_sha256": "ca08811275df7cf746fdc501b2b3c68fd131d11e15d40421710d1803d1e6b630",
+  "training_loss": null
+}

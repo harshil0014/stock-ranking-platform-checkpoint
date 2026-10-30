@@ -1,0 +1,16 @@
+{
+  "experiments\\personalized-deep-championship-20261002\\v3\\prepared.pkl.gz": "b5fa0a1f0229bde692b2c07e0a05cfe91f7501a9deeba6c4bcd9109f00d36fb7",
+  "experiments\\personalized-deep-history-20261002\\real-panel-v12\\deep_panel.csv.gz": "c0b2f5f66836c487340237cc1df231e2f3d2835febcb09b84c0adffb1ab57371",
+  "experiments\\current-data-recovery-20261003\\current_company_facts_recovered_v7_full_yahoo.csv.gz": "5520707e233680d4e25589d8549d8f8b07367dc87cf4cfa12cf46857c4c6e5e1",
+  "experiments\\personalized-v14-ml-20261003\\historical_growth.csv.gz": "12918294d5c187395af5cbb66713bec92fdac6f04bb82327157c7f14a5fce9fb",
+  "experiments\\personalized-v15-20261003\\current_rankings.csv.gz": "ef8781e97a9660a5edceeffc9bb1e58bef42fdf0fe990d6e758a690e09d28910",
+  "experiments\\personalized-v15-20261003\\protocol_lock.json": "bc0202a678aa8511a8fb78badb4cc58064862d76ad86c1f53781507b9606b4fb",
+  "experiments\\personalized-v15-20261003\\development_balanced_return__confidence_only.txt": "80204ca598e69b0f9866f901b77e9dfaf4c4b9aacc7048de82def38153ae14ef",
+  "experiments\\personalized-v15-20261003\\evaluation_model.txt": "52d56bf7e35633e01d6fc64dcc83ad970a7bbb85d5166e466f7b92f5cd89e6aa",
+  "experiments\\personalized-v15-20261003\\current_model.txt": "056469e424ced8ee556b05db0b60d2d74c53ac2e572eae38116781c3d61f4a98",
+  "research\\runners\\personalized_v15_20261003.py": "f30f419debe3a48097c3afc04ffccade514c34d179b38408559405f70bd0bd87",
+  "experiments\\personalized-deep-championship-20261002\\v3\\development_winner_scores.csv.gz": "8449cf4fe31a759ccbb9fe002fd0188c757501cb751d3e7cbd286d4fafc1f760",
+  "experiments\\personalized-deep-championship-20261002\\v3\\postlock_2024_diagnostics_scores.csv.gz": "70681efffd929149da2a6a31d0d3a99630bc5a9584d636ac0203e5c78c953be0",
+  "experiments\\personalized-deep-championship-20261002\\v3\\untouched_final_2025_scores.csv.gz": "a844c9fa3be7560910918adfefd06ba40f8eadcf0f2f691d8fa02542ed2b8028",
+  "experiments\\personalized-deep-championship-20261002\\v3\\postfinal_2025_diagnostics_scores.csv.gz": "25f03f6317414ec303f97178bd7ef0670ae823d4d1cc8a798c86abe427cf5ee4"
+}

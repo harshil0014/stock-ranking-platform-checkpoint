@@ -1,0 +1,1593 @@
+{
+  "candidate_count": 198,
+  "formula": "(1-w)*frozen_challenger + w*(rankerA+rankerB)/2",
+  "reason": "Test complementary return/risk signals using small residual contributions. All pair choices retained, no cherry-picked pairs.",
+  "adaptive": true,
+  "fresh_validation": false,
+  "candidates": [
+    {
+      "name": "pair__catboost_return__catboost_balanced__0.05",
+      "sources": [
+        "catboost_return",
+        "catboost_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_return__catboost_balanced__0.1",
+      "sources": [
+        "catboost_return",
+        "catboost_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_return__catboost_balanced__0.2",
+      "sources": [
+        "catboost_return",
+        "catboost_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_return__catboost_defensive__0.05",
+      "sources": [
+        "catboost_return",
+        "catboost_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_return__catboost_defensive__0.1",
+      "sources": [
+        "catboost_return",
+        "catboost_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_return__catboost_defensive__0.2",
+      "sources": [
+        "catboost_return",
+        "catboost_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_return__xgboost_return__0.05",
+      "sources": [
+        "catboost_return",
+        "xgboost_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_return__xgboost_return__0.1",
+      "sources": [
+        "catboost_return",
+        "xgboost_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_return__xgboost_return__0.2",
+      "sources": [
+        "catboost_return",
+        "xgboost_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_return__xgboost_balanced__0.05",
+      "sources": [
+        "catboost_return",
+        "xgboost_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_return__xgboost_balanced__0.1",
+      "sources": [
+        "catboost_return",
+        "xgboost_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_return__xgboost_balanced__0.2",
+      "sources": [
+        "catboost_return",
+        "xgboost_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_return__xgboost_defensive__0.05",
+      "sources": [
+        "catboost_return",
+        "xgboost_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_return__xgboost_defensive__0.1",
+      "sources": [
+        "catboost_return",
+        "xgboost_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_return__xgboost_defensive__0.2",
+      "sources": [
+        "catboost_return",
+        "xgboost_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_return__extra_trees_return__0.05",
+      "sources": [
+        "catboost_return",
+        "extra_trees_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_return__extra_trees_return__0.1",
+      "sources": [
+        "catboost_return",
+        "extra_trees_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_return__extra_trees_return__0.2",
+      "sources": [
+        "catboost_return",
+        "extra_trees_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_return__extra_trees_balanced__0.05",
+      "sources": [
+        "catboost_return",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_return__extra_trees_balanced__0.1",
+      "sources": [
+        "catboost_return",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_return__extra_trees_balanced__0.2",
+      "sources": [
+        "catboost_return",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_return__extra_trees_defensive__0.05",
+      "sources": [
+        "catboost_return",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_return__extra_trees_defensive__0.1",
+      "sources": [
+        "catboost_return",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_return__extra_trees_defensive__0.2",
+      "sources": [
+        "catboost_return",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_return__ridge_return__0.05",
+      "sources": [
+        "catboost_return",
+        "ridge_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_return__ridge_return__0.1",
+      "sources": [
+        "catboost_return",
+        "ridge_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_return__ridge_return__0.2",
+      "sources": [
+        "catboost_return",
+        "ridge_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_return__ridge_balanced__0.05",
+      "sources": [
+        "catboost_return",
+        "ridge_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_return__ridge_balanced__0.1",
+      "sources": [
+        "catboost_return",
+        "ridge_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_return__ridge_balanced__0.2",
+      "sources": [
+        "catboost_return",
+        "ridge_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_return__ridge_defensive__0.05",
+      "sources": [
+        "catboost_return",
+        "ridge_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_return__ridge_defensive__0.1",
+      "sources": [
+        "catboost_return",
+        "ridge_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_return__ridge_defensive__0.2",
+      "sources": [
+        "catboost_return",
+        "ridge_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_balanced__catboost_defensive__0.05",
+      "sources": [
+        "catboost_balanced",
+        "catboost_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_balanced__catboost_defensive__0.1",
+      "sources": [
+        "catboost_balanced",
+        "catboost_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_balanced__catboost_defensive__0.2",
+      "sources": [
+        "catboost_balanced",
+        "catboost_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_balanced__xgboost_return__0.05",
+      "sources": [
+        "catboost_balanced",
+        "xgboost_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_balanced__xgboost_return__0.1",
+      "sources": [
+        "catboost_balanced",
+        "xgboost_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_balanced__xgboost_return__0.2",
+      "sources": [
+        "catboost_balanced",
+        "xgboost_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_balanced__xgboost_balanced__0.05",
+      "sources": [
+        "catboost_balanced",
+        "xgboost_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_balanced__xgboost_balanced__0.1",
+      "sources": [
+        "catboost_balanced",
+        "xgboost_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_balanced__xgboost_balanced__0.2",
+      "sources": [
+        "catboost_balanced",
+        "xgboost_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_balanced__xgboost_defensive__0.05",
+      "sources": [
+        "catboost_balanced",
+        "xgboost_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_balanced__xgboost_defensive__0.1",
+      "sources": [
+        "catboost_balanced",
+        "xgboost_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_balanced__xgboost_defensive__0.2",
+      "sources": [
+        "catboost_balanced",
+        "xgboost_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_balanced__extra_trees_return__0.05",
+      "sources": [
+        "catboost_balanced",
+        "extra_trees_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_balanced__extra_trees_return__0.1",
+      "sources": [
+        "catboost_balanced",
+        "extra_trees_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_balanced__extra_trees_return__0.2",
+      "sources": [
+        "catboost_balanced",
+        "extra_trees_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_balanced__extra_trees_balanced__0.05",
+      "sources": [
+        "catboost_balanced",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_balanced__extra_trees_balanced__0.1",
+      "sources": [
+        "catboost_balanced",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_balanced__extra_trees_balanced__0.2",
+      "sources": [
+        "catboost_balanced",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_balanced__extra_trees_defensive__0.05",
+      "sources": [
+        "catboost_balanced",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_balanced__extra_trees_defensive__0.1",
+      "sources": [
+        "catboost_balanced",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_balanced__extra_trees_defensive__0.2",
+      "sources": [
+        "catboost_balanced",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_balanced__ridge_return__0.05",
+      "sources": [
+        "catboost_balanced",
+        "ridge_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_balanced__ridge_return__0.1",
+      "sources": [
+        "catboost_balanced",
+        "ridge_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_balanced__ridge_return__0.2",
+      "sources": [
+        "catboost_balanced",
+        "ridge_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_balanced__ridge_balanced__0.05",
+      "sources": [
+        "catboost_balanced",
+        "ridge_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_balanced__ridge_balanced__0.1",
+      "sources": [
+        "catboost_balanced",
+        "ridge_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_balanced__ridge_balanced__0.2",
+      "sources": [
+        "catboost_balanced",
+        "ridge_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_balanced__ridge_defensive__0.05",
+      "sources": [
+        "catboost_balanced",
+        "ridge_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_balanced__ridge_defensive__0.1",
+      "sources": [
+        "catboost_balanced",
+        "ridge_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_balanced__ridge_defensive__0.2",
+      "sources": [
+        "catboost_balanced",
+        "ridge_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_defensive__xgboost_return__0.05",
+      "sources": [
+        "catboost_defensive",
+        "xgboost_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_defensive__xgboost_return__0.1",
+      "sources": [
+        "catboost_defensive",
+        "xgboost_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_defensive__xgboost_return__0.2",
+      "sources": [
+        "catboost_defensive",
+        "xgboost_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_defensive__xgboost_balanced__0.05",
+      "sources": [
+        "catboost_defensive",
+        "xgboost_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_defensive__xgboost_balanced__0.1",
+      "sources": [
+        "catboost_defensive",
+        "xgboost_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_defensive__xgboost_balanced__0.2",
+      "sources": [
+        "catboost_defensive",
+        "xgboost_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_defensive__xgboost_defensive__0.05",
+      "sources": [
+        "catboost_defensive",
+        "xgboost_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_defensive__xgboost_defensive__0.1",
+      "sources": [
+        "catboost_defensive",
+        "xgboost_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_defensive__xgboost_defensive__0.2",
+      "sources": [
+        "catboost_defensive",
+        "xgboost_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_defensive__extra_trees_return__0.05",
+      "sources": [
+        "catboost_defensive",
+        "extra_trees_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_defensive__extra_trees_return__0.1",
+      "sources": [
+        "catboost_defensive",
+        "extra_trees_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_defensive__extra_trees_return__0.2",
+      "sources": [
+        "catboost_defensive",
+        "extra_trees_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_defensive__extra_trees_balanced__0.05",
+      "sources": [
+        "catboost_defensive",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_defensive__extra_trees_balanced__0.1",
+      "sources": [
+        "catboost_defensive",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_defensive__extra_trees_balanced__0.2",
+      "sources": [
+        "catboost_defensive",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_defensive__extra_trees_defensive__0.05",
+      "sources": [
+        "catboost_defensive",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_defensive__extra_trees_defensive__0.1",
+      "sources": [
+        "catboost_defensive",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_defensive__extra_trees_defensive__0.2",
+      "sources": [
+        "catboost_defensive",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_defensive__ridge_return__0.05",
+      "sources": [
+        "catboost_defensive",
+        "ridge_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_defensive__ridge_return__0.1",
+      "sources": [
+        "catboost_defensive",
+        "ridge_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_defensive__ridge_return__0.2",
+      "sources": [
+        "catboost_defensive",
+        "ridge_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_defensive__ridge_balanced__0.05",
+      "sources": [
+        "catboost_defensive",
+        "ridge_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_defensive__ridge_balanced__0.1",
+      "sources": [
+        "catboost_defensive",
+        "ridge_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_defensive__ridge_balanced__0.2",
+      "sources": [
+        "catboost_defensive",
+        "ridge_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__catboost_defensive__ridge_defensive__0.05",
+      "sources": [
+        "catboost_defensive",
+        "ridge_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__catboost_defensive__ridge_defensive__0.1",
+      "sources": [
+        "catboost_defensive",
+        "ridge_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__catboost_defensive__ridge_defensive__0.2",
+      "sources": [
+        "catboost_defensive",
+        "ridge_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_return__xgboost_balanced__0.05",
+      "sources": [
+        "xgboost_return",
+        "xgboost_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_return__xgboost_balanced__0.1",
+      "sources": [
+        "xgboost_return",
+        "xgboost_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_return__xgboost_balanced__0.2",
+      "sources": [
+        "xgboost_return",
+        "xgboost_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_return__xgboost_defensive__0.05",
+      "sources": [
+        "xgboost_return",
+        "xgboost_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_return__xgboost_defensive__0.1",
+      "sources": [
+        "xgboost_return",
+        "xgboost_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_return__xgboost_defensive__0.2",
+      "sources": [
+        "xgboost_return",
+        "xgboost_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_return__extra_trees_return__0.05",
+      "sources": [
+        "xgboost_return",
+        "extra_trees_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_return__extra_trees_return__0.1",
+      "sources": [
+        "xgboost_return",
+        "extra_trees_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_return__extra_trees_return__0.2",
+      "sources": [
+        "xgboost_return",
+        "extra_trees_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_return__extra_trees_balanced__0.05",
+      "sources": [
+        "xgboost_return",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_return__extra_trees_balanced__0.1",
+      "sources": [
+        "xgboost_return",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_return__extra_trees_balanced__0.2",
+      "sources": [
+        "xgboost_return",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_return__extra_trees_defensive__0.05",
+      "sources": [
+        "xgboost_return",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_return__extra_trees_defensive__0.1",
+      "sources": [
+        "xgboost_return",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_return__extra_trees_defensive__0.2",
+      "sources": [
+        "xgboost_return",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_return__ridge_return__0.05",
+      "sources": [
+        "xgboost_return",
+        "ridge_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_return__ridge_return__0.1",
+      "sources": [
+        "xgboost_return",
+        "ridge_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_return__ridge_return__0.2",
+      "sources": [
+        "xgboost_return",
+        "ridge_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_return__ridge_balanced__0.05",
+      "sources": [
+        "xgboost_return",
+        "ridge_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_return__ridge_balanced__0.1",
+      "sources": [
+        "xgboost_return",
+        "ridge_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_return__ridge_balanced__0.2",
+      "sources": [
+        "xgboost_return",
+        "ridge_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_return__ridge_defensive__0.05",
+      "sources": [
+        "xgboost_return",
+        "ridge_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_return__ridge_defensive__0.1",
+      "sources": [
+        "xgboost_return",
+        "ridge_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_return__ridge_defensive__0.2",
+      "sources": [
+        "xgboost_return",
+        "ridge_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_balanced__xgboost_defensive__0.05",
+      "sources": [
+        "xgboost_balanced",
+        "xgboost_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_balanced__xgboost_defensive__0.1",
+      "sources": [
+        "xgboost_balanced",
+        "xgboost_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_balanced__xgboost_defensive__0.2",
+      "sources": [
+        "xgboost_balanced",
+        "xgboost_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_balanced__extra_trees_return__0.05",
+      "sources": [
+        "xgboost_balanced",
+        "extra_trees_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_balanced__extra_trees_return__0.1",
+      "sources": [
+        "xgboost_balanced",
+        "extra_trees_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_balanced__extra_trees_return__0.2",
+      "sources": [
+        "xgboost_balanced",
+        "extra_trees_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_balanced__extra_trees_balanced__0.05",
+      "sources": [
+        "xgboost_balanced",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_balanced__extra_trees_balanced__0.1",
+      "sources": [
+        "xgboost_balanced",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_balanced__extra_trees_balanced__0.2",
+      "sources": [
+        "xgboost_balanced",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_balanced__extra_trees_defensive__0.05",
+      "sources": [
+        "xgboost_balanced",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_balanced__extra_trees_defensive__0.1",
+      "sources": [
+        "xgboost_balanced",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_balanced__extra_trees_defensive__0.2",
+      "sources": [
+        "xgboost_balanced",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_balanced__ridge_return__0.05",
+      "sources": [
+        "xgboost_balanced",
+        "ridge_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_balanced__ridge_return__0.1",
+      "sources": [
+        "xgboost_balanced",
+        "ridge_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_balanced__ridge_return__0.2",
+      "sources": [
+        "xgboost_balanced",
+        "ridge_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_balanced__ridge_balanced__0.05",
+      "sources": [
+        "xgboost_balanced",
+        "ridge_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_balanced__ridge_balanced__0.1",
+      "sources": [
+        "xgboost_balanced",
+        "ridge_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_balanced__ridge_balanced__0.2",
+      "sources": [
+        "xgboost_balanced",
+        "ridge_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_balanced__ridge_defensive__0.05",
+      "sources": [
+        "xgboost_balanced",
+        "ridge_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_balanced__ridge_defensive__0.1",
+      "sources": [
+        "xgboost_balanced",
+        "ridge_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_balanced__ridge_defensive__0.2",
+      "sources": [
+        "xgboost_balanced",
+        "ridge_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_defensive__extra_trees_return__0.05",
+      "sources": [
+        "xgboost_defensive",
+        "extra_trees_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_defensive__extra_trees_return__0.1",
+      "sources": [
+        "xgboost_defensive",
+        "extra_trees_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_defensive__extra_trees_return__0.2",
+      "sources": [
+        "xgboost_defensive",
+        "extra_trees_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_defensive__extra_trees_balanced__0.05",
+      "sources": [
+        "xgboost_defensive",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_defensive__extra_trees_balanced__0.1",
+      "sources": [
+        "xgboost_defensive",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_defensive__extra_trees_balanced__0.2",
+      "sources": [
+        "xgboost_defensive",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_defensive__extra_trees_defensive__0.05",
+      "sources": [
+        "xgboost_defensive",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_defensive__extra_trees_defensive__0.1",
+      "sources": [
+        "xgboost_defensive",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_defensive__extra_trees_defensive__0.2",
+      "sources": [
+        "xgboost_defensive",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_defensive__ridge_return__0.05",
+      "sources": [
+        "xgboost_defensive",
+        "ridge_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_defensive__ridge_return__0.1",
+      "sources": [
+        "xgboost_defensive",
+        "ridge_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_defensive__ridge_return__0.2",
+      "sources": [
+        "xgboost_defensive",
+        "ridge_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_defensive__ridge_balanced__0.05",
+      "sources": [
+        "xgboost_defensive",
+        "ridge_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_defensive__ridge_balanced__0.1",
+      "sources": [
+        "xgboost_defensive",
+        "ridge_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_defensive__ridge_balanced__0.2",
+      "sources": [
+        "xgboost_defensive",
+        "ridge_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__xgboost_defensive__ridge_defensive__0.05",
+      "sources": [
+        "xgboost_defensive",
+        "ridge_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__xgboost_defensive__ridge_defensive__0.1",
+      "sources": [
+        "xgboost_defensive",
+        "ridge_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__xgboost_defensive__ridge_defensive__0.2",
+      "sources": [
+        "xgboost_defensive",
+        "ridge_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__extra_trees_return__extra_trees_balanced__0.05",
+      "sources": [
+        "extra_trees_return",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__extra_trees_return__extra_trees_balanced__0.1",
+      "sources": [
+        "extra_trees_return",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__extra_trees_return__extra_trees_balanced__0.2",
+      "sources": [
+        "extra_trees_return",
+        "extra_trees_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__extra_trees_return__extra_trees_defensive__0.05",
+      "sources": [
+        "extra_trees_return",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__extra_trees_return__extra_trees_defensive__0.1",
+      "sources": [
+        "extra_trees_return",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__extra_trees_return__extra_trees_defensive__0.2",
+      "sources": [
+        "extra_trees_return",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__extra_trees_return__ridge_return__0.05",
+      "sources": [
+        "extra_trees_return",
+        "ridge_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__extra_trees_return__ridge_return__0.1",
+      "sources": [
+        "extra_trees_return",
+        "ridge_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__extra_trees_return__ridge_return__0.2",
+      "sources": [
+        "extra_trees_return",
+        "ridge_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__extra_trees_return__ridge_balanced__0.05",
+      "sources": [
+        "extra_trees_return",
+        "ridge_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__extra_trees_return__ridge_balanced__0.1",
+      "sources": [
+        "extra_trees_return",
+        "ridge_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__extra_trees_return__ridge_balanced__0.2",
+      "sources": [
+        "extra_trees_return",
+        "ridge_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__extra_trees_return__ridge_defensive__0.05",
+      "sources": [
+        "extra_trees_return",
+        "ridge_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__extra_trees_return__ridge_defensive__0.1",
+      "sources": [
+        "extra_trees_return",
+        "ridge_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__extra_trees_return__ridge_defensive__0.2",
+      "sources": [
+        "extra_trees_return",
+        "ridge_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__extra_trees_balanced__extra_trees_defensive__0.05",
+      "sources": [
+        "extra_trees_balanced",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__extra_trees_balanced__extra_trees_defensive__0.1",
+      "sources": [
+        "extra_trees_balanced",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__extra_trees_balanced__extra_trees_defensive__0.2",
+      "sources": [
+        "extra_trees_balanced",
+        "extra_trees_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__extra_trees_balanced__ridge_return__0.05",
+      "sources": [
+        "extra_trees_balanced",
+        "ridge_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__extra_trees_balanced__ridge_return__0.1",
+      "sources": [
+        "extra_trees_balanced",
+        "ridge_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__extra_trees_balanced__ridge_return__0.2",
+      "sources": [
+        "extra_trees_balanced",
+        "ridge_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__extra_trees_balanced__ridge_balanced__0.05",
+      "sources": [
+        "extra_trees_balanced",
+        "ridge_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__extra_trees_balanced__ridge_balanced__0.1",
+      "sources": [
+        "extra_trees_balanced",
+        "ridge_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__extra_trees_balanced__ridge_balanced__0.2",
+      "sources": [
+        "extra_trees_balanced",
+        "ridge_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__extra_trees_balanced__ridge_defensive__0.05",
+      "sources": [
+        "extra_trees_balanced",
+        "ridge_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__extra_trees_balanced__ridge_defensive__0.1",
+      "sources": [
+        "extra_trees_balanced",
+        "ridge_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__extra_trees_balanced__ridge_defensive__0.2",
+      "sources": [
+        "extra_trees_balanced",
+        "ridge_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__extra_trees_defensive__ridge_return__0.05",
+      "sources": [
+        "extra_trees_defensive",
+        "ridge_return"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__extra_trees_defensive__ridge_return__0.1",
+      "sources": [
+        "extra_trees_defensive",
+        "ridge_return"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__extra_trees_defensive__ridge_return__0.2",
+      "sources": [
+        "extra_trees_defensive",
+        "ridge_return"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__extra_trees_defensive__ridge_balanced__0.05",
+      "sources": [
+        "extra_trees_defensive",
+        "ridge_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__extra_trees_defensive__ridge_balanced__0.1",
+      "sources": [
+        "extra_trees_defensive",
+        "ridge_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__extra_trees_defensive__ridge_balanced__0.2",
+      "sources": [
+        "extra_trees_defensive",
+        "ridge_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__extra_trees_defensive__ridge_defensive__0.05",
+      "sources": [
+        "extra_trees_defensive",
+        "ridge_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__extra_trees_defensive__ridge_defensive__0.1",
+      "sources": [
+        "extra_trees_defensive",
+        "ridge_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__extra_trees_defensive__ridge_defensive__0.2",
+      "sources": [
+        "extra_trees_defensive",
+        "ridge_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__ridge_return__ridge_balanced__0.05",
+      "sources": [
+        "ridge_return",
+        "ridge_balanced"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__ridge_return__ridge_balanced__0.1",
+      "sources": [
+        "ridge_return",
+        "ridge_balanced"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__ridge_return__ridge_balanced__0.2",
+      "sources": [
+        "ridge_return",
+        "ridge_balanced"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__ridge_return__ridge_defensive__0.05",
+      "sources": [
+        "ridge_return",
+        "ridge_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__ridge_return__ridge_defensive__0.1",
+      "sources": [
+        "ridge_return",
+        "ridge_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__ridge_return__ridge_defensive__0.2",
+      "sources": [
+        "ridge_return",
+        "ridge_defensive"
+      ],
+      "weight": 0.2
+    },
+    {
+      "name": "pair__ridge_balanced__ridge_defensive__0.05",
+      "sources": [
+        "ridge_balanced",
+        "ridge_defensive"
+      ],
+      "weight": 0.05
+    },
+    {
+      "name": "pair__ridge_balanced__ridge_defensive__0.1",
+      "sources": [
+        "ridge_balanced",
+        "ridge_defensive"
+      ],
+      "weight": 0.1
+    },
+    {
+      "name": "pair__ridge_balanced__ridge_defensive__0.2",
+      "sources": [
+        "ridge_balanced",
+        "ridge_defensive"
+      ],
+      "weight": 0.2
+    }
+  ]
+}

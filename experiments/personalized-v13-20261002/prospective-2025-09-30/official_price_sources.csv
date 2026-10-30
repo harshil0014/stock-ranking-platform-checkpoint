@@ -1,0 +1,17 @@
+day,exchange,source_url,source_sha256,official_rows,matched_overlay_rows
+2026-09-21,NSE,https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260921_F_0000.csv.zip,28f51df070f406b2ed37f11317f20a9026b4e47be09444115fc886bff8ce2a4c,2572,2134
+2026-09-21,BSE,https://www.bseindia.com/download/BhavCopy/Equity/BhavCopy_BSE_CM_0_0_0_20260921_F_0000.csv,63b604c63178d83a454fc131c6523edb6d5b9a2ed8097fbaf3f748a5a7305f25,1753,1545
+2026-09-22,NSE,https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260922_F_0000.csv.zip,36105442d0cb11488ad35c869a0a93a8c3c839e0f966bc8a0214d40b85fc5073,2311,1927
+2026-09-22,BSE,https://www.bseindia.com/download/BhavCopy/Equity/BhavCopy_BSE_CM_0_0_0_20260922_F_0000.csv,e383ed6bffe3f75f13f2430e030d3d43ccbf0b2dbd0ef859901b122dc9668c20,1748,1540
+2026-09-23,NSE,https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260923_F_0000.csv.zip,364b21265ccf12193f8a304f6f4e68b3cae6e61013fb12a798063229d2753d0a,2314,1926
+2026-09-23,BSE,https://www.bseindia.com/download/BhavCopy/Equity/BhavCopy_BSE_CM_0_0_0_20260923_F_0000.csv,778fbf3410228f3560cb0b3661ef268fb8fab06cc1a6cf8e2d3c14f3ff10debe,1752,1552
+2026-09-24,NSE,https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260924_F_0000.csv.zip,f6e4d459c5f13bdc123784318522abbae1fbf9a3b5358d333f09984cca94c444,2310,1926
+2026-09-24,BSE,https://www.bseindia.com/download/BhavCopy/Equity/BhavCopy_BSE_CM_0_0_0_20260924_F_0000.csv,1bb82443e1a55afd89d7c84daee355ce4341596f6b563a7f5af91b3e324117a7,1733,1531
+2026-09-25,NSE,https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260925_F_0000.csv.zip,a1c9395c531f6fe6246cfb1dcf0d83c0474741f581b3f6d71757af5f0b87a3d0,2304,1923
+2026-09-25,BSE,https://www.bseindia.com/download/BhavCopy/Equity/BhavCopy_BSE_CM_0_0_0_20260925_F_0000.csv,b34c2dbc11d66a02c278a76b84eb9c012e4ef662ca49408adb583f1e6ff283ff,1720,1526
+2026-09-28,NSE,https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260928_F_0000.csv.zip,ada72273e278b6ad9ad690573f8a1cd48ce58e07aff19175a53c9f519d8a2529,2321,1932
+2026-09-28,BSE,https://www.bseindia.com/download/BhavCopy/Equity/BhavCopy_BSE_CM_0_0_0_20260928_F_0000.csv,3bc426d5c07e66e109b65f40a6e49f423e5940340796de78fca5ce7696226105,1724,1522
+2026-09-29,NSE,https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260929_F_0000.csv.zip,a30fa5330e5434937fa583473b3ee89d7678bce9209177fa29805c66c33369a7,2314,1928
+2026-09-29,BSE,https://www.bseindia.com/download/BhavCopy/Equity/BhavCopy_BSE_CM_0_0_0_20260929_F_0000.csv,0247a915b33d4e5a093b571a313d51616c3164be37f8e852e933f306239c66ae,1715,1518
+2026-09-30,NSE,https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20260930_F_0000.csv.zip,0ece4833d287f504885258a40edc21fd6368632849b87add88d288f1ef0d4a59,2311,1926
+2026-09-30,BSE,https://www.bseindia.com/download/BhavCopy/Equity/BhavCopy_BSE_CM_0_0_0_20260930_F_0000.csv,e2b7cea2672aed05df3ce55f3c531a153cb2b5215e2b493b2735cd9be116acce,1728,1531

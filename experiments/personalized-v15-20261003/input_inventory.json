@@ -1,0 +1,10 @@
+{
+  "experiments\\personalized-deep-championship-20261002\\v3\\prepared.pkl.gz": "b5fa0a1f0229bde692b2c07e0a05cfe91f7501a9deeba6c4bcd9109f00d36fb7",
+  "experiments\\personalized-deep-history-20261002\\real-panel-v12\\deep_panel.csv.gz": "c0b2f5f66836c487340237cc1df231e2f3d2835febcb09b84c0adffb1ab57371",
+  "experiments\\current-data-recovery-20261003\\current_company_facts_recovered_v7_full_yahoo.csv.gz": "5520707e233680d4e25589d8549d8f8b07367dc87cf4cfa12cf46857c4c6e5e1",
+  "experiments\\personalized-v14-ml-20261003\\historical_growth.csv.gz": "12918294d5c187395af5cbb66713bec92fdac6f04bb82327157c7f14a5fce9fb",
+  "experiments\\personalized-official-action-freeze\\build-06\\normalized_official_action_ledger.csv.gz": "ed9fa9054229aca7081a0ec5c34e7e18603bf68b833fa6887829bd10c55d0038",
+  "research\\data\\ownership-recovery-20260925\\resulting_equity_terms.csv": "10824b8dd28ebf0033b15d976af48b6c0bc9952b9fb09a9c1f4cd5d5ab20f4a2",
+  "experiments\\personalized-deep-history-20261002\\yahoo-split-ledger-v2\\split_ledger.csv": "eb4d839e4dc8edf21f3b71098bdf5a6ee215d9c99f0c265ec592a1da2e6be452",
+  "experiments\\personalized-deep-history-20261002\\yahoo-split-ledger-v2\\acquisition_audit.csv": "1a42e7194ef9f80ff5666f5324609c3aef3f30eac9d0adc176262710749faf49"
+}

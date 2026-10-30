@@ -1,0 +1,13 @@
+{
+  "profile": "base7500",
+  "sector_mapping": "current runtime product_sector; NOT point-in-time",
+  "minimum_peers": 5,
+  "top_n": 3,
+  "aggregation": "dates within sector, then sectors equally",
+  "dates": 44,
+  "sectors": 49,
+  "paired_sector_dates": 9735,
+  "scoring_changed": false,
+  "unknown_and_small_groups_excluded": true,
+  "same_population_all_six_scores": true
+}

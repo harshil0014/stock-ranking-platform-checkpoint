@@ -1,0 +1,26 @@
+{
+  "current_stocks": 4436,
+  "finite_scores": 4436,
+  "chronological_training_fits_verified": 48,
+  "selected_model_prediction_reproduction": true,
+  "sector_ranks_reproduced": true,
+  "training_future_leakage_check": "All 48 max training endpoints precede annual cutoffs",
+  "coverage_not_accuracy": "Neutral or sparse-evidence scores are not fully evidenced investment recommendations",
+  "model_sha256": "c7a61b3435d23c3123087f10eb793803574252c8f66e7ab5d322cfeaa2d6fbe4",
+  "xirr_tail_review": [
+    {
+      "period": "development",
+      "selections": 2175,
+      "outside_champion": 1270,
+      "median_selected_xirr": 0.2742768218784748,
+      "max_selected_xirr": 3599.2045288779445
+    },
+    {
+      "period": "exposed",
+      "selections": 1722,
+      "outside_champion": 635,
+      "median_selected_xirr": 2.6562953225894864e-16,
+      "max_selected_xirr": 3105.64748987908
+    }
+  ]
+}

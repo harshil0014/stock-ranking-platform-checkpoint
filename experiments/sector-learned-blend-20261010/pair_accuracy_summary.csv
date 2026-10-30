@@ -1,0 +1,17 @@
+scope,period,model,pair_accuracy
+common,development,current_champion,0.5084927140244315
+common,development,nnls_outer_return,0.508302312285881
+common,development,tabpfn_v2_context256,0.5047783681343945
+common,development,tabpfn_v2_context768,0.49455245186823876
+common,exposed,current_champion,0.5536032688241961
+common,exposed,nnls_outer_return,0.5535037772619618
+common,exposed,tabpfn_v2_context256,0.5214149934261338
+common,exposed,tabpfn_v2_context768,0.550642188467759
+expanded,development,current_champion,0.5102252203690905
+expanded,development,nnls_outer_return,0.5102426482954039
+expanded,development,tabpfn_v2_context256,0.5034157146477763
+expanded,development,tabpfn_v2_context768,0.4950423532563759
+expanded,exposed,current_champion,0.5530242847381338
+expanded,exposed,nnls_outer_return,0.5529227721483164
+expanded,exposed,tabpfn_v2_context256,0.5216636990219695
+expanded,exposed,tabpfn_v2_context768,0.5506178052909233

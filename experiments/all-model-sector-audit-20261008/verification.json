@@ -1,0 +1,31 @@
+{
+  "legacy_policy_labels_compared": 37,
+  "legacy_sector_aggregation_verified": true,
+  "legacy_metric_deltas_verified": true,
+  "profile_aware_fits": 24,
+  "profile_aware_candidates": 24,
+  "profile_aware_strict_passes": 0,
+  "current_stocks": 4436,
+  "current_inference_reproduced": true,
+  "new_candidates_total": 299,
+  "artifact_identifiers": 1393,
+  "numeric_metadata_identifiers": 134,
+  "all_50_initial_candidates_historically_reproduced": true,
+  "fresh_validation": false,
+  "production_replaced": false,
+  "sha256": {
+    "experiments\\all-model-sector-audit-20261008\\protocol.json": "312364cdc9f2356c8b28030d4b04c40fde93d04ae0fd60c90812c2158fd94ba9",
+    "experiments\\all-model-sector-audit-20261008\\equal_profile_summary.csv": "d95dedf07038eee88d60ceb1ae26b705f5eaaf3336d671f3dce470bf2ab33aa8",
+    "experiments\\all-model-sector-audit-20261008\\all_profile_directional_deltas.csv": "0e3e13d1630c228f33f91dcbf742c7beab58ebc26322bd28db59e9d7e683f3e8",
+    "experiments\\profile-aware-sector-20261008\\protocol.json": "493e403be0423a62b32b63d0513e79bdba6c1456c5b5682b4b99afd5a09c9e47",
+    "experiments\\profile-aware-sector-20261008\\trials.csv": "64125451dfddd20335eb3ab998a2cde50ba97d1f35d703933af558e2ce69c330",
+    "experiments\\profile-aware-sector-20261008\\training_audit.csv": "a1bedc95a933c9b3af09636ef0c7795db043a7ca12f292a8c41e9888e0c08442",
+    "experiments\\full-coverage-open-models-20261008\\selection.json": "cc1440c0bcb5f1434d91bb45b4e33351162281aaa08b5c9fb7056dd1bea05dcf",
+    "experiments\\full-coverage-open-models-20261008\\current_all_stock_rankings.csv": "b9782ae57adfd3213977aa5884a78e444beb91a8fe0789602ce6422318a85c1e",
+    "experiments\\full-coverage-open-models-20261008\\current_catboost_defensive.pkl": "120b75775cbba07df00a6d9400c193de72a54d959ef80e7069e0b2f1d5d9a75e",
+    "experiments\\full-coverage-open-models-20261008\\current_ridge_defensive.pkl": "1c8dcc3a06446c3fbf3c78dc30363a05393078f63a52d7ec14bf09e3bc8410ad",
+    "experiments\\full-coverage-open-models-20261008\\frozen_anchor\\selected_rank_xendcg_balanced_15.txt": "c7a61b3435d23c3123087f10eb793803574252c8f66e7ab5d322cfeaa2d6fbe4",
+    "experiments\\full-coverage-open-models-20261008\\frozen_anchor\\selected_rank_xendcg_return_15.txt": "b43eac01d646be2494b6e3d16320e5309834bb5431b6e57705ecd854c94e2714",
+    "experiments\\full-coverage-open-models-20261008\\historical_reproduction.json": "a9045881395c48db89b27fda0cec39c9233fb6ade22095063a6165a76fa8f784"
+  }
+}

@@ -1,0 +1,2 @@
+bse_code,ticker,isin,status,rows,first_date,last_date,terminal_lag_days,accepted_trade_date,accepted_latest_price,api_terminal_close,terminal_relative_difference,udiff_isin_conflicts,raw_sha256,evidence_response_count,evidence_sha256_chain,error
+520081,BSE-520081,INE315F01013,RECOVERED,113,2022-02-14,2026-09-18,0,2026-09-18,17.1,17.1,0.0,0,70ec1fc275e57b291c46849ed9aa7d53294a5a784cb1a8cc9673a0c993fd019b,6,d2c163a32353b842ebc8bef682e9a0a9dc67997ae0a5ca03a830c5ded765df3c,

@@ -1,0 +1,19 @@
+{
+  "ticker": "MOMSBELIEF",
+  "isin": "INE1FCO01014",
+  "provider": "MOMSBELIEF.NS",
+  "trade_date": "2026-09-18",
+  "official_price": 223.73,
+  "status": "RECOVERED",
+  "rows": 7,
+  "first_date": "2026-09-09",
+  "last_date": "2026-09-18",
+  "terminal_lag_days": 0,
+  "terminal_relative_difference": 1.9096504390417847e-08,
+  "listing_date": "2026-09-08",
+  "history_precedes_listing_date": false,
+  "csv_sha256": "0d6f02ca2eaa7ce1b78f046f38e7070c9e25f5c2da934c4903e78abaec3e2a81",
+  "source": "Yahoo Finance secondary history",
+  "identity_mapping": "exact NSE ticker -> .NS",
+  "accepted_for_research_overlay": true
+}

@@ -1,0 +1,8 @@
+{
+  "locked_at": "2026-10-03T21:06:38.864250+00:00",
+  "hypothesis": "Long-lookback instability is amplified by feature subsampling in the raw ranker. Remove feature subsampling and average nested tree counts80/100/140 without changing labels orATH constraints. This removes random seed dependence of the specialist. Test independently from coverage/actions.",
+  "labels": "Original V17 balanced ordinal utility",
+  "params": "Original V17 ATH-constrained60M specialist, colsample_bytree1.0,140trees; predictions at80/100/140.",
+  "future_search": "Original60M control plus stable100 and stable nested-average corrections, at alpha0.1/0.2/0.3. Other lookbacks12 unchanged,36 blends regime utility at beta0/.025/.05/.10, broad or volatility gate. At most63 configurations; same acceptance gates.",
+  "no_current_or_exposed_training_selection": true
+}

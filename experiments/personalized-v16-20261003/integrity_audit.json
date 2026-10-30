@@ -1,0 +1,12 @@
+{
+  "verified_at": "2026-10-03T16:39:34.929399+00:00",
+  "protected_count": 23071,
+  "changed": [],
+  "head": "c12dd9b189bc71684bfac52606eb89abd5e383c7",
+  "production_website_railway": "No source, configuration, deployment, or network writes; tracked production and website hashes verified",
+  "frozen_champion_v14_v15": "All protected hashes unchanged",
+  "historical_current_separation": true,
+  "no_identity_features_or_NYKAA_rule": true,
+  "universe_limit": "Frozen research cohorts have survivorship/selection exposure; historical publication timing and provider revisions not fully provable",
+  "historical_label_maturity": "Frozen V15 correction development fit endpoint <2020-03-31; evaluation <2024-03-31; current <2026-10-03. No new fit."
+}

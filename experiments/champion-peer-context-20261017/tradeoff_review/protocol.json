@@ -1,0 +1,20 @@
+{
+  "reason": "User explicitly permits tradeoffs on 2026-10-17; original strict gate retained as diagnostic.",
+  "scope": "Damp the locked peer-risk patch within the existing R component; no new estimator or product.",
+  "strengths": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "weights": {
+    "rank_ic": 0.4,
+    "ndcg": 0.25,
+    "achievement": 0.15,
+    "shortfall": 0.1,
+    "drawdown": 0.1
+  },
+  "utility": "Equal-sector/profile expanded capped Top3 mean directional changes; each metric divided by .01. These are explicit engineering preference weights, not learned truths. XIRR selection weight zero.",
+  "selection": "Development-only utility; positive development and recent utility with recent aggregate drawdown and achievement degradation each <=1 percentage point. Report raw/common sensitivities and sector dispersion.",
+  "sensitivity": "Ranking-only and equal-five-metric utilities; require positive recent utility under both too.",
+  "fresh_validation": false
+}

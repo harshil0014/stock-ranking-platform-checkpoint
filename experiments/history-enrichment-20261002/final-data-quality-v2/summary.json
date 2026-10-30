@@ -1,0 +1,147 @@
+{
+  "schema_version": "personalized_history_data_quality_v1",
+  "cutoff": "2026-09-18",
+  "accepted_state_mutated": false,
+  "frozen_champion_mutated": false,
+  "production_mutated": false,
+  "company_fact_fingerprint": "4064dc5b0a12fc385150a08e23a61f230b0f2acfcee76e394c8e80cee48d741e",
+  "before": {
+    "rows": 4436,
+    "history_source_counts": {
+      "ACCEPTED_HISTORY_CACHE": 4374,
+      "NO_VALID_PRICE_HISTORY": 62
+    },
+    "history_quality_counts": {
+      "ACCEPTED": 4372,
+      "MISSING": 62,
+      "INVALID": 2
+    },
+    "long_term_growth_source_counts": {
+      "OBSERVED_ADJUSTED_5Y_CAGR": 3126,
+      "ESTIMATED_HISTORY_SECTOR_SHRUNK": 1244,
+      "ESTIMATED_SECTOR_MEDIAN_ONLY": 66
+    },
+    "true_5y_count": 3126,
+    "estimated_5y_count": 1310,
+    "no_valid_history_count": 62,
+    "invalid_history_count": 2,
+    "coverage": {
+      "history_months": 4372,
+      "strict_cagr_1y": 3823,
+      "strict_cagr_3y": 3417,
+      "strict_cagr_5y": 3126,
+      "long_term_growth_value": 4436,
+      "recorded_high_price": 4374,
+      "days_since_recorded_high": 4374,
+      "distance_from_recorded_high": 4372,
+      "distance_from_52w_high": 4372,
+      "full_history_max_drawdown": 4372,
+      "current_drawdown_duration_days": 4372,
+      "max_drawdown_duration_days": 4372,
+      "recovery_from_worst_trough": 4372,
+      "realized_volatility_1y": 4358,
+      "downside_volatility_1y": 4358
+    }
+  },
+  "after": {
+    "rows": 4436,
+    "history_source_counts": {
+      "ACCEPTED_HISTORY_CACHE": 4372,
+      "RECOVERY_OVERLAY": 58,
+      "NO_VALID_PRICE_HISTORY": 4,
+      "RECOVERY_OVERLAY_REFRESH": 2
+    },
+    "history_quality_counts": {
+      "ACCEPTED": 4372,
+      "RECOVERED_VALIDATED": 60,
+      "MISSING": 4
+    },
+    "long_term_growth_source_counts": {
+      "OBSERVED_ADJUSTED_5Y_CAGR": 3129,
+      "ESTIMATED_HISTORY_SECTOR_SHRUNK": 1295,
+      "ESTIMATED_SECTOR_MEDIAN_ONLY": 12
+    },
+    "true_5y_count": 3129,
+    "estimated_5y_count": 1307,
+    "no_valid_history_count": 4,
+    "invalid_history_count": 0,
+    "coverage": {
+      "history_months": 4432,
+      "strict_cagr_1y": 3827,
+      "strict_cagr_3y": 3421,
+      "strict_cagr_5y": 3129,
+      "long_term_growth_value": 4436,
+      "recorded_high_price": 4432,
+      "days_since_recorded_high": 4432,
+      "distance_from_recorded_high": 4432,
+      "distance_from_52w_high": 4432,
+      "full_history_max_drawdown": 4432,
+      "current_drawdown_duration_days": 4432,
+      "max_drawdown_duration_days": 4432,
+      "recovery_from_worst_trough": 4432,
+      "realized_volatility_1y": 4400,
+      "downside_volatility_1y": 4400
+    }
+  },
+  "delta": {
+    "no_valid_history": -58,
+    "invalid_history": -2,
+    "true_5y": 3
+  },
+  "listing_date": {
+    "present": 2575,
+    "missing": 1861,
+    "note": "history_months is observed price-history span, not listing age. The official BSE ListofScripData_new endpoint does not expose listing date, so missing BSE listing dates are not fabricated."
+  },
+  "remaining_quarantined_bse_count": 4,
+  "nykaa": {
+    "isin": "INE388Y01029",
+    "ticker": "NYKAA",
+    "sector": "Retailing",
+    "history_source": "ACCEPTED_HISTORY_CACHE",
+    "history_quality": "ACCEPTED",
+    "history_path": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\data\\live_market\\history_cache\\NYKAA.csv",
+    "screener_return_3y_pct": 30.91,
+    "screener_return_5y_pct": NaN,
+    "screener_all_time_high_price": 429.0,
+    "history_start_date": "2021-11-10",
+    "history_end_date": "2026-09-18",
+    "history_observation_count": 1206.0,
+    "history_span_days": 1773.0,
+    "history_months": 58.25051334702259,
+    "history_age_basis": "OBSERVED_PRICE_HISTORY_SPAN",
+    "listing_date_available": true,
+    "listing_age_months": 58.25051334702259,
+    "terminal_lag_days": 0.0,
+    "terminal_history_quality": "CURRENT_0_7D",
+    "history_start_cagr": -0.020678459070834838,
+    "listing_date_consistent_with_history_start": true,
+    "strict_cagr_1y": 0.3505875809721597,
+    "strict_cagr_3y": 0.3057090072908811,
+    "strict_cagr_5y": NaN,
+    "recorded_high_price": 415.51666259765625,
+    "recorded_high_date": "2021-12-01",
+    "days_since_recorded_high": 1752.0,
+    "distance_from_recorded_high": -0.20063375600871058,
+    "distance_from_52w_high": -0.04977827064548501,
+    "full_history_max_drawdown": -0.7209498261192084,
+    "current_drawdown_duration_days": 1752.0,
+    "max_drawdown_duration_days": 1752.0,
+    "recovery_from_worst_trough": 1.864596831725227,
+    "realized_volatility_1y": 0.2774031453082155,
+    "downside_volatility_1y": 0.16925497347099153,
+    "high_metric_source": "ACCEPTED_HISTORY_CACHE",
+    "cagr_5y_observed": 0,
+    "sector_median_observed_cagr_5y": -0.008908394140415152,
+    "long_term_growth_value": -0.020335266212494058,
+    "long_term_growth_source": "ESTIMATED_HISTORY_SECTOR_SHRUNK",
+    "long_term_growth_is_observed": false,
+    "screener_5y_crosscheck": NaN,
+    "screener_5y_minus_observed_cagr": NaN
+  },
+  "source_fingerprints": {
+    "history_enrichment_module": "bac88623b861d79083c1db16a824368e53b629932070ca8c32fe57dc1e5a81b4",
+    "recovery_overlay": "7a6fed707e9e8ee5a30c5afc1cf65630d78486f4b656bca22624a3c725c5ee97",
+    "bse_quarantine_audit": "edda4593205398039dde803196ccc02b88ec1b0e096ae97eb0303e75b655bb67"
+  }
+}

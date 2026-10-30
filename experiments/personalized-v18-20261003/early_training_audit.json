@@ -1,0 +1,98 @@
+[
+  {
+    "tag": "early_2016-03-31",
+    "max_endpoint": "2016-02-28",
+    "min_decision": "2016-03-31",
+    "rows": 35904
+  },
+  {
+    "tag": "early_2016-06-30",
+    "max_endpoint": "2016-03-31",
+    "min_decision": "2016-06-30",
+    "rows": 53965
+  },
+  {
+    "tag": "early_2016-09-30",
+    "max_endpoint": "2016-06-30",
+    "min_decision": "2016-09-30",
+    "rows": 72132
+  },
+  {
+    "tag": "early_2016-12-31",
+    "max_endpoint": "2016-09-30",
+    "min_decision": "2016-12-31",
+    "rows": 90335
+  },
+  {
+    "tag": "early_2017-03-31",
+    "max_endpoint": "2016-12-31",
+    "min_decision": "2017-03-31",
+    "rows": 108729
+  },
+  {
+    "tag": "early_2017-06-30",
+    "max_endpoint": "2017-03-31",
+    "min_decision": "2017-06-30",
+    "rows": 127234
+  },
+  {
+    "tag": "early_2017-09-30",
+    "max_endpoint": "2017-06-30",
+    "min_decision": "2017-09-30",
+    "rows": 145917
+  },
+  {
+    "tag": "early_2017-12-31",
+    "max_endpoint": "2017-09-30",
+    "min_decision": "2017-12-31",
+    "rows": 164783
+  },
+  {
+    "tag": "early_2018-03-31",
+    "max_endpoint": "2017-12-31",
+    "min_decision": "2018-03-31",
+    "rows": 183645
+  },
+  {
+    "tag": "early_2018-06-30",
+    "max_endpoint": "2018-03-31",
+    "min_decision": "2018-06-30",
+    "rows": 202856
+  },
+  {
+    "tag": "early_2018-09-30",
+    "max_endpoint": "2018-06-30",
+    "min_decision": "2018-09-30",
+    "rows": 222067
+  },
+  {
+    "tag": "early_2018-12-31",
+    "max_endpoint": "2018-09-30",
+    "min_decision": "2018-12-31",
+    "rows": 241414
+  },
+  {
+    "tag": "early_2019-03-31",
+    "max_endpoint": "2018-12-31",
+    "min_decision": "2019-03-31",
+    "rows": 260918
+  },
+  {
+    "tag": "early_2019-06-30",
+    "max_endpoint": "2019-03-31",
+    "min_decision": "2019-06-30",
+    "rows": 280925
+  },
+  {
+    "tag": "early_2019-09-30",
+    "max_endpoint": "2019-06-30",
+    "min_decision": "2019-09-30",
+    "rows": 301180
+  },
+  {
+    "tag": "early_2019-12-31",
+    "max_endpoint": "2019-09-30",
+    "min_decision": "2019-12-31",
+    "rows": 321638
+  }
+]

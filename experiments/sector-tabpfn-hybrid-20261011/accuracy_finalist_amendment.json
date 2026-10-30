@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-10-11T05:17:00.432007+00:00",
+  "reason": "User prioritizes whole-sector ranking, so preserve whole-sector accuracy leaders alongside the original Top3 regression-count selections. No candidate development outcomes evaluated yet.",
+  "addition": "Highest development expanded/raw mean rankIC hybrid and control, ties by Top3 regressions then all regressions then name. Add to original3 finalists and deduplicate. Recent outcomes never select.",
+  "matched_controls_addition": "Also retain exact target/depth/correction-weight pool controls for the two selected hybrid leaders, deduplicated, to isolate teacher value in the recent comparison.",
+  "amended_utc": "2026-10-11T05:25:55.279444+00:00"
+}

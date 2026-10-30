@@ -1,0 +1,77 @@
+{
+  "python": "3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "packages": {
+    "numpy": {
+      "version": "2.3.0",
+      "location": "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages"
+    },
+    "pandas": {
+      "version": "3.0.3",
+      "location": "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages"
+    },
+    "scipy": {
+      "version": "1.15.3",
+      "location": "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages"
+    },
+    "scikit-learn": {
+      "version": "1.7.0",
+      "location": "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages"
+    },
+    "lightgbm": {
+      "version": "4.6.0",
+      "location": "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages"
+    },
+    "torch": {
+      "version": "2.12.0",
+      "location": "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages"
+    },
+    "tabm": {
+      "version": "0.0.3",
+      "location": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\sector_ensemble_dependencies_20261011"
+    },
+    "rtdl-num-embeddings": {
+      "version": "0.0.12",
+      "location": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\sector_ensemble_dependencies_20261011"
+    },
+    "interpret-core": {
+      "version": "0.7.8",
+      "location": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\sector_ensemble_dependencies_20261011"
+    },
+    "psutil": {
+      "version": "7.0.0",
+      "location": "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages"
+    },
+    "pytest": {
+      "version": "8.3.5",
+      "location": "C:\\Users\\Harshil\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages"
+    }
+  },
+  "sha256": {
+    "research\\runners\\audit_sector_specialist_ensemble_20261011.py": "f24c1b00fa0f19ad93a51b2a05c84f254c784c9cd35a787c893d5198c269f6e4",
+    "research\\runners\\capture_major_research_provenance_20261011.py": "b83483f6cbb622723aa3c4aa5924eccbcbd87f4436dd81ade84411cb08fcda9f",
+    "research\\runners\\finish_sector_execution_specialist_20261011.py": "4971a62fc3bf26e99affd43e679d041c48a35c2a7b61e99a73759c825a8930b4",
+    "research\\runners\\finish_specialist_resume_20261011.py": "3cb3eb65256403c7c32abe3e13ecedb7dff9100cfe0bcd070045656cb2ff7c05",
+    "research\\runners\\resume_major_research_20261011.py": "627cd18add6df0ec7139f843930693e38af4c84a4837d587fba4d42196270453",
+    "research\\runners\\run_sector_specialist_pipeline_20261011.py": "35204a302d9ab8f437738abe3fe1b84d4af50e72b0a2cbea9550dbadcecf19fa",
+    "research\\runners\\sector_execution_specialist_20261011.py": "e53640b20b79c64fb6a7d5c7857a643e7b6b6a5370f6c5e53d7ce8fd6081349b",
+    "research\\runners\\sector_specialist_combinations_20261011.py": "c6ab79b18ff6caa3ead726b74429edc47ffa05a55d9dba1bfa7146cc36f76d6c",
+    "research\\runners\\sector_specialist_ensemble_20261011.py": "bc5c19b206d695eb7709ea3d17c59952438953edf476fdcd35116bebea419b5b",
+    "research\\runners\\specialist_date_block_audit_20261011.py": "f76f34f6e690ad4695fdfab11a6732084494c7641656b2ef01796923e68ac329",
+    "research\\runners\\supplemental_global_specialist_audit_20261011.py": "ccff35346250864886fe963043e4bbe26fed7d86f76b363f1afccb953a9164d3",
+    "tests\\test_sector_execution_activity_join.py": "0d3177d37f1739eb4809ba6385eb3f67d0e30369a9456848fb89c576077442f9",
+    "tests\\test_sector_specialist_ensemble.py": "ec69a9a152c938537cc1adbdd32107d4d71f4a50f3870715fc7a3183579b1df8",
+    "tests\\test_specialist_stability_equivalence.py": "5afc10e6f3c8a8e27bd56f015349b249f722da770ad5de3fbb3248faf4440018",
+    "experiments\\sector-specialist-ensemble-20261011\\protocol.json": "32a3139bf224c6d7475ecc47fc401af5bcb777c21b88ccb2fad6ce19061b3e74",
+    "experiments\\sector-specialist-ensemble-20261011\\combination_protocol.json": "e607ccc9723cc21a2d9a9fd52ad38157b544aa5ae537686bae73902782c7845d",
+    "experiments\\sector-specialist-ensemble-20261011\\locked_finalists.json": "5cdcde0ef4b0b65b13ed4db73240843a6ea71dfea41019769f6bb9e0978311fd",
+    "experiments\\sector-specialist-ensemble-20261011\\replay_verification.json": "cc4204bc5c1190ffebd04264627e1549c6b02f2b2999a571955f1364ad1c0f98",
+    "experiments\\sector-execution-specialist-20261011\\protocol.json": "e12f9027342e153c8d4d2a8492a827d97b11162b9b74fff3e167d5b49fe4d203",
+    "experiments\\sector-execution-specialist-20261011\\locked_finalists.json": "80a1d836129a8a528059becc79da1f5a2401e6ec08f3978a5164fb031a4192cb",
+    "experiments\\sector-execution-specialist-20261011\\current_activity_repair.json": "1cdb1c2beda6468e9cf700764ef4267e486f4717279bffd2b255bd11bf174e7f",
+    "experiments\\sector-execution-specialist-20261011\\replay_verification.json": "ad38ff66320a61294d578fc2aa1f516d575dc57c79c7558315d219b715a6ec1b",
+    "experiments\\sector-execution-specialist-20261011\\evaluation_verification.json": "99ed8b8e92f897a7cf573dbbd4501533d5779722bc0cb3421fc6e9429687c219"
+  },
+  "scope": "Snapshot at capture time; missing pending stage files are not completion evidence. No credentials or environment variables collected."
+}

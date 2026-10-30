@@ -1,0 +1,165 @@
+{
+  "family": "tabm_compact",
+  "year": "current",
+  "cutoff": "2026-10-03",
+  "max_endpoint": "2026-08-31",
+  "training_rows": 1115140,
+  "training_identity_sha256": "ca08811275df7cf746fdc501b2b3c68fd131d11e15d40421710d1803d1e6b630",
+  "source_model_sha256": "894ce6e01ae362c708d6aa390f0e1d8ef13f37feb4f66cd539417af092e031f4",
+  "preprocessor_sha256": "b177aefd49e6073eb326e2efee76d53a4dab4604961783ca70fdd724ec5a2f0f",
+  "gpu_baseline_max_error": 1.7881393432617188e-07,
+  "torch_version": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "history": [
+    {
+      "epoch": 13,
+      "training_loss": 0.07189188839974177
+    },
+    {
+      "epoch": 14,
+      "training_loss": 0.07184224376035331
+    },
+    {
+      "epoch": 15,
+      "training_loss": 0.07182091911823915
+    },
+    {
+      "epoch": 16,
+      "training_loss": 0.07178579077787647
+    },
+    {
+      "epoch": 17,
+      "training_loss": 0.0717890384593003
+    },
+    {
+      "epoch": 18,
+      "training_loss": 0.07176303347430005
+    },
+    {
+      "epoch": 19,
+      "training_loss": 0.07173498068937222
+    },
+    {
+      "epoch": 20,
+      "training_loss": 0.07172953467804422
+    },
+    {
+      "epoch": 21,
+      "training_loss": 0.07170142742572022
+    },
+    {
+      "epoch": 22,
+      "training_loss": 0.07168603822606827
+    },
+    {
+      "epoch": 23,
+      "training_loss": 0.07167277516852338
+    },
+    {
+      "epoch": 24,
+      "training_loss": 0.07163482134374734
+    },
+    {
+      "epoch": 25,
+      "training_loss": 0.0716440774635733
+    },
+    {
+      "epoch": 26,
+      "training_loss": 0.07160922196564486
+    },
+    {
+      "epoch": 27,
+      "training_loss": 0.07160371417044709
+    },
+    {
+      "epoch": 28,
+      "training_loss": 0.07158873697733233
+    },
+    {
+      "epoch": 29,
+      "training_loss": 0.07156957107911073
+    },
+    {
+      "epoch": 30,
+      "training_loss": 0.07156154126733841
+    },
+    {
+      "epoch": 31,
+      "training_loss": 0.07156156179377682
+    },
+    {
+      "epoch": 32,
+      "training_loss": 0.07152190833144267
+    },
+    {
+      "epoch": 33,
+      "training_loss": 0.07151201317164285
+    },
+    {
+      "epoch": 34,
+      "training_loss": 0.07151297915900012
+    },
+    {
+      "epoch": 35,
+      "training_loss": 0.07149890126776019
+    },
+    {
+      "epoch": 36,
+      "training_loss": 0.07147262185084537
+    },
+    {
+      "epoch": 37,
+      "training_loss": 0.0714653311591976
+    },
+    {
+      "epoch": 38,
+      "training_loss": 0.07144148168770995
+    },
+    {
+      "epoch": 39,
+      "training_loss": 0.07145055118811054
+    },
+    {
+      "epoch": 40,
+      "training_loss": 0.07142848550470521
+    },
+    {
+      "epoch": 41,
+      "training_loss": 0.07141836372036407
+    },
+    {
+      "epoch": 42,
+      "training_loss": 0.0713876585308283
+    },
+    {
+      "epoch": 43,
+      "training_loss": 0.07138631199536245
+    },
+    {
+      "epoch": 44,
+      "training_loss": 0.07138274672010257
+    },
+    {
+      "epoch": 45,
+      "training_loss": 0.07136317976417086
+    },
+    {
+      "epoch": 46,
+      "training_loss": 0.07135256335588525
+    },
+    {
+      "epoch": 47,
+      "training_loss": 0.07134465138745158
+    },
+    {
+      "epoch": 48,
+      "training_loss": 0.0713347002976397
+    }
+  ],
+  "models_sha256": {
+    "tabm_compact_e24_current.pt": "4e75c8b9c29ed8def562856d535eaf6228206b94125ee8306db043a760d1583f",
+    "tabm_compact_e48_current.pt": "d913be4a971c79d55e28b698a104c4e6f88f8bb60de410f0f0db0a4825145738"
+  },
+  "raw_sha256": "a63af9d41e045bda3732b496c87bc04f052c584978ea4142c29f37b8920300bc",
+  "seconds": 74.07964181900024
+}

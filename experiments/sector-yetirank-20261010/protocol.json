@@ -1,0 +1,23 @@
+{
+  "configs": [
+    {
+      "name": "yeti_ndcg3_return",
+      "target": "return"
+    },
+    {
+      "name": "yeti_ndcg3_balanced",
+      "target": "balanced"
+    }
+  ],
+  "source_features": "experiments\\sector-price-rebuild-20261010",
+  "loss": "YetiRank:mode=NDCG;top=3",
+  "iterations": 120,
+  "depth": 5,
+  "weights": "1/query size, constant within each query",
+  "selection": "Same development-only regression-count criterion; all dates previously exposed.",
+  "sources": [
+    "https://proceedings.mlr.press/v202/lyzhin23a.html",
+    "https://catboost.ai/docs/en/concepts/loss-functions-ranking?lang=en"
+  ],
+  "guard": "Same rebuilt inputs, feature masks, outcome masks, endpoint purging and four reference models as the main experiment."
+}

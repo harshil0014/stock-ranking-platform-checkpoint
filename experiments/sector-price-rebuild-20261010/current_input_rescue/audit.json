@@ -1,0 +1,422 @@
+{
+  "as_of": "2026-10-03",
+  "retrieval_date": "2026-10-10",
+  "requested": 41,
+  "accepted": 14,
+  "historical_training_modified": false,
+  "identity_source_sha256": "f94efe03ddff045c1a9b296d9ae5371c4ba556aa18eb2964f91584e3ef329df0",
+  "receipts": [
+    {
+      "isin": "INE491N01016",
+      "ticker": "BSE-503127",
+      "symbol": "RAJABAH.BO",
+      "identity_basis": "VERIFIED_PROVIDER_SYMBOL",
+      "status": "USABLE_PROVIDER_BASIS",
+      "observations": 354,
+      "unresolved_actions": [],
+      "receipt_sha256": "691c21e66a2ff0d72f877f05cb6bae78f37c7e7defda37f268d5d9dba449954e"
+    },
+    {
+      "isin": "INE848M01019",
+      "ticker": "BSE-509762",
+      "symbol": "MAPROIN.BO",
+      "identity_basis": "VERIFIED_PROVIDER_SYMBOL",
+      "status": "USABLE_PROVIDER_BASIS",
+      "observations": 353,
+      "unresolved_actions": [],
+      "receipt_sha256": "0ebd4b1e8c7f3e38085faea37b14b462335d07ee48cacefec562e58933152978"
+    },
+    {
+      "isin": "INE159C01012",
+      "ticker": "BSE-526554",
+      "symbol": "SALGUTI.BO",
+      "identity_basis": "VERIFIED_PROVIDER_SYMBOL",
+      "status": "USABLE_PROVIDER_BASIS",
+      "observations": 354,
+      "unresolved_actions": [],
+      "receipt_sha256": "868055596a0ab3be4732cf78e49dbd3163ea1f59b266a8bdb6d23f6721972364"
+    },
+    {
+      "isin": "INE519N01014",
+      "ticker": "BSE-526570",
+      "symbol": "REMAGNET.BO",
+      "identity_basis": "VERIFIED_PROVIDER_SYMBOL",
+      "status": "USABLE_PROVIDER_BASIS",
+      "observations": 354,
+      "unresolved_actions": [],
+      "receipt_sha256": "9951cdca2b415e86e87d9e90d47119e2dd8052052d98629e0ea52d91147c16e7"
+    },
+    {
+      "isin": "INE016C01014",
+      "ticker": "BSE-526823",
+      "symbol": "RAJINFRA.BO",
+      "identity_basis": "VERIFIED_PROVIDER_SYMBOL",
+      "status": "UNRESOLVED_ACTION_IN_FEATURE_WINDOW",
+      "observations": 354,
+      "unresolved_actions": [
+        "2026-10-01"
+      ],
+      "receipt_sha256": "ed430419fbc851e8bcac9268f1381dad4acff5447c903123726f61d3652cdb94"
+    },
+    {
+      "isin": "INE055O01033",
+      "ticker": "BSE-530787",
+      "symbol": "INLANPR.BO",
+      "identity_basis": "VERIFIED_PROVIDER_SYMBOL",
+      "status": "USABLE_PROVIDER_BASIS",
+      "observations": 354,
+      "unresolved_actions": [],
+      "receipt_sha256": "86cbcc61ffc9fddefb460b0974582f67effea3c036b171fca3619ac52aec5dca"
+    },
+    {
+      "isin": "INE601F01016",
+      "ticker": "BSE-531155",
+      "symbol": "EPSOMPRO.BO",
+      "identity_basis": "VERIFIED_PROVIDER_SYMBOL",
+      "status": "USABLE_PROVIDER_BASIS",
+      "observations": 353,
+      "unresolved_actions": [],
+      "receipt_sha256": "690609d70dcd0732f3ff37d2ec2f0718d0db88377afcf74cb4d7b5333e82a0a7"
+    },
+    {
+      "isin": "INE223R01014",
+      "ticker": "BSE-538926",
+      "symbol": "NAPL.BO",
+      "identity_basis": "VERIFIED_PROVIDER_SYMBOL",
+      "status": "USABLE_PROVIDER_BASIS",
+      "observations": 354,
+      "unresolved_actions": [],
+      "receipt_sha256": "8260f13f944c4104d946b7c9daf4dd0b3819d5e079b454aa626fd54427037c3a"
+    },
+    {
+      "isin": "INE0BLY01023",
+      "ticker": "BSE-543244",
+      "symbol": "SHINEFASH.BO",
+      "identity_basis": "VERIFIED_PROVIDER_SYMBOL",
+      "status": "USABLE_PROVIDER_BASIS",
+      "observations": 353,
+      "unresolved_actions": [],
+      "receipt_sha256": "a802c156f0df2b839ece7b629713964f4c7ad62a2e860fbad1714df571681143"
+    },
+    {
+      "isin": "INE0SMU01015",
+      "ticker": "BSE-544175",
+      "symbol": "TGIF.BO",
+      "identity_basis": "VERIFIED_PROVIDER_SYMBOL",
+      "status": "USABLE_PROVIDER_BASIS",
+      "observations": 353,
+      "unresolved_actions": [],
+      "receipt_sha256": "848947c81ab1d3ba34a9a1d35948dce9e777c120f71f414680e87b17b8ba4824"
+    },
+    {
+      "isin": "INE0LHB01010",
+      "ticker": "BSE-544897",
+      "symbol": "PALUCK.BO",
+      "identity_basis": "YAHOO_SEARCH_NAME_PRICE_VERIFIED_BSE",
+      "status": "NO_PRICE",
+      "observations": 19,
+      "unresolved_actions": [],
+      "receipt_sha256": "01097871b5b95a6a9828455d2308e38652045872a0135ff4735ff4783b87623c"
+    },
+    {
+      "isin": "INE24YP01017",
+      "ticker": "BSE-544902",
+      "symbol": "PHYCHEM.BO",
+      "identity_basis": "YAHOO_SEARCH_NAME_PRICE_VERIFIED_BSE",
+      "status": "NO_PRICE",
+      "observations": 18,
+      "unresolved_actions": [],
+      "receipt_sha256": "5860cd78bee707236ff20df3101f6568c101651c6ac796f427f23982a26d7d41"
+    },
+    {
+      "isin": "INE1YC401018",
+      "ticker": "BSE-544919",
+      "symbol": "INFRAX.BO",
+      "identity_basis": "YAHOO_SEARCH_NAME_PRICE_VERIFIED_BSE",
+      "status": "NO_PRICE",
+      "observations": 11,
+      "unresolved_actions": [],
+      "receipt_sha256": "efa10580816aa05eb426990ea2f1f82c4f7fa20d669b181469954400036d68d6"
+    },
+    {
+      "isin": "INE0RMA01019",
+      "ticker": "BSE-544920",
+      "symbol": "AMTECH.BO",
+      "identity_basis": "YAHOO_SEARCH_NAME_PRICE_VERIFIED_BSE",
+      "status": "NO_PRICE",
+      "observations": 11,
+      "unresolved_actions": [],
+      "receipt_sha256": "41975cfa2ce666b1dcc7368a42c1bd271cdf769986cc2e2b6b55d17265238a65"
+    },
+    {
+      "isin": "INE2D0Q01027",
+      "ticker": "BSE-544922",
+      "symbol": "OMG.BO",
+      "identity_basis": "YAHOO_SEARCH_NAME_PRICE_VERIFIED_BSE",
+      "status": "NO_PRICE",
+      "observations": 10,
+      "unresolved_actions": [],
+      "receipt_sha256": "53a790919d766a6e1229bd69a40de4d4296e22f6ca71e8122dff0b103ca0289b"
+    },
+    {
+      "isin": "INE1S7M01017",
+      "ticker": "BSE-544924",
+      "symbol": "RAKSAN.BO",
+      "identity_basis": "YAHOO_SEARCH_NAME_PRICE_VERIFIED_BSE",
+      "status": "NO_PRICE",
+      "observations": 10,
+      "unresolved_actions": [],
+      "receipt_sha256": "50f49c61cdbf0514f09f398499ec8922c6c1e044df65a82fc3ebdca1c9cc58aa"
+    },
+    {
+      "isin": "INE0SVD01012",
+      "ticker": "BSE-544925",
+      "symbol": "SPEEDEX.BO",
+      "identity_basis": "YAHOO_SEARCH_NAME_PRICE_VERIFIED_BSE",
+      "status": "NO_PRICE",
+      "observations": 10,
+      "unresolved_actions": [],
+      "receipt_sha256": "0314cd3b2d799a9ae738b8c3d38813cb4a7a61dc80946414fda0b76340ad4af7"
+    },
+    {
+      "isin": "INE0VXN01011",
+      "ticker": "BSE-544926",
+      "symbol": "PANCHATV.BO",
+      "identity_basis": "YAHOO_SEARCH_NAME_PRICE_VERIFIED_BSE",
+      "status": "NO_PRICE",
+      "observations": 10,
+      "unresolved_actions": [],
+      "receipt_sha256": "80435cbe561cc59cd1fd81d02aac632c4f449d90d5e7370706026166d7653ec6"
+    },
+    {
+      "isin": "INE2FMX01012",
+      "ticker": "AASTHA",
+      "symbol": "AASTHA.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "USABLE_PROVIDER_BASIS",
+      "observations": 63,
+      "unresolved_actions": [],
+      "receipt_sha256": "4529ce8610d3daaaedccadb3ef79bd38e75f47cc50474607e06bf6fadd0e7dfd"
+    },
+    {
+      "isin": "INE148G01016",
+      "ticker": "ARCIL",
+      "symbol": "ARCIL.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "NO_PRICE",
+      "observations": 11,
+      "unresolved_actions": [],
+      "receipt_sha256": "3b618ded17d36e48eb152dd7ea0aa2f1a1be1c2631b73705e153a781320c42eb"
+    },
+    {
+      "isin": "INE203Y01012",
+      "ticker": "CRESTO",
+      "symbol": "SILLYMONKS.NS",
+      "identity_basis": "VERIFIED_PROVIDER_SYMBOL",
+      "status": "NO_PRICE",
+      "observations": 8,
+      "unresolved_actions": [],
+      "receipt_sha256": "802386a49f566abe964b648ef8774c9deb83b3f2257e95ac6e8713fca20264d2"
+    },
+    {
+      "isin": "INE1M2N01020",
+      "ticker": "DEEPA",
+      "symbol": "DEEPA.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "NO_PRICE",
+      "observations": 17,
+      "unresolved_actions": [],
+      "receipt_sha256": "79ee771d98e6c2c4e15008dd605be5c56f5b8b2e021eb4056b8a4ea3f130d903"
+    },
+    {
+      "isin": "INE0DRI01029",
+      "ticker": "ESDS",
+      "symbol": "ESDS.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "NO_PRICE",
+      "observations": 19,
+      "unresolved_actions": [],
+      "receipt_sha256": "a3c100d0f5bb22b9cc1df468fb5e829a8f7c596edc6807b232fedc8dc70e2ab5"
+    },
+    {
+      "isin": "INE644Q01039",
+      "ticker": "GLASSWALL",
+      "symbol": "GLASSWALL.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "NO_PRICE",
+      "observations": 12,
+      "unresolved_actions": [],
+      "receipt_sha256": "d4878a0dcd16abd9ab9a5e81ed4bfff8a95c85bcc8a59830e7278a91312cd499"
+    },
+    {
+      "isin": "INE610E01010",
+      "ticker": "KALYANI",
+      "symbol": "KALYANI.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "USABLE_PROVIDER_BASIS",
+      "observations": 311,
+      "unresolved_actions": [],
+      "receipt_sha256": "301b14219c6c0c348bf371c93409da2129334ed9d402d585f691abbed154eddf"
+    },
+    {
+      "isin": "INE877D01025",
+      "ticker": "KANOHAR",
+      "symbol": "KANOHAR.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "NO_PRICE",
+      "observations": 12,
+      "unresolved_actions": [],
+      "receipt_sha256": "e862e5d9e4fa3b1922efa2fa6359d462e3793d0f9d369d6c3a99ac7a03c9167b"
+    },
+    {
+      "isin": "INE590T01012",
+      "ticker": "KARAMTARA",
+      "symbol": "KARAMTARA.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "NO_PRICE",
+      "observations": 11,
+      "unresolved_actions": [],
+      "receipt_sha256": "fc515ab22263617bad10eda445135a29a352161a0e4025581c4f43a775b26121"
+    },
+    {
+      "isin": "INE1FPN01026",
+      "ticker": "LCCPROJECT",
+      "symbol": "LCCPROJECT.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "NO_PRICE",
+      "observations": 10,
+      "unresolved_actions": [],
+      "receipt_sha256": "d27364d1425a5f0b00540df9e6ca59b17a9c8fb727b2a63b153e9c13edc87dcf"
+    },
+    {
+      "isin": "INE185Q01025",
+      "ticker": "LUMINO",
+      "symbol": "LUMINO.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "NO_PRICE",
+      "observations": 20,
+      "unresolved_actions": [],
+      "receipt_sha256": "d86e86d305714f2e968e24f2d5d1c066b2d09c1936c4f7349cccb740b55b00f3"
+    },
+    {
+      "isin": "INE1FCO01014",
+      "ticker": "MOMSBELIEF",
+      "symbol": "MOMSBELIEF.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "NO_PRICE",
+      "observations": 16,
+      "unresolved_actions": [],
+      "receipt_sha256": "d05e7a507442e6a1ba032bf1e4517c5bfc88cd1daf7853bf579ecd5c16270454"
+    },
+    {
+      "isin": "INE241U01028",
+      "ticker": "MPIMANIPAL",
+      "symbol": "MPIMANIPAL.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "NO_PRICE",
+      "observations": 11,
+      "unresolved_actions": [],
+      "receipt_sha256": "75802f471c5b26bb1219cc2adf6f0f0c07ec73d0a29952bda8fe1cfe15488076"
+    },
+    {
+      "isin": "INE0I1B01016",
+      "ticker": "PERNIASPOP",
+      "symbol": "PERNIASPOP.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "NO_PRICE",
+      "observations": 18,
+      "unresolved_actions": [],
+      "receipt_sha256": "159321548213bb6975cb69302f260cb4b7a006d65bc40a2b9c527c22650820cf"
+    },
+    {
+      "isin": "INE0H4201019",
+      "ticker": "PRANAV",
+      "symbol": "PRANAV.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "NO_PRICE",
+      "observations": 13,
+      "unresolved_actions": [],
+      "receipt_sha256": "0ed1776aac54178a697ea7988a169db358969bd9480bc6a4ca17a2f86435af47"
+    },
+    {
+      "isin": "INE455U01024",
+      "ticker": "PRASOLCHEM",
+      "symbol": "PRASOLCHEM.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "NO_PRICE",
+      "observations": 12,
+      "unresolved_actions": [],
+      "receipt_sha256": "3037641b15cbfe27892709309c5421a44c383950656c63bae9ace84b924de9aa"
+    },
+    {
+      "isin": "INE15EH01014",
+      "ticker": "PRIORITY",
+      "symbol": "PRIORITY.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "NO_PRICE",
+      "observations": 19,
+      "unresolved_actions": [],
+      "receipt_sha256": "9c0e70d71005f7c980d2922ae34d9ed39a09ec5e3229546f6672cf4f76e37bd7"
+    },
+    {
+      "isin": "INE08T701025",
+      "ticker": "RENTOMOJO",
+      "symbol": "RENTOMOJO.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "NO_PRICE",
+      "observations": 11,
+      "unresolved_actions": [],
+      "receipt_sha256": "2f61d0332fa038425efe1e267dbb1d1e32fd898f3ed4f2cc51f1b02ac212e708"
+    },
+    {
+      "isin": "INE0FRO01022",
+      "ticker": "STEAMHOUSE",
+      "symbol": "STEAMHOUSE.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "NO_PRICE",
+      "observations": 11,
+      "unresolved_actions": [],
+      "receipt_sha256": "e34eeb8ee985d7c1770ad213d0797974d889e6861c2f943e9741db600ddc3588"
+    },
+    {
+      "isin": "INE524T01011",
+      "ticker": "TAALTECH",
+      "symbol": "TAALTECH.NS",
+      "identity_basis": "VERIFIED_PROVIDER_SYMBOL",
+      "status": "USABLE_PROVIDER_BASIS",
+      "observations": 32,
+      "unresolved_actions": [],
+      "receipt_sha256": "8fa659f275e98b1e8652a3bb4d852f8720a26a61cc59546a770aa50ca4d9d20c"
+    },
+    {
+      "isin": "INE390D01011",
+      "ticker": "TERAI",
+      "symbol": "TERAI.NS",
+      "identity_basis": "VERIFIED_PROVIDER_SYMBOL",
+      "status": "USABLE_PROVIDER_BASIS",
+      "observations": 32,
+      "unresolved_actions": [],
+      "receipt_sha256": "69dcaa577e6ff537e9de090cec783eb41d290916e136cd7cea877bfa5e6f7a03"
+    },
+    {
+      "isin": "INE574G01013",
+      "ticker": "VASUPRADA",
+      "symbol": "VASUPRADA.NS",
+      "identity_basis": "VERIFIED_PROVIDER_SYMBOL",
+      "status": "USABLE_PROVIDER_BASIS",
+      "observations": 32,
+      "unresolved_actions": [],
+      "receipt_sha256": "a2bb9427d014b96f06f59ae43c7ae26a411b58e0cdaacaa26eb98e1d3bc8d301"
+    },
+    {
+      "isin": "INE1JTV01015",
+      "ticker": "VEEGALAND",
+      "symbol": "VEEGALAND.NS",
+      "identity_basis": "SCREENER_EXACT_ISIN_NSE_CODE",
+      "status": "NO_PRICE",
+      "observations": 10,
+      "unresolved_actions": [],
+      "receipt_sha256": "4b6b51f685888e07d48bfaf04eaa78c46c10aaaedc1b57f2ab6aaf52b89fed8d"
+    }
+  ]
+}

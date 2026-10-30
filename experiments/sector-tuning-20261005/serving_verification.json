@@ -1,0 +1,62 @@
+{
+  "profiles": [
+    {
+      "profile": "amount1000",
+      "rows": 4436,
+      "ranked": 2412,
+      "sector_rank_verified": true
+    },
+    {
+      "profile": "amount50000",
+      "rows": 4436,
+      "ranked": 1240,
+      "sector_rank_verified": true
+    },
+    {
+      "profile": "base7500",
+      "rows": 4436,
+      "ranked": 1747,
+      "sector_rank_verified": true
+    },
+    {
+      "profile": "lookback12",
+      "rows": 4436,
+      "ranked": 2051,
+      "sector_rank_verified": true
+    },
+    {
+      "profile": "lookback60",
+      "rows": 4436,
+      "ranked": 1525,
+      "sector_rank_verified": true
+    },
+    {
+      "profile": "quarterly",
+      "rows": 4436,
+      "ranked": 1751,
+      "sector_rank_verified": true
+    },
+    {
+      "profile": "target10",
+      "rows": 4436,
+      "ranked": 1747,
+      "sector_rank_verified": true
+    },
+    {
+      "profile": "target30",
+      "rows": 4436,
+      "ranked": 1747,
+      "sector_rank_verified": true
+    },
+    {
+      "profile": "weekly",
+      "rows": 4436,
+      "ranked": 1752,
+      "sector_rank_verified": true
+    }
+  ],
+  "custom_profile": 8250,
+  "independent_score_arithmetic": true,
+  "eligibility_unchanged": true,
+  "nykaa_ath_age": 1765
+}

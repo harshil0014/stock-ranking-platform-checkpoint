@@ -1,0 +1,40 @@
+{
+  "selected_research_candidate": "rank_xendcg_balanced_blend0.25",
+  "family": "rebuilt",
+  "selection": "Fewest development Top-3 regressions, then fewest development total regressions, across 32 completed candidates. Exposed period not used to choose.",
+  "candidate_count": 32,
+  "additional_fixed_activity_rule": 1,
+  "annual_fits": 48,
+  "profiles": 9,
+  "current_stocks": 4436,
+  "current_input_status": {
+    "USABLE_PROVIDER_BASIS": 4303,
+    "NO_PRICE": 118,
+    "UNRESOLVED_ACTION_IN_FEATURE_WINDOW": 15
+  },
+  "strict_gate_passes": 0,
+  "selected_strict_gate": false,
+  "top3_regressions": 202,
+  "top3_comparisons": 1512,
+  "all_metric_regressions": 761,
+  "all_metric_comparisons": 4536,
+  "legacy_policies": 37,
+  "legacy_policy_gates_passed": 0,
+  "tests_passed": 33,
+  "fresh_validation": false,
+  "production_replaced": false,
+  "snapshot": "2026-10-03",
+  "status": "COMPLETED_RESEARCH_WITH_DISCLOSED_TRADEOFFS",
+  "sha256": {
+    "experiments\\sector-research-final-20261010\\all_4436_sector_rankings.csv": "a8b51291953ce18af9c040618fe4a98ac9c7a8f4914362358d1db546016e1d4f",
+    "experiments\\sector-research-final-20261010\\all_32_candidate_trials.csv": "76fc55e8876233246cecd29251d0aaa2d7d08414aa3e68b4205d1cbd37fc934a",
+    "experiments\\sector-research-final-20261010\\paired_top3_summary.csv": "807d31e3043a9914abf1b1006687feae2ef19fd2a999ebbf5905eee0b1efd3e1",
+    "experiments\\sector-research-final-20261010\\whole_sector_pair_accuracy.csv": "54f2e904e5414b6276adfc94bde71b09ed615ab03f4a0598fa817582a386587b",
+    "experiments\\sector-price-rebuild-20261010\\verification.json": "03cb3dd53d750b594822afffdb08fe13de3e59cfe9b40d295e4e24a9525d7a7d",
+    "experiments\\sector-price-rebuild-20261010\\historical_model_replay.json": "8aa1e7be3ee5683e948769bd1e08d107b42f452dbb9fab4ade4d75f2f4476d45",
+    "experiments\\sector-yetirank-20261010\\historical_model_replay.json": "56491c1400279b26fc3c640fe125b085ae4defc6c6bf8e7470c6f0db9c352fdf",
+    "experiments\\sector-price-rebuild-20261010\\legacy-comparison\\verified_opponent_gates.csv": "c8031c03324b3eb5c70748d3c9d8af215fe704bb35f426b20503685410d382cd",
+    "experiments\\sector-accuracy-20261010\\verification.json": "5e8d20cc90ecd8235236bded8984eb0f59ac39a3872ab9d7297281426c415f24",
+    "experiments\\sector-activity-guard-20261010\\selection.json": "f7eafc50f9bfd5bf0850615eecc470b1c9b7371c1b642d79085039fb3878aaad"
+  }
+}

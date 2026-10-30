@@ -1,0 +1,162 @@
+{
+  "completed_at": "2026-10-04T06:42:09.724795+00:00",
+  "winner": "V17 refined ensemble",
+  "verdict": "PROMISING CHALLENGER",
+  "V18_earned": false,
+  "production_champion": "d4995807163bef1ec4b297179e6c54a59c71f390",
+  "production_deployed": false,
+  "refinement": {
+    "name": "extended_bag60_mean_1.0_a0.35_regime_0.1",
+    "aggregation": "mean",
+    "share": 1.0,
+    "family": "regime_utility",
+    "beta": 0.1,
+    "gate": "broad",
+    "long_kind": "original",
+    "long_alpha": 0.35,
+    "eligible": true,
+    "utility": 0.0136828070156748,
+    "coverage": 0.0,
+    "ndcg20": 0.0161011635691319,
+    "target_achievement_top20": 0.0104166666666666,
+    "target_shortfall_top20": -0.0032315041209097,
+    "median_xirr_top20": 0.012526657091991,
+    "mean_asset_drawdown_top20": 0.0229340833680558,
+    "rank_ic": 0.0062636300233041,
+    "pairwise_accuracy": 0.0021687053619666,
+    "highvol_return": 0.0148152296762657,
+    "highvol_drawdown": 0.0037687832724479
+  },
+  "development_vs_v17": {
+    "coverage": 0.0,
+    "ndcg20": 0.01610116356913194,
+    "target_achievement_top20": 0.010416666666666661,
+    "target_shortfall_top20": -0.0032315041209097384,
+    "median_xirr_top20": 0.012526657091991054,
+    "mean_asset_drawdown_top20": 0.02293408336805582,
+    "rank_ic": 0.006263630023304121,
+    "pairwise_accuracy": 0.002168705361966628
+  },
+  "repair_trials": 130,
+  "final_challenger_trials": 20,
+  "prior_v18_research_trials": 34,
+  "dates": {
+    "scored_dates": [
+      "2016-03-31",
+      "2016-06-30",
+      "2016-09-30",
+      "2016-12-31",
+      "2017-03-31",
+      "2017-06-30",
+      "2017-09-30",
+      "2017-12-31",
+      "2018-03-31",
+      "2018-06-30",
+      "2018-09-30",
+      "2018-12-31",
+      "2019-03-31",
+      "2019-06-30",
+      "2019-09-30",
+      "2019-12-31",
+      "2020-03-31",
+      "2020-06-30",
+      "2020-09-30",
+      "2020-12-31",
+      "2021-03-31",
+      "2021-06-30",
+      "2021-09-30",
+      "2021-12-31",
+      "2022-03-31",
+      "2022-06-30",
+      "2022-09-30",
+      "2022-12-31",
+      "2023-03-31",
+      "2023-06-30",
+      "2023-09-30",
+      "2023-12-31",
+      "2024-03-31",
+      "2024-06-30",
+      "2024-09-30",
+      "2024-12-31",
+      "2025-01-31",
+      "2025-02-28",
+      "2025-03-31",
+      "2025-04-30",
+      "2025-05-31",
+      "2025-06-30",
+      "2025-07-31",
+      "2025-08-31"
+    ],
+    "scored_date_count": 44,
+    "profiles": [
+      "amount1000",
+      "amount50000",
+      "base7500",
+      "lookback12",
+      "lookback60",
+      "quarterly",
+      "target10",
+      "target30",
+      "weekly"
+    ],
+    "no_prior_labels": [
+      {
+        "date": "2015-01-31",
+        "reason": "No strictly matured prior labels; cannot fit an honest supervised model."
+      },
+      {
+        "date": "2015-02-28",
+        "reason": "No strictly matured prior labels; cannot fit an honest supervised model."
+      },
+      {
+        "date": "2015-03-31",
+        "reason": "No strictly matured prior labels; cannot fit an honest supervised model."
+      },
+      {
+        "date": "2015-06-30",
+        "reason": "No strictly matured prior labels; cannot fit an honest supervised model."
+      },
+      {
+        "date": "2015-09-30",
+        "reason": "No strictly matured prior labels; cannot fit an honest supervised model."
+      },
+      {
+        "date": "2015-12-31",
+        "reason": "No strictly matured prior labels; cannot fit an honest supervised model."
+      }
+    ],
+    "all_valid_dates": true,
+    "early_results_contextual_not_selection": true,
+    "exposed_results_not_selection": true
+  },
+  "current_validation": {
+    "reproduction_max_error": 4.440892098500626e-16,
+    "identity_and_age_label_only_max_error": 0.0,
+    "all4436": true,
+    "all9profiles": true,
+    "unique_keys": true,
+    "scored_rows": 29817,
+    "available_unranked": 0,
+    "no_hard_ath_age_penalty": true,
+    "counterfactuals": "Original reference empirical-CDF anchors; champion/confidence/regime held fixed. Conditional sensitivity, not causal or necessarily realizable."
+  },
+  "actions": {
+    "retrieved_at": "2026-10-03T21:01:34.058655+00:00",
+    "start": "2026-09-19",
+    "end": "2026-10-04",
+    "receipts": 1862,
+    "failed": 0,
+    "events": 7,
+    "public_sources": [
+      "https://www.nseindia.com/api/corporates-corporateActions",
+      "https://api.bseindia.com/BseIndiaAPI/api/DefaultData/w"
+    ]
+  },
+  "current_coverage_before": 29295,
+  "current_coverage_after": 29817,
+  "coverage_only_top20_unchanged": true,
+  "model_top20_min_overlap": 0.85,
+  "worst_weakness": "High-volatility drawdown improves versus V17 but remains worse than d499580 in development; no untouched validation and fixed-universe survivorship remain.",
+  "fundamentals_industry": "Current diagnostic context only; no safe dated historical data available.",
+  "mean_xirr_selection_weight": 0
+}

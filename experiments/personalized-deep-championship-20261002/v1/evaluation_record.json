@@ -1,0 +1,27 @@
+{
+  "locked_selection_sha256": "47a813a4885bfa61618230acdb1279c2d49a27b6315290c1966930cafc9131da",
+  "winner": {
+    "candidate": "no_goal_risk|utility4|top20",
+    "goal_weight": 0.6,
+    "alpha": 0.35,
+    "age_penalty": 0.0,
+    "delta_coverage": 0.0,
+    "delta_rank_ic": 0.0016334360447566552,
+    "delta_ndcg20": -0.006589588140579694,
+    "delta_pairwise_accuracy": 0.00047405042509235384,
+    "delta_target_achievement_top20": 0.007870370370370305,
+    "delta_target_shortfall_top20": -0.005293973279757072,
+    "delta_mean_xirr_top20": -0.4841837176951471,
+    "delta_median_xirr_top20": -0.018821567135170747,
+    "delta_mean_asset_drawdown_top20": 0.0015231364542486747,
+    "utility": 0.0034825603043797254,
+    "eligible": true,
+    "worst_profile_shortfall_delta": 0.0033488696201426776,
+    "worst_profile_achievement_delta": -0.01666666666666672
+  },
+  "holdout_evaluated_once": true,
+  "partitions": [
+    "clean_2024_holdout",
+    "exposed_2025_diagnostic"
+  ]
+}

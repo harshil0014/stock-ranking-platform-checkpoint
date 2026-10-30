@@ -1,0 +1,4 @@
+kind,alpha,score_cap,name,strong_eligible,eligible,utility
+blend_ath_monotone,0.3,0.025,ath_capped_0.025,False,True,0.032711165076182484
+blend_ath_monotone,0.3,0.075,ath_capped_0.075,False,False,0.06417971447291752
+blend_ath_monotone,0.3,0.05,ath_capped_0.05,False,False,0.05353900999960311

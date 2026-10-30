@@ -1,0 +1,21 @@
+{
+  "annual_fits": 72,
+  "candidates": 275,
+  "comparison_cells_per_candidate": 240,
+  "strict_passes": 0,
+  "endpoint_purge_verified": true,
+  "finite_metrics": true,
+  "gate_independently_recomputed": true,
+  "fresh_holdout": false,
+  "sha256": {
+    "experiments\\full-coverage-open-models-20261008\\protocol.json": "bbfdd05318f9ec3043a91f440cddded014cafde8e773d925921bff82cb900930",
+    "experiments\\full-coverage-open-models-20261008\\summary.csv": "e93985c866153704f8ead4b278057ec718e5b660c1c7eef8cbe9baf0ba0ef38b",
+    "experiments\\full-coverage-open-models-20261008\\trials.csv": "c74c8a335a93a5e4f24580c4ef10950dd30f88c608e1fca0cf9bd3803783b527",
+    "experiments\\full-coverage-open-models-20261008\\pair_protocol.json": "97be887ee16a0007f88eafed67b87cb97ac6d63836dda6ea5ff2734b170c9664",
+    "experiments\\full-coverage-open-models-20261008\\pair_summary.csv": "bda5aeb12b0ea6545af3a158f2cceddba2c3dd7ea4ee09ff3a6c5fc3cef28cb0",
+    "experiments\\full-coverage-open-models-20261008\\pair_trials.csv": "25c04c60dad739588556dc8e3353c751398af7ebdad74965da75636386133ed2",
+    "experiments\\sector-local-experts-20261008\\protocol.json": "44a919ead36b9f73ec60bddb67e66da0f8d904dd0bff8bfd814bf8d83d7787f9",
+    "experiments\\sector-local-experts-20261008\\summary.csv": "ee824d436a06b1e0785b9cdc08208d47e4c25bfb53ee71f5904ba4142e904cc1",
+    "experiments\\sector-local-experts-20261008\\trials.csv": "ed9e0b2687f7d85739a7a5e0a8ec7f8773cae6a6c4862bdeee4a23c934f0e627"
+  }
+}

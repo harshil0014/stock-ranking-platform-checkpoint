@@ -45,6 +45,9 @@ from stock_ranker.personalized_product import (
     personalized_metadata,
     personalized_rank,
 )
+from stock_ranker.personalized_v17_product import v17_metadata, v17_rank
+from stock_ranker.personalized_peak_product import peak_metadata, peak_rank
+from stock_ranker.sector_champion_product import champion_metadata, champion_rank
 
 
 MAX_REQUEST_BYTES = 30 * 1024 * 1024
@@ -81,6 +84,9 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
             "/dashboard": (INDEX_HTML, "text/html; charset=utf-8"),
             "/live": (INDEX_HTML, "text/html; charset=utf-8"),
             "/personalized": (INDEX_HTML, "text/html; charset=utf-8"),
+            "/personalized-v17": (INDEX_HTML, "text/html; charset=utf-8"),
+            "/closing-high": (INDEX_HTML, "text/html; charset=utf-8"),
+            "/sector-champion": (INDEX_HTML, "text/html; charset=utf-8"),
             "/overview": (INDEX_HTML, "text/html; charset=utf-8"),
             "/rankings": (INDEX_HTML, "text/html; charset=utf-8"),
             "/historical": (INDEX_HTML, "text/html; charset=utf-8"),
@@ -108,8 +114,10 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
                 payload["message"] = "Refresh disabled in read-only deployment"
             self._json(HTTPStatus.OK, payload)
             return
-        if path == "/api/personalized/metadata":
-            payload = personalized_metadata()
+        if path in {"/api/personalized/metadata", "/api/personalized-v17/metadata", "/api/closing-high/metadata", "/api/sector-champion/metadata"}:
+            payload = (champion_metadata() if path == "/api/sector-champion/metadata" else
+                       peak_metadata() if path == "/api/closing-high/metadata" else
+                       v17_metadata() if path == "/api/personalized-v17/metadata" else personalized_metadata())
             self._json(HTTPStatus.OK if payload.get("available") else HTTPStatus.SERVICE_UNAVAILABLE, payload)
             return
         live_routes = {
@@ -177,7 +185,7 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
 
     def do_POST(self) -> None:  # noqa: N802 - required by BaseHTTPRequestHandler
         path = urlparse(self.path).path
-        if path == "/api/personalized/rank":
+        if path in {"/api/personalized/rank", "/api/personalized-v17/rank", "/api/closing-high/rank", "/api/sector-champion/rank"}:
             if self.headers.get_content_type() != "application/json":
                 self._json(HTTPStatus.UNSUPPORTED_MEDIA_TYPE, {"error": "Content-Type must be application/json"})
                 return
@@ -186,7 +194,9 @@ class ResearchWebsiteHandler(BaseHTTPRequestHandler):
                 if length <= 0 or length > 256 * 1024:
                     raise PersonalizationError("request body is empty or exceeds 256 KiB")
                 payload = json.loads(self.rfile.read(length).decode("utf-8"))
-                result = personalized_rank(payload)
+                result = (champion_rank(payload) if path == "/api/sector-champion/rank" else
+                          peak_rank(payload) if path == "/api/closing-high/rank" else
+                          v17_rank(payload) if path == "/api/personalized-v17/rank" else personalized_rank(payload))
             except (PersonalizationError, ValueError, TypeError, UnicodeError, json.JSONDecodeError) as exc:
                 self._json(HTTPStatus.BAD_REQUEST, {"available": False, "status": "INVALID PERSONALIZATION INPUT", "error": str(exc)})
                 return

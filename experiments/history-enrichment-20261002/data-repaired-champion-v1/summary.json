@@ -1,0 +1,672 @@
+{
+  "validation_2023": {
+    "coverage": {
+      "champion": 0.8024290118511328,
+      "repaired": 0.8024290118511328,
+      "delta": 0.0
+    },
+    "rank_ic": {
+      "champion": 0.027566708531109665,
+      "repaired": 0.010228834586906122,
+      "delta": -0.017337873944203545
+    },
+    "ndcg20": {
+      "champion": 0.5011656077997737,
+      "repaired": 0.5204635521834674,
+      "delta": 0.0192979443836937
+    },
+    "pairwise_accuracy": {
+      "champion": 0.5193970562007773,
+      "repaired": 0.5100645039308085,
+      "delta": -0.009332552269968764
+    },
+    "target_achievement_top20": {
+      "champion": 0.5833333333333334,
+      "repaired": 0.6,
+      "delta": 0.016666666666666607
+    },
+    "target_shortfall_top20": {
+      "champion": 0.06028830862418252,
+      "repaired": 0.057446777073829565,
+      "delta": -0.002841531550352952
+    },
+    "mean_xirr_top20": {
+      "champion": 1.3208859727946292,
+      "repaired": 2.246028254431256,
+      "delta": 0.9251422816366268
+    },
+    "median_xirr_top20": {
+      "champion": 0.33910242457395134,
+      "repaired": 0.42693210095269296,
+      "delta": 0.08782967637874162
+    },
+    "mean_asset_drawdown_top20": {
+      "champion": -0.3455785079117421,
+      "repaired": -0.2754131007260291,
+      "delta": 0.07016540718571301
+    }
+  },
+  "exposed_2025": {
+    "coverage": {
+      "champion": 0.8296925650328719,
+      "repaired": 0.8296925650328719,
+      "delta": 0.0
+    },
+    "rank_ic": {
+      "champion": 0.15466992010877303,
+      "repaired": 0.15985647257608268,
+      "delta": 0.005186552467309646
+    },
+    "ndcg20": {
+      "champion": 0.6268166256340981,
+      "repaired": 0.646113670655351,
+      "delta": 0.019297045021252845
+    },
+    "pairwise_accuracy": {
+      "champion": 0.5487049595635153,
+      "repaired": 0.5467762002135392,
+      "delta": -0.0019287593499760503
+    },
+    "target_achievement_top20": {
+      "champion": 0.39722222222222225,
+      "repaired": 0.3277777777777777,
+      "delta": -0.06944444444444453
+    },
+    "target_shortfall_top20": {
+      "champion": 0.12896251665195343,
+      "repaired": 0.12794452382506014,
+      "delta": -0.0010179928268932992
+    },
+    "mean_xirr_top20": {
+      "champion": 8.697590875320293,
+      "repaired": 5.094623905108849,
+      "delta": -3.602966970211444
+    },
+    "median_xirr_top20": {
+      "champion": 0.04660713144373174,
+      "repaired": -0.004491432311155398,
+      "delta": -0.05109856375488714
+    },
+    "mean_asset_drawdown_top20": {
+      "champion": -0.42578693776518634,
+      "repaired": -0.3699704452036281,
+      "delta": 0.05581649256155824
+    }
+  },
+  "champion": {
+    "scored": 27392,
+    "short_history_universe_share": 0.0846232476635514,
+    "top20_short_history_share": 1.0,
+    "top50_short_history_share": 1.0,
+    "top100_short_history_share": 0.9,
+    "nykaa_global_rank": 1,
+    "nykaa_retail_rank": 1,
+    "nykaa_score": 0.9907080600724256,
+    "top20": [
+      {
+        "rank": 1,
+        "ticker": "NYKAA",
+        "derived_research_sector": "Retailing",
+        "selected_ensemble_score": 0.9907080600724256,
+        "cagr_5y": -0.020335266212494058,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 58.25051334702259
+      },
+      {
+        "rank": 2,
+        "ticker": "SJS",
+        "derived_research_sector": "Consumer Cyclical",
+        "selected_ensemble_score": 0.9903626109619752,
+        "cagr_5y": 0.371630369757884,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 58.08624229979466
+      },
+      {
+        "rank": 3,
+        "ticker": "SHAILY",
+        "derived_research_sector": "Consumer Durables",
+        "selected_ensemble_score": 0.989960784477957,
+        "cagr_5y": 0.5260222618741848,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 53.48665297741273
+      },
+      {
+        "rank": 4,
+        "ticker": "NYKAA",
+        "derived_research_sector": "Retailing",
+        "selected_ensemble_score": 0.9896124095936478,
+        "cagr_5y": -0.020335266212494058,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 58.25051334702259
+      },
+      {
+        "rank": 5,
+        "ticker": "BSE-543373",
+        "derived_research_sector": "Consumer Defensive",
+        "selected_ensemble_score": 0.9894585013729342,
+        "cagr_5y": 0.937776095075059,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 59.23613963039014
+      },
+      {
+        "rank": 6,
+        "ticker": "BSE-543543",
+        "derived_research_sector": "Real Estate",
+        "selected_ensemble_score": 0.9894585013729342,
+        "cagr_5y": 0.4562958731747486,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 50.20123203285421
+      },
+      {
+        "rank": 7,
+        "ticker": "NYKAA",
+        "derived_research_sector": "Retailing",
+        "selected_ensemble_score": 0.9891026790374378,
+        "cagr_5y": -0.020335266212494058,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 58.25051334702259
+      },
+      {
+        "rank": 8,
+        "ticker": "SJS",
+        "derived_research_sector": "Consumer Cyclical",
+        "selected_ensemble_score": 0.9887988030687715,
+        "cagr_5y": 0.371630369757884,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 58.08624229979466
+      },
+      {
+        "rank": 9,
+        "ticker": "SHAILY",
+        "derived_research_sector": "Consumer Durables",
+        "selected_ensemble_score": 0.9883968542258972,
+        "cagr_5y": 0.5260222618741848,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 53.48665297741273
+      },
+      {
+        "rank": 10,
+        "ticker": "NYKAA",
+        "derived_research_sector": "Retailing",
+        "selected_ensemble_score": 0.9882314175124334,
+        "cagr_5y": -0.020335266212494058,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 58.25051334702259
+      },
+      {
+        "rank": 11,
+        "ticker": "BSE-543373",
+        "derived_research_sector": "Consumer Defensive",
+        "selected_ensemble_score": 0.9880953925937412,
+        "cagr_5y": 0.937776095075059,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 59.23613963039014
+      },
+      {
+        "rank": 12,
+        "ticker": "BSE-543543",
+        "derived_research_sector": "Real Estate",
+        "selected_ensemble_score": 0.9880953925937412,
+        "cagr_5y": 0.4562958731747486,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 50.20123203285421
+      },
+      {
+        "rank": 13,
+        "ticker": "SJS",
+        "derived_research_sector": "Consumer Cyclical",
+        "selected_ensemble_score": 0.9878544187260678,
+        "cagr_5y": 0.371630369757884,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 58.08624229979466
+      },
+      {
+        "rank": 14,
+        "ticker": "NYKAA",
+        "derived_research_sector": "Retailing",
+        "selected_ensemble_score": 0.9878072583104606,
+        "cagr_5y": -0.020335266212494058,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 58.25051334702259
+      },
+      {
+        "rank": 15,
+        "ticker": "SHAILY",
+        "derived_research_sector": "Consumer Durables",
+        "selected_ensemble_score": 0.9874023639315472,
+        "cagr_5y": 0.5260222618741848,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 53.48665297741273
+      },
+      {
+        "rank": 16,
+        "ticker": "SJS",
+        "derived_research_sector": "Consumer Cyclical",
+        "selected_ensemble_score": 0.9869382495072364,
+        "cagr_5y": 0.371630369757884,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 58.08624229979466
+      },
+      {
+        "rank": 17,
+        "ticker": "BSE-543373",
+        "derived_research_sector": "Consumer Defensive",
+        "selected_ensemble_score": 0.9869000808265244,
+        "cagr_5y": 0.937776095075059,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 59.23613963039014
+      },
+      {
+        "rank": 18,
+        "ticker": "BSE-543543",
+        "derived_research_sector": "Real Estate",
+        "selected_ensemble_score": 0.9869000808265244,
+        "cagr_5y": 0.4562958731747486,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 50.20123203285421
+      },
+      {
+        "rank": 19,
+        "ticker": "SHAILY",
+        "derived_research_sector": "Consumer Durables",
+        "selected_ensemble_score": 0.9864852293730082,
+        "cagr_5y": 0.5260222618741848,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 53.48665297741273
+      },
+      {
+        "rank": 20,
+        "ticker": "BSE-543373",
+        "derived_research_sector": "Consumer Defensive",
+        "selected_ensemble_score": 0.986283887091129,
+        "cagr_5y": 0.937776095075059,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 59.23613963039014
+      }
+    ]
+  },
+  "repaired_retrained": {
+    "scored": 27392,
+    "short_history_universe_share": 0.0846232476635514,
+    "top20_short_history_share": 0.0,
+    "top50_short_history_share": 0.04,
+    "top100_short_history_share": 0.07,
+    "nykaa_global_rank": 99,
+    "nykaa_retail_rank": 1,
+    "nykaa_score": 0.9409668907667008,
+    "top20": [
+      {
+        "rank": 1,
+        "ticker": "BSE-539682",
+        "derived_research_sector": "Consumer Defensive",
+        "repaired_retrained_score": 0.9603818626181478,
+        "cagr_5y": 1.6438427850968216,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 126.81724845995893
+      },
+      {
+        "rank": 2,
+        "ticker": "BSE-539682",
+        "derived_research_sector": "Consumer Defensive",
+        "repaired_retrained_score": 0.9580658073090071,
+        "cagr_5y": 1.6438427850968216,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 126.81724845995893
+      },
+      {
+        "rank": 3,
+        "ticker": "BSE-539682",
+        "derived_research_sector": "Consumer Defensive",
+        "repaired_retrained_score": 0.9568941136656046,
+        "cagr_5y": 1.6438427850968216,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 126.81724845995893
+      },
+      {
+        "rank": 4,
+        "ticker": "BSE-540718",
+        "derived_research_sector": "Consumer Cyclical",
+        "repaired_retrained_score": 0.9563414340066522,
+        "cagr_5y": 1.1972571004310848,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 107.63039014373716
+      },
+      {
+        "rank": 5,
+        "ticker": "BSE-506122",
+        "derived_research_sector": "Auto Components",
+        "repaired_retrained_score": 0.9560831983815095,
+        "cagr_5y": -0.1704521513346942,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 176.26283367556468
+      },
+      {
+        "rank": 6,
+        "ticker": "BSE-543172",
+        "derived_research_sector": "Industrials",
+        "repaired_retrained_score": 0.955528853534082,
+        "cagr_5y": 1.3130588796716571,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 77.63449691991786
+      },
+      {
+        "rank": 7,
+        "ticker": "BSE-539682",
+        "derived_research_sector": "Consumer Defensive",
+        "repaired_retrained_score": 0.955528853534082,
+        "cagr_5y": 1.6438427850968216,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 126.81724845995893
+      },
+      {
+        "rank": 8,
+        "ticker": "BSE-543172",
+        "derived_research_sector": "Industrials",
+        "repaired_retrained_score": 0.9555073867625975,
+        "cagr_5y": 1.3130588796716571,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 77.63449691991786
+      },
+      {
+        "rank": 9,
+        "ticker": "BSE-539682",
+        "derived_research_sector": "Consumer Defensive",
+        "repaired_retrained_score": 0.9555073867625975,
+        "cagr_5y": 1.6438427850968216,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 126.81724845995893
+      },
+      {
+        "rank": 10,
+        "ticker": "BSE-540718",
+        "derived_research_sector": "Consumer Cyclical",
+        "repaired_retrained_score": 0.9551557885890816,
+        "cagr_5y": 1.1972571004310848,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 107.63039014373716
+      },
+      {
+        "rank": 11,
+        "ticker": "BSE-540718",
+        "derived_research_sector": "Consumer Cyclical",
+        "repaired_retrained_score": 0.9550758333998538,
+        "cagr_5y": 1.1972571004310848,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 107.63039014373716
+      },
+      {
+        "rank": 12,
+        "ticker": "BSE-540718",
+        "derived_research_sector": "Consumer Cyclical",
+        "repaired_retrained_score": 0.9522842469243343,
+        "cagr_5y": 1.1972571004310848,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 107.63039014373716
+      },
+      {
+        "rank": 13,
+        "ticker": "SOLARINDS",
+        "derived_research_sector": "Chemicals & Petrochemicals",
+        "repaired_retrained_score": 0.9517006580490928,
+        "cagr_5y": 0.5659805818950661,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 245.5195071868583
+      },
+      {
+        "rank": 14,
+        "ticker": "TDPOWERSYS",
+        "derived_research_sector": "Electrical Equipment",
+        "repaired_retrained_score": 0.9517006580490928,
+        "cagr_5y": 0.89672434199515,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 180.33675564681724
+      },
+      {
+        "rank": 15,
+        "ticker": "FOSECOIND",
+        "derived_research_sector": "Basic Materials",
+        "repaired_retrained_score": 0.9517006580490928,
+        "cagr_5y": 0.3624524875481372,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 290.59548254620125
+      },
+      {
+        "rank": 16,
+        "ticker": "BSE-501151",
+        "derived_research_sector": "Financial Services",
+        "repaired_retrained_score": 0.9517006580490928,
+        "cagr_5y": 0.6457627359103071,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 151.39219712525667
+      },
+      {
+        "rank": 17,
+        "ticker": "BSE-521036",
+        "derived_research_sector": "Consumer Cyclical",
+        "repaired_retrained_score": 0.9517006580490928,
+        "cagr_5y": 0.9266272524647825,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 178.0041067761807
+      },
+      {
+        "rank": 18,
+        "ticker": "LUMAXTECH",
+        "derived_research_sector": "Auto Components",
+        "repaired_retrained_score": 0.9517006580490928,
+        "cagr_5y": 0.7357449044030191,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 236.05749486652977
+      },
+      {
+        "rank": 19,
+        "ticker": "BSE-543172",
+        "derived_research_sector": "Industrials",
+        "repaired_retrained_score": 0.9509225373589509,
+        "cagr_5y": 1.3130588796716571,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 77.63449691991786
+      },
+      {
+        "rank": 20,
+        "ticker": "BSE-539682",
+        "derived_research_sector": "Consumer Defensive",
+        "repaired_retrained_score": 0.9509225373589509,
+        "cagr_5y": 1.6438427850968216,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 126.81724845995893
+      }
+    ]
+  },
+  "repaired_frozen_tree": {
+    "scored": 27392,
+    "short_history_universe_share": 0.0846232476635514,
+    "top20_short_history_share": 0.25,
+    "top50_short_history_share": 0.14,
+    "top100_short_history_share": 0.08,
+    "nykaa_global_rank": 1,
+    "nykaa_retail_rank": 1,
+    "nykaa_score": 0.9730692553502711,
+    "top20": [
+      {
+        "rank": 1,
+        "ticker": "NYKAA",
+        "derived_research_sector": "Retailing",
+        "repaired_frozen_tree_score": 0.9730692553502711,
+        "cagr_5y": -0.020335266212494058,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 58.25051334702259
+      },
+      {
+        "rank": 2,
+        "ticker": "LUMAXTECH",
+        "derived_research_sector": "Auto Components",
+        "repaired_frozen_tree_score": 0.9729467639680959,
+        "cagr_5y": 0.7357449044030191,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 236.05749486652977
+      },
+      {
+        "rank": 3,
+        "ticker": "SOLARINDS",
+        "derived_research_sector": "Chemicals & Petrochemicals",
+        "repaired_frozen_tree_score": 0.9724898584644615,
+        "cagr_5y": 0.5659805818950661,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 245.5195071868583
+      },
+      {
+        "rank": 4,
+        "ticker": "NYKAA",
+        "derived_research_sector": "Retailing",
+        "repaired_frozen_tree_score": 0.9724193877216338,
+        "cagr_5y": -0.020335266212494058,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 58.25051334702259
+      },
+      {
+        "rank": 5,
+        "ticker": "NYKAA",
+        "derived_research_sector": "Retailing",
+        "repaired_frozen_tree_score": 0.9723338707808624,
+        "cagr_5y": -0.020335266212494058,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 58.25051334702259
+      },
+      {
+        "rank": 6,
+        "ticker": "SHRIPISTON",
+        "derived_research_sector": "Auto Components",
+        "repaired_frozen_tree_score": 0.9721799625601487,
+        "cagr_5y": 0.5789642760902984,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 123.30184804928132
+      },
+      {
+        "rank": 7,
+        "ticker": "PRIVISCL",
+        "derived_research_sector": "Chemicals & Petrochemicals",
+        "repaired_frozen_tree_score": 0.9720174388787594,
+        "cagr_5y": 0.1278400470326237,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 136.37782340862424
+      },
+      {
+        "rank": 8,
+        "ticker": "PRIVISCL",
+        "derived_research_sector": "Chemicals & Petrochemicals",
+        "repaired_frozen_tree_score": 0.9719543904854062,
+        "cagr_5y": 0.1278400470326237,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 136.37782340862424
+      },
+      {
+        "rank": 9,
+        "ticker": "THYROCARE",
+        "derived_research_sector": "Healthcare Services",
+        "repaired_frozen_tree_score": 0.9717781360761304,
+        "cagr_5y": 0.07983140562914727,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 124.32032854209446
+      },
+      {
+        "rank": 10,
+        "ticker": "SHRIPISTON",
+        "derived_research_sector": "Auto Components",
+        "repaired_frozen_tree_score": 0.9714145156144476,
+        "cagr_5y": 0.5789642760902984,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 123.30184804928132
+      },
+      {
+        "rank": 11,
+        "ticker": "NYKAA",
+        "derived_research_sector": "Retailing",
+        "repaired_frozen_tree_score": 0.9713845582320686,
+        "cagr_5y": -0.020335266212494058,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 58.25051334702259
+      },
+      {
+        "rank": 12,
+        "ticker": "PRIVISCL",
+        "derived_research_sector": "Chemicals & Petrochemicals",
+        "repaired_frozen_tree_score": 0.971379532881319,
+        "cagr_5y": 0.1278400470326237,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 136.37782340862424
+      },
+      {
+        "rank": 13,
+        "ticker": "SHRIRAMFIN",
+        "derived_research_sector": "Finance",
+        "repaired_frozen_tree_score": 0.9709138499448657,
+        "cagr_5y": 0.3226622945760357,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 290.59548254620125
+      },
+      {
+        "rank": 14,
+        "ticker": "NYKAA",
+        "derived_research_sector": "Retailing",
+        "repaired_frozen_tree_score": 0.9708996645318695,
+        "cagr_5y": -0.020335266212494058,
+        "cagr_5y_source": "ESTIMATED",
+        "history_months": 58.25051334702259
+      },
+      {
+        "rank": 15,
+        "ticker": "SHRIRAMFIN",
+        "derived_research_sector": "Finance",
+        "repaired_frozen_tree_score": 0.9705758799132824,
+        "cagr_5y": 0.3226622945760357,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 290.59548254620125
+      },
+      {
+        "rank": 16,
+        "ticker": "PRIVISCL",
+        "derived_research_sector": "Chemicals & Petrochemicals",
+        "repaired_frozen_tree_score": 0.9705288535340819,
+        "cagr_5y": 0.1278400470326237,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 136.37782340862424
+      },
+      {
+        "rank": 17,
+        "ticker": "ACUTAAS",
+        "derived_research_sector": "Pharmaceuticals & Biotechnology",
+        "repaired_frozen_tree_score": 0.9703215150715643,
+        "cagr_5y": 0.4165106067588643,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 60.12320328542094
+      },
+      {
+        "rank": 18,
+        "ticker": "LAURUSLABS",
+        "derived_research_sector": "Pharmaceuticals & Biotechnology",
+        "repaired_frozen_tree_score": 0.9703215150715643,
+        "cagr_5y": 0.24928106213126652,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 116.96098562628337
+      },
+      {
+        "rank": 19,
+        "ticker": "FOSECOIND",
+        "derived_research_sector": "Basic Materials",
+        "repaired_frozen_tree_score": 0.9700911045703804,
+        "cagr_5y": 0.3624524875481372,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 290.59548254620125
+      },
+      {
+        "rank": 20,
+        "ticker": "PRIVISCL",
+        "derived_research_sector": "Chemicals & Petrochemicals",
+        "repaired_frozen_tree_score": 0.9699435803598658,
+        "cagr_5y": 0.1278400470326237,
+        "cagr_5y_source": "OBSERVED",
+        "history_months": 136.37782340862424
+      }
+    ]
+  }
+}

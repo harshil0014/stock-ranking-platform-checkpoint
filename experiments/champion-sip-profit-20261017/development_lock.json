@@ -1,0 +1,16 @@
+{
+  "stage": "development",
+  "scope": "expanded",
+  "treatment": "capped",
+  "model": "sip_risk_confirmed_0.01",
+  "top_n": 3,
+  "utility": -0.012648137297469261,
+  "ranking_utility": -0.01381721100812295,
+  "equal_utility": -0.01498380217710836,
+  "xirr": -0.0007435922093716463,
+  "drawdown": -0.00023335765674625808,
+  "achievement": -0.000175438596491162,
+  "shortfall": -6.404963545553893e-05,
+  "ndcg": -0.0002674188918942999,
+  "rank_ic": -8.925328268159088e-06
+}

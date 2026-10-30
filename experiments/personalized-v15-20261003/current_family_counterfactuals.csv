@@ -1,0 +1,5 @@
+family,mean_abs_score_change,p90_abs_score_change,score_changed_fraction,method
+goal_user,0.00851164074838511,0.013271605136033982,0.9825908858166923,"Within-query median replacement; correlated family diagnostic, not causal effect"
+growth,0.03298090327725815,0.07169342759614507,0.9931728963987029,"Within-query median replacement; correlated family diagnostic, not causal effect"
+ath,0.02648731285370796,0.05970563936397857,0.9885646014678273,"Within-query median replacement; correlated family diagnostic, not causal effect"
+risk,0.020473433592244367,0.03874150105212714,0.9914661204983786,"Within-query median replacement; correlated family diagnostic, not causal effect"

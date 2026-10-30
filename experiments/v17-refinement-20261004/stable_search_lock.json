@@ -1,0 +1,398 @@
+{
+  "locked_at": "2026-10-03T21:09:19.030240+00:00",
+  "choices": [
+    {
+      "name": "original_a0.3_b0.0_broad",
+      "long_kind": "original",
+      "long_alpha": 0.3,
+      "family": "none",
+      "beta": 0.0,
+      "gate": "broad"
+    },
+    {
+      "name": "original_a0.3_b0.025_broad",
+      "long_kind": "original",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.025,
+      "gate": "broad"
+    },
+    {
+      "name": "original_a0.3_b0.025_volatility",
+      "long_kind": "original",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.025,
+      "gate": "volatility"
+    },
+    {
+      "name": "original_a0.3_b0.05_broad",
+      "long_kind": "original",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.05,
+      "gate": "broad"
+    },
+    {
+      "name": "original_a0.3_b0.05_volatility",
+      "long_kind": "original",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.05,
+      "gate": "volatility"
+    },
+    {
+      "name": "original_a0.3_b0.1_broad",
+      "long_kind": "original",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.1,
+      "gate": "broad"
+    },
+    {
+      "name": "original_a0.3_b0.1_volatility",
+      "long_kind": "original",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.1,
+      "gate": "volatility"
+    },
+    {
+      "name": "stable100_a0.1_b0.0_broad",
+      "long_kind": "stable100",
+      "long_alpha": 0.1,
+      "family": "none",
+      "beta": 0.0,
+      "gate": "broad"
+    },
+    {
+      "name": "stable100_a0.1_b0.025_broad",
+      "long_kind": "stable100",
+      "long_alpha": 0.1,
+      "family": "regime_utility",
+      "beta": 0.025,
+      "gate": "broad"
+    },
+    {
+      "name": "stable100_a0.1_b0.025_volatility",
+      "long_kind": "stable100",
+      "long_alpha": 0.1,
+      "family": "regime_utility",
+      "beta": 0.025,
+      "gate": "volatility"
+    },
+    {
+      "name": "stable100_a0.1_b0.05_broad",
+      "long_kind": "stable100",
+      "long_alpha": 0.1,
+      "family": "regime_utility",
+      "beta": 0.05,
+      "gate": "broad"
+    },
+    {
+      "name": "stable100_a0.1_b0.05_volatility",
+      "long_kind": "stable100",
+      "long_alpha": 0.1,
+      "family": "regime_utility",
+      "beta": 0.05,
+      "gate": "volatility"
+    },
+    {
+      "name": "stable100_a0.1_b0.1_broad",
+      "long_kind": "stable100",
+      "long_alpha": 0.1,
+      "family": "regime_utility",
+      "beta": 0.1,
+      "gate": "broad"
+    },
+    {
+      "name": "stable100_a0.1_b0.1_volatility",
+      "long_kind": "stable100",
+      "long_alpha": 0.1,
+      "family": "regime_utility",
+      "beta": 0.1,
+      "gate": "volatility"
+    },
+    {
+      "name": "stable100_a0.2_b0.0_broad",
+      "long_kind": "stable100",
+      "long_alpha": 0.2,
+      "family": "none",
+      "beta": 0.0,
+      "gate": "broad"
+    },
+    {
+      "name": "stable100_a0.2_b0.025_broad",
+      "long_kind": "stable100",
+      "long_alpha": 0.2,
+      "family": "regime_utility",
+      "beta": 0.025,
+      "gate": "broad"
+    },
+    {
+      "name": "stable100_a0.2_b0.025_volatility",
+      "long_kind": "stable100",
+      "long_alpha": 0.2,
+      "family": "regime_utility",
+      "beta": 0.025,
+      "gate": "volatility"
+    },
+    {
+      "name": "stable100_a0.2_b0.05_broad",
+      "long_kind": "stable100",
+      "long_alpha": 0.2,
+      "family": "regime_utility",
+      "beta": 0.05,
+      "gate": "broad"
+    },
+    {
+      "name": "stable100_a0.2_b0.05_volatility",
+      "long_kind": "stable100",
+      "long_alpha": 0.2,
+      "family": "regime_utility",
+      "beta": 0.05,
+      "gate": "volatility"
+    },
+    {
+      "name": "stable100_a0.2_b0.1_broad",
+      "long_kind": "stable100",
+      "long_alpha": 0.2,
+      "family": "regime_utility",
+      "beta": 0.1,
+      "gate": "broad"
+    },
+    {
+      "name": "stable100_a0.2_b0.1_volatility",
+      "long_kind": "stable100",
+      "long_alpha": 0.2,
+      "family": "regime_utility",
+      "beta": 0.1,
+      "gate": "volatility"
+    },
+    {
+      "name": "stable100_a0.3_b0.0_broad",
+      "long_kind": "stable100",
+      "long_alpha": 0.3,
+      "family": "none",
+      "beta": 0.0,
+      "gate": "broad"
+    },
+    {
+      "name": "stable100_a0.3_b0.025_broad",
+      "long_kind": "stable100",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.025,
+      "gate": "broad"
+    },
+    {
+      "name": "stable100_a0.3_b0.025_volatility",
+      "long_kind": "stable100",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.025,
+      "gate": "volatility"
+    },
+    {
+      "name": "stable100_a0.3_b0.05_broad",
+      "long_kind": "stable100",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.05,
+      "gate": "broad"
+    },
+    {
+      "name": "stable100_a0.3_b0.05_volatility",
+      "long_kind": "stable100",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.05,
+      "gate": "volatility"
+    },
+    {
+      "name": "stable100_a0.3_b0.1_broad",
+      "long_kind": "stable100",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.1,
+      "gate": "broad"
+    },
+    {
+      "name": "stable100_a0.3_b0.1_volatility",
+      "long_kind": "stable100",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.1,
+      "gate": "volatility"
+    },
+    {
+      "name": "stableavg_a0.1_b0.0_broad",
+      "long_kind": "stableavg",
+      "long_alpha": 0.1,
+      "family": "none",
+      "beta": 0.0,
+      "gate": "broad"
+    },
+    {
+      "name": "stableavg_a0.1_b0.025_broad",
+      "long_kind": "stableavg",
+      "long_alpha": 0.1,
+      "family": "regime_utility",
+      "beta": 0.025,
+      "gate": "broad"
+    },
+    {
+      "name": "stableavg_a0.1_b0.025_volatility",
+      "long_kind": "stableavg",
+      "long_alpha": 0.1,
+      "family": "regime_utility",
+      "beta": 0.025,
+      "gate": "volatility"
+    },
+    {
+      "name": "stableavg_a0.1_b0.05_broad",
+      "long_kind": "stableavg",
+      "long_alpha": 0.1,
+      "family": "regime_utility",
+      "beta": 0.05,
+      "gate": "broad"
+    },
+    {
+      "name": "stableavg_a0.1_b0.05_volatility",
+      "long_kind": "stableavg",
+      "long_alpha": 0.1,
+      "family": "regime_utility",
+      "beta": 0.05,
+      "gate": "volatility"
+    },
+    {
+      "name": "stableavg_a0.1_b0.1_broad",
+      "long_kind": "stableavg",
+      "long_alpha": 0.1,
+      "family": "regime_utility",
+      "beta": 0.1,
+      "gate": "broad"
+    },
+    {
+      "name": "stableavg_a0.1_b0.1_volatility",
+      "long_kind": "stableavg",
+      "long_alpha": 0.1,
+      "family": "regime_utility",
+      "beta": 0.1,
+      "gate": "volatility"
+    },
+    {
+      "name": "stableavg_a0.2_b0.0_broad",
+      "long_kind": "stableavg",
+      "long_alpha": 0.2,
+      "family": "none",
+      "beta": 0.0,
+      "gate": "broad"
+    },
+    {
+      "name": "stableavg_a0.2_b0.025_broad",
+      "long_kind": "stableavg",
+      "long_alpha": 0.2,
+      "family": "regime_utility",
+      "beta": 0.025,
+      "gate": "broad"
+    },
+    {
+      "name": "stableavg_a0.2_b0.025_volatility",
+      "long_kind": "stableavg",
+      "long_alpha": 0.2,
+      "family": "regime_utility",
+      "beta": 0.025,
+      "gate": "volatility"
+    },
+    {
+      "name": "stableavg_a0.2_b0.05_broad",
+      "long_kind": "stableavg",
+      "long_alpha": 0.2,
+      "family": "regime_utility",
+      "beta": 0.05,
+      "gate": "broad"
+    },
+    {
+      "name": "stableavg_a0.2_b0.05_volatility",
+      "long_kind": "stableavg",
+      "long_alpha": 0.2,
+      "family": "regime_utility",
+      "beta": 0.05,
+      "gate": "volatility"
+    },
+    {
+      "name": "stableavg_a0.2_b0.1_broad",
+      "long_kind": "stableavg",
+      "long_alpha": 0.2,
+      "family": "regime_utility",
+      "beta": 0.1,
+      "gate": "broad"
+    },
+    {
+      "name": "stableavg_a0.2_b0.1_volatility",
+      "long_kind": "stableavg",
+      "long_alpha": 0.2,
+      "family": "regime_utility",
+      "beta": 0.1,
+      "gate": "volatility"
+    },
+    {
+      "name": "stableavg_a0.3_b0.0_broad",
+      "long_kind": "stableavg",
+      "long_alpha": 0.3,
+      "family": "none",
+      "beta": 0.0,
+      "gate": "broad"
+    },
+    {
+      "name": "stableavg_a0.3_b0.025_broad",
+      "long_kind": "stableavg",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.025,
+      "gate": "broad"
+    },
+    {
+      "name": "stableavg_a0.3_b0.025_volatility",
+      "long_kind": "stableavg",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.025,
+      "gate": "volatility"
+    },
+    {
+      "name": "stableavg_a0.3_b0.05_broad",
+      "long_kind": "stableavg",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.05,
+      "gate": "broad"
+    },
+    {
+      "name": "stableavg_a0.3_b0.05_volatility",
+      "long_kind": "stableavg",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.05,
+      "gate": "volatility"
+    },
+    {
+      "name": "stableavg_a0.3_b0.1_broad",
+      "long_kind": "stableavg",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.1,
+      "gate": "broad"
+    },
+    {
+      "name": "stableavg_a0.3_b0.1_volatility",
+      "long_kind": "stableavg",
+      "long_alpha": 0.3,
+      "family": "regime_utility",
+      "beta": 0.1,
+      "gate": "volatility"
+    }
+  ],
+  "unchanged_gates": true
+}

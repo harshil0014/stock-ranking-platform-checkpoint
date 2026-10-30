@@ -1,0 +1,81 @@
+{
+  "schema": "frozen_d499580_professor_current_manifest_v1",
+  "manifest_excludes_itself": true,
+  "files": [
+    {
+      "path": "experiments/professor-current-fallback-20261003/champion-data-refresh-research-v1/all_profile_rank_comparison.csv.gz",
+      "bytes": 2311783,
+      "sha256": "93d516538005f444b8888342463fa0d13f9401a3295392c400f31b03dbac12ee"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/champion-data-refresh-research-v1/audit.json",
+      "bytes": 418,
+      "sha256": "f3da09ae34042c12346553cd3e6dcf4c63e5e8d0d38f9ab6fbcde534ca9d2c94"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/champion-data-refresh-research-v1/largest_rank_moves.csv",
+      "bytes": 45641,
+      "sha256": "efef95d3885b2e45b11d201c1185da146b02a0d8b037c65e8b924b5328bda95e"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/champion-data-refresh-research-v1/new_top100.csv",
+      "bytes": 219672,
+      "sha256": "3c85be6dcd008a4fa1ca8546dbafef36cdbe573c50c1252bc3a3e68e9c48922c"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/champion-data-refresh-research-v1/new_top20.csv",
+      "bytes": 42370,
+      "sha256": "9701bc785bb297965fc8b4fb3bb3ab216af5dc38d38e557a4f44571e10a76c1b"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/champion-data-refresh-research-v1/new_top50.csv",
+      "bytes": 109544,
+      "sha256": "e3abfbde9d52372fa9593638ccbcd754782534bbb4421b6afa7751c8f490451c"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/champion-data-refresh-research-v1/nykaa_diagnostic.csv",
+      "bytes": 1980,
+      "sha256": "cde6e78e3b6776bb9129b240fe775abee86dc8b49076cbbbbeb629dcf630c528"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/champion-data-refresh-research-v1/profile_summary.csv",
+      "bytes": 796,
+      "sha256": "28f5f468645cb8d63b3fe9e0758650afff6e6e4dbd4ab8b41a10e38eca78c4ea"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/champion-data-refresh-research-v1/summary.json",
+      "bytes": 5579,
+      "sha256": "7e3d09debd5f3a1b9e20ca05c647cae7289de6a875298973f1614772ae797dbb"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/champion-data-refresh-research-v1/top_membership_changes.csv",
+      "bytes": 19390,
+      "sha256": "64c55618ae69a00a544a189438d6431ea12f6c4d0b369536837406fc9e0df2c9"
+    },
+    {
+      "path": "experiments/professor-current-fallback-20261003/champion-data-refresh-research-v1/top_set_comparison.csv",
+      "bytes": 40423,
+      "sha256": "fa06fd2f7071a51571d23bfdb483cc09a12d75fd2e8bf3749e05dbbd72fe7c50"
+    },
+    {
+      "path": "research/runners/run_frozen_champion_professor_current_20261003.py",
+      "bytes": 11364,
+      "sha256": "827b472fbb565e46023f60620e22a36b3a7e8e09178add60ff75d664857d1426"
+    },
+    {
+      "path": "research/runners/audit_frozen_champion_professor_current_20261003.py",
+      "bytes": 4191,
+      "sha256": "3c8fe690ac580011dbeaf7e6c81913527b2c598bb2e2a41819a9c50a9aec4141"
+    },
+    {
+      "path": "research/runners/manifest_frozen_champion_professor_current_20261003.py",
+      "bytes": 1364,
+      "sha256": "f114e9adc472e5e07952349ceee9e5b539d9c390a185e4269fa15c504fcfcdf2"
+    },
+    {
+      "path": "research/reports/professor_current_champion_data_refresh_20261003.md",
+      "bytes": 6040,
+      "sha256": "f14db5cb861868ebb808919771b6233d36dca359b1a742c72fc5b3d030cd9469"
+    }
+  ]
+}

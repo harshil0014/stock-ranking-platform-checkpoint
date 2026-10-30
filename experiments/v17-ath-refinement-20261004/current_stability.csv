@@ -1,0 +1,10 @@
+profile,top20_overlap
+amount1000,0.85
+amount50000,0.85
+base7500,0.85
+lookback12,0.6
+lookback60,0.85
+quarterly,0.85
+target10,0.9
+target30,0.85
+weekly,0.9

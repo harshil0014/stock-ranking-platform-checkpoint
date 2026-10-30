@@ -1,0 +1,10 @@
+profile_name,days_since_recorded_high,distance_from_recorded_high,winner_rank,peak_rank
+amount1000,1765.0,-0.21796153,4.0,5.0
+amount50000,1765.0,-0.21796153,5.0,5.0
+base7500,1765.0,-0.21796153,4.0,5.0
+lookback12,1765.0,-0.21796153,43.0,26.0
+lookback60,1765.0,-0.21796153,,
+quarterly,1765.0,-0.21796153,4.0,4.0
+target10,1765.0,-0.21796153,2.0,4.0
+target30,1765.0,-0.21796153,5.0,5.0
+weekly,1765.0,-0.21796153,4.0,5.0

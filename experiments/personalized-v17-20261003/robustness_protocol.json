@@ -1,0 +1,11 @@
+{
+  "locked_at": "2026-10-03T17:01:51.852680+00:00",
+  "finalist_sha256": "844d9a9637995ef20e9a2da219d1dfd7dc716d2adf900dc6a929ad0ae764cc34",
+  "seeds": [
+    20261004,
+    20261005
+  ],
+  "refresh_check": "Refit at each of all16 decision dates, seed20261003, strict endpoint maturity.",
+  "acceptance": "All original V15 gates and nonnegative12M return/drawdown must survive each seed and per-date refresh; report additional all-profile checks without hiding any instability. No threshold adjustment.",
+  "cohorts": "All profiles; short/full history, high volatility, deep drawdown, deep/old/recent ATH; evaluated after finalist selection."
+}

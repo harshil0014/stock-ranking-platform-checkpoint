@@ -1,0 +1,45 @@
+{
+  "schema": "current_data_recovery_v2",
+  "cutoff": "2026-09-18",
+  "cleanup_additional_cells": 86,
+  "missing_after": {
+    "product_baseline_yoy_growth": 282,
+    "product_baseline_cagr_3y": 646,
+    "product_baseline_cagr_5y": 870,
+    "product_baseline_days_since_recorded_high": 39,
+    "current_cagr_7y": 1043,
+    "current_cagr_10y": 1476,
+    "recorded_high": 39,
+    "recorded_high_date": 39
+  },
+  "remaining_missing_reason_counts": {
+    "product_baseline_yoy_growth": {
+      "missing": 282,
+      "listing_too_young": 140,
+      "observed_history_starts_too_late": 250
+    },
+    "product_baseline_cagr_3y": {
+      "missing": 646,
+      "listing_too_young": 352,
+      "observed_history_starts_too_late": 600
+    },
+    "product_baseline_cagr_5y": {
+      "missing": 870,
+      "listing_too_young": 486,
+      "observed_history_starts_too_late": 812
+    },
+    "current_cagr_7y": {
+      "missing": 1043,
+      "listing_too_young": 603,
+      "observed_history_starts_too_late": 959
+    },
+    "current_cagr_10y": {
+      "missing": 1476,
+      "listing_too_young": 911,
+      "observed_history_starts_too_late": 1393
+    }
+  },
+  "existing_nonblank_overwritten": 0,
+  "historical_training_modified": false,
+  "production_modified": false
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "name": "ceigall_fy2026",
+    "url": "https://ceigall.com/wp-content/uploads/2026/08/Annual-Report-2025-26.pdf",
+    "error": "406 Client Error: Not Acceptable for url: https://ceigall.com/wp-content/uploads/2026/08/Annual-Report-2025-26.pdf"
+  },
+  {
+    "name": "gptinfra_fy2026",
+    "url": "https://gpt-infra.s3.ap-south-1.amazonaws.com/annual-reports/10_07_2026_GIL_Annual_Report_Web_Upload_2025-26.pdf",
+    "path": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\sector-specialist-ensemble-20261011\\issuer_review\\followup\\gptinfra_fy2026.pdf",
+    "sha256": "52570b1decbcd46c102f6c02a934ab1bf578487b2f1ad235e66d4c17a3f9c3f4",
+    "pages": 220,
+    "matched_pages": [
+      92,
+      107,
+      134,
+      163,
+      180,
+      204
+    ]
+  },
+  {
+    "name": "anandrathi_fy2026",
+    "url": "https://www.anandrathiwealth.in/wealthpdf/27april2026/AnnualReport2025-26.pdf",
+    "path": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\sector-specialist-ensemble-20261011\\issuer_review\\followup\\anandrathi_fy2026.pdf",
+    "sha256": "d0bd1131001584cd05639ee9ef86338bd64e157f8b061bc0b9543ee4f737d7d9",
+    "pages": 283,
+    "matched_pages": [
+      155,
+      165,
+      211,
+      212,
+      223
+    ]
+  }
+]

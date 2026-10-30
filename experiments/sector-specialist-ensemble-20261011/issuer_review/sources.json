@@ -1,0 +1,16 @@
+[
+  {
+    "file": "ionexchange_fy2026.pdf",
+    "url": "https://ionexchangeglobal.com/app/uploads/2026/05/Audited-Financial-Results-for-the-quarter-and-year-ended-31st-March-2026.pdf",
+    "sha256": "465dd6cff99de0b2cc4c2972cbfbc6ee4aab6710bc12621909f039f07665e2c4",
+    "review_date": "2026-10-11",
+    "used_for_historical_training": false
+  },
+  {
+    "file": "ramrat_fy2026.pdf",
+    "url": "https://www.rrshramik.com/wp-content/uploads/sites/2/2026/06/Annual-Report-2025-26-.pdf",
+    "sha256": "17cd86e934f8206854668c1838c4735a126203465d9b9a26115790566bfb1185",
+    "review_date": "2026-10-11",
+    "used_for_historical_training": false
+  }
+]

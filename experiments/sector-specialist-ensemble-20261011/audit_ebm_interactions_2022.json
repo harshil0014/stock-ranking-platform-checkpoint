@@ -1,0 +1,16 @@
+{
+  "year": 2022,
+  "family": "ebm_interactions",
+  "training_rows": 459088,
+  "training_queries": 8915,
+  "training_min_date": "2016-03-31",
+  "maximum_endpoint": "2021-12-31",
+  "cutoff": "2022-01-01",
+  "inference_rows": 112401,
+  "seconds": 72.98797798156738,
+  "replay_max_error": 0.0,
+  "model_sha256": "9b61db07ffa57596600cdeea6888eb81a02471a616c78ef6d6b0782085303eb6",
+  "prediction_sha256": "3e36fb59ea01fd87d3dbd18ed80c9734e115e6e52015d31992949a87dc640504",
+  "training_identity_sha256": "0927daac7caa0502bebbfa023e7c550b2ded060e9cf90f7c7781c404dc981563",
+  "training_loss": null
+}

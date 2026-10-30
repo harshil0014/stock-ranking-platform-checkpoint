@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "top100_individual_notes": 100,
+  "age_universe": 4436,
+  "eligible": 1773,
+  "professor_common_population": 1755,
+  "professor_missing_scores": 18,
+  "source_hashes_unchanged": true,
+  "age_attribution_and_ranks_verified": true,
+  "artifact_sha256": {
+    "age_history_definitions.csv": "1f3d3c3712292f772068174e1d3f3ee3f7fc3e9dbeb8a59b00c4f50eb2288f9c",
+    "age_raw_history_receipts.csv": "3799e9764b9fff844d1c75651a24852149eee1e7e79cc0566419c609e1edb259",
+    "age_review.md": "29f349d3544ec3a78ed8c3f21e34f6f5f04273c57746aff9a9fc1b4f9339330e",
+    "age_sensitivity.csv": "16ce27c4dacdd74a64e6258fac6a0d1603d2b7b7dd6383646d5ad44dae4312b7",
+    "age_summary.json": "5a00fd0d0854c344792327b081b18cc2f516f0d41a5d31993201cdb1cdf65ee1",
+    "company_due_diligence.csv": "03d7a16c7e5acebbf4305d07c361b4fa68238ef2e1be53e08062f4ca33d7e881",
+    "company_due_diligence.md": "0618ae2c361f7f10716e66a934eca965ce188db6df04e33b21aff3cb1f460317",
+    "professor_audit.md": "461181dafbe2b0da782f3ca2800e4d811969d2f7f1b7d04e4d4babf53ce7d5a9",
+    "professor_formula_evidence.json": "67c1206bd535862819117de27de520a2e3aa3dda59f052ff8d673b527a25d66c",
+    "professor_missing_score_eligible.csv": "83fc381c341cd4303cffc0ca2d57eae4e586dcb5cf287b915f22e5686918cc2d",
+    "professor_same_universe_comparison.csv": "6fecf97e5eb2b7f4310d15c5b9fc658f789ddfcaa45dfdcfae4b8923c8554624",
+    "professor_screenshot_transcription.csv": "a55a58c605876640a4c6cce9f84c8630a5ed7e87f30d111e624b5795c1c52386",
+    "professor_stock_comparison.csv": "9f83f815f88a443cc8e131bd16a68c9c91cb74c9d8efb21a2cb705e16f8b9254",
+    "professor_summary.json": "01bb81b80b60cce35aa1a0f88e73bc062e150043b040c166132fa73358659b6f",
+    "review.md": "7db7eff5de843c217117f87c63027520bc9bd9a93f839aea43a59a188d3ab1a2",
+    "sector_concentration.csv": "b5ed0b18841c30ec6d52c7eea107ff1dd5cb22dcd87afc586cd31f17a936028a",
+    "top100_stock_by_stock_review.csv": "f9391780efc779258a94ed7d0a02776d3bb6e9a2c61c3f61e55edac4234c1512",
+    "top100_stock_by_stock_review.md": "e42e4f20a914dd293ecd7d4274829aacde7daa41b53a23086588d43632018ff4",
+    "top100_summary.json": "d65a02d08486653b4f2a65f672b67ed07069432f9aa75813f803513d8aac9fe9"
+  }
+}

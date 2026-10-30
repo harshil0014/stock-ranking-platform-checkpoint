@@ -1,0 +1,3 @@
+bse_code,short_name,long_name,ex_date,record_date,purpose,event_type,bc_start_date,bc_end_date,no_delivery_start,no_delivery_end,payment_date,source,source_chunk,response_sha256
+526570,REMAGNET,Midwest Energy Ltd,25 Sep 2026,25 Sep 2026,Stock  Split From Rs.10/- to Rs.1/-,SPLIT,,,25 Sep 2026,25 Sep 2026,,BSE_DefaultData_exact_scrip,2026-09-19..2026-09-30,88f082be10e6335910e45defbe20d0c95d5ec1bdf17da244aba3296b8ff96309
+538926,NAPL,Naturite Agro Products Ltd,25 Sep 2026,25 Sep 2026,Stock  Split From Rs.10/- to Rs.5/-,SPLIT,,,25 Sep 2026,25 Sep 2026,,BSE_DefaultData_exact_scrip,2026-09-19..2026-09-30,d02849154549c005b6a5ab21c7b937681e62b679a92356056eac9ebe22b64e06

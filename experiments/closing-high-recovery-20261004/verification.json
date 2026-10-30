@@ -1,0 +1,31 @@
+{
+  "profiles_reproduced": 9,
+  "universe": 4436,
+  "eligible": 1747,
+  "paired_historical_comparisons": 396,
+  "identical_historical_populations": true,
+  "professor_common_population": 1729,
+  "professor_top100_overlap": 18,
+  "professor_spearman": 0.7652550047305904,
+  "sme_gate_count": 357,
+  "files": {
+    "current_plan_history_audit.csv": "ba562daa672079d0565d78ce8e8e42276d9b8a89ba335010d99e2d5ace51157a",
+    "current_rankings.csv.gz": "bec748099715a6352b997413a41b2b8bd34fa603b9c825633bd881743a30c3ce",
+    "current_top100.csv": "7d27f656f8d57bfb4f4a0f93fe38d663f8a18f0622a4e7b38297ab68f9e6a6f1",
+    "default_rank_changes.csv": "7975f687332a7174904fb3d457c9d2cb5bd4e5bbe395ccc4139ef7677e5b8089",
+    "development_scores.csv.gz": "9f6952e5989832cb6dab3d88cc5ae397b9893c52eac3d57b3207932d1581670e",
+    "early_scores.csv.gz": "1584cd94abcb781677947ddbcb841a12fa38251fc273bbe0cdcaad9c4278b9e3",
+    "exposed_scores.csv.gz": "b801061ea3b1fd0c87b28a39d537bf26938057e5c7bfefa8254508589d1430b5",
+    "metrics.csv": "2b7cb2d2e14b066df134ab79271eacd2aff3b1676ba71a08191d409d46caa6db",
+    "paired_historical_metrics.csv": "fbe511396ba04d150f833532f829cc7ff49e9b194eefd46a8589bdad2c857d77",
+    "peak_actions.csv.gz": "74ba94c5a1be078a95a84708d26fb8bbdec6fd25ab140d67bc875951fc203361",
+    "peak_current.csv.gz": "da3f165f06e21eebbb884574338e08657dac153c7e645fb21a2a870bcc8822bd",
+    "peak_features_reviewed.csv.gz": "3e35d36172b55bc19de7898bdfce0999ab65eff46632757125b8f26f7152c023",
+    "professor_common_comparison.csv": "74a7f2db6aaecae1e776c152e2505955adbb33108f3739b2cd0255f0596fc294",
+    "reviewed_current_rankings.csv.gz": "6de4e6345a07439d092de9357cfa472269ce51bb173b9beea3ca0c1b8f55f356",
+    "reviewed_top100.csv": "3340d1df94ce8d2c4b79e5625e0c637e45f4e89eef2ba00217700df918c157d6",
+    "reviewed_top20.csv": "9bfa53fa1cee3ecc598d403156c70e8792f5eb8c2b081f41af400ca9c7605f29",
+    "reviewed_top50.csv": "92d392ba3ed9806c70adc19129eddb2a3bc7ac5eb7cd61d6ac433ead3f6daf4c",
+    "summary.csv": "8f2143444c9a9b8eb24e290966738f4a03180d85fdaa88fbe75e44daccbd003d"
+  }
+}

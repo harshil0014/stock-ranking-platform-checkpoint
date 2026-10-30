@@ -1,0 +1,15 @@
+{
+  "finalists": [
+    "pfn_balanced_absolute_soft1.0_d3_w0.1",
+    "lgb_return_full_d3_w0.1",
+    "lgb_balanced_pool_d5_w0.1",
+    "pfn_balanced_residual_soft1.0_d5_w0.5",
+    "lgb_return_full_d3_w0.5"
+  ],
+  "accuracy_leaders": [
+    "pfn_balanced_residual_soft1.0_d5_w0.5",
+    "lgb_return_full_d3_w0.5"
+  ],
+  "selection": "development only; includes pre-evaluation whole-sector accuracy amendment",
+  "development_trials_sha256": "47e0be669d3ce1e204695b21ab520dfa0f898d05cc3f0e91e1c1299a635ba47b"
+}

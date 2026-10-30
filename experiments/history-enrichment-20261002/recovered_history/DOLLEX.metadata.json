@@ -1,0 +1,19 @@
+{
+  "ticker": "DOLLEX",
+  "isin": "INE0JHH01011",
+  "provider": "DOLLEX.NS",
+  "trade_date": "2026-09-18",
+  "official_price": 37.2,
+  "status": "RECOVERED",
+  "rows": 921,
+  "first_date": "2022-12-28",
+  "last_date": "2026-09-18",
+  "terminal_lag_days": 0,
+  "terminal_relative_difference": 2.050912500760293e-08,
+  "listing_date": "2026-09-11",
+  "history_precedes_listing_date": true,
+  "csv_sha256": "cf84ffb84731e543daf9b783b1311434da592b1496de38598350fc080c23735f",
+  "source": "Yahoo Finance secondary history",
+  "identity_mapping": "exact NSE ticker -> .NS",
+  "accepted_for_research_overlay": true
+}

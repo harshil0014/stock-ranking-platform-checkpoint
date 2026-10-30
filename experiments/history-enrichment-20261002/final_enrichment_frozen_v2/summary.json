@@ -1,0 +1,23 @@
+{
+  "accepted_history": 4374,
+  "accepted_stale_terminal_8_21d": 2931,
+  "accepted_state_mutated": false,
+  "company_fact_fingerprint": "4064dc5b0a12fc385150a08e23a61f230b0f2acfcee76e394c8e80cee48d741e",
+  "current_terminal_0_7d": 1499,
+  "cutoff": "2026-09-18",
+  "days_since_recorded_high": 4432,
+  "estimated_long_term_growth": 1309,
+  "full_history_max_drawdown": 4430,
+  "history_metrics": 4430,
+  "invalid_history": 2,
+  "long_term_growth_value": 4436,
+  "no_valid_history": 4,
+  "observed_long_term_growth": 3127,
+  "realized_volatility_1y": 4398,
+  "recorded_high": 4432,
+  "recovered_history": 58,
+  "rows": 4436,
+  "strict_cagr_1y": 3825,
+  "strict_cagr_3y": 3419,
+  "strict_cagr_5y": 3127
+}

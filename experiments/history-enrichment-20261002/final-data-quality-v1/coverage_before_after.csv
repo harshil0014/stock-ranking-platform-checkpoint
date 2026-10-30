@@ -1,0 +1,16 @@
+metric,before_present,after_present,delta_present,after_missing
+history_months,4372,4432,60,4
+strict_cagr_1y,3823,3827,4,609
+strict_cagr_3y,3417,3421,4,1015
+strict_cagr_5y,3126,3129,3,1307
+long_term_growth_value,4436,4436,0,0
+recorded_high_price,4374,4432,58,4
+days_since_recorded_high,4374,4432,58,4
+distance_from_recorded_high,4372,4432,60,4
+distance_from_52w_high,4372,4432,60,4
+full_history_max_drawdown,4372,4432,60,4
+current_drawdown_duration_days,4372,4432,60,4
+max_drawdown_duration_days,4372,4432,60,4
+recovery_from_worst_trough,4372,4432,60,4
+realized_volatility_1y,4358,4400,42,36
+downside_volatility_1y,4358,4400,42,36

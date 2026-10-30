@@ -1,0 +1,122 @@
+{
+  "created_at": "2026-10-04T12:34:25.653267+00:00",
+  "candidates": [
+    {
+      "name": "support_h0.2_q0.025",
+      "family": "support",
+      "high": 0.2,
+      "weight": 0.025
+    },
+    {
+      "name": "support_h0.2_q0.05",
+      "family": "support",
+      "high": 0.2,
+      "weight": 0.05
+    },
+    {
+      "name": "support_h0.2_q0.1",
+      "family": "support",
+      "high": 0.2,
+      "weight": 0.1
+    },
+    {
+      "name": "support_h0.3_q0.025",
+      "family": "support",
+      "high": 0.3,
+      "weight": 0.025
+    },
+    {
+      "name": "support_h0.3_q0.05",
+      "family": "support",
+      "high": 0.3,
+      "weight": 0.05
+    },
+    {
+      "name": "support_h0.3_q0.1",
+      "family": "support",
+      "high": 0.3,
+      "weight": 0.1
+    },
+    {
+      "name": "downside_h0.2_q0.025",
+      "family": "downside",
+      "high": 0.2,
+      "weight": 0.025
+    },
+    {
+      "name": "downside_h0.2_q0.05",
+      "family": "downside",
+      "high": 0.2,
+      "weight": 0.05
+    },
+    {
+      "name": "downside_h0.2_q0.1",
+      "family": "downside",
+      "high": 0.2,
+      "weight": 0.1
+    },
+    {
+      "name": "downside_h0.3_q0.025",
+      "family": "downside",
+      "high": 0.3,
+      "weight": 0.025
+    },
+    {
+      "name": "downside_h0.3_q0.05",
+      "family": "downside",
+      "high": 0.3,
+      "weight": 0.05
+    },
+    {
+      "name": "downside_h0.3_q0.1",
+      "family": "downside",
+      "high": 0.3,
+      "weight": 0.1
+    },
+    {
+      "name": "combined_h0.2_q0.025",
+      "family": "combined",
+      "high": 0.2,
+      "weight": 0.025
+    },
+    {
+      "name": "combined_h0.2_q0.05",
+      "family": "combined",
+      "high": 0.2,
+      "weight": 0.05
+    },
+    {
+      "name": "combined_h0.2_q0.1",
+      "family": "combined",
+      "high": 0.2,
+      "weight": 0.1
+    },
+    {
+      "name": "combined_h0.3_q0.025",
+      "family": "combined",
+      "high": 0.3,
+      "weight": 0.025
+    },
+    {
+      "name": "combined_h0.3_q0.05",
+      "family": "combined",
+      "high": 0.3,
+      "weight": 0.05
+    },
+    {
+      "name": "combined_h0.3_q0.1",
+      "family": "combined",
+      "high": 0.3,
+      "weight": 0.1
+    }
+  ],
+  "formula": "(0.9-high-weight)*V17 + high*closing_high_component + 0.1*momentum_12_1_percentile + weight*confirmation",
+  "confirmation": "Support is the percentile of share of past-year closes within 10% of that years maximum; downside is inverse downside-volatility percentile; combined is their equal mean. Missing values neutral 0.5.",
+  "selection": "Development 2020-2023 only. Require aggregate median XIRR, drawdown, NDCG, achievement nonnegative and shortfall nonpositive versus the previous priority model on the identical eligible universe. Choose largest utility, then smaller weight.",
+  "exposure": "All historical periods have prior research exposure. Later/earlier periods and current ranks used after locking this round. No blind-validation claim.",
+  "reference": "Prior priority model and its trading screen are fixed. These new proxies are not a replication of FIP information discreteness.",
+  "sources": [
+    "https://academic.oup.com/rfs/article-abstract/27/7/2171/1578455",
+    "https://academic.oup.com/rof/article/29/1/241/7772889"
+  ]
+}

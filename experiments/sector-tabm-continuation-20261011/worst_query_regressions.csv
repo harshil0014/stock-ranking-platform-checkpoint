@@ -1,0 +1,601 @@
+period,date,profile,sector,top_n,scope,return_treatment,oriented_delta,model,metric
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,common,raw,-81.30795982415243,tabm_compact_e24_return_w0.3,xirr
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,expanded,raw,-81.30795982415243,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,lookback60,Capital Markets,1,common,raw,-16.827382545951398,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,lookback60,Capital Markets,1,expanded,raw,-16.827382545951398,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,lookback12,Capital Markets,1,common,raw,-16.614901062896514,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,lookback12,Capital Markets,1,expanded,raw,-16.614901062896514,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,quarterly,Capital Markets,3,common,raw,-15.142202042049647,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,quarterly,Capital Markets,3,expanded,raw,-15.142202042049647,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,weekly,Capital Markets,3,common,raw,-14.80754556605883,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,weekly,Capital Markets,3,expanded,raw,-14.80754556605883,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,lookback60,Capital Markets,3,expanded,raw,-14.20725834124234,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,lookback60,Capital Markets,3,common,raw,-13.994776858187459,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,target30,Capital Markets,3,common,raw,-13.994776858187459,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,base7500,Capital Markets,3,common,raw,-13.994776858187459,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,target10,Capital Markets,3,common,raw,-13.994776858187459,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,base7500,Capital Markets,3,expanded,raw,-13.994776858187459,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,target30,Capital Markets,3,expanded,raw,-13.994776858187459,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,target10,Capital Markets,3,expanded,raw,-13.994776858187459,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,lookback12,Capital Markets,3,common,raw,-13.442052223847194,tabm_compact_e24_return_w0.3,xirr
+exposed,2025-03-31,lookback12,Capital Markets,3,expanded,raw,-13.442052223847194,tabm_compact_e24_return_w0.3,xirr
+development,2020-06-30,weekly,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,tabm_compact_e24_return_w0.3,drawdown
+development,2020-06-30,target30,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,tabm_compact_e24_return_w0.3,drawdown
+development,2020-06-30,quarterly,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,tabm_compact_e24_return_w0.3,drawdown
+development,2020-06-30,target10,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,tabm_compact_e24_return_w0.3,drawdown
+development,2020-06-30,base7500,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,tabm_compact_e24_return_w0.3,drawdown
+development,2020-06-30,lookback12,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,tabm_compact_e24_return_w0.3,drawdown
+development,2020-06-30,amount50000,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,tabm_compact_e24_return_w0.3,drawdown
+development,2020-06-30,weekly,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,tabm_compact_e24_return_w0.3,drawdown
+development,2020-06-30,target30,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,tabm_compact_e24_return_w0.3,drawdown
+development,2020-06-30,quarterly,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,tabm_compact_e24_return_w0.3,drawdown
+development,2020-06-30,target10,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,tabm_compact_e24_return_w0.3,drawdown
+development,2020-06-30,base7500,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,tabm_compact_e24_return_w0.3,drawdown
+development,2020-06-30,lookback12,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,tabm_compact_e24_return_w0.3,drawdown
+development,2020-06-30,amount50000,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,tabm_compact_e24_return_w0.3,drawdown
+development,2022-09-30,lookback60,Gas,1,expanded,raw,-0.7487070956167408,tabm_compact_e24_return_w0.3,drawdown
+development,2022-09-30,lookback60,Gas,1,expanded,capped,-0.7487070956167408,tabm_compact_e24_return_w0.3,drawdown
+exposed,2025-02-28,amount1000,Diversified,1,expanded,raw,-0.7309662395145622,tabm_compact_e24_return_w0.3,drawdown
+exposed,2025-02-28,quarterly,Diversified,1,expanded,raw,-0.7309662395145622,tabm_compact_e24_return_w0.3,drawdown
+exposed,2025-02-28,lookback60,Diversified,1,expanded,raw,-0.7309662395145622,tabm_compact_e24_return_w0.3,drawdown
+exposed,2025-02-28,base7500,Diversified,1,expanded,raw,-0.7309662395145622,tabm_compact_e24_return_w0.3,drawdown
+development,2020-03-31,amount1000,Food Products,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,amount1000,Auto Components,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,amount1000,Entertainment,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,amount1000,Beverages,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,target10,Food Products,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,target10,Entertainment,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,target10,Beverages,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,quarterly,Food Products,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,quarterly,Entertainment,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,quarterly,Beverages,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,target30,Food Products,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,target30,Minerals & Mining,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,target30,Entertainment,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,target30,Beverages,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,weekly,Entertainment,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,weekly,Beverages,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,weekly,Transport Infrastructure,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,lookback60,Entertainment,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,lookback60,Beverages,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2020-03-31,lookback12,Food Products,1,common,raw,-1.0,tabm_compact_e24_return_w0.3,achievement
+development,2022-06-30,weekly,Gas,1,common,raw,-0.5267283672169993,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,weekly,Gas,1,common,capped,-0.5267283672169993,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,weekly,Gas,1,expanded,raw,-0.5267283672169993,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,weekly,Gas,1,expanded,capped,-0.5267283672169993,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,target10,Gas,1,common,raw,-0.5266016262957767,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,target10,Gas,1,common,capped,-0.5266016262957767,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,target10,Gas,1,expanded,raw,-0.5266016262957767,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,target10,Gas,1,expanded,capped,-0.5266016262957767,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,amount50000,Gas,1,common,raw,-0.5187183116795178,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,amount50000,Gas,1,common,capped,-0.5187183116795178,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,amount50000,Gas,1,expanded,raw,-0.5187183116795178,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,amount50000,Gas,1,expanded,capped,-0.5187183116795178,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,lookback12,Gas,1,common,raw,-0.5033072350411996,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,base7500,Gas,1,common,raw,-0.5033072350411996,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,lookback12,Gas,1,common,capped,-0.5033072350411996,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,base7500,Gas,1,common,capped,-0.5033072350411996,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,lookback60,Gas,1,expanded,raw,-0.5033072350411996,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,base7500,Gas,1,expanded,raw,-0.5033072350411996,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,lookback12,Gas,1,expanded,raw,-0.5033072350411996,tabm_compact_e24_return_w0.3,shortfall
+development,2022-06-30,lookback60,Gas,1,expanded,capped,-0.5033072350411996,tabm_compact_e24_return_w0.3,shortfall
+development,2020-06-30,amount1000,Textiles & Apparels,1,common,capped,-0.9759036144578314,tabm_compact_e24_return_w0.3,ndcg
+exposed,2025-05-31,amount1000,Electrical Equipment,1,expanded,capped,-0.9646017699115045,tabm_compact_e24_return_w0.3,ndcg
+development,2020-06-30,amount1000,Realty,1,common,capped,-0.9600000000000001,tabm_compact_e24_return_w0.3,ndcg
+exposed,2024-09-30,amount1000,Electrical Equipment,1,expanded,capped,-0.9516129032258065,tabm_compact_e24_return_w0.3,ndcg
+exposed,2024-09-30,amount50000,Electrical Equipment,1,expanded,capped,-0.9516129032258065,tabm_compact_e24_return_w0.3,ndcg
+development,2021-03-31,lookback60,Other Consumer Services,1,expanded,raw,-0.9411764705882353,tabm_compact_e24_return_w0.3,ndcg
+development,2021-03-31,weekly,Other Consumer Services,1,expanded,raw,-0.9411764705882353,tabm_compact_e24_return_w0.3,ndcg
+development,2021-03-31,target30,Other Consumer Services,1,expanded,raw,-0.9411764705882353,tabm_compact_e24_return_w0.3,ndcg
+development,2021-03-31,quarterly,Other Consumer Services,1,expanded,raw,-0.9411764705882353,tabm_compact_e24_return_w0.3,ndcg
+development,2021-03-31,target10,Other Consumer Services,1,expanded,raw,-0.9411764705882353,tabm_compact_e24_return_w0.3,ndcg
+development,2021-03-31,base7500,Other Consumer Services,1,expanded,raw,-0.9411764705882353,tabm_compact_e24_return_w0.3,ndcg
+development,2021-03-31,lookback12,Other Consumer Services,1,expanded,raw,-0.9411764705882353,tabm_compact_e24_return_w0.3,ndcg
+development,2021-03-31,amount50000,Other Consumer Services,1,expanded,raw,-0.9411764705882353,tabm_compact_e24_return_w0.3,ndcg
+development,2020-06-30,lookback12,Realty,1,common,capped,-0.9393939393939394,tabm_compact_e24_return_w0.3,ndcg
+development,2020-06-30,quarterly,Realty,1,common,capped,-0.9375,tabm_compact_e24_return_w0.3,ndcg
+development,2020-06-30,target30,Realty,1,common,capped,-0.9375,tabm_compact_e24_return_w0.3,ndcg
+development,2020-06-30,base7500,Realty,1,common,capped,-0.9375,tabm_compact_e24_return_w0.3,ndcg
+development,2021-03-31,lookback60,Other Consumer Services,1,expanded,capped,-0.9375,tabm_compact_e24_return_w0.3,ndcg
+development,2021-03-31,target30,Other Consumer Services,1,expanded,capped,-0.9375,tabm_compact_e24_return_w0.3,ndcg
+development,2021-03-31,quarterly,Other Consumer Services,1,expanded,capped,-0.9375,tabm_compact_e24_return_w0.3,ndcg
+development,2022-12-31,lookback60,Transport Infrastructure,1,common,raw,-0.8999999999999999,tabm_compact_e24_return_w0.3,rank_ic
+development,2022-12-31,lookback60,Transport Infrastructure,3,common,raw,-0.8999999999999999,tabm_compact_e24_return_w0.3,rank_ic
+development,2022-12-31,lookback60,Transport Infrastructure,5,common,raw,-0.8999999999999999,tabm_compact_e24_return_w0.3,rank_ic
+development,2022-12-31,lookback60,Transport Infrastructure,1,common,capped,-0.8999999999999999,tabm_compact_e24_return_w0.3,rank_ic
+development,2022-12-31,lookback60,Transport Infrastructure,3,common,capped,-0.8999999999999999,tabm_compact_e24_return_w0.3,rank_ic
+development,2022-12-31,lookback60,Transport Infrastructure,5,common,capped,-0.8999999999999999,tabm_compact_e24_return_w0.3,rank_ic
+development,2020-09-30,amount50000,Transport Services,1,common,capped,-0.6527912098338672,tabm_compact_e24_return_w0.3,rank_ic
+development,2020-09-30,amount50000,Transport Services,3,common,capped,-0.6527912098338672,tabm_compact_e24_return_w0.3,rank_ic
+development,2020-09-30,amount50000,Transport Services,5,common,capped,-0.6527912098338672,tabm_compact_e24_return_w0.3,rank_ic
+development,2021-06-30,lookback60,Household Products,1,common,raw,-0.6428571428571428,tabm_compact_e24_return_w0.3,rank_ic
+development,2021-06-30,lookback60,Household Products,3,common,raw,-0.6428571428571428,tabm_compact_e24_return_w0.3,rank_ic
+development,2021-06-30,lookback60,Household Products,5,common,raw,-0.6428571428571428,tabm_compact_e24_return_w0.3,rank_ic
+development,2021-06-30,lookback60,Household Products,1,common,capped,-0.6428571428571428,tabm_compact_e24_return_w0.3,rank_ic
+development,2021-06-30,lookback60,Household Products,3,common,capped,-0.6428571428571428,tabm_compact_e24_return_w0.3,rank_ic
+development,2021-06-30,lookback60,Household Products,5,common,capped,-0.6428571428571428,tabm_compact_e24_return_w0.3,rank_ic
+development,2020-09-30,amount50000,Transport Services,1,common,raw,-0.6333333333333333,tabm_compact_e24_return_w0.3,rank_ic
+development,2020-09-30,amount50000,Transport Services,3,common,raw,-0.6333333333333333,tabm_compact_e24_return_w0.3,rank_ic
+development,2020-09-30,amount50000,Transport Services,5,common,raw,-0.6333333333333333,tabm_compact_e24_return_w0.3,rank_ic
+development,2023-03-31,quarterly,Transport Infrastructure,1,common,raw,-0.5051956704170308,tabm_compact_e24_return_w0.3,rank_ic
+development,2023-03-31,quarterly,Transport Infrastructure,3,common,raw,-0.5051956704170308,tabm_compact_e24_return_w0.3,rank_ic
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,common,raw,-81.49766575654631,tabm_compact_e48_return_w0.3,xirr
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,expanded,raw,-81.49766575654631,tabm_compact_e48_return_w0.3,xirr
+development,2022-12-31,target30,Other Utilities,1,expanded,raw,-27.30739770944015,tabm_compact_e48_return_w0.3,xirr
+development,2022-12-31,target10,Other Utilities,1,expanded,raw,-27.30739770944015,tabm_compact_e48_return_w0.3,xirr
+development,2022-12-31,base7500,Other Utilities,1,expanded,raw,-27.30739770944015,tabm_compact_e48_return_w0.3,xirr
+development,2022-12-31,weekly,Other Utilities,1,expanded,raw,-26.764943069577185,tabm_compact_e48_return_w0.3,xirr
+development,2022-12-31,amount1000,Other Utilities,1,expanded,raw,-25.759253342777775,tabm_compact_e48_return_w0.3,xirr
+development,2022-12-31,quarterly,Other Utilities,1,expanded,raw,-20.497955313335027,tabm_compact_e48_return_w0.3,xirr
+exposed,2025-03-31,lookback60,Capital Markets,1,common,raw,-16.827382545951398,tabm_compact_e48_return_w0.3,xirr
+exposed,2025-03-31,lookback60,Capital Markets,1,expanded,raw,-16.827382545951398,tabm_compact_e48_return_w0.3,xirr
+exposed,2025-03-31,lookback12,Capital Markets,1,common,raw,-16.06217642855625,tabm_compact_e48_return_w0.3,xirr
+exposed,2025-03-31,lookback12,Capital Markets,1,expanded,raw,-16.06217642855625,tabm_compact_e48_return_w0.3,xirr
+exposed,2025-03-31,quarterly,Capital Markets,3,common,raw,-15.142202042049647,tabm_compact_e48_return_w0.3,xirr
+exposed,2025-03-31,quarterly,Capital Markets,3,expanded,raw,-15.142202042049647,tabm_compact_e48_return_w0.3,xirr
+exposed,2025-03-31,weekly,Capital Markets,3,common,raw,-14.80754556605883,tabm_compact_e48_return_w0.3,xirr
+exposed,2025-03-31,weekly,Capital Markets,3,expanded,raw,-14.80754556605883,tabm_compact_e48_return_w0.3,xirr
+exposed,2025-03-31,lookback60,Capital Markets,3,common,raw,-13.994776858187459,tabm_compact_e48_return_w0.3,xirr
+exposed,2025-03-31,target30,Capital Markets,3,common,raw,-13.994776858187459,tabm_compact_e48_return_w0.3,xirr
+exposed,2025-03-31,base7500,Capital Markets,3,common,raw,-13.994776858187459,tabm_compact_e48_return_w0.3,xirr
+exposed,2025-03-31,target10,Capital Markets,3,common,raw,-13.994776858187459,tabm_compact_e48_return_w0.3,xirr
+development,2020-06-30,weekly,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,tabm_compact_e48_return_w0.3,drawdown
+development,2020-06-30,target30,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,tabm_compact_e48_return_w0.3,drawdown
+development,2020-06-30,quarterly,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,tabm_compact_e48_return_w0.3,drawdown
+development,2020-06-30,target10,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,tabm_compact_e48_return_w0.3,drawdown
+development,2020-06-30,base7500,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,tabm_compact_e48_return_w0.3,drawdown
+development,2020-06-30,lookback12,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,tabm_compact_e48_return_w0.3,drawdown
+development,2020-06-30,amount50000,Commercial Services & Supplies,1,expanded,raw,-0.8723256686961495,tabm_compact_e48_return_w0.3,drawdown
+development,2020-06-30,weekly,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,tabm_compact_e48_return_w0.3,drawdown
+development,2020-06-30,target30,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,tabm_compact_e48_return_w0.3,drawdown
+development,2020-06-30,quarterly,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,tabm_compact_e48_return_w0.3,drawdown
+development,2020-06-30,target10,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,tabm_compact_e48_return_w0.3,drawdown
+development,2020-06-30,base7500,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,tabm_compact_e48_return_w0.3,drawdown
+development,2020-06-30,lookback12,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,tabm_compact_e48_return_w0.3,drawdown
+development,2020-06-30,amount50000,Commercial Services & Supplies,1,expanded,capped,-0.8723256686961495,tabm_compact_e48_return_w0.3,drawdown
+development,2022-09-30,lookback60,Gas,1,expanded,raw,-0.7487070956167408,tabm_compact_e48_return_w0.3,drawdown
+development,2022-09-30,lookback60,Gas,1,expanded,capped,-0.7487070956167408,tabm_compact_e48_return_w0.3,drawdown
+exposed,2025-02-28,amount1000,Diversified,1,expanded,raw,-0.7309662395145622,tabm_compact_e48_return_w0.3,drawdown
+exposed,2025-02-28,quarterly,Diversified,1,expanded,raw,-0.7309662395145622,tabm_compact_e48_return_w0.3,drawdown
+exposed,2025-02-28,lookback60,Diversified,1,expanded,raw,-0.7309662395145622,tabm_compact_e48_return_w0.3,drawdown
+exposed,2025-02-28,base7500,Diversified,1,expanded,raw,-0.7309662395145622,tabm_compact_e48_return_w0.3,drawdown
+development,2020-03-31,amount1000,Food Products,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,amount1000,Auto Components,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,amount1000,Textiles & Apparels,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,amount1000,Entertainment,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,target10,Food Products,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,target10,Entertainment,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,quarterly,Food Products,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,quarterly,Entertainment,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,target30,Food Products,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,target30,Minerals & Mining,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,target30,Entertainment,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,weekly,Food Products,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,weekly,Entertainment,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,lookback60,Entertainment,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,lookback12,Food Products,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,lookback12,Entertainment,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,amount50000,Food Products,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,base7500,Food Products,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2020-03-31,base7500,Entertainment,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2021-06-30,amount1000,Leisure Services,1,common,raw,-1.0,tabm_compact_e48_return_w0.3,achievement
+development,2022-03-31,amount50000,Gas,1,common,raw,-0.6069921619006167,tabm_compact_e48_return_w0.3,shortfall
+development,2022-03-31,amount50000,Gas,1,common,capped,-0.6069921619006167,tabm_compact_e48_return_w0.3,shortfall
+development,2022-03-31,amount50000,Gas,1,expanded,raw,-0.6069921619006167,tabm_compact_e48_return_w0.3,shortfall
+development,2022-03-31,amount50000,Gas,1,expanded,capped,-0.6069921619006167,tabm_compact_e48_return_w0.3,shortfall
+development,2022-03-31,lookback12,Gas,1,common,raw,-0.5932402350426258,tabm_compact_e48_return_w0.3,shortfall
+development,2022-03-31,lookback12,Gas,1,common,capped,-0.5932402350426258,tabm_compact_e48_return_w0.3,shortfall
+development,2022-03-31,lookback12,Gas,1,expanded,raw,-0.5932402350426258,tabm_compact_e48_return_w0.3,shortfall
+development,2022-03-31,lookback12,Gas,1,expanded,capped,-0.5932402350426258,tabm_compact_e48_return_w0.3,shortfall
+development,2022-03-31,target30,Gas,1,common,raw,-0.5686973008359767,tabm_compact_e48_return_w0.3,shortfall
+development,2022-03-31,target30,Gas,1,common,capped,-0.5686973008359767,tabm_compact_e48_return_w0.3,shortfall
+development,2022-03-31,target30,Gas,1,expanded,raw,-0.5686973008359767,tabm_compact_e48_return_w0.3,shortfall
+development,2022-03-31,target30,Gas,1,expanded,capped,-0.5686973008359767,tabm_compact_e48_return_w0.3,shortfall
+development,2022-06-30,weekly,Gas,1,common,raw,-0.5267283672169993,tabm_compact_e48_return_w0.3,shortfall
+development,2022-06-30,weekly,Gas,1,common,capped,-0.5267283672169993,tabm_compact_e48_return_w0.3,shortfall
+development,2022-06-30,weekly,Gas,1,expanded,raw,-0.5267283672169993,tabm_compact_e48_return_w0.3,shortfall
+development,2022-06-30,weekly,Gas,1,expanded,capped,-0.5267283672169993,tabm_compact_e48_return_w0.3,shortfall
+development,2022-06-30,target10,Gas,1,common,raw,-0.5266016262957767,tabm_compact_e48_return_w0.3,shortfall
+development,2022-06-30,target10,Gas,1,common,capped,-0.5266016262957767,tabm_compact_e48_return_w0.3,shortfall
+development,2022-06-30,target10,Gas,1,expanded,raw,-0.5266016262957767,tabm_compact_e48_return_w0.3,shortfall
+development,2022-06-30,target10,Gas,1,expanded,capped,-0.5266016262957767,tabm_compact_e48_return_w0.3,shortfall
+exposed,2025-05-31,weekly,Electrical Equipment,1,expanded,capped,-0.9823008849557523,tabm_compact_e48_return_w0.3,ndcg
+exposed,2025-05-31,lookback60,Electrical Equipment,1,expanded,capped,-0.98,tabm_compact_e48_return_w0.3,ndcg
+development,2020-06-30,amount1000,Textiles & Apparels,1,common,capped,-0.9759036144578314,tabm_compact_e48_return_w0.3,ndcg
+exposed,2025-05-31,lookback12,Electrical Equipment,1,expanded,capped,-0.9696969696969697,tabm_compact_e48_return_w0.3,ndcg
+exposed,2025-05-31,quarterly,Electrical Equipment,1,expanded,capped,-0.9652173913043479,tabm_compact_e48_return_w0.3,ndcg
+exposed,2025-05-31,amount1000,Electrical Equipment,1,expanded,capped,-0.9646017699115045,tabm_compact_e48_return_w0.3,ndcg
+exposed,2025-05-31,base7500,Electrical Equipment,1,expanded,capped,-0.9646017699115045,tabm_compact_e48_return_w0.3,ndcg
+exposed,2025-05-31,target30,Electrical Equipment,1,expanded,capped,-0.9646017699115045,tabm_compact_e48_return_w0.3,ndcg
+exposed,2025-05-31,target10,Electrical Equipment,1,expanded,capped,-0.9646017699115045,tabm_compact_e48_return_w0.3,ndcg
+exposed,2025-05-31,amount50000,Electrical Equipment,1,expanded,capped,-0.9646017699115045,tabm_compact_e48_return_w0.3,ndcg
+exposed,2024-09-30,amount1000,Electrical Equipment,1,expanded,capped,-0.9516129032258065,tabm_compact_e48_return_w0.3,ndcg
+exposed,2024-09-30,amount50000,Electrical Equipment,1,expanded,capped,-0.9516129032258065,tabm_compact_e48_return_w0.3,ndcg
+development,2021-03-31,lookback60,Other Consumer Services,1,expanded,raw,-0.9411764705882353,tabm_compact_e48_return_w0.3,ndcg
+development,2021-03-31,weekly,Other Consumer Services,1,expanded,raw,-0.9411764705882353,tabm_compact_e48_return_w0.3,ndcg
+development,2021-03-31,target30,Other Consumer Services,1,expanded,raw,-0.9411764705882353,tabm_compact_e48_return_w0.3,ndcg
+development,2021-03-31,quarterly,Other Consumer Services,1,expanded,raw,-0.9411764705882353,tabm_compact_e48_return_w0.3,ndcg
+development,2021-03-31,target10,Other Consumer Services,1,expanded,raw,-0.9411764705882353,tabm_compact_e48_return_w0.3,ndcg
+development,2021-03-31,base7500,Other Consumer Services,1,expanded,raw,-0.9411764705882353,tabm_compact_e48_return_w0.3,ndcg
+development,2021-03-31,lookback12,Other Consumer Services,1,expanded,raw,-0.9411764705882353,tabm_compact_e48_return_w0.3,ndcg
+development,2021-03-31,amount50000,Other Consumer Services,1,expanded,raw,-0.9411764705882353,tabm_compact_e48_return_w0.3,ndcg
+development,2022-12-31,lookback60,Transport Infrastructure,1,common,raw,-0.8,tabm_compact_e48_return_w0.3,rank_ic
+development,2022-12-31,lookback60,Transport Infrastructure,3,common,raw,-0.8,tabm_compact_e48_return_w0.3,rank_ic
+development,2022-12-31,lookback60,Transport Infrastructure,5,common,raw,-0.8,tabm_compact_e48_return_w0.3,rank_ic
+development,2022-12-31,lookback12,Transport Infrastructure,1,common,raw,-0.8,tabm_compact_e48_return_w0.3,rank_ic
+development,2022-12-31,lookback12,Transport Infrastructure,3,common,raw,-0.8,tabm_compact_e48_return_w0.3,rank_ic
+development,2022-12-31,lookback12,Transport Infrastructure,5,common,raw,-0.8,tabm_compact_e48_return_w0.3,rank_ic
+development,2022-12-31,lookback60,Transport Infrastructure,1,common,capped,-0.8,tabm_compact_e48_return_w0.3,rank_ic
+development,2022-12-31,lookback60,Transport Infrastructure,3,common,capped,-0.8,tabm_compact_e48_return_w0.3,rank_ic
+development,2022-12-31,lookback60,Transport Infrastructure,5,common,capped,-0.8,tabm_compact_e48_return_w0.3,rank_ic
+development,2022-12-31,lookback12,Transport Infrastructure,1,common,capped,-0.8,tabm_compact_e48_return_w0.3,rank_ic
+development,2022-12-31,lookback12,Transport Infrastructure,3,common,capped,-0.8,tabm_compact_e48_return_w0.3,rank_ic
+development,2022-12-31,lookback12,Transport Infrastructure,5,common,capped,-0.8,tabm_compact_e48_return_w0.3,rank_ic
+exposed,2024-03-31,quarterly,Transport Infrastructure,1,common,raw,-0.6616902584383193,tabm_compact_e48_return_w0.3,rank_ic
+exposed,2024-03-31,quarterly,Transport Infrastructure,3,common,raw,-0.6616902584383193,tabm_compact_e48_return_w0.3,rank_ic
+exposed,2024-03-31,quarterly,Transport Infrastructure,5,common,raw,-0.6616902584383193,tabm_compact_e48_return_w0.3,rank_ic
+exposed,2024-03-31,quarterly,Transport Infrastructure,1,common,capped,-0.6616902584383193,tabm_compact_e48_return_w0.3,rank_ic
+exposed,2024-03-31,quarterly,Transport Infrastructure,3,common,capped,-0.6616902584383193,tabm_compact_e48_return_w0.3,rank_ic
+exposed,2024-03-31,quarterly,Transport Infrastructure,5,common,capped,-0.6616902584383193,tabm_compact_e48_return_w0.3,rank_ic
+development,2020-09-30,amount50000,Transport Services,1,common,capped,-0.5570484990582334,tabm_compact_e48_return_w0.3,rank_ic
+development,2020-09-30,amount50000,Transport Services,3,common,capped,-0.5570484990582334,tabm_compact_e48_return_w0.3,rank_ic
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,expanded,raw,-82.17743002631988,tabm_embedded_e24_return_w1.0,xirr
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,common,raw,-76.06815695933918,tabm_embedded_e24_return_w1.0,xirr
+development,2022-12-31,amount50000,Other Utilities,1,expanded,raw,-26.275592466895958,tabm_embedded_e24_return_w1.0,xirr
+development,2022-12-31,target30,Other Utilities,1,expanded,raw,-26.12923576066948,tabm_embedded_e24_return_w1.0,xirr
+development,2022-12-31,target10,Other Utilities,1,expanded,raw,-26.12923576066948,tabm_embedded_e24_return_w1.0,xirr
+development,2022-12-31,base7500,Other Utilities,1,expanded,raw,-26.12923576066948,tabm_embedded_e24_return_w1.0,xirr
+development,2022-12-31,lookback12,Other Utilities,1,expanded,raw,-26.12923576066948,tabm_embedded_e24_return_w1.0,xirr
+development,2022-12-31,weekly,Other Utilities,1,expanded,raw,-25.626472935574945,tabm_embedded_e24_return_w1.0,xirr
+development,2022-12-31,amount1000,Other Utilities,1,expanded,raw,-24.5809574635768,tabm_embedded_e24_return_w1.0,xirr
+development,2022-12-31,quarterly,Other Utilities,1,expanded,raw,-19.222063843340017,tabm_embedded_e24_return_w1.0,xirr
+exposed,2025-03-31,lookback60,Capital Markets,1,common,raw,-16.827382545951398,tabm_embedded_e24_return_w1.0,xirr
+exposed,2025-03-31,lookback12,Capital Markets,1,common,raw,-16.827382545951398,tabm_embedded_e24_return_w1.0,xirr
+exposed,2025-03-31,lookback60,Capital Markets,1,expanded,raw,-16.827382545951398,tabm_embedded_e24_return_w1.0,xirr
+exposed,2025-03-31,lookback12,Capital Markets,1,expanded,raw,-16.827382545951398,tabm_embedded_e24_return_w1.0,xirr
+development,2023-06-30,weekly,Food Products,1,expanded,raw,-16.475928490622728,tabm_embedded_e24_return_w1.0,xirr
+development,2023-06-30,amount50000,Food Products,1,expanded,raw,-16.435875840659367,tabm_embedded_e24_return_w1.0,xirr
+development,2023-06-30,target30,Food Products,1,expanded,raw,-16.05469443596633,tabm_embedded_e24_return_w1.0,xirr
+development,2023-06-30,target10,Food Products,1,expanded,raw,-16.05469443596633,tabm_embedded_e24_return_w1.0,xirr
+development,2023-06-30,base7500,Food Products,1,expanded,raw,-16.05469443596633,tabm_embedded_e24_return_w1.0,xirr
+development,2023-06-30,quarterly,Food Products,1,expanded,raw,-15.88876574224403,tabm_embedded_e24_return_w1.0,xirr
+exposed,2025-02-28,amount1000,Construction,1,common,raw,-0.7774907400339439,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2025-02-28,amount50000,Construction,1,common,raw,-0.7774907400339439,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2025-02-28,lookback12,Construction,1,common,raw,-0.7774907400339439,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2025-02-28,target30,Construction,1,common,raw,-0.7774907400339439,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2025-02-28,base7500,Construction,1,common,raw,-0.7774907400339439,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2025-02-28,weekly,Construction,1,common,raw,-0.7774907400339439,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2025-02-28,target10,Construction,1,common,raw,-0.7774907400339439,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2025-02-28,quarterly,Construction,1,common,raw,-0.7774907400339439,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2025-02-28,amount1000,Construction,1,common,capped,-0.7774907400339439,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2025-02-28,amount50000,Construction,1,common,capped,-0.7774907400339439,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2025-02-28,lookback12,Construction,1,common,capped,-0.7774907400339439,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2025-02-28,target30,Construction,1,common,capped,-0.7774907400339439,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2025-02-28,base7500,Construction,1,common,capped,-0.7774907400339439,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2025-02-28,weekly,Construction,1,common,capped,-0.7774907400339439,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2025-02-28,target10,Construction,1,common,capped,-0.7774907400339439,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2025-02-28,quarterly,Construction,1,common,capped,-0.7774907400339439,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2024-12-31,amount1000,Finance,1,common,raw,-0.7478941105770311,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2024-12-31,lookback60,Finance,1,common,raw,-0.7478941105770311,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2024-12-31,lookback12,Finance,1,common,raw,-0.7478941105770311,tabm_embedded_e24_return_w1.0,drawdown
+exposed,2024-12-31,target30,Finance,1,common,raw,-0.7478941105770311,tabm_embedded_e24_return_w1.0,drawdown
+development,2020-03-31,amount1000,Realty,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,amount1000,Consumer Durables,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,amount1000,Industrial Products,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,amount1000,Food Products,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,amount1000,Textiles & Apparels,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,amount1000,Automobiles,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,amount1000,Transport Infrastructure,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,target10,Entertainment,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,target10,Beverages,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,quarterly,Consumer Durables,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,quarterly,Industrial Products,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,quarterly,Food Products,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,quarterly,Entertainment,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,quarterly,Beverages,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,target30,Consumer Durables,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,target30,Industrial Products,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,target30,Entertainment,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,target30,Automobiles,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,target30,Beverages,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+development,2020-03-31,target30,Transport Infrastructure,1,common,raw,-1.0,tabm_embedded_e24_return_w1.0,achievement
+exposed,2024-06-30,weekly,Finance,1,expanded,raw,-0.8160040689882793,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-06-30,weekly,Finance,1,expanded,capped,-0.8160040689882793,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-06-30,target30,Finance,1,expanded,raw,-0.7915891368902476,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-06-30,target30,Finance,1,expanded,capped,-0.7915891368902476,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-06-30,amount50000,Finance,1,expanded,raw,-0.7829255631344852,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-06-30,amount50000,Finance,1,expanded,capped,-0.7829255631344852,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-06-30,lookback60,Finance,1,expanded,raw,-0.7825948721140045,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-06-30,lookback12,Finance,1,expanded,raw,-0.7825948721140045,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-06-30,base7500,Finance,1,expanded,raw,-0.7825948721140045,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-06-30,lookback60,Finance,1,expanded,capped,-0.7825948721140045,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-06-30,lookback12,Finance,1,expanded,capped,-0.7825948721140045,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-06-30,base7500,Finance,1,expanded,capped,-0.7825948721140045,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-06-30,target10,Finance,1,expanded,raw,-0.7725327872538231,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-06-30,target10,Finance,1,expanded,capped,-0.7725327872538231,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-06-30,quarterly,Finance,1,expanded,raw,-0.7442716843177155,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-06-30,quarterly,Finance,1,expanded,capped,-0.7442716843177155,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-09-30,weekly,Finance,1,expanded,raw,-0.7129704286237657,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-09-30,weekly,Finance,1,expanded,capped,-0.7129704286237657,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-09-30,target30,Finance,1,expanded,raw,-0.7015666772891886,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-09-30,target30,Finance,1,expanded,capped,-0.7015666772891886,tabm_embedded_e24_return_w1.0,shortfall
+exposed,2024-09-30,weekly,Finance,1,expanded,capped,-0.997067448680352,tabm_embedded_e24_return_w1.0,ndcg
+exposed,2024-09-30,amount50000,Finance,1,expanded,capped,-0.9941348973607039,tabm_embedded_e24_return_w1.0,ndcg
+development,2020-06-30,quarterly,Realty,1,expanded,capped,-0.9870967741935484,tabm_embedded_e24_return_w1.0,ndcg
+development,2020-06-30,weekly,Realty,1,expanded,capped,-0.9869281045751634,tabm_embedded_e24_return_w1.0,ndcg
+development,2020-06-30,amount1000,Realty,1,expanded,capped,-0.9867549668874173,tabm_embedded_e24_return_w1.0,ndcg
+development,2020-06-30,target30,Realty,1,expanded,capped,-0.9867549668874173,tabm_embedded_e24_return_w1.0,ndcg
+development,2020-06-30,base7500,Realty,1,expanded,capped,-0.9867549668874173,tabm_embedded_e24_return_w1.0,ndcg
+development,2020-06-30,lookback12,Realty,1,expanded,capped,-0.9867549668874173,tabm_embedded_e24_return_w1.0,ndcg
+development,2020-06-30,lookback60,Realty,1,expanded,capped,-0.9864864864864865,tabm_embedded_e24_return_w1.0,ndcg
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,expanded,capped,-0.9828571428571429,tabm_embedded_e24_return_w1.0,ndcg
+exposed,2024-12-31,lookback12,Finance,1,expanded,capped,-0.9804469273743017,tabm_embedded_e24_return_w1.0,ndcg
+exposed,2024-12-31,base7500,Finance,1,expanded,capped,-0.9795620437956205,tabm_embedded_e24_return_w1.0,ndcg
+exposed,2024-12-31,target30,Finance,1,expanded,capped,-0.9795620437956205,tabm_embedded_e24_return_w1.0,ndcg
+exposed,2024-12-31,target10,Finance,1,expanded,capped,-0.9795620437956205,tabm_embedded_e24_return_w1.0,ndcg
+exposed,2024-12-31,weekly,Finance,1,expanded,capped,-0.9795321637426901,tabm_embedded_e24_return_w1.0,ndcg
+exposed,2024-12-31,amount50000,Finance,1,expanded,capped,-0.9795021961932651,tabm_embedded_e24_return_w1.0,ndcg
+development,2020-03-31,amount1000,Finance,1,expanded,capped,-0.9792027729636049,tabm_embedded_e24_return_w1.0,ndcg
+exposed,2024-12-31,lookback12,Finance,1,common,capped,-0.9791666666666667,tabm_embedded_e24_return_w1.0,ndcg
+development,2020-03-31,lookback12,Finance,1,expanded,capped,-0.9791304347826087,tabm_embedded_e24_return_w1.0,ndcg
+development,2020-03-31,lookback60,Finance,1,expanded,capped,-0.9790575916230367,tabm_embedded_e24_return_w1.0,ndcg
+development,2023-03-31,quarterly,IT - Hardware,1,common,raw,-1.6428571428571428,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,quarterly,IT - Hardware,3,common,raw,-1.6428571428571428,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,quarterly,IT - Hardware,5,common,raw,-1.6428571428571428,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,lookback12,IT - Hardware,1,common,raw,-1.6428571428571428,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,lookback12,IT - Hardware,3,common,raw,-1.6428571428571428,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,lookback12,IT - Hardware,5,common,raw,-1.6428571428571428,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,quarterly,IT - Hardware,1,common,capped,-1.6428571428571428,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,quarterly,IT - Hardware,3,common,capped,-1.6428571428571428,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,quarterly,IT - Hardware,5,common,capped,-1.6428571428571428,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,lookback12,IT - Hardware,1,common,capped,-1.6428571428571428,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,lookback12,IT - Hardware,3,common,capped,-1.6428571428571428,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,lookback12,IT - Hardware,5,common,capped,-1.6428571428571428,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,amount50000,IT - Hardware,1,common,raw,-1.6,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,amount50000,IT - Hardware,3,common,raw,-1.6,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,amount50000,IT - Hardware,5,common,raw,-1.6,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,amount50000,IT - Hardware,1,common,capped,-1.6,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,amount50000,IT - Hardware,3,common,capped,-1.6,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,amount50000,IT - Hardware,5,common,capped,-1.6,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,target10,IT - Hardware,1,common,raw,-1.5714285714285714,tabm_embedded_e24_return_w1.0,rank_ic
+development,2023-03-31,target10,IT - Hardware,3,common,raw,-1.5714285714285714,tabm_embedded_e24_return_w1.0,rank_ic
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,expanded,raw,-82.17743002631988,tabm_embedded_e48_return_w1.0,xirr
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,common,raw,-76.06815695933918,tabm_embedded_e48_return_w1.0,xirr
+development,2022-12-31,amount50000,Other Utilities,1,expanded,raw,-27.453378362889914,tabm_embedded_e48_return_w1.0,xirr
+development,2022-12-31,target30,Other Utilities,1,expanded,raw,-27.30739770944015,tabm_embedded_e48_return_w1.0,xirr
+development,2022-12-31,target10,Other Utilities,1,expanded,raw,-27.30739770944015,tabm_embedded_e48_return_w1.0,xirr
+development,2022-12-31,base7500,Other Utilities,1,expanded,raw,-27.30739770944015,tabm_embedded_e48_return_w1.0,xirr
+development,2022-12-31,lookback12,Other Utilities,1,expanded,raw,-27.30739770944015,tabm_embedded_e48_return_w1.0,xirr
+development,2022-12-31,weekly,Other Utilities,1,expanded,raw,-26.764943069577185,tabm_embedded_e48_return_w1.0,xirr
+development,2022-12-31,amount1000,Other Utilities,1,expanded,raw,-25.759253342777775,tabm_embedded_e48_return_w1.0,xirr
+development,2022-12-31,quarterly,Other Utilities,1,expanded,raw,-20.497955313335027,tabm_embedded_e48_return_w1.0,xirr
+exposed,2025-03-31,lookback60,Capital Markets,1,common,raw,-16.827382545951398,tabm_embedded_e48_return_w1.0,xirr
+exposed,2025-03-31,lookback12,Capital Markets,1,common,raw,-16.827382545951398,tabm_embedded_e48_return_w1.0,xirr
+exposed,2025-03-31,lookback60,Capital Markets,1,expanded,raw,-16.827382545951398,tabm_embedded_e48_return_w1.0,xirr
+exposed,2025-03-31,lookback12,Capital Markets,1,expanded,raw,-16.827382545951398,tabm_embedded_e48_return_w1.0,xirr
+development,2023-06-30,weekly,Food Products,1,expanded,raw,-16.475928490622728,tabm_embedded_e48_return_w1.0,xirr
+development,2023-06-30,amount50000,Food Products,1,expanded,raw,-16.435875840659367,tabm_embedded_e48_return_w1.0,xirr
+development,2023-06-30,target30,Food Products,1,expanded,raw,-16.05469443596633,tabm_embedded_e48_return_w1.0,xirr
+development,2023-06-30,target10,Food Products,1,expanded,raw,-16.05469443596633,tabm_embedded_e48_return_w1.0,xirr
+development,2023-06-30,base7500,Food Products,1,expanded,raw,-16.05469443596633,tabm_embedded_e48_return_w1.0,xirr
+development,2023-06-30,quarterly,Food Products,1,expanded,raw,-15.88876574224403,tabm_embedded_e48_return_w1.0,xirr
+development,2022-06-30,lookback60,Diversified,1,expanded,raw,-0.7729456508459046,tabm_embedded_e48_return_w1.0,drawdown
+development,2022-06-30,target30,Diversified,1,expanded,raw,-0.7729456508459046,tabm_embedded_e48_return_w1.0,drawdown
+development,2022-06-30,quarterly,Diversified,1,expanded,raw,-0.7729456508459046,tabm_embedded_e48_return_w1.0,drawdown
+development,2022-06-30,target10,Diversified,1,expanded,raw,-0.7729456508459046,tabm_embedded_e48_return_w1.0,drawdown
+development,2022-06-30,base7500,Diversified,1,expanded,raw,-0.7729456508459046,tabm_embedded_e48_return_w1.0,drawdown
+development,2022-06-30,lookback12,Diversified,1,expanded,raw,-0.7729456508459046,tabm_embedded_e48_return_w1.0,drawdown
+development,2022-06-30,amount50000,Diversified,1,expanded,raw,-0.7729456508459046,tabm_embedded_e48_return_w1.0,drawdown
+development,2022-06-30,lookback60,Diversified,1,expanded,capped,-0.7729456508459046,tabm_embedded_e48_return_w1.0,drawdown
+development,2022-06-30,target30,Diversified,1,expanded,capped,-0.7729456508459046,tabm_embedded_e48_return_w1.0,drawdown
+development,2022-06-30,quarterly,Diversified,1,expanded,capped,-0.7729456508459046,tabm_embedded_e48_return_w1.0,drawdown
+development,2022-06-30,target10,Diversified,1,expanded,capped,-0.7729456508459046,tabm_embedded_e48_return_w1.0,drawdown
+development,2022-06-30,base7500,Diversified,1,expanded,capped,-0.7729456508459046,tabm_embedded_e48_return_w1.0,drawdown
+development,2022-06-30,lookback12,Diversified,1,expanded,capped,-0.7729456508459046,tabm_embedded_e48_return_w1.0,drawdown
+development,2022-06-30,amount50000,Diversified,1,expanded,capped,-0.7729456508459046,tabm_embedded_e48_return_w1.0,drawdown
+development,2022-09-30,lookback60,Gas,1,expanded,raw,-0.7487070956167408,tabm_embedded_e48_return_w1.0,drawdown
+development,2022-09-30,lookback60,Gas,1,expanded,capped,-0.7487070956167408,tabm_embedded_e48_return_w1.0,drawdown
+exposed,2024-12-31,amount1000,Finance,1,common,raw,-0.7478941105770311,tabm_embedded_e48_return_w1.0,drawdown
+exposed,2024-12-31,lookback60,Finance,1,common,raw,-0.7478941105770311,tabm_embedded_e48_return_w1.0,drawdown
+exposed,2024-12-31,lookback12,Finance,1,common,raw,-0.7478941105770311,tabm_embedded_e48_return_w1.0,drawdown
+exposed,2024-12-31,target30,Finance,1,common,raw,-0.7478941105770311,tabm_embedded_e48_return_w1.0,drawdown
+development,2020-03-31,amount1000,Industrial Products,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,amount1000,Food Products,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,amount1000,Textiles & Apparels,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,amount1000,Transport Infrastructure,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,target10,Food Products,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,target10,Entertainment,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,target10,Beverages,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,quarterly,Industrial Products,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,quarterly,Food Products,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,quarterly,Entertainment,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,quarterly,Beverages,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,target30,Industrial Products,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,target30,Food Products,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,target30,Entertainment,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,target30,Beverages,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,target30,Transport Infrastructure,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,weekly,Industrial Products,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,weekly,Food Products,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,weekly,Auto Components,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+development,2020-03-31,weekly,Entertainment,1,common,raw,-1.0,tabm_embedded_e48_return_w1.0,achievement
+exposed,2024-09-30,weekly,Finance,1,expanded,raw,-0.7129704286237657,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2024-09-30,weekly,Finance,1,expanded,capped,-0.7129704286237657,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2024-09-30,target30,Finance,1,expanded,raw,-0.7015666772891886,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2024-09-30,target30,Finance,1,expanded,capped,-0.7015666772891886,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2025-04-30,lookback12,Consumer Durables,1,expanded,raw,-0.6926056683239081,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2025-04-30,lookback12,Consumer Durables,1,expanded,capped,-0.6926056683239081,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2024-09-30,amount50000,Finance,1,expanded,raw,-0.6887926623314631,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2024-09-30,amount50000,Finance,1,expanded,capped,-0.6887926623314631,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2024-09-30,lookback60,Finance,1,expanded,raw,-0.6886873662856086,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2024-09-30,lookback12,Finance,1,expanded,raw,-0.6886873662856086,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2024-09-30,base7500,Finance,1,expanded,raw,-0.6886873662856086,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2024-09-30,lookback60,Finance,1,expanded,capped,-0.6886873662856086,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2024-09-30,lookback12,Finance,1,expanded,capped,-0.6886873662856086,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2024-09-30,base7500,Finance,1,expanded,capped,-0.6886873662856086,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2024-09-30,target10,Finance,1,expanded,raw,-0.6742789934521796,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2024-09-30,target10,Finance,1,expanded,capped,-0.6742789934521796,tabm_embedded_e48_return_w1.0,shortfall
+development,2022-03-31,target30,IT - Services,1,expanded,raw,-0.6380490337749094,tabm_embedded_e48_return_w1.0,shortfall
+development,2022-03-31,target30,IT - Services,1,expanded,capped,-0.6380490337749094,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2024-06-30,amount50000,IT - Hardware,1,expanded,raw,-0.6269344056720801,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2024-06-30,amount50000,IT - Hardware,1,expanded,capped,-0.6269344056720801,tabm_embedded_e48_return_w1.0,shortfall
+exposed,2024-09-30,weekly,Finance,1,expanded,capped,-0.997067448680352,tabm_embedded_e48_return_w1.0,ndcg
+exposed,2024-09-30,amount50000,Finance,1,expanded,capped,-0.9941348973607039,tabm_embedded_e48_return_w1.0,ndcg
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,expanded,capped,-0.9828571428571429,tabm_embedded_e48_return_w1.0,ndcg
+exposed,2024-12-31,lookback12,Finance,1,expanded,capped,-0.9804469273743017,tabm_embedded_e48_return_w1.0,ndcg
+exposed,2024-12-31,base7500,Finance,1,expanded,capped,-0.9795620437956205,tabm_embedded_e48_return_w1.0,ndcg
+exposed,2024-12-31,target30,Finance,1,expanded,capped,-0.9795620437956205,tabm_embedded_e48_return_w1.0,ndcg
+exposed,2024-12-31,target10,Finance,1,expanded,capped,-0.9795620437956205,tabm_embedded_e48_return_w1.0,ndcg
+exposed,2024-12-31,weekly,Finance,1,expanded,capped,-0.9795321637426901,tabm_embedded_e48_return_w1.0,ndcg
+exposed,2024-12-31,amount50000,Finance,1,expanded,capped,-0.9795021961932651,tabm_embedded_e48_return_w1.0,ndcg
+development,2020-03-31,amount1000,Finance,1,expanded,capped,-0.9792027729636049,tabm_embedded_e48_return_w1.0,ndcg
+exposed,2024-12-31,lookback12,Finance,1,common,capped,-0.9791666666666667,tabm_embedded_e48_return_w1.0,ndcg
+development,2020-03-31,lookback12,Finance,1,expanded,capped,-0.9791304347826087,tabm_embedded_e48_return_w1.0,ndcg
+development,2020-03-31,lookback60,Finance,1,expanded,capped,-0.9790575916230367,tabm_embedded_e48_return_w1.0,ndcg
+development,2020-03-31,target30,Finance,1,expanded,capped,-0.9790575916230367,tabm_embedded_e48_return_w1.0,ndcg
+development,2020-03-31,target10,Finance,1,expanded,capped,-0.9790575916230367,tabm_embedded_e48_return_w1.0,ndcg
+development,2020-03-31,base7500,Finance,1,expanded,capped,-0.9790575916230367,tabm_embedded_e48_return_w1.0,ndcg
+development,2020-03-31,amount50000,Finance,1,expanded,capped,-0.9790575916230367,tabm_embedded_e48_return_w1.0,ndcg
+development,2020-03-31,quarterly,Finance,1,expanded,capped,-0.978835978835979,tabm_embedded_e48_return_w1.0,ndcg
+development,2021-06-30,amount50000,Auto Components,1,common,raw,-0.9787234042553192,tabm_embedded_e48_return_w1.0,ndcg
+development,2021-06-30,amount50000,Auto Components,1,common,capped,-0.9787234042553192,tabm_embedded_e48_return_w1.0,ndcg
+exposed,2025-04-30,weekly,Transport Infrastructure,1,common,raw,-1.7142857142857146,tabm_embedded_e48_return_w1.0,rank_ic
+exposed,2025-04-30,weekly,Transport Infrastructure,3,common,raw,-1.7142857142857146,tabm_embedded_e48_return_w1.0,rank_ic
+exposed,2025-04-30,weekly,Transport Infrastructure,5,common,raw,-1.7142857142857146,tabm_embedded_e48_return_w1.0,rank_ic
+exposed,2025-04-30,quarterly,Transport Infrastructure,1,common,raw,-1.7142857142857146,tabm_embedded_e48_return_w1.0,rank_ic
+exposed,2025-04-30,quarterly,Transport Infrastructure,3,common,raw,-1.7142857142857146,tabm_embedded_e48_return_w1.0,rank_ic
+exposed,2025-04-30,quarterly,Transport Infrastructure,5,common,raw,-1.7142857142857146,tabm_embedded_e48_return_w1.0,rank_ic
+exposed,2025-04-30,weekly,Transport Infrastructure,1,common,capped,-1.7142857142857146,tabm_embedded_e48_return_w1.0,rank_ic
+exposed,2025-04-30,weekly,Transport Infrastructure,3,common,capped,-1.7142857142857146,tabm_embedded_e48_return_w1.0,rank_ic
+exposed,2025-04-30,weekly,Transport Infrastructure,5,common,capped,-1.7142857142857146,tabm_embedded_e48_return_w1.0,rank_ic
+exposed,2025-04-30,quarterly,Transport Infrastructure,1,common,capped,-1.7142857142857146,tabm_embedded_e48_return_w1.0,rank_ic
+exposed,2025-04-30,quarterly,Transport Infrastructure,3,common,capped,-1.7142857142857146,tabm_embedded_e48_return_w1.0,rank_ic
+exposed,2025-04-30,quarterly,Transport Infrastructure,5,common,capped,-1.7142857142857146,tabm_embedded_e48_return_w1.0,rank_ic
+development,2023-03-31,quarterly,IT - Hardware,1,common,raw,-1.6071428571428572,tabm_embedded_e48_return_w1.0,rank_ic
+development,2023-03-31,quarterly,IT - Hardware,3,common,raw,-1.6071428571428572,tabm_embedded_e48_return_w1.0,rank_ic
+development,2023-03-31,quarterly,IT - Hardware,5,common,raw,-1.6071428571428572,tabm_embedded_e48_return_w1.0,rank_ic
+development,2023-03-31,lookback12,IT - Hardware,1,common,raw,-1.6071428571428572,tabm_embedded_e48_return_w1.0,rank_ic
+development,2023-03-31,lookback12,IT - Hardware,3,common,raw,-1.6071428571428572,tabm_embedded_e48_return_w1.0,rank_ic
+development,2023-03-31,lookback12,IT - Hardware,5,common,raw,-1.6071428571428572,tabm_embedded_e48_return_w1.0,rank_ic
+development,2023-03-31,quarterly,IT - Hardware,1,common,capped,-1.6071428571428572,tabm_embedded_e48_return_w1.0,rank_ic
+development,2023-03-31,quarterly,IT - Hardware,3,common,capped,-1.6071428571428572,tabm_embedded_e48_return_w1.0,rank_ic
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,common,raw,-81.30712753987083,tabm_embedded_e48_return_w0.1,xirr
+development,2022-06-30,amount1000,Commercial Services & Supplies,1,expanded,raw,-81.30712753987083,tabm_embedded_e48_return_w0.1,xirr
+exposed,2025-03-31,quarterly,Capital Markets,3,common,raw,-14.623768460954619,tabm_embedded_e48_return_w0.1,xirr
+exposed,2025-03-31,quarterly,Capital Markets,3,expanded,raw,-14.623768460954619,tabm_embedded_e48_return_w0.1,xirr
+exposed,2025-03-31,weekly,Capital Markets,3,common,raw,-14.27345869540277,tabm_embedded_e48_return_w0.1,xirr
+exposed,2025-03-31,weekly,Capital Markets,3,expanded,raw,-14.27345869540277,tabm_embedded_e48_return_w0.1,xirr
+exposed,2025-03-31,lookback60,Capital Markets,3,common,raw,-13.994776858187459,tabm_embedded_e48_return_w0.1,xirr
+exposed,2025-03-31,lookback60,Capital Markets,3,expanded,raw,-13.994776858187459,tabm_embedded_e48_return_w0.1,xirr
+exposed,2025-03-31,lookback12,Capital Markets,3,common,raw,-13.442052223847194,tabm_embedded_e48_return_w0.1,xirr
+exposed,2025-03-31,target30,Capital Markets,3,common,raw,-13.442052223847194,tabm_embedded_e48_return_w0.1,xirr
+exposed,2025-03-31,base7500,Capital Markets,3,common,raw,-13.442052223847194,tabm_embedded_e48_return_w0.1,xirr
+exposed,2025-03-31,target10,Capital Markets,3,common,raw,-13.442052223847194,tabm_embedded_e48_return_w0.1,xirr
+exposed,2025-03-31,lookback12,Capital Markets,3,expanded,raw,-13.442052223847194,tabm_embedded_e48_return_w0.1,xirr
+exposed,2025-03-31,base7500,Capital Markets,3,expanded,raw,-13.442052223847194,tabm_embedded_e48_return_w0.1,xirr
+exposed,2025-03-31,target30,Capital Markets,3,expanded,raw,-13.442052223847194,tabm_embedded_e48_return_w0.1,xirr
+exposed,2025-03-31,target10,Capital Markets,3,expanded,raw,-13.442052223847194,tabm_embedded_e48_return_w0.1,xirr
+development,2022-12-31,weekly,Aerospace & Defense,1,common,raw,-4.364457774522842,tabm_embedded_e48_return_w0.1,xirr
+development,2022-12-31,weekly,Aerospace & Defense,1,expanded,raw,-4.364457774522842,tabm_embedded_e48_return_w0.1,xirr
+development,2022-12-31,amount50000,Aerospace & Defense,1,common,raw,-4.3293615754988135,tabm_embedded_e48_return_w0.1,xirr
+development,2022-12-31,amount50000,Aerospace & Defense,1,expanded,raw,-4.3293615754988135,tabm_embedded_e48_return_w0.1,xirr
+development,2020-06-30,lookback12,Finance,1,common,raw,-0.601625655623693,tabm_embedded_e48_return_w0.1,drawdown
+development,2020-06-30,lookback12,Finance,1,common,capped,-0.601625655623693,tabm_embedded_e48_return_w0.1,drawdown
+development,2023-03-31,lookback12,Commercial Services & Supplies,1,expanded,raw,-0.5529233961291822,tabm_embedded_e48_return_w0.1,drawdown
+development,2023-03-31,amount50000,Commercial Services & Supplies,1,expanded,raw,-0.5529233961291822,tabm_embedded_e48_return_w0.1,drawdown
+development,2023-03-31,lookback12,Commercial Services & Supplies,1,expanded,capped,-0.5529233961291822,tabm_embedded_e48_return_w0.1,drawdown
+development,2023-03-31,amount50000,Commercial Services & Supplies,1,expanded,capped,-0.5529233961291822,tabm_embedded_e48_return_w0.1,drawdown
+exposed,2024-12-31,lookback12,Food Products,1,expanded,raw,-0.4770516639391652,tabm_embedded_e48_return_w0.1,drawdown
+exposed,2024-12-31,amount50000,Food Products,1,expanded,raw,-0.4770516639391652,tabm_embedded_e48_return_w0.1,drawdown
+exposed,2024-12-31,lookback12,Food Products,1,expanded,capped,-0.4770516639391652,tabm_embedded_e48_return_w0.1,drawdown
+exposed,2024-12-31,amount50000,Food Products,1,expanded,capped,-0.4770516639391652,tabm_embedded_e48_return_w0.1,drawdown
+development,2020-03-31,weekly,Realty,1,common,raw,-0.472183855427711,tabm_embedded_e48_return_w0.1,drawdown
+development,2020-03-31,lookback60,Realty,1,common,raw,-0.472183855427711,tabm_embedded_e48_return_w0.1,drawdown
+development,2020-03-31,weekly,Realty,1,common,capped,-0.472183855427711,tabm_embedded_e48_return_w0.1,drawdown
+development,2020-03-31,lookback60,Realty,1,common,capped,-0.472183855427711,tabm_embedded_e48_return_w0.1,drawdown
+exposed,2025-04-30,amount50000,Retailing,1,common,raw,-0.4302785570752809,tabm_embedded_e48_return_w0.1,drawdown
+exposed,2025-04-30,target30,Retailing,1,common,raw,-0.4302785570752809,tabm_embedded_e48_return_w0.1,drawdown
+exposed,2025-04-30,base7500,Retailing,1,common,raw,-0.4302785570752809,tabm_embedded_e48_return_w0.1,drawdown
+exposed,2025-04-30,weekly,Retailing,1,common,raw,-0.4302785570752809,tabm_embedded_e48_return_w0.1,drawdown
+exposed,2025-04-30,target10,Retailing,1,common,raw,-0.4302785570752809,tabm_embedded_e48_return_w0.1,drawdown
+exposed,2025-04-30,quarterly,Retailing,1,common,raw,-0.4302785570752809,tabm_embedded_e48_return_w0.1,drawdown
+development,2020-03-31,amount1000,Realty,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,amount1000,Industrial Products,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,amount1000,Entertainment,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,target10,Entertainment,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,quarterly,Industrial Products,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,quarterly,Entertainment,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,target30,Industrial Products,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,target30,Entertainment,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,weekly,Realty,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,weekly,Industrial Products,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,weekly,Entertainment,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,lookback60,Realty,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,lookback60,Industrial Products,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,lookback60,Entertainment,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,lookback12,Industrial Products,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,lookback12,Entertainment,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,amount50000,Industrial Products,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,base7500,Industrial Products,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2020-03-31,base7500,Entertainment,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+development,2021-06-30,amount1000,Realty,1,common,raw,-1.0,tabm_embedded_e48_return_w0.1,achievement
+exposed,2025-08-31,target30,Entertainment,1,expanded,raw,-0.4209474800046549,tabm_embedded_e48_return_w0.1,shortfall
+exposed,2025-08-31,target30,Entertainment,1,expanded,capped,-0.4209474800046549,tabm_embedded_e48_return_w0.1,shortfall
+exposed,2025-08-31,weekly,Entertainment,1,expanded,raw,-0.4002520866790456,tabm_embedded_e48_return_w0.1,shortfall
+exposed,2025-08-31,weekly,Entertainment,1,expanded,capped,-0.4002520866790456,tabm_embedded_e48_return_w0.1,shortfall
+exposed,2025-08-31,lookback60,Entertainment,1,expanded,raw,-0.3959576517083907,tabm_embedded_e48_return_w0.1,shortfall
+exposed,2025-08-31,lookback12,Entertainment,1,expanded,raw,-0.3959576517083907,tabm_embedded_e48_return_w0.1,shortfall
+exposed,2025-08-31,base7500,Entertainment,1,expanded,raw,-0.3959576517083907,tabm_embedded_e48_return_w0.1,shortfall
+exposed,2025-08-31,lookback60,Entertainment,1,expanded,capped,-0.3959576517083907,tabm_embedded_e48_return_w0.1,shortfall
+exposed,2025-08-31,lookback12,Entertainment,1,expanded,capped,-0.3959576517083907,tabm_embedded_e48_return_w0.1,shortfall
+exposed,2025-08-31,base7500,Entertainment,1,expanded,capped,-0.3959576517083907,tabm_embedded_e48_return_w0.1,shortfall
+exposed,2025-08-31,amount1000,Entertainment,1,common,raw,-0.3959556910621303,tabm_embedded_e48_return_w0.1,shortfall
+exposed,2025-08-31,amount1000,Entertainment,1,common,capped,-0.3959556910621303,tabm_embedded_e48_return_w0.1,shortfall
+exposed,2025-08-31,amount1000,Entertainment,1,expanded,raw,-0.3959556910621303,tabm_embedded_e48_return_w0.1,shortfall
+exposed,2025-08-31,amount1000,Entertainment,1,expanded,capped,-0.3959556910621303,tabm_embedded_e48_return_w0.1,shortfall
+exposed,2025-08-31,quarterly,Entertainment,1,expanded,raw,-0.3953287091197913,tabm_embedded_e48_return_w0.1,shortfall
+exposed,2025-08-31,quarterly,Entertainment,1,expanded,capped,-0.3953287091197913,tabm_embedded_e48_return_w0.1,shortfall
+exposed,2025-08-31,target10,Entertainment,1,expanded,raw,-0.3680009727341921,tabm_embedded_e48_return_w0.1,shortfall
+exposed,2025-08-31,target10,Entertainment,1,expanded,capped,-0.3680009727341921,tabm_embedded_e48_return_w0.1,shortfall
+development,2021-09-30,target10,IT - Hardware,1,expanded,raw,-0.3622311805905132,tabm_embedded_e48_return_w0.1,shortfall
+development,2021-09-30,target10,IT - Hardware,1,expanded,capped,-0.3622311805905132,tabm_embedded_e48_return_w0.1,shortfall
+development,2023-03-31,amount1000,Capital Markets,1,expanded,capped,-0.9318181818181819,tabm_embedded_e48_return_w0.1,ndcg
+development,2023-03-31,amount1000,Capital Markets,1,expanded,raw,-0.9183673469387756,tabm_embedded_e48_return_w0.1,ndcg
+development,2023-03-31,lookback12,Capital Markets,1,common,capped,-0.8888888888888888,tabm_embedded_e48_return_w0.1,ndcg
+development,2023-03-31,quarterly,Capital Markets,1,expanded,capped,-0.8837209302325582,tabm_embedded_e48_return_w0.1,ndcg
+development,2023-03-31,weekly,Capital Markets,1,expanded,raw,-0.8775510204081634,tabm_embedded_e48_return_w0.1,ndcg
+development,2023-03-31,quarterly,Capital Markets,1,expanded,raw,-0.8775510204081634,tabm_embedded_e48_return_w0.1,ndcg
+development,2023-03-31,lookback12,Capital Markets,1,common,raw,-0.8666666666666668,tabm_embedded_e48_return_w0.1,ndcg
+development,2023-03-31,lookback12,Capital Markets,1,expanded,capped,-0.8666666666666667,tabm_embedded_e48_return_w0.1,ndcg
+development,2023-03-31,target30,Capital Markets,1,expanded,capped,-0.8636363636363638,tabm_embedded_e48_return_w0.1,ndcg
+development,2023-03-31,target10,Capital Markets,1,expanded,capped,-0.8636363636363638,tabm_embedded_e48_return_w0.1,ndcg
+development,2023-03-31,base7500,Capital Markets,1,expanded,capped,-0.8636363636363638,tabm_embedded_e48_return_w0.1,ndcg
+development,2023-03-31,weekly,Capital Markets,1,expanded,capped,-0.8620689655172414,tabm_embedded_e48_return_w0.1,ndcg
+development,2023-03-31,amount50000,Capital Markets,1,expanded,capped,-0.8620689655172414,tabm_embedded_e48_return_w0.1,ndcg
+development,2023-03-31,lookback12,Capital Markets,1,expanded,raw,-0.86,tabm_embedded_e48_return_w0.1,ndcg
+development,2023-03-31,target30,Capital Markets,1,expanded,raw,-0.8571428571428572,tabm_embedded_e48_return_w0.1,ndcg
+development,2023-03-31,target10,Capital Markets,1,expanded,raw,-0.8571428571428572,tabm_embedded_e48_return_w0.1,ndcg
+development,2023-03-31,base7500,Capital Markets,1,expanded,raw,-0.8571428571428572,tabm_embedded_e48_return_w0.1,ndcg
+development,2023-03-31,amount50000,Capital Markets,1,expanded,raw,-0.8571428571428572,tabm_embedded_e48_return_w0.1,ndcg
+development,2021-06-30,amount50000,Realty,1,common,raw,-0.8125,tabm_embedded_e48_return_w0.1,ndcg
+development,2021-06-30,amount50000,Realty,1,common,capped,-0.8125,tabm_embedded_e48_return_w0.1,ndcg
+development,2021-06-30,lookback60,Non - Ferrous Metals,1,common,raw,-0.3000000000000001,tabm_embedded_e48_return_w0.1,rank_ic
+development,2021-06-30,lookback60,Non - Ferrous Metals,3,common,raw,-0.3000000000000001,tabm_embedded_e48_return_w0.1,rank_ic
+development,2021-06-30,lookback60,Non - Ferrous Metals,5,common,raw,-0.3000000000000001,tabm_embedded_e48_return_w0.1,rank_ic
+development,2021-06-30,lookback60,Non - Ferrous Metals,1,common,capped,-0.3000000000000001,tabm_embedded_e48_return_w0.1,rank_ic
+development,2021-06-30,lookback60,Non - Ferrous Metals,3,common,capped,-0.3000000000000001,tabm_embedded_e48_return_w0.1,rank_ic
+development,2021-06-30,lookback60,Non - Ferrous Metals,5,common,capped,-0.3000000000000001,tabm_embedded_e48_return_w0.1,rank_ic
+development,2023-12-31,target10,IT - Hardware,1,common,raw,-0.22857142857142868,tabm_embedded_e48_return_w0.1,rank_ic
+development,2023-12-31,target10,IT - Hardware,3,common,raw,-0.22857142857142868,tabm_embedded_e48_return_w0.1,rank_ic
+development,2023-12-31,target10,IT - Hardware,5,common,raw,-0.22857142857142868,tabm_embedded_e48_return_w0.1,rank_ic
+development,2023-12-31,target30,IT - Hardware,1,common,raw,-0.22857142857142868,tabm_embedded_e48_return_w0.1,rank_ic
+development,2023-12-31,target30,IT - Hardware,3,common,raw,-0.22857142857142868,tabm_embedded_e48_return_w0.1,rank_ic
+development,2023-12-31,target30,IT - Hardware,5,common,raw,-0.22857142857142868,tabm_embedded_e48_return_w0.1,rank_ic
+development,2023-12-31,weekly,IT - Hardware,1,common,raw,-0.22857142857142868,tabm_embedded_e48_return_w0.1,rank_ic
+development,2023-12-31,weekly,IT - Hardware,3,common,raw,-0.22857142857142868,tabm_embedded_e48_return_w0.1,rank_ic
+development,2023-12-31,weekly,IT - Hardware,5,common,raw,-0.22857142857142868,tabm_embedded_e48_return_w0.1,rank_ic
+development,2023-12-31,base7500,IT - Hardware,1,common,raw,-0.22857142857142868,tabm_embedded_e48_return_w0.1,rank_ic
+development,2023-12-31,base7500,IT - Hardware,3,common,raw,-0.22857142857142868,tabm_embedded_e48_return_w0.1,rank_ic
+development,2023-12-31,base7500,IT - Hardware,5,common,raw,-0.22857142857142868,tabm_embedded_e48_return_w0.1,rank_ic
+development,2023-12-31,target10,IT - Hardware,1,common,capped,-0.22857142857142868,tabm_embedded_e48_return_w0.1,rank_ic
+development,2023-12-31,target10,IT - Hardware,3,common,capped,-0.22857142857142868,tabm_embedded_e48_return_w0.1,rank_ic

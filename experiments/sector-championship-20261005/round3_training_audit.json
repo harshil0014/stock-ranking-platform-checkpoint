@@ -1,0 +1,114 @@
+[
+  {
+    "year": 2020,
+    "model": "return_leaves7",
+    "train_n": 92770,
+    "max_endpoint": "2019-12-31",
+    "test_start": "2020-03-31"
+  },
+  {
+    "year": 2020,
+    "model": "return_leaves15",
+    "train_n": 92770,
+    "max_endpoint": "2019-12-31",
+    "test_start": "2020-03-31"
+  },
+  {
+    "year": 2020,
+    "model": "balanced_leaves7",
+    "train_n": 92770,
+    "max_endpoint": "2019-12-31",
+    "test_start": "2020-03-31"
+  },
+  {
+    "year": 2020,
+    "model": "balanced_leaves15",
+    "train_n": 92770,
+    "max_endpoint": "2019-12-31",
+    "test_start": "2020-03-31"
+  },
+  {
+    "year": 2021,
+    "model": "return_leaves7",
+    "train_n": 121171,
+    "max_endpoint": "2020-12-31",
+    "test_start": "2021-03-31"
+  },
+  {
+    "year": 2021,
+    "model": "return_leaves15",
+    "train_n": 121171,
+    "max_endpoint": "2020-12-31",
+    "test_start": "2021-03-31"
+  },
+  {
+    "year": 2021,
+    "model": "balanced_leaves7",
+    "train_n": 121171,
+    "max_endpoint": "2020-12-31",
+    "test_start": "2021-03-31"
+  },
+  {
+    "year": 2021,
+    "model": "balanced_leaves15",
+    "train_n": 121171,
+    "max_endpoint": "2020-12-31",
+    "test_start": "2021-03-31"
+  },
+  {
+    "year": 2022,
+    "model": "return_leaves7",
+    "train_n": 150048,
+    "max_endpoint": "2021-12-31",
+    "test_start": "2022-03-31"
+  },
+  {
+    "year": 2022,
+    "model": "return_leaves15",
+    "train_n": 150048,
+    "max_endpoint": "2021-12-31",
+    "test_start": "2022-03-31"
+  },
+  {
+    "year": 2022,
+    "model": "balanced_leaves7",
+    "train_n": 150048,
+    "max_endpoint": "2021-12-31",
+    "test_start": "2022-03-31"
+  },
+  {
+    "year": 2022,
+    "model": "balanced_leaves15",
+    "train_n": 150048,
+    "max_endpoint": "2021-12-31",
+    "test_start": "2022-03-31"
+  },
+  {
+    "year": 2023,
+    "model": "return_leaves7",
+    "train_n": 189361,
+    "max_endpoint": "2022-12-31",
+    "test_start": "2023-03-31"
+  },
+  {
+    "year": 2023,
+    "model": "return_leaves15",
+    "train_n": 189361,
+    "max_endpoint": "2022-12-31",
+    "test_start": "2023-03-31"
+  },
+  {
+    "year": 2023,
+    "model": "balanced_leaves7",
+    "train_n": 189361,
+    "max_endpoint": "2022-12-31",
+    "test_start": "2023-03-31"
+  },
+  {
+    "year": 2023,
+    "model": "balanced_leaves15",
+    "train_n": 189361,
+    "max_endpoint": "2022-12-31",
+    "test_start": "2023-03-31"
+  }
+]

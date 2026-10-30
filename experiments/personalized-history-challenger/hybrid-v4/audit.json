@@ -1,0 +1,174 @@
+{
+  "alpha": 0.6,
+  "history_penalty": 0.4,
+  "effective_goal_weight": 0.628,
+  "history_confidence_severity": "(1 - min(history_months / 60, 1)) * (1 - cagr_5y_observed)",
+  "new_ranker": "risk_core__shallow",
+  "current": {
+    "champion": {
+      "universe_short_history_share": 0.07993874425727412,
+      "top_short_history_share": {
+        "20": 0.9,
+        "50": 0.46,
+        "100": 0.29
+      },
+      "nykaa_overall_position": 1,
+      "nykaa_retailing_position": 1,
+      "retailing_top10": [
+        {
+          "ticker": "NYKAA",
+          "sector_position": 1,
+          "selected_ensemble_score": 0.9896124095936478
+        },
+        {
+          "ticker": "ETERNAL",
+          "sector_position": 2,
+          "selected_ensemble_score": 0.9169317986065452
+        },
+        {
+          "ticker": "V2RETAIL",
+          "sector_position": 3,
+          "selected_ensemble_score": 0.9136784639889216
+        },
+        {
+          "ticker": "CARTRADE",
+          "sector_position": 4,
+          "selected_ensemble_score": 0.8955347840228716
+        },
+        {
+          "ticker": "NAUKRI",
+          "sector_position": 5,
+          "selected_ensemble_score": 0.7820887751640612
+        },
+        {
+          "ticker": "MEDPLUS",
+          "sector_position": 6,
+          "selected_ensemble_score": 0.6702803396109996
+        },
+        {
+          "ticker": "ARVINDFASN",
+          "sector_position": 7,
+          "selected_ensemble_score": 0.6357740682265209
+        },
+        {
+          "ticker": "VMART",
+          "sector_position": 8,
+          "selected_ensemble_score": 0.6020456495367482
+        },
+        {
+          "ticker": "DMART",
+          "sector_position": 9,
+          "selected_ensemble_score": 0.5951921228339818
+        },
+        {
+          "ticker": "TRENT",
+          "sector_position": 10,
+          "selected_ensemble_score": 0.5247838553554204
+        }
+      ]
+    },
+    "challenger": {
+      "universe_short_history_share": 0.07993874425727412,
+      "top_short_history_share": {
+        "20": 0.05,
+        "50": 0.1,
+        "100": 0.06
+      },
+      "nykaa_overall_position": 105,
+      "nykaa_retailing_position": 1,
+      "retailing_top10": [
+        {
+          "ticker": "NYKAA",
+          "sector_position": 1,
+          "challenger_score": 0.9102287608007296
+        },
+        {
+          "ticker": "ETERNAL",
+          "sector_position": 2,
+          "challenger_score": 0.9039251967965336
+        },
+        {
+          "ticker": "V2RETAIL",
+          "sector_position": 3,
+          "challenger_score": 0.8956485143414732
+        },
+        {
+          "ticker": "CARTRADE",
+          "sector_position": 4,
+          "challenger_score": 0.8920052471630447
+        },
+        {
+          "ticker": "NAUKRI",
+          "sector_position": 5,
+          "challenger_score": 0.7626617148903677
+        },
+        {
+          "ticker": "ARVINDFASN",
+          "sector_position": 6,
+          "challenger_score": 0.6752620401508204
+        },
+        {
+          "ticker": "VMART",
+          "sector_position": 7,
+          "challenger_score": 0.6079260019906498
+        },
+        {
+          "ticker": "DMART",
+          "sector_position": 8,
+          "challenger_score": 0.5837298646330211
+        },
+        {
+          "ticker": "JUSTDIAL",
+          "sector_position": 9,
+          "challenger_score": 0.5462220297648214
+        },
+        {
+          "ticker": "MEDPLUS",
+          "sector_position": 10,
+          "challenger_score": 0.47881138385614136
+        }
+      ]
+    },
+    "nykaa_contributions": {
+      "champion": {
+        "enhanced_carry_xirr_score": 0.05083704703183575,
+        "enhanced_goal_score": 0.005898420399509765,
+        "price_drawdown": 0.15818964729860396,
+        "cagr_3y": 0.07930536955754305,
+        "cagr_5y": 0.3058108315933076,
+        "cash_utilization": -0.0042136983790175275,
+        "unaffordable_rate": 0.0,
+        "bias": -0.41149247464395056
+      },
+      "challenger": {
+        "enhanced_carry_xirr_score": 0.03412225640729957,
+        "enhanced_goal_score": 0.02058198134301952,
+        "price_drawdown": 0.01750675236003258,
+        "cagr_3y": 0.0009470378013253576,
+        "cagr_5y": -0.0038515193259558668,
+        "cash_utilization": 0.0002665415677900656,
+        "unaffordable_rate": 0.0,
+        "days_since_recorded_high": -0.06490847137054571,
+        "distance_from_recorded_high": 0.09014217017639231,
+        "full_history_max_drawdown": 0.00531886523278495,
+        "history_months": -0.07334195904562012,
+        "since_listing_cagr": 0.004140984031980062,
+        "cagr_5y_observed": 0.00022386141645081841,
+        "bias": -0.45440151929274936
+      },
+      "original_missing_cagr_5y": true,
+      "new_cagr_5y_source": "ESTIMATED",
+      "new_cagr_5y": -0.020335266212494,
+      "missing_value_feature_contributions": {
+        "cagr_5y": 0.3058108315933076
+      }
+    },
+    "missing_value_contributions": {
+      "missing_cagr_5y_count": 260,
+      "missing_cagr_5y_mean_contribution": 0.23483104133759272,
+      "missing_cagr_5y_median_contribution": 0.22740830107158477,
+      "observed_cagr_5y_mean_contribution": -0.04054515720506851,
+      "challenger_missing_cagr_5y_count": 0
+    }
+  }
+}

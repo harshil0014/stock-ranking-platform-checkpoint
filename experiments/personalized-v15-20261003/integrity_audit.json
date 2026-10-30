@@ -1,0 +1,25 @@
+{
+  "protected_files_checked": 23007,
+  "protected_changed": [],
+  "production_head": "c12dd9b189bc71684bfac52606eb89abd5e383c7",
+  "d499580_unchanged": true,
+  "v14_unchanged": true,
+  "production_website_railway_files_unchanged": true,
+  "historical_panels_unchanged": true,
+  "current_values_backfilled": false,
+  "identity_shortcuts": false,
+  "protocol_locked_before_search": true,
+  "selection_locked_before_final_evaluation": true,
+  "all_final_periods_previously_exposed": true,
+  "history_age_dominates": false,
+  "risk_dominates": false,
+  "ath_influential": true,
+  "user_personalization_present": true,
+  "feature_family_shap_fractions": {
+    "ath": 0.20000923643187013,
+    "goal_user": 0.08113157015054918,
+    "growth": 0.25755914127597584,
+    "risk": 0.46130005214160485
+  },
+  "current_action_authority_limit": "2026-09-18"
+}

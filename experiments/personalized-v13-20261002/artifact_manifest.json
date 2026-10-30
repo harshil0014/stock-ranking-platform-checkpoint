@@ -1,0 +1,135 @@
+{
+  "schema": "personalized_v13_manifest_v1",
+  "files": [
+    {
+      "path": "experiments/personalized-v13-20261002/blind-2024-01-31/checkpoints/deep_added-2024-01-31.csv.gz",
+      "bytes": 6355940,
+      "sha256": "7f1af7975c9f27d7381198fffabb6fbde8ceec0f72eec108d6dcb61198438df2"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/blind-2024-01-31/date_coverage.csv",
+      "bytes": 521,
+      "sha256": "88dd8bf7c701509b15121215b410d4da177306bc344b53d0228021560328b7ae"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/blind-2024-01-31/deep_panel.csv.gz",
+      "bytes": 68644291,
+      "sha256": "0fe83c540b187e4fe334bf062d0a7a68d32a29903a04700a9890c308517dd055"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/blind-2024-01-31/outcome_window_overlap.csv",
+      "bytes": 1844,
+      "sha256": "ea18497200d26593af24e3c1bd0735a46d0ecc7cad3467a43d27b1bc7e77e76a"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/blind-2024-01-31/provider_lookup_quarantine.csv",
+      "bytes": 5615,
+      "sha256": "7cff0bd8c7265f5407f7846cef09206faa92761eecdadce85c39cb1853a6ec6b"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/blind-2024-01-31/summary.json",
+      "bytes": 3365,
+      "sha256": "49d71c9565e7d78a20b39d61859f5bb047c98ab8e27fda09af39f4faced9c353"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/blind-evaluation-2024-01-31/evaluation_record.json",
+      "bytes": 2567,
+      "sha256": "ebbb8e8bcc6d66c87963e58eab9dde920733864a4074df05b3e3b2d9db56885c"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/blind-evaluation-2024-01-31/pre_reveal_record.json",
+      "bytes": 516,
+      "sha256": "1ad2affa63f26b7e8f9b2e1796b5deed2d89629c7125b68c5cfb1bac0041b3cc"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/blind-evaluation-2024-01-31/profile_metrics.csv",
+      "bytes": 4031,
+      "sha256": "0b0e547319df13ce6d0de1d30820069d1c40f6fa22e2667a7a447517f5cc8b07"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/blind-evaluation-2024-01-31/scores_before_reveal.csv.gz",
+      "bytes": 1056813,
+      "sha256": "10991d59639659cc7b1ae2a93f43893d10e1e458cec1334245ebe05dbaea3c99"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/blind_validation_plan.json",
+      "bytes": 877,
+      "sha256": "caa3262177ff174357d04c7b63caa6a9c8f2ab6eb660945333f400afeeee57fb"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/decision.json",
+      "bytes": 2770,
+      "sha256": "814d8b830bf08a77b4c549b997165810246e80eaa2f6bd3865d0615dbd70b3ec"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/development_search.csv",
+      "bytes": 29194,
+      "sha256": "19c99cdcd7f6c9d3a896d431e0e35f50832b3e81d2e4340faf4a062b251d63ad"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/development_summary.json",
+      "bytes": 1381,
+      "sha256": "6601c9ba37120b01f98bb69632aef646516bee775fc4f55975a6d396db8cf2c6"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/known_2025_retrospective_profile_metrics.csv",
+      "bytes": 7483,
+      "sha256": "f31e43bda556f3c4efde0504b8f4612620de8c53e8f66000c3c287e607fb2a6f"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/known_2025_retrospective_stress.json",
+      "bytes": 2104,
+      "sha256": "900b78a128c5c840e367cd2bdaab7b7ad868a44c3b46ed1d13914fbd2231e316"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/locked_selection.json",
+      "bytes": 3205,
+      "sha256": "dad3ce68b22a1f744650e501505a3ebc78dc7c4bd39c3247982c4ed84bcac13b"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/selection_lock.sha256",
+      "bytes": 89,
+      "sha256": "0cdbdec0994e2adae4ede39003756bd55b824339815deb8a338dd827abafd455"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/smooth_development_search.csv",
+      "bytes": 13238,
+      "sha256": "d3e5e05ecd352e37526f6f2e1de9e47098e6062bc9d9901dc6aa544f8a828067"
+    },
+    {
+      "path": "experiments/personalized-v13-20261002/smooth_summary.json",
+      "bytes": 143,
+      "sha256": "663200ac2751fec24585fe2934ae9d9ad4c14d1eca142fbe9e3de856b67c31a4"
+    },
+    {
+      "path": "research/reports/personalized_v13_history_weekly_20261002.md",
+      "bytes": 5867,
+      "sha256": "da5d7d55f4beac38208e4c6126a4be9b096a2663ca460f4de46fcee52ec868a9"
+    },
+    {
+      "path": "research/runners/audit_personalized_v13_known_2025.py",
+      "bytes": 3500,
+      "sha256": "403129ab521c43cd26a01ca6ae7516c0c5eb45bcc6a0e05134e317313acee617"
+    },
+    {
+      "path": "research/runners/evaluate_personalized_v13_blind_20240131.py",
+      "bytes": 6414,
+      "sha256": "e728f26e9a63a6b080060941d64a549bac368730d659cc021a16a2b16dfc7fac"
+    },
+    {
+      "path": "research/runners/personalized_v13_history_weekly_probe.py",
+      "bytes": 7205,
+      "sha256": "af9ac75069385dc613768b90fee7e73e312f18e88012ef3e0b74754011323a6a"
+    },
+    {
+      "path": "research/runners/personalized_v13_smooth_history_probe.py",
+      "bytes": 4056,
+      "sha256": "8a6d9fb3a9bd889cc9cb07ff7bce8652563b848ffbee25bf3e20a7830f053954"
+    },
+    {
+      "path": "research/runners/seal_personalized_v13_selection.py",
+      "bytes": 5410,
+      "sha256": "937bbb740775b0e88d1e8a35b37fb20460ebd296c996a0471e4e6129f5cc2751"
+    }
+  ]
+}

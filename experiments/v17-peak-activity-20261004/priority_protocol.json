@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-10-04T12:22:16.960955+00:00",
+  "purpose": "User preference for materially stronger closing-high influence with execution plausibility. This is not a claim to maximize historical returns.",
+  "weights": {
+    "V17_refined": 0.7,
+    "closing_high": 0.2,
+    "momentum_12_1_percentile": 0.1
+  },
+  "closing_high_formula": ".5*exp(-ATH_age_days/1095.75)+.3*(1+ATH_distance)+.2*365/(365+52week_high_age_days)",
+  "activity_screen": {
+    "positive_volume_fraction_min": 0.8,
+    "median_daily_value_over_contribution_min": 100,
+    "observations_1y_min": 120,
+    "quote_lag_days_max": 7
+  },
+  "screen_interpretation": "A contribution is at most 1% of median reported daily traded value. This is an eligibility assumption, not a measured transaction cost or fill guarantee.",
+  "benchmark": "Show original V17 and V17 on exactly the same eligible stocks. Fixed formula; no selection of weights from resulting company ranks.",
+  "exposure": "Design uses current-universe diagnostics and already-researched history; no fresh holdout."
+}

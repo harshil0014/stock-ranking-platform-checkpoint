@@ -1,0 +1,33 @@
+{
+  "accepted_company_facts_sha256": "d0436b9f79eda4de11524f22e7be985ae6d3a06c7ef3c72151973498c3f08301",
+  "accepted_snapshot_modified": false,
+  "accepted_state_sha256": "79462a7499ef120f530652b077274c70cec5c6ee1379e9d5c88bef2c6dd412c0",
+  "ath_direct_fills": 0,
+  "ath_reason": "No accepted recorded_high/recorded_high_date blank has a matching professor ATH value; no substitution was needed.",
+  "base_fill_ledger_sha256": "fb5e7626b249dc2b4c36fa4fa0dff5aa365be16eebcbce10c644a8bfea21bd02",
+  "base_overlay_sha256": "3f6c55a7b931adbbc1b6cd7ec2f10a53001f07765d22d5fa8803db3edd61ff1f",
+  "differential_penalty_or_rank_weight": false,
+  "direct_fields_filled": 1497,
+  "existing_nonmissing_cells_overwritten": 0,
+  "fills_by_field": {
+    "product_baseline_cagr_3y": 487,
+    "product_baseline_cagr_5y": 543,
+    "product_baseline_yoy_growth": 467
+  },
+  "historical_v12_v13_modified": false,
+  "not_recomputed": [
+    "product_baseline_score",
+    "product_baseline_sector_rank",
+    "product_baseline_eligible"
+  ],
+  "production_or_website_modified": false,
+  "rows": 4436,
+  "same_priority_as_other_current_values": true,
+  "schema": "professor_current_equal_priority_v2",
+  "source_workbook_sha256": "be2ab62fb41abd4769b5f5d8de7f3df04edc6cfa336bb0d2c5906fc6da2e980b",
+  "stocks_with_direct_fills": 625,
+  "total_professor_filled_cells_including_v1": 24697,
+  "workbook_ambiguous_source_rows": 7,
+  "workbook_matched_unique_stocks": 4393,
+  "workbook_unmatched_source_rows": 1033
+}

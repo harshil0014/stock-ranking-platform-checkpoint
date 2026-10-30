@@ -1,0 +1,7 @@
+{
+  "hypothesis": "Achievement and XIRR dominate remaining regressions, especially amount50000. Explicit goal-aware target; fixed one model and four blends.",
+  "target": ".5 achievement + .25 inverse-shortfall percentile + .125 return percentile + .125 drawdown percentile",
+  "selection": "Unchanged development-only regression-count criterion",
+  "features": "Same rebuilt70price/profilefeatures; no future information added",
+  "fresh_validation": false
+}

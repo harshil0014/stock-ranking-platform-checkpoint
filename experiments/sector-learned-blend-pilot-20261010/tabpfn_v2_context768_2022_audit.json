@@ -1,0 +1,21 @@
+{
+  "mode": "BILINEAR_GRID",
+  "grid_trials": [
+    {
+      "grid": 33,
+      "probe_mae": 0.0012666697794296413,
+      "probe_max": 0.007022864477767898
+    }
+  ],
+  "rows": 112401,
+  "context_rows": 768,
+  "n_estimators": 1,
+  "seconds": 9.79875439999887,
+  "torch": "2.12.0+cpu",
+  "device": "cpu",
+  "tabpfn": "2.2.1",
+  "checkpoint_sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+  "context_sha256": "7076b4368de7006fd68cf0e0bc6ddb7fb90d75ec631e96e030e56ec1f12770e7",
+  "inputs_sha256": "6b3eeb3676795903cd3f063a87820af654d1deef7a5de1f0fe1c2407e576f04c",
+  "telemetry_disabled": true
+}

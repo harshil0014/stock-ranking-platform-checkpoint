@@ -1,0 +1,9 @@
+{
+  "source": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\experiments\\champion-sir-judgment-20261010\\all_4436_stock_audit.csv",
+  "sha256": "ec7e655e35aeb7a52b57e6c84840e35a54c3f4c3eccd6abfe42505f3b1f3369c",
+  "rows": 4436,
+  "snapshot": "2026-10-03",
+  "current_fundamentals_used_in_historical_training": false,
+  "independent_future_truth": false,
+  "fresh_company_investigations": false
+}

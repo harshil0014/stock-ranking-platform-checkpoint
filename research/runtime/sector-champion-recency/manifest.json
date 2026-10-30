@@ -1,0 +1,28 @@
+{
+  "model_id": "sector_champion_recency_20261017",
+  "as_of_date": "2026-10-03",
+  "chosen_by": "User explicitly requested SIP preference integration after accepting slight historical degradation",
+  "formula": "0.75*(0.8*open_model+0.2*profile_defensive_15)+0.25*rank_xendcg_balanced+0.01*(0.60*dual_recency+0.25*dual_proximity+0.15*momentum-0.5)",
+  "fresh_validation": false,
+  "automated_research_gate_passed": false,
+  "rollback": "Original champion score is included per row; previous website modes and research artifacts retained.",
+  "sources": {
+    "experiments\\champion-high-recency-20261017\\current_all_4436_audit.csv": "8042dffb7904cb182a1bee0406670db741e2593214b127f7f7b4fb37d62fbe20",
+    "experiments\\action-guarded-sector-20261008\\current_all_stock_rankings.csv": "5596de88759890bba90715344558555b094e3615b33a25fd4f1d7ddb96de49dd",
+    "experiments\\action-guarded-sector-20261008\\current_guarded_ranker.txt": "229226658c3f5a73d6381798876a846e5c56e1fd0636822f40a2fb243d4756c0",
+    "experiments\\sector-price-rebuild-20261010\\current_model.txt": "63518db99ef7eaf62489988d5208356a9afab754d317a0aff42e784587a22e95"
+  },
+  "files": {
+    "price.txt": "63518db99ef7eaf62489988d5208356a9afab754d317a0aff42e784587a22e95",
+    "price_inputs.csv.gz": "e146ea6f0c98ea1763c0150daeae0c6e933ee5f055dbaa6a158b1c353861639f",
+    "profile.txt": "229226658c3f5a73d6381798876a846e5c56e1fd0636822f40a2fb243d4756c0",
+    "profile_inputs.csv.gz": "b8b61d9d08515bd7917ac43275a374d23d049e1b62823fc8ceadc61f99d6287d",
+    "sip_profiles.csv.gz": "980739639bf4dd636138b0b877068cc04d178777af0197f547995805132d8e79",
+    "sip_events.csv": "67e1c568761a09452e7e6d1f6031472965f1d5e60074c8babd000883ea26326c"
+  },
+  "profile_affects_ranking": true,
+  "profile_behavior": "Trailing professor-mode SIP signal depends on amount, interval and lookback. Target controls goals, not this SIP formula.",
+  "sip_weight": 0.01,
+  "sip_variant": "risk_confirmed",
+  "sip_formula": "recency_champion + .01*(sector_profit_percentile-.5)*invested_fraction*inverse_downside_percentile"
+}

@@ -1,0 +1,10 @@
+{
+  "selection_lock_sha256": "dad3ce68b22a1f744650e501505a3ebc78dc7c4bd39c3247982c4ed84bcac13b",
+  "blind_plan_sha256": "caa3262177ff174357d04c7b63caa6a9c8f2ab6eb660945333f400afeeee57fb",
+  "raw_checkpoint_sha256": "7f1af7975c9f27d7381198fffabb6fbde8ceec0f72eec108d6dcb61198438df2",
+  "scores_before_reveal_sha256": "10991d59639659cc7b1ae2a93f43893d10e1e458cec1334245ebe05dbaea3c99",
+  "decision_date": "2024-01-31",
+  "score_rows": 30305,
+  "outcome_columns_loaded": false,
+  "selection_changed": false
+}

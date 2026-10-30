@@ -1,0 +1,86 @@
+{
+  "sha": "e20b6e46ccbd2b6b8180ff3db62f68b16721684c",
+  "url": "https://api.github.com/repos/SJTU-DMTai/DoubleAdapt/git/trees/e20b6e46ccbd2b6b8180ff3db62f68b16721684c",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32f912e9c25d19d520d318b6c82a08d174bc8cc3",
+      "size": 3085,
+      "url": "https://api.github.com/repos/SJTU-DMTai/DoubleAdapt/git/blobs/32f912e9c25d19d520d318b6c82a08d174bc8cc3"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd961e4e07be5e3658511174ce5d155af268d1ae",
+      "size": 7461,
+      "url": "https://api.github.com/repos/SJTU-DMTai/DoubleAdapt/git/blobs/cd961e4e07be5e3658511174ce5d155af268d1ae"
+    },
+    {
+      "path": "main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0f86676bfaa2b58afb01c5ba7141846c3ac1472",
+      "size": 20338,
+      "url": "https://api.github.com/repos/SJTU-DMTai/DoubleAdapt/git/blobs/d0f86676bfaa2b58afb01c5ba7141846c3ac1472"
+    },
+    {
+      "path": "run.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a9f9798b514d77ac7c39d5c6379485c9013f2f2",
+      "size": 1558,
+      "url": "https://api.github.com/repos/SJTU-DMTai/DoubleAdapt/git/blobs/2a9f9798b514d77ac7c39d5c6379485c9013f2f2"
+    },
+    {
+      "path": "slides_DoubleAdapt.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "404a05d7663e7fe1a39cfed93e5bfb6a5709742c",
+      "size": 2827830,
+      "url": "https://api.github.com/repos/SJTU-DMTai/DoubleAdapt/git/blobs/404a05d7663e7fe1a39cfed93e5bfb6a5709742c"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "67fcab2164ddc8b1751e182a8ee4af29c41e1798",
+      "url": "https://api.github.com/repos/SJTU-DMTai/DoubleAdapt/git/trees/67fcab2164ddc8b1751e182a8ee4af29c41e1798"
+    },
+    {
+      "path": "src/higher_optim.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16f5a7517c94282aff492175118362748cbb4ec0",
+      "size": 5656,
+      "url": "https://api.github.com/repos/SJTU-DMTai/DoubleAdapt/git/blobs/16f5a7517c94282aff492175118362748cbb4ec0"
+    },
+    {
+      "path": "src/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bbc632de6b31561b74f11661325dfd56b5b9f94",
+      "size": 17129,
+      "url": "https://api.github.com/repos/SJTU-DMTai/DoubleAdapt/git/blobs/4bbc632de6b31561b74f11661325dfd56b5b9f94"
+    },
+    {
+      "path": "src/net.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d40b83c39ff6d57ef083191650dd91c2dff49f9",
+      "size": 5799,
+      "url": "https://api.github.com/repos/SJTU-DMTai/DoubleAdapt/git/blobs/7d40b83c39ff6d57ef083191650dd91c2dff49f9"
+    },
+    {
+      "path": "src/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb11c7c89f7c058e7a45e0cc3393de2c9dda1c9b",
+      "size": 16267,
+      "url": "https://api.github.com/repos/SJTU-DMTai/DoubleAdapt/git/blobs/cb11c7c89f7c058e7a45e0cc3393de2c9dda1c9b"
+    }
+  ],
+  "truncated": false
+}

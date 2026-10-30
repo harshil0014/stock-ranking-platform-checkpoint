@@ -1,0 +1,9 @@
+model,strict_gate,regressing_cells,total_cells,top3_regressing_cells,top3_cells,development_top3_regressions,development_regressions
+yeti_ndcg3_balanced_blend0.1,False,1147,4536,417,1512,245,660
+yeti_ndcg3_balanced_blend0.25,False,1040,4536,425,1512,246,649
+yeti_ndcg3_balanced_blend0.5,False,1236,4536,497,1512,258,685
+yeti_ndcg3_balanced_blend1.0,False,1876,4536,549,1512,301,1028
+yeti_ndcg3_return_blend0.1,False,986,4536,466,1512,312,571
+yeti_ndcg3_return_blend0.25,False,1276,4536,649,1512,446,835
+yeti_ndcg3_return_blend0.5,False,2583,4536,960,1512,613,1668
+yeti_ndcg3_return_blend1.0,False,3808,4536,1281,1512,658,1949

@@ -1,0 +1,20 @@
+{
+  "tested": 6,
+  "strict_passes": 0,
+  "development_selected": "conservative_n8_w0.5",
+  "parent_regressions": 430,
+  "parent_improvements": 470,
+  "feedback_cutoffs_verified": true,
+  "sector_aggregation_verified": true,
+  "finite_historical_score_rows": 797443,
+  "tests_passed": 2,
+  "production_replaced": false,
+  "fresh_validation": false,
+  "sha256": {
+    "experiments\\sector-conservative-router-20261010\\protocol.json": "62c212a5006972c28f0f2db0d715835604a1984ac4b44a888c4805857ea49437",
+    "experiments\\sector-conservative-router-20261010\\trials.csv": "8ab84418038b77638bbf847dcdbbb362f38fd6a0e34a2b3530ea3ceaff655fb0",
+    "experiments\\sector-conservative-router-20261010\\routing_audit.csv.gz": "98a7b95e2c767ce2f878eeba5ab5b7280c27fb2e5be82e59af25f5a316029200",
+    "experiments\\sector-conservative-router-20261010\\candidate_scores.csv.gz": "9ca2fb8fce27f1173585cf3ee71488abc6b4173c4854bf5c874b9e15b0560ea7",
+    "experiments\\sector-conservative-router-20261010\\summary.csv": "fc8a6420ba9d7b13edf5ee41b089a45baa9a323ac1a3ec1f5c3545ffa1f986f8"
+  }
+}

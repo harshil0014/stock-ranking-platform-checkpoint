@@ -1,0 +1,7 @@
+year,model,training_rows,max_training_endpoint,test_start,profiles
+2020,goal_aware_l1,263659,2019-12-31,2020-03-31,9
+2021,goal_aware_l1,360312,2020-12-31,2021-03-31,9
+2022,goal_aware_l1,459088,2021-12-31,2022-03-31,9
+2023,goal_aware_l1,560469,2022-12-31,2023-03-31,9
+2024,goal_aware_l1,665999,2023-12-31,2024-03-31,9
+2025,goal_aware_l1,775624,2024-12-31,2025-01-31,9

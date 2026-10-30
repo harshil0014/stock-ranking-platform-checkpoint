@@ -1,0 +1,7 @@
+{
+  "annual_models_verified": 36,
+  "prediction_values_verified": 4784658,
+  "maximum_absolute_error": 1.1102230246251565e-16,
+  "tolerance": 1e-15,
+  "source": "Original prepared historical inputs; saved annual models; entire annual test cohorts."
+}

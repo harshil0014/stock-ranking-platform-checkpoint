@@ -1,0 +1,5 @@
+bse_code,ticker,isin,status,raw_rows,first_date,last_date,actions_applied,reason
+505685,BSE-505685,INE614R01014,QUARANTINED,104,2021-11-17,2026-09-18,0,DIVIDEND:cash_dividend_rs:77.5 | DIVIDEND:no raw close within 14 days before ex-date | DIVIDEND:cash_dividend_rs:52.5 | DIVIDEND:no raw close within 14 days before ex-date | DIVIDEND:no raw close within 14 days before ex-date | DIVIDEND:cash_dividend_rs:50 | DIVIDEND:cash_dividend_rs:77.5 | DIVIDEND:cash_dividend_rs:25 | DIVIDEND:no raw close within 14 days before ex-date
+534920,BSE-534920,INE899M01020,QUARANTINED,157,2021-10-25,2026-09-18,0,RIGHTS:no raw close within 14 days before ex-date
+543765,BSE-543765,INE0O4V01010,QUARANTINED,127,2023-07-19,2026-09-18,0,DIVIDEND:no raw close within 14 days before ex-date
+544257,BSE-544257,INE0Q3401017,QUARANTINED,71,2025-07-09,2026-09-18,0,DIVIDEND:no raw close within 14 days before ex-date

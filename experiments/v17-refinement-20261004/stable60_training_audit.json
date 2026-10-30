@@ -1,0 +1,26 @@
+[
+  {
+    "max_endpoint": "2019-12-31",
+    "min_decision": "2020-03-31",
+    "rows": 33860,
+    "model": "stable60_2020"
+  },
+  {
+    "max_endpoint": "2020-12-31",
+    "min_decision": "2021-03-31",
+    "rows": 42162,
+    "model": "stable60_2021"
+  },
+  {
+    "max_endpoint": "2021-12-31",
+    "min_decision": "2022-03-31",
+    "rows": 50985,
+    "model": "stable60_2022"
+  },
+  {
+    "max_endpoint": "2022-12-31",
+    "min_decision": "2023-03-31",
+    "rows": 60241,
+    "model": "stable60_2023"
+  }
+]

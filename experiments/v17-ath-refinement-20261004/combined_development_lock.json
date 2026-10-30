@@ -1,0 +1,7 @@
+{
+  "locked_at": "2026-10-04T08:22:18.825362+00:00",
+  "eligible": [],
+  "trial_count": 120,
+  "protocol_sha256": "98a0221b0e020c00d7702d4504700977534b7da124ba5ee191d6f8d740b9f85e",
+  "gated_protocol_sha256": "e067fa8e66ee15973137038521f84fe4d281e05d37528a85f9d73489dffe1d86"
+}

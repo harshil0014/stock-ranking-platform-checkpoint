@@ -1,0 +1,15 @@
+{
+  "stocks": 4436,
+  "finite_scores": 4436,
+  "champion_scores": 1746,
+  "confidence": {
+    "HIGH": 3858,
+    "PARTIAL": 433,
+    "LOW": 128,
+    "NO_PRICE_EVIDENCE": 17
+  },
+  "sector_groups": 59,
+  "selected": "dual_b0.35_r0.15_c0.4",
+  "model_status": "RESEARCH_CHALLENGER_NOT_DEPLOYED",
+  "snapshot": "2026-10-03"
+}

@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "hashed_artifacts": 956,
+  "website_unchanged": true,
+  "qualification": "Verifies this manifest and package invariants; model replay and chronological evidence are in source-specific receipts. Does not certify market profitability."
+}

@@ -1,0 +1,7 @@
+{
+  "recovery_band": 0.05,
+  "formula": "age_freshness + (1-age_freshness)*exp(-(depth/0.05)^2)",
+  "purpose": "Remove score discontinuity at old highs; retain 30% closing-high weight",
+  "selection": "One fixed correction; no historical optimization of the band",
+  "historical_scope": "Previously exposed dates; current financial/SME flags never backfilled into history"
+}

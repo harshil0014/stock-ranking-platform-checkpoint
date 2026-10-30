@@ -1,0 +1,29 @@
+{
+  "year": 2022,
+  "family": "tabm_embedded",
+  "training_rows": 459088,
+  "training_queries": 8915,
+  "training_min_date": "2016-03-31",
+  "maximum_endpoint": "2021-12-31",
+  "cutoff": "2022-01-01",
+  "inference_rows": 112401,
+  "seconds": 309.76258277893066,
+  "replay_max_error": 0.0,
+  "model_sha256": "0c39759abe4798b65b10e310f7f9e6a437c37f37655309c1ff65e65a8814b0d3",
+  "prediction_sha256": "1dfee1a49aa6dde507d355025ddec09c02465b052bd4ae7ae344215c0ff75c32",
+  "training_identity_sha256": "0927daac7caa0502bebbfa023e7c550b2ded060e9cf90f7c7781c404dc981563",
+  "training_loss": [
+    0.08422091655887333,
+    0.07237018643874928,
+    0.07021376000240731,
+    0.06880748500551596,
+    0.06767709242733791,
+    0.06672835788845255,
+    0.06590835574231592,
+    0.06508081164827091,
+    0.06435499901718449,
+    0.06361514766771421,
+    0.06292235970266548,
+    0.06216709552254145
+  ]
+}

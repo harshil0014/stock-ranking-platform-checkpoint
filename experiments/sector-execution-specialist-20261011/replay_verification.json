@@ -1,0 +1,6 @@
+{
+  "models": 28,
+  "maximum_csv_replay_error": 1.1102230246251565e-16,
+  "cutoffs_verified": true,
+  "source_sha256": "0d4d97bc6f3cf8cbefe1546357ecdff5df13b41db7f04a55cfa64011a2051ef9"
+}

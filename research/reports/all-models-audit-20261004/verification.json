@@ -1,0 +1,217 @@
+{
+  "opponents": 33,
+  "paired_queries": 7884,
+  "dates": 44,
+  "profiles": 9,
+  "opponent_period_comparisons": 81,
+  "aggregate_all_seven_nonworse": 46,
+  "every_query_all_seven_nonworse": 0,
+  "unique_keys": true,
+  "finite_metrics": true,
+  "delta_and_aggregation_checks": [
+    "median_xirr_top20",
+    "mean_asset_drawdown_top20",
+    "target_achievement_top20",
+    "target_shortfall_top20",
+    "ndcg20",
+    "rank_ic",
+    "pairwise_accuracy"
+  ],
+  "source_hashes": [
+    {
+      "path": "experiments/closing-high-recovery-20261004/development_scores.csv.gz",
+      "bytes": 4619514,
+      "sha256": "9f6952e5989832cb6dab3d88cc5ae397b9893c52eac3d57b3207932d1581670e"
+    },
+    {
+      "path": "experiments/closing-high-recovery-20261004/early_scores.csv.gz",
+      "bytes": 4008296,
+      "sha256": "1584cd94abcb781677947ddbcb841a12fa38251fc273bbe0cdcaad9c4278b9e3"
+    },
+    {
+      "path": "experiments/closing-high-recovery-20261004/exposed_scores.csv.gz",
+      "bytes": 4358638,
+      "sha256": "b801061ea3b1fd0c87b28a39d537bf26938057e5c7bfefa8254508589d1430b5"
+    },
+    {
+      "path": "experiments/personalized-deep-championship-20261002/v1/clean_2024_holdout_scores.csv.gz",
+      "bytes": 1508417,
+      "sha256": "f7e8a0cddf67ef31afb5720d3618f0f301aeb56d8b05cbd2dc57522fdb676331"
+    },
+    {
+      "path": "experiments/personalized-deep-championship-20261002/v1/development_winner_scores.csv.gz",
+      "bytes": 8538457,
+      "sha256": "dbc32fea0c6b56ac289a9d02f82f9a7fabb80c2389209fd5223fddbc1c4d7582"
+    },
+    {
+      "path": "experiments/personalized-deep-championship-20261002/v1/exposed_2025_diagnostic_scores.csv.gz",
+      "bytes": 1611901,
+      "sha256": "40c924471976ed96af1e0ca76b14e612d10522ab5f98c7d86cc09664265268c3"
+    },
+    {
+      "path": "experiments/personalized-deep-championship-20261002/v3/development_winner_scores.csv.gz",
+      "bytes": 11794619,
+      "sha256": "8449cf4fe31a759ccbb9fe002fd0188c757501cb751d3e7cbd286d4fafc1f760"
+    },
+    {
+      "path": "experiments/personalized-deep-championship-20261002/v3/postfinal_2025_diagnostics_scores.csv.gz",
+      "bytes": 4819440,
+      "sha256": "25f03f6317414ec303f97178bd7ef0670ae823d4d1cc8a798c86abe427cf5ee4"
+    },
+    {
+      "path": "experiments/personalized-deep-championship-20261002/v3/postlock_2024_diagnostics_scores.csv.gz",
+      "bytes": 3152222,
+      "sha256": "70681efffd929149da2a6a31d0d3a99630bc5a9584d636ac0203e5c78c953be0"
+    },
+    {
+      "path": "experiments/personalized-deep-championship-20261002/v3/prepared.pkl.gz",
+      "bytes": 54808628,
+      "sha256": "b5fa0a1f0229bde692b2c07e0a05cfe91f7501a9deeba6c4bcd9109f00d36fb7"
+    },
+    {
+      "path": "experiments/personalized-deep-championship-20261002/v3/untouched_final_2025_scores.csv.gz",
+      "bytes": 1622156,
+      "sha256": "a844c9fa3be7560910918adfefd06ba40f8eadcf0f2f691d8fa02542ed2b8028"
+    },
+    {
+      "path": "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz",
+      "bytes": 285216025,
+      "sha256": "c0b2f5f66836c487340237cc1df231e2f3d2835febcb09b84c0adffb1ab57371"
+    },
+    {
+      "path": "experiments/personalized-v14-ml-20261003/known_evaluation_scores.csv.gz",
+      "bytes": 5535587,
+      "sha256": "a55b9a09fd1509353f1fff42a14870ddf5533268bd921e218551b42846e215fc"
+    },
+    {
+      "path": "experiments/personalized-v16-20261003/development_scores.csv.gz",
+      "bytes": 24079255,
+      "sha256": "291efcc3e0e6efbbe6c2f20c6b58837cd2458a4fbc7a5564a0ecc7c11e593a28"
+    },
+    {
+      "path": "experiments/personalized-v16-20261003/exposed_2024_2025_scores.csv.gz",
+      "bytes": 20669052,
+      "sha256": "f5e37e319fdf0ce553b8bfebe398bd7cf8116fa100b8af751b47cc4cf0cf9b7d"
+    },
+    {
+      "path": "experiments/personalized-v18-20261003/development_scores.csv.gz",
+      "bytes": 22974649,
+      "sha256": "47d51a8d75d33510cb1e5f996f77a3e7c83c024177c3289a7f050ec2d0f91b79"
+    },
+    {
+      "path": "experiments/personalized-v18-20261003/early_all_scores.csv.gz",
+      "bytes": 20519286,
+      "sha256": "6ed2f6374d793857748270092c1581a0426303766e60c11d6542f41ebdfb1a70"
+    },
+    {
+      "path": "experiments/personalized-v18-20261003/exposed_scores.csv.gz",
+      "bytes": 19704219,
+      "sha256": "e7f0ee29b735105a1d866156b5eb56831133349e0d8ba6457124e7165ccbacd0"
+    },
+    {
+      "path": "experiments/v17-ath-refinement-20261004/development_diagnostic_scores.csv.gz",
+      "bytes": 6015836,
+      "sha256": "a48fa7448a39e910df8b5471c40b339899e70760239834c276349ea3c0d7d5ea"
+    },
+    {
+      "path": "experiments/v17-ath-refinement-20261004/early_diagnostic_scores.csv.gz",
+      "bytes": 5392491,
+      "sha256": "173795e76b2bd3aae8844d4420aa1be3bb1b63a4022f2dbabb15e67fe715771a"
+    },
+    {
+      "path": "experiments/v17-ath-refinement-20261004/exposed_diagnostic_scores.csv.gz",
+      "bytes": 4794571,
+      "sha256": "5f296237b7e2a6d50589448139e47e78bdc901814b015d1f472e5a4ba631687d"
+    },
+    {
+      "path": "experiments/v17-peak-activity-20261004/priority_development_scores.csv.gz",
+      "bytes": 4473743,
+      "sha256": "44f137303c03426a01617d236b3328e357fed208ce060d713e82ad3887d53bd1"
+    },
+    {
+      "path": "experiments/v17-peak-activity-20261004/priority_early_scores.csv.gz",
+      "bytes": 3902353,
+      "sha256": "9af0f39d5267102926627c72899b6db5f97d4e0903a9876998f2168b8e8e5867"
+    },
+    {
+      "path": "experiments/v17-peak-activity-20261004/priority_exposed_scores.csv.gz",
+      "bytes": 4163652,
+      "sha256": "a2ce425535f3739f328c624c36ddd3f23ae0b96b473f1c3218b95a10eba14ae7"
+    },
+    {
+      "path": "experiments/v17-peak-confirmation-20261004/development_scores.csv.gz",
+      "bytes": 3919240,
+      "sha256": "d3c7d8db05599351852e9bf2f4237425832a73ebbfe8a7fe05ff240495d4bf9e"
+    },
+    {
+      "path": "experiments/v17-peak-confirmation-20261004/early_scores.csv.gz",
+      "bytes": 3473773,
+      "sha256": "ad0504850c1b730750fc68ce6b1dee651b25b426234ad9c6f926e14011aaeecf"
+    },
+    {
+      "path": "experiments/v17-peak-confirmation-20261004/exposed_scores.csv.gz",
+      "bytes": 3564553,
+      "sha256": "7fe7224d62839a5f391a57c1c8ef69b3c847d739f44162aadb82976847c51f83"
+    },
+    {
+      "path": "experiments/v17-peak-context-20261004/development_scores.csv.gz",
+      "bytes": 6015887,
+      "sha256": "3579320f8ab012a318cfbdabc55cbb0cf6f36fcef596c1da3c1f7c3f5d38bc6b"
+    },
+    {
+      "path": "experiments/v17-peak-context-20261004/early_scores.csv.gz",
+      "bytes": 5394037,
+      "sha256": "fbb18fde1065476da98014a67dd8ad3560ee8dc8704135af5f448f2b7f2ec948"
+    },
+    {
+      "path": "experiments/v17-peak-context-20261004/exposed_scores.csv.gz",
+      "bytes": 4794464,
+      "sha256": "a84515336c4a723dca3f17dcba6682d0aff56e6a07d63360dc6beb1ec9fa31bd"
+    },
+    {
+      "path": "experiments/v17-refinement-20261004/development_refined_scores.csv.gz",
+      "bytes": 22672162,
+      "sha256": "ff6243dd7a4d1d0965c562ea61489670e19b22a846757380ab236fbdd0c48da9"
+    },
+    {
+      "path": "experiments/v17-refinement-20261004/early_refined_scores.csv.gz",
+      "bytes": 20261905,
+      "sha256": "51bc39556a4891f7ba429502ca6a7d429dd58a5a1ee15215c06b0f0f2c872ad4"
+    },
+    {
+      "path": "experiments/v17-refinement-20261004/exposed_refined_scores.csv.gz",
+      "bytes": 19452567,
+      "sha256": "22d4b7da2d565dcf686aa5f4375f87fdd4a5fb70f37813c63d67d1b988a3835b"
+    },
+    {
+      "path": "research/reports/all-models-audit-20261004/archived/rankers.csv.gz",
+      "bytes": 10573697,
+      "sha256": "95e3075ef4ce9e4828e727a499c577a6bb239b2db9b807183a89c0a2a0912d20"
+    },
+    {
+      "path": "research/reports/all-models-audit-20261004/archived/regimes.csv.gz",
+      "bytes": 13207564,
+      "sha256": "2b07931e93e4966b956d34446553b119c00a6c7cc8e2fbabf5a4600db6c70f39"
+    },
+    {
+      "path": "research/reports/all-models-audit-20261004/v13_policy_replayed.csv.gz",
+      "bytes": 16226950,
+      "sha256": "9de17ced68525330688379812e74801281a238a4ab439f7e3054190d3deb931d"
+    },
+    {
+      "path": "research/runners/all_models_audit_20261004.py",
+      "bytes": 16990,
+      "sha256": "a0d8bd3b18cf9bca37236f287222cb9a26a1b6198b980344ab63844f083f0310"
+    },
+    {
+      "path": "research/runners/personalized_v13_smooth_history_probe.py",
+      "bytes": 4056,
+      "sha256": "8a6d9fb3a9bd889cc9cb07ff7bce8652563b848ffbee25bf3e20a7830f053954"
+    },
+    {
+      "path": "src/stock_research/personalized_validation.py",
+      "bytes": 11597,
+      "sha256": "eec3c0d7a888a4595ceb146b521666a8e7ebf65a9490e92f3dda2e251811955f"
+    }
+  ]
+}

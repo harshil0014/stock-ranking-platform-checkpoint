@@ -1,0 +1,19 @@
+{
+  "ticker": "CRESTO",
+  "isin": "INE203Y01012",
+  "provider": "CRESTO.NS",
+  "trade_date": "2026-09-18",
+  "official_price": 16.39,
+  "status": "RECOVERED",
+  "rows": 2141,
+  "first_date": "2018-01-18",
+  "last_date": "2026-09-18",
+  "terminal_lag_days": 0,
+  "terminal_relative_difference": 3.7239265592949005e-08,
+  "listing_date": "2020-07-08",
+  "history_precedes_listing_date": true,
+  "csv_sha256": "07c28bd579cafb4bfd7b786609fb6e331928d59c20bebf6fad801fea32b60f49",
+  "source": "Yahoo Finance secondary history",
+  "identity_mapping": "exact NSE ticker -> .NS",
+  "accepted_for_research_overlay": true
+}

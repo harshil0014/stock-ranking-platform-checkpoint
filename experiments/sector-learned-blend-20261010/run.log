@@ -1,0 +1,158 @@
+LEARNED 2020 nnls_outer_return NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2020 nnls_outer_balanced NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2020 nnls_nested_return NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2020 nnls_nested_balanced NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2020 tabpfn_v2_context256 NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2020 tabpfn_v2_context768 NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2021 nnls_outer_return NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2021 nnls_outer_balanced NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2021 nnls_nested_return NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2021 nnls_nested_balanced NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2021 tabpfn_v2_context256 NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2021 tabpfn_v2_context768 NO_MATURE_OOF_ANCHOR_FALLBACK
+LEARNED 2022 nnls_outer_return FIT
+LEARNED 2022 nnls_outer_balanced FIT
+LEARNED 2022 nnls_nested_return FIT
+LEARNED 2022 nnls_nested_balanced FIT
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\experiments\premodel_dependencies_20261010\tabpfn\regressor.py:563: UserWarning: Running on CPU with more than 200 samples may be slow.
+Consider using a GPU or the tabpfn-client API: https://github.com/PriorLabs/tabpfn-client
+  check_cpu_warning(
+TABPFN LOADED tabpfn_v2_context256_2022 context 256
+TABPFN GRID tabpfn_v2_context256_2022 {'grid': 33, 'probe_mae': 0.0018514735899812299, 'probe_max': 0.005268839626493826} 11.0
+TABPFN COMPLETE tabpfn_v2_context256_2022 11.21263380000164
+LEARNED 2022 tabpfn_v2_context256 FIT_GRID_APPROXIMATION
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\experiments\premodel_dependencies_20261010\tabpfn\regressor.py:563: UserWarning: Running on CPU with more than 200 samples may be slow.
+Consider using a GPU or the tabpfn-client API: https://github.com/PriorLabs/tabpfn-client
+  check_cpu_warning(
+TABPFN LOADED tabpfn_v2_context768_2022 context 768
+TABPFN GRID tabpfn_v2_context768_2022 {'grid': 33, 'probe_mae': 0.001487785350509062, 'probe_max': 0.007675247263578822} 10.5
+TABPFN COMPLETE tabpfn_v2_context768_2022 10.709216999995988
+LEARNED 2022 tabpfn_v2_context768 FIT_GRID_APPROXIMATION
+LEARNED 2023 nnls_outer_return FIT
+LEARNED 2023 nnls_outer_balanced FIT
+LEARNED 2023 nnls_nested_return FIT
+LEARNED 2023 nnls_nested_balanced FIT
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\experiments\premodel_dependencies_20261010\tabpfn\regressor.py:563: UserWarning: Running on CPU with more than 200 samples may be slow.
+Consider using a GPU or the tabpfn-client API: https://github.com/PriorLabs/tabpfn-client
+  check_cpu_warning(
+TABPFN LOADED tabpfn_v2_context256_2023 context 256
+TABPFN GRID tabpfn_v2_context256_2023 {'grid': 33, 'probe_mae': 0.0014350869597071145, 'probe_max': 0.006642407403651185} 8.6
+TABPFN COMPLETE tabpfn_v2_context256_2023 8.752921699997387
+LEARNED 2023 tabpfn_v2_context256 FIT_GRID_APPROXIMATION
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\experiments\premodel_dependencies_20261010\tabpfn\regressor.py:563: UserWarning: Running on CPU with more than 200 samples may be slow.
+Consider using a GPU or the tabpfn-client API: https://github.com/PriorLabs/tabpfn-client
+  check_cpu_warning(
+TABPFN LOADED tabpfn_v2_context768_2023 context 768
+TABPFN GRID tabpfn_v2_context768_2023 {'grid': 33, 'probe_mae': 0.007789364414972523, 'probe_max': 0.027003539243671937} 9.6
+TABPFN GRID tabpfn_v2_context768_2023 {'grid': 65, 'probe_mae': 0.007244268337872955, 'probe_max': 0.03051970044934016} 16.9
+TABPFN GRID tabpfn_v2_context768_2023 {'grid': 129, 'probe_mae': 0.007774613171307059, 'probe_max': 0.02917736727769371} 45.7
+DIRECT PROGRESS tabpfn_v2_context768_2023 0 116443
+DIRECT PROGRESS tabpfn_v2_context768_2023 20480 116443
+DIRECT PROGRESS tabpfn_v2_context768_2023 40960 116443
+DIRECT PROGRESS tabpfn_v2_context768_2023 61440 116443
+DIRECT PROGRESS tabpfn_v2_context768_2023 81920 116443
+DIRECT PROGRESS tabpfn_v2_context768_2023 102400 116443
+TABPFN COMPLETE tabpfn_v2_context768_2023 230.12135860000126
+LEARNED 2023 tabpfn_v2_context768 FIT_GRID_APPROXIMATION
+LEARNED 2024 nnls_outer_return FIT
+LEARNED 2024 nnls_outer_balanced FIT
+LEARNED 2024 nnls_nested_return FIT
+LEARNED 2024 nnls_nested_balanced FIT
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\experiments\premodel_dependencies_20261010\tabpfn\regressor.py:563: UserWarning: Running on CPU with more than 200 samples may be slow.
+Consider using a GPU or the tabpfn-client API: https://github.com/PriorLabs/tabpfn-client
+  check_cpu_warning(
+TABPFN LOADED tabpfn_v2_context256_2024 context 256
+TABPFN GRID tabpfn_v2_context256_2024 {'grid': 33, 'probe_mae': 0.0018387266608828985, 'probe_max': 0.006039297182488967} 8.1
+TABPFN COMPLETE tabpfn_v2_context256_2024 8.279026900003373
+LEARNED 2024 tabpfn_v2_context256 FIT_GRID_APPROXIMATION
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\experiments\premodel_dependencies_20261010\tabpfn\regressor.py:563: UserWarning: Running on CPU with more than 200 samples may be slow.
+Consider using a GPU or the tabpfn-client API: https://github.com/PriorLabs/tabpfn-client
+  check_cpu_warning(
+TABPFN LOADED tabpfn_v2_context768_2024 context 768
+TABPFN GRID tabpfn_v2_context768_2024 {'grid': 33, 'probe_mae': 0.0015436690449177745, 'probe_max': 0.00650795122543113} 8.9
+TABPFN COMPLETE tabpfn_v2_context768_2024 9.036199399997713
+LEARNED 2024 tabpfn_v2_context768 FIT_GRID_APPROXIMATION
+LEARNED 2025 nnls_outer_return FIT
+LEARNED 2025 nnls_outer_balanced FIT
+LEARNED 2025 nnls_nested_return FIT
+LEARNED 2025 nnls_nested_balanced FIT
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\experiments\premodel_dependencies_20261010\tabpfn\regressor.py:563: UserWarning: Running on CPU with more than 200 samples may be slow.
+Consider using a GPU or the tabpfn-client API: https://github.com/PriorLabs/tabpfn-client
+  check_cpu_warning(
+TABPFN LOADED tabpfn_v2_context256_2025 context 256
+TABPFN GRID tabpfn_v2_context256_2025 {'grid': 33, 'probe_mae': 0.008717860827819526, 'probe_max': 0.03664710526601245} 8.1
+TABPFN GRID tabpfn_v2_context256_2025 {'grid': 65, 'probe_mae': 0.009249815209007929, 'probe_max': 0.05056605699650113} 13.7
+TABPFN GRID tabpfn_v2_context256_2025 {'grid': 129, 'probe_mae': 0.008264165208487235, 'probe_max': 0.0471028852766569} 34.1
+DIRECT PROGRESS tabpfn_v2_context256_2025 0 237992
+DIRECT PROGRESS tabpfn_v2_context256_2025 20480 237992
+DIRECT PROGRESS tabpfn_v2_context256_2025 40960 237992
+DIRECT PROGRESS tabpfn_v2_context256_2025 61440 237992
+DIRECT PROGRESS tabpfn_v2_context256_2025 81920 237992
+DIRECT PROGRESS tabpfn_v2_context256_2025 102400 237992
+DIRECT PROGRESS tabpfn_v2_context256_2025 122880 237992
+DIRECT PROGRESS tabpfn_v2_context256_2025 143360 237992
+DIRECT PROGRESS tabpfn_v2_context256_2025 163840 237992
+DIRECT PROGRESS tabpfn_v2_context256_2025 184320 237992
+DIRECT PROGRESS tabpfn_v2_context256_2025 204800 237992
+DIRECT PROGRESS tabpfn_v2_context256_2025 225280 237992
+TABPFN COMPLETE tabpfn_v2_context256_2025 384.79566799999884
+LEARNED 2025 tabpfn_v2_context256 FIT_GRID_APPROXIMATION
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\experiments\premodel_dependencies_20261010\tabpfn\regressor.py:563: UserWarning: Running on CPU with more than 200 samples may be slow.
+Consider using a GPU or the tabpfn-client API: https://github.com/PriorLabs/tabpfn-client
+  check_cpu_warning(
+TABPFN LOADED tabpfn_v2_context768_2025 context 768
+TABPFN GRID tabpfn_v2_context768_2025 {'grid': 33, 'probe_mae': 0.00817658519387749, 'probe_max': 0.026047349149048382} 12.5
+TABPFN GRID tabpfn_v2_context768_2025 {'grid': 65, 'probe_mae': 0.008317926272908394, 'probe_max': 0.036131090641392416} 21.3
+TABPFN GRID tabpfn_v2_context768_2025 {'grid': 129, 'probe_mae': 0.007724638145717319, 'probe_max': 0.03470515612147157} 57.6
+DIRECT PROGRESS tabpfn_v2_context768_2025 0 237992
+DIRECT PROGRESS tabpfn_v2_context768_2025 20480 237992
+DIRECT PROGRESS tabpfn_v2_context768_2025 40960 237992
+DIRECT PROGRESS tabpfn_v2_context768_2025 61440 237992
+DIRECT PROGRESS tabpfn_v2_context768_2025 81920 237992
+DIRECT PROGRESS tabpfn_v2_context768_2025 102400 237992
+DIRECT PROGRESS tabpfn_v2_context768_2025 122880 237992
+DIRECT PROGRESS tabpfn_v2_context768_2025 143360 237992
+DIRECT PROGRESS tabpfn_v2_context768_2025 163840 237992
+DIRECT PROGRESS tabpfn_v2_context768_2025 184320 237992
+DIRECT PROGRESS tabpfn_v2_context768_2025 204800 237992
+DIRECT PROGRESS tabpfn_v2_context768_2025 225280 237992
+TABPFN COMPLETE tabpfn_v2_context768_2025 612.2211195999989
+LEARNED 2025 tabpfn_v2_context768 FIT_GRID_APPROXIMATION
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\sector_learned_blend_20261010.py:65: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  z['guarded_previous']=z.guarded_model_score;z['open_model']=z.open_model_score;z['profile_defensive_15']=z.guarded_pure_score;z['rank_xendcg_balanced']=z.rebuilt_pure_score;z[ANCHOR]=z.rebuilt_score
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\sector_learned_blend_20261010.py:71: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  m=fit_nnls(t,c);prefix.with_suffix('.json').write_text(json.dumps(m,indent=2));z[name]=infer_nnls(z,m)
+LEARNED current nnls_outer_return FIT
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\sector_learned_blend_20261010.py:71: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  m=fit_nnls(t,c);prefix.with_suffix('.json').write_text(json.dumps(m,indent=2));z[name]=infer_nnls(z,m)
+LEARNED current nnls_outer_balanced FIT
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\sector_learned_blend_20261010.py:71: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  m=fit_nnls(t,c);prefix.with_suffix('.json').write_text(json.dumps(m,indent=2));z[name]=infer_nnls(z,m)
+LEARNED current nnls_nested_return FIT
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\sector_learned_blend_20261010.py:71: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  m=fit_nnls(t,c);prefix.with_suffix('.json').write_text(json.dumps(m,indent=2));z[name]=infer_nnls(z,m)
+LEARNED current nnls_nested_balanced FIT
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\experiments\premodel_dependencies_20261010\tabpfn\regressor.py:563: UserWarning: Running on CPU with more than 200 samples may be slow.
+Consider using a GPU or the tabpfn-client API: https://github.com/PriorLabs/tabpfn-client
+  check_cpu_warning(
+TABPFN LOADED tabpfn_v2_context256_current context 256
+TABPFN GRID tabpfn_v2_context256_current {'grid': 33, 'probe_mae': 0.003807242036444785, 'probe_max': 0.014584614878416446} 11.5
+TABPFN GRID tabpfn_v2_context256_current {'grid': 65, 'probe_mae': 0.003808584304942635, 'probe_max': 0.014898046338313486} 19.7
+TABPFN GRID tabpfn_v2_context256_current {'grid': 129, 'probe_mae': 0.004018009388223044, 'probe_max': 0.019285137018110188} 51.9
+TABPFN COMPLETE tabpfn_v2_context256_current 60.6782144999961
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\sector_learned_blend_20261010.py:84: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  receipt=json.loads((OUT/f'{name}_{year}_audit.json').read_text())
+LEARNED current tabpfn_v2_context256 FIT_GRID_APPROXIMATION
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\experiments\premodel_dependencies_20261010\tabpfn\regressor.py:563: UserWarning: Running on CPU with more than 200 samples may be slow.
+Consider using a GPU or the tabpfn-client API: https://github.com/PriorLabs/tabpfn-client
+  check_cpu_warning(
+TABPFN LOADED tabpfn_v2_context768_current context 768
+TABPFN GRID tabpfn_v2_context768_current {'grid': 33, 'probe_mae': 0.004372762878956282, 'probe_max': 0.014546227472326922} 12.4
+TABPFN GRID tabpfn_v2_context768_current {'grid': 65, 'probe_mae': 0.004372063547199691, 'probe_max': 0.018891560834735532} 22.7
+TABPFN GRID tabpfn_v2_context768_current {'grid': 129, 'probe_mae': 0.004348443646713041, 'probe_max': 0.019149492222797493} 61.9
+TABPFN COMPLETE tabpfn_v2_context768_current 72.4248649000001
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\sector_learned_blend_20261010.py:84: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  receipt=json.loads((OUT/f'{name}_{year}_audit.json').read_text())
+LEARNED current tabpfn_v2_context768 FIT_GRID_APPROXIMATION
+C:\Users\Harshil\Downloads\stock-ranking-platform-fresh-canonical-verified\research\runners\sector_learned_blend_20261010.py:91: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  print('LEARNED',year,name,status,flush=True)

@@ -1,0 +1,14 @@
+{
+  "model": "V17 closing-high priority",
+  "status": "Experimental preference model",
+  "formula": "70% V17 refined, 20% closing high, 10% 12-1 momentum",
+  "inputs_and_outputs": {
+    "research\\runners\\v17_peak_activity_20261004.py": "719334af03fc74e087e471f78113c5bab9ea792e8b1e6954629a6b7c719ebe58",
+    "experiments\\v17-peak-activity-20261004\\priority_protocol.json": "898eea1e9f84878434b84d05796958153605e6b46869dbf1c4fd3a5eecc4b298",
+    "experiments\\v17-peak-activity-20261004\\execution_freshness_amendment.json": "95dc9d234e803b9e5e148197fef0c77b8b0413183d35d8581b625b9662137dde",
+    "experiments\\v17-peak-activity-20261004\\dated_features.csv.gz": "0d4d97bc6f3cf8cbefe1546357ecdff5df13b41db7f04a55cfa64011a2051ef9",
+    "experiments\\v17-peak-activity-20261004\\priority_current_rankings.csv.gz": "9c935eaa6afa4ca4cd1a19fd8d86ce5325f5a81a8be4de72904376a60b92c83c",
+    "experiments\\v17-peak-activity-20261004\\priority_metrics.csv": "a37ed7234caca0fba21c4fe4cc5018fda574aeafb991a621df09efea93b6f78a",
+    "experiments\\v17-peak-activity-20261004\\verification.json": "07c7623e60507ba8c8865646a48740834e11539bc0b2f115da886a17ca8dc459"
+  }
+}

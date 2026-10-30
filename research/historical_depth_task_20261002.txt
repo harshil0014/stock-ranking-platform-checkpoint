@@ -1,0 +1,100 @@
+You own the next phase of the personalized stock-ranking research.
+
+PRIMARY GOAL:
+Materially increase the historical training and validation depth, then use the deeper evidence to produce the strongest legitimate successor possible to the frozen 67% Goal / 33% LambdaRank champion.
+
+This is not another small model tournament. The current bottleneck is insufficient independent historical decision dates and insufficient matured 12-month outcomes. Fix that bottleneck first.
+
+Use the existing repository and preserve all current research work. Do not revert, clean, or discard existing uncommitted research changes.
+
+AUTHORITATIVE CURRENT ENRICHMENT:
+experiments/history-enrichment-20261002/final-data-quality-v3/
+Main dataset:
+experiments/history-enrichment-20261002/final-data-quality-v3/history_enrichment.csv.gz
+Audit:
+experiments/history-enrichment-20261002/final-data-quality-v3/summary.json
+Report:
+research/reports/personalized_history_data_quality_20261002.md
+
+CURRENT SUCCESSOR RESEARCH:
+experiments/personalized-successor-20261002/v3/
+research/reports/personalized_successor_20261002.md
+
+FROZEN CHAMPION:
+67% Goal + 33% LambdaRank. Treat it as a strong baseline. Do not modify or overwrite it.
+
+YOUR TASK:
+Build a substantially deeper leakage-safe historical research dataset/panel with many more decision dates and matured 12-month outcomes than the current setup. Use legitimate public/open historical sources and existing repository data where appropriate. Research external sources and open-source approaches if useful.
+
+The historical panel must represent information that was actually knowable at each decision date. Do not backfill current facts into old dates. Do not fabricate point-in-time fundamentals, listing dates, prices, corporate actions, or observations. If a historical field cannot be reconstructed defensibly, omit it or give it explicit unavailable/estimated provenance.
+
+The goal is not a prettier backtest. The goal is stronger generalization evidence.
+
+Push this aggressively:
+- materially increase independent decision dates;
+- cover different market regimes;
+- maximize matured 12-month outcome depth;
+- preserve point-in-time and leakage-safe rules;
+- quantify overlap/correlation between dates so nominal date count does not masquerade as independent evidence;
+- create a much stronger walk-forward training/development/validation structure;
+- reserve the cleanest genuinely untouched historical period possible for final evaluation;
+- clearly identify any unavoidable contamination.
+
+Once the deeper evidence exists, rerun the strongest current approaches and build new challengers if justified.
+
+VICTORY GOAL:
+Produce a challenger that beats the frozen champion broadly enough to justify promotion, with particular emphasis on:
+- NDCG@20
+- target shortfall
+- target achievement
+- median Top-20 XIRR
+- drawdown
+- pairwise/ranking quality
+- profile robustness
+- coverage
+- turnover/stability
+- missing-history fairness
+- performance across 10/20/30% targets
+- 12/36/60M lookbacks
+- amount/interval profiles
+- different decision dates and market regimes
+
+Do not let giant mean XIRR outliers determine the winner.
+
+A new champion should make broad improvements with small regressions. Large failures in target shortfall, drawdown, coverage, median outcome, or important profile slices disqualify it.
+
+You may change research architecture, features, models, data pipelines, validation protocol, source collection, or training structure if that is what the evidence requires. Do not stay attached to the current LambdaRank design merely because it exists.
+
+Do not optimize NYKAA. Use it only as a diagnostic.
+
+Do not optimize repeatedly against the already-exposed 2025 diagnostic dates.
+
+If historical data is the limiting factor, gather more legitimate history rather than squeezing the same panel harder.
+
+DELIVERABLE:
+Do the work end to end, not just a plan.
+
+At completion provide:
+1. exact increase in historical decision dates and matured outcome observations;
+2. source/provenance audit;
+3. leakage audit;
+4. final train/development/untouched-evaluation split;
+5. champion-vs-best-challenger aggregate metrics;
+6. all important profile/date/regime regressions;
+7. missing-history concentration audit;
+8. NYKAA diagnostic;
+9. reproducible code/configs/artifacts;
+10. tests;
+11. a final verdict: NEW CHAMPION, PROMISING CHALLENGER, or FROZEN CHAMPION RETAINS TITLE.
+
+Keep working until you either produce a genuinely better, defensible model or demonstrate with substantially deeper evidence why it still cannot be done.
+
+ABSOLUTE BOUNDARIES:
+- research only;
+- no deployment;
+- no Railway changes;
+- no production serving switch;
+- no overwrite of frozen champion;
+- no fake historical data;
+- no leakage;
+- no stock-specific hardcoding.

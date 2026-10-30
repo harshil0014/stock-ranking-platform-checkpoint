@@ -1,0 +1,153 @@
+{
+  "reason": "Return residual improves common returns but worsens expanded drawdown/shortfall; test explicit price-risk counterweight.",
+  "candidates": [
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.05,
+      "risk": 0.025,
+      "name": "rank_xendcg_return_7_blend0.05_risk0.025"
+    },
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.05,
+      "risk": 0.05,
+      "name": "rank_xendcg_return_7_blend0.05_risk0.05"
+    },
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.05,
+      "risk": 0.1,
+      "name": "rank_xendcg_return_7_blend0.05_risk0.1"
+    },
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.1,
+      "risk": 0.025,
+      "name": "rank_xendcg_return_7_blend0.1_risk0.025"
+    },
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.1,
+      "risk": 0.05,
+      "name": "rank_xendcg_return_7_blend0.1_risk0.05"
+    },
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.1,
+      "risk": 0.1,
+      "name": "rank_xendcg_return_7_blend0.1_risk0.1"
+    },
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.15,
+      "risk": 0.025,
+      "name": "rank_xendcg_return_7_blend0.15_risk0.025"
+    },
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.15,
+      "risk": 0.05,
+      "name": "rank_xendcg_return_7_blend0.15_risk0.05"
+    },
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.15,
+      "risk": 0.1,
+      "name": "rank_xendcg_return_7_blend0.15_risk0.1"
+    },
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.2,
+      "risk": 0.025,
+      "name": "rank_xendcg_return_7_blend0.2_risk0.025"
+    },
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.2,
+      "risk": 0.05,
+      "name": "rank_xendcg_return_7_blend0.2_risk0.05"
+    },
+    {
+      "source": "rank_xendcg_return_7",
+      "alpha": 0.2,
+      "risk": 0.1,
+      "name": "rank_xendcg_return_7_blend0.2_risk0.1"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.05,
+      "risk": 0.025,
+      "name": "rank_xendcg_return_15_blend0.05_risk0.025"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.05,
+      "risk": 0.05,
+      "name": "rank_xendcg_return_15_blend0.05_risk0.05"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.05,
+      "risk": 0.1,
+      "name": "rank_xendcg_return_15_blend0.05_risk0.1"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.1,
+      "risk": 0.025,
+      "name": "rank_xendcg_return_15_blend0.1_risk0.025"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.1,
+      "risk": 0.05,
+      "name": "rank_xendcg_return_15_blend0.1_risk0.05"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.1,
+      "risk": 0.1,
+      "name": "rank_xendcg_return_15_blend0.1_risk0.1"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.15,
+      "risk": 0.025,
+      "name": "rank_xendcg_return_15_blend0.15_risk0.025"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.15,
+      "risk": 0.05,
+      "name": "rank_xendcg_return_15_blend0.15_risk0.05"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.15,
+      "risk": 0.1,
+      "name": "rank_xendcg_return_15_blend0.15_risk0.1"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.2,
+      "risk": 0.025,
+      "name": "rank_xendcg_return_15_blend0.2_risk0.025"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.2,
+      "risk": 0.05,
+      "name": "rank_xendcg_return_15_blend0.2_risk0.05"
+    },
+    {
+      "source": "rank_xendcg_return_15",
+      "alpha": 0.2,
+      "risk": 0.1,
+      "name": "rank_xendcg_return_15_blend0.2_risk0.1"
+    }
+  ],
+  "selection": "Previously exposed 2020-2025, clipped XIRR, same strict and tolerance gates as round2; no new holdout claim.",
+  "score": "(1-alpha-risk)*champion_or_high_strength + alpha*purged_ranker + risk*sector_risk_block",
+  "risk_missing": "Neutral .5; no stock excluded",
+  "next_step": "Keep measured tradeoffs if no strict winner; do not relabel exposed dates as validation."
+}

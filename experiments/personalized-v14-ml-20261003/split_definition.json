@@ -1,0 +1,7 @@
+{
+  "development": "2020-03-31 through 2023-12-31",
+  "known_dates_are_blind": false,
+  "known_retrospective": "2024-03-31 through 2025-08-31",
+  "train_for_development": "endpoint < 2020-03-31 and decision < 2020-03-31",
+  "train_for_final": "endpoint < 2024-03-31 and decision < 2024-03-31"
+}

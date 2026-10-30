@@ -1,0 +1,22 @@
+{
+  "query-results.csv": {
+    "bytes": 1409814,
+    "sha256": "5463b51088ca43f1799f8d38a3fcc979072f03ee6b39eae3e4c23860fe98cdc6"
+  },
+  "current_company_facts_recovered_v4_screener_export.csv.gz": {
+    "bytes": 4051598,
+    "sha256": "822ee8f0ee6295f42725521f9c884c99538af034c99587bfae12e66ea68b710f"
+  },
+  "screener_query_export_filled_cells.csv": {
+    "bytes": 7460374,
+    "sha256": "8b36a86f43a489d7bc1c1d7d6ecc2cfa1c1f83072d41a4907d8a536e879ed3cc"
+  },
+  "screener_query_export_unmatched_current.csv": {
+    "bytes": 274,
+    "sha256": "fa655011aa8d041134c6d545a3a33448cd608e0647cd6aae1fbb31034f9a636d"
+  },
+  "screener_query_export_summary.json": {
+    "bytes": 3479,
+    "sha256": "0e5e0c5fef09e860c873b45c53a3f0317af7858e71f5719aa7adea7b19242eac"
+  }
+}

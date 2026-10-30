@@ -1,0 +1,6 @@
+{
+  "created_at": "2026-10-04T12:27:24.685305+00:00",
+  "reason": "A recent quote can have zero volume. Require a positive-reported-volume observation within seven days, in addition to annual activity and quoted-price freshness.",
+  "last_trade_lag_days_max": 7,
+  "score_weights_unchanged": true
+}

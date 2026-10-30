@@ -1,0 +1,73 @@
+{
+  "schema": "personalized_v13_known_2025_stress_v1",
+  "selection_lock_sha256": "dad3ce68b22a1f744650e501505a3ebc78dc7c4bd39c3247982c4ed84bcac13b",
+  "diagnostic_only": true,
+  "used_for_selection": false,
+  "dates": [
+    "2025-01-31",
+    "2025-08-31"
+  ],
+  "aggregate": {
+    "coverage": {
+      "champion": 0.9030233437421482,
+      "v13": 0.9030233437421482,
+      "delta": 0.0
+    },
+    "rank_ic": {
+      "champion": 0.08890147304325809,
+      "v13": 0.09261028146198082,
+      "delta": 0.003708808418722731
+    },
+    "ndcg20": {
+      "champion": 0.533540783261966,
+      "v13": 0.6269225781600317,
+      "delta": 0.09338179489806575
+    },
+    "pairwise_accuracy": {
+      "champion": 0.5376757866889447,
+      "v13": 0.5388359788359788,
+      "delta": 0.0011601921470341114
+    },
+    "target_achievement_top20": {
+      "champion": 0.3138888888888889,
+      "v13": 0.40555555555555556,
+      "delta": 0.09166666666666667
+    },
+    "target_shortfall_top20": {
+      "champion": 0.14376377022395545,
+      "v13": 0.1251432745383849,
+      "delta": -0.01862049568557056
+    },
+    "mean_xirr_top20": {
+      "champion": 1.786659545592698,
+      "v13": 4.359853493928316,
+      "delta": 2.5731939483356183
+    },
+    "median_xirr_top20": {
+      "champion": -0.10104061406381006,
+      "v13": 0.03829957068574155,
+      "delta": 0.13934018474955162
+    },
+    "mean_asset_drawdown_top20": {
+      "champion": -0.4457956031155439,
+      "v13": -0.43092397259496806,
+      "delta": 0.01487163052057583
+    }
+  },
+  "profile_focus": {
+    "weekly": {
+      "achievement_delta": 0.0,
+      "shortfall_delta": 0.019668723514010715,
+      "median_xirr_delta": 0.005316373515337841,
+      "drawdown_delta": -0.03294149906109134
+    },
+    "lookback60": {
+      "achievement_delta": -0.024999999999999994,
+      "shortfall_delta": 0.0007913938228866074,
+      "median_xirr_delta": 0.016133744931164457,
+      "drawdown_delta": -0.0086461686486827
+    }
+  },
+  "production_mutated": false,
+  "frozen_champion_mutated": false
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "v13_post_reveal_price_repair_audit_v1",
+  "first_reveal_sha256": "a714c2a994ea64f624aa3dae6e70ef001024ba245fe49d78d75a728bcfef17ca",
+  "locked_scores_sha256": "5040171dd8a88f9202a89dadba4538537a3571d0eba6bcec0f631634c5a49926",
+  "official_source_files_verified": 26,
+  "weekly_decision_identities": 3358,
+  "weekly_date_gap_identities_before": 2139,
+  "weekly_date_gap_identities_after": 51,
+  "outcome_metrics_used_for_repair": false,
+  "first_reveal_overwritten": false,
+  "post_reveal_sensitivity_only": true
+}

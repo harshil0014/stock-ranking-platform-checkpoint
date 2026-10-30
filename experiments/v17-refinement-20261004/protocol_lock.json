@@ -1,0 +1,430 @@
+{
+  "locked_at": "2026-10-03T20:58:58.391460+00:00",
+  "scope": "V17 repair first; no candidate receives V18 name until cleanly beating the repaired champion.",
+  "development_dates": [
+    "2020-03-31",
+    "2020-06-30",
+    "2020-09-30",
+    "2020-12-31",
+    "2021-03-31",
+    "2021-06-30",
+    "2021-09-30",
+    "2021-12-31",
+    "2022-03-31",
+    "2022-06-30",
+    "2022-09-30",
+    "2022-12-31",
+    "2023-03-31",
+    "2023-06-30",
+    "2023-09-30",
+    "2023-12-31"
+  ],
+  "candidates": [
+    {
+      "name": "regime_utility_b0.025_l0.3333333333333333_gbroad",
+      "family": "regime_utility",
+      "beta": 0.025,
+      "long_scale": 0.3333333333333333,
+      "gate": "broad"
+    },
+    {
+      "name": "regime_utility_b0.025_l0.3333333333333333_gvolatility",
+      "family": "regime_utility",
+      "beta": 0.025,
+      "long_scale": 0.3333333333333333,
+      "gate": "volatility"
+    },
+    {
+      "name": "regime_utility_b0.025_l0.6666666666666666_gbroad",
+      "family": "regime_utility",
+      "beta": 0.025,
+      "long_scale": 0.6666666666666666,
+      "gate": "broad"
+    },
+    {
+      "name": "regime_utility_b0.025_l0.6666666666666666_gvolatility",
+      "family": "regime_utility",
+      "beta": 0.025,
+      "long_scale": 0.6666666666666666,
+      "gate": "volatility"
+    },
+    {
+      "name": "regime_utility_b0.025_l1.0_gbroad",
+      "family": "regime_utility",
+      "beta": 0.025,
+      "long_scale": 1.0,
+      "gate": "broad"
+    },
+    {
+      "name": "regime_utility_b0.025_l1.0_gvolatility",
+      "family": "regime_utility",
+      "beta": 0.025,
+      "long_scale": 1.0,
+      "gate": "volatility"
+    },
+    {
+      "name": "regime_utility_b0.05_l0.3333333333333333_gbroad",
+      "family": "regime_utility",
+      "beta": 0.05,
+      "long_scale": 0.3333333333333333,
+      "gate": "broad"
+    },
+    {
+      "name": "regime_utility_b0.05_l0.3333333333333333_gvolatility",
+      "family": "regime_utility",
+      "beta": 0.05,
+      "long_scale": 0.3333333333333333,
+      "gate": "volatility"
+    },
+    {
+      "name": "regime_utility_b0.05_l0.6666666666666666_gbroad",
+      "family": "regime_utility",
+      "beta": 0.05,
+      "long_scale": 0.6666666666666666,
+      "gate": "broad"
+    },
+    {
+      "name": "regime_utility_b0.05_l0.6666666666666666_gvolatility",
+      "family": "regime_utility",
+      "beta": 0.05,
+      "long_scale": 0.6666666666666666,
+      "gate": "volatility"
+    },
+    {
+      "name": "regime_utility_b0.05_l1.0_gbroad",
+      "family": "regime_utility",
+      "beta": 0.05,
+      "long_scale": 1.0,
+      "gate": "broad"
+    },
+    {
+      "name": "regime_utility_b0.05_l1.0_gvolatility",
+      "family": "regime_utility",
+      "beta": 0.05,
+      "long_scale": 1.0,
+      "gate": "volatility"
+    },
+    {
+      "name": "regime_utility_b0.1_l0.3333333333333333_gbroad",
+      "family": "regime_utility",
+      "beta": 0.1,
+      "long_scale": 0.3333333333333333,
+      "gate": "broad"
+    },
+    {
+      "name": "regime_utility_b0.1_l0.3333333333333333_gvolatility",
+      "family": "regime_utility",
+      "beta": 0.1,
+      "long_scale": 0.3333333333333333,
+      "gate": "volatility"
+    },
+    {
+      "name": "regime_utility_b0.1_l0.6666666666666666_gbroad",
+      "family": "regime_utility",
+      "beta": 0.1,
+      "long_scale": 0.6666666666666666,
+      "gate": "broad"
+    },
+    {
+      "name": "regime_utility_b0.1_l0.6666666666666666_gvolatility",
+      "family": "regime_utility",
+      "beta": 0.1,
+      "long_scale": 0.6666666666666666,
+      "gate": "volatility"
+    },
+    {
+      "name": "regime_utility_b0.1_l1.0_gbroad",
+      "family": "regime_utility",
+      "beta": 0.1,
+      "long_scale": 1.0,
+      "gate": "broad"
+    },
+    {
+      "name": "regime_utility_b0.1_l1.0_gvolatility",
+      "family": "regime_utility",
+      "beta": 0.1,
+      "long_scale": 1.0,
+      "gate": "volatility"
+    },
+    {
+      "name": "specialist_utility_b0.025_l0.3333333333333333_gbroad",
+      "family": "specialist_utility",
+      "beta": 0.025,
+      "long_scale": 0.3333333333333333,
+      "gate": "broad"
+    },
+    {
+      "name": "specialist_utility_b0.025_l0.3333333333333333_gvolatility",
+      "family": "specialist_utility",
+      "beta": 0.025,
+      "long_scale": 0.3333333333333333,
+      "gate": "volatility"
+    },
+    {
+      "name": "specialist_utility_b0.025_l0.6666666666666666_gbroad",
+      "family": "specialist_utility",
+      "beta": 0.025,
+      "long_scale": 0.6666666666666666,
+      "gate": "broad"
+    },
+    {
+      "name": "specialist_utility_b0.025_l0.6666666666666666_gvolatility",
+      "family": "specialist_utility",
+      "beta": 0.025,
+      "long_scale": 0.6666666666666666,
+      "gate": "volatility"
+    },
+    {
+      "name": "specialist_utility_b0.025_l1.0_gbroad",
+      "family": "specialist_utility",
+      "beta": 0.025,
+      "long_scale": 1.0,
+      "gate": "broad"
+    },
+    {
+      "name": "specialist_utility_b0.025_l1.0_gvolatility",
+      "family": "specialist_utility",
+      "beta": 0.025,
+      "long_scale": 1.0,
+      "gate": "volatility"
+    },
+    {
+      "name": "specialist_utility_b0.05_l0.3333333333333333_gbroad",
+      "family": "specialist_utility",
+      "beta": 0.05,
+      "long_scale": 0.3333333333333333,
+      "gate": "broad"
+    },
+    {
+      "name": "specialist_utility_b0.05_l0.3333333333333333_gvolatility",
+      "family": "specialist_utility",
+      "beta": 0.05,
+      "long_scale": 0.3333333333333333,
+      "gate": "volatility"
+    },
+    {
+      "name": "specialist_utility_b0.05_l0.6666666666666666_gbroad",
+      "family": "specialist_utility",
+      "beta": 0.05,
+      "long_scale": 0.6666666666666666,
+      "gate": "broad"
+    },
+    {
+      "name": "specialist_utility_b0.05_l0.6666666666666666_gvolatility",
+      "family": "specialist_utility",
+      "beta": 0.05,
+      "long_scale": 0.6666666666666666,
+      "gate": "volatility"
+    },
+    {
+      "name": "specialist_utility_b0.05_l1.0_gbroad",
+      "family": "specialist_utility",
+      "beta": 0.05,
+      "long_scale": 1.0,
+      "gate": "broad"
+    },
+    {
+      "name": "specialist_utility_b0.05_l1.0_gvolatility",
+      "family": "specialist_utility",
+      "beta": 0.05,
+      "long_scale": 1.0,
+      "gate": "volatility"
+    },
+    {
+      "name": "specialist_utility_b0.1_l0.3333333333333333_gbroad",
+      "family": "specialist_utility",
+      "beta": 0.1,
+      "long_scale": 0.3333333333333333,
+      "gate": "broad"
+    },
+    {
+      "name": "specialist_utility_b0.1_l0.3333333333333333_gvolatility",
+      "family": "specialist_utility",
+      "beta": 0.1,
+      "long_scale": 0.3333333333333333,
+      "gate": "volatility"
+    },
+    {
+      "name": "specialist_utility_b0.1_l0.6666666666666666_gbroad",
+      "family": "specialist_utility",
+      "beta": 0.1,
+      "long_scale": 0.6666666666666666,
+      "gate": "broad"
+    },
+    {
+      "name": "specialist_utility_b0.1_l0.6666666666666666_gvolatility",
+      "family": "specialist_utility",
+      "beta": 0.1,
+      "long_scale": 0.6666666666666666,
+      "gate": "volatility"
+    },
+    {
+      "name": "specialist_utility_b0.1_l1.0_gbroad",
+      "family": "specialist_utility",
+      "beta": 0.1,
+      "long_scale": 1.0,
+      "gate": "broad"
+    },
+    {
+      "name": "specialist_utility_b0.1_l1.0_gvolatility",
+      "family": "specialist_utility",
+      "beta": 0.1,
+      "long_scale": 1.0,
+      "gate": "volatility"
+    },
+    {
+      "name": "robust_shallow_b0.025_l0.3333333333333333_gbroad",
+      "family": "robust_shallow",
+      "beta": 0.025,
+      "long_scale": 0.3333333333333333,
+      "gate": "broad"
+    },
+    {
+      "name": "robust_shallow_b0.025_l0.3333333333333333_gvolatility",
+      "family": "robust_shallow",
+      "beta": 0.025,
+      "long_scale": 0.3333333333333333,
+      "gate": "volatility"
+    },
+    {
+      "name": "robust_shallow_b0.025_l0.6666666666666666_gbroad",
+      "family": "robust_shallow",
+      "beta": 0.025,
+      "long_scale": 0.6666666666666666,
+      "gate": "broad"
+    },
+    {
+      "name": "robust_shallow_b0.025_l0.6666666666666666_gvolatility",
+      "family": "robust_shallow",
+      "beta": 0.025,
+      "long_scale": 0.6666666666666666,
+      "gate": "volatility"
+    },
+    {
+      "name": "robust_shallow_b0.025_l1.0_gbroad",
+      "family": "robust_shallow",
+      "beta": 0.025,
+      "long_scale": 1.0,
+      "gate": "broad"
+    },
+    {
+      "name": "robust_shallow_b0.025_l1.0_gvolatility",
+      "family": "robust_shallow",
+      "beta": 0.025,
+      "long_scale": 1.0,
+      "gate": "volatility"
+    },
+    {
+      "name": "robust_shallow_b0.05_l0.3333333333333333_gbroad",
+      "family": "robust_shallow",
+      "beta": 0.05,
+      "long_scale": 0.3333333333333333,
+      "gate": "broad"
+    },
+    {
+      "name": "robust_shallow_b0.05_l0.3333333333333333_gvolatility",
+      "family": "robust_shallow",
+      "beta": 0.05,
+      "long_scale": 0.3333333333333333,
+      "gate": "volatility"
+    },
+    {
+      "name": "robust_shallow_b0.05_l0.6666666666666666_gbroad",
+      "family": "robust_shallow",
+      "beta": 0.05,
+      "long_scale": 0.6666666666666666,
+      "gate": "broad"
+    },
+    {
+      "name": "robust_shallow_b0.05_l0.6666666666666666_gvolatility",
+      "family": "robust_shallow",
+      "beta": 0.05,
+      "long_scale": 0.6666666666666666,
+      "gate": "volatility"
+    },
+    {
+      "name": "robust_shallow_b0.05_l1.0_gbroad",
+      "family": "robust_shallow",
+      "beta": 0.05,
+      "long_scale": 1.0,
+      "gate": "broad"
+    },
+    {
+      "name": "robust_shallow_b0.05_l1.0_gvolatility",
+      "family": "robust_shallow",
+      "beta": 0.05,
+      "long_scale": 1.0,
+      "gate": "volatility"
+    },
+    {
+      "name": "robust_shallow_b0.1_l0.3333333333333333_gbroad",
+      "family": "robust_shallow",
+      "beta": 0.1,
+      "long_scale": 0.3333333333333333,
+      "gate": "broad"
+    },
+    {
+      "name": "robust_shallow_b0.1_l0.3333333333333333_gvolatility",
+      "family": "robust_shallow",
+      "beta": 0.1,
+      "long_scale": 0.3333333333333333,
+      "gate": "volatility"
+    },
+    {
+      "name": "robust_shallow_b0.1_l0.6666666666666666_gbroad",
+      "family": "robust_shallow",
+      "beta": 0.1,
+      "long_scale": 0.6666666666666666,
+      "gate": "broad"
+    },
+    {
+      "name": "robust_shallow_b0.1_l0.6666666666666666_gvolatility",
+      "family": "robust_shallow",
+      "beta": 0.1,
+      "long_scale": 0.6666666666666666,
+      "gate": "volatility"
+    },
+    {
+      "name": "robust_shallow_b0.1_l1.0_gbroad",
+      "family": "robust_shallow",
+      "beta": 0.1,
+      "long_scale": 1.0,
+      "gate": "broad"
+    },
+    {
+      "name": "robust_shallow_b0.1_l1.0_gvolatility",
+      "family": "robust_shallow",
+      "beta": 0.1,
+      "long_scale": 1.0,
+      "gate": "volatility"
+    },
+    {
+      "name": "long_seedmean_0.3333333333333333",
+      "family": "none",
+      "beta": 0.0,
+      "long_scale": 0.3333333333333333,
+      "gate": "broad"
+    },
+    {
+      "name": "long_seedmean_0.6666666666666666",
+      "family": "none",
+      "beta": 0.0,
+      "long_scale": 0.6666666666666666,
+      "gate": "broad"
+    },
+    {
+      "name": "long_seedmean_1.0",
+      "family": "none",
+      "beta": 0.0,
+      "long_scale": 1.0,
+      "gate": "broad"
+    }
+  ],
+  "selection": "Unchanged V17 strict gates versus d499580; aggregate median XIRR >=original V17, NDCG>=original V17, achievement>=-0.005, shortfall<=+0.0025, drawdown>=original V17; every profile return>=-0.01 and drawdown>=-0.005 versusV17. High-volatility within-cohort drawdown>=V17 and return>=-0.01. Positive utility required. Mean XIRR zero. Eligible utility then smaller strength.",
+  "architecture": "Keep12M V17 score exactly. Average original V17 with independent seed20261004/05 scores for60M then shrink its correction toward champion using locked long_scale. Other profiles receive confidence-weighted correction from existing development-purged model percentiles. Broad gate1 or continuous high-vol gate clip((volatility_percentile-.5)*2,0,1). No identity or old-high threshold.",
+  "robustness": "Finalists must keep aggregate median and drawdown improvements versus matched V17 under alternate seed and per-date refits.60M return versus champion>=0 under each; high-volatility drawdown versus matchedV17>=0. Reject if currentTop20 overlap<85% in any profile after lock. Current is stability veto only, never weight tuning.",
+  "coverage": "Only executable AVAILABLE rows eligible; retain observed historical goal windows and shrink missing-window evidence toward contemporaneous median. No price/action imputation. Historical comparison separates common eligibility from expanded coverage.",
+  "corporate_actions": "Fetch official NSE/BSE records through2026-10-04; append dated normalized mechanics to isolated research ledger; unknown terms/failures stay explicit. Current evidence never copied into history.",
+  "evaluation": "2024\u20132025 exposed and contextual only; all44 trainable dates,9profiles,7cohorts, current4436 universe.",
+  "stop": "57 fixed repair configurations, then robustness; next architecture stage separately registered after repairs. Original V17 preserved if no passing model repair."
+}

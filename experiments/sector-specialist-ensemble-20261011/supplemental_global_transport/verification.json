@@ -1,0 +1,14 @@
+{
+  "historical_rows": 797443,
+  "current_rows": 4436,
+  "models": 14,
+  "profiles": 9,
+  "top_ns": [
+    1,
+    3,
+    20,
+    100
+  ],
+  "selection_unchanged": true,
+  "fresh_validation": false
+}

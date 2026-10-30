@@ -1,0 +1,15 @@
+{
+  "python": "3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.3.0",
+    "pandas": "3.0.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.0",
+    "lightgbm": "4.6.0"
+  },
+  "catboost": "1.2.10",
+  "xgboost": "3.4.1",
+  "git_branch": "main",
+  "git_head": "c12dd9b189bc71684bfac52606eb89abd5e383c7",
+  "workspace_dirty": true
+}

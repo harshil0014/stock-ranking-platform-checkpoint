@@ -1,0 +1,24 @@
+{
+  "candidate": "regression_l1_balanced_blend1.0",
+  "family": "rebuilt",
+  "strict_gate": false,
+  "current_stocks": 4436,
+  "input_usable_current": 4303,
+  "current_input_status": {
+    "USABLE_PROVIDER_BASIS": 4303,
+    "NO_PRICE": 118,
+    "UNRESOLVED_ACTION_IN_FEATURE_WINDOW": 15
+  },
+  "current_model_and_csv_replay": true,
+  "current_snapshot": "2026-10-03",
+  "fresh_validation": false,
+  "production_replaced": false,
+  "sha256": {
+    "experiments\\sector-accuracy-20261010\\protocol.json": "3c720acddb7b6756dced5b740118d64ebe25c12c4d34062d10c287fb4f9c4d35",
+    "experiments\\sector-accuracy-20261010\\selection.json": "1a39a53c333361616c3a0f1500ff8901431b9352078ac6a20a0c5e7b23052eea",
+    "experiments\\sector-accuracy-20261010\\current_model.txt": "1e713b01ffcb5dfbb0879eb74ff1a84a7b0687e15bf77a683649e684a6c0e7c9",
+    "experiments\\sector-accuracy-20261010\\current_all_stock_rankings.csv": "23fadcf348202f77dfa79b3d0abdbf55e2056c930c33dd3f9a57f3ff5752b10d",
+    "experiments\\sector-accuracy-20261010\\selected_historical_scores.csv.gz": "389218c4bf0391c72ec07d318bb339b57186c8cfd5f61596ec718801c3b41be3",
+    "experiments\\sector-accuracy-20261010\\pair_accuracy_summary.csv": "54f2e904e5414b6276adfc94bde71b09ed615ab03f4a0598fa817582a386587b"
+  }
+}

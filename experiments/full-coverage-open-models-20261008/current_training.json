@@ -1,0 +1,12 @@
+[
+  {
+    "model": "catboost_defensive",
+    "rows": 126306,
+    "max_training_endpoint": "2026-08-31"
+  },
+  {
+    "model": "ridge_defensive",
+    "rows": 126306,
+    "max_training_endpoint": "2026-08-31"
+  }
+]

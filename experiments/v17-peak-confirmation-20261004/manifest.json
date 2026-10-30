@@ -1,0 +1,13 @@
+{
+  "name": "V17 closing-high confirmation",
+  "candidate": "downside_h0.3_q0.1",
+  "files": {
+    "research\\runners\\v17_peak_confirmation_20261004.py": "66366d0e30e2b13483499741f4a3a3420227138cea68fc0c35ac038658b3936e",
+    "experiments\\v17-peak-confirmation-20261004\\protocol.json": "569f58a631489b666aee4d84798677fcc9e787a2532b7513d77b781895fee99f",
+    "experiments\\v17-peak-confirmation-20261004\\selection_lock.json": "14428e85da6df3187f87e4edfd54421094a4b123bc799100eafd9837dd290558",
+    "experiments\\v17-peak-confirmation-20261004\\current_rankings.csv.gz": "cba2b639cdc4209426679a5f2343127e279d588b0fe1150f70c8fcbddf33e23a",
+    "experiments\\v17-peak-confirmation-20261004\\metrics.csv": "5eb0d3ef0cb867331ae1b1354285a5abc4852e3d639f212b0f6cf7b4173c7bb3",
+    "experiments\\v17-peak-confirmation-20261004\\verification.json": "3e58509e7fe9d8e2eb42b4b97480d38141ebac64082c7bfb4651a14c8201d981",
+    "experiments\\v17-peak-activity-20261004\\dated_features.csv.gz": "0d4d97bc6f3cf8cbefe1546357ecdff5df13b41db7f04a55cfa64011a2051ef9"
+  }
+}

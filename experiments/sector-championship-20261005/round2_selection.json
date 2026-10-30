@@ -1,0 +1,6 @@
+{
+  "winner": null,
+  "trials": 60,
+  "protocol_sha256": "8377d43a22b3984bcdb5f7227da145e92611212e71ce159a76a8870f4c2ae02a",
+  "control_audit": "Only the exact incumbent-equivalent control met nonworseness. Zero gain is not a successful improvement."
+}

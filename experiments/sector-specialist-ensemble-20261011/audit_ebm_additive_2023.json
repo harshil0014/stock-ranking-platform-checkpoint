@@ -1,0 +1,16 @@
+{
+  "year": 2023,
+  "family": "ebm_additive",
+  "training_rows": 560469,
+  "training_queries": 10742,
+  "training_min_date": "2016-03-31",
+  "maximum_endpoint": "2022-12-31",
+  "cutoff": "2023-01-01",
+  "inference_rows": 116443,
+  "seconds": 71.42869329452515,
+  "replay_max_error": 0.0,
+  "model_sha256": "3ce8395e1b84893a5dca20b79ec7d7e50ef0d3e644995e5f9ede4367ce5e16fe",
+  "prediction_sha256": "8d009fc8da6e450a621c0c02c74c96faa35fd9663ac4383e93f9e0aaaf63099a",
+  "training_identity_sha256": "13b114c98094e4c37b30a7de48a6fa319f3c7968cd0cd95e39aa31aaac72ef58",
+  "training_loss": null
+}

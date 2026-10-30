@@ -1,0 +1,14 @@
+{
+  "top_n": 3,
+  "blocks_in_ordered_decision_dates": [
+    2,
+    4,
+    8
+  ],
+  "replicates": 2000,
+  "seed": 20261011,
+  "aggregation": "Pair candidate and champion on identical queries; equal sectors within profile/date, equal profiles within date, equal dates. This date-balanced diagnostic can differ from the primary sector-balanced summary.",
+  "interpretation": "Circular moving-block resampling keeps every sector/profile on the same sampled date and groups adjacent dates. Report all block lengths, actual date gaps and leave-one-year-out estimates. Few periods and overlapping outcome windows limit inference. Intervals are descriptive, not post-selection-valid significance tests; no PBO or fresh-validation claim.",
+  "selection_changed": false,
+  "source": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf"
+}

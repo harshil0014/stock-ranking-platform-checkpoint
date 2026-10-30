@@ -1,0 +1,24 @@
+{
+  "formula": "weighted within-date/profile percentiles; 4 relevance buckets",
+  "future_labels_only_used_for_training_labels_and_evaluation": true,
+  "weights": {
+    "balanced": {
+      "achievement": 0.15,
+      "drawdown": 0.2,
+      "shortfall": 0.25,
+      "xirr": 0.4
+    },
+    "goal": {
+      "achievement": 0.2,
+      "drawdown": 0.15,
+      "shortfall": 0.4,
+      "xirr": 0.25
+    },
+    "risk": {
+      "achievement": 0.15,
+      "drawdown": 0.35,
+      "shortfall": 0.2,
+      "xirr": 0.3
+    }
+  }
+}

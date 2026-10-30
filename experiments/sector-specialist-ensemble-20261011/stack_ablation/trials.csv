@@ -1,0 +1,11 @@
+removal,improved,regressed,ties
+without_ebm_additive,737,535,24
+without_ebm_interactions,820,454,22
+without_extra_trees,726,550,20
+without_ridge,560,712,24
+without_tabm_compact,870,336,90
+without_tabm_embedded,578,712,6
+without_tabpfn,173,201,922
+without_legacy_controls,386,202,708
+without_risk_heads,649,635,12
+without_goal_heads,377,487,432

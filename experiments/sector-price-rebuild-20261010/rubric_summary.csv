@@ -1,0 +1,8 @@
+scope,model,rubric
+common,guarded_model_score,0.5602696609763238
+common,open_model_score,0.5576149868357999
+common,rebuilt_score,0.5627691743842677
+common,sector_incumbent,0.5578528784698079
+expanded,guarded_model_score,0.5750854770401229
+expanded,open_model_score,0.5762272247234386
+expanded,rebuilt_score,0.5754909035265866

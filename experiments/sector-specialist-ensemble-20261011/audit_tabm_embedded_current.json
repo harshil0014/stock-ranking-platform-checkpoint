@@ -1,0 +1,29 @@
+{
+  "year": "current",
+  "family": "tabm_embedded",
+  "training_rows": 1115140,
+  "training_queries": 20234,
+  "training_min_date": "2016-03-31",
+  "maximum_endpoint": "2026-08-31",
+  "cutoff": "2026-10-03",
+  "inference_rows": 4436,
+  "seconds": 527.085791349411,
+  "replay_max_error": 0.0,
+  "model_sha256": "2d7c3bc45364ba33b81908ea22849f6d11d135c93c09826260c62fe9f0f515cf",
+  "prediction_sha256": "57f606f32b5939ea31ac3ce773956e4ab8db898180a2f91afae3c8d87233de55",
+  "training_identity_sha256": "ca08811275df7cf746fdc501b2b3c68fd131d11e15d40421710d1803d1e6b630",
+  "training_loss": [
+    0.078054501766259,
+    0.07124008894704824,
+    0.06999216658606139,
+    0.06911651181866167,
+    0.06839755334122144,
+    0.06762355186834498,
+    0.06699210984030154,
+    0.06642139701544089,
+    0.06589328658568594,
+    0.06534721910466322,
+    0.06487888616869039,
+    0.06448891361702343
+  ]
+}
