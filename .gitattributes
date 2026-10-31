@@ -92,3 +92,6 @@ research/protocols/professor_majority_20261031.json -text
 src/stock_research/professor_factor_model.py text eol=lf
 experiments/professor-weight-curve-20261031/** -text
 research/protocols/professor_weight_curve_20261031.json -text
+experiments/professor-preference-review-20261101/** -text
+research/runners/review_preference_feedback_20261101.py text eol=lf
+research/reports/preference_feedback_review_20261101.md text eol=lf

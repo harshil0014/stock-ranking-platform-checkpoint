@@ -1,0 +1,7 @@
+{
+  "experiments/professor-preference-review-20261101/audit_receipt.json": "8b1e7253894beea735462cc55b9b4857ec10ff391d8b64ce03438a643bf14529",
+  "experiments/professor-preference-review-20261101/baseline_cohorts.csv": "58893cebc6485df18a7fc3247999d987e2bb2dc8bf1da76cb9858ef3bb30c1be",
+  "experiments/professor-preference-review-20261101/factor_correlations.csv": "deedac710e96f8e04bf7b39043ebd3af7610c53312151a8823743eb82d320bb9",
+  "experiments/professor-preference-review-20261101/prefix_replays.csv": "0397e5aea7d8aa54b1dceef1bb58db6e16fe33c690f56e4b37f68fe6726e7fe7",
+  "experiments/professor-preference-review-20261101/price_level_correlations.csv": "21991b3b699fd09621801b07544d30d14416f1e9350306067fbb9f02792dabee"
+}
