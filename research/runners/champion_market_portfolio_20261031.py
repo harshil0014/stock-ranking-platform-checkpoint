@@ -88,11 +88,15 @@ def main():
      if factors is not None and cost==0:r.update(attribution(ds,ret,factors))
      r.update(model=name,policy=policy,decision_date=date,profile_name='base7500',cost_bps=cost,goal_hit=bool(r['xirr']>=params['target_cagr']));rows.append(r)
   print('PORTFOLIO',date,len(rows),'failures',len(fail),flush=True)
- z=pd.DataFrame(rows);z.to_csv(c.OUT/'portfolio_cashflow_results.csv.gz',index=False);pd.DataFrame(selections).to_csv(c.OUT/'portfolio_selections.csv.gz',index=False);c.save('portfolio_failures.json',fail)
+ z=pd.DataFrame(rows)
+ if z.empty:z=pd.DataFrame(columns=['model','policy','decision_date','profile_name','cost_bps','xirr','goal_hit','tw_max_drawdown','tw_volatility','tw_sharpe_rf0','daily_cvar5'])
+ z.to_csv(c.OUT/'portfolio_cashflow_results.csv.gz',index=False);pd.DataFrame(selections).to_csv(c.OUT/'portfolio_selections.csv.gz',index=False);c.save('portfolio_failures.json',fail)
  if len(z):
   z['period']=np.where(z.decision_date.lt('2024-01-01'),'development','exposed');z.groupby(['period','model','policy','cost_bps'])[['xirr','goal_hit','tw_max_drawdown','tw_volatility','tw_sharpe_rf0','daily_cvar5']].agg(['mean','count']).to_csv(c.OUT/'portfolio_summary.csv')
- c.save('portfolio_scope.json',dict(basis='Yahoo provider Adj Close research proxy; fractional units; unresolved official action windows block entire portfolio; no silent removal of missing selected stocks',universe='Full feature-available current-survivor panel, including unknown outcome rows; not PIT survivorship-free',profile='base_7500; all9profiles evaluated separately in individual-stock ranking and index SIP panels',policy='Forward12month fixed selection, constant capital weights per contribution, no intermediate rebalancing; overlapping cohorts not chainable CAGR',risk='Daily flow-adjusted returns; RF0 Sharpe; first incomplete execution days excluded from risk stats; cost per buy and final sale',planned_queries=len(names)*2*x.decision_date.nunique(),models=len(names),completed_cost_rows=len(z),failure_records=len(fail)))
+ else:pd.DataFrame(columns=['period','model','policy','cost_bps','xirr','goal_hit','tw_max_drawdown']).to_csv(c.OUT/'portfolio_summary.csv',index=False)
  if len(z):paired_comparisons(z)
+ else:pd.DataFrame(columns=['model','policy','cost_bps','benchmark','period','matched_dates','xirr_delta','goal_hit_delta','tw_max_drawdown_delta','tw_sharpe_rf0_delta']).to_csv(c.OUT/'portfolio_paired_comparisons.csv',index=False)
+ c.save('portfolio_scope.json',dict(basis='Yahoo provider Adj Close research proxy; fractional units; unresolved official action windows block entire portfolio; no silent removal of missing selected stocks',universe='Full feature-available current-survivor panel, including unknown outcome rows; not PIT survivorship-free',profile='base7500; all9profiles evaluated separately in individual-stock ranking and index SIP panels',policy='Forward12month fixed selection, constant capital weights per contribution, no intermediate rebalancing; overlapping cohorts not chainable CAGR',risk='Daily flow-adjusted returns; RF0 Sharpe; first incomplete execution days excluded from risk stats; cost per buy and final sale',planned_queries=len(names)*2*x.decision_date.nunique(),models=len(names),completed_cost_rows=len(z),failure_records=len(fail)))
 
 def paired_comparisons(z):
  metrics=['xirr','goal_hit','tw_max_drawdown','tw_volatility','tw_sharpe_rf0','daily_cvar5'];index=pd.read_csv(c.OUT/'index_sip_cashflow_results.csv.gz');index=index[index.profile_name.eq('base7500')];rows=[]

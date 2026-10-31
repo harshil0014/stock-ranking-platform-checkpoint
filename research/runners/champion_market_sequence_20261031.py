@@ -56,6 +56,13 @@ def main(name):
    if eligible.sum()>=5:train_groups.append((ids,eligible))
   test_groups=list(x[test].groupby(['decision_date','profile_name'],sort=True,observed=True).groups.values());predictions=[]
   for seed in [20261031,20261032,20261033]:
+   checkpoint=folder/f'{name}__balanced__{year}__{seed}.pt';audit_path=folder/f'{name}__balanced__{year}__{seed}_audit.json'
+   if checkpoint.exists() and audit_path.exists():
+    saved=torch.load(checkpoint,map_location=DEVICE,weights_only=False);assert saved['year']==year and saved['seed']==seed and saved['scaler']==scaler;model=make_model(name).to(DEVICE);model.load_state_dict(saved['state_dict']);model.eval();pred=pd.Series(index=x.index[test],dtype=float)
+    with torch.no_grad():
+     for ids in test_groups:
+      ids=np.asarray(ids);pred.loc[ids]=forward(model,name,torch.tensor(a[ids],device=DEVICE),torch.tensor(market[ids],device=DEVICE),torch.tensor(concepts[ids],device=DEVICE)).cpu().numpy()
+    assert np.isfinite(pred).all();predictions.append(pred.to_numpy());del model,saved;gc.collect();torch.cuda.empty_cache();print('RESUMED SAVED NETWORK',name,year,seed,flush=True);continue
    torch.manual_seed(seed);np.random.seed(seed);torch.cuda.manual_seed_all(seed);model=make_model(name).to(DEVICE);optim=torch.optim.Adam(model.parameters(),lr=.001,weight_decay=.0001);start=time.perf_counter();losses=[]
    aa_all=torch.tensor(a,device=DEVICE);mm_all=torch.tensor(market,device=DEVICE);cc_all=torch.tensor(concepts,device=DEVICE)
    target_all=torch.tensor(x.balanced_target.fillna(0).to_numpy('float32'),device=DEVICE)

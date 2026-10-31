@@ -19,14 +19,15 @@ def main(allow_incomplete=False):
     _,Z,pre=t.transform_fit(train,test,name in ['ridge','elasticnet']);preds=[]
     for seed in json.loads(receipt.read_text())['seeds']:
      stem=c.OUT/'tabular'/f'{name}__{target}__{year}__{seed}'
-     if name.startswith('lightgbm'):model=t.lgb.Booster(model_file=str(stem)+'.txt',params={'num_threads':3})
+     if name.startswith('lightgbm'):model=t.lgb.Booster(model_file=str(stem)+'.txt',params={'num_threads':t.THREADS})
      elif name=='catboost_yetirank':model=t.CatBoostRanker();model.load_model(str(stem)+'.cbm')
      elif name=='xgboost_rankndcg':model=t.XGBRanker();model.load_model(str(stem)+'.json')
      else:
       with open(str(stem)+'.pkl','rb') as f:saved=pickle.load(f)
       model=saved['model']
       for key in pre:np.testing.assert_allclose(pre[key],saved['preprocessing'][key],rtol=0,atol=0)
-     prediction=model.predict(Z,thread_count=3) if name=='catboost_yetirank' else model.predict(Z,num_threads=3) if name.startswith('lightgbm') else model.predict(Z)
+     if hasattr(model,'n_jobs'):model.n_jobs=t.THREADS
+     prediction=model.predict(Z,thread_count=t.THREADS) if name=='catboost_yetirank' else model.predict(Z,num_threads=t.THREADS) if name.startswith('lightgbm') else model.predict(Z)
      preds.append(prediction);del model;gc.collect()
     z=test[c.KEYS].copy();z['score']=np.mean(preds,axis=0);z['seed_sd']=np.std(preds,axis=0)
     old=pd.read_csv(c.OUT/'tabular'/dest.name);matched=old.merge(z,on=c.KEYS,validate='one_to_one');error=float(np.abs(matched.score_x-matched.score_y).max());np.testing.assert_allclose(matched.score_x,matched.score_y,rtol=1e-6,atol=1e-6,err_msg=name+' float32 replay')

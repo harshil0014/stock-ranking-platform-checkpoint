@@ -12,6 +12,7 @@ from catboost import CatBoostRanker
 from xgboost import XGBRanker
 import champion_market_common_20261031 as c
 SEEDS=[20261031,20261032,20261033]
+THREADS=int(os.environ.get('STOCK_RESEARCH_THREADS','3'))
 
 def transform_fit(train,test,scaled=False):
  a=train[c.FEATURES].to_numpy(float);b=test[c.FEATURES].to_numpy(float)
@@ -28,7 +29,7 @@ def fit(name,objective,seed,train,test):
  elif name=='hist_gradient_boosting':m=HistGradientBoostingRegressor(max_iter=120,max_leaf_nodes=15,max_depth=5,min_samples_leaf=200,l2_regularization=30,learning_rate=.04,random_state=seed,early_stopping=False)
  elif name in ['extra_trees','random_forest']:
   cls=ExtraTreesRegressor if name=='extra_trees' else RandomForestRegressor
-  m=cls(n_estimators=120,max_depth=5,max_leaf_nodes=15,min_samples_leaf=200,max_features=.8,n_jobs=3,random_state=seed)
+  m=cls(n_estimators=120,max_depth=5,max_leaf_nodes=15,min_samples_leaf=200,max_features=.8,n_jobs=THREADS,random_state=seed)
  elif name=='lightgbm_regression':m=lgb.LGBMRegressor(n_estimators=120,num_leaves=15,max_depth=5,min_child_samples=200,reg_lambda=30,learning_rate=.04,n_jobs=3,random_state=seed,verbosity=-1,deterministic=True,force_col_wise=True)
  elif name=='lightgbm_lambdarank':
   m=lgb.LGBMRanker(objective='lambdarank',n_estimators=120,num_leaves=15,max_depth=5,min_child_samples=200,reg_lambda=30,learning_rate=.04,n_jobs=3,random_state=seed,verbosity=-1,deterministic=True,force_col_wise=True,label_gain=list(range(20)),lambdarank_truncation_level=20)
@@ -53,6 +54,14 @@ def main(name):
    if dest.exists():continue
    predictions=[];times=[]
    for seed in ([SEEDS[0]] if deterministic else SEEDS):
+    checkpoint=folder/f'{name}__{objective}__{year}__{seed}.pkl';audit_path=folder/f'{name}__{objective}__{year}__{seed}_audit.json'
+    if name in ['ridge','elasticnet','hist_gradient_boosting','extra_trees','random_forest'] and checkpoint.exists() and audit_path.exists():
+     saved_audit=json.loads(audit_path.read_text());actual_hash=hashlib.sha256(pd.util.hash_pandas_object(train[c.KEYS],index=False).to_numpy().tobytes()).hexdigest();assert saved_audit['train_key_hash']==actual_hash and saved_audit['max_training_endpoint']==train.endpoint.max()
+     with checkpoint.open('rb') as stream:saved=pickle.load(stream)
+     _,Z,pre=transform_fit(train,test,scaled=name in ['ridge','elasticnet']);model=saved['model']
+     for key in pre:np.testing.assert_allclose(pre[key],saved['preprocessing'][key],rtol=0,atol=0)
+     if hasattr(model,'n_jobs'):model.n_jobs=THREADS
+     pred=model.predict(Z);assert np.isfinite(pred).all();predictions.append(pred);times.append(json.loads(audit_path.read_text())['seconds']);del model,saved;gc.collect();print('RESUMED SAVED FIT',name,objective,year,seed,flush=True);continue
     start=time.perf_counter();pred,model,pre=fit(name,objective,seed,train,test);elapsed=time.perf_counter()-start;assert np.isfinite(pred).all()
     predictions.append(pred);times.append(elapsed)
     audit=dict(algorithm=name,objective=objective,year=year,seed=seed,train_rows=len(train),training_queries=train.groupby(c.GROUP,observed=True).ngroups,max_training_endpoint=train.endpoint.max(),test_rows=len(test),seconds=elapsed,train_key_hash=hashlib.sha256(pd.util.hash_pandas_object(train[c.KEYS],index=False).to_numpy().tobytes()).hexdigest(),params=model.get_params())
