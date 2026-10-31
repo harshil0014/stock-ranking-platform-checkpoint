@@ -21,7 +21,7 @@ def sip_path(dates,prices,start,end,amount,interval,cost_bps=0):
  flowdates=np.r_[schedule,end];flows=np.r_[np.full(len(schedule),-amount),terminal]
  first=int(buy.min());d=dates[first:last+1];p=prices[first:last+1];units_by_day=np.zeros(len(d));flow_by_day=np.zeros(len(d));np.add.at(units_by_day,buy-first,units);np.add.at(flow_by_day,buy-first,amount)
  wealth=np.cumsum(units_by_day)*p;wealth[-1]=terminal;ret=np.divide(wealth[1:]-flow_by_day[1:],wealth[:-1],out=np.zeros(len(d)-1),where=wealth[:-1]>0)-1
- nav=np.r_[1,np.cumprod(1+ret)];dd=nav/np.maximum.accumulate(nav)-1;sd=np.std(ret)*np.sqrt(252);mean=np.mean(ret)*252;down=np.sqrt(np.mean(np.minimum(ret,0)**2))*np.sqrt(252)
+ initial=wealth[0]/flow_by_day[0];nav=np.r_[initial,initial*np.cumprod(1+ret)];dd=nav/np.maximum.accumulate(np.r_[1.,nav])[1:]-1;sd=np.std(ret)*np.sqrt(252);mean=np.mean(ret)*252;down=np.sqrt(np.mean(np.minimum(ret,0)**2))*np.sqrt(252)
  return dict(xirr=xirr(flowdates,flows),terminal=terminal,contributed=amount*len(schedule),tw_max_drawdown=float(dd.min()),tw_volatility=float(sd),tw_sharpe_rf0=float(mean/sd) if sd>0 else np.nan,tw_sortino_rf0=float(mean/down) if down>0 else np.nan,daily_cvar5=float(np.sort(ret)[:max(1,int(np.ceil(.05*len(ret))))].mean()),trading_observations=len(d),contributions=len(schedule),endpoint_observed=str(d[-1]))
 
 def load_indices():

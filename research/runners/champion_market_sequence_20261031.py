@@ -83,4 +83,11 @@ def main(name):
   z=x.loc[test,c.KEYS].copy();z['score']=np.mean(predictions,axis=0);z['seed_sd']=np.std(predictions,axis=0);z.to_csv(dest,index=False)
  c.save('sequence/'+name+'_complete.json',dict(architecture=name,folds=6,seeds=3,complete=True))
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('architecture',choices=['gru','alstm','transformer','gats','hist','master']);args=p.parse_args();main(args.architecture)
+ p=argparse.ArgumentParser();p.add_argument('architecture',choices=['gru','alstm','transformer','gats','hist','master']);p.add_argument('--lease-owner',action='store_true');p.add_argument('--cpu-threads',type=int,default=3);args=p.parse_args();torch.set_num_threads(args.cpu_threads)
+ lease=c.ROOT/'work/champion-vs-market-20261031'/(args.architecture+'.sequence_external_job_lease')
+ if lease.exists() and not args.lease_owner:
+  start=time.time()
+  while not (c.OUT/'sequence'/(args.architecture+'_complete.json')).exists():
+   if time.time()-start>10800:raise RuntimeError('External sequence worker did not complete '+args.architecture)
+   time.sleep(10)
+ else:main(args.architecture)

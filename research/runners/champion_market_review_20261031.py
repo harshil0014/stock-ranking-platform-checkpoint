@@ -43,9 +43,10 @@ def stability(x,names,folder):
    if previous is not None:
     olddate,old=previous;common=old.index.intersection(h.index)
     if len(common)>=5:
-     for name in names:
-      a=set(old[name].nlargest(3).index);b=set(h[name].nlargest(3).index)
-      rows.append(dict(model=name,profile_name=profile,sector=sector,decision_date=date,previous_date=olddate,top3_churn=1-len(a&b)/3,kendall_tau=kendalltau(old.loc[common,name],h.loc[common,name]).statistic,common_stocks=len(common)))
+     oldall=old[names].to_numpy(float);newall=h[names].to_numpy(float);oi=np.argsort(-oldall,axis=0,kind='stable')[:3];ni=np.argsort(-newall,axis=0,kind='stable')[:3];oa=old.loc[common,names].to_numpy(float);na=h.loc[common,names].to_numpy(float);oid=old.index.to_numpy();nid=h.index.to_numpy()
+     for j,name in enumerate(names):
+      a=set(oid[oi[:,j]]);b=set(nid[ni[:,j]])
+      rows.append(dict(model=name,profile_name=profile,sector=sector,decision_date=date,previous_date=olddate,top3_churn=1-len(a&b)/3,kendall_tau=kendalltau(oa[:,j],na[:,j]).statistic,common_stocks=len(common)))
    previous=(date,h)
  s=pd.DataFrame(rows);s.to_csv(folder/'stability_queries.csv.gz',index=False);s['period']=np.where(s.decision_date.lt('2024-01-01'),'development','exposed');s.groupby(['period','model'])[['top3_churn','kendall_tau']].mean().reset_index().to_csv(folder/'stability_summary.csv',index=False)
 

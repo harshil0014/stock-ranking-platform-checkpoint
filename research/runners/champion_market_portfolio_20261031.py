@@ -41,7 +41,7 @@ def portfolio_path(paths,weights,start,end,amount,interval,cost_bps):
   units=amount*weight/(1+cost)/p[buy];loc=np.searchsorted(calendar,ds[buy]);dailyunits=np.zeros(len(calendar));np.add.at(dailyunits,loc,units);wealth+=np.cumsum(dailyunits)*p[obs];np.add.at(flow,loc,amount*weight);first_trade.append(int(loc.min()))
  wealth[-1]*=(1-cost);terminal=float(wealth[-1]);first=max(first_trade)
  # Start once all initial orders have executed; initial staggered cash is not treated as alpha.
- w=wealth[first:];f=flow[first:];ret=np.divide(w[1:]-f[1:],w[:-1],out=np.ones(len(w)-1),where=w[:-1]>0)-1;nav=np.r_[1,np.cumprod(1+ret)];dd=nav/np.maximum.accumulate(nav)-1;vol=float(np.std(ret)*np.sqrt(252));avg=float(np.mean(ret)*252);down=float(np.sqrt(np.mean(np.minimum(ret,0)**2))*np.sqrt(252))
+ w=wealth[first:];f=flow[first:];ret=np.divide(w[1:]-f[1:],w[:-1],out=np.ones(len(w)-1),where=w[:-1]>0)-1;initial=wealth[first]/flow[:first+1].sum();nav=np.r_[initial,initial*np.cumprod(1+ret)];dd=nav/np.maximum.accumulate(np.r_[1.,nav])[1:]-1;vol=float(np.std(ret)*np.sqrt(252));avg=float(np.mean(ret)*252);down=float(np.sqrt(np.mean(np.minimum(ret,0)**2))*np.sqrt(252))
  return dict(xirr=xirr(np.r_[schedule,end],np.r_[np.full(len(schedule),-amount),terminal]),terminal=terminal,contributed=amount*len(schedule),tw_max_drawdown=float(dd.min()),tw_volatility=vol,tw_sharpe_rf0=avg/vol if vol>0 else np.nan,tw_sortino_rf0=avg/down if down>0 else np.nan,daily_cvar5=float(np.sort(ret)[:max(1,int(np.ceil(.05*len(ret))))].mean()),stocks=len(paths),initial_execution_days=int((calendar[first]-start).astype(int)),_daily_dates=calendar[first+1:],_daily_returns=ret)
 
 def attribution(dates,returns,factors):

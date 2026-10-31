@@ -1,0 +1,506 @@
+[
+  {
+    "id": "jegadeesh_titman",
+    "title": "Returns to Buying Winners and Selling Losers: Implications for Stock Market Efficiency",
+    "source_market": "US",
+    "family": "factor",
+    "test_status": "Momentum-inspired heuristic adaptation",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1111/j.1540-6261.1993.tb04702.x"
+  },
+  {
+    "id": "george_hwang",
+    "title": "The 52\u2010Week High and Momentum Investing",
+    "source_market": "US",
+    "family": "factor",
+    "test_status": "52week-high-inspired heuristic adaptation",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1111/j.1540-6261.2004.00695.x"
+  },
+  {
+    "id": "gervais_volume",
+    "title": "The High\u2010Volume Return Premium",
+    "source_market": "US",
+    "family": "factor",
+    "test_status": "Volume/high heuristic and previous pilot",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1111/0022-1082.00349"
+  },
+  {
+    "id": "ang_volatility",
+    "title": "The Cross\u2010Section of Volatility and Expected Returns",
+    "source_market": "US",
+    "family": "factor",
+    "test_status": "Low-volatility heuristic; not idiosyncratic-volatility paper replication",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1111/j.1540-6261.2006.00836.x"
+  },
+  {
+    "id": "fama_french5",
+    "title": "A five-factor asset pricing model",
+    "source_market": "US",
+    "family": "factor",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1016/j.jfineco.2014.10.010"
+  },
+  {
+    "id": "gross_profitability",
+    "title": "The other side of value: The gross profitability premium",
+    "source_market": "US",
+    "family": "factor",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1016/j.jfineco.2013.01.003"
+  },
+  {
+    "id": "betting_against_beta",
+    "title": "Betting against beta",
+    "source_market": "International",
+    "family": "factor",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1016/j.jfineco.2013.10.005"
+  },
+  {
+    "id": "quality_minus_junk",
+    "title": "Quality minus junk",
+    "source_market": "International",
+    "family": "factor",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1007/s11142-018-9470-2"
+  },
+  {
+    "id": "time_series_momentum",
+    "title": "Time series momentum",
+    "source_market": "International",
+    "family": "factor",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1016/j.jfineco.2011.11.003"
+  },
+  {
+    "id": "value_momentum_everywhere",
+    "title": "Value and Momentum Everywhere",
+    "source_market": "International",
+    "family": "factor",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1111/jofi.12021"
+  },
+  {
+    "id": "carhart",
+    "title": "On Persistence in Mutual Fund Performance",
+    "source_market": "US",
+    "family": "factor",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1111/j.1540-6261.1997.tb03808.x"
+  },
+  {
+    "id": "gkx_machinelearning",
+    "title": "Empirical Asset Pricing via Machine Learning",
+    "source_market": "US",
+    "family": "cross_section_ml",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1093/rfs/hhaa009"
+  },
+  {
+    "id": "deep_asset_pricing",
+    "title": "Deep Learning in Asset Pricing",
+    "source_market": "US",
+    "family": "cross_section_ml",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/1904.00745"
+  },
+  {
+    "id": "autoencoder_pricing",
+    "title": "Autoencoder asset pricing models",
+    "source_market": "US",
+    "family": "cross_section_ml",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1016/j.jeconom.2020.07.009"
+  },
+  {
+    "id": "ridge",
+    "title": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+    "source_market": "General",
+    "family": "algorithm",
+    "test_status": "Full tabular: return and balanced",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1080/00401706.1970.10488634"
+  },
+  {
+    "id": "elastic_net",
+    "title": "Regularization and Variable Selection Via the Elastic Net",
+    "source_market": "General",
+    "family": "algorithm",
+    "test_status": "Full tabular: return and balanced",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1111/j.1467-9868.2005.00503.x"
+  },
+  {
+    "id": "random_forest",
+    "title": "Random Forests",
+    "source_market": "General",
+    "family": "algorithm",
+    "test_status": "Full tabular: return and balanced",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1023/A:1010933404324"
+  },
+  {
+    "id": "extra_trees",
+    "title": "Extremely randomized trees",
+    "source_market": "General",
+    "family": "algorithm",
+    "test_status": "Full tabular: return and balanced",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1007/s10994-006-6226-1"
+  },
+  {
+    "id": "gradient_boosting",
+    "title": "Greedy function approximation: A gradient boosting machine.",
+    "source_market": "General",
+    "family": "algorithm",
+    "test_status": "Full tabular histogram boosting: return and balanced",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1214/aos/1013203451"
+  },
+  {
+    "id": "xgboost",
+    "title": "XGBoost: A Scalable Tree Boosting System",
+    "source_market": "General",
+    "family": "algorithm",
+    "test_status": "Full tabular NDCG ranker: return and balanced",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/1603.02754"
+  },
+  {
+    "id": "catboost",
+    "title": "CatBoost: unbiased boosting with categorical features",
+    "source_market": "General",
+    "family": "algorithm",
+    "test_status": "Full tabular YetiRank: return and balanced",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/1706.09516"
+  },
+  {
+    "id": "tabm",
+    "title": "TabM: Advancing Tabular Deep Learning with Parameter-Efficient Ensembling",
+    "source_market": "General",
+    "family": "tabular_deep",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/2410.24210"
+  },
+  {
+    "id": "qlib",
+    "title": "Qlib: An AI-oriented Quantitative Investment Platform",
+    "source_market": "China/US",
+    "family": "financial_benchmark",
+    "test_status": "Pinned MIT implementation infrastructure for executed networks",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/2009.11189"
+  },
+  {
+    "id": "master",
+    "title": "MASTER: Market-Guided Stock Transformer for Stock Price Forecasting",
+    "source_market": "China",
+    "family": "market_conditioned",
+    "test_status": "Sequence adaptation, balanced target",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/2312.15235"
+  },
+  {
+    "id": "hist",
+    "title": "HIST: A Graph-based Framework for Stock Trend Forecasting via Mining Concept-Oriented Shared Information",
+    "source_market": "China",
+    "family": "graph",
+    "test_status": "Sequence adaptation, balanced target",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/2110.13716"
+  },
+  {
+    "id": "doubleadapt",
+    "title": "DoubleAdapt: A Meta-learning Approach to Incremental Learning for Stock Trend Forecasting",
+    "source_market": "China",
+    "family": "adaptation",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/2306.09862"
+  },
+  {
+    "id": "tra",
+    "title": "Learning Multiple Stock Trading Patterns with Temporal Routing Adaptor and Optimal Transport",
+    "source_market": "China",
+    "family": "adaptation",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/2106.12950"
+  },
+  {
+    "id": "gat",
+    "title": "Graph Attention Networks",
+    "source_market": "General",
+    "family": "graph",
+    "test_status": "Sequence adaptation, balanced target",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/1710.10903"
+  },
+  {
+    "id": "gru",
+    "title": "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation",
+    "source_market": "General",
+    "family": "sequence",
+    "test_status": "Sequence adaptation, balanced target",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/1406.1078"
+  },
+  {
+    "id": "alstm",
+    "title": "A Dual-Stage Attention-Based Recurrent Neural Network for Time Series Prediction",
+    "source_market": "General",
+    "family": "sequence",
+    "test_status": "Sequence adaptation, balanced target",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/1704.02971"
+  },
+  {
+    "id": "transformer",
+    "title": "Attention Is All You Need",
+    "source_market": "General",
+    "family": "sequence",
+    "test_status": "Sequence adaptation, balanced target",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/1706.03762"
+  },
+  {
+    "id": "relational_stock",
+    "title": "Temporal Relational Ranking for Stock Prediction",
+    "source_market": "US",
+    "family": "graph",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/1809.09441"
+  },
+  {
+    "id": "alphastock",
+    "title": "AlphaStock: A Buying-Winners-and-Selling-Losers Investment Strategy using Interpretable Deep Reinforcement Attention Networks",
+    "source_market": "US/China",
+    "family": "portfolio_rl",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/1908.02646"
+  },
+  {
+    "id": "kronos",
+    "title": "Kronos: A Foundation Model for the Language of Financial Markets",
+    "source_market": "Financial",
+    "family": "foundation",
+    "test_status": "Previous actual extractor pilot; no new clean pretrained holdout claim",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/2508.02739"
+  },
+  {
+    "id": "patchtst",
+    "title": "A Time Series is Worth 64 Words: Long-term Forecasting with Transformers",
+    "source_market": "General",
+    "family": "sequence",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/2211.14730"
+  },
+  {
+    "id": "timesnet",
+    "title": "TimesNet: Temporal 2D-Variation Modeling for General Time Series Analysis",
+    "source_market": "General",
+    "family": "sequence",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/2210.02186"
+  },
+  {
+    "id": "itransformer",
+    "title": "iTransformer: Inverted Transformers Are Effective for Time Series Forecasting",
+    "source_market": "General",
+    "family": "sequence",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/2310.06625"
+  },
+  {
+    "id": "timesfm",
+    "title": "A decoder-only foundation model for time-series forecasting",
+    "source_market": "General",
+    "family": "foundation",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/2310.10688"
+  },
+  {
+    "id": "chronos",
+    "title": "Chronos: Learning the Language of Time Series",
+    "source_market": "General",
+    "family": "foundation",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/2403.07815"
+  },
+  {
+    "id": "moirai",
+    "title": "Unified Training of Universal Time Series Forecasting Transformers",
+    "source_market": "General",
+    "family": "foundation",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/2402.02592"
+  },
+  {
+    "id": "tabpfn",
+    "title": "Accurate predictions on small data with a tabular foundation model",
+    "source_market": "General",
+    "family": "foundation",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1038/s41586-024-08328-6"
+  },
+  {
+    "id": "tabicl",
+    "title": "TabICL: A Tabular Foundation Model for In-Context Learning on Large Data",
+    "source_market": "General",
+    "family": "foundation",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/2502.05564"
+  },
+  {
+    "id": "equal_weight",
+    "title": "Optimal Versus Naive Diversification: How Inefficient is the 1/\n                    <i>N</i>\n                    Portfolio Strategy?",
+    "source_market": "International",
+    "family": "portfolio",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1093/rfs/hhm075"
+  },
+  {
+    "id": "reality_check",
+    "title": "A Reality Check for Data Snooping",
+    "source_market": "General",
+    "family": "evaluation",
+    "test_status": "Evaluation/execution design reference; not a competing score model",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1111/1468-0262.00152"
+  },
+  {
+    "id": "factor_zoo",
+    "title": "\u2026 and the Cross-Section of Expected Returns",
+    "source_market": "General",
+    "family": "evaluation",
+    "test_status": "Evaluation/execution design reference; not a competing score model",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1093/rfs/hhv059"
+  },
+  {
+    "id": "backtest_overfitting",
+    "title": "The probability of backtest overfitting",
+    "source_market": "General",
+    "family": "evaluation",
+    "test_status": "Evaluation/execution design reference; not a competing score model",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.21314/JCF.2016.322"
+  },
+  {
+    "id": "deflated_sharpe",
+    "title": "The Deflated Sharpe Ratio:\n                    <i>Correcting for Selection Bias, Backtest</i>\n                    <i>Overfitting, and Non-Normality</i>",
+    "source_market": "General",
+    "family": "evaluation",
+    "test_status": "Evaluation/execution design reference; not a competing score model",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.3905/jpm.2014.40.5.094"
+  },
+  {
+    "id": "proper_scores",
+    "title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+    "source_market": "General",
+    "family": "calibration",
+    "test_status": "Evaluation/execution design reference; not a competing score model",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.1198/016214506000001437"
+  },
+  {
+    "id": "neural_calibration",
+    "title": "On Calibration of Modern Neural Networks",
+    "source_market": "General",
+    "family": "calibration",
+    "test_status": "Evaluation/execution design reference; not a competing score model",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/1706.04599"
+  },
+  {
+    "id": "optimal_execution",
+    "title": "Optimal execution of portfolio transactions",
+    "source_market": "General",
+    "family": "execution",
+    "test_status": "Evaluation/execution design reference; not a competing score model",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.21314/JOR.2001.041"
+  },
+  {
+    "id": "finbert",
+    "title": "FinBERT: Financial Sentiment Analysis with Pre-trained Language Models",
+    "source_market": "General",
+    "family": "financial_text",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/1908.10063"
+  },
+  {
+    "id": "fingpt",
+    "title": "FinGPT: Open-Source Financial Large Language Models",
+    "source_market": "General",
+    "family": "financial_text",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/2306.06031"
+  },
+  {
+    "id": "finagent",
+    "title": "A Multimodal Foundation Agent for Financial Trading: Tool-Augmented, Diversified, and Generalist",
+    "source_market": "US",
+    "family": "financial_agent",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "source_url": "https://arxiv.org/abs/2402.18485"
+  },
+  {
+    "id": "stocknet",
+    "title": "Stock Movement Prediction from Tweets and Historical Prices",
+    "source_market": "US",
+    "family": "text_price",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.18653/v1/P18-1183"
+  },
+  {
+    "id": "llmfactor",
+    "title": "LLMFactor: Extracting Profitable Factors through Prompts for Explainable Stock Movement Prediction",
+    "source_market": "US/China",
+    "family": "financial_text",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.18653/v1/2024.findings-acl.185"
+  },
+  {
+    "id": "cmin",
+    "title": "Causality-Guided Multi-Memory Interaction Network for Multivariate Stock Price Movement Prediction",
+    "source_market": "US/China",
+    "family": "text_graph",
+    "test_status": "Reviewed; not independently executed as a paper replication",
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "source_url": "https://doi.org/10.18653/v1/2023.acl-long.679"
+  }
+]

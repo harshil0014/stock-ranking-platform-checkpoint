@@ -1,5 +1,5 @@
 """End-to-end evidence integrity checks, separate from research outcome selection."""
-import json,hashlib
+import json,hashlib,subprocess
 import numpy as np,pandas as pd
 import champion_market_common_20261031 as c
 
@@ -26,5 +26,7 @@ def main():
   if 'local_path' in r:
    p=c.ROOT/r['local_path'];assert hashlib.sha256(p.read_bytes()).hexdigest()==r['sha256']
  checks.append(dict(check='Pinned foreign implementation receipts present with bothMITlicenses',passed=bool((c.ROOT/'research/literature/20261031/code/microsoft__qlib__LICENSE').exists() and (c.ROOT/'research/literature/20261031/code/SJTU-DMTai__MASTER__LICENSE').exists())))
- assert all(r['passed'] for r in checks);c.save('validation_receipt.json',dict(checks=checks,passed=True,production_runtime_changed=False,external_ci_claimed=False));print('VALIDATED',len(checks),audit_count,flush=True)
+ changed=subprocess.check_output(['git','diff','--name-only',protocol['baseline'],'--'],cwd=c.ROOT,text=True).splitlines();unexpected=[p for p in changed if not p.startswith(('research/','experiments/champion-vs-market-20261031/','tests/test_champion_market_')) and p!='.gitattributes'];assert not unexpected,unexpected
+ checks.append(dict(check='Tracked changes since baseline are confined to research, evidence and benchmark tests',changed_files=len(changed),passed=True))
+ assert all(r['passed'] for r in checks);c.save('validation_receipt.json',dict(checks=checks,passed=True,production_runtime_changed=False,baseline=protocol['baseline'],head_at_validation=subprocess.check_output(['git','rev-parse','HEAD'],cwd=c.ROOT,text=True).strip(),changed_paths=changed,external_ci_claimed=False));print('VALIDATED',len(checks),audit_count,flush=True)
 if __name__=='__main__':main()

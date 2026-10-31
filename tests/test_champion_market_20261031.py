@@ -32,6 +32,7 @@ def test_actual_cashflow_cost_and_portfolio_cash_conservation():
  assert abs(b['terminal']/b['contributed']-(.995/1.005))<1e-12
  z=portfolio_path([(d,p),(d,p*2)],np.array([.3,.7]),'2020-01-01','2021-01-01',1000,30,50)
  assert abs(z['terminal']-b['terminal'])<1e-8 and abs(z['xirr']-b['xirr'])<1e-10
+ assert b['tw_max_drawdown']<-.005 and abs(z['tw_max_drawdown']-b['tw_max_drawdown'])<1e-10
 
 def test_missing_selected_execution_is_blocked():
  import pytest

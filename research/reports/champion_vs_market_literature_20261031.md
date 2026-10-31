@@ -32,6 +32,19 @@ The Scite connector exhausted its monthly quota before returning literature evid
 
 **Drift adaptation needs more mature dates.** DoubleAdapt and TRA are reviewed as follow-up candidates. Their appeal is adaptation under changing distributions and multiple patterns. A small number of overlapping 12-month SIP outcome dates does not support casually copying daily-return online-learning claims. They are not labelled tested or failed in this round. [DoubleAdapt](https://arxiv.org/abs/2306.09862), [TRA](https://arxiv.org/abs/2106.12950).
 
+The executed source inspection supports the following narrower interpretation of each architecture:
+
+| Architecture | Mechanism retained from pinned code | Indian adaptation and important limit |
+|---|---|---|
+| GRU | Gated recurrent state over each stock's feature sequence | Ten input columns, two32-unit recurrent layers, final scalar forecast; no cross-stock information |
+| ALSTM | Recurrent representation with attention pooling over time | Same bounded Indian sequence representation; attention weights are not causal explanations |
+| Transformer | Positional encoding and temporal self-attention | Four heads and two32-dimensional layers; eight sessions are much shorter than the full252-session normalization window |
+| GAT | Learned stock-to-stock attention after temporal encoding | Full same-date/profile feature cohort; learned similarity rather than a verified supply-chain graph |
+| HIST | Predefined concept sharing, hidden-concept sharing and individual residual information | Current-sector one-hot concepts replace the original concept source; both concept provenance and shorter inputs limit generalisation |
+| MASTER | Market-conditioned softmax feature gate, temporal attention, spatial attention and final temporal pooling | Twelve input-only cross-stock context statistics replace original market features; ten stock/profile inputs,32-dimensional model and four temporal/spatial heads |
+
+The original Qlib/MASTER training wrappers, data providers, validation processors and pretrained weights are not imported. The adapter extracts the named neural class definitions without rewriting their internals, then supplies its own explicit mature-label training loop. This avoids suggesting that importing a repository also reproduces its published preprocessing, dataset and experimental protocol. Losses are masked for unknown outcomes while all feature-available stocks remain in graph context. The matched linear/tree controls isolate the short sequence representation more directly than the full-feature champion comparison does.
+
 **Foundation-model results require contamination checks.** Kronos models financial candles, while TimesFM, Chronos and Moirai target broader time-series forecasting. PatchTST, TimesNet and iTransformer offer alternative temporal structures. TabPFN and TabICL address tabular prediction, with different training-size and task constraints; TabM offers efficient neural ensembling. These families are reviewed, not all executed here. The previous actual Kronos feature pilot remains separate evidence; its pretrained corpus/timing prevents treating old financial test dates as an unquestioned clean holdout. A pretrained model's published percentage improvement does not transfer to Indian SIP labels. See the registry for individual primary references.
 
 **A portfolio optimiser is a different product.** AlphaStock, deep asset-pricing and autoencoder work can motivate objectives and representations, but require different datasets or trading assumptions. Long–short leverage, continuous rebalancing and a Sharpe optimisation target cannot silently replace this product's long-only stock ranking and recurring investment problem. Equal allocation remains a transparent portfolio control. Execution research motivates costs, liquidity and capacity analysis; fixed basis-point scenarios here are sensitivity tests, not calibrated Indian market-impact estimates.
