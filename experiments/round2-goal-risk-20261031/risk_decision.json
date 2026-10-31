@@ -1,0 +1,35 @@
+{
+  "selected": "active_champion",
+  "candidates": [
+    {
+      "model": "expected_goal_shortfall",
+      "pass_point_gate": false,
+      "deltas": {
+        "development": {
+          "achievement": -0.034732997917601205,
+          "drawdown": -0.02136716898218627
+        },
+        "exposed": {
+          "achievement": 0.014210526315789451,
+          "drawdown": -0.05515599049359293
+        }
+      }
+    },
+    {
+      "model": "goal_probability_below_median_downside",
+      "pass_point_gate": false,
+      "deltas": {
+        "development": {
+          "achievement": 0.00825671997764632,
+          "drawdown": -0.04136149313764442
+        },
+        "exposed": {
+          "achievement": -0.013157894736842118,
+          "drawdown": -0.06546618859149816
+        }
+      }
+    }
+  ],
+  "fresh_validation": false,
+  "population": "current-survivor retrospective diagnostic"
+}

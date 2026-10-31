@@ -34,6 +34,7 @@ def test_append_only_cas_and_idempotence(tmp_path,monkeypatch):
     manifest=json.loads(g('show',second['commit']+':prospective/records/2026-11-01/test/manifest.json'))
     assert manifest['previous_manifest_sha256']==first['manifest_sha256']
     assert g('merge-base','--is-ancestor',first['commit'],second['commit'])==b''
+    assert p.verify_ledger()['records']==2
     with pytest.raises(RuntimeError,match='protocol differs'):
         p.append_record({'scores.csv.gz':b'three'},'prospective/records/2026-11-02/test',{},b'{"protocol":2}')
 
@@ -52,3 +53,22 @@ def test_first_seen_time_is_carried_without_claiming_old_capture_bound_is_exact(
     event=p.retain_first_observations([current])[0]
     assert event['first_observed_at_utc']==older['observed_at_utc']
     assert event['first_observed_time_basis']=='LEGACY_CAPTURE_START_BOUND'
+
+def test_repeated_pagination_page_never_counts_as_complete_coverage(tmp_path,monkeypatch):
+    class Response:
+        status_code=200
+        headers={'Content-Type':'application/json'}
+        def __init__(self,payload):self.payload=payload;self.content=json.dumps(payload).encode()
+        def json(self):return self.payload
+        def raise_for_status(self):pass
+    class Session:
+        headers={}
+        def get(self,url,timeout):
+            if 'integrated-filing-results' in url:
+                return Response({'data':[dict(seq_Id='1',symbol='ABC',creation_Date='31-Oct-2026 11:00')],'totalCount':2,'page':0,'size':1})
+            return Response([])
+    monkeypatch.setattr(p.requests,'Session',Session);monkeypatch.setattr(p,'WORK',tmp_path)
+    blobs,receipts=p.capture_events(p.dt.date(2026,10,31),'2026-10-31T12:00:00+00:00')
+    integrated=next(r for r in receipts if r['source']=='integrated_financials')
+    assert integrated['status']=='PARTIAL_PAGE_COVERAGE' and integrated['rows']==1
+    assert len(integrated['pages'])==2

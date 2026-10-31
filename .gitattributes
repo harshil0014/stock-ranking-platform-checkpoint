@@ -82,3 +82,5 @@ research/protocols/round2_20261031.json -text
 research/runners/*20261031.py text eol=lf
 tests/*20261031.py text eol=lf
 experiments/round2-*/** -text
+research/reports/round2_20261031* -text
+research/environment/round2_20261031.json -text

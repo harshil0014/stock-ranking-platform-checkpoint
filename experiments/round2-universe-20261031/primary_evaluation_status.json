@@ -1,0 +1,16 @@
+{
+  "status": "BLOCKED_PREREQUISITES_NOT_A_FAILED_MODEL",
+  "primary_ic": null,
+  "reason": [
+    "Official workbook has no issuer identifiers; historical names must be linked with official symbol/ISIN histories",
+    "Unresolved renamed-issuer and temporary-inclusion sequence conflicts must be reconciled against dated snapshots",
+    "All member-months are retained; delisted/merged/suspended identities need verified prices and terminal proceeds rather than survivor-only complete cases",
+    "Original prepared labels begin2016 and fitted champion folds begin2020; older causal full-champion training/label pipeline has not yet been reconstructed"
+  ],
+  "monthly_rows": 48360,
+  "historic_name_keys": 1269,
+  "unmatched_name_keys": 601,
+  "sequence_conflicts": 15,
+  "reconstruction_source": "Official NSE Nifty500 inclusion/exclusion workbook through2020-09-14",
+  "literature_scaffold_has_historical_snapshots": false
+}

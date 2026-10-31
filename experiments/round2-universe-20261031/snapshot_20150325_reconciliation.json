@@ -1,0 +1,21 @@
+{
+  "archive_capture_timestamp": "20150325112154",
+  "source_content_as_of": null,
+  "capture_is_not_certified_effective_date": true,
+  "snapshot_rows": 500,
+  "snapshot_unique_isins": 500,
+  "replayed_names": 500,
+  "exact_name_matches": 497,
+  "snapshot_only": [
+    "BAJAJHINDUSTHAN",
+    "IIFLHOLDINGS",
+    "VAKRANGEE"
+  ],
+  "event_replay_only": [
+    "BAJAJHINDUSTHANSUGAR",
+    "INDIAINFOLINE",
+    "VAKRANGEESOFTWARE"
+  ],
+  "independently_complete_membership_verified": false,
+  "price_continuity_verified": false
+}

@@ -1,0 +1,54 @@
+{
+  "development": {
+    "achievement__expected_goal_shortfall": {
+      "lower": -0.05716835510141045,
+      "upper": -0.015097519140320346,
+      "valid_draws": 4000,
+      "status": "conditional paired calendar-block interval"
+    },
+    "achievement__goal_probability_below_median_downside": {
+      "lower": -0.02062116099930587,
+      "upper": 0.049878800239107964,
+      "valid_draws": 4000,
+      "status": "conditional paired calendar-block interval"
+    },
+    "drawdown__expected_goal_shortfall": {
+      "lower": -0.04232341709268649,
+      "upper": -0.0023887710757392066,
+      "valid_draws": 4000,
+      "status": "conditional paired calendar-block interval"
+    },
+    "drawdown__goal_probability_below_median_downside": {
+      "lower": -0.07316021334788464,
+      "upper": -0.010785585012501762,
+      "valid_draws": 4000,
+      "status": "conditional paired calendar-block interval"
+    }
+  },
+  "exposed": {
+    "achievement__expected_goal_shortfall": {
+      "lower": -0.004678362573099417,
+      "upper": 0.036900584795321635,
+      "valid_draws": 4000,
+      "status": "conditional paired calendar-block interval"
+    },
+    "achievement__goal_probability_below_median_downside": {
+      "lower": -0.020350877192982456,
+      "upper": -0.005672514619883042,
+      "valid_draws": 4000,
+      "status": "conditional paired calendar-block interval"
+    },
+    "drawdown__expected_goal_shortfall": {
+      "lower": -0.06403000025760208,
+      "upper": -0.04139417348789122,
+      "valid_draws": 4000,
+      "status": "conditional paired calendar-block interval"
+    },
+    "drawdown__goal_probability_below_median_downside": {
+      "lower": -0.0922838668313321,
+      "upper": -0.03054260253307897,
+      "valid_draws": 4000,
+      "status": "conditional paired calendar-block interval"
+    }
+  }
+}

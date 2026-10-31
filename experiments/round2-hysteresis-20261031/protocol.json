@@ -1,0 +1,29 @@
+{
+  "baseline_commit": "6e9bd620e4472c8280536b6120fe86d10dca65cb",
+  "margins": [
+    0,
+    0.0025,
+    0.005,
+    0.01,
+    0.02,
+    0.03,
+    0.05,
+    0.1
+  ],
+  "quarterly_selection": "2020-23 only: minimum mean Top3 membership churn subject rank-IC delta>=-.001; smaller margin breaks ties. Freeze before2024-25 metrics.",
+  "daily_dates": "Every recovered positive-volume market session in2025-01-01 through2026-09-30; actual last data date audited. No data beyond recovered endpoint invented.",
+  "daily_models": "Saved2025 annual head, trained on endpoints<2025-01-01. New2026 head uses exact fixed180-tree rank_xendcg_balanced recipe and endpoints<2026-01-01. Never use October2026 serving weights in2025.",
+  "daily_score": ".25 * annual_price_head_sector_percentile + high_recency_adjustment. No frozen open/profile/SIP components inserted. This is component-only, not full-champion replay; original whole-score margins may not transfer.",
+  "daily_safety": "Block missing/nonfinite inputs, <252 observations, <365 history days, >7 calendar-day stale close, >5 calendar-day absent positive volume, <80% active-volume fraction, unresolved-action feature windows and >50% one-session moves requiring review. Remove blocked names immediately. Known action date triggers whole-sector raw-order reset. Verified suspension data unavailable =>UNKNOWN, not inferred from zero volume.",
+  "events": "Existing retrospective provider/official alignment event dates. Historical announcement/availability timestamps uncertified. Safety diagnostics cannot establish point-in-time detection of every actual suspension, delisting or action.",
+  "daily_gate": {
+    "top3_churn_reduction_min": 0.2,
+    "proxy_IC_loss_max": 0.001,
+    "persistent_leader_entry_p90_sessions_max": 5,
+    "known_blocked_retention_max": 0
+  },
+  "leader": "New raw Top3 entrant persisting >=5 consecutive sessions; lag from raw entry to first smoothed entry, right-censor at episode end. An additional ex-post oracle-confirmed subset uses future12month lump-return Top3 where mature. Persistent-score leadership is not a claim of true future alpha.",
+  "outcomes": "Quarterly frontier uses original saved SIP XIRR. Daily mature2025 outcome is forward365-calendar-day provider close return with endpoint price gap<=7 days. It is explicitly a lump-return proxy, not daily SIP labels. Later2025 and2026 outcomes censored. No2026 matured performance claim.",
+  "promotion": "No serving changes. Daily full-champion certification remains blocked until daily open/profile/SIP components and certified historical flags are available. Report all fixed margins, do not select on exposed daily results.",
+  "fresh_validation": false
+}

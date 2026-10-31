@@ -1,0 +1,8 @@
+urlkey,timestamp,original,mimetype,statuscode,digest,length
+"com,nseindia)/content/indices/ind_cnx500list.csv",20100102131654,http://nseindia.com/content/indices/ind_cnx500list.csv,text/plain,200,QRVJUTDPK6RIA6A7R5ZVIP6ZQ6Z6DQTL,11610
+"com,nseindia)/content/indices/ind_cnx500list.csv",20140122091641,http://nseindia.com/content/indices/ind_cnx500list.csv,application/csv,200,ACI3Z6Z2KRH62BDQCZKHY7ZKOFORPXT2,10884
+"com,nseindia)/content/indices/ind_cnx500list.csv",20140709141815,http://nseindia.com/content/indices/ind_cnx500list.csv,application/csv,200,HWZROGAPYGJG636T6S77QCE26YZZ4WWZ,10859
+"com,nseindia)/content/indices/ind_cnx500list.csv",20150325112154,http://nseindia.com/content/indices/ind_cnx500list.csv,application/csv,200,BPNUSOMX4W2N7NZT3HXIXNQQLZURK4P5,10815
+"com,nseindia)/content/indices/ind_nifty500list.csv",20200725142023,https://www1.nseindia.com/content/indices/ind_nifty500list.csv,application/csv,200,KZX4OG2IODM5IJ5VT2EYFHBYQMCENOR6,10913
+"com,niftyindices)/indexconstituent/ind_nifty500list.csv",20181004105632,http://www.niftyindices.com:80/IndexConstituent/ind_nifty500list.csv,application/octet-stream,200,5EAB5A6TAKFS6GJ3WFY4G2FHPNW7KUOH,10807
+"com,niftyindices)/indexconstituent/ind_nifty500list.csv",20190201175107,http://niftyindices.com/IndexConstituent/ind_nifty500list.csv,application/octet-stream,200,A254PNXNPBVMLKUIW3QETCSPVODZ5LAU,10952

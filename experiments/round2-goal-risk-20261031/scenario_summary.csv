@@ -1,0 +1,6 @@
+period,scenario,rows,total_rows,dates,brier,oracle_brier,baseline_brier,unconditional_brier,delta_brier
+development,bear,0,26139,0,,,,,
+development,bull,265165,363941,10,0.2510712928282233,0.23668961366641805,0.25666681943924585,0.2605750786285985,-0.005595526611022528
+development,flat,0,25232,0,,,,,
+exposed,bear,0,282611,0,,,,,
+exposed,flat,0,56905,0,,,,,

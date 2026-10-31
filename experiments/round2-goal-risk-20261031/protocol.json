@@ -1,0 +1,36 @@
+{
+  "version": "round2_goal_risk_20261031_v1",
+  "baseline_commit": "6e9bd620e4472c8280536b6120fe86d10dca65cb",
+  "seed": 20261031,
+  "status": "PREREGISTERED BEFORE NEW OUTCOME EVALUATION",
+  "population": "Existing 44-date current-survivor panel is a retrospective prerequisite diagnostic. A survivorship-free panel is not yet available; no fresh validation or promotion is possible here.",
+  "periods": {
+    "development": "2020-2023",
+    "exposed": "2024-2025, previously exposed; each new locked analysis evaluated once after development lock"
+  },
+  "market_component": "Per-date median log(1+future_XIRR) among usable base7500 identities. This is a survivor-cohort SIP market proxy, not a NIFTY500 index return. It is an outcome component used in training labels and ex-post diagnostics, never an inference feature.",
+  "return_clipping": "For relative-distribution fitting only, future XIRR clipped to[-.95,3] before log1p; raw labels retained for scoring.",
+  "relative_model": "LGBM squared-error regression of log gross stock SIP XIRR minus market component. Existing price/profile features excluding target CAGR. 120 trees,15 leaves,maxdepth5,minchild150,lambda30,learning_rate.04,3threads,seed fixed.",
+  "temporal_split": "Test-year Y: base training endpoint < Jan1(Y-2); calibration decisions >= Jan1(Y-2) and endpoints < Jan1Y. No target10/30 duplicate schedules in model/CDF training. Target10/30 use base7500 relative distribution.",
+  "relative_calibration": "Weighted empirical survival CDF of errors on disjoint mature calibration windows, per contribution schedule. Equal date/sector query weights. No calibration fit on test outcomes.",
+  "forecast": "P(goal | fixed market scenario) = survival_CDF(log1p(goal)-log1p(scenario)-relative_prediction). Bear/flat/bull are fixed -20%,0%,+20% SIP-XIRR scenarios, not forecasts of which market state occurs.",
+  "scenario_buckets": "Realized proxy < -5% bear; -5% through+5% flat; >+5% bull. Bucket labels use future outcomes only for conditional scoring; unavailable at forecast time.",
+  "benchmarks": "Conditional climatology from past mature calibration labels, matched schedule/target/profile and realized proxy bucket; require >=2 distinct calibration dates. Missing conditional benchmark remains missing, never silently replaced by unconditional frequency. Unconditional climatology separately reported.",
+  "scenario_pass": "Fixed-scenario conditional Brier strictly below matching conditional climatology in each of bear/flat/bull in both periods; >=2 distinct scored dates per bin and >=80% conditional-benchmark row coverage per period. Report date-block uncertainty; oracle realized-market probability is diagnostic only and cannot pass the deployable scenario gate.",
+  "risk_candidates": [
+    "expected_goal_shortfall",
+    "goal_probability_below_median_downside"
+  ],
+  "expected_shortfall_definition": "Stored future_shortfall=max(0,1-terminal_wealth/target_wealth), conditional-mean squared-error regression, not CVaR/financial expected shortfall. 120 trees/15leaves and same regularization; target_CAGR monotone increasing; annual training all outcomes ending strictly before test-year January1.",
+  "risk_probability": "Reuse prior development-selected monotone goal_volume probability; no new selection on exposed data. Only stocks with decision-date downside252 <= same-query sector median can enter Top3. Missing risk excluded; query requires >=3 safe stocks.",
+  "risk_evaluation": "Same query support for both candidates and incumbent. Top3 attainment and average selected-asset drawdown; score ties break incumbent score then ISIN. Risk selection only development: attainment delta>=0 and drawdown delta>=0; then greatest attainment, then drawdown, then name. If none pass, incumbent locked. Exposed repeats locked choices; all fixed candidates descriptive.",
+  "risk_pass": "Attainment must not fall and drawdown must not worsen in BOTH periods; report paired date-block intervals, coverage and shortfall. No mean-return substitution.",
+  "uncertainty": "4000 circular calendar-block resamples of paired per-date metrics,365-day blocks; dates/sectors/profiles remain jointly coupled. Small number of independent regimes is explicit.",
+  "source_semantics": "src/stock_research/personalized_official_actions.py computes target_shortfall from terminal wealth, and recomputes whole-share cashflow XIRR. Relative proxy does not establish a causal explanation for base-rate/calibration shifts.",
+  "no_serving_changes": true,
+  "no_promotion": true,
+  "references": [
+    "https://scikit-learn.org/stable/modules/calibration.html",
+    "https://lightgbm.readthedocs.io/en/stable/Parameters.html"
+  ]
+}

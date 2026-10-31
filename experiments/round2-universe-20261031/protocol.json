@@ -1,0 +1,24 @@
+{
+  "question": "Does a causally fitted champion retain rank IC above the prespecified operational hurdle in older 2012-2019 regimes on a complete point-in-time NIFTY500 universe?",
+  "baseline_commit": "6e9bd620e4472c8280536b6120fe86d10dca65cb",
+  "primary_period": "2012-01-01 through2019-12-31, monthly decisions; twelve-month whole-share SIP outcomes; all historical constituents including removals, suspensions and delistings",
+  "pass_threshold": {
+    "mean_rank_ic": 0.01013492400721767,
+    "lower_95_year_block_bound": "must exceed0.01013492400721767",
+    "bootstrap_replicates": 4000
+  },
+  "threshold_caveat": "The0.01013 hurdle came from incremental maximum selection gains among35 related policies. It is NOT a valid null/significance threshold for raw cross-sectional IC. We preserve the requested raw-IC operational target while additionally requiring paired incremental assessment and disclosure of estimand mismatch.",
+  "estimator": "Frozen architecture and fixed hyperparameters, refitted annually with every outcome ending strictly before each test-year January1. Never backcast2020-2026 fitted weights into2012. Same-row incumbent/control comparison where legitimately reconstructible.",
+  "membership": "Official historical event workbook and original dated CSV observations; include entry at its effective instant and exclude at exclusion effective instant, using half-open intervals. Announcement/observation/effective dates separate. No midpoint interpolation across snapshot gaps.",
+  "identity": "Company-name normalization is only an audit key. Price-series linkage needs verified symbol/ISIN evidence. Unknown aliases and corporate actions remain unresolved; no successor histories or survivor-only denominators substituted.",
+  "missing_outcomes": "Retain every member-month in the coverage matrix, distinguish absence of provider symbol, insufficient lookback, unavailable horizon, unresolved corporate action and unverified terminal delisting/merger cashflows. Never use complete-case IC to claim a survivorship-free result.",
+  "older_regimes": [
+    "2013",
+    "2015-2016",
+    "2018",
+    "2020 supplementary stress only"
+  ],
+  "evaluation_gate": "Do not calculate the primary model IC unless dated membership completeness, issuer identity, historical feature vintages, mature labels and delisting terminal treatment are all verified. Missing prerequisites produce a blocked-primary result, never a negative or a passed survivorship-free backtest.",
+  "exposed_policy": "No new parameter choices based on2024-2025 results; this work is registry acquisition/readiness before any fresh model evaluation.",
+  "fresh_holdout": false
+}

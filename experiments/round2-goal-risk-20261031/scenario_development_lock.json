@@ -1,0 +1,42 @@
+{
+  "forecast": "fixed scenarios, no model choice",
+  "development": [
+    {
+      "period": "development",
+      "scenario": "bear",
+      "rows": 0,
+      "total_rows": 26139,
+      "dates": 0,
+      "brier": NaN,
+      "oracle_brier": NaN,
+      "baseline_brier": NaN,
+      "unconditional_brier": NaN,
+      "delta_brier": NaN
+    },
+    {
+      "period": "development",
+      "scenario": "bull",
+      "rows": 265165,
+      "total_rows": 363941,
+      "dates": 10,
+      "brier": 0.2510712928282233,
+      "oracle_brier": 0.23668961366641805,
+      "baseline_brier": 0.25666681943924585,
+      "unconditional_brier": 0.2605750786285985,
+      "delta_brier": -0.005595526611022528
+    },
+    {
+      "period": "development",
+      "scenario": "flat",
+      "rows": 0,
+      "total_rows": 25232,
+      "dates": 0,
+      "brier": NaN,
+      "oracle_brier": NaN,
+      "baseline_brier": NaN,
+      "unconditional_brier": NaN,
+      "delta_brier": NaN
+    }
+  ],
+  "exposed_not_yet_evaluated": true
+}

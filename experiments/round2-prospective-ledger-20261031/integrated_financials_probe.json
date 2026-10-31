@@ -1,0 +1,14 @@
+{
+  "url": "https://www.nseindia.com/api/integrated-filing-results?index=equities&from_date=24-10-2026&to_date=31-10-2026&type=Integrated+Filing-+Financials",
+  "source": "integrated_financials",
+  "attempted_at_utc": "2026-10-31T08:11:10.843820+00:00",
+  "status_code": 200,
+  "bytes": 15370,
+  "sha256": "d2679a9ddcd9d739d023690d573822a8ef28c997e102b21a67aa818e9c31ec5c",
+  "json_schema": [
+    "data",
+    "size",
+    "page",
+    "totalCount"
+  ]
+}

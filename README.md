@@ -1,6 +1,8 @@
 # Stock Ranking Platform
 
-Research results: [Ten stock-ranking pilots, 31 October 2026](research/reports/ten_hypotheses_20261031.md). The active application and model package are unchanged.
+Latest research: [Second round, 31 October 2026](research/reports/round2_20261031.md), following the [ten original pilots](research/reports/ten_hypotheses_20261031.md). Sector shuffle and risk objectives did not pass; daily hysteresis missed its lag gate. The incumbent application and model package are unchanged.
+
+[Prospective ledger](https://github.com/harshil0014/stock-ranking-platform-checkpoint/tree/prospective-ledger): append-only records and daily exchange metadata capture are active. Frozen October 3 scores remain stale; the fresh twelve-month score holdout has not started.
 
 Latest source and research checkpoint: [31 October 2026](docs/github_checkpoint_20261031.md). The current UI offers Baseline, Sector Champion, Closing High, Personalized, and Personalized V17. The sections below retain the earlier canonical baseline documentation.
 

@@ -223,8 +223,38 @@ def append_record(blobs,path,metadata,protocol,publish=False):
         if index.exists():index.unlink()
     return dict(status='APPENDED',commit=commit,record_path=path,manifest_sha256=sha(payloads[path+'/manifest.json']),published=publish,record_metadata=metadata)
 
+def verify_ledger(ref=BRANCH,expected_protocol=None):
+    head=git('rev-parse','--verify',ref).decode().strip()
+    changed=git('log','--format=','--name-status','--diff-filter=MD',head,'--','prospective/records').decode().strip()
+    if changed:raise RuntimeError('Ledger history modified or deleted records')
+    registration=json.loads(read_blob(head,'prospective/registration.json'))
+    if expected_protocol is not None and (sha(expected_protocol)!=registration['protocol_sha256'] or json.loads(expected_protocol)!=registration['protocol']):raise RuntimeError('Registered protocol differs from expected protocol')
+    paths=git('ls-tree','-r','--name-only',head,'--','prospective/records').decode().splitlines()
+    manifests={p[:-len('/manifest.json')] for p in paths if p.endswith('/manifest.json')}
+    message=git('log','-1','--format=%B',head).decode();marker=re.search(r'^Record-Path: (.+)$',message,re.M)
+    if not marker:raise RuntimeError('Missing ledger head marker')
+    path=marker.group(1);seen=set();blobs=0
+    while path:
+        if path in seen or path not in manifests:raise RuntimeError('Broken or cyclic manifest chain')
+        seen.add(path);m=json.loads(read_blob(head,path+'/manifest.json'))
+        if m['record_path']!=path or m['protocol_sha256']!=registration['protocol_sha256']:raise RuntimeError('Manifest registration mismatch')
+        for name,digest in m['files'].items():
+            payload=read_blob(head,path+'/'+name)
+            if payload is None or sha(payload)!=digest:raise RuntimeError('Record blob hash mismatch')
+            blobs+=1
+        previous=m['previous_record_path']
+        if previous:
+            payload=read_blob(head,previous+'/manifest.json')
+            if payload is None or sha(payload)!=m['previous_manifest_sha256']:raise RuntimeError('Manifest chain hash mismatch')
+        elif m['previous_manifest_sha256'] is not None:raise RuntimeError('Invalid root manifest link')
+        path=previous
+    if seen!=manifests:raise RuntimeError('Unlinked ledger records')
+    return dict(status='VERIFIED',head=head,records=len(seen),record_blobs=blobs,append_only_history=True)
+
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--date',default=None);p.add_argument('--slot',default='daily-1930');p.add_argument('--publish',action='store_true');p.add_argument('--no-events',action='store_true');args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--date',default=None);p.add_argument('--slot',default='daily-1930');p.add_argument('--publish',action='store_true');p.add_argument('--no-events',action='store_true');p.add_argument('--verify',action='store_true');args=p.parse_args()
+    if args.verify:
+        print(json.dumps(verify_ledger(expected_protocol=PROTOCOL.read_bytes()),indent=2));return
     day=dt.date.fromisoformat(args.date) if args.date else dt.datetime.now(ZoneInfo('Asia/Kolkata')).date()
     observed=dt.datetime.now(UTC).isoformat(timespec='microseconds')
     scores,scorebytes,metadata=score_snapshot(day,observed)

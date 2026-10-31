@@ -1,0 +1,13 @@
+{
+  "profile": "base7500",
+  "permutations": 50,
+  "seed": 2026103101,
+  "assignment": "Permute issuer sector labels within each date, preserving exact group sizes, reuse assignment consistently across every sector-conditioned component. No outcomes enter the permutation.",
+  "primary_comparison": "Frozen annual champion rescored after recomputing all sector-conditioned input percentiles, component score percentiles and high/SIP overlays. Evaluate on the SAME original true-sector outcome queries; shuffling evaluation groups is a separately labelled composition diagnostic.",
+  "control": "Unshuffled full champion replay must match saved active scores within 1e-10. Otherwise no full-champion placebo conclusion; identify partial component results explicitly.",
+  "pass": "Development true-sector IC exceeds the 95th percentile shuffled IC by at least 0.01013492400721767; true-minus-shuffled date-block lower 95% bound >0. Exposed direction positive under the same locked protocol. Pair accuracy, global cross-section and Top3 attainment secondary. A tie does not prove a newly trained sector-free model is equivalent.",
+  "periods": {
+    "development": "2020-2023",
+    "exposed": "2024-2025"
+  }
+}

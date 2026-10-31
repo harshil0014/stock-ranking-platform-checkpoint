@@ -1,0 +1,51 @@
+[
+  {
+    "source": "integrated_financials",
+    "url": "https://www.nseindia.com/companies-listing/corporate-integrated-filing",
+    "attempted_at_utc": "2026-10-31T08:09:49.713157+00:00",
+    "status_code": 200,
+    "bytes": 345822,
+    "sha256": "2807e2eb399998feebadd121ec49606a5f4a057c4db1a298a1fab343e157bb74",
+    "scripts": [
+      "/dist/js/blinkui/src/blinkui.js?v=16102026",
+      "/assets/js/nse-min.js?v=16102026",
+      "https://www.googletagmanager.com/gtag/js?id=G-87M7PJ3R97",
+      "https://www.nseindia.com/akam/13/4b350c41",
+      "/assets/js/multilingual/library.js",
+      "/dist/js/realtime/header-nifty.js",
+      "/assets/js/moment.min.js?v=16102026",
+      "/dist/js/sections/corporate-filings.js?v=16102026",
+      "/dist/js/components/corporate-filing/csps/integrated-filling-csp.js?v=16102026",
+      "/dist/js/components/quick-links.js?v=16102026",
+      "/assets/js/jquery-3.6.0.min.js?v=16102026",
+      "/assets/js/popper.min.js?v=16102026",
+      "/assets/js/bootstrap.min.js?v=16102026",
+      "/assets/js/jquery.responsivetabs.js?v=16102026",
+      "/assets/js/slick.min.js?v=16102026",
+      "/assets/js/bootstrap-multiselect.min.js?v=16102026",
+      "/assets/js/stock/highstock.js?v=16102026",
+      "/assets/js/rangeslider.min.js?v=16102026",
+      "/assets/js/gijgo.min.js?v=16102026",
+      "/assets/js/excellentexport.js?v=16102026",
+      "/assets/js/typeahead.bundle.js?v=16102026",
+      "/assets/js/polyfill.min.js?v=16102026",
+      "/assets/js/metisMenu.min.js?v=16102026",
+      "/assets/js/multilingual/multilang.js?v=16102026",
+      "/dist/js/static/public/assets/js/common.js?v=16102026",
+      "/assets/js/pagination.min.js?v=16102026",
+      "/assets/js/sweetalert.min.js?v=16102026",
+      "/assets/js/tableExport.js?v=16102026",
+      "/dist/js/static/public/assets/js/regulatoryStatusModule.js?v=16102026",
+      "/assets/js/multilingual/P9_Language.js?v=16102026",
+      "/STyD6bCWV/OiWTyp1H-/mffNFtufc/uYiEGpDVbLSmDNaiYz/XgtkODEzAw/SBhYVUMB/EAQ"
+    ]
+  },
+  {
+    "source": "historical_bhavcopy_20120131",
+    "url": "https://archives.nseindia.com/content/historical/EQUITIES/2012/JAN/cm31JAN2012bhav.csv.zip",
+    "attempted_at_utc": "2026-10-31T08:09:49.713968+00:00",
+    "status_code": 403,
+    "bytes": 463,
+    "sha256": "8c22c913314f4382831a961ebab2126c2c881bad1bc0c7e392aa0e07d1f863ed"
+  }
+]

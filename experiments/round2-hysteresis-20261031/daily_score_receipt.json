@@ -1,0 +1,17 @@
+{
+  "formula": ".25*annual_price_head_sector_percentile+high_adjustment",
+  "full_champion": false,
+  "missing_components": [
+    "open-model daily contribution",
+    "profile-defensive daily contribution",
+    "execution-correct daily trailing SIP overlay"
+  ],
+  "date_range": [
+    "2025-01-01",
+    "2026-09-30"
+  ],
+  "model2025_sha256": "2812505cd5c361d01a70e2b1c34cf90b02cd27e75ab20fde97cd141251cc6ed7",
+  "model2026_sha256": "8dcab8c67b5d6769a69eea5d7c60dd7928158e123d8fba8e8056b7a53956507b",
+  "verified_suspensions": "UNKNOWN",
+  "safety_event_knowledge": "Retrospective ex-date register; broadcast-time availability uncertified"
+}

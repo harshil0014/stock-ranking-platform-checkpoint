@@ -1,0 +1,115 @@
+{
+  "max_absolute_error": 4.440892098500626e-16,
+  "threshold": 1e-10,
+  "passed": true,
+  "components": [
+    {
+      "year": 2020,
+      "component": "open",
+      "minimum": -0.06783069115519495,
+      "maximum": 1.0
+    },
+    {
+      "year": 2020,
+      "component": "profile",
+      "minimum": 0.0029850746268656717,
+      "maximum": 1.0
+    },
+    {
+      "year": 2020,
+      "component": "price",
+      "minimum": 0.0029850746268656717,
+      "maximum": 1.0
+    },
+    {
+      "year": 2021,
+      "component": "open",
+      "minimum": -0.0077707404882701725,
+      "maximum": 1.0
+    },
+    {
+      "year": 2021,
+      "component": "profile",
+      "minimum": 0.002932551319648094,
+      "maximum": 1.0
+    },
+    {
+      "year": 2021,
+      "component": "price",
+      "minimum": 0.002932551319648094,
+      "maximum": 1.0
+    },
+    {
+      "year": 2022,
+      "component": "open",
+      "minimum": 0.04867392187798804,
+      "maximum": 1.0
+    },
+    {
+      "year": 2022,
+      "component": "profile",
+      "minimum": 0.002890173410404624,
+      "maximum": 1.0
+    },
+    {
+      "year": 2022,
+      "component": "price",
+      "minimum": 0.002890173410404624,
+      "maximum": 1.0
+    },
+    {
+      "year": 2023,
+      "component": "open",
+      "minimum": 0.035648148148148144,
+      "maximum": 1.0
+    },
+    {
+      "year": 2023,
+      "component": "profile",
+      "minimum": 0.002793296089385475,
+      "maximum": 1.0
+    },
+    {
+      "year": 2023,
+      "component": "price",
+      "minimum": 0.002793296089385475,
+      "maximum": 1.0
+    },
+    {
+      "year": 2024,
+      "component": "open",
+      "minimum": 0.017216314314824246,
+      "maximum": 1.0
+    },
+    {
+      "year": 2024,
+      "component": "profile",
+      "minimum": 0.002793296089385475,
+      "maximum": 1.0
+    },
+    {
+      "year": 2024,
+      "component": "price",
+      "minimum": 0.002793296089385475,
+      "maximum": 1.0
+    },
+    {
+      "year": 2025,
+      "component": "open",
+      "minimum": 0.02015809635112323,
+      "maximum": 1.0
+    },
+    {
+      "year": 2025,
+      "component": "profile",
+      "minimum": 0.002793296089385475,
+      "maximum": 1.0
+    },
+    {
+      "year": 2025,
+      "component": "price",
+      "minimum": 0.002793296089385475,
+      "maximum": 1.0
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "max_training_endpoint": "2025-12-31",
+  "cutoff": "2026-01-01",
+  "training_rows": 889003,
+  "recipe": "original180-tree fixed balanced rank_xendcg"
+}

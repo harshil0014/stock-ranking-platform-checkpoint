@@ -1,0 +1,66 @@
+{
+  "head": "ff4b35bcfb25e82a632907c4798536c76d98ab8c",
+  "records": [
+    {
+      "path": "prospective/records/2026-10-31/bootstrap",
+      "manifest_sha256": "26e7e619a33a746f94c2ab0a3aee796355f653495e2b2558d8888e45a32b282b",
+      "source_as_of": "2026-10-03",
+      "eligible": false,
+      "event_sources": {
+        "announcements": {
+          "status": "CAPTURED",
+          "rows": 4317,
+          "reported_total_count": null
+        },
+        "financial_results": {
+          "status": "CAPTURED",
+          "rows": 0,
+          "reported_total_count": null
+        },
+        "corporate_actions": {
+          "status": "CAPTURED",
+          "rows": 27,
+          "reported_total_count": null
+        }
+      }
+    },
+    {
+      "path": "prospective/records/2026-10-31/financial-feed-recovery",
+      "manifest_sha256": "9fd058f82fda73fd49797f0920285ced39cc6353dc94ef2616ad040c2cd1d406",
+      "source_as_of": "2026-10-03",
+      "eligible": false,
+      "event_sources": {
+        "announcements": {
+          "status": "CAPTURED",
+          "rows": 4374,
+          "reported_total_count": null
+        },
+        "financial_results": {
+          "status": "CAPTURED",
+          "rows": 0,
+          "reported_total_count": null
+        },
+        "integrated_financials": {
+          "status": "CAPTURED",
+          "rows": 944,
+          "reported_total_count": 944
+        },
+        "corporate_actions": {
+          "status": "CAPTURED",
+          "rows": 27,
+          "reported_total_count": null
+        }
+      }
+    }
+  ],
+  "all_blob_hashes_verified": true,
+  "hash_chain_verified": true,
+  "append_only_tree_history": true,
+  "automation": {
+    "id": "daily-stock-research-ledger",
+    "status": "ACTIVE",
+    "local_time": "19:30 Asia/Kolkata",
+    "notification_policy": "failed_runs_only"
+  },
+  "fresh_holdout_started": false
+}

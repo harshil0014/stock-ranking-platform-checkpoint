@@ -1,0 +1,16 @@
+{
+  "development": {
+    "bull": {
+      "lower": -0.019706886800195576,
+      "upper": 0.007267693272042941,
+      "valid_draws": 4000,
+      "status": "conditional paired calendar-block interval"
+    }
+  },
+  "exposed": {
+    "coverage": {
+      "status": "NOT_ESTIMABLE_NO_SUPPORTED_SCENARIO_DATES",
+      "valid_draws": 0
+    }
+  }
+}

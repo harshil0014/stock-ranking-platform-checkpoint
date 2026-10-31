@@ -1,0 +1,38 @@
+{
+  "periods": {
+    "development": {
+      "real_ic": 0.022581523828119506,
+      "shuffle_mean_ic": 0.019395176816947076,
+      "shuffle95_ic": 0.02399595226180885,
+      "real_minus_shuffle95": -0.0014144284336893437,
+      "paired_interval": {
+        "lower": -0.0031657980278831724,
+        "upper": 0.009826936192047817,
+        "valid_draws": 4000,
+        "status": "conditional paired calendar-block interval"
+      },
+      "passes": false
+    },
+    "exposed": {
+      "real_ic": 0.15345776284704926,
+      "shuffle_mean_ic": 0.15893543791099637,
+      "shuffle95_ic": 0.162673793148045,
+      "real_minus_shuffle95": -0.009216030300995742,
+      "paired_interval": {
+        "lower": -0.008903900676278208,
+        "upper": -0.0013707476826873646,
+        "valid_draws": 4000,
+        "status": "conditional paired calendar-block interval"
+      },
+      "passes": false
+    }
+  },
+  "sector_structure_gate": false,
+  "fresh_validation": false,
+  "limitations": [
+    "base7500 only",
+    "current-survivor universe",
+    "current retrospective sectors",
+    "fixed fitted weights, not retrained sector-free comparison"
+  ]
+}

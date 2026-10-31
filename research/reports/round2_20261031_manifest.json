@@ -1,0 +1,434 @@
+{
+  "experiments/round2-goal-risk-20261031/base_rate_decomposition.csv": {
+    "sha256": "9fe8fe1ad1fe61accb4c48181e8348084276d3fd22045dceb89f0f06a38f376e",
+    "bytes": 2772
+  },
+  "experiments/round2-goal-risk-20261031/brier_base_rate_decomposition.csv": {
+    "sha256": "bbcce80a24795422bc60feff84304fc7928cbfca861f50c9ec8bd10bad93cf1a",
+    "bytes": 899
+  },
+  "experiments/round2-goal-risk-20261031/manifest.json": {
+    "sha256": "086ecb9753caa8fe7cf0ad1bc2de6f14476a49b85ec8169946792bcba031c02b",
+    "bytes": 4124
+  },
+  "experiments/round2-goal-risk-20261031/protocol.json": {
+    "sha256": "72e0d85b2183c3b47092238f99eb0038109679c572baa75be3e912cc57f1dee2",
+    "bytes": 4727
+  },
+  "experiments/round2-goal-risk-20261031/ranker_base_rate_lift.csv": {
+    "sha256": "3aec7f8ba94d234914df2121ea073baff9eaa47a27061d7e2f2793cc4dd62757",
+    "bytes": 207
+  },
+  "experiments/round2-goal-risk-20261031/relative_2020.txt": {
+    "sha256": "6541df497faf03f803ea76640e9e361fbfa9d1143102e9fc2460605ffcefa5e4",
+    "bytes": 220756
+  },
+  "experiments/round2-goal-risk-20261031/relative_2021.txt": {
+    "sha256": "2d1b9b275eafc64d51d20cead4d3feba242d4927e783acbe728773ebfd1a36de",
+    "bytes": 221853
+  },
+  "experiments/round2-goal-risk-20261031/relative_2022.txt": {
+    "sha256": "c8f65ae19491adfbca0c30f8ef37ffcce7a90f8ea6b4a46064826e7c8499cb49",
+    "bytes": 223480
+  },
+  "experiments/round2-goal-risk-20261031/relative_2023.txt": {
+    "sha256": "8746322b5ec4efd4cb58664b46c11a63ae18c3333c99d9deef395e1bbd2dfe9c",
+    "bytes": 223053
+  },
+  "experiments/round2-goal-risk-20261031/relative_2024.txt": {
+    "sha256": "9241a3bd16a78a19720cb2ef7afaf6ec5483ab16db6ae2579fe384e409ebba64",
+    "bytes": 224096
+  },
+  "experiments/round2-goal-risk-20261031/relative_2025.txt": {
+    "sha256": "dcc5e4a8628a5e56226104de8b57347daf7414d2f543041c683a6d0a0b32ea70",
+    "bytes": 224247
+  },
+  "experiments/round2-goal-risk-20261031/risk_coverage.csv": {
+    "sha256": "bf6ce5e0ed345356e15f70cb06bedc2fac0e304a5d1d217639e8292491e5f68a",
+    "bytes": 678331
+  },
+  "experiments/round2-goal-risk-20261031/risk_decision.json": {
+    "sha256": "d288432ed43bb2d695410cdbed6fc2cf853e77604d0e650c7d2e6cb795edb94a",
+    "bytes": 917
+  },
+  "experiments/round2-goal-risk-20261031/risk_development_lock.json": {
+    "sha256": "4debf360867f393e566f73a868f16b94efb4c661f25e070a60b9dc3e76f694e8",
+    "bytes": 458
+  },
+  "experiments/round2-goal-risk-20261031/risk_paired_intervals.json": {
+    "sha256": "118f036678c92e0726ea3dbbdc638ec3e9d98c709af979f68a044d6c007a640e",
+    "bytes": 1871
+  },
+  "experiments/round2-goal-risk-20261031/risk_queries.csv.gz": {
+    "sha256": "edce5c4cbde8e5dd5891e6c1096d1f35c7fe96bb608359cc17cda768ed25ac7a",
+    "bytes": 805720
+  },
+  "experiments/round2-goal-risk-20261031/risk_summary.csv": {
+    "sha256": "a1d26d655399544b294e6951899556f2816b3255bd6400f8102631fd63f7ce27",
+    "bytes": 792
+  },
+  "experiments/round2-goal-risk-20261031/risk_training_audit.csv": {
+    "sha256": "789d52195473247d635af451e46b8c6a47d37d7eb14b593195b51555208d7cf6",
+    "bytes": 186
+  },
+  "experiments/round2-goal-risk-20261031/scenario_brier_intervals.json": {
+    "sha256": "37bb56fa29e8223927caba6897e06202efdef2688121cb251cb90adfcfe0a14f",
+    "bytes": 352
+  },
+  "experiments/round2-goal-risk-20261031/scenario_decision.json": {
+    "sha256": "b4d43a660e410e4fb76cbf40d489ac5770a4bba9740191282a1f9a1491a38eab",
+    "bytes": 255
+  },
+  "experiments/round2-goal-risk-20261031/scenario_development_lock.json": {
+    "sha256": "be412ededcdafaa6d47b6c568e903ea0515ace56cf76472272314044568a8f83",
+    "bytes": 1041
+  },
+  "experiments/round2-goal-risk-20261031/scenario_forecast_examples.csv": {
+    "sha256": "8f6b1c68f8c48b803c9946dd52c08cdb6b56b7deffb554f4e5831a9faf0b33d7",
+    "bytes": 1511
+  },
+  "experiments/round2-goal-risk-20261031/scenario_summary.csv": {
+    "sha256": "d2b7df27943db2d59c469596822e1f7b04ac01a1c2e35f16d582a1ffd0945db9",
+    "bytes": 365
+  },
+  "experiments/round2-goal-risk-20261031/scenario_training_audit.json": {
+    "sha256": "87872581d5d4adb80227eb463befdf86bda4b450068efca9ad5399fe5b2558cb",
+    "bytes": 10237
+  },
+  "experiments/round2-goal-risk-20261031/shortfall_2020.txt": {
+    "sha256": "3c797a6b40f44210392cbf5eafa6a6ee26b726e633fb75d742976b5008c68940",
+    "bytes": 226147
+  },
+  "experiments/round2-goal-risk-20261031/shortfall_2021.txt": {
+    "sha256": "a2ee0f6aa64d2f86086f2ad75c9b61e343ed8db49685223262a65c2538bb8dc1",
+    "bytes": 226522
+  },
+  "experiments/round2-goal-risk-20261031/shortfall_2022.txt": {
+    "sha256": "42d8dffe6d61edef34112245f4eaa2d2f653cc4705f6753eed2840046e24b617",
+    "bytes": 226994
+  },
+  "experiments/round2-goal-risk-20261031/shortfall_2023.txt": {
+    "sha256": "69fd658c39e2b123d2227816754328225fc55c156c0cedc515f1aa0d1ca2d187",
+    "bytes": 227099
+  },
+  "experiments/round2-goal-risk-20261031/shortfall_2024.txt": {
+    "sha256": "c2caa2f6baa7a30c6c345e2395151c54808304e34091cf0e8baf336b25c39cea",
+    "bytes": 227144
+  },
+  "experiments/round2-goal-risk-20261031/shortfall_2025.txt": {
+    "sha256": "9f793038b0ecb3e9c7a4d4bb269d019e3fa64337c1fb18c440c5f0ba4505766f",
+    "bytes": 227366
+  },
+  "experiments/round2-goal-risk-20261031/verification.json": {
+    "sha256": "0fe106efaf86f215e5e80bfde587e00e4092cad2b168ea2afd00503696888139",
+    "bytes": 356
+  },
+  "experiments/round2-hysteresis-20261031/daily_by_year.csv": {
+    "sha256": "789bf634999fb4402dda3995aadc062b09988297d2f8a8e7304d6a57c25682b1",
+    "bytes": 1676
+  },
+  "experiments/round2-hysteresis-20261031/daily_coverage.csv": {
+    "sha256": "98e20fc0001e0ab2ebb71ad58fe64951dad1cd437fa02646bd362cb5fb1e67e1",
+    "bytes": 11888
+  },
+  "experiments/round2-hysteresis-20261031/daily_decision.json": {
+    "sha256": "6afe238d5edfbd682bc3c93e5506c71f6a7dfc76c564a4afb88697257eaabaa0",
+    "bytes": 1025
+  },
+  "experiments/round2-hysteresis-20261031/daily_feature_receipt.json": {
+    "sha256": "82a6e5e84361a446aed5f8f3ae24251873c02309d7fc7d263b4271e35b65d093",
+    "bytes": 32277
+  },
+  "experiments/round2-hysteresis-20261031/daily_frontier.csv": {
+    "sha256": "8287f5629903f8ac3335a00189555c33f23c50cc4d56c85be626513a3c254a1d",
+    "bytes": 1824
+  },
+  "experiments/round2-hysteresis-20261031/daily_leader_lags.csv.gz": {
+    "sha256": "304bfa9868f96d7e8a8e9dffc441efb506460bb61e47e2d03fd67c4e9e499cbf",
+    "bytes": 95274
+  },
+  "experiments/round2-hysteresis-20261031/daily_queries.csv.gz": {
+    "sha256": "bf11b275ed36488d8f16bb5805426d977bdf433c41e36ef84ca0ad495886e3de",
+    "bytes": 2527071
+  },
+  "experiments/round2-hysteresis-20261031/daily_score_receipt.json": {
+    "sha256": "7832f82bf89576b410d37a60c98d5dc30b359ae77298dc677ab782e4fa5f9c22",
+    "bytes": 657
+  },
+  "experiments/round2-hysteresis-20261031/development_lock.json": {
+    "sha256": "1197e0eecd4e27d03036d612b4e1e4116921b12e60cdc4820c320a872317a415",
+    "bytes": 1413
+  },
+  "experiments/round2-hysteresis-20261031/frontier.png": {
+    "sha256": "b4079144986b32fe481ab1d12663cc524ece862c9b5bf233b993385bedd69fef",
+    "bytes": 193921
+  },
+  "experiments/round2-hysteresis-20261031/frontier.svg": {
+    "sha256": "ff869b12a726ff7ab6494e39359c8ad936178e5695f22d0c82a8d78b3f986d1a",
+    "bytes": 100568
+  },
+  "experiments/round2-hysteresis-20261031/model2026_audit.json": {
+    "sha256": "aec16e6fb9f8a0ef86bf0e6fbebd19f91c35f5ef339ac584f498e612d087fb90",
+    "bytes": 160
+  },
+  "experiments/round2-hysteresis-20261031/positive_volume_calendar.json": {
+    "sha256": "6b083c64ce19c8d333f64cc24359f179fa9a556c4cd8895fcfa438dcd657a993",
+    "bytes": 8387
+  },
+  "experiments/round2-hysteresis-20261031/price_head_2026.txt": {
+    "sha256": "8dcab8c67b5d6769a69eea5d7c60dd7928158e123d8fba8e8056b7a53956507b",
+    "bytes": 329833
+  },
+  "experiments/round2-hysteresis-20261031/protocol.json": {
+    "sha256": "c1436c6cb3c21f965e84cf5b75b8d8085eb4bf873e6d53a64d5941d4c77913be",
+    "bytes": 2728
+  },
+  "experiments/round2-hysteresis-20261031/quarterly_frontier.csv": {
+    "sha256": "2c92d68e412f9b0d0dbba09714e102fea21ff2f69879b1b27f9b9f695b0f727a",
+    "bytes": 1973
+  },
+  "experiments/round2-hysteresis-20261031/quarterly_leader_lags.csv.gz": {
+    "sha256": "8bfee7dc6547d0cb6c4aa5ee5d0b9092415425b171894bafdd75b3705607c179",
+    "bytes": 60997
+  },
+  "experiments/round2-hysteresis-20261031/quarterly_queries.csv.gz": {
+    "sha256": "cdbcf8b62d43e3e4c9a37baeb62801e2cedabc6ee341be1c8f4c1929525ae5f5",
+    "bytes": 1637747
+  },
+  "experiments/round2-prospective-ledger-20261031/branch_protection_receipt.json": {
+    "sha256": "6e000dc6bae43ba459ed020cc839bedd148e3b2b3c5084e8cfbc01acb4bcec67",
+    "bytes": 382
+  },
+  "experiments/round2-prospective-ledger-20261031/integrated_financials_probe.json": {
+    "sha256": "84d22db43b3dc637f0a663d578a6fc6314a045a9694181120f9d902a69b3b472",
+    "bytes": 464
+  },
+  "experiments/round2-prospective-ledger-20261031/verification.json": {
+    "sha256": "64b357cedbaaaa19493efe6898ccf83c0949751c95ad59f3fcbbae3a57e4d994",
+    "bytes": 1922
+  },
+  "experiments/round2-sector-placebo-20261031/control.json": {
+    "sha256": "17796bc9e22bc30f22dab43a6d50cc6751a895d2e07f541035644638a4ef269e",
+    "bytes": 2411
+  },
+  "experiments/round2-sector-placebo-20261031/control_scores.csv.gz": {
+    "sha256": "e7f08f09e4f69e1695c5a0cfd92fc618ad02876c5caaee784c35d1e4ae0c6fa7",
+    "bytes": 1512463
+  },
+  "experiments/round2-sector-placebo-20261031/decision.json": {
+    "sha256": "2d1de87b6749ce7516a35af2c3a1abfb1e20c38cfa4b37cb4a4c95a8c49f738d",
+    "bytes": 1175
+  },
+  "experiments/round2-sector-placebo-20261031/protocol.json": {
+    "sha256": "3c26cd3fb1f195407f1376646e4351fbffc90196167dfde5238e71f455cf9ff8",
+    "bytes": 1219
+  },
+  "experiments/round2-sector-placebo-20261031/queries.csv.gz": {
+    "sha256": "a42df136f898e2c9d65eef85120334e5eebdc1722bccc52a3563258415aede5c",
+    "bytes": 4179446
+  },
+  "experiments/round2-sector-placebo-20261031/REPORT.md": {
+    "sha256": "ddb1b5ae121155998d420fcc684bb80802045250fac3c05b7f9c7b441c9d3a54",
+    "bytes": 17049
+  },
+  "experiments/round2-sector-placebo-20261031/summary.csv": {
+    "sha256": "5e573ca8b351b4be74e1a3d045d02e69bfcfd5d3cbe4a0db2130a5246cbca4e4",
+    "bytes": 9421
+  },
+  "experiments/round2-universe-20261031/acquisition_summary.json": {
+    "sha256": "c8809cc7aad7e8aa16021d958728d1a6d97bc42bbf6f377a91a7d0da29f87c62",
+    "bytes": 101
+  },
+  "experiments/round2-universe-20261031/alternate_bhavcopy_receipt.json": {
+    "sha256": "efe0ebcbf9915ebc4a4257f99017ce3cc729e46735ee97ed1bbeaadce94c9f91",
+    "bytes": 314
+  },
+  "experiments/round2-universe-20261031/archive_capture_catalog.csv": {
+    "sha256": "481174c81972fdd74be237b879233adbf56b2ed85e1adecd13dd46120ad1246f",
+    "bytes": 1386
+  },
+  "experiments/round2-universe-20261031/archived_snapshot_capture_20150325.csv": {
+    "sha256": "efbb633daa3e1d78d81872fb6c7ca688cd654d8c9866cbd7f25993782e994a02",
+    "bytes": 39286
+  },
+  "experiments/round2-universe-20261031/bhavcopy_inventory_receipt.json": {
+    "sha256": "9855532f44eab9158011704b6520667803738d7e936c36c6687af236e3cb7a2a",
+    "bytes": 576
+  },
+  "experiments/round2-universe-20261031/bhavcopy_monthly_inventory_summary.csv": {
+    "sha256": "3af21f05ddbf73c123a0a4ff4fa86e74336730792faf2bf7e6034f48f0f913be",
+    "bytes": 2566
+  },
+  "experiments/round2-universe-20261031/bhavcopy_protocol.json": {
+    "sha256": "93be8a016f1474a582e3ae55ab5ae21e2e263efe7e378e2263bd476ad3cd76ad",
+    "bytes": 555
+  },
+  "experiments/round2-universe-20261031/bhavcopy_source_receipts.csv": {
+    "sha256": "7426adf9782a680f1666131f56745bec6ee994f9750c012b0ea9c1fa5a39973a",
+    "bytes": 27091
+  },
+  "experiments/round2-universe-20261031/event_extraction_summary.json": {
+    "sha256": "0014db55668a740c6491c81400ff0dd95e9c283e391dfc11fa64866476b15c96",
+    "bytes": 213
+  },
+  "experiments/round2-universe-20261031/historical_identity_registry.csv": {
+    "sha256": "8432e86e5f3b521ebc29481233ea7c509e515a5f2207abd7449b660f50d8c2fb",
+    "bytes": 129989
+  },
+  "experiments/round2-universe-20261031/identity_sequence_errors.csv": {
+    "sha256": "0b1b3b6c707a4c480f194f95ba13262fa20baa95c456122790f03c3c61a910a5",
+    "bytes": 1145
+  },
+  "experiments/round2-universe-20261031/member_month_price_outcome_coverage.csv.gz": {
+    "sha256": "8d1fa1024960fb81ede8fff00bebee4e2ba320f700dfda6070398a95513666c0",
+    "bytes": 1151751
+  },
+  "experiments/round2-universe-20261031/membership_count_by_change.csv": {
+    "sha256": "86123d911efd9d9a29876e23ebc51e91fd6a715b9bfd93ccd82e763abd07be91",
+    "bytes": 4567
+  },
+  "experiments/round2-universe-20261031/membership_intervals.csv": {
+    "sha256": "3b48df398873516f7b72ba9c3742af1f45c70fa7d74b4894d6f2e754a655f881",
+    "bytes": 219988
+  },
+  "experiments/round2-universe-20261031/monthly_bhavcopy_identity_inventory.csv.gz": {
+    "sha256": "1732b299b9be7e6e155dd13cb5d4a60c7873c49755d5798b88ee8d3253433956",
+    "bytes": 2856349
+  },
+  "experiments/round2-universe-20261031/monthly_readiness_coverage.csv": {
+    "sha256": "b99fa59a453e4fc101c8ba99fc791d225fd8b94c16e7f361bb6307c0128b2177",
+    "bytes": 3152
+  },
+  "experiments/round2-universe-20261031/official_membership_events.csv": {
+    "sha256": "e28c6f5a41d7fb0d69e7459bf58b6820be4139a6a62695e37252616ac0396c01",
+    "bytes": 455411
+  },
+  "experiments/round2-universe-20261031/official_rename_bridges.csv": {
+    "sha256": "115d14b2b92318b80aad566323291312f81f3639c01bc2084edb66210c1b8057",
+    "bytes": 6001
+  },
+  "experiments/round2-universe-20261031/parser_review_queue.csv": {
+    "sha256": "7190a47268bfd10a7bcfbf11059bbd5c982b2840a81602366fe8c235caa5617b",
+    "bytes": 41076
+  },
+  "experiments/round2-universe-20261031/pdf_event_candidates.csv": {
+    "sha256": "c453190cd82a7519a28bd8d023c8b6e97dfa7f58b4d1014a679d59a3865216cd",
+    "bytes": 150096
+  },
+  "experiments/round2-universe-20261031/press_release_catalog.csv": {
+    "sha256": "b42b8daa7a1be314831b971393f5e8ccea390fce1ef9ffd97260f9b8256e8038",
+    "bytes": 16385
+  },
+  "experiments/round2-universe-20261031/primary_evaluation_status.json": {
+    "sha256": "7e8813ed6005180944cc9d554ca4a744dc30e2ecc0cbf9278d7801d559253185",
+    "bytes": 942
+  },
+  "experiments/round2-universe-20261031/protocol.json": {
+    "sha256": "0b42a08fd620d68c7866641728dabf57c353640998c59e1706702022cb2a855d",
+    "bytes": 2692
+  },
+  "experiments/round2-universe-20261031/rename_member_counts.csv": {
+    "sha256": "dba8f9a4736b8093ae28b9324c234b3242dcbde290d4e36055b9af5121eb1d0c",
+    "bytes": 4552
+  },
+  "experiments/round2-universe-20261031/rename_membership_intervals.csv": {
+    "sha256": "7e0b900690508abae3965b3a206bf7de59d8cb4ba4854f49d730f824f4a0b5d4",
+    "bytes": 123657
+  },
+  "experiments/round2-universe-20261031/rename_monthly_readiness.csv": {
+    "sha256": "64ac967ef4d719d0aabb00b48589ff33335b0f5ef50f3488c35fd74bc7cfb9f9",
+    "bytes": 2598
+  },
+  "experiments/round2-universe-20261031/rename_reconciliation.json": {
+    "sha256": "f660d900b720c26eba196c1c596fe2387dcfc33235a1703ac47ddfb256e12382",
+    "bytes": 520
+  },
+  "experiments/round2-universe-20261031/rename_sequence_errors.csv": {
+    "sha256": "bbd3ba95128f6fd96a3dfb9b54290c74fc2cd2d9eb24a1ec3393fa5b2b86c2d0",
+    "bytes": 550
+  },
+  "experiments/round2-universe-20261031/snapshot_20150325_reconciliation.json": {
+    "sha256": "2e363ed9aaf411c7f046cae1a5e021715eba2c851ffd88f71f8d86a93fbf9d3e",
+    "bytes": 545
+  },
+  "experiments/round2-universe-20261031/source_receipts.csv": {
+    "sha256": "8dcf91c330a8be9c5a23b1649f46536bd3d56619bee25f30233ebffec7e1b420",
+    "bytes": 47395
+  },
+  "experiments/round2-universe-20261031/supplemental_source_recovery.json": {
+    "sha256": "20f88d8c8556f585dc0df536800a7b83e47ec24821173e9e6aa63ddbc5116790",
+    "bytes": 2411
+  },
+  "research/environment/round2_20261031.json": {
+    "sha256": "c211f2013033e5d3c2f715c159bccb76550825a6275fc441f3777316c7531c12",
+    "bytes": 596
+  },
+  "research/protocols/round2_20261031.json": {
+    "sha256": "5a61dae1cb082b34d46b9236690441017a7085b3614628cb66c87bbeec404946",
+    "bytes": 4277
+  },
+  "research/reports/round2_20261031.md": {
+    "sha256": "ddb1b5ae121155998d420fcc684bb80802045250fac3c05b7f9c7b441c9d3a54",
+    "bytes": 17049
+  },
+  "research/runners/prospective_ledger_20261031.py": {
+    "sha256": "e1524cba3128b3666257f76e66b215267d4603be0f6f0ca06606b9804bcc6c06",
+    "bytes": 21462
+  },
+  "research/runners/round2_bhavcopy_20261031.py": {
+    "sha256": "bc72272e7851f176ab46a523c3cd4a39bd3afe19a0fd85c3635bcee50b493548",
+    "bytes": 5140
+  },
+  "research/runners/round2_frontier_plot_20261031.py": {
+    "sha256": "064f4801aa07692b794a5994ad9b3a78bde04ec321fe48a9ac4c272c9d79597b",
+    "bytes": 1917
+  },
+  "research/runners/round2_goal_risk_20261031.py": {
+    "sha256": "75d6369aec41335365a676c3a56d14035e0f31405ffa1b168d53e10a45a34dff",
+    "bytes": 25201
+  },
+  "research/runners/round2_hysteresis_20261031.py": {
+    "sha256": "b8dd800d663bca6615bd001bc0d0faa1d89256bfe42a3710f74abe9b75294668",
+    "bytes": 28012
+  },
+  "research/runners/round2_sector_placebo_20261031.py": {
+    "sha256": "d837ea401bfdf97f59a20490086152300b5714cd01b0c621d42e8b7e479b511a",
+    "bytes": 9661
+  },
+  "research/runners/round2_source_recovery_20261031.py": {
+    "sha256": "6b1d0dc42baef66dc88990a7ebef848e2ec1f0ff8817500b5f1cfa49ebc95e81",
+    "bytes": 1340
+  },
+  "research/runners/round2_universe_20261031.py": {
+    "sha256": "752e9572a78562fed1c52decb5d78bd778a702513dac685a98cb621cb8fa0478",
+    "bytes": 18376
+  },
+  "research/runners/round2_universe_renames_20261031.py": {
+    "sha256": "4bab784bbef09538ee43e5c8fca4b7444e1eba92acfef63973af06289e7b72f9",
+    "bytes": 4701
+  },
+  "tests/test_prospective_ledger_20261031.py": {
+    "sha256": "ab4065281acaa49e4fdbf00fda429c1198ceb909c9a05f9303de96ef4b3ab9b1",
+    "bytes": 5277
+  },
+  "tests/test_round2_bhavcopy_20261031.py": {
+    "sha256": "eeba911b0a3f31a5c50ffde11b706d6cac06b6e8f8a9a6264c6985573fb746c5",
+    "bytes": 980
+  },
+  "tests/test_round2_goal_risk_20261031.py": {
+    "sha256": "4b74ce5005bccecff57d605ba952f716f3d7c93accf9c5a1d73cd746184be5d3",
+    "bytes": 2046
+  },
+  "tests/test_round2_hysteresis_20261031.py": {
+    "sha256": "ad97d8d04e7d8a5aa3747bfd657f0f02d9a26727baea9d213a8f95e8f68e3472",
+    "bytes": 2198
+  },
+  "tests/test_round2_placebo_renames_20261031.py": {
+    "sha256": "2751be35073437492f30f17bec61ef31b9aae336e654467c9c33ed296550c77a",
+    "bytes": 2282
+  },
+  "tests/test_round2_universe_20261031.py": {
+    "sha256": "fb76d05a547c63721d4f9aeb66a142196679c5e6681ad9342b199ca265348664",
+    "bytes": 2073
+  }
+}

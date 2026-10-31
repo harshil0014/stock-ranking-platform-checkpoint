@@ -1,0 +1,10 @@
+{
+  "strict_outcome_maturity": true,
+  "relative_model_replay_rows": 500,
+  "relative_model_max_error": 0.0,
+  "scenario_target_monotonic_matched_cases": 84184,
+  "shortfall_target_monotonic_probe_rows": 500,
+  "scenario_assumption_ordering": true,
+  "source_population": "current-survivor retrospective diagnostic",
+  "no_serving_changes": true
+}

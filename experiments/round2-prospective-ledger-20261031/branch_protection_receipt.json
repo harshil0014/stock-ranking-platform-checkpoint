@@ -1,0 +1,15 @@
+{
+  "status_code": 200,
+  "branch": "prospective-ledger",
+  "allow_force_pushes": {
+    "enabled": false
+  },
+  "allow_deletions": {
+    "enabled": false
+  },
+  "enforce_admins": {
+    "url": "https://api.github.com/repos/harshil0014/stock-ranking-platform-checkpoint/branches/prospective-ledger/protection/enforce_admins",
+    "enabled": true
+  },
+  "message": null
+}

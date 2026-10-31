@@ -1,0 +1,7 @@
+{
+  "scope": "Inventory exact dated NSE symbol/series/ISIN/close/volume observations for month ends2012-2019; retrieve latest available weekday within7calendar days. No interpolated prices, adjusted returns or terminal proceeds. Retain acquisition failures. No ranking/performance claim.",
+  "raw_directory": "work\\round2-historical-bhavcopy",
+  "source": "Official NSE nsearchives daily bhavcopy archive",
+  "close_basis": "Official nominal observed session close; not split/merger/dividend adjusted",
+  "primary_SIP_outcome_status": "NOT_BUILT"
+}

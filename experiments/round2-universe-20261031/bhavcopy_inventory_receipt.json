@@ -1,0 +1,14 @@
+{
+  "requested_months": 96,
+  "recovered_months": 96,
+  "rows": 161183,
+  "unique_isins": 3128,
+  "unique_isins_outside_current_survivors": 1745,
+  "verified_SIP_outcomes": 0,
+  "limitations": [
+    "Full exchange inventory, not independently reconstructed NIFTY500 membership",
+    "A symbol/ISIN observation does not certify adjusted price continuity or delisting proceeds",
+    "Monthly observations cannot establish monthly whole-share execution or daily drawdown",
+    "Historical sector assignments and causal pre2020 champion training remain unbuilt"
+  ]
+}

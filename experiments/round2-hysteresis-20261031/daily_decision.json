@@ -1,0 +1,26 @@
+{
+  "locked_margin": 0.03,
+  "diagnostic_churn_gate": true,
+  "diagnostic_IC_gate": true,
+  "diagnostic_lag_gate": false,
+  "known_blocked_retention": 0,
+  "production_ready": false,
+  "reason": "Component-only replay; full champion and certified historic suspension/announcement-time coverage unavailable. Lag gate conservatively requires90% ofall events observed entering within5 sessions; censored episodes do not count as successes.",
+  "selected": {
+    "margin": 0.03,
+    "kendall_tau": 0.9432978746013986,
+    "raw_tau": 0.7992881436943348,
+    "top3_churn": 0.05987361769352291,
+    "raw_top3_churn": 0.2385178802240414,
+    "ic_delta": 0.008620553012955287,
+    "blocked_retained": 0.0,
+    "safety_reset": 0.010986643688065489,
+    "churn_reduction": 0.7489763969171483,
+    "leader_events": 2845,
+    "censored_fraction": 0.15430579964850616,
+    "lag_p90_lower_bound": 6.0,
+    "lag_median_lower_bound": 0.0,
+    "fraction_entered_within5": 0.8084358523725835,
+    "selected": true
+  }
+}
