@@ -20,9 +20,9 @@ def main():
  for ax,period in zip(axes,['development','exposed']):
   z=x[x.period.eq(period)];ax.scatter(z.rank_ic,z.attainment3*100,s=35,c='#94a3b8',alpha=.7)
   for number,name in enumerate(names):
-   r=z[z.model.eq(name)].iloc[0];ax.scatter(r.rank_ic,r.attainment3*100,s=90 if name==ANCHOR else 40,c=colors.get(name,'#2563eb'));ax.annotate('C' if number==0 else chr(64+number),(r.rank_ic,r.attainment3*100),xytext=(5,5),textcoords='offset points',fontsize=9)
+   r=z[z.model.eq(name)].iloc[0];ax.scatter(r.rank_ic,r.attainment3*100,s=90 if name==ANCHOR else 40,c=colors.get(name,'#2563eb'));ax.annotate('CH' if number==0 else chr(64+number),(r.rank_ic,r.attainment3*100),xytext=(-20,-15) if number==0 else (5,5),textcoords='offset points',fontsize=9)
   ax.set(title=period.capitalize()+' (historical)',xlabel='Mean within-sector rank IC',ylabel='Top-3 goal attainment (%)')
- handles=[Line2D([],[],marker='o',linestyle='',color=colors.get(name,'#2563eb'),label=('C' if number==0 else chr(64+number))+': '+short(name)) for number,name in enumerate(names)];fig.legend(handles=handles,loc='lower center',bbox_to_anchor=(.5,-.25),ncol=3,frameon=False,fontsize=9)
+ handles=[Line2D([],[],marker='o',linestyle='',color=colors.get(name,'#2563eb'),label=('CH' if number==0 else chr(64+number))+': '+short(name)) for number,name in enumerate(names)];fig.legend(handles=handles,loc='lower center',bbox_to_anchor=(.5,-.25),ncol=3,frameon=False,fontsize=9)
  fig.suptitle('Champion versus all score policies: ordering and attainment are different objectives',fontsize=13,y=1.03);save(fig,'ranking_attainment_frontier')
  fig,axes=plt.subplots(1,3,figsize=(14,5));metrics=[('rank_ic','Rank IC difference'),('attainment3','Attainment difference (pp)'),('drawdown3','Drawdown difference (pp)')]
  show=names[1:];y=np.arange(len(show));d=x[x.period.eq('development')].set_index('model');e=x[x.period.eq('exposed')].set_index('model')
@@ -48,8 +48,8 @@ def main():
    for name,g in b.groupby('index'):
     label={'NIFTY_500':'Nifty500','NIFTY_50':'Nifty50','NIFTY_MIDCAP_150':'Mid150','NIFTY_SMALLCAP_250':'Small250','NIFTY500_MOMENTUM_50':'Mom500','NIFTY200_MOMENTUM_30':'Mom200','NIFTY500_QUALITY_50':'Quality','NIFTY500_VALUE_50':'Value','NIFTY500_LOW_VOLATILITY_50':'LowVol','NIFTY500_MULTIFACTOR_MQVLV_50':'Multi'}[name]
     ax.scatter(g.tw_max_drawdown.mean()*100,g.xirr.mean()*100,c='#2563eb',s=35);ax.annotate(label,(g.tw_max_drawdown.mean()*100,g.xirr.mean()*100),xytext=(4,4),textcoords='offset points',fontsize=8)
-  ax.margins(x=.15,y=.12)
   else:ax.text(.5,.5,'No valid matched champion cohorts',transform=ax.transAxes,ha='center')
+  ax.margins(x=.15,y=.12)
   ax.set(title=period.capitalize()+f' ({len(dates)} matched dates)',xlabel='Mean daily portfolio maximum drawdown (%)',ylabel='Mean forward-cohort SIP XIRR (%)')
  fig.suptitle('Global top20 champion versus official TRI alternatives on matching dates;25bps each side',y=1.03);fig.text(.5,-.03,'Provider-adjusted stock paths; fractional SIP proxy; overlapping cohort means are not strategy CAGR. Factor indices include prelaunch backfills.',ha='center',fontsize=8);save(fig,'portfolio_index_risk_return')
  print('FIGURES',len(list(FIG.glob('*.png'))),flush=True)
