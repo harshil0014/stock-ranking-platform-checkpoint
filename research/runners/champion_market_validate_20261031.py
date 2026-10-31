@@ -2,14 +2,13 @@
 import json,hashlib,subprocess
 import numpy as np,pandas as pd
 import champion_market_common_20261031 as c
+from champion_market_audit_20261031 import fit_audits
 
 def main():
  checks=[];protocol=json.loads((c.OUT/'protocol.json').read_text());audit_count=0;training_support={}
  for family in ['tabular','sequence']:
-  for path in (c.OUT/family).glob('*_audit.json'):
-   r=json.loads(path.read_text());year=r.get('year')
-   if year is None and path.name.startswith('matched_'):year=int(path.name.split('__')[2].split('_')[0])
-   if year is None:continue
+  for path,r in fit_audits(c.OUT/family):
+   year=r['year']
    assert r['max_training_endpoint']<f'{year}-01-01',str(path);audit_count+=1
    if family=='tabular':
     assert r['train_rows']<=120000;training_support.setdefault(year,set()).add(r['train_key_hash'])

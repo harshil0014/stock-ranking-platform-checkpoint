@@ -75,7 +75,7 @@ def run(label,python,args,gpu=False,control_name='low_load_control.json'):
  finally:job.close()
  status(state='stage_complete',worker=label,elapsed_seconds=round(time.monotonic()-started));print('LOW LOAD COMPLETE',label,flush=True)
 
-def main(probe=False):
+def main(probe=False,start_at=None):
  if os.name!='nt':raise RuntimeError('Windows job objects required')
  if probe:
   run('governor-probe','.venv/Scripts/python.exe',['-c','import time; print("controlled child started",flush=True); time.sleep(12); print("controlled child finished",flush=True)']);return
@@ -90,6 +90,7 @@ def main(probe=False):
   if not (OUT/'sequence/coverage.json').exists():run('sequence-review',regular,['research/runners/champion_market_review_20261031.py','sequence','--resume'])
   if not (OUT/'tabular/random_forest_complete.json').exists():run('random-forest',regular,['research/runners/champion_market_tabular_20261031.py','random_forest','--lease-owner'])
   stages=[('inference',['champion_market_inference_20261031.py']),('full-evaluate',['champion_market_evaluate_20261031.py','full']),('full-review',['champion_market_review_20261031.py','full']),('portfolio',['champion_market_portfolio_20261031.py']),('validate',['champion_market_validate_20261031.py']),('report',['champion_market_publish_20261031.py']),('plots',['champion_market_plots_20261031.py'])]
+  if start_at is not None:stages=stages[[label for label,args in stages].index(start_at):]
   for label,args in stages:run(label,regular,['research/runners/'+args[0]]+args[1:])
   tests=[str(p.relative_to(ROOT)) for p in sorted((ROOT/'tests').glob('*20261031.py'))];run('tests',regular,['-m','pytest','-q']+tests)
   receipt=dict(passed=True,command='python -m pytest -q tests/*20261031.py',log_sha256=__import__('hashlib').sha256((WORK/'low-load-tests.log').read_bytes()).hexdigest(),execution='Serial Windows-managed low-load queue',external_ci=False);(OUT/'test_receipt.json').write_text(json.dumps(receipt,indent=2));run('bundle',regular,['research/runners/champion_market_bundle_20261031.py']);status(state='complete_pending_result_and_visual_review',worker=None)
@@ -97,4 +98,4 @@ def main(probe=False):
  finally:lock.unlink(missing_ok=True)
 
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--probe',action='store_true');main(p.parse_args().probe)
+ p=argparse.ArgumentParser();p.add_argument('--probe',action='store_true');p.add_argument('--from-stage',choices=['inference','full-evaluate','full-review','portfolio','validate','report','plots']);args=p.parse_args();main(args.probe,args.from_stage)

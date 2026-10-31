@@ -89,3 +89,12 @@ def test_calibration_accepts_realistic_object_labels_and_mature_oof_dates(tmp_pa
  for date,endpoint in [('2020-01-01','2021-01-01'),('2020-04-01','2021-04-01'),('2022-01-01','2023-01-01')]:
   for i in range(4):rows.append(dict(isin=str(i),decision_date=date,endpoint=endpoint,profile_name='base7500',goal_hit=bool(i%2),champ=float(i)))
  x=pd.DataFrame(rows);x['goal_hit']=x.goal_hit.astype(object);review.calibration(x,['champ'],folder);z=pd.read_csv(folder/'calibration_queries.csv.gz');assert len(z)==1 and z.iloc[0].decision_date=='2022-01-01' and np.isfinite(z.brier).all()
+
+def test_fit_audit_reader_separates_aggregate_calibration_receipts(tmp_path):
+ import json,pytest
+ from champion_market_audit_20261031 import fit_audits
+ (tmp_path/'calibration_maturity_audit.json').write_text(json.dumps([dict(date='2022-01-01')]))
+ (tmp_path/'matched_ridge__balanced__2020_audit.json').write_text(json.dumps(dict(train_rows=100,max_training_endpoint='2019-12-31')))
+ receipts=list(fit_audits(tmp_path));assert len(receipts)==1 and receipts[0][1]['year']==2020
+ (tmp_path/'broken__balanced__2020_audit.json').write_text('[]')
+ with pytest.raises(ValueError,match='must be an object'):list(fit_audits(tmp_path))
