@@ -1,0 +1,14 @@
+{
+  "registered_date": "2026-10-31",
+  "status": "Separate follow-up after majority-family development failures; all historical outcomes already exposed. Not a fresh validation or amendment of the prior family.",
+  "motivation": "80/90percent factor budgets strongly improve preference alignment but failed fixed development IC/drawdown limits. Test an explicitly smaller score budget rather than force a bad majority model.",
+  "candidate_core_shares": [0.1, 0.2, 0.35, 0.5],
+  "factor_blocks": ["five annual-return consistency", "3Y CAGR", "5Y CAGR", "recorded-high recency", "trailing whole-share SIP profit"],
+  "formula": "share times equal-weight mean of five factor percentiles plus(1-share)times same-cohort champion percentile. No new fitting, weights, factors, feature filtering or outcomes are used to construct scores.",
+  "source": "Reuse the frozen majority-family prepared full feature panel and exact guards. Source receipt and semantic definitions remain inherited; no imputation, no revised prices or sector changes.",
+  "selection": "Same fixed development-only gate: at least0.02mean factor-percentile alignment gain,IC loss<=0.01,selected-stock drawdown worsening<=0.02,changed Top3sector fraction>=0.10. Among passers choose greatest development alignment gain. Record lock before new exposed summaries. If none, none. No more weight-grid expansion in this task.",
+  "cashflow_diagnostic": "Same preregistered25bps portfolio simulation and full-selection missing-path/action blocking. Exposed performance is diagnostic only,never selection justification. Report paired valid/planned dates. No investable promotion based on sparse histories.",
+  "coverage": "Same complete-factor single base7500profile cohort and current unavailable-lens treatment as majority protocol. This is neither full professor fundamentals nor an all-profile test.",
+  "promotion": "Research/product-lens candidate only. Production champion unchanged. Operational preference pass is not statistical validation. Fresh inputs and prospective investment evidence remain unavailable.",
+  "freeze_boundary": "Defined before computing any of these four candidate outcome summaries. Motivation uses earlier development findings; the family and choice are therefore exploratory overall. Original majority-family results and failed logs retained. No new model fitting."
+}

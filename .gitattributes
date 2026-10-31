@@ -87,3 +87,8 @@ research/environment/round2_20261031.json -text
 experiments/champion-vs-market-20261031/** -text
 research/protocols/champion_vs_market_20261031.json -text
 research/literature/20261031/** -text
+experiments/professor-majority-20261031/** -text
+research/protocols/professor_majority_20261031.json -text
+src/stock_research/professor_factor_model.py text eol=lf
+experiments/professor-weight-curve-20261031/** -text
+research/protocols/professor_weight_curve_20261031.json -text
