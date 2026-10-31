@@ -54,3 +54,20 @@ def test_unresolved_action_and_affordability_fail_closed():
     x=frame();x.loc[0,'sip_action_blocked']=True;x.loc[1,'sip_invested_fraction']=.1
     z=normalize_factors(x)
     assert not z.loc[:1,'factor_eligible'].any()
+
+
+def test_unknown_selected_outcome_blocks_all_top3_metrics_without_reselection(tmp_path,monkeypatch):
+    import sys
+    from pathlib import Path
+    sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'research/runners'))
+    import professor_majority_20261031 as runner
+    monkeypatch.setattr(runner,'OUT',tmp_path)
+    x=normalize_factors(frame())
+    for name in runner.NAMES:x[name]=np.arange(len(x),dtype=float)
+    x['future_xirr']=np.arange(len(x))/10
+    x['future_drawdown']=-.2;x['future_shortfall']=.1
+    # Stock7 remains a top-three selection despite an unknown future outcome.
+    x.loc[7,'future_xirr']=np.nan
+    result=runner.evaluate_period(x,'development')
+    assert result.attainment3.isna().all() and result.drawdown3.isna().all()
+    assert result.rank_ic.notna().all()
