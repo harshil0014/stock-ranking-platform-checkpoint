@@ -103,6 +103,12 @@ def paired_comparisons(z):
    for period,b in a.groupby('period'):
     result=dict(model=model,policy=policy,cost_bps=cost,benchmark=label,period=period,matched_dates=len(b))
     for metric in metrics:result[metric+'_delta']=float(b[metric+'_candidate'].astype(float).mean()-b[metric+'_benchmark'].astype(float).mean())
+    if cost==25 and label in [c.ANCHOR,'NIFTY_500']:
+     from champion_market_review_20261031 import block_indices
+     dates=np.sort(b.decision_date.unique());ordered=b.set_index('decision_date').loc[dates];days=np.asarray(dates,dtype='datetime64[D]');span_days=int((days[-1]-days[0]).astype(int))
+     for span in [365,730]:
+      if len(dates)<4 or span_days<span:result[f'xirr_delta_low95_{span}d']=np.nan;result[f'xirr_delta_high95_{span}d']=np.nan;continue
+      rng=np.random.default_rng(20261031+span);difference=ordered.xirr_candidate.to_numpy()-ordered.xirr_benchmark.to_numpy();center=difference-difference.mean();boot=np.array([center[block_indices(dates,span,rng)].mean() for _ in range(4000)]);result[f'xirr_delta_low95_{span}d']=float(difference.mean()-np.quantile(boot,.975));result[f'xirr_delta_high95_{span}d']=float(difference.mean()-np.quantile(boot,.025))
     rows.append(result)
  pd.DataFrame(rows).to_csv(c.OUT/'portfolio_paired_comparisons.csv',index=False)
 if __name__=='__main__':main()

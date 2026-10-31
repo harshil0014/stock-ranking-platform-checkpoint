@@ -110,9 +110,18 @@ def confidence_curve(full,valid,tier,folder):
    for result in metrics(h,scores):result.update(dict(zip(c.GROUP,key)));result.update(retained_fraction=fraction,eligible_stocks=len(g),mean_disagreement=float(h.disagreement.mean()));rows.append(result)
  z=pd.DataFrame(rows);z['period']=np.where(z.decision_date.lt('2024-01-01'),'development','exposed');z.groupby(['period','retained_fraction','model']).agg(pair_accuracy=('pair_accuracy','mean'),rank_ic=('rank_ic','mean'),attainment3=('attainment3','mean'),drawdown3=('drawdown3','mean'),queries=('n','size'),retained_stocks=('n','sum'),eligible_stocks=('eligible_stocks','sum')).reset_index().to_csv(folder/'confidence_abstention_curve.csv',index=False)
 
+def coverage_challenge(full,names,folder):
+ from champion_market_evaluate_20261031 import metrics
+ finite=full.evidence_fraction.gt(0)&np.isfinite(full.future_xirr)&np.isfinite(full.future_drawdown)&np.isfinite(full.future_shortfall);z=full[finite].copy();counts=z.groupby(c.GROUP,observed=True)['isin'].transform('size');z['coverage_group']=np.where(z.sector.eq('Unclassified'),'unclassified',np.where(counts.lt(5),'classified_fewer_than5','classified_at_least5'));rows=[]
+ for key,g in z.groupby(['decision_date','profile_name','coverage_group'],observed=True,sort=True):
+  if len(g)<5:continue
+  for result in metrics(g,names):result.update(dict(zip(['decision_date','profile_name','coverage_group'],key)));rows.append(result)
+ result=pd.DataFrame(rows);result['period']=np.where(result.decision_date.lt('2024-01-01'),'development','exposed');result.groupby(['period','coverage_group','model']).agg(rank_ic=('rank_ic','mean'),pair_accuracy=('pair_accuracy','mean'),attainment3=('attainment3','mean'),drawdown3=('drawdown3','mean'),rows=('n','sum'),queries=('n','size')).reset_index().to_csv(folder/'coverage_challenge.csv',index=False)
+ c.save(str(folder.relative_to(c.OUT)/'feature_coverage_counts.json'),dict(full_feature_rows=len(full),full_feature_issuers=full['isin'].nunique(),finite_guarded_outcome_rows=int(finite.sum()),groups=z.groupby('coverage_group',observed=True).size().to_dict(),unknown_or_tiny_sector_diagnostic='Pooled across coverage group within date/profile; supplementary cross-sectional diagnostic, not validated within-sector rank or primary promotion evidence'))
+
 def main(tier):
  folder=c.OUT/tier;x=pd.read_pickle(folder/'scored_panel.pkl.gz',compression='gzip');names=json.loads((folder/'evaluation_support.json').read_text())['models'];q=pd.read_csv(folder/'sector_queries.csv.gz');q['period']=np.where(q.decision_date.lt('2024-01-01'),'development','exposed');familywise(q,folder);print('BOUNDS',tier,flush=True)
- full=feature_only_stability_panel(tier,names);stability(full,names,folder);personalization(full,names,folder);confidence_curve(full,x,tier,folder);del full;print('STABILITY',tier,flush=True);calibration(x,names,folder);print('CALIBRATION',tier,flush=True)
+ full=feature_only_stability_panel(tier,names);stability(full,names,folder);personalization(full,names,folder);confidence_curve(full,x,tier,folder);coverage_challenge(full,names,folder);del full;print('STABILITY',tier,flush=True);calibration(x,names,folder);print('CALIBRATION',tier,flush=True)
  regime_slices(x,q,names,folder)
  # Liquidity is a past-price/volume proxy; regimes use trailing broad-index returns only.
  if 'log_dollar_volume' in x:liquidity='log_dollar_volume'
