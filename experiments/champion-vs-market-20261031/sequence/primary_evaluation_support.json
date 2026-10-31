@@ -1,0 +1,7 @@
+{
+  "queries": 5602,
+  "rows": 74029,
+  "minimum_stocks_per_query": 5,
+  "excluded_from_sector_queries": 10234,
+  "rule": "At least5matched finite guarded outcome stocks AFTERcohort matching; global scorecard retains all matched valid rows"
+}

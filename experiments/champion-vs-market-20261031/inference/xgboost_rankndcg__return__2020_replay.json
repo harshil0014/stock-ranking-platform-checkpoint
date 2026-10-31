@@ -1,0 +1,8 @@
+{
+  "model": "xgboost_rankndcg",
+  "target": "return",
+  "year": 2020,
+  "rows": 104542,
+  "matched_valid_rows": 98776,
+  "max_replay_error": 2.980194091506405e-08
+}

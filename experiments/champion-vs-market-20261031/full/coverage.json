@@ -1,0 +1,9 @@
+{
+  "stocks": 3561,
+  "dates": 28,
+  "profiles": 9,
+  "sectors": 53,
+  "rows": 754828,
+  "liquidity_column": "log_dollar_volume",
+  "scope": "Current-survivor finite guarded labels; price/volume does not establish actual market impact or PIT market cap; daily production refresh still not certified"
+}

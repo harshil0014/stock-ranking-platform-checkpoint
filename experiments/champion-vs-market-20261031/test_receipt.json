@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "command": "python -m pytest -q tests/*20261031.py",
+  "log_sha256": "41c89f3ffaff5bf107976983ec01a779b785b933e819e061d7d7287982f214b5",
+  "execution": "Serial Windows-managed low-load queue",
+  "external_ci": false,
+  "passed_tests": 49,
+  "gpu_adapter_contracts": 6
+}

@@ -1,0 +1,338 @@
+[
+  {
+    "date": "2020-03-31",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2020-03-31",
+    "policy": "sector_top3_equal_sector",
+    "selected": 153,
+    "missing_paths": 0
+  },
+  {
+    "date": "2020-06-30",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2020-06-30",
+    "policy": "sector_top3_equal_sector",
+    "selected": 153,
+    "missing_paths": 0
+  },
+  {
+    "date": "2020-09-30",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2020-09-30",
+    "policy": "sector_top3_equal_sector",
+    "selected": 153,
+    "missing_paths": 0
+  },
+  {
+    "date": "2020-12-31",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2020-12-31",
+    "policy": "sector_top3_equal_sector",
+    "selected": 153,
+    "missing_paths": 0
+  },
+  {
+    "date": "2021-03-31",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2021-03-31",
+    "policy": "sector_top3_equal_sector",
+    "selected": 153,
+    "missing_paths": 0
+  },
+  {
+    "date": "2021-06-30",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2021-06-30",
+    "policy": "sector_top3_equal_sector",
+    "selected": 156,
+    "missing_paths": 0
+  },
+  {
+    "date": "2021-09-30",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2021-09-30",
+    "policy": "sector_top3_equal_sector",
+    "selected": 156,
+    "missing_paths": 0
+  },
+  {
+    "date": "2021-12-31",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2021-12-31",
+    "policy": "sector_top3_equal_sector",
+    "selected": 156,
+    "missing_paths": 0
+  },
+  {
+    "date": "2022-03-31",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2022-03-31",
+    "policy": "sector_top3_equal_sector",
+    "selected": 159,
+    "missing_paths": 0
+  },
+  {
+    "date": "2022-06-30",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2022-06-30",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2022-09-30",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2022-09-30",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2022-12-31",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2022-12-31",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2023-03-31",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2023-03-31",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2023-06-30",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2023-06-30",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2023-09-30",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2023-09-30",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2023-12-31",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2023-12-31",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2024-03-31",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2024-03-31",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2024-06-30",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2024-06-30",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2024-09-30",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2024-09-30",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2024-12-31",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2024-12-31",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2025-01-31",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2025-01-31",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2025-02-28",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2025-02-28",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2025-03-31",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2025-03-31",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2025-04-30",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2025-04-30",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2025-05-31",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2025-05-31",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2025-06-30",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2025-06-30",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2025-07-31",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2025-07-31",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  },
+  {
+    "date": "2025-08-31",
+    "policy": "global_top20",
+    "selected": 20,
+    "missing_paths": 0
+  },
+  {
+    "date": "2025-08-31",
+    "policy": "sector_top3_equal_sector",
+    "selected": 162,
+    "missing_paths": 0
+  }
+]

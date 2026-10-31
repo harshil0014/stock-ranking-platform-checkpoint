@@ -1,0 +1,866 @@
+[
+  {
+    "model": "catboost_yetirank",
+    "target": "balanced",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "catboost_yetirank",
+    "target": "balanced",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 9.93129189996722e-17
+  },
+  {
+    "model": "catboost_yetirank",
+    "target": "balanced",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 1.1102230246251565e-16
+  },
+  {
+    "model": "catboost_yetirank",
+    "target": "balanced",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 9.8879238130678e-17
+  },
+  {
+    "model": "catboost_yetirank",
+    "target": "balanced",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 9.996344030316351e-17
+  },
+  {
+    "model": "catboost_yetirank",
+    "target": "balanced",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 9.996344030316351e-17
+  },
+  {
+    "model": "catboost_yetirank",
+    "target": "return",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 9.93129189996722e-17
+  },
+  {
+    "model": "catboost_yetirank",
+    "target": "return",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 9.974659986866641e-17
+  },
+  {
+    "model": "catboost_yetirank",
+    "target": "return",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 9.974659986866641e-17
+  },
+  {
+    "model": "catboost_yetirank",
+    "target": "return",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 9.974659986866641e-17
+  },
+  {
+    "model": "catboost_yetirank",
+    "target": "return",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 9.985502008591496e-17
+  },
+  {
+    "model": "catboost_yetirank",
+    "target": "return",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 9.974659986866641e-17
+  },
+  {
+    "model": "elasticnet",
+    "target": "balanced",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 5.626052856921859e-08
+  },
+  {
+    "model": "elasticnet",
+    "target": "balanced",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 6.002258301496255e-08
+  },
+  {
+    "model": "elasticnet",
+    "target": "balanced",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 6.013641362656585e-08
+  },
+  {
+    "model": "elasticnet",
+    "target": "balanced",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 2.9799652079276484e-08
+  },
+  {
+    "model": "elasticnet",
+    "target": "balanced",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 7.897033693637923e-08
+  },
+  {
+    "model": "elasticnet",
+    "target": "balanced",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 6.202621460893454e-08
+  },
+  {
+    "model": "elasticnet",
+    "target": "return",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 6.197311397393435e-08
+  },
+  {
+    "model": "elasticnet",
+    "target": "return",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 6.057952883775641e-08
+  },
+  {
+    "model": "elasticnet",
+    "target": "return",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 6.275314334835969e-08
+  },
+  {
+    "model": "elasticnet",
+    "target": "return",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 6.122619633508464e-08
+  },
+  {
+    "model": "elasticnet",
+    "target": "return",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 2.9779052779232984e-08
+  },
+  {
+    "model": "elasticnet",
+    "target": "return",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 8.082351687921374e-08
+  },
+  {
+    "model": "extra_trees",
+    "target": "balanced",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "extra_trees",
+    "target": "balanced",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 3.3306690738754696e-16
+  },
+  {
+    "model": "extra_trees",
+    "target": "balanced",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "extra_trees",
+    "target": "balanced",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 3.3306690738754696e-16
+  },
+  {
+    "model": "extra_trees",
+    "target": "balanced",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "extra_trees",
+    "target": "balanced",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 3.3306690738754696e-16
+  },
+  {
+    "model": "extra_trees",
+    "target": "return",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 3.3306690738754696e-16
+  },
+  {
+    "model": "extra_trees",
+    "target": "return",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "extra_trees",
+    "target": "return",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "extra_trees",
+    "target": "return",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "extra_trees",
+    "target": "return",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "extra_trees",
+    "target": "return",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "hist_gradient_boosting",
+    "target": "balanced",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "hist_gradient_boosting",
+    "target": "balanced",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "hist_gradient_boosting",
+    "target": "balanced",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "hist_gradient_boosting",
+    "target": "balanced",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "hist_gradient_boosting",
+    "target": "balanced",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "hist_gradient_boosting",
+    "target": "balanced",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "hist_gradient_boosting",
+    "target": "return",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "hist_gradient_boosting",
+    "target": "return",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "hist_gradient_boosting",
+    "target": "return",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "hist_gradient_boosting",
+    "target": "return",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "hist_gradient_boosting",
+    "target": "return",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "hist_gradient_boosting",
+    "target": "return",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "lightgbm_lambdarank",
+    "target": "balanced",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "lightgbm_lambdarank",
+    "target": "balanced",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "lightgbm_lambdarank",
+    "target": "balanced",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "lightgbm_lambdarank",
+    "target": "balanced",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "lightgbm_lambdarank",
+    "target": "balanced",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "lightgbm_lambdarank",
+    "target": "balanced",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "lightgbm_lambdarank",
+    "target": "return",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "lightgbm_lambdarank",
+    "target": "return",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 9.974659986866641e-17
+  },
+  {
+    "model": "lightgbm_lambdarank",
+    "target": "return",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 9.8879238130678e-17
+  },
+  {
+    "model": "lightgbm_lambdarank",
+    "target": "return",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 1.1102230246251565e-16
+  },
+  {
+    "model": "lightgbm_lambdarank",
+    "target": "return",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 9.974659986866641e-17
+  },
+  {
+    "model": "lightgbm_lambdarank",
+    "target": "return",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 9.974659986866641e-17
+  },
+  {
+    "model": "lightgbm_regression",
+    "target": "balanced",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "lightgbm_regression",
+    "target": "balanced",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "lightgbm_regression",
+    "target": "balanced",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "lightgbm_regression",
+    "target": "balanced",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "lightgbm_regression",
+    "target": "balanced",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "lightgbm_regression",
+    "target": "balanced",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 8.326672684688674e-17
+  },
+  {
+    "model": "lightgbm_regression",
+    "target": "return",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "lightgbm_regression",
+    "target": "return",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "lightgbm_regression",
+    "target": "return",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "lightgbm_regression",
+    "target": "return",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "lightgbm_regression",
+    "target": "return",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "lightgbm_regression",
+    "target": "return",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "random_forest",
+    "target": "balanced",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "random_forest",
+    "target": "balanced",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "random_forest",
+    "target": "balanced",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 3.3306690738754696e-16
+  },
+  {
+    "model": "random_forest",
+    "target": "balanced",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "random_forest",
+    "target": "balanced",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "random_forest",
+    "target": "balanced",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "random_forest",
+    "target": "return",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "random_forest",
+    "target": "return",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "random_forest",
+    "target": "return",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "random_forest",
+    "target": "return",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 2.220446049250313e-16
+  },
+  {
+    "model": "random_forest",
+    "target": "return",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "random_forest",
+    "target": "return",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 5.551115123125783e-17
+  },
+  {
+    "model": "ridge",
+    "target": "balanced",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 7.975921634262306e-08
+  },
+  {
+    "model": "ridge",
+    "target": "balanced",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 1.3641357465843384e-07
+  },
+  {
+    "model": "ridge",
+    "target": "balanced",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 6.756744386215985e-08
+  },
+  {
+    "model": "ridge",
+    "target": "balanced",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 8.419342045762335e-08
+  },
+  {
+    "model": "ridge",
+    "target": "balanced",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 6.11009216555658e-08
+  },
+  {
+    "model": "ridge",
+    "target": "balanced",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 4.230422973039438e-08
+  },
+  {
+    "model": "ridge",
+    "target": "return",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 6.411499020586575e-08
+  },
+  {
+    "model": "ridge",
+    "target": "return",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 2.0645141596276062e-07
+  },
+  {
+    "model": "ridge",
+    "target": "return",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 6.438659672092228e-08
+  },
+  {
+    "model": "ridge",
+    "target": "return",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 8.686065677832033e-08
+  },
+  {
+    "model": "ridge",
+    "target": "return",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 5.7455444291143465e-08
+  },
+  {
+    "model": "ridge",
+    "target": "return",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 5.951385495528427e-08
+  },
+  {
+    "model": "xgboost_rankndcg",
+    "target": "balanced",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 5.948638914787807e-08
+  },
+  {
+    "model": "xgboost_rankndcg",
+    "target": "balanced",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 4.999084479706539e-08
+  },
+  {
+    "model": "xgboost_rankndcg",
+    "target": "balanced",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 4.670257558458957e-08
+  },
+  {
+    "model": "xgboost_rankndcg",
+    "target": "balanced",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 4.781188955860216e-08
+  },
+  {
+    "model": "xgboost_rankndcg",
+    "target": "balanced",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 4.799499508933991e-08
+  },
+  {
+    "model": "xgboost_rankndcg",
+    "target": "balanced",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 5.1147460933265165e-08
+  },
+  {
+    "model": "xgboost_rankndcg",
+    "target": "return",
+    "year": 2020,
+    "rows": 104542,
+    "matched_valid_rows": 98776,
+    "max_replay_error": 2.980194091506405e-08
+  },
+  {
+    "model": "xgboost_rankndcg",
+    "target": "return",
+    "year": 2021,
+    "rows": 107752,
+    "matched_valid_rows": 101381,
+    "max_replay_error": 2.979125979241104e-08
+  },
+  {
+    "model": "xgboost_rankndcg",
+    "target": "return",
+    "year": 2022,
+    "rows": 112401,
+    "matched_valid_rows": 105530,
+    "max_replay_error": 2.979812618875144e-08
+  },
+  {
+    "model": "xgboost_rankndcg",
+    "target": "return",
+    "year": 2023,
+    "rows": 116443,
+    "matched_valid_rows": 109625,
+    "max_replay_error": 5.942535397096549e-08
+  },
+  {
+    "model": "xgboost_rankndcg",
+    "target": "return",
+    "year": 2024,
+    "rows": 118313,
+    "matched_valid_rows": 113379,
+    "max_replay_error": 5.955505377741588e-08
+  },
+  {
+    "model": "xgboost_rankndcg",
+    "target": "return",
+    "year": 2025,
+    "rows": 237992,
+    "matched_valid_rows": 226137,
+    "max_replay_error": 4.7915649448171393e-08
+  }
+]

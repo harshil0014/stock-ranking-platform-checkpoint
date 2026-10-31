@@ -1,0 +1,22 @@
+{
+  "algorithm": "ridge",
+  "objective": "balanced",
+  "year": 2024,
+  "seed": 20261031,
+  "train_rows": 119999,
+  "training_queries": 2285,
+  "max_training_endpoint": "2023-12-31",
+  "test_rows": 113379,
+  "seconds": 0.6814303000010113,
+  "train_key_hash": "b385009bbe435a0ff63745f65a6acb37e186bdc3cb62d583987cad9e6e50e6bc",
+  "params": {
+    "alpha": 100,
+    "copy_X": true,
+    "fit_intercept": true,
+    "max_iter": null,
+    "positive": false,
+    "random_state": null,
+    "solver": "auto",
+    "tol": 0.0001
+  }
+}

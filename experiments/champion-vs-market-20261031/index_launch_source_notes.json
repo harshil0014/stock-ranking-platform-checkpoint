@@ -1,0 +1,9 @@
+{
+  "value50_current_factsheet_launch": "2018-10-24",
+  "older_factsheet_launch": "2018-09-28",
+  "current_source": "https://www.niftyindices.com/Factsheet/FactsheetNIFTY500Value50.pdf",
+  "older_source": "https://niftyindices.com/Factsheet/Factsheet_NIFTY500_Value_50.pdf",
+  "status": "Conflicting official vintages; later date used conservatively. No effect on evaluated2020plus dates.",
+  "bse500_launch": "1999-08-09",
+  "bse_source": "https://www.bseindices.com/Downloads/Factsheet/Factsheet_BSE500_Jan2026.pdf"
+}

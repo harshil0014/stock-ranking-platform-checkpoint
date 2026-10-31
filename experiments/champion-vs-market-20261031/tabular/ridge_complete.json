@@ -1,0 +1,6 @@
+{
+  "algorithm": "ridge",
+  "folds": 6,
+  "objectives": 2,
+  "complete": true
+}

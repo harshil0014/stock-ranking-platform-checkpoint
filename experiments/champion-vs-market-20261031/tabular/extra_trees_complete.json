@@ -1,0 +1,6 @@
+{
+  "algorithm": "extra_trees",
+  "folds": 6,
+  "objectives": 2,
+  "complete": true
+}

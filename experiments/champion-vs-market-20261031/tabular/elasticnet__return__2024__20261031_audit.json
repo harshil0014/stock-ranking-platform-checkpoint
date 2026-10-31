@@ -1,0 +1,25 @@
+{
+  "algorithm": "elasticnet",
+  "objective": "return",
+  "year": 2024,
+  "seed": 20261031,
+  "train_rows": 119999,
+  "training_queries": 2285,
+  "max_training_endpoint": "2023-12-31",
+  "test_rows": 113379,
+  "seconds": 1.539937599998666,
+  "train_key_hash": "b385009bbe435a0ff63745f65a6acb37e186bdc3cb62d583987cad9e6e50e6bc",
+  "params": {
+    "alpha": 0.001,
+    "copy_X": true,
+    "fit_intercept": true,
+    "l1_ratio": 0.5,
+    "max_iter": 1000,
+    "positive": false,
+    "precompute": false,
+    "random_state": 20261031,
+    "selection": "cyclic",
+    "tol": 0.0001,
+    "warm_start": false
+  }
+}

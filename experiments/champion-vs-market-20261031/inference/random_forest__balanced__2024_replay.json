@@ -1,0 +1,8 @@
+{
+  "model": "random_forest",
+  "target": "balanced",
+  "year": 2024,
+  "rows": 118313,
+  "matched_valid_rows": 113379,
+  "max_replay_error": 5.551115123125783e-17
+}

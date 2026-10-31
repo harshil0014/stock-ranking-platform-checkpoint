@@ -1,0 +1,8 @@
+{
+  "model": "random_forest",
+  "target": "balanced",
+  "year": 2022,
+  "rows": 112401,
+  "matched_valid_rows": 105530,
+  "max_replay_error": 3.3306690738754696e-16
+}

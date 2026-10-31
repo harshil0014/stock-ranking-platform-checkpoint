@@ -1,0 +1,23 @@
+{
+  "algorithm": "catboost_yetirank",
+  "objective": "return",
+  "year": 2020,
+  "seed": 20261031,
+  "train_rows": 119997,
+  "training_queries": 2457,
+  "max_training_endpoint": "2019-12-31",
+  "test_rows": 98776,
+  "seconds": 54.971376299999974,
+  "train_key_hash": "d0977d9cadbca19f3e89e44fc88d8e827e2723c8a75929aad051e5aa6df2f6e1",
+  "params": {
+    "iterations": 120,
+    "learning_rate": 0.04,
+    "depth": 5,
+    "l2_leaf_reg": 30,
+    "loss_function": "YetiRank",
+    "thread_count": 3,
+    "random_seed": 20261031,
+    "verbose": false,
+    "allow_writing_files": false
+  }
+}

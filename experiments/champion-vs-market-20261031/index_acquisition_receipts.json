@@ -1,0 +1,186 @@
+[
+  {
+    "name": "NIFTY 500",
+    "url": "https://www.niftyindices.com/Backpage/getTotalReturnIndexString",
+    "requested_start": "01-Jan-2015",
+    "requested_end": "30-Sep-2026",
+    "retrieved_at_utc": "2026-10-31T08:41:51.763664+00:00",
+    "http_status": 200,
+    "response_sha256": "b9409540e9d017ea560c847fdd6af6d14f723b6cd9bb2e7ed6c2683b2109ac8e",
+    "rows": 2911,
+    "columns": [
+      "RequestNumber",
+      "Index Name",
+      "Date",
+      "TotalReturnsIndex",
+      "NTR_Value"
+    ],
+    "status": "ACQUIRED_SCHEMA_TO_VALIDATE"
+  },
+  {
+    "name": "NIFTY 50",
+    "url": "https://www.niftyindices.com/Backpage/getTotalReturnIndexString",
+    "requested_start": "01-Jan-2015",
+    "requested_end": "30-Sep-2026",
+    "retrieved_at_utc": "2026-10-31T08:41:51.764390+00:00",
+    "http_status": 200,
+    "response_sha256": "2e9fde668ea982689ca92bfa67c8d88b298657ddab90455e2426eaa8c1648922",
+    "rows": 2911,
+    "columns": [
+      "RequestNumber",
+      "Index Name",
+      "Date",
+      "TotalReturnsIndex",
+      "NTR_Value"
+    ],
+    "status": "ACQUIRED_SCHEMA_TO_VALIDATE"
+  },
+  {
+    "name": "NIFTY MIDCAP 150",
+    "url": "https://www.niftyindices.com/Backpage/getTotalReturnIndexString",
+    "requested_start": "01-Jan-2015",
+    "requested_end": "30-Sep-2026",
+    "retrieved_at_utc": "2026-10-31T08:41:51.764988+00:00",
+    "http_status": 200,
+    "response_sha256": "5f44777299dde216ba6a28133aba5f8a5f32da5c77c61694a2c4618fe7703ee2",
+    "rows": 2911,
+    "columns": [
+      "RequestNumber",
+      "Index Name",
+      "Date",
+      "TotalReturnsIndex",
+      "NTR_Value"
+    ],
+    "status": "ACQUIRED_SCHEMA_TO_VALIDATE"
+  },
+  {
+    "name": "NIFTY SMALLCAP 250",
+    "url": "https://www.niftyindices.com/Backpage/getTotalReturnIndexString",
+    "requested_start": "01-Jan-2015",
+    "requested_end": "30-Sep-2026",
+    "retrieved_at_utc": "2026-10-31T08:41:55.184346+00:00",
+    "http_status": 200,
+    "response_sha256": "36f4e2cdc7dc7b2bec9be9725b02aeda3aad49f23dab5046bd6fe1864bdd5b59",
+    "rows": 2911,
+    "columns": [
+      "RequestNumber",
+      "Index Name",
+      "Date",
+      "TotalReturnsIndex",
+      "NTR_Value"
+    ],
+    "status": "ACQUIRED_SCHEMA_TO_VALIDATE"
+  },
+  {
+    "name": "NIFTY500 MOMENTUM 50",
+    "url": "https://www.niftyindices.com/Backpage/getTotalReturnIndexString",
+    "requested_start": "01-Jan-2015",
+    "requested_end": "30-Sep-2026",
+    "retrieved_at_utc": "2026-10-31T08:41:55.196162+00:00",
+    "http_status": 200,
+    "response_sha256": "9d5d6ae93a5761eb6c4b0c0301137ed79c2719ec1b54661e84afbf801016fb32",
+    "rows": 2911,
+    "columns": [
+      "RequestNumber",
+      "Index Name",
+      "Date",
+      "TotalReturnsIndex",
+      "NTR_Value"
+    ],
+    "status": "ACQUIRED_SCHEMA_TO_VALIDATE"
+  },
+  {
+    "name": "NIFTY500 QUALITY 50",
+    "url": "https://www.niftyindices.com/Backpage/getTotalReturnIndexString",
+    "requested_start": "01-Jan-2015",
+    "requested_end": "30-Sep-2026",
+    "retrieved_at_utc": "2026-10-31T08:41:55.198080+00:00",
+    "http_status": 200,
+    "response_sha256": "a3c292234f34f271bdb74efee99f4fc373ca2e855b4405cfd0fb9cbb3309cd34",
+    "rows": 2911,
+    "columns": [
+      "RequestNumber",
+      "Index Name",
+      "Date",
+      "TotalReturnsIndex",
+      "NTR_Value"
+    ],
+    "status": "ACQUIRED_SCHEMA_TO_VALIDATE"
+  },
+  {
+    "name": "NIFTY500 VALUE 50",
+    "url": "https://www.niftyindices.com/Backpage/getTotalReturnIndexString",
+    "requested_start": "01-Jan-2015",
+    "requested_end": "30-Sep-2026",
+    "retrieved_at_utc": "2026-10-31T08:41:56.115496+00:00",
+    "http_status": 200,
+    "response_sha256": "3f694cfd23b391f1fb9e3ef30d1897813a8a9d9a3b17af645d693ed0f8d23407",
+    "rows": 2911,
+    "columns": [
+      "RequestNumber",
+      "Index Name",
+      "Date",
+      "TotalReturnsIndex",
+      "NTR_Value"
+    ],
+    "status": "ACQUIRED_SCHEMA_TO_VALIDATE"
+  },
+  {
+    "name": "NIFTY500 LOW VOLATILITY 50",
+    "url": "https://www.niftyindices.com/Backpage/getTotalReturnIndexString",
+    "requested_start": "01-Jan-2015",
+    "requested_end": "30-Sep-2026",
+    "retrieved_at_utc": "2026-10-31T08:41:56.145933+00:00",
+    "http_status": 200,
+    "response_sha256": "0bc041afabeba4227ed17a3382e6a670d580bc7dadfe7b2aa7842233e531c2a6",
+    "rows": 2911,
+    "columns": [
+      "RequestNumber",
+      "Index Name",
+      "Date",
+      "TotalReturnsIndex",
+      "NTR_Value"
+    ],
+    "status": "ACQUIRED_SCHEMA_TO_VALIDATE"
+  },
+  {
+    "name": "NIFTY500 MULTIFACTOR MQVLV 50",
+    "url": "https://www.niftyindices.com/Backpage/getTotalReturnIndexString",
+    "requested_start": "01-Jan-2015",
+    "requested_end": "30-Sep-2026",
+    "retrieved_at_utc": "2026-10-31T08:41:56.152781+00:00",
+    "http_status": 200,
+    "response_sha256": "74e81ff535dff658c30b70086161150188e1701b0bbb9833d18083bd6568f17d",
+    "rows": 2911,
+    "columns": [
+      "RequestNumber",
+      "Index Name",
+      "Date",
+      "TotalReturnsIndex",
+      "NTR_Value"
+    ],
+    "status": "ACQUIRED_SCHEMA_TO_VALIDATE"
+  },
+  {
+    "name": "NIFTY200 MOMENTUM 30",
+    "url": "https://www.niftyindices.com/Backpage/getTotalReturnIndexString",
+    "requested_start": "01-Jan-2015",
+    "requested_end": "30-Sep-2026",
+    "retrieved_at_utc": "2026-10-31T08:41:57.089478+00:00",
+    "http_status": 200,
+    "response_sha256": "263b0e9685f5daa34f5d09450050456c0013dfba1bbf5665d3e8b8ed67513063",
+    "rows": 2911,
+    "columns": [
+      "RequestNumber",
+      "Index Name",
+      "Date",
+      "TotalReturnsIndex",
+      "NTR_Value"
+    ],
+    "status": "ACQUIRED_SCHEMA_TO_VALIDATE"
+  },
+  {
+    "name": "BSE 500",
+    "status": "SEPARATE_BSE_ENDPOINT_REQUIRED"
+  }
+]

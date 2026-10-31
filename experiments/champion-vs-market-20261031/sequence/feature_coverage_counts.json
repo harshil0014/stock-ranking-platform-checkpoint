@@ -1,0 +1,11 @@
+{
+  "full_feature_rows": 87143,
+  "full_feature_issuers": 406,
+  "finite_guarded_outcome_rows": 85528,
+  "groups": {
+    "classified_at_least5": 74029,
+    "classified_fewer_than5": 10491,
+    "unclassified": 1008
+  },
+  "unknown_or_tiny_sector_diagnostic": "Pooled across coverage group within date/profile; supplementary cross-sectional diagnostic, not validated within-sector rank or primary promotion evidence"
+}

@@ -1,0 +1,9 @@
+{
+  "selected_by_development": "active_champion",
+  "passes_familywise_and_exposed": false,
+  "serving_champion": "active_champion",
+  "production_promoted": false,
+  "reason": "Retrospective research only; even a statistical pass requires prospective and PIT validation",
+  "bootstrap": "Centered paired date differences; moving date blocks sampled with replacement; simultaneous maximum across all candidates in tier; 4000 resamples; 365 and730days",
+  "exposed": "Previously exposed historical period, not fresh holdout"
+}

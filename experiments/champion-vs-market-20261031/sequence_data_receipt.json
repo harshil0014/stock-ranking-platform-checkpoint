@@ -1,0 +1,10 @@
+{
+  "rows": 126230,
+  "issuer_windows": 14723,
+  "issuers": 434,
+  "features": "Last8of252-window normalizedOHLCV+tradedvalue6columns;4investorparameters;12cross-stock input-only market context features",
+  "loss_and_inference": "Full feature-available512-source issuer cohort in inference; unknown/excluded outcomes retained as context, masked only in training loss and evaluation",
+  "source_sha256": "f29a184feb4d2cfe6f0a1cc1d1e22118daaf6f936a8eef2cf0cf009be99f4f51",
+  "architecture": "Original pinned model classes extracted unchanged by AST; Qlib plumbing and original Chinese data loaders excluded",
+  "adaptation": "Indian SIP12-month labels and reducedOHLCV input, not Alpha158 or exact paper replication"
+}

@@ -1,0 +1,6 @@
+{
+  "algorithm": "hist_gradient_boosting",
+  "folds": 6,
+  "objectives": 2,
+  "complete": true
+}

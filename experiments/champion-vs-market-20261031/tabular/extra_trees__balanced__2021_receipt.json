@@ -1,0 +1,11 @@
+{
+  "unique_fits": 3,
+  "seeds": [
+    20261031,
+    20261032,
+    20261033
+  ],
+  "deterministic": false,
+  "mean_seed_sd": 0.002232179887287031,
+  "seconds": 211.04365329999928
+}

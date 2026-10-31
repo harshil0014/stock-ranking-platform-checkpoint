@@ -1,0 +1,11 @@
+{
+  "basis": "Yahoo provider Adj Close research proxy; fractional units; unresolved official action windows block entire portfolio; no silent removal of missing selected stocks",
+  "universe": "Full feature-available current-survivor panel, including unknown outcome rows; not PIT survivorship-free",
+  "profile": "base7500; all9profiles evaluated separately in individual-stock ranking and index SIP panels",
+  "policy": "Forward12month fixed selection, constant capital weights per contribution, no intermediate rebalancing; overlapping cohorts not chainable CAGR",
+  "risk": "Daily flow-adjusted returns; RF0 Sharpe; first incomplete execution days excluded from risk stats; cost per buy and final sale",
+  "planned_queries": 4200,
+  "models": 75,
+  "completed_cost_rows": 8644,
+  "failure_records": 2039
+}

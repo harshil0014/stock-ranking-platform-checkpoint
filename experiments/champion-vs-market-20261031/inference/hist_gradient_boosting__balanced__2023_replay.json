@@ -1,0 +1,8 @@
+{
+  "model": "hist_gradient_boosting",
+  "target": "balanced",
+  "year": 2023,
+  "rows": 116443,
+  "matched_valid_rows": 109625,
+  "max_replay_error": 5.551115123125783e-17
+}

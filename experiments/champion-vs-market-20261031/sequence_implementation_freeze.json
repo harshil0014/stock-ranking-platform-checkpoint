@@ -1,0 +1,14 @@
+{
+  "frozen_at_utc": "2026-10-31T08:50:44.275442+00:00",
+  "before_outcome_evaluation": true,
+  "reason": "Training throughput; initial grouped GRU trial only training losses/runtime inspected. Recompute its unfinished first fold.",
+  "independent_models_batch": "GRU/ALSTM/Transformer:shuffled1024eligible rows",
+  "cross_stock_models_batch": "GAT/HIST/MASTER:whole date/profile feature cohort, masked mature label loss",
+  "epochs": 20,
+  "seeds": [
+    20261031,
+    20261032,
+    20261033
+  ],
+  "cuda_preload": true
+}

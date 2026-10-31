@@ -1,0 +1,8 @@
+{
+  "model": "elasticnet",
+  "target": "balanced",
+  "year": 2021,
+  "rows": 107752,
+  "matched_valid_rows": 101381,
+  "max_replay_error": 6.002258301496255e-08
+}

@@ -1,0 +1,8 @@
+{
+  "url": "https://api.bseindia.com/BseIndiaAPI/api/ProduceCSVForDate/w?strIndex=BSE500T&dtFromDate=01%2F01%2F2015&dtToDate=30%2F09%2F2026&period=D",
+  "http_status": 200,
+  "bytes": 0,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "retrieved_at_utc": "2026-10-31T09:26:03.574450+00:00",
+  "basis": "EMPTY_UNAVAILABLE"
+}

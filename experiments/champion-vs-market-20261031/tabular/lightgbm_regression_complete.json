@@ -1,0 +1,6 @@
+{
+  "algorithm": "lightgbm_regression",
+  "folds": 6,
+  "objectives": 2,
+  "complete": true
+}

@@ -1,0 +1,32 @@
+{
+  "algorithm": "random_forest",
+  "objective": "return",
+  "year": 2022,
+  "seed": 20261033,
+  "train_rows": 119996,
+  "training_queries": 2348,
+  "max_training_endpoint": "2021-12-31",
+  "test_rows": 105530,
+  "seconds": 170.77321350000057,
+  "train_key_hash": "ef5bcc02391ad06527dd04ae4bcdd5e663e5c7dcd351ff4e51fa33cc904db7a6",
+  "params": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "criterion": "squared_error",
+    "max_depth": 5,
+    "max_features": 0.8,
+    "max_leaf_nodes": 15,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 200,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 120,
+    "n_jobs": 3,
+    "oob_score": false,
+    "random_state": 20261033,
+    "verbose": 0,
+    "warm_start": false
+  }
+}

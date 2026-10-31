@@ -1,0 +1,8 @@
+{
+  "model": "extra_trees",
+  "target": "balanced",
+  "year": 2023,
+  "rows": 116443,
+  "matched_valid_rows": 109625,
+  "max_replay_error": 3.3306690738754696e-16
+}

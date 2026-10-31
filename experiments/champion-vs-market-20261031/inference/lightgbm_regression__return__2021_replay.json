@@ -1,0 +1,8 @@
+{
+  "model": "lightgbm_regression",
+  "target": "return",
+  "year": 2021,
+  "rows": 107752,
+  "matched_valid_rows": 101381,
+  "max_replay_error": 5.551115123125783e-17
+}

@@ -1,0 +1,8 @@
+{
+  "model": "ridge",
+  "target": "return",
+  "year": 2020,
+  "rows": 104542,
+  "matched_valid_rows": 98776,
+  "max_replay_error": 6.411499020586575e-08
+}

@@ -1,0 +1,73 @@
+{
+  "checks": [
+    {
+      "architecture": "gru",
+      "output_shape": [
+        8
+      ],
+      "finite_forward": true,
+      "finite_nonzero_backward": true,
+      "permutation_max_error": 0.0,
+      "device": "cuda",
+      "passed": true
+    },
+    {
+      "architecture": "alstm",
+      "output_shape": [
+        8
+      ],
+      "finite_forward": true,
+      "finite_nonzero_backward": true,
+      "permutation_max_error": 0.0,
+      "device": "cuda",
+      "passed": true
+    },
+    {
+      "architecture": "transformer",
+      "output_shape": [
+        8
+      ],
+      "finite_forward": true,
+      "finite_nonzero_backward": true,
+      "permutation_max_error": 0.0,
+      "device": "cuda",
+      "passed": true
+    },
+    {
+      "architecture": "gats",
+      "output_shape": [
+        8
+      ],
+      "finite_forward": true,
+      "finite_nonzero_backward": true,
+      "permutation_max_error": 2.9802322387695312e-08,
+      "device": "cuda",
+      "passed": true
+    },
+    {
+      "architecture": "hist",
+      "output_shape": [
+        8
+      ],
+      "finite_forward": true,
+      "finite_nonzero_backward": true,
+      "permutation_max_error": 1.4901161193847656e-07,
+      "device": "cuda",
+      "passed": true
+    },
+    {
+      "architecture": "master",
+      "output_shape": [
+        8
+      ],
+      "finite_forward": true,
+      "finite_nonzero_backward": true,
+      "permutation_max_error": 2.384185791015625e-07,
+      "device": "cuda",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "test": "Same-date/profile stock permutation preserves predictions within CUDA float tolerance; finite scalar output and nonzero finite gradients for all6foreign adapters",
+  "not_a_performance_evaluation": true
+}

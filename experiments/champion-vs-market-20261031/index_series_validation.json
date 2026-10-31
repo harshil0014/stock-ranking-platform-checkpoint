@@ -1,0 +1,99 @@
+[
+  {
+    "index": "NIFTY200_MOMENTUM_30",
+    "rows": 2911,
+    "start": "2015-01-01",
+    "end": "2026-09-30",
+    "series": "OFFICIAL_GROSS_TRI",
+    "launch_date": "2020-08-25",
+    "sha256": "3e96831651e7ba40561b11ef34ae20bd11c0c311621c3dd8f1ecee5597eaa0a6"
+  },
+  {
+    "index": "NIFTY500_LOW_VOLATILITY_50",
+    "rows": 2911,
+    "start": "2015-01-01",
+    "end": "2026-09-30",
+    "series": "OFFICIAL_GROSS_TRI",
+    "launch_date": "2024-12-20",
+    "sha256": "04fc72fab9778e55cce80230434b536c88eb2dbe4bf6be32616ed4ac82fa031b"
+  },
+  {
+    "index": "NIFTY500_MOMENTUM_50",
+    "rows": 2911,
+    "start": "2015-01-01",
+    "end": "2026-09-30",
+    "series": "OFFICIAL_GROSS_TRI",
+    "launch_date": "2024-06-04",
+    "sha256": "66dfc84e5caf7436b21f26c773902ebeb1f7e9ff0f78dbe465ec3186438a40a2"
+  },
+  {
+    "index": "NIFTY500_MULTIFACTOR_MQVLV_50",
+    "rows": 2911,
+    "start": "2015-01-01",
+    "end": "2026-09-30",
+    "series": "OFFICIAL_GROSS_TRI",
+    "launch_date": "2025-02-06",
+    "sha256": "2c8a3eec64f6dc81c4cfcbf4f5f6491fc23efa357bca02336aa70537c40907f8"
+  },
+  {
+    "index": "NIFTY500_QUALITY_50",
+    "rows": 2911,
+    "start": "2015-01-01",
+    "end": "2026-09-30",
+    "series": "OFFICIAL_GROSS_TRI",
+    "launch_date": "2024-12-20",
+    "sha256": "17cbc95b4ba1986fa8e046e6c7a1386ca534da7cb63ec5cc7e607626349ef243"
+  },
+  {
+    "index": "NIFTY500_VALUE_50",
+    "rows": 2911,
+    "start": "2015-01-01",
+    "end": "2026-09-30",
+    "series": "OFFICIAL_GROSS_TRI",
+    "launch_date": "2018-10-24",
+    "sha256": "68aa9b770e0226677b744f7e40091752376c2dcec49a889fdad6b93436f7c71f"
+  },
+  {
+    "index": "NIFTY_500",
+    "rows": 2911,
+    "start": "2015-01-01",
+    "end": "2026-09-30",
+    "series": "OFFICIAL_GROSS_TRI",
+    "launch_date": "1999-06-07",
+    "sha256": "bb821c3a80a87023d2b0fbccf03343f5cb92a9067c876c6dc7acac5964f0bc1f"
+  },
+  {
+    "index": "NIFTY_50",
+    "rows": 2911,
+    "start": "2015-01-01",
+    "end": "2026-09-30",
+    "series": "OFFICIAL_GROSS_TRI",
+    "launch_date": "1996-04-22",
+    "sha256": "7278b8cbbe634455a1e04e165439106bf9069cfb9a970e73f2028111224462fb"
+  },
+  {
+    "index": "NIFTY_MIDCAP_150",
+    "rows": 2911,
+    "start": "2015-01-01",
+    "end": "2026-09-30",
+    "series": "OFFICIAL_GROSS_TRI",
+    "launch_date": "2016-04-01",
+    "sha256": "85111e3cc025f8d179e54a10490293731e7888a4e6fe7346af392dc7fcdc6389"
+  },
+  {
+    "index": "NIFTY_SMALLCAP_250",
+    "rows": 2911,
+    "start": "2015-01-01",
+    "end": "2026-09-30",
+    "series": "OFFICIAL_GROSS_TRI",
+    "launch_date": "2016-04-01",
+    "sha256": "ff40e0733ee8e8de5c6d5f3e15929a57e78f22e8d3dc534a85954b09eb62fc2f"
+  },
+  {
+    "index": "BSE500_PRICE_ONLY",
+    "rows": 2911,
+    "series": "OFFICIAL_PRICE_INDEX_NOT_TRI",
+    "tri_status": "BSE500T official ticker returnedempty; current public UI offers price graph and client access",
+    "sha256": "e52a865ca954023fae73c6d275c125b83029862b981885ed2dfce0334c960b6e"
+  }
+]

@@ -1,0 +1,102 @@
+{
+  "checks": [
+    {
+      "check": "Every recorded fit strictly purges actual outcome endpoints at annual boundary",
+      "audits": 300,
+      "passed": true
+    },
+    {
+      "check": "All tabular algorithms/objectives/seeds use identical capped whole-query training keys within each year",
+      "years": 6,
+      "cap": 120000,
+      "passed": true
+    },
+    {
+      "check": "All preregistered18tabular specifications and6foreign architectures completed",
+      "passed": true
+    },
+    {
+      "check": "All6foreign adapters pass forward/backward and stock-permutation contracts",
+      "passed": true
+    },
+    {
+      "check": "All foreign models and matched controls retain the complete feature-available sequence cohort including masked unknown outcomes",
+      "rows": 87143,
+      "unknown_or_ineligible_outcome_rows": 2880,
+      "passed": true
+    },
+    {
+      "check": "full cohort has bothperiods, finite temporal bounds and mature-only calibration",
+      "policies": 75,
+      "passed": true
+    },
+    {
+      "check": "sequence cohort has bothperiods, finite temporal bounds and mature-only calibration",
+      "policies": 64,
+      "passed": true
+    },
+    {
+      "check": "All108annual tabular replay jobs match original valid predictions within float32 tolerance",
+      "maximum_error": 2.0645141596276062e-07,
+      "passed": true
+    },
+    {
+      "check": "Pinned foreign implementation receipts present with bothMITlicenses",
+      "passed": true
+    },
+    {
+      "check": "Tracked changes since baseline are confined to research, evidence and benchmark tests",
+      "changed_files": 42,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "production_runtime_changed": false,
+  "baseline": "b98ac9d0745958e516d73c0ade573249cce20ccb",
+  "head_at_validation": "945d26fa2017b3d8f69811f9f1f7ae4bc03d3f2e",
+  "changed_paths": [
+    ".gitattributes",
+    "experiments/champion-vs-market-20261031/protocol.json",
+    "research/literature/20261031/REFERENCES.md",
+    "research/literature/20261031/code/SJTU-DMTai__MASTER__LICENSE",
+    "research/literature/20261031/code/SJTU-DMTai__MASTER__base_model.py",
+    "research/literature/20261031/code/SJTU-DMTai__MASTER__master.py",
+    "research/literature/20261031/code/microsoft__qlib__LICENSE",
+    "research/literature/20261031/code/microsoft__qlib__examples__benchmarks__README.md",
+    "research/literature/20261031/code/microsoft__qlib__qlib__contrib__model__pytorch_alstm.py",
+    "research/literature/20261031/code/microsoft__qlib__qlib__contrib__model__pytorch_gats.py",
+    "research/literature/20261031/code/microsoft__qlib__qlib__contrib__model__pytorch_gru.py",
+    "research/literature/20261031/code/microsoft__qlib__qlib__contrib__model__pytorch_hist.py",
+    "research/literature/20261031/code/microsoft__qlib__qlib__contrib__model__pytorch_tra.py",
+    "research/literature/20261031/code/microsoft__qlib__qlib__contrib__model__pytorch_transformer.py",
+    "research/literature/20261031/code_receipts.json",
+    "research/literature/20261031/method_status_matrix.json",
+    "research/literature/20261031/paper_registry.json",
+    "research/protocols/champion_market_low_load_20261031.md",
+    "research/protocols/champion_vs_market_20261031.json",
+    "research/protocols/champion_vs_market_implementation_20261031.md",
+    "research/reports/champion_vs_market_literature_20261031.md",
+    "research/reports/same_goal_competitors_20261031.md",
+    "research/runners/champion_market_audit_20261031.py",
+    "research/runners/champion_market_bundle_20261031.py",
+    "research/runners/champion_market_common_20261031.py",
+    "research/runners/champion_market_evaluate_20261031.py",
+    "research/runners/champion_market_external_data_20261031.py",
+    "research/runners/champion_market_indices_20261031.py",
+    "research/runners/champion_market_inference_20261031.py",
+    "research/runners/champion_market_literature_20261031.py",
+    "research/runners/champion_market_low_load_20261031.py",
+    "research/runners/champion_market_plots_20261031.py",
+    "research/runners/champion_market_portfolio_20261031.py",
+    "research/runners/champion_market_publish_20261031.py",
+    "research/runners/champion_market_review_20261031.py",
+    "research/runners/champion_market_sequence_20261031.py",
+    "research/runners/champion_market_sequence_controls_20261031.py",
+    "research/runners/champion_market_sequence_smoke_20261031.py",
+    "research/runners/champion_market_tabular_20261031.py",
+    "research/runners/champion_market_validate_20261031.py",
+    "research/runners/market_index_acquisition_20261031.py",
+    "tests/test_champion_market_20261031.py"
+  ],
+  "external_ci_claimed": false
+}

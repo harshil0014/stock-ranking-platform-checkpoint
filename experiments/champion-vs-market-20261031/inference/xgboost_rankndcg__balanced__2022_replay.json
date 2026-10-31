@@ -1,0 +1,8 @@
+{
+  "model": "xgboost_rankndcg",
+  "target": "balanced",
+  "year": 2022,
+  "rows": 112401,
+  "matched_valid_rows": 105530,
+  "max_replay_error": 4.670257558458957e-08
+}

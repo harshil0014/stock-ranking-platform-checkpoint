@@ -1,0 +1,8 @@
+{
+  "model": "elasticnet",
+  "target": "return",
+  "year": 2022,
+  "rows": 112401,
+  "matched_valid_rows": 105530,
+  "max_replay_error": 6.275314334835969e-08
+}

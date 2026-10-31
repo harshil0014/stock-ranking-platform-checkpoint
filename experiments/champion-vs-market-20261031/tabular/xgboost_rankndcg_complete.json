@@ -1,0 +1,6 @@
+{
+  "algorithm": "xgboost_rankndcg",
+  "folds": 6,
+  "objectives": 2,
+  "complete": true
+}

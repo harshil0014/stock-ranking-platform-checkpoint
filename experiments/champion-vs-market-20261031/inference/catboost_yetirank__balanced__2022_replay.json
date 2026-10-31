@@ -1,0 +1,8 @@
+{
+  "model": "catboost_yetirank",
+  "target": "balanced",
+  "year": 2022,
+  "rows": 112401,
+  "matched_valid_rows": 105530,
+  "max_replay_error": 1.1102230246251565e-16
+}

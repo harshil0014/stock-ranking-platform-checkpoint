@@ -1,0 +1,6 @@
+{
+  "algorithm": "random_forest",
+  "folds": 6,
+  "objectives": 2,
+  "complete": true
+}

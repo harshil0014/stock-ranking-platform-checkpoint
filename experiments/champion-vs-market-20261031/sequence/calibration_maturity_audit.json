@@ -1,0 +1,1586 @@
+[
+  {
+    "profile": "amount1000",
+    "date": "2021-09-30",
+    "max_training_endpoint": "2021-06-30",
+    "oof_dates": 2,
+    "rows": 595,
+    "climatology": 0.6954092470396818
+  },
+  {
+    "profile": "amount1000",
+    "date": "2021-12-31",
+    "max_training_endpoint": "2021-09-30",
+    "oof_dates": 3,
+    "rows": 899,
+    "climatology": 0.7136061646931212
+  },
+  {
+    "profile": "amount1000",
+    "date": "2022-03-31",
+    "max_training_endpoint": "2021-12-31",
+    "oof_dates": 4,
+    "rows": 1203,
+    "climatology": 0.7177704129935252
+  },
+  {
+    "profile": "amount1000",
+    "date": "2022-06-30",
+    "max_training_endpoint": "2022-03-31",
+    "oof_dates": 5,
+    "rows": 1507,
+    "climatology": 0.68671633039482
+  },
+  {
+    "profile": "amount1000",
+    "date": "2022-09-30",
+    "max_training_endpoint": "2022-06-30",
+    "oof_dates": 6,
+    "rows": 1810,
+    "climatology": 0.6239687791794019
+  },
+  {
+    "profile": "amount1000",
+    "date": "2022-12-31",
+    "max_training_endpoint": "2022-09-30",
+    "oof_dates": 7,
+    "rows": 2115,
+    "climatology": 0.5844790940975669
+  },
+  {
+    "profile": "amount1000",
+    "date": "2023-03-31",
+    "max_training_endpoint": "2022-12-31",
+    "oof_dates": 8,
+    "rows": 2426,
+    "climatology": 0.5616603648916411
+  },
+  {
+    "profile": "amount1000",
+    "date": "2023-06-30",
+    "max_training_endpoint": "2023-03-31",
+    "oof_dates": 9,
+    "rows": 2743,
+    "climatology": 0.5248407589783393
+  },
+  {
+    "profile": "amount1000",
+    "date": "2023-09-30",
+    "max_training_endpoint": "2023-06-30",
+    "oof_dates": 10,
+    "rows": 3061,
+    "climatology": 0.5170107711308197
+  },
+  {
+    "profile": "amount1000",
+    "date": "2023-12-31",
+    "max_training_endpoint": "2023-09-30",
+    "oof_dates": 11,
+    "rows": 3385,
+    "climatology": 0.5233206785813288
+  },
+  {
+    "profile": "amount1000",
+    "date": "2024-03-31",
+    "max_training_endpoint": "2023-12-31",
+    "oof_dates": 12,
+    "rows": 3712,
+    "climatology": 0.5383242815639755
+  },
+  {
+    "profile": "amount1000",
+    "date": "2024-06-30",
+    "max_training_endpoint": "2024-03-31",
+    "oof_dates": 13,
+    "rows": 4048,
+    "climatology": 0.5394971390260873
+  },
+  {
+    "profile": "amount1000",
+    "date": "2024-09-30",
+    "max_training_endpoint": "2024-06-30",
+    "oof_dates": 14,
+    "rows": 4381,
+    "climatology": 0.5479371760711994
+  },
+  {
+    "profile": "amount1000",
+    "date": "2024-12-31",
+    "max_training_endpoint": "2024-09-30",
+    "oof_dates": 15,
+    "rows": 4728,
+    "climatology": 0.5511774834493539
+  },
+  {
+    "profile": "amount1000",
+    "date": "2025-01-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5066,
+    "climatology": 0.5479788907337693
+  },
+  {
+    "profile": "amount1000",
+    "date": "2025-02-28",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5066,
+    "climatology": 0.5479788907337693
+  },
+  {
+    "profile": "amount1000",
+    "date": "2025-03-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5066,
+    "climatology": 0.5479788907337693
+  },
+  {
+    "profile": "amount1000",
+    "date": "2025-04-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5421,
+    "climatology": 0.526681043805768
+  },
+  {
+    "profile": "amount1000",
+    "date": "2025-05-31",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5421,
+    "climatology": 0.526681043805768
+  },
+  {
+    "profile": "amount1000",
+    "date": "2025-06-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5421,
+    "climatology": 0.526681043805768
+  },
+  {
+    "profile": "amount1000",
+    "date": "2025-07-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5777,
+    "climatology": 0.5130264789501416
+  },
+  {
+    "profile": "amount1000",
+    "date": "2025-08-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5777,
+    "climatology": 0.5130264789501416
+  },
+  {
+    "profile": "amount50000",
+    "date": "2021-09-30",
+    "max_training_endpoint": "2021-06-30",
+    "oof_dates": 2,
+    "rows": 595,
+    "climatology": 0.7071657778179516
+  },
+  {
+    "profile": "amount50000",
+    "date": "2021-12-31",
+    "max_training_endpoint": "2021-09-30",
+    "oof_dates": 3,
+    "rows": 899,
+    "climatology": 0.7269263080189853
+  },
+  {
+    "profile": "amount50000",
+    "date": "2022-03-31",
+    "max_training_endpoint": "2021-12-31",
+    "oof_dates": 4,
+    "rows": 1203,
+    "climatology": 0.7318723625931863
+  },
+  {
+    "profile": "amount50000",
+    "date": "2022-06-30",
+    "max_training_endpoint": "2022-03-31",
+    "oof_dates": 5,
+    "rows": 1507,
+    "climatology": 0.6993136795482333
+  },
+  {
+    "profile": "amount50000",
+    "date": "2022-09-30",
+    "max_training_endpoint": "2022-06-30",
+    "oof_dates": 6,
+    "rows": 1810,
+    "climatology": 0.6344665701405795
+  },
+  {
+    "profile": "amount50000",
+    "date": "2022-12-31",
+    "max_training_endpoint": "2022-09-30",
+    "oof_dates": 7,
+    "rows": 2115,
+    "climatology": 0.5934772006357193
+  },
+  {
+    "profile": "amount50000",
+    "date": "2023-03-31",
+    "max_training_endpoint": "2022-12-31",
+    "oof_dates": 8,
+    "rows": 2426,
+    "climatology": 0.5695337081125244
+  },
+  {
+    "profile": "amount50000",
+    "date": "2023-06-30",
+    "max_training_endpoint": "2023-03-31",
+    "oof_dates": 9,
+    "rows": 2742,
+    "climatology": 0.5319202581253382
+  },
+  {
+    "profile": "amount50000",
+    "date": "2023-09-30",
+    "max_training_endpoint": "2023-06-30",
+    "oof_dates": 10,
+    "rows": 3061,
+    "climatology": 0.5232423388958763
+  },
+  {
+    "profile": "amount50000",
+    "date": "2023-12-31",
+    "max_training_endpoint": "2023-09-30",
+    "oof_dates": 11,
+    "rows": 3386,
+    "climatology": 0.5291014269682792
+  },
+  {
+    "profile": "amount50000",
+    "date": "2024-03-31",
+    "max_training_endpoint": "2023-12-31",
+    "oof_dates": 12,
+    "rows": 3713,
+    "climatology": 0.5443878269125639
+  },
+  {
+    "profile": "amount50000",
+    "date": "2024-06-30",
+    "max_training_endpoint": "2024-03-31",
+    "oof_dates": 13,
+    "rows": 4049,
+    "climatology": 0.545552133267275
+  },
+  {
+    "profile": "amount50000",
+    "date": "2024-09-30",
+    "max_training_endpoint": "2024-06-30",
+    "oof_dates": 14,
+    "rows": 4382,
+    "climatology": 0.5542031713672316
+  },
+  {
+    "profile": "amount50000",
+    "date": "2024-12-31",
+    "max_training_endpoint": "2024-09-30",
+    "oof_dates": 15,
+    "rows": 4729,
+    "climatology": 0.5577942375604248
+  },
+  {
+    "profile": "amount50000",
+    "date": "2025-01-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5067,
+    "climatology": 0.5545519201981053
+  },
+  {
+    "profile": "amount50000",
+    "date": "2025-02-28",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5067,
+    "climatology": 0.5545519201981053
+  },
+  {
+    "profile": "amount50000",
+    "date": "2025-03-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5067,
+    "climatology": 0.5545519201981053
+  },
+  {
+    "profile": "amount50000",
+    "date": "2025-04-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5423,
+    "climatology": 0.5333324086993404
+  },
+  {
+    "profile": "amount50000",
+    "date": "2025-05-31",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5423,
+    "climatology": 0.5333324086993404
+  },
+  {
+    "profile": "amount50000",
+    "date": "2025-06-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5423,
+    "climatology": 0.5333324086993404
+  },
+  {
+    "profile": "amount50000",
+    "date": "2025-07-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5779,
+    "climatology": 0.5189962137091773
+  },
+  {
+    "profile": "amount50000",
+    "date": "2025-08-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5779,
+    "climatology": 0.5189962137091773
+  },
+  {
+    "profile": "base7500",
+    "date": "2021-09-30",
+    "max_training_endpoint": "2021-06-30",
+    "oof_dates": 2,
+    "rows": 595,
+    "climatology": 0.7054935370152761
+  },
+  {
+    "profile": "base7500",
+    "date": "2021-12-31",
+    "max_training_endpoint": "2021-09-30",
+    "oof_dates": 3,
+    "rows": 899,
+    "climatology": 0.7258114808172017
+  },
+  {
+    "profile": "base7500",
+    "date": "2022-03-31",
+    "max_training_endpoint": "2021-12-31",
+    "oof_dates": 4,
+    "rows": 1203,
+    "climatology": 0.7310362421918486
+  },
+  {
+    "profile": "base7500",
+    "date": "2022-06-30",
+    "max_training_endpoint": "2022-03-31",
+    "oof_dates": 5,
+    "rows": 1507,
+    "climatology": 0.6979868884903211
+  },
+  {
+    "profile": "base7500",
+    "date": "2022-09-30",
+    "max_training_endpoint": "2022-06-30",
+    "oof_dates": 6,
+    "rows": 1810,
+    "climatology": 0.6333609109256526
+  },
+  {
+    "profile": "base7500",
+    "date": "2022-12-31",
+    "max_training_endpoint": "2022-09-30",
+    "oof_dates": 7,
+    "rows": 2116,
+    "climatology": 0.5928340954526135
+  },
+  {
+    "profile": "base7500",
+    "date": "2023-03-31",
+    "max_training_endpoint": "2022-12-31",
+    "oof_dates": 8,
+    "rows": 2428,
+    "climatology": 0.569611243777447
+  },
+  {
+    "profile": "base7500",
+    "date": "2023-06-30",
+    "max_training_endpoint": "2023-03-31",
+    "oof_dates": 9,
+    "rows": 2745,
+    "climatology": 0.5322587151137769
+  },
+  {
+    "profile": "base7500",
+    "date": "2023-09-30",
+    "max_training_endpoint": "2023-06-30",
+    "oof_dates": 10,
+    "rows": 3064,
+    "climatology": 0.5235469501854714
+  },
+  {
+    "profile": "base7500",
+    "date": "2023-12-31",
+    "max_training_endpoint": "2023-09-30",
+    "oof_dates": 11,
+    "rows": 3389,
+    "climatology": 0.5293783463224564
+  },
+  {
+    "profile": "base7500",
+    "date": "2024-03-31",
+    "max_training_endpoint": "2023-12-31",
+    "oof_dates": 12,
+    "rows": 3716,
+    "climatology": 0.5446416696538929
+  },
+  {
+    "profile": "base7500",
+    "date": "2024-06-30",
+    "max_training_endpoint": "2024-03-31",
+    "oof_dates": 13,
+    "rows": 4052,
+    "climatology": 0.5457864496438867
+  },
+  {
+    "profile": "base7500",
+    "date": "2024-09-30",
+    "max_training_endpoint": "2024-06-30",
+    "oof_dates": 14,
+    "rows": 4385,
+    "climatology": 0.5544207508597995
+  },
+  {
+    "profile": "base7500",
+    "date": "2024-12-31",
+    "max_training_endpoint": "2024-09-30",
+    "oof_dates": 15,
+    "rows": 4732,
+    "climatology": 0.557997311753488
+  },
+  {
+    "profile": "base7500",
+    "date": "2025-01-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5070,
+    "climatology": 0.5545573910114987
+  },
+  {
+    "profile": "base7500",
+    "date": "2025-02-28",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5070,
+    "climatology": 0.5545573910114987
+  },
+  {
+    "profile": "base7500",
+    "date": "2025-03-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5070,
+    "climatology": 0.5545573910114987
+  },
+  {
+    "profile": "base7500",
+    "date": "2025-04-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5425,
+    "climatology": 0.5328725734789249
+  },
+  {
+    "profile": "base7500",
+    "date": "2025-05-31",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5425,
+    "climatology": 0.5328725734789249
+  },
+  {
+    "profile": "base7500",
+    "date": "2025-06-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5425,
+    "climatology": 0.5328725734789249
+  },
+  {
+    "profile": "base7500",
+    "date": "2025-07-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5782,
+    "climatology": 0.5186747040839707
+  },
+  {
+    "profile": "base7500",
+    "date": "2025-08-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5782,
+    "climatology": 0.5186747040839707
+  },
+  {
+    "profile": "lookback12",
+    "date": "2021-09-30",
+    "max_training_endpoint": "2021-06-30",
+    "oof_dates": 2,
+    "rows": 595,
+    "climatology": 0.7054935370152761
+  },
+  {
+    "profile": "lookback12",
+    "date": "2021-12-31",
+    "max_training_endpoint": "2021-09-30",
+    "oof_dates": 3,
+    "rows": 899,
+    "climatology": 0.7258114808172017
+  },
+  {
+    "profile": "lookback12",
+    "date": "2022-03-31",
+    "max_training_endpoint": "2021-12-31",
+    "oof_dates": 4,
+    "rows": 1204,
+    "climatology": 0.7312438565145406
+  },
+  {
+    "profile": "lookback12",
+    "date": "2022-06-30",
+    "max_training_endpoint": "2022-03-31",
+    "oof_dates": 5,
+    "rows": 1509,
+    "climatology": 0.6984377081624521
+  },
+  {
+    "profile": "lookback12",
+    "date": "2022-09-30",
+    "max_training_endpoint": "2022-06-30",
+    "oof_dates": 6,
+    "rows": 1813,
+    "climatology": 0.6341147568020433
+  },
+  {
+    "profile": "lookback12",
+    "date": "2022-12-31",
+    "max_training_endpoint": "2022-09-30",
+    "oof_dates": 7,
+    "rows": 2120,
+    "climatology": 0.5937828673938409
+  },
+  {
+    "profile": "lookback12",
+    "date": "2023-03-31",
+    "max_training_endpoint": "2022-12-31",
+    "oof_dates": 8,
+    "rows": 2433,
+    "climatology": 0.5706782198322305
+  },
+  {
+    "profile": "lookback12",
+    "date": "2023-06-30",
+    "max_training_endpoint": "2023-03-31",
+    "oof_dates": 9,
+    "rows": 2750,
+    "climatology": 0.5332071382735846
+  },
+  {
+    "profile": "lookback12",
+    "date": "2023-09-30",
+    "max_training_endpoint": "2023-06-30",
+    "oof_dates": 10,
+    "rows": 3069,
+    "climatology": 0.5244005310292983
+  },
+  {
+    "profile": "lookback12",
+    "date": "2023-12-31",
+    "max_training_endpoint": "2023-09-30",
+    "oof_dates": 11,
+    "rows": 3394,
+    "climatology": 0.5301543289077536
+  },
+  {
+    "profile": "lookback12",
+    "date": "2024-03-31",
+    "max_training_endpoint": "2023-12-31",
+    "oof_dates": 12,
+    "rows": 3721,
+    "climatology": 0.5453529870237487
+  },
+  {
+    "profile": "lookback12",
+    "date": "2024-06-30",
+    "max_training_endpoint": "2024-03-31",
+    "oof_dates": 13,
+    "rows": 4057,
+    "climatology": 0.5464430502929841
+  },
+  {
+    "profile": "lookback12",
+    "date": "2024-09-30",
+    "max_training_endpoint": "2024-06-30",
+    "oof_dates": 14,
+    "rows": 4390,
+    "climatology": 0.5550304514625328
+  },
+  {
+    "profile": "lookback12",
+    "date": "2024-12-31",
+    "max_training_endpoint": "2024-09-30",
+    "oof_dates": 15,
+    "rows": 4737,
+    "climatology": 0.5585663656493726
+  },
+  {
+    "profile": "lookback12",
+    "date": "2025-01-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5075,
+    "climatology": 0.5550908790388904
+  },
+  {
+    "profile": "lookback12",
+    "date": "2025-02-28",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5075,
+    "climatology": 0.5550908790388904
+  },
+  {
+    "profile": "lookback12",
+    "date": "2025-03-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5075,
+    "climatology": 0.5550908790388904
+  },
+  {
+    "profile": "lookback12",
+    "date": "2025-04-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5430,
+    "climatology": 0.5333746798576466
+  },
+  {
+    "profile": "lookback12",
+    "date": "2025-05-31",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5430,
+    "climatology": 0.5333746798576466
+  },
+  {
+    "profile": "lookback12",
+    "date": "2025-06-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5430,
+    "climatology": 0.5333746798576466
+  },
+  {
+    "profile": "lookback12",
+    "date": "2025-07-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5788,
+    "climatology": 0.5192610648065855
+  },
+  {
+    "profile": "lookback12",
+    "date": "2025-08-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5788,
+    "climatology": 0.5192610648065855
+  },
+  {
+    "profile": "lookback60",
+    "date": "2021-09-30",
+    "max_training_endpoint": "2021-06-30",
+    "oof_dates": 2,
+    "rows": 579,
+    "climatology": 0.7007982531500572
+  },
+  {
+    "profile": "lookback60",
+    "date": "2021-12-31",
+    "max_training_endpoint": "2021-09-30",
+    "oof_dates": 3,
+    "rows": 875,
+    "climatology": 0.721703339937876
+  },
+  {
+    "profile": "lookback60",
+    "date": "2022-03-31",
+    "max_training_endpoint": "2021-12-31",
+    "oof_dates": 4,
+    "rows": 1172,
+    "climatology": 0.727304440980343
+  },
+  {
+    "profile": "lookback60",
+    "date": "2022-06-30",
+    "max_training_endpoint": "2022-03-31",
+    "oof_dates": 5,
+    "rows": 1469,
+    "climatology": 0.6943014652421869
+  },
+  {
+    "profile": "lookback60",
+    "date": "2022-09-30",
+    "max_training_endpoint": "2022-06-30",
+    "oof_dates": 6,
+    "rows": 1765,
+    "climatology": 0.6292602300441648
+  },
+  {
+    "profile": "lookback60",
+    "date": "2022-12-31",
+    "max_training_endpoint": "2022-09-30",
+    "oof_dates": 7,
+    "rows": 2064,
+    "climatology": 0.5890553524602158
+  },
+  {
+    "profile": "lookback60",
+    "date": "2023-03-31",
+    "max_training_endpoint": "2022-12-31",
+    "oof_dates": 8,
+    "rows": 2370,
+    "climatology": 0.5664855249059567
+  },
+  {
+    "profile": "lookback60",
+    "date": "2023-06-30",
+    "max_training_endpoint": "2023-03-31",
+    "oof_dates": 9,
+    "rows": 2678,
+    "climatology": 0.52879521405782
+  },
+  {
+    "profile": "lookback60",
+    "date": "2023-09-30",
+    "max_training_endpoint": "2023-06-30",
+    "oof_dates": 10,
+    "rows": 2988,
+    "climatology": 0.5207544023294575
+  },
+  {
+    "profile": "lookback60",
+    "date": "2023-12-31",
+    "max_training_endpoint": "2023-09-30",
+    "oof_dates": 11,
+    "rows": 3304,
+    "climatology": 0.5269228743846621
+  },
+  {
+    "profile": "lookback60",
+    "date": "2024-03-31",
+    "max_training_endpoint": "2023-12-31",
+    "oof_dates": 12,
+    "rows": 3615,
+    "climatology": 0.543034071079831
+  },
+  {
+    "profile": "lookback60",
+    "date": "2024-06-30",
+    "max_training_endpoint": "2024-03-31",
+    "oof_dates": 13,
+    "rows": 3932,
+    "climatology": 0.5449409382158886
+  },
+  {
+    "profile": "lookback60",
+    "date": "2024-09-30",
+    "max_training_endpoint": "2024-06-30",
+    "oof_dates": 14,
+    "rows": 4244,
+    "climatology": 0.5547803217499186
+  },
+  {
+    "profile": "lookback60",
+    "date": "2024-12-31",
+    "max_training_endpoint": "2024-09-30",
+    "oof_dates": 15,
+    "rows": 4563,
+    "climatology": 0.5589652908955353
+  },
+  {
+    "profile": "lookback60",
+    "date": "2025-01-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 4870,
+    "climatology": 0.5555853348073982
+  },
+  {
+    "profile": "lookback60",
+    "date": "2025-02-28",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 4870,
+    "climatology": 0.5555853348073982
+  },
+  {
+    "profile": "lookback60",
+    "date": "2025-03-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 4870,
+    "climatology": 0.5555853348073982
+  },
+  {
+    "profile": "lookback60",
+    "date": "2025-04-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5187,
+    "climatology": 0.5334809460276719
+  },
+  {
+    "profile": "lookback60",
+    "date": "2025-05-31",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5187,
+    "climatology": 0.5334809460276719
+  },
+  {
+    "profile": "lookback60",
+    "date": "2025-06-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5187,
+    "climatology": 0.5334809460276719
+  },
+  {
+    "profile": "lookback60",
+    "date": "2025-07-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5504,
+    "climatology": 0.5187397157629029
+  },
+  {
+    "profile": "lookback60",
+    "date": "2025-08-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5504,
+    "climatology": 0.5187397157629029
+  },
+  {
+    "profile": "quarterly",
+    "date": "2021-09-30",
+    "max_training_endpoint": "2021-06-30",
+    "oof_dates": 2,
+    "rows": 595,
+    "climatology": 0.7089227605531953
+  },
+  {
+    "profile": "quarterly",
+    "date": "2021-12-31",
+    "max_training_endpoint": "2021-09-30",
+    "oof_dates": 3,
+    "rows": 899,
+    "climatology": 0.7259046473863408
+  },
+  {
+    "profile": "quarterly",
+    "date": "2022-03-31",
+    "max_training_endpoint": "2021-12-31",
+    "oof_dates": 4,
+    "rows": 1203,
+    "climatology": 0.7311061171187029
+  },
+  {
+    "profile": "quarterly",
+    "date": "2022-06-30",
+    "max_training_endpoint": "2022-03-31",
+    "oof_dates": 5,
+    "rows": 1507,
+    "climatology": 0.6993585779054887
+  },
+  {
+    "profile": "quarterly",
+    "date": "2022-09-30",
+    "max_training_endpoint": "2022-06-30",
+    "oof_dates": 6,
+    "rows": 1810,
+    "climatology": 0.6400045354932977
+  },
+  {
+    "profile": "quarterly",
+    "date": "2022-12-31",
+    "max_training_endpoint": "2022-09-30",
+    "oof_dates": 7,
+    "rows": 2115,
+    "climatology": 0.6005659484556135
+  },
+  {
+    "profile": "quarterly",
+    "date": "2023-03-31",
+    "max_training_endpoint": "2022-12-31",
+    "oof_dates": 8,
+    "rows": 2426,
+    "climatology": 0.5773440794967326
+  },
+  {
+    "profile": "quarterly",
+    "date": "2023-06-30",
+    "max_training_endpoint": "2023-03-31",
+    "oof_dates": 9,
+    "rows": 2744,
+    "climatology": 0.5432436541717987
+  },
+  {
+    "profile": "quarterly",
+    "date": "2023-09-30",
+    "max_training_endpoint": "2023-06-30",
+    "oof_dates": 10,
+    "rows": 3064,
+    "climatology": 0.5354817887546188
+  },
+  {
+    "profile": "quarterly",
+    "date": "2023-12-31",
+    "max_training_endpoint": "2023-09-30",
+    "oof_dates": 11,
+    "rows": 3389,
+    "climatology": 0.5393890387279751
+  },
+  {
+    "profile": "quarterly",
+    "date": "2024-03-31",
+    "max_training_endpoint": "2023-12-31",
+    "oof_dates": 12,
+    "rows": 3716,
+    "climatology": 0.5525439277024786
+  },
+  {
+    "profile": "quarterly",
+    "date": "2024-06-30",
+    "max_training_endpoint": "2024-03-31",
+    "oof_dates": 13,
+    "rows": 4052,
+    "climatology": 0.5567438453517384
+  },
+  {
+    "profile": "quarterly",
+    "date": "2024-09-30",
+    "max_training_endpoint": "2024-06-30",
+    "oof_dates": 14,
+    "rows": 4385,
+    "climatology": 0.5667404775906641
+  },
+  {
+    "profile": "quarterly",
+    "date": "2024-12-31",
+    "max_training_endpoint": "2024-09-30",
+    "oof_dates": 15,
+    "rows": 4732,
+    "climatology": 0.5710327070385104
+  },
+  {
+    "profile": "quarterly",
+    "date": "2025-01-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5070,
+    "climatology": 0.5677026303042247
+  },
+  {
+    "profile": "quarterly",
+    "date": "2025-02-28",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5070,
+    "climatology": 0.5677026303042247
+  },
+  {
+    "profile": "quarterly",
+    "date": "2025-03-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5070,
+    "climatology": 0.5677026303042247
+  },
+  {
+    "profile": "quarterly",
+    "date": "2025-04-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5426,
+    "climatology": 0.545874782255926
+  },
+  {
+    "profile": "quarterly",
+    "date": "2025-05-31",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5426,
+    "climatology": 0.545874782255926
+  },
+  {
+    "profile": "quarterly",
+    "date": "2025-06-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5426,
+    "climatology": 0.545874782255926
+  },
+  {
+    "profile": "quarterly",
+    "date": "2025-07-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5783,
+    "climatology": 0.5300208611128563
+  },
+  {
+    "profile": "quarterly",
+    "date": "2025-08-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5783,
+    "climatology": 0.5300208611128563
+  },
+  {
+    "profile": "target10",
+    "date": "2021-09-30",
+    "max_training_endpoint": "2021-06-30",
+    "oof_dates": 2,
+    "rows": 595,
+    "climatology": 0.7643778812257072
+  },
+  {
+    "profile": "target10",
+    "date": "2021-12-31",
+    "max_training_endpoint": "2021-09-30",
+    "oof_dates": 3,
+    "rows": 899,
+    "climatology": 0.7859010436241557
+  },
+  {
+    "profile": "target10",
+    "date": "2022-03-31",
+    "max_training_endpoint": "2021-12-31",
+    "oof_dates": 4,
+    "rows": 1203,
+    "climatology": 0.7867942037707484
+  },
+  {
+    "profile": "target10",
+    "date": "2022-06-30",
+    "max_training_endpoint": "2022-03-31",
+    "oof_dates": 5,
+    "rows": 1507,
+    "climatology": 0.7518037840692303
+  },
+  {
+    "profile": "target10",
+    "date": "2022-09-30",
+    "max_training_endpoint": "2022-06-30",
+    "oof_dates": 6,
+    "rows": 1810,
+    "climatology": 0.6897594790235886
+  },
+  {
+    "profile": "target10",
+    "date": "2022-12-31",
+    "max_training_endpoint": "2022-09-30",
+    "oof_dates": 7,
+    "rows": 2116,
+    "climatology": 0.6547144740837109
+  },
+  {
+    "profile": "target10",
+    "date": "2023-03-31",
+    "max_training_endpoint": "2022-12-31",
+    "oof_dates": 8,
+    "rows": 2428,
+    "climatology": 0.6309681135411956
+  },
+  {
+    "profile": "target10",
+    "date": "2023-06-30",
+    "max_training_endpoint": "2023-03-31",
+    "oof_dates": 9,
+    "rows": 2745,
+    "climatology": 0.5948598443534778
+  },
+  {
+    "profile": "target10",
+    "date": "2023-09-30",
+    "max_training_endpoint": "2023-06-30",
+    "oof_dates": 10,
+    "rows": 3064,
+    "climatology": 0.5874114774729889
+  },
+  {
+    "profile": "target10",
+    "date": "2023-12-31",
+    "max_training_endpoint": "2023-09-30",
+    "oof_dates": 11,
+    "rows": 3389,
+    "climatology": 0.5983460984020179
+  },
+  {
+    "profile": "target10",
+    "date": "2024-03-31",
+    "max_training_endpoint": "2023-12-31",
+    "oof_dates": 12,
+    "rows": 3716,
+    "climatology": 0.6134686330153054
+  },
+  {
+    "profile": "target10",
+    "date": "2024-06-30",
+    "max_training_endpoint": "2024-03-31",
+    "oof_dates": 13,
+    "rows": 4052,
+    "climatology": 0.615500349889586
+  },
+  {
+    "profile": "target10",
+    "date": "2024-09-30",
+    "max_training_endpoint": "2024-06-30",
+    "oof_dates": 14,
+    "rows": 4385,
+    "climatology": 0.6253755930227408
+  },
+  {
+    "profile": "target10",
+    "date": "2024-12-31",
+    "max_training_endpoint": "2024-09-30",
+    "oof_dates": 15,
+    "rows": 4732,
+    "climatology": 0.6320988724120029
+  },
+  {
+    "profile": "target10",
+    "date": "2025-01-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5070,
+    "climatology": 0.6292051189217556
+  },
+  {
+    "profile": "target10",
+    "date": "2025-02-28",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5070,
+    "climatology": 0.6292051189217556
+  },
+  {
+    "profile": "target10",
+    "date": "2025-03-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5070,
+    "climatology": 0.6292051189217556
+  },
+  {
+    "profile": "target10",
+    "date": "2025-04-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5425,
+    "climatology": 0.6057804598965322
+  },
+  {
+    "profile": "target10",
+    "date": "2025-05-31",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5425,
+    "climatology": 0.6057804598965322
+  },
+  {
+    "profile": "target10",
+    "date": "2025-06-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5425,
+    "climatology": 0.6057804598965322
+  },
+  {
+    "profile": "target10",
+    "date": "2025-07-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5782,
+    "climatology": 0.5908001262234756
+  },
+  {
+    "profile": "target10",
+    "date": "2025-08-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5782,
+    "climatology": 0.5908001262234756
+  },
+  {
+    "profile": "target30",
+    "date": "2021-09-30",
+    "max_training_endpoint": "2021-06-30",
+    "oof_dates": 2,
+    "rows": 595,
+    "climatology": 0.6584504655156828
+  },
+  {
+    "profile": "target30",
+    "date": "2021-12-31",
+    "max_training_endpoint": "2021-09-30",
+    "oof_dates": 3,
+    "rows": 899,
+    "climatology": 0.6747125910455429
+  },
+  {
+    "profile": "target30",
+    "date": "2022-03-31",
+    "max_training_endpoint": "2021-12-31",
+    "oof_dates": 4,
+    "rows": 1203,
+    "climatology": 0.6779094432841573
+  },
+  {
+    "profile": "target30",
+    "date": "2022-06-30",
+    "max_training_endpoint": "2022-03-31",
+    "oof_dates": 5,
+    "rows": 1507,
+    "climatology": 0.6449591335746943
+  },
+  {
+    "profile": "target30",
+    "date": "2022-09-30",
+    "max_training_endpoint": "2022-06-30",
+    "oof_dates": 6,
+    "rows": 1810,
+    "climatology": 0.5836705651076248
+  },
+  {
+    "profile": "target30",
+    "date": "2022-12-31",
+    "max_training_endpoint": "2022-09-30",
+    "oof_dates": 7,
+    "rows": 2116,
+    "climatology": 0.5432395693452844
+  },
+  {
+    "profile": "target30",
+    "date": "2023-03-31",
+    "max_training_endpoint": "2022-12-31",
+    "oof_dates": 8,
+    "rows": 2428,
+    "climatology": 0.5174019308694314
+  },
+  {
+    "profile": "target30",
+    "date": "2023-06-30",
+    "max_training_endpoint": "2023-03-31",
+    "oof_dates": 9,
+    "rows": 2745,
+    "climatology": 0.4802423051822215
+  },
+  {
+    "profile": "target30",
+    "date": "2023-09-30",
+    "max_training_endpoint": "2023-06-30",
+    "oof_dates": 10,
+    "rows": 3064,
+    "climatology": 0.47014910914675806
+  },
+  {
+    "profile": "target30",
+    "date": "2023-12-31",
+    "max_training_endpoint": "2023-09-30",
+    "oof_dates": 11,
+    "rows": 3389,
+    "climatology": 0.47048520411943034
+  },
+  {
+    "profile": "target30",
+    "date": "2024-03-31",
+    "max_training_endpoint": "2023-12-31",
+    "oof_dates": 12,
+    "rows": 3716,
+    "climatology": 0.4840303973541262
+  },
+  {
+    "profile": "target30",
+    "date": "2024-06-30",
+    "max_training_endpoint": "2024-03-31",
+    "oof_dates": 13,
+    "rows": 4052,
+    "climatology": 0.48502989059794793
+  },
+  {
+    "profile": "target30",
+    "date": "2024-09-30",
+    "max_training_endpoint": "2024-06-30",
+    "oof_dates": 14,
+    "rows": 4385,
+    "climatology": 0.4930704410979231
+  },
+  {
+    "profile": "target30",
+    "date": "2024-12-31",
+    "max_training_endpoint": "2024-09-30",
+    "oof_dates": 15,
+    "rows": 4732,
+    "climatology": 0.49478121092290295
+  },
+  {
+    "profile": "target30",
+    "date": "2025-01-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5070,
+    "climatology": 0.4921488053585647
+  },
+  {
+    "profile": "target30",
+    "date": "2025-02-28",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5070,
+    "climatology": 0.4921488053585647
+  },
+  {
+    "profile": "target30",
+    "date": "2025-03-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5070,
+    "climatology": 0.4921488053585647
+  },
+  {
+    "profile": "target30",
+    "date": "2025-04-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5425,
+    "climatology": 0.4728094804368927
+  },
+  {
+    "profile": "target30",
+    "date": "2025-05-31",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5425,
+    "climatology": 0.4728094804368927
+  },
+  {
+    "profile": "target30",
+    "date": "2025-06-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5425,
+    "climatology": 0.4728094804368927
+  },
+  {
+    "profile": "target30",
+    "date": "2025-07-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5782,
+    "climatology": 0.45883609349074095
+  },
+  {
+    "profile": "target30",
+    "date": "2025-08-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5782,
+    "climatology": 0.45883609349074095
+  },
+  {
+    "profile": "weekly",
+    "date": "2021-09-30",
+    "max_training_endpoint": "2021-06-30",
+    "oof_dates": 2,
+    "rows": 596,
+    "climatology": 0.7044694435998784
+  },
+  {
+    "profile": "weekly",
+    "date": "2021-12-31",
+    "max_training_endpoint": "2021-09-30",
+    "oof_dates": 3,
+    "rows": 900,
+    "climatology": 0.7196462957332522
+  },
+  {
+    "profile": "weekly",
+    "date": "2022-03-31",
+    "max_training_endpoint": "2021-12-31",
+    "oof_dates": 4,
+    "rows": 1204,
+    "climatology": 0.7239452481157287
+  },
+  {
+    "profile": "weekly",
+    "date": "2022-06-30",
+    "max_training_endpoint": "2022-03-31",
+    "oof_dates": 5,
+    "rows": 1508,
+    "climatology": 0.686393040597846
+  },
+  {
+    "profile": "weekly",
+    "date": "2022-09-30",
+    "max_training_endpoint": "2022-06-30",
+    "oof_dates": 6,
+    "rows": 1812,
+    "climatology": 0.6202398145332928
+  },
+  {
+    "profile": "weekly",
+    "date": "2022-12-31",
+    "max_training_endpoint": "2022-09-30",
+    "oof_dates": 7,
+    "rows": 2118,
+    "climatology": 0.5797200277698997
+  },
+  {
+    "profile": "weekly",
+    "date": "2023-03-31",
+    "max_training_endpoint": "2022-12-31",
+    "oof_dates": 8,
+    "rows": 2431,
+    "climatology": 0.5539802639152758
+  },
+  {
+    "profile": "weekly",
+    "date": "2023-06-30",
+    "max_training_endpoint": "2023-03-31",
+    "oof_dates": 9,
+    "rows": 2747,
+    "climatology": 0.5173917395140004
+  },
+  {
+    "profile": "weekly",
+    "date": "2023-09-30",
+    "max_training_endpoint": "2023-06-30",
+    "oof_dates": 10,
+    "rows": 3066,
+    "climatology": 0.5082857944027258
+  },
+  {
+    "profile": "weekly",
+    "date": "2023-12-31",
+    "max_training_endpoint": "2023-09-30",
+    "oof_dates": 11,
+    "rows": 3391,
+    "climatology": 0.5141059669395409
+  },
+  {
+    "profile": "weekly",
+    "date": "2024-03-31",
+    "max_training_endpoint": "2023-12-31",
+    "oof_dates": 12,
+    "rows": 3718,
+    "climatology": 0.530641988552887
+  },
+  {
+    "profile": "weekly",
+    "date": "2024-06-30",
+    "max_training_endpoint": "2024-03-31",
+    "oof_dates": 13,
+    "rows": 4054,
+    "climatology": 0.5319479161733609
+  },
+  {
+    "profile": "weekly",
+    "date": "2024-09-30",
+    "max_training_endpoint": "2024-06-30",
+    "oof_dates": 14,
+    "rows": 4387,
+    "climatology": 0.5404981829932388
+  },
+  {
+    "profile": "weekly",
+    "date": "2024-12-31",
+    "max_training_endpoint": "2024-09-30",
+    "oof_dates": 15,
+    "rows": 4734,
+    "climatology": 0.5451950380367252
+  },
+  {
+    "profile": "weekly",
+    "date": "2025-01-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5072,
+    "climatology": 0.5418156144316192
+  },
+  {
+    "profile": "weekly",
+    "date": "2025-02-28",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5072,
+    "climatology": 0.5418156144316192
+  },
+  {
+    "profile": "weekly",
+    "date": "2025-03-31",
+    "max_training_endpoint": "2024-12-31",
+    "oof_dates": 16,
+    "rows": 5072,
+    "climatology": 0.5418156144316192
+  },
+  {
+    "profile": "weekly",
+    "date": "2025-04-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5427,
+    "climatology": 0.5212117133341503
+  },
+  {
+    "profile": "weekly",
+    "date": "2025-05-31",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5427,
+    "climatology": 0.5212117133341503
+  },
+  {
+    "profile": "weekly",
+    "date": "2025-06-30",
+    "max_training_endpoint": "2025-03-31",
+    "oof_dates": 17,
+    "rows": 5427,
+    "climatology": 0.5212117133341503
+  },
+  {
+    "profile": "weekly",
+    "date": "2025-07-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5783,
+    "climatology": 0.5077049452400557
+  },
+  {
+    "profile": "weekly",
+    "date": "2025-08-31",
+    "max_training_endpoint": "2025-06-30",
+    "oof_dates": 18,
+    "rows": 5783,
+    "climatology": 0.5077049452400557
+  }
+]

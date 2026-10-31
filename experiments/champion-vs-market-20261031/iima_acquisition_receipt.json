@@ -1,0 +1,8 @@
+{
+  "url": "https://faculty.iima.ac.in/iffm/Indian-Fama-French-Momentum/DATA/2025-12_FourFactors_and_Market_Returns_Daily_SurvivorshipBiasAdjusted.csv",
+  "http_status": 200,
+  "bytes": 831223,
+  "sha256": "32af19e5c55f493ee15c794cae145be5381762bbb4b1615227e7c9fc7f5a6f10",
+  "retrieved_at_utc": "2026-10-31T09:26:05.573587+00:00",
+  "attribution": "Agarwalla, S.K., Jacob, J., and Varma, J.R.(2013). Four factor model in Indian equities market. IIMA W.P.2013-09-05. Source release2025-12; retrospectively revised underlying data."
+}
