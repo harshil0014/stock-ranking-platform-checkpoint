@@ -58,7 +58,7 @@ def evaluate(tier):
  q['period']=np.where(q.decision_date.lt('2024-01-01'),'development','exposed');columns=['rank_ic','pair_accuracy','universe_hit']+[m+str(k) for k in TOP for m in ['attainment','xirr','drawdown','shortfall','ndcg','negative','tail10']]
  summary=q.groupby(['period','model','decision_date'])[columns].mean().groupby(['period','model']).mean().reset_index();summary.to_csv(folder/'sector_summary.csv',index=False)
  # Selection uses development only, then is written before exposed diagnostics.
- dev=q[q.period.eq('development')];wide={metric:dev.pivot(index=c.GROUP,columns='model',values=metric).dropna() for metric in ['rank_ic','attainment3','drawdown3']};deltas={k:v.subtract(v[c.ANCHOR],axis=0).groupby('decision_date').mean().mean() for k,v in wide.items()}
+ dev=q[q.period.eq('development')];wide={metric:dev.pivot(index=c.GROUP,columns='model',values=metric).dropna(axis=1,how='all').dropna() for metric in ['rank_ic','attainment3','drawdown3']};deltas={k:v.subtract(v[c.ANCHOR],axis=0).groupby('decision_date').mean().mean().reindex(names) for k,v in wide.items()}
  decisions=[]
  for name in names:
   if name==c.ANCHOR:continue

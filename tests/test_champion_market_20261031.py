@@ -45,3 +45,13 @@ def test_temporal_blocks_are_reproducible_and_preserve_length():
  dates=pd.date_range('2020-01-01',periods=16,freq='3MS').to_numpy(dtype='datetime64[D]')
  a=block_indices(dates,365,np.random.default_rng(1));b=block_indices(dates,365,np.random.default_rng(1))
  assert len(a)==16 and np.array_equal(a,b) and a.min()>=0 and a.max()<16
+
+def test_undefined_neutral_ic_cannot_erase_familywise_evidence(tmp_path,monkeypatch):
+ import json
+ import champion_market_review_20261031 as review
+ monkeypatch.setattr(review.c,'OUT',tmp_path);folder=tmp_path/'audit';folder.mkdir();(folder/'development_lock.json').write_text(json.dumps(dict(selected=review.c.ANCHOR)));rows=[]
+ for period,start in [('development','2020-01-01'),('exposed','2024-01-01')]:
+  for day in pd.date_range(start,periods=12,freq='3MS').strftime('%Y-%m-%d'):
+   for name,ic in [(review.c.ANCHOR,.1),('better',.2),('neutral',np.nan)]:rows.append(dict(period=period,decision_date=day,model=name,rank_ic=ic,attainment3=.3,drawdown3=-.2))
+ review.familywise(pd.DataFrame(rows),folder);z=pd.read_csv(folder/'familywise_bounds.csv');e=z[z.model.eq('better')&z.metric.eq('rank_ic')]
+ assert len(e)==4 and e.familywise_noise_floor.notna().all() and e.simultaneous_lower95.gt(.09).all()

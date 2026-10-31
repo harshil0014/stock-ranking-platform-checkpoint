@@ -68,4 +68,11 @@ def main(name):
   del train,test;gc.collect()
  c.save('tabular/'+name+'_complete.json',dict(algorithm=name,folds=6,objectives=2,complete=True))
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('algorithm',choices=['ridge','elasticnet','hist_gradient_boosting','extra_trees','random_forest','lightgbm_regression','lightgbm_lambdarank','catboost_yetirank','xgboost_rankndcg']);a=p.parse_args();main(a.algorithm)
+ p=argparse.ArgumentParser();p.add_argument('algorithm',choices=['ridge','elasticnet','hist_gradient_boosting','extra_trees','random_forest','lightgbm_regression','lightgbm_lambdarank','catboost_yetirank','xgboost_rankndcg']);p.add_argument('--lease-owner',action='store_true');a=p.parse_args()
+ lease=c.ROOT/'work/champion-vs-market-20261031'/(a.algorithm+'.external_job_lease')
+ if lease.exists() and not a.lease_owner:
+  start=time.time()
+  while not (c.OUT/'tabular'/(a.algorithm+'_complete.json')).exists():
+   if time.time()-start>7200:raise RuntimeError('External worker did not complete '+a.algorithm)
+   time.sleep(10)
+ else:main(a.algorithm)

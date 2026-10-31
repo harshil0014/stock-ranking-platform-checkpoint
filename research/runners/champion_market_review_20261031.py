@@ -20,7 +20,7 @@ def familywise(q,folder):
  for period in ['development','exposed']:
   sub=q[q.period.eq(period)]
   for metric in ['rank_ic','attainment3','drawdown3']:
-   a=sub.groupby(['decision_date','model'])[metric].mean().unstack().sort_index();delta=a.subtract(a[c.ANCHOR],axis=0).drop(columns=c.ANCHOR);mean=delta.mean().to_numpy();center=delta.to_numpy()-mean;names=list(delta.columns)
+   a=sub.groupby(['decision_date','model'])[metric].mean().unstack().sort_index();delta=a.subtract(a[c.ANCHOR],axis=0).drop(columns=c.ANCHOR).dropna(axis=1,how='all').dropna(axis=0,how='any');a=a.loc[delta.index];mean=delta.mean().to_numpy();center=delta.to_numpy()-mean;names=list(delta.columns)
    for span in [365,730]:
     rng=np.random.default_rng(20261031+span);boot=np.array([center[block_indices(a.index,span,rng)].mean(0) for _ in range(4000)]);hurdle=float(np.quantile(np.max(boot,axis=1),.95));lower=mean-hurdle
     for i,name in enumerate(names):rows.append(dict(period=period,metric=metric,block_days=span,model=name,delta=mean[i],familywise_noise_floor=hurdle,simultaneous_lower95=lower[i],pointwise_low95=float(mean[i]-np.quantile(boot[:,i],.975)),pointwise_high95=float(mean[i]-np.quantile(boot[:,i],.025)),dates=len(a),candidates=len(names)))
@@ -62,12 +62,45 @@ def calibration(x,names,folder):
  if len(z):
   z['period']=np.where(z.decision_date.lt('2024-01-01'),'development','exposed');z.groupby(['period','model'])[['brier','climatology_brier','logloss','ece10']].mean().reset_index().to_csv(folder/'calibration_summary.csv',index=False)
 
+def feature_only_stability_panel(tier,names):
+ source='panel.pkl.gz' if tier=='full' else 'sequence_panel.pkl.gz';z=pd.read_pickle(c.OUT/source,compression='gzip');z=z[z.decision_date.ge('2020-01-01')].copy()
+ for name in names:
+  if name.startswith('ml__'):
+   _,algorithm,target=name.split('__');files=[c.OUT/'inference'/f'{algorithm}__{target}__{year}.csv.gz' for year in range(2020,2026)]
+  elif name.startswith('sequence__'):
+   algorithm=name.split('__')[1];files=[c.OUT/'sequence'/f'{algorithm}__balanced__{year}.csv.gz' for year in range(2020,2026)]
+  else:continue
+  pred=pd.concat([pd.read_csv(p,usecols=c.KEYS+['score']) for p in files]);z=z.merge(pred.rename(columns={'score':name}),on=c.KEYS,how='left',validate='one_to_one')
+ for name in names:
+  if not np.isfinite(z[name]).all():raise ValueError('Incomplete feature-only stability '+name)
+ return z
+
 def main(tier):
  folder=c.OUT/tier;x=pd.read_pickle(folder/'scored_panel.pkl.gz',compression='gzip');names=json.loads((folder/'evaluation_support.json').read_text())['models'];q=pd.read_csv(folder/'sector_queries.csv.gz');q['period']=np.where(q.decision_date.lt('2024-01-01'),'development','exposed');familywise(q,folder);print('BOUNDS',tier,flush=True)
- stability(x,names,folder);print('STABILITY',tier,flush=True);calibration(x,names,folder);print('CALIBRATION',tier,flush=True)
+ full=feature_only_stability_panel(tier,names);stability(full,names,folder);del full;print('STABILITY',tier,flush=True);calibration(x,names,folder);print('CALIBRATION',tier,flush=True)
+ regime_slices(x,q,names,folder)
  # Liquidity is a past-price/volume proxy; regimes use trailing broad-index returns only.
- if 'median_dollar_volume63' in x:liquidity='median_dollar_volume63'
+ if 'log_dollar_volume' in x:liquidity='log_dollar_volume'
  else:liquidity=next((n for n in x if 'liquid' in n or 'turnover' in n),None)
  c.save(str(folder.relative_to(c.OUT)/'coverage.json'),dict(stocks=x['isin'].nunique(),dates=x.decision_date.nunique(),profiles=x.profile_name.nunique(),sectors=x.sector.nunique(),rows=len(x),liquidity_column=liquidity,scope='Current-survivor finite guarded labels; price/volume does not establish actual market impact or PIT market cap; daily production refresh still not certified'))
+
+def regime_slices(x,q,names,folder):
+ from champion_market_evaluate_20261031 import metrics
+ idx=pd.read_csv(c.OUT/'NIFTY_500_TRI.csv');idx['date']=pd.to_datetime(idx.Date,format='%d %b %Y');idx=idx.sort_values('date');idx['past_return252']=pd.to_numeric(idx.TotalReturnsIndex).pct_change(252);regimes=[]
+ for day in sorted(x.decision_date.unique()):
+  past=idx[idx.date.le(day)].iloc[-1];v=float(past.past_return252);regimes.append(dict(decision_date=day,regime='bear_trailing12m' if v<-.1 else ('bull_trailing12m' if v>.1 else 'flat_trailing12m'),trailing_index_return=v,latest_input_date=str(past.date.date())))
+ r=pd.DataFrame(regimes);r.to_csv(folder/'regime_definitions.csv',index=False);z=q.merge(r,on='decision_date',validate='many_to_one');z.groupby(['period','regime','model'])[['rank_ic','pair_accuracy','attainment3','drawdown3']].mean().reset_index().to_csv(folder/'regime_slices.csv',index=False)
+ # Thin trading is observable from past zero-return days; no fabricated PIT market caps.
+ x=x.copy();rank=x.groupby(['decision_date','profile_name'],observed=True).zero_fraction.rank(pct=True);x['trading_activity']=np.where(rank.le(1/3),'most_active_proxy',np.where(rank.le(2/3),'middle_proxy','least_active_proxy'));rows=[]
+ for key,g in x.groupby(['decision_date','profile_name','trading_activity'],observed=True,sort=True):
+  if len(g)<5:continue
+  for result in metrics(g,names):result.update(dict(zip(['decision_date','profile_name','trading_activity'],key)));rows.append(result)
+ z=pd.DataFrame(rows);z['period']=np.where(z.decision_date.lt('2024-01-01'),'development','exposed');z.groupby(['period','trading_activity','model'])[['rank_ic','pair_accuracy','attainment3','drawdown3']].mean().reset_index().to_csv(folder/'trading_activity_slices.csv',index=False)
+ if 'log_dollar_volume' in x:
+  rank=x.groupby(['decision_date','profile_name'],observed=True).log_dollar_volume.rank(pct=True);x['liquidity_proxy']=np.where(rank.isna(),'missing_volume',np.where(rank.le(1/3),'low_turnover',np.where(rank.le(2/3),'middle_turnover','high_turnover')));rows=[]
+  for key,g in x.groupby(['decision_date','profile_name','liquidity_proxy'],observed=True,sort=True):
+   if len(g)<5:continue
+   for result in metrics(g,names):result.update(dict(zip(['decision_date','profile_name','liquidity_proxy'],key)));rows.append(result)
+  z=pd.DataFrame(rows);z['period']=np.where(z.decision_date.lt('2024-01-01'),'development','exposed');z.groupby(['period','liquidity_proxy','model'])[['rank_ic','pair_accuracy','attainment3','drawdown3']].mean().reset_index().to_csv(folder/'liquidity_slices.csv',index=False)
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('tier',choices=['full','sequence']);main(p.parse_args().tier)

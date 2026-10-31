@@ -14,15 +14,17 @@ from champion_market_indices_20261031 import xirr
 def price_cache():
  dest=c.ROOT/'work/champion-vs-market-20261031/adjusted_paths.pkl'
  if dest.exists():
-  with dest.open('rb') as f:return pickle.load(f)
+  with dest.open('rb') as f:cached=pickle.load(f)
+  if cached:return cached
  root=c.ROOT/'experiments/current-data-recovery-20261003/yahoo-full-recovery-v1';mapping=pd.read_csv(root/'yahoo_symbol_map.csv').dropna(subset=['isin','yahoo_symbol']);lookup=dict(zip(mapping.yahoo_symbol,mapping['isin']));result={}
  for path in sorted((root/'history-cache').glob('batch_*.pkl')):
   with path.open('rb') as f:batch=pickle.load(f)
-  for symbol,frame in batch.items():
+  for symbol,frame in batch['frames'].items():
    if symbol not in lookup or not isinstance(frame,pd.DataFrame) or 'Adj Close' not in frame:continue
    s=frame['Adj Close'].dropna();s=s[~s.index.duplicated(keep='last')].sort_index();s=s[s.gt(0)]
    if len(s):result[lookup[symbol]]=(s.index.tz_localize(None).to_numpy(dtype='datetime64[D]'),s.to_numpy(float))
   del batch;gc.collect()
+ if not result:raise ValueError('No recovered adjusted paths; refusing an empty cache')
  with dest.open('wb') as f:pickle.dump(result,f,protocol=5)
  print('CACHED PATHS',len(result),flush=True);return result
 
@@ -88,4 +90,17 @@ def main():
  if len(z):
   z['period']=np.where(z.decision_date.lt('2024-01-01'),'development','exposed');z.groupby(['period','model','policy','cost_bps'])[['xirr','goal_hit','tw_max_drawdown','tw_volatility','tw_sharpe_rf0','daily_cvar5']].agg(['mean','count']).to_csv(c.OUT/'portfolio_summary.csv')
  c.save('portfolio_scope.json',dict(basis='Yahoo provider Adj Close research proxy; fractional units; unresolved official action windows block entire portfolio; no silent removal of missing selected stocks',universe='Full feature-available current-survivor panel, including unknown outcome rows; not PIT survivorship-free',profile='base_7500; all9profiles evaluated separately in individual-stock ranking and index SIP panels',policy='Forward12month fixed selection, constant capital weights per contribution, no intermediate rebalancing; overlapping cohorts not chainable CAGR',risk='Daily flow-adjusted returns; RF0 Sharpe; first incomplete execution days excluded from risk stats; cost per buy and final sale',planned_queries=len(names)*2*x.decision_date.nunique(),models=len(names),completed_cost_rows=len(z),failure_records=len(fail)))
+ if len(z):paired_comparisons(z)
+
+def paired_comparisons(z):
+ metrics=['xirr','goal_hit','tw_max_drawdown','tw_volatility','tw_sharpe_rf0','daily_cvar5'];index=pd.read_csv(c.OUT/'index_sip_cashflow_results.csv.gz');index=index[index.profile_name.eq('base7500')];rows=[]
+ for (model,policy,cost),g in z.groupby(['model','policy','cost_bps']):
+  anchor=z[z.model.eq(c.ANCHOR)&z.policy.eq(policy)&z.cost_bps.eq(cost)]
+  for label,other in [(c.ANCHOR,anchor)]+[(name,h) for name,h in index[index.cost_bps.eq(cost)].groupby('index')]:
+   a=g.merge(other[['decision_date']+metrics],on='decision_date',suffixes=('_candidate','_benchmark'),validate='one_to_one');a['period']=np.where(a.decision_date.lt('2024-01-01'),'development','exposed')
+   for period,b in a.groupby('period'):
+    result=dict(model=model,policy=policy,cost_bps=cost,benchmark=label,period=period,matched_dates=len(b))
+    for metric in metrics:result[metric+'_delta']=float(b[metric+'_candidate'].astype(float).mean()-b[metric+'_benchmark'].astype(float).mean())
+    rows.append(result)
+ pd.DataFrame(rows).to_csv(c.OUT/'portfolio_paired_comparisons.csv',index=False)
 if __name__=='__main__':main()
