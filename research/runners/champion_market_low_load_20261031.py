@@ -85,7 +85,9 @@ def main(probe=False):
   regular='.venv/Scripts/python.exe';gpu='.venv-gpu-research-20261011/Scripts/python.exe'
   for name in ['hist','master']:
    if not (OUT/'sequence'/f'{name}_complete.json').exists():run('sequence-'+name,gpu,['research/runners/champion_market_sequence_20261031.py',name,'--lease-owner','--cpu-threads','1'],True)
-  run('sequence-evaluate',regular,['research/runners/champion_market_evaluate_20261031.py','sequence']);run('sequence-review',regular,['research/runners/champion_market_review_20261031.py','sequence'])
+  evaluation_complete=['icir.csv','development_lock.json','sector_summary.csv','global_summary.csv','primary_evaluation_support.json']
+  if not all((OUT/'sequence'/name).exists() for name in evaluation_complete):run('sequence-evaluate',regular,['research/runners/champion_market_evaluate_20261031.py','sequence'])
+  if not (OUT/'sequence/coverage.json').exists():run('sequence-review',regular,['research/runners/champion_market_review_20261031.py','sequence','--resume'])
   if not (OUT/'tabular/random_forest_complete.json').exists():run('random-forest',regular,['research/runners/champion_market_tabular_20261031.py','random_forest','--lease-owner'])
   stages=[('inference',['champion_market_inference_20261031.py']),('full-evaluate',['champion_market_evaluate_20261031.py','full']),('full-review',['champion_market_review_20261031.py','full']),('portfolio',['champion_market_portfolio_20261031.py']),('validate',['champion_market_validate_20261031.py']),('report',['champion_market_publish_20261031.py']),('plots',['champion_market_plots_20261031.py'])]
   for label,args in stages:run(label,regular,['research/runners/'+args[0]]+args[1:])

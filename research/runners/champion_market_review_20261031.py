@@ -50,6 +50,11 @@ def stability(x,names,folder):
    previous=(date,h)
  s=pd.DataFrame(rows);s.to_csv(folder/'stability_queries.csv.gz',index=False);s['period']=np.where(s.decision_date.lt('2024-01-01'),'development','exposed');s.groupby(['period','model'])[['top3_churn','kendall_tau']].mean().reset_index().to_csv(folder/'stability_summary.csv',index=False)
 
+def binary_labels(values):
+ y=pd.to_numeric(values,errors='raise').to_numpy(dtype=float)
+ if not np.isfinite(y).all() or not np.isin(y,[0,1]).all():raise ValueError('Calibration requires finite binary goal labels')
+ return y.astype('int32')
+
 def calibration(x,names,folder):
  # Unseen-date predictions only; prequential fits may use previously matured exposed dates.
  rows=[];audit=[]
@@ -58,10 +63,10 @@ def calibration(x,names,folder):
    train=g[g.endpoint.lt(date)]
    if train.decision_date.nunique()<2 or train.goal_hit.nunique()<2:continue
    assert train.endpoint.max()<date
-   w=(1/train.groupby('decision_date')['isin'].transform('size')).to_numpy(copy=True);w/=w.mean();base=float(np.average(train.goal_hit,weights=w));y=test.goal_hit.to_numpy(float)
+   w=(1/train.groupby('decision_date')['isin'].transform('size')).to_numpy(copy=True);w/=w.mean();train_y=binary_labels(train.goal_hit);base=float(np.average(train_y,weights=w));y=binary_labels(test.goal_hit)
    audit.append(dict(profile=profile,date=date,max_training_endpoint=train.endpoint.max(),oof_dates=train.decision_date.nunique(),rows=len(train),climatology=base))
    for name in names:
-    a=train[name].to_numpy(float);mean=a.mean();sd=max(a.std(),1e-8);model=LogisticRegression(C=.1,max_iter=200);model.fit(((a-mean)/sd).reshape(-1,1),train.goal_hit,sample_weight=w);p=model.predict_proba(((test[name].to_numpy(float)-mean)/sd).reshape(-1,1))[:,1];bins=np.minimum((p*10).astype(int),9);ece=sum(abs(y[bins==b].mean()-p[bins==b].mean())*(bins==b).mean() for b in np.unique(bins))
+    a=train[name].to_numpy(float);mean=a.mean();sd=max(a.std(),1e-8);model=LogisticRegression(C=.1,max_iter=200);model.fit(((a-mean)/sd).reshape(-1,1),train_y,sample_weight=w);p=model.predict_proba(((test[name].to_numpy(float)-mean)/sd).reshape(-1,1))[:,1];bins=np.minimum((p*10).astype(int),9);ece=sum(abs(y[bins==b].mean()-p[bins==b].mean())*(bins==b).mean() for b in np.unique(bins))
     rows.append(dict(model=name,profile_name=profile,decision_date=date,brier=brier_score_loss(y,p),climatology_brier=brier_score_loss(y,np.full(len(y),base)),logloss=log_loss(y,p,labels=[0,1]),ece10=ece,n=len(y),slope=float(model.coef_[0,0])))
  z=pd.DataFrame(rows);z.to_csv(folder/'calibration_queries.csv.gz',index=False);c.save(str(folder.relative_to(c.OUT)/'calibration_maturity_audit.json'),audit)
  if len(z):
@@ -119,9 +124,14 @@ def coverage_challenge(full,names,folder):
  result=pd.DataFrame(rows);result['period']=np.where(result.decision_date.lt('2024-01-01'),'development','exposed');result.groupby(['period','coverage_group','model']).agg(rank_ic=('rank_ic','mean'),pair_accuracy=('pair_accuracy','mean'),attainment3=('attainment3','mean'),drawdown3=('drawdown3','mean'),rows=('n','sum'),queries=('n','size')).reset_index().to_csv(folder/'coverage_challenge.csv',index=False)
  c.save(str(folder.relative_to(c.OUT)/'feature_coverage_counts.json'),dict(full_feature_rows=len(full),full_feature_issuers=full['isin'].nunique(),finite_guarded_outcome_rows=int(finite.sum()),groups=z.groupby('coverage_group',observed=True).size().to_dict(),unknown_or_tiny_sector_diagnostic='Pooled across coverage group within date/profile; supplementary cross-sectional diagnostic, not validated within-sector rank or primary promotion evidence'))
 
-def main(tier):
- folder=c.OUT/tier;x=pd.read_pickle(folder/'scored_panel.pkl.gz',compression='gzip');names=json.loads((folder/'evaluation_support.json').read_text())['models'];q=pd.read_csv(folder/'sector_queries.csv.gz');q['period']=np.where(q.decision_date.lt('2024-01-01'),'development','exposed');familywise(q,folder);print('BOUNDS',tier,flush=True)
- full=feature_only_stability_panel(tier,names);stability(full,names,folder);personalization(full,names,folder);confidence_curve(full,x,tier,folder);coverage_challenge(full,names,folder);del full;print('STABILITY',tier,flush=True);calibration(x,names,folder);print('CALIBRATION',tier,flush=True)
+def main(tier,resume=False):
+ folder=c.OUT/tier;x=pd.read_pickle(folder/'scored_panel.pkl.gz',compression='gzip');names=json.loads((folder/'evaluation_support.json').read_text())['models'];q=pd.read_csv(folder/'sector_queries.csv.gz');q['period']=np.where(q.decision_date.lt('2024-01-01'),'development','exposed')
+ if not(resume and all((folder/f).exists() for f in ['familywise_bounds.csv','decision.json'])):familywise(q,folder)
+ print('BOUNDS',tier,flush=True)
+ completed=['stability_summary.csv','personalization_summary.csv','confidence_abstention_curve.csv','coverage_challenge.csv','feature_coverage_counts.json']
+ if not(resume and all((folder/f).exists() for f in completed)):
+  full=feature_only_stability_panel(tier,names);stability(full,names,folder);personalization(full,names,folder);confidence_curve(full,x,tier,folder);coverage_challenge(full,names,folder);del full
+ print('STABILITY',tier,flush=True);calibration(x,names,folder);print('CALIBRATION',tier,flush=True)
  regime_slices(x,q,names,folder)
  # Liquidity is a past-price/volume proxy; regimes use trailing broad-index returns only.
  if 'log_dollar_volume' in x:liquidity='log_dollar_volume'
@@ -147,4 +157,4 @@ def regime_slices(x,q,names,folder):
    for result in metrics(g,names):result.update(dict(zip(['decision_date','profile_name','liquidity_proxy'],key)));rows.append(result)
   z=pd.DataFrame(rows);z['period']=np.where(z.decision_date.lt('2024-01-01'),'development','exposed');z.groupby(['period','liquidity_proxy','model'])[['rank_ic','pair_accuracy','attainment3','drawdown3']].mean().reset_index().to_csv(folder/'liquidity_slices.csv',index=False)
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('tier',choices=['full','sequence']);main(p.parse_args().tier)
+ p=argparse.ArgumentParser();p.add_argument('tier',choices=['full','sequence']);p.add_argument('--resume',action='store_true');args=p.parse_args();main(args.tier,args.resume)

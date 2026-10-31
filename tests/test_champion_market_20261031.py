@@ -73,3 +73,19 @@ def test_equal_weight_ensemble_uses_ranks_without_outcome_weights():
  a=x.copy();add_ensembles(a,'full');b=x.copy();b['future_xirr']=[100,-50,0];b['ml__a__return']=b.ml__a__return*100+90;add_ensembles(b,'full');np.testing.assert_allclose(a.ensemble__return,b.ensemble__return);np.testing.assert_allclose(a.ensemble__return,[2/3,2/3,2/3])
  b.loc[0,'ml__a__return']=np.nan
  with pytest.raises(ValueError,match='Missing component'):add_ensembles(b,'full')
+
+def test_object_boolean_goal_labels_are_valid_classifier_targets():
+ import pytest
+ from champion_market_review_20261031 import binary_labels
+ from sklearn.linear_model import LogisticRegression
+ y=binary_labels(pd.Series([True,False,True,False],dtype=object));assert y.dtype.kind=='i'
+ model=LogisticRegression().fit(np.arange(4).reshape(-1,1),y);assert np.isfinite(model.predict_proba([[1]])).all()
+ with pytest.raises(ValueError,match='finite binary'):binary_labels(pd.Series([0.,np.nan,1.]))
+ with pytest.raises(ValueError,match='finite binary'):binary_labels(pd.Series([0.,.3,1.]))
+
+def test_calibration_accepts_realistic_object_labels_and_mature_oof_dates(tmp_path,monkeypatch):
+ import champion_market_review_20261031 as review
+ monkeypatch.setattr(review.c,'OUT',tmp_path);folder=tmp_path/'review';folder.mkdir();rows=[]
+ for date,endpoint in [('2020-01-01','2021-01-01'),('2020-04-01','2021-04-01'),('2022-01-01','2023-01-01')]:
+  for i in range(4):rows.append(dict(isin=str(i),decision_date=date,endpoint=endpoint,profile_name='base7500',goal_hit=bool(i%2),champ=float(i)))
+ x=pd.DataFrame(rows);x['goal_hit']=x.goal_hit.astype(object);review.calibration(x,['champ'],folder);z=pd.read_csv(folder/'calibration_queries.csv.gz');assert len(z)==1 and z.iloc[0].decision_date=='2022-01-01' and np.isfinite(z.brier).all()

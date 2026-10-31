@@ -11,3 +11,7 @@ The user reported excessive laptop heat on31October2026 and requested that resea
 - `work/champion-vs-market-20261031/low_load_status.json` records the active stage and applied limits. Creating `low_load_control.json` with `{"pause":true}` pauses the active worker at the next cycle; setting it false resumes under the same limits.
 - `champion_market_low_load_20261031.py --probe` passed a controlled child-process start/pause/resume/exit test and queried the Windows CPU cap successfully before the real queue was restarted.
 - The queue produces local reports and an evidence bundle after checks pass. Result interpretation, plot inspection and public result publication remain a separate review step. No prospective-ledger history is rewritten.
+
+##31October recovery audit
+
+At18:14IST, a requested live check found that the queue had stopped at18:02IST during sequence-cohort probability calibration. HIST, MASTER and sequence evaluation had already completed. The source binary labels were stored as object-typed booleans, which the classifier rejected. The fix validates that labels are finite0/1 and converts them to an integer array; targets, model hyperparameters, training cutoffs and score predictions are unchanged. The targeted classifier-label regression test passed under the resource governor. The queue restarted at18:16IST with the same limits, retaining completed evaluation and stability artifacts. A realistic mature-date calibration regression is also included in the final test suite. Prior error logs remain preserved, and resume logs are separate.
