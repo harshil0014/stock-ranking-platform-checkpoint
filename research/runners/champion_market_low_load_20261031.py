@@ -53,7 +53,7 @@ def status(**values):
  data=dict(updated_at_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),supervisor_pid=os.getpid(),single_worker=True,compute_threads=1,cpu_hard_cap_percent=12.5,gpu_active_seconds=2,gpu_rest_seconds=4,cpu_active_seconds=4,cpu_rest_seconds=2,thermal_pause_celsius=58,thermal_resume_celsius=52,**values)
  dest=WORK/'low_load_status.json';temp=dest.with_suffix('.tmp');temp.write_text(json.dumps(data,indent=2),encoding='utf-8');os.replace(temp,dest)
 
-def run(label,python,args,gpu=False):
+def run(label,python,args,gpu=False,control_name='low_load_control.json'):
  env=os.environ.copy()
  for key in ['OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS','NUMEXPR_NUM_THREADS','STOCK_RESEARCH_THREADS']:env[key]='1'
  cmd=[str(ROOT/python)]+args;active=2 if gpu else 4;rest=4 if gpu else 2;job=ManagedJob();started=time.monotonic();cycles=0
@@ -62,7 +62,7 @@ def run(label,python,args,gpu=False):
    log.write('\nLOW LOAD RESUME '+datetime.datetime.now(datetime.timezone.utc).isoformat()+'\n');log.flush();job.start(cmd,log,env)
    while job.process.poll() is None:
     time.sleep(active);job.suspend(True);temp=temperature() if gpu else None;cycles+=1;reason='cooling_pause'
-    control=WORK/'low_load_control.json';paused=control.exists() and json.loads(control.read_text()).get('pause',False)
+    control=WORK/control_name;paused=control.exists() and json.loads(control.read_text()).get('pause',False)
     status(state=reason,worker=label,child_pids=job.ids(),gpu_temperature_celsius=temp,elapsed_seconds=round(time.monotonic()-started),cycles=cycles)
     time.sleep(rest)
     hot=gpu and temp is not None and temp>=58
