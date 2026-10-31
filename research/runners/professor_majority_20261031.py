@@ -32,6 +32,12 @@ def read_base(path, cols):
     return result
 
 
+def combine_sources(scores, history):
+    # Earlier mature feature/outcome rows need no archived champion score to
+    # train the factor-only learner. Missing champion stays missing for testing.
+    return scores.merge(history, on=KEYS, how='outer', validate='one_to_one')
+
+
 def prepare():
     if (OUT/'prepared.pkl.gz').exists():
         return
@@ -43,8 +49,8 @@ def prepare():
     x = read_base(scorepath, ['sip_risk_confirmed_0.01']).rename(columns={'sip_risk_confirmed_0.01':'champion_score'})
     deep = read_base(panelpath, ['professor_whole_share_score', 'unused_cash_excluded_by_professor', 'amount_contributed',
                                'future_xirr', 'future_drawdown', 'future_shortfall', 'endpoint'])
-    x = x.merge(deep, on=KEYS, how='left', validate='one_to_one'); del deep; gc.collect()
-    current = pd.read_csv(currentpath)
+    x = combine_sources(x, deep); del deep; gc.collect()
+    current = pd.read_csv(currentpath).copy()
     identities = current[['isin', 'sector', 'evidence_fraction']].copy()
     # Evidence fraction is later replaced by dated trading-activity coverage.
     x = x.merge(identities[['isin','sector']], on='isin', how='left', validate='many_to_one')
@@ -136,9 +142,11 @@ def fit_and_score():
 def evaluate_period(x,period):
     from champion_market_evaluate_20261031 import metrics
     x=x.loc[x.factor_eligible & x.decision_date.ge('2020-01-01')]
+    x=x.loc[x[NAMES].notna().all(axis=1)]
     x=x.loc[x.decision_date.lt('2024-01-01') if period=='development' else x.decision_date.ge('2024-01-01') & x.decision_date.lt('2026-01-01')]
     rows=[];alignment=[];support=[];factors=['q_'+c for c in FACTOR_COLUMNS]
     for (day,sector),g in x.groupby(['decision_date','sector']):
+        if len(g)<5: continue
         g=g.sort_values('isin'); picks={n:g.sort_values([n,'isin'],ascending=[False,True]).head(3) for n in NAMES}
         baseline=set(picks['active_champion']['isin'])
         for n,h in picks.items():

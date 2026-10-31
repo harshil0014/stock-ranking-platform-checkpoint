@@ -71,3 +71,16 @@ def test_unknown_selected_outcome_blocks_all_top3_metrics_without_reselection(tm
     result=runner.evaluate_period(x,'development')
     assert result.attainment3.isna().all() and result.drawdown3.isna().all()
     assert result.rank_ic.notna().all()
+
+
+def test_early_mature_training_rows_survive_later_champion_archive():
+    import sys
+    from pathlib import Path
+    sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'research/runners'))
+    import professor_majority_20261031 as runner
+    scores=pd.DataFrame(dict(isin=['a'],decision_date=['2020-12-31'],profile_name=['base7500'],champion_score=[.5]))
+    history=pd.DataFrame(dict(isin=['a','a'],decision_date=['2016-12-31','2020-12-31'],profile_name=['base7500']*2,future_xirr=[.1,.2]))
+    combined=runner.combine_sources(scores,history)
+    assert len(combined)==2
+    early=combined.loc[combined.decision_date.eq('2016-12-31')].iloc[0]
+    assert early.future_xirr==.1 and pd.isna(early.champion_score)
