@@ -6,7 +6,7 @@ DEST=Path('C:/Users/Harshil/Documents/Codex/2026-10-31/you/outputs')
 
 def public_paths():
  names=['README.md','protocol.json','panel_receipt.json','score_registry.json','sequence_data_receipt.json','sequence_implementation_freeze.json','tabular_environment.json','sequence_environment.json','index_acquisition_receipts.json','bse_acquisition_receipt.json','bse_tri_acquisition_receipt.json','iima_acquisition_receipt.json','index_series_validation.json','index_launch_source_notes.json','index_execution_failures.json','index_sip_summary.csv','index_live_only_summary.csv','index_sip_cashflow_results.csv.gz','portfolio_cashflow_results.csv.gz','portfolio_paired_comparisons.csv','portfolio_summary.csv','portfolio_scope.json','portfolio_failures.json','validation_receipt.json','runtime_summary.csv','fit_registry.csv','test_receipt.json']
- paths=[c.OUT/n for n in names]
+ names+=['sequence_adapter_validation.json','portfolio_anchor_path_coverage_before_outcomes.json'];paths=[c.OUT/n for n in names]
  for tier in ['full','sequence']:
   folder=c.OUT/tier
   paths.extend(p for p in folder.glob('*') if p.is_file() and (p.suffix in ['.json','.csv']) and p.name not in ['scored_panel.pkl.gz'])
@@ -32,7 +32,7 @@ def main():
    if p.is_file() and '__pycache__' not in str(p):archive.write(p,str(p.relative_to(c.ROOT)))
  public='https://github.com/harshil0014/stock-ranking-platform-checkpoint/blob/main/'
  for name in ['champion_vs_market_20261031.md','champion_vs_market_literature_20261031.md']:
-  content=(c.ROOT/'research/reports'/name).read_text(encoding='utf-8').replace('](champion_vs_market_literature_20261031.md)',']('+public+'research/reports/champion_vs_market_literature_20261031.md)').replace('](../literature/20261031/REFERENCES.md)',']('+public+'research/literature/20261031/REFERENCES.md)');(DEST/name).write_text(content,encoding='utf-8')
+  content=(c.ROOT/'research/reports'/name).read_text(encoding='utf-8').replace('](champion_vs_market_literature_20261031.md)',']('+public+'research/reports/champion_vs_market_literature_20261031.md)').replace('](../literature/20261031/REFERENCES.md)',']('+public+'research/literature/20261031/REFERENCES.md)').replace('../../experiments/champion-vs-market-20261031/figures/','champion-market-');(DEST/name).write_text(content,encoding='utf-8')
  for p in (c.OUT/'figures').glob('*.png'):shutil.copy2(p,DEST/('champion-market-'+p.name))
  (DEST/'champion-vs-market-20261031-evidence.sha256').write_text(hashlib.sha256(zipdest.read_bytes()).hexdigest()+'  '+zipdest.name+'\n',encoding='utf-8');print('BUNDLED',len(paths),'public evidence files',zipdest.stat().st_size,flush=True)
 if __name__=='__main__':main()
