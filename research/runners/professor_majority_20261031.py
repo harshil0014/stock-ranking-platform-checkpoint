@@ -189,11 +189,51 @@ def evaluate():
     print(result[['period','alignment','changed','rank_ic','attainment3','drawdown3']].to_string(),flush=True)
 
 
+def portfolio():
+    import pickle
+    from champion_market_portfolio_20261031 import portfolio_path, selection
+    x=pd.read_pickle(OUT/'scored.pkl.gz',compression='gzip')
+    x=x.loc[x.factor_eligible & x[NAMES].notna().all(axis=1) & x.decision_date.ge('2020-01-01') & x.decision_date.lt('2026-01-01')]
+    with (ROOT/'work/champion-vs-market-20261031/adjusted_paths.pkl').open('rb') as f:paths=pickle.load(f)
+    events=pd.read_csv(ROOT/'experiments/sector-action-integrity-20261008/provider_official_alignment.csv')
+    events=events.loc[events.status.ne('ALIGNED_MULTIPLIER')]
+    rows=[];failures=[]
+    for day,g in x.groupby('decision_date'):
+        end=str((pd.Timestamp(day)+pd.DateOffset(months=12)).date())
+        bad=set(events.loc[events.event_date.ge(day)&events.event_date.le(end),'isin'])
+        for name in NAMES:
+            for policy in ['global_top20','sector_top3_equal_sector']:
+                ids,weights=selection(g,name,policy)
+                missing=sorted(set(ids)-paths.keys());blocked=sorted(set(ids)&bad)
+                try:
+                    if not ids or missing or blocked:raise ValueError('Missing selections/paths or unresolved corporate action')
+                    r=portfolio_path([paths[i] for i in ids],weights,day,end,7500,30,25)
+                    r.pop('_daily_dates');r.pop('_daily_returns')
+                    rows.append(dict(model=name,policy=policy,decision_date=day,period='development' if day<'2024-01-01' else 'exposed',**r))
+                except ValueError as e:failures.append(dict(model=name,policy=policy,date=day,reason=str(e),missing=missing,blocked=blocked))
+        print('PORTFOLIO',day,len(rows),len(failures),flush=True)
+    z=pd.DataFrame(rows);z.to_csv(OUT/'portfolio_results.csv',index=False);save('portfolio_failures.json',failures)
+    pairs=[]
+    if len(z):
+        for policy in z.policy.unique():
+            for period in ['development','exposed']:
+                h=z.loc[z.policy.eq(policy)&z.period.eq(period)]
+                a=h.loc[h.model.eq('active_champion')].set_index('decision_date')
+                planned=x.loc[x.decision_date.lt('2024-01-01') if period=='development' else x.decision_date.ge('2024-01-01')].decision_date.nunique()
+                for name in NAMES[1:]:
+                    b=h.loc[h.model.eq(name)].set_index('decision_date');ids=a.index.intersection(b.index)
+                    pairs.append(dict(model=name,policy=policy,period=period,matched_dates=len(ids),planned_dates=planned,
+                                      xirr_delta=float((b.loc[ids,'xirr']-a.loc[ids,'xirr']).mean()) if len(ids) else np.nan,
+                                      drawdown_delta=float((b.loc[ids,'tw_max_drawdown']-a.loc[ids,'tw_max_drawdown']).mean()) if len(ids) else np.nan))
+    pd.DataFrame(pairs).to_csv(OUT/'portfolio_paired.csv',index=False)
+    print('PORTFOLIO COMPLETE',len(rows),'blocked',len(failures),flush=True)
+
+
 def main():
-    p=argparse.ArgumentParser();p.add_argument('stage',choices=['prepare','fit','evaluate']);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('stage',choices=['prepare','fit','evaluate','portfolio']);a=p.parse_args()
     OUT.mkdir(parents=True,exist_ok=True)
     if not PROTOCOL.exists(): raise RuntimeError('Freeze protocol first')
-    {'prepare':prepare,'fit':fit_and_score,'evaluate':evaluate}[a.stage]()
+    {'prepare':prepare,'fit':fit_and_score,'evaluate':evaluate,'portfolio':portfolio}[a.stage]()
 
 
 if __name__=='__main__':main()
