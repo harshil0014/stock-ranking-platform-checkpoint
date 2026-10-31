@@ -32,9 +32,13 @@ def normalize_events(payload,source,observed):
         if not isinstance(raw,dict):continue
         timing={k:str(v)[:200] for k,v in raw.items() if v is not None and not isinstance(v,(dict,list)) and (any(s in k.lower() for s in ['date','time','period']) or k.lower() in ['an_dt','exchdisstime','dissemtime'])}
         item=dict(source=source,symbol=str(raw.get('symbol') or raw.get('sm_symbol') or '')[:80],isin=str(raw.get('isin') or '')[:40],
-            subject=str(raw.get('desc') or raw.get('subject') or raw.get('relatingTo') or raw.get('companyName') or '')[:500],
-            exchange_timing_fields=timing,attachment_url=str(raw.get('attchmntFile') or raw.get('url') or '')[:1000])
-        item['event_id']=sha(canonical(item));item['observed_at_utc']=observed
+            subject=str(raw.get('desc') or raw.get('subject') or raw.get('relatingTo') or raw.get('type') or raw.get('companyName') or '')[:500],
+            source_record_id=str(raw.get('seq_Id') or raw.get('seq_id') or '')[:100],
+            exchange_timing_fields=timing,attachment_url=str(raw.get('attchmntFile') or raw.get('xbrl') or raw.get('ixbrl') or raw.get('url') or '')[:1000])
+        record_id=item.pop('source_record_id')
+        if source=='integrated_financials':item['source_record_id']=record_id
+        item['event_id']=sha(canonical(item));item['source_record_id']=record_id;item['observed_at_utc']=observed
+        item['observation_time_basis']='HTTP_RESPONSE_RECEIVED'
         item['timing_interpretation']='Exchange timestamp strings retained verbatim; first-observed time is separate. No certified lateness label.'
         result.append(item)
     return result
@@ -45,6 +49,7 @@ def capture_events(day,observed):
     urls={
       'announcements':'https://www.nseindia.com/api/corporate-announcements?'+params,
       'financial_results':'https://www.nseindia.com/api/corporates-financial-results?'+params+'&period=Quarterly',
+      'integrated_financials':'https://www.nseindia.com/api/integrated-filing-results?'+params+'&type=Integrated%20Filing-%20Financials&page=1&size=1000',
       'corporate_actions':'https://www.nseindia.com/api/corporates-corporateActions?'+params}
     session=requests.Session();session.headers.update({'User-Agent':'Mozilla/5.0','Accept':'application/json','Referer':'https://www.nseindia.com/'})
     receipts=[];events=[];blobs={}
@@ -54,14 +59,32 @@ def capture_events(day,observed):
         receipt=dict(source=name,url=url,requested_from=start.isoformat(),requested_to=day.isoformat(),observed_at_utc=observed)
         try:
             response=session.get(url,timeout=25);body=response.content
+            received=dt.datetime.now(UTC).isoformat(timespec='microseconds')
+            receipt['response_observed_at_utc']=received
             receipt.update(http_status=response.status_code,response_sha256=sha(body),response_bytes=len(body),content_type=response.headers.get('Content-Type',''))
             # Raw source receipt remains local; publish only normalized timing facts.
             local=WORK/'raw'/day.isoformat()/f'{observed.replace(":","-")}_{name}.body.gz';local.parent.mkdir(parents=True,exist_ok=True)
             with local.open('xb') as f:f.write(gzip.compress(body,mtime=0))
             if response.status_code==200:
                 try:
-                    normalized=normalize_events(response.json(),name,observed);events.extend(normalized)
-                    receipt.update(status='CAPTURED',rows=len(normalized),coverage='Requested seven-day range; population completeness not independently certified')
+                    payload=response.json();normalized=normalize_events(payload,name,received)
+                    total=payload.get('totalCount') if isinstance(payload,dict) else None
+                    pages=[dict(url=url,response_sha256=sha(body),rows=len(normalized),response_observed_at_utc=received)]
+                    stable=True;page=1
+                    while total is not None and len(normalized)<int(total) and page<30:
+                        page+=1;nexturl=url.replace('page=1&','page='+str(page)+'&')
+                        if nexturl==url:break
+                        extra=session.get(nexturl,timeout=25);extra.raise_for_status();timestamp=dt.datetime.now(UTC).isoformat(timespec='microseconds');data=extra.json()
+                        raw=extra.content;dest=WORK/'raw'/day.isoformat()/f'{observed.replace(":","-")}_{name}_page{page}.body.gz'
+                        with dest.open('xb') as stream:stream.write(gzip.compress(raw,mtime=0))
+                        more=normalize_events(data,name,timestamp);pages.append(dict(url=nexturl,response_sha256=sha(raw),rows=len(more),response_observed_at_utc=timestamp))
+                        stable &= data.get('totalCount')==total
+                        known={r['event_id'] for r in normalized};novel=[r for r in more if r['event_id'] not in known]
+                        normalized.extend(novel)
+                        if not novel:break
+                    events.extend(normalized)
+                    complete=total is None or (stable and len(normalized)==int(total))
+                    receipt.update(status='CAPTURED' if complete else 'PARTIAL_PAGE_COVERAGE',rows=len(normalized),reported_total_count=total,pages=pages,coverage='Requested seven-day range; pagination checked where counts supplied; population completeness not independently certified')
                 except (ValueError,TypeError) as e:receipt.update(status='INVALID_RESPONSE_SCHEMA',error=str(e))
             else:receipt.update(status='SOURCE_UNAVAILABLE',coverage='Unknown; never interpret acquisition failure as zero announcements')
         except requests.RequestException as e:receipt.update(status='SOURCE_UNAVAILABLE',error=type(e).__name__,coverage='Unknown')
@@ -133,8 +156,12 @@ def retain_first_observations(events):
             if path.endswith('/events.json'):
                 for event in json.loads(read_blob(local,path)):
                     t=event.get('first_observed_at_utc',event['observed_at_utc'])
-                    key=event['event_id'];seen[key]=min(seen.get(key,t),t)
-    for event in events:event['first_observed_at_utc']=seen.get(event['event_id'],event['observed_at_utc'])
+                    key=event['event_id']
+                    candidate=(t,event.get('first_observed_time_basis',event.get('observation_time_basis','LEGACY_CAPTURE_START_BOUND')))
+                    if key not in seen or t<seen[key][0]:seen[key]=candidate
+    for event in events:
+        t,basis=seen.get(event['event_id'],(event['observed_at_utc'],event.get('observation_time_basis','LEGACY_CAPTURE_START_BOUND')))
+        event['first_observed_at_utc']=t;event['first_observed_time_basis']=basis
     return events
 
 def append_record(blobs,path,metadata,protocol,publish=False):
@@ -146,7 +173,9 @@ def append_record(blobs,path,metadata,protocol,publish=False):
     local=git('rev-parse','--verify',ref,check=False).decode().strip()
     remote_head=found[0] if found else None
     if local and remote_head and local!=remote_head:
-        if subprocess.run(['git','merge-base','--is-ancestor',remote_head,local],cwd=ROOT).returncode:raise RuntimeError('Ledger heads diverged; never rewrite or discard either history')
+        if subprocess.run(['git','merge-base','--is-ancestor',remote_head,local],cwd=ROOT).returncode:
+            if subprocess.run(['git','merge-base','--is-ancestor',local,remote_head],cwd=ROOT).returncode:raise RuntimeError('Ledger heads diverged; never rewrite or discard either history')
+            git('update-ref',ref,remote_head,local);local=remote_head
     parent=local or remote_head
     if parent:
         existing=read_blob(parent,path+'/manifest.json')

@@ -36,3 +36,19 @@ def test_append_only_cas_and_idempotence(tmp_path,monkeypatch):
     assert g('merge-base','--is-ancestor',first['commit'],second['commit'])==b''
     with pytest.raises(RuntimeError,match='protocol differs'):
         p.append_record({'scores.csv.gz':b'three'},'prospective/records/2026-11-02/test',{},b'{"protocol":2}')
+
+def test_paginated_financial_metadata_preserves_revision_and_source_times():
+    raw={'data':[dict(seq_Id='123',symbol='ABC',type='Integrated Filing- Financials',broadcast_Date='30-Oct-2026 14:00',revised_Date='31-Oct-2026 11:00',qe_Date='30-SEP-2026',xbrl='https://example.invalid/123.xml')],'totalCount':1,'size':20,'page':0}
+    event=p.normalize_events(raw,'integrated_financials','2026-10-31T12:00:00+00:00')[0]
+    assert event['source_record_id']=='123' and event['attachment_url'].endswith('123.xml')
+    assert event['exchange_timing_fields']['revised_Date']=='31-Oct-2026 11:00'
+    assert event['observation_time_basis']=='HTTP_RESPONSE_RECEIVED'
+
+def test_first_seen_time_is_carried_without_claiming_old_capture_bound_is_exact(monkeypatch):
+    older=dict(event_id='same',observed_at_utc='2026-10-30T12:00:00Z')
+    monkeypatch.setattr(p,'git',lambda *args,**kwargs: b'head' if args[0]=='rev-parse' else b'prospective/records/2026-10-30/day/events.json\n')
+    monkeypatch.setattr(p,'read_blob',lambda *args:json.dumps([older]).encode())
+    current=dict(event_id='same',observed_at_utc='2026-10-31T12:00:00Z',observation_time_basis='HTTP_RESPONSE_RECEIVED')
+    event=p.retain_first_observations([current])[0]
+    assert event['first_observed_at_utc']==older['observed_at_utc']
+    assert event['first_observed_time_basis']=='LEGACY_CAPTURE_START_BOUND'
