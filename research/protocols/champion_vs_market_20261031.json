@@ -1,0 +1,157 @@
+{
+  "version": "champion_vs_market_v1",
+  "registered_at_utc": "2026-10-31T08:38:25.605908+00:00",
+  "baseline": "b98ac9d0745958e516d73c0ade573249cce20ccb",
+  "scope": "NSE/BSE Indian equities only; ISIN identifies issuer so exchange cross-listings are not independent stocks. Research-only; no serving changes or automatic promotion.",
+  "purpose": "Compare frozen champion against official Indian index/strategy alternatives, transparent factor rules, standard international ML baselines, licensed foreign sequence/relationship architectures, prior attempted policies and commercial-score evidence where available.",
+  "evidence_tiers": [
+    "Existing current-survivor44-date SIP panel: retrospective comparative diagnostic",
+    "Matched512-issuer OHLCV sequence cohort: foreign-model adaptation diagnostic, not architecture-paper replication",
+    "Official index TRI histories: same-contribution-date investment comparison, launch-era vs backfilled history separate",
+    "Commercial rankers without dated score archives: untested; present scores cannot be backcast",
+    "PIT historical membership/terminal-price reconstruction: still incomplete, cannot certify survivorship-free alpha"
+  ],
+  "periods": {
+    "training": "2016 onward, actual outcome endpoints strictly before test-year January1",
+    "development": "2020-2023",
+    "exposed": "2024-2025 already exposed; no parameter search on these dates",
+    "fresh": "Existing ledger frozenOct3 inputs remain ineligible; no fresh score holdout claimed"
+  },
+  "ml_algorithms": [
+    "ridge",
+    "elasticnet",
+    "hist_gradient_boosting",
+    "extra_trees",
+    "random_forest",
+    "lightgbm_regression",
+    "lightgbm_lambdarank",
+    "catboost_yetirank",
+    "xgboost_rankndcg"
+  ],
+  "objectives": [
+    "return: within-query percentile of future SIP XIRR",
+    "balanced: .5 return-percentile+.25 drawdown-percentile+.25 inverse-target-shortfall-percentile"
+  ],
+  "controls": [
+    "active_champion",
+    "original_preoverlay",
+    "existing_price_head",
+    "constant_neutral",
+    "seeded_hash_random",
+    "equal_weight_universe",
+    "same_sector_equal_weight"
+  ],
+  "factor_policies": [
+    "momentum_12_1",
+    "momentum_6",
+    "risk_adjusted_momentum_6_12",
+    "high52_proximity",
+    "high52_recency",
+    "low_volatility",
+    "low_downside",
+    "short_term_reversal",
+    "trend_slope",
+    "trend_efficiency",
+    "momentum_lowvol_equal",
+    "momentum_high_lowvol_equal",
+    "volume_high_confirmation",
+    "global_momentum_no_sector",
+    "global_lowvol_no_sector"
+  ],
+  "model_budget": {
+    "seed": 20261031,
+    "stochastic_repeats": [
+      20261031,
+      20261032,
+      20261033
+    ],
+    "ml_training_cap_rows": 120000,
+    "training_cap_rule": "Select whole date/profile/sector queries in deterministic seeded hash order until budget exhausted; same selected training queries for every new algorithm/objective; retain all test rows. Full champion training history differs; include matched-budget LightGBM and disclose this asymmetry.",
+    "trees": 120,
+    "max_depth": 5,
+    "leaves": 15,
+    "learning_rate": 0.04,
+    "regularization": 30,
+    "threads": 3,
+    "sequence_epochs": 20,
+    "sequence_hidden": 32,
+    "sequence_lookback": 8,
+    "sequence_seeds": [
+      20261031,
+      20261032,
+      20261033
+    ],
+    "early_stopping": "None using exposed labels; fixed epochs/hyperparameters. Record resource failures honestly."
+  },
+  "official_indices": [
+    "NIFTY 500",
+    "NIFTY 50",
+    "NIFTY MIDCAP 150",
+    "NIFTY SMALLCAP 250",
+    "NIFTY500 MOMENTUM 50",
+    "NIFTY500 QUALITY 50",
+    "NIFTY500 VALUE 50",
+    "NIFTY500 LOW VOLATILITY 50",
+    "NIFTY500 MULTIFACTOR MQVLV 50",
+    "NIFTY200 MOMENTUM 30",
+    "BSE 500"
+  ],
+  "sequence_families": [
+    "Qlib GRU",
+    "Qlib ALSTM",
+    "Qlib Transformer",
+    "Qlib GAT",
+    "MASTER",
+    "HIST",
+    "DoubleAdapt/TRA feasibility review",
+    "Kronos prior diagnostic retained separately"
+  ],
+  "metrics": {
+    "ranking": [
+      "Spearman rank IC",
+      "exact pair concordance withties half-credit",
+      "NDCG at3,10,20",
+      "Top3/10/20 outcome lift",
+      "global and within-sector"
+    ],
+    "goals": [
+      "TopK target attainment",
+      "mean target-wealth shortfall",
+      "median SIP XIRR",
+      "Brier/logloss/ECE using strictly past calibration only, probabilities not percentile ranks"
+    ],
+    "risk": [
+      "mean selected-asset drawdown",
+      "bottom-decile/CVaR of selected outcomes",
+      "negative-outcome frequency",
+      "daily marked-portfolio drawdown where real daily paths available; never substitute mean asset drawdown"
+    ],
+    "product": [
+      "consecutive-snapshot TopK churn",
+      "rank Kendall tau",
+      "missing evidence/coverage",
+      "target/amount/frequency sensitivity",
+      "sparse-sector and liquidity splits"
+    ],
+    "robustness": [
+      "year/profile/sector/liquidity/momentum-regime slices",
+      "raw and clipped-XIRR diagnostics",
+      "survivorship and corporate-action exclusions",
+      "training/inference runtime and repeat dispersion"
+    ]
+  },
+  "portfolio": "Sparse query evaluation uses matched individual-stock future SIP labels. This is not a portfolio XIRR or daily portfolio Sharpe. Official TRI comparisons use actual forward contribution schedule, fractional benchmark units and same dates; index returns cannot produce stock-ranking IC. Additional executable path checks require real matching paths and receipt their basis.",
+  "costs": "Scenario sensitivity at0/10/25/50basis points per buy and sale, not certified historical Indian brokerage/tax/slippage. Recompute cashflows when available; otherwise mark unavailable rather than subtract bps from XIRR. No tax-adjusted claim.",
+  "calibration": "For each annual testY, use independent mature out-of-time scores with endpoint<Jan1Y, at least2distinct calibration dates; logistic calibration fixedC=.1. No contemporaneous outcome-based climatology, no percentile-as-probability.",
+  "primary_gate": "Select on development only. Challenger must improve Top3 attainment by at least0.0063048666 or IC by at least0.010134924, not worsen the other primary metric or mean selected-asset drawdown; positive paired familywise date-block lower bound for its improvement; then same locked challenger must satisfy nonworse attainment/IC/drawdown in exposed. Otherwise retain champion. A ranking win does not imply dominance in all objectives.",
+  "uncertainty": "4000 paired365/730-calendar-day circular block resamples preserving models/sectors/profiles jointly. Recompute familywise selection-noise hurdle for this larger registered family. Existing35-model hurdles are historical operational reference only, not universal significance.",
+  "literature": "Wide primary-source review: classic factors; modern cross-sectional ML; temporal/graph/market-conditioned models; foundation models; costs/portfolio construction; leakage/calibration/multiple testing; Indian exchange methodologies and commercial historical-score availability. Record citation, geography, inputs, licensing, adaptation, failures and evidence status. No claim of exhaustive all-market superiority.",
+  "forbidden": [
+    "No synthetic or invented competitor histories",
+    "No present-day fundamentals backfilled historically",
+    "No pretrained foreign weights treated as clean pretraining cutoff",
+    "No using paper China/US IC as a comparable Indian result",
+    "No relabeling price indices as TRI",
+    "No silent complete-case survivorship-free claim"
+  ]
+}

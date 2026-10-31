@@ -84,3 +84,6 @@ tests/*20261031.py text eol=lf
 experiments/round2-*/** -text
 research/reports/round2_20261031* -text
 research/environment/round2_20261031.json -text
+experiments/champion-vs-market-20261031/** -text
+research/protocols/champion_vs_market_20261031.json -text
+research/literature/20261031/** -text
