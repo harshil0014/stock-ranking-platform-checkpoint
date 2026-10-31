@@ -1,0 +1,6 @@
+{
+  "source_sha256": "61745b307c3caff93a79d335b57bf8ba25be7d15ff988af30f17e82ba7408cb3",
+  "protocol_sha256": "161cba7140d9856e1561a5f7fb7c7fd252c099e240d8ace1df80484abf7170f9",
+  "trained": false,
+  "fresh_holdout": false
+}

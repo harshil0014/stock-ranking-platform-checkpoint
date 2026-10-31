@@ -1,0 +1,12 @@
+{
+  "research_tests_passed": 19,
+  "test_log_sha256": "c6aa5aa58de760d089c29cba63cbc250cbe33c8daeffd0b0128ef91eb15af0c7",
+  "current_score_replays_passed": 4,
+  "mature_fit_audits_passed": 7,
+  "source_date": "2026-10-03",
+  "current_complete_factor_issuers": 2396,
+  "total_issuers": 4436,
+  "production_promoted": false,
+  "interpretation": "Operational preference point gate only; no investment replacement or fresh validation",
+  "visual_inspection": "Both final PNG figures inspected; labels and layout corrected"
+}

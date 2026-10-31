@@ -1,0 +1,22 @@
+{
+  "factor10_fixed": {
+    "factor_core": 0.1,
+    "per_factor": 0.02,
+    "champion": 0.9
+  },
+  "factor20_fixed": {
+    "factor_core": 0.2,
+    "per_factor": 0.04,
+    "champion": 0.8
+  },
+  "factor35_fixed": {
+    "factor_core": 0.35,
+    "per_factor": 0.06999999999999999,
+    "champion": 0.65
+  },
+  "factor50_fixed": {
+    "factor_core": 0.5,
+    "per_factor": 0.1,
+    "champion": 0.5
+  }
+}

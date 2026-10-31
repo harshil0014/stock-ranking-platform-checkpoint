@@ -1,0 +1,871 @@
+[
+  {
+    "model": "active_champion",
+    "policy": "sector_top3_equal_sector",
+    "date": "2020-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE433G01020"
+    ]
+  },
+  {
+    "model": "factor10_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2020-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE433G01020"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2020-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE433G01020"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2020-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE433G01020"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2020-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE433G01020"
+    ]
+  },
+  {
+    "model": "active_champion",
+    "policy": "sector_top3_equal_sector",
+    "date": "2020-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE433G01020"
+    ]
+  },
+  {
+    "model": "factor10_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2020-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE433G01020"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2020-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE433G01020"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2020-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE433G01020"
+    ]
+  },
+  {
+    "model": "active_champion",
+    "policy": "sector_top3_equal_sector",
+    "date": "2020-09-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE433G01020"
+    ]
+  },
+  {
+    "model": "factor10_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2020-09-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE433G01020"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2020-09-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE433G01020"
+    ]
+  },
+  {
+    "model": "active_champion",
+    "policy": "sector_top3_equal_sector",
+    "date": "2021-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE414C01045"
+    ]
+  },
+  {
+    "model": "active_champion",
+    "policy": "sector_top3_equal_sector",
+    "date": "2021-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE031B01049"
+    ]
+  },
+  {
+    "model": "factor10_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2021-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE031B01049"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2021-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE031B01049"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2021-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE031B01049"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2021-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE031B01049"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2022-09-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE215I01027"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2022-09-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE215I01027"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2022-12-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE215I01027",
+      "INE714U01024"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2022-12-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE215I01027",
+      "INE714U01024"
+    ]
+  },
+  {
+    "model": "factor10_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2023-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE714U01024"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "global_top20",
+    "date": "2023-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE714U01024"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2023-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE714U01024"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "global_top20",
+    "date": "2023-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE714U01024"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2023-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE714U01024"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "global_top20",
+    "date": "2023-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE714U01024"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2023-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE714U01024"
+    ]
+  },
+  {
+    "model": "active_champion",
+    "policy": "sector_top3_equal_sector",
+    "date": "2023-09-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE594W01042"
+    ]
+  },
+  {
+    "model": "factor10_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2023-09-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE594W01042"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2023-09-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE594W01042"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2023-09-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE594W01042"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2023-09-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE594W01042"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2023-12-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE594W01042"
+    ]
+  },
+  {
+    "model": "active_champion",
+    "policy": "sector_top3_equal_sector",
+    "date": "2024-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE594W01042"
+    ]
+  },
+  {
+    "model": "factor10_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2024-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE392G01028",
+      "INE594W01042"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "global_top20",
+    "date": "2024-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE392G01028"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2024-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE392G01028",
+      "INE594W01042"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "global_top20",
+    "date": "2024-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE392G01028"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2024-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE392G01028",
+      "INE594W01042"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "global_top20",
+    "date": "2024-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE392G01028"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2024-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE392G01028",
+      "INE594W01042"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-01-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE142E01022"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-01-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE142E01022"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-01-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE142E01022"
+    ]
+  },
+  {
+    "model": "active_champion",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-02-28",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor10_fixed",
+    "policy": "global_top20",
+    "date": "2025-02-28",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor10_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-02-28",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "global_top20",
+    "date": "2025-02-28",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-02-28",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE142E01022",
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "global_top20",
+    "date": "2025-02-28",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-02-28",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE142E01022",
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "global_top20",
+    "date": "2025-02-28",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-02-28",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE142E01022",
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "active_champion",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE142E01022",
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor10_fixed",
+    "policy": "global_top20",
+    "date": "2025-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE142E01022",
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor10_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE142E01022",
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "global_top20",
+    "date": "2025-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE142E01022",
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE142E01022",
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "global_top20",
+    "date": "2025-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE142E01022",
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE142E01022",
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "global_top20",
+    "date": "2025-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE142E01022"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-03-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE142E01022"
+    ]
+  },
+  {
+    "model": "active_champion",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-04-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor10_fixed",
+    "policy": "global_top20",
+    "date": "2025-04-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor10_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-04-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "global_top20",
+    "date": "2025-04-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-04-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE625X01026",
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "global_top20",
+    "date": "2025-04-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-04-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE625X01026",
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-04-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE625X01026",
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "active_champion",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-05-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor10_fixed",
+    "policy": "global_top20",
+    "date": "2025-05-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor10_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-05-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "global_top20",
+    "date": "2025-05-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-05-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "global_top20",
+    "date": "2025-05-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-05-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "global_top20",
+    "date": "2025-05-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-05-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor20_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor50_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-06-30",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE910R01024"
+    ]
+  },
+  {
+    "model": "factor35_fixed",
+    "policy": "sector_top3_equal_sector",
+    "date": "2025-07-31",
+    "reason": "Missing selections/paths or unresolved corporate action",
+    "missing": [],
+    "blocked": [
+      "INE625X01026"
+    ]
+  }
+]

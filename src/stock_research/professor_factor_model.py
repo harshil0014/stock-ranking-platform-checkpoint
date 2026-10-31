@@ -84,3 +84,11 @@ def score(frame, weights, core_share=.9):
     cols = ['q_'+c for c in FACTOR_COLUMNS]
     result = core_share * (frame[cols].to_numpy(float) @ weights) + (1-core_share)*frame.champion_percentile
     return result.where(frame.factor_eligible)
+
+
+def preference_lens(frame, core_share):
+    """Runtime entry for the separately registered bounded equal-factor family."""
+    if core_share not in [.1, .2, .35, .5]:
+        raise ValueError('Unregistered preference-lens share')
+    core = frame[['q_'+c for c in FACTOR_COLUMNS]].mean(axis=1, skipna=False)
+    return (core_share*core+(1-core_share)*frame.champion_percentile).where(frame.factor_eligible)

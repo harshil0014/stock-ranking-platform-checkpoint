@@ -1,0 +1,5 @@
+model,sectors,changed_sectors,shared_slots,slots
+factor10_fixed,50,10,140,150
+factor20_fixed,50,24,124,150
+factor35_fixed,50,36,103,150
+factor50_fixed,50,39,89,150

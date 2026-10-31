@@ -3,6 +3,7 @@ import argparse,json,hashlib
 import numpy as np
 import pandas as pd
 import professor_majority_20261031 as base
+from stock_research.professor_factor_model import preference_lens
 
 ROOT=base.ROOT
 OUT=ROOT/'experiments/professor-weight-curve-20261031'
@@ -12,8 +13,7 @@ SHARES={f'factor{int(100*w)}_fixed':w for w in [.1,.2,.35,.5]}
 
 def blend(frame,share):
     if share not in SHARES.values():raise ValueError('Unregistered weight')
-    core=frame[['q_'+c for c in base.FACTOR_COLUMNS]].mean(axis=1,skipna=False)
-    return (share*core+(1-share)*frame.champion_percentile).where(frame.factor_eligible)
+    return preference_lens(frame,share)
 
 
 def main():

@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import pytest
-from stock_research.professor_factor_model import price_features, normalize_factors, constrained_weights, score, FACTOR_COLUMNS
+from stock_research.professor_factor_model import price_features, normalize_factors, constrained_weights, score, preference_lens, FACTOR_COLUMNS
 
 
 def frame():
@@ -84,3 +84,11 @@ def test_early_mature_training_rows_survive_later_champion_archive():
     assert len(combined)==2
     early=combined.loc[combined.decision_date.eq('2016-12-31')].iloc[0]
     assert early.future_xirr==.1 and pd.isna(early.champion_score)
+
+
+def test_registered_preference_lens_has_exact_score_budget():
+    x=normalize_factors(frame())
+    for w in [.1,.2,.35,.5]:
+        expected=w*x[['q_'+c for c in FACTOR_COLUMNS]].mean(axis=1)+(1-w)*x.champion_percentile
+        assert np.allclose(preference_lens(x,w),expected)
+    with pytest.raises(ValueError):preference_lens(x,.02)

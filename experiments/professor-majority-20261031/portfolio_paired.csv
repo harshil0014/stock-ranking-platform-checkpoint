@@ -1,0 +1,13 @@
+model,policy,period,matched_dates,planned_dates,xirr_delta,drawdown_delta
+factor80_fixed,global_top20,development,13,16,-0.08671804032650991,-0.05848256947219104
+factor90_fixed,global_top20,development,13,16,-0.066497931346006,-0.07403558220263382
+factor90_learned,global_top20,development,12,16,-0.12250200457209258,-0.06248030981239882
+factor80_fixed,global_top20,exposed,10,12,0.06231694419230336,-0.0580133899836915
+factor90_fixed,global_top20,exposed,11,12,0.01908210902042159,-0.05528929593379971
+factor90_learned,global_top20,exposed,11,12,0.0215247616129679,-0.030722090040004014
+factor80_fixed,sector_top3_equal_sector,development,5,16,-0.08117228437455105,-0.05422384442463364
+factor90_fixed,sector_top3_equal_sector,development,5,16,-0.09051819021019816,-0.054711017491959966
+factor90_learned,sector_top3_equal_sector,development,5,16,-0.08583411976022799,-0.04800627564345097
+factor80_fixed,sector_top3_equal_sector,exposed,3,12,-0.008273972308749808,-0.04831691576772168
+factor90_fixed,sector_top3_equal_sector,exposed,2,12,0.014592885651453984,-0.04628075708444812
+factor90_learned,sector_top3_equal_sector,exposed,3,12,-0.012063797617759294,-0.05212954627422339

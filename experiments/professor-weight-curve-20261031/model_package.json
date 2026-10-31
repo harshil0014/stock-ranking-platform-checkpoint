@@ -1,0 +1,25 @@
+{
+  "model_id": "professor_preference20_v1",
+  "selected_by_development": "factor20_fixed",
+  "factor_core_share": 0.2,
+  "per_factor_share": 0.04,
+  "champion_share": 0.8,
+  "factors": [
+    "annual_consistency",
+    "cagr3",
+    "cagr5",
+    "high_recency",
+    "sip_profit"
+  ],
+  "entrypoint": "stock_research.professor_factor_model.preference_lens(normalized_frame,core_share)",
+  "normalization": "normalize_factors; within-sector complete feature population before outcomes",
+  "input_as_of": "2026-10-03",
+  "eligible": 2396,
+  "total": 4436,
+  "production_promoted": false,
+  "fresh_forecast": false,
+  "missing": "Unavailable lens; retain champion separately. Do not neutral-fill or redistribute weights.",
+  "choice_basis": "Exploratory development preference/risk point gate. Exposed diagnostics not used to choose. No statistical or investable superiority claim.",
+  "investment_replacement_eligible": false,
+  "source_sha256": "6fc0f8f11a96206e12b95e72bc94453541559618e11e0106314c3c205f8001c3"
+}

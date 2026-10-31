@@ -1,0 +1,205 @@
+[
+  {
+    "year": 2020,
+    "cutoff": "2020-01-01",
+    "max_training_endpoint": "2019-12-31",
+    "training_dates": 18,
+    "training_rows": 21696,
+    "core_weights": {
+      "annual_consistency": 0.39950450402837134,
+      "cagr3": 0.1,
+      "cagr5": 0.1,
+      "high_recency": 0.3004954959716287,
+      "sip_profit": 0.1
+    },
+    "final_factor_weights": {
+      "annual_consistency": 0.3595540536255342,
+      "cagr3": 0.09000000000000001,
+      "cagr5": 0.09000000000000001,
+      "high_recency": 0.27044594637446584,
+      "sip_profit": 0.09000000000000001
+    },
+    "champion_weight": 0.1,
+    "ridge_raw_coefficients": [
+      0.0423548706206367,
+      0.0,
+      0.0,
+      0.028353365901616957,
+      0.0
+    ]
+  },
+  {
+    "year": 2021,
+    "cutoff": "2021-01-01",
+    "max_training_endpoint": "2020-12-31",
+    "training_dates": 22,
+    "training_rows": 26566,
+    "core_weights": {
+      "annual_consistency": 0.3538124635414934,
+      "cagr3": 0.1,
+      "cagr5": 0.1,
+      "high_recency": 0.2991454305193676,
+      "sip_profit": 0.14704210593913897
+    },
+    "final_factor_weights": {
+      "annual_consistency": 0.3184312171873441,
+      "cagr3": 0.09000000000000001,
+      "cagr5": 0.09000000000000001,
+      "high_recency": 0.26923088746743085,
+      "sip_profit": 0.13233789534522508
+    },
+    "champion_weight": 0.1,
+    "ridge_raw_coefficients": [
+      0.019585484834913097,
+      0.0,
+      0.0,
+      0.015367093305651166,
+      0.003630012646415057
+    ]
+  },
+  {
+    "year": 2022,
+    "cutoff": "2022-01-01",
+    "max_training_endpoint": "2021-12-31",
+    "training_dates": 26,
+    "training_rows": 31497,
+    "core_weights": {
+      "annual_consistency": 0.44198679282905584,
+      "cagr3": 0.1,
+      "cagr5": 0.1,
+      "high_recency": 0.21062738673595804,
+      "sip_profit": 0.14738582043498608
+    },
+    "final_factor_weights": {
+      "annual_consistency": 0.3977881135461503,
+      "cagr3": 0.09000000000000001,
+      "cagr5": 0.09000000000000001,
+      "high_recency": 0.18956464806236226,
+      "sip_profit": 0.13264723839148748
+    },
+    "champion_weight": 0.1,
+    "ridge_raw_coefficients": [
+      0.029688683050929022,
+      0.0,
+      0.0,
+      0.0096038253243251,
+      0.004113675245657062
+    ]
+  },
+  {
+    "year": 2023,
+    "cutoff": "2023-01-01",
+    "max_training_endpoint": "2022-12-31",
+    "training_dates": 30,
+    "training_rows": 37519,
+    "core_weights": {
+      "annual_consistency": 0.4319635312140564,
+      "cagr3": 0.1,
+      "cagr5": 0.1,
+      "high_recency": 0.26803646878594356,
+      "sip_profit": 0.1
+    },
+    "final_factor_weights": {
+      "annual_consistency": 0.38876717809265077,
+      "cagr3": 0.09000000000000001,
+      "cagr5": 0.09000000000000001,
+      "high_recency": 0.2412328219073492,
+      "sip_profit": 0.09000000000000001
+    },
+    "champion_weight": 0.1,
+    "ridge_raw_coefficients": [
+      0.026925792573513997,
+      0.0,
+      0.0,
+      0.013629554688640128,
+      0.0
+    ]
+  },
+  {
+    "year": 2024,
+    "cutoff": "2024-01-01",
+    "max_training_endpoint": "2023-12-31",
+    "training_dates": 34,
+    "training_rows": 44723,
+    "core_weights": {
+      "annual_consistency": 0.4121417498338352,
+      "cagr3": 0.1,
+      "cagr5": 0.1,
+      "high_recency": 0.28785825016616484,
+      "sip_profit": 0.1
+    },
+    "final_factor_weights": {
+      "annual_consistency": 0.3709275748504517,
+      "cagr3": 0.09000000000000001,
+      "cagr5": 0.09000000000000001,
+      "high_recency": 0.25907242514954837,
+      "sip_profit": 0.09000000000000001
+    },
+    "champion_weight": 0.1,
+    "ridge_raw_coefficients": [
+      0.022994246255412718,
+      0.0,
+      0.0,
+      0.01383877314627485,
+      0.0
+    ]
+  },
+  {
+    "year": 2025,
+    "cutoff": "2025-01-01",
+    "max_training_endpoint": "2024-12-31",
+    "training_dates": 38,
+    "training_rows": 52581,
+    "core_weights": {
+      "annual_consistency": 0.44022829566688104,
+      "cagr3": 0.1,
+      "cagr5": 0.1,
+      "high_recency": 0.259771704333119,
+      "sip_profit": 0.1
+    },
+    "final_factor_weights": {
+      "annual_consistency": 0.39620546610019297,
+      "cagr3": 0.09000000000000001,
+      "cagr5": 0.09000000000000001,
+      "high_recency": 0.23379453389980712,
+      "sip_profit": 0.09000000000000001
+    },
+    "champion_weight": 0.1,
+    "ridge_raw_coefficients": [
+      0.025582566840443136,
+      0.0,
+      0.0,
+      0.012013610735408962,
+      0.0
+    ]
+  },
+  {
+    "year": 2026,
+    "cutoff": "2026-10-03",
+    "max_training_endpoint": "2026-08-31",
+    "training_dates": 50,
+    "training_rows": 78898,
+    "core_weights": {
+      "annual_consistency": 0.17780422648665717,
+      "cagr3": 0.1,
+      "cagr5": 0.1,
+      "high_recency": 0.5221957735133428,
+      "sip_profit": 0.1
+    },
+    "final_factor_weights": {
+      "annual_consistency": 0.16002380383799145,
+      "cagr3": 0.09000000000000001,
+      "cagr5": 0.09000000000000001,
+      "high_recency": 0.46997619616200853,
+      "sip_profit": 0.09000000000000001
+    },
+    "champion_weight": 0.1,
+    "ridge_raw_coefficients": [
+      0.006066193722884991,
+      0.0,
+      0.0,
+      0.032917509327779586,
+      0.0
+    ]
+  }
+]

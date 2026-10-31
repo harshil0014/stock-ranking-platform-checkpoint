@@ -1,6 +1,8 @@
 """Compact evidence and figures for the frozen majority-factor family."""
 from pathlib import Path
-import hashlib,json,zipfile
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'work/round2-plot-deps'))
+import hashlib,json,zipfile,re
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -11,6 +13,16 @@ import professor_majority_20261031 as r
 
 def table(frame):
     return '| '+' | '.join(str(c) for c in frame.columns)+' |\n| '+' | '.join(['---']*len(frame.columns))+' |\n'+''.join('| '+' | '.join(str(v) for v in row)+' |\n' for row in frame.itertuples(index=False,name=None))
+
+
+def clean_prose(text):
+    text=text.replace('3Y','3-year').replace('5Y','5-year').replace('1Y','1-year')
+    text=re.sub(r'(?<=\d)(?=[A-Za-z])',' ',text)
+    text=re.sub(r'\b(first|separate|roughly|approximately|only|after|before|of|than|about|on|in|with|least)(?=\d)',r'\1 ',text,flags=re.I)
+    text=re.sub(r',(?=\S)',', ',text)
+    return (text.replace('%of','% of').replace('%to','% to').replace('Top3','Top-3').replace('Top20','Top-20')
+            .replace('ppworse','pp worse').replace('pploss','pp loss').replace('ppmean','pp mean').replace('ppcame','pp came')
+            .replace('5086 bad3','5086bad3').replace('IC,','IC, '))
 
 
 def uncertainty():
@@ -36,7 +48,7 @@ def uncertainty():
                     while len(ids)<n:ids.extend(blocks[int(rng.integers(n))].tolist())
                     draws.append(values[ids[:n]].mean(0))
                 floor=float(np.quantile(np.max(np.abs(np.asarray(draws)-center),axis=1),.95))
-                for j,name in enumerate(r.NAMES[1:]):rows.append(dict(period=period,metric=metric,block_days=block,model=name,status='PER_METRIC_SIMULTANEOUS_3_CANDIDATES',dates=n,delta=center[j],lower95=center[j]-floor,upper95=center[j]+floor))
+                for j,name in enumerate(r.NAMES[1:]):rows.append(dict(period=period,metric=metric,block_days=block,model=name,status=f'PER_METRIC_SIMULTANEOUS_{len(r.NAMES)-1}_CANDIDATES',dates=n,delta=center[j],lower95=center[j]-floor,upper95=center[j]+floor))
     pd.DataFrame(rows).to_csv(r.OUT/'uncertainty.csv',index=False)
 
 
@@ -44,6 +56,8 @@ def main():
     summary=pd.read_csv(r.OUT/'summary.csv').rename(columns={'model':'model'})
     if 'model' not in summary:summary=summary.rename(columns={summary.columns[0]:'model'})
     decision=json.loads((r.OUT/'decision.json').read_text());audits=json.loads((r.OUT/'fit_audits.json').read_text())
+    decision['portfolio_noninferiority']='NOT_ESTABLISHED_FROM_MATCHED_PROXY_COHORTS'
+    (r.OUT/'decision.json').write_text(json.dumps(decision,indent=2)+'\n')
     current=pd.read_csv(r.OUT/'current_rankings.csv.gz');eligible=current.loc[current.factor_eligible].copy()
     overlap=[]
     for name in r.NAMES[1:]:
@@ -67,8 +81,8 @@ def main():
     for period,marker in [('development','o'),('exposed','s')]:
         z=summary.loc[summary.period.eq(period)].set_index('model').loc[r.NAMES]
         for i,name in enumerate(r.NAMES):
-            axes[0].scatter(z.loc[name,'rank_ic'],z.loc[name,'alignment']*100,color=colors[i],marker=marker,s=60)
-            axes[0].annotate(labels[i]+(' D' if period=='development' else ' E'),(z.loc[name,'rank_ic'],z.loc[name,'alignment']*100),xytext=(4,4),textcoords='offset points',fontsize=8)
+            axes[0].scatter(z.loc[name,'rank_ic'],z.loc[name,'alignment']*100,color=colors[i],marker=marker,s=60,label=labels[i]+(' Dev' if period=='development' else ' Exposed'))
+    axes[0].legend(ncol=2,loc='center',fontsize=7,framealpha=.9)
     axes[0].set(xlabel='Within-sector rank IC',ylabel='Mean selected factor percentile',title='Preference versus prediction')
     axes[1].barh(list(weights),np.asarray(list(weights.values()))*100,color='#0f766e');axes[1].set(xlabel='Percent of final score',title='Learned90: frozen current weights',xlim=(0,65))
     axes[1].text(.97,.03,'Champion component:10%',transform=axes[1].transAxes,ha='right',fontsize=8)
@@ -93,6 +107,7 @@ def main():
     text+='## Integrity and uncertainty\n\nSeven learned fits record strict mature endpoints before each fold cutoff. Factor scores use full feature cohorts before outcome filtering. Missing selected future outcomes block Top3metrics for every compared model; no reselection after removing unknown outcomes. The first attempted fit correctly stopped when an initial left join lost earlier training rows; the fix retains those source rows and keeps missing champion scores missing. Failed logs/checkpoint are preserved locally.\n\nuncertainty.csv reports4000paired365/730day circular-block resamples with per-metric95%simultaneous bounds across the three candidates. These bounds do not jointly cover all metrics or turn already-exposed history into a holdout. Unsupported block spans are unavailable. Coverage/support tables and all fitted weights are included.\n\n'
     text+='## Limits and delivery\n\nOne base7500profile only. Current-survivor identities,retrospective sectors,provider-adjusted historical prices and incomplete corporate-action/fundamental certification remain. Fewer complete-history stocks may be a selective universe; champion is restricted identically for comparison. Five annual returns and3Y/5Y CAGR overlap. Recorded closing high is available-history high,not certified lifetime ATH. Absolute goal probabilities and commercial-platform superiority are untested here. Fresh daily champion inputs remain unresolved.\n\n'
     text+='![Majority-factor comparison](../../experiments/professor-majority-20261031/figures/majority_factor_comparison.png)\n'
+    text=clean_prose(text)
     target=r.ROOT/'research/reports/professor_majority_20261031.md';target.write_text(text,encoding='utf-8')
     outputs=Path(r'C:\Users\Harshil\Documents\Codex\2026-10-31\you\outputs')
     (outputs/'Professor-majority-model-results-20261031.md').write_text(text.replace('../../experiments/professor-majority-20261031/figures/majority_factor_comparison.png','Professor-majority-model-comparison-20261031.png'),encoding='utf-8')

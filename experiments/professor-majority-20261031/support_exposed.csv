@@ -1,0 +1,580 @@
+period,decision_date,sector,feature_rows,valid_outcome_rows,all_model_top3_outcomes_available
+exposed,2024-03-31,Aerospace & Defense,12,12,True
+exposed,2024-03-31,Agricultural Food & other Products,84,83,True
+exposed,2024-03-31,"Agricultural, Commercial & Construction Vehicles",7,7,True
+exposed,2024-03-31,Auto Components,89,89,True
+exposed,2024-03-31,Automobiles,8,8,True
+exposed,2024-03-31,Banks,30,30,True
+exposed,2024-03-31,Beverages,17,17,True
+exposed,2024-03-31,Capital Markets,33,33,True
+exposed,2024-03-31,Cement & Cement Products,28,26,True
+exposed,2024-03-31,Chemicals & Petrochemicals,120,120,True
+exposed,2024-03-31,Commercial Services & Supplies,112,109,False
+exposed,2024-03-31,Construction,58,56,False
+exposed,2024-03-31,Consumer Durables,111,111,True
+exposed,2024-03-31,Diversified,7,7,True
+exposed,2024-03-31,Electrical Equipment,45,45,True
+exposed,2024-03-31,Entertainment,36,36,True
+exposed,2024-03-31,Ferrous Metals,21,21,True
+exposed,2024-03-31,Fertilizers & Agrochemicals,33,33,True
+exposed,2024-03-31,Finance,235,234,True
+exposed,2024-03-31,Food Products,46,45,True
+exposed,2024-03-31,Gas,6,6,True
+exposed,2024-03-31,Healthcare Services,28,28,True
+exposed,2024-03-31,Household Products,13,12,True
+exposed,2024-03-31,IT - Hardware,14,14,True
+exposed,2024-03-31,IT - Services,33,32,False
+exposed,2024-03-31,IT - Software,62,60,True
+exposed,2024-03-31,Industrial Manufacturing,68,67,False
+exposed,2024-03-31,Industrial Products,200,200,True
+exposed,2024-03-31,Insurance,7,7,True
+exposed,2024-03-31,Leisure Services,41,41,True
+exposed,2024-03-31,Media,11,11,True
+exposed,2024-03-31,Metals & Minerals Trading,6,5,False
+exposed,2024-03-31,Minerals & Mining,11,11,True
+exposed,2024-03-31,Non - Ferrous Metals,9,9,True
+exposed,2024-03-31,Oil,9,8,False
+exposed,2024-03-31,Other Construction Materials,12,12,True
+exposed,2024-03-31,Other Consumer Services,12,12,True
+exposed,2024-03-31,"Paper, Forest & Jute Products",30,30,True
+exposed,2024-03-31,Personal Products,10,9,False
+exposed,2024-03-31,Petroleum Products,10,9,True
+exposed,2024-03-31,Pharmaceuticals & Biotechnology,102,101,True
+exposed,2024-03-31,Power,29,29,True
+exposed,2024-03-31,Realty,76,75,True
+exposed,2024-03-31,Retailing,21,21,True
+exposed,2024-03-31,Telecom -  Equipment & Accessories,10,10,True
+exposed,2024-03-31,Telecom - Services,11,11,True
+exposed,2024-03-31,Textiles & Apparels,143,142,True
+exposed,2024-03-31,Transport Infrastructure,7,7,True
+exposed,2024-03-31,Transport Services,32,32,True
+exposed,2024-06-30,Aerospace & Defense,12,12,True
+exposed,2024-06-30,Agricultural Food & other Products,84,83,False
+exposed,2024-06-30,"Agricultural, Commercial & Construction Vehicles",7,7,True
+exposed,2024-06-30,Auto Components,89,89,True
+exposed,2024-06-30,Automobiles,8,8,True
+exposed,2024-06-30,Banks,30,30,True
+exposed,2024-06-30,Beverages,17,17,True
+exposed,2024-06-30,Capital Markets,33,33,True
+exposed,2024-06-30,Cement & Cement Products,27,25,True
+exposed,2024-06-30,Chemicals & Petrochemicals,123,123,True
+exposed,2024-06-30,Commercial Services & Supplies,118,116,True
+exposed,2024-06-30,Construction,58,57,False
+exposed,2024-06-30,Consumer Durables,113,111,True
+exposed,2024-06-30,Diversified,9,9,True
+exposed,2024-06-30,Electrical Equipment,45,45,True
+exposed,2024-06-30,Entertainment,35,35,True
+exposed,2024-06-30,Ferrous Metals,22,22,True
+exposed,2024-06-30,Fertilizers & Agrochemicals,33,33,True
+exposed,2024-06-30,Finance,252,250,True
+exposed,2024-06-30,Food Products,46,45,True
+exposed,2024-06-30,Gas,7,7,True
+exposed,2024-06-30,Healthcare Services,28,28,True
+exposed,2024-06-30,Household Products,13,12,True
+exposed,2024-06-30,IT - Hardware,14,14,True
+exposed,2024-06-30,IT - Services,32,32,True
+exposed,2024-06-30,IT - Software,64,63,True
+exposed,2024-06-30,Industrial Manufacturing,70,69,False
+exposed,2024-06-30,Industrial Products,201,200,True
+exposed,2024-06-30,Insurance,7,7,True
+exposed,2024-06-30,Leisure Services,43,43,True
+exposed,2024-06-30,Media,11,11,True
+exposed,2024-06-30,Metals & Minerals Trading,6,5,False
+exposed,2024-06-30,Minerals & Mining,12,12,True
+exposed,2024-06-30,Non - Ferrous Metals,9,9,True
+exposed,2024-06-30,Oil,9,9,True
+exposed,2024-06-30,Other Construction Materials,12,12,True
+exposed,2024-06-30,Other Consumer Services,12,12,True
+exposed,2024-06-30,"Paper, Forest & Jute Products",29,29,True
+exposed,2024-06-30,Personal Products,9,9,True
+exposed,2024-06-30,Petroleum Products,9,9,True
+exposed,2024-06-30,Pharmaceuticals & Biotechnology,101,99,True
+exposed,2024-06-30,Power,30,30,True
+exposed,2024-06-30,Realty,75,74,True
+exposed,2024-06-30,Retailing,20,20,True
+exposed,2024-06-30,Telecom -  Equipment & Accessories,10,10,True
+exposed,2024-06-30,Telecom - Services,11,11,True
+exposed,2024-06-30,Textiles & Apparels,143,141,True
+exposed,2024-06-30,Transport Infrastructure,7,7,True
+exposed,2024-06-30,Transport Services,31,31,True
+exposed,2024-09-30,Aerospace & Defense,12,12,True
+exposed,2024-09-30,Agricultural Food & other Products,85,85,True
+exposed,2024-09-30,"Agricultural, Commercial & Construction Vehicles",8,8,True
+exposed,2024-09-30,Auto Components,91,91,True
+exposed,2024-09-30,Automobiles,8,7,False
+exposed,2024-09-30,Banks,30,30,True
+exposed,2024-09-30,Beverages,17,17,True
+exposed,2024-09-30,Capital Markets,33,33,True
+exposed,2024-09-30,Cement & Cement Products,27,25,True
+exposed,2024-09-30,Chemicals & Petrochemicals,123,123,True
+exposed,2024-09-30,Commercial Services & Supplies,120,117,True
+exposed,2024-09-30,Construction,57,55,True
+exposed,2024-09-30,Consumer Durables,112,110,False
+exposed,2024-09-30,Diversified,7,7,True
+exposed,2024-09-30,Electrical Equipment,47,47,True
+exposed,2024-09-30,Entertainment,37,37,True
+exposed,2024-09-30,Ferrous Metals,22,22,True
+exposed,2024-09-30,Fertilizers & Agrochemicals,33,33,True
+exposed,2024-09-30,Finance,260,258,False
+exposed,2024-09-30,Food Products,47,46,True
+exposed,2024-09-30,Gas,6,6,True
+exposed,2024-09-30,Healthcare Services,28,28,True
+exposed,2024-09-30,Household Products,13,12,True
+exposed,2024-09-30,IT - Hardware,12,12,True
+exposed,2024-09-30,IT - Services,33,33,True
+exposed,2024-09-30,IT - Software,63,63,True
+exposed,2024-09-30,Industrial Manufacturing,71,69,True
+exposed,2024-09-30,Industrial Products,199,199,True
+exposed,2024-09-30,Insurance,7,7,True
+exposed,2024-09-30,Leisure Services,45,45,True
+exposed,2024-09-30,Media,11,11,True
+exposed,2024-09-30,Minerals & Mining,12,12,True
+exposed,2024-09-30,Non - Ferrous Metals,9,9,True
+exposed,2024-09-30,Oil,9,9,True
+exposed,2024-09-30,Other Construction Materials,13,13,True
+exposed,2024-09-30,Other Consumer Services,12,12,True
+exposed,2024-09-30,"Paper, Forest & Jute Products",30,30,True
+exposed,2024-09-30,Personal Products,9,9,True
+exposed,2024-09-30,Petroleum Products,10,10,True
+exposed,2024-09-30,Pharmaceuticals & Biotechnology,104,104,True
+exposed,2024-09-30,Power,32,32,True
+exposed,2024-09-30,Realty,76,75,True
+exposed,2024-09-30,Retailing,20,19,True
+exposed,2024-09-30,Telecom -  Equipment & Accessories,10,10,True
+exposed,2024-09-30,Telecom - Services,11,11,True
+exposed,2024-09-30,Textiles & Apparels,146,146,True
+exposed,2024-09-30,Transport Infrastructure,7,7,True
+exposed,2024-09-30,Transport Services,31,30,False
+exposed,2024-12-31,Aerospace & Defense,12,12,True
+exposed,2024-12-31,Agricultural Food & other Products,88,87,True
+exposed,2024-12-31,"Agricultural, Commercial & Construction Vehicles",8,8,True
+exposed,2024-12-31,Auto Components,92,92,True
+exposed,2024-12-31,Automobiles,8,6,False
+exposed,2024-12-31,Banks,32,32,True
+exposed,2024-12-31,Beverages,17,17,True
+exposed,2024-12-31,Capital Markets,33,33,True
+exposed,2024-12-31,Cement & Cement Products,29,27,False
+exposed,2024-12-31,Chemicals & Petrochemicals,126,125,True
+exposed,2024-12-31,Commercial Services & Supplies,124,122,True
+exposed,2024-12-31,Construction,61,60,True
+exposed,2024-12-31,Consumer Durables,117,116,True
+exposed,2024-12-31,Diversified,8,8,True
+exposed,2024-12-31,Electrical Equipment,47,47,True
+exposed,2024-12-31,Entertainment,38,38,True
+exposed,2024-12-31,Ferrous Metals,22,22,True
+exposed,2024-12-31,Fertilizers & Agrochemicals,34,33,True
+exposed,2024-12-31,Finance,263,261,False
+exposed,2024-12-31,Food Products,47,45,True
+exposed,2024-12-31,Gas,7,7,True
+exposed,2024-12-31,Healthcare Services,29,29,True
+exposed,2024-12-31,Household Products,12,12,True
+exposed,2024-12-31,IT - Hardware,12,12,True
+exposed,2024-12-31,IT - Services,35,34,True
+exposed,2024-12-31,IT - Software,67,67,True
+exposed,2024-12-31,Industrial Manufacturing,71,69,True
+exposed,2024-12-31,Industrial Products,208,207,True
+exposed,2024-12-31,Insurance,7,7,True
+exposed,2024-12-31,Leisure Services,49,49,True
+exposed,2024-12-31,Media,12,12,True
+exposed,2024-12-31,Minerals & Mining,12,12,True
+exposed,2024-12-31,Non - Ferrous Metals,10,10,True
+exposed,2024-12-31,Oil,8,8,True
+exposed,2024-12-31,Other Construction Materials,13,13,True
+exposed,2024-12-31,Other Consumer Services,11,11,True
+exposed,2024-12-31,"Paper, Forest & Jute Products",31,31,True
+exposed,2024-12-31,Personal Products,9,9,True
+exposed,2024-12-31,Petroleum Products,9,9,True
+exposed,2024-12-31,Pharmaceuticals & Biotechnology,104,104,True
+exposed,2024-12-31,Power,31,31,True
+exposed,2024-12-31,Realty,78,77,True
+exposed,2024-12-31,Retailing,24,23,True
+exposed,2024-12-31,Telecom -  Equipment & Accessories,11,11,True
+exposed,2024-12-31,Telecom - Services,11,11,True
+exposed,2024-12-31,Textiles & Apparels,152,151,True
+exposed,2024-12-31,Transport Infrastructure,6,6,True
+exposed,2024-12-31,Transport Services,33,33,True
+exposed,2025-01-31,Aerospace & Defense,12,12,True
+exposed,2025-01-31,Agricultural Food & other Products,90,88,True
+exposed,2025-01-31,"Agricultural, Commercial & Construction Vehicles",8,8,True
+exposed,2025-01-31,Auto Components,93,93,True
+exposed,2025-01-31,Automobiles,8,6,False
+exposed,2025-01-31,Banks,32,32,True
+exposed,2025-01-31,Beverages,17,17,True
+exposed,2025-01-31,Capital Markets,34,34,True
+exposed,2025-01-31,Cement & Cement Products,28,27,False
+exposed,2025-01-31,Chemicals & Petrochemicals,127,126,True
+exposed,2025-01-31,Commercial Services & Supplies,128,126,True
+exposed,2025-01-31,Construction,61,60,True
+exposed,2025-01-31,Consumer Durables,116,115,True
+exposed,2025-01-31,Diversified,8,8,True
+exposed,2025-01-31,Electrical Equipment,47,47,True
+exposed,2025-01-31,Entertainment,39,39,True
+exposed,2025-01-31,Ferrous Metals,21,21,True
+exposed,2025-01-31,Fertilizers & Agrochemicals,33,32,True
+exposed,2025-01-31,Finance,262,260,True
+exposed,2025-01-31,Food Products,46,44,True
+exposed,2025-01-31,Gas,6,6,True
+exposed,2025-01-31,Healthcare Services,29,29,True
+exposed,2025-01-31,Household Products,12,12,True
+exposed,2025-01-31,IT - Hardware,12,12,True
+exposed,2025-01-31,IT - Services,35,34,True
+exposed,2025-01-31,IT - Software,67,67,True
+exposed,2025-01-31,Industrial Manufacturing,71,69,False
+exposed,2025-01-31,Industrial Products,208,207,True
+exposed,2025-01-31,Insurance,7,7,True
+exposed,2025-01-31,Leisure Services,49,49,True
+exposed,2025-01-31,Media,12,12,True
+exposed,2025-01-31,Minerals & Mining,12,12,True
+exposed,2025-01-31,Non - Ferrous Metals,10,10,True
+exposed,2025-01-31,Oil,9,9,True
+exposed,2025-01-31,Other Construction Materials,12,12,True
+exposed,2025-01-31,Other Consumer Services,10,10,True
+exposed,2025-01-31,"Paper, Forest & Jute Products",31,31,True
+exposed,2025-01-31,Personal Products,9,9,True
+exposed,2025-01-31,Petroleum Products,9,9,True
+exposed,2025-01-31,Pharmaceuticals & Biotechnology,104,104,True
+exposed,2025-01-31,Power,31,31,True
+exposed,2025-01-31,Realty,76,75,True
+exposed,2025-01-31,Retailing,25,24,True
+exposed,2025-01-31,Telecom -  Equipment & Accessories,11,11,True
+exposed,2025-01-31,Telecom - Services,11,11,True
+exposed,2025-01-31,Textiles & Apparels,151,150,True
+exposed,2025-01-31,Transport Infrastructure,7,7,True
+exposed,2025-01-31,Transport Services,32,31,False
+exposed,2025-02-28,Aerospace & Defense,12,12,True
+exposed,2025-02-28,Agricultural Food & other Products,89,87,True
+exposed,2025-02-28,"Agricultural, Commercial & Construction Vehicles",8,8,True
+exposed,2025-02-28,Auto Components,92,92,True
+exposed,2025-02-28,Automobiles,7,5,False
+exposed,2025-02-28,Banks,32,32,True
+exposed,2025-02-28,Beverages,17,17,True
+exposed,2025-02-28,Capital Markets,34,34,True
+exposed,2025-02-28,Cement & Cement Products,28,27,False
+exposed,2025-02-28,Chemicals & Petrochemicals,127,126,True
+exposed,2025-02-28,Commercial Services & Supplies,125,122,True
+exposed,2025-02-28,Construction,59,59,True
+exposed,2025-02-28,Consumer Durables,113,112,True
+exposed,2025-02-28,Diversified,8,8,True
+exposed,2025-02-28,Electrical Equipment,47,46,True
+exposed,2025-02-28,Entertainment,39,39,True
+exposed,2025-02-28,Ferrous Metals,21,21,True
+exposed,2025-02-28,Fertilizers & Agrochemicals,33,32,True
+exposed,2025-02-28,Finance,259,256,True
+exposed,2025-02-28,Food Products,45,43,True
+exposed,2025-02-28,Gas,7,7,True
+exposed,2025-02-28,Healthcare Services,29,29,True
+exposed,2025-02-28,Household Products,12,12,True
+exposed,2025-02-28,IT - Hardware,12,12,True
+exposed,2025-02-28,IT - Services,35,34,True
+exposed,2025-02-28,IT - Software,65,65,True
+exposed,2025-02-28,Industrial Manufacturing,72,70,False
+exposed,2025-02-28,Industrial Products,209,209,True
+exposed,2025-02-28,Insurance,7,7,True
+exposed,2025-02-28,Leisure Services,48,48,True
+exposed,2025-02-28,Media,12,12,True
+exposed,2025-02-28,Minerals & Mining,12,12,True
+exposed,2025-02-28,Non - Ferrous Metals,10,10,True
+exposed,2025-02-28,Oil,9,9,True
+exposed,2025-02-28,Other Construction Materials,12,12,True
+exposed,2025-02-28,Other Consumer Services,10,10,True
+exposed,2025-02-28,"Paper, Forest & Jute Products",31,31,True
+exposed,2025-02-28,Personal Products,9,9,True
+exposed,2025-02-28,Petroleum Products,10,10,True
+exposed,2025-02-28,Pharmaceuticals & Biotechnology,104,104,True
+exposed,2025-02-28,Power,31,31,True
+exposed,2025-02-28,Realty,76,75,True
+exposed,2025-02-28,Retailing,25,24,True
+exposed,2025-02-28,Telecom -  Equipment & Accessories,11,10,False
+exposed,2025-02-28,Telecom - Services,11,11,True
+exposed,2025-02-28,Textiles & Apparels,151,150,True
+exposed,2025-02-28,Transport Infrastructure,7,7,True
+exposed,2025-02-28,Transport Services,32,31,True
+exposed,2025-03-31,Aerospace & Defense,12,12,True
+exposed,2025-03-31,Agricultural Food & other Products,83,80,True
+exposed,2025-03-31,"Agricultural, Commercial & Construction Vehicles",7,7,True
+exposed,2025-03-31,Auto Components,93,90,True
+exposed,2025-03-31,Automobiles,7,5,False
+exposed,2025-03-31,Banks,30,30,True
+exposed,2025-03-31,Beverages,16,16,True
+exposed,2025-03-31,Capital Markets,31,29,True
+exposed,2025-03-31,Cement & Cement Products,25,25,True
+exposed,2025-03-31,Chemicals & Petrochemicals,121,119,True
+exposed,2025-03-31,Commercial Services & Supplies,115,106,False
+exposed,2025-03-31,Construction,54,53,True
+exposed,2025-03-31,Consumer Durables,105,99,True
+exposed,2025-03-31,Diversified,7,7,True
+exposed,2025-03-31,Electrical Equipment,44,40,False
+exposed,2025-03-31,Entertainment,41,40,True
+exposed,2025-03-31,Ferrous Metals,21,21,True
+exposed,2025-03-31,Fertilizers & Agrochemicals,33,30,True
+exposed,2025-03-31,Finance,242,228,False
+exposed,2025-03-31,Food Products,41,39,True
+exposed,2025-03-31,Gas,7,7,True
+exposed,2025-03-31,Healthcare Services,27,26,False
+exposed,2025-03-31,Household Products,12,12,True
+exposed,2025-03-31,IT - Hardware,12,11,False
+exposed,2025-03-31,IT - Services,34,32,True
+exposed,2025-03-31,IT - Software,60,59,True
+exposed,2025-03-31,Industrial Manufacturing,72,67,False
+exposed,2025-03-31,Industrial Products,199,196,True
+exposed,2025-03-31,Insurance,7,7,True
+exposed,2025-03-31,Leisure Services,48,47,True
+exposed,2025-03-31,Media,12,11,True
+exposed,2025-03-31,Minerals & Mining,11,11,True
+exposed,2025-03-31,Non - Ferrous Metals,11,11,True
+exposed,2025-03-31,Oil,8,8,True
+exposed,2025-03-31,Other Construction Materials,12,12,True
+exposed,2025-03-31,Other Consumer Services,10,10,True
+exposed,2025-03-31,"Paper, Forest & Jute Products",29,29,True
+exposed,2025-03-31,Personal Products,9,9,True
+exposed,2025-03-31,Petroleum Products,9,9,True
+exposed,2025-03-31,Pharmaceuticals & Biotechnology,100,99,True
+exposed,2025-03-31,Power,27,27,True
+exposed,2025-03-31,Realty,73,71,True
+exposed,2025-03-31,Retailing,23,21,False
+exposed,2025-03-31,Telecom -  Equipment & Accessories,11,10,False
+exposed,2025-03-31,Telecom - Services,11,11,True
+exposed,2025-03-31,Textiles & Apparels,143,136,True
+exposed,2025-03-31,Transport Infrastructure,6,6,True
+exposed,2025-03-31,Transport Services,30,28,True
+exposed,2025-04-30,Aerospace & Defense,12,12,True
+exposed,2025-04-30,Agricultural Food & other Products,89,87,True
+exposed,2025-04-30,"Agricultural, Commercial & Construction Vehicles",8,8,True
+exposed,2025-04-30,Auto Components,91,91,True
+exposed,2025-04-30,Automobiles,7,5,False
+exposed,2025-04-30,Banks,32,32,True
+exposed,2025-04-30,Beverages,18,18,True
+exposed,2025-04-30,Capital Markets,34,34,True
+exposed,2025-04-30,Cement & Cement Products,27,27,True
+exposed,2025-04-30,Chemicals & Petrochemicals,128,127,True
+exposed,2025-04-30,Commercial Services & Supplies,126,126,True
+exposed,2025-04-30,Construction,61,61,True
+exposed,2025-04-30,Consumer Durables,113,112,True
+exposed,2025-04-30,Diversified,7,7,True
+exposed,2025-04-30,Electrical Equipment,46,45,True
+exposed,2025-04-30,Entertainment,41,41,True
+exposed,2025-04-30,Ferrous Metals,21,21,True
+exposed,2025-04-30,Fertilizers & Agrochemicals,34,33,True
+exposed,2025-04-30,Finance,260,258,True
+exposed,2025-04-30,Food Products,48,46,True
+exposed,2025-04-30,Gas,7,7,True
+exposed,2025-04-30,Healthcare Services,29,29,True
+exposed,2025-04-30,Household Products,12,12,True
+exposed,2025-04-30,IT - Hardware,12,12,True
+exposed,2025-04-30,IT - Services,35,34,True
+exposed,2025-04-30,IT - Software,66,64,False
+exposed,2025-04-30,Industrial Manufacturing,73,71,False
+exposed,2025-04-30,Industrial Products,208,208,True
+exposed,2025-04-30,Insurance,7,7,True
+exposed,2025-04-30,Leisure Services,48,48,True
+exposed,2025-04-30,Media,12,12,True
+exposed,2025-04-30,Minerals & Mining,12,12,True
+exposed,2025-04-30,Non - Ferrous Metals,11,11,True
+exposed,2025-04-30,Oil,9,9,True
+exposed,2025-04-30,Other Construction Materials,12,12,True
+exposed,2025-04-30,Other Consumer Services,10,10,True
+exposed,2025-04-30,"Paper, Forest & Jute Products",30,30,True
+exposed,2025-04-30,Personal Products,9,9,True
+exposed,2025-04-30,Petroleum Products,10,10,True
+exposed,2025-04-30,Pharmaceuticals & Biotechnology,104,104,True
+exposed,2025-04-30,Power,30,30,True
+exposed,2025-04-30,Realty,77,76,True
+exposed,2025-04-30,Retailing,25,24,True
+exposed,2025-04-30,Telecom -  Equipment & Accessories,11,10,False
+exposed,2025-04-30,Telecom - Services,11,11,True
+exposed,2025-04-30,Textiles & Apparels,151,151,True
+exposed,2025-04-30,Transport Infrastructure,7,7,True
+exposed,2025-04-30,Transport Services,33,32,True
+exposed,2025-05-31,Aerospace & Defense,12,12,True
+exposed,2025-05-31,Agricultural Food & other Products,91,89,True
+exposed,2025-05-31,"Agricultural, Commercial & Construction Vehicles",8,8,True
+exposed,2025-05-31,Auto Components,92,92,True
+exposed,2025-05-31,Automobiles,7,5,False
+exposed,2025-05-31,Banks,32,32,True
+exposed,2025-05-31,Beverages,18,18,True
+exposed,2025-05-31,Capital Markets,34,34,True
+exposed,2025-05-31,Cement & Cement Products,27,27,True
+exposed,2025-05-31,Chemicals & Petrochemicals,127,126,True
+exposed,2025-05-31,Commercial Services & Supplies,128,127,True
+exposed,2025-05-31,Construction,60,60,True
+exposed,2025-05-31,Consumer Durables,114,113,True
+exposed,2025-05-31,Diversified,8,8,True
+exposed,2025-05-31,Electrical Equipment,45,44,True
+exposed,2025-05-31,Entertainment,42,42,True
+exposed,2025-05-31,Ferrous Metals,21,21,True
+exposed,2025-05-31,Fertilizers & Agrochemicals,34,33,True
+exposed,2025-05-31,Finance,257,254,True
+exposed,2025-05-31,Food Products,47,45,True
+exposed,2025-05-31,Gas,7,7,True
+exposed,2025-05-31,Healthcare Services,30,30,True
+exposed,2025-05-31,Household Products,12,12,True
+exposed,2025-05-31,IT - Hardware,12,12,True
+exposed,2025-05-31,IT - Services,35,34,True
+exposed,2025-05-31,IT - Software,67,65,True
+exposed,2025-05-31,Industrial Manufacturing,73,71,False
+exposed,2025-05-31,Industrial Products,210,209,True
+exposed,2025-05-31,Insurance,7,7,True
+exposed,2025-05-31,Leisure Services,49,49,True
+exposed,2025-05-31,Media,12,12,True
+exposed,2025-05-31,Minerals & Mining,12,12,True
+exposed,2025-05-31,Non - Ferrous Metals,11,11,True
+exposed,2025-05-31,Oil,9,9,True
+exposed,2025-05-31,Other Construction Materials,12,12,True
+exposed,2025-05-31,Other Consumer Services,10,10,True
+exposed,2025-05-31,"Paper, Forest & Jute Products",29,29,True
+exposed,2025-05-31,Personal Products,8,8,True
+exposed,2025-05-31,Petroleum Products,10,10,True
+exposed,2025-05-31,Pharmaceuticals & Biotechnology,105,105,True
+exposed,2025-05-31,Power,30,30,True
+exposed,2025-05-31,Printing & Publication,5,5,True
+exposed,2025-05-31,Realty,77,76,True
+exposed,2025-05-31,Retailing,24,23,True
+exposed,2025-05-31,Telecom -  Equipment & Accessories,11,10,False
+exposed,2025-05-31,Telecom - Services,11,11,True
+exposed,2025-05-31,Textiles & Apparels,152,152,True
+exposed,2025-05-31,Transport Infrastructure,7,7,True
+exposed,2025-05-31,Transport Services,33,32,True
+exposed,2025-06-30,Aerospace & Defense,12,12,True
+exposed,2025-06-30,Agricultural Food & other Products,85,83,True
+exposed,2025-06-30,"Agricultural, Commercial & Construction Vehicles",7,7,True
+exposed,2025-06-30,Auto Components,93,90,True
+exposed,2025-06-30,Automobiles,7,5,False
+exposed,2025-06-30,Banks,30,30,True
+exposed,2025-06-30,Beverages,17,17,True
+exposed,2025-06-30,Capital Markets,32,30,True
+exposed,2025-06-30,Cement & Cement Products,25,25,True
+exposed,2025-06-30,Chemicals & Petrochemicals,121,120,True
+exposed,2025-06-30,Commercial Services & Supplies,112,107,False
+exposed,2025-06-30,Construction,56,55,True
+exposed,2025-06-30,Consumer Durables,103,101,True
+exposed,2025-06-30,Diversified,8,8,True
+exposed,2025-06-30,Electrical Equipment,40,38,True
+exposed,2025-06-30,Entertainment,42,41,True
+exposed,2025-06-30,Ferrous Metals,21,21,True
+exposed,2025-06-30,Fertilizers & Agrochemicals,32,29,True
+exposed,2025-06-30,Finance,232,221,True
+exposed,2025-06-30,Food Products,43,41,True
+exposed,2025-06-30,Gas,7,7,True
+exposed,2025-06-30,Healthcare Services,28,27,True
+exposed,2025-06-30,Household Products,12,12,True
+exposed,2025-06-30,IT - Hardware,12,11,False
+exposed,2025-06-30,IT - Services,34,33,True
+exposed,2025-06-30,IT - Software,63,61,True
+exposed,2025-06-30,Industrial Manufacturing,68,64,False
+exposed,2025-06-30,Industrial Products,200,198,True
+exposed,2025-06-30,Insurance,7,7,True
+exposed,2025-06-30,Leisure Services,48,47,True
+exposed,2025-06-30,Media,12,11,True
+exposed,2025-06-30,Minerals & Mining,11,11,True
+exposed,2025-06-30,Non - Ferrous Metals,11,11,True
+exposed,2025-06-30,Oil,8,8,True
+exposed,2025-06-30,Other Construction Materials,12,12,True
+exposed,2025-06-30,Other Consumer Services,9,9,True
+exposed,2025-06-30,"Paper, Forest & Jute Products",27,27,True
+exposed,2025-06-30,Personal Products,8,8,True
+exposed,2025-06-30,Petroleum Products,10,10,True
+exposed,2025-06-30,Pharmaceuticals & Biotechnology,101,100,True
+exposed,2025-06-30,Power,28,28,True
+exposed,2025-06-30,Realty,74,72,True
+exposed,2025-06-30,Retailing,22,21,True
+exposed,2025-06-30,Telecom -  Equipment & Accessories,11,10,False
+exposed,2025-06-30,Telecom - Services,11,11,True
+exposed,2025-06-30,Textiles & Apparels,142,136,True
+exposed,2025-06-30,Transport Infrastructure,6,6,True
+exposed,2025-06-30,Transport Services,31,29,True
+exposed,2025-07-31,Aerospace & Defense,12,12,True
+exposed,2025-07-31,Agricultural Food & other Products,91,88,True
+exposed,2025-07-31,"Agricultural, Commercial & Construction Vehicles",8,8,True
+exposed,2025-07-31,Auto Components,94,94,True
+exposed,2025-07-31,Automobiles,7,5,False
+exposed,2025-07-31,Banks,32,32,True
+exposed,2025-07-31,Beverages,19,19,True
+exposed,2025-07-31,Capital Markets,35,35,True
+exposed,2025-07-31,Cement & Cement Products,27,27,True
+exposed,2025-07-31,Chemicals & Petrochemicals,128,127,True
+exposed,2025-07-31,Commercial Services & Supplies,128,125,True
+exposed,2025-07-31,Construction,61,61,True
+exposed,2025-07-31,Consumer Durables,113,112,True
+exposed,2025-07-31,Diversified,9,9,True
+exposed,2025-07-31,Electrical Equipment,46,45,True
+exposed,2025-07-31,Entertainment,42,42,True
+exposed,2025-07-31,Ferrous Metals,21,21,True
+exposed,2025-07-31,Fertilizers & Agrochemicals,33,32,True
+exposed,2025-07-31,Finance,258,254,True
+exposed,2025-07-31,Food Products,48,46,True
+exposed,2025-07-31,Gas,6,5,True
+exposed,2025-07-31,Healthcare Services,30,30,True
+exposed,2025-07-31,Household Products,12,12,True
+exposed,2025-07-31,IT - Hardware,12,12,True
+exposed,2025-07-31,IT - Services,35,34,True
+exposed,2025-07-31,IT - Software,67,66,True
+exposed,2025-07-31,Industrial Manufacturing,70,69,False
+exposed,2025-07-31,Industrial Products,208,208,True
+exposed,2025-07-31,Insurance,7,7,True
+exposed,2025-07-31,Leisure Services,49,49,True
+exposed,2025-07-31,Media,12,12,True
+exposed,2025-07-31,Minerals & Mining,12,12,True
+exposed,2025-07-31,Non - Ferrous Metals,11,11,True
+exposed,2025-07-31,Oil,9,9,True
+exposed,2025-07-31,Other Construction Materials,12,12,True
+exposed,2025-07-31,Other Consumer Services,11,11,True
+exposed,2025-07-31,"Paper, Forest & Jute Products",30,30,True
+exposed,2025-07-31,Personal Products,9,9,True
+exposed,2025-07-31,Petroleum Products,10,10,True
+exposed,2025-07-31,Pharmaceuticals & Biotechnology,105,105,True
+exposed,2025-07-31,Power,32,32,True
+exposed,2025-07-31,Realty,77,76,True
+exposed,2025-07-31,Retailing,25,23,False
+exposed,2025-07-31,Telecom -  Equipment & Accessories,11,10,False
+exposed,2025-07-31,Telecom - Services,12,12,True
+exposed,2025-07-31,Textiles & Apparels,150,150,True
+exposed,2025-07-31,Transport Infrastructure,7,7,True
+exposed,2025-07-31,Transport Services,33,33,True
+exposed,2025-08-31,Aerospace & Defense,12,12,True
+exposed,2025-08-31,Agricultural Food & other Products,92,89,True
+exposed,2025-08-31,"Agricultural, Commercial & Construction Vehicles",8,8,True
+exposed,2025-08-31,Auto Components,91,91,True
+exposed,2025-08-31,Automobiles,6,5,True
+exposed,2025-08-31,Banks,32,31,True
+exposed,2025-08-31,Beverages,17,17,True
+exposed,2025-08-31,Capital Markets,35,35,True
+exposed,2025-08-31,Cement & Cement Products,27,27,True
+exposed,2025-08-31,Chemicals & Petrochemicals,128,127,True
+exposed,2025-08-31,Commercial Services & Supplies,128,126,True
+exposed,2025-08-31,Construction,61,61,True
+exposed,2025-08-31,Consumer Durables,114,113,True
+exposed,2025-08-31,Diversified,9,9,True
+exposed,2025-08-31,Electrical Equipment,46,45,True
+exposed,2025-08-31,Entertainment,42,42,True
+exposed,2025-08-31,Ferrous Metals,21,21,True
+exposed,2025-08-31,Fertilizers & Agrochemicals,33,32,True
+exposed,2025-08-31,Finance,256,252,True
+exposed,2025-08-31,Food Products,48,46,True
+exposed,2025-08-31,Gas,6,5,True
+exposed,2025-08-31,Healthcare Services,30,30,True
+exposed,2025-08-31,Household Products,11,11,True
+exposed,2025-08-31,IT - Hardware,12,12,True
+exposed,2025-08-31,IT - Services,35,34,True
+exposed,2025-08-31,IT - Software,67,65,True
+exposed,2025-08-31,Industrial Manufacturing,71,71,True
+exposed,2025-08-31,Industrial Products,211,211,True
+exposed,2025-08-31,Insurance,7,7,True
+exposed,2025-08-31,Leisure Services,49,49,True
+exposed,2025-08-31,Media,12,12,True
+exposed,2025-08-31,Minerals & Mining,12,12,True
+exposed,2025-08-31,Non - Ferrous Metals,11,11,True
+exposed,2025-08-31,Oil,9,9,True
+exposed,2025-08-31,Other Construction Materials,12,12,True
+exposed,2025-08-31,Other Consumer Services,10,10,True
+exposed,2025-08-31,"Paper, Forest & Jute Products",29,29,True
+exposed,2025-08-31,Personal Products,8,8,True
+exposed,2025-08-31,Petroleum Products,10,10,True
+exposed,2025-08-31,Pharmaceuticals & Biotechnology,105,105,True
+exposed,2025-08-31,Power,30,30,True
+exposed,2025-08-31,Realty,77,76,True
+exposed,2025-08-31,Retailing,24,22,False
+exposed,2025-08-31,Telecom -  Equipment & Accessories,11,10,False
+exposed,2025-08-31,Telecom - Services,12,12,True
+exposed,2025-08-31,Textiles & Apparels,151,150,True
+exposed,2025-08-31,Transport Infrastructure,8,8,True
+exposed,2025-08-31,Transport Services,33,33,True

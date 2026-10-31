@@ -1,0 +1,757 @@
+period,decision_date,sector,feature_rows,valid_outcome_rows,all_model_top3_outcomes_available
+development,2020-03-31,Agricultural Food & other Products,50,50,True
+development,2020-03-31,"Agricultural, Commercial & Construction Vehicles",8,8,True
+development,2020-03-31,Auto Components,61,61,True
+development,2020-03-31,Automobiles,7,7,True
+development,2020-03-31,Banks,23,23,True
+development,2020-03-31,Beverages,13,13,True
+development,2020-03-31,Capital Markets,16,16,True
+development,2020-03-31,Cement & Cement Products,22,22,True
+development,2020-03-31,Chemicals & Petrochemicals,71,71,True
+development,2020-03-31,Commercial Services & Supplies,31,31,True
+development,2020-03-31,Construction,36,36,True
+development,2020-03-31,Consumer Durables,69,69,True
+development,2020-03-31,Diversified,5,5,True
+development,2020-03-31,Electrical Equipment,26,26,True
+development,2020-03-31,Entertainment,26,25,True
+development,2020-03-31,Ferrous Metals,17,17,True
+development,2020-03-31,Fertilizers & Agrochemicals,25,25,True
+development,2020-03-31,Finance,91,90,True
+development,2020-03-31,Food Products,19,18,False
+development,2020-03-31,Healthcare Services,11,11,True
+development,2020-03-31,Household Products,8,8,True
+development,2020-03-31,IT - Hardware,7,7,True
+development,2020-03-31,IT - Services,21,21,True
+development,2020-03-31,IT - Software,34,33,True
+development,2020-03-31,Industrial Manufacturing,39,39,True
+development,2020-03-31,Industrial Products,117,116,True
+development,2020-03-31,Leisure Services,25,25,True
+development,2020-03-31,Media,7,7,True
+development,2020-03-31,Minerals & Mining,9,9,True
+development,2020-03-31,Non - Ferrous Metals,8,7,False
+development,2020-03-31,Oil,9,9,True
+development,2020-03-31,Other Construction Materials,6,6,True
+development,2020-03-31,Other Consumer Services,7,7,True
+development,2020-03-31,"Paper, Forest & Jute Products",14,14,True
+development,2020-03-31,Personal Products,7,7,True
+development,2020-03-31,Petroleum Products,9,9,True
+development,2020-03-31,Pharmaceuticals & Biotechnology,66,65,True
+development,2020-03-31,Power,22,22,True
+development,2020-03-31,Realty,43,42,True
+development,2020-03-31,Retailing,12,12,True
+development,2020-03-31,Telecom -  Equipment & Accessories,7,7,True
+development,2020-03-31,Telecom - Services,9,9,True
+development,2020-03-31,Textiles & Apparels,83,82,True
+development,2020-03-31,Transport Infrastructure,5,5,True
+development,2020-03-31,Transport Services,19,19,True
+development,2020-06-30,Agricultural Food & other Products,50,50,True
+development,2020-06-30,"Agricultural, Commercial & Construction Vehicles",8,8,True
+development,2020-06-30,Auto Components,63,63,True
+development,2020-06-30,Automobiles,6,6,True
+development,2020-06-30,Banks,24,24,True
+development,2020-06-30,Beverages,12,12,True
+development,2020-06-30,Capital Markets,15,15,True
+development,2020-06-30,Cement & Cement Products,22,22,True
+development,2020-06-30,Chemicals & Petrochemicals,70,70,True
+development,2020-06-30,Commercial Services & Supplies,30,29,True
+development,2020-06-30,Construction,36,36,True
+development,2020-06-30,Consumer Durables,69,69,True
+development,2020-06-30,Diversified,5,5,True
+development,2020-06-30,Electrical Equipment,25,25,True
+development,2020-06-30,Entertainment,26,25,True
+development,2020-06-30,Ferrous Metals,17,17,True
+development,2020-06-30,Fertilizers & Agrochemicals,23,23,True
+development,2020-06-30,Finance,88,87,True
+development,2020-06-30,Food Products,19,19,True
+development,2020-06-30,Healthcare Services,11,11,True
+development,2020-06-30,Household Products,8,8,True
+development,2020-06-30,IT - Hardware,7,7,True
+development,2020-06-30,IT - Services,20,20,True
+development,2020-06-30,IT - Software,36,35,True
+development,2020-06-30,Industrial Manufacturing,39,39,True
+development,2020-06-30,Industrial Products,117,114,False
+development,2020-06-30,Leisure Services,25,25,True
+development,2020-06-30,Media,7,7,True
+development,2020-06-30,Minerals & Mining,9,9,True
+development,2020-06-30,Non - Ferrous Metals,8,7,False
+development,2020-06-30,Oil,9,9,True
+development,2020-06-30,Other Construction Materials,6,6,True
+development,2020-06-30,Other Consumer Services,8,8,True
+development,2020-06-30,"Paper, Forest & Jute Products",14,14,True
+development,2020-06-30,Personal Products,7,7,True
+development,2020-06-30,Petroleum Products,8,8,True
+development,2020-06-30,Pharmaceuticals & Biotechnology,68,67,True
+development,2020-06-30,Power,22,22,True
+development,2020-06-30,Realty,43,42,True
+development,2020-06-30,Retailing,12,12,True
+development,2020-06-30,Telecom -  Equipment & Accessories,6,6,True
+development,2020-06-30,Telecom - Services,9,9,True
+development,2020-06-30,Textiles & Apparels,85,84,True
+development,2020-06-30,Transport Infrastructure,5,5,True
+development,2020-06-30,Transport Services,18,18,True
+development,2020-09-30,Aerospace & Defense,5,5,True
+development,2020-09-30,Agricultural Food & other Products,51,51,True
+development,2020-09-30,"Agricultural, Commercial & Construction Vehicles",8,8,True
+development,2020-09-30,Auto Components,63,63,True
+development,2020-09-30,Automobiles,7,7,True
+development,2020-09-30,Banks,24,24,True
+development,2020-09-30,Beverages,12,12,True
+development,2020-09-30,Capital Markets,16,16,True
+development,2020-09-30,Cement & Cement Products,23,23,True
+development,2020-09-30,Chemicals & Petrochemicals,70,69,True
+development,2020-09-30,Commercial Services & Supplies,29,28,True
+development,2020-09-30,Construction,36,36,True
+development,2020-09-30,Consumer Durables,69,69,True
+development,2020-09-30,Diversified,6,6,True
+development,2020-09-30,Electrical Equipment,26,25,True
+development,2020-09-30,Entertainment,26,25,True
+development,2020-09-30,Ferrous Metals,17,17,True
+development,2020-09-30,Fertilizers & Agrochemicals,24,24,True
+development,2020-09-30,Finance,87,85,True
+development,2020-09-30,Food Products,21,20,False
+development,2020-09-30,Healthcare Services,11,11,True
+development,2020-09-30,Household Products,9,9,True
+development,2020-09-30,IT - Hardware,7,7,True
+development,2020-09-30,IT - Services,20,20,True
+development,2020-09-30,IT - Software,36,34,True
+development,2020-09-30,Industrial Manufacturing,40,40,True
+development,2020-09-30,Industrial Products,116,115,True
+development,2020-09-30,Leisure Services,25,24,True
+development,2020-09-30,Media,6,6,True
+development,2020-09-30,Minerals & Mining,9,9,True
+development,2020-09-30,Non - Ferrous Metals,8,7,False
+development,2020-09-30,Oil,8,8,True
+development,2020-09-30,Other Construction Materials,6,6,True
+development,2020-09-30,Other Consumer Services,7,7,True
+development,2020-09-30,"Paper, Forest & Jute Products",15,15,True
+development,2020-09-30,Personal Products,7,7,True
+development,2020-09-30,Petroleum Products,9,9,True
+development,2020-09-30,Pharmaceuticals & Biotechnology,68,68,True
+development,2020-09-30,Power,22,21,False
+development,2020-09-30,Realty,44,43,True
+development,2020-09-30,Retailing,12,12,True
+development,2020-09-30,Telecom -  Equipment & Accessories,7,7,True
+development,2020-09-30,Telecom - Services,9,9,True
+development,2020-09-30,Textiles & Apparels,84,83,True
+development,2020-09-30,Transport Infrastructure,5,5,True
+development,2020-09-30,Transport Services,20,20,True
+development,2020-12-31,Aerospace & Defense,6,6,True
+development,2020-12-31,Agricultural Food & other Products,50,49,True
+development,2020-12-31,"Agricultural, Commercial & Construction Vehicles",8,8,True
+development,2020-12-31,Auto Components,68,68,True
+development,2020-12-31,Automobiles,7,7,True
+development,2020-12-31,Banks,27,27,True
+development,2020-12-31,Beverages,12,12,True
+development,2020-12-31,Capital Markets,17,17,True
+development,2020-12-31,Cement & Cement Products,23,23,True
+development,2020-12-31,Chemicals & Petrochemicals,76,76,True
+development,2020-12-31,Commercial Services & Supplies,35,34,True
+development,2020-12-31,Construction,40,40,True
+development,2020-12-31,Consumer Durables,71,71,True
+development,2020-12-31,Diversified,7,7,True
+development,2020-12-31,Electrical Equipment,30,29,True
+development,2020-12-31,Entertainment,27,26,True
+development,2020-12-31,Ferrous Metals,18,18,True
+development,2020-12-31,Fertilizers & Agrochemicals,23,23,True
+development,2020-12-31,Finance,94,93,True
+development,2020-12-31,Food Products,21,21,True
+development,2020-12-31,Healthcare Services,13,13,True
+development,2020-12-31,Household Products,10,10,True
+development,2020-12-31,IT - Hardware,7,7,True
+development,2020-12-31,IT - Services,25,25,True
+development,2020-12-31,IT - Software,34,32,True
+development,2020-12-31,Industrial Manufacturing,42,42,True
+development,2020-12-31,Industrial Products,123,121,True
+development,2020-12-31,Leisure Services,29,28,True
+development,2020-12-31,Media,6,6,True
+development,2020-12-31,Minerals & Mining,9,9,True
+development,2020-12-31,Non - Ferrous Metals,9,8,True
+development,2020-12-31,Oil,8,8,True
+development,2020-12-31,Other Construction Materials,6,6,True
+development,2020-12-31,Other Consumer Services,7,7,True
+development,2020-12-31,"Paper, Forest & Jute Products",17,17,True
+development,2020-12-31,Personal Products,7,7,True
+development,2020-12-31,Petroleum Products,10,10,True
+development,2020-12-31,Pharmaceuticals & Biotechnology,76,75,True
+development,2020-12-31,Power,23,23,True
+development,2020-12-31,Realty,43,43,True
+development,2020-12-31,Retailing,12,12,True
+development,2020-12-31,Telecom -  Equipment & Accessories,7,7,True
+development,2020-12-31,Telecom - Services,9,9,True
+development,2020-12-31,Textiles & Apparels,93,92,True
+development,2020-12-31,Transport Infrastructure,6,6,True
+development,2020-12-31,Transport Services,23,23,True
+development,2021-03-31,Aerospace & Defense,6,6,True
+development,2021-03-31,Agricultural Food & other Products,56,55,True
+development,2021-03-31,"Agricultural, Commercial & Construction Vehicles",8,8,True
+development,2021-03-31,Auto Components,69,69,True
+development,2021-03-31,Automobiles,7,7,True
+development,2021-03-31,Banks,25,25,True
+development,2021-03-31,Beverages,13,13,True
+development,2021-03-31,Capital Markets,20,20,True
+development,2021-03-31,Cement & Cement Products,23,23,True
+development,2021-03-31,Chemicals & Petrochemicals,79,79,True
+development,2021-03-31,Commercial Services & Supplies,42,41,False
+development,2021-03-31,Construction,40,40,True
+development,2021-03-31,Consumer Durables,73,73,True
+development,2021-03-31,Diversified,6,6,True
+development,2021-03-31,Electrical Equipment,30,29,True
+development,2021-03-31,Entertainment,28,28,True
+development,2021-03-31,Ferrous Metals,17,17,True
+development,2021-03-31,Fertilizers & Agrochemicals,24,24,True
+development,2021-03-31,Finance,108,107,True
+development,2021-03-31,Food Products,24,24,True
+development,2021-03-31,Gas,5,5,True
+development,2021-03-31,Healthcare Services,14,14,True
+development,2021-03-31,Household Products,10,10,True
+development,2021-03-31,IT - Hardware,8,8,True
+development,2021-03-31,IT - Services,25,24,True
+development,2021-03-31,IT - Software,36,35,True
+development,2021-03-31,Industrial Manufacturing,44,44,True
+development,2021-03-31,Industrial Products,128,125,True
+development,2021-03-31,Leisure Services,30,30,True
+development,2021-03-31,Media,7,7,True
+development,2021-03-31,Minerals & Mining,9,9,True
+development,2021-03-31,Non - Ferrous Metals,8,8,True
+development,2021-03-31,Oil,9,9,True
+development,2021-03-31,Other Construction Materials,7,7,True
+development,2021-03-31,Other Consumer Services,8,8,True
+development,2021-03-31,"Paper, Forest & Jute Products",18,18,True
+development,2021-03-31,Personal Products,7,7,True
+development,2021-03-31,Petroleum Products,10,10,True
+development,2021-03-31,Pharmaceuticals & Biotechnology,81,81,True
+development,2021-03-31,Power,24,23,False
+development,2021-03-31,Realty,47,46,True
+development,2021-03-31,Retailing,12,12,True
+development,2021-03-31,Telecom -  Equipment & Accessories,8,8,True
+development,2021-03-31,Telecom - Services,9,9,True
+development,2021-03-31,Textiles & Apparels,96,95,True
+development,2021-03-31,Transport Infrastructure,8,7,False
+development,2021-03-31,Transport Services,23,22,True
+development,2021-06-30,Aerospace & Defense,6,6,True
+development,2021-06-30,Agricultural Food & other Products,59,57,False
+development,2021-06-30,"Agricultural, Commercial & Construction Vehicles",8,8,True
+development,2021-06-30,Auto Components,73,73,True
+development,2021-06-30,Automobiles,7,7,True
+development,2021-06-30,Banks,26,26,True
+development,2021-06-30,Beverages,13,13,True
+development,2021-06-30,Capital Markets,20,20,True
+development,2021-06-30,Cement & Cement Products,23,23,True
+development,2021-06-30,Chemicals & Petrochemicals,90,89,True
+development,2021-06-30,Commercial Services & Supplies,47,45,True
+development,2021-06-30,Construction,41,41,True
+development,2021-06-30,Consumer Durables,73,73,True
+development,2021-06-30,Diversified,7,7,True
+development,2021-06-30,Electrical Equipment,32,30,False
+development,2021-06-30,Entertainment,30,29,True
+development,2021-06-30,Ferrous Metals,18,18,True
+development,2021-06-30,Fertilizers & Agrochemicals,26,26,True
+development,2021-06-30,Finance,120,117,True
+development,2021-06-30,Food Products,26,26,True
+development,2021-06-30,Gas,5,5,True
+development,2021-06-30,Healthcare Services,17,17,True
+development,2021-06-30,Household Products,10,10,True
+development,2021-06-30,IT - Hardware,10,10,True
+development,2021-06-30,IT - Services,25,24,True
+development,2021-06-30,IT - Software,39,38,True
+development,2021-06-30,Industrial Manufacturing,47,46,True
+development,2021-06-30,Industrial Products,133,130,True
+development,2021-06-30,Leisure Services,30,29,True
+development,2021-06-30,Media,7,7,True
+development,2021-06-30,Minerals & Mining,9,9,True
+development,2021-06-30,Non - Ferrous Metals,8,8,True
+development,2021-06-30,Oil,8,8,True
+development,2021-06-30,Other Construction Materials,8,8,True
+development,2021-06-30,Other Consumer Services,8,8,True
+development,2021-06-30,"Paper, Forest & Jute Products",19,19,True
+development,2021-06-30,Personal Products,8,8,True
+development,2021-06-30,Petroleum Products,10,9,True
+development,2021-06-30,Pharmaceuticals & Biotechnology,85,84,False
+development,2021-06-30,Power,23,22,False
+development,2021-06-30,Realty,51,49,True
+development,2021-06-30,Retailing,13,13,True
+development,2021-06-30,Telecom -  Equipment & Accessories,9,9,True
+development,2021-06-30,Telecom - Services,9,9,True
+development,2021-06-30,Textiles & Apparels,101,100,True
+development,2021-06-30,Transport Infrastructure,8,7,False
+development,2021-06-30,Transport Services,23,22,True
+development,2021-09-30,Aerospace & Defense,6,6,True
+development,2021-09-30,Agricultural Food & other Products,65,65,True
+development,2021-09-30,"Agricultural, Commercial & Construction Vehicles",8,7,False
+development,2021-09-30,Auto Components,75,75,True
+development,2021-09-30,Automobiles,7,7,True
+development,2021-09-30,Banks,26,26,True
+development,2021-09-30,Beverages,13,13,True
+development,2021-09-30,Capital Markets,20,20,True
+development,2021-09-30,Cement & Cement Products,23,23,True
+development,2021-09-30,Chemicals & Petrochemicals,93,92,True
+development,2021-09-30,Commercial Services & Supplies,57,52,True
+development,2021-09-30,Construction,42,42,True
+development,2021-09-30,Consumer Durables,74,74,True
+development,2021-09-30,Diversified,8,6,False
+development,2021-09-30,Electrical Equipment,35,34,True
+development,2021-09-30,Entertainment,31,30,False
+development,2021-09-30,Ferrous Metals,19,19,True
+development,2021-09-30,Fertilizers & Agrochemicals,26,25,True
+development,2021-09-30,Finance,136,131,True
+development,2021-09-30,Food Products,28,28,True
+development,2021-09-30,Gas,5,4,True
+development,2021-09-30,Healthcare Services,18,18,True
+development,2021-09-30,Household Products,10,10,True
+development,2021-09-30,IT - Hardware,11,11,True
+development,2021-09-30,IT - Services,24,24,True
+development,2021-09-30,IT - Software,42,41,True
+development,2021-09-30,Industrial Manufacturing,51,50,True
+development,2021-09-30,Industrial Products,140,136,False
+development,2021-09-30,Leisure Services,32,32,True
+development,2021-09-30,Media,7,7,True
+development,2021-09-30,Minerals & Mining,9,9,True
+development,2021-09-30,Non - Ferrous Metals,9,9,True
+development,2021-09-30,Oil,8,8,True
+development,2021-09-30,Other Construction Materials,8,8,True
+development,2021-09-30,Other Consumer Services,8,8,True
+development,2021-09-30,"Paper, Forest & Jute Products",20,20,True
+development,2021-09-30,Personal Products,9,9,True
+development,2021-09-30,Petroleum Products,10,9,True
+development,2021-09-30,Pharmaceuticals & Biotechnology,88,87,True
+development,2021-09-30,Power,21,21,True
+development,2021-09-30,Realty,54,53,True
+development,2021-09-30,Retailing,13,13,True
+development,2021-09-30,Telecom -  Equipment & Accessories,9,9,True
+development,2021-09-30,Telecom - Services,9,9,True
+development,2021-09-30,Textiles & Apparels,112,112,True
+development,2021-09-30,Transport Infrastructure,8,7,False
+development,2021-09-30,Transport Services,24,23,True
+development,2021-12-31,Aerospace & Defense,6,6,True
+development,2021-12-31,Agricultural Food & other Products,71,71,True
+development,2021-12-31,"Agricultural, Commercial & Construction Vehicles",8,7,False
+development,2021-12-31,Auto Components,82,81,True
+development,2021-12-31,Automobiles,7,7,True
+development,2021-12-31,Banks,27,27,True
+development,2021-12-31,Beverages,14,14,True
+development,2021-12-31,Capital Markets,22,22,True
+development,2021-12-31,Cement & Cement Products,25,25,True
+development,2021-12-31,Chemicals & Petrochemicals,105,105,True
+development,2021-12-31,Commercial Services & Supplies,69,64,True
+development,2021-12-31,Construction,44,44,True
+development,2021-12-31,Consumer Durables,83,83,True
+development,2021-12-31,Diversified,7,5,True
+development,2021-12-31,Electrical Equipment,37,36,True
+development,2021-12-31,Entertainment,32,31,False
+development,2021-12-31,Ferrous Metals,21,21,True
+development,2021-12-31,Fertilizers & Agrochemicals,27,27,True
+development,2021-12-31,Finance,159,154,True
+development,2021-12-31,Food Products,31,31,True
+development,2021-12-31,Gas,6,6,True
+development,2021-12-31,Healthcare Services,23,23,True
+development,2021-12-31,Household Products,11,11,True
+development,2021-12-31,IT - Hardware,11,11,True
+development,2021-12-31,IT - Services,29,29,True
+development,2021-12-31,IT - Software,50,49,True
+development,2021-12-31,Industrial Manufacturing,57,56,True
+development,2021-12-31,Industrial Products,157,152,False
+development,2021-12-31,Leisure Services,33,32,True
+development,2021-12-31,Media,8,8,True
+development,2021-12-31,Minerals & Mining,10,9,False
+development,2021-12-31,Non - Ferrous Metals,8,8,True
+development,2021-12-31,Oil,9,9,True
+development,2021-12-31,Other Construction Materials,8,8,True
+development,2021-12-31,Other Consumer Services,9,9,True
+development,2021-12-31,"Paper, Forest & Jute Products",21,20,True
+development,2021-12-31,Personal Products,11,11,True
+development,2021-12-31,Petroleum Products,10,9,True
+development,2021-12-31,Pharmaceuticals & Biotechnology,93,92,True
+development,2021-12-31,Power,23,23,True
+development,2021-12-31,Realty,63,62,True
+development,2021-12-31,Retailing,15,15,True
+development,2021-12-31,Telecom -  Equipment & Accessories,9,9,True
+development,2021-12-31,Telecom - Services,9,9,True
+development,2021-12-31,Textiles & Apparels,123,123,True
+development,2021-12-31,Transport Infrastructure,8,7,False
+development,2021-12-31,Transport Services,27,26,True
+development,2022-03-31,Aerospace & Defense,6,6,True
+development,2022-03-31,Agricultural Food & other Products,71,71,True
+development,2022-03-31,"Agricultural, Commercial & Construction Vehicles",8,7,False
+development,2022-03-31,Auto Components,83,82,True
+development,2022-03-31,Automobiles,7,7,True
+development,2022-03-31,Banks,27,27,True
+development,2022-03-31,Beverages,14,13,True
+development,2022-03-31,Capital Markets,25,25,True
+development,2022-03-31,Cement & Cement Products,25,24,True
+development,2022-03-31,Chemicals & Petrochemicals,108,107,True
+development,2022-03-31,Commercial Services & Supplies,80,73,True
+development,2022-03-31,Construction,46,46,True
+development,2022-03-31,Consumer Durables,86,85,True
+development,2022-03-31,Diversified,8,8,True
+development,2022-03-31,Electrical Equipment,40,39,True
+development,2022-03-31,Entertainment,32,31,False
+development,2022-03-31,Ferrous Metals,21,21,True
+development,2022-03-31,Fertilizers & Agrochemicals,28,27,True
+development,2022-03-31,Finance,174,171,True
+development,2022-03-31,Food Products,32,32,True
+development,2022-03-31,Gas,6,5,False
+development,2022-03-31,Healthcare Services,23,23,True
+development,2022-03-31,Household Products,12,12,True
+development,2022-03-31,IT - Hardware,11,11,True
+development,2022-03-31,IT - Services,29,29,True
+development,2022-03-31,IT - Software,51,51,True
+development,2022-03-31,Industrial Manufacturing,61,60,True
+development,2022-03-31,Industrial Products,162,161,True
+development,2022-03-31,Leisure Services,37,36,True
+development,2022-03-31,Media,8,8,True
+development,2022-03-31,Minerals & Mining,10,10,True
+development,2022-03-31,Non - Ferrous Metals,8,8,True
+development,2022-03-31,Oil,9,9,True
+development,2022-03-31,Other Construction Materials,9,9,True
+development,2022-03-31,Other Consumer Services,10,10,True
+development,2022-03-31,"Paper, Forest & Jute Products",23,23,True
+development,2022-03-31,Personal Products,10,10,True
+development,2022-03-31,Petroleum Products,10,9,False
+development,2022-03-31,Pharmaceuticals & Biotechnology,95,94,True
+development,2022-03-31,Power,24,24,True
+development,2022-03-31,Realty,66,66,True
+development,2022-03-31,Retailing,14,14,True
+development,2022-03-31,Telecom -  Equipment & Accessories,8,8,True
+development,2022-03-31,Telecom - Services,9,9,True
+development,2022-03-31,Textiles & Apparels,124,124,True
+development,2022-03-31,Transport Infrastructure,7,7,True
+development,2022-03-31,Transport Services,28,27,True
+development,2022-06-30,Aerospace & Defense,6,6,True
+development,2022-06-30,Agricultural Food & other Products,71,70,True
+development,2022-06-30,"Agricultural, Commercial & Construction Vehicles",8,7,True
+development,2022-06-30,Auto Components,79,79,True
+development,2022-06-30,Automobiles,8,8,True
+development,2022-06-30,Banks,27,27,True
+development,2022-06-30,Beverages,14,14,True
+development,2022-06-30,Capital Markets,25,25,True
+development,2022-06-30,Cement & Cement Products,23,22,True
+development,2022-06-30,Chemicals & Petrochemicals,104,103,False
+development,2022-06-30,Commercial Services & Supplies,78,71,True
+development,2022-06-30,Construction,45,43,True
+development,2022-06-30,Consumer Durables,85,84,True
+development,2022-06-30,Diversified,7,7,True
+development,2022-06-30,Electrical Equipment,41,40,True
+development,2022-06-30,Entertainment,31,31,True
+development,2022-06-30,Ferrous Metals,22,22,True
+development,2022-06-30,Fertilizers & Agrochemicals,27,27,True
+development,2022-06-30,Finance,182,178,True
+development,2022-06-30,Food Products,34,33,True
+development,2022-06-30,Gas,6,5,False
+development,2022-06-30,Healthcare Services,22,21,False
+development,2022-06-30,Household Products,12,12,True
+development,2022-06-30,IT - Hardware,11,10,True
+development,2022-06-30,IT - Services,28,28,True
+development,2022-06-30,IT - Software,50,49,True
+development,2022-06-30,Industrial Manufacturing,61,61,True
+development,2022-06-30,Industrial Products,163,157,True
+development,2022-06-30,Leisure Services,33,32,True
+development,2022-06-30,Media,9,9,True
+development,2022-06-30,Minerals & Mining,10,9,False
+development,2022-06-30,Non - Ferrous Metals,8,8,True
+development,2022-06-30,Oil,9,9,True
+development,2022-06-30,Other Construction Materials,10,10,True
+development,2022-06-30,Other Consumer Services,9,8,False
+development,2022-06-30,"Paper, Forest & Jute Products",25,23,True
+development,2022-06-30,Personal Products,10,10,True
+development,2022-06-30,Petroleum Products,8,8,True
+development,2022-06-30,Pharmaceuticals & Biotechnology,93,92,True
+development,2022-06-30,Power,26,25,True
+development,2022-06-30,Realty,64,63,True
+development,2022-06-30,Retailing,13,13,True
+development,2022-06-30,Telecom -  Equipment & Accessories,8,8,True
+development,2022-06-30,Telecom - Services,8,8,True
+development,2022-06-30,Textiles & Apparels,123,121,True
+development,2022-06-30,Transport Infrastructure,7,7,True
+development,2022-06-30,Transport Services,28,25,True
+development,2022-09-30,Aerospace & Defense,7,7,True
+development,2022-09-30,Agricultural Food & other Products,75,74,True
+development,2022-09-30,"Agricultural, Commercial & Construction Vehicles",7,7,True
+development,2022-09-30,Auto Components,85,85,True
+development,2022-09-30,Automobiles,9,9,True
+development,2022-09-30,Banks,27,27,True
+development,2022-09-30,Beverages,15,15,True
+development,2022-09-30,Capital Markets,25,25,True
+development,2022-09-30,Cement & Cement Products,24,24,True
+development,2022-09-30,Chemicals & Petrochemicals,109,108,True
+development,2022-09-30,Commercial Services & Supplies,80,78,False
+development,2022-09-30,Construction,49,49,True
+development,2022-09-30,Consumer Durables,93,90,True
+development,2022-09-30,Diversified,6,6,True
+development,2022-09-30,Electrical Equipment,40,40,True
+development,2022-09-30,Entertainment,32,31,False
+development,2022-09-30,Ferrous Metals,22,22,True
+development,2022-09-30,Fertilizers & Agrochemicals,29,29,True
+development,2022-09-30,Finance,195,193,True
+development,2022-09-30,Food Products,34,34,True
+development,2022-09-30,Gas,6,6,True
+development,2022-09-30,Healthcare Services,23,23,True
+development,2022-09-30,Household Products,12,12,True
+development,2022-09-30,IT - Hardware,11,11,True
+development,2022-09-30,IT - Services,29,29,True
+development,2022-09-30,IT - Software,49,49,True
+development,2022-09-30,Industrial Manufacturing,60,59,False
+development,2022-09-30,Industrial Products,169,169,True
+development,2022-09-30,Leisure Services,37,36,True
+development,2022-09-30,Media,10,10,True
+development,2022-09-30,Minerals & Mining,10,10,True
+development,2022-09-30,Non - Ferrous Metals,9,8,False
+development,2022-09-30,Oil,9,9,True
+development,2022-09-30,Other Construction Materials,10,10,True
+development,2022-09-30,Other Consumer Services,9,9,True
+development,2022-09-30,"Paper, Forest & Jute Products",24,22,True
+development,2022-09-30,Personal Products,11,10,True
+development,2022-09-30,Petroleum Products,10,10,True
+development,2022-09-30,Pharmaceuticals & Biotechnology,95,95,True
+development,2022-09-30,Power,25,25,True
+development,2022-09-30,Realty,67,67,True
+development,2022-09-30,Retailing,15,15,True
+development,2022-09-30,Telecom -  Equipment & Accessories,8,8,True
+development,2022-09-30,Telecom - Services,11,11,True
+development,2022-09-30,Textiles & Apparels,129,129,True
+development,2022-09-30,Transport Infrastructure,7,7,True
+development,2022-09-30,Transport Services,29,27,False
+development,2022-12-31,Aerospace & Defense,6,6,True
+development,2022-12-31,Agricultural Food & other Products,78,76,True
+development,2022-12-31,"Agricultural, Commercial & Construction Vehicles",7,7,True
+development,2022-12-31,Auto Components,82,81,True
+development,2022-12-31,Automobiles,8,8,True
+development,2022-12-31,Banks,28,28,True
+development,2022-12-31,Beverages,16,16,True
+development,2022-12-31,Capital Markets,31,30,True
+development,2022-12-31,Cement & Cement Products,24,24,True
+development,2022-12-31,Chemicals & Petrochemicals,106,104,True
+development,2022-12-31,Commercial Services & Supplies,92,88,False
+development,2022-12-31,Construction,52,50,True
+development,2022-12-31,Consumer Durables,95,94,True
+development,2022-12-31,Diversified,8,8,True
+development,2022-12-31,Electrical Equipment,41,41,True
+development,2022-12-31,Entertainment,34,33,False
+development,2022-12-31,Ferrous Metals,22,22,True
+development,2022-12-31,Fertilizers & Agrochemicals,31,31,True
+development,2022-12-31,Finance,198,193,False
+development,2022-12-31,Food Products,41,40,True
+development,2022-12-31,Gas,5,5,True
+development,2022-12-31,Healthcare Services,24,23,True
+development,2022-12-31,Household Products,12,12,True
+development,2022-12-31,IT - Hardware,11,11,True
+development,2022-12-31,IT - Services,30,30,True
+development,2022-12-31,IT - Software,52,51,True
+development,2022-12-31,Industrial Manufacturing,64,62,True
+development,2022-12-31,Industrial Products,177,174,True
+development,2022-12-31,Insurance,7,7,True
+development,2022-12-31,Leisure Services,34,34,True
+development,2022-12-31,Media,11,11,True
+development,2022-12-31,Metals & Minerals Trading,6,6,True
+development,2022-12-31,Minerals & Mining,10,10,True
+development,2022-12-31,Non - Ferrous Metals,10,9,False
+development,2022-12-31,Oil,9,9,True
+development,2022-12-31,Other Construction Materials,10,10,True
+development,2022-12-31,Other Consumer Services,11,9,False
+development,2022-12-31,"Paper, Forest & Jute Products",25,24,True
+development,2022-12-31,Personal Products,11,10,True
+development,2022-12-31,Petroleum Products,9,9,True
+development,2022-12-31,Pharmaceuticals & Biotechnology,98,98,True
+development,2022-12-31,Power,27,25,True
+development,2022-12-31,Realty,72,71,True
+development,2022-12-31,Retailing,16,16,True
+development,2022-12-31,Telecom -  Equipment & Accessories,10,10,True
+development,2022-12-31,Telecom - Services,10,10,True
+development,2022-12-31,Textiles & Apparels,128,126,True
+development,2022-12-31,Transport Infrastructure,7,7,True
+development,2022-12-31,Transport Services,32,29,True
+development,2023-03-31,Aerospace & Defense,7,7,True
+development,2023-03-31,Agricultural Food & other Products,79,79,True
+development,2023-03-31,"Agricultural, Commercial & Construction Vehicles",7,7,True
+development,2023-03-31,Auto Components,85,84,True
+development,2023-03-31,Automobiles,7,7,True
+development,2023-03-31,Banks,29,29,True
+development,2023-03-31,Beverages,17,17,True
+development,2023-03-31,Capital Markets,31,31,True
+development,2023-03-31,Cement & Cement Products,27,27,True
+development,2023-03-31,Chemicals & Petrochemicals,112,111,True
+development,2023-03-31,Commercial Services & Supplies,98,96,False
+development,2023-03-31,Construction,53,53,True
+development,2023-03-31,Consumer Durables,99,96,True
+development,2023-03-31,Diversified,9,9,True
+development,2023-03-31,Electrical Equipment,42,42,True
+development,2023-03-31,Entertainment,35,34,False
+development,2023-03-31,Ferrous Metals,23,23,True
+development,2023-03-31,Fertilizers & Agrochemicals,32,32,True
+development,2023-03-31,Finance,213,213,True
+development,2023-03-31,Food Products,43,43,True
+development,2023-03-31,Gas,6,6,True
+development,2023-03-31,Healthcare Services,25,25,True
+development,2023-03-31,Household Products,12,12,True
+development,2023-03-31,IT - Hardware,12,12,True
+development,2023-03-31,IT - Services,31,30,True
+development,2023-03-31,IT - Software,54,54,True
+development,2023-03-31,Industrial Manufacturing,63,62,True
+development,2023-03-31,Industrial Products,183,182,True
+development,2023-03-31,Insurance,7,7,True
+development,2023-03-31,Leisure Services,39,38,True
+development,2023-03-31,Media,11,11,True
+development,2023-03-31,Metals & Minerals Trading,6,6,True
+development,2023-03-31,Minerals & Mining,11,11,True
+development,2023-03-31,Non - Ferrous Metals,10,9,True
+development,2023-03-31,Oil,9,9,True
+development,2023-03-31,Other Construction Materials,10,10,True
+development,2023-03-31,Other Consumer Services,12,11,False
+development,2023-03-31,"Paper, Forest & Jute Products",27,26,True
+development,2023-03-31,Personal Products,11,10,True
+development,2023-03-31,Petroleum Products,10,10,True
+development,2023-03-31,Pharmaceuticals & Biotechnology,100,100,True
+development,2023-03-31,Power,27,26,False
+development,2023-03-31,Realty,73,73,True
+development,2023-03-31,Retailing,18,18,True
+development,2023-03-31,Telecom -  Equipment & Accessories,10,10,True
+development,2023-03-31,Telecom - Services,12,12,True
+development,2023-03-31,Textiles & Apparels,136,135,True
+development,2023-03-31,Transport Infrastructure,7,7,True
+development,2023-03-31,Transport Services,32,31,True
+development,2023-06-30,Aerospace & Defense,6,6,True
+development,2023-06-30,Agricultural Food & other Products,77,77,True
+development,2023-06-30,"Agricultural, Commercial & Construction Vehicles",7,6,True
+development,2023-06-30,Auto Components,83,82,True
+development,2023-06-30,Automobiles,7,7,True
+development,2023-06-30,Banks,29,28,True
+development,2023-06-30,Beverages,16,15,True
+development,2023-06-30,Capital Markets,31,30,True
+development,2023-06-30,Cement & Cement Products,24,23,False
+development,2023-06-30,Chemicals & Petrochemicals,107,105,True
+development,2023-06-30,Commercial Services & Supplies,94,91,True
+development,2023-06-30,Construction,49,46,True
+development,2023-06-30,Consumer Durables,98,96,True
+development,2023-06-30,Diversified,7,7,True
+development,2023-06-30,Electrical Equipment,42,40,True
+development,2023-06-30,Entertainment,35,34,False
+development,2023-06-30,Ferrous Metals,23,23,True
+development,2023-06-30,Fertilizers & Agrochemicals,32,32,True
+development,2023-06-30,Finance,201,194,True
+development,2023-06-30,Food Products,42,41,True
+development,2023-06-30,Gas,6,6,True
+development,2023-06-30,Healthcare Services,23,23,True
+development,2023-06-30,Household Products,13,13,True
+development,2023-06-30,IT - Hardware,12,12,True
+development,2023-06-30,IT - Services,31,29,True
+development,2023-06-30,IT - Software,55,54,True
+development,2023-06-30,Industrial Manufacturing,61,60,True
+development,2023-06-30,Industrial Products,179,176,True
+development,2023-06-30,Insurance,7,7,True
+development,2023-06-30,Leisure Services,35,34,True
+development,2023-06-30,Media,11,11,True
+development,2023-06-30,Metals & Minerals Trading,6,5,False
+development,2023-06-30,Minerals & Mining,10,10,True
+development,2023-06-30,Non - Ferrous Metals,10,9,True
+development,2023-06-30,Oil,9,9,True
+development,2023-06-30,Other Construction Materials,11,11,True
+development,2023-06-30,Other Consumer Services,11,11,True
+development,2023-06-30,"Paper, Forest & Jute Products",27,25,True
+development,2023-06-30,Personal Products,11,9,True
+development,2023-06-30,Petroleum Products,10,9,False
+development,2023-06-30,Pharmaceuticals & Biotechnology,95,94,True
+development,2023-06-30,Power,26,24,True
+development,2023-06-30,Realty,70,69,True
+development,2023-06-30,Retailing,17,17,True
+development,2023-06-30,Telecom -  Equipment & Accessories,10,10,True
+development,2023-06-30,Telecom - Services,10,10,True
+development,2023-06-30,Textiles & Apparels,133,128,True
+development,2023-06-30,Transport Infrastructure,7,6,True
+development,2023-06-30,Transport Services,29,28,True
+development,2023-09-30,Aerospace & Defense,7,7,True
+development,2023-09-30,Agricultural Food & other Products,81,80,True
+development,2023-09-30,"Agricultural, Commercial & Construction Vehicles",7,7,True
+development,2023-09-30,Auto Components,85,84,True
+development,2023-09-30,Automobiles,7,7,True
+development,2023-09-30,Banks,29,29,True
+development,2023-09-30,Beverages,16,15,True
+development,2023-09-30,Capital Markets,31,31,True
+development,2023-09-30,Cement & Cement Products,27,27,True
+development,2023-09-30,Chemicals & Petrochemicals,112,112,True
+development,2023-09-30,Commercial Services & Supplies,98,98,True
+development,2023-09-30,Construction,52,50,False
+development,2023-09-30,Consumer Durables,101,101,True
+development,2023-09-30,Diversified,7,7,True
+development,2023-09-30,Electrical Equipment,43,42,True
+development,2023-09-30,Entertainment,34,34,True
+development,2023-09-30,Ferrous Metals,22,22,True
+development,2023-09-30,Fertilizers & Agrochemicals,32,32,True
+development,2023-09-30,Finance,210,208,True
+development,2023-09-30,Food Products,42,42,True
+development,2023-09-30,Gas,6,6,True
+development,2023-09-30,Healthcare Services,25,25,True
+development,2023-09-30,Household Products,13,13,True
+development,2023-09-30,IT - Hardware,14,14,True
+development,2023-09-30,IT - Services,33,31,True
+development,2023-09-30,IT - Software,58,56,True
+development,2023-09-30,Industrial Manufacturing,64,63,True
+development,2023-09-30,Industrial Products,186,185,False
+development,2023-09-30,Insurance,7,7,True
+development,2023-09-30,Leisure Services,40,39,True
+development,2023-09-30,Media,11,11,True
+development,2023-09-30,Metals & Minerals Trading,6,5,False
+development,2023-09-30,Minerals & Mining,11,11,True
+development,2023-09-30,Non - Ferrous Metals,9,9,True
+development,2023-09-30,Oil,9,8,False
+development,2023-09-30,Other Construction Materials,12,12,True
+development,2023-09-30,Other Consumer Services,11,11,True
+development,2023-09-30,"Paper, Forest & Jute Products",27,27,True
+development,2023-09-30,Personal Products,10,9,True
+development,2023-09-30,Petroleum Products,11,11,True
+development,2023-09-30,Pharmaceuticals & Biotechnology,97,97,True
+development,2023-09-30,Power,28,28,True
+development,2023-09-30,Realty,71,70,True
+development,2023-09-30,Retailing,19,18,True
+development,2023-09-30,Telecom -  Equipment & Accessories,10,10,True
+development,2023-09-30,Telecom - Services,10,10,True
+development,2023-09-30,Textiles & Apparels,138,136,True
+development,2023-09-30,Transport Infrastructure,7,7,True
+development,2023-09-30,Transport Services,31,31,True
+development,2023-12-31,Aerospace & Defense,11,11,True
+development,2023-12-31,Agricultural Food & other Products,78,74,False
+development,2023-12-31,"Agricultural, Commercial & Construction Vehicles",7,6,True
+development,2023-12-31,Auto Components,90,90,True
+development,2023-12-31,Automobiles,8,8,True
+development,2023-12-31,Banks,30,28,True
+development,2023-12-31,Beverages,17,14,False
+development,2023-12-31,Capital Markets,32,31,True
+development,2023-12-31,Cement & Cement Products,25,24,False
+development,2023-12-31,Chemicals & Petrochemicals,116,115,True
+development,2023-12-31,Commercial Services & Supplies,104,96,True
+development,2023-12-31,Construction,53,49,False
+development,2023-12-31,Consumer Durables,106,104,True
+development,2023-12-31,Diversified,7,7,True
+development,2023-12-31,Electrical Equipment,45,42,True
+development,2023-12-31,Entertainment,35,35,True
+development,2023-12-31,Ferrous Metals,21,21,True
+development,2023-12-31,Fertilizers & Agrochemicals,32,31,True
+development,2023-12-31,Finance,219,204,True
+development,2023-12-31,Food Products,43,40,True
+development,2023-12-31,Gas,6,6,True
+development,2023-12-31,Healthcare Services,26,26,True
+development,2023-12-31,Household Products,13,12,True
+development,2023-12-31,IT - Hardware,13,13,True
+development,2023-12-31,IT - Services,33,30,True
+development,2023-12-31,IT - Software,58,56,True
+development,2023-12-31,Industrial Manufacturing,68,66,True
+development,2023-12-31,Industrial Products,188,186,True
+development,2023-12-31,Insurance,7,7,True
+development,2023-12-31,Leisure Services,40,39,True
+development,2023-12-31,Media,11,11,True
+development,2023-12-31,Metals & Minerals Trading,6,4,False
+development,2023-12-31,Minerals & Mining,10,10,True
+development,2023-12-31,Non - Ferrous Metals,10,10,True
+development,2023-12-31,Oil,9,9,True
+development,2023-12-31,Other Construction Materials,12,12,True
+development,2023-12-31,Other Consumer Services,12,12,True
+development,2023-12-31,"Paper, Forest & Jute Products",28,26,True
+development,2023-12-31,Personal Products,10,9,True
+development,2023-12-31,Petroleum Products,9,8,False
+development,2023-12-31,Pharmaceuticals & Biotechnology,98,95,False
+development,2023-12-31,Power,27,26,True
+development,2023-12-31,Realty,73,71,True
+development,2023-12-31,Retailing,20,20,True
+development,2023-12-31,Telecom -  Equipment & Accessories,10,10,True
+development,2023-12-31,Telecom - Services,11,11,True
+development,2023-12-31,Textiles & Apparels,135,131,True
+development,2023-12-31,Transport Infrastructure,8,7,True
+development,2023-12-31,Transport Services,30,29,True
