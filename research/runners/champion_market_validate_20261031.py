@@ -8,6 +8,7 @@ def main():
  for family in ['tabular','sequence']:
   for path in (c.OUT/family).glob('*_audit.json'):
    r=json.loads(path.read_text());year=r.get('year')
+   if year is None and path.name.startswith('matched_'):year=int(path.name.split('__')[2].split('_')[0])
    if year is None:continue
    assert r['max_training_endpoint']<f'{year}-01-01',str(path);audit_count+=1
  checks.append(dict(check='Every recorded fit strictly purges actual outcome endpoints at annual boundary',audits=audit_count,passed=True))
@@ -15,8 +16,9 @@ def main():
  for name in ['gru','alstm','transformer','gats','hist','master']:assert (c.OUT/'sequence'/(name+'_complete.json')).exists()
  checks.append(dict(check='All preregistered18tabular specifications and6foreign architectures completed',passed=True))
  for tier in ['full','sequence']:
-  folder=c.OUT/tier;z=pd.read_csv(folder/'sector_summary.csv');assert set(z.period)=={'development','exposed'};assert c.ANCHOR in set(z.model);b=pd.read_csv(folder/'familywise_bounds.csv');assert b.simultaneous_lower95.notna().all();lock=json.loads((folder/'development_lock.json').read_text());assert lock['exposed_not_used_for_selection']
+  folder=c.OUT/tier;z=pd.read_csv(folder/'sector_summary.csv');assert set(z.period)=={'development','exposed'};assert c.ANCHOR in set(z.model);b=pd.read_csv(folder/'familywise_bounds.csv');assert b.loc[b.status.eq('CONDITIONAL_AVAILABLE'),'simultaneous_lower95'].notna().all();assert b.loc[b.status.eq('INSUFFICIENT_TEMPORAL_SPAN'),'familywise_noise_floor'].isna().all();lock=json.loads((folder/'development_lock.json').read_text());assert lock['exposed_not_used_for_selection']
   for r in json.loads((folder/'calibration_maturity_audit.json').read_text()):assert r['max_training_endpoint']<r['date'] and r['oof_dates']>=2
+  assert json.loads((folder/'primary_evaluation_support.json').read_text())['minimum_stocks_per_query']>=5
   checks.append(dict(check=tier+' cohort has bothperiods, finite temporal bounds and mature-only calibration',policies=z.model.nunique(),passed=True))
  replay=json.loads((c.OUT/'inference/replay_audit.json').read_text());assert len(replay)==18*6 and all(r['max_replay_error']<1e-5 for r in replay);checks.append(dict(check='All108annual tabular replay jobs match original valid predictions within float32 tolerance',maximum_error=max(r['max_replay_error'] for r in replay),passed=True))
  for r in json.loads((c.ROOT/'research/literature/20261031/code_receipts.json').read_text()):

@@ -42,13 +42,15 @@ The Scite connector exhausted its monthly quota before returning literature evid
 
 | Service | Public methodology evidence | What is required for a fair test | Status here |
 |---|---|---|---|
-| Trendlyne DVM | Durability, valuation and momentum scores; published backtests | Dated historical score snapshots and reconstructable holdings on our exact dates | Reviewed; no matched archive acquired |
+| Trendlyne DVM | Durability, valuation and momentum scores; documented historical chart CSV/XLS exports | Authenticated historical score exports with adequate cross-sectional/date coverage and reconstructable holdings | Historical export route confirmed; current anonymous browser requires login; no matched archive acquired |
 | Tickertape | Performance, valuation, growth and profitability scorecards | Historical component scores, availability times and score-version history | Reviewed; no matched archive acquired |
 | MarketsMojo | Quality, valuation, financial trend and market factors; documented rating process | Dated raw scores/calls, universe and change history | Reviewed; no matched archive acquired |
 | Simply Wall St | Five-part Snowflake assessment | Historical scores and coverage for the same NSE/BSE issuers | Reviewed; no matched archive acquired |
 | Morningstar | Price relative to estimated fair value with uncertainty | Historical Indian equity estimates/ratings and coverage | Reviewed; no matched archive acquired |
 
 These are not defeated competitors. Current public scores cannot be backcast, and a marketing backtest on another universe or period cannot become a row in our paired accuracy table. No paywall or authentication barrier was bypassed. Primary sources: [Trendlyne FAQ](https://faq.trendlyne.com/support/solutions/articles/84000395601-what-is-the-trendlyne-dvm-score-and-how-does-it-work-), [Tickertape tools](https://www.tickertape.in/meta/analytical-tools), [MarketsMojo process](https://www.marketsmojo.com/mojo/processdisclosure), [Simply Wall St methodology](https://support.simplywall.st/hc/en-us/articles/360001740916-How-does-the-Snowflake-work), [Morningstar stock ratings](https://www.morningstar.com/investing-terms/morningstar-rating-for-stocks).
+
+The follow-up access audit found a concrete route for a later commercial test: Trendlyne documents [historical DVM CSV/XLS downloads](https://faq.trendlyne.com/support/solutions/articles/84000395616-how-can-i-view-historical-dvm-scores-) and [historical screener/backtest parameters](https://faq.trendlyne.com/support/solutions/articles/84000395692-how-can-i-use-historical-dvm-scores-in-screeners-and-backtesting-). Computer use on its Reliance page confirmed that opening the momentum-history chart brings up a login requirement. This means the data are access-blocked in the current session, not nonexistent. Coverage, revisions and licensing still need verification after authorised access; one stock's chart alone would not supply a matched market-wide tournament.
 
 ## How the comparison avoids easy wins
 

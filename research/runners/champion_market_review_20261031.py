@@ -22,12 +22,16 @@ def familywise(q,folder):
   for metric in ['rank_ic','attainment3','drawdown3']:
    querykeys=[k for k in c.GROUP if k in sub.columns];a=sub.pivot(index=querykeys,columns='model',values=metric);delta=a.subtract(a[c.ANCHOR],axis=0).groupby('decision_date').mean().sort_index().drop(columns=c.ANCHOR).dropna(axis=1,how='all').dropna(axis=0,how='any');dates=delta.index;mean=delta.mean().to_numpy();center=delta.to_numpy()-mean;names=list(delta.columns)
    for span in [365,730]:
-    rng=np.random.default_rng(20261031+span);boot=np.array([center[block_indices(dates,span,rng)].mean(0) for _ in range(4000)]);hurdle=float(np.quantile(np.max(boot,axis=1),.95));lower=mean-hurdle
-    for i,name in enumerate(names):rows.append(dict(period=period,metric=metric,block_days=span,model=name,delta=mean[i],familywise_noise_floor=hurdle,simultaneous_lower95=lower[i],pointwise_low95=float(mean[i]-np.quantile(boot[:,i],.975)),pointwise_high95=float(mean[i]-np.quantile(boot[:,i],.025)),dates=len(dates),candidates=len(names)))
+    observed=(np.asarray(dates,dtype='datetime64[D]')[-1]-np.asarray(dates,dtype='datetime64[D]')[0]).astype(int)
+    if len(dates)<4 or observed<span:
+     for i,name in enumerate(names):rows.append(dict(period=period,metric=metric,block_days=span,model=name,delta=mean[i],familywise_noise_floor=np.nan,simultaneous_lower95=np.nan,joint_primary_noise_floor=np.nan,joint_primary_lower95=np.nan,pointwise_low95=np.nan,pointwise_high95=np.nan,dates=len(dates),candidates=len(names),status='INSUFFICIENT_TEMPORAL_SPAN'))
+     continue
+    rng=np.random.default_rng(20261031+span);boot=np.array([center[block_indices(dates,span,rng)].mean(0) for _ in range(4000)]);hurdle=float(np.quantile(np.max(boot,axis=1),.95));lower=mean-hurdle;joint=float(np.quantile(np.max(boot,axis=1),.975)) if metric in ['rank_ic','attainment3'] else hurdle
+    for i,name in enumerate(names):rows.append(dict(period=period,metric=metric,block_days=span,model=name,delta=mean[i],familywise_noise_floor=hurdle,simultaneous_lower95=lower[i],joint_primary_noise_floor=joint,joint_primary_lower95=mean[i]-joint,pointwise_low95=float(mean[i]-np.quantile(boot[:,i],.975)),pointwise_high95=float(mean[i]-np.quantile(boot[:,i],.025)),dates=len(dates),candidates=len(names),status='CONDITIONAL_AVAILABLE'))
  pd.DataFrame(rows).to_csv(folder/'familywise_bounds.csv',index=False)
  lock=json.loads((folder/'development_lock.json').read_text());selected=lock['selected'];bounds=pd.DataFrame(rows);passed=False
  if selected!=c.ANCHOR:
-  z=bounds[bounds.model.eq(selected)];dev=z[z.period.eq('development')];ex=z[z.period.eq('exposed')];significant=any((dev[dev.metric.eq(m)].simultaneous_lower95>0).all() for m in ['rank_ic','attainment3']);passed=bool(significant and ex.delta.ge(-1e-12).all())
+  z=bounds[bounds.model.eq(selected)];dev=z[z.period.eq('development')];ex=z[z.period.eq('exposed')];significant=any((dev[dev.metric.eq(m)].joint_primary_lower95>0).all() for m in ['rank_ic','attainment3']);passed=bool(significant and ex.delta.ge(-1e-12).all())
  c.save(str(folder.relative_to(c.OUT)/'decision.json'),dict(selected_by_development=selected,passes_familywise_and_exposed=passed,serving_champion=c.ANCHOR,production_promoted=False,reason='Retrospective research only; even a statistical pass requires prospective and PIT validation',bootstrap='Centered paired date differences; moving date blocks sampled with replacement; simultaneous maximum across all candidates in tier; 4000 resamples; 365 and730days',exposed='Previously exposed historical period, not fresh holdout'))
 
 def stability(x,names,folder):
@@ -75,9 +79,20 @@ def feature_only_stability_panel(tier,names):
   if not np.isfinite(z[name]).all():raise ValueError('Incomplete feature-only stability '+name)
  return z
 
+def personalization(x,names,folder):
+ rows=[]
+ for date,g in x.groupby('decision_date',sort=True):
+  base=g[g.profile_name.eq('base7500')].set_index('isin')
+  for profile in ['target10','target30','amount1000','amount50000','weekly','quarterly','lookback12','lookback60']:
+   other=g[g.profile_name.eq(profile)].set_index('isin');common=base.index.intersection(other.index)
+   if len(common)<5:continue
+   for name in names:
+    a=base.loc[common,name];b=other.loc[common,name];rows.append(dict(decision_date=date,profile=profile,model=name,common_stocks=len(common),kendall_tau=kendalltau(a,b).statistic,top20_overlap=len(set(a.nlargest(20).index)&set(b.nlargest(20).index))/min(20,len(common)),mean_absolute_percentile_change=float((a.rank(pct=True)-b.rank(pct=True)).abs().mean())))
+ z=pd.DataFrame(rows);z.to_csv(folder/'personalization_queries.csv.gz',index=False);z.groupby(['profile','model'])[['kendall_tau','top20_overlap','mean_absolute_percentile_change']].mean().reset_index().to_csv(folder/'personalization_summary.csv',index=False)
+
 def main(tier):
  folder=c.OUT/tier;x=pd.read_pickle(folder/'scored_panel.pkl.gz',compression='gzip');names=json.loads((folder/'evaluation_support.json').read_text())['models'];q=pd.read_csv(folder/'sector_queries.csv.gz');q['period']=np.where(q.decision_date.lt('2024-01-01'),'development','exposed');familywise(q,folder);print('BOUNDS',tier,flush=True)
- full=feature_only_stability_panel(tier,names);stability(full,names,folder);del full;print('STABILITY',tier,flush=True);calibration(x,names,folder);print('CALIBRATION',tier,flush=True)
+ full=feature_only_stability_panel(tier,names);stability(full,names,folder);personalization(full,names,folder);del full;print('STABILITY',tier,flush=True);calibration(x,names,folder);print('CALIBRATION',tier,flush=True)
  regime_slices(x,q,names,folder)
  # Liquidity is a past-price/volume proxy; regimes use trailing broad-index returns only.
  if 'log_dollar_volume' in x:liquidity='log_dollar_volume'

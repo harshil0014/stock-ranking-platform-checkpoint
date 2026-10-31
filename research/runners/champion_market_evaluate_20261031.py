@@ -2,7 +2,7 @@
 import os
 os.environ.setdefault('OPENBLAS_NUM_THREADS','3')
 from pathlib import Path
-import json,math,argparse,gc,time,datetime
+import json,math,argparse,gc,time,datetime,hashlib
 import numpy as np,pandas as pd
 from scipy.stats import rankdata,kendalltau
 import champion_market_common_20261031 as c
@@ -46,13 +46,19 @@ def assemble(tier='full'):
     z=pd.concat([pd.read_csv(p,usecols=c.KEYS+['score']) for p in paths]);col='ml__'+name+'__'+target;x=x.merge(z.rename(columns={'score':col}),on=c.KEYS,how='left',validate='one_to_one');names.append(col)
  for name in names:
   if not np.isfinite(x[name]).all():raise ValueError('Missing prediction support '+name)
- x=x.sort_values('isin').reset_index(drop=True);c.save(f'{tier}/evaluation_support.json',dict(rows=len(x),dates=x.decision_date.nunique(),models=names,complete_case='Matched finite guarded-label retrospective support, not exante investability or survivorship-free certification'))
+ x=x.sort_values('isin').reset_index(drop=True);seen={};aliases={}
+ for name in names:
+  digest=hashlib.sha256(x[name].to_numpy('float64').tobytes()).hexdigest()
+  if digest in seen:aliases[name]=seen[digest]
+  else:seen[digest]=name
+ c.save(f'{tier}/evaluation_support.json',dict(rows=len(x),dates=x.decision_date.nunique(),models=names,exact_score_aliases=aliases,distinct_exact_score_columns=len(seen),complete_case='Matched finite guarded-label retrospective support, not exante investability or survivorship-free certification; distinct columns are not independent model discoveries'))
  return x,names
 
 def evaluate(tier):
  folder=c.OUT/tier;folder.mkdir(exist_ok=True);x,names=assemble(tier);x.to_pickle(folder/'scored_panel.pkl.gz',compression='gzip');rows=[]
  # Calculate development first and persist the selection before touching exposed metrics.
  for key,g in x[x.decision_date.lt('2024-01-01')].groupby(c.GROUP,observed=True,sort=True):
+  if len(g)<5:continue
   for r in metrics(g,names):r.update(dict(zip(c.GROUP,key)));rows.append(r)
  q=pd.DataFrame(rows);q.to_csv(folder/'sector_queries.csv.gz',index=False);del rows;gc.collect()
  q['period']=np.where(q.decision_date.lt('2024-01-01'),'development','exposed');columns=['rank_ic','pair_accuracy','universe_hit']+[m+str(k) for k in TOP for m in ['attainment','xirr','drawdown','shortfall','ndcg','negative','tail10']]
@@ -68,8 +74,10 @@ def evaluate(tier):
  c.save(f'{tier}/development_lock.json',dict(selected=winner,locked_at_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),point_gate_candidates=table[table.development_point_gate].to_dict('records'),selection='Attainment thenIC among development-gate passers; current35policy variants previously searched; final pass additionally requires new familywise temporal bound and locked exposed gate',exposed_not_used_for_selection=True));table.to_csv(folder/'development_deltas.csv',index=False)
  exposedrows=[]
  for key,g in x[x.decision_date.ge('2024-01-01')].groupby(c.GROUP,observed=True,sort=True):
+  if len(g)<5:continue
   for r in metrics(g,names):r.update(dict(zip(c.GROUP,key)));exposedrows.append(r)
  e=pd.DataFrame(exposedrows);e['period']='exposed';q=pd.concat([q,e],ignore_index=True);q.to_csv(folder/'sector_queries.csv.gz',index=False)
+ aq=q[q.model.eq(c.ANCHOR)];c.save(f'{tier}/primary_evaluation_support.json',dict(queries=len(aq),rows=int(aq.n.sum()),minimum_stocks_per_query=int(aq.n.min()),excluded_from_sector_queries=len(x)-int(aq.n.sum()),rule='At least5matched finite guarded outcome stocks AFTERcohort matching; global scorecard retains all matched valid rows'))
  q.groupby(['period','model','decision_date'])[columns].mean().groupby(['period','model']).mean().reset_index().to_csv(folder/'sector_summary.csv',index=False)
  globalrows=[]
  for key,g in x.groupby(['decision_date','profile_name'],observed=True,sort=True):
