@@ -86,7 +86,7 @@ def main():
      except ValueError as e:fail.append(dict(model=name,policy=policy,date=date,cost=cost,reason=str(e)));continue
      ds=r.pop('_daily_dates');ret=r.pop('_daily_returns')
      if factors is not None and cost==0:r.update(attribution(ds,ret,factors))
-     r.update(model=name,policy=policy,decision_date=date,profile_name='base7500',cost_bps=cost,goal_hit=bool(r['xirr']>=params['target_cagr']));rows.append(r)
+     r.update(model=name,policy=policy,decision_date=date,profile_name='base7500',cost_bps=cost,goal_hit=bool(r['xirr']+1e-7>=params['target_cagr']));rows.append(r)
   print('PORTFOLIO',date,len(rows),'failures',len(fail),flush=True)
  z=pd.DataFrame(rows)
  if z.empty:z=pd.DataFrame(columns=['model','policy','decision_date','profile_name','cost_bps','xirr','goal_hit','tw_max_drawdown','tw_volatility','tw_sharpe_rf0','daily_cvar5'])

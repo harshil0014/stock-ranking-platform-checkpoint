@@ -26,6 +26,7 @@ def main():
  c.save('evidence_manifest.json',dict(generated_at_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),public=records,local_model_and_prediction_snapshots=private,raw_data_status='Provider price paths, official raw index series and IIMA factor file remain local; acquisition receipts and source hashes are public',production_changed=False))
  paths.append(c.OUT/'evidence_manifest.json');c.save('public_bundle_paths.json',[str(p.relative_to(c.ROOT)).replace('\\','/') for p in paths]);paths.append(c.OUT/'public_bundle_paths.json')
  code=list((c.ROOT/'research/runners').glob('champion_market*20261031.py'))+[c.ROOT/'research/runners/market_index_acquisition_20261031.py',c.ROOT/'research/protocols/champion_vs_market_20261031.json',c.ROOT/'research/protocols/champion_vs_market_implementation_20261031.md',c.ROOT/'research/reports/champion_vs_market_20261031.md',c.ROOT/'research/reports/champion_vs_market_literature_20261031.md',c.ROOT/'tests/test_champion_market_20261031.py']+list((c.ROOT/'research/literature/20261031').rglob('*'))
+ code.append(c.ROOT/'research/protocols/champion_market_low_load_20261031.md')
  DEST.mkdir(parents=True,exist_ok=True);zipdest=DEST/'champion-vs-market-20261031-evidence.zip'
  with zipfile.ZipFile(zipdest,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as archive:
   for p in paths+code:
