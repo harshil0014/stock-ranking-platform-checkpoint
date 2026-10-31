@@ -1,0 +1,32 @@
+{
+  "registered_date": "2026-10-31",
+  "baseline_commit": "6e9bd620e4472c8280536b6120fe86d10dca65cb",
+  "application_promotion": false,
+  "evidence_boundary": "All existing 2024-2025 outcomes are already exposed; new retrospective rounds cannot be fresh validation. Each selection must be written before its exposed scoring. No post-exposed parameter search.",
+  "interpretation_correction": "Meta-labeling and disagreement abstention remain unresolved, not disproven. Filings are untested without timestamps. A lower market hit frequency is a candidate explanation for calibration drift, not a demonstrated causal decomposition.",
+  "sector_placebo": {
+    "profile": "base7500",
+    "permutations": 50,
+    "seed": 2026103101,
+    "assignment": "Permute issuer sector labels within each date, preserving exact group sizes, reuse assignment consistently across every sector-conditioned component. No outcomes enter the permutation.",
+    "primary_comparison": "Frozen annual champion rescored after recomputing all sector-conditioned input percentiles, component score percentiles and high/SIP overlays. Evaluate on the SAME original true-sector outcome queries; shuffling evaluation groups is a separately labelled composition diagnostic.",
+    "control": "Unshuffled full champion replay must match saved active scores within 1e-10. Otherwise no full-champion placebo conclusion; identify partial component results explicitly.",
+    "pass": "Development true-sector IC exceeds the 95th percentile shuffled IC by at least 0.01013492400721767; true-minus-shuffled date-block lower 95% bound >0. Exposed direction positive under the same locked protocol. Pair accuracy, global cross-section and Top3 attainment secondary. A tie does not prove a newly trained sector-free model is equivalent.",
+    "periods": {"development":"2020-2023", "exposed":"2024-2025"}
+  },
+  "prospective_ledger": {
+    "start_date": "2026-10-31",
+    "branch": "prospective-ledger",
+    "retention": "Append-only data-only Git branch; no force pushes or record replacement; each manifest links the previous manifest hash. Same record slot is idempotent. New policy/model revision requires a new stream identifier.",
+    "daily_local_time": "19:30 Asia/Kolkata, including weekends for announcement capture",
+    "initial_stream": "Frozen complete champion at the existing dated runtime inputs, recorded with actual observation and source-as-of dates. Stale inputs do not become a fresh current-date forecast merely by being recorded today.",
+    "eligibility": "Only date-aligned scores issued before the forward outcome window and before outcomes are known can count for the 12-month holdout. No backfilled run is prospective. Component-only streams cannot stand in for the complete champion.",
+    "hysteresis": "Initial stream margin0.02 with explicit model/profile/sector state, immediate invalidation for known corporate-action, suspension and data-quality flags; missing event coverage is marked unknown, never reported as a clean bill of health.",
+    "events": "Archive exchange-provided timestamp strings and actual first-observed UTC times separately; preserve source HTTP/status, hashes, coverage and acquisition failures. No invented filing timestamps or PDF parsing. No automated orders or messages.",
+    "metrics": ["rank_ic", "within_sector_pair_accuracy", "top3_goal_attainment", "top3_churn", "selected_asset_drawdown", "coverage", "input_freshness", "event_capture_coverage"],
+    "pre_registered_incremental_hurdles": {"rank_ic":0.01013492400721767,"goal_attainment":0.0063048666044885245},
+    "hurdle_limits": "These are historical selection-noise hurdles for a specified family, not universal significance cutoffs or absolute-IC null thresholds. Evaluate paired incumbent/challenger differences and recompute temporal uncertainty on the prospective cohort.",
+    "earliest_review": "12 months after the first eligible genuinely prospective forecast; preserve missing days and failed acquisitions. Never relabel stale/bootstrap records as eligible later."
+  },
+  "other_workstreams": "Separate preregistrations cover daily hysteresis, historical NIFTY500 and goal scenarios/risk. Revisit meta-labeling and disagreement only if the PIT work supplies enough mature observations."
+}

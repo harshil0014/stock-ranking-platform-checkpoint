@@ -78,3 +78,7 @@ experiments/ten-hypotheses-20261031/** -text
 research/runners/*ten_hypotheses*20261031.py text eol=lf
 tests/test_ten_hypotheses_20261031.py text eol=lf
 research/reports/ten_hypotheses_20261031.md text eol=lf
+research/protocols/round2_20261031.json -text
+research/runners/*20261031.py text eol=lf
+tests/*20261031.py text eol=lf
+experiments/round2-*/** -text
