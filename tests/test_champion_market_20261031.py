@@ -1,0 +1,47 @@
+from pathlib import Path
+import sys,itertools,numpy as np,pandas as pd
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'research/runners'))
+from champion_market_evaluate_20261031 import pair_accuracy,metrics
+from champion_market_common_20261031 import sample_queries,stable_random
+
+def test_exact_pair_concordance_with_ties():
+ y=np.array([1.,1.,2.,3.]);s=np.array([0.,1.,1.,2.]);pairs=[.5 if s[i]==s[j] else float((s[i]-s[j])*(y[i]-y[j])>0) for i,j in itertools.combinations(range(4),2) if y[i]!=y[j]]
+ assert abs(pair_accuracy(y,s)-np.mean(pairs))<1e-12
+ assert pair_accuracy(y,np.ones(4))==.5
+ assert abs(pair_accuracy(np.arange(4),np.arange(4))-1)<1e-12
+ assert abs(pair_accuracy(np.arange(4),-np.arange(4)))<1e-12
+
+def test_top20_not_reported_for_tiny_sector():
+ x=pd.DataFrame(dict(future_xirr=[1,2,3,4,5],goal_hit=[0,0,1,1,1],future_drawdown=[-.1]*5,future_shortfall=[.1]*5,champ=[1,2,3,4,5]))
+ r=metrics(x,['champ'])[0]
+ assert abs(r['rank_ic']-1)<1e-12 and abs(r['ndcg3']-1)<1e-12
+ assert r['attainment3']==1 and np.isnan(r['attainment20'])
+
+def test_cap_retains_complete_queries_and_is_reproducible():
+ x=pd.DataFrame(dict(isin=list('abcdef'),decision_date=['2016']*6,profile_name=['base']*6,sector=['a']*3+['b']*3))
+ a=sample_queries(x,cap=4);b=sample_queries(x,cap=4)
+ assert len(a)==3 and a.equals(b) and a.sector.nunique()==1
+ assert np.array_equal(stable_random(x),stable_random(x))
+
+def test_actual_cashflow_cost_and_portfolio_cash_conservation():
+ from champion_market_indices_20261031 import sip_path
+ from champion_market_portfolio_20261031 import portfolio_path
+ d=pd.date_range('2020-01-01','2021-01-01',freq='D').to_numpy(dtype='datetime64[D]');p=np.ones(len(d))*100
+ a=sip_path(d,p,'2020-01-01','2021-01-01',1000,30,0);b=sip_path(d,p,'2020-01-01','2021-01-01',1000,30,50)
+ assert abs(a['xirr'])<1e-10 and b['xirr']<0
+ assert abs(b['terminal']/b['contributed']-(.995/1.005))<1e-12
+ z=portfolio_path([(d,p),(d,p*2)],np.array([.3,.7]),'2020-01-01','2021-01-01',1000,30,50)
+ assert abs(z['terminal']-b['terminal'])<1e-8 and abs(z['xirr']-b['xirr'])<1e-10
+
+def test_missing_selected_execution_is_blocked():
+ import pytest
+ from champion_market_portfolio_20261031 import portfolio_path
+ d=pd.date_range('2020-01-01','2020-06-01',freq='D').to_numpy(dtype='datetime64[D]')
+ with pytest.raises(ValueError,match='missing contribution'):
+  portfolio_path([(d,np.ones(len(d)))],np.ones(1),'2020-01-01','2021-01-01',1000,30,0)
+
+def test_temporal_blocks_are_reproducible_and_preserve_length():
+ from champion_market_review_20261031 import block_indices
+ dates=pd.date_range('2020-01-01',periods=16,freq='3MS').to_numpy(dtype='datetime64[D]')
+ a=block_indices(dates,365,np.random.default_rng(1));b=block_indices(dates,365,np.random.default_rng(1))
+ assert len(a)==16 and np.array_equal(a,b) and a.min()>=0 and a.max()<16
