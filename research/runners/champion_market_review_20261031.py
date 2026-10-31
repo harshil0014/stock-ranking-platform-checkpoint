@@ -74,8 +74,11 @@ def feature_only_stability_panel(tier,names):
    _,algorithm,target=name.split('__');files=[c.OUT/'inference'/f'{algorithm}__{target}__{year}.csv.gz' for year in range(2020,2026)]
   elif name.startswith('sequence__'):
    algorithm=name.split('__')[1];files=[c.OUT/'sequence'/f'{algorithm}__balanced__{year}.csv.gz' for year in range(2020,2026)]
+  elif name.startswith('ensemble__'):continue
   else:continue
   pred=pd.concat([pd.read_csv(p,usecols=c.KEYS+['score']) for p in files]);z=z.merge(pred.rename(columns={'score':name}),on=c.KEYS,how='left',validate='one_to_one')
+ from champion_market_evaluate_20261031 import add_ensembles
+ add_ensembles(z,tier)
  for name in names:
   if not np.isfinite(z[name]).all():raise ValueError('Incomplete feature-only stability '+name)
  return z
@@ -91,9 +94,25 @@ def personalization(x,names,folder):
     a=base.loc[common,name];b=other.loc[common,name];rows.append(dict(decision_date=date,profile=profile,model=name,common_stocks=len(common),kendall_tau=kendalltau(a,b).statistic,top20_overlap=len(set(a.nlargest(20).index)&set(b.nlargest(20).index))/min(20,len(common)),mean_absolute_percentile_change=float((a.rank(pct=True)-b.rank(pct=True)).abs().mean())))
  z=pd.DataFrame(rows);z.to_csv(folder/'personalization_queries.csv.gz',index=False);z.groupby(['profile','model'])[['kendall_tau','top20_overlap','mean_absolute_percentile_change']].mean().reset_index().to_csv(folder/'personalization_summary.csv',index=False)
 
+def confidence_curve(full,valid,tier,folder):
+ from champion_market_evaluate_20261031 import metrics
+ if tier=='full':
+  algorithms=json.loads((c.OUT/'protocol.json').read_text())['ml_algorithms'];cols=[f'ml__{n}__{target}' for n in algorithms for target in ['return','balanced']];ranks=full[cols].groupby([full[k] for k in c.GROUP],observed=True).rank(pct=True);votes=np.column_stack([ranks[[f'ml__{n}__return',f'ml__{n}__balanced']].mean(axis=1).to_numpy() for n in algorithms]);scores=[c.ANCHOR,'ensemble__return','ensemble__balanced']
+ else:
+  cols=[f'sequence__{n}' for n in ['gru','alstm','transformer','gats','hist','master']];votes=full[cols].groupby([full[k] for k in c.GROUP],observed=True).rank(pct=True).to_numpy();scores=[c.ANCHOR,'ensemble__neural']
+ conf=full[c.KEYS].copy();conf['disagreement']=np.std(votes,axis=1);z=valid.merge(conf,on=c.KEYS,validate='one_to_one');rows=[]
+ for key,g in z.groupby(c.GROUP,observed=True,sort=True):
+  if len(g)<5:continue
+  ordered=g.sort_values(['disagreement','isin'],kind='stable')
+  for fraction in [.25,.5,.75,1.]:
+   h=ordered.iloc[:max(1,int(np.ceil(len(g)*fraction)))];
+   if len(h)<5:continue
+   for result in metrics(h,scores):result.update(dict(zip(c.GROUP,key)));result.update(retained_fraction=fraction,eligible_stocks=len(g),mean_disagreement=float(h.disagreement.mean()));rows.append(result)
+ z=pd.DataFrame(rows);z['period']=np.where(z.decision_date.lt('2024-01-01'),'development','exposed');z.groupby(['period','retained_fraction','model']).agg(pair_accuracy=('pair_accuracy','mean'),rank_ic=('rank_ic','mean'),attainment3=('attainment3','mean'),drawdown3=('drawdown3','mean'),queries=('n','size'),retained_stocks=('n','sum'),eligible_stocks=('eligible_stocks','sum')).reset_index().to_csv(folder/'confidence_abstention_curve.csv',index=False)
+
 def main(tier):
  folder=c.OUT/tier;x=pd.read_pickle(folder/'scored_panel.pkl.gz',compression='gzip');names=json.loads((folder/'evaluation_support.json').read_text())['models'];q=pd.read_csv(folder/'sector_queries.csv.gz');q['period']=np.where(q.decision_date.lt('2024-01-01'),'development','exposed');familywise(q,folder);print('BOUNDS',tier,flush=True)
- full=feature_only_stability_panel(tier,names);stability(full,names,folder);personalization(full,names,folder);del full;print('STABILITY',tier,flush=True);calibration(x,names,folder);print('CALIBRATION',tier,flush=True)
+ full=feature_only_stability_panel(tier,names);stability(full,names,folder);personalization(full,names,folder);confidence_curve(full,x,tier,folder);del full;print('STABILITY',tier,flush=True);calibration(x,names,folder);print('CALIBRATION',tier,flush=True)
  regime_slices(x,q,names,folder)
  # Liquidity is a past-price/volume proxy; regimes use trailing broad-index returns only.
  if 'log_dollar_volume' in x:liquidity='log_dollar_volume'

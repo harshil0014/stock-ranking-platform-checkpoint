@@ -44,6 +44,7 @@ def assemble(tier='full'):
     paths=[c.OUT/'tabular'/f'{name}__{target}__{y}.csv.gz' for y in range(2020,2026)]
     if not all(p.exists() for p in paths):raise RuntimeError('Incomplete tabular family '+name+' '+target)
     z=pd.concat([pd.read_csv(p,usecols=c.KEYS+['score']) for p in paths]);col='ml__'+name+'__'+target;x=x.merge(z.rename(columns={'score':col}),on=c.KEYS,how='left',validate='one_to_one');names.append(col)
+ ensemble=full_cohort_ensembles(tier);cols=[n for n in ensemble if n.startswith('ensemble__')];x=x.merge(ensemble,on=c.KEYS,how='left',validate='one_to_one');names.extend(cols)
  for name in names:
   if not np.isfinite(x[name]).all():raise ValueError('Missing prediction support '+name)
  x=x.sort_values('isin').reset_index(drop=True);seen={};aliases={}
@@ -53,6 +54,23 @@ def assemble(tier='full'):
   else:seen[digest]=name
  c.save(f'{tier}/evaluation_support.json',dict(rows=len(x),dates=x.decision_date.nunique(),models=names,exact_score_aliases=aliases,distinct_exact_score_columns=len(seen),complete_case='Matched finite guarded-label retrospective support, not exante investability or survivorship-free certification; distinct columns are not independent model discoveries'))
  return x,names
+
+def add_ensembles(x,tier):
+ """Fixed equal-weight percentile ensembles; no outcome-based weights or model selection."""
+ keys=[x[k] for k in c.GROUP];added=[]
+ families=([('return',[n for n in x if n.startswith('ml__') and n.endswith('__return')]),('balanced',[n for n in x if n.startswith('ml__') and n.endswith('__balanced')])] if tier=='full' else [('neural',[f'sequence__{n}' for n in ['gru','alstm','transformer','gats','hist','master']])])
+ for target,cols in families:
+  if not cols:raise ValueError('Incomplete equal-weight ensemble')
+  if not np.isfinite(x[cols].to_numpy(float)).all():raise ValueError('Missing component score in equal-weight ensemble')
+  col='ensemble__'+target;x[col]=x[cols].groupby(keys,observed=True).rank(pct=True).mean(axis=1);added.append(col)
+ return added
+
+def full_cohort_ensembles(tier):
+ source='panel.pkl.gz' if tier=='full' else 'sequence_panel.pkl.gz';x=pd.read_pickle(c.OUT/source,compression='gzip');x=x.loc[x.decision_date.ge('2020-01-01'),list(dict.fromkeys(c.KEYS+c.GROUP))].copy()
+ specs=[(name,target) for name in json.loads((c.OUT/'protocol.json').read_text())['ml_algorithms'] for target in ['return','balanced']] if tier=='full' else [(n,'balanced') for n in ['gru','alstm','transformer','gats','hist','master']]
+ for name,target in specs:
+  folder=c.OUT/('inference' if tier=='full' else 'sequence');z=pd.concat([pd.read_csv(folder/f'{name}__{target}__{year}.csv.gz',usecols=c.KEYS+['score']) for year in range(2020,2026)]);col='ml__'+name+'__'+target if tier=='full' else 'sequence__'+name;x=x.merge(z.rename(columns={'score':col}),on=c.KEYS,how='left',validate='one_to_one')
+ added=add_ensembles(x,tier);return x[c.KEYS+added]
 
 def evaluate(tier):
  folder=c.OUT/tier;folder.mkdir(exist_ok=True);x,names=assemble(tier);x.to_pickle(folder/'scored_panel.pkl.gz',compression='gzip');rows=[]

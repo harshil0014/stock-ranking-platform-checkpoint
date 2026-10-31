@@ -65,3 +65,11 @@ def test_short_history_is_unavailable_not_zero_uncertainty(tmp_path,monkeypatch)
   for day in pd.date_range(start,periods=4,freq='3MS').strftime('%Y-%m-%d'):
    for name in [review.c.ANCHOR,'other']:rows.append(dict(period=period,decision_date=day,model=name,rank_ic=.1,attainment3=.3,drawdown3=-.2))
  review.familywise(pd.DataFrame(rows),folder);z=pd.read_csv(folder/'familywise_bounds.csv');assert z.status.eq('INSUFFICIENT_TEMPORAL_SPAN').all() and z.familywise_noise_floor.isna().all()
+
+def test_equal_weight_ensemble_uses_ranks_without_outcome_weights():
+ import pytest
+ from champion_market_evaluate_20261031 import add_ensembles
+ x=pd.DataFrame(dict(decision_date=['2020']*3,profile_name=['base']*3,sector=['a']*3,future_xirr=[1,2,3],ml__a__return=[1,3,2],ml__b__return=[5,1,2],ml__a__balanced=[2,1,3]))
+ a=x.copy();add_ensembles(a,'full');b=x.copy();b['future_xirr']=[100,-50,0];b['ml__a__return']=b.ml__a__return*100+90;add_ensembles(b,'full');np.testing.assert_allclose(a.ensemble__return,b.ensemble__return);np.testing.assert_allclose(a.ensemble__return,[2/3,2/3,2/3])
+ b.loc[0,'ml__a__return']=np.nan
+ with pytest.raises(ValueError,match='Missing component'):add_ensembles(b,'full')

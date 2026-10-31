@@ -30,7 +30,9 @@ def main():
  with zipfile.ZipFile(zipdest,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as archive:
   for p in paths+code:
    if p.is_file() and '__pycache__' not in str(p):archive.write(p,str(p.relative_to(c.ROOT)))
- for name in ['champion_vs_market_20261031.md','champion_vs_market_literature_20261031.md']:shutil.copy2(c.ROOT/'research/reports'/name,DEST/name)
+ public='https://github.com/harshil0014/stock-ranking-platform-checkpoint/blob/main/'
+ for name in ['champion_vs_market_20261031.md','champion_vs_market_literature_20261031.md']:
+  content=(c.ROOT/'research/reports'/name).read_text(encoding='utf-8').replace('](champion_vs_market_literature_20261031.md)',']('+public+'research/reports/champion_vs_market_literature_20261031.md)').replace('](../literature/20261031/REFERENCES.md)',']('+public+'research/literature/20261031/REFERENCES.md)');(DEST/name).write_text(content,encoding='utf-8')
  for p in (c.OUT/'figures').glob('*.png'):shutil.copy2(p,DEST/('champion-market-'+p.name))
  (DEST/'champion-vs-market-20261031-evidence.sha256').write_text(hashlib.sha256(zipdest.read_bytes()).hexdigest()+'  '+zipdest.name+'\n',encoding='utf-8');print('BUNDLED',len(paths),'public evidence files',zipdest.stat().st_size,flush=True)
 if __name__=='__main__':main()

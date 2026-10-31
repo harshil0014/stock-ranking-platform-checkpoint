@@ -67,6 +67,8 @@ def main():
    files=[c.OUT/'inference'/f'{name}__{target}__{year}.csv.gz' for year in range(2020,2026)]
    if not all(p.exists() for p in files):raise RuntimeError('Missing full feature inference '+name)
    z=pd.concat([pd.read_csv(p).query("profile_name == 'base7500'") for p in files]);col='ml__'+name+'__'+target;x=x.merge(z[c.KEYS+['score']].rename(columns={'score':col}),on=c.KEYS,how='left',validate='one_to_one');names.append(col)
+ from champion_market_evaluate_20261031 import add_ensembles
+ names.extend(add_ensembles(x,'full'))
  paths=price_cache();actions=pd.read_csv(c.ROOT/'experiments/sector-action-integrity-20261008/provider_official_alignment.csv');actions=actions[actions.status.str.startswith('UNRESOLVED')];profiles=json.loads((c.ROOT/'research/protocols/personalized_official_action_tournament_v1.json').read_text())['profiles'];params=profiles['base7500'];rows=[];fail=[];selections=[]
  factorfile=c.ROOT/'work/champion-vs-market-20261031/iima_daily.csv';factors=pd.read_csv(factorfile,parse_dates=['Date']) if factorfile.exists() else None
  for date,g in x.groupby('decision_date',sort=True):
