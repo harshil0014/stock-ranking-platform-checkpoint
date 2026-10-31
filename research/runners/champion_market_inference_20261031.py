@@ -26,7 +26,7 @@ def main():
       for key in pre:np.testing.assert_allclose(pre[key],saved['preprocessing'][key],rtol=0,atol=0)
      preds.append(model.predict(Z));del model;gc.collect()
     z=test[c.KEYS].copy();z['score']=np.mean(preds,axis=0);z['seed_sd']=np.std(preds,axis=0)
-    old=pd.read_csv(c.OUT/'tabular'/dest.name);matched=old.merge(z,on=c.KEYS,validate='one_to_one');error=float(np.abs(matched.score_x-matched.score_y).max());assert error<1e-10,(name,error)
+    old=pd.read_csv(c.OUT/'tabular'/dest.name);matched=old.merge(z,on=c.KEYS,validate='one_to_one');error=float(np.abs(matched.score_x-matched.score_y).max());np.testing.assert_allclose(matched.score_x,matched.score_y,rtol=1e-6,atol=1e-6,err_msg=name+' float32 replay')
     z.to_csv(dest,index=False);audits.append(dict(model=name,target=target,year=year,rows=len(z),matched_valid_rows=len(matched),max_replay_error=error));print('REPLAY',name,target,year,len(z),error,flush=True)
  c.save('inference/replay_audit.json',audits)
 if __name__=='__main__':main()

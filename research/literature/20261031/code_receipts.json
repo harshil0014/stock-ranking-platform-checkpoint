@@ -1,0 +1,123 @@
+[
+  {
+    "repo": "microsoft/qlib",
+    "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/LICENSE",
+    "retrieved_at_utc": "2026-10-31T08:38:58.029483+00:00",
+    "status": 200,
+    "bytes": 1141,
+    "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+    "local_path": "research/literature/20261031/code/microsoft__qlib__LICENSE"
+  },
+  {
+    "repo": "microsoft/qlib",
+    "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+    "path": "qlib/contrib/model/pytorch_gru.py",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/qlib/contrib/model/pytorch_gru.py",
+    "retrieved_at_utc": "2026-10-31T08:38:58.030162+00:00",
+    "status": 200,
+    "bytes": 10553,
+    "sha256": "75cc1c38dcbc4dfda90105d203f60399aec60c154360eac8eddb38f605efda7e",
+    "local_path": "research/literature/20261031/code/microsoft__qlib__qlib__contrib__model__pytorch_gru.py"
+  },
+  {
+    "repo": "microsoft/qlib",
+    "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+    "path": "qlib/contrib/model/pytorch_alstm.py",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/qlib/contrib/model/pytorch_alstm.py",
+    "retrieved_at_utc": "2026-10-31T08:38:58.030601+00:00",
+    "status": 200,
+    "bytes": 11333,
+    "sha256": "f7a19f9a2a6551f0659cc821cce30aaaa865a703874e7e83c4fbc8e0d1275a6b",
+    "local_path": "research/literature/20261031/code/microsoft__qlib__qlib__contrib__model__pytorch_alstm.py"
+  },
+  {
+    "repo": "microsoft/qlib",
+    "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+    "path": "qlib/contrib/model/pytorch_transformer.py",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/qlib/contrib/model/pytorch_transformer.py",
+    "retrieved_at_utc": "2026-10-31T08:38:58.030962+00:00",
+    "status": 200,
+    "bytes": 9866,
+    "sha256": "e87271b46a1128ad889bb614d8e1fd4bc85ce7b766be5f53a0ec3316bfe640a2",
+    "local_path": "research/literature/20261031/code/microsoft__qlib__qlib__contrib__model__pytorch_transformer.py"
+  },
+  {
+    "repo": "microsoft/qlib",
+    "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+    "path": "qlib/contrib/model/pytorch_gats.py",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/qlib/contrib/model/pytorch_gats.py",
+    "retrieved_at_utc": "2026-10-31T08:39:04.191381+00:00",
+    "status": 200,
+    "bytes": 12724,
+    "sha256": "597e3ab9488dde56e1951f27a4d9a707ed6152033e33b3ec07612cc130bbde14",
+    "local_path": "research/literature/20261031/code/microsoft__qlib__qlib__contrib__model__pytorch_gats.py"
+  },
+  {
+    "repo": "microsoft/qlib",
+    "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+    "path": "qlib/contrib/model/pytorch_hist.py",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/qlib/contrib/model/pytorch_hist.py",
+    "retrieved_at_utc": "2026-10-31T08:39:04.202069+00:00",
+    "status": 200,
+    "bytes": 21070,
+    "sha256": "cc9df022f76d692ff80f93d4bf3901df825eb82f5af6d53ea15251647e5d3105",
+    "local_path": "research/literature/20261031/code/microsoft__qlib__qlib__contrib__model__pytorch_hist.py"
+  },
+  {
+    "repo": "microsoft/qlib",
+    "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+    "path": "qlib/contrib/model/pytorch_tra.py",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/qlib/contrib/model/pytorch_tra.py",
+    "retrieved_at_utc": "2026-10-31T08:39:04.248250+00:00",
+    "status": 200,
+    "bytes": 34712,
+    "sha256": "b4f00fb185e30121506386b5ef1b4cdacdfb689d25837e3b2d951820af2b8589",
+    "local_path": "research/literature/20261031/code/microsoft__qlib__qlib__contrib__model__pytorch_tra.py"
+  },
+  {
+    "repo": "microsoft/qlib",
+    "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+    "path": "examples/benchmarks/README.md",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/examples/benchmarks/README.md",
+    "retrieved_at_utc": "2026-10-31T08:39:04.252456+00:00",
+    "status": 200,
+    "bytes": 16561,
+    "sha256": "bfc70f5d3193412ce18b6eee494fbe34be9110ac93bfb164c1fb22dcb05cb529",
+    "local_path": "research/literature/20261031/code/microsoft__qlib__examples__benchmarks__README.md"
+  },
+  {
+    "repo": "SJTU-DMTai/MASTER",
+    "commit": "de8f58557096abde4216a701b35fc4368158d111",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/SJTU-DMTai/MASTER/de8f58557096abde4216a701b35fc4368158d111/LICENSE",
+    "retrieved_at_utc": "2026-10-31T08:39:10.346779+00:00",
+    "status": 200,
+    "bytes": 1090,
+    "sha256": "092708495d13ce475c76f1a25b52f3aa15ae0bae490a245eb2378d0d543ab736",
+    "local_path": "research/literature/20261031/code/SJTU-DMTai__MASTER__LICENSE"
+  },
+  {
+    "repo": "SJTU-DMTai/MASTER",
+    "commit": "de8f58557096abde4216a701b35fc4368158d111",
+    "path": "master.py",
+    "url": "https://raw.githubusercontent.com/SJTU-DMTai/MASTER/de8f58557096abde4216a701b35fc4368158d111/master.py",
+    "retrieved_at_utc": "2026-10-31T08:39:10.363043+00:00",
+    "status": 200,
+    "bytes": 8141,
+    "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4",
+    "local_path": "research/literature/20261031/code/SJTU-DMTai__MASTER__master.py"
+  },
+  {
+    "repo": "SJTU-DMTai/MASTER",
+    "commit": "de8f58557096abde4216a701b35fc4368158d111",
+    "path": "base_model.py",
+    "url": "https://raw.githubusercontent.com/SJTU-DMTai/MASTER/de8f58557096abde4216a701b35fc4368158d111/base_model.py",
+    "retrieved_at_utc": "2026-10-31T08:39:10.396426+00:00",
+    "status": 200,
+    "bytes": 7734,
+    "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a",
+    "local_path": "research/literature/20261031/code/SJTU-DMTai__MASTER__base_model.py"
+  }
+]

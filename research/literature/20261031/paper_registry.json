@@ -1,0 +1,1918 @@
+[
+  {
+    "id": "jegadeesh_titman",
+    "family": "factor",
+    "source_market": "US",
+    "identifier": "10.1111/j.1540-6261.1993.tb04702.x",
+    "source_url": "https://doi.org/10.1111/j.1540-6261.1993.tb04702.x",
+    "retrieval_url": "https://api.crossref.org/works/10.1111%2Fj.1540-6261.1993.tb04702.x",
+    "retrieved_at_utc": "2026-10-31T09:30:13.419657+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "3af8ef2013e85d7d1e89b088679fe844c58d5010e19ddf79caeb675d5400df38",
+    "title": "Returns to Buying Winners and Selling Losers: Implications for Stock Market Efficiency",
+    "authors": [
+      "NARASIMHAN JEGADEESH",
+      "SHERIDAN TITMAN"
+    ],
+    "year": 1993,
+    "journal": [
+      "The Journal of Finance"
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2012,
+              4,
+              30
+            ]
+          ],
+          "date-time": "2012-04-30T00:00:00Z",
+          "timestamp": 1335744000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 7000,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      }
+    ],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "george_hwang",
+    "family": "factor",
+    "source_market": "US",
+    "identifier": "10.1111/j.1540-6261.2004.00695.x",
+    "source_url": "https://doi.org/10.1111/j.1540-6261.2004.00695.x",
+    "retrieval_url": "https://api.crossref.org/works/10.1111%2Fj.1540-6261.2004.00695.x",
+    "retrieved_at_utc": "2026-10-31T09:30:13.424416+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "57f584c42299380342d56fe854be3e7994cb9de51687eab5f61fa6cce5c89d4d",
+    "title": "The 52\u2010Week High and Momentum Investing",
+    "authors": [
+      "THOMAS J. GEORGE",
+      "CHUAN\u2010YANG HWANG"
+    ],
+    "year": 2004,
+    "journal": [
+      "The Journal of Finance"
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2005,
+              11,
+              27
+            ]
+          ],
+          "date-time": "2005-11-27T00:00:00Z",
+          "timestamp": 1133049600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 422,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      }
+    ],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "gervais_volume",
+    "family": "factor",
+    "source_market": "US",
+    "identifier": "10.1111/0022-1082.00349",
+    "source_url": "https://doi.org/10.1111/0022-1082.00349",
+    "retrieval_url": "https://api.crossref.org/works/10.1111%2F0022-1082.00349",
+    "retrieved_at_utc": "2026-10-31T09:30:13.426875+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "cf9e6d28d1e02797475883f9198e74d110a31a0dad502f4e080b4305a3d2fe5e",
+    "title": "The High\u2010Volume Return Premium",
+    "authors": [
+      "Simon Gervais",
+      "Ron Kaniel",
+      "Dan H. Mingelgrin"
+    ],
+    "year": 2001,
+    "journal": [
+      "The Journal of Finance"
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2002,
+              12,
+              17
+            ]
+          ],
+          "date-time": "2002-12-17T00:00:00Z",
+          "timestamp": 1040083200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 564,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      }
+    ],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "ang_volatility",
+    "family": "factor",
+    "source_market": "US",
+    "identifier": "10.1111/j.1540-6261.2006.00836.x",
+    "source_url": "https://doi.org/10.1111/j.1540-6261.2006.00836.x",
+    "retrieval_url": "https://api.crossref.org/works/10.1111%2Fj.1540-6261.2006.00836.x",
+    "retrieved_at_utc": "2026-10-31T09:30:13.448440+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "98f66a4845ab41dc17e2ebf4a9a3ff8d411fa9d252efdf361ec44e198fa6f200",
+    "title": "The Cross\u2010Section of Volatility and Expected Returns",
+    "authors": [
+      "ANDREW ANG",
+      "ROBERT J. HODRICK",
+      "YUHANG XING",
+      "XIAOYAN ZHANG"
+    ],
+    "year": 2006,
+    "journal": [
+      "The Journal of Finance"
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2006,
+              1,
+              20
+            ]
+          ],
+          "date-time": "2006-01-20T00:00:00Z",
+          "timestamp": 1137715200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      }
+    ],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "fama_french5",
+    "family": "factor",
+    "source_market": "US",
+    "identifier": "10.1016/j.jfineco.2014.10.010",
+    "source_url": "https://doi.org/10.1016/j.jfineco.2014.10.010",
+    "retrieval_url": "https://api.crossref.org/works/10.1016%2Fj.jfineco.2014.10.010",
+    "retrieved_at_utc": "2026-10-31T09:30:13.448590+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "0554d3342fb84c85c498102413434474d22209457b910bc31b4fd318798e4f9a",
+    "title": "A five-factor asset pricing model",
+    "authors": [
+      "Eugene F. Fama",
+      "Kenneth R. French"
+    ],
+    "year": 2015,
+    "journal": [
+      "Journal of Financial Economics"
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2015-04-01T00:00:00Z",
+          "timestamp": 1427846400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "gross_profitability",
+    "family": "factor",
+    "source_market": "US",
+    "identifier": "10.1016/j.jfineco.2013.01.003",
+    "source_url": "https://doi.org/10.1016/j.jfineco.2013.01.003",
+    "retrieval_url": "https://api.crossref.org/works/10.1016%2Fj.jfineco.2013.01.003",
+    "retrieved_at_utc": "2026-10-31T09:30:13.448700+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "52d2bddcd8540bc3eedf7775feed14ce58a15b53275bc0354cd443b7bbdcad1c",
+    "title": "The other side of value: The gross profitability premium",
+    "authors": [
+      "Robert Novy-Marx"
+    ],
+    "year": 2013,
+    "journal": [
+      "Journal of Financial Economics"
+    ],
+    "license": [],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "betting_against_beta",
+    "family": "factor",
+    "source_market": "International",
+    "identifier": "10.1016/j.jfineco.2013.10.005",
+    "source_url": "https://doi.org/10.1016/j.jfineco.2013.10.005",
+    "retrieval_url": "https://api.crossref.org/works/10.1016%2Fj.jfineco.2013.10.005",
+    "retrieved_at_utc": "2026-10-31T09:30:13.450265+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "338cd6f5d55211298584073d9b3e5fb7716106f9a4393b5efa164bd0ef70fd70",
+    "title": "Betting against beta",
+    "authors": [
+      "Andrea Frazzini",
+      "Lasse Heje Pedersen"
+    ],
+    "year": 2014,
+    "journal": [
+      "Journal of Financial Economics"
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2014-01-01T00:00:00Z",
+          "timestamp": 1388534400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              11,
+              28
+            ]
+          ],
+          "date-time": "2013-11-28T00:00:00Z",
+          "timestamp": 1385596800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "quality_minus_junk",
+    "family": "factor",
+    "source_market": "International",
+    "identifier": "10.1007/s11142-018-9470-2",
+    "source_url": "https://doi.org/10.1007/s11142-018-9470-2",
+    "retrieval_url": "https://api.crossref.org/works/10.1007%2Fs11142-018-9470-2",
+    "retrieved_at_utc": "2026-10-31T09:30:13.474699+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "f9f0744449e092f110c52db04444c769b1172b674242ca92c82dac3f20d022a2",
+    "title": "Quality minus junk",
+    "authors": [
+      "Clifford S. Asness",
+      "Andrea Frazzini",
+      "Lasse Heje Pedersen"
+    ],
+    "year": 2018,
+    "journal": [
+      "Review of Accounting Studies"
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2018,
+              11,
+              5
+            ]
+          ],
+          "date-time": "2018-11-05T00:00:00Z",
+          "timestamp": 1541376000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "time_series_momentum",
+    "family": "factor",
+    "source_market": "International",
+    "identifier": "10.1016/j.jfineco.2011.11.003",
+    "source_url": "https://doi.org/10.1016/j.jfineco.2011.11.003",
+    "retrieval_url": "https://api.crossref.org/works/10.1016%2Fj.jfineco.2011.11.003",
+    "retrieved_at_utc": "2026-10-31T09:30:13.474805+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "59d686cf6485354f72e190cded61607ed8855ac92ff0945a0aa980400aaa3bfb",
+    "title": "Time series momentum",
+    "authors": [
+      "Tobias J. Moskowitz",
+      "Yao Hua Ooi",
+      "Lasse Heje Pedersen"
+    ],
+    "year": 2012,
+    "journal": [
+      "Journal of Financial Economics"
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2012,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2012-05-01T00:00:00Z",
+          "timestamp": 1335830400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              7,
+              16
+            ]
+          ],
+          "date-time": "2013-07-16T00:00:00Z",
+          "timestamp": 1373932800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 441,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/3.0/"
+      }
+    ],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "value_momentum_everywhere",
+    "family": "factor",
+    "source_market": "International",
+    "identifier": "10.1111/jofi.12021",
+    "source_url": "https://doi.org/10.1111/jofi.12021",
+    "retrieval_url": "https://api.crossref.org/works/10.1111%2Fjofi.12021",
+    "retrieved_at_utc": "2026-10-31T09:30:13.474287+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "adb54890169b30eaf6f67b27722484af7ee61b912dd684e2d6d132d089e8683b",
+    "title": "Value and Momentum Everywhere",
+    "authors": [
+      "CLIFFORD S. ASNESS",
+      "TOBIAS J. MOSKOWITZ",
+      "LASSE HEJE PEDERSEN"
+    ],
+    "year": 2013,
+    "journal": [
+      "The Journal of Finance"
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              5,
+              20
+            ]
+          ],
+          "date-time": "2013-05-20T00:00:00Z",
+          "timestamp": 1369008000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      }
+    ],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "carhart",
+    "family": "factor",
+    "source_market": "US",
+    "identifier": "10.1111/j.1540-6261.1997.tb03808.x",
+    "source_url": "https://doi.org/10.1111/j.1540-6261.1997.tb03808.x",
+    "retrieval_url": "https://api.crossref.org/works/10.1111%2Fj.1540-6261.1997.tb03808.x",
+    "retrieved_at_utc": "2026-10-31T09:30:13.474576+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "283be4d569080e760d695fecb6ccffcd8fb8fe5644f6e5edd4960b569fc93a61",
+    "title": "On Persistence in Mutual Fund Performance",
+    "authors": [
+      "Mark M. Carhart"
+    ],
+    "year": 1997,
+    "journal": [
+      "The Journal of Finance"
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2012,
+              4,
+              18
+            ]
+          ],
+          "date-time": "2012-04-18T00:00:00Z",
+          "timestamp": 1334707200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 5527,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      }
+    ],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "gkx_machinelearning",
+    "family": "cross_section_ml",
+    "source_market": "US",
+    "identifier": "10.1093/rfs/hhaa009",
+    "source_url": "https://doi.org/10.1093/rfs/hhaa009",
+    "retrieval_url": "https://api.crossref.org/works/10.1093%2Frfs%2Fhhaa009",
+    "retrieved_at_utc": "2026-10-31T09:30:13.476877+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "8ed1cc40ac92a359a14de3e835ec2fafa1d7ca1f093f7a7e6b7b412e66454625",
+    "title": "Empirical Asset Pricing via Machine Learning",
+    "authors": [
+      "Shihao Gu",
+      "Bryan Kelly",
+      "Dacheng Xiu"
+    ],
+    "year": 2020,
+    "journal": [
+      "The Review of Financial Studies"
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              2,
+              26
+            ]
+          ],
+          "date-time": "2020-02-26T00:00:00Z",
+          "timestamp": 1582675200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "deep_asset_pricing",
+    "family": "cross_section_ml",
+    "source_market": "US",
+    "identifier": "1904.00745",
+    "source_url": "https://arxiv.org/abs/1904.00745",
+    "retrieval_url": "https://arxiv.org/abs/1904.00745",
+    "retrieved_at_utc": "2026-10-31T09:30:13.490913+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "617a80ddeee1b8f3b288984e3ee43acb32b5fd1b8aa45d68e72481e78ed92221",
+    "title": "Deep Learning in Asset Pricing",
+    "authors": [
+      "Chen, Luyang",
+      "Pelger, Markus",
+      "Zhu, Jason"
+    ],
+    "year": "2019",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "autoencoder_pricing",
+    "family": "cross_section_ml",
+    "source_market": "US",
+    "identifier": "10.1016/j.jeconom.2020.07.009",
+    "source_url": "https://doi.org/10.1016/j.jeconom.2020.07.009",
+    "retrieval_url": "https://api.crossref.org/works/10.1016%2Fj.jeconom.2020.07.009",
+    "retrieved_at_utc": "2026-10-31T09:30:13.491568+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "2d00131d17714684329f1c1047a848f7e0f229ce627eebd8c86725b767ff5fb3",
+    "title": "Autoencoder asset pricing models",
+    "authors": [
+      "Shihao Gu",
+      "Bryan Kelly",
+      "Dacheng Xiu"
+    ],
+    "year": 2021,
+    "journal": [
+      "Journal of Econometrics"
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2021-05-01T00:00:00Z",
+          "timestamp": 1619827200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2021-05-01T00:00:00Z",
+          "timestamp": 1619827200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2021-05-01T00:00:00Z",
+          "timestamp": 1619827200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2021-05-01T00:00:00Z",
+          "timestamp": 1619827200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2021-05-01T00:00:00Z",
+          "timestamp": 1619827200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2021-05-01T00:00:00Z",
+          "timestamp": 1619827200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2021-05-01T00:00:00Z",
+          "timestamp": 1619827200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "ridge",
+    "family": "algorithm",
+    "source_market": "General",
+    "identifier": "10.1080/00401706.1970.10488634",
+    "source_url": "https://doi.org/10.1080/00401706.1970.10488634",
+    "retrieval_url": "https://api.crossref.org/works/10.1080%2F00401706.1970.10488634",
+    "retrieved_at_utc": "2026-10-31T09:30:13.492340+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "70c8ecb8aac477d4fe6bf62348c3ad616ce2d68d5af1440cc1560acb4d55f232",
+    "title": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+    "authors": [
+      "Arthur E. Hoerl",
+      "Robert W. Kennard"
+    ],
+    "year": 1970,
+    "journal": [
+      "Technometrics"
+    ],
+    "license": [],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "elastic_net",
+    "family": "algorithm",
+    "source_market": "General",
+    "identifier": "10.1111/j.1467-9868.2005.00503.x",
+    "source_url": "https://doi.org/10.1111/j.1467-9868.2005.00503.x",
+    "retrieval_url": "https://api.crossref.org/works/10.1111%2Fj.1467-9868.2005.00503.x",
+    "retrieved_at_utc": "2026-10-31T09:30:13.494137+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "0f331d76eb63a10013d71fa2a4ca67a8c78454ab65c772b2938424b81b29ee62",
+    "title": "Regularization and Variable Selection Via the Elastic Net",
+    "authors": [
+      "Hui Zou",
+      "Trevor Hastie"
+    ],
+    "year": 2005,
+    "journal": [
+      "Journal of the Royal Statistical Society Series B: Statistical Methodology"
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              4,
+              7
+            ]
+          ],
+          "date-time": "2023-04-07T00:00:00Z",
+          "timestamp": 1680825600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 6603,
+        "URL": "https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model"
+      }
+    ],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "random_forest",
+    "family": "algorithm",
+    "source_market": "General",
+    "identifier": "10.1023/A:1010933404324",
+    "source_url": "https://doi.org/10.1023/A:1010933404324",
+    "retrieval_url": "https://api.crossref.org/works/10.1023%2FA%3A1010933404324",
+    "retrieved_at_utc": "2026-10-31T09:30:13.495089+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "ac505d616dc641912bfd3771de8f4069e3e4af9e9485a22f9c5aa2551f23f240",
+    "title": "Random Forests",
+    "authors": [
+      "Leo Breiman"
+    ],
+    "year": 2001,
+    "journal": [
+      "Machine Learning"
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2001,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2001-10-01T00:00:00Z",
+          "timestamp": 1001894400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2001,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2001-10-01T00:00:00Z",
+          "timestamp": 1001894400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+      }
+    ],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "extra_trees",
+    "family": "algorithm",
+    "source_market": "General",
+    "identifier": "10.1007/s10994-006-6226-1",
+    "source_url": "https://doi.org/10.1007/s10994-006-6226-1",
+    "retrieval_url": "https://api.crossref.org/works/10.1007%2Fs10994-006-6226-1",
+    "retrieved_at_utc": "2026-10-31T09:30:13.495805+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "2f9c71d0323104d24565d0d14f66e0ecfb1ffdb6975d12bec67870df0ea06e1e",
+    "title": "Extremely randomized trees",
+    "authors": [
+      "Pierre Geurts",
+      "Damien Ernst",
+      "Louis Wehenkel"
+    ],
+    "year": 2006,
+    "journal": [
+      "Machine Learning"
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2006,
+              3,
+              2
+            ]
+          ],
+          "date-time": "2006-03-02T00:00:00Z",
+          "timestamp": 1141257600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      }
+    ],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "gradient_boosting",
+    "family": "algorithm",
+    "source_market": "General",
+    "identifier": "10.1214/aos/1013203451",
+    "source_url": "https://doi.org/10.1214/aos/1013203451",
+    "retrieval_url": "https://api.crossref.org/works/10.1214%2Faos%2F1013203451",
+    "retrieved_at_utc": "2026-10-31T09:30:13.499426+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "a33a5c20e269979414ae4ff7123b6c98d6b401cd161ad571cf3703ff1c26dd9b",
+    "title": "Greedy function approximation: A gradient boosting machine.",
+    "authors": [
+      "Jerome H. Friedman"
+    ],
+    "year": 2001,
+    "journal": [
+      "The Annals of Statistics"
+    ],
+    "license": [],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "xgboost",
+    "family": "algorithm",
+    "source_market": "General",
+    "identifier": "1603.02754",
+    "source_url": "https://arxiv.org/abs/1603.02754",
+    "retrieval_url": "https://arxiv.org/abs/1603.02754",
+    "retrieved_at_utc": "2026-10-31T09:30:13.500119+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "5c47cf0189cdd6e0f1418a2acaff61645bf7f0146efd354d174c8cee2c124df6",
+    "title": "XGBoost: A Scalable Tree Boosting System",
+    "authors": [
+      "Chen, Tianqi",
+      "Guestrin, Carlos"
+    ],
+    "year": "2016",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "catboost",
+    "family": "algorithm",
+    "source_market": "General",
+    "identifier": "1706.09516",
+    "source_url": "https://arxiv.org/abs/1706.09516",
+    "retrieval_url": "https://arxiv.org/abs/1706.09516",
+    "retrieved_at_utc": "2026-10-31T09:30:13.501977+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "a4d582b7b2078fdd060311f421031c64cd0c25a84889b29c6e06553f99c7bff5",
+    "title": "CatBoost: unbiased boosting with categorical features",
+    "authors": [
+      "Prokhorenkova, Liudmila",
+      "Gusev, Gleb",
+      "Vorobev, Aleksandr",
+      "Dorogush, Anna Veronika",
+      "Gulin, Andrey"
+    ],
+    "year": "2017",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "tabm",
+    "family": "tabular_deep",
+    "source_market": "General",
+    "identifier": "2410.24210",
+    "source_url": "https://arxiv.org/abs/2410.24210",
+    "retrieval_url": "https://arxiv.org/abs/2410.24210",
+    "retrieved_at_utc": "2026-10-31T09:30:13.562365+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "92311156ca33294e1fa4d1e55f5827d617c2d47c48cd1e936843d11ccfe808c1",
+    "title": "TabM: Advancing Tabular Deep Learning with Parameter-Efficient Ensembling",
+    "authors": [
+      "Gorishniy, Yury",
+      "Kotelnikov, Akim",
+      "Babenko, Artem"
+    ],
+    "year": "2024",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "qlib",
+    "family": "financial_benchmark",
+    "source_market": "China/US",
+    "identifier": "2009.11189",
+    "source_url": "https://arxiv.org/abs/2009.11189",
+    "retrieval_url": "https://arxiv.org/abs/2009.11189",
+    "retrieved_at_utc": "2026-10-31T09:30:13.762335+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "61967e119193817613c590a2beadfb6147467e173f1c6867e76b3ff0872d9383",
+    "title": "Qlib: An AI-oriented Quantitative Investment Platform",
+    "authors": [
+      "Yang, Xiao",
+      "Liu, Weiqing",
+      "Zhou, Dong",
+      "Bian, Jiang",
+      "Liu, Tie-Yan"
+    ],
+    "year": "2020",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "master",
+    "family": "market_conditioned",
+    "source_market": "China",
+    "identifier": "2312.15235",
+    "source_url": "https://arxiv.org/abs/2312.15235",
+    "retrieval_url": "https://arxiv.org/abs/2312.15235",
+    "retrieved_at_utc": "2026-10-31T09:30:13.768300+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "37dacbed2d0bc045d799233dc6d9a1e3caeac0ff1b8a940d0eb59ec25ff7f89d",
+    "title": "MASTER: Market-Guided Stock Transformer for Stock Price Forecasting",
+    "authors": [
+      "Li, Tong",
+      "Liu, Zhaoyang",
+      "Shen, Yanyan",
+      "Wang, Xue",
+      "Chen, Haokun",
+      "Huang, Sen"
+    ],
+    "year": "2023",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "hist",
+    "family": "graph",
+    "source_market": "China",
+    "identifier": "2110.13716",
+    "source_url": "https://arxiv.org/abs/2110.13716",
+    "retrieval_url": "https://arxiv.org/abs/2110.13716",
+    "retrieved_at_utc": "2026-10-31T09:30:13.863156+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "c57bd041090608a8c032b0e49e0684e4af66e5cc83115c35e84cc348459937f2",
+    "title": "HIST: A Graph-based Framework for Stock Trend Forecasting via Mining Concept-Oriented Shared Information",
+    "authors": [
+      "Xu, Wentao",
+      "Liu, Weiqing",
+      "Wang, Lewen",
+      "Xia, Yingce",
+      "Bian, Jiang",
+      "Yin, Jian",
+      "Liu, Tie-Yan"
+    ],
+    "year": "2021",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "doubleadapt",
+    "family": "adaptation",
+    "source_market": "China",
+    "identifier": "2306.09862",
+    "source_url": "https://arxiv.org/abs/2306.09862",
+    "retrieval_url": "https://arxiv.org/abs/2306.09862",
+    "retrieved_at_utc": "2026-10-31T09:30:13.892396+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "366131b42ab1a9274bffded73d380ea4519244e65471d1396256497971e3aad8",
+    "title": "DoubleAdapt: A Meta-learning Approach to Incremental Learning for Stock Trend Forecasting",
+    "authors": [
+      "Zhao, Lifan",
+      "Kong, Shuming",
+      "Shen, Yanyan"
+    ],
+    "year": "2023",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "tra",
+    "family": "adaptation",
+    "source_market": "China",
+    "identifier": "2106.12950",
+    "source_url": "https://arxiv.org/abs/2106.12950",
+    "retrieval_url": "https://arxiv.org/abs/2106.12950",
+    "retrieved_at_utc": "2026-10-31T09:30:14.012975+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "e7c71afe948f6da2883fce97993813e5478e6d76ac0c4426c3e84b9fb2338620",
+    "title": "Learning Multiple Stock Trading Patterns with Temporal Routing Adaptor and Optimal Transport",
+    "authors": [
+      "Lin, Hengxu",
+      "Zhou, Dong",
+      "Liu, Weiqing",
+      "Bian, Jiang"
+    ],
+    "year": "2021",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "gat",
+    "family": "graph",
+    "source_market": "General",
+    "identifier": "1710.10903",
+    "source_url": "https://arxiv.org/abs/1710.10903",
+    "retrieval_url": "https://arxiv.org/abs/1710.10903",
+    "retrieved_at_utc": "2026-10-31T09:30:14.053163+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "1fe901564f115c42de29e342438264ff231ba50e822493c5e62fa0bb9b4232f4",
+    "title": "Graph Attention Networks",
+    "authors": [
+      "Veli\u010dkovi\u0107, Petar",
+      "Cucurull, Guillem",
+      "Casanova, Arantxa",
+      "Romero, Adriana",
+      "Li\u00f2, Pietro",
+      "Bengio, Yoshua"
+    ],
+    "year": "2017",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "gru",
+    "family": "sequence",
+    "source_market": "General",
+    "identifier": "1406.1078",
+    "source_url": "https://arxiv.org/abs/1406.1078",
+    "retrieval_url": "https://arxiv.org/abs/1406.1078",
+    "retrieved_at_utc": "2026-10-31T09:30:14.179499+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "b9b396f7f9b44e763ccb40df17c070b98a591a27fb5319579b7be9d7cbe9b83c",
+    "title": "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation",
+    "authors": [
+      "Cho, Kyunghyun",
+      "van Merrienboer, Bart",
+      "Gulcehre, Caglar",
+      "Bahdanau, Dzmitry",
+      "Bougares, Fethi",
+      "Schwenk, Holger",
+      "Bengio, Yoshua"
+    ],
+    "year": "2014",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "alstm",
+    "family": "sequence",
+    "source_market": "General",
+    "identifier": "1704.02971",
+    "source_url": "https://arxiv.org/abs/1704.02971",
+    "retrieval_url": "https://arxiv.org/abs/1704.02971",
+    "retrieved_at_utc": "2026-10-31T09:30:14.223449+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "0e3dd059fdddf737c9d072bb14b7bb542445f76cb7f07f2b5ee9a2ccc7d29b6b",
+    "title": "A Dual-Stage Attention-Based Recurrent Neural Network for Time Series Prediction",
+    "authors": [
+      "Qin, Yao",
+      "Song, Dongjin",
+      "Chen, Haifeng",
+      "Cheng, Wei",
+      "Jiang, Guofei",
+      "Cottrell, Garrison"
+    ],
+    "year": "2017",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "transformer",
+    "family": "sequence",
+    "source_market": "General",
+    "identifier": "1706.03762",
+    "source_url": "https://arxiv.org/abs/1706.03762",
+    "retrieval_url": "https://arxiv.org/abs/1706.03762",
+    "retrieved_at_utc": "2026-10-31T09:30:14.476535+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "29e42a996471db9c019f1122825cdac0e6d64c96767d9ee5c0b8891de6204bee",
+    "title": "Attention Is All You Need",
+    "authors": [
+      "Vaswani, Ashish",
+      "Shazeer, Noam",
+      "Parmar, Niki",
+      "Uszkoreit, Jakob",
+      "Jones, Llion",
+      "Gomez, Aidan N.",
+      "Kaiser, Lukasz",
+      "Polosukhin, Illia"
+    ],
+    "year": "2017",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "relational_stock",
+    "family": "graph",
+    "source_market": "US",
+    "identifier": "1809.09441",
+    "source_url": "https://arxiv.org/abs/1809.09441",
+    "retrieval_url": "https://arxiv.org/abs/1809.09441",
+    "retrieved_at_utc": "2026-10-31T09:30:14.531113+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "968463aef459632ed9c6552045a2abf5cc08bd70cfb34b4ba5fdc30aa04f85d8",
+    "title": "Temporal Relational Ranking for Stock Prediction",
+    "authors": [
+      "Feng, Fuli",
+      "He, Xiangnan",
+      "Wang, Xiang",
+      "Luo, Cheng",
+      "Liu, Yiqun",
+      "Chua, Tat-Seng"
+    ],
+    "year": "2018",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "alphastock",
+    "family": "portfolio_rl",
+    "source_market": "US/China",
+    "identifier": "1908.02646",
+    "source_url": "https://arxiv.org/abs/1908.02646",
+    "retrieval_url": "https://arxiv.org/abs/1908.02646",
+    "retrieved_at_utc": "2026-10-31T09:30:14.548238+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "76543c1d23c0ee898b38d2d5c5330798aff28e39fc82dc68c9296772f0a5f254",
+    "title": "AlphaStock: A Buying-Winners-and-Selling-Losers Investment Strategy using Interpretable Deep Reinforcement Attention Networks",
+    "authors": [
+      "Wang, Jingyuan",
+      "Zhang, Yang",
+      "Tang, Ke",
+      "Wu, Junjie",
+      "Xiong, Zhang"
+    ],
+    "year": "2019",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "kronos",
+    "family": "foundation",
+    "source_market": "Financial",
+    "identifier": "2508.02739",
+    "source_url": "https://arxiv.org/abs/2508.02739",
+    "retrieval_url": "https://arxiv.org/abs/2508.02739",
+    "retrieved_at_utc": "2026-10-31T09:30:14.669404+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "27935306668af0f0887eb31de7176bf68c9fe2d7d219792c24adaa265b6834ef",
+    "title": "Kronos: A Foundation Model for the Language of Financial Markets",
+    "authors": [
+      "Shi, Yu",
+      "Fu, Zongliang",
+      "Chen, Shuo",
+      "Zhao, Bohan",
+      "Xu, Wei",
+      "Zhang, Changshui",
+      "Li, Jian"
+    ],
+    "year": "2025",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "patchtst",
+    "family": "sequence",
+    "source_market": "General",
+    "identifier": "2211.14730",
+    "source_url": "https://arxiv.org/abs/2211.14730",
+    "retrieval_url": "https://arxiv.org/abs/2211.14730",
+    "retrieved_at_utc": "2026-10-31T09:30:14.731439+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "c1ff14a527b6251f1d88ace2acc9c3a0d59740d5ae64c2f96fbde36171eb2fe8",
+    "title": "A Time Series is Worth 64 Words: Long-term Forecasting with Transformers",
+    "authors": [
+      "Nie, Yuqi",
+      "Nguyen, Nam H.",
+      "Sinthong, Phanwadee",
+      "Kalagnanam, Jayant"
+    ],
+    "year": "2022",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "timesnet",
+    "family": "sequence",
+    "source_market": "General",
+    "identifier": "2210.02186",
+    "source_url": "https://arxiv.org/abs/2210.02186",
+    "retrieval_url": "https://arxiv.org/abs/2210.02186",
+    "retrieved_at_utc": "2026-10-31T09:30:14.760954+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "2d5bb7af288f14f121bef48736fc6f47c87274736ae45197d5a42d1143d4fcdc",
+    "title": "TimesNet: Temporal 2D-Variation Modeling for General Time Series Analysis",
+    "authors": [
+      "Wu, Haixu",
+      "Hu, Tengge",
+      "Liu, Yong",
+      "Zhou, Hang",
+      "Wang, Jianmin",
+      "Long, Mingsheng"
+    ],
+    "year": "2022",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "itransformer",
+    "family": "sequence",
+    "source_market": "General",
+    "identifier": "2310.06625",
+    "source_url": "https://arxiv.org/abs/2310.06625",
+    "retrieval_url": "https://arxiv.org/abs/2310.06625",
+    "retrieved_at_utc": "2026-10-31T09:30:14.865470+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "68dcc3320b097f308a1882c45a21a05cf5c370ee57990e6ced14d188aae4b078",
+    "title": "iTransformer: Inverted Transformers Are Effective for Time Series Forecasting",
+    "authors": [
+      "Liu, Yong",
+      "Hu, Tengge",
+      "Zhang, Haoran",
+      "Wu, Haixu",
+      "Wang, Shiyu",
+      "Ma, Lintao",
+      "Long, Mingsheng"
+    ],
+    "year": "2023",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "timesfm",
+    "family": "foundation",
+    "source_market": "General",
+    "identifier": "2310.10688",
+    "source_url": "https://arxiv.org/abs/2310.10688",
+    "retrieval_url": "https://arxiv.org/abs/2310.10688",
+    "retrieved_at_utc": "2026-10-31T09:30:15.060078+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "511b922801462b4f8a498854b1dedd1bd2d48ce6422190cac027e9511d816a58",
+    "title": "A decoder-only foundation model for time-series forecasting",
+    "authors": [
+      "Das, Abhimanyu",
+      "Kong, Weihao",
+      "Sen, Rajat",
+      "Zhou, Yichen"
+    ],
+    "year": "2023",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "chronos",
+    "family": "foundation",
+    "source_market": "General",
+    "identifier": "2403.07815",
+    "source_url": "https://arxiv.org/abs/2403.07815",
+    "retrieval_url": "https://arxiv.org/abs/2403.07815",
+    "retrieved_at_utc": "2026-10-31T09:30:15.093009+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "9288ebf0542e4f6447bc8c48ddecb62dca40b2fa105756388167e6bbb5898835",
+    "title": "Chronos: Learning the Language of Time Series",
+    "authors": [
+      "Ansari, Abdul Fatir",
+      "Stella, Lorenzo",
+      "Turkmen, Caner",
+      "Zhang, Xiyuan",
+      "Mercado, Pedro",
+      "Shen, Huibin",
+      "Shchur, Oleksandr",
+      "Rangapuram, Syama Sundar",
+      "Arango, Sebastian Pineda",
+      "Kapoor, Shubham",
+      "Zschiegner, Jasper",
+      "Maddix, Danielle C.",
+      "Wang, Hao",
+      "Mahoney, Michael W.",
+      "Torkkola, Kari",
+      "Wilson, Andrew Gordon",
+      "Bohlke-Schneider, Michael",
+      "Wang, Yuyang"
+    ],
+    "year": "2024",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "moirai",
+    "family": "foundation",
+    "source_market": "General",
+    "identifier": "2402.02592",
+    "source_url": "https://arxiv.org/abs/2402.02592",
+    "retrieval_url": "https://arxiv.org/abs/2402.02592",
+    "retrieved_at_utc": "2026-10-31T09:30:15.249703+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "d870361c9852d93c63a1b6376e2119646bf171d3658ea404965b4a5ab319dcc4",
+    "title": "Unified Training of Universal Time Series Forecasting Transformers",
+    "authors": [
+      "Woo, Gerald",
+      "Liu, Chenghao",
+      "Kumar, Akshat",
+      "Xiong, Caiming",
+      "Savarese, Silvio",
+      "Sahoo, Doyen"
+    ],
+    "year": "2024",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "tabpfn",
+    "family": "foundation",
+    "source_market": "General",
+    "identifier": "10.1038/s41586-024-08328-6",
+    "source_url": "https://doi.org/10.1038/s41586-024-08328-6",
+    "retrieval_url": "https://api.crossref.org/works/10.1038%2Fs41586-024-08328-6",
+    "retrieved_at_utc": "2026-10-31T09:30:15.355207+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "007f7f540299a3f59d3015d510286719fcb3aabb7c62c6a3a1e976251d0f8363",
+    "title": "Accurate predictions on small data with a tabular foundation model",
+    "authors": [
+      "Noah Hollmann",
+      "Samuel M\u00fcller",
+      "Lennart Purucker",
+      "Arjun Krishnakumar",
+      "Max K\u00f6rfer",
+      "Shi Bin Hoo",
+      "Robin Tibor Schirrmeister",
+      "Frank Hutter"
+    ],
+    "year": 2025,
+    "journal": [
+      "Nature"
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              1,
+              8
+            ]
+          ],
+          "date-time": "2025-01-08T00:00:00Z",
+          "timestamp": 1736294400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              1,
+              8
+            ]
+          ],
+          "date-time": "2025-01-08T00:00:00Z",
+          "timestamp": 1736294400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "tabicl",
+    "family": "foundation",
+    "source_market": "General",
+    "identifier": "2502.05564",
+    "source_url": "https://arxiv.org/abs/2502.05564",
+    "retrieval_url": "https://arxiv.org/abs/2502.05564",
+    "retrieved_at_utc": "2026-10-31T09:30:15.373175+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "c4aff69ec29adf91978f7dc006194aca05b65b99ccfc3119aab7825a152a266a",
+    "title": "TabICL: A Tabular Foundation Model for In-Context Learning on Large Data",
+    "authors": [
+      "Qu, Jingang",
+      "Holzm\u00fcller, David",
+      "Varoquaux, Ga\u00ebl",
+      "Morvan, Marine Le"
+    ],
+    "year": "2025",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "equal_weight",
+    "family": "portfolio",
+    "source_market": "International",
+    "identifier": "10.1093/rfs/hhm075",
+    "source_url": "https://doi.org/10.1093/rfs/hhm075",
+    "retrieval_url": "https://api.crossref.org/works/10.1093%2Frfs%2Fhhm075",
+    "retrieved_at_utc": "2026-10-31T09:30:15.399179+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "cef78055ec1c361671e8ff1afd542088d46ff69992edcdb2ecd7d11dccc65844",
+    "title": "Optimal Versus Naive Diversification: How Inefficient is the 1/\n                    <i>N</i>\n                    Portfolio Strategy?",
+    "authors": [
+      "Victor DeMiguel",
+      "Lorenzo Garlappi",
+      "Raman Uppal"
+    ],
+    "year": 2007,
+    "journal": [
+      "Review of Financial Studies"
+    ],
+    "license": [],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "reality_check",
+    "family": "evaluation",
+    "source_market": "General",
+    "identifier": "10.1111/1468-0262.00152",
+    "source_url": "https://doi.org/10.1111/1468-0262.00152",
+    "retrieval_url": "https://api.crossref.org/works/10.1111%2F1468-0262.00152",
+    "retrieved_at_utc": "2026-10-31T09:30:15.467280+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "c236bace0f77da5bcfcd04bdcbe67db4b1470e689714a32b6a80811415c9d9ec",
+    "title": "A Reality Check for Data Snooping",
+    "authors": [
+      "Halbert White"
+    ],
+    "year": 2000,
+    "journal": [
+      "Econometrica"
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2015-09-01T00:00:00Z",
+          "timestamp": 1441065600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 5478,
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+      }
+    ],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "factor_zoo",
+    "family": "evaluation",
+    "source_market": "General",
+    "identifier": "10.1093/rfs/hhv059",
+    "source_url": "https://doi.org/10.1093/rfs/hhv059",
+    "retrieval_url": "https://api.crossref.org/works/10.1093%2Frfs%2Fhhv059",
+    "retrieved_at_utc": "2026-10-31T09:30:15.531292+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "c99b0ee8fa2bdb5a0bda41b804a1fde7440f2dece4f901f7d1bd4c20994ebe3f",
+    "title": "\u2026 and the Cross-Section of Expected Returns",
+    "authors": [
+      "Campbell R. Harvey",
+      "Yan Liu",
+      "Heqing Zhu"
+    ],
+    "year": 2015,
+    "journal": [
+      "Review of Financial Studies"
+    ],
+    "license": [],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "backtest_overfitting",
+    "family": "evaluation",
+    "source_market": "General",
+    "identifier": "10.21314/JCF.2016.322",
+    "source_url": "https://doi.org/10.21314/JCF.2016.322",
+    "retrieval_url": "https://api.crossref.org/works/10.21314%2FJCF.2016.322",
+    "retrieved_at_utc": "2026-10-31T09:30:15.584995+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "2f90688a0e1e13a70a46a8e7f24ae8071ab8d9947023c3ce3f1588c5d28014c9",
+    "title": "The probability of backtest overfitting",
+    "authors": [
+      "David Bailey",
+      "Jonathan Borwein",
+      "Marcos L\u00f3pez de Prado",
+      "Qiji Jim Zhu"
+    ],
+    "year": 2016,
+    "journal": [
+      "The Journal of Computational Finance"
+    ],
+    "license": [],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "deflated_sharpe",
+    "family": "evaluation",
+    "source_market": "General",
+    "identifier": "10.3905/jpm.2014.40.5.094",
+    "source_url": "https://doi.org/10.3905/jpm.2014.40.5.094",
+    "retrieval_url": "https://api.crossref.org/works/10.3905%2Fjpm.2014.40.5.094",
+    "retrieved_at_utc": "2026-10-31T09:30:15.605456+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "e1b25e9e1215a272f4b69cd9412a5f035e46a9902297c8f120c86decfb224371",
+    "title": "The Deflated Sharpe Ratio:\n                    <i>Correcting for Selection Bias, Backtest</i>\n                    <i>Overfitting, and Non-Normality</i>",
+    "authors": [
+      "David H. Bailey",
+      "Marcos L\u00f3pez de Prado"
+    ],
+    "year": 2014,
+    "journal": [
+      "The Journal of Portfolio Management"
+    ],
+    "license": [],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "proper_scores",
+    "family": "calibration",
+    "source_market": "General",
+    "identifier": "10.1198/016214506000001437",
+    "source_url": "https://doi.org/10.1198/016214506000001437",
+    "retrieval_url": "https://api.crossref.org/works/10.1198%2F016214506000001437",
+    "retrieved_at_utc": "2026-10-31T09:30:15.606588+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "7cd1cc633e407e79043ed6b87a8889cf08de11215c858a89cc44d1407334f4e4",
+    "title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+    "authors": [
+      "Tilmann Gneiting",
+      "Adrian E Raftery"
+    ],
+    "year": 2007,
+    "journal": [
+      "Journal of the American Statistical Association"
+    ],
+    "license": [],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "neural_calibration",
+    "family": "calibration",
+    "source_market": "General",
+    "identifier": "1706.04599",
+    "source_url": "https://arxiv.org/abs/1706.04599",
+    "retrieval_url": "https://arxiv.org/abs/1706.04599",
+    "retrieved_at_utc": "2026-10-31T09:30:15.608225+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "bdcce0f6ecb8a7dc3b75015b42c9c0d29979db535a772e315ddd4daefc02961a",
+    "title": "On Calibration of Modern Neural Networks",
+    "authors": [
+      "Guo, Chuan",
+      "Pleiss, Geoff",
+      "Sun, Yu",
+      "Weinberger, Kilian Q."
+    ],
+    "year": "2017",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "optimal_execution",
+    "family": "execution",
+    "source_market": "General",
+    "identifier": "10.21314/JOR.2001.041",
+    "source_url": "https://doi.org/10.21314/JOR.2001.041",
+    "retrieval_url": "https://api.crossref.org/works/10.21314%2FJOR.2001.041",
+    "retrieved_at_utc": "2026-10-31T09:30:15.608645+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": "CACHED",
+    "sha256": "0455d4e4a4d45b5330c62bd62164f914378a1eaf2ce330ea67ada97ed4625022",
+    "title": "Optimal execution of portfolio transactions",
+    "authors": [
+      "Robert Almgren",
+      "Neil Chriss"
+    ],
+    "year": 2001,
+    "journal": [
+      "The Journal of Risk"
+    ],
+    "license": [],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "finbert",
+    "family": "financial_text",
+    "source_market": "General",
+    "identifier": "1908.10063",
+    "source_url": "https://arxiv.org/abs/1908.10063",
+    "retrieval_url": "https://arxiv.org/abs/1908.10063",
+    "retrieved_at_utc": "2026-10-31T09:30:15.609108+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": 200,
+    "sha256": "c2c70c79b1f99c4fac22a97ac158069124ae8c3dc4b9f040c57018ebcdb74855",
+    "title": "FinBERT: Financial Sentiment Analysis with Pre-trained Language Models",
+    "authors": [
+      "Araci, Dogu"
+    ],
+    "year": "2019",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "fingpt",
+    "family": "financial_text",
+    "source_market": "General",
+    "identifier": "2306.06031",
+    "source_url": "https://arxiv.org/abs/2306.06031",
+    "retrieval_url": "https://arxiv.org/abs/2306.06031",
+    "retrieved_at_utc": "2026-10-31T09:30:15.611195+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": 200,
+    "sha256": "c732c424e482a3695f1442d0620746639d784f4105ae53febd0979b9ba432907",
+    "title": "FinGPT: Open-Source Financial Large Language Models",
+    "authors": [
+      "Yang, Hongyang",
+      "Liu, Xiao-Yang",
+      "Wang, Christina Dan"
+    ],
+    "year": "2023",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "finagent",
+    "family": "financial_agent",
+    "source_market": "US",
+    "identifier": "2402.18485",
+    "source_url": "https://arxiv.org/abs/2402.18485",
+    "retrieval_url": "https://arxiv.org/abs/2402.18485",
+    "retrieved_at_utc": "2026-10-31T09:30:15.668584+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": 200,
+    "sha256": "d95b2ec8376e48403812c13e3a3dcf616c497f401a455b84ee6990579062b001",
+    "title": "A Multimodal Foundation Agent for Financial Trading: Tool-Augmented, Diversified, and Generalist",
+    "authors": [
+      "Zhang, Wentao",
+      "Zhao, Lingxuan",
+      "Xia, Haochong",
+      "Sun, Shuo",
+      "Sun, Jiaze",
+      "Qin, Molei",
+      "Li, Xinyi",
+      "Zhao, Yuqing",
+      "Zhao, Yilei",
+      "Cai, Xinyu",
+      "Zheng, Longtao",
+      "Wang, Xinrun",
+      "An, Bo"
+    ],
+    "year": "2024",
+    "review_depth": "primary author arXiv abstract and linked source/code; full method review separately",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": true
+  },
+  {
+    "id": "stocknet",
+    "family": "text_price",
+    "source_market": "US",
+    "identifier": "10.18653/v1/P18-1183",
+    "source_url": "https://doi.org/10.18653/v1/P18-1183",
+    "retrieval_url": "https://api.crossref.org/works/10.18653%2Fv1%2FP18-1183",
+    "retrieved_at_utc": "2026-10-31T09:30:15.688743+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": 200,
+    "sha256": "34392a84d0fe1d317877e85aa0f23de1d94abdf7d54f2b5fe7de3c263626d0f8",
+    "title": "Stock Movement Prediction from Tweets and Historical Prices",
+    "authors": [
+      "Yumo Xu",
+      "Shay B. Cohen"
+    ],
+    "year": 2018,
+    "journal": [
+      "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+    ],
+    "license": [],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "llmfactor",
+    "family": "financial_text",
+    "source_market": "US/China",
+    "identifier": "10.18653/v1/2024.findings-acl.185",
+    "source_url": "https://doi.org/10.18653/v1/2024.findings-acl.185",
+    "retrieval_url": "https://api.crossref.org/works/10.18653%2Fv1%2F2024.findings-acl.185",
+    "retrieved_at_utc": "2026-10-31T09:30:18.548525+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": 200,
+    "sha256": "e084681fe96372b0fb0eca26c49b989a151e490c024dc2ff5818cf42aecedd46",
+    "title": "LLMFactor: Extracting Profitable Factors through Prompts for Explainable Stock Movement Prediction",
+    "authors": [
+      "Meiyun Wang",
+      "Kiyoshi Izumi",
+      "Hiroki Sakaji"
+    ],
+    "year": 2024,
+    "journal": [
+      "Findings of the Association for Computational Linguistics ACL 2024"
+    ],
+    "license": [],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  },
+  {
+    "id": "cmin",
+    "family": "text_graph",
+    "source_market": "US/China",
+    "identifier": "10.18653/v1/2023.acl-long.679",
+    "source_url": "https://doi.org/10.18653/v1/2023.acl-long.679",
+    "retrieval_url": "https://api.crossref.org/works/10.18653%2Fv1%2F2023.acl-long.679",
+    "retrieved_at_utc": "2026-10-31T09:30:18.844134+00:00",
+    "editorial_notice_status": "UNKNOWN:Scite monthly quota exhausted; metadata relation checks only",
+    "http_status": 200,
+    "sha256": "1c44d90283efcdb35a9c54ff87ed3f1debe7401278ffcdcf4b57c5f78ea10a94",
+    "title": "Causality-Guided Multi-Memory Interaction Network for Multivariate Stock Price Movement Prediction",
+    "authors": [
+      "Di Luo",
+      "Weiheng Liao",
+      "Shuqi Li",
+      "Xin Cheng",
+      "Rui Yan"
+    ],
+    "year": 2023,
+    "journal": [
+      "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+    ],
+    "license": [],
+    "relations": {},
+    "updates": [],
+    "review_depth": "publisher bibliographic metadata and abstract where available",
+    "status": "VERIFIED_METADATA",
+    "abstract_available": false
+  }
+]

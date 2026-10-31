@@ -2,7 +2,7 @@
 import os
 os.environ.setdefault('OPENBLAS_NUM_THREADS','3')
 from pathlib import Path
-import json,math,argparse,gc,time
+import json,math,argparse,gc,time,datetime
 import numpy as np,pandas as pd
 from scipy.stats import rankdata,kendalltau
 import champion_market_common_20261031 as c
@@ -58,13 +58,14 @@ def evaluate(tier):
  q['period']=np.where(q.decision_date.lt('2024-01-01'),'development','exposed');columns=['rank_ic','pair_accuracy','universe_hit']+[m+str(k) for k in TOP for m in ['attainment','xirr','drawdown','shortfall','ndcg','negative','tail10']]
  summary=q.groupby(['period','model','decision_date'])[columns].mean().groupby(['period','model']).mean().reset_index();summary.to_csv(folder/'sector_summary.csv',index=False)
  # Selection uses development only, then is written before exposed diagnostics.
- dev=q[q.period.eq('development')];wide={metric:dev.pivot(index=c.GROUP,columns='model',values=metric).dropna(axis=1,how='all').dropna() for metric in ['rank_ic','attainment3','drawdown3']};deltas={k:v.subtract(v[c.ANCHOR],axis=0).groupby('decision_date').mean().mean().reindex(names) for k,v in wide.items()}
+ dev=q[q.period.eq('development')];wide={metric:dev.pivot(index=c.GROUP,columns='model',values=metric) for metric in ['rank_ic','attainment3','drawdown3']};deltas={k:v.subtract(v[c.ANCHOR],axis=0).groupby('decision_date').mean().mean().reindex(names) for k,v in wide.items()}
+ c.save(f'{tier}/development_metric_support.json',{metric:values.notna().sum().to_dict() for metric,values in wide.items()})
  decisions=[]
  for name in names:
   if name==c.ANCHOR:continue
   values={m:float(v[name]) for m,v in deltas.items()};gate=(values['drawdown3']>=-1e-12 and values['rank_ic']>=-1e-12 and values['attainment3']>=-1e-12 and (values['rank_ic']>=.01013492400721767 or values['attainment3']>=.0063048666044885245));decisions.append(dict(model=name,development_point_gate=gate,**values))
  table=pd.DataFrame(decisions).sort_values(['development_point_gate','attainment3','rank_ic','model'],ascending=[False,False,False,True]);winner=table.loc[table.development_point_gate,'model'].iloc[0] if table.development_point_gate.any() else c.ANCHOR
- c.save(f'{tier}/development_lock.json',dict(selected=winner,point_gate_candidates=table[table.development_point_gate].to_dict('records'),selection='Attainment thenIC among development-gate passers; current35policy variants previously searched; final pass additionally requires new familywise temporal bound and locked exposed gate',exposed_not_used_for_selection=True));table.to_csv(folder/'development_deltas.csv',index=False)
+ c.save(f'{tier}/development_lock.json',dict(selected=winner,locked_at_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),point_gate_candidates=table[table.development_point_gate].to_dict('records'),selection='Attainment thenIC among development-gate passers; current35policy variants previously searched; final pass additionally requires new familywise temporal bound and locked exposed gate',exposed_not_used_for_selection=True));table.to_csv(folder/'development_deltas.csv',index=False)
  exposedrows=[]
  for key,g in x[x.decision_date.ge('2024-01-01')].groupby(c.GROUP,observed=True,sort=True):
   for r in metrics(g,names):r.update(dict(zip(c.GROUP,key)));exposedrows.append(r)

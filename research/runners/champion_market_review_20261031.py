@@ -20,10 +20,10 @@ def familywise(q,folder):
  for period in ['development','exposed']:
   sub=q[q.period.eq(period)]
   for metric in ['rank_ic','attainment3','drawdown3']:
-   a=sub.groupby(['decision_date','model'])[metric].mean().unstack().sort_index();delta=a.subtract(a[c.ANCHOR],axis=0).drop(columns=c.ANCHOR).dropna(axis=1,how='all').dropna(axis=0,how='any');a=a.loc[delta.index];mean=delta.mean().to_numpy();center=delta.to_numpy()-mean;names=list(delta.columns)
+   querykeys=[k for k in c.GROUP if k in sub.columns];a=sub.pivot(index=querykeys,columns='model',values=metric);delta=a.subtract(a[c.ANCHOR],axis=0).groupby('decision_date').mean().sort_index().drop(columns=c.ANCHOR).dropna(axis=1,how='all').dropna(axis=0,how='any');dates=delta.index;mean=delta.mean().to_numpy();center=delta.to_numpy()-mean;names=list(delta.columns)
    for span in [365,730]:
-    rng=np.random.default_rng(20261031+span);boot=np.array([center[block_indices(a.index,span,rng)].mean(0) for _ in range(4000)]);hurdle=float(np.quantile(np.max(boot,axis=1),.95));lower=mean-hurdle
-    for i,name in enumerate(names):rows.append(dict(period=period,metric=metric,block_days=span,model=name,delta=mean[i],familywise_noise_floor=hurdle,simultaneous_lower95=lower[i],pointwise_low95=float(mean[i]-np.quantile(boot[:,i],.975)),pointwise_high95=float(mean[i]-np.quantile(boot[:,i],.025)),dates=len(a),candidates=len(names)))
+    rng=np.random.default_rng(20261031+span);boot=np.array([center[block_indices(dates,span,rng)].mean(0) for _ in range(4000)]);hurdle=float(np.quantile(np.max(boot,axis=1),.95));lower=mean-hurdle
+    for i,name in enumerate(names):rows.append(dict(period=period,metric=metric,block_days=span,model=name,delta=mean[i],familywise_noise_floor=hurdle,simultaneous_lower95=lower[i],pointwise_low95=float(mean[i]-np.quantile(boot[:,i],.975)),pointwise_high95=float(mean[i]-np.quantile(boot[:,i],.025)),dates=len(dates),candidates=len(names)))
  pd.DataFrame(rows).to_csv(folder/'familywise_bounds.csv',index=False)
  lock=json.loads((folder/'development_lock.json').read_text());selected=lock['selected'];bounds=pd.DataFrame(rows);passed=False
  if selected!=c.ANCHOR:
