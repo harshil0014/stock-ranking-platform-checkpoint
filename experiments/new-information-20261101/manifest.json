@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-11-01T09:27:50.283838+00:00",
+  "created_at_utc": "2026-11-01T09:29:14.114422+00:00",
   "files": [
     {
       "path": "experiments/new-information-20261101/delivery_champion_changed_target_diagnostic.csv",
@@ -98,8 +98,8 @@
     },
     {
       "path": "experiments/new-information-20261101/local_log_inventory.json",
-      "bytes": 2053,
-      "sha256": "a637a56a4d700fad590d28b0db81dc89669ce146017ab1d8c5a430ff1ffe0e7e"
+      "bytes": 1874,
+      "sha256": "de00107573be6e55d20e42beb852663535005d34ab142d2a5d7618840090183b"
     },
     {
       "path": "experiments/new-information-20261101/price_cache_receipt.json",
@@ -153,8 +153,8 @@
     },
     {
       "path": "research/runners/new_information_bundle_20261101.py",
-      "bytes": 2924,
-      "sha256": "69b3ea3238202dde4da8069ddd3a0bf9747e3ed0d05323d0cd07d1c60059d63b"
+      "bytes": 3032,
+      "sha256": "16a7d478cd1282ad2dc7de2637b91f8ef449dea9ad59de0670bd0f4949ca2584"
     },
     {
       "path": "research/runners/new_information_review_20261101.py",

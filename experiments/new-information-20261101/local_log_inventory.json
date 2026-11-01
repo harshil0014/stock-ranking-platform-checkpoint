@@ -1,10 +1,5 @@
 [
   {
-    "path": "work\\new-information-20261101\\low-load-bundle.log",
-    "bytes": 52,
-    "sha256": "3be7ac4a49ebf88dfe37d56daa646850943ae3533f739ec6a098e2b8c1b274d8"
-  },
-  {
     "path": "work\\new-information-20261101\\low-load-delivery.log",
     "bytes": 6348,
     "sha256": "7458646e1c0c76ea2c1387a42c77b2418a41845a56b19dc2386dd0c4e09b7748"

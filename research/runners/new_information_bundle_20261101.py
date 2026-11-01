@@ -18,7 +18,9 @@ def main():
     import numpy,pandas,scipy,sklearn,requests
     (OUT/'environment.json').write_text(json.dumps(dict(python=platform.python_version(),numpy=numpy.__version__,pandas=pandas.__version__,scipy=scipy.__version__,sklearn=sklearn.__version__,requests=requests.__version__,compute_threads=1,cpu_cap_percent=12.5,cpu_active_seconds=4,cpu_rest_seconds=2,gpu_used=False,syntax_files_checked=len(files)),indent=2))
     logs=[]
-    for p in sorted(WORK.glob('*.log')):logs.append(dict(path=str(p.relative_to(ROOT)),bytes=p.stat().st_size,sha256=hashlib.sha256(p.read_bytes()).hexdigest()))
+    for p in sorted(WORK.glob('*.log')):
+        if p.name=='low-load-bundle.log':continue  # Still being appended by this very invocation.
+        logs.append(dict(path=str(p.relative_to(ROOT)),bytes=p.stat().st_size,sha256=hashlib.sha256(p.read_bytes()).hexdigest()))
     (OUT/'local_log_inventory.json').write_text(json.dumps(logs,indent=2))
     files+=list((ROOT/'research/protocols').glob('*20261101.md'))
     files+=[ROOT/'research/reports/new_information_20261101.md']
