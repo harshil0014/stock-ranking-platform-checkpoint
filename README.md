@@ -1,6 +1,8 @@
 # Stock Ranking Platform
 
-Latest research: [Execution correction and new-information pilots, 1 November 2026](research/reports/new_information_20261101.md). Actual next-open replay replaces the same-close proxy for this new champion/lens comparison; older portfolio tables remain provisional. The first delivery-information head failed development; the small filing-reader pilot was inconclusive and dropped on operational cost and evaluation issues. The incumbent application and model package are unchanged.
+Latest research: [One-shot momentum selection plus reversal timing, 1 November 2026](research/reports/momentum_timing_20261101.md). The 20% professor lens plus dip/timing overlay retained positive pooled returns after 100bp per side, but failed the fixed yearly-sign rule. Exposed performance was not opened; the incumbent application and model package are unchanged.
+
+[Execution correction and new-information pilots](research/reports/new_information_20261101.md): actual next-open replay replaces the same-close proxy for that champion/lens comparison; older portfolio tables remain provisional. The first delivery-information head failed development; the small filing-reader pilot was inconclusive and dropped on operational cost and evaluation issues.
 
 Earlier research: [Second round, 31 October 2026](research/reports/round2_20261031.md), following the [ten original pilots](research/reports/ten_hypotheses_20261031.md). Sector shuffle and risk objectives did not pass; daily hysteresis missed its lag gate.
 

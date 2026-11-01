@@ -1,0 +1,4 @@
+period,year,train_rows,train_dates,max_training_label_end,test_rows
+development,2021,4516,4,2020-10-30,4613
+development,2022,9054,8,2021-11-01,5464
+development,2023,14296,12,2022-11-02,5543

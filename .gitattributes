@@ -101,3 +101,6 @@ research/runners/*20261101.py text eol=lf
 research/reports/new_information_20261101.md -text
 src/stock_research/next_open_portfolio.py text eol=lf
 tests/*20261101.py text eol=lf
+experiments/momentum-timing-20261101/** -text
+research/reports/momentum_timing_20261101.md -text
+src/stock_research/momentum_timing.py text eol=lf
