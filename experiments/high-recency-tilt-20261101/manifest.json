@@ -1,0 +1,70 @@
+[
+  {
+    "path": "experiments/high-recency-tilt-20261101/decision.json",
+    "sha256": "9f67506238f89dc1532e4abe7a2328a854074709f1a85740052d567907c6276a"
+  },
+  {
+    "path": "experiments/high-recency-tilt-20261101/development_blocked_queries.csv",
+    "sha256": "5bf19b62eb14e0239aaba0ca7e5d5515565c7b01093d743cc7321ee8d9ca2a37"
+  },
+  {
+    "path": "experiments/high-recency-tilt-20261101/development_date_metrics.csv",
+    "sha256": "b3f8427561fccf34b2ff6526c3ed3c7a5aef000eba83e402a23fe429e3951019"
+  },
+  {
+    "path": "experiments/high-recency-tilt-20261101/development_high_alignment.csv",
+    "sha256": "ba7bad24ec34e834459ca297c4381c7ee986c4f0ae89223a12eb8b844eb7ae3f"
+  },
+  {
+    "path": "experiments/high-recency-tilt-20261101/development_overlap.csv",
+    "sha256": "91ba6e0c4eaa3afb8e9dd1bbc40e936dd19d10926aaa46975380cda419fa8e60"
+  },
+  {
+    "path": "experiments/high-recency-tilt-20261101/development_portfolios.csv",
+    "sha256": "e3366e373a5af8a7284f659563119ae6841583b2f27bf23d2839354f84b0469c"
+  },
+  {
+    "path": "experiments/high-recency-tilt-20261101/development_portfolio_failures.csv",
+    "sha256": "5f59a763b85336353cad1d9f263208d37ceb12d27647e0f50186b83ff300c945"
+  },
+  {
+    "path": "experiments/high-recency-tilt-20261101/development_portfolio_pairs.csv",
+    "sha256": "1657fa3c4cba2505e548cf28e6e5d3a2b586fa8314534d50f854e5ab289b3d8d"
+  },
+  {
+    "path": "experiments/high-recency-tilt-20261101/development_sector_metrics.csv",
+    "sha256": "fa017da7276e8a980e9e54e6189b1e5e9adca7f37a49390d4d19f67e4a88355f"
+  },
+  {
+    "path": "experiments/high-recency-tilt-20261101/development_summary.csv",
+    "sha256": "355ff8c9de72da704d6dd8df9421f8c4bf6483161ba45520e5d8198c95455207"
+  },
+  {
+    "path": "experiments/high-recency-tilt-20261101/development_year_metrics.csv",
+    "sha256": "9f3db8f849e55317c59b85f154ff12ba58c581f197d140ca2bb222bd279b4a1e"
+  },
+  {
+    "path": "experiments/high-recency-tilt-20261101/input_receipts.json",
+    "sha256": "82f27872a5309c3a75b4bd7c9d29ce1e79c1fd0fa89c9a63b9b334aaadc34483"
+  },
+  {
+    "path": "experiments/high-recency-tilt-20261101/started.json",
+    "sha256": "81741a0f4b2ce9a07e01c5a47339d2a22f0cc33633ce86e15753d2a8e575899c"
+  },
+  {
+    "path": "experiments/high-recency-tilt-20261101/summary.csv",
+    "sha256": "0821f72cad7006b1872f3be6855b3ee35c72e519c7a719c3c03cc6e6500bb8c3"
+  },
+  {
+    "path": "research/reports/high_recency_tilt_20261101.md",
+    "sha256": "64fee3256e00e8a7ccc33d8bab8db5c514e8992805022bfbf86a9ac663b34493"
+  },
+  {
+    "path": "research/protocols/high_recency_tilt_20261101.md",
+    "sha256": "5d11f598bbc1421e507c158f7b9436560a805970029c7fccfaad9a192839d0d2"
+  },
+  {
+    "path": "research/research_variant_ledger.csv",
+    "sha256": "c6526baa91cc85b8f84874ac1ecf1d0715da45d0ef25857034d26589778abd64"
+  }
+]

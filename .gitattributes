@@ -111,3 +111,6 @@ experiments/sir-extensions-20261101/** -text
 research/research_variant_ledger.csv -text
 research/reports/sir_extensions_20261101.md -text
 src/stock_research/sir_ladder.py text eol=lf
+experiments/high-recency-tilt-20261101/** -text
+research/reports/high_recency_tilt_20261101.md -text
+research/protocols/high_recency_tilt_20261101.md -text

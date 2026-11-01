@@ -1,0 +1,9 @@
+# Champion with explicit high-recency preference
+
+Frozen before this round's results. User requests stronger weighting of days before highest, accepts minor tradeoffs. Lower days since the last recorded closing high is preferred. This is a preference study, not a predictive superiority claim.
+
+Use saved corrected development panel only, dates 2020-2023, existing complete-factor eligibility and sectors. Scores = (1-w)*champion_percentile + w*q_high_recency, w in [0.10,0.20,0.35,0.50]. Existing champion already indirectly uses high features; w is an explicit overlay coefficient, not total causal feature importance. No training, new factors, sign changes, exposed evaluation, or candidate expansion.
+
+Choose greatest w satisfying: positive Top3 high-recency percentile gain; at least 20% sector/date Top3 sets changed; mean within-sector rank IC loss <=0.02; Top3 goal hit loss <=3pp; Top3 stock drawdown worsening <=3pp; global Top20 matched portfolio XIRR loss <=3pp and drawdown worsening <=3pp, at least 8 matched portfolio dates and 8 dates with >=20 complete Top3 sectors. If none qualify, report no qualifying tilt, keep all tradeoffs visible. Use joint complete Top3 cohorts across candidates, date-balanced summaries, existing next-open 100bp/side replay and corporate-action blocks. Report annual metrics, overlaps and raw high-age changes. No significance claim from this adaptive development search.
+
+Append four attempts to existing incomplete variant registry. Produce a separate named preference ranking on latest saved current snapshot only if qualifying, never describe that stale snapshot as live. Full ranking stays local; public report aggregate only. Do not replace default champion, change prospective streams, or trade. Hash source/protocol and verify deterministic blend, monotonic direction, bounds, and saved output. Preserve single worker/thread, CPU12.5% cap,4s active/2s rest, CPU only.

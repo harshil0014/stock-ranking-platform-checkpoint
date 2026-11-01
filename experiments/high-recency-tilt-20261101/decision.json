@@ -1,0 +1,86 @@
+{
+  "selected": "recency20",
+  "candidates": [
+    {
+      "model": "recency10",
+      "weight": 0.1,
+      "qualifies": false,
+      "checks": {
+        "high_alignment": true,
+        "changed": false,
+        "ic": true,
+        "goal": true,
+        "stock_dd": true,
+        "portfolio_xirr": true,
+        "portfolio_dd": true,
+        "support": true
+      }
+    },
+    {
+      "model": "recency20",
+      "weight": 0.2,
+      "qualifies": true,
+      "checks": {
+        "high_alignment": true,
+        "changed": true,
+        "ic": true,
+        "goal": true,
+        "stock_dd": true,
+        "portfolio_xirr": true,
+        "portfolio_dd": true,
+        "support": true
+      }
+    },
+    {
+      "model": "recency35",
+      "weight": 0.35,
+      "qualifies": false,
+      "checks": {
+        "high_alignment": true,
+        "changed": true,
+        "ic": false,
+        "goal": true,
+        "stock_dd": true,
+        "portfolio_xirr": true,
+        "portfolio_dd": true,
+        "support": true
+      }
+    },
+    {
+      "model": "recency50",
+      "weight": 0.5,
+      "qualifies": false,
+      "checks": {
+        "high_alignment": true,
+        "changed": true,
+        "ic": false,
+        "goal": true,
+        "stock_dd": true,
+        "portfolio_xirr": true,
+        "portfolio_dd": true,
+        "support": true
+      }
+    }
+  ],
+  "checks": {
+    "development_only": true,
+    "four_candidates": true,
+    "blend_endpoints": true,
+    "direction": true,
+    "bounded": true,
+    "unique_rows": true,
+    "ledger_preserved": true
+  },
+  "current": {
+    "snapshot": "2026-10-03",
+    "eligible": 2396,
+    "sectors": 50,
+    "changed_sectors": 22,
+    "average_top3_overlap": 0.8333333333333333,
+    "file": "C:\\Users\\Harshil\\Documents\\Codex\\2026-10-31\\you\\outputs\\high_recency_preference_ranking_20261101.csv",
+    "sha256": "d0c7068701c420a3330070cdc525a37187ec7e947e0c0a8946ef0f6fb3d55d78"
+  },
+  "documented_attempts": 303,
+  "exposed_evaluated": false,
+  "default_champion_changed": false
+}
