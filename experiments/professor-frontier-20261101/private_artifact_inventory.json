@@ -1,0 +1,202 @@
+[
+  {
+    "path": "work/professor-frontier-20261101/corrected_panel.pkl.gz",
+    "sha256": "f5c81abf81a8ed382ab3618cb1f13994572a9fdb12c6ab11987d1298dbed77de"
+  },
+  {
+    "path": "work/professor-frontier-20261101/development_scored.pkl.gz",
+    "sha256": "e5ebc5744506cf2d33c5297bfb7db50061f95fb0c792521d3dc4e9e88c2e0097"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2016-03-31.pkl.gz",
+    "sha256": "21268caa2fc91f077de49b4016fe126de7cf945a923dff3eb256b94d8ba186a4"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2016-06-30.pkl.gz",
+    "sha256": "7de67ba1f09830437fdbbda6782619bca5df1ce5c59cff657911a2640f5066ed"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2016-09-30.pkl.gz",
+    "sha256": "7bba933f2c867ee3cbddc5b13d96b943c049673a293ff2d639960b3c43a5d380"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2016-12-31.pkl.gz",
+    "sha256": "ca964877024ee286169dccdc29e3ee360212441aedf1afab2aead5f3b815eec3"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2017-03-31.pkl.gz",
+    "sha256": "45ba29dc9908c6710a0cbf9027a5401677b048502ed5f6793ee986c49a71fcf6"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2017-06-30.pkl.gz",
+    "sha256": "e393d2374ae4d1175065e813c9e63b032703f817aedc1e191d57c955f0c121dd"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2017-09-30.pkl.gz",
+    "sha256": "c78e247b788a28f91b54005e8804e71d7d5c2819a4cc2dfc46f0bb1b00eae0ce"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2017-12-31.pkl.gz",
+    "sha256": "ce8ace28845affbb0b438136b3aedb3b9c61dd2f74140a269aef97b02ab9e7d1"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2018-03-31.pkl.gz",
+    "sha256": "625d3fe041d0b6e883fbcb90bb148cb452113ec164ce53a13b5e899fded18319"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2018-06-30.pkl.gz",
+    "sha256": "69d2d1216e2d17ab76dfd6860e943f2bbbd9250ed3e0fa949f28720882e3acb1"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2018-09-30.pkl.gz",
+    "sha256": "4ef7b9fb077789d95f5eeb121dd2888b1753f0fd735d1fb7be475000a2e47fdf"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2018-12-31.pkl.gz",
+    "sha256": "bf65dd78b0f6aabe2691965dfdd78b66c984769d221e083c030a12bba245c350"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2019-03-31.pkl.gz",
+    "sha256": "66e18599cee6e519b79093b71adbedaed8d01a5ab4e04432304cf80fa404b10b"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2019-06-30.pkl.gz",
+    "sha256": "1965719d424a6c73debe4ad77dd5c2e192d01c3cc6fe5839f405dcc1073f61eb"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2019-09-30.pkl.gz",
+    "sha256": "93d0c6e49f5c68947e5d1c12e9c228646524a920718fc84150e0068f22199764"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2019-12-31.pkl.gz",
+    "sha256": "108ff7f66c2e9e92cfd85cfb2febb30ba18588f1398c487779fa546c4d17e5d8"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2020-03-31.pkl.gz",
+    "sha256": "19de894657b005a670a66a8b5b0e4ced0eba653662e82e543872abc02ca25e9e"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2020-06-30.pkl.gz",
+    "sha256": "11c70aad35135681e9008648a4fa944fa75584e41bcef9bf5ed26bccc8672118"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2020-09-30.pkl.gz",
+    "sha256": "1f61e9a8ee21df75c666524a71283034976deedf35b97b96ea2a984200a30d72"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2020-12-31.pkl.gz",
+    "sha256": "9cda88467f35cf23eb176e5e069cb35a1c7db7b1db690585877559205ad47df0"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2021-03-31.pkl.gz",
+    "sha256": "80c9050af9ce94f888b56f1ad37631eeeac5b420c57ca29fe4c4ba82e1a90e16"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2021-06-30.pkl.gz",
+    "sha256": "1b9d8ae970adec16a2dfd6dfeba9ea287864ee4164a8255fbc01b458398a3cae"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2021-09-30.pkl.gz",
+    "sha256": "6ff02f87aed7d71c5238edb9d0c7ef954909fa74b566c9581a5e9f9473db2d75"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2021-12-31.pkl.gz",
+    "sha256": "6e8abef70cee0114f543669bc4717d7d79421247659d6ecfd0bec11c59dd5a68"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2022-03-31.pkl.gz",
+    "sha256": "d3683d6a2be36ce61031497c9b08eaa6d0cc05c3bb53c887bf003f321c7f1f39"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2022-06-30.pkl.gz",
+    "sha256": "449c0938fe0664126f9549cab33336380691a5e569a0e7bcb2172afbf730cfd8"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2022-09-30.pkl.gz",
+    "sha256": "5b15c5b85903b78e643f3b74653a5aa52096f655c071b7c51af82a58055205ca"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2022-12-31.pkl.gz",
+    "sha256": "3d4f84283988d97decfbb81032246424e057b246345d82c3bb7973e71dea8d3b"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2023-03-31.pkl.gz",
+    "sha256": "e6fc8592463c801d5aad33eeeac28752c11305339e14359fbd85fe10cf33d40b"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2023-06-30.pkl.gz",
+    "sha256": "f64aee52efc1c753f4c7b49cbeccd11167617a17da3953ca091b499a3d03efe2"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2023-09-30.pkl.gz",
+    "sha256": "a36b449ebed192eb450e8ac9ff12c75708fdb761ebc3bc56ce9ff3b8b9f64675"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2023-12-31.pkl.gz",
+    "sha256": "ce2710622ef60ac602da4dd8cfd7cc84b7fea740012cb8cbadae56e728e0b22e"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2024-03-31.pkl.gz",
+    "sha256": "21b31d78841f66d2f6f52268a95efa5840e86587a6b716b8597bc399bd42d987"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2024-06-30.pkl.gz",
+    "sha256": "92a2009120d5895d96997317458fc2e7850a68a1fb449b7cc529e04452313859"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2024-09-30.pkl.gz",
+    "sha256": "668c108bdfb8641717a41b2a1fa471a633eed079b54a946dd6d1bf5f04188e9c"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2024-12-31.pkl.gz",
+    "sha256": "79dbef75a2ce4e15a9f02366464612ec8e62b8b2ed8ed8c4d25b4ca4733553b8"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2025-01-31.pkl.gz",
+    "sha256": "28e42bc18c677fedb13f5a25ac4b879e4bcdc0fffa80e9ea066c060aba26cefe"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2025-02-28.pkl.gz",
+    "sha256": "9fb24ec5487c186bc9fb638fb75c326304bee729757aca0c0369f99b498eb422"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2025-03-31.pkl.gz",
+    "sha256": "01d802ee0b863862f7bb451a5221c250b96aad6556e95e81d4150999dcb143d0"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2025-04-30.pkl.gz",
+    "sha256": "aba805733bd98862a1e06397b2eb292a4c099013477a503c8dc8246944fdc7ae"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2025-05-31.pkl.gz",
+    "sha256": "be3de014fddb70d8f3dc277e8a37f694d39225635692748d36c6692e849a4de3"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2025-06-30.pkl.gz",
+    "sha256": "f68e04bf099fa69fb9287a34bd865c4532e6237ac03bdfa057aff87a04e59bf7"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2025-07-31.pkl.gz",
+    "sha256": "932e4205c5566102eea69240a3dbe68b7f47f11b53a387ffd76fa89602dd723c"
+  },
+  {
+    "path": "work/professor-frontier-20261101/labels/2025-08-31.pkl.gz",
+    "sha256": "5d4d3451ecbc1a9d7df33a876655e88ca4b2b3f228926b8bb643a09ea3ce4976"
+  },
+  {
+    "path": "work/professor-frontier-20261101/models/tail75_2020.txt",
+    "sha256": "bf069d32bdd7b68c7db83509690105ae3d004859d280865c65971b5232cfc95d"
+  },
+  {
+    "path": "work/professor-frontier-20261101/models/tail75_2021.txt",
+    "sha256": "8e0e2c96c334560a6f934c504d2d0a4012f294aece571eeed52b7f8a33ae4ed7"
+  },
+  {
+    "path": "work/professor-frontier-20261101/models/tail75_2022.txt",
+    "sha256": "3d292229c558a44446914deba32f33a0b9ab2032ff1213ca517ccaaf3d7673bf"
+  },
+  {
+    "path": "work/professor-frontier-20261101/models/tail75_2023.txt",
+    "sha256": "eac8256ff42e407bd49c0c54704fa45360f5d1b73b0a2bf010c5495fe366ff58"
+  }
+]

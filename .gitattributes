@@ -104,3 +104,6 @@ tests/*20261101.py text eol=lf
 experiments/momentum-timing-20261101/** -text
 research/reports/momentum_timing_20261101.md -text
 src/stock_research/momentum_timing.py text eol=lf
+experiments/professor-frontier-20261101/** -text
+research/reports/professor_frontier_20261101.md -text
+src/stock_research/professor_frontier.py text eol=lf
