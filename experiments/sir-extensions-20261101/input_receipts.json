@@ -1,0 +1,22 @@
+[
+  {
+    "path": "research/reports/top100-human-review-20261004/professor_formula_evidence.json",
+    "sha256": "67c1206bd535862819117de27de520a2e3aa3dda59f052ff8d673b527a25d66c"
+  },
+  {
+    "path": "experiments/champion-sip-profit-20261017/historical_scores.csv.gz",
+    "sha256": "31b494e8cf375912afafdd2a1fe42f4dc0002a0b1246100be8d7489c1c9dc765"
+  },
+  {
+    "path": "experiments/personalized-deep-history-20261002/real-panel-v12/deep_panel.csv.gz",
+    "sha256": "c0b2f5f66836c487340237cc1df231e2f3d2835febcb09b84c0adffb1ab57371"
+  },
+  {
+    "path": "work/professor-frontier-20261101/corrected_panel.pkl.gz",
+    "sha256": "f5c81abf81a8ed382ab3618cb1f13994572a9fdb12c6ab11987d1298dbed77de"
+  },
+  {
+    "path": "work/professor-frontier-20261101/development_scored.pkl.gz",
+    "sha256": "e5ebc5744506cf2d33c5297bfb7db50061f95fb0c792521d3dc4e9e88c2e0097"
+  }
+]

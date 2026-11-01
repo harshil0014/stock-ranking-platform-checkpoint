@@ -1,0 +1,19 @@
+{
+  "mean": 0.0768756687795886,
+  "median": -0.07067854957596006,
+  "winsorized_mean": -0.00578500174259359,
+  "lodo_min": -0.05899716689635577,
+  "lodo_max": 0.12123734787992667,
+  "low95": -0.20187714865770315,
+  "high95": 0.2936058788118554,
+  "nominal_p": 0.25237381309345325,
+  "best_date": "2022-06-30",
+  "best_date_share_of_net": 1.712619277546521,
+  "best_stock_terminal_share": 2.75397340208306,
+  "dates": 14,
+  "leave_one_security_out_min": -0.0829288585730481,
+  "leave_one_security_out_max": 0.11630466057500247,
+  "security_count": 226,
+  "documented_adjusted_p": 1,
+  "concentration_screen_pass": false
+}

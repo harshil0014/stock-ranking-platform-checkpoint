@@ -1,6 +1,8 @@
 # Stock Ranking Platform
 
-Latest research: [Three 75% professor-factor architectures, 1 November 2026](research/reports/professor_frontier_20261101.md). Geometric balance, peer voting and a learned tail head all failed the wider development preference/risk budget on corrected next-open SIP outcomes. The tail head raised matched Top-20 XIRR but worsened drawdown and broad ranking metrics. Exposed performance was not opened; the incumbent application and model package are unchanged.
+Latest research: [Sir-framework extensions and concentration audit, 1 November 2026](research/reports/sir_extensions_20261101.md). The tail gain does not survive concentration checks. Goal-profile, dose-response, factor-gate, user-approved static ladder and incremental ATH-count tests remain unconfirmed. A persistent registry records 299 documented scoped attempts, including aliases and diagnostic scenarios; it is not an exhaustive count of independent models. Exposed performance remains unopened and the incumbent is unchanged.
+
+[Three 75% professor-factor architectures](research/reports/professor_frontier_20261101.md): geometric balance, peer voting and a learned tail head failed the wider development preference/risk budget. The positive tail-head Top-20 mean was subsequently shown to be concentrated.
 
 [One-shot momentum selection plus reversal timing](research/reports/momentum_timing_20261101.md): the 20% professor lens plus dip/timing overlay retained positive pooled returns after 100bp per side, but failed the fixed yearly-sign rule.
 

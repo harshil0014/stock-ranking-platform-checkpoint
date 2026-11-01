@@ -1,0 +1,93 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "frozen protocol unchanged",
+      "passed": true
+    },
+    {
+      "check": "registry unique IDs",
+      "passed": true
+    },
+    {
+      "check": "documented count and ledger hash",
+      "passed": true
+    },
+    {
+      "check": "tail mean reproduces previous14date comparison",
+      "passed": true
+    },
+    {
+      "check": "tail median and winsorized mean reproduce",
+      "passed": true
+    },
+    {
+      "check": "tail leave-one-date-out reproduces",
+      "passed": true
+    },
+    {
+      "check": "corrected profile mechanics target10",
+      "passed": true
+    },
+    {
+      "check": "corrected profile mechanics target30",
+      "passed": true
+    },
+    {
+      "check": "primary corrected profiles limited to equivalent mechanics",
+      "passed": true
+    },
+    {
+      "check": "profile outcomes matched dates for both models",
+      "passed": true
+    },
+    {
+      "check": "all9legacy profiles covered",
+      "passed": true
+    },
+    {
+      "check": "allotments agree with preserved formula audit",
+      "passed": true
+    },
+    {
+      "check": "dip levels agree with preserved formula audit",
+      "passed": true
+    },
+    {
+      "check": "ladder rates fixed at0and4percent",
+      "passed": true
+    },
+    {
+      "check": "ladder observations are unique",
+      "passed": true
+    },
+    {
+      "check": "ladder deployment fraction within budget",
+      "passed": true
+    },
+    {
+      "check": "ladder stock fractions valid",
+      "passed": true
+    },
+    {
+      "check": "ladder every scenario has all4development years",
+      "passed": true
+    },
+    {
+      "check": "ladder no year with fewer than2dates",
+      "passed": true
+    },
+    {
+      "check": "ATH head labels strictly mature",
+      "passed": true
+    },
+    {
+      "check": "observed quote feature coverage accounted",
+      "passed": true
+    },
+    {
+      "check": "16focused tests passed",
+      "passed": true
+    }
+  ]
+}

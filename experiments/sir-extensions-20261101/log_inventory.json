@@ -1,0 +1,18 @@
+[
+  {
+    "path": "work/sir-extensions-20261101/low-load-analyze.log",
+    "sha256": "c3466c4d648a304f0488e03b7dda07411d619dc31816be26b705f1dfe889d1da"
+  },
+  {
+    "path": "work/sir-extensions-20261101/low-load-prepare.log",
+    "sha256": "f8a7a229098982bd285135947565d18601fb341dad7ba81ea9f555023dacca10"
+  },
+  {
+    "path": "work/sir-extensions-20261101/low-load-profile-coverage.log",
+    "sha256": "88563932cb633679a6234b58bd90ec9915d4968b2d49811a84f51e71eed1f62c"
+  },
+  {
+    "path": "work/sir-extensions-20261101/low-load-tests.log",
+    "sha256": "1176387c3a075e394c76ecec29c377af67d596d75ffff079e7aca041abcb7a80"
+  }
+]

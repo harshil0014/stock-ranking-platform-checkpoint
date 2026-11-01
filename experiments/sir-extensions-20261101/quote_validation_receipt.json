@@ -1,0 +1,6 @@
+{
+  "nonpriced_padding_rows_removed": 4805320,
+  "open_and_volume_missingness_preserved": true,
+  "original_cache_preserved": true,
+  "reason": "A padded row with no close is not an observed market quote. No prices imputed; execution gaps and zero volume remain blocking."
+}
