@@ -1,0 +1,5 @@
+period,policy,matched_dates,lens_minus_champion_xirr,lens_minus_champion_drawdown
+development,global_top20,15,-0.023135215909865708,-0.010748508479368434
+development,sector_top3_equal_sector,9,-0.02826987276751368,-0.006321119645881125
+exposed,global_top20,7,0.08963285922529765,-0.014291843902604724
+exposed,sector_top3_equal_sector,5,0.0065608135203704095,-0.024039691266022078

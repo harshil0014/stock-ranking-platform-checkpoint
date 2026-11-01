@@ -1,0 +1,10 @@
+{
+  "status": "DROP_LLM_NO_STRICT_WIN",
+  "cases": 2,
+  "planned": 6,
+  "llm_correct": 0,
+  "rule_correct": 2,
+  "elapsed_seconds": 4801,
+  "investment_alpha": "NOT_TESTED: no dated pledge comparator or mature prospective loser labels",
+  "future_contamination": "Identifiers redacted; no company lookup; factual2026 documents only, not a financial backtest"
+}

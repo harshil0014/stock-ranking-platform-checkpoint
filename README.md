@@ -1,6 +1,8 @@
 # Stock Ranking Platform
 
-Latest research: [Second round, 31 October 2026](research/reports/round2_20261031.md), following the [ten original pilots](research/reports/ten_hypotheses_20261031.md). Sector shuffle and risk objectives did not pass; daily hysteresis missed its lag gate. The incumbent application and model package are unchanged.
+Latest research: [Execution correction and new-information pilots, 1 November 2026](research/reports/new_information_20261101.md). Actual next-open replay replaces the same-close proxy for this new champion/lens comparison; older portfolio tables remain provisional. The first delivery-information head failed development; the small filing-reader pilot was inconclusive and dropped on operational cost and evaluation issues. The incumbent application and model package are unchanged.
+
+Earlier research: [Second round, 31 October 2026](research/reports/round2_20261031.md), following the [ten original pilots](research/reports/ten_hypotheses_20261031.md). Sector shuffle and risk objectives did not pass; daily hysteresis missed its lag gate.
 
 [Prospective ledger](https://github.com/harshil0014/stock-ranking-platform-checkpoint/tree/prospective-ledger): append-only records and daily exchange metadata capture are active. Frozen October 3 scores remain stale; the fresh twelve-month score holdout has not started.
 

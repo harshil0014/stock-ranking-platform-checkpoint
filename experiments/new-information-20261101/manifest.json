@@ -1,0 +1,181 @@
+{
+  "created_at_utc": "2026-11-01T09:27:50.283838+00:00",
+  "files": [
+    {
+      "path": "experiments/new-information-20261101/delivery_champion_changed_target_diagnostic.csv",
+      "bytes": 991,
+      "sha256": "6ffca04b9acff1ba417e3f29027286287f536cc5b15d6dea19d68d6122d7411e"
+    },
+    {
+      "path": "experiments/new-information-20261101/delivery_coverage.csv",
+      "bytes": 1934,
+      "sha256": "ad2cd434d6d64d67218670414fd38e4ab590a00e6adaba67aa0d987115217eec"
+    },
+    {
+      "path": "experiments/new-information-20261101/delivery_development_ic.csv",
+      "bytes": 1003,
+      "sha256": "596055f8bf5987077d3786d46a7b9bccbac021242501b6dfc45c2260cb58e123"
+    },
+    {
+      "path": "experiments/new-information-20261101/delivery_fold_reconstruction.csv",
+      "bytes": 145,
+      "sha256": "0f659d2dd692ca4e17be764c12e4314c76cbbe3df9ea36a242b34e429985ec7c"
+    },
+    {
+      "path": "experiments/new-information-20261101/delivery_gate.json",
+      "bytes": 490,
+      "sha256": "a3f8f419cf2293c906d23245f833667b552ab9a565cc373b120d658dc2591e36"
+    },
+    {
+      "path": "experiments/new-information-20261101/delivery_protocol_receipt.json",
+      "bytes": 141,
+      "sha256": "539c4bd776e6bec3344633d016f13195f2ec3bb5c028661ba693906bd5a2b40f"
+    },
+    {
+      "path": "experiments/new-information-20261101/delivery_source_receipts.json",
+      "bytes": 35209,
+      "sha256": "b200334bd51065f16c11173adc41349557b89263be9209b400e10fe2278dfd36"
+    },
+    {
+      "path": "experiments/new-information-20261101/environment.json",
+      "bytes": 298,
+      "sha256": "4c8a0bd5376bc86d4681dc0c711a81583b536261be67d331ec44775f62f29b5d"
+    },
+    {
+      "path": "experiments/new-information-20261101/execution_failures.csv",
+      "bytes": 2673,
+      "sha256": "f33e5abbe24444b94cf8b347cfe2411816c681c971aea14d6926f0950cddd57e"
+    },
+    {
+      "path": "experiments/new-information-20261101/execution_paired.csv",
+      "bytes": 385,
+      "sha256": "d9c3221cbeb9b1552b24422a3874e5dcbcca68ae6ec228a182854e154a268899"
+    },
+    {
+      "path": "experiments/new-information-20261101/execution_replay.csv",
+      "bytes": 15283,
+      "sha256": "b6f872931d6d2d3947a8d21abb0c79bb05fd4a2b789e3fadf0aa6506eb6acbd3"
+    },
+    {
+      "path": "experiments/new-information-20261101/execution_scope.json",
+      "bytes": 540,
+      "sha256": "d42b03b8b9c413b6010899b98b040880b7252625aeeae1386b0bc00bc4f399dd"
+    },
+    {
+      "path": "experiments/new-information-20261101/execution_summary.csv",
+      "bytes": 1144,
+      "sha256": "c27723abe39edf938346b1c061f0b951e9d2622245afd7ef19e10a8ef5589253"
+    },
+    {
+      "path": "experiments/new-information-20261101/filing_extraction_results.json",
+      "bytes": 826,
+      "sha256": "6e7f9938d56c1d63b6edb577b53df68a8dc921b327d7f18db4445f24265147eb"
+    },
+    {
+      "path": "experiments/new-information-20261101/filing_gate.json",
+      "bytes": 369,
+      "sha256": "06eb60b2f2f26784e4023283ac88354a28e1bca970cc6665af68c77793bb67a7"
+    },
+    {
+      "path": "experiments/new-information-20261101/filing_model_protocol.json",
+      "bytes": 654,
+      "sha256": "3f960734b2446ec09fa9cb6bea1a5a4f8d6888517676326232f874b027c9d26b"
+    },
+    {
+      "path": "experiments/new-information-20261101/filing_post_review.json",
+      "bytes": 888,
+      "sha256": "e746a408a34f0cb41282f0f20cb0bd4acc4296a798c7a31fcdfccacdbee342eb"
+    },
+    {
+      "path": "experiments/new-information-20261101/filing_source_review.json",
+      "bytes": 573,
+      "sha256": "b97d2ad87596ec1810585c3f761fe766ee964201c592166d0b79a4354fda6f0d"
+    },
+    {
+      "path": "experiments/new-information-20261101/integrity_checks.json",
+      "bytes": 1553,
+      "sha256": "3ecd13c5e6d93013b2c0ba2cfdca6d84ebe54f70fce42c13c6b87bc0b22048f8"
+    },
+    {
+      "path": "experiments/new-information-20261101/local_log_inventory.json",
+      "bytes": 2053,
+      "sha256": "a637a56a4d700fad590d28b0db81dc89669ce146017ab1d8c5a430ff1ffe0e7e"
+    },
+    {
+      "path": "experiments/new-information-20261101/price_cache_receipt.json",
+      "bytes": 24227,
+      "sha256": "74a3e76938c9ce0d1696da3fb7bf817897f2cf4a6af263fe58e29123283e18dd"
+    },
+    {
+      "path": "experiments/new-information-20261101/protocol_receipt.json",
+      "bytes": 141,
+      "sha256": "42f680473109c4bc37194ea8e47474e00c37fd2d2f15da4db0ec823d01321a74"
+    },
+    {
+      "path": "experiments/new-information-20261101/source_acquisition.json",
+      "bytes": 3434,
+      "sha256": "f9615049c8cdc8076e1c4a7c39cd938bd07d7d54b3abe93567430b6f0bae2ab5"
+    },
+    {
+      "path": "experiments/new-information-20261101/test_receipt.json",
+      "bytes": 315,
+      "sha256": "223a04ab58f506642e393a899df6a8388ef18c2face5aa810f305dcf06001673"
+    },
+    {
+      "path": "research/protocols/delivery_implementation_20261101.md",
+      "bytes": 1640,
+      "sha256": "b025bb10c11498585c57859c8f6f7772d628db948ffbbe476e839026edfee22b"
+    },
+    {
+      "path": "research/protocols/new_information_20261101.md",
+      "bytes": 2803,
+      "sha256": "b4b8c524df3dfa1c5144b9c5e9bd697385ac7e2dd9e413f9f5250c4df3a43577"
+    },
+    {
+      "path": "research/reports/new_information_20261101.md",
+      "bytes": 10692,
+      "sha256": "3d2d3f3dcc54bc345c6953edf030e1bb3db67bf7c3b271017700ebc855ef8817"
+    },
+    {
+      "path": "research/runners/delivery_probe_20261101.py",
+      "bytes": 9813,
+      "sha256": "8a496f362e5fc76531c04b928b3fbf1da46e70755baa9d5379dac3d2704179cc"
+    },
+    {
+      "path": "research/runners/filing_probe_20261101.py",
+      "bytes": 9312,
+      "sha256": "c508252ba3a66d61bc0236c2b2a2f587e2968e414d5d6d0e23e7575bcebfd0ad"
+    },
+    {
+      "path": "research/runners/new_information_20261101.py",
+      "bytes": 9773,
+      "sha256": "ac646081e83f31cf5f7b210cb254018b34d6451da78cdb3177f6ae554ce74eea"
+    },
+    {
+      "path": "research/runners/new_information_bundle_20261101.py",
+      "bytes": 2924,
+      "sha256": "69b3ea3238202dde4da8069ddd3a0bf9747e3ed0d05323d0cd07d1c60059d63b"
+    },
+    {
+      "path": "research/runners/new_information_review_20261101.py",
+      "bytes": 17977,
+      "sha256": "666973a77dfd86d6462095b091028043ff427a5c71191817b43d18adee7ac15d"
+    },
+    {
+      "path": "src/stock_research/next_open_portfolio.py",
+      "bytes": 3613,
+      "sha256": "f54ea95ccee8e08c33dc8795d54f8c56951a3a94567ae34d2f939a717fdadcc3"
+    },
+    {
+      "path": "tests/test_filing_watchdog_20261101.py",
+      "bytes": 758,
+      "sha256": "e3555c058c2f13a2d66cc20ea719a152f346dcce552f88a230896ce57f5de4c5"
+    },
+    {
+      "path": "tests/test_next_open_20261101.py",
+      "bytes": 1786,
+      "sha256": "5c5a2ce5cd3a7c00772a3af8093161bd5657e658ef2d83502ed4e17d955b85ac"
+    }
+  ],
+  "scope": "Compact research evidence; raw model responses, filing bodies and price caches remain local"
+}

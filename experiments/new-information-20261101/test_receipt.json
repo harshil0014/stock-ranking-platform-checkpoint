@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "tests": 17,
+  "external_ci": false,
+  "log_sha256": "7322058d6e133b1432646fecc6666bf660d146cb46be0e3c025785a79e12f1ae",
+  "tests_files": [
+    "tests/test_next_open_20261101.py",
+    "tests/test_filing_watchdog_20261101.py",
+    "tests/test_professor_factor_model_20261031.py"
+  ]
+}

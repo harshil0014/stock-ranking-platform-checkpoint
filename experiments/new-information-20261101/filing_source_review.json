@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "filing_01": "AUDITOR_RESIGNATION",
+    "filing_02": "AUDITOR_RESIGNATION",
+    "filing_03": "AUDITOR_APPOINTMENT",
+    "filing_04": "AUDITOR_APPOINTMENT",
+    "filing_05": "AUDITOR_APPOINTMENT",
+    "filing_06": "OTHER_RESIGNATION"
+  },
+  "adjudication": "Assistant reviewed downloaded source text before inference; not independent human labels",
+  "caveat": "Case02 concerns a step-down subsidiary; auditor resignation is an event, not evidence of wrongdoing or a predicted loser",
+  "reviewed_at_utc": "2026-11-01T08:02:06.772960+00:00"
+}

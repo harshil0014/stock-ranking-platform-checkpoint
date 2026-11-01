@@ -95,3 +95,9 @@ research/protocols/professor_weight_curve_20261031.json -text
 experiments/professor-preference-review-20261101/** -text
 research/runners/review_preference_feedback_20261101.py text eol=lf
 research/reports/preference_feedback_review_20261101.md text eol=lf
+experiments/new-information-20261101/** -text
+research/protocols/*20261101.md text eol=lf
+research/runners/*20261101.py text eol=lf
+research/reports/new_information_20261101.md -text
+src/stock_research/next_open_portfolio.py text eol=lf
+tests/*20261101.py text eol=lf

@@ -1,0 +1,13 @@
+{
+  "disposition": "INCONCLUSIVE_OPERATIONAL_DROP",
+  "original_status": "DROP_LLM_NO_STRICT_WIN",
+  "strict_single_label_score": "0/2",
+  "issues": [
+    "Only2of6cases completed; actual4801s versus600s intended budget; blocking-call timeout did not enforce absolute budget",
+    "Case01 event correct; exact quote rejected because PDF wraps whitespace: not established hallucination",
+    "Case02 contains both resignation and appointment; prompt had no priority rule, so single-label gold is ambiguous",
+    "Case02 quote is a firm name, insufficient alone to substantiate appointment; substring match is weaker than semantic support"
+  ],
+  "repair": "Added an absolute worker watchdog for future runs; not rerun; preserve original outputs and no prompt/model search",
+  "no_claim": "Not evidence of financial predictive ability or general inferiority of LLM extraction"
+}
