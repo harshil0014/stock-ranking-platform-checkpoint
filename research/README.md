@@ -1,3 +1,7 @@
+# Retained research infrastructure
+
+Obsolete standalone trial code and reports were removed on 1 November 2026. Historical commands and evidence referenced below may require the [pre-cleanup archive](https://github.com/harshil0014/stock-ranking-platform-checkpoint/tree/research-archive-before-cleanup-20261101). Retained dependency files do not imply model deployment. The production champion is unchanged. See [cleanup scope](../docs/codebase_cleanup_20261101.md).
+
 # Research layer
 
 This directory contains source-controlled contracts, provenance, environment

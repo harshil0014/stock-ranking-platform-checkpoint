@@ -1,7 +1,0 @@
-{
-  "status": "NOT_CONFIRMED",
-  "positive_high_target_years": 1,
-  "pooled_high_target_delta": -0.00555555555555556,
-  "personalized_rank_learned": false,
-  "interpretation": "Frozen base7500tail order; threshold utility is not proof of target-conditional ordering"
-}

@@ -1,7 +1,0 @@
-test,decision,reason
-Tail concentration,Not confirmed,"Negative median, winsorized and worst exclusion means"
-30% target,Not confirmed,Positive high-target increment in 1/3 years
-Composite sweet spot,Not confirmed,Fixed shape qualifies in 0/3 years
-CAGR/recent-high gate,Not confirmed,IC delta -0.03868; portfolio drawdown delta -0.163pp
-Static fixed-anchor ladder,Not confirmed,Lower pooled budget XIRR; yearly-sign rule fails
-ATH-cross increment,Not confirmed,IC increment +0.000174; hurdle 0.010135

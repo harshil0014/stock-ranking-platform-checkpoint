@@ -1,8 +1,0 @@
-{
-  "documented_attempts": 299,
-  "configuration_records": 279,
-  "new_round_records": 20,
-  "scope": "Scoped evaluated configurations and diagnostic attempts; cross-round aliases/retests retained; fits/seeds not independent strategies",
-  "omissions": "Older uncatalogued manual searches, adaptive band interpretation and absent artifacts are not exhaustively counted. Adjustment does not certify global significance.",
-  "ledger_sha256": "4ab8b05546854ac79ff8663236af60d11eabceb1664228bef2761e7d33ff1bee"
-}

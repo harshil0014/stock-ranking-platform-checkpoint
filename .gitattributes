@@ -1,6 +1,3 @@
-experiments/personalized-executable-tournament/final-01/*.csv text eol=lf
-experiments/personalized-executable-tournament/final-01/*.json text eol=lf
-experiments/personalized-executable-tournament/final-01/*.gz binary
 experiments/personalized-official-action-freeze/build-02/*.csv text eol=lf
 experiments/personalized-official-action-freeze/build-02/*.json binary
 experiments/personalized-official-action-freeze/build-02/*.gz binary
@@ -18,7 +15,6 @@ experiments/personalized-official-action-freeze/build-04/*.json binary
 experiments/personalized-official-action-freeze/build-04/*.gz binary
 experiments/personalized-final-tournament/build-02/*.csv text eol=lf
 experiments/personalized-final-tournament/build-02/*.json binary
-experiments/personalized-final-tournament/build-02/*.gz binary
 research/protocols/personalized_final_tournament_v1.json text eol=lf
 research/runners/audit_final_research_outputs.py text eol=lf
 research/runners/compare_final_professor_workbook.py text eol=lf
@@ -32,7 +28,6 @@ experiments/personalized-official-action-freeze/build-06/*.json binary
 experiments/personalized-official-action-freeze/build-06/*.gz binary
 experiments/personalized-final-tournament/build-04/*.csv -text
 experiments/personalized-final-tournament/build-04/*.json binary
-experiments/personalized-final-tournament/build-04/*.gz binary
 research/data/ownership-recovery-20260925/*.csv -text
 research/data/ownership-recovery-20260925/*.json binary
 research/protocols/personalized_ownership_tournament_v2.json -text
@@ -58,7 +53,6 @@ research/backups/personalized-d499580/** -text
 docs/PERSONALIZED_SHADOW.md text eol=lf
 research/environment/requirements-shadow.txt text eol=lf
 tests/test_personalized_shadow.py text eol=lf
-experiments/personalized-product-acceptance/run-*/*.json binary
 research/runners/build_personalized_runtime_pack.py text eol=lf
 research/runners/run_personalized_product_acceptance.py text eol=lf
 research/runners/run_personalized_ui_browser_acceptance.py text eol=lf
@@ -69,7 +63,6 @@ src/stock_ranker/baseline.py text eol=lf
 research/environment/tra_dependency_lock.txt text eol=lf
 data/analysis/**/*.csv text eol=lf
 data/analysis/release_website_audit_20260920_run_01/sector_website_audit.csv text eol=crlf
-experiments/personalized-product-acceptance/sector-final-20260927/*.json binary
 
 research/runtime/sector-champion-recency/** -text
 
@@ -77,12 +70,9 @@ research/runtime/sector-champion-recency/** -text
 experiments/ten-hypotheses-20261031/** -text
 research/runners/*ten_hypotheses*20261031.py text eol=lf
 tests/test_ten_hypotheses_20261031.py text eol=lf
-research/reports/ten_hypotheses_20261031.md text eol=lf
 research/protocols/round2_20261031.json -text
 research/runners/*20261031.py text eol=lf
 tests/*20261031.py text eol=lf
-experiments/round2-*/** -text
-research/reports/round2_20261031* -text
 research/environment/round2_20261031.json -text
 experiments/champion-vs-market-20261031/** -text
 research/protocols/champion_vs_market_20261031.json -text
@@ -92,24 +82,14 @@ research/protocols/professor_majority_20261031.json -text
 src/stock_research/professor_factor_model.py text eol=lf
 experiments/professor-weight-curve-20261031/** -text
 research/protocols/professor_weight_curve_20261031.json -text
-experiments/professor-preference-review-20261101/** -text
 research/runners/review_preference_feedback_20261101.py text eol=lf
-research/reports/preference_feedback_review_20261101.md text eol=lf
-experiments/new-information-20261101/** -text
 research/protocols/*20261101.md text eol=lf
 research/runners/*20261101.py text eol=lf
-research/reports/new_information_20261101.md -text
 src/stock_research/next_open_portfolio.py text eol=lf
 tests/*20261101.py text eol=lf
-experiments/momentum-timing-20261101/** -text
-research/reports/momentum_timing_20261101.md -text
 src/stock_research/momentum_timing.py text eol=lf
-experiments/professor-frontier-20261101/** -text
-research/reports/professor_frontier_20261101.md -text
 src/stock_research/professor_frontier.py text eol=lf
-experiments/sir-extensions-20261101/** -text
 research/research_variant_ledger.csv -text
-research/reports/sir_extensions_20261101.md -text
 src/stock_research/sir_ladder.py text eol=lf
 experiments/high-recency-tilt-20261101/** -text
 research/reports/high_recency_tilt_20261101.md -text
