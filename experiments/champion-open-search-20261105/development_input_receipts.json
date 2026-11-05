@@ -1,0 +1,18 @@
+[
+  {
+    "path": "research/protocols/champion_open_search_20261105.md",
+    "sha256": "b7d2e71faab322d3d23cb52ca81d573f5a8f1f5d120b53c6a28a9557bd557385"
+  },
+  {
+    "path": "work/constrained-ranking-20261105/development_scored.pkl.gz",
+    "sha256": "553e03c9ab35e74c68bcd97989b03f7627f7943d80792955f5478c11a24f718e"
+  },
+  {
+    "path": "research/runners/champion_open_search_20261105.py",
+    "sha256": "434777ec4bb28e91cb669a0f75b309c3279a9089c9b9476cba3428340c96cbe3"
+  },
+  {
+    "path": "src/stock_research/constrained_selection.py",
+    "sha256": "c9768a618b7491730306eb4c89a439d8eceeb90b1fd7bbfe66008979c1c91361"
+  }
+]

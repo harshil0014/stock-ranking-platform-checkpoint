@@ -1,0 +1,134 @@
+[
+  {
+    "path": "experiments/champion-rank-correction-20261105/benchmark_audit_registration.json",
+    "sha256": "8e66216542a60172573d71298dacac428f2f7a6b302460a4ef2e1afeab3686d7"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/benchmark_control_comparisons.csv",
+    "sha256": "fe19c236f42bbf39c6695e8b320c7724f1aae609b409f3dcf4f15afbae2fa064"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/benchmark_control_portfolios.csv",
+    "sha256": "d6bb11a415631e9c177eac24aea793ff8c018d1a0a44c869047500dc3910528e"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/boundary_ties.csv",
+    "sha256": "0968c6dd62688f2029af4b3bc2076361b8d1a17f87b6a78382faaacb958fa384"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/bundle_receipt.json",
+    "sha256": "f282601d78082b677521888fe6ded9b18d9259b87d454448104d363b2d9244fe"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/completion.json",
+    "sha256": "6bea5efae4d639b567d0d551f9059b461183b898841cbecbcfc62c415f1b4c52"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/concentration.json",
+    "sha256": "c0d925e7a5c6b7a19fa380c8a2ad31edb7fc8d19cc2bf3d133dcce387e53644c"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/cost200_failures.csv",
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/cost200_pairs.csv",
+    "sha256": "67861a25a2db2b314ff4d467e93b29e695bbd75272a34331200e57740f46c1b4"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/cost200_portfolios.csv",
+    "sha256": "6fc7c9be2c66de300539129187cda7e03dca847edf5138fd44f42cd224593978"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/cost200_registration.json",
+    "sha256": "016c87a395d15f8fdf4e6d73ad621aa34bd0ae1cf587a0e4f642ff2cd7a671b4"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/development_blocked_queries.csv",
+    "sha256": "cbb689318d917f17f82bbc34b4c9925dce7f53cf19698701c6d5e58fc9c080de"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/development_date_metrics.csv",
+    "sha256": "ffbf7a8daa0a466e5c0616fe6176ae2df68761da9c845d659601ec3411892002"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/development_overlap.csv",
+    "sha256": "e0bf82115b8b87912a119e9ca25085c604f97e39b3f474f8af6f2edc1ec33776"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/development_portfolios.csv",
+    "sha256": "ae56bd330b7ff5291c22a3e4370c6d37b0e882bf0a283bac8f3221d2ff8d0bf1"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/development_portfolio_failures.csv",
+    "sha256": "e8810eb58348e4927bff54660ed89c53d29c81ca439fed02ca771cc9e6d6a1c7"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/development_portfolio_pairs.csv",
+    "sha256": "8cfa319079202989bf1012dcbcde1479c77b577a29be520a96f84b4a45967865"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/development_sector_metrics.csv",
+    "sha256": "9e8e6ab3ebb6a80052a1b04bced4a24ad570bc0e55abea24680d4fdd688d4194"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/development_summary.csv",
+    "sha256": "84b1cc5fc3cf5bee17dee2b833f6bcd3ef678ff6a5c1cc0bc4771007d0d73a35"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/development_year_metrics.csv",
+    "sha256": "fe3fce567729117fd3a4d3657e8aa8c5fb40ac5f14315233cf508d1d18836635"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/folds.csv",
+    "sha256": "b4255b7713888e65d12bffb55e750f2000adc120ae233909a870d1980990977e"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/frozen.json",
+    "sha256": "b7ca8675af773e8d9ed355e8fd2b02ea1109869a22a7f236fd39942f1c61c50d"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/solver.csv",
+    "sha256": "862c9a28b611c1d3cd95d9d8965de859e9b70772db09b5762555639f63bf8bfe"
+  },
+  {
+    "path": "research/reports/champion_rank_correction_20261105.md",
+    "sha256": "72f7faea82477a5df34d46edbbc2aa663776eb368c9487c5be6bf163bd10a4fb"
+  },
+  {
+    "path": "research/reports/champion_rank_correction_20261105.png",
+    "sha256": "fe1c971288d29ac4671a36a8008c9df246f0c0ac56dd8477055297f8bbf39d1a"
+  },
+  {
+    "path": "research/protocols/champion_rank_correction_20261105.md",
+    "sha256": "51c03a509363ba939855bb57c0ae8dabb82de4a4096923549dce5956da9cc77b"
+  },
+  {
+    "path": "research/research_variant_ledger.csv",
+    "sha256": "ed8816244cb105ffe229cfb6a31af496634315aecd86a6798e88b557c777bcd1"
+  },
+  {
+    "path": "research/runners/rank_correction_audit_20261105.py",
+    "sha256": "0cdc6379978e5aeb773d2618a24d5afa6e2f4a6eb48827bdf7a81740fcac4d06"
+  },
+  {
+    "path": "research/runners/champion_rank_correction_20261105.py",
+    "sha256": "2082f352fed9f612f1fc74cadff3e37704216562fd4ef3bc89303f00d2bc1114"
+  },
+  {
+    "path": "research/runners/correction_cost_check_20261105.py",
+    "sha256": "cd758480b7bdf93e493c289112524a8cce02a3a18695cf24bf369a0529e56f05"
+  },
+  {
+    "path": "research/registry/research_search_history_20261105.md",
+    "sha256": "d8aa88c0f20f4235c3d476c55a1793541cd829ae3a0ffe502c716167a728093b"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/candidate_card.json",
+    "sha256": "489158e60762adefbb64a9d2fb8e3acfe64b88b6be57772819d177ee4493b2f9"
+  },
+  {
+    "path": "experiments/champion-rank-correction-20261105/visual_review.json",
+    "sha256": "a31f997b3afc97fb7c130280327c4e2d4422aa2e8ce8bd2f11895b3245cfde86"
+  }
+]

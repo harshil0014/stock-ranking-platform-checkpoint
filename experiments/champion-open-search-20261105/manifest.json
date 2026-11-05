@@ -1,0 +1,138 @@
+[
+  {
+    "path": "experiments/champion-open-search-20261105/comparison.csv",
+    "sha256": "679942bcb31ee2628b0d0bdba41fa9b21bc86e3520aad55de147ef74f1382a83"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/concentration.json",
+    "sha256": "70727889ac3be69b0eeba5701a453ecb71535636fa8999ffefc503b565d2a24b"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/development_blocked_queries.csv",
+    "sha256": "246cb1481520ce8cf40f432433a05809f9c5216843f8f77e04cbee2251812096"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/development_date_metrics.csv",
+    "sha256": "c776c3190efae7d5d60a89247f96eae316b50f4ac8c528e0ee7c00655300efb2"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/development_input_receipts.json",
+    "sha256": "a700189ba52030e648f0b091577a10c50bd8c703eda689c90d1fe4d2680de901"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/development_overlap.csv",
+    "sha256": "b5cafe0e3ad1608141543ce5f2e5ee18bca55f863930a17eb6006e3d56cc345c"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/development_portfolios.csv",
+    "sha256": "6727853ef5b7c2094b2bb19ea2ad93916476428ae49f359420fb9f37e5e286ba"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/development_portfolio_failures.csv",
+    "sha256": "74ba1510381b4d7de28b047e35c5976e9506318e7a786ea5133f3524cea10295"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/development_portfolio_pairs.csv",
+    "sha256": "647824ed9667536e03ebdaf91411da9e8cc2c9d528fc33fdcc1bbee118a3a102"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/development_sector_metrics.csv",
+    "sha256": "830e84b642aad927eaf9d8dbd4dc1a52a895d0cd3a6098be1dad6a911d6b6f86"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/development_solver_receipts.csv",
+    "sha256": "1ae5b911ba54fa5d319b5011c69ce212d287e843fa7c8a60f205c13974a4ec5b"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/development_summary.csv",
+    "sha256": "de551bd17fd1c3ac2ff325ce4df6c7030c42336a33defdf596225a68e32982b1"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/development_year_metrics.csv",
+    "sha256": "6b27c55fb51303e166e7a2ba1f054253834d9be0cc3c1066fdb75c4d6beaa058"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/selection_lock.json",
+    "sha256": "c0104e6a9377b13d295672f69348c798c9e7ad287ad72a70df61a52d8a3c5771"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/started.json",
+    "sha256": "6be4007175a9805fb246f362c5f9917cbd3f8ee9b9823a20802143fe9ef229c4"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/transfer_blocked_queries.csv",
+    "sha256": "063560e082f9157ab82dc5245fe53bb40af91e391e89b761f91cd1818acb091b"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/transfer_date_metrics.csv",
+    "sha256": "3642cfee9341081179441140916672f6d2c6cf637046a817f7cb37ebd9963fa0"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/transfer_feature_coverage.csv",
+    "sha256": "7f5688a8c1a2858b6547aa842c1962d41ed395541dd35db14259434c6ca91a56"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/transfer_overlap.csv",
+    "sha256": "c361c1fd2679496a2b3e31ccd175ff0b7eafa6cc6ab778389417776ddf058407"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/transfer_portfolios.csv",
+    "sha256": "b807bcad2542d7961768001c657f9c7ebcecf6e7bc274c0384b2a38292911204"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/transfer_portfolio_failures.csv",
+    "sha256": "6f39816be57eae50a18d98ad24342c5e06c17d863c45a981cc84cabdaa1fd4ce"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/transfer_portfolio_pairs.csv",
+    "sha256": "cafdbe3643a497cadb71867c19bbdce356fb4623e5d6155a3a43d85f8101312a"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/transfer_receipt.json",
+    "sha256": "242f1332fa58814d3046e8da9487d237906b5e9a25b52df188f3bb76dcde58f8"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/transfer_sector_metrics.csv",
+    "sha256": "707323555e4781333e39dea89d7a8397ca7274cbb498d75e6ba04517041a8aaf"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/transfer_solver_receipts.csv",
+    "sha256": "3a37acca84ea157e0999a99663795d9edb3636e2062c191963341e423948b1ea"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/transfer_summary.csv",
+    "sha256": "e05c849572de7ea89d5b10089a2abab2caa892a9fd8b95ff7cf9ea35ea425843"
+  },
+  {
+    "path": "experiments/champion-open-search-20261105/transfer_year_metrics.csv",
+    "sha256": "a1ee595ce571a6266b8454a3d263d72521d27f05a670fe64b2814674faf927e5"
+  },
+  {
+    "path": "research/reports/champion_open_search_20261105.md",
+    "sha256": "a80b759a2eb8c5f1d94572cd0f62a7527720ea64aa9ab836227d1b61eb67c017"
+  },
+  {
+    "path": "research/protocols/champion_open_search_20261105.md",
+    "sha256": "b7d2e71faab322d3d23cb52ca81d573f5a8f1f5d120b53c6a28a9557bd557385"
+  },
+  {
+    "path": "research/research_variant_ledger.csv",
+    "sha256": "ed8816244cb105ffe229cfb6a31af496634315aecd86a6798e88b557c777bcd1"
+  },
+  {
+    "path": "src/stock_research/constrained_selection.py",
+    "sha256": "c9768a618b7491730306eb4c89a439d8eceeb90b1fd7bbfe66008979c1c91361"
+  },
+  {
+    "path": "research/runners/champion_open_search_20261105.py",
+    "sha256": "434777ec4bb28e91cb669a0f75b309c3279a9089c9b9476cba3428340c96cbe3"
+  },
+  {
+    "path": "research/runners/open_search_review_20261105.py",
+    "sha256": "b4431c2f6d711ae224f8919a10dc2ad662945d726cc02e13843b0ffbe328207b"
+  },
+  {
+    "path": "research/registry/research_search_history_20261105.md",
+    "sha256": "d8aa88c0f20f4235c3d476c55a1793541cd829ae3a0ffe502c716167a728093b"
+  }
+]

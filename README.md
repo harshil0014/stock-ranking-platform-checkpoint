@@ -2,6 +2,8 @@
 
 Local NSE/BSE stock-ranking website and its frozen champion. Research preferences do not replace the deployed champion.
 
+[Rank-error correction research](research/reports/champion_rank_correction_20261105.md) improves development globalTop20SIPXIRR while preserving professor-sectorTop3 membership. Concentration,raw-champion and randomized-tie controls are reported. The separate [locked historical transfer test](research/reports/champion_open_search_20261105.md) records a loss for the earlier risk-constrained candidate. These results remain research evidence.
+
 Latest search, 5 November 2026: [new residual-history challengers](research/reports/residual_challengers_20261105.md). The residual-momentum overlay improved development IC in four years and matched Top20 returns, but fell short of the preregistered accuracy and professor-alignment requirements. [Search history](research/registry/research_search_history_20261105.md) records prior families to exclude from future reruns.
 
 [Constrained Top3 selection](research/reports/constrained_ranking_20261105.md) subsequently protected all five professor-factor averages while improving development IC and Top20 SIP returns. Small goal-hit losses missed the strict nomination rule. [Commercial comparison access review](research/reports/commercial_benchmark_access_20261105.md) covers Trendlyne, Tickertape, MarketsMojo and Stockopedia, with matched score-history access still required for a numerical head-to-head claim.

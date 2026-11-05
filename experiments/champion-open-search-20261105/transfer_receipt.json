@@ -1,0 +1,11 @@
+{
+  "selected": "risk_constrained_high",
+  "selection_lock_sha256": "c0104e6a9377b13d295672f69348c798c9e7ad287ad72a70df61a52d8a3c5771",
+  "scored_at_utc": "2026-11-05T17:59:15.649073+00:00",
+  "source_sha256": "f5c81abf81a8ed382ab3618cb1f13994572a9fdb12c6ab11987d1298dbed77de",
+  "source": "C:\\Users\\Harshil\\Downloads\\stock-ranking-platform-fresh-canonical-verified\\work\\professor-frontier-20261101\\corrected_panel.pkl.gz",
+  "rows": 26662,
+  "dates": 12,
+  "interpretation": "Previously exposed historical transfer diagnostic, not fresh holdout",
+  "retuned": false
+}

@@ -1,0 +1,747 @@
+decision_date,sector,optimal,minimum_factor_gain
+2020-03-31,Agricultural Food & other Products,True,0.0
+2020-03-31,"Agricultural, Commercial & Construction Vehicles",True,0.0
+2020-03-31,Auto Components,True,0.0
+2020-03-31,Automobiles,True,-2.220446049250313e-16
+2020-03-31,Banks,True,0.0
+2020-03-31,Beverages,True,-4.440892098500626e-16
+2020-03-31,Capital Markets,True,0.0
+2020-03-31,Cement & Cement Products,True,0.0
+2020-03-31,Chemicals & Petrochemicals,True,0.0
+2020-03-31,Commercial Services & Supplies,True,0.0
+2020-03-31,Construction,True,0.0
+2020-03-31,Consumer Durables,True,0.0
+2020-03-31,Electrical Equipment,True,0.0
+2020-03-31,Entertainment,True,0.0
+2020-03-31,Ferrous Metals,True,0.0
+2020-03-31,Fertilizers & Agrochemicals,True,0.0
+2020-03-31,Finance,True,0.0
+2020-03-31,Food Products,True,0.0
+2020-03-31,Healthcare Services,True,0.0
+2020-03-31,Household Products,True,0.0
+2020-03-31,IT - Hardware,True,0.0
+2020-03-31,IT - Services,True,-4.440892098500626e-16
+2020-03-31,IT - Software,True,-4.440892098500626e-16
+2020-03-31,Industrial Manufacturing,True,0.0
+2020-03-31,Industrial Products,True,-4.440892098500626e-16
+2020-03-31,Leisure Services,True,0.0
+2020-03-31,Media,True,0.0
+2020-03-31,Minerals & Mining,True,-4.440892098500626e-16
+2020-03-31,Non - Ferrous Metals,True,0.0
+2020-03-31,Oil,True,-4.440892098500626e-16
+2020-03-31,Other Construction Materials,True,0.0
+2020-03-31,Other Consumer Services,True,0.0
+2020-03-31,"Paper, Forest & Jute Products",True,0.0
+2020-03-31,Personal Products,True,-4.440892098500626e-16
+2020-03-31,Petroleum Products,True,0.0
+2020-03-31,Pharmaceuticals & Biotechnology,True,0.0
+2020-03-31,Power,True,0.0
+2020-03-31,Realty,True,0.0
+2020-03-31,Retailing,True,0.0
+2020-03-31,Telecom -  Equipment & Accessories,True,-2.220446049250313e-16
+2020-03-31,Telecom - Services,True,0.0
+2020-03-31,Textiles & Apparels,True,0.0
+2020-03-31,Transport Services,True,0.0
+2020-06-30,Agricultural Food & other Products,True,-4.440892098500626e-16
+2020-06-30,"Agricultural, Commercial & Construction Vehicles",True,0.0
+2020-06-30,Auto Components,True,0.0
+2020-06-30,Automobiles,True,-2.220446049250313e-16
+2020-06-30,Banks,True,0.0
+2020-06-30,Beverages,True,-2.220446049250313e-16
+2020-06-30,Capital Markets,True,-2.220446049250313e-16
+2020-06-30,Cement & Cement Products,True,-4.440892098500626e-16
+2020-06-30,Chemicals & Petrochemicals,True,0.0
+2020-06-30,Commercial Services & Supplies,True,0.0
+2020-06-30,Construction,True,0.0
+2020-06-30,Consumer Durables,True,-4.440892098500626e-16
+2020-06-30,Electrical Equipment,True,0.0
+2020-06-30,Entertainment,True,-2.220446049250313e-16
+2020-06-30,Ferrous Metals,True,-4.440892098500626e-16
+2020-06-30,Fertilizers & Agrochemicals,True,-4.440892098500626e-16
+2020-06-30,Finance,True,0.0
+2020-06-30,Food Products,True,0.0
+2020-06-30,Healthcare Services,True,-2.220446049250313e-16
+2020-06-30,Household Products,True,0.0
+2020-06-30,IT - Hardware,True,0.0
+2020-06-30,IT - Services,True,-2.220446049250313e-16
+2020-06-30,IT - Software,True,0.0
+2020-06-30,Industrial Manufacturing,True,0.0
+2020-06-30,Industrial Products,True,0.0
+2020-06-30,Leisure Services,True,0.0
+2020-06-30,Media,True,0.0
+2020-06-30,Minerals & Mining,True,-2.220446049250313e-16
+2020-06-30,Non - Ferrous Metals,True,0.0
+2020-06-30,Oil,True,0.0
+2020-06-30,Other Construction Materials,True,0.0
+2020-06-30,Other Consumer Services,True,0.0
+2020-06-30,"Paper, Forest & Jute Products",True,-4.440892098500626e-16
+2020-06-30,Personal Products,True,-4.440892098500626e-16
+2020-06-30,Petroleum Products,True,0.0
+2020-06-30,Pharmaceuticals & Biotechnology,True,-4.440892098500626e-16
+2020-06-30,Power,True,0.0
+2020-06-30,Realty,True,0.0
+2020-06-30,Retailing,True,0.0
+2020-06-30,Telecom -  Equipment & Accessories,True,0.0
+2020-06-30,Telecom - Services,True,0.0
+2020-06-30,Textiles & Apparels,True,-4.440892098500626e-16
+2020-06-30,Transport Services,True,0.0
+2020-09-30,Agricultural Food & other Products,True,0.0
+2020-09-30,"Agricultural, Commercial & Construction Vehicles",True,0.0
+2020-09-30,Auto Components,True,0.0
+2020-09-30,Automobiles,True,0.0
+2020-09-30,Banks,True,0.0
+2020-09-30,Beverages,True,0.0
+2020-09-30,Capital Markets,True,0.0
+2020-09-30,Cement & Cement Products,True,0.0
+2020-09-30,Chemicals & Petrochemicals,True,0.0
+2020-09-30,Commercial Services & Supplies,True,-4.440892098500626e-16
+2020-09-30,Construction,True,0.0
+2020-09-30,Consumer Durables,True,0.0
+2020-09-30,Diversified,True,0.0
+2020-09-30,Electrical Equipment,True,0.0
+2020-09-30,Entertainment,True,0.0
+2020-09-30,Ferrous Metals,True,0.0
+2020-09-30,Fertilizers & Agrochemicals,True,0.0
+2020-09-30,Finance,True,0.0
+2020-09-30,Food Products,True,0.0
+2020-09-30,Healthcare Services,True,-2.220446049250313e-16
+2020-09-30,Household Products,True,0.0
+2020-09-30,IT - Hardware,True,0.0
+2020-09-30,IT - Services,True,-4.440892098500626e-16
+2020-09-30,IT - Software,True,0.0
+2020-09-30,Industrial Manufacturing,True,0.0
+2020-09-30,Industrial Products,True,0.0
+2020-09-30,Leisure Services,True,-4.440892098500626e-16
+2020-09-30,Media,True,-2.220446049250313e-16
+2020-09-30,Minerals & Mining,True,-2.220446049250313e-16
+2020-09-30,Non - Ferrous Metals,True,0.0
+2020-09-30,Oil,True,0.0
+2020-09-30,Other Construction Materials,True,-4.440892098500626e-16
+2020-09-30,Other Consumer Services,True,-4.440892098500626e-16
+2020-09-30,"Paper, Forest & Jute Products",True,-2.220446049250313e-16
+2020-09-30,Personal Products,True,0.0
+2020-09-30,Petroleum Products,True,0.0
+2020-09-30,Pharmaceuticals & Biotechnology,True,-4.440892098500626e-16
+2020-09-30,Power,True,0.0
+2020-09-30,Realty,True,0.0
+2020-09-30,Retailing,True,0.0
+2020-09-30,Telecom -  Equipment & Accessories,True,0.0
+2020-09-30,Telecom - Services,True,0.0
+2020-09-30,Textiles & Apparels,True,-4.440892098500626e-16
+2020-09-30,Transport Services,True,-4.440892098500626e-16
+2020-12-31,Aerospace & Defense,True,0.0
+2020-12-31,Agricultural Food & other Products,True,0.0
+2020-12-31,"Agricultural, Commercial & Construction Vehicles",True,0.0
+2020-12-31,Auto Components,True,-4.440892098500626e-16
+2020-12-31,Automobiles,True,-2.220446049250313e-16
+2020-12-31,Banks,True,0.0
+2020-12-31,Beverages,True,0.0
+2020-12-31,Capital Markets,True,-2.220446049250313e-16
+2020-12-31,Cement & Cement Products,True,0.0
+2020-12-31,Chemicals & Petrochemicals,True,-4.440892098500626e-16
+2020-12-31,Commercial Services & Supplies,True,0.0
+2020-12-31,Construction,True,0.0
+2020-12-31,Consumer Durables,True,-4.440892098500626e-16
+2020-12-31,Diversified,True,0.0
+2020-12-31,Electrical Equipment,True,0.0
+2020-12-31,Entertainment,True,0.0
+2020-12-31,Ferrous Metals,True,-2.220446049250313e-16
+2020-12-31,Fertilizers & Agrochemicals,True,0.0
+2020-12-31,Finance,True,0.0
+2020-12-31,Food Products,True,0.0
+2020-12-31,Healthcare Services,True,0.0
+2020-12-31,Household Products,True,0.0
+2020-12-31,IT - Hardware,True,0.0
+2020-12-31,IT - Services,True,-4.440892098500626e-16
+2020-12-31,IT - Software,True,0.0
+2020-12-31,Industrial Manufacturing,True,0.0
+2020-12-31,Industrial Products,True,0.0
+2020-12-31,Leisure Services,True,0.0
+2020-12-31,Media,True,0.0
+2020-12-31,Minerals & Mining,True,0.0
+2020-12-31,Non - Ferrous Metals,True,0.0
+2020-12-31,Oil,True,0.0
+2020-12-31,Other Construction Materials,True,0.0
+2020-12-31,Other Consumer Services,True,-2.220446049250313e-16
+2020-12-31,"Paper, Forest & Jute Products",True,0.0
+2020-12-31,Personal Products,True,-4.440892098500626e-16
+2020-12-31,Petroleum Products,True,0.0
+2020-12-31,Pharmaceuticals & Biotechnology,False,0.0
+2020-12-31,Power,True,-2.220446049250313e-16
+2020-12-31,Realty,True,0.0
+2020-12-31,Retailing,True,0.0
+2020-12-31,Telecom -  Equipment & Accessories,True,-2.220446049250313e-16
+2020-12-31,Telecom - Services,True,0.0
+2020-12-31,Textiles & Apparels,True,-4.440892098500626e-16
+2020-12-31,Transport Infrastructure,True,0.0
+2020-12-31,Transport Services,True,-2.220446049250313e-16
+2021-03-31,Aerospace & Defense,True,0.0
+2021-03-31,Agricultural Food & other Products,True,0.0
+2021-03-31,"Agricultural, Commercial & Construction Vehicles",True,0.0
+2021-03-31,Auto Components,True,0.0
+2021-03-31,Automobiles,True,-2.220446049250313e-16
+2021-03-31,Banks,True,0.0
+2021-03-31,Beverages,True,-2.220446049250313e-16
+2021-03-31,Capital Markets,True,0.0
+2021-03-31,Cement & Cement Products,True,0.0
+2021-03-31,Chemicals & Petrochemicals,True,0.0
+2021-03-31,Commercial Services & Supplies,True,0.0
+2021-03-31,Construction,True,0.0
+2021-03-31,Consumer Durables,True,0.0
+2021-03-31,Diversified,True,0.0
+2021-03-31,Electrical Equipment,True,0.0
+2021-03-31,Entertainment,True,0.0
+2021-03-31,Ferrous Metals,True,0.0
+2021-03-31,Fertilizers & Agrochemicals,True,0.0
+2021-03-31,Finance,True,0.0
+2021-03-31,Food Products,True,0.0
+2021-03-31,Healthcare Services,True,-4.440892098500626e-16
+2021-03-31,Household Products,True,0.0
+2021-03-31,IT - Hardware,True,0.0
+2021-03-31,IT - Services,True,-4.440892098500626e-16
+2021-03-31,IT - Software,True,0.0
+2021-03-31,Industrial Manufacturing,True,0.0
+2021-03-31,Industrial Products,True,0.0
+2021-03-31,Leisure Services,True,0.0
+2021-03-31,Media,True,0.0
+2021-03-31,Minerals & Mining,True,-2.220446049250313e-16
+2021-03-31,Non - Ferrous Metals,True,0.0
+2021-03-31,Oil,True,0.0
+2021-03-31,Other Construction Materials,True,0.0
+2021-03-31,Other Consumer Services,True,0.0
+2021-03-31,"Paper, Forest & Jute Products",True,0.0
+2021-03-31,Personal Products,True,0.0
+2021-03-31,Petroleum Products,True,-4.440892098500626e-16
+2021-03-31,Pharmaceuticals & Biotechnology,True,0.0
+2021-03-31,Power,True,-2.220446049250313e-16
+2021-03-31,Realty,True,-2.220446049250313e-16
+2021-03-31,Retailing,True,0.0
+2021-03-31,Telecom -  Equipment & Accessories,True,0.0
+2021-03-31,Telecom - Services,True,0.0
+2021-03-31,Textiles & Apparels,True,0.0
+2021-03-31,Transport Infrastructure,True,0.0
+2021-03-31,Transport Services,True,0.0
+2021-06-30,Aerospace & Defense,True,0.0
+2021-06-30,Agricultural Food & other Products,True,-2.220446049250313e-16
+2021-06-30,"Agricultural, Commercial & Construction Vehicles",True,0.0
+2021-06-30,Auto Components,True,0.0
+2021-06-30,Automobiles,True,-2.220446049250313e-16
+2021-06-30,Banks,True,0.0
+2021-06-30,Beverages,True,-2.220446049250313e-16
+2021-06-30,Capital Markets,True,0.0
+2021-06-30,Cement & Cement Products,True,0.0
+2021-06-30,Chemicals & Petrochemicals,True,0.0
+2021-06-30,Commercial Services & Supplies,True,0.0
+2021-06-30,Construction,True,-4.440892098500626e-16
+2021-06-30,Consumer Durables,True,0.0
+2021-06-30,Diversified,True,0.0
+2021-06-30,Electrical Equipment,True,0.0
+2021-06-30,Entertainment,True,0.0
+2021-06-30,Ferrous Metals,True,-2.220446049250313e-16
+2021-06-30,Fertilizers & Agrochemicals,True,-4.440892098500626e-16
+2021-06-30,Finance,True,0.0
+2021-06-30,Food Products,True,0.0
+2021-06-30,Healthcare Services,True,0.0
+2021-06-30,Household Products,True,-2.220446049250313e-16
+2021-06-30,IT - Hardware,True,0.0
+2021-06-30,IT - Services,True,0.0
+2021-06-30,IT - Software,True,0.0
+2021-06-30,Industrial Manufacturing,True,0.0
+2021-06-30,Industrial Products,True,0.0
+2021-06-30,Leisure Services,True,0.0
+2021-06-30,Media,True,0.0
+2021-06-30,Minerals & Mining,True,-2.220446049250313e-16
+2021-06-30,Non - Ferrous Metals,True,0.0
+2021-06-30,Oil,True,0.0
+2021-06-30,Other Construction Materials,True,0.0
+2021-06-30,Other Consumer Services,True,0.0
+2021-06-30,"Paper, Forest & Jute Products",True,0.0
+2021-06-30,Personal Products,True,0.0
+2021-06-30,Petroleum Products,True,-4.440892098500626e-16
+2021-06-30,Pharmaceuticals & Biotechnology,True,0.0
+2021-06-30,Power,True,0.0
+2021-06-30,Realty,True,0.0
+2021-06-30,Retailing,True,-4.440892098500626e-16
+2021-06-30,Telecom -  Equipment & Accessories,True,0.0
+2021-06-30,Telecom - Services,True,0.0
+2021-06-30,Textiles & Apparels,True,0.0
+2021-06-30,Transport Infrastructure,True,0.0
+2021-06-30,Transport Services,True,0.0
+2021-09-30,Aerospace & Defense,True,-2.220446049250313e-16
+2021-09-30,Agricultural Food & other Products,True,0.0
+2021-09-30,"Agricultural, Commercial & Construction Vehicles",True,0.0
+2021-09-30,Auto Components,True,-4.440892098500626e-16
+2021-09-30,Automobiles,True,0.0
+2021-09-30,Banks,True,-4.440892098500626e-16
+2021-09-30,Beverages,True,0.0
+2021-09-30,Capital Markets,True,0.0
+2021-09-30,Cement & Cement Products,True,0.0
+2021-09-30,Chemicals & Petrochemicals,True,0.0
+2021-09-30,Commercial Services & Supplies,True,0.0
+2021-09-30,Construction,True,-4.440892098500626e-16
+2021-09-30,Consumer Durables,True,-2.220446049250313e-16
+2021-09-30,Diversified,True,0.0
+2021-09-30,Electrical Equipment,True,-4.440892098500626e-16
+2021-09-30,Entertainment,True,0.0
+2021-09-30,Ferrous Metals,True,0.0
+2021-09-30,Fertilizers & Agrochemicals,True,0.0
+2021-09-30,Finance,True,0.0
+2021-09-30,Food Products,True,0.0
+2021-09-30,Healthcare Services,True,0.0
+2021-09-30,Household Products,True,0.0
+2021-09-30,IT - Hardware,True,0.0
+2021-09-30,IT - Services,True,0.0
+2021-09-30,IT - Software,True,0.0
+2021-09-30,Industrial Manufacturing,True,-2.220446049250313e-16
+2021-09-30,Industrial Products,True,0.0
+2021-09-30,Leisure Services,True,0.0
+2021-09-30,Media,True,0.0
+2021-09-30,Minerals & Mining,True,-2.220446049250313e-16
+2021-09-30,Non - Ferrous Metals,True,0.0
+2021-09-30,Oil,True,0.0
+2021-09-30,Other Construction Materials,True,0.0
+2021-09-30,Other Consumer Services,True,0.0
+2021-09-30,"Paper, Forest & Jute Products",True,0.0
+2021-09-30,Personal Products,True,0.0
+2021-09-30,Petroleum Products,True,0.0
+2021-09-30,Pharmaceuticals & Biotechnology,True,-4.440892098500626e-16
+2021-09-30,Power,True,-4.440892098500626e-16
+2021-09-30,Realty,True,0.0
+2021-09-30,Retailing,True,-4.440892098500626e-16
+2021-09-30,Telecom -  Equipment & Accessories,True,0.0
+2021-09-30,Telecom - Services,True,-2.220446049250313e-16
+2021-09-30,Textiles & Apparels,True,0.0
+2021-09-30,Transport Infrastructure,True,0.0
+2021-09-30,Transport Services,True,0.0
+2021-12-31,Aerospace & Defense,True,0.0
+2021-12-31,Agricultural Food & other Products,True,0.0
+2021-12-31,"Agricultural, Commercial & Construction Vehicles",True,0.0
+2021-12-31,Auto Components,True,0.0
+2021-12-31,Automobiles,True,-2.220446049250313e-16
+2021-12-31,Banks,True,-4.440892098500626e-16
+2021-12-31,Beverages,True,0.0
+2021-12-31,Capital Markets,True,0.0
+2021-12-31,Cement & Cement Products,True,0.0
+2021-12-31,Chemicals & Petrochemicals,True,0.0
+2021-12-31,Commercial Services & Supplies,True,-2.220446049250313e-16
+2021-12-31,Construction,True,0.0
+2021-12-31,Consumer Durables,True,-2.220446049250313e-16
+2021-12-31,Diversified,True,0.0
+2021-12-31,Electrical Equipment,True,0.0
+2021-12-31,Entertainment,True,0.0
+2021-12-31,Ferrous Metals,True,0.0
+2021-12-31,Fertilizers & Agrochemicals,True,-4.440892098500626e-16
+2021-12-31,Finance,True,-4.440892098500626e-16
+2021-12-31,Food Products,True,0.0
+2021-12-31,Gas,True,0.0
+2021-12-31,Healthcare Services,True,0.0
+2021-12-31,Household Products,True,-2.220446049250313e-16
+2021-12-31,IT - Hardware,True,-2.220446049250313e-16
+2021-12-31,IT - Services,True,-4.440892098500626e-16
+2021-12-31,IT - Software,True,0.0
+2021-12-31,Industrial Manufacturing,True,0.0
+2021-12-31,Industrial Products,True,-2.220446049250313e-16
+2021-12-31,Leisure Services,True,-4.440892098500626e-16
+2021-12-31,Media,True,0.0
+2021-12-31,Minerals & Mining,True,-2.220446049250313e-16
+2021-12-31,Non - Ferrous Metals,True,0.0
+2021-12-31,Oil,True,0.0
+2021-12-31,Other Construction Materials,True,0.0
+2021-12-31,Other Consumer Services,True,0.0
+2021-12-31,"Paper, Forest & Jute Products",True,0.0
+2021-12-31,Personal Products,True,0.0
+2021-12-31,Petroleum Products,True,-2.220446049250313e-16
+2021-12-31,Pharmaceuticals & Biotechnology,True,-4.440892098500626e-16
+2021-12-31,Power,True,0.0
+2021-12-31,Realty,True,0.0
+2021-12-31,Retailing,True,-4.440892098500626e-16
+2021-12-31,Telecom -  Equipment & Accessories,True,0.0
+2021-12-31,Telecom - Services,True,0.0
+2021-12-31,Textiles & Apparels,True,0.0
+2021-12-31,Transport Infrastructure,True,0.0
+2021-12-31,Transport Services,True,-4.440892098500626e-16
+2022-03-31,Aerospace & Defense,True,-2.220446049250313e-16
+2022-03-31,Agricultural Food & other Products,True,0.0
+2022-03-31,"Agricultural, Commercial & Construction Vehicles",True,0.0
+2022-03-31,Auto Components,False,0.0
+2022-03-31,Automobiles,True,0.0
+2022-03-31,Banks,True,0.0
+2022-03-31,Beverages,True,0.0
+2022-03-31,Capital Markets,True,0.0
+2022-03-31,Cement & Cement Products,True,0.0
+2022-03-31,Chemicals & Petrochemicals,True,0.0
+2022-03-31,Commercial Services & Supplies,True,-2.220446049250313e-16
+2022-03-31,Construction,True,-4.440892098500626e-16
+2022-03-31,Consumer Durables,True,-2.220446049250313e-16
+2022-03-31,Diversified,True,0.0
+2022-03-31,Electrical Equipment,True,0.0
+2022-03-31,Entertainment,True,0.0
+2022-03-31,Ferrous Metals,True,-4.440892098500626e-16
+2022-03-31,Fertilizers & Agrochemicals,True,0.0
+2022-03-31,Finance,True,-2.220446049250313e-16
+2022-03-31,Food Products,True,0.0
+2022-03-31,Gas,True,-2.220446049250313e-16
+2022-03-31,Healthcare Services,True,0.0
+2022-03-31,Household Products,True,-2.220446049250313e-16
+2022-03-31,IT - Hardware,True,-4.440892098500626e-16
+2022-03-31,IT - Services,True,0.0
+2022-03-31,IT - Software,True,-2.220446049250313e-16
+2022-03-31,Industrial Manufacturing,True,0.0
+2022-03-31,Industrial Products,True,-4.440892098500626e-16
+2022-03-31,Leisure Services,True,-2.220446049250313e-16
+2022-03-31,Media,True,0.0
+2022-03-31,Minerals & Mining,True,0.0
+2022-03-31,Non - Ferrous Metals,True,0.0
+2022-03-31,Oil,True,0.0
+2022-03-31,Other Construction Materials,True,-4.440892098500626e-16
+2022-03-31,Other Consumer Services,True,0.0
+2022-03-31,"Paper, Forest & Jute Products",True,0.0
+2022-03-31,Personal Products,True,0.0
+2022-03-31,Petroleum Products,True,0.0
+2022-03-31,Pharmaceuticals & Biotechnology,True,0.0
+2022-03-31,Power,True,0.0
+2022-03-31,Realty,True,0.0
+2022-03-31,Retailing,True,-4.440892098500626e-16
+2022-03-31,Telecom -  Equipment & Accessories,True,0.0
+2022-03-31,Telecom - Services,True,-2.220446049250313e-16
+2022-03-31,Textiles & Apparels,True,0.0
+2022-03-31,Transport Infrastructure,True,0.0
+2022-03-31,Transport Services,True,0.0
+2022-06-30,Aerospace & Defense,True,0.0
+2022-06-30,Agricultural Food & other Products,True,0.0
+2022-06-30,"Agricultural, Commercial & Construction Vehicles",True,0.0
+2022-06-30,Auto Components,True,0.0
+2022-06-30,Automobiles,True,0.0
+2022-06-30,Banks,True,0.0
+2022-06-30,Beverages,True,0.0
+2022-06-30,Capital Markets,True,-2.220446049250313e-16
+2022-06-30,Cement & Cement Products,True,0.0
+2022-06-30,Chemicals & Petrochemicals,True,-2.220446049250313e-16
+2022-06-30,Commercial Services & Supplies,True,0.0
+2022-06-30,Construction,True,0.0
+2022-06-30,Consumer Durables,True,0.0
+2022-06-30,Diversified,True,0.0
+2022-06-30,Electrical Equipment,True,-2.220446049250313e-16
+2022-06-30,Entertainment,True,0.0
+2022-06-30,Ferrous Metals,True,0.0
+2022-06-30,Fertilizers & Agrochemicals,True,-2.220446049250313e-16
+2022-06-30,Finance,True,-4.440892098500626e-16
+2022-06-30,Food Products,True,0.0
+2022-06-30,Gas,True,-2.220446049250313e-16
+2022-06-30,Healthcare Services,True,0.0
+2022-06-30,Household Products,True,-2.220446049250313e-16
+2022-06-30,IT - Hardware,True,-2.220446049250313e-16
+2022-06-30,IT - Services,True,-4.440892098500626e-16
+2022-06-30,IT - Software,True,0.0
+2022-06-30,Industrial Manufacturing,True,0.0
+2022-06-30,Industrial Products,True,0.0
+2022-06-30,Leisure Services,True,-2.220446049250313e-16
+2022-06-30,Media,True,0.0
+2022-06-30,Minerals & Mining,True,-2.220446049250313e-16
+2022-06-30,Non - Ferrous Metals,True,0.0
+2022-06-30,Oil,True,0.0
+2022-06-30,Other Construction Materials,True,0.0
+2022-06-30,Other Consumer Services,True,-2.220446049250313e-16
+2022-06-30,"Paper, Forest & Jute Products",True,0.0
+2022-06-30,Personal Products,True,0.0
+2022-06-30,Petroleum Products,True,0.0
+2022-06-30,Pharmaceuticals & Biotechnology,True,0.0
+2022-06-30,Power,True,-1.1102230246251565e-16
+2022-06-30,Realty,True,0.0
+2022-06-30,Retailing,True,-2.220446049250313e-16
+2022-06-30,Telecom -  Equipment & Accessories,True,0.0
+2022-06-30,Telecom - Services,True,0.0
+2022-06-30,Textiles & Apparels,True,0.0
+2022-06-30,Transport Infrastructure,True,0.0
+2022-06-30,Transport Services,True,-2.220446049250313e-16
+2022-09-30,Aerospace & Defense,True,0.0
+2022-09-30,Agricultural Food & other Products,True,0.0
+2022-09-30,"Agricultural, Commercial & Construction Vehicles",True,0.0
+2022-09-30,Auto Components,True,0.0
+2022-09-30,Automobiles,True,0.0
+2022-09-30,Banks,True,0.0
+2022-09-30,Beverages,True,0.0
+2022-09-30,Capital Markets,True,-2.220446049250313e-16
+2022-09-30,Cement & Cement Products,True,0.0
+2022-09-30,Chemicals & Petrochemicals,True,0.0
+2022-09-30,Commercial Services & Supplies,True,-2.220446049250313e-16
+2022-09-30,Construction,True,0.0
+2022-09-30,Consumer Durables,True,0.0
+2022-09-30,Diversified,True,0.0
+2022-09-30,Electrical Equipment,True,-4.440892098500626e-16
+2022-09-30,Entertainment,True,0.0
+2022-09-30,Ferrous Metals,True,0.0
+2022-09-30,Fertilizers & Agrochemicals,True,0.0
+2022-09-30,Finance,True,0.0
+2022-09-30,Food Products,True,0.0
+2022-09-30,Gas,True,-2.220446049250313e-16
+2022-09-30,Healthcare Services,True,0.0
+2022-09-30,Household Products,True,0.0
+2022-09-30,IT - Hardware,True,0.0
+2022-09-30,IT - Services,True,0.0
+2022-09-30,IT - Software,True,0.0
+2022-09-30,Industrial Manufacturing,True,0.0
+2022-09-30,Industrial Products,True,0.0
+2022-09-30,Leisure Services,True,-2.220446049250313e-16
+2022-09-30,Media,True,-2.220446049250313e-16
+2022-09-30,Minerals & Mining,True,0.0
+2022-09-30,Non - Ferrous Metals,True,0.0
+2022-09-30,Oil,True,-2.220446049250313e-16
+2022-09-30,Other Construction Materials,True,-2.220446049250313e-16
+2022-09-30,Other Consumer Services,True,0.0
+2022-09-30,"Paper, Forest & Jute Products",True,0.0
+2022-09-30,Personal Products,True,0.0
+2022-09-30,Petroleum Products,True,0.0
+2022-09-30,Pharmaceuticals & Biotechnology,True,0.0
+2022-09-30,Power,True,0.0
+2022-09-30,Realty,True,0.0
+2022-09-30,Retailing,True,-4.440892098500626e-16
+2022-09-30,Telecom -  Equipment & Accessories,True,0.0
+2022-09-30,Telecom - Services,True,0.0
+2022-09-30,Textiles & Apparels,True,0.0
+2022-09-30,Transport Infrastructure,True,-4.440892098500626e-16
+2022-09-30,Transport Services,True,0.0
+2022-12-31,Aerospace & Defense,True,0.0
+2022-12-31,Agricultural Food & other Products,True,0.0
+2022-12-31,"Agricultural, Commercial & Construction Vehicles",True,0.0
+2022-12-31,Auto Components,True,-2.220446049250313e-16
+2022-12-31,Automobiles,True,0.0
+2022-12-31,Banks,True,0.0
+2022-12-31,Beverages,True,0.0
+2022-12-31,Capital Markets,True,0.0
+2022-12-31,Cement & Cement Products,True,0.0
+2022-12-31,Chemicals & Petrochemicals,True,0.0
+2022-12-31,Commercial Services & Supplies,True,0.0
+2022-12-31,Construction,True,0.0
+2022-12-31,Consumer Durables,True,0.0
+2022-12-31,Diversified,True,0.0
+2022-12-31,Electrical Equipment,True,0.0
+2022-12-31,Entertainment,True,0.0
+2022-12-31,Ferrous Metals,True,-2.220446049250313e-16
+2022-12-31,Fertilizers & Agrochemicals,True,0.0
+2022-12-31,Finance,True,-4.440892098500626e-16
+2022-12-31,Food Products,True,0.0
+2022-12-31,Healthcare Services,True,-2.220446049250313e-16
+2022-12-31,Household Products,True,-2.220446049250313e-16
+2022-12-31,IT - Hardware,True,-2.220446049250313e-16
+2022-12-31,IT - Services,True,0.0
+2022-12-31,IT - Software,True,-2.220446049250313e-16
+2022-12-31,Industrial Manufacturing,True,0.0
+2022-12-31,Industrial Products,True,0.0
+2022-12-31,Insurance,True,0.0
+2022-12-31,Leisure Services,True,0.0
+2022-12-31,Media,True,0.0
+2022-12-31,Metals & Minerals Trading,True,-4.440892098500626e-16
+2022-12-31,Minerals & Mining,True,0.0
+2022-12-31,Non - Ferrous Metals,True,-2.220446049250313e-16
+2022-12-31,Oil,True,0.0
+2022-12-31,Other Construction Materials,True,0.0
+2022-12-31,Other Consumer Services,True,0.0
+2022-12-31,"Paper, Forest & Jute Products",True,0.0
+2022-12-31,Personal Products,True,0.0
+2022-12-31,Petroleum Products,True,-2.220446049250313e-16
+2022-12-31,Pharmaceuticals & Biotechnology,True,0.0
+2022-12-31,Power,True,0.0
+2022-12-31,Realty,True,-2.220446049250313e-16
+2022-12-31,Retailing,True,0.0
+2022-12-31,Telecom -  Equipment & Accessories,True,0.0
+2022-12-31,Telecom - Services,True,0.0
+2022-12-31,Textiles & Apparels,True,0.0
+2022-12-31,Transport Infrastructure,True,-2.220446049250313e-16
+2022-12-31,Transport Services,True,0.0
+2023-03-31,Aerospace & Defense,True,0.0
+2023-03-31,Agricultural Food & other Products,True,0.0
+2023-03-31,"Agricultural, Commercial & Construction Vehicles",True,-4.440892098500626e-16
+2023-03-31,Auto Components,True,-4.440892098500626e-16
+2023-03-31,Automobiles,True,-2.220446049250313e-16
+2023-03-31,Banks,True,0.0
+2023-03-31,Beverages,True,0.0
+2023-03-31,Capital Markets,True,0.0
+2023-03-31,Cement & Cement Products,True,0.0
+2023-03-31,Chemicals & Petrochemicals,True,0.0
+2023-03-31,Commercial Services & Supplies,True,0.0
+2023-03-31,Construction,True,0.0
+2023-03-31,Consumer Durables,True,0.0
+2023-03-31,Diversified,True,0.0
+2023-03-31,Electrical Equipment,True,0.0
+2023-03-31,Entertainment,False,0.0
+2023-03-31,Ferrous Metals,True,0.0
+2023-03-31,Fertilizers & Agrochemicals,True,0.0
+2023-03-31,Finance,True,-2.220446049250313e-16
+2023-03-31,Food Products,True,-4.440892098500626e-16
+2023-03-31,Gas,True,-2.220446049250313e-16
+2023-03-31,Healthcare Services,True,0.0
+2023-03-31,Household Products,True,-2.220446049250313e-16
+2023-03-31,IT - Hardware,True,0.0
+2023-03-31,IT - Services,True,-2.220446049250313e-16
+2023-03-31,IT - Software,True,0.0
+2023-03-31,Industrial Manufacturing,True,0.0
+2023-03-31,Industrial Products,True,0.0
+2023-03-31,Insurance,True,0.0
+2023-03-31,Leisure Services,True,0.0
+2023-03-31,Media,True,0.0
+2023-03-31,Metals & Minerals Trading,True,-2.220446049250313e-16
+2023-03-31,Minerals & Mining,True,-2.220446049250313e-16
+2023-03-31,Non - Ferrous Metals,True,-2.220446049250313e-16
+2023-03-31,Oil,True,-4.440892098500626e-16
+2023-03-31,Other Construction Materials,True,0.0
+2023-03-31,Other Consumer Services,True,0.0
+2023-03-31,"Paper, Forest & Jute Products",True,0.0
+2023-03-31,Personal Products,True,-4.440892098500626e-16
+2023-03-31,Petroleum Products,True,-2.220446049250313e-16
+2023-03-31,Pharmaceuticals & Biotechnology,True,0.0
+2023-03-31,Power,True,0.0
+2023-03-31,Realty,True,0.0
+2023-03-31,Retailing,True,0.0
+2023-03-31,Telecom -  Equipment & Accessories,True,-2.220446049250313e-16
+2023-03-31,Telecom - Services,True,0.0
+2023-03-31,Textiles & Apparels,True,0.0
+2023-03-31,Transport Infrastructure,True,0.0
+2023-03-31,Transport Services,True,0.0
+2023-06-30,Aerospace & Defense,True,-2.220446049250313e-16
+2023-06-30,Agricultural Food & other Products,True,0.0
+2023-06-30,"Agricultural, Commercial & Construction Vehicles",True,0.0
+2023-06-30,Auto Components,True,0.0
+2023-06-30,Automobiles,True,-1.1102230246251565e-16
+2023-06-30,Banks,True,0.0
+2023-06-30,Beverages,True,0.0
+2023-06-30,Capital Markets,True,0.0
+2023-06-30,Cement & Cement Products,True,0.0
+2023-06-30,Chemicals & Petrochemicals,True,0.0
+2023-06-30,Commercial Services & Supplies,True,-2.220446049250313e-16
+2023-06-30,Construction,True,0.0
+2023-06-30,Consumer Durables,True,-2.220446049250313e-16
+2023-06-30,Diversified,True,0.0
+2023-06-30,Electrical Equipment,True,0.0
+2023-06-30,Entertainment,True,-2.220446049250313e-16
+2023-06-30,Ferrous Metals,True,0.0
+2023-06-30,Fertilizers & Agrochemicals,True,0.0
+2023-06-30,Finance,True,0.0
+2023-06-30,Food Products,True,-4.440892098500626e-16
+2023-06-30,Gas,True,-2.220446049250313e-16
+2023-06-30,Healthcare Services,True,-2.220446049250313e-16
+2023-06-30,Household Products,True,-1.1102230246251565e-16
+2023-06-30,IT - Hardware,True,0.0
+2023-06-30,IT - Services,True,0.0
+2023-06-30,IT - Software,True,0.0
+2023-06-30,Industrial Manufacturing,True,0.0
+2023-06-30,Industrial Products,True,0.0
+2023-06-30,Insurance,True,-4.440892098500626e-16
+2023-06-30,Leisure Services,True,0.0
+2023-06-30,Media,True,0.0
+2023-06-30,Metals & Minerals Trading,True,0.0
+2023-06-30,Minerals & Mining,True,0.0
+2023-06-30,Non - Ferrous Metals,True,0.0
+2023-06-30,Oil,True,0.0
+2023-06-30,Other Construction Materials,True,-2.220446049250313e-16
+2023-06-30,Other Consumer Services,True,0.0
+2023-06-30,"Paper, Forest & Jute Products",True,-2.220446049250313e-16
+2023-06-30,Personal Products,True,-4.440892098500626e-16
+2023-06-30,Petroleum Products,True,0.0
+2023-06-30,Pharmaceuticals & Biotechnology,True,0.0
+2023-06-30,Power,True,-2.220446049250313e-16
+2023-06-30,Realty,True,0.0
+2023-06-30,Retailing,True,-2.220446049250313e-16
+2023-06-30,Telecom -  Equipment & Accessories,True,-2.220446049250313e-16
+2023-06-30,Telecom - Services,True,0.0
+2023-06-30,Textiles & Apparels,True,0.0
+2023-06-30,Transport Infrastructure,True,0.0
+2023-06-30,Transport Services,True,0.0
+2023-09-30,Aerospace & Defense,True,0.0
+2023-09-30,Agricultural Food & other Products,True,-4.440892098500626e-16
+2023-09-30,"Agricultural, Commercial & Construction Vehicles",True,0.0
+2023-09-30,Auto Components,True,0.0
+2023-09-30,Automobiles,True,0.0
+2023-09-30,Banks,True,0.0
+2023-09-30,Beverages,True,0.0
+2023-09-30,Capital Markets,True,0.0
+2023-09-30,Cement & Cement Products,True,0.0
+2023-09-30,Chemicals & Petrochemicals,True,-4.440892098500626e-16
+2023-09-30,Commercial Services & Supplies,True,0.0
+2023-09-30,Construction,True,-4.440892098500626e-16
+2023-09-30,Consumer Durables,True,-2.220446049250313e-16
+2023-09-30,Diversified,True,0.0
+2023-09-30,Electrical Equipment,True,-4.440892098500626e-16
+2023-09-30,Entertainment,True,-2.220446049250313e-16
+2023-09-30,Ferrous Metals,True,-2.220446049250313e-16
+2023-09-30,Fertilizers & Agrochemicals,True,0.0
+2023-09-30,Finance,True,0.0
+2023-09-30,Food Products,True,0.0
+2023-09-30,Gas,True,0.0
+2023-09-30,Healthcare Services,True,0.0
+2023-09-30,Household Products,True,0.0
+2023-09-30,IT - Hardware,True,0.0
+2023-09-30,IT - Services,True,-4.440892098500626e-16
+2023-09-30,IT - Software,True,0.0
+2023-09-30,Industrial Manufacturing,True,0.0
+2023-09-30,Industrial Products,True,-1.1102230246251565e-16
+2023-09-30,Insurance,True,-2.220446049250313e-16
+2023-09-30,Leisure Services,True,-4.440892098500626e-16
+2023-09-30,Media,True,-2.220446049250313e-16
+2023-09-30,Metals & Minerals Trading,True,0.0
+2023-09-30,Minerals & Mining,True,0.0
+2023-09-30,Non - Ferrous Metals,True,0.0
+2023-09-30,Oil,True,-2.220446049250313e-16
+2023-09-30,Other Construction Materials,True,0.0
+2023-09-30,Other Consumer Services,True,-2.220446049250313e-16
+2023-09-30,"Paper, Forest & Jute Products",True,-1.1102230246251565e-16
+2023-09-30,Personal Products,True,-2.220446049250313e-16
+2023-09-30,Petroleum Products,True,0.0
+2023-09-30,Pharmaceuticals & Biotechnology,True,0.0
+2023-09-30,Power,True,0.0
+2023-09-30,Realty,True,0.0
+2023-09-30,Retailing,True,-4.440892098500626e-16
+2023-09-30,Telecom -  Equipment & Accessories,True,0.0
+2023-09-30,Telecom - Services,True,0.0
+2023-09-30,Textiles & Apparels,True,0.0
+2023-09-30,Transport Infrastructure,True,0.0
+2023-09-30,Transport Services,True,0.0
+2023-12-31,Aerospace & Defense,True,-2.220446049250313e-16
+2023-12-31,Agricultural Food & other Products,True,0.0
+2023-12-31,"Agricultural, Commercial & Construction Vehicles",True,0.0
+2023-12-31,Auto Components,True,0.0
+2023-12-31,Automobiles,True,0.0
+2023-12-31,Banks,True,-4.440892098500626e-16
+2023-12-31,Beverages,True,0.0
+2023-12-31,Capital Markets,True,0.0
+2023-12-31,Cement & Cement Products,True,0.0
+2023-12-31,Chemicals & Petrochemicals,True,0.0
+2023-12-31,Commercial Services & Supplies,True,-2.220446049250313e-16
+2023-12-31,Construction,True,0.0
+2023-12-31,Consumer Durables,True,-2.220446049250313e-16
+2023-12-31,Diversified,True,0.0
+2023-12-31,Electrical Equipment,True,0.0
+2023-12-31,Entertainment,True,0.0
+2023-12-31,Ferrous Metals,True,0.0
+2023-12-31,Fertilizers & Agrochemicals,True,0.0
+2023-12-31,Finance,True,0.0
+2023-12-31,Food Products,True,-4.440892098500626e-16
+2023-12-31,Gas,True,-1.1102230246251565e-16
+2023-12-31,Healthcare Services,True,0.0
+2023-12-31,Household Products,True,0.0
+2023-12-31,IT - Hardware,True,0.0
+2023-12-31,IT - Services,True,-2.220446049250313e-16
+2023-12-31,IT - Software,True,0.0
+2023-12-31,Industrial Manufacturing,True,0.0
+2023-12-31,Industrial Products,True,0.0
+2023-12-31,Insurance,True,-4.440892098500626e-16
+2023-12-31,Leisure Services,True,0.0
+2023-12-31,Media,True,0.0
+2023-12-31,Metals & Minerals Trading,True,-2.220446049250313e-16
+2023-12-31,Minerals & Mining,True,0.0
+2023-12-31,Non - Ferrous Metals,True,0.0
+2023-12-31,Oil,True,-2.220446049250313e-16
+2023-12-31,Other Construction Materials,True,0.0
+2023-12-31,Other Consumer Services,True,0.0
+2023-12-31,"Paper, Forest & Jute Products",True,-2.220446049250313e-16
+2023-12-31,Personal Products,True,0.0
+2023-12-31,Petroleum Products,True,-2.220446049250313e-16
+2023-12-31,Pharmaceuticals & Biotechnology,True,0.0
+2023-12-31,Power,True,0.0
+2023-12-31,Realty,True,0.0
+2023-12-31,Retailing,True,0.0
+2023-12-31,Telecom -  Equipment & Accessories,True,0.0
+2023-12-31,Telecom - Services,True,-2.220446049250313e-16
+2023-12-31,Textiles & Apparels,True,-4.440892098500626e-16
+2023-12-31,Transport Infrastructure,True,0.0
+2023-12-31,Transport Services,True,0.0

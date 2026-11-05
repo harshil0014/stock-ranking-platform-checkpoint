@@ -1,0 +1,5 @@
+{
+  "reason": "Post-result diagnostic: within-sector rank normalization ties many sector leaders at1.0, so compare raw champion scores and randomized boundary ties",
+  "random_seeds": 100,
+  "selection_updates": false
+}

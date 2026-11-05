@@ -1,0 +1,1157 @@
+decision_date,sector,model,changed,overlap
+2024-03-31,Aerospace & Defense,champion,False,1.0
+2024-03-31,Aerospace & Defense,risk_constrained_high,False,1.0
+2024-03-31,Agricultural Food & other Products,champion,False,1.0
+2024-03-31,Agricultural Food & other Products,risk_constrained_high,False,1.0
+2024-03-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2024-03-31,"Agricultural, Commercial & Construction Vehicles",risk_constrained_high,False,1.0
+2024-03-31,Auto Components,champion,False,1.0
+2024-03-31,Auto Components,risk_constrained_high,False,1.0
+2024-03-31,Automobiles,champion,False,1.0
+2024-03-31,Automobiles,risk_constrained_high,False,1.0
+2024-03-31,Banks,champion,False,1.0
+2024-03-31,Banks,risk_constrained_high,False,1.0
+2024-03-31,Beverages,champion,False,1.0
+2024-03-31,Beverages,risk_constrained_high,False,1.0
+2024-03-31,Capital Markets,champion,False,1.0
+2024-03-31,Capital Markets,risk_constrained_high,False,1.0
+2024-03-31,Cement & Cement Products,champion,False,1.0
+2024-03-31,Cement & Cement Products,risk_constrained_high,False,1.0
+2024-03-31,Chemicals & Petrochemicals,champion,False,1.0
+2024-03-31,Chemicals & Petrochemicals,risk_constrained_high,False,1.0
+2024-03-31,Commercial Services & Supplies,champion,False,1.0
+2024-03-31,Commercial Services & Supplies,risk_constrained_high,False,1.0
+2024-03-31,Construction,champion,False,1.0
+2024-03-31,Construction,risk_constrained_high,True,0.3333333333333333
+2024-03-31,Consumer Durables,champion,False,1.0
+2024-03-31,Consumer Durables,risk_constrained_high,False,1.0
+2024-03-31,Diversified,champion,False,1.0
+2024-03-31,Diversified,risk_constrained_high,False,1.0
+2024-03-31,Electrical Equipment,champion,False,1.0
+2024-03-31,Electrical Equipment,risk_constrained_high,False,1.0
+2024-03-31,Entertainment,champion,False,1.0
+2024-03-31,Entertainment,risk_constrained_high,False,1.0
+2024-03-31,Ferrous Metals,champion,False,1.0
+2024-03-31,Ferrous Metals,risk_constrained_high,False,1.0
+2024-03-31,Fertilizers & Agrochemicals,champion,False,1.0
+2024-03-31,Fertilizers & Agrochemicals,risk_constrained_high,False,1.0
+2024-03-31,Finance,champion,False,1.0
+2024-03-31,Finance,risk_constrained_high,True,0.6666666666666666
+2024-03-31,Food Products,champion,False,1.0
+2024-03-31,Food Products,risk_constrained_high,False,1.0
+2024-03-31,Gas,champion,False,1.0
+2024-03-31,Gas,risk_constrained_high,False,1.0
+2024-03-31,Healthcare Services,champion,False,1.0
+2024-03-31,Healthcare Services,risk_constrained_high,False,1.0
+2024-03-31,Household Products,champion,False,1.0
+2024-03-31,Household Products,risk_constrained_high,False,1.0
+2024-03-31,IT - Hardware,champion,False,1.0
+2024-03-31,IT - Hardware,risk_constrained_high,False,1.0
+2024-03-31,IT - Services,champion,False,1.0
+2024-03-31,IT - Services,risk_constrained_high,False,1.0
+2024-03-31,IT - Software,champion,False,1.0
+2024-03-31,IT - Software,risk_constrained_high,False,1.0
+2024-03-31,Industrial Manufacturing,champion,False,1.0
+2024-03-31,Industrial Manufacturing,risk_constrained_high,False,1.0
+2024-03-31,Industrial Products,champion,False,1.0
+2024-03-31,Industrial Products,risk_constrained_high,False,1.0
+2024-03-31,Insurance,champion,False,1.0
+2024-03-31,Insurance,risk_constrained_high,False,1.0
+2024-03-31,Leisure Services,champion,False,1.0
+2024-03-31,Leisure Services,risk_constrained_high,False,1.0
+2024-03-31,Media,champion,False,1.0
+2024-03-31,Media,risk_constrained_high,False,1.0
+2024-03-31,Metals & Minerals Trading,champion,False,1.0
+2024-03-31,Metals & Minerals Trading,risk_constrained_high,False,1.0
+2024-03-31,Minerals & Mining,champion,False,1.0
+2024-03-31,Minerals & Mining,risk_constrained_high,False,1.0
+2024-03-31,Non - Ferrous Metals,champion,False,1.0
+2024-03-31,Non - Ferrous Metals,risk_constrained_high,False,1.0
+2024-03-31,Oil,champion,False,1.0
+2024-03-31,Oil,risk_constrained_high,False,1.0
+2024-03-31,Other Construction Materials,champion,False,1.0
+2024-03-31,Other Construction Materials,risk_constrained_high,False,1.0
+2024-03-31,Other Consumer Services,champion,False,1.0
+2024-03-31,Other Consumer Services,risk_constrained_high,False,1.0
+2024-03-31,"Paper, Forest & Jute Products",champion,False,1.0
+2024-03-31,"Paper, Forest & Jute Products",risk_constrained_high,False,1.0
+2024-03-31,Personal Products,champion,False,1.0
+2024-03-31,Personal Products,risk_constrained_high,False,1.0
+2024-03-31,Petroleum Products,champion,False,1.0
+2024-03-31,Petroleum Products,risk_constrained_high,False,1.0
+2024-03-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2024-03-31,Pharmaceuticals & Biotechnology,risk_constrained_high,True,0.3333333333333333
+2024-03-31,Power,champion,False,1.0
+2024-03-31,Power,risk_constrained_high,True,0.6666666666666666
+2024-03-31,Realty,champion,False,1.0
+2024-03-31,Realty,risk_constrained_high,True,0.3333333333333333
+2024-03-31,Retailing,champion,False,1.0
+2024-03-31,Retailing,risk_constrained_high,True,0.6666666666666666
+2024-03-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2024-03-31,Telecom -  Equipment & Accessories,risk_constrained_high,False,1.0
+2024-03-31,Telecom - Services,champion,False,1.0
+2024-03-31,Telecom - Services,risk_constrained_high,False,1.0
+2024-03-31,Textiles & Apparels,champion,False,1.0
+2024-03-31,Textiles & Apparels,risk_constrained_high,False,1.0
+2024-03-31,Transport Infrastructure,champion,False,1.0
+2024-03-31,Transport Infrastructure,risk_constrained_high,False,1.0
+2024-03-31,Transport Services,champion,False,1.0
+2024-03-31,Transport Services,risk_constrained_high,False,1.0
+2024-06-30,Aerospace & Defense,champion,False,1.0
+2024-06-30,Aerospace & Defense,risk_constrained_high,False,1.0
+2024-06-30,Agricultural Food & other Products,champion,False,1.0
+2024-06-30,Agricultural Food & other Products,risk_constrained_high,False,1.0
+2024-06-30,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2024-06-30,"Agricultural, Commercial & Construction Vehicles",risk_constrained_high,False,1.0
+2024-06-30,Auto Components,champion,False,1.0
+2024-06-30,Auto Components,risk_constrained_high,True,0.6666666666666666
+2024-06-30,Automobiles,champion,False,1.0
+2024-06-30,Automobiles,risk_constrained_high,False,1.0
+2024-06-30,Banks,champion,False,1.0
+2024-06-30,Banks,risk_constrained_high,False,1.0
+2024-06-30,Beverages,champion,False,1.0
+2024-06-30,Beverages,risk_constrained_high,False,1.0
+2024-06-30,Capital Markets,champion,False,1.0
+2024-06-30,Capital Markets,risk_constrained_high,False,1.0
+2024-06-30,Cement & Cement Products,champion,False,1.0
+2024-06-30,Cement & Cement Products,risk_constrained_high,False,1.0
+2024-06-30,Chemicals & Petrochemicals,champion,False,1.0
+2024-06-30,Chemicals & Petrochemicals,risk_constrained_high,False,1.0
+2024-06-30,Commercial Services & Supplies,champion,False,1.0
+2024-06-30,Commercial Services & Supplies,risk_constrained_high,False,1.0
+2024-06-30,Construction,champion,False,1.0
+2024-06-30,Construction,risk_constrained_high,False,1.0
+2024-06-30,Consumer Durables,champion,False,1.0
+2024-06-30,Consumer Durables,risk_constrained_high,False,1.0
+2024-06-30,Diversified,champion,False,1.0
+2024-06-30,Diversified,risk_constrained_high,False,1.0
+2024-06-30,Electrical Equipment,champion,False,1.0
+2024-06-30,Electrical Equipment,risk_constrained_high,False,1.0
+2024-06-30,Entertainment,champion,False,1.0
+2024-06-30,Entertainment,risk_constrained_high,False,1.0
+2024-06-30,Ferrous Metals,champion,False,1.0
+2024-06-30,Ferrous Metals,risk_constrained_high,True,0.6666666666666666
+2024-06-30,Fertilizers & Agrochemicals,champion,False,1.0
+2024-06-30,Fertilizers & Agrochemicals,risk_constrained_high,False,1.0
+2024-06-30,Finance,champion,False,1.0
+2024-06-30,Finance,risk_constrained_high,False,1.0
+2024-06-30,Food Products,champion,False,1.0
+2024-06-30,Food Products,risk_constrained_high,False,1.0
+2024-06-30,Gas,champion,False,1.0
+2024-06-30,Gas,risk_constrained_high,False,1.0
+2024-06-30,Healthcare Services,champion,False,1.0
+2024-06-30,Healthcare Services,risk_constrained_high,False,1.0
+2024-06-30,Household Products,champion,False,1.0
+2024-06-30,Household Products,risk_constrained_high,False,1.0
+2024-06-30,IT - Hardware,champion,False,1.0
+2024-06-30,IT - Hardware,risk_constrained_high,False,1.0
+2024-06-30,IT - Services,champion,False,1.0
+2024-06-30,IT - Services,risk_constrained_high,False,1.0
+2024-06-30,IT - Software,champion,False,1.0
+2024-06-30,IT - Software,risk_constrained_high,False,1.0
+2024-06-30,Industrial Manufacturing,champion,False,1.0
+2024-06-30,Industrial Manufacturing,risk_constrained_high,False,1.0
+2024-06-30,Industrial Products,champion,False,1.0
+2024-06-30,Industrial Products,risk_constrained_high,False,1.0
+2024-06-30,Insurance,champion,False,1.0
+2024-06-30,Insurance,risk_constrained_high,False,1.0
+2024-06-30,Leisure Services,champion,False,1.0
+2024-06-30,Leisure Services,risk_constrained_high,False,1.0
+2024-06-30,Media,champion,False,1.0
+2024-06-30,Media,risk_constrained_high,False,1.0
+2024-06-30,Metals & Minerals Trading,champion,False,1.0
+2024-06-30,Metals & Minerals Trading,risk_constrained_high,False,1.0
+2024-06-30,Minerals & Mining,champion,False,1.0
+2024-06-30,Minerals & Mining,risk_constrained_high,False,1.0
+2024-06-30,Non - Ferrous Metals,champion,False,1.0
+2024-06-30,Non - Ferrous Metals,risk_constrained_high,False,1.0
+2024-06-30,Oil,champion,False,1.0
+2024-06-30,Oil,risk_constrained_high,False,1.0
+2024-06-30,Other Construction Materials,champion,False,1.0
+2024-06-30,Other Construction Materials,risk_constrained_high,False,1.0
+2024-06-30,Other Consumer Services,champion,False,1.0
+2024-06-30,Other Consumer Services,risk_constrained_high,False,1.0
+2024-06-30,"Paper, Forest & Jute Products",champion,False,1.0
+2024-06-30,"Paper, Forest & Jute Products",risk_constrained_high,False,1.0
+2024-06-30,Personal Products,champion,False,1.0
+2024-06-30,Personal Products,risk_constrained_high,False,1.0
+2024-06-30,Petroleum Products,champion,False,1.0
+2024-06-30,Petroleum Products,risk_constrained_high,False,1.0
+2024-06-30,Pharmaceuticals & Biotechnology,champion,False,1.0
+2024-06-30,Pharmaceuticals & Biotechnology,risk_constrained_high,False,1.0
+2024-06-30,Power,champion,False,1.0
+2024-06-30,Power,risk_constrained_high,False,1.0
+2024-06-30,Realty,champion,False,1.0
+2024-06-30,Realty,risk_constrained_high,False,1.0
+2024-06-30,Retailing,champion,False,1.0
+2024-06-30,Retailing,risk_constrained_high,False,1.0
+2024-06-30,Telecom -  Equipment & Accessories,champion,False,1.0
+2024-06-30,Telecom -  Equipment & Accessories,risk_constrained_high,False,1.0
+2024-06-30,Telecom - Services,champion,False,1.0
+2024-06-30,Telecom - Services,risk_constrained_high,False,1.0
+2024-06-30,Textiles & Apparels,champion,False,1.0
+2024-06-30,Textiles & Apparels,risk_constrained_high,False,1.0
+2024-06-30,Transport Infrastructure,champion,False,1.0
+2024-06-30,Transport Infrastructure,risk_constrained_high,False,1.0
+2024-06-30,Transport Services,champion,False,1.0
+2024-06-30,Transport Services,risk_constrained_high,False,1.0
+2024-09-30,Aerospace & Defense,champion,False,1.0
+2024-09-30,Aerospace & Defense,risk_constrained_high,True,0.6666666666666666
+2024-09-30,Agricultural Food & other Products,champion,False,1.0
+2024-09-30,Agricultural Food & other Products,risk_constrained_high,False,1.0
+2024-09-30,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2024-09-30,"Agricultural, Commercial & Construction Vehicles",risk_constrained_high,False,1.0
+2024-09-30,Auto Components,champion,False,1.0
+2024-09-30,Auto Components,risk_constrained_high,True,0.6666666666666666
+2024-09-30,Automobiles,champion,False,1.0
+2024-09-30,Automobiles,risk_constrained_high,False,1.0
+2024-09-30,Banks,champion,False,1.0
+2024-09-30,Banks,risk_constrained_high,False,1.0
+2024-09-30,Beverages,champion,False,1.0
+2024-09-30,Beverages,risk_constrained_high,False,1.0
+2024-09-30,Capital Markets,champion,False,1.0
+2024-09-30,Capital Markets,risk_constrained_high,False,1.0
+2024-09-30,Cement & Cement Products,champion,False,1.0
+2024-09-30,Cement & Cement Products,risk_constrained_high,False,1.0
+2024-09-30,Chemicals & Petrochemicals,champion,False,1.0
+2024-09-30,Chemicals & Petrochemicals,risk_constrained_high,False,1.0
+2024-09-30,Commercial Services & Supplies,champion,False,1.0
+2024-09-30,Commercial Services & Supplies,risk_constrained_high,False,1.0
+2024-09-30,Construction,champion,False,1.0
+2024-09-30,Construction,risk_constrained_high,False,1.0
+2024-09-30,Consumer Durables,champion,False,1.0
+2024-09-30,Consumer Durables,risk_constrained_high,False,1.0
+2024-09-30,Diversified,champion,False,1.0
+2024-09-30,Diversified,risk_constrained_high,False,1.0
+2024-09-30,Electrical Equipment,champion,False,1.0
+2024-09-30,Electrical Equipment,risk_constrained_high,False,1.0
+2024-09-30,Entertainment,champion,False,1.0
+2024-09-30,Entertainment,risk_constrained_high,False,1.0
+2024-09-30,Ferrous Metals,champion,False,1.0
+2024-09-30,Ferrous Metals,risk_constrained_high,False,1.0
+2024-09-30,Fertilizers & Agrochemicals,champion,False,1.0
+2024-09-30,Fertilizers & Agrochemicals,risk_constrained_high,False,1.0
+2024-09-30,Finance,champion,False,1.0
+2024-09-30,Finance,risk_constrained_high,False,1.0
+2024-09-30,Food Products,champion,False,1.0
+2024-09-30,Food Products,risk_constrained_high,False,1.0
+2024-09-30,Gas,champion,False,1.0
+2024-09-30,Gas,risk_constrained_high,False,1.0
+2024-09-30,Healthcare Services,champion,False,1.0
+2024-09-30,Healthcare Services,risk_constrained_high,False,1.0
+2024-09-30,Household Products,champion,False,1.0
+2024-09-30,Household Products,risk_constrained_high,False,1.0
+2024-09-30,IT - Hardware,champion,False,1.0
+2024-09-30,IT - Hardware,risk_constrained_high,False,1.0
+2024-09-30,IT - Services,champion,False,1.0
+2024-09-30,IT - Services,risk_constrained_high,False,1.0
+2024-09-30,IT - Software,champion,False,1.0
+2024-09-30,IT - Software,risk_constrained_high,False,1.0
+2024-09-30,Industrial Manufacturing,champion,False,1.0
+2024-09-30,Industrial Manufacturing,risk_constrained_high,False,1.0
+2024-09-30,Industrial Products,champion,False,1.0
+2024-09-30,Industrial Products,risk_constrained_high,True,0.3333333333333333
+2024-09-30,Insurance,champion,False,1.0
+2024-09-30,Insurance,risk_constrained_high,False,1.0
+2024-09-30,Leisure Services,champion,False,1.0
+2024-09-30,Leisure Services,risk_constrained_high,False,1.0
+2024-09-30,Media,champion,False,1.0
+2024-09-30,Media,risk_constrained_high,False,1.0
+2024-09-30,Minerals & Mining,champion,False,1.0
+2024-09-30,Minerals & Mining,risk_constrained_high,False,1.0
+2024-09-30,Non - Ferrous Metals,champion,False,1.0
+2024-09-30,Non - Ferrous Metals,risk_constrained_high,False,1.0
+2024-09-30,Oil,champion,False,1.0
+2024-09-30,Oil,risk_constrained_high,False,1.0
+2024-09-30,Other Construction Materials,champion,False,1.0
+2024-09-30,Other Construction Materials,risk_constrained_high,False,1.0
+2024-09-30,Other Consumer Services,champion,False,1.0
+2024-09-30,Other Consumer Services,risk_constrained_high,False,1.0
+2024-09-30,"Paper, Forest & Jute Products",champion,False,1.0
+2024-09-30,"Paper, Forest & Jute Products",risk_constrained_high,False,1.0
+2024-09-30,Personal Products,champion,False,1.0
+2024-09-30,Personal Products,risk_constrained_high,False,1.0
+2024-09-30,Petroleum Products,champion,False,1.0
+2024-09-30,Petroleum Products,risk_constrained_high,False,1.0
+2024-09-30,Pharmaceuticals & Biotechnology,champion,False,1.0
+2024-09-30,Pharmaceuticals & Biotechnology,risk_constrained_high,False,1.0
+2024-09-30,Power,champion,False,1.0
+2024-09-30,Power,risk_constrained_high,False,1.0
+2024-09-30,Realty,champion,False,1.0
+2024-09-30,Realty,risk_constrained_high,False,1.0
+2024-09-30,Retailing,champion,False,1.0
+2024-09-30,Retailing,risk_constrained_high,False,1.0
+2024-09-30,Telecom -  Equipment & Accessories,champion,False,1.0
+2024-09-30,Telecom -  Equipment & Accessories,risk_constrained_high,False,1.0
+2024-09-30,Telecom - Services,champion,False,1.0
+2024-09-30,Telecom - Services,risk_constrained_high,False,1.0
+2024-09-30,Textiles & Apparels,champion,False,1.0
+2024-09-30,Textiles & Apparels,risk_constrained_high,False,1.0
+2024-09-30,Transport Infrastructure,champion,False,1.0
+2024-09-30,Transport Infrastructure,risk_constrained_high,False,1.0
+2024-09-30,Transport Services,champion,False,1.0
+2024-09-30,Transport Services,risk_constrained_high,False,1.0
+2024-12-31,Aerospace & Defense,champion,False,1.0
+2024-12-31,Aerospace & Defense,risk_constrained_high,False,1.0
+2024-12-31,Agricultural Food & other Products,champion,False,1.0
+2024-12-31,Agricultural Food & other Products,risk_constrained_high,False,1.0
+2024-12-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2024-12-31,"Agricultural, Commercial & Construction Vehicles",risk_constrained_high,False,1.0
+2024-12-31,Auto Components,champion,False,1.0
+2024-12-31,Auto Components,risk_constrained_high,False,1.0
+2024-12-31,Automobiles,champion,False,1.0
+2024-12-31,Automobiles,risk_constrained_high,False,1.0
+2024-12-31,Banks,champion,False,1.0
+2024-12-31,Banks,risk_constrained_high,False,1.0
+2024-12-31,Beverages,champion,False,1.0
+2024-12-31,Beverages,risk_constrained_high,False,1.0
+2024-12-31,Capital Markets,champion,False,1.0
+2024-12-31,Capital Markets,risk_constrained_high,False,1.0
+2024-12-31,Cement & Cement Products,champion,False,1.0
+2024-12-31,Cement & Cement Products,risk_constrained_high,False,1.0
+2024-12-31,Chemicals & Petrochemicals,champion,False,1.0
+2024-12-31,Chemicals & Petrochemicals,risk_constrained_high,False,1.0
+2024-12-31,Commercial Services & Supplies,champion,False,1.0
+2024-12-31,Commercial Services & Supplies,risk_constrained_high,True,0.6666666666666666
+2024-12-31,Construction,champion,False,1.0
+2024-12-31,Construction,risk_constrained_high,False,1.0
+2024-12-31,Consumer Durables,champion,False,1.0
+2024-12-31,Consumer Durables,risk_constrained_high,False,1.0
+2024-12-31,Diversified,champion,False,1.0
+2024-12-31,Diversified,risk_constrained_high,False,1.0
+2024-12-31,Electrical Equipment,champion,False,1.0
+2024-12-31,Electrical Equipment,risk_constrained_high,False,1.0
+2024-12-31,Entertainment,champion,False,1.0
+2024-12-31,Entertainment,risk_constrained_high,False,1.0
+2024-12-31,Ferrous Metals,champion,False,1.0
+2024-12-31,Ferrous Metals,risk_constrained_high,False,1.0
+2024-12-31,Fertilizers & Agrochemicals,champion,False,1.0
+2024-12-31,Fertilizers & Agrochemicals,risk_constrained_high,False,1.0
+2024-12-31,Finance,champion,False,1.0
+2024-12-31,Finance,risk_constrained_high,False,1.0
+2024-12-31,Food Products,champion,False,1.0
+2024-12-31,Food Products,risk_constrained_high,False,1.0
+2024-12-31,Gas,champion,False,1.0
+2024-12-31,Gas,risk_constrained_high,False,1.0
+2024-12-31,Healthcare Services,champion,False,1.0
+2024-12-31,Healthcare Services,risk_constrained_high,False,1.0
+2024-12-31,Household Products,champion,False,1.0
+2024-12-31,Household Products,risk_constrained_high,False,1.0
+2024-12-31,IT - Hardware,champion,False,1.0
+2024-12-31,IT - Hardware,risk_constrained_high,False,1.0
+2024-12-31,IT - Services,champion,False,1.0
+2024-12-31,IT - Services,risk_constrained_high,False,1.0
+2024-12-31,IT - Software,champion,False,1.0
+2024-12-31,IT - Software,risk_constrained_high,False,1.0
+2024-12-31,Industrial Manufacturing,champion,False,1.0
+2024-12-31,Industrial Manufacturing,risk_constrained_high,False,1.0
+2024-12-31,Industrial Products,champion,False,1.0
+2024-12-31,Industrial Products,risk_constrained_high,True,0.3333333333333333
+2024-12-31,Insurance,champion,False,1.0
+2024-12-31,Insurance,risk_constrained_high,False,1.0
+2024-12-31,Leisure Services,champion,False,1.0
+2024-12-31,Leisure Services,risk_constrained_high,False,1.0
+2024-12-31,Media,champion,False,1.0
+2024-12-31,Media,risk_constrained_high,True,0.6666666666666666
+2024-12-31,Minerals & Mining,champion,False,1.0
+2024-12-31,Minerals & Mining,risk_constrained_high,False,1.0
+2024-12-31,Non - Ferrous Metals,champion,False,1.0
+2024-12-31,Non - Ferrous Metals,risk_constrained_high,False,1.0
+2024-12-31,Oil,champion,False,1.0
+2024-12-31,Oil,risk_constrained_high,False,1.0
+2024-12-31,Other Construction Materials,champion,False,1.0
+2024-12-31,Other Construction Materials,risk_constrained_high,False,1.0
+2024-12-31,Other Consumer Services,champion,False,1.0
+2024-12-31,Other Consumer Services,risk_constrained_high,False,1.0
+2024-12-31,"Paper, Forest & Jute Products",champion,False,1.0
+2024-12-31,"Paper, Forest & Jute Products",risk_constrained_high,False,1.0
+2024-12-31,Personal Products,champion,False,1.0
+2024-12-31,Personal Products,risk_constrained_high,False,1.0
+2024-12-31,Petroleum Products,champion,False,1.0
+2024-12-31,Petroleum Products,risk_constrained_high,False,1.0
+2024-12-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2024-12-31,Pharmaceuticals & Biotechnology,risk_constrained_high,False,1.0
+2024-12-31,Power,champion,False,1.0
+2024-12-31,Power,risk_constrained_high,False,1.0
+2024-12-31,Realty,champion,False,1.0
+2024-12-31,Realty,risk_constrained_high,False,1.0
+2024-12-31,Retailing,champion,False,1.0
+2024-12-31,Retailing,risk_constrained_high,False,1.0
+2024-12-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2024-12-31,Telecom -  Equipment & Accessories,risk_constrained_high,False,1.0
+2024-12-31,Telecom - Services,champion,False,1.0
+2024-12-31,Telecom - Services,risk_constrained_high,False,1.0
+2024-12-31,Textiles & Apparels,champion,False,1.0
+2024-12-31,Textiles & Apparels,risk_constrained_high,True,0.6666666666666666
+2024-12-31,Transport Infrastructure,champion,False,1.0
+2024-12-31,Transport Infrastructure,risk_constrained_high,False,1.0
+2024-12-31,Transport Services,champion,False,1.0
+2024-12-31,Transport Services,risk_constrained_high,False,1.0
+2025-01-31,Aerospace & Defense,champion,False,1.0
+2025-01-31,Aerospace & Defense,risk_constrained_high,False,1.0
+2025-01-31,Agricultural Food & other Products,champion,False,1.0
+2025-01-31,Agricultural Food & other Products,risk_constrained_high,False,1.0
+2025-01-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2025-01-31,"Agricultural, Commercial & Construction Vehicles",risk_constrained_high,False,1.0
+2025-01-31,Auto Components,champion,False,1.0
+2025-01-31,Auto Components,risk_constrained_high,False,1.0
+2025-01-31,Automobiles,champion,False,1.0
+2025-01-31,Automobiles,risk_constrained_high,False,1.0
+2025-01-31,Banks,champion,False,1.0
+2025-01-31,Banks,risk_constrained_high,False,1.0
+2025-01-31,Beverages,champion,False,1.0
+2025-01-31,Beverages,risk_constrained_high,False,1.0
+2025-01-31,Capital Markets,champion,False,1.0
+2025-01-31,Capital Markets,risk_constrained_high,False,1.0
+2025-01-31,Cement & Cement Products,champion,False,1.0
+2025-01-31,Cement & Cement Products,risk_constrained_high,False,1.0
+2025-01-31,Chemicals & Petrochemicals,champion,False,1.0
+2025-01-31,Chemicals & Petrochemicals,risk_constrained_high,False,1.0
+2025-01-31,Commercial Services & Supplies,champion,False,1.0
+2025-01-31,Commercial Services & Supplies,risk_constrained_high,True,0.3333333333333333
+2025-01-31,Construction,champion,False,1.0
+2025-01-31,Construction,risk_constrained_high,False,1.0
+2025-01-31,Consumer Durables,champion,False,1.0
+2025-01-31,Consumer Durables,risk_constrained_high,False,1.0
+2025-01-31,Diversified,champion,False,1.0
+2025-01-31,Diversified,risk_constrained_high,False,1.0
+2025-01-31,Electrical Equipment,champion,False,1.0
+2025-01-31,Electrical Equipment,risk_constrained_high,False,1.0
+2025-01-31,Entertainment,champion,False,1.0
+2025-01-31,Entertainment,risk_constrained_high,False,1.0
+2025-01-31,Ferrous Metals,champion,False,1.0
+2025-01-31,Ferrous Metals,risk_constrained_high,False,1.0
+2025-01-31,Fertilizers & Agrochemicals,champion,False,1.0
+2025-01-31,Fertilizers & Agrochemicals,risk_constrained_high,False,1.0
+2025-01-31,Finance,champion,False,1.0
+2025-01-31,Finance,risk_constrained_high,True,0.3333333333333333
+2025-01-31,Food Products,champion,False,1.0
+2025-01-31,Food Products,risk_constrained_high,False,1.0
+2025-01-31,Gas,champion,False,1.0
+2025-01-31,Gas,risk_constrained_high,False,1.0
+2025-01-31,Healthcare Services,champion,False,1.0
+2025-01-31,Healthcare Services,risk_constrained_high,False,1.0
+2025-01-31,Household Products,champion,False,1.0
+2025-01-31,Household Products,risk_constrained_high,False,1.0
+2025-01-31,IT - Hardware,champion,False,1.0
+2025-01-31,IT - Hardware,risk_constrained_high,False,1.0
+2025-01-31,IT - Services,champion,False,1.0
+2025-01-31,IT - Services,risk_constrained_high,False,1.0
+2025-01-31,IT - Software,champion,False,1.0
+2025-01-31,IT - Software,risk_constrained_high,False,1.0
+2025-01-31,Industrial Manufacturing,champion,False,1.0
+2025-01-31,Industrial Manufacturing,risk_constrained_high,False,1.0
+2025-01-31,Industrial Products,champion,False,1.0
+2025-01-31,Industrial Products,risk_constrained_high,False,1.0
+2025-01-31,Insurance,champion,False,1.0
+2025-01-31,Insurance,risk_constrained_high,False,1.0
+2025-01-31,Leisure Services,champion,False,1.0
+2025-01-31,Leisure Services,risk_constrained_high,False,1.0
+2025-01-31,Media,champion,False,1.0
+2025-01-31,Media,risk_constrained_high,False,1.0
+2025-01-31,Minerals & Mining,champion,False,1.0
+2025-01-31,Minerals & Mining,risk_constrained_high,False,1.0
+2025-01-31,Non - Ferrous Metals,champion,False,1.0
+2025-01-31,Non - Ferrous Metals,risk_constrained_high,False,1.0
+2025-01-31,Oil,champion,False,1.0
+2025-01-31,Oil,risk_constrained_high,False,1.0
+2025-01-31,Other Construction Materials,champion,False,1.0
+2025-01-31,Other Construction Materials,risk_constrained_high,False,1.0
+2025-01-31,Other Consumer Services,champion,False,1.0
+2025-01-31,Other Consumer Services,risk_constrained_high,False,1.0
+2025-01-31,"Paper, Forest & Jute Products",champion,False,1.0
+2025-01-31,"Paper, Forest & Jute Products",risk_constrained_high,False,1.0
+2025-01-31,Personal Products,champion,False,1.0
+2025-01-31,Personal Products,risk_constrained_high,False,1.0
+2025-01-31,Petroleum Products,champion,False,1.0
+2025-01-31,Petroleum Products,risk_constrained_high,False,1.0
+2025-01-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2025-01-31,Pharmaceuticals & Biotechnology,risk_constrained_high,True,0.6666666666666666
+2025-01-31,Power,champion,False,1.0
+2025-01-31,Power,risk_constrained_high,False,1.0
+2025-01-31,Realty,champion,False,1.0
+2025-01-31,Realty,risk_constrained_high,True,0.3333333333333333
+2025-01-31,Retailing,champion,False,1.0
+2025-01-31,Retailing,risk_constrained_high,False,1.0
+2025-01-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2025-01-31,Telecom -  Equipment & Accessories,risk_constrained_high,False,1.0
+2025-01-31,Telecom - Services,champion,False,1.0
+2025-01-31,Telecom - Services,risk_constrained_high,False,1.0
+2025-01-31,Textiles & Apparels,champion,False,1.0
+2025-01-31,Textiles & Apparels,risk_constrained_high,True,0.6666666666666666
+2025-01-31,Transport Infrastructure,champion,False,1.0
+2025-01-31,Transport Infrastructure,risk_constrained_high,False,1.0
+2025-01-31,Transport Services,champion,False,1.0
+2025-01-31,Transport Services,risk_constrained_high,False,1.0
+2025-02-28,Aerospace & Defense,champion,False,1.0
+2025-02-28,Aerospace & Defense,risk_constrained_high,False,1.0
+2025-02-28,Agricultural Food & other Products,champion,False,1.0
+2025-02-28,Agricultural Food & other Products,risk_constrained_high,False,1.0
+2025-02-28,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2025-02-28,"Agricultural, Commercial & Construction Vehicles",risk_constrained_high,False,1.0
+2025-02-28,Auto Components,champion,False,1.0
+2025-02-28,Auto Components,risk_constrained_high,False,1.0
+2025-02-28,Automobiles,champion,False,1.0
+2025-02-28,Automobiles,risk_constrained_high,False,1.0
+2025-02-28,Banks,champion,False,1.0
+2025-02-28,Banks,risk_constrained_high,False,1.0
+2025-02-28,Beverages,champion,False,1.0
+2025-02-28,Beverages,risk_constrained_high,False,1.0
+2025-02-28,Capital Markets,champion,False,1.0
+2025-02-28,Capital Markets,risk_constrained_high,False,1.0
+2025-02-28,Cement & Cement Products,champion,False,1.0
+2025-02-28,Cement & Cement Products,risk_constrained_high,False,1.0
+2025-02-28,Chemicals & Petrochemicals,champion,False,1.0
+2025-02-28,Chemicals & Petrochemicals,risk_constrained_high,False,1.0
+2025-02-28,Commercial Services & Supplies,champion,False,1.0
+2025-02-28,Commercial Services & Supplies,risk_constrained_high,False,1.0
+2025-02-28,Construction,champion,False,1.0
+2025-02-28,Construction,risk_constrained_high,False,1.0
+2025-02-28,Consumer Durables,champion,False,1.0
+2025-02-28,Consumer Durables,risk_constrained_high,False,1.0
+2025-02-28,Diversified,champion,False,1.0
+2025-02-28,Diversified,risk_constrained_high,False,1.0
+2025-02-28,Electrical Equipment,champion,False,1.0
+2025-02-28,Electrical Equipment,risk_constrained_high,False,1.0
+2025-02-28,Entertainment,champion,False,1.0
+2025-02-28,Entertainment,risk_constrained_high,False,1.0
+2025-02-28,Ferrous Metals,champion,False,1.0
+2025-02-28,Ferrous Metals,risk_constrained_high,False,1.0
+2025-02-28,Fertilizers & Agrochemicals,champion,False,1.0
+2025-02-28,Fertilizers & Agrochemicals,risk_constrained_high,False,1.0
+2025-02-28,Finance,champion,False,1.0
+2025-02-28,Finance,risk_constrained_high,True,0.3333333333333333
+2025-02-28,Food Products,champion,False,1.0
+2025-02-28,Food Products,risk_constrained_high,False,1.0
+2025-02-28,Gas,champion,False,1.0
+2025-02-28,Gas,risk_constrained_high,False,1.0
+2025-02-28,Healthcare Services,champion,False,1.0
+2025-02-28,Healthcare Services,risk_constrained_high,False,1.0
+2025-02-28,Household Products,champion,False,1.0
+2025-02-28,Household Products,risk_constrained_high,False,1.0
+2025-02-28,IT - Hardware,champion,False,1.0
+2025-02-28,IT - Hardware,risk_constrained_high,False,1.0
+2025-02-28,IT - Services,champion,False,1.0
+2025-02-28,IT - Services,risk_constrained_high,False,1.0
+2025-02-28,IT - Software,champion,False,1.0
+2025-02-28,IT - Software,risk_constrained_high,False,1.0
+2025-02-28,Industrial Manufacturing,champion,False,1.0
+2025-02-28,Industrial Manufacturing,risk_constrained_high,False,1.0
+2025-02-28,Industrial Products,champion,False,1.0
+2025-02-28,Industrial Products,risk_constrained_high,False,1.0
+2025-02-28,Insurance,champion,False,1.0
+2025-02-28,Insurance,risk_constrained_high,False,1.0
+2025-02-28,Leisure Services,champion,False,1.0
+2025-02-28,Leisure Services,risk_constrained_high,False,1.0
+2025-02-28,Media,champion,False,1.0
+2025-02-28,Media,risk_constrained_high,False,1.0
+2025-02-28,Minerals & Mining,champion,False,1.0
+2025-02-28,Minerals & Mining,risk_constrained_high,False,1.0
+2025-02-28,Non - Ferrous Metals,champion,False,1.0
+2025-02-28,Non - Ferrous Metals,risk_constrained_high,False,1.0
+2025-02-28,Oil,champion,False,1.0
+2025-02-28,Oil,risk_constrained_high,False,1.0
+2025-02-28,Other Construction Materials,champion,False,1.0
+2025-02-28,Other Construction Materials,risk_constrained_high,False,1.0
+2025-02-28,Other Consumer Services,champion,False,1.0
+2025-02-28,Other Consumer Services,risk_constrained_high,False,1.0
+2025-02-28,"Paper, Forest & Jute Products",champion,False,1.0
+2025-02-28,"Paper, Forest & Jute Products",risk_constrained_high,False,1.0
+2025-02-28,Personal Products,champion,False,1.0
+2025-02-28,Personal Products,risk_constrained_high,False,1.0
+2025-02-28,Petroleum Products,champion,False,1.0
+2025-02-28,Petroleum Products,risk_constrained_high,False,1.0
+2025-02-28,Pharmaceuticals & Biotechnology,champion,False,1.0
+2025-02-28,Pharmaceuticals & Biotechnology,risk_constrained_high,False,1.0
+2025-02-28,Power,champion,False,1.0
+2025-02-28,Power,risk_constrained_high,False,1.0
+2025-02-28,Realty,champion,False,1.0
+2025-02-28,Realty,risk_constrained_high,False,1.0
+2025-02-28,Retailing,champion,False,1.0
+2025-02-28,Retailing,risk_constrained_high,False,1.0
+2025-02-28,Telecom -  Equipment & Accessories,champion,False,1.0
+2025-02-28,Telecom -  Equipment & Accessories,risk_constrained_high,False,1.0
+2025-02-28,Telecom - Services,champion,False,1.0
+2025-02-28,Telecom - Services,risk_constrained_high,False,1.0
+2025-02-28,Textiles & Apparels,champion,False,1.0
+2025-02-28,Textiles & Apparels,risk_constrained_high,True,0.3333333333333333
+2025-02-28,Transport Infrastructure,champion,False,1.0
+2025-02-28,Transport Infrastructure,risk_constrained_high,False,1.0
+2025-02-28,Transport Services,champion,False,1.0
+2025-02-28,Transport Services,risk_constrained_high,False,1.0
+2025-03-31,Aerospace & Defense,champion,False,1.0
+2025-03-31,Aerospace & Defense,risk_constrained_high,False,1.0
+2025-03-31,Agricultural Food & other Products,champion,False,1.0
+2025-03-31,Agricultural Food & other Products,risk_constrained_high,False,1.0
+2025-03-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2025-03-31,"Agricultural, Commercial & Construction Vehicles",risk_constrained_high,False,1.0
+2025-03-31,Auto Components,champion,False,1.0
+2025-03-31,Auto Components,risk_constrained_high,False,1.0
+2025-03-31,Automobiles,champion,False,1.0
+2025-03-31,Automobiles,risk_constrained_high,False,1.0
+2025-03-31,Banks,champion,False,1.0
+2025-03-31,Banks,risk_constrained_high,False,1.0
+2025-03-31,Beverages,champion,False,1.0
+2025-03-31,Beverages,risk_constrained_high,False,1.0
+2025-03-31,Capital Markets,champion,False,1.0
+2025-03-31,Capital Markets,risk_constrained_high,False,1.0
+2025-03-31,Cement & Cement Products,champion,False,1.0
+2025-03-31,Cement & Cement Products,risk_constrained_high,False,1.0
+2025-03-31,Chemicals & Petrochemicals,champion,False,1.0
+2025-03-31,Chemicals & Petrochemicals,risk_constrained_high,False,1.0
+2025-03-31,Commercial Services & Supplies,champion,False,1.0
+2025-03-31,Commercial Services & Supplies,risk_constrained_high,False,1.0
+2025-03-31,Construction,champion,False,1.0
+2025-03-31,Construction,risk_constrained_high,False,1.0
+2025-03-31,Consumer Durables,champion,False,1.0
+2025-03-31,Consumer Durables,risk_constrained_high,True,0.0
+2025-03-31,Diversified,champion,False,1.0
+2025-03-31,Diversified,risk_constrained_high,False,1.0
+2025-03-31,Electrical Equipment,champion,False,1.0
+2025-03-31,Electrical Equipment,risk_constrained_high,False,1.0
+2025-03-31,Entertainment,champion,False,1.0
+2025-03-31,Entertainment,risk_constrained_high,False,1.0
+2025-03-31,Ferrous Metals,champion,False,1.0
+2025-03-31,Ferrous Metals,risk_constrained_high,False,1.0
+2025-03-31,Fertilizers & Agrochemicals,champion,False,1.0
+2025-03-31,Fertilizers & Agrochemicals,risk_constrained_high,False,1.0
+2025-03-31,Finance,champion,False,1.0
+2025-03-31,Finance,risk_constrained_high,False,1.0
+2025-03-31,Food Products,champion,False,1.0
+2025-03-31,Food Products,risk_constrained_high,False,1.0
+2025-03-31,Gas,champion,False,1.0
+2025-03-31,Gas,risk_constrained_high,False,1.0
+2025-03-31,Healthcare Services,champion,False,1.0
+2025-03-31,Healthcare Services,risk_constrained_high,False,1.0
+2025-03-31,Household Products,champion,False,1.0
+2025-03-31,Household Products,risk_constrained_high,False,1.0
+2025-03-31,IT - Hardware,champion,False,1.0
+2025-03-31,IT - Hardware,risk_constrained_high,False,1.0
+2025-03-31,IT - Services,champion,False,1.0
+2025-03-31,IT - Services,risk_constrained_high,False,1.0
+2025-03-31,IT - Software,champion,False,1.0
+2025-03-31,IT - Software,risk_constrained_high,False,1.0
+2025-03-31,Industrial Manufacturing,champion,False,1.0
+2025-03-31,Industrial Manufacturing,risk_constrained_high,False,1.0
+2025-03-31,Industrial Products,champion,False,1.0
+2025-03-31,Industrial Products,risk_constrained_high,False,1.0
+2025-03-31,Insurance,champion,False,1.0
+2025-03-31,Insurance,risk_constrained_high,False,1.0
+2025-03-31,Leisure Services,champion,False,1.0
+2025-03-31,Leisure Services,risk_constrained_high,False,1.0
+2025-03-31,Media,champion,False,1.0
+2025-03-31,Media,risk_constrained_high,False,1.0
+2025-03-31,Minerals & Mining,champion,False,1.0
+2025-03-31,Minerals & Mining,risk_constrained_high,False,1.0
+2025-03-31,Non - Ferrous Metals,champion,False,1.0
+2025-03-31,Non - Ferrous Metals,risk_constrained_high,False,1.0
+2025-03-31,Oil,champion,False,1.0
+2025-03-31,Oil,risk_constrained_high,False,1.0
+2025-03-31,Other Construction Materials,champion,False,1.0
+2025-03-31,Other Construction Materials,risk_constrained_high,False,1.0
+2025-03-31,Other Consumer Services,champion,False,1.0
+2025-03-31,Other Consumer Services,risk_constrained_high,False,1.0
+2025-03-31,"Paper, Forest & Jute Products",champion,False,1.0
+2025-03-31,"Paper, Forest & Jute Products",risk_constrained_high,False,1.0
+2025-03-31,Personal Products,champion,False,1.0
+2025-03-31,Personal Products,risk_constrained_high,False,1.0
+2025-03-31,Petroleum Products,champion,False,1.0
+2025-03-31,Petroleum Products,risk_constrained_high,False,1.0
+2025-03-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2025-03-31,Pharmaceuticals & Biotechnology,risk_constrained_high,False,1.0
+2025-03-31,Power,champion,False,1.0
+2025-03-31,Power,risk_constrained_high,False,1.0
+2025-03-31,Realty,champion,False,1.0
+2025-03-31,Realty,risk_constrained_high,False,1.0
+2025-03-31,Retailing,champion,False,1.0
+2025-03-31,Retailing,risk_constrained_high,False,1.0
+2025-03-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2025-03-31,Telecom -  Equipment & Accessories,risk_constrained_high,False,1.0
+2025-03-31,Telecom - Services,champion,False,1.0
+2025-03-31,Telecom - Services,risk_constrained_high,False,1.0
+2025-03-31,Textiles & Apparels,champion,False,1.0
+2025-03-31,Textiles & Apparels,risk_constrained_high,False,1.0
+2025-03-31,Transport Infrastructure,champion,False,1.0
+2025-03-31,Transport Infrastructure,risk_constrained_high,False,1.0
+2025-03-31,Transport Services,champion,False,1.0
+2025-03-31,Transport Services,risk_constrained_high,False,1.0
+2025-04-30,Aerospace & Defense,champion,False,1.0
+2025-04-30,Aerospace & Defense,risk_constrained_high,False,1.0
+2025-04-30,Agricultural Food & other Products,champion,False,1.0
+2025-04-30,Agricultural Food & other Products,risk_constrained_high,False,1.0
+2025-04-30,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2025-04-30,"Agricultural, Commercial & Construction Vehicles",risk_constrained_high,False,1.0
+2025-04-30,Auto Components,champion,False,1.0
+2025-04-30,Auto Components,risk_constrained_high,False,1.0
+2025-04-30,Automobiles,champion,False,1.0
+2025-04-30,Automobiles,risk_constrained_high,False,1.0
+2025-04-30,Banks,champion,False,1.0
+2025-04-30,Banks,risk_constrained_high,False,1.0
+2025-04-30,Beverages,champion,False,1.0
+2025-04-30,Beverages,risk_constrained_high,False,1.0
+2025-04-30,Capital Markets,champion,False,1.0
+2025-04-30,Capital Markets,risk_constrained_high,False,1.0
+2025-04-30,Cement & Cement Products,champion,False,1.0
+2025-04-30,Cement & Cement Products,risk_constrained_high,False,1.0
+2025-04-30,Chemicals & Petrochemicals,champion,False,1.0
+2025-04-30,Chemicals & Petrochemicals,risk_constrained_high,False,1.0
+2025-04-30,Commercial Services & Supplies,champion,False,1.0
+2025-04-30,Commercial Services & Supplies,risk_constrained_high,False,1.0
+2025-04-30,Construction,champion,False,1.0
+2025-04-30,Construction,risk_constrained_high,False,1.0
+2025-04-30,Consumer Durables,champion,False,1.0
+2025-04-30,Consumer Durables,risk_constrained_high,False,1.0
+2025-04-30,Diversified,champion,False,1.0
+2025-04-30,Diversified,risk_constrained_high,False,1.0
+2025-04-30,Electrical Equipment,champion,False,1.0
+2025-04-30,Electrical Equipment,risk_constrained_high,False,1.0
+2025-04-30,Entertainment,champion,False,1.0
+2025-04-30,Entertainment,risk_constrained_high,False,1.0
+2025-04-30,Ferrous Metals,champion,False,1.0
+2025-04-30,Ferrous Metals,risk_constrained_high,False,1.0
+2025-04-30,Fertilizers & Agrochemicals,champion,False,1.0
+2025-04-30,Fertilizers & Agrochemicals,risk_constrained_high,False,1.0
+2025-04-30,Finance,champion,False,1.0
+2025-04-30,Finance,risk_constrained_high,True,0.3333333333333333
+2025-04-30,Food Products,champion,False,1.0
+2025-04-30,Food Products,risk_constrained_high,False,1.0
+2025-04-30,Gas,champion,False,1.0
+2025-04-30,Gas,risk_constrained_high,False,1.0
+2025-04-30,Healthcare Services,champion,False,1.0
+2025-04-30,Healthcare Services,risk_constrained_high,False,1.0
+2025-04-30,Household Products,champion,False,1.0
+2025-04-30,Household Products,risk_constrained_high,False,1.0
+2025-04-30,IT - Hardware,champion,False,1.0
+2025-04-30,IT - Hardware,risk_constrained_high,False,1.0
+2025-04-30,IT - Services,champion,False,1.0
+2025-04-30,IT - Services,risk_constrained_high,False,1.0
+2025-04-30,IT - Software,champion,False,1.0
+2025-04-30,IT - Software,risk_constrained_high,False,1.0
+2025-04-30,Industrial Manufacturing,champion,False,1.0
+2025-04-30,Industrial Manufacturing,risk_constrained_high,False,1.0
+2025-04-30,Industrial Products,champion,False,1.0
+2025-04-30,Industrial Products,risk_constrained_high,True,0.3333333333333333
+2025-04-30,Insurance,champion,False,1.0
+2025-04-30,Insurance,risk_constrained_high,False,1.0
+2025-04-30,Leisure Services,champion,False,1.0
+2025-04-30,Leisure Services,risk_constrained_high,False,1.0
+2025-04-30,Media,champion,False,1.0
+2025-04-30,Media,risk_constrained_high,False,1.0
+2025-04-30,Minerals & Mining,champion,False,1.0
+2025-04-30,Minerals & Mining,risk_constrained_high,False,1.0
+2025-04-30,Non - Ferrous Metals,champion,False,1.0
+2025-04-30,Non - Ferrous Metals,risk_constrained_high,False,1.0
+2025-04-30,Oil,champion,False,1.0
+2025-04-30,Oil,risk_constrained_high,False,1.0
+2025-04-30,Other Construction Materials,champion,False,1.0
+2025-04-30,Other Construction Materials,risk_constrained_high,False,1.0
+2025-04-30,Other Consumer Services,champion,False,1.0
+2025-04-30,Other Consumer Services,risk_constrained_high,False,1.0
+2025-04-30,"Paper, Forest & Jute Products",champion,False,1.0
+2025-04-30,"Paper, Forest & Jute Products",risk_constrained_high,False,1.0
+2025-04-30,Personal Products,champion,False,1.0
+2025-04-30,Personal Products,risk_constrained_high,False,1.0
+2025-04-30,Petroleum Products,champion,False,1.0
+2025-04-30,Petroleum Products,risk_constrained_high,False,1.0
+2025-04-30,Pharmaceuticals & Biotechnology,champion,False,1.0
+2025-04-30,Pharmaceuticals & Biotechnology,risk_constrained_high,True,0.6666666666666666
+2025-04-30,Power,champion,False,1.0
+2025-04-30,Power,risk_constrained_high,False,1.0
+2025-04-30,Realty,champion,False,1.0
+2025-04-30,Realty,risk_constrained_high,False,1.0
+2025-04-30,Retailing,champion,False,1.0
+2025-04-30,Retailing,risk_constrained_high,False,1.0
+2025-04-30,Telecom -  Equipment & Accessories,champion,False,1.0
+2025-04-30,Telecom -  Equipment & Accessories,risk_constrained_high,False,1.0
+2025-04-30,Telecom - Services,champion,False,1.0
+2025-04-30,Telecom - Services,risk_constrained_high,False,1.0
+2025-04-30,Textiles & Apparels,champion,False,1.0
+2025-04-30,Textiles & Apparels,risk_constrained_high,True,0.6666666666666666
+2025-04-30,Transport Infrastructure,champion,False,1.0
+2025-04-30,Transport Infrastructure,risk_constrained_high,False,1.0
+2025-04-30,Transport Services,champion,False,1.0
+2025-04-30,Transport Services,risk_constrained_high,False,1.0
+2025-05-31,Aerospace & Defense,champion,False,1.0
+2025-05-31,Aerospace & Defense,risk_constrained_high,False,1.0
+2025-05-31,Agricultural Food & other Products,champion,False,1.0
+2025-05-31,Agricultural Food & other Products,risk_constrained_high,False,1.0
+2025-05-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2025-05-31,"Agricultural, Commercial & Construction Vehicles",risk_constrained_high,False,1.0
+2025-05-31,Auto Components,champion,False,1.0
+2025-05-31,Auto Components,risk_constrained_high,False,1.0
+2025-05-31,Automobiles,champion,False,1.0
+2025-05-31,Automobiles,risk_constrained_high,False,1.0
+2025-05-31,Banks,champion,False,1.0
+2025-05-31,Banks,risk_constrained_high,False,1.0
+2025-05-31,Beverages,champion,False,1.0
+2025-05-31,Beverages,risk_constrained_high,False,1.0
+2025-05-31,Capital Markets,champion,False,1.0
+2025-05-31,Capital Markets,risk_constrained_high,False,1.0
+2025-05-31,Cement & Cement Products,champion,False,1.0
+2025-05-31,Cement & Cement Products,risk_constrained_high,False,1.0
+2025-05-31,Chemicals & Petrochemicals,champion,False,1.0
+2025-05-31,Chemicals & Petrochemicals,risk_constrained_high,False,1.0
+2025-05-31,Commercial Services & Supplies,champion,False,1.0
+2025-05-31,Commercial Services & Supplies,risk_constrained_high,False,1.0
+2025-05-31,Construction,champion,False,1.0
+2025-05-31,Construction,risk_constrained_high,False,1.0
+2025-05-31,Consumer Durables,champion,False,1.0
+2025-05-31,Consumer Durables,risk_constrained_high,False,1.0
+2025-05-31,Diversified,champion,False,1.0
+2025-05-31,Diversified,risk_constrained_high,False,1.0
+2025-05-31,Electrical Equipment,champion,False,1.0
+2025-05-31,Electrical Equipment,risk_constrained_high,False,1.0
+2025-05-31,Entertainment,champion,False,1.0
+2025-05-31,Entertainment,risk_constrained_high,False,1.0
+2025-05-31,Ferrous Metals,champion,False,1.0
+2025-05-31,Ferrous Metals,risk_constrained_high,False,1.0
+2025-05-31,Fertilizers & Agrochemicals,champion,False,1.0
+2025-05-31,Fertilizers & Agrochemicals,risk_constrained_high,False,1.0
+2025-05-31,Finance,champion,False,1.0
+2025-05-31,Finance,risk_constrained_high,False,1.0
+2025-05-31,Food Products,champion,False,1.0
+2025-05-31,Food Products,risk_constrained_high,False,1.0
+2025-05-31,Gas,champion,False,1.0
+2025-05-31,Gas,risk_constrained_high,False,1.0
+2025-05-31,Healthcare Services,champion,False,1.0
+2025-05-31,Healthcare Services,risk_constrained_high,False,1.0
+2025-05-31,Household Products,champion,False,1.0
+2025-05-31,Household Products,risk_constrained_high,False,1.0
+2025-05-31,IT - Hardware,champion,False,1.0
+2025-05-31,IT - Hardware,risk_constrained_high,False,1.0
+2025-05-31,IT - Services,champion,False,1.0
+2025-05-31,IT - Services,risk_constrained_high,False,1.0
+2025-05-31,IT - Software,champion,False,1.0
+2025-05-31,IT - Software,risk_constrained_high,False,1.0
+2025-05-31,Industrial Manufacturing,champion,False,1.0
+2025-05-31,Industrial Manufacturing,risk_constrained_high,False,1.0
+2025-05-31,Industrial Products,champion,False,1.0
+2025-05-31,Industrial Products,risk_constrained_high,True,0.6666666666666666
+2025-05-31,Insurance,champion,False,1.0
+2025-05-31,Insurance,risk_constrained_high,False,1.0
+2025-05-31,Leisure Services,champion,False,1.0
+2025-05-31,Leisure Services,risk_constrained_high,False,1.0
+2025-05-31,Media,champion,False,1.0
+2025-05-31,Media,risk_constrained_high,False,1.0
+2025-05-31,Minerals & Mining,champion,False,1.0
+2025-05-31,Minerals & Mining,risk_constrained_high,False,1.0
+2025-05-31,Non - Ferrous Metals,champion,False,1.0
+2025-05-31,Non - Ferrous Metals,risk_constrained_high,False,1.0
+2025-05-31,Oil,champion,False,1.0
+2025-05-31,Oil,risk_constrained_high,False,1.0
+2025-05-31,Other Construction Materials,champion,False,1.0
+2025-05-31,Other Construction Materials,risk_constrained_high,False,1.0
+2025-05-31,Other Consumer Services,champion,False,1.0
+2025-05-31,Other Consumer Services,risk_constrained_high,False,1.0
+2025-05-31,"Paper, Forest & Jute Products",champion,False,1.0
+2025-05-31,"Paper, Forest & Jute Products",risk_constrained_high,False,1.0
+2025-05-31,Personal Products,champion,False,1.0
+2025-05-31,Personal Products,risk_constrained_high,False,1.0
+2025-05-31,Petroleum Products,champion,False,1.0
+2025-05-31,Petroleum Products,risk_constrained_high,False,1.0
+2025-05-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2025-05-31,Pharmaceuticals & Biotechnology,risk_constrained_high,False,1.0
+2025-05-31,Power,champion,False,1.0
+2025-05-31,Power,risk_constrained_high,False,1.0
+2025-05-31,Realty,champion,False,1.0
+2025-05-31,Realty,risk_constrained_high,False,1.0
+2025-05-31,Retailing,champion,False,1.0
+2025-05-31,Retailing,risk_constrained_high,False,1.0
+2025-05-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2025-05-31,Telecom -  Equipment & Accessories,risk_constrained_high,False,1.0
+2025-05-31,Telecom - Services,champion,False,1.0
+2025-05-31,Telecom - Services,risk_constrained_high,False,1.0
+2025-05-31,Textiles & Apparels,champion,False,1.0
+2025-05-31,Textiles & Apparels,risk_constrained_high,True,0.3333333333333333
+2025-05-31,Transport Infrastructure,champion,False,1.0
+2025-05-31,Transport Infrastructure,risk_constrained_high,False,1.0
+2025-05-31,Transport Services,champion,False,1.0
+2025-05-31,Transport Services,risk_constrained_high,False,1.0
+2025-06-30,Aerospace & Defense,champion,False,1.0
+2025-06-30,Aerospace & Defense,risk_constrained_high,False,1.0
+2025-06-30,Agricultural Food & other Products,champion,False,1.0
+2025-06-30,Agricultural Food & other Products,risk_constrained_high,False,1.0
+2025-06-30,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2025-06-30,"Agricultural, Commercial & Construction Vehicles",risk_constrained_high,False,1.0
+2025-06-30,Auto Components,champion,False,1.0
+2025-06-30,Auto Components,risk_constrained_high,False,1.0
+2025-06-30,Automobiles,champion,False,1.0
+2025-06-30,Automobiles,risk_constrained_high,False,1.0
+2025-06-30,Banks,champion,False,1.0
+2025-06-30,Banks,risk_constrained_high,False,1.0
+2025-06-30,Beverages,champion,False,1.0
+2025-06-30,Beverages,risk_constrained_high,False,1.0
+2025-06-30,Capital Markets,champion,False,1.0
+2025-06-30,Capital Markets,risk_constrained_high,False,1.0
+2025-06-30,Cement & Cement Products,champion,False,1.0
+2025-06-30,Cement & Cement Products,risk_constrained_high,False,1.0
+2025-06-30,Chemicals & Petrochemicals,champion,False,1.0
+2025-06-30,Chemicals & Petrochemicals,risk_constrained_high,True,0.6666666666666666
+2025-06-30,Commercial Services & Supplies,champion,False,1.0
+2025-06-30,Commercial Services & Supplies,risk_constrained_high,False,1.0
+2025-06-30,Construction,champion,False,1.0
+2025-06-30,Construction,risk_constrained_high,False,1.0
+2025-06-30,Consumer Durables,champion,False,1.0
+2025-06-30,Consumer Durables,risk_constrained_high,False,1.0
+2025-06-30,Diversified,champion,False,1.0
+2025-06-30,Diversified,risk_constrained_high,False,1.0
+2025-06-30,Electrical Equipment,champion,False,1.0
+2025-06-30,Electrical Equipment,risk_constrained_high,False,1.0
+2025-06-30,Entertainment,champion,False,1.0
+2025-06-30,Entertainment,risk_constrained_high,False,1.0
+2025-06-30,Ferrous Metals,champion,False,1.0
+2025-06-30,Ferrous Metals,risk_constrained_high,False,1.0
+2025-06-30,Fertilizers & Agrochemicals,champion,False,1.0
+2025-06-30,Fertilizers & Agrochemicals,risk_constrained_high,False,1.0
+2025-06-30,Finance,champion,False,1.0
+2025-06-30,Finance,risk_constrained_high,True,0.6666666666666666
+2025-06-30,Food Products,champion,False,1.0
+2025-06-30,Food Products,risk_constrained_high,False,1.0
+2025-06-30,Gas,champion,False,1.0
+2025-06-30,Gas,risk_constrained_high,False,1.0
+2025-06-30,Healthcare Services,champion,False,1.0
+2025-06-30,Healthcare Services,risk_constrained_high,False,1.0
+2025-06-30,Household Products,champion,False,1.0
+2025-06-30,Household Products,risk_constrained_high,False,1.0
+2025-06-30,IT - Hardware,champion,False,1.0
+2025-06-30,IT - Hardware,risk_constrained_high,False,1.0
+2025-06-30,IT - Services,champion,False,1.0
+2025-06-30,IT - Services,risk_constrained_high,False,1.0
+2025-06-30,IT - Software,champion,False,1.0
+2025-06-30,IT - Software,risk_constrained_high,False,1.0
+2025-06-30,Industrial Manufacturing,champion,False,1.0
+2025-06-30,Industrial Manufacturing,risk_constrained_high,True,0.3333333333333333
+2025-06-30,Industrial Products,champion,False,1.0
+2025-06-30,Industrial Products,risk_constrained_high,True,0.3333333333333333
+2025-06-30,Insurance,champion,False,1.0
+2025-06-30,Insurance,risk_constrained_high,False,1.0
+2025-06-30,Leisure Services,champion,False,1.0
+2025-06-30,Leisure Services,risk_constrained_high,True,0.6666666666666666
+2025-06-30,Media,champion,False,1.0
+2025-06-30,Media,risk_constrained_high,False,1.0
+2025-06-30,Minerals & Mining,champion,False,1.0
+2025-06-30,Minerals & Mining,risk_constrained_high,False,1.0
+2025-06-30,Non - Ferrous Metals,champion,False,1.0
+2025-06-30,Non - Ferrous Metals,risk_constrained_high,False,1.0
+2025-06-30,Oil,champion,False,1.0
+2025-06-30,Oil,risk_constrained_high,False,1.0
+2025-06-30,Other Construction Materials,champion,False,1.0
+2025-06-30,Other Construction Materials,risk_constrained_high,False,1.0
+2025-06-30,Other Consumer Services,champion,False,1.0
+2025-06-30,Other Consumer Services,risk_constrained_high,False,1.0
+2025-06-30,"Paper, Forest & Jute Products",champion,False,1.0
+2025-06-30,"Paper, Forest & Jute Products",risk_constrained_high,False,1.0
+2025-06-30,Personal Products,champion,False,1.0
+2025-06-30,Personal Products,risk_constrained_high,False,1.0
+2025-06-30,Petroleum Products,champion,False,1.0
+2025-06-30,Petroleum Products,risk_constrained_high,False,1.0
+2025-06-30,Pharmaceuticals & Biotechnology,champion,False,1.0
+2025-06-30,Pharmaceuticals & Biotechnology,risk_constrained_high,False,1.0
+2025-06-30,Power,champion,False,1.0
+2025-06-30,Power,risk_constrained_high,False,1.0
+2025-06-30,Realty,champion,False,1.0
+2025-06-30,Realty,risk_constrained_high,True,0.3333333333333333
+2025-06-30,Retailing,champion,False,1.0
+2025-06-30,Retailing,risk_constrained_high,False,1.0
+2025-06-30,Telecom -  Equipment & Accessories,champion,False,1.0
+2025-06-30,Telecom -  Equipment & Accessories,risk_constrained_high,False,1.0
+2025-06-30,Telecom - Services,champion,False,1.0
+2025-06-30,Telecom - Services,risk_constrained_high,False,1.0
+2025-06-30,Textiles & Apparels,champion,False,1.0
+2025-06-30,Textiles & Apparels,risk_constrained_high,True,0.3333333333333333
+2025-06-30,Transport Infrastructure,champion,False,1.0
+2025-06-30,Transport Infrastructure,risk_constrained_high,False,1.0
+2025-06-30,Transport Services,champion,False,1.0
+2025-06-30,Transport Services,risk_constrained_high,False,1.0
+2025-07-31,Aerospace & Defense,champion,False,1.0
+2025-07-31,Aerospace & Defense,risk_constrained_high,False,1.0
+2025-07-31,Agricultural Food & other Products,champion,False,1.0
+2025-07-31,Agricultural Food & other Products,risk_constrained_high,False,1.0
+2025-07-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2025-07-31,"Agricultural, Commercial & Construction Vehicles",risk_constrained_high,False,1.0
+2025-07-31,Auto Components,champion,False,1.0
+2025-07-31,Auto Components,risk_constrained_high,False,1.0
+2025-07-31,Automobiles,champion,False,1.0
+2025-07-31,Automobiles,risk_constrained_high,False,1.0
+2025-07-31,Banks,champion,False,1.0
+2025-07-31,Banks,risk_constrained_high,False,1.0
+2025-07-31,Beverages,champion,False,1.0
+2025-07-31,Beverages,risk_constrained_high,False,1.0
+2025-07-31,Capital Markets,champion,False,1.0
+2025-07-31,Capital Markets,risk_constrained_high,False,1.0
+2025-07-31,Cement & Cement Products,champion,False,1.0
+2025-07-31,Cement & Cement Products,risk_constrained_high,False,1.0
+2025-07-31,Chemicals & Petrochemicals,champion,False,1.0
+2025-07-31,Chemicals & Petrochemicals,risk_constrained_high,True,0.6666666666666666
+2025-07-31,Commercial Services & Supplies,champion,False,1.0
+2025-07-31,Commercial Services & Supplies,risk_constrained_high,False,1.0
+2025-07-31,Construction,champion,False,1.0
+2025-07-31,Construction,risk_constrained_high,True,0.6666666666666666
+2025-07-31,Consumer Durables,champion,False,1.0
+2025-07-31,Consumer Durables,risk_constrained_high,False,1.0
+2025-07-31,Diversified,champion,False,1.0
+2025-07-31,Diversified,risk_constrained_high,False,1.0
+2025-07-31,Electrical Equipment,champion,False,1.0
+2025-07-31,Electrical Equipment,risk_constrained_high,False,1.0
+2025-07-31,Entertainment,champion,False,1.0
+2025-07-31,Entertainment,risk_constrained_high,False,1.0
+2025-07-31,Ferrous Metals,champion,False,1.0
+2025-07-31,Ferrous Metals,risk_constrained_high,False,1.0
+2025-07-31,Fertilizers & Agrochemicals,champion,False,1.0
+2025-07-31,Fertilizers & Agrochemicals,risk_constrained_high,False,1.0
+2025-07-31,Finance,champion,False,1.0
+2025-07-31,Finance,risk_constrained_high,True,0.6666666666666666
+2025-07-31,Food Products,champion,False,1.0
+2025-07-31,Food Products,risk_constrained_high,False,1.0
+2025-07-31,Gas,champion,False,1.0
+2025-07-31,Gas,risk_constrained_high,False,1.0
+2025-07-31,Healthcare Services,champion,False,1.0
+2025-07-31,Healthcare Services,risk_constrained_high,False,1.0
+2025-07-31,Household Products,champion,False,1.0
+2025-07-31,Household Products,risk_constrained_high,False,1.0
+2025-07-31,IT - Hardware,champion,False,1.0
+2025-07-31,IT - Hardware,risk_constrained_high,False,1.0
+2025-07-31,IT - Services,champion,False,1.0
+2025-07-31,IT - Services,risk_constrained_high,False,1.0
+2025-07-31,IT - Software,champion,False,1.0
+2025-07-31,IT - Software,risk_constrained_high,False,1.0
+2025-07-31,Industrial Manufacturing,champion,False,1.0
+2025-07-31,Industrial Manufacturing,risk_constrained_high,False,1.0
+2025-07-31,Industrial Products,champion,False,1.0
+2025-07-31,Industrial Products,risk_constrained_high,True,0.3333333333333333
+2025-07-31,Insurance,champion,False,1.0
+2025-07-31,Insurance,risk_constrained_high,False,1.0
+2025-07-31,Leisure Services,champion,False,1.0
+2025-07-31,Leisure Services,risk_constrained_high,False,1.0
+2025-07-31,Media,champion,False,1.0
+2025-07-31,Media,risk_constrained_high,False,1.0
+2025-07-31,Minerals & Mining,champion,False,1.0
+2025-07-31,Minerals & Mining,risk_constrained_high,False,1.0
+2025-07-31,Non - Ferrous Metals,champion,False,1.0
+2025-07-31,Non - Ferrous Metals,risk_constrained_high,True,0.6666666666666666
+2025-07-31,Oil,champion,False,1.0
+2025-07-31,Oil,risk_constrained_high,False,1.0
+2025-07-31,Other Construction Materials,champion,False,1.0
+2025-07-31,Other Construction Materials,risk_constrained_high,False,1.0
+2025-07-31,Other Consumer Services,champion,False,1.0
+2025-07-31,Other Consumer Services,risk_constrained_high,False,1.0
+2025-07-31,"Paper, Forest & Jute Products",champion,False,1.0
+2025-07-31,"Paper, Forest & Jute Products",risk_constrained_high,False,1.0
+2025-07-31,Personal Products,champion,False,1.0
+2025-07-31,Personal Products,risk_constrained_high,False,1.0
+2025-07-31,Petroleum Products,champion,False,1.0
+2025-07-31,Petroleum Products,risk_constrained_high,False,1.0
+2025-07-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2025-07-31,Pharmaceuticals & Biotechnology,risk_constrained_high,True,0.6666666666666666
+2025-07-31,Power,champion,False,1.0
+2025-07-31,Power,risk_constrained_high,False,1.0
+2025-07-31,Realty,champion,False,1.0
+2025-07-31,Realty,risk_constrained_high,False,1.0
+2025-07-31,Retailing,champion,False,1.0
+2025-07-31,Retailing,risk_constrained_high,False,1.0
+2025-07-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2025-07-31,Telecom -  Equipment & Accessories,risk_constrained_high,False,1.0
+2025-07-31,Telecom - Services,champion,False,1.0
+2025-07-31,Telecom - Services,risk_constrained_high,False,1.0
+2025-07-31,Textiles & Apparels,champion,False,1.0
+2025-07-31,Textiles & Apparels,risk_constrained_high,False,1.0
+2025-07-31,Transport Infrastructure,champion,False,1.0
+2025-07-31,Transport Infrastructure,risk_constrained_high,False,1.0
+2025-07-31,Transport Services,champion,False,1.0
+2025-07-31,Transport Services,risk_constrained_high,False,1.0
+2025-08-31,Aerospace & Defense,champion,False,1.0
+2025-08-31,Aerospace & Defense,risk_constrained_high,False,1.0
+2025-08-31,Agricultural Food & other Products,champion,False,1.0
+2025-08-31,Agricultural Food & other Products,risk_constrained_high,False,1.0
+2025-08-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2025-08-31,"Agricultural, Commercial & Construction Vehicles",risk_constrained_high,False,1.0
+2025-08-31,Auto Components,champion,False,1.0
+2025-08-31,Auto Components,risk_constrained_high,False,1.0
+2025-08-31,Automobiles,champion,False,1.0
+2025-08-31,Automobiles,risk_constrained_high,False,1.0
+2025-08-31,Banks,champion,False,1.0
+2025-08-31,Banks,risk_constrained_high,False,1.0
+2025-08-31,Beverages,champion,False,1.0
+2025-08-31,Beverages,risk_constrained_high,False,1.0
+2025-08-31,Capital Markets,champion,False,1.0
+2025-08-31,Capital Markets,risk_constrained_high,False,1.0
+2025-08-31,Cement & Cement Products,champion,False,1.0
+2025-08-31,Cement & Cement Products,risk_constrained_high,False,1.0
+2025-08-31,Chemicals & Petrochemicals,champion,False,1.0
+2025-08-31,Chemicals & Petrochemicals,risk_constrained_high,True,0.6666666666666666
+2025-08-31,Commercial Services & Supplies,champion,False,1.0
+2025-08-31,Commercial Services & Supplies,risk_constrained_high,False,1.0
+2025-08-31,Construction,champion,False,1.0
+2025-08-31,Construction,risk_constrained_high,True,0.6666666666666666
+2025-08-31,Consumer Durables,champion,False,1.0
+2025-08-31,Consumer Durables,risk_constrained_high,False,1.0
+2025-08-31,Diversified,champion,False,1.0
+2025-08-31,Diversified,risk_constrained_high,False,1.0
+2025-08-31,Electrical Equipment,champion,False,1.0
+2025-08-31,Electrical Equipment,risk_constrained_high,False,1.0
+2025-08-31,Entertainment,champion,False,1.0
+2025-08-31,Entertainment,risk_constrained_high,False,1.0
+2025-08-31,Ferrous Metals,champion,False,1.0
+2025-08-31,Ferrous Metals,risk_constrained_high,False,1.0
+2025-08-31,Fertilizers & Agrochemicals,champion,False,1.0
+2025-08-31,Fertilizers & Agrochemicals,risk_constrained_high,False,1.0
+2025-08-31,Finance,champion,False,1.0
+2025-08-31,Finance,risk_constrained_high,False,1.0
+2025-08-31,Food Products,champion,False,1.0
+2025-08-31,Food Products,risk_constrained_high,False,1.0
+2025-08-31,Gas,champion,False,1.0
+2025-08-31,Gas,risk_constrained_high,False,1.0
+2025-08-31,Healthcare Services,champion,False,1.0
+2025-08-31,Healthcare Services,risk_constrained_high,False,1.0
+2025-08-31,Household Products,champion,False,1.0
+2025-08-31,Household Products,risk_constrained_high,False,1.0
+2025-08-31,IT - Hardware,champion,False,1.0
+2025-08-31,IT - Hardware,risk_constrained_high,False,1.0
+2025-08-31,IT - Services,champion,False,1.0
+2025-08-31,IT - Services,risk_constrained_high,False,1.0
+2025-08-31,IT - Software,champion,False,1.0
+2025-08-31,IT - Software,risk_constrained_high,False,1.0
+2025-08-31,Industrial Manufacturing,champion,False,1.0
+2025-08-31,Industrial Manufacturing,risk_constrained_high,False,1.0
+2025-08-31,Industrial Products,champion,False,1.0
+2025-08-31,Industrial Products,risk_constrained_high,True,0.6666666666666666
+2025-08-31,Insurance,champion,False,1.0
+2025-08-31,Insurance,risk_constrained_high,False,1.0
+2025-08-31,Leisure Services,champion,False,1.0
+2025-08-31,Leisure Services,risk_constrained_high,False,1.0
+2025-08-31,Media,champion,False,1.0
+2025-08-31,Media,risk_constrained_high,False,1.0
+2025-08-31,Minerals & Mining,champion,False,1.0
+2025-08-31,Minerals & Mining,risk_constrained_high,False,1.0
+2025-08-31,Non - Ferrous Metals,champion,False,1.0
+2025-08-31,Non - Ferrous Metals,risk_constrained_high,False,1.0
+2025-08-31,Oil,champion,False,1.0
+2025-08-31,Oil,risk_constrained_high,False,1.0
+2025-08-31,Other Construction Materials,champion,False,1.0
+2025-08-31,Other Construction Materials,risk_constrained_high,False,1.0
+2025-08-31,Other Consumer Services,champion,False,1.0
+2025-08-31,Other Consumer Services,risk_constrained_high,False,1.0
+2025-08-31,"Paper, Forest & Jute Products",champion,False,1.0
+2025-08-31,"Paper, Forest & Jute Products",risk_constrained_high,False,1.0
+2025-08-31,Personal Products,champion,False,1.0
+2025-08-31,Personal Products,risk_constrained_high,False,1.0
+2025-08-31,Petroleum Products,champion,False,1.0
+2025-08-31,Petroleum Products,risk_constrained_high,False,1.0
+2025-08-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2025-08-31,Pharmaceuticals & Biotechnology,risk_constrained_high,False,1.0
+2025-08-31,Power,champion,False,1.0
+2025-08-31,Power,risk_constrained_high,False,1.0
+2025-08-31,Realty,champion,False,1.0
+2025-08-31,Realty,risk_constrained_high,False,1.0
+2025-08-31,Retailing,champion,False,1.0
+2025-08-31,Retailing,risk_constrained_high,False,1.0
+2025-08-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2025-08-31,Telecom -  Equipment & Accessories,risk_constrained_high,False,1.0
+2025-08-31,Telecom - Services,champion,False,1.0
+2025-08-31,Telecom - Services,risk_constrained_high,False,1.0
+2025-08-31,Textiles & Apparels,champion,False,1.0
+2025-08-31,Textiles & Apparels,risk_constrained_high,True,0.3333333333333333
+2025-08-31,Transport Infrastructure,champion,False,1.0
+2025-08-31,Transport Infrastructure,risk_constrained_high,False,1.0
+2025-08-31,Transport Services,champion,False,1.0
+2025-08-31,Transport Services,risk_constrained_high,False,1.0

@@ -1,0 +1,23 @@
+{
+  "candidate": "error_corrected_professor",
+  "status": "Development research winner for global Top20 selection",
+  "selection_basis": "After-result preference choice: retain professor sectorTop3 sets with a small mean return tradeoff relative to the raw correction",
+  "development_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "top20_xirr_gain_pp": 5.442960254279855,
+  "portfolio_drawdown_improvement_pp": 0.5960694184078082,
+  "sector_top3_changed_fraction": 0.0,
+  "goal_hit_change_pp": 0.0,
+  "cost200_xirr_gain_pp": 5.276886440159933,
+  "positive_dates": 7,
+  "tied_dates": 8,
+  "negative_dates": 1,
+  "fresh_validation": false,
+  "later_period_evaluated_for_this_candidate": false,
+  "production_promoted": false,
+  "documented_attempts": 316
+}

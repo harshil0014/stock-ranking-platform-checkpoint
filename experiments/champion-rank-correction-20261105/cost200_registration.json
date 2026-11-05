@@ -1,0 +1,5 @@
+{
+  "timing": "Post-result sensitivity, before higher-cost outcomes",
+  "cost_bps_per_side": 200,
+  "no_selection_update": true
+}

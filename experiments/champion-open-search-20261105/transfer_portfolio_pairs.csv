@@ -1,0 +1,5 @@
+model,policy,matched_dates,xirr_delta,drawdown_delta
+champion,global_top20,12,0.0,0.0
+champion,sector_top3,7,0.0,0.0
+risk_constrained_high,global_top20,10,-0.007845707464423927,-0.03607556361518579
+risk_constrained_high,sector_top3,6,0.005764649153464582,-0.01708431654713427

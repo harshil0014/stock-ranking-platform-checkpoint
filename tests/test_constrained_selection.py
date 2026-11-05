@@ -35,3 +35,10 @@ def test_tied_scores_preserve_the_selected_set():
     factors=np.array([[1]*5,[1]*5,[1]*5,[0]*5],float)
     score,receipt=select_three([.5]*4,factors,[0,1,2])
     assert set(np.argsort(-score)[:3])==set(receipt['selected'])
+
+
+def test_optional_historical_risk_budget_is_enforced():
+    factors=np.ones((4,5))
+    score,receipt=select_three([.1,.2,.3,.99],factors,[0,1,2],risk=[1,1,1,5])
+    assert set(np.argsort(-score)[:3])=={0,1,2}
+    assert receipt['historical_risk_sum_delta']<=1e-7

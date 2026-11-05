@@ -1,0 +1,36 @@
+[
+  {
+    "period": "development",
+    "matched_dates": 16,
+    "mean": 0.02342239236681013,
+    "median": 0.016595151212597213,
+    "winsor": 0.017051136864944756,
+    "worst_leave_one_date_out": 0.0018486645788241144,
+    "best_date": "2023-03-31",
+    "best_date_share_of_net_xirr_delta": 0.926005720700697,
+    "worst_leave_one_security_out": -0.0035038102933263055,
+    "largest_security_share_of_net_terminal_wealth": 1.0685741718682025,
+    "low95": -0.04767265186186671,
+    "high95": 0.07823321370217809,
+    "securities_audited": 214,
+    "deletion_policy": "Replace removed allocation by zero-interest cash in both portfolios, no refill, preserve original blocked-date support",
+    "interpretation": "Adaptive historical results, not fresh validation"
+  },
+  {
+    "period": "transfer",
+    "matched_dates": 10,
+    "mean": -0.007845707464423951,
+    "median": 0.010446657478628007,
+    "winsor": 0.005256045321761843,
+    "worst_leave_one_date_out": -0.021799646887554713,
+    "best_date": "2025-08-31",
+    "best_date_share_of_net_xirr_delta": -1.5006899999476033,
+    "worst_leave_one_security_out": -0.027351281425372333,
+    "largest_security_share_of_net_terminal_wealth": -2.5169504359412653,
+    "low95": -0.04997081473492919,
+    "high95": 0.03427939980608129,
+    "securities_audited": 145,
+    "deletion_policy": "Replace removed allocation by zero-interest cash in both portfolios, no refill, preserve original blocked-date support",
+    "interpretation": "Adaptive historical results, not fresh validation"
+  }
+]

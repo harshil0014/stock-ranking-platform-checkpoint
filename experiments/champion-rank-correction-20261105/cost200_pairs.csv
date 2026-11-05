@@ -1,0 +1,3 @@
+model,matched_dates,xirr_delta,drawdown_delta
+error_corrected_raw,16,0.05364855528005082,0.007015765468820746
+error_corrected_professor,16,0.05276886440159933,0.0063862070713748

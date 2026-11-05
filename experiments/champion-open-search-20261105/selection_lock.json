@@ -1,0 +1,16 @@
+{
+  "selected": "risk_constrained_high",
+  "selection": "Highest development matched Top20 mean XIRR gain, IC tie-breaker; exploratory tradeoffs accepted",
+  "locked_at_utc": "2026-11-05T17:58:11.609603+00:00",
+  "policy": [
+    "residual_high20",
+    true
+  ],
+  "protocol_sha256": "b7d2e71faab322d3d23cb52ca81d573f5a8f1f5d120b53c6a28a9557bd557385",
+  "policy_code_sha256": "c9768a618b7491730306eb4c89a439d8eceeb90b1fd7bbfe66008979c1c91361",
+  "runner_sha256": "434777ec4bb28e91cb669a0f75b309c3279a9089c9b9476cba3428340c96cbe3",
+  "development_scores_sha256": "1c1252192504736bef0bb6b901661be49eb6652e2935119edba53cab84093ea0",
+  "development_pairs_sha256": "647824ed9667536e03ebdaf91411da9e8cc2c9d528fc33fdcc1bbee118a3a102",
+  "development_summary_sha256": "de551bd17fd1c3ac2ff325ce4df6c7030c42336a33defdf596225a68e32982b1",
+  "later_period_scored": false
+}

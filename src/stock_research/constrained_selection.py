@@ -4,7 +4,7 @@ import numpy as np
 from scipy.optimize import Bounds, LinearConstraint, milp
 
 
-def select_three(objective, factors, champion):
+def select_three(objective, factors, champion, risk=None):
     objective = np.asarray(objective, dtype=float)
     factors = np.asarray(factors, dtype=float)
     champion = np.asarray(champion, dtype=int)
@@ -16,7 +16,15 @@ def select_three(objective, factors, champion):
         raise ValueError('Unknown objective or factor cannot enter optimization')
     lower = factors[champion].sum(axis=0)
     matrix = np.vstack([np.ones(len(objective)), factors.T])
-    constraint = LinearConstraint(matrix, np.r_[3., lower], np.r_[3., np.full(5, np.inf)])
+    bounds_lower = np.r_[3., lower]
+    if risk is not None:
+        risk = np.asarray(risk, dtype=float)
+        if risk.shape != objective.shape or not np.isfinite(risk).all():
+            raise ValueError('Expected finite historical risk per stock')
+        matrix = np.vstack([matrix, -risk])
+        bounds_lower = np.r_[bounds_lower, -risk[champion].sum()]
+    constraint = LinearConstraint(matrix, bounds_lower,
+                                  np.r_[3., np.full(len(bounds_lower)-1, np.inf)])
     # SciPy forwards threads to HiGHS, though it is not in SciPy's public option list.
     with warnings.catch_warnings():
         warnings.filterwarnings('ignore', message='Unrecognized options detected.*', category=RuntimeWarning)
@@ -27,6 +35,8 @@ def select_three(objective, factors, champion):
     selected = np.flatnonzero(result.x > .5) if result.success else champion
     difference = factors[selected].sum(axis=0) - lower
     valid = len(selected) == 3 and (difference >= -1e-7).all()
+    if risk is not None:
+        valid = valid and risk[selected].sum() <= risk[champion].sum() + 1e-7
     if not valid:
         selected = champion
         difference = np.zeros(5)
@@ -39,4 +49,5 @@ def select_three(objective, factors, champion):
             values[i] = np.nextafter(values[i-1], -np.inf)
     score[order + remaining] = values
     return score, dict(optimal=bool(result.success and valid), status=int(result.status),
-                       selected=list(map(int, selected)), factor_sum_differences=difference.tolist())
+                       selected=list(map(int, selected)), factor_sum_differences=difference.tolist(),
+                       historical_risk_sum_delta=None if risk is None else float(risk[selected].sum()-risk[champion].sum()))
