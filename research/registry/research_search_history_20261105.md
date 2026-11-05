@@ -17,7 +17,8 @@ Match feature definitions, labels, execution assumptions, eligible populations a
 | Regression residual momentum | November5 residual-history pilot | New feature tested, insufficient incremental accuracy and slight preference degradation |
 | Residual-path high age | November5 residual-history pilot | New feature tested, insufficient incremental accuracy and preference degradation |
 | Professor50 plus residual momentum | November5 residual-history pilot | Tested, performance and risk requirements failed |
+| Constrained Top3 integer selection using saved residual objectives | November5 constrained-ranking pilot | Two policies tested, all five professor set-average constraints protected, IC and returns improved, strict goal-hit requirement missed |
 
 November5 evaluated exactly three fixed policies after novelty screening. No predictive model was retrained. Cross-sectional OLS feature regressions used historical prices only. Detailed results are in `research/reports/residual_challengers_20261105.md`. No exposed2024–2025 evaluation was performed.
 
-The 303 earlier documented attempts and three new policies remain in the cumulative ledger. Aliases and historical omissions prevent treating306 as independent hypotheses or a complete count of all manual searches.
+The 303 earlier documented attempts, three residual-history policies, two constrained-selection policies and one post-result higher-cost diagnostic remain in the cumulative ledger. Aliases and historical omissions prevent treating309 as independent hypotheses or a complete count of all manual searches. The200bp-per-side sensitivity was registered after primary outcomes and did not change nomination rules.

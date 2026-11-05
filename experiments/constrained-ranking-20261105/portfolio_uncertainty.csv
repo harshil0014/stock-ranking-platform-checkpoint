@@ -1,0 +1,3 @@
+model,dates,mean,low95,high95,interpretation
+constrained_residual,14,0.015524469927624416,-0.0952157270510937,0.08645974057972894,"Descriptive block-bootstrap interval on adaptively reused development, not fresh validation"
+constrained_high,16,0.02229419436500281,-0.06361316333531371,0.08751167656718889,"Descriptive block-bootstrap interval on adaptively reused development, not fresh validation"

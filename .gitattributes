@@ -93,6 +93,14 @@ research/research_variant_ledger.csv -text
 src/stock_research/sir_ladder.py text eol=lf
 experiments/high-recency-tilt-20261101/** -text
 experiments/residual-challengers-20261105/** -text
+experiments/constrained-ranking-20261105/** -text
+research/protocols/constrained_ranking_20261105.md -text
+research/reports/constrained_ranking_20261105.md -text
+research/reports/commercial_benchmark_access_20261105.md -text
+src/stock_research/constrained_selection.py text eol=lf
+research/runners/constrained_ranking_20261105.py text eol=lf
+research/runners/constrained_review_20261105.py text eol=lf
+research/runners/constrained_cost_stress_20261105.py text eol=lf
 research/reports/residual_challengers_20261105.md -text
 research/protocols/residual_challengers_20261105.md -text
 src/stock_research/residual_history.py text eol=lf

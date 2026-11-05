@@ -1,0 +1,18 @@
+[
+  {
+    "path": "research/protocols/constrained_ranking_20261105.md",
+    "sha256": "742ae380a6e99f0bc764f0282db462a238acaab4cd604859e4dfba04511a17f8"
+  },
+  {
+    "path": "work/novel-champion-20261105/development_scored.pkl.gz",
+    "sha256": "5bf3f9d8dd5cd5cd49f0c5aefd4b72b08d9774c8d28ed328c741e931996b872f"
+  },
+  {
+    "path": "src/stock_research/constrained_selection.py",
+    "sha256": "fb0284b0308dad4733452f2256a5f94c07e320a5391500e72b6d52a167a2211f"
+  },
+  {
+    "path": "research/runners/constrained_ranking_20261105.py",
+    "sha256": "84e56f6b0f8060a00891525f03d56a901f3bcdca4b64e0c2d587baa983ee55fe"
+  }
+]

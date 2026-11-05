@@ -1,0 +1,10 @@
+{
+  "tests_passed": 8,
+  "visual_review": true,
+  "plot_sha256": "ece8f1ca198bca99f74ae36394d54b207ae5e1a9b150344cdbe09100bcd0a398",
+  "primary_decisions_unchanged": true,
+  "exposed_evaluated": false,
+  "website_source_unchanged": true,
+  "solver_queries": 1492,
+  "documented_attempts": 309
+}

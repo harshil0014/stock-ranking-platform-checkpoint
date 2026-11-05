@@ -1,0 +1,6 @@
+{
+  "timing": "After primary results, before stress outcomes",
+  "cost_per_side_bps": 200,
+  "selection": "Frozen original scores; no retraining, reselection or adoption-rule change",
+  "scope": "Descriptive sensitivity only"
+}

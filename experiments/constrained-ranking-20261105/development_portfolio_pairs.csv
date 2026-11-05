@@ -1,0 +1,7 @@
+model,policy,matched_dates,xirr_delta,drawdown_delta
+champion,global_top20,16,0.0,0.0
+champion,sector_top3,10,0.0,0.0
+constrained_residual,global_top20,14,0.015524469927624412,-0.007950038013938811
+constrained_residual,sector_top3,9,0.00038832073550343197,-0.0025976493883302673
+constrained_high,global_top20,16,0.02229419436500281,-0.009796584243313061
+constrained_high,sector_top3,9,0.013722045058921509,-0.0006433667687536504

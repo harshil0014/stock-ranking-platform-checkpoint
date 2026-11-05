@@ -1,0 +1,138 @@
+[
+  {
+    "path": "experiments/constrained-ranking-20261105/comparison.csv",
+    "sha256": "0c84346e2ec51eb62109a3d3bb3a2deca214af2b1fd4bfd2b22e136a268236a7"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/constrained_high_year_portfolio_delta.csv",
+    "sha256": "4bd6921f0115ad04d24e759b50f06b79bc153e67cd7bfb18370534780a9f4ded"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/constrained_residual_year_portfolio_delta.csv",
+    "sha256": "9574a9d04c3c215fed575da2c87a3702ba63bc5246f177ca045e89d4a09e14de"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/cost200_failures.csv",
+    "sha256": "5cae4be0ebac039ada4500c1c4848f454411bd2efafd0f84f4ed1d4dab6cd546"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/cost200_pairs.csv",
+    "sha256": "f27790ce2de0918777f6c637451e7266ada2ae6ed14b13069dabfaf6da725027"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/cost200_portfolios.csv",
+    "sha256": "71c01c03586b0f1bd2ff5e2156ef46403e46d301bc0df8e260aee5c338449185"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/cost_stress_registration.json",
+    "sha256": "dd08b2cc657e03891ba69fae36ece9446df378d41b9d97ac8a5c7fd5753cb524"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/decision.json",
+    "sha256": "5656d1c63f115279eed213cd4e890f073837fdb57c11db909a68b17949d3b806"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/development_blocked_queries.csv",
+    "sha256": "246cb1481520ce8cf40f432433a05809f9c5216843f8f77e04cbee2251812096"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/development_date_metrics.csv",
+    "sha256": "60826d7548ecb10ae2e56f116ddf71685dc903cc8554b11dee8cc623ab2a5e97"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/development_overlap.csv",
+    "sha256": "ba1beeb6c2914f09917580100689e6e0063394b55412b9adacd801a3f0231c1d"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/development_portfolios.csv",
+    "sha256": "e3030f585ce5a29bd0e6818874ec3a232f6135aa1678ad4006f106e13d5d74fd"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/development_portfolio_failures.csv",
+    "sha256": "9d49aaed9b410c726265931604eb78d97060e3b4d9719c1bb12c59767f3df0a8"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/development_portfolio_pairs.csv",
+    "sha256": "5d0aec50c4592882a9614cfffe2d0a612a05338841047359d9f9c3f276dd932b"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/development_sector_metrics.csv",
+    "sha256": "23974ba02492f3907a622fd987f028eb0e7da844d7862d49efbabcc685fdb04e"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/development_summary.csv",
+    "sha256": "967ef1e02e8afe23bce55610149e4eb780d00f5400d79bae898f73ceb7db075a"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/development_year_metrics.csv",
+    "sha256": "b4c36b682303741b2160c7d7dc50757233c4ecaf00bd54c3e0e9b401165f0ee3"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/factor_alignment.csv",
+    "sha256": "6a5b1536795929a68651448a67adba1862ca7d6e112c2f2a307d54122758bcd2"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/frozen.json",
+    "sha256": "1d22d80b131ee89dee6d8691b1ae742a33762e1b52e9240e4911bf451eb9763f"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/input_receipts.json",
+    "sha256": "59a5e3687791cb4248dcbd88043955ec9a15b592867450477fe9b786f52bfd72"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/novelty_code_scan.json",
+    "sha256": "1c40c587b224b9db4460cd32daa7e1511b78932953e97d4982fad26fd79a3a50"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/portfolio_uncertainty.csv",
+    "sha256": "26a3bd80450e5d66429cdc65f24a3526637a5d23bf408f386bfa0040a4239dc9"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/solver_receipts.csv",
+    "sha256": "564091e08f9b6e4dccc4ff676e3c59a284786f36f3d251703c260886ce8e1801"
+  },
+  {
+    "path": "research/reports/constrained_ranking_20261105.md",
+    "sha256": "73eaed608354b41364d7291286a0fea527e905abe2eae6032c4df43d21f3bfe5"
+  },
+  {
+    "path": "research/reports/constrained_ranking_20261105.png",
+    "sha256": "ece8f1ca198bca99f74ae36394d54b207ae5e1a9b150344cdbe09100bcd0a398"
+  },
+  {
+    "path": "research/reports/commercial_benchmark_access_20261105.md",
+    "sha256": "3feaaf3698d228fa7a6c0bb6bd3dd9a80498768cfda748a87362047d12052437"
+  },
+  {
+    "path": "research/protocols/constrained_ranking_20261105.md",
+    "sha256": "742ae380a6e99f0bc764f0282db462a238acaab4cd604859e4dfba04511a17f8"
+  },
+  {
+    "path": "research/research_variant_ledger.csv",
+    "sha256": "2282b24171f378c783c0c4134067acb928e4ecbda9691b671ff0c5b0a0c5ab12"
+  },
+  {
+    "path": "src/stock_research/constrained_selection.py",
+    "sha256": "fb0284b0308dad4733452f2256a5f94c07e320a5391500e72b6d52a167a2211f"
+  },
+  {
+    "path": "research/runners/constrained_ranking_20261105.py",
+    "sha256": "84e56f6b0f8060a00891525f03d56a901f3bcdca4b64e0c2d587baa983ee55fe"
+  },
+  {
+    "path": "research/runners/constrained_review_20261105.py",
+    "sha256": "dda4ba1968633a29d533868bae11a5e0d9fb056a229b09a6e2db9a719ca0a248"
+  },
+  {
+    "path": "research/runners/constrained_cost_stress_20261105.py",
+    "sha256": "b97db5f24cd644d06d1d66ed047a26611cf7b0867f1c268f604dea4834a411a6"
+  },
+  {
+    "path": "research/registry/research_search_history_20261105.md",
+    "sha256": "e3da4f7e20e893d41dcfe6f6cae39d7f7a832198cca6330c2daefcf7ea15f2e4"
+  },
+  {
+    "path": "experiments/constrained-ranking-20261105/verification.json",
+    "sha256": "75ef2daac557d90591c726a02ca9c864321f34370a44f1e196a2d36e3dd68c72"
+  }
+]

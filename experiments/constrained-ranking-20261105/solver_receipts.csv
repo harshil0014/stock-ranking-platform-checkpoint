@@ -1,0 +1,1493 @@
+decision_date,sector,model,optimal,status,minimum_factor_sum_gain,changed
+2020-03-31,Agricultural Food & other Products,constrained_residual,True,0,0.0,False
+2020-03-31,Agricultural Food & other Products,constrained_high,True,0,0.0,False
+2020-03-31,"Agricultural, Commercial & Construction Vehicles",constrained_residual,True,0,0.0,False
+2020-03-31,"Agricultural, Commercial & Construction Vehicles",constrained_high,True,0,0.0,False
+2020-03-31,Auto Components,constrained_residual,True,0,0.032786885245901676,True
+2020-03-31,Auto Components,constrained_high,True,0,0.032786885245901676,True
+2020-03-31,Automobiles,constrained_residual,True,0,0.0,False
+2020-03-31,Automobiles,constrained_high,True,0,-2.220446049250313e-16,False
+2020-03-31,Banks,constrained_residual,True,0,0.0,False
+2020-03-31,Banks,constrained_high,True,0,0.0,False
+2020-03-31,Beverages,constrained_residual,True,0,0.0,False
+2020-03-31,Beverages,constrained_high,True,0,0.0,False
+2020-03-31,Capital Markets,constrained_residual,True,0,0.0,False
+2020-03-31,Capital Markets,constrained_high,True,0,0.0,False
+2020-03-31,Cement & Cement Products,constrained_residual,True,0,0.0,False
+2020-03-31,Cement & Cement Products,constrained_high,True,0,0.0,False
+2020-03-31,Chemicals & Petrochemicals,constrained_residual,True,0,0.04225352112676051,True
+2020-03-31,Chemicals & Petrochemicals,constrained_high,True,0,0.04225352112676051,True
+2020-03-31,Commercial Services & Supplies,constrained_residual,True,0,0.0,False
+2020-03-31,Commercial Services & Supplies,constrained_high,True,0,0.0,False
+2020-03-31,Construction,constrained_residual,True,0,0.0,False
+2020-03-31,Construction,constrained_high,True,0,0.0,False
+2020-03-31,Consumer Durables,constrained_residual,True,0,0.0,False
+2020-03-31,Consumer Durables,constrained_high,True,0,0.0,False
+2020-03-31,Electrical Equipment,constrained_residual,True,0,0.038461538461538325,True
+2020-03-31,Electrical Equipment,constrained_high,True,0,0.038461538461538325,True
+2020-03-31,Entertainment,constrained_residual,True,0,0.0,False
+2020-03-31,Entertainment,constrained_high,True,0,0.0,False
+2020-03-31,Ferrous Metals,constrained_residual,True,0,-2.220446049250313e-16,False
+2020-03-31,Ferrous Metals,constrained_high,True,0,0.23529411764705888,True
+2020-03-31,Fertilizers & Agrochemicals,constrained_residual,True,0,0.0,False
+2020-03-31,Fertilizers & Agrochemicals,constrained_high,True,0,0.0,False
+2020-03-31,Finance,constrained_residual,True,0,0.0,False
+2020-03-31,Finance,constrained_high,True,0,0.0,False
+2020-03-31,Food Products,constrained_residual,True,0,0.0,False
+2020-03-31,Food Products,constrained_high,True,0,0.0,False
+2020-03-31,Healthcare Services,constrained_residual,True,0,0.0,False
+2020-03-31,Healthcare Services,constrained_high,True,0,0.0,False
+2020-03-31,Household Products,constrained_residual,True,0,0.0,False
+2020-03-31,Household Products,constrained_high,True,0,0.0,False
+2020-03-31,IT - Hardware,constrained_residual,True,0,0.0,False
+2020-03-31,IT - Hardware,constrained_high,True,0,0.0,False
+2020-03-31,IT - Services,constrained_residual,True,0,0.0,False
+2020-03-31,IT - Services,constrained_high,True,0,-4.440892098500626e-16,False
+2020-03-31,IT - Software,constrained_residual,True,0,0.0,False
+2020-03-31,IT - Software,constrained_high,True,0,0.0,False
+2020-03-31,Industrial Manufacturing,constrained_residual,True,0,-2.220446049250313e-16,False
+2020-03-31,Industrial Manufacturing,constrained_high,True,0,0.0,True
+2020-03-31,Industrial Products,constrained_residual,False,1,0.0,False
+2020-03-31,Industrial Products,constrained_high,True,0,0.0,False
+2020-03-31,Leisure Services,constrained_residual,True,0,0.0,False
+2020-03-31,Leisure Services,constrained_high,True,0,0.09999999999999987,True
+2020-03-31,Media,constrained_residual,True,0,0.0,False
+2020-03-31,Media,constrained_high,True,0,0.0,False
+2020-03-31,Minerals & Mining,constrained_residual,True,0,0.0,False
+2020-03-31,Minerals & Mining,constrained_high,True,0,0.0,False
+2020-03-31,Non - Ferrous Metals,constrained_residual,True,0,0.0,False
+2020-03-31,Non - Ferrous Metals,constrained_high,True,0,0.0,False
+2020-03-31,Oil,constrained_residual,True,0,0.0,False
+2020-03-31,Oil,constrained_high,True,0,0.0,False
+2020-03-31,Other Construction Materials,constrained_residual,True,0,0.0,False
+2020-03-31,Other Construction Materials,constrained_high,True,0,0.0,False
+2020-03-31,Other Consumer Services,constrained_residual,True,0,0.0,False
+2020-03-31,Other Consumer Services,constrained_high,True,0,0.0,False
+2020-03-31,"Paper, Forest & Jute Products",constrained_residual,True,0,-2.220446049250313e-16,False
+2020-03-31,"Paper, Forest & Jute Products",constrained_high,True,0,0.0,False
+2020-03-31,Personal Products,constrained_residual,True,0,0.0,False
+2020-03-31,Personal Products,constrained_high,True,0,0.0,False
+2020-03-31,Petroleum Products,constrained_residual,True,0,0.0,False
+2020-03-31,Petroleum Products,constrained_high,True,0,0.11111111111111072,True
+2020-03-31,Pharmaceuticals & Biotechnology,constrained_residual,True,0,0.0,False
+2020-03-31,Pharmaceuticals & Biotechnology,constrained_high,True,0,0.0,False
+2020-03-31,Power,constrained_residual,True,0,0.0,False
+2020-03-31,Power,constrained_high,True,0,0.0,False
+2020-03-31,Realty,constrained_residual,True,0,4.440892098500626e-16,True
+2020-03-31,Realty,constrained_high,True,0,0.04651162790697683,True
+2020-03-31,Retailing,constrained_residual,True,0,0.0,False
+2020-03-31,Retailing,constrained_high,True,0,0.0,False
+2020-03-31,Telecom -  Equipment & Accessories,constrained_residual,True,0,-2.220446049250313e-16,False
+2020-03-31,Telecom -  Equipment & Accessories,constrained_high,True,0,0.0,False
+2020-03-31,Telecom - Services,constrained_residual,True,0,0.0,False
+2020-03-31,Telecom - Services,constrained_high,True,0,0.0,False
+2020-03-31,Textiles & Apparels,constrained_residual,True,0,0.15662650602409656,True
+2020-03-31,Textiles & Apparels,constrained_high,True,0,0.26506024096385516,True
+2020-03-31,Transport Services,constrained_residual,True,0,0.0,False
+2020-03-31,Transport Services,constrained_high,True,0,0.0,False
+2020-06-30,Agricultural Food & other Products,constrained_residual,True,0,0.0,False
+2020-06-30,Agricultural Food & other Products,constrained_high,True,0,0.0,False
+2020-06-30,"Agricultural, Commercial & Construction Vehicles",constrained_residual,True,0,0.0,False
+2020-06-30,"Agricultural, Commercial & Construction Vehicles",constrained_high,True,0,0.0,False
+2020-06-30,Auto Components,constrained_residual,True,0,0.15873015873015817,True
+2020-06-30,Auto Components,constrained_high,True,0,0.1587301587301586,True
+2020-06-30,Automobiles,constrained_residual,True,0,0.0,False
+2020-06-30,Automobiles,constrained_high,True,0,0.0,False
+2020-06-30,Banks,constrained_residual,True,0,0.22916666666666652,True
+2020-06-30,Banks,constrained_high,True,0,0.22916666666666652,True
+2020-06-30,Beverages,constrained_residual,True,0,0.0,False
+2020-06-30,Beverages,constrained_high,True,0,-2.220446049250313e-16,False
+2020-06-30,Capital Markets,constrained_residual,True,0,0.0,False
+2020-06-30,Capital Markets,constrained_high,True,0,0.0,False
+2020-06-30,Cement & Cement Products,constrained_residual,True,0,0.0,False
+2020-06-30,Cement & Cement Products,constrained_high,True,0,0.0,False
+2020-06-30,Chemicals & Petrochemicals,constrained_residual,True,0,0.0,False
+2020-06-30,Chemicals & Petrochemicals,constrained_high,True,0,0.0,False
+2020-06-30,Commercial Services & Supplies,constrained_residual,True,0,0.0,False
+2020-06-30,Commercial Services & Supplies,constrained_high,True,0,0.0,False
+2020-06-30,Construction,constrained_residual,True,0,0.0,False
+2020-06-30,Construction,constrained_high,True,0,0.0,False
+2020-06-30,Consumer Durables,constrained_residual,True,0,-4.440892098500626e-16,False
+2020-06-30,Consumer Durables,constrained_high,True,0,-4.440892098500626e-16,False
+2020-06-30,Electrical Equipment,constrained_residual,True,0,0.040000000000000036,True
+2020-06-30,Electrical Equipment,constrained_high,True,0,0.040000000000000036,True
+2020-06-30,Entertainment,constrained_residual,True,0,0.0,False
+2020-06-30,Entertainment,constrained_high,True,0,0.0,False
+2020-06-30,Ferrous Metals,constrained_residual,True,0,0.0,False
+2020-06-30,Ferrous Metals,constrained_high,True,0,0.0,False
+2020-06-30,Fertilizers & Agrochemicals,constrained_residual,True,0,0.04347826086956541,True
+2020-06-30,Fertilizers & Agrochemicals,constrained_high,True,0,0.0,False
+2020-06-30,Finance,constrained_residual,True,0,0.04545454545454586,True
+2020-06-30,Finance,constrained_high,True,0,-2.220446049250313e-16,False
+2020-06-30,Food Products,constrained_residual,True,0,0.0,False
+2020-06-30,Food Products,constrained_high,True,0,0.0,False
+2020-06-30,Healthcare Services,constrained_residual,True,0,0.0,False
+2020-06-30,Healthcare Services,constrained_high,True,0,0.0,False
+2020-06-30,Household Products,constrained_residual,True,0,0.0,False
+2020-06-30,Household Products,constrained_high,True,0,0.0,False
+2020-06-30,IT - Hardware,constrained_residual,True,0,0.0,False
+2020-06-30,IT - Hardware,constrained_high,True,0,0.0,False
+2020-06-30,IT - Services,constrained_residual,True,0,0.0,False
+2020-06-30,IT - Services,constrained_high,True,0,0.0,False
+2020-06-30,IT - Software,constrained_residual,True,0,0.0,False
+2020-06-30,IT - Software,constrained_high,True,0,0.0,False
+2020-06-30,Industrial Manufacturing,constrained_residual,True,0,0.0,False
+2020-06-30,Industrial Manufacturing,constrained_high,True,0,0.0,False
+2020-06-30,Industrial Products,constrained_residual,True,0,0.05982905982906006,True
+2020-06-30,Industrial Products,constrained_high,True,0,0.0,False
+2020-06-30,Leisure Services,constrained_residual,True,0,0.0,False
+2020-06-30,Leisure Services,constrained_high,True,0,0.0,False
+2020-06-30,Media,constrained_residual,True,0,0.0,False
+2020-06-30,Media,constrained_high,True,0,0.0,False
+2020-06-30,Minerals & Mining,constrained_residual,True,0,0.0,False
+2020-06-30,Minerals & Mining,constrained_high,True,0,0.0,False
+2020-06-30,Non - Ferrous Metals,constrained_residual,True,0,0.0,False
+2020-06-30,Non - Ferrous Metals,constrained_high,True,0,0.0,False
+2020-06-30,Oil,constrained_residual,True,0,0.0,False
+2020-06-30,Oil,constrained_high,True,0,0.0,False
+2020-06-30,Other Construction Materials,constrained_residual,True,0,-4.440892098500626e-16,False
+2020-06-30,Other Construction Materials,constrained_high,True,0,-4.440892098500626e-16,False
+2020-06-30,Other Consumer Services,constrained_residual,True,0,0.0,False
+2020-06-30,Other Consumer Services,constrained_high,True,0,0.0,False
+2020-06-30,"Paper, Forest & Jute Products",constrained_residual,True,0,-4.440892098500626e-16,False
+2020-06-30,"Paper, Forest & Jute Products",constrained_high,True,0,-4.440892098500626e-16,False
+2020-06-30,Personal Products,constrained_residual,True,0,0.0,False
+2020-06-30,Personal Products,constrained_high,True,0,0.0,False
+2020-06-30,Petroleum Products,constrained_residual,True,0,0.0,False
+2020-06-30,Petroleum Products,constrained_high,True,0,0.0,False
+2020-06-30,Pharmaceuticals & Biotechnology,constrained_residual,True,0,-4.440892098500626e-16,False
+2020-06-30,Pharmaceuticals & Biotechnology,constrained_high,True,0,0.014705882352941124,True
+2020-06-30,Power,constrained_residual,True,0,0.0,False
+2020-06-30,Power,constrained_high,True,0,0.0,False
+2020-06-30,Realty,constrained_residual,True,0,0.11627906976744207,True
+2020-06-30,Realty,constrained_high,True,0,0.0,False
+2020-06-30,Retailing,constrained_residual,True,0,0.0,False
+2020-06-30,Retailing,constrained_high,True,0,0.0,False
+2020-06-30,Telecom -  Equipment & Accessories,constrained_residual,True,0,0.0,False
+2020-06-30,Telecom -  Equipment & Accessories,constrained_high,True,0,0.0,False
+2020-06-30,Telecom - Services,constrained_residual,True,0,0.0,False
+2020-06-30,Telecom - Services,constrained_high,True,0,0.0,False
+2020-06-30,Textiles & Apparels,constrained_residual,True,0,0.04166666666666696,True
+2020-06-30,Textiles & Apparels,constrained_high,True,0,0.06547619047619069,True
+2020-06-30,Transport Services,constrained_residual,True,0,0.0,False
+2020-06-30,Transport Services,constrained_high,True,0,0.0,False
+2020-09-30,Agricultural Food & other Products,constrained_residual,True,0,-4.440892098500626e-16,False
+2020-09-30,Agricultural Food & other Products,constrained_high,True,0,0.03921568627451011,True
+2020-09-30,"Agricultural, Commercial & Construction Vehicles",constrained_residual,True,0,0.0,False
+2020-09-30,"Agricultural, Commercial & Construction Vehicles",constrained_high,True,0,0.0,False
+2020-09-30,Auto Components,constrained_residual,True,0,0.07936507936507953,True
+2020-09-30,Auto Components,constrained_high,True,0,0.19047619047619024,True
+2020-09-30,Automobiles,constrained_residual,True,0,0.0,False
+2020-09-30,Automobiles,constrained_high,True,0,0.0,False
+2020-09-30,Banks,constrained_residual,True,0,0.0,False
+2020-09-30,Banks,constrained_high,True,0,0.0,False
+2020-09-30,Beverages,constrained_residual,True,0,0.0,False
+2020-09-30,Beverages,constrained_high,True,0,0.25,True
+2020-09-30,Capital Markets,constrained_residual,True,0,0.0,False
+2020-09-30,Capital Markets,constrained_high,True,0,0.0,False
+2020-09-30,Cement & Cement Products,constrained_residual,True,0,0.0,False
+2020-09-30,Cement & Cement Products,constrained_high,True,0,0.0,False
+2020-09-30,Chemicals & Petrochemicals,constrained_residual,True,0,0.03571428571428603,True
+2020-09-30,Chemicals & Petrochemicals,constrained_high,True,0,0.0,False
+2020-09-30,Commercial Services & Supplies,constrained_residual,True,0,0.0,False
+2020-09-30,Commercial Services & Supplies,constrained_high,True,0,0.0,False
+2020-09-30,Construction,constrained_residual,True,0,0.0,False
+2020-09-30,Construction,constrained_high,True,0,0.0,False
+2020-09-30,Consumer Durables,constrained_residual,True,0,0.0,False
+2020-09-30,Consumer Durables,constrained_high,True,0,0.0,False
+2020-09-30,Diversified,constrained_residual,True,0,0.0,False
+2020-09-30,Diversified,constrained_high,True,0,0.0,False
+2020-09-30,Electrical Equipment,constrained_residual,True,0,0.03846153846153877,True
+2020-09-30,Electrical Equipment,constrained_high,True,0,0.0,False
+2020-09-30,Entertainment,constrained_residual,True,0,0.0,False
+2020-09-30,Entertainment,constrained_high,True,0,0.0,False
+2020-09-30,Ferrous Metals,constrained_residual,True,0,0.0,False
+2020-09-30,Ferrous Metals,constrained_high,True,0,0.0,False
+2020-09-30,Fertilizers & Agrochemicals,constrained_residual,True,0,0.04166666666666652,True
+2020-09-30,Fertilizers & Agrochemicals,constrained_high,True,0,0.0,False
+2020-09-30,Finance,constrained_residual,True,0,-2.220446049250313e-16,False
+2020-09-30,Finance,constrained_high,True,0,-2.220446049250313e-16,False
+2020-09-30,Food Products,constrained_residual,True,0,0.0,False
+2020-09-30,Food Products,constrained_high,True,0,0.0,False
+2020-09-30,Healthcare Services,constrained_residual,True,0,-2.220446049250313e-16,False
+2020-09-30,Healthcare Services,constrained_high,True,0,0.0,False
+2020-09-30,Household Products,constrained_residual,True,0,0.0,False
+2020-09-30,Household Products,constrained_high,True,0,0.0,False
+2020-09-30,IT - Hardware,constrained_residual,True,0,0.0,False
+2020-09-30,IT - Hardware,constrained_high,True,0,0.0,False
+2020-09-30,IT - Services,constrained_residual,True,0,-4.440892098500626e-16,False
+2020-09-30,IT - Services,constrained_high,True,0,-4.440892098500626e-16,False
+2020-09-30,IT - Software,constrained_residual,True,0,0.0,False
+2020-09-30,IT - Software,constrained_high,True,0,0.08333333333333348,True
+2020-09-30,Industrial Manufacturing,constrained_residual,True,0,-2.220446049250313e-16,False
+2020-09-30,Industrial Manufacturing,constrained_high,True,0,-2.220446049250313e-16,False
+2020-09-30,Industrial Products,constrained_residual,True,0,0.06034482758620685,True
+2020-09-30,Industrial Products,constrained_high,True,0,0.05172413793103425,True
+2020-09-30,Leisure Services,constrained_residual,True,0,-4.440892098500626e-16,False
+2020-09-30,Leisure Services,constrained_high,True,0,0.0,False
+2020-09-30,Media,constrained_residual,True,0,0.0,False
+2020-09-30,Media,constrained_high,True,0,0.0,False
+2020-09-30,Minerals & Mining,constrained_residual,True,0,0.0,False
+2020-09-30,Minerals & Mining,constrained_high,True,0,0.0,False
+2020-09-30,Non - Ferrous Metals,constrained_residual,True,0,0.0,False
+2020-09-30,Non - Ferrous Metals,constrained_high,True,0,0.0,False
+2020-09-30,Oil,constrained_residual,True,0,0.0,False
+2020-09-30,Oil,constrained_high,True,0,0.0,False
+2020-09-30,Other Construction Materials,constrained_residual,True,0,0.0,False
+2020-09-30,Other Construction Materials,constrained_high,True,0,0.0,False
+2020-09-30,Other Consumer Services,constrained_residual,True,0,0.0,False
+2020-09-30,Other Consumer Services,constrained_high,True,0,0.0,False
+2020-09-30,"Paper, Forest & Jute Products",constrained_residual,True,0,-2.220446049250313e-16,False
+2020-09-30,"Paper, Forest & Jute Products",constrained_high,True,0,0.0,False
+2020-09-30,Personal Products,constrained_residual,True,0,0.0,False
+2020-09-30,Personal Products,constrained_high,True,0,0.0,False
+2020-09-30,Petroleum Products,constrained_residual,True,0,0.0,False
+2020-09-30,Petroleum Products,constrained_high,True,0,0.0,False
+2020-09-30,Pharmaceuticals & Biotechnology,constrained_residual,True,0,0.0,False
+2020-09-30,Pharmaceuticals & Biotechnology,constrained_high,True,0,0.0,False
+2020-09-30,Power,constrained_residual,True,0,0.0,False
+2020-09-30,Power,constrained_high,True,0,0.045454545454545414,True
+2020-09-30,Realty,constrained_residual,True,0,0.02272727272727293,True
+2020-09-30,Realty,constrained_high,True,0,0.02272727272727293,True
+2020-09-30,Retailing,constrained_residual,True,0,0.0,False
+2020-09-30,Retailing,constrained_high,True,0,0.0,False
+2020-09-30,Telecom -  Equipment & Accessories,constrained_residual,True,0,0.0,False
+2020-09-30,Telecom -  Equipment & Accessories,constrained_high,True,0,0.0,False
+2020-09-30,Telecom - Services,constrained_residual,True,0,0.0,False
+2020-09-30,Telecom - Services,constrained_high,True,0,0.0,False
+2020-09-30,Textiles & Apparels,constrained_residual,True,0,0.059523809523809756,True
+2020-09-30,Textiles & Apparels,constrained_high,True,0,0.059523809523809756,True
+2020-09-30,Transport Services,constrained_residual,True,0,0.0,False
+2020-09-30,Transport Services,constrained_high,True,0,-4.440892098500626e-16,False
+2020-12-31,Aerospace & Defense,constrained_residual,True,0,0.0,False
+2020-12-31,Aerospace & Defense,constrained_high,True,0,0.0,False
+2020-12-31,Agricultural Food & other Products,constrained_residual,True,0,0.0,False
+2020-12-31,Agricultural Food & other Products,constrained_high,True,0,0.0,False
+2020-12-31,"Agricultural, Commercial & Construction Vehicles",constrained_residual,True,0,0.375,True
+2020-12-31,"Agricultural, Commercial & Construction Vehicles",constrained_high,True,0,0.375,True
+2020-12-31,Auto Components,constrained_residual,True,0,0.04411764705882382,True
+2020-12-31,Auto Components,constrained_high,True,0,-4.440892098500626e-16,False
+2020-12-31,Automobiles,constrained_residual,True,0,0.0,False
+2020-12-31,Automobiles,constrained_high,True,0,0.0,False
+2020-12-31,Banks,constrained_residual,True,0,0.03703703703703676,True
+2020-12-31,Banks,constrained_high,True,0,0.0,False
+2020-12-31,Beverages,constrained_residual,True,0,0.08333333333333304,True
+2020-12-31,Beverages,constrained_high,True,0,0.08333333333333304,True
+2020-12-31,Capital Markets,constrained_residual,True,0,-2.220446049250313e-16,False
+2020-12-31,Capital Markets,constrained_high,True,0,-2.220446049250313e-16,False
+2020-12-31,Cement & Cement Products,constrained_residual,True,0,0.0,False
+2020-12-31,Cement & Cement Products,constrained_high,True,0,0.0,False
+2020-12-31,Chemicals & Petrochemicals,constrained_residual,True,0,0.0,False
+2020-12-31,Chemicals & Petrochemicals,constrained_high,True,0,0.0,False
+2020-12-31,Commercial Services & Supplies,constrained_residual,True,0,0.0,False
+2020-12-31,Commercial Services & Supplies,constrained_high,True,0,0.0,False
+2020-12-31,Construction,constrained_residual,True,0,-4.440892098500626e-16,False
+2020-12-31,Construction,constrained_high,True,0,-4.440892098500626e-16,False
+2020-12-31,Consumer Durables,constrained_residual,True,0,0.0,False
+2020-12-31,Consumer Durables,constrained_high,True,0,-4.440892098500626e-16,False
+2020-12-31,Diversified,constrained_residual,True,0,0.0,False
+2020-12-31,Diversified,constrained_high,True,0,-2.220446049250313e-16,False
+2020-12-31,Electrical Equipment,constrained_residual,True,0,0.0,False
+2020-12-31,Electrical Equipment,constrained_high,True,0,0.0,False
+2020-12-31,Entertainment,constrained_residual,True,0,0.0,False
+2020-12-31,Entertainment,constrained_high,True,0,0.0,False
+2020-12-31,Ferrous Metals,constrained_residual,True,0,0.0,False
+2020-12-31,Ferrous Metals,constrained_high,True,0,0.0,False
+2020-12-31,Fertilizers & Agrochemicals,constrained_residual,True,0,0.0,False
+2020-12-31,Fertilizers & Agrochemicals,constrained_high,True,0,0.04347826086956541,True
+2020-12-31,Finance,constrained_residual,True,0,0.0,False
+2020-12-31,Finance,constrained_high,True,0,0.0,False
+2020-12-31,Food Products,constrained_residual,True,0,0.0,False
+2020-12-31,Food Products,constrained_high,True,0,0.0,False
+2020-12-31,Healthcare Services,constrained_residual,True,0,0.0,False
+2020-12-31,Healthcare Services,constrained_high,True,0,0.0,False
+2020-12-31,Household Products,constrained_residual,True,0,-4.440892098500626e-16,False
+2020-12-31,Household Products,constrained_high,True,0,-4.440892098500626e-16,False
+2020-12-31,IT - Hardware,constrained_residual,True,0,0.0,False
+2020-12-31,IT - Hardware,constrained_high,True,0,0.0,False
+2020-12-31,IT - Services,constrained_residual,True,0,0.28000000000000025,True
+2020-12-31,IT - Services,constrained_high,True,0,0.040000000000000036,True
+2020-12-31,IT - Software,constrained_residual,True,0,0.0,False
+2020-12-31,IT - Software,constrained_high,True,0,0.0,False
+2020-12-31,Industrial Manufacturing,constrained_residual,True,0,0.07142857142857117,True
+2020-12-31,Industrial Manufacturing,constrained_high,True,0,0.07142857142857117,True
+2020-12-31,Industrial Products,constrained_residual,True,0,0.03658536585365857,True
+2020-12-31,Industrial Products,constrained_high,True,0,0.04065040650406493,True
+2020-12-31,Leisure Services,constrained_residual,True,0,0.0,False
+2020-12-31,Leisure Services,constrained_high,True,0,0.0,False
+2020-12-31,Media,constrained_residual,True,0,0.0,False
+2020-12-31,Media,constrained_high,True,0,0.0,False
+2020-12-31,Minerals & Mining,constrained_residual,True,0,0.0,False
+2020-12-31,Minerals & Mining,constrained_high,True,0,0.0,False
+2020-12-31,Non - Ferrous Metals,constrained_residual,True,0,0.0,False
+2020-12-31,Non - Ferrous Metals,constrained_high,True,0,0.0,False
+2020-12-31,Oil,constrained_residual,True,0,0.0,False
+2020-12-31,Oil,constrained_high,True,0,0.0,False
+2020-12-31,Other Construction Materials,constrained_residual,True,0,0.0,False
+2020-12-31,Other Construction Materials,constrained_high,True,0,0.0,False
+2020-12-31,Other Consumer Services,constrained_residual,True,0,0.0,False
+2020-12-31,Other Consumer Services,constrained_high,True,0,0.0,False
+2020-12-31,"Paper, Forest & Jute Products",constrained_residual,True,0,0.0,False
+2020-12-31,"Paper, Forest & Jute Products",constrained_high,True,0,0.0,False
+2020-12-31,Personal Products,constrained_residual,True,0,0.0,False
+2020-12-31,Personal Products,constrained_high,True,0,0.0,False
+2020-12-31,Petroleum Products,constrained_residual,True,0,0.10000000000000009,True
+2020-12-31,Petroleum Products,constrained_high,True,0,0.0,False
+2020-12-31,Pharmaceuticals & Biotechnology,constrained_residual,True,0,0.03947368421052655,True
+2020-12-31,Pharmaceuticals & Biotechnology,constrained_high,True,0,-4.440892098500626e-16,False
+2020-12-31,Power,constrained_residual,True,0,-4.440892098500626e-16,False
+2020-12-31,Power,constrained_high,True,0,-4.440892098500626e-16,False
+2020-12-31,Realty,constrained_residual,True,0,0.023255813953488413,True
+2020-12-31,Realty,constrained_high,True,0,0.0,False
+2020-12-31,Retailing,constrained_residual,True,0,0.0,False
+2020-12-31,Retailing,constrained_high,True,0,0.0,False
+2020-12-31,Telecom -  Equipment & Accessories,constrained_residual,True,0,0.0,False
+2020-12-31,Telecom -  Equipment & Accessories,constrained_high,True,0,0.0,False
+2020-12-31,Telecom - Services,constrained_residual,True,0,0.0,False
+2020-12-31,Telecom - Services,constrained_high,True,0,0.0,False
+2020-12-31,Textiles & Apparels,constrained_residual,True,0,0.16129032258064502,True
+2020-12-31,Textiles & Apparels,constrained_high,True,0,0.16129032258064502,True
+2020-12-31,Transport Infrastructure,constrained_residual,True,0,0.0,False
+2020-12-31,Transport Infrastructure,constrained_high,True,0,0.0,False
+2020-12-31,Transport Services,constrained_residual,True,0,0.0,False
+2020-12-31,Transport Services,constrained_high,True,0,-2.220446049250313e-16,False
+2021-03-31,Aerospace & Defense,constrained_residual,True,0,0.0,False
+2021-03-31,Aerospace & Defense,constrained_high,True,0,0.0,False
+2021-03-31,Agricultural Food & other Products,constrained_residual,True,0,0.0,False
+2021-03-31,Agricultural Food & other Products,constrained_high,True,0,0.0,False
+2021-03-31,"Agricultural, Commercial & Construction Vehicles",constrained_residual,True,0,0.125,True
+2021-03-31,"Agricultural, Commercial & Construction Vehicles",constrained_high,True,0,0.125,True
+2021-03-31,Auto Components,constrained_residual,True,0,0.028985507246376496,True
+2021-03-31,Auto Components,constrained_high,True,0,0.1304347826086958,True
+2021-03-31,Automobiles,constrained_residual,True,0,0.0,False
+2021-03-31,Automobiles,constrained_high,True,0,0.0,False
+2021-03-31,Banks,constrained_residual,True,0,0.0,False
+2021-03-31,Banks,constrained_high,True,0,0.0,False
+2021-03-31,Beverages,constrained_residual,True,0,0.0,False
+2021-03-31,Beverages,constrained_high,True,0,0.0,False
+2021-03-31,Capital Markets,constrained_residual,True,0,0.0,False
+2021-03-31,Capital Markets,constrained_high,True,0,0.0,False
+2021-03-31,Cement & Cement Products,constrained_residual,True,0,0.0,True
+2021-03-31,Cement & Cement Products,constrained_high,True,0,-4.440892098500626e-16,True
+2021-03-31,Chemicals & Petrochemicals,constrained_residual,True,0,0.06329113924050667,True
+2021-03-31,Chemicals & Petrochemicals,constrained_high,True,0,0.012658227848101333,True
+2021-03-31,Commercial Services & Supplies,constrained_residual,True,0,0.0,False
+2021-03-31,Commercial Services & Supplies,constrained_high,True,0,0.0,False
+2021-03-31,Construction,constrained_residual,True,0,-4.440892098500626e-16,False
+2021-03-31,Construction,constrained_high,True,0,-4.440892098500626e-16,False
+2021-03-31,Consumer Durables,constrained_residual,True,0,0.0,False
+2021-03-31,Consumer Durables,constrained_high,True,0,0.0,False
+2021-03-31,Diversified,constrained_residual,True,0,0.0,False
+2021-03-31,Diversified,constrained_high,True,0,0.0,False
+2021-03-31,Electrical Equipment,constrained_residual,True,0,0.0,False
+2021-03-31,Electrical Equipment,constrained_high,True,0,0.0,False
+2021-03-31,Entertainment,constrained_residual,True,0,-2.220446049250313e-16,False
+2021-03-31,Entertainment,constrained_high,True,0,-2.220446049250313e-16,False
+2021-03-31,Ferrous Metals,constrained_residual,True,0,0.0,False
+2021-03-31,Ferrous Metals,constrained_high,True,0,0.0,False
+2021-03-31,Fertilizers & Agrochemicals,constrained_residual,True,0,0.0,False
+2021-03-31,Fertilizers & Agrochemicals,constrained_high,True,0,0.04166666666666652,True
+2021-03-31,Finance,constrained_residual,True,0,0.06481481481481488,True
+2021-03-31,Finance,constrained_high,True,0,0.06481481481481488,True
+2021-03-31,Food Products,constrained_residual,True,0,0.04166666666666652,True
+2021-03-31,Food Products,constrained_high,True,0,0.0,False
+2021-03-31,Healthcare Services,constrained_residual,True,0,-4.440892098500626e-16,False
+2021-03-31,Healthcare Services,constrained_high,True,0,0.0,False
+2021-03-31,Household Products,constrained_residual,True,0,0.0,False
+2021-03-31,Household Products,constrained_high,True,0,0.0,False
+2021-03-31,IT - Hardware,constrained_residual,True,0,0.0,False
+2021-03-31,IT - Hardware,constrained_high,True,0,0.0,False
+2021-03-31,IT - Services,constrained_residual,True,0,-4.440892098500626e-16,False
+2021-03-31,IT - Services,constrained_high,True,0,-4.440892098500626e-16,False
+2021-03-31,IT - Software,constrained_residual,True,0,0.0,False
+2021-03-31,IT - Software,constrained_high,True,0,0.05555555555555536,True
+2021-03-31,Industrial Manufacturing,constrained_residual,True,0,0.02272727272727293,True
+2021-03-31,Industrial Manufacturing,constrained_high,True,0,0.0,False
+2021-03-31,Industrial Products,constrained_residual,True,0,0.3359375,True
+2021-03-31,Industrial Products,constrained_high,True,0,0.10546875,True
+2021-03-31,Leisure Services,constrained_residual,True,0,0.0,False
+2021-03-31,Leisure Services,constrained_high,True,0,0.0,False
+2021-03-31,Media,constrained_residual,True,0,0.0,False
+2021-03-31,Media,constrained_high,True,0,0.0,False
+2021-03-31,Minerals & Mining,constrained_residual,True,0,0.0,False
+2021-03-31,Minerals & Mining,constrained_high,True,0,0.0,False
+2021-03-31,Non - Ferrous Metals,constrained_residual,True,0,0.0,False
+2021-03-31,Non - Ferrous Metals,constrained_high,True,0,0.0,False
+2021-03-31,Oil,constrained_residual,True,0,0.0,False
+2021-03-31,Oil,constrained_high,True,0,0.0,False
+2021-03-31,Other Construction Materials,constrained_residual,True,0,-4.440892098500626e-16,False
+2021-03-31,Other Construction Materials,constrained_high,True,0,-4.440892098500626e-16,False
+2021-03-31,Other Consumer Services,constrained_residual,True,0,0.0,False
+2021-03-31,Other Consumer Services,constrained_high,True,0,0.0,False
+2021-03-31,"Paper, Forest & Jute Products",constrained_residual,True,0,0.0,False
+2021-03-31,"Paper, Forest & Jute Products",constrained_high,True,0,0.0,False
+2021-03-31,Personal Products,constrained_residual,True,0,0.0,False
+2021-03-31,Personal Products,constrained_high,True,0,0.0,False
+2021-03-31,Petroleum Products,constrained_residual,True,0,0.0,False
+2021-03-31,Petroleum Products,constrained_high,True,0,0.0,False
+2021-03-31,Pharmaceuticals & Biotechnology,constrained_residual,True,0,0.0,False
+2021-03-31,Pharmaceuticals & Biotechnology,constrained_high,True,0,0.012345679012345734,True
+2021-03-31,Power,constrained_residual,True,0,0.0,False
+2021-03-31,Power,constrained_high,True,0,-2.220446049250313e-16,False
+2021-03-31,Realty,constrained_residual,True,0,0.021276595744680993,True
+2021-03-31,Realty,constrained_high,True,0,0.021276595744680993,True
+2021-03-31,Retailing,constrained_residual,True,0,0.0,False
+2021-03-31,Retailing,constrained_high,True,0,0.0,False
+2021-03-31,Telecom -  Equipment & Accessories,constrained_residual,True,0,0.0,False
+2021-03-31,Telecom -  Equipment & Accessories,constrained_high,True,0,0.0,True
+2021-03-31,Telecom - Services,constrained_residual,True,0,0.0,False
+2021-03-31,Telecom - Services,constrained_high,True,0,0.0,False
+2021-03-31,Textiles & Apparels,constrained_residual,True,0,0.15625,True
+2021-03-31,Textiles & Apparels,constrained_high,True,0,0.6458333333333335,True
+2021-03-31,Transport Infrastructure,constrained_residual,True,0,0.0,False
+2021-03-31,Transport Infrastructure,constrained_high,True,0,0.0,False
+2021-03-31,Transport Services,constrained_residual,True,0,0.0,False
+2021-03-31,Transport Services,constrained_high,True,0,0.0,False
+2021-06-30,Aerospace & Defense,constrained_residual,True,0,0.0,False
+2021-06-30,Aerospace & Defense,constrained_high,True,0,0.0,False
+2021-06-30,Agricultural Food & other Products,constrained_residual,True,0,0.0,False
+2021-06-30,Agricultural Food & other Products,constrained_high,True,0,0.0,True
+2021-06-30,"Agricultural, Commercial & Construction Vehicles",constrained_residual,True,0,0.0,False
+2021-06-30,"Agricultural, Commercial & Construction Vehicles",constrained_high,True,0,0.0,False
+2021-06-30,Auto Components,constrained_residual,True,0,0.34246575342465735,True
+2021-06-30,Auto Components,constrained_high,True,0,0.09589041095890383,True
+2021-06-30,Automobiles,constrained_residual,True,0,0.0,False
+2021-06-30,Automobiles,constrained_high,True,0,0.0,False
+2021-06-30,Banks,constrained_residual,True,0,0.0,False
+2021-06-30,Banks,constrained_high,True,0,0.0,False
+2021-06-30,Beverages,constrained_residual,True,0,0.15384615384615374,True
+2021-06-30,Beverages,constrained_high,True,0,0.0,False
+2021-06-30,Capital Markets,constrained_residual,True,0,0.0,False
+2021-06-30,Capital Markets,constrained_high,True,0,0.0,False
+2021-06-30,Cement & Cement Products,constrained_residual,True,0,0.0,False
+2021-06-30,Cement & Cement Products,constrained_high,True,0,-2.220446049250313e-16,False
+2021-06-30,Chemicals & Petrochemicals,constrained_residual,True,0,0.0,False
+2021-06-30,Chemicals & Petrochemicals,constrained_high,True,0,0.0,False
+2021-06-30,Commercial Services & Supplies,constrained_residual,True,0,0.34042553191489344,True
+2021-06-30,Commercial Services & Supplies,constrained_high,True,0,0.34042553191489344,True
+2021-06-30,Construction,constrained_residual,True,0,0.0,False
+2021-06-30,Construction,constrained_high,True,0,-4.440892098500626e-16,False
+2021-06-30,Consumer Durables,constrained_residual,True,0,0.0,False
+2021-06-30,Consumer Durables,constrained_high,True,0,-4.440892098500626e-16,False
+2021-06-30,Diversified,constrained_residual,True,0,0.0,False
+2021-06-30,Diversified,constrained_high,True,0,0.0,False
+2021-06-30,Electrical Equipment,constrained_residual,True,0,0.0,False
+2021-06-30,Electrical Equipment,constrained_high,True,0,0.0,False
+2021-06-30,Entertainment,constrained_residual,True,0,0.050000000000000266,True
+2021-06-30,Entertainment,constrained_high,True,0,0.050000000000000266,True
+2021-06-30,Ferrous Metals,constrained_residual,True,0,0.0,False
+2021-06-30,Ferrous Metals,constrained_high,True,0,-2.220446049250313e-16,False
+2021-06-30,Fertilizers & Agrochemicals,constrained_residual,True,0,0.038461538461538325,True
+2021-06-30,Fertilizers & Agrochemicals,constrained_high,True,0,0.038461538461538325,True
+2021-06-30,Finance,constrained_residual,True,0,0.0,False
+2021-06-30,Finance,constrained_high,True,0,0.0,False
+2021-06-30,Food Products,constrained_residual,True,0,0.0,False
+2021-06-30,Food Products,constrained_high,True,0,0.0,False
+2021-06-30,Healthcare Services,constrained_residual,True,0,0.0,False
+2021-06-30,Healthcare Services,constrained_high,True,0,0.0,False
+2021-06-30,Household Products,constrained_residual,True,0,0.0,False
+2021-06-30,Household Products,constrained_high,True,0,0.0,False
+2021-06-30,IT - Hardware,constrained_residual,True,0,0.0,False
+2021-06-30,IT - Hardware,constrained_high,True,0,0.0,False
+2021-06-30,IT - Services,constrained_residual,True,0,0.0,False
+2021-06-30,IT - Services,constrained_high,True,0,0.0,False
+2021-06-30,IT - Software,constrained_residual,True,0,0.32051282051282026,True
+2021-06-30,IT - Software,constrained_high,True,0,0.3205128205128207,True
+2021-06-30,Industrial Manufacturing,constrained_residual,True,0,0.27659574468085113,True
+2021-06-30,Industrial Manufacturing,constrained_high,True,0,0.04255319148936154,True
+2021-06-30,Industrial Products,constrained_residual,True,0,0.0,True
+2021-06-30,Industrial Products,constrained_high,True,0,0.0,False
+2021-06-30,Leisure Services,constrained_residual,True,0,0.0,False
+2021-06-30,Leisure Services,constrained_high,True,0,0.0,False
+2021-06-30,Media,constrained_residual,True,0,0.0,False
+2021-06-30,Media,constrained_high,True,0,0.0,False
+2021-06-30,Minerals & Mining,constrained_residual,True,0,0.0,False
+2021-06-30,Minerals & Mining,constrained_high,True,0,0.0,False
+2021-06-30,Non - Ferrous Metals,constrained_residual,True,0,0.0,False
+2021-06-30,Non - Ferrous Metals,constrained_high,True,0,0.0,False
+2021-06-30,Oil,constrained_residual,True,0,0.0,False
+2021-06-30,Oil,constrained_high,True,0,0.0,False
+2021-06-30,Other Construction Materials,constrained_residual,True,0,0.0,False
+2021-06-30,Other Construction Materials,constrained_high,True,0,0.0,False
+2021-06-30,Other Consumer Services,constrained_residual,True,0,0.0,False
+2021-06-30,Other Consumer Services,constrained_high,True,0,0.0,False
+2021-06-30,"Paper, Forest & Jute Products",constrained_residual,True,0,0.0,False
+2021-06-30,"Paper, Forest & Jute Products",constrained_high,True,0,0.2105263157894739,True
+2021-06-30,Personal Products,constrained_residual,True,0,0.0,False
+2021-06-30,Personal Products,constrained_high,True,0,0.0,False
+2021-06-30,Petroleum Products,constrained_residual,True,0,0.0,False
+2021-06-30,Petroleum Products,constrained_high,True,0,0.0,False
+2021-06-30,Pharmaceuticals & Biotechnology,constrained_residual,True,0,0.0,False
+2021-06-30,Pharmaceuticals & Biotechnology,constrained_high,True,0,0.0,False
+2021-06-30,Power,constrained_residual,True,0,0.0,False
+2021-06-30,Power,constrained_high,True,0,0.21739130434782616,True
+2021-06-30,Realty,constrained_residual,True,0,0.0,False
+2021-06-30,Realty,constrained_high,True,0,0.0,False
+2021-06-30,Retailing,constrained_residual,True,0,0.0,False
+2021-06-30,Retailing,constrained_high,True,0,0.0,False
+2021-06-30,Telecom -  Equipment & Accessories,constrained_residual,True,0,0.0,False
+2021-06-30,Telecom -  Equipment & Accessories,constrained_high,True,0,0.0,False
+2021-06-30,Telecom - Services,constrained_residual,True,0,0.0,False
+2021-06-30,Telecom - Services,constrained_high,True,0,0.0,False
+2021-06-30,Textiles & Apparels,constrained_residual,True,0,0.16831683168316847,True
+2021-06-30,Textiles & Apparels,constrained_high,True,0,0.06930693069306937,True
+2021-06-30,Transport Infrastructure,constrained_residual,True,0,0.0,False
+2021-06-30,Transport Infrastructure,constrained_high,True,0,0.0,False
+2021-06-30,Transport Services,constrained_residual,True,0,0.0,False
+2021-06-30,Transport Services,constrained_high,True,0,0.0,False
+2021-09-30,Aerospace & Defense,constrained_residual,True,0,0.0,False
+2021-09-30,Aerospace & Defense,constrained_high,True,0,0.0,False
+2021-09-30,Agricultural Food & other Products,constrained_residual,True,0,0.07692307692307665,True
+2021-09-30,Agricultural Food & other Products,constrained_high,True,0,0.0,False
+2021-09-30,"Agricultural, Commercial & Construction Vehicles",constrained_residual,True,0,0.0,False
+2021-09-30,"Agricultural, Commercial & Construction Vehicles",constrained_high,True,0,0.0,False
+2021-09-30,Auto Components,constrained_residual,True,0,0.1333333333333333,True
+2021-09-30,Auto Components,constrained_high,True,0,0.05333333333333368,True
+2021-09-30,Automobiles,constrained_residual,True,0,0.0,False
+2021-09-30,Automobiles,constrained_high,True,0,0.0,False
+2021-09-30,Banks,constrained_residual,True,0,0.0,False
+2021-09-30,Banks,constrained_high,True,0,0.0,False
+2021-09-30,Beverages,constrained_residual,True,0,0.0,False
+2021-09-30,Beverages,constrained_high,True,0,0.0,False
+2021-09-30,Capital Markets,constrained_residual,True,0,0.0,False
+2021-09-30,Capital Markets,constrained_high,True,0,0.0,False
+2021-09-30,Cement & Cement Products,constrained_residual,True,0,0.0,False
+2021-09-30,Cement & Cement Products,constrained_high,True,0,0.0,False
+2021-09-30,Chemicals & Petrochemicals,constrained_residual,True,0,0.005376344086021501,True
+2021-09-30,Chemicals & Petrochemicals,constrained_high,True,0,0.0,False
+2021-09-30,Commercial Services & Supplies,constrained_residual,True,0,0.2105263157894739,True
+2021-09-30,Commercial Services & Supplies,constrained_high,True,0,0.2105263157894739,True
+2021-09-30,Construction,constrained_residual,True,0,-4.440892098500626e-16,False
+2021-09-30,Construction,constrained_high,True,0,0.03658536585365857,True
+2021-09-30,Consumer Durables,constrained_residual,True,0,0.054054054054053946,True
+2021-09-30,Consumer Durables,constrained_high,True,0,0.054054054054053946,True
+2021-09-30,Diversified,constrained_residual,True,0,0.0,False
+2021-09-30,Diversified,constrained_high,True,0,0.0,False
+2021-09-30,Electrical Equipment,constrained_residual,True,0,-4.440892098500626e-16,False
+2021-09-30,Electrical Equipment,constrained_high,True,0,-4.440892098500626e-16,False
+2021-09-30,Entertainment,constrained_residual,True,0,0.0,True
+2021-09-30,Entertainment,constrained_high,True,0,0.0,True
+2021-09-30,Ferrous Metals,constrained_residual,True,0,0.0,False
+2021-09-30,Ferrous Metals,constrained_high,True,0,0.0,False
+2021-09-30,Fertilizers & Agrochemicals,constrained_residual,True,0,0.26923076923076916,True
+2021-09-30,Fertilizers & Agrochemicals,constrained_high,True,0,0.0,False
+2021-09-30,Finance,constrained_residual,True,0,0.02941176470588225,True
+2021-09-30,Finance,constrained_high,False,1,0.0,False
+2021-09-30,Food Products,constrained_residual,True,0,0.0,False
+2021-09-30,Food Products,constrained_high,True,0,0.0,False
+2021-09-30,Healthcare Services,constrained_residual,True,0,0.0,False
+2021-09-30,Healthcare Services,constrained_high,True,0,0.0,False
+2021-09-30,Household Products,constrained_residual,True,0,0.0,False
+2021-09-30,Household Products,constrained_high,True,0,0.0,False
+2021-09-30,IT - Hardware,constrained_residual,True,0,0.09090909090909083,True
+2021-09-30,IT - Hardware,constrained_high,True,0,0.09090909090909083,True
+2021-09-30,IT - Services,constrained_residual,True,0,0.0,False
+2021-09-30,IT - Services,constrained_high,True,0,0.0,False
+2021-09-30,IT - Software,constrained_residual,True,0,0.0,True
+2021-09-30,IT - Software,constrained_high,True,0,0.0,True
+2021-09-30,Industrial Manufacturing,constrained_residual,True,0,0.1568627450980391,True
+2021-09-30,Industrial Manufacturing,constrained_high,True,0,0.15686274509803932,True
+2021-09-30,Industrial Products,constrained_residual,True,0,0.0,False
+2021-09-30,Industrial Products,constrained_high,True,0,0.0,False
+2021-09-30,Leisure Services,constrained_residual,True,0,0.0,False
+2021-09-30,Leisure Services,constrained_high,True,0,0.0,False
+2021-09-30,Media,constrained_residual,True,0,0.0,False
+2021-09-30,Media,constrained_high,True,0,0.0,False
+2021-09-30,Minerals & Mining,constrained_residual,True,0,0.0,False
+2021-09-30,Minerals & Mining,constrained_high,True,0,0.0,False
+2021-09-30,Non - Ferrous Metals,constrained_residual,True,0,0.0,False
+2021-09-30,Non - Ferrous Metals,constrained_high,True,0,0.22222222222222232,True
+2021-09-30,Oil,constrained_residual,True,0,0.0,False
+2021-09-30,Oil,constrained_high,True,0,0.0,False
+2021-09-30,Other Construction Materials,constrained_residual,True,0,0.0,False
+2021-09-30,Other Construction Materials,constrained_high,True,0,0.0,False
+2021-09-30,Other Consumer Services,constrained_residual,True,0,0.0,False
+2021-09-30,Other Consumer Services,constrained_high,True,0,0.0,False
+2021-09-30,"Paper, Forest & Jute Products",constrained_residual,True,0,0.0,False
+2021-09-30,"Paper, Forest & Jute Products",constrained_high,True,0,0.0,False
+2021-09-30,Personal Products,constrained_residual,True,0,0.0,False
+2021-09-30,Personal Products,constrained_high,True,0,0.0,False
+2021-09-30,Petroleum Products,constrained_residual,True,0,0.0,False
+2021-09-30,Petroleum Products,constrained_high,True,0,0.0,False
+2021-09-30,Pharmaceuticals & Biotechnology,constrained_residual,True,0,0.022727272727272485,True
+2021-09-30,Pharmaceuticals & Biotechnology,constrained_high,True,0,0.0,True
+2021-09-30,Power,constrained_residual,True,0,0.0,False
+2021-09-30,Power,constrained_high,True,0,0.0,False
+2021-09-30,Realty,constrained_residual,True,0,0.0,False
+2021-09-30,Realty,constrained_high,True,0,0.11111111111111116,True
+2021-09-30,Retailing,constrained_residual,True,0,-4.440892098500626e-16,False
+2021-09-30,Retailing,constrained_high,True,0,0.0,False
+2021-09-30,Telecom -  Equipment & Accessories,constrained_residual,True,0,0.0,False
+2021-09-30,Telecom -  Equipment & Accessories,constrained_high,True,0,0.0,False
+2021-09-30,Telecom - Services,constrained_residual,True,0,0.22222222222222232,True
+2021-09-30,Telecom - Services,constrained_high,True,0,0.22222222222222232,True
+2021-09-30,Textiles & Apparels,constrained_residual,True,0,0.0,False
+2021-09-30,Textiles & Apparels,constrained_high,True,0,0.05405405405405439,True
+2021-09-30,Transport Infrastructure,constrained_residual,True,0,0.0,False
+2021-09-30,Transport Infrastructure,constrained_high,True,0,0.0,False
+2021-09-30,Transport Services,constrained_residual,True,0,0.0,False
+2021-09-30,Transport Services,constrained_high,True,0,0.04166666666666696,True
+2021-12-31,Aerospace & Defense,constrained_residual,True,0,0.33333333333333326,True
+2021-12-31,Aerospace & Defense,constrained_high,True,0,0.0,False
+2021-12-31,Agricultural Food & other Products,constrained_residual,True,0,0.04929577464788748,True
+2021-12-31,Agricultural Food & other Products,constrained_high,True,0,0.0,False
+2021-12-31,"Agricultural, Commercial & Construction Vehicles",constrained_residual,True,0,0.0,False
+2021-12-31,"Agricultural, Commercial & Construction Vehicles",constrained_high,True,0,0.0,False
+2021-12-31,Auto Components,constrained_residual,True,0,0.0,False
+2021-12-31,Auto Components,constrained_high,True,0,0.0,False
+2021-12-31,Automobiles,constrained_residual,True,0,0.0,False
+2021-12-31,Automobiles,constrained_high,True,0,0.0,False
+2021-12-31,Banks,constrained_residual,True,0,0.03703703703703676,True
+2021-12-31,Banks,constrained_high,True,0,0.0,False
+2021-12-31,Beverages,constrained_residual,True,0,-2.220446049250313e-16,False
+2021-12-31,Beverages,constrained_high,True,0,0.0,False
+2021-12-31,Capital Markets,constrained_residual,True,0,0.0,False
+2021-12-31,Capital Markets,constrained_high,True,0,0.0,False
+2021-12-31,Cement & Cement Products,constrained_residual,True,0,0.0,False
+2021-12-31,Cement & Cement Products,constrained_high,True,0,0.0,False
+2021-12-31,Chemicals & Petrochemicals,constrained_residual,True,0,0.05714285714285716,True
+2021-12-31,Chemicals & Petrochemicals,constrained_high,True,0,0.41904761904761934,True
+2021-12-31,Commercial Services & Supplies,constrained_residual,True,0,0.1304347826086958,True
+2021-12-31,Commercial Services & Supplies,constrained_high,True,0,0.04347826086956541,True
+2021-12-31,Construction,constrained_residual,True,0,0.13953488372093048,True
+2021-12-31,Construction,constrained_high,True,0,4.440892098500626e-16,True
+2021-12-31,Consumer Durables,constrained_residual,True,0,0.024096385542168752,True
+2021-12-31,Consumer Durables,constrained_high,True,0,0.07228915662650581,True
+2021-12-31,Diversified,constrained_residual,True,0,0.0,False
+2021-12-31,Diversified,constrained_high,True,0,0.0,False
+2021-12-31,Electrical Equipment,constrained_residual,True,0,-1.1102230246251565e-16,False
+2021-12-31,Electrical Equipment,constrained_high,True,0,-1.1102230246251565e-16,False
+2021-12-31,Entertainment,constrained_residual,True,0,0.53125,True
+2021-12-31,Entertainment,constrained_high,True,0,0.046875,True
+2021-12-31,Ferrous Metals,constrained_residual,True,0,0.0,False
+2021-12-31,Ferrous Metals,constrained_high,True,0,0.0,False
+2021-12-31,Fertilizers & Agrochemicals,constrained_residual,True,0,0.0,False
+2021-12-31,Fertilizers & Agrochemicals,constrained_high,True,0,0.0,False
+2021-12-31,Finance,constrained_residual,True,0,0.18238993710691798,True
+2021-12-31,Finance,constrained_high,True,0,0.12578616352201277,True
+2021-12-31,Food Products,constrained_residual,True,0,0.0,False
+2021-12-31,Food Products,constrained_high,True,0,0.0,False
+2021-12-31,Gas,constrained_residual,True,0,0.0,False
+2021-12-31,Gas,constrained_high,True,0,0.0,False
+2021-12-31,Healthcare Services,constrained_residual,True,0,0.0,False
+2021-12-31,Healthcare Services,constrained_high,True,0,0.0,False
+2021-12-31,Household Products,constrained_residual,True,0,-2.220446049250313e-16,False
+2021-12-31,Household Products,constrained_high,True,0,-2.220446049250313e-16,False
+2021-12-31,IT - Hardware,constrained_residual,True,0,-2.220446049250313e-16,False
+2021-12-31,IT - Hardware,constrained_high,True,0,-2.220446049250313e-16,False
+2021-12-31,IT - Services,constrained_residual,True,0,-4.440892098500626e-16,False
+2021-12-31,IT - Services,constrained_high,True,0,0.0,False
+2021-12-31,IT - Software,constrained_residual,True,0,0.11999999999999988,True
+2021-12-31,IT - Software,constrained_high,True,0,0.3400000000000003,True
+2021-12-31,Industrial Manufacturing,constrained_residual,True,0,0.0,False
+2021-12-31,Industrial Manufacturing,constrained_high,True,0,0.0,False
+2021-12-31,Industrial Products,constrained_residual,True,0,0.33439490445859876,True
+2021-12-31,Industrial Products,constrained_high,True,0,0.15286624203821653,True
+2021-12-31,Leisure Services,constrained_residual,True,0,-4.440892098500626e-16,False
+2021-12-31,Leisure Services,constrained_high,True,0,-4.440892098500626e-16,False
+2021-12-31,Media,constrained_residual,True,0,0.0,False
+2021-12-31,Media,constrained_high,True,0,0.375,True
+2021-12-31,Minerals & Mining,constrained_residual,True,0,0.0,False
+2021-12-31,Minerals & Mining,constrained_high,True,0,0.0,False
+2021-12-31,Non - Ferrous Metals,constrained_residual,True,0,0.0,False
+2021-12-31,Non - Ferrous Metals,constrained_high,True,0,0.0,False
+2021-12-31,Oil,constrained_residual,True,0,0.0,False
+2021-12-31,Oil,constrained_high,True,0,0.0,False
+2021-12-31,Other Construction Materials,constrained_residual,True,0,0.0,False
+2021-12-31,Other Construction Materials,constrained_high,True,0,0.0,False
+2021-12-31,Other Consumer Services,constrained_residual,True,0,0.0,False
+2021-12-31,Other Consumer Services,constrained_high,True,0,0.0,False
+2021-12-31,"Paper, Forest & Jute Products",constrained_residual,True,0,0.0,False
+2021-12-31,"Paper, Forest & Jute Products",constrained_high,True,0,0.0,False
+2021-12-31,Personal Products,constrained_residual,True,0,-4.440892098500626e-16,False
+2021-12-31,Personal Products,constrained_high,True,0,0.0,False
+2021-12-31,Petroleum Products,constrained_residual,True,0,0.0,False
+2021-12-31,Petroleum Products,constrained_high,True,0,0.0,False
+2021-12-31,Pharmaceuticals & Biotechnology,constrained_residual,True,0,0.17204301075268802,True
+2021-12-31,Pharmaceuticals & Biotechnology,constrained_high,True,0,-4.440892098500626e-16,False
+2021-12-31,Power,constrained_residual,True,0,0.0,False
+2021-12-31,Power,constrained_high,True,0,0.21739130434782616,True
+2021-12-31,Realty,constrained_residual,True,0,0.0,False
+2021-12-31,Realty,constrained_high,True,0,0.0,False
+2021-12-31,Retailing,constrained_residual,True,0,0.0,False
+2021-12-31,Retailing,constrained_high,True,0,0.0,False
+2021-12-31,Telecom -  Equipment & Accessories,constrained_residual,True,0,-4.440892098500626e-16,False
+2021-12-31,Telecom -  Equipment & Accessories,constrained_high,True,0,-4.440892098500626e-16,False
+2021-12-31,Telecom - Services,constrained_residual,True,0,-2.220446049250313e-16,False
+2021-12-31,Telecom - Services,constrained_high,True,0,-2.220446049250313e-16,False
+2021-12-31,Textiles & Apparels,constrained_residual,True,0,0.08196721311475397,True
+2021-12-31,Textiles & Apparels,constrained_high,True,0,0.10655737704918011,True
+2021-12-31,Transport Infrastructure,constrained_residual,True,0,0.0,False
+2021-12-31,Transport Infrastructure,constrained_high,True,0,0.0,False
+2021-12-31,Transport Services,constrained_residual,True,0,0.2592592592592595,True
+2021-12-31,Transport Services,constrained_high,True,0,0.0,False
+2022-03-31,Aerospace & Defense,constrained_residual,True,0,0.0,False
+2022-03-31,Aerospace & Defense,constrained_high,True,0,0.0,False
+2022-03-31,Agricultural Food & other Products,constrained_residual,True,0,-2.220446049250313e-16,False
+2022-03-31,Agricultural Food & other Products,constrained_high,True,0,-2.220446049250313e-16,False
+2022-03-31,"Agricultural, Commercial & Construction Vehicles",constrained_residual,True,0,0.0,False
+2022-03-31,"Agricultural, Commercial & Construction Vehicles",constrained_high,True,0,0.0,False
+2022-03-31,Auto Components,constrained_residual,True,0,0.018072289156626287,True
+2022-03-31,Auto Components,constrained_high,True,0,0.018072289156626287,True
+2022-03-31,Automobiles,constrained_residual,True,0,0.0,False
+2022-03-31,Automobiles,constrained_high,True,0,0.0,False
+2022-03-31,Banks,constrained_residual,True,0,0.0,False
+2022-03-31,Banks,constrained_high,True,0,0.0,False
+2022-03-31,Beverages,constrained_residual,True,0,0.0,False
+2022-03-31,Beverages,constrained_high,True,0,0.1428571428571428,True
+2022-03-31,Capital Markets,constrained_residual,True,0,0.16000000000000014,True
+2022-03-31,Capital Markets,constrained_high,True,0,0.0,False
+2022-03-31,Cement & Cement Products,constrained_residual,True,0,0.0,False
+2022-03-31,Cement & Cement Products,constrained_high,True,0,0.16666666666666652,True
+2022-03-31,Chemicals & Petrochemicals,constrained_residual,True,0,0.07407407407407396,True
+2022-03-31,Chemicals & Petrochemicals,constrained_high,True,0,0.07407407407407396,True
+2022-03-31,Commercial Services & Supplies,constrained_residual,True,0,0.04999999999999982,True
+2022-03-31,Commercial Services & Supplies,constrained_high,True,0,0.050000000000000044,True
+2022-03-31,Construction,constrained_residual,True,0,0.0,False
+2022-03-31,Construction,constrained_high,True,0,0.0,False
+2022-03-31,Consumer Durables,constrained_residual,True,0,0.20930232558139528,True
+2022-03-31,Consumer Durables,constrained_high,True,0,0.16279069767441845,True
+2022-03-31,Diversified,constrained_residual,True,0,0.0,False
+2022-03-31,Diversified,constrained_high,True,0,0.0,False
+2022-03-31,Electrical Equipment,constrained_residual,True,0,0.03750000000000009,True
+2022-03-31,Electrical Equipment,constrained_high,True,0,0.03750000000000009,True
+2022-03-31,Entertainment,constrained_residual,True,0,0.0,False
+2022-03-31,Entertainment,constrained_high,True,0,0.0,False
+2022-03-31,Ferrous Metals,constrained_residual,True,0,-4.440892098500626e-16,False
+2022-03-31,Ferrous Metals,constrained_high,True,0,0.0,False
+2022-03-31,Fertilizers & Agrochemicals,constrained_residual,True,0,-4.440892098500626e-16,False
+2022-03-31,Fertilizers & Agrochemicals,constrained_high,True,0,-4.440892098500626e-16,False
+2022-03-31,Finance,constrained_residual,True,0,0.06609195402298851,True
+2022-03-31,Finance,constrained_high,True,0,0.0,False
+2022-03-31,Food Products,constrained_residual,True,0,0.0,False
+2022-03-31,Food Products,constrained_high,True,0,0.0,False
+2022-03-31,Gas,constrained_residual,True,0,0.0,False
+2022-03-31,Gas,constrained_high,True,0,0.0,False
+2022-03-31,Healthcare Services,constrained_residual,True,0,0.0,False
+2022-03-31,Healthcare Services,constrained_high,True,0,0.0,False
+2022-03-31,Household Products,constrained_residual,True,0,0.0,False
+2022-03-31,Household Products,constrained_high,True,0,0.0,False
+2022-03-31,IT - Hardware,constrained_residual,True,0,0.0,False
+2022-03-31,IT - Hardware,constrained_high,True,0,0.0,False
+2022-03-31,IT - Services,constrained_residual,True,0,-4.440892098500626e-16,False
+2022-03-31,IT - Services,constrained_high,True,0,0.0,False
+2022-03-31,IT - Software,constrained_residual,True,0,-2.220446049250313e-16,False
+2022-03-31,IT - Software,constrained_high,True,0,0.0,False
+2022-03-31,Industrial Manufacturing,constrained_residual,True,0,0.21311475409836067,True
+2022-03-31,Industrial Manufacturing,constrained_high,True,0,0.4098360655737707,True
+2022-03-31,Industrial Products,constrained_residual,True,0,0.015432098765431945,True
+2022-03-31,Industrial Products,constrained_high,True,0,0.04629629629629628,True
+2022-03-31,Leisure Services,constrained_residual,True,0,0.21621621621621645,True
+2022-03-31,Leisure Services,constrained_high,True,0,0.21621621621621623,True
+2022-03-31,Media,constrained_residual,True,0,0.0,False
+2022-03-31,Media,constrained_high,True,0,0.0,False
+2022-03-31,Minerals & Mining,constrained_residual,True,0,0.0,False
+2022-03-31,Minerals & Mining,constrained_high,True,0,0.0,False
+2022-03-31,Non - Ferrous Metals,constrained_residual,True,0,0.0,False
+2022-03-31,Non - Ferrous Metals,constrained_high,True,0,0.0,False
+2022-03-31,Oil,constrained_residual,True,0,0.0,False
+2022-03-31,Oil,constrained_high,True,0,0.0,False
+2022-03-31,Other Construction Materials,constrained_residual,True,0,-4.440892098500626e-16,False
+2022-03-31,Other Construction Materials,constrained_high,True,0,-4.440892098500626e-16,False
+2022-03-31,Other Consumer Services,constrained_residual,True,0,0.0,False
+2022-03-31,Other Consumer Services,constrained_high,True,0,0.0,False
+2022-03-31,"Paper, Forest & Jute Products",constrained_residual,True,0,0.0,False
+2022-03-31,"Paper, Forest & Jute Products",constrained_high,True,0,0.0,False
+2022-03-31,Personal Products,constrained_residual,True,0,-2.220446049250313e-16,False
+2022-03-31,Personal Products,constrained_high,True,0,0.0,False
+2022-03-31,Petroleum Products,constrained_residual,True,0,-4.440892098500626e-16,False
+2022-03-31,Petroleum Products,constrained_high,True,0,-4.440892098500626e-16,False
+2022-03-31,Pharmaceuticals & Biotechnology,constrained_residual,True,0,0.07368421052631602,True
+2022-03-31,Pharmaceuticals & Biotechnology,constrained_high,True,0,0.0,False
+2022-03-31,Power,constrained_residual,True,0,0.0,False
+2022-03-31,Power,constrained_high,True,0,0.0,False
+2022-03-31,Realty,constrained_residual,True,0,0.0,False
+2022-03-31,Realty,constrained_high,True,0,0.0,False
+2022-03-31,Retailing,constrained_residual,True,0,0.0,False
+2022-03-31,Retailing,constrained_high,True,0,0.0,False
+2022-03-31,Telecom -  Equipment & Accessories,constrained_residual,True,0,0.0,False
+2022-03-31,Telecom -  Equipment & Accessories,constrained_high,True,0,0.0,False
+2022-03-31,Telecom - Services,constrained_residual,True,0,0.3333333333333335,True
+2022-03-31,Telecom - Services,constrained_high,True,0,0.3333333333333335,True
+2022-03-31,Textiles & Apparels,constrained_residual,False,1,0.0,False
+2022-03-31,Textiles & Apparels,constrained_high,True,0,0.10975609756097571,True
+2022-03-31,Transport Infrastructure,constrained_residual,True,0,0.0,False
+2022-03-31,Transport Infrastructure,constrained_high,True,0,0.0,False
+2022-03-31,Transport Services,constrained_residual,True,0,0.5178571428571428,True
+2022-03-31,Transport Services,constrained_high,True,0,0.03571428571428559,True
+2022-06-30,Aerospace & Defense,constrained_residual,True,0,0.0,False
+2022-06-30,Aerospace & Defense,constrained_high,True,0,0.0,False
+2022-06-30,Agricultural Food & other Products,constrained_residual,True,0,0.1901408450704225,True
+2022-06-30,Agricultural Food & other Products,constrained_high,True,0,0.16901408450704203,True
+2022-06-30,"Agricultural, Commercial & Construction Vehicles",constrained_residual,True,0,0.0,False
+2022-06-30,"Agricultural, Commercial & Construction Vehicles",constrained_high,True,0,0.0,False
+2022-06-30,Auto Components,constrained_residual,True,0,-4.440892098500626e-16,False
+2022-06-30,Auto Components,constrained_high,True,0,-4.440892098500626e-16,False
+2022-06-30,Automobiles,constrained_residual,True,0,0.0,False
+2022-06-30,Automobiles,constrained_high,True,0,0.0,False
+2022-06-30,Banks,constrained_residual,True,0,0.0,False
+2022-06-30,Banks,constrained_high,True,0,0.0,False
+2022-06-30,Beverages,constrained_residual,True,0,0.0,False
+2022-06-30,Beverages,constrained_high,True,0,0.0,False
+2022-06-30,Capital Markets,constrained_residual,True,0,-2.220446049250313e-16,False
+2022-06-30,Capital Markets,constrained_high,True,0,-2.220446049250313e-16,False
+2022-06-30,Cement & Cement Products,constrained_residual,True,0,0.0,False
+2022-06-30,Cement & Cement Products,constrained_high,True,0,0.0,False
+2022-06-30,Chemicals & Petrochemicals,constrained_residual,True,0,0.0,False
+2022-06-30,Chemicals & Petrochemicals,constrained_high,True,0,-2.220446049250313e-16,False
+2022-06-30,Commercial Services & Supplies,constrained_residual,True,0,0.0,False
+2022-06-30,Commercial Services & Supplies,constrained_high,True,0,0.0,False
+2022-06-30,Construction,constrained_residual,True,0,-4.440892098500626e-16,False
+2022-06-30,Construction,constrained_high,True,0,0.0,False
+2022-06-30,Consumer Durables,constrained_residual,True,0,0.08235294117647052,True
+2022-06-30,Consumer Durables,constrained_high,True,0,0.0823529411764703,True
+2022-06-30,Diversified,constrained_residual,True,0,0.0,False
+2022-06-30,Diversified,constrained_high,True,0,0.0,False
+2022-06-30,Electrical Equipment,constrained_residual,True,0,0.07317073170731714,True
+2022-06-30,Electrical Equipment,constrained_high,True,0,0.07317073170731714,True
+2022-06-30,Entertainment,constrained_residual,True,0,0.0,False
+2022-06-30,Entertainment,constrained_high,True,0,0.0,False
+2022-06-30,Ferrous Metals,constrained_residual,True,0,0.0,False
+2022-06-30,Ferrous Metals,constrained_high,True,0,0.0,False
+2022-06-30,Fertilizers & Agrochemicals,constrained_residual,True,0,0.2592592592592591,True
+2022-06-30,Fertilizers & Agrochemicals,constrained_high,True,0,-2.220446049250313e-16,False
+2022-06-30,Finance,constrained_residual,True,0,-4.440892098500626e-16,False
+2022-06-30,Finance,constrained_high,True,0,0.06043956043956067,True
+2022-06-30,Food Products,constrained_residual,True,0,-4.440892098500626e-16,False
+2022-06-30,Food Products,constrained_high,True,0,-4.440892098500626e-16,False
+2022-06-30,Gas,constrained_residual,True,0,0.0,False
+2022-06-30,Gas,constrained_high,True,0,0.0,False
+2022-06-30,Healthcare Services,constrained_residual,True,0,0.0,False
+2022-06-30,Healthcare Services,constrained_high,True,0,0.0,False
+2022-06-30,Household Products,constrained_residual,True,0,0.0,False
+2022-06-30,Household Products,constrained_high,True,0,0.0,False
+2022-06-30,IT - Hardware,constrained_residual,True,0,0.0,False
+2022-06-30,IT - Hardware,constrained_high,True,0,0.0,False
+2022-06-30,IT - Services,constrained_residual,True,0,0.1071428571428572,True
+2022-06-30,IT - Services,constrained_high,True,0,0.1071428571428572,True
+2022-06-30,IT - Software,constrained_residual,True,0,0.0,False
+2022-06-30,IT - Software,constrained_high,True,0,0.0,False
+2022-06-30,Industrial Manufacturing,constrained_residual,True,0,0.032786885245901676,True
+2022-06-30,Industrial Manufacturing,constrained_high,True,0,0.0327868852459019,True
+2022-06-30,Industrial Products,constrained_residual,True,0,0.03680981595092048,True
+2022-06-30,Industrial Products,constrained_high,True,0,0.0,True
+2022-06-30,Leisure Services,constrained_residual,True,0,0.0,False
+2022-06-30,Leisure Services,constrained_high,True,0,0.0,False
+2022-06-30,Media,constrained_residual,True,0,0.0,False
+2022-06-30,Media,constrained_high,True,0,0.0,False
+2022-06-30,Minerals & Mining,constrained_residual,True,0,0.0,False
+2022-06-30,Minerals & Mining,constrained_high,True,0,0.0,False
+2022-06-30,Non - Ferrous Metals,constrained_residual,True,0,0.0,False
+2022-06-30,Non - Ferrous Metals,constrained_high,True,0,0.0,False
+2022-06-30,Oil,constrained_residual,True,0,0.0,False
+2022-06-30,Oil,constrained_high,True,0,0.0,False
+2022-06-30,Other Construction Materials,constrained_residual,True,0,0.0,False
+2022-06-30,Other Construction Materials,constrained_high,True,0,0.0,False
+2022-06-30,Other Consumer Services,constrained_residual,True,0,0.0,False
+2022-06-30,Other Consumer Services,constrained_high,True,0,0.0,False
+2022-06-30,"Paper, Forest & Jute Products",constrained_residual,True,0,0.0,False
+2022-06-30,"Paper, Forest & Jute Products",constrained_high,True,0,0.0,False
+2022-06-30,Personal Products,constrained_residual,True,0,0.0,False
+2022-06-30,Personal Products,constrained_high,True,0,0.0,False
+2022-06-30,Petroleum Products,constrained_residual,True,0,0.0,False
+2022-06-30,Petroleum Products,constrained_high,True,0,0.0,False
+2022-06-30,Pharmaceuticals & Biotechnology,constrained_residual,True,0,0.08602150537634401,True
+2022-06-30,Pharmaceuticals & Biotechnology,constrained_high,True,0,0.08602150537634423,True
+2022-06-30,Power,constrained_residual,True,0,-1.1102230246251565e-16,False
+2022-06-30,Power,constrained_high,True,0,-1.1102230246251565e-16,False
+2022-06-30,Realty,constrained_residual,True,0,0.0,False
+2022-06-30,Realty,constrained_high,True,0,0.0,False
+2022-06-30,Retailing,constrained_residual,True,0,-2.220446049250313e-16,False
+2022-06-30,Retailing,constrained_high,True,0,-2.220446049250313e-16,False
+2022-06-30,Telecom -  Equipment & Accessories,constrained_residual,True,0,0.0,False
+2022-06-30,Telecom -  Equipment & Accessories,constrained_high,True,0,0.0,False
+2022-06-30,Telecom - Services,constrained_residual,True,0,0.0,False
+2022-06-30,Telecom - Services,constrained_high,True,0,0.0,False
+2022-06-30,Textiles & Apparels,constrained_residual,True,0,0.012195121951219301,True
+2022-06-30,Textiles & Apparels,constrained_high,True,0,-2.220446049250313e-16,False
+2022-06-30,Transport Infrastructure,constrained_residual,True,0,0.0,False
+2022-06-30,Transport Infrastructure,constrained_high,True,0,0.0,False
+2022-06-30,Transport Services,constrained_residual,True,0,0.2500000000000002,True
+2022-06-30,Transport Services,constrained_high,True,0,0.2857142857142856,True
+2022-09-30,Aerospace & Defense,constrained_residual,True,0,-2.220446049250313e-16,False
+2022-09-30,Aerospace & Defense,constrained_high,True,0,-2.220446049250313e-16,False
+2022-09-30,Agricultural Food & other Products,constrained_residual,True,0,0.013333333333333197,True
+2022-09-30,Agricultural Food & other Products,constrained_high,True,0,0.013333333333333197,True
+2022-09-30,"Agricultural, Commercial & Construction Vehicles",constrained_residual,True,0,0.0,False
+2022-09-30,"Agricultural, Commercial & Construction Vehicles",constrained_high,True,0,0.0,False
+2022-09-30,Auto Components,constrained_residual,True,0,0.5411764705882356,True
+2022-09-30,Auto Components,constrained_high,True,0,0.1705882352941177,True
+2022-09-30,Automobiles,constrained_residual,True,0,0.0,False
+2022-09-30,Automobiles,constrained_high,True,0,0.0,False
+2022-09-30,Banks,constrained_residual,True,0,0.0,False
+2022-09-30,Banks,constrained_high,True,0,0.0,False
+2022-09-30,Beverages,constrained_residual,True,0,0.0,False
+2022-09-30,Beverages,constrained_high,True,0,0.0,False
+2022-09-30,Capital Markets,constrained_residual,True,0,0.0,False
+2022-09-30,Capital Markets,constrained_high,True,0,0.0,False
+2022-09-30,Cement & Cement Products,constrained_residual,True,0,0.0,False
+2022-09-30,Cement & Cement Products,constrained_high,True,0,0.0,False
+2022-09-30,Chemicals & Petrochemicals,constrained_residual,True,0,0.0,False
+2022-09-30,Chemicals & Petrochemicals,constrained_high,True,0,0.0,False
+2022-09-30,Commercial Services & Supplies,constrained_residual,True,0,0.10625000000000018,True
+2022-09-30,Commercial Services & Supplies,constrained_high,True,0,0.03125,True
+2022-09-30,Construction,constrained_residual,True,0,-1.1102230246251565e-16,False
+2022-09-30,Construction,constrained_high,True,0,-4.440892098500626e-16,True
+2022-09-30,Consumer Durables,constrained_residual,True,0,0.0,False
+2022-09-30,Consumer Durables,constrained_high,True,0,0.0,False
+2022-09-30,Diversified,constrained_residual,True,0,0.0,False
+2022-09-30,Diversified,constrained_high,True,0,0.0,False
+2022-09-30,Electrical Equipment,constrained_residual,True,0,0.0,False
+2022-09-30,Electrical Equipment,constrained_high,True,0,-4.440892098500626e-16,False
+2022-09-30,Entertainment,constrained_residual,True,0,0.0,False
+2022-09-30,Entertainment,constrained_high,True,0,0.0,False
+2022-09-30,Ferrous Metals,constrained_residual,True,0,0.0,False
+2022-09-30,Ferrous Metals,constrained_high,True,0,0.0,False
+2022-09-30,Fertilizers & Agrochemicals,constrained_residual,True,0,0.0,False
+2022-09-30,Fertilizers & Agrochemicals,constrained_high,True,0,0.0,False
+2022-09-30,Finance,constrained_residual,True,0,0.0,False
+2022-09-30,Finance,constrained_high,True,0,0.0,False
+2022-09-30,Food Products,constrained_residual,True,0,0.13235294117647056,True
+2022-09-30,Food Products,constrained_high,True,0,0.13235294117647056,True
+2022-09-30,Gas,constrained_residual,True,0,0.0,False
+2022-09-30,Gas,constrained_high,True,0,0.0,False
+2022-09-30,Healthcare Services,constrained_residual,True,0,0.0,False
+2022-09-30,Healthcare Services,constrained_high,True,0,0.0,False
+2022-09-30,Household Products,constrained_residual,True,0,0.0,False
+2022-09-30,Household Products,constrained_high,True,0,0.0,False
+2022-09-30,IT - Hardware,constrained_residual,True,0,0.0,False
+2022-09-30,IT - Hardware,constrained_high,True,0,0.0,False
+2022-09-30,IT - Services,constrained_residual,True,0,-4.440892098500626e-16,False
+2022-09-30,IT - Services,constrained_high,True,0,0.34482758620689635,True
+2022-09-30,IT - Software,constrained_residual,True,0,0.0,False
+2022-09-30,IT - Software,constrained_high,True,0,0.0,False
+2022-09-30,Industrial Manufacturing,constrained_residual,True,0,0.0,False
+2022-09-30,Industrial Manufacturing,constrained_high,True,0,0.0,False
+2022-09-30,Industrial Products,constrained_residual,True,0,0.15088757396449726,True
+2022-09-30,Industrial Products,constrained_high,True,0,0.05029585798816605,True
+2022-09-30,Leisure Services,constrained_residual,True,0,-2.220446049250313e-16,False
+2022-09-30,Leisure Services,constrained_high,True,0,-2.220446049250313e-16,False
+2022-09-30,Media,constrained_residual,True,0,0.0,False
+2022-09-30,Media,constrained_high,True,0,0.0,False
+2022-09-30,Minerals & Mining,constrained_residual,True,0,0.0,False
+2022-09-30,Minerals & Mining,constrained_high,True,0,0.3999999999999999,True
+2022-09-30,Non - Ferrous Metals,constrained_residual,True,0,0.0,False
+2022-09-30,Non - Ferrous Metals,constrained_high,True,0,0.0,False
+2022-09-30,Oil,constrained_residual,True,0,0.0,False
+2022-09-30,Oil,constrained_high,True,0,-2.220446049250313e-16,False
+2022-09-30,Other Construction Materials,constrained_residual,True,0,0.0,False
+2022-09-30,Other Construction Materials,constrained_high,True,0,0.0,False
+2022-09-30,Other Consumer Services,constrained_residual,True,0,0.0,False
+2022-09-30,Other Consumer Services,constrained_high,True,0,0.33333333333333326,True
+2022-09-30,"Paper, Forest & Jute Products",constrained_residual,True,0,0.0,False
+2022-09-30,"Paper, Forest & Jute Products",constrained_high,True,0,0.4375,True
+2022-09-30,Personal Products,constrained_residual,True,0,0.0,False
+2022-09-30,Personal Products,constrained_high,True,0,0.0,False
+2022-09-30,Petroleum Products,constrained_residual,True,0,0.0,False
+2022-09-30,Petroleum Products,constrained_high,True,0,0.0,False
+2022-09-30,Pharmaceuticals & Biotechnology,constrained_residual,True,0,0.11578947368421044,True
+2022-09-30,Pharmaceuticals & Biotechnology,constrained_high,True,0,0.11578947368421044,True
+2022-09-30,Power,constrained_residual,True,0,0.0,False
+2022-09-30,Power,constrained_high,True,0,0.0,False
+2022-09-30,Realty,constrained_residual,True,0,0.0,False
+2022-09-30,Realty,constrained_high,True,0,0.0,False
+2022-09-30,Retailing,constrained_residual,True,0,-4.440892098500626e-16,False
+2022-09-30,Retailing,constrained_high,True,0,0.0,False
+2022-09-30,Telecom -  Equipment & Accessories,constrained_residual,True,0,0.0,False
+2022-09-30,Telecom -  Equipment & Accessories,constrained_high,True,0,0.0,False
+2022-09-30,Telecom - Services,constrained_residual,True,0,0.0,False
+2022-09-30,Telecom - Services,constrained_high,True,0,0.0,False
+2022-09-30,Textiles & Apparels,constrained_residual,True,0,0.0,False
+2022-09-30,Textiles & Apparels,constrained_high,True,0,0.0,False
+2022-09-30,Transport Infrastructure,constrained_residual,True,0,0.0,False
+2022-09-30,Transport Infrastructure,constrained_high,True,0,0.0,False
+2022-09-30,Transport Services,constrained_residual,True,0,0.0,False
+2022-09-30,Transport Services,constrained_high,True,0,-2.220446049250313e-16,False
+2022-12-31,Aerospace & Defense,constrained_residual,True,0,0.0,False
+2022-12-31,Aerospace & Defense,constrained_high,True,0,0.0,False
+2022-12-31,Agricultural Food & other Products,constrained_residual,True,0,0.2628205128205128,True
+2022-12-31,Agricultural Food & other Products,constrained_high,True,0,0.2628205128205128,True
+2022-12-31,"Agricultural, Commercial & Construction Vehicles",constrained_residual,True,0,0.0,False
+2022-12-31,"Agricultural, Commercial & Construction Vehicles",constrained_high,True,0,0.0,False
+2022-12-31,Auto Components,constrained_residual,True,0,0.0060975609756099836,True
+2022-12-31,Auto Components,constrained_high,True,0,0.12804878048780477,True
+2022-12-31,Automobiles,constrained_residual,True,0,0.0,False
+2022-12-31,Automobiles,constrained_high,True,0,0.0,False
+2022-12-31,Banks,constrained_residual,True,0,0.0,False
+2022-12-31,Banks,constrained_high,True,0,0.0,False
+2022-12-31,Beverages,constrained_residual,True,0,0.0,False
+2022-12-31,Beverages,constrained_high,True,0,0.0,False
+2022-12-31,Capital Markets,constrained_residual,True,0,0.0,False
+2022-12-31,Capital Markets,constrained_high,True,0,0.0,False
+2022-12-31,Cement & Cement Products,constrained_residual,True,0,0.0,False
+2022-12-31,Cement & Cement Products,constrained_high,True,0,0.04166666666666696,True
+2022-12-31,Chemicals & Petrochemicals,constrained_residual,True,0,-2.220446049250313e-16,False
+2022-12-31,Chemicals & Petrochemicals,constrained_high,True,0,-2.220446049250313e-16,False
+2022-12-31,Commercial Services & Supplies,constrained_residual,True,0,-2.220446049250313e-16,False
+2022-12-31,Commercial Services & Supplies,constrained_high,True,0,0.05434782608695632,True
+2022-12-31,Construction,constrained_residual,True,0,0.125,True
+2022-12-31,Construction,constrained_high,True,0,0.125,True
+2022-12-31,Consumer Durables,constrained_residual,True,0,0.0,False
+2022-12-31,Consumer Durables,constrained_high,True,0,0.0,False
+2022-12-31,Diversified,constrained_residual,True,0,0.0,False
+2022-12-31,Diversified,constrained_high,True,0,0.0,False
+2022-12-31,Electrical Equipment,constrained_residual,True,0,0.0,True
+2022-12-31,Electrical Equipment,constrained_high,True,0,0.0,False
+2022-12-31,Entertainment,constrained_residual,True,0,0.0,False
+2022-12-31,Entertainment,constrained_high,True,0,0.0,False
+2022-12-31,Ferrous Metals,constrained_residual,True,0,0.0,False
+2022-12-31,Ferrous Metals,constrained_high,True,0,0.0,False
+2022-12-31,Fertilizers & Agrochemicals,constrained_residual,True,0,0.0,False
+2022-12-31,Fertilizers & Agrochemicals,constrained_high,True,0,0.0,False
+2022-12-31,Finance,constrained_residual,True,0,-4.440892098500626e-16,False
+2022-12-31,Finance,constrained_high,True,0,-4.440892098500626e-16,False
+2022-12-31,Food Products,constrained_residual,True,0,-4.440892098500626e-16,False
+2022-12-31,Food Products,constrained_high,True,0,-4.440892098500626e-16,False
+2022-12-31,Healthcare Services,constrained_residual,True,0,0.08333333333333348,True
+2022-12-31,Healthcare Services,constrained_high,True,0,0.0,False
+2022-12-31,Household Products,constrained_residual,True,0,-2.220446049250313e-16,False
+2022-12-31,Household Products,constrained_high,True,0,-2.220446049250313e-16,False
+2022-12-31,IT - Hardware,constrained_residual,True,0,0.0,False
+2022-12-31,IT - Hardware,constrained_high,True,0,-2.220446049250313e-16,False
+2022-12-31,IT - Services,constrained_residual,True,0,-2.220446049250313e-16,False
+2022-12-31,IT - Services,constrained_high,True,0,-2.220446049250313e-16,False
+2022-12-31,IT - Software,constrained_residual,True,0,0.0,False
+2022-12-31,IT - Software,constrained_high,True,0,0.0,False
+2022-12-31,Industrial Manufacturing,constrained_residual,True,0,0.0,False
+2022-12-31,Industrial Manufacturing,constrained_high,True,0,0.09375,True
+2022-12-31,Industrial Products,constrained_residual,True,0,0.0,False
+2022-12-31,Industrial Products,constrained_high,True,0,0.0,False
+2022-12-31,Insurance,constrained_residual,True,0,0.0,False
+2022-12-31,Insurance,constrained_high,True,0,0.0,False
+2022-12-31,Leisure Services,constrained_residual,True,0,0.0,False
+2022-12-31,Leisure Services,constrained_high,True,0,0.0,False
+2022-12-31,Media,constrained_residual,True,0,0.0,False
+2022-12-31,Media,constrained_high,True,0,0.0,False
+2022-12-31,Metals & Minerals Trading,constrained_residual,True,0,0.0,False
+2022-12-31,Metals & Minerals Trading,constrained_high,True,0,0.0,False
+2022-12-31,Minerals & Mining,constrained_residual,True,0,0.0,False
+2022-12-31,Minerals & Mining,constrained_high,True,0,0.0,False
+2022-12-31,Non - Ferrous Metals,constrained_residual,True,0,0.0,False
+2022-12-31,Non - Ferrous Metals,constrained_high,True,0,0.0,False
+2022-12-31,Oil,constrained_residual,True,0,0.0,False
+2022-12-31,Oil,constrained_high,True,0,0.0,False
+2022-12-31,Other Construction Materials,constrained_residual,True,0,0.0,False
+2022-12-31,Other Construction Materials,constrained_high,True,0,0.0,False
+2022-12-31,Other Consumer Services,constrained_residual,True,0,0.0,False
+2022-12-31,Other Consumer Services,constrained_high,True,0,0.0,False
+2022-12-31,"Paper, Forest & Jute Products",constrained_residual,True,0,0.0,False
+2022-12-31,"Paper, Forest & Jute Products",constrained_high,True,0,0.0,False
+2022-12-31,Personal Products,constrained_residual,True,0,0.0,False
+2022-12-31,Personal Products,constrained_high,True,0,0.0,False
+2022-12-31,Petroleum Products,constrained_residual,True,0,0.0,False
+2022-12-31,Petroleum Products,constrained_high,True,0,0.0,False
+2022-12-31,Pharmaceuticals & Biotechnology,constrained_residual,True,0,0.010204081632652962,True
+2022-12-31,Pharmaceuticals & Biotechnology,constrained_high,True,0,-2.220446049250313e-16,False
+2022-12-31,Power,constrained_residual,True,0,0.0,False
+2022-12-31,Power,constrained_high,True,0,0.0,False
+2022-12-31,Realty,constrained_residual,True,0,0.0,False
+2022-12-31,Realty,constrained_high,True,0,-2.220446049250313e-16,False
+2022-12-31,Retailing,constrained_residual,True,0,0.0,False
+2022-12-31,Retailing,constrained_high,True,0,0.0,False
+2022-12-31,Telecom -  Equipment & Accessories,constrained_residual,True,0,0.0,False
+2022-12-31,Telecom -  Equipment & Accessories,constrained_high,True,0,0.0,False
+2022-12-31,Telecom - Services,constrained_residual,True,0,0.0,False
+2022-12-31,Telecom - Services,constrained_high,True,0,0.0,False
+2022-12-31,Textiles & Apparels,constrained_residual,True,0,0.0,False
+2022-12-31,Textiles & Apparels,constrained_high,True,0,0.01171875,True
+2022-12-31,Transport Infrastructure,constrained_residual,True,0,0.0,False
+2022-12-31,Transport Infrastructure,constrained_high,True,0,0.0,False
+2022-12-31,Transport Services,constrained_residual,True,0,0.0,False
+2022-12-31,Transport Services,constrained_high,True,0,0.0,False
+2023-03-31,Aerospace & Defense,constrained_residual,True,0,0.0,False
+2023-03-31,Aerospace & Defense,constrained_high,True,0,0.0,False
+2023-03-31,Agricultural Food & other Products,constrained_residual,True,0,0.2088607594936711,True
+2023-03-31,Agricultural Food & other Products,constrained_high,True,0,0.11392405063291111,True
+2023-03-31,"Agricultural, Commercial & Construction Vehicles",constrained_residual,True,0,0.0,False
+2023-03-31,"Agricultural, Commercial & Construction Vehicles",constrained_high,True,0,0.0,False
+2023-03-31,Auto Components,constrained_residual,True,0,0.011764705882352455,True
+2023-03-31,Auto Components,constrained_high,True,0,0.011764705882352455,True
+2023-03-31,Automobiles,constrained_residual,True,0,0.0,False
+2023-03-31,Automobiles,constrained_high,True,0,0.0,False
+2023-03-31,Banks,constrained_residual,True,0,0.0,False
+2023-03-31,Banks,constrained_high,True,0,0.0,False
+2023-03-31,Beverages,constrained_residual,True,0,0.0,False
+2023-03-31,Beverages,constrained_high,True,0,0.0,False
+2023-03-31,Capital Markets,constrained_residual,True,0,-2.220446049250313e-16,False
+2023-03-31,Capital Markets,constrained_high,True,0,0.0,False
+2023-03-31,Cement & Cement Products,constrained_residual,True,0,-2.220446049250313e-16,False
+2023-03-31,Cement & Cement Products,constrained_high,True,0,-2.220446049250313e-16,False
+2023-03-31,Chemicals & Petrochemicals,constrained_residual,True,0,0.0,False
+2023-03-31,Chemicals & Petrochemicals,constrained_high,True,0,0.0,False
+2023-03-31,Commercial Services & Supplies,constrained_residual,True,0,0.03061224489795933,True
+2023-03-31,Commercial Services & Supplies,constrained_high,True,0,0.4285714285714288,True
+2023-03-31,Construction,constrained_residual,True,0,0.0,True
+2023-03-31,Construction,constrained_high,True,0,0.028846153846153744,True
+2023-03-31,Consumer Durables,constrained_residual,True,0,0.0,False
+2023-03-31,Consumer Durables,constrained_high,True,0,0.0,False
+2023-03-31,Diversified,constrained_residual,True,0,0.0,False
+2023-03-31,Diversified,constrained_high,True,0,0.0,False
+2023-03-31,Electrical Equipment,constrained_residual,True,0,0.0,True
+2023-03-31,Electrical Equipment,constrained_high,True,0,0.07142857142857162,True
+2023-03-31,Entertainment,constrained_residual,True,0,0.17142857142857126,True
+2023-03-31,Entertainment,constrained_high,True,0,0.0,False
+2023-03-31,Ferrous Metals,constrained_residual,True,0,0.0,False
+2023-03-31,Ferrous Metals,constrained_high,True,0,-4.440892098500626e-16,False
+2023-03-31,Fertilizers & Agrochemicals,constrained_residual,True,0,0.359375,True
+2023-03-31,Fertilizers & Agrochemicals,constrained_high,True,0,0.359375,True
+2023-03-31,Finance,constrained_residual,True,0,0.0,False
+2023-03-31,Finance,constrained_high,True,0,0.0,True
+2023-03-31,Food Products,constrained_residual,True,0,0.0,False
+2023-03-31,Food Products,constrained_high,True,0,0.0,False
+2023-03-31,Gas,constrained_residual,True,0,0.0,False
+2023-03-31,Gas,constrained_high,True,0,0.0,False
+2023-03-31,Healthcare Services,constrained_residual,True,0,0.0,False
+2023-03-31,Healthcare Services,constrained_high,True,0,0.0,False
+2023-03-31,Household Products,constrained_residual,True,0,-2.220446049250313e-16,False
+2023-03-31,Household Products,constrained_high,True,0,0.25,True
+2023-03-31,IT - Hardware,constrained_residual,True,0,0.08333333333333304,True
+2023-03-31,IT - Hardware,constrained_high,True,0,0.0,False
+2023-03-31,IT - Services,constrained_residual,True,0,-2.220446049250313e-16,False
+2023-03-31,IT - Services,constrained_high,True,0,-2.220446049250313e-16,False
+2023-03-31,IT - Software,constrained_residual,True,0,-2.220446049250313e-16,False
+2023-03-31,IT - Software,constrained_high,True,0,0.0,False
+2023-03-31,Industrial Manufacturing,constrained_residual,True,0,0.03174603174603163,True
+2023-03-31,Industrial Manufacturing,constrained_high,True,0,0.03174603174603163,True
+2023-03-31,Industrial Products,constrained_residual,True,0,0.0,False
+2023-03-31,Industrial Products,constrained_high,True,0,0.0382513661202184,True
+2023-03-31,Insurance,constrained_residual,True,0,0.0,False
+2023-03-31,Insurance,constrained_high,True,0,0.0,False
+2023-03-31,Leisure Services,constrained_residual,True,0,0.0,False
+2023-03-31,Leisure Services,constrained_high,True,0,0.0,False
+2023-03-31,Media,constrained_residual,True,0,0.0,False
+2023-03-31,Media,constrained_high,True,0,0.0,False
+2023-03-31,Metals & Minerals Trading,constrained_residual,True,0,0.0,False
+2023-03-31,Metals & Minerals Trading,constrained_high,True,0,0.0,False
+2023-03-31,Minerals & Mining,constrained_residual,True,0,0.0,False
+2023-03-31,Minerals & Mining,constrained_high,True,0,0.0,False
+2023-03-31,Non - Ferrous Metals,constrained_residual,True,0,0.0,False
+2023-03-31,Non - Ferrous Metals,constrained_high,True,0,0.0,False
+2023-03-31,Oil,constrained_residual,True,0,0.0,False
+2023-03-31,Oil,constrained_high,True,0,0.0,False
+2023-03-31,Other Construction Materials,constrained_residual,True,0,0.0,False
+2023-03-31,Other Construction Materials,constrained_high,True,0,0.0,False
+2023-03-31,Other Consumer Services,constrained_residual,True,0,0.0,False
+2023-03-31,Other Consumer Services,constrained_high,True,0,0.0,False
+2023-03-31,"Paper, Forest & Jute Products",constrained_residual,True,0,0.0,False
+2023-03-31,"Paper, Forest & Jute Products",constrained_high,True,0,0.0,False
+2023-03-31,Personal Products,constrained_residual,True,0,0.0,False
+2023-03-31,Personal Products,constrained_high,True,0,0.0,False
+2023-03-31,Petroleum Products,constrained_residual,True,0,0.0,False
+2023-03-31,Petroleum Products,constrained_high,True,0,-2.220446049250313e-16,False
+2023-03-31,Pharmaceuticals & Biotechnology,constrained_residual,True,0,0.0,False
+2023-03-31,Pharmaceuticals & Biotechnology,constrained_high,True,0,0.0,False
+2023-03-31,Power,constrained_residual,True,0,0.0,False
+2023-03-31,Power,constrained_high,True,0,0.0,False
+2023-03-31,Realty,constrained_residual,True,0,0.0,False
+2023-03-31,Realty,constrained_high,True,0,0.0,False
+2023-03-31,Retailing,constrained_residual,True,0,0.0,False
+2023-03-31,Retailing,constrained_high,True,0,0.0,False
+2023-03-31,Telecom -  Equipment & Accessories,constrained_residual,True,0,0.0,False
+2023-03-31,Telecom -  Equipment & Accessories,constrained_high,True,0,0.0,False
+2023-03-31,Telecom - Services,constrained_residual,True,0,0.0,False
+2023-03-31,Telecom - Services,constrained_high,True,0,0.0,False
+2023-03-31,Textiles & Apparels,constrained_residual,True,0,0.17407407407407427,True
+2023-03-31,Textiles & Apparels,constrained_high,True,0,0.1592592592592592,True
+2023-03-31,Transport Infrastructure,constrained_residual,True,0,0.0,False
+2023-03-31,Transport Infrastructure,constrained_high,True,0,0.0,False
+2023-03-31,Transport Services,constrained_residual,True,0,0.0,False
+2023-03-31,Transport Services,constrained_high,True,0,0.0,False
+2023-06-30,Aerospace & Defense,constrained_residual,True,0,0.0,False
+2023-06-30,Aerospace & Defense,constrained_high,True,0,0.0,False
+2023-06-30,Agricultural Food & other Products,constrained_residual,True,0,2.220446049250313e-16,True
+2023-06-30,Agricultural Food & other Products,constrained_high,True,0,0.0,True
+2023-06-30,"Agricultural, Commercial & Construction Vehicles",constrained_residual,True,0,0.0,False
+2023-06-30,"Agricultural, Commercial & Construction Vehicles",constrained_high,True,0,0.0,False
+2023-06-30,Auto Components,constrained_residual,True,0,0.1686746987951806,True
+2023-06-30,Auto Components,constrained_high,True,0,0.036144578313252795,True
+2023-06-30,Automobiles,constrained_residual,True,0,0.0,False
+2023-06-30,Automobiles,constrained_high,True,0,0.0,False
+2023-06-30,Banks,constrained_residual,True,0,0.0,False
+2023-06-30,Banks,constrained_high,True,0,0.0,False
+2023-06-30,Beverages,constrained_residual,True,0,0.0,False
+2023-06-30,Beverages,constrained_high,True,0,0.0,False
+2023-06-30,Capital Markets,constrained_residual,True,0,-2.220446049250313e-16,False
+2023-06-30,Capital Markets,constrained_high,True,0,-2.220446049250313e-16,False
+2023-06-30,Cement & Cement Products,constrained_residual,True,0,0.0,False
+2023-06-30,Cement & Cement Products,constrained_high,True,0,0.0,False
+2023-06-30,Chemicals & Petrochemicals,constrained_residual,True,0,0.0,False
+2023-06-30,Chemicals & Petrochemicals,constrained_high,True,0,0.10280373831775735,True
+2023-06-30,Commercial Services & Supplies,constrained_residual,True,0,0.12765957446808507,True
+2023-06-30,Commercial Services & Supplies,constrained_high,True,0,0.0,False
+2023-06-30,Construction,constrained_residual,True,0,0.0,False
+2023-06-30,Construction,constrained_high,True,0,0.0,False
+2023-06-30,Consumer Durables,constrained_residual,True,0,-2.220446049250313e-16,False
+2023-06-30,Consumer Durables,constrained_high,False,1,-2.220446049250313e-16,False
+2023-06-30,Diversified,constrained_residual,True,0,0.0,False
+2023-06-30,Diversified,constrained_high,True,0,0.0,False
+2023-06-30,Electrical Equipment,constrained_residual,True,0,0.0,False
+2023-06-30,Electrical Equipment,constrained_high,True,0,0.0,False
+2023-06-30,Entertainment,constrained_residual,True,0,-2.220446049250313e-16,False
+2023-06-30,Entertainment,constrained_high,True,0,-2.220446049250313e-16,False
+2023-06-30,Ferrous Metals,constrained_residual,True,0,-4.440892098500626e-16,False
+2023-06-30,Ferrous Metals,constrained_high,True,0,0.0,False
+2023-06-30,Fertilizers & Agrochemicals,constrained_residual,True,0,0.0,False
+2023-06-30,Fertilizers & Agrochemicals,constrained_high,True,0,0.0,False
+2023-06-30,Finance,constrained_residual,True,0,0.0,False
+2023-06-30,Finance,constrained_high,True,0,0.09701492537313428,True
+2023-06-30,Food Products,constrained_residual,True,0,-4.440892098500626e-16,False
+2023-06-30,Food Products,constrained_high,True,0,0.0,False
+2023-06-30,Gas,constrained_residual,True,0,0.0,False
+2023-06-30,Gas,constrained_high,True,0,0.0,False
+2023-06-30,Healthcare Services,constrained_residual,True,0,0.0,False
+2023-06-30,Healthcare Services,constrained_high,True,0,0.043478260869564966,True
+2023-06-30,Household Products,constrained_residual,True,0,0.1923076923076923,True
+2023-06-30,Household Products,constrained_high,True,0,0.0,True
+2023-06-30,IT - Hardware,constrained_residual,True,0,0.0,False
+2023-06-30,IT - Hardware,constrained_high,True,0,0.0,False
+2023-06-30,IT - Services,constrained_residual,True,0,0.0,False
+2023-06-30,IT - Services,constrained_high,True,0,0.0,False
+2023-06-30,IT - Software,constrained_residual,True,0,0.18181818181818166,True
+2023-06-30,IT - Software,constrained_high,True,0,0.0,False
+2023-06-30,Industrial Manufacturing,constrained_residual,True,0,0.016393442622950616,True
+2023-06-30,Industrial Manufacturing,constrained_high,True,0,0.03278688524590123,True
+2023-06-30,Industrial Products,constrained_residual,True,0,0.0,False
+2023-06-30,Industrial Products,constrained_high,True,0,0.0949720670391061,True
+2023-06-30,Insurance,constrained_residual,True,0,0.0,False
+2023-06-30,Insurance,constrained_high,True,0,0.0,False
+2023-06-30,Leisure Services,constrained_residual,True,0,0.0,False
+2023-06-30,Leisure Services,constrained_high,True,0,0.0,False
+2023-06-30,Media,constrained_residual,True,0,0.0,False
+2023-06-30,Media,constrained_high,True,0,-4.440892098500626e-16,False
+2023-06-30,Metals & Minerals Trading,constrained_residual,True,0,0.0,False
+2023-06-30,Metals & Minerals Trading,constrained_high,True,0,0.0,False
+2023-06-30,Minerals & Mining,constrained_residual,True,0,0.0,False
+2023-06-30,Minerals & Mining,constrained_high,True,0,0.0,False
+2023-06-30,Non - Ferrous Metals,constrained_residual,True,0,0.0,False
+2023-06-30,Non - Ferrous Metals,constrained_high,True,0,-2.220446049250313e-16,False
+2023-06-30,Oil,constrained_residual,True,0,0.0,False
+2023-06-30,Oil,constrained_high,True,0,0.0,False
+2023-06-30,Other Construction Materials,constrained_residual,True,0,0.0,False
+2023-06-30,Other Construction Materials,constrained_high,True,0,0.0,False
+2023-06-30,Other Consumer Services,constrained_residual,True,0,0.0,False
+2023-06-30,Other Consumer Services,constrained_high,True,0,0.0,False
+2023-06-30,"Paper, Forest & Jute Products",constrained_residual,True,0,-2.220446049250313e-16,False
+2023-06-30,"Paper, Forest & Jute Products",constrained_high,True,0,0.0,False
+2023-06-30,Personal Products,constrained_residual,True,0,0.0,False
+2023-06-30,Personal Products,constrained_high,True,0,0.0,False
+2023-06-30,Petroleum Products,constrained_residual,True,0,0.0,False
+2023-06-30,Petroleum Products,constrained_high,True,0,0.0,False
+2023-06-30,Pharmaceuticals & Biotechnology,constrained_residual,True,0,0.0,False
+2023-06-30,Pharmaceuticals & Biotechnology,constrained_high,True,0,0.0,False
+2023-06-30,Power,constrained_residual,True,0,0.0,False
+2023-06-30,Power,constrained_high,True,0,0.0,False
+2023-06-30,Realty,constrained_residual,True,0,0.0,False
+2023-06-30,Realty,constrained_high,True,0,0.0,False
+2023-06-30,Retailing,constrained_residual,True,0,-2.220446049250313e-16,False
+2023-06-30,Retailing,constrained_high,True,0,-2.220446049250313e-16,False
+2023-06-30,Telecom -  Equipment & Accessories,constrained_residual,True,0,0.0,False
+2023-06-30,Telecom -  Equipment & Accessories,constrained_high,True,0,0.0,False
+2023-06-30,Telecom - Services,constrained_residual,True,0,-2.220446049250313e-16,False
+2023-06-30,Telecom - Services,constrained_high,True,0,-2.220446049250313e-16,False
+2023-06-30,Textiles & Apparels,constrained_residual,True,0,0.08646616541353369,True
+2023-06-30,Textiles & Apparels,constrained_high,True,0,0.08646616541353369,True
+2023-06-30,Transport Infrastructure,constrained_residual,True,0,0.0,False
+2023-06-30,Transport Infrastructure,constrained_high,True,0,0.0,False
+2023-06-30,Transport Services,constrained_residual,True,0,0.0,False
+2023-06-30,Transport Services,constrained_high,True,0,0.0,False
+2023-09-30,Aerospace & Defense,constrained_residual,True,0,0.0,False
+2023-09-30,Aerospace & Defense,constrained_high,True,0,0.0,False
+2023-09-30,Agricultural Food & other Products,constrained_residual,True,0,0.0,False
+2023-09-30,Agricultural Food & other Products,constrained_high,True,0,0.0,False
+2023-09-30,"Agricultural, Commercial & Construction Vehicles",constrained_residual,True,0,0.0,False
+2023-09-30,"Agricultural, Commercial & Construction Vehicles",constrained_high,True,0,0.0,False
+2023-09-30,Auto Components,constrained_residual,True,0,-4.440892098500626e-16,False
+2023-09-30,Auto Components,constrained_high,True,0,-4.440892098500626e-16,False
+2023-09-30,Automobiles,constrained_residual,True,0,-4.440892098500626e-16,False
+2023-09-30,Automobiles,constrained_high,True,0,0.0,False
+2023-09-30,Banks,constrained_residual,True,0,0.0,False
+2023-09-30,Banks,constrained_high,True,0,0.0,False
+2023-09-30,Beverages,constrained_residual,True,0,0.0,False
+2023-09-30,Beverages,constrained_high,True,0,0.0,False
+2023-09-30,Capital Markets,constrained_residual,True,0,0.0,False
+2023-09-30,Capital Markets,constrained_high,True,0,-4.440892098500626e-16,False
+2023-09-30,Cement & Cement Products,constrained_residual,True,0,0.0,False
+2023-09-30,Cement & Cement Products,constrained_high,True,0,0.0,False
+2023-09-30,Chemicals & Petrochemicals,constrained_residual,True,0,-2.220446049250313e-16,True
+2023-09-30,Chemicals & Petrochemicals,constrained_high,True,0,0.008928571428571175,True
+2023-09-30,Commercial Services & Supplies,constrained_residual,True,0,0.16326530612244916,True
+2023-09-30,Commercial Services & Supplies,constrained_high,True,0,0.0,False
+2023-09-30,Construction,constrained_residual,True,0,-4.440892098500626e-16,False
+2023-09-30,Construction,constrained_high,True,0,0.14423076923076916,True
+2023-09-30,Consumer Durables,constrained_residual,True,0,0.05940594059405946,True
+2023-09-30,Consumer Durables,constrained_high,True,0,0.019801980198019598,True
+2023-09-30,Diversified,constrained_residual,True,0,0.0,False
+2023-09-30,Diversified,constrained_high,True,0,0.0,False
+2023-09-30,Electrical Equipment,constrained_residual,True,0,0.0,False
+2023-09-30,Electrical Equipment,constrained_high,True,0,0.0,False
+2023-09-30,Entertainment,constrained_residual,True,0,-2.220446049250313e-16,False
+2023-09-30,Entertainment,constrained_high,True,0,-2.220446049250313e-16,False
+2023-09-30,Ferrous Metals,constrained_residual,True,0,0.0,False
+2023-09-30,Ferrous Metals,constrained_high,True,0,0.0,False
+2023-09-30,Fertilizers & Agrochemicals,constrained_residual,True,0,0.0,False
+2023-09-30,Fertilizers & Agrochemicals,constrained_high,True,0,0.0,False
+2023-09-30,Finance,constrained_residual,True,0,0.0,False
+2023-09-30,Finance,constrained_high,True,0,0.0,False
+2023-09-30,Food Products,constrained_residual,True,0,-4.440892098500626e-16,False
+2023-09-30,Food Products,constrained_high,True,0,-4.440892098500626e-16,False
+2023-09-30,Gas,constrained_residual,True,0,0.0,False
+2023-09-30,Gas,constrained_high,True,0,0.0,False
+2023-09-30,Healthcare Services,constrained_residual,True,0,0.0,False
+2023-09-30,Healthcare Services,constrained_high,True,0,0.0,False
+2023-09-30,Household Products,constrained_residual,True,0,0.0,False
+2023-09-30,Household Products,constrained_high,True,0,0.0,False
+2023-09-30,IT - Hardware,constrained_residual,True,0,0.0,False
+2023-09-30,IT - Hardware,constrained_high,True,0,0.0,False
+2023-09-30,IT - Services,constrained_residual,True,0,0.0,False
+2023-09-30,IT - Services,constrained_high,True,0,0.0,False
+2023-09-30,IT - Software,constrained_residual,True,0,0.0,False
+2023-09-30,IT - Software,constrained_high,True,0,0.0,False
+2023-09-30,Industrial Manufacturing,constrained_residual,True,0,0.0,False
+2023-09-30,Industrial Manufacturing,constrained_high,True,0,0.0,False
+2023-09-30,Industrial Products,constrained_residual,True,0,0.10215053763440851,True
+2023-09-30,Industrial Products,constrained_high,True,0,0.016129032258064724,True
+2023-09-30,Insurance,constrained_residual,True,0,0.0,False
+2023-09-30,Insurance,constrained_high,True,0,0.0,False
+2023-09-30,Leisure Services,constrained_residual,True,0,0.0,False
+2023-09-30,Leisure Services,constrained_high,True,0,0.0,False
+2023-09-30,Media,constrained_residual,True,0,0.0,False
+2023-09-30,Media,constrained_high,True,0,0.0,False
+2023-09-30,Metals & Minerals Trading,constrained_residual,True,0,0.0,False
+2023-09-30,Metals & Minerals Trading,constrained_high,True,0,0.0,False
+2023-09-30,Minerals & Mining,constrained_residual,True,0,0.0,False
+2023-09-30,Minerals & Mining,constrained_high,True,0,0.0,False
+2023-09-30,Non - Ferrous Metals,constrained_residual,True,0,0.0,False
+2023-09-30,Non - Ferrous Metals,constrained_high,True,0,0.0,False
+2023-09-30,Oil,constrained_residual,True,0,0.0,False
+2023-09-30,Oil,constrained_high,True,0,0.0,False
+2023-09-30,Other Construction Materials,constrained_residual,True,0,0.0,False
+2023-09-30,Other Construction Materials,constrained_high,True,0,0.0,False
+2023-09-30,Other Consumer Services,constrained_residual,True,0,0.0,False
+2023-09-30,Other Consumer Services,constrained_high,True,0,0.0,False
+2023-09-30,"Paper, Forest & Jute Products",constrained_residual,True,0,0.07407407407407396,True
+2023-09-30,"Paper, Forest & Jute Products",constrained_high,True,0,-1.1102230246251565e-16,False
+2023-09-30,Personal Products,constrained_residual,True,0,0.0,False
+2023-09-30,Personal Products,constrained_high,True,0,0.0,False
+2023-09-30,Petroleum Products,constrained_residual,True,0,0.0,False
+2023-09-30,Petroleum Products,constrained_high,True,0,0.13636363636363646,True
+2023-09-30,Pharmaceuticals & Biotechnology,constrained_residual,True,0,0.0,False
+2023-09-30,Pharmaceuticals & Biotechnology,constrained_high,True,0,0.0,False
+2023-09-30,Power,constrained_residual,True,0,-1.1102230246251565e-16,False
+2023-09-30,Power,constrained_high,True,0,-1.1102230246251565e-16,False
+2023-09-30,Realty,constrained_residual,True,0,0.0,False
+2023-09-30,Realty,constrained_high,True,0,0.0,False
+2023-09-30,Retailing,constrained_residual,True,0,-4.440892098500626e-16,False
+2023-09-30,Retailing,constrained_high,True,0,0.0,False
+2023-09-30,Telecom -  Equipment & Accessories,constrained_residual,True,0,-2.220446049250313e-16,False
+2023-09-30,Telecom -  Equipment & Accessories,constrained_high,True,0,0.0,False
+2023-09-30,Telecom - Services,constrained_residual,True,0,0.0,False
+2023-09-30,Telecom - Services,constrained_high,True,0,0.0,False
+2023-09-30,Textiles & Apparels,constrained_residual,True,0,0.02898550724637694,True
+2023-09-30,Textiles & Apparels,constrained_high,True,0,0.01449275362318847,True
+2023-09-30,Transport Infrastructure,constrained_residual,True,0,0.0,False
+2023-09-30,Transport Infrastructure,constrained_high,True,0,0.0,False
+2023-09-30,Transport Services,constrained_residual,True,0,-4.440892098500626e-16,False
+2023-09-30,Transport Services,constrained_high,True,0,0.14516129032258096,True
+2023-12-31,Aerospace & Defense,constrained_residual,True,0,0.0,False
+2023-12-31,Aerospace & Defense,constrained_high,True,0,0.0,False
+2023-12-31,Agricultural Food & other Products,constrained_residual,True,0,0.1538461538461542,True
+2023-12-31,Agricultural Food & other Products,constrained_high,True,0,0.1538461538461542,True
+2023-12-31,"Agricultural, Commercial & Construction Vehicles",constrained_residual,True,0,0.0,False
+2023-12-31,"Agricultural, Commercial & Construction Vehicles",constrained_high,True,0,0.0,False
+2023-12-31,Auto Components,constrained_residual,True,0,0.0,False
+2023-12-31,Auto Components,constrained_high,True,0,0.0,False
+2023-12-31,Automobiles,constrained_residual,True,0,0.0,False
+2023-12-31,Automobiles,constrained_high,True,0,0.0,False
+2023-12-31,Banks,constrained_residual,True,0,0.0,False
+2023-12-31,Banks,constrained_high,True,0,0.0,False
+2023-12-31,Beverages,constrained_residual,True,0,0.0,False
+2023-12-31,Beverages,constrained_high,True,0,0.0,False
+2023-12-31,Capital Markets,constrained_residual,True,0,0.0,False
+2023-12-31,Capital Markets,constrained_high,True,0,0.015625,True
+2023-12-31,Cement & Cement Products,constrained_residual,True,0,0.0,False
+2023-12-31,Cement & Cement Products,constrained_high,True,0,0.0,False
+2023-12-31,Chemicals & Petrochemicals,constrained_residual,True,0,0.008620689655172153,True
+2023-12-31,Chemicals & Petrochemicals,constrained_high,True,0,-2.220446049250313e-16,False
+2023-12-31,Commercial Services & Supplies,constrained_residual,True,0,0.07692307692307665,True
+2023-12-31,Commercial Services & Supplies,constrained_high,True,0,0.07692307692307665,True
+2023-12-31,Construction,constrained_residual,True,0,0.037735849056603765,True
+2023-12-31,Construction,constrained_high,True,0,0.09433962264150964,True
+2023-12-31,Consumer Durables,constrained_residual,True,0,0.09433962264150941,True
+2023-12-31,Consumer Durables,constrained_high,True,0,-2.220446049250313e-16,False
+2023-12-31,Diversified,constrained_residual,True,0,0.0,False
+2023-12-31,Diversified,constrained_high,True,0,0.0,False
+2023-12-31,Electrical Equipment,constrained_residual,True,0,0.11111111111111116,True
+2023-12-31,Electrical Equipment,constrained_high,True,0,0.04444444444444473,True
+2023-12-31,Entertainment,constrained_residual,True,0,0.17142857142857149,True
+2023-12-31,Entertainment,constrained_high,True,0,0.0,False
+2023-12-31,Ferrous Metals,constrained_residual,True,0,0.0952380952380949,True
+2023-12-31,Ferrous Metals,constrained_high,True,0,0.0,False
+2023-12-31,Fertilizers & Agrochemicals,constrained_residual,True,0,0.0,False
+2023-12-31,Fertilizers & Agrochemicals,constrained_high,True,0,0.0,False
+2023-12-31,Finance,constrained_residual,True,0,0.0,False
+2023-12-31,Finance,constrained_high,True,0,0.047945205479452024,True
+2023-12-31,Food Products,constrained_residual,True,0,0.0,False
+2023-12-31,Food Products,constrained_high,True,0,0.0,False
+2023-12-31,Gas,constrained_residual,True,0,0.0,False
+2023-12-31,Gas,constrained_high,True,0,0.0,False
+2023-12-31,Healthcare Services,constrained_residual,True,0,0.0,False
+2023-12-31,Healthcare Services,constrained_high,True,0,0.0,False
+2023-12-31,Household Products,constrained_residual,True,0,0.0,False
+2023-12-31,Household Products,constrained_high,True,0,0.0,False
+2023-12-31,IT - Hardware,constrained_residual,True,0,0.0,False
+2023-12-31,IT - Hardware,constrained_high,True,0,-2.220446049250313e-16,False
+2023-12-31,IT - Services,constrained_residual,True,0,0.21212121212121215,True
+2023-12-31,IT - Services,constrained_high,True,0,0.12121212121212155,True
+2023-12-31,IT - Software,constrained_residual,True,0,0.0517241379310347,True
+2023-12-31,IT - Software,constrained_high,True,0,0.0517241379310347,True
+2023-12-31,Industrial Manufacturing,constrained_residual,True,0,0.5147058823529412,True
+2023-12-31,Industrial Manufacturing,constrained_high,True,0,0.7499999999999999,True
+2023-12-31,Industrial Products,constrained_residual,True,0,0.00797872340425565,True
+2023-12-31,Industrial Products,constrained_high,True,0,0.02393617021276606,True
+2023-12-31,Insurance,constrained_residual,True,0,0.0,False
+2023-12-31,Insurance,constrained_high,True,0,0.0,False
+2023-12-31,Leisure Services,constrained_residual,True,0,0.0,False
+2023-12-31,Leisure Services,constrained_high,True,0,-2.220446049250313e-16,False
+2023-12-31,Media,constrained_residual,True,0,0.0,False
+2023-12-31,Media,constrained_high,True,0,0.0,False
+2023-12-31,Metals & Minerals Trading,constrained_residual,False,1,0.0,False
+2023-12-31,Metals & Minerals Trading,constrained_high,True,0,0.0,False
+2023-12-31,Minerals & Mining,constrained_residual,True,0,0.30000000000000004,True
+2023-12-31,Minerals & Mining,constrained_high,True,0,0.30000000000000004,True
+2023-12-31,Non - Ferrous Metals,constrained_residual,True,0,-2.220446049250313e-16,False
+2023-12-31,Non - Ferrous Metals,constrained_high,True,0,-2.220446049250313e-16,False
+2023-12-31,Oil,constrained_residual,True,0,0.0,False
+2023-12-31,Oil,constrained_high,True,0,0.0,False
+2023-12-31,Other Construction Materials,constrained_residual,True,0,0.0,False
+2023-12-31,Other Construction Materials,constrained_high,True,0,0.0,False
+2023-12-31,Other Consumer Services,constrained_residual,True,0,0.0,False
+2023-12-31,Other Consumer Services,constrained_high,True,0,0.0,False
+2023-12-31,"Paper, Forest & Jute Products",constrained_residual,True,0,-2.220446049250313e-16,False
+2023-12-31,"Paper, Forest & Jute Products",constrained_high,True,0,0.0,False
+2023-12-31,Personal Products,constrained_residual,True,0,0.0,False
+2023-12-31,Personal Products,constrained_high,True,0,0.0,False
+2023-12-31,Petroleum Products,constrained_residual,True,0,0.0,False
+2023-12-31,Petroleum Products,constrained_high,True,0,0.0,False
+2023-12-31,Pharmaceuticals & Biotechnology,constrained_residual,True,0,-4.440892098500626e-16,False
+2023-12-31,Pharmaceuticals & Biotechnology,constrained_high,True,0,0.09183673469387732,True
+2023-12-31,Power,constrained_residual,True,0,0.0,False
+2023-12-31,Power,constrained_high,True,0,0.0,False
+2023-12-31,Realty,constrained_residual,True,0,0.0,False
+2023-12-31,Realty,constrained_high,True,0,0.0,False
+2023-12-31,Retailing,constrained_residual,True,0,0.0,False
+2023-12-31,Retailing,constrained_high,True,0,0.0,False
+2023-12-31,Telecom -  Equipment & Accessories,constrained_residual,True,0,0.0,False
+2023-12-31,Telecom -  Equipment & Accessories,constrained_high,True,0,0.0,False
+2023-12-31,Telecom - Services,constrained_residual,True,0,-2.220446049250313e-16,False
+2023-12-31,Telecom - Services,constrained_high,True,0,-2.220446049250313e-16,False
+2023-12-31,Textiles & Apparels,constrained_residual,True,0,-2.220446049250313e-16,False
+2023-12-31,Textiles & Apparels,constrained_high,True,0,0.0,False
+2023-12-31,Transport Infrastructure,constrained_residual,True,0,0.0,False
+2023-12-31,Transport Infrastructure,constrained_high,True,0,0.0,False
+2023-12-31,Transport Services,constrained_residual,True,0,0.06666666666666687,True
+2023-12-31,Transport Services,constrained_high,True,0,-1.1102230246251565e-16,False
