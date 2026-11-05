@@ -96,6 +96,14 @@ experiments/residual-challengers-20261105/** -text
 experiments/constrained-ranking-20261105/** -text
 experiments/champion-open-search-20261105/** -text
 experiments/champion-rank-correction-20261105/** -text
+experiments/rank-correction-transfer-20261106/** -text
+research/runtime/global-rank-correction-20261106/** -text
+research/protocols/rank_correction_transfer_20261106.md -text
+research/reports/rank_correction_transfer_20261106.md -text
+research/runners/rank_correction_transfer_20261106.py text eol=lf
+research/runners/rank_correction_transfer_review_20261106.py text eol=lf
+research/runners/build_global_champion_20261106.py text eol=lf
+src/stock_ranker/global_champion_product.py text eol=lf
 research/protocols/champion_open_search_20261105.md -text
 research/protocols/champion_rank_correction_20261105.md -text
 research/reports/champion_open_search_20261105.md -text

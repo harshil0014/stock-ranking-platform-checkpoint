@@ -14,6 +14,7 @@ from stock_ranker.runtime import PROJECT_ROOT
 from stock_ranker.personalized_product import PersonalizationError, parse_profile, _json_value
 from stock_ranker.personalized_peak_product import PeakRankingService
 from stock_ranker.sip_profit_signal import adjustments
+from stock_ranker.global_champion_product import GlobalChampionSelection
 
 
 def recency_adjustment(x):
@@ -142,6 +143,12 @@ class SectorChampionService(PeakRankingService):
                 sector_count=int(scores.sector.nunique()),evaluation_mode='FROZEN_CHAMPION_WITH_PROFILE_EXECUTION',
                 sector_scoring_note='All 4,436 securities ranked within frozen sectors. Equal scores share a rank. Unclassified is a display group. Price-evidence fallbacks are labelled.',
                 execution_boundary='Ranking coverage is separate from execution eligibility. SIP execution details use your submitted fields; a ranking is not a fill guarantee.')
+            try:
+                global_selection=GlobalChampionSelection().selection(profile)
+            except (OSError,ValueError,KeyError) as exc:
+                global_selection={'available':False,'rows':[],
+                    'note':'Global selection unavailable because its frozen package could not be verified.'}
+            result['global_champion']=global_selection
             json.dumps(result,allow_nan=False)
             return result
 

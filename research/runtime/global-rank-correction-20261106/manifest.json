@@ -1,0 +1,30 @@
+{
+  "model_id": "global_rank_correction_20261106",
+  "model_name": "Global Top-20 Champion",
+  "candidate": "error_corrected_professor",
+  "as_of_date": "2026-10-03",
+  "eligible_stocks": 2386,
+  "sectors": 48,
+  "base_profile": {
+    "amount": 7500,
+    "lookback_months": 36,
+    "interval_days": 30,
+    "target_cagr_percent": 20,
+    "horizon_months": 12
+  },
+  "last_training_label_endpoint": "2025-12-31",
+  "training_rows": 54831,
+  "current_champion_parity_error": 3.0531133177191805e-16,
+  "source_sha256": "6fc0f8f11a96206e12b95e72bc94453541559618e11e0106314c3c205f8001c3",
+  "files": {
+    "ranking.csv": "a66e4af3ecb88e40f57f29cfb096bb31a1302fe23f21bd5a284e83fe16416f26",
+    "model.txt": "1a68f113a4cad7d506a8ea9f4ee915163937ab92d1b2507d97051908e99bbfb0"
+  },
+  "scope": "Global selection across eligible sector-ranked stocks; sector ranks remain supplied by sector champion",
+  "evidence": "Adaptive development and previously exposed later-period comparison; not fresh validation",
+  "missing_history_policy": "Excluded from global selection, sector champion rank remains available",
+  "fresh_daily_inputs": false,
+  "user_authorized_promotion": true,
+  "solver_queries": 48,
+  "solver_fallbacks": 0
+}

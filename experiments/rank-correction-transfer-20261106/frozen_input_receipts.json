@@ -1,0 +1,90 @@
+{
+  "utc": "2026-11-05T18:56:48.171332+00:00",
+  "candidate": "error_corrected_professor",
+  "files": [
+    {
+      "path": "work/champion-rank-correction-20261105/features_2016-03-31.pkl.gz",
+      "sha256": "75ea2ea16602d9a76ee8d3e501d4e207054a12cdf701a5e6090597a0848a4fc0"
+    },
+    {
+      "path": "work/champion-rank-correction-20261105/features_2016-06-30.pkl.gz",
+      "sha256": "2366b1e09f3ca30ab41ed61875f3cc1c1eb46eaf86396e39f860be6aeecba7ab"
+    },
+    {
+      "path": "work/champion-rank-correction-20261105/features_2016-09-30.pkl.gz",
+      "sha256": "f70e995d2f2b094393818b3c89cb7c669d1456667d02a8b1f29a7f3087663987"
+    },
+    {
+      "path": "work/champion-rank-correction-20261105/features_2016-12-31.pkl.gz",
+      "sha256": "ff96e95f79656547add9762011db19b784f235303d4ca925be8d742730a8fc22"
+    },
+    {
+      "path": "work/champion-rank-correction-20261105/features_2017-03-31.pkl.gz",
+      "sha256": "af2f6e849b8ae1c72659e292b0ba18a7c97fd9a810245c0dacb7229196ff9000"
+    },
+    {
+      "path": "work/champion-rank-correction-20261105/features_2017-06-30.pkl.gz",
+      "sha256": "19bf6873b8830903485a0990ec683aee8ea127c05f44e2440e4602dc73351e75"
+    },
+    {
+      "path": "work/champion-rank-correction-20261105/features_2017-09-30.pkl.gz",
+      "sha256": "770332e1702d7b4f1f1716af1218ce4ccfc63a9b3aa216e31297c49bc132b2a2"
+    },
+    {
+      "path": "work/champion-rank-correction-20261105/features_2017-12-31.pkl.gz",
+      "sha256": "acd8532caf39948b1b8911ebbf59baf07fc85941c77d6d333daa77b5cde82a9a"
+    },
+    {
+      "path": "work/champion-rank-correction-20261105/features_2018-03-31.pkl.gz",
+      "sha256": "44cca9b2f3a873bf79b5159cbdf04a77c022ee675b9f3fb9e785b61d4eee0d8c"
+    },
+    {
+      "path": "work/champion-rank-correction-20261105/features_2018-06-30.pkl.gz",
+      "sha256": "58aa4ea05b51f7f5b9930eb4baf10904e8bbf6e01eb3c8b4a160a813d9f4abfd"
+    },
+    {
+      "path": "work/champion-rank-correction-20261105/features_2018-09-30.pkl.gz",
+      "sha256": "729a9373075129d14a5dee53ce8127b7bdcb636bd15b48949f30d5d17e22c88d"
+    },
+    {
+      "path": "work/champion-rank-correction-20261105/features_2018-12-31.pkl.gz",
+      "sha256": "e4346bd68c1650f771e9fff9afeda4afc07d09ea3f88e43bc6b90d822fee23ca"
+    },
+    {
+      "path": "work/champion-rank-correction-20261105/features_2019-03-31.pkl.gz",
+      "sha256": "dcb2af01ec220178a719faf23f8827fe242be94dacf01205fdd5797f15ea2a8e"
+    },
+    {
+      "path": "work/champion-rank-correction-20261105/features_2019-06-30.pkl.gz",
+      "sha256": "221be3cb09fdce7ae9ee1b7ac52df5ebdf1587d1d606320446aed1bc1a5fe415"
+    },
+    {
+      "path": "work/champion-rank-correction-20261105/features_2019-09-30.pkl.gz",
+      "sha256": "53b44c2990ca4432865dd8329b2e364a031a8eca98760f0acd42bc1f6104b038"
+    },
+    {
+      "path": "work/champion-rank-correction-20261105/features_2019-12-31.pkl.gz",
+      "sha256": "86d50bf9fd0586e2491422c341057aab8a46bc7210c47fedb26041d846fd8eac"
+    },
+    {
+      "path": "work/novel-champion-20261105/development_scored.pkl.gz",
+      "sha256": "5bf3f9d8dd5cd5cd49f0c5aefd4b72b08d9774c8d28ed328c741e931996b872f"
+    },
+    {
+      "path": "work/champion-open-search-20261105/transfer_scored.pkl.gz",
+      "sha256": "9bdcf176f735763e89d38ac4d65fafbe762cabacb1cabcecd53596c47d9f6e7a"
+    },
+    {
+      "path": "research/protocols/rank_correction_transfer_20261106.md",
+      "sha256": "0556848a97334b488ae87bf06615a07743be48a87229360a08e382d00fba2c26"
+    },
+    {
+      "path": "research/runners/rank_correction_transfer_20261106.py",
+      "sha256": "46c8b4b9de47cbc4e70e463a0af455a9c7c0238103724043f307cb527fbbaf1c"
+    },
+    {
+      "path": "src/stock_research/constrained_selection.py",
+      "sha256": "c9768a618b7491730306eb4c89a439d8eceeb90b1fd7bbfe66008979c1c91361"
+    }
+  ]
+}

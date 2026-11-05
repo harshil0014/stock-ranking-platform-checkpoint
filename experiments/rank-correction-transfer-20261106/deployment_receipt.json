@@ -1,0 +1,10 @@
+{
+  "status": "PROMOTED_GLOBAL_TOP20_ONLY",
+  "tests": 23,
+  "browser_verified": true,
+  "runtime_manifest_sha256": "0e97e52f787b07ded88b0ee177c84346aa52c1fcc13af69c3596d5bae7efdc3a",
+  "local_server": "http://127.0.0.1:8765/sector-champion",
+  "snapshot": "2026-10-03",
+  "code_review": "Preserved existing sector scores and all4436identities; only appended global selection field and display panel",
+  "ledger_untouched": true
+}

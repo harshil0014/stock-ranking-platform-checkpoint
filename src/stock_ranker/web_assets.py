@@ -39,6 +39,7 @@ INDEX_HTML = r'''<!doctype html>
       <section id="personalizedResults" class="hidden">
         <div class="section-head"><div><h2>Your ranking</h2><p id="personalizedProfileSummary" class="muted"></p></div></div>
         <div id="personalizedSummary" class="status-grid"></div>
+        <article id="globalChampionPanel" class="panel hidden"><h2>Global Top-20 Champion</h2><p id="globalChampionNote" class="muted"></p><div id="globalChampionPicks" class="status-grid"></div></article>
         <div class="toolbar slim"><label>Find a security<input id="personalizedSearch" placeholder="Ticker, company, ISIN, NSE or BSE code"></label><label>Sector<select id="personalizedSector"><option value="">All sectors</option></select></label><label class="check"><input id="personalizedFallbacks" type="checkbox" checked> Show product fallbacks</label></div>
         <p id="personalizedDisplayNote" class="muted"></p>
         <div class="table-wrap"><table><thead><tr><th>Overall Personalized rank</th><th>Security</th><th>Sector</th><th>Personalized sector rank</th><th>Score</th><th id="personalizedComponentsHeader">Goal / LambdaRank</th><th>Execution</th><th>Cash / affordability</th><th>Availability</th><th>Details</th></tr></thead><tbody id="personalizedRows"></tbody></table></div>
@@ -268,6 +269,9 @@ function showPersonalizedStock(row){
 }
 function renderPersonalized(){
   const data=state.personalized;if(!data)return;
+  const globalSelection=data.global_champion;
+  $('globalChampionPanel').classList.toggle('hidden',!globalSelection);
+  if(globalSelection){$('globalChampionNote').textContent=globalSelection.note;const picks=$('globalChampionPicks');clear(picks);(globalSelection.rows||[]).forEach(row=>{const card=el('div');card.append(el('strong',`#${row.global_champion_rank} ${row.ticker||row.isin}`),el('p',row.company),el('small',row.sector));picks.append(card)})}
   const query=$('personalizedSearch').value.trim().toLowerCase(),showFallbacks=$('personalizedFallbacks').checked,sector=$('personalizedSector').value;
   const matched=data.rows.filter(row=>(showFallbacks||row.personalized_available)&&(!sector||row.sector===sector)&&
     (!query||[row.ticker,row.company,row.isin,row.requested_code,row.search_aliases,row.sector].filter(Boolean).join(' ').toLowerCase().includes(query)));

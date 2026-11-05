@@ -1,0 +1,17 @@
+{
+  "period": "transfer",
+  "matched_dates": 12,
+  "mean": 0.009123646609589493,
+  "median": 0.020267970380500593,
+  "winsor": 0.011603411262647167,
+  "worst_leave_one_date_out": 0.001164136838196275,
+  "best_date": "2024-12-31",
+  "best_date_share_of_net_xirr_delta": 0.8830373993342049,
+  "worst_leave_one_security_out": 0.0016405356186799773,
+  "largest_security_share_of_net_terminal_wealth": 0.8515258432353445,
+  "low95": -0.01153642946609293,
+  "high95": 0.025312246471309474,
+  "securities_audited": 110,
+  "deletion_policy": "Replace removed allocation by zero-interest cash in both portfolios, no refill, preserve original blocked-date support",
+  "interpretation": "Adaptive historical results, not fresh validation"
+}

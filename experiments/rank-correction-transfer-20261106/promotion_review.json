@@ -1,0 +1,23 @@
+{
+  "candidate": "error_corrected_professor",
+  "transfer_xirr_gain_pp": 0.91236466095895,
+  "transfer_dd_gain_pp": -0.32464833860244996,
+  "matched_dates": 12,
+  "ic_delta": -4.740137977279901e-05,
+  "goal_delta_pp": 0.0,
+  "professor_alignment_delta_pp": 0.0,
+  "changed_sector_top3_fraction": 0.0,
+  "raw_champion_gain_pp": -1.6297108718821514,
+  "raw_champion_matched_dates": 10,
+  "parameters_changed": false,
+  "fresh_holdout": false,
+  "source_runtime_changed": true,
+  "tests_passed": 23,
+  "promotion_status": "PROMOTED_GLOBAL_TOP20_ONLY",
+  "documented_attempts": 317,
+  "eligible_current_stocks": 2386,
+  "as_of_date": "2026-10-03",
+  "scope": "Global Top20 panel on existing sector-champion page, base7500 profile only",
+  "runtime_manifest_sha256": "0e97e52f787b07ded88b0ee177c84346aa52c1fcc13af69c3596d5bae7efdc3a",
+  "browser_verified": true
+}

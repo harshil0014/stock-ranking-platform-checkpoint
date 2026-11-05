@@ -1,0 +1,1157 @@
+decision_date,sector,model,changed,overlap
+2024-03-31,Aerospace & Defense,champion,False,1.0
+2024-03-31,Aerospace & Defense,error_corrected_professor,False,1.0
+2024-03-31,Agricultural Food & other Products,champion,False,1.0
+2024-03-31,Agricultural Food & other Products,error_corrected_professor,False,1.0
+2024-03-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2024-03-31,"Agricultural, Commercial & Construction Vehicles",error_corrected_professor,False,1.0
+2024-03-31,Auto Components,champion,False,1.0
+2024-03-31,Auto Components,error_corrected_professor,False,1.0
+2024-03-31,Automobiles,champion,False,1.0
+2024-03-31,Automobiles,error_corrected_professor,False,1.0
+2024-03-31,Banks,champion,False,1.0
+2024-03-31,Banks,error_corrected_professor,False,1.0
+2024-03-31,Beverages,champion,False,1.0
+2024-03-31,Beverages,error_corrected_professor,False,1.0
+2024-03-31,Capital Markets,champion,False,1.0
+2024-03-31,Capital Markets,error_corrected_professor,False,1.0
+2024-03-31,Cement & Cement Products,champion,False,1.0
+2024-03-31,Cement & Cement Products,error_corrected_professor,False,1.0
+2024-03-31,Chemicals & Petrochemicals,champion,False,1.0
+2024-03-31,Chemicals & Petrochemicals,error_corrected_professor,False,1.0
+2024-03-31,Commercial Services & Supplies,champion,False,1.0
+2024-03-31,Commercial Services & Supplies,error_corrected_professor,False,1.0
+2024-03-31,Construction,champion,False,1.0
+2024-03-31,Construction,error_corrected_professor,False,1.0
+2024-03-31,Consumer Durables,champion,False,1.0
+2024-03-31,Consumer Durables,error_corrected_professor,False,1.0
+2024-03-31,Diversified,champion,False,1.0
+2024-03-31,Diversified,error_corrected_professor,False,1.0
+2024-03-31,Electrical Equipment,champion,False,1.0
+2024-03-31,Electrical Equipment,error_corrected_professor,False,1.0
+2024-03-31,Entertainment,champion,False,1.0
+2024-03-31,Entertainment,error_corrected_professor,False,1.0
+2024-03-31,Ferrous Metals,champion,False,1.0
+2024-03-31,Ferrous Metals,error_corrected_professor,False,1.0
+2024-03-31,Fertilizers & Agrochemicals,champion,False,1.0
+2024-03-31,Fertilizers & Agrochemicals,error_corrected_professor,False,1.0
+2024-03-31,Finance,champion,False,1.0
+2024-03-31,Finance,error_corrected_professor,False,1.0
+2024-03-31,Food Products,champion,False,1.0
+2024-03-31,Food Products,error_corrected_professor,False,1.0
+2024-03-31,Gas,champion,False,1.0
+2024-03-31,Gas,error_corrected_professor,False,1.0
+2024-03-31,Healthcare Services,champion,False,1.0
+2024-03-31,Healthcare Services,error_corrected_professor,False,1.0
+2024-03-31,Household Products,champion,False,1.0
+2024-03-31,Household Products,error_corrected_professor,False,1.0
+2024-03-31,IT - Hardware,champion,False,1.0
+2024-03-31,IT - Hardware,error_corrected_professor,False,1.0
+2024-03-31,IT - Services,champion,False,1.0
+2024-03-31,IT - Services,error_corrected_professor,False,1.0
+2024-03-31,IT - Software,champion,False,1.0
+2024-03-31,IT - Software,error_corrected_professor,False,1.0
+2024-03-31,Industrial Manufacturing,champion,False,1.0
+2024-03-31,Industrial Manufacturing,error_corrected_professor,False,1.0
+2024-03-31,Industrial Products,champion,False,1.0
+2024-03-31,Industrial Products,error_corrected_professor,False,1.0
+2024-03-31,Insurance,champion,False,1.0
+2024-03-31,Insurance,error_corrected_professor,False,1.0
+2024-03-31,Leisure Services,champion,False,1.0
+2024-03-31,Leisure Services,error_corrected_professor,False,1.0
+2024-03-31,Media,champion,False,1.0
+2024-03-31,Media,error_corrected_professor,False,1.0
+2024-03-31,Metals & Minerals Trading,champion,False,1.0
+2024-03-31,Metals & Minerals Trading,error_corrected_professor,False,1.0
+2024-03-31,Minerals & Mining,champion,False,1.0
+2024-03-31,Minerals & Mining,error_corrected_professor,False,1.0
+2024-03-31,Non - Ferrous Metals,champion,False,1.0
+2024-03-31,Non - Ferrous Metals,error_corrected_professor,False,1.0
+2024-03-31,Oil,champion,False,1.0
+2024-03-31,Oil,error_corrected_professor,False,1.0
+2024-03-31,Other Construction Materials,champion,False,1.0
+2024-03-31,Other Construction Materials,error_corrected_professor,False,1.0
+2024-03-31,Other Consumer Services,champion,False,1.0
+2024-03-31,Other Consumer Services,error_corrected_professor,False,1.0
+2024-03-31,"Paper, Forest & Jute Products",champion,False,1.0
+2024-03-31,"Paper, Forest & Jute Products",error_corrected_professor,False,1.0
+2024-03-31,Personal Products,champion,False,1.0
+2024-03-31,Personal Products,error_corrected_professor,False,1.0
+2024-03-31,Petroleum Products,champion,False,1.0
+2024-03-31,Petroleum Products,error_corrected_professor,False,1.0
+2024-03-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2024-03-31,Pharmaceuticals & Biotechnology,error_corrected_professor,False,1.0
+2024-03-31,Power,champion,False,1.0
+2024-03-31,Power,error_corrected_professor,False,1.0
+2024-03-31,Realty,champion,False,1.0
+2024-03-31,Realty,error_corrected_professor,False,1.0
+2024-03-31,Retailing,champion,False,1.0
+2024-03-31,Retailing,error_corrected_professor,False,1.0
+2024-03-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2024-03-31,Telecom -  Equipment & Accessories,error_corrected_professor,False,1.0
+2024-03-31,Telecom - Services,champion,False,1.0
+2024-03-31,Telecom - Services,error_corrected_professor,False,1.0
+2024-03-31,Textiles & Apparels,champion,False,1.0
+2024-03-31,Textiles & Apparels,error_corrected_professor,False,1.0
+2024-03-31,Transport Infrastructure,champion,False,1.0
+2024-03-31,Transport Infrastructure,error_corrected_professor,False,1.0
+2024-03-31,Transport Services,champion,False,1.0
+2024-03-31,Transport Services,error_corrected_professor,False,1.0
+2024-06-30,Aerospace & Defense,champion,False,1.0
+2024-06-30,Aerospace & Defense,error_corrected_professor,False,1.0
+2024-06-30,Agricultural Food & other Products,champion,False,1.0
+2024-06-30,Agricultural Food & other Products,error_corrected_professor,False,1.0
+2024-06-30,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2024-06-30,"Agricultural, Commercial & Construction Vehicles",error_corrected_professor,False,1.0
+2024-06-30,Auto Components,champion,False,1.0
+2024-06-30,Auto Components,error_corrected_professor,False,1.0
+2024-06-30,Automobiles,champion,False,1.0
+2024-06-30,Automobiles,error_corrected_professor,False,1.0
+2024-06-30,Banks,champion,False,1.0
+2024-06-30,Banks,error_corrected_professor,False,1.0
+2024-06-30,Beverages,champion,False,1.0
+2024-06-30,Beverages,error_corrected_professor,False,1.0
+2024-06-30,Capital Markets,champion,False,1.0
+2024-06-30,Capital Markets,error_corrected_professor,False,1.0
+2024-06-30,Cement & Cement Products,champion,False,1.0
+2024-06-30,Cement & Cement Products,error_corrected_professor,False,1.0
+2024-06-30,Chemicals & Petrochemicals,champion,False,1.0
+2024-06-30,Chemicals & Petrochemicals,error_corrected_professor,False,1.0
+2024-06-30,Commercial Services & Supplies,champion,False,1.0
+2024-06-30,Commercial Services & Supplies,error_corrected_professor,False,1.0
+2024-06-30,Construction,champion,False,1.0
+2024-06-30,Construction,error_corrected_professor,False,1.0
+2024-06-30,Consumer Durables,champion,False,1.0
+2024-06-30,Consumer Durables,error_corrected_professor,False,1.0
+2024-06-30,Diversified,champion,False,1.0
+2024-06-30,Diversified,error_corrected_professor,False,1.0
+2024-06-30,Electrical Equipment,champion,False,1.0
+2024-06-30,Electrical Equipment,error_corrected_professor,False,1.0
+2024-06-30,Entertainment,champion,False,1.0
+2024-06-30,Entertainment,error_corrected_professor,False,1.0
+2024-06-30,Ferrous Metals,champion,False,1.0
+2024-06-30,Ferrous Metals,error_corrected_professor,False,1.0
+2024-06-30,Fertilizers & Agrochemicals,champion,False,1.0
+2024-06-30,Fertilizers & Agrochemicals,error_corrected_professor,False,1.0
+2024-06-30,Finance,champion,False,1.0
+2024-06-30,Finance,error_corrected_professor,False,1.0
+2024-06-30,Food Products,champion,False,1.0
+2024-06-30,Food Products,error_corrected_professor,False,1.0
+2024-06-30,Gas,champion,False,1.0
+2024-06-30,Gas,error_corrected_professor,False,1.0
+2024-06-30,Healthcare Services,champion,False,1.0
+2024-06-30,Healthcare Services,error_corrected_professor,False,1.0
+2024-06-30,Household Products,champion,False,1.0
+2024-06-30,Household Products,error_corrected_professor,False,1.0
+2024-06-30,IT - Hardware,champion,False,1.0
+2024-06-30,IT - Hardware,error_corrected_professor,False,1.0
+2024-06-30,IT - Services,champion,False,1.0
+2024-06-30,IT - Services,error_corrected_professor,False,1.0
+2024-06-30,IT - Software,champion,False,1.0
+2024-06-30,IT - Software,error_corrected_professor,False,1.0
+2024-06-30,Industrial Manufacturing,champion,False,1.0
+2024-06-30,Industrial Manufacturing,error_corrected_professor,False,1.0
+2024-06-30,Industrial Products,champion,False,1.0
+2024-06-30,Industrial Products,error_corrected_professor,False,1.0
+2024-06-30,Insurance,champion,False,1.0
+2024-06-30,Insurance,error_corrected_professor,False,1.0
+2024-06-30,Leisure Services,champion,False,1.0
+2024-06-30,Leisure Services,error_corrected_professor,False,1.0
+2024-06-30,Media,champion,False,1.0
+2024-06-30,Media,error_corrected_professor,False,1.0
+2024-06-30,Metals & Minerals Trading,champion,False,1.0
+2024-06-30,Metals & Minerals Trading,error_corrected_professor,False,1.0
+2024-06-30,Minerals & Mining,champion,False,1.0
+2024-06-30,Minerals & Mining,error_corrected_professor,False,1.0
+2024-06-30,Non - Ferrous Metals,champion,False,1.0
+2024-06-30,Non - Ferrous Metals,error_corrected_professor,False,1.0
+2024-06-30,Oil,champion,False,1.0
+2024-06-30,Oil,error_corrected_professor,False,1.0
+2024-06-30,Other Construction Materials,champion,False,1.0
+2024-06-30,Other Construction Materials,error_corrected_professor,False,1.0
+2024-06-30,Other Consumer Services,champion,False,1.0
+2024-06-30,Other Consumer Services,error_corrected_professor,False,1.0
+2024-06-30,"Paper, Forest & Jute Products",champion,False,1.0
+2024-06-30,"Paper, Forest & Jute Products",error_corrected_professor,False,1.0
+2024-06-30,Personal Products,champion,False,1.0
+2024-06-30,Personal Products,error_corrected_professor,False,1.0
+2024-06-30,Petroleum Products,champion,False,1.0
+2024-06-30,Petroleum Products,error_corrected_professor,False,1.0
+2024-06-30,Pharmaceuticals & Biotechnology,champion,False,1.0
+2024-06-30,Pharmaceuticals & Biotechnology,error_corrected_professor,False,1.0
+2024-06-30,Power,champion,False,1.0
+2024-06-30,Power,error_corrected_professor,False,1.0
+2024-06-30,Realty,champion,False,1.0
+2024-06-30,Realty,error_corrected_professor,False,1.0
+2024-06-30,Retailing,champion,False,1.0
+2024-06-30,Retailing,error_corrected_professor,False,1.0
+2024-06-30,Telecom -  Equipment & Accessories,champion,False,1.0
+2024-06-30,Telecom -  Equipment & Accessories,error_corrected_professor,False,1.0
+2024-06-30,Telecom - Services,champion,False,1.0
+2024-06-30,Telecom - Services,error_corrected_professor,False,1.0
+2024-06-30,Textiles & Apparels,champion,False,1.0
+2024-06-30,Textiles & Apparels,error_corrected_professor,False,1.0
+2024-06-30,Transport Infrastructure,champion,False,1.0
+2024-06-30,Transport Infrastructure,error_corrected_professor,False,1.0
+2024-06-30,Transport Services,champion,False,1.0
+2024-06-30,Transport Services,error_corrected_professor,False,1.0
+2024-09-30,Aerospace & Defense,champion,False,1.0
+2024-09-30,Aerospace & Defense,error_corrected_professor,False,1.0
+2024-09-30,Agricultural Food & other Products,champion,False,1.0
+2024-09-30,Agricultural Food & other Products,error_corrected_professor,False,1.0
+2024-09-30,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2024-09-30,"Agricultural, Commercial & Construction Vehicles",error_corrected_professor,False,1.0
+2024-09-30,Auto Components,champion,False,1.0
+2024-09-30,Auto Components,error_corrected_professor,False,1.0
+2024-09-30,Automobiles,champion,False,1.0
+2024-09-30,Automobiles,error_corrected_professor,False,1.0
+2024-09-30,Banks,champion,False,1.0
+2024-09-30,Banks,error_corrected_professor,False,1.0
+2024-09-30,Beverages,champion,False,1.0
+2024-09-30,Beverages,error_corrected_professor,False,1.0
+2024-09-30,Capital Markets,champion,False,1.0
+2024-09-30,Capital Markets,error_corrected_professor,False,1.0
+2024-09-30,Cement & Cement Products,champion,False,1.0
+2024-09-30,Cement & Cement Products,error_corrected_professor,False,1.0
+2024-09-30,Chemicals & Petrochemicals,champion,False,1.0
+2024-09-30,Chemicals & Petrochemicals,error_corrected_professor,False,1.0
+2024-09-30,Commercial Services & Supplies,champion,False,1.0
+2024-09-30,Commercial Services & Supplies,error_corrected_professor,False,1.0
+2024-09-30,Construction,champion,False,1.0
+2024-09-30,Construction,error_corrected_professor,False,1.0
+2024-09-30,Consumer Durables,champion,False,1.0
+2024-09-30,Consumer Durables,error_corrected_professor,False,1.0
+2024-09-30,Diversified,champion,False,1.0
+2024-09-30,Diversified,error_corrected_professor,False,1.0
+2024-09-30,Electrical Equipment,champion,False,1.0
+2024-09-30,Electrical Equipment,error_corrected_professor,False,1.0
+2024-09-30,Entertainment,champion,False,1.0
+2024-09-30,Entertainment,error_corrected_professor,False,1.0
+2024-09-30,Ferrous Metals,champion,False,1.0
+2024-09-30,Ferrous Metals,error_corrected_professor,False,1.0
+2024-09-30,Fertilizers & Agrochemicals,champion,False,1.0
+2024-09-30,Fertilizers & Agrochemicals,error_corrected_professor,False,1.0
+2024-09-30,Finance,champion,False,1.0
+2024-09-30,Finance,error_corrected_professor,False,1.0
+2024-09-30,Food Products,champion,False,1.0
+2024-09-30,Food Products,error_corrected_professor,False,1.0
+2024-09-30,Gas,champion,False,1.0
+2024-09-30,Gas,error_corrected_professor,False,1.0
+2024-09-30,Healthcare Services,champion,False,1.0
+2024-09-30,Healthcare Services,error_corrected_professor,False,1.0
+2024-09-30,Household Products,champion,False,1.0
+2024-09-30,Household Products,error_corrected_professor,False,1.0
+2024-09-30,IT - Hardware,champion,False,1.0
+2024-09-30,IT - Hardware,error_corrected_professor,False,1.0
+2024-09-30,IT - Services,champion,False,1.0
+2024-09-30,IT - Services,error_corrected_professor,False,1.0
+2024-09-30,IT - Software,champion,False,1.0
+2024-09-30,IT - Software,error_corrected_professor,False,1.0
+2024-09-30,Industrial Manufacturing,champion,False,1.0
+2024-09-30,Industrial Manufacturing,error_corrected_professor,False,1.0
+2024-09-30,Industrial Products,champion,False,1.0
+2024-09-30,Industrial Products,error_corrected_professor,False,1.0
+2024-09-30,Insurance,champion,False,1.0
+2024-09-30,Insurance,error_corrected_professor,False,1.0
+2024-09-30,Leisure Services,champion,False,1.0
+2024-09-30,Leisure Services,error_corrected_professor,False,1.0
+2024-09-30,Media,champion,False,1.0
+2024-09-30,Media,error_corrected_professor,False,1.0
+2024-09-30,Minerals & Mining,champion,False,1.0
+2024-09-30,Minerals & Mining,error_corrected_professor,False,1.0
+2024-09-30,Non - Ferrous Metals,champion,False,1.0
+2024-09-30,Non - Ferrous Metals,error_corrected_professor,False,1.0
+2024-09-30,Oil,champion,False,1.0
+2024-09-30,Oil,error_corrected_professor,False,1.0
+2024-09-30,Other Construction Materials,champion,False,1.0
+2024-09-30,Other Construction Materials,error_corrected_professor,False,1.0
+2024-09-30,Other Consumer Services,champion,False,1.0
+2024-09-30,Other Consumer Services,error_corrected_professor,False,1.0
+2024-09-30,"Paper, Forest & Jute Products",champion,False,1.0
+2024-09-30,"Paper, Forest & Jute Products",error_corrected_professor,False,1.0
+2024-09-30,Personal Products,champion,False,1.0
+2024-09-30,Personal Products,error_corrected_professor,False,1.0
+2024-09-30,Petroleum Products,champion,False,1.0
+2024-09-30,Petroleum Products,error_corrected_professor,False,1.0
+2024-09-30,Pharmaceuticals & Biotechnology,champion,False,1.0
+2024-09-30,Pharmaceuticals & Biotechnology,error_corrected_professor,False,1.0
+2024-09-30,Power,champion,False,1.0
+2024-09-30,Power,error_corrected_professor,False,1.0
+2024-09-30,Realty,champion,False,1.0
+2024-09-30,Realty,error_corrected_professor,False,1.0
+2024-09-30,Retailing,champion,False,1.0
+2024-09-30,Retailing,error_corrected_professor,False,1.0
+2024-09-30,Telecom -  Equipment & Accessories,champion,False,1.0
+2024-09-30,Telecom -  Equipment & Accessories,error_corrected_professor,False,1.0
+2024-09-30,Telecom - Services,champion,False,1.0
+2024-09-30,Telecom - Services,error_corrected_professor,False,1.0
+2024-09-30,Textiles & Apparels,champion,False,1.0
+2024-09-30,Textiles & Apparels,error_corrected_professor,False,1.0
+2024-09-30,Transport Infrastructure,champion,False,1.0
+2024-09-30,Transport Infrastructure,error_corrected_professor,False,1.0
+2024-09-30,Transport Services,champion,False,1.0
+2024-09-30,Transport Services,error_corrected_professor,False,1.0
+2024-12-31,Aerospace & Defense,champion,False,1.0
+2024-12-31,Aerospace & Defense,error_corrected_professor,False,1.0
+2024-12-31,Agricultural Food & other Products,champion,False,1.0
+2024-12-31,Agricultural Food & other Products,error_corrected_professor,False,1.0
+2024-12-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2024-12-31,"Agricultural, Commercial & Construction Vehicles",error_corrected_professor,False,1.0
+2024-12-31,Auto Components,champion,False,1.0
+2024-12-31,Auto Components,error_corrected_professor,False,1.0
+2024-12-31,Automobiles,champion,False,1.0
+2024-12-31,Automobiles,error_corrected_professor,False,1.0
+2024-12-31,Banks,champion,False,1.0
+2024-12-31,Banks,error_corrected_professor,False,1.0
+2024-12-31,Beverages,champion,False,1.0
+2024-12-31,Beverages,error_corrected_professor,False,1.0
+2024-12-31,Capital Markets,champion,False,1.0
+2024-12-31,Capital Markets,error_corrected_professor,False,1.0
+2024-12-31,Cement & Cement Products,champion,False,1.0
+2024-12-31,Cement & Cement Products,error_corrected_professor,False,1.0
+2024-12-31,Chemicals & Petrochemicals,champion,False,1.0
+2024-12-31,Chemicals & Petrochemicals,error_corrected_professor,False,1.0
+2024-12-31,Commercial Services & Supplies,champion,False,1.0
+2024-12-31,Commercial Services & Supplies,error_corrected_professor,False,1.0
+2024-12-31,Construction,champion,False,1.0
+2024-12-31,Construction,error_corrected_professor,False,1.0
+2024-12-31,Consumer Durables,champion,False,1.0
+2024-12-31,Consumer Durables,error_corrected_professor,False,1.0
+2024-12-31,Diversified,champion,False,1.0
+2024-12-31,Diversified,error_corrected_professor,False,1.0
+2024-12-31,Electrical Equipment,champion,False,1.0
+2024-12-31,Electrical Equipment,error_corrected_professor,False,1.0
+2024-12-31,Entertainment,champion,False,1.0
+2024-12-31,Entertainment,error_corrected_professor,False,1.0
+2024-12-31,Ferrous Metals,champion,False,1.0
+2024-12-31,Ferrous Metals,error_corrected_professor,False,1.0
+2024-12-31,Fertilizers & Agrochemicals,champion,False,1.0
+2024-12-31,Fertilizers & Agrochemicals,error_corrected_professor,False,1.0
+2024-12-31,Finance,champion,False,1.0
+2024-12-31,Finance,error_corrected_professor,False,1.0
+2024-12-31,Food Products,champion,False,1.0
+2024-12-31,Food Products,error_corrected_professor,False,1.0
+2024-12-31,Gas,champion,False,1.0
+2024-12-31,Gas,error_corrected_professor,False,1.0
+2024-12-31,Healthcare Services,champion,False,1.0
+2024-12-31,Healthcare Services,error_corrected_professor,False,1.0
+2024-12-31,Household Products,champion,False,1.0
+2024-12-31,Household Products,error_corrected_professor,False,1.0
+2024-12-31,IT - Hardware,champion,False,1.0
+2024-12-31,IT - Hardware,error_corrected_professor,False,1.0
+2024-12-31,IT - Services,champion,False,1.0
+2024-12-31,IT - Services,error_corrected_professor,False,1.0
+2024-12-31,IT - Software,champion,False,1.0
+2024-12-31,IT - Software,error_corrected_professor,False,1.0
+2024-12-31,Industrial Manufacturing,champion,False,1.0
+2024-12-31,Industrial Manufacturing,error_corrected_professor,False,1.0
+2024-12-31,Industrial Products,champion,False,1.0
+2024-12-31,Industrial Products,error_corrected_professor,False,1.0
+2024-12-31,Insurance,champion,False,1.0
+2024-12-31,Insurance,error_corrected_professor,False,1.0
+2024-12-31,Leisure Services,champion,False,1.0
+2024-12-31,Leisure Services,error_corrected_professor,False,1.0
+2024-12-31,Media,champion,False,1.0
+2024-12-31,Media,error_corrected_professor,False,1.0
+2024-12-31,Minerals & Mining,champion,False,1.0
+2024-12-31,Minerals & Mining,error_corrected_professor,False,1.0
+2024-12-31,Non - Ferrous Metals,champion,False,1.0
+2024-12-31,Non - Ferrous Metals,error_corrected_professor,False,1.0
+2024-12-31,Oil,champion,False,1.0
+2024-12-31,Oil,error_corrected_professor,False,1.0
+2024-12-31,Other Construction Materials,champion,False,1.0
+2024-12-31,Other Construction Materials,error_corrected_professor,False,1.0
+2024-12-31,Other Consumer Services,champion,False,1.0
+2024-12-31,Other Consumer Services,error_corrected_professor,False,1.0
+2024-12-31,"Paper, Forest & Jute Products",champion,False,1.0
+2024-12-31,"Paper, Forest & Jute Products",error_corrected_professor,False,1.0
+2024-12-31,Personal Products,champion,False,1.0
+2024-12-31,Personal Products,error_corrected_professor,False,1.0
+2024-12-31,Petroleum Products,champion,False,1.0
+2024-12-31,Petroleum Products,error_corrected_professor,False,1.0
+2024-12-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2024-12-31,Pharmaceuticals & Biotechnology,error_corrected_professor,False,1.0
+2024-12-31,Power,champion,False,1.0
+2024-12-31,Power,error_corrected_professor,False,1.0
+2024-12-31,Realty,champion,False,1.0
+2024-12-31,Realty,error_corrected_professor,False,1.0
+2024-12-31,Retailing,champion,False,1.0
+2024-12-31,Retailing,error_corrected_professor,False,1.0
+2024-12-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2024-12-31,Telecom -  Equipment & Accessories,error_corrected_professor,False,1.0
+2024-12-31,Telecom - Services,champion,False,1.0
+2024-12-31,Telecom - Services,error_corrected_professor,False,1.0
+2024-12-31,Textiles & Apparels,champion,False,1.0
+2024-12-31,Textiles & Apparels,error_corrected_professor,False,1.0
+2024-12-31,Transport Infrastructure,champion,False,1.0
+2024-12-31,Transport Infrastructure,error_corrected_professor,False,1.0
+2024-12-31,Transport Services,champion,False,1.0
+2024-12-31,Transport Services,error_corrected_professor,False,1.0
+2025-01-31,Aerospace & Defense,champion,False,1.0
+2025-01-31,Aerospace & Defense,error_corrected_professor,False,1.0
+2025-01-31,Agricultural Food & other Products,champion,False,1.0
+2025-01-31,Agricultural Food & other Products,error_corrected_professor,False,1.0
+2025-01-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2025-01-31,"Agricultural, Commercial & Construction Vehicles",error_corrected_professor,False,1.0
+2025-01-31,Auto Components,champion,False,1.0
+2025-01-31,Auto Components,error_corrected_professor,False,1.0
+2025-01-31,Automobiles,champion,False,1.0
+2025-01-31,Automobiles,error_corrected_professor,False,1.0
+2025-01-31,Banks,champion,False,1.0
+2025-01-31,Banks,error_corrected_professor,False,1.0
+2025-01-31,Beverages,champion,False,1.0
+2025-01-31,Beverages,error_corrected_professor,False,1.0
+2025-01-31,Capital Markets,champion,False,1.0
+2025-01-31,Capital Markets,error_corrected_professor,False,1.0
+2025-01-31,Cement & Cement Products,champion,False,1.0
+2025-01-31,Cement & Cement Products,error_corrected_professor,False,1.0
+2025-01-31,Chemicals & Petrochemicals,champion,False,1.0
+2025-01-31,Chemicals & Petrochemicals,error_corrected_professor,False,1.0
+2025-01-31,Commercial Services & Supplies,champion,False,1.0
+2025-01-31,Commercial Services & Supplies,error_corrected_professor,False,1.0
+2025-01-31,Construction,champion,False,1.0
+2025-01-31,Construction,error_corrected_professor,False,1.0
+2025-01-31,Consumer Durables,champion,False,1.0
+2025-01-31,Consumer Durables,error_corrected_professor,False,1.0
+2025-01-31,Diversified,champion,False,1.0
+2025-01-31,Diversified,error_corrected_professor,False,1.0
+2025-01-31,Electrical Equipment,champion,False,1.0
+2025-01-31,Electrical Equipment,error_corrected_professor,False,1.0
+2025-01-31,Entertainment,champion,False,1.0
+2025-01-31,Entertainment,error_corrected_professor,False,1.0
+2025-01-31,Ferrous Metals,champion,False,1.0
+2025-01-31,Ferrous Metals,error_corrected_professor,False,1.0
+2025-01-31,Fertilizers & Agrochemicals,champion,False,1.0
+2025-01-31,Fertilizers & Agrochemicals,error_corrected_professor,False,1.0
+2025-01-31,Finance,champion,False,1.0
+2025-01-31,Finance,error_corrected_professor,False,1.0
+2025-01-31,Food Products,champion,False,1.0
+2025-01-31,Food Products,error_corrected_professor,False,1.0
+2025-01-31,Gas,champion,False,1.0
+2025-01-31,Gas,error_corrected_professor,False,1.0
+2025-01-31,Healthcare Services,champion,False,1.0
+2025-01-31,Healthcare Services,error_corrected_professor,False,1.0
+2025-01-31,Household Products,champion,False,1.0
+2025-01-31,Household Products,error_corrected_professor,False,1.0
+2025-01-31,IT - Hardware,champion,False,1.0
+2025-01-31,IT - Hardware,error_corrected_professor,False,1.0
+2025-01-31,IT - Services,champion,False,1.0
+2025-01-31,IT - Services,error_corrected_professor,False,1.0
+2025-01-31,IT - Software,champion,False,1.0
+2025-01-31,IT - Software,error_corrected_professor,False,1.0
+2025-01-31,Industrial Manufacturing,champion,False,1.0
+2025-01-31,Industrial Manufacturing,error_corrected_professor,False,1.0
+2025-01-31,Industrial Products,champion,False,1.0
+2025-01-31,Industrial Products,error_corrected_professor,False,1.0
+2025-01-31,Insurance,champion,False,1.0
+2025-01-31,Insurance,error_corrected_professor,False,1.0
+2025-01-31,Leisure Services,champion,False,1.0
+2025-01-31,Leisure Services,error_corrected_professor,False,1.0
+2025-01-31,Media,champion,False,1.0
+2025-01-31,Media,error_corrected_professor,False,1.0
+2025-01-31,Minerals & Mining,champion,False,1.0
+2025-01-31,Minerals & Mining,error_corrected_professor,False,1.0
+2025-01-31,Non - Ferrous Metals,champion,False,1.0
+2025-01-31,Non - Ferrous Metals,error_corrected_professor,False,1.0
+2025-01-31,Oil,champion,False,1.0
+2025-01-31,Oil,error_corrected_professor,False,1.0
+2025-01-31,Other Construction Materials,champion,False,1.0
+2025-01-31,Other Construction Materials,error_corrected_professor,False,1.0
+2025-01-31,Other Consumer Services,champion,False,1.0
+2025-01-31,Other Consumer Services,error_corrected_professor,False,1.0
+2025-01-31,"Paper, Forest & Jute Products",champion,False,1.0
+2025-01-31,"Paper, Forest & Jute Products",error_corrected_professor,False,1.0
+2025-01-31,Personal Products,champion,False,1.0
+2025-01-31,Personal Products,error_corrected_professor,False,1.0
+2025-01-31,Petroleum Products,champion,False,1.0
+2025-01-31,Petroleum Products,error_corrected_professor,False,1.0
+2025-01-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2025-01-31,Pharmaceuticals & Biotechnology,error_corrected_professor,False,1.0
+2025-01-31,Power,champion,False,1.0
+2025-01-31,Power,error_corrected_professor,False,1.0
+2025-01-31,Realty,champion,False,1.0
+2025-01-31,Realty,error_corrected_professor,False,1.0
+2025-01-31,Retailing,champion,False,1.0
+2025-01-31,Retailing,error_corrected_professor,False,1.0
+2025-01-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2025-01-31,Telecom -  Equipment & Accessories,error_corrected_professor,False,1.0
+2025-01-31,Telecom - Services,champion,False,1.0
+2025-01-31,Telecom - Services,error_corrected_professor,False,1.0
+2025-01-31,Textiles & Apparels,champion,False,1.0
+2025-01-31,Textiles & Apparels,error_corrected_professor,False,1.0
+2025-01-31,Transport Infrastructure,champion,False,1.0
+2025-01-31,Transport Infrastructure,error_corrected_professor,False,1.0
+2025-01-31,Transport Services,champion,False,1.0
+2025-01-31,Transport Services,error_corrected_professor,False,1.0
+2025-02-28,Aerospace & Defense,champion,False,1.0
+2025-02-28,Aerospace & Defense,error_corrected_professor,False,1.0
+2025-02-28,Agricultural Food & other Products,champion,False,1.0
+2025-02-28,Agricultural Food & other Products,error_corrected_professor,False,1.0
+2025-02-28,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2025-02-28,"Agricultural, Commercial & Construction Vehicles",error_corrected_professor,False,1.0
+2025-02-28,Auto Components,champion,False,1.0
+2025-02-28,Auto Components,error_corrected_professor,False,1.0
+2025-02-28,Automobiles,champion,False,1.0
+2025-02-28,Automobiles,error_corrected_professor,False,1.0
+2025-02-28,Banks,champion,False,1.0
+2025-02-28,Banks,error_corrected_professor,False,1.0
+2025-02-28,Beverages,champion,False,1.0
+2025-02-28,Beverages,error_corrected_professor,False,1.0
+2025-02-28,Capital Markets,champion,False,1.0
+2025-02-28,Capital Markets,error_corrected_professor,False,1.0
+2025-02-28,Cement & Cement Products,champion,False,1.0
+2025-02-28,Cement & Cement Products,error_corrected_professor,False,1.0
+2025-02-28,Chemicals & Petrochemicals,champion,False,1.0
+2025-02-28,Chemicals & Petrochemicals,error_corrected_professor,False,1.0
+2025-02-28,Commercial Services & Supplies,champion,False,1.0
+2025-02-28,Commercial Services & Supplies,error_corrected_professor,False,1.0
+2025-02-28,Construction,champion,False,1.0
+2025-02-28,Construction,error_corrected_professor,False,1.0
+2025-02-28,Consumer Durables,champion,False,1.0
+2025-02-28,Consumer Durables,error_corrected_professor,False,1.0
+2025-02-28,Diversified,champion,False,1.0
+2025-02-28,Diversified,error_corrected_professor,False,1.0
+2025-02-28,Electrical Equipment,champion,False,1.0
+2025-02-28,Electrical Equipment,error_corrected_professor,False,1.0
+2025-02-28,Entertainment,champion,False,1.0
+2025-02-28,Entertainment,error_corrected_professor,False,1.0
+2025-02-28,Ferrous Metals,champion,False,1.0
+2025-02-28,Ferrous Metals,error_corrected_professor,False,1.0
+2025-02-28,Fertilizers & Agrochemicals,champion,False,1.0
+2025-02-28,Fertilizers & Agrochemicals,error_corrected_professor,False,1.0
+2025-02-28,Finance,champion,False,1.0
+2025-02-28,Finance,error_corrected_professor,False,1.0
+2025-02-28,Food Products,champion,False,1.0
+2025-02-28,Food Products,error_corrected_professor,False,1.0
+2025-02-28,Gas,champion,False,1.0
+2025-02-28,Gas,error_corrected_professor,False,1.0
+2025-02-28,Healthcare Services,champion,False,1.0
+2025-02-28,Healthcare Services,error_corrected_professor,False,1.0
+2025-02-28,Household Products,champion,False,1.0
+2025-02-28,Household Products,error_corrected_professor,False,1.0
+2025-02-28,IT - Hardware,champion,False,1.0
+2025-02-28,IT - Hardware,error_corrected_professor,False,1.0
+2025-02-28,IT - Services,champion,False,1.0
+2025-02-28,IT - Services,error_corrected_professor,False,1.0
+2025-02-28,IT - Software,champion,False,1.0
+2025-02-28,IT - Software,error_corrected_professor,False,1.0
+2025-02-28,Industrial Manufacturing,champion,False,1.0
+2025-02-28,Industrial Manufacturing,error_corrected_professor,False,1.0
+2025-02-28,Industrial Products,champion,False,1.0
+2025-02-28,Industrial Products,error_corrected_professor,False,1.0
+2025-02-28,Insurance,champion,False,1.0
+2025-02-28,Insurance,error_corrected_professor,False,1.0
+2025-02-28,Leisure Services,champion,False,1.0
+2025-02-28,Leisure Services,error_corrected_professor,False,1.0
+2025-02-28,Media,champion,False,1.0
+2025-02-28,Media,error_corrected_professor,False,1.0
+2025-02-28,Minerals & Mining,champion,False,1.0
+2025-02-28,Minerals & Mining,error_corrected_professor,False,1.0
+2025-02-28,Non - Ferrous Metals,champion,False,1.0
+2025-02-28,Non - Ferrous Metals,error_corrected_professor,False,1.0
+2025-02-28,Oil,champion,False,1.0
+2025-02-28,Oil,error_corrected_professor,False,1.0
+2025-02-28,Other Construction Materials,champion,False,1.0
+2025-02-28,Other Construction Materials,error_corrected_professor,False,1.0
+2025-02-28,Other Consumer Services,champion,False,1.0
+2025-02-28,Other Consumer Services,error_corrected_professor,False,1.0
+2025-02-28,"Paper, Forest & Jute Products",champion,False,1.0
+2025-02-28,"Paper, Forest & Jute Products",error_corrected_professor,False,1.0
+2025-02-28,Personal Products,champion,False,1.0
+2025-02-28,Personal Products,error_corrected_professor,False,1.0
+2025-02-28,Petroleum Products,champion,False,1.0
+2025-02-28,Petroleum Products,error_corrected_professor,False,1.0
+2025-02-28,Pharmaceuticals & Biotechnology,champion,False,1.0
+2025-02-28,Pharmaceuticals & Biotechnology,error_corrected_professor,False,1.0
+2025-02-28,Power,champion,False,1.0
+2025-02-28,Power,error_corrected_professor,False,1.0
+2025-02-28,Realty,champion,False,1.0
+2025-02-28,Realty,error_corrected_professor,False,1.0
+2025-02-28,Retailing,champion,False,1.0
+2025-02-28,Retailing,error_corrected_professor,False,1.0
+2025-02-28,Telecom -  Equipment & Accessories,champion,False,1.0
+2025-02-28,Telecom -  Equipment & Accessories,error_corrected_professor,False,1.0
+2025-02-28,Telecom - Services,champion,False,1.0
+2025-02-28,Telecom - Services,error_corrected_professor,False,1.0
+2025-02-28,Textiles & Apparels,champion,False,1.0
+2025-02-28,Textiles & Apparels,error_corrected_professor,False,1.0
+2025-02-28,Transport Infrastructure,champion,False,1.0
+2025-02-28,Transport Infrastructure,error_corrected_professor,False,1.0
+2025-02-28,Transport Services,champion,False,1.0
+2025-02-28,Transport Services,error_corrected_professor,False,1.0
+2025-03-31,Aerospace & Defense,champion,False,1.0
+2025-03-31,Aerospace & Defense,error_corrected_professor,False,1.0
+2025-03-31,Agricultural Food & other Products,champion,False,1.0
+2025-03-31,Agricultural Food & other Products,error_corrected_professor,False,1.0
+2025-03-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2025-03-31,"Agricultural, Commercial & Construction Vehicles",error_corrected_professor,False,1.0
+2025-03-31,Auto Components,champion,False,1.0
+2025-03-31,Auto Components,error_corrected_professor,False,1.0
+2025-03-31,Automobiles,champion,False,1.0
+2025-03-31,Automobiles,error_corrected_professor,False,1.0
+2025-03-31,Banks,champion,False,1.0
+2025-03-31,Banks,error_corrected_professor,False,1.0
+2025-03-31,Beverages,champion,False,1.0
+2025-03-31,Beverages,error_corrected_professor,False,1.0
+2025-03-31,Capital Markets,champion,False,1.0
+2025-03-31,Capital Markets,error_corrected_professor,False,1.0
+2025-03-31,Cement & Cement Products,champion,False,1.0
+2025-03-31,Cement & Cement Products,error_corrected_professor,False,1.0
+2025-03-31,Chemicals & Petrochemicals,champion,False,1.0
+2025-03-31,Chemicals & Petrochemicals,error_corrected_professor,False,1.0
+2025-03-31,Commercial Services & Supplies,champion,False,1.0
+2025-03-31,Commercial Services & Supplies,error_corrected_professor,False,1.0
+2025-03-31,Construction,champion,False,1.0
+2025-03-31,Construction,error_corrected_professor,False,1.0
+2025-03-31,Consumer Durables,champion,False,1.0
+2025-03-31,Consumer Durables,error_corrected_professor,False,1.0
+2025-03-31,Diversified,champion,False,1.0
+2025-03-31,Diversified,error_corrected_professor,False,1.0
+2025-03-31,Electrical Equipment,champion,False,1.0
+2025-03-31,Electrical Equipment,error_corrected_professor,False,1.0
+2025-03-31,Entertainment,champion,False,1.0
+2025-03-31,Entertainment,error_corrected_professor,False,1.0
+2025-03-31,Ferrous Metals,champion,False,1.0
+2025-03-31,Ferrous Metals,error_corrected_professor,False,1.0
+2025-03-31,Fertilizers & Agrochemicals,champion,False,1.0
+2025-03-31,Fertilizers & Agrochemicals,error_corrected_professor,False,1.0
+2025-03-31,Finance,champion,False,1.0
+2025-03-31,Finance,error_corrected_professor,False,1.0
+2025-03-31,Food Products,champion,False,1.0
+2025-03-31,Food Products,error_corrected_professor,False,1.0
+2025-03-31,Gas,champion,False,1.0
+2025-03-31,Gas,error_corrected_professor,False,1.0
+2025-03-31,Healthcare Services,champion,False,1.0
+2025-03-31,Healthcare Services,error_corrected_professor,False,1.0
+2025-03-31,Household Products,champion,False,1.0
+2025-03-31,Household Products,error_corrected_professor,False,1.0
+2025-03-31,IT - Hardware,champion,False,1.0
+2025-03-31,IT - Hardware,error_corrected_professor,False,1.0
+2025-03-31,IT - Services,champion,False,1.0
+2025-03-31,IT - Services,error_corrected_professor,False,1.0
+2025-03-31,IT - Software,champion,False,1.0
+2025-03-31,IT - Software,error_corrected_professor,False,1.0
+2025-03-31,Industrial Manufacturing,champion,False,1.0
+2025-03-31,Industrial Manufacturing,error_corrected_professor,False,1.0
+2025-03-31,Industrial Products,champion,False,1.0
+2025-03-31,Industrial Products,error_corrected_professor,False,1.0
+2025-03-31,Insurance,champion,False,1.0
+2025-03-31,Insurance,error_corrected_professor,False,1.0
+2025-03-31,Leisure Services,champion,False,1.0
+2025-03-31,Leisure Services,error_corrected_professor,False,1.0
+2025-03-31,Media,champion,False,1.0
+2025-03-31,Media,error_corrected_professor,False,1.0
+2025-03-31,Minerals & Mining,champion,False,1.0
+2025-03-31,Minerals & Mining,error_corrected_professor,False,1.0
+2025-03-31,Non - Ferrous Metals,champion,False,1.0
+2025-03-31,Non - Ferrous Metals,error_corrected_professor,False,1.0
+2025-03-31,Oil,champion,False,1.0
+2025-03-31,Oil,error_corrected_professor,False,1.0
+2025-03-31,Other Construction Materials,champion,False,1.0
+2025-03-31,Other Construction Materials,error_corrected_professor,False,1.0
+2025-03-31,Other Consumer Services,champion,False,1.0
+2025-03-31,Other Consumer Services,error_corrected_professor,False,1.0
+2025-03-31,"Paper, Forest & Jute Products",champion,False,1.0
+2025-03-31,"Paper, Forest & Jute Products",error_corrected_professor,False,1.0
+2025-03-31,Personal Products,champion,False,1.0
+2025-03-31,Personal Products,error_corrected_professor,False,1.0
+2025-03-31,Petroleum Products,champion,False,1.0
+2025-03-31,Petroleum Products,error_corrected_professor,False,1.0
+2025-03-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2025-03-31,Pharmaceuticals & Biotechnology,error_corrected_professor,False,1.0
+2025-03-31,Power,champion,False,1.0
+2025-03-31,Power,error_corrected_professor,False,1.0
+2025-03-31,Realty,champion,False,1.0
+2025-03-31,Realty,error_corrected_professor,False,1.0
+2025-03-31,Retailing,champion,False,1.0
+2025-03-31,Retailing,error_corrected_professor,False,1.0
+2025-03-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2025-03-31,Telecom -  Equipment & Accessories,error_corrected_professor,False,1.0
+2025-03-31,Telecom - Services,champion,False,1.0
+2025-03-31,Telecom - Services,error_corrected_professor,False,1.0
+2025-03-31,Textiles & Apparels,champion,False,1.0
+2025-03-31,Textiles & Apparels,error_corrected_professor,False,1.0
+2025-03-31,Transport Infrastructure,champion,False,1.0
+2025-03-31,Transport Infrastructure,error_corrected_professor,False,1.0
+2025-03-31,Transport Services,champion,False,1.0
+2025-03-31,Transport Services,error_corrected_professor,False,1.0
+2025-04-30,Aerospace & Defense,champion,False,1.0
+2025-04-30,Aerospace & Defense,error_corrected_professor,False,1.0
+2025-04-30,Agricultural Food & other Products,champion,False,1.0
+2025-04-30,Agricultural Food & other Products,error_corrected_professor,False,1.0
+2025-04-30,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2025-04-30,"Agricultural, Commercial & Construction Vehicles",error_corrected_professor,False,1.0
+2025-04-30,Auto Components,champion,False,1.0
+2025-04-30,Auto Components,error_corrected_professor,False,1.0
+2025-04-30,Automobiles,champion,False,1.0
+2025-04-30,Automobiles,error_corrected_professor,False,1.0
+2025-04-30,Banks,champion,False,1.0
+2025-04-30,Banks,error_corrected_professor,False,1.0
+2025-04-30,Beverages,champion,False,1.0
+2025-04-30,Beverages,error_corrected_professor,False,1.0
+2025-04-30,Capital Markets,champion,False,1.0
+2025-04-30,Capital Markets,error_corrected_professor,False,1.0
+2025-04-30,Cement & Cement Products,champion,False,1.0
+2025-04-30,Cement & Cement Products,error_corrected_professor,False,1.0
+2025-04-30,Chemicals & Petrochemicals,champion,False,1.0
+2025-04-30,Chemicals & Petrochemicals,error_corrected_professor,False,1.0
+2025-04-30,Commercial Services & Supplies,champion,False,1.0
+2025-04-30,Commercial Services & Supplies,error_corrected_professor,False,1.0
+2025-04-30,Construction,champion,False,1.0
+2025-04-30,Construction,error_corrected_professor,False,1.0
+2025-04-30,Consumer Durables,champion,False,1.0
+2025-04-30,Consumer Durables,error_corrected_professor,False,1.0
+2025-04-30,Diversified,champion,False,1.0
+2025-04-30,Diversified,error_corrected_professor,False,1.0
+2025-04-30,Electrical Equipment,champion,False,1.0
+2025-04-30,Electrical Equipment,error_corrected_professor,False,1.0
+2025-04-30,Entertainment,champion,False,1.0
+2025-04-30,Entertainment,error_corrected_professor,False,1.0
+2025-04-30,Ferrous Metals,champion,False,1.0
+2025-04-30,Ferrous Metals,error_corrected_professor,False,1.0
+2025-04-30,Fertilizers & Agrochemicals,champion,False,1.0
+2025-04-30,Fertilizers & Agrochemicals,error_corrected_professor,False,1.0
+2025-04-30,Finance,champion,False,1.0
+2025-04-30,Finance,error_corrected_professor,False,1.0
+2025-04-30,Food Products,champion,False,1.0
+2025-04-30,Food Products,error_corrected_professor,False,1.0
+2025-04-30,Gas,champion,False,1.0
+2025-04-30,Gas,error_corrected_professor,False,1.0
+2025-04-30,Healthcare Services,champion,False,1.0
+2025-04-30,Healthcare Services,error_corrected_professor,False,1.0
+2025-04-30,Household Products,champion,False,1.0
+2025-04-30,Household Products,error_corrected_professor,False,1.0
+2025-04-30,IT - Hardware,champion,False,1.0
+2025-04-30,IT - Hardware,error_corrected_professor,False,1.0
+2025-04-30,IT - Services,champion,False,1.0
+2025-04-30,IT - Services,error_corrected_professor,False,1.0
+2025-04-30,IT - Software,champion,False,1.0
+2025-04-30,IT - Software,error_corrected_professor,False,1.0
+2025-04-30,Industrial Manufacturing,champion,False,1.0
+2025-04-30,Industrial Manufacturing,error_corrected_professor,False,1.0
+2025-04-30,Industrial Products,champion,False,1.0
+2025-04-30,Industrial Products,error_corrected_professor,False,1.0
+2025-04-30,Insurance,champion,False,1.0
+2025-04-30,Insurance,error_corrected_professor,False,1.0
+2025-04-30,Leisure Services,champion,False,1.0
+2025-04-30,Leisure Services,error_corrected_professor,False,1.0
+2025-04-30,Media,champion,False,1.0
+2025-04-30,Media,error_corrected_professor,False,1.0
+2025-04-30,Minerals & Mining,champion,False,1.0
+2025-04-30,Minerals & Mining,error_corrected_professor,False,1.0
+2025-04-30,Non - Ferrous Metals,champion,False,1.0
+2025-04-30,Non - Ferrous Metals,error_corrected_professor,False,1.0
+2025-04-30,Oil,champion,False,1.0
+2025-04-30,Oil,error_corrected_professor,False,1.0
+2025-04-30,Other Construction Materials,champion,False,1.0
+2025-04-30,Other Construction Materials,error_corrected_professor,False,1.0
+2025-04-30,Other Consumer Services,champion,False,1.0
+2025-04-30,Other Consumer Services,error_corrected_professor,False,1.0
+2025-04-30,"Paper, Forest & Jute Products",champion,False,1.0
+2025-04-30,"Paper, Forest & Jute Products",error_corrected_professor,False,1.0
+2025-04-30,Personal Products,champion,False,1.0
+2025-04-30,Personal Products,error_corrected_professor,False,1.0
+2025-04-30,Petroleum Products,champion,False,1.0
+2025-04-30,Petroleum Products,error_corrected_professor,False,1.0
+2025-04-30,Pharmaceuticals & Biotechnology,champion,False,1.0
+2025-04-30,Pharmaceuticals & Biotechnology,error_corrected_professor,False,1.0
+2025-04-30,Power,champion,False,1.0
+2025-04-30,Power,error_corrected_professor,False,1.0
+2025-04-30,Realty,champion,False,1.0
+2025-04-30,Realty,error_corrected_professor,False,1.0
+2025-04-30,Retailing,champion,False,1.0
+2025-04-30,Retailing,error_corrected_professor,False,1.0
+2025-04-30,Telecom -  Equipment & Accessories,champion,False,1.0
+2025-04-30,Telecom -  Equipment & Accessories,error_corrected_professor,False,1.0
+2025-04-30,Telecom - Services,champion,False,1.0
+2025-04-30,Telecom - Services,error_corrected_professor,False,1.0
+2025-04-30,Textiles & Apparels,champion,False,1.0
+2025-04-30,Textiles & Apparels,error_corrected_professor,False,1.0
+2025-04-30,Transport Infrastructure,champion,False,1.0
+2025-04-30,Transport Infrastructure,error_corrected_professor,False,1.0
+2025-04-30,Transport Services,champion,False,1.0
+2025-04-30,Transport Services,error_corrected_professor,False,1.0
+2025-05-31,Aerospace & Defense,champion,False,1.0
+2025-05-31,Aerospace & Defense,error_corrected_professor,False,1.0
+2025-05-31,Agricultural Food & other Products,champion,False,1.0
+2025-05-31,Agricultural Food & other Products,error_corrected_professor,False,1.0
+2025-05-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2025-05-31,"Agricultural, Commercial & Construction Vehicles",error_corrected_professor,False,1.0
+2025-05-31,Auto Components,champion,False,1.0
+2025-05-31,Auto Components,error_corrected_professor,False,1.0
+2025-05-31,Automobiles,champion,False,1.0
+2025-05-31,Automobiles,error_corrected_professor,False,1.0
+2025-05-31,Banks,champion,False,1.0
+2025-05-31,Banks,error_corrected_professor,False,1.0
+2025-05-31,Beverages,champion,False,1.0
+2025-05-31,Beverages,error_corrected_professor,False,1.0
+2025-05-31,Capital Markets,champion,False,1.0
+2025-05-31,Capital Markets,error_corrected_professor,False,1.0
+2025-05-31,Cement & Cement Products,champion,False,1.0
+2025-05-31,Cement & Cement Products,error_corrected_professor,False,1.0
+2025-05-31,Chemicals & Petrochemicals,champion,False,1.0
+2025-05-31,Chemicals & Petrochemicals,error_corrected_professor,False,1.0
+2025-05-31,Commercial Services & Supplies,champion,False,1.0
+2025-05-31,Commercial Services & Supplies,error_corrected_professor,False,1.0
+2025-05-31,Construction,champion,False,1.0
+2025-05-31,Construction,error_corrected_professor,False,1.0
+2025-05-31,Consumer Durables,champion,False,1.0
+2025-05-31,Consumer Durables,error_corrected_professor,False,1.0
+2025-05-31,Diversified,champion,False,1.0
+2025-05-31,Diversified,error_corrected_professor,False,1.0
+2025-05-31,Electrical Equipment,champion,False,1.0
+2025-05-31,Electrical Equipment,error_corrected_professor,False,1.0
+2025-05-31,Entertainment,champion,False,1.0
+2025-05-31,Entertainment,error_corrected_professor,False,1.0
+2025-05-31,Ferrous Metals,champion,False,1.0
+2025-05-31,Ferrous Metals,error_corrected_professor,False,1.0
+2025-05-31,Fertilizers & Agrochemicals,champion,False,1.0
+2025-05-31,Fertilizers & Agrochemicals,error_corrected_professor,False,1.0
+2025-05-31,Finance,champion,False,1.0
+2025-05-31,Finance,error_corrected_professor,False,1.0
+2025-05-31,Food Products,champion,False,1.0
+2025-05-31,Food Products,error_corrected_professor,False,1.0
+2025-05-31,Gas,champion,False,1.0
+2025-05-31,Gas,error_corrected_professor,False,1.0
+2025-05-31,Healthcare Services,champion,False,1.0
+2025-05-31,Healthcare Services,error_corrected_professor,False,1.0
+2025-05-31,Household Products,champion,False,1.0
+2025-05-31,Household Products,error_corrected_professor,False,1.0
+2025-05-31,IT - Hardware,champion,False,1.0
+2025-05-31,IT - Hardware,error_corrected_professor,False,1.0
+2025-05-31,IT - Services,champion,False,1.0
+2025-05-31,IT - Services,error_corrected_professor,False,1.0
+2025-05-31,IT - Software,champion,False,1.0
+2025-05-31,IT - Software,error_corrected_professor,False,1.0
+2025-05-31,Industrial Manufacturing,champion,False,1.0
+2025-05-31,Industrial Manufacturing,error_corrected_professor,False,1.0
+2025-05-31,Industrial Products,champion,False,1.0
+2025-05-31,Industrial Products,error_corrected_professor,False,1.0
+2025-05-31,Insurance,champion,False,1.0
+2025-05-31,Insurance,error_corrected_professor,False,1.0
+2025-05-31,Leisure Services,champion,False,1.0
+2025-05-31,Leisure Services,error_corrected_professor,False,1.0
+2025-05-31,Media,champion,False,1.0
+2025-05-31,Media,error_corrected_professor,False,1.0
+2025-05-31,Minerals & Mining,champion,False,1.0
+2025-05-31,Minerals & Mining,error_corrected_professor,False,1.0
+2025-05-31,Non - Ferrous Metals,champion,False,1.0
+2025-05-31,Non - Ferrous Metals,error_corrected_professor,False,1.0
+2025-05-31,Oil,champion,False,1.0
+2025-05-31,Oil,error_corrected_professor,False,1.0
+2025-05-31,Other Construction Materials,champion,False,1.0
+2025-05-31,Other Construction Materials,error_corrected_professor,False,1.0
+2025-05-31,Other Consumer Services,champion,False,1.0
+2025-05-31,Other Consumer Services,error_corrected_professor,False,1.0
+2025-05-31,"Paper, Forest & Jute Products",champion,False,1.0
+2025-05-31,"Paper, Forest & Jute Products",error_corrected_professor,False,1.0
+2025-05-31,Personal Products,champion,False,1.0
+2025-05-31,Personal Products,error_corrected_professor,False,1.0
+2025-05-31,Petroleum Products,champion,False,1.0
+2025-05-31,Petroleum Products,error_corrected_professor,False,1.0
+2025-05-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2025-05-31,Pharmaceuticals & Biotechnology,error_corrected_professor,False,1.0
+2025-05-31,Power,champion,False,1.0
+2025-05-31,Power,error_corrected_professor,False,1.0
+2025-05-31,Realty,champion,False,1.0
+2025-05-31,Realty,error_corrected_professor,False,1.0
+2025-05-31,Retailing,champion,False,1.0
+2025-05-31,Retailing,error_corrected_professor,False,1.0
+2025-05-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2025-05-31,Telecom -  Equipment & Accessories,error_corrected_professor,False,1.0
+2025-05-31,Telecom - Services,champion,False,1.0
+2025-05-31,Telecom - Services,error_corrected_professor,False,1.0
+2025-05-31,Textiles & Apparels,champion,False,1.0
+2025-05-31,Textiles & Apparels,error_corrected_professor,False,1.0
+2025-05-31,Transport Infrastructure,champion,False,1.0
+2025-05-31,Transport Infrastructure,error_corrected_professor,False,1.0
+2025-05-31,Transport Services,champion,False,1.0
+2025-05-31,Transport Services,error_corrected_professor,False,1.0
+2025-06-30,Aerospace & Defense,champion,False,1.0
+2025-06-30,Aerospace & Defense,error_corrected_professor,False,1.0
+2025-06-30,Agricultural Food & other Products,champion,False,1.0
+2025-06-30,Agricultural Food & other Products,error_corrected_professor,False,1.0
+2025-06-30,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2025-06-30,"Agricultural, Commercial & Construction Vehicles",error_corrected_professor,False,1.0
+2025-06-30,Auto Components,champion,False,1.0
+2025-06-30,Auto Components,error_corrected_professor,False,1.0
+2025-06-30,Automobiles,champion,False,1.0
+2025-06-30,Automobiles,error_corrected_professor,False,1.0
+2025-06-30,Banks,champion,False,1.0
+2025-06-30,Banks,error_corrected_professor,False,1.0
+2025-06-30,Beverages,champion,False,1.0
+2025-06-30,Beverages,error_corrected_professor,False,1.0
+2025-06-30,Capital Markets,champion,False,1.0
+2025-06-30,Capital Markets,error_corrected_professor,False,1.0
+2025-06-30,Cement & Cement Products,champion,False,1.0
+2025-06-30,Cement & Cement Products,error_corrected_professor,False,1.0
+2025-06-30,Chemicals & Petrochemicals,champion,False,1.0
+2025-06-30,Chemicals & Petrochemicals,error_corrected_professor,False,1.0
+2025-06-30,Commercial Services & Supplies,champion,False,1.0
+2025-06-30,Commercial Services & Supplies,error_corrected_professor,False,1.0
+2025-06-30,Construction,champion,False,1.0
+2025-06-30,Construction,error_corrected_professor,False,1.0
+2025-06-30,Consumer Durables,champion,False,1.0
+2025-06-30,Consumer Durables,error_corrected_professor,False,1.0
+2025-06-30,Diversified,champion,False,1.0
+2025-06-30,Diversified,error_corrected_professor,False,1.0
+2025-06-30,Electrical Equipment,champion,False,1.0
+2025-06-30,Electrical Equipment,error_corrected_professor,False,1.0
+2025-06-30,Entertainment,champion,False,1.0
+2025-06-30,Entertainment,error_corrected_professor,False,1.0
+2025-06-30,Ferrous Metals,champion,False,1.0
+2025-06-30,Ferrous Metals,error_corrected_professor,False,1.0
+2025-06-30,Fertilizers & Agrochemicals,champion,False,1.0
+2025-06-30,Fertilizers & Agrochemicals,error_corrected_professor,False,1.0
+2025-06-30,Finance,champion,False,1.0
+2025-06-30,Finance,error_corrected_professor,False,1.0
+2025-06-30,Food Products,champion,False,1.0
+2025-06-30,Food Products,error_corrected_professor,False,1.0
+2025-06-30,Gas,champion,False,1.0
+2025-06-30,Gas,error_corrected_professor,False,1.0
+2025-06-30,Healthcare Services,champion,False,1.0
+2025-06-30,Healthcare Services,error_corrected_professor,False,1.0
+2025-06-30,Household Products,champion,False,1.0
+2025-06-30,Household Products,error_corrected_professor,False,1.0
+2025-06-30,IT - Hardware,champion,False,1.0
+2025-06-30,IT - Hardware,error_corrected_professor,False,1.0
+2025-06-30,IT - Services,champion,False,1.0
+2025-06-30,IT - Services,error_corrected_professor,False,1.0
+2025-06-30,IT - Software,champion,False,1.0
+2025-06-30,IT - Software,error_corrected_professor,False,1.0
+2025-06-30,Industrial Manufacturing,champion,False,1.0
+2025-06-30,Industrial Manufacturing,error_corrected_professor,False,1.0
+2025-06-30,Industrial Products,champion,False,1.0
+2025-06-30,Industrial Products,error_corrected_professor,False,1.0
+2025-06-30,Insurance,champion,False,1.0
+2025-06-30,Insurance,error_corrected_professor,False,1.0
+2025-06-30,Leisure Services,champion,False,1.0
+2025-06-30,Leisure Services,error_corrected_professor,False,1.0
+2025-06-30,Media,champion,False,1.0
+2025-06-30,Media,error_corrected_professor,False,1.0
+2025-06-30,Minerals & Mining,champion,False,1.0
+2025-06-30,Minerals & Mining,error_corrected_professor,False,1.0
+2025-06-30,Non - Ferrous Metals,champion,False,1.0
+2025-06-30,Non - Ferrous Metals,error_corrected_professor,False,1.0
+2025-06-30,Oil,champion,False,1.0
+2025-06-30,Oil,error_corrected_professor,False,1.0
+2025-06-30,Other Construction Materials,champion,False,1.0
+2025-06-30,Other Construction Materials,error_corrected_professor,False,1.0
+2025-06-30,Other Consumer Services,champion,False,1.0
+2025-06-30,Other Consumer Services,error_corrected_professor,False,1.0
+2025-06-30,"Paper, Forest & Jute Products",champion,False,1.0
+2025-06-30,"Paper, Forest & Jute Products",error_corrected_professor,False,1.0
+2025-06-30,Personal Products,champion,False,1.0
+2025-06-30,Personal Products,error_corrected_professor,False,1.0
+2025-06-30,Petroleum Products,champion,False,1.0
+2025-06-30,Petroleum Products,error_corrected_professor,False,1.0
+2025-06-30,Pharmaceuticals & Biotechnology,champion,False,1.0
+2025-06-30,Pharmaceuticals & Biotechnology,error_corrected_professor,False,1.0
+2025-06-30,Power,champion,False,1.0
+2025-06-30,Power,error_corrected_professor,False,1.0
+2025-06-30,Realty,champion,False,1.0
+2025-06-30,Realty,error_corrected_professor,False,1.0
+2025-06-30,Retailing,champion,False,1.0
+2025-06-30,Retailing,error_corrected_professor,False,1.0
+2025-06-30,Telecom -  Equipment & Accessories,champion,False,1.0
+2025-06-30,Telecom -  Equipment & Accessories,error_corrected_professor,False,1.0
+2025-06-30,Telecom - Services,champion,False,1.0
+2025-06-30,Telecom - Services,error_corrected_professor,False,1.0
+2025-06-30,Textiles & Apparels,champion,False,1.0
+2025-06-30,Textiles & Apparels,error_corrected_professor,False,1.0
+2025-06-30,Transport Infrastructure,champion,False,1.0
+2025-06-30,Transport Infrastructure,error_corrected_professor,False,1.0
+2025-06-30,Transport Services,champion,False,1.0
+2025-06-30,Transport Services,error_corrected_professor,False,1.0
+2025-07-31,Aerospace & Defense,champion,False,1.0
+2025-07-31,Aerospace & Defense,error_corrected_professor,False,1.0
+2025-07-31,Agricultural Food & other Products,champion,False,1.0
+2025-07-31,Agricultural Food & other Products,error_corrected_professor,False,1.0
+2025-07-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2025-07-31,"Agricultural, Commercial & Construction Vehicles",error_corrected_professor,False,1.0
+2025-07-31,Auto Components,champion,False,1.0
+2025-07-31,Auto Components,error_corrected_professor,False,1.0
+2025-07-31,Automobiles,champion,False,1.0
+2025-07-31,Automobiles,error_corrected_professor,False,1.0
+2025-07-31,Banks,champion,False,1.0
+2025-07-31,Banks,error_corrected_professor,False,1.0
+2025-07-31,Beverages,champion,False,1.0
+2025-07-31,Beverages,error_corrected_professor,False,1.0
+2025-07-31,Capital Markets,champion,False,1.0
+2025-07-31,Capital Markets,error_corrected_professor,False,1.0
+2025-07-31,Cement & Cement Products,champion,False,1.0
+2025-07-31,Cement & Cement Products,error_corrected_professor,False,1.0
+2025-07-31,Chemicals & Petrochemicals,champion,False,1.0
+2025-07-31,Chemicals & Petrochemicals,error_corrected_professor,False,1.0
+2025-07-31,Commercial Services & Supplies,champion,False,1.0
+2025-07-31,Commercial Services & Supplies,error_corrected_professor,False,1.0
+2025-07-31,Construction,champion,False,1.0
+2025-07-31,Construction,error_corrected_professor,False,1.0
+2025-07-31,Consumer Durables,champion,False,1.0
+2025-07-31,Consumer Durables,error_corrected_professor,False,1.0
+2025-07-31,Diversified,champion,False,1.0
+2025-07-31,Diversified,error_corrected_professor,False,1.0
+2025-07-31,Electrical Equipment,champion,False,1.0
+2025-07-31,Electrical Equipment,error_corrected_professor,False,1.0
+2025-07-31,Entertainment,champion,False,1.0
+2025-07-31,Entertainment,error_corrected_professor,False,1.0
+2025-07-31,Ferrous Metals,champion,False,1.0
+2025-07-31,Ferrous Metals,error_corrected_professor,False,1.0
+2025-07-31,Fertilizers & Agrochemicals,champion,False,1.0
+2025-07-31,Fertilizers & Agrochemicals,error_corrected_professor,False,1.0
+2025-07-31,Finance,champion,False,1.0
+2025-07-31,Finance,error_corrected_professor,False,1.0
+2025-07-31,Food Products,champion,False,1.0
+2025-07-31,Food Products,error_corrected_professor,False,1.0
+2025-07-31,Gas,champion,False,1.0
+2025-07-31,Gas,error_corrected_professor,False,1.0
+2025-07-31,Healthcare Services,champion,False,1.0
+2025-07-31,Healthcare Services,error_corrected_professor,False,1.0
+2025-07-31,Household Products,champion,False,1.0
+2025-07-31,Household Products,error_corrected_professor,False,1.0
+2025-07-31,IT - Hardware,champion,False,1.0
+2025-07-31,IT - Hardware,error_corrected_professor,False,1.0
+2025-07-31,IT - Services,champion,False,1.0
+2025-07-31,IT - Services,error_corrected_professor,False,1.0
+2025-07-31,IT - Software,champion,False,1.0
+2025-07-31,IT - Software,error_corrected_professor,False,1.0
+2025-07-31,Industrial Manufacturing,champion,False,1.0
+2025-07-31,Industrial Manufacturing,error_corrected_professor,False,1.0
+2025-07-31,Industrial Products,champion,False,1.0
+2025-07-31,Industrial Products,error_corrected_professor,False,1.0
+2025-07-31,Insurance,champion,False,1.0
+2025-07-31,Insurance,error_corrected_professor,False,1.0
+2025-07-31,Leisure Services,champion,False,1.0
+2025-07-31,Leisure Services,error_corrected_professor,False,1.0
+2025-07-31,Media,champion,False,1.0
+2025-07-31,Media,error_corrected_professor,False,1.0
+2025-07-31,Minerals & Mining,champion,False,1.0
+2025-07-31,Minerals & Mining,error_corrected_professor,False,1.0
+2025-07-31,Non - Ferrous Metals,champion,False,1.0
+2025-07-31,Non - Ferrous Metals,error_corrected_professor,False,1.0
+2025-07-31,Oil,champion,False,1.0
+2025-07-31,Oil,error_corrected_professor,False,1.0
+2025-07-31,Other Construction Materials,champion,False,1.0
+2025-07-31,Other Construction Materials,error_corrected_professor,False,1.0
+2025-07-31,Other Consumer Services,champion,False,1.0
+2025-07-31,Other Consumer Services,error_corrected_professor,False,1.0
+2025-07-31,"Paper, Forest & Jute Products",champion,False,1.0
+2025-07-31,"Paper, Forest & Jute Products",error_corrected_professor,False,1.0
+2025-07-31,Personal Products,champion,False,1.0
+2025-07-31,Personal Products,error_corrected_professor,False,1.0
+2025-07-31,Petroleum Products,champion,False,1.0
+2025-07-31,Petroleum Products,error_corrected_professor,False,1.0
+2025-07-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2025-07-31,Pharmaceuticals & Biotechnology,error_corrected_professor,False,1.0
+2025-07-31,Power,champion,False,1.0
+2025-07-31,Power,error_corrected_professor,False,1.0
+2025-07-31,Realty,champion,False,1.0
+2025-07-31,Realty,error_corrected_professor,False,1.0
+2025-07-31,Retailing,champion,False,1.0
+2025-07-31,Retailing,error_corrected_professor,False,1.0
+2025-07-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2025-07-31,Telecom -  Equipment & Accessories,error_corrected_professor,False,1.0
+2025-07-31,Telecom - Services,champion,False,1.0
+2025-07-31,Telecom - Services,error_corrected_professor,False,1.0
+2025-07-31,Textiles & Apparels,champion,False,1.0
+2025-07-31,Textiles & Apparels,error_corrected_professor,False,1.0
+2025-07-31,Transport Infrastructure,champion,False,1.0
+2025-07-31,Transport Infrastructure,error_corrected_professor,False,1.0
+2025-07-31,Transport Services,champion,False,1.0
+2025-07-31,Transport Services,error_corrected_professor,False,1.0
+2025-08-31,Aerospace & Defense,champion,False,1.0
+2025-08-31,Aerospace & Defense,error_corrected_professor,False,1.0
+2025-08-31,Agricultural Food & other Products,champion,False,1.0
+2025-08-31,Agricultural Food & other Products,error_corrected_professor,False,1.0
+2025-08-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2025-08-31,"Agricultural, Commercial & Construction Vehicles",error_corrected_professor,False,1.0
+2025-08-31,Auto Components,champion,False,1.0
+2025-08-31,Auto Components,error_corrected_professor,False,1.0
+2025-08-31,Automobiles,champion,False,1.0
+2025-08-31,Automobiles,error_corrected_professor,False,1.0
+2025-08-31,Banks,champion,False,1.0
+2025-08-31,Banks,error_corrected_professor,False,1.0
+2025-08-31,Beverages,champion,False,1.0
+2025-08-31,Beverages,error_corrected_professor,False,1.0
+2025-08-31,Capital Markets,champion,False,1.0
+2025-08-31,Capital Markets,error_corrected_professor,False,1.0
+2025-08-31,Cement & Cement Products,champion,False,1.0
+2025-08-31,Cement & Cement Products,error_corrected_professor,False,1.0
+2025-08-31,Chemicals & Petrochemicals,champion,False,1.0
+2025-08-31,Chemicals & Petrochemicals,error_corrected_professor,False,1.0
+2025-08-31,Commercial Services & Supplies,champion,False,1.0
+2025-08-31,Commercial Services & Supplies,error_corrected_professor,False,1.0
+2025-08-31,Construction,champion,False,1.0
+2025-08-31,Construction,error_corrected_professor,False,1.0
+2025-08-31,Consumer Durables,champion,False,1.0
+2025-08-31,Consumer Durables,error_corrected_professor,False,1.0
+2025-08-31,Diversified,champion,False,1.0
+2025-08-31,Diversified,error_corrected_professor,False,1.0
+2025-08-31,Electrical Equipment,champion,False,1.0
+2025-08-31,Electrical Equipment,error_corrected_professor,False,1.0
+2025-08-31,Entertainment,champion,False,1.0
+2025-08-31,Entertainment,error_corrected_professor,False,1.0
+2025-08-31,Ferrous Metals,champion,False,1.0
+2025-08-31,Ferrous Metals,error_corrected_professor,False,1.0
+2025-08-31,Fertilizers & Agrochemicals,champion,False,1.0
+2025-08-31,Fertilizers & Agrochemicals,error_corrected_professor,False,1.0
+2025-08-31,Finance,champion,False,1.0
+2025-08-31,Finance,error_corrected_professor,False,1.0
+2025-08-31,Food Products,champion,False,1.0
+2025-08-31,Food Products,error_corrected_professor,False,1.0
+2025-08-31,Gas,champion,False,1.0
+2025-08-31,Gas,error_corrected_professor,False,1.0
+2025-08-31,Healthcare Services,champion,False,1.0
+2025-08-31,Healthcare Services,error_corrected_professor,False,1.0
+2025-08-31,Household Products,champion,False,1.0
+2025-08-31,Household Products,error_corrected_professor,False,1.0
+2025-08-31,IT - Hardware,champion,False,1.0
+2025-08-31,IT - Hardware,error_corrected_professor,False,1.0
+2025-08-31,IT - Services,champion,False,1.0
+2025-08-31,IT - Services,error_corrected_professor,False,1.0
+2025-08-31,IT - Software,champion,False,1.0
+2025-08-31,IT - Software,error_corrected_professor,False,1.0
+2025-08-31,Industrial Manufacturing,champion,False,1.0
+2025-08-31,Industrial Manufacturing,error_corrected_professor,False,1.0
+2025-08-31,Industrial Products,champion,False,1.0
+2025-08-31,Industrial Products,error_corrected_professor,False,1.0
+2025-08-31,Insurance,champion,False,1.0
+2025-08-31,Insurance,error_corrected_professor,False,1.0
+2025-08-31,Leisure Services,champion,False,1.0
+2025-08-31,Leisure Services,error_corrected_professor,False,1.0
+2025-08-31,Media,champion,False,1.0
+2025-08-31,Media,error_corrected_professor,False,1.0
+2025-08-31,Minerals & Mining,champion,False,1.0
+2025-08-31,Minerals & Mining,error_corrected_professor,False,1.0
+2025-08-31,Non - Ferrous Metals,champion,False,1.0
+2025-08-31,Non - Ferrous Metals,error_corrected_professor,False,1.0
+2025-08-31,Oil,champion,False,1.0
+2025-08-31,Oil,error_corrected_professor,False,1.0
+2025-08-31,Other Construction Materials,champion,False,1.0
+2025-08-31,Other Construction Materials,error_corrected_professor,False,1.0
+2025-08-31,Other Consumer Services,champion,False,1.0
+2025-08-31,Other Consumer Services,error_corrected_professor,False,1.0
+2025-08-31,"Paper, Forest & Jute Products",champion,False,1.0
+2025-08-31,"Paper, Forest & Jute Products",error_corrected_professor,False,1.0
+2025-08-31,Personal Products,champion,False,1.0
+2025-08-31,Personal Products,error_corrected_professor,False,1.0
+2025-08-31,Petroleum Products,champion,False,1.0
+2025-08-31,Petroleum Products,error_corrected_professor,False,1.0
+2025-08-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2025-08-31,Pharmaceuticals & Biotechnology,error_corrected_professor,False,1.0
+2025-08-31,Power,champion,False,1.0
+2025-08-31,Power,error_corrected_professor,False,1.0
+2025-08-31,Realty,champion,False,1.0
+2025-08-31,Realty,error_corrected_professor,False,1.0
+2025-08-31,Retailing,champion,False,1.0
+2025-08-31,Retailing,error_corrected_professor,False,1.0
+2025-08-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2025-08-31,Telecom -  Equipment & Accessories,error_corrected_professor,False,1.0
+2025-08-31,Telecom - Services,champion,False,1.0
+2025-08-31,Telecom - Services,error_corrected_professor,False,1.0
+2025-08-31,Textiles & Apparels,champion,False,1.0
+2025-08-31,Textiles & Apparels,error_corrected_professor,False,1.0
+2025-08-31,Transport Infrastructure,champion,False,1.0
+2025-08-31,Transport Infrastructure,error_corrected_professor,False,1.0
+2025-08-31,Transport Services,champion,False,1.0
+2025-08-31,Transport Services,error_corrected_professor,False,1.0

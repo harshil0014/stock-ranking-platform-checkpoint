@@ -1,0 +1,10 @@
+{
+  "candidate": "error_corrected_professor",
+  "rows": 26662,
+  "dates": 12,
+  "fits": 2,
+  "parameters_changed": false,
+  "source_cohort": "Saved feature-only residual cohort",
+  "fresh_holdout": false,
+  "documented_attempts": 317
+}

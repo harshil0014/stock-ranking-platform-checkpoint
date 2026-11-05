@@ -1,0 +1,5 @@
+model,policy,matched_dates,xirr_delta,drawdown_delta
+champion,global_top20,12,0.0,0.0
+champion,sector_top3,7,0.0,0.0
+error_corrected_professor,global_top20,12,0.009123646609589522,-0.0032464833860245492
+error_corrected_professor,sector_top3,7,0.0,6.344131569286608e-17

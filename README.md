@@ -2,6 +2,8 @@
 
 Local NSE/BSE stock-ranking website and its frozen champion. Research preferences do not replace the deployed champion.
 
+6 November2026. User-authorized **Global Top-20 Champion** is now shown on the sector-champion page for the tested base SIP profile. Its frozen October3snapshot covers2,386stocks in48sectors. [Later-period results and deployment scope](research/reports/rank_correction_transfer_20261106.md) report a+0.91ppTop20SIPXIRR gain versus the normalized research benchmark and a-1.63ppdifference versus the raw-global-score control. Existing sector ranks continue to use the sector model. Current daily input provenance remains incomplete.
+
 [Rank-error correction research](research/reports/champion_rank_correction_20261105.md) improves development globalTop20SIPXIRR while preserving professor-sectorTop3 membership. Concentration,raw-champion and randomized-tie controls are reported. The separate [locked historical transfer test](research/reports/champion_open_search_20261105.md) records a loss for the earlier risk-constrained candidate. These results remain research evidence.
 
 Latest search, 5 November 2026: [new residual-history challengers](research/reports/residual_challengers_20261105.md). The residual-momentum overlay improved development IC in four years and matched Top20 returns, but fell short of the preregistered accuracy and professor-alignment requirements. [Search history](research/registry/research_search_history_20261105.md) records prior families to exclude from future reruns.

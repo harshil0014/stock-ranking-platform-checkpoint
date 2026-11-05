@@ -1,0 +1,126 @@
+[
+  {
+    "path": "experiments/rank-correction-transfer-20261106/annual_portfolio_delta.csv",
+    "sha256": "61db73b0aac0a6f7be61d2805385a4aaa44ff7a38798eefd81fc5607fef186ae"
+  },
+  {
+    "path": "experiments/rank-correction-transfer-20261106/completion.json",
+    "sha256": "4262da5285eab31a20f96bf96854628f1629641746e7cf53f8d4fe918140c409"
+  },
+  {
+    "path": "experiments/rank-correction-transfer-20261106/concentration.json",
+    "sha256": "5ed67af1b32dbfdd0394612a01b93bd4e03ddb40cc64311aa277798a92b97b97"
+  },
+  {
+    "path": "experiments/rank-correction-transfer-20261106/deployment_receipt.json",
+    "sha256": "29bf3b88a295f8b72e6a2b4f23384c86d5822d1d921d3a2ed4004335d94b76b3"
+  },
+  {
+    "path": "experiments/rank-correction-transfer-20261106/folds.csv",
+    "sha256": "48821b6ebad41f9b55ca90fca1ab362463efdc6db1c463fe9299334d2ed17c8d"
+  },
+  {
+    "path": "experiments/rank-correction-transfer-20261106/frozen_input_receipts.json",
+    "sha256": "1c45a1b25b87bb5fc77546d1009a62718bb8cb8c23bac2066c12bc187585ca2b"
+  },
+  {
+    "path": "experiments/rank-correction-transfer-20261106/promotion_review.json",
+    "sha256": "7a595d7e0f13493c3fc3e746e41143dd9359aaae989076aa8df1d2ed96dc05cc"
+  },
+  {
+    "path": "experiments/rank-correction-transfer-20261106/raw_champion_control.csv",
+    "sha256": "e969553a18047c36c99a88abaa32d694c503c2e2acdd5f2bcb233e9026788eac"
+  },
+  {
+    "path": "experiments/rank-correction-transfer-20261106/solver_receipts.csv",
+    "sha256": "d72db64497c6c658e46b3d1a0e8965795ebcdc127b1e95eedc11b7047f3519c7"
+  },
+  {
+    "path": "experiments/rank-correction-transfer-20261106/transfer_blocked_queries.csv",
+    "sha256": "05bdf40636e57507ea8221b7bd9d5f5f9fef04ab9fcf913563ecf73a6e221d64"
+  },
+  {
+    "path": "experiments/rank-correction-transfer-20261106/transfer_date_metrics.csv",
+    "sha256": "986e3c750758ac2ed88afbf2fb85e8d02d6a4e02fc47b72d0c34e59e4085b9f5"
+  },
+  {
+    "path": "experiments/rank-correction-transfer-20261106/transfer_overlap.csv",
+    "sha256": "2189d40054f29f6d2aacce18d22252d470f68b08528d9ffd391122dd76e3c2c5"
+  },
+  {
+    "path": "experiments/rank-correction-transfer-20261106/transfer_portfolios.csv",
+    "sha256": "2e44c9bc4b8736ec917b54524c3a7b75cd6937e2c57446b8e319d15b16026db0"
+  },
+  {
+    "path": "experiments/rank-correction-transfer-20261106/transfer_portfolio_failures.csv",
+    "sha256": "24a730d45360396a1c96aa45b3a4e5360619d5d67c712ae70e4add32fa255d52"
+  },
+  {
+    "path": "experiments/rank-correction-transfer-20261106/transfer_portfolio_pairs.csv",
+    "sha256": "a4e5cf7c6e1fc929cde9e641fdf1e1a3169eb38427497817aaee3f53920f4fca"
+  },
+  {
+    "path": "experiments/rank-correction-transfer-20261106/transfer_sector_metrics.csv",
+    "sha256": "0cf67c0e412dacb4b6bc4f989d6fd5ba76cce38e47fe2fbcd599ea6c6382c604"
+  },
+  {
+    "path": "experiments/rank-correction-transfer-20261106/transfer_summary.csv",
+    "sha256": "0086244b0119e55981b6e4de80a0934194e2b00a3933f023a05c2cdfe670a746"
+  },
+  {
+    "path": "experiments/rank-correction-transfer-20261106/transfer_year_metrics.csv",
+    "sha256": "c18e5401cf6716d95f90227b413e4ec0f7df80441d8ca7a395bc62ed7e18c0a8"
+  },
+  {
+    "path": "research/reports/rank_correction_transfer_20261106.md",
+    "sha256": "5c9fa6c850b9037c03ccca64e7f3e2d3414d6a14bb52d79f4598e773718959aa"
+  },
+  {
+    "path": "research/protocols/rank_correction_transfer_20261106.md",
+    "sha256": "0556848a97334b488ae87bf06615a07743be48a87229360a08e382d00fba2c26"
+  },
+  {
+    "path": "research/research_variant_ledger.csv",
+    "sha256": "f9f3c98606f158217a8d0a3ad396ac85adf0e19a9f150a5e851a24d64b8f49a5"
+  },
+  {
+    "path": "research/runners/rank_correction_transfer_20261106.py",
+    "sha256": "46c8b4b9de47cbc4e70e463a0af455a9c7c0238103724043f307cb527fbbaf1c"
+  },
+  {
+    "path": "research/runners/rank_correction_transfer_review_20261106.py",
+    "sha256": "21acadedf885c2062ebb24c23aae686b4295d52a9cf6f29b0e5eaf21c4d3ea80"
+  },
+  {
+    "path": "research/runners/build_global_champion_20261106.py",
+    "sha256": "c58f15a0c6361966a07232cb0d8c89301c49c054a3fa015338c77eef44d4c6c3"
+  },
+  {
+    "path": "src/stock_ranker/global_champion_product.py",
+    "sha256": "98ba0fd06736be6fdfd225d764aa7f9d05746856e958d7ba2614b1bbd78768b2"
+  },
+  {
+    "path": "src/stock_ranker/sector_champion_product.py",
+    "sha256": "e857b3a014e59e4e74288ee020be5c9c4a23c8d5d9c8ef345046c56c3c49b713"
+  },
+  {
+    "path": "src/stock_ranker/web_assets.py",
+    "sha256": "2273296e67c17b028e8aa065afbc1685b1302e57989c5ecb04000b5410bc2d40"
+  },
+  {
+    "path": "tests/test_global_champion_product.py",
+    "sha256": "78456801dc1c697d756d2650679b15e65c299920035935228deadb6c7c914ed9"
+  },
+  {
+    "path": "research/runtime/global-rank-correction-20261106/manifest.json",
+    "sha256": "0e97e52f787b07ded88b0ee177c84346aa52c1fcc13af69c3596d5bae7efdc3a"
+  },
+  {
+    "path": "research/runtime/global-rank-correction-20261106/model.txt",
+    "sha256": "1a68f113a4cad7d506a8ea9f4ee915163937ab92d1b2507d97051908e99bbfb0"
+  },
+  {
+    "path": "research/runtime/global-rank-correction-20261106/ranking.csv",
+    "sha256": "a66e4af3ecb88e40f57f29cfb096bb31a1302fe23f21bd5a284e83fe16416f26"
+  }
+]
