@@ -1,0 +1,114 @@
+[
+  {
+    "path": "experiments/residual-challengers-20261105/archive_receipts.json",
+    "sha256": "9b9adc287345c799786b4cb6429f202dc517e3223920dc33ef495c3c50b5cb38"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/comparison.csv",
+    "sha256": "4fe8a50c579686a34c35c4d270ff3fc04dc8f8e71b9eb8b67aa130487517cb59"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/coverage.csv",
+    "sha256": "ff91f7559a126d29b5d5bae4641c6e0fc369a15ba1fb82edd8e4fabb166472f7"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/decision.json",
+    "sha256": "6c9e5c7f93133f5fffee11c62cd7ba2e5d69f74ddb6ba2fecc59e52ad5b860d4"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/development_blocked_queries.csv",
+    "sha256": "5f7fd592328ab3e1b8679fe19009daa3f7c9928a2424eed30490d5cbac9a1ffc"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/development_date_metrics.csv",
+    "sha256": "8dd9ab18b32abc0a90d309ee43bf0bd9f3373c59ee2e04469e00c14285dd2b4c"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/development_overlap.csv",
+    "sha256": "009b9263f3b64c962e8c2ae3dc03532490574572569b1e4f0ef30af62b69a2c4"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/development_portfolios.csv",
+    "sha256": "83878eaf5c74ed0bad31d6d84a7afe2a0ec1c848529d151876e5549517fa8c19"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/development_portfolio_failures.csv",
+    "sha256": "f9dca08f7d8b85a9baa242554ab0cda850a4cb3b4f5413afc22bf8f37cd4672a"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/development_portfolio_pairs.csv",
+    "sha256": "1838a44ef8205233ac6336a955f2042f4aa90836e559947b0ea9727f054862e1"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/development_sector_metrics.csv",
+    "sha256": "db6e9b91723c4cf76e247aecb9f2179e7c72f72ff161c1f752e0d24315e910ea"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/development_summary.csv",
+    "sha256": "fd7010f4ff2aa976e1b870f83d20e621b55b1495d67320fb1277c2ae8df4b80c"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/development_year_metrics.csv",
+    "sha256": "e8ae2cda5922b69a45a7c00c165ca51a60ab3d4484c47c3f881a80bba2b80fe1"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/frozen_protocol.json",
+    "sha256": "5ee6d0055d1f038d80231bd5d0fb7c2a9154a3263e011f65753a6cc99740d234"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/high_alignment.csv",
+    "sha256": "20b39c96da84761002fee3cc201f9c86d088d76669ae4fd8cb1a00eaae7e251a"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/input_receipts.json",
+    "sha256": "f464cc8dac0c537b6c0e078f9fda5cc1ef5182318bab76237343a5d39c791940"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/prior_code_audit.json",
+    "sha256": "bf533d89f2096748e703be828246a169407783d6f19c7dc86021e1ce4efafb75"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/summary.csv",
+    "sha256": "7707e76f93f70fbe0ff2a060dc8962b0469f8232e5c8055589eccbe5d6b47cbb"
+  },
+  {
+    "path": "research/reports/residual_challengers_20261105.md",
+    "sha256": "af150eabcc72fefe0fe5a351ba15fc31f2f208519e0f7d8bfa40ef8a293ba488"
+  },
+  {
+    "path": "research/reports/residual_challengers_20261105.png",
+    "sha256": "34b47075125ff46b1810da2adf4bc327824d7b4e77ba0b9ce3431b7f684d0530"
+  },
+  {
+    "path": "research/protocols/residual_challengers_20261105.md",
+    "sha256": "f60cb416dd1360373618eea64f705f636458b4a7ca9321bbec4473fabceb5a09"
+  },
+  {
+    "path": "research/research_variant_ledger.csv",
+    "sha256": "05e47d7fe551e7ff6b271950dae03b5eb0669a1727fa17e730fb0d8162152506"
+  },
+  {
+    "path": "src/stock_research/residual_history.py",
+    "sha256": "cac7e52a14bf95888ec0a3f9027cd0572f8f714c08b6ecbe7fad28b0be7ae32a"
+  },
+  {
+    "path": "research/runners/residual_challengers_20261105.py",
+    "sha256": "7efab9dbd59ab2134fcae2917b5a4fdf945299e95669b6f500e7dfcf9f66897a"
+  },
+  {
+    "path": "research/runners/residual_review_20261105.py",
+    "sha256": "e7d4d6cf7872f6d78599167894859bdc43fb641494c09082c0e0df560f5cf06a"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/visual_review.json",
+    "sha256": "2130ea30748346df3359a2c60c1a87cd5ad45506451fab6d017b2365f224a8b4"
+  },
+  {
+    "path": "experiments/residual-challengers-20261105/plugin_receipt_hash.json",
+    "sha256": "8513efd8a95bc196e61e1123e87ec7718f8ed9737a35ba2e71c7fd94ed87cd2b"
+  },
+  {
+    "path": "research/registry/research_search_history_20261105.md",
+    "sha256": "82e875d551dd1f83b9664a887c66f40018510114fd8e7aec784ed1271b5b8546"
+  }
+]

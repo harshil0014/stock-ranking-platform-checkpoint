@@ -1,0 +1,9 @@
+{
+  "local_receipt": "work\\novel-champion-20261105\\plugin_receipts.json",
+  "sha256": "46b4e98e2a794b976942eb69b3bec9a1f902b0243992864af3775a5ba2b77e57",
+  "services": [
+    "Scite",
+    "GitHub"
+  ],
+  "raw_responses_local": true
+}

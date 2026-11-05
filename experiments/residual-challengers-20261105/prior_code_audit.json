@@ -1,0 +1,62 @@
+[
+  {
+    "file": "research/runners/personalized_v17_20261003.py",
+    "lines": [
+      "            params.update(monotone_constraints=[signs.get(c,0) for c in features],monotone_constraints_method='advanced')",
+      "            params.update(monotone_constraints=[1]*len(POS+NEG)+[0]*len(CONTEXT),monotone_constraints_method='advanced')"
+    ]
+  },
+  {
+    "file": "research/runners/personalized_v18_20261003.py",
+    "lines": [
+      "        params.update(monotone_constraints=[1]*len(s.POS+s.NEG)+[0]*(len(cols)-len(s.POS+s.NEG)),monotone_constraints_method='advanced')",
+      "    m=lgb.LGBMRegressor(objective='regression',monotone_constraints=[1]*len(s.POS+s.NEG)+[0]*len(s.CONTEXT),monotone_constraints_method='advanced',**params);w=np.repeat(1/groups,groups);w/=w.mean();m.fit(t[s.NORM],s.target(t),sample_weight=w);m.booster_.save_model(str(O/('model_'+tag+'_mono.txt')));a.loc[valid]=m.predict(test.loc[valid,s.NORM],num_threads=4)",
+      "        if look==60:pp.update(monotone_constraints=[signs.get(c,0) for c in s.RAW],monotone_constraints_method='advanced')"
+    ]
+  },
+  {
+    "file": "research/runners/round2_goal_risk_20261031.py",
+    "lines": [
+      "        model=lgb.LGBMRegressor(objective='regression',monotone_constraints=constraints,**params());model.fit(t[base.old.COLS],t.future_shortfall,sample_weight=query_weights(t))"
+    ]
+  },
+  {
+    "file": "research/runners/sector_championship_20261005.py",
+    "lines": [
+      "        'interpretation':'Historical price/professor proxies, not financial quality or true regression residual momentum. All dates previously exposed.'})"
+    ]
+  },
+  {
+    "file": "research/runners/ten_hypotheses_20261031.py",
+    "lines": [
+      "        params['monotone_constraints']=[-1 if c=='target_cagr' else 1 if c=='analog_attainment' else 0 for c in cols]"
+    ]
+  },
+  {
+    "file": "research/runners/v17_ath_refinement_20261004.py",
+    "lines": [
+      "        deterministic=True,force_col_wise=True,monotone_constraints=constraints,monotone_constraints_method='advanced')"
+    ]
+  },
+  {
+    "file": "research/runners/v17_peak_activity_20261004.py",
+    "lines": [
+      "        force_col_wise=True, random_state=20261004, monotone_constraints=constraints,",
+      "        monotone_constraints_method='advanced')"
+    ]
+  },
+  {
+    "file": "research/runners/v17_refinement_20261004.py",
+    "lines": [
+      "        test=dev.loc[dev.decision_date.str.startswith(year)&dev.lookback_months.eq(60)];t=x.loc[x.endpoint.lt(test.decision_date.min())&x.lookback_months.eq(60)].dropna(subset=v.OUTCOME+['enhanced_carry_xirr_score']).sort_values(v.KEYS[1:]+v.KEYS[:1]);params={**v.PARAMS,'n_estimators':140,'colsample_bytree':1.,'n_jobs':4,'verbosity':-1,'random_state':20261004,'deterministic':True,'force_col_wise':True};signs={'days_since_recorded_high':-1,'current_drawdown_duration_days':-1,'distance_from_recorded_high':1,'old_high_depth':-1,'underwater_depth':-1,'recovery_vs_old_high':-1};params.update(monotone_constraints=[signs.get(c,0) for c in s.RAW],monotone_constraints_method='advanced');m=lgb.LGBMRanker(objective='lambdarank',**params);labels=np.minimum(np.floor(s.target(t,True)*8),7).astype('int8');m.fit(t[s.RAW],labels,group=t.groupby(['decision_date','profile_name'],sort=False).size().tolist());m.booster_.save_model(str(O/('stable60_'+year+'.txt')));out=test[v.KEYS].copy();valid=test.champion_score.notna()",
+      "                train=x.loc[x.endpoint.lt(test.decision_date.min())&x.lookback_months.eq(60)].dropna(subset=v.OUTCOME+['enhanced_carry_xirr_score']).sort_values(v.KEYS[1:]+v.KEYS[:1]);params={**v.PARAMS,'n_jobs':4,'verbosity':-1,'random_state':seed,'deterministic':True,'force_col_wise':True};signs={'days_since_recorded_high':-1,'current_drawdown_duration_days':-1,'distance_from_recorded_high':1,'old_high_depth':-1,'underwater_depth':-1,'recovery_vs_old_high':-1};params.update(monotone_constraints=[signs.get(c,0) for c in s.RAW],monotone_constraints_method='advanced');model=lgb.LGBMRanker(objective='lambdarank',**params);labels=np.minimum(np.floor(s.target(train,True)*8),7).astype('int8');model.fit(train[s.RAW],labels,group=train.groupby(['decision_date','profile_name'],sort=False).size().tolist());m=model.booster_;m.save_model(str(O/('bag60_'+str(seed)+'_'+year+'.txt')));audits.append({'seed':seed,'max_endpoint':train.endpoint.max(),'min_decision':test.decision_date.min(),'rows':len(train)})",
+      "    t=train.loc[train.lookback_months.eq(60)].dropna(subset=v.OUTCOME+['enhanced_carry_xirr_score']).sort_values(v.KEYS[1:]+v.KEYS[:1]);params={**v.PARAMS,'n_estimators':100 if original else 140,'colsample_bytree':.9 if original else 1.,'n_jobs':4,'verbosity':-1,'random_state':seed,'deterministic':True,'force_col_wise':True};signs={'days_since_recorded_high':-1,'current_drawdown_duration_days':-1,'distance_from_recorded_high':1,'old_high_depth':-1,'underwater_depth':-1,'recovery_vs_old_high':-1};params.update(monotone_constraints=[signs.get(c,0) for c in s.RAW],monotone_constraints_method='advanced');m=lgb.LGBMRanker(objective='lambdarank',**params);labels=np.minimum(np.floor(s.target(t,True)*8),7).astype('int8');m.fit(t[s.RAW],labels,group=t.groupby(['decision_date','profile_name'],sort=False).size().tolist());m.booster_.save_model(str(O/('model_'+tag+'.txt')));out=test[v.KEYS].copy();valid=test.champion_score.notna()&test.lookback_months.eq(60)"
+    ]
+  },
+  {
+    "file": "research/runners/write_ten_hypotheses_report_20261031.py",
+    "lines": [
+      "Method references: [scikit-learn calibration and proper probability scores](https://scikit-learn.org/stable/modules/calibration.html), [LightGBM monotonic constraints](https://lightgbm.readthedocs.io/en/stable/Parameters.html#monotone_constraints). Framework documentation supports implementation choices; it is not evidence of Indian-stock forecasting performance."
+    ]
+  }
+]

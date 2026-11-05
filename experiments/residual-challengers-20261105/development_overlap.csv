@@ -1,0 +1,2985 @@
+decision_date,sector,model,changed,overlap
+2020-03-31,Agricultural Food & other Products,champion,False,1.0
+2020-03-31,Agricultural Food & other Products,residual_momentum20,True,0.6666666666666666
+2020-03-31,Agricultural Food & other Products,professor_residual50,False,1.0
+2020-03-31,Agricultural Food & other Products,residual_high20,True,0.6666666666666666
+2020-03-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2020-03-31,"Agricultural, Commercial & Construction Vehicles",residual_momentum20,False,1.0
+2020-03-31,"Agricultural, Commercial & Construction Vehicles",professor_residual50,False,1.0
+2020-03-31,"Agricultural, Commercial & Construction Vehicles",residual_high20,False,1.0
+2020-03-31,Auto Components,champion,False,1.0
+2020-03-31,Auto Components,residual_momentum20,True,0.3333333333333333
+2020-03-31,Auto Components,professor_residual50,True,0.3333333333333333
+2020-03-31,Auto Components,residual_high20,True,0.3333333333333333
+2020-03-31,Automobiles,champion,False,1.0
+2020-03-31,Automobiles,residual_momentum20,False,1.0
+2020-03-31,Automobiles,professor_residual50,True,0.6666666666666666
+2020-03-31,Automobiles,residual_high20,False,1.0
+2020-03-31,Banks,champion,False,1.0
+2020-03-31,Banks,residual_momentum20,False,1.0
+2020-03-31,Banks,professor_residual50,False,1.0
+2020-03-31,Banks,residual_high20,False,1.0
+2020-03-31,Beverages,champion,False,1.0
+2020-03-31,Beverages,residual_momentum20,True,0.6666666666666666
+2020-03-31,Beverages,professor_residual50,True,0.6666666666666666
+2020-03-31,Beverages,residual_high20,False,1.0
+2020-03-31,Capital Markets,champion,False,1.0
+2020-03-31,Capital Markets,residual_momentum20,False,1.0
+2020-03-31,Capital Markets,professor_residual50,True,0.6666666666666666
+2020-03-31,Capital Markets,residual_high20,True,0.6666666666666666
+2020-03-31,Cement & Cement Products,champion,False,1.0
+2020-03-31,Cement & Cement Products,residual_momentum20,True,0.6666666666666666
+2020-03-31,Cement & Cement Products,professor_residual50,True,0.6666666666666666
+2020-03-31,Cement & Cement Products,residual_high20,True,0.3333333333333333
+2020-03-31,Chemicals & Petrochemicals,champion,False,1.0
+2020-03-31,Chemicals & Petrochemicals,residual_momentum20,True,0.6666666666666666
+2020-03-31,Chemicals & Petrochemicals,professor_residual50,True,0.3333333333333333
+2020-03-31,Chemicals & Petrochemicals,residual_high20,True,0.6666666666666666
+2020-03-31,Commercial Services & Supplies,champion,False,1.0
+2020-03-31,Commercial Services & Supplies,residual_momentum20,True,0.6666666666666666
+2020-03-31,Commercial Services & Supplies,professor_residual50,False,1.0
+2020-03-31,Commercial Services & Supplies,residual_high20,True,0.6666666666666666
+2020-03-31,Construction,champion,False,1.0
+2020-03-31,Construction,residual_momentum20,True,0.6666666666666666
+2020-03-31,Construction,professor_residual50,True,0.6666666666666666
+2020-03-31,Construction,residual_high20,True,0.6666666666666666
+2020-03-31,Consumer Durables,champion,False,1.0
+2020-03-31,Consumer Durables,residual_momentum20,True,0.3333333333333333
+2020-03-31,Consumer Durables,professor_residual50,True,0.3333333333333333
+2020-03-31,Consumer Durables,residual_high20,True,0.6666666666666666
+2020-03-31,Electrical Equipment,champion,False,1.0
+2020-03-31,Electrical Equipment,residual_momentum20,True,0.6666666666666666
+2020-03-31,Electrical Equipment,professor_residual50,True,0.6666666666666666
+2020-03-31,Electrical Equipment,residual_high20,True,0.6666666666666666
+2020-03-31,Entertainment,champion,False,1.0
+2020-03-31,Entertainment,residual_momentum20,True,0.6666666666666666
+2020-03-31,Entertainment,professor_residual50,True,0.6666666666666666
+2020-03-31,Entertainment,residual_high20,False,1.0
+2020-03-31,Ferrous Metals,champion,False,1.0
+2020-03-31,Ferrous Metals,residual_momentum20,True,0.6666666666666666
+2020-03-31,Ferrous Metals,professor_residual50,True,0.3333333333333333
+2020-03-31,Ferrous Metals,residual_high20,True,0.3333333333333333
+2020-03-31,Fertilizers & Agrochemicals,champion,False,1.0
+2020-03-31,Fertilizers & Agrochemicals,residual_momentum20,False,1.0
+2020-03-31,Fertilizers & Agrochemicals,professor_residual50,True,0.6666666666666666
+2020-03-31,Fertilizers & Agrochemicals,residual_high20,False,1.0
+2020-03-31,Finance,champion,False,1.0
+2020-03-31,Finance,residual_momentum20,True,0.6666666666666666
+2020-03-31,Finance,professor_residual50,True,0.0
+2020-03-31,Finance,residual_high20,True,0.6666666666666666
+2020-03-31,Food Products,champion,False,1.0
+2020-03-31,Food Products,residual_momentum20,False,1.0
+2020-03-31,Food Products,professor_residual50,True,0.6666666666666666
+2020-03-31,Food Products,residual_high20,True,0.6666666666666666
+2020-03-31,Healthcare Services,champion,False,1.0
+2020-03-31,Healthcare Services,residual_momentum20,False,1.0
+2020-03-31,Healthcare Services,professor_residual50,True,0.6666666666666666
+2020-03-31,Healthcare Services,residual_high20,True,0.6666666666666666
+2020-03-31,Household Products,champion,False,1.0
+2020-03-31,Household Products,residual_momentum20,False,1.0
+2020-03-31,Household Products,professor_residual50,False,1.0
+2020-03-31,Household Products,residual_high20,False,1.0
+2020-03-31,IT - Hardware,champion,False,1.0
+2020-03-31,IT - Hardware,residual_momentum20,False,1.0
+2020-03-31,IT - Hardware,professor_residual50,False,1.0
+2020-03-31,IT - Hardware,residual_high20,False,1.0
+2020-03-31,IT - Services,champion,False,1.0
+2020-03-31,IT - Services,residual_momentum20,False,1.0
+2020-03-31,IT - Services,professor_residual50,False,1.0
+2020-03-31,IT - Services,residual_high20,False,1.0
+2020-03-31,IT - Software,champion,False,1.0
+2020-03-31,IT - Software,residual_momentum20,True,0.3333333333333333
+2020-03-31,IT - Software,professor_residual50,True,0.6666666666666666
+2020-03-31,IT - Software,residual_high20,True,0.6666666666666666
+2020-03-31,Industrial Manufacturing,champion,False,1.0
+2020-03-31,Industrial Manufacturing,residual_momentum20,True,0.6666666666666666
+2020-03-31,Industrial Manufacturing,professor_residual50,True,0.3333333333333333
+2020-03-31,Industrial Manufacturing,residual_high20,True,0.6666666666666666
+2020-03-31,Industrial Products,champion,False,1.0
+2020-03-31,Industrial Products,residual_momentum20,True,0.6666666666666666
+2020-03-31,Industrial Products,professor_residual50,True,0.3333333333333333
+2020-03-31,Industrial Products,residual_high20,False,1.0
+2020-03-31,Leisure Services,champion,False,1.0
+2020-03-31,Leisure Services,residual_momentum20,False,1.0
+2020-03-31,Leisure Services,professor_residual50,True,0.3333333333333333
+2020-03-31,Leisure Services,residual_high20,True,0.6666666666666666
+2020-03-31,Media,champion,False,1.0
+2020-03-31,Media,residual_momentum20,False,1.0
+2020-03-31,Media,professor_residual50,False,1.0
+2020-03-31,Media,residual_high20,False,1.0
+2020-03-31,Minerals & Mining,champion,False,1.0
+2020-03-31,Minerals & Mining,residual_momentum20,False,1.0
+2020-03-31,Minerals & Mining,professor_residual50,False,1.0
+2020-03-31,Minerals & Mining,residual_high20,False,1.0
+2020-03-31,Non - Ferrous Metals,champion,False,1.0
+2020-03-31,Non - Ferrous Metals,residual_momentum20,False,1.0
+2020-03-31,Non - Ferrous Metals,professor_residual50,True,0.6666666666666666
+2020-03-31,Non - Ferrous Metals,residual_high20,False,1.0
+2020-03-31,Oil,champion,False,1.0
+2020-03-31,Oil,residual_momentum20,False,1.0
+2020-03-31,Oil,professor_residual50,False,1.0
+2020-03-31,Oil,residual_high20,False,1.0
+2020-03-31,Other Construction Materials,champion,False,1.0
+2020-03-31,Other Construction Materials,residual_momentum20,False,1.0
+2020-03-31,Other Construction Materials,professor_residual50,True,0.6666666666666666
+2020-03-31,Other Construction Materials,residual_high20,False,1.0
+2020-03-31,Other Consumer Services,champion,False,1.0
+2020-03-31,Other Consumer Services,residual_momentum20,False,1.0
+2020-03-31,Other Consumer Services,professor_residual50,False,1.0
+2020-03-31,Other Consumer Services,residual_high20,False,1.0
+2020-03-31,"Paper, Forest & Jute Products",champion,False,1.0
+2020-03-31,"Paper, Forest & Jute Products",residual_momentum20,False,1.0
+2020-03-31,"Paper, Forest & Jute Products",professor_residual50,True,0.6666666666666666
+2020-03-31,"Paper, Forest & Jute Products",residual_high20,True,0.6666666666666666
+2020-03-31,Personal Products,champion,False,1.0
+2020-03-31,Personal Products,residual_momentum20,False,1.0
+2020-03-31,Personal Products,professor_residual50,False,1.0
+2020-03-31,Personal Products,residual_high20,False,1.0
+2020-03-31,Petroleum Products,champion,False,1.0
+2020-03-31,Petroleum Products,residual_momentum20,False,1.0
+2020-03-31,Petroleum Products,professor_residual50,True,0.6666666666666666
+2020-03-31,Petroleum Products,residual_high20,True,0.6666666666666666
+2020-03-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2020-03-31,Pharmaceuticals & Biotechnology,residual_momentum20,True,0.6666666666666666
+2020-03-31,Pharmaceuticals & Biotechnology,professor_residual50,True,0.6666666666666666
+2020-03-31,Pharmaceuticals & Biotechnology,residual_high20,True,0.6666666666666666
+2020-03-31,Power,champion,False,1.0
+2020-03-31,Power,residual_momentum20,True,0.6666666666666666
+2020-03-31,Power,professor_residual50,False,1.0
+2020-03-31,Power,residual_high20,False,1.0
+2020-03-31,Realty,champion,False,1.0
+2020-03-31,Realty,residual_momentum20,True,0.3333333333333333
+2020-03-31,Realty,professor_residual50,True,0.3333333333333333
+2020-03-31,Realty,residual_high20,True,0.6666666666666666
+2020-03-31,Retailing,champion,False,1.0
+2020-03-31,Retailing,residual_momentum20,False,1.0
+2020-03-31,Retailing,professor_residual50,False,1.0
+2020-03-31,Retailing,residual_high20,False,1.0
+2020-03-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2020-03-31,Telecom -  Equipment & Accessories,residual_momentum20,False,1.0
+2020-03-31,Telecom -  Equipment & Accessories,professor_residual50,True,0.6666666666666666
+2020-03-31,Telecom -  Equipment & Accessories,residual_high20,False,1.0
+2020-03-31,Telecom - Services,champion,False,1.0
+2020-03-31,Telecom - Services,residual_momentum20,False,1.0
+2020-03-31,Telecom - Services,professor_residual50,True,0.6666666666666666
+2020-03-31,Telecom - Services,residual_high20,False,1.0
+2020-03-31,Textiles & Apparels,champion,False,1.0
+2020-03-31,Textiles & Apparels,residual_momentum20,True,0.6666666666666666
+2020-03-31,Textiles & Apparels,professor_residual50,True,0.3333333333333333
+2020-03-31,Textiles & Apparels,residual_high20,True,0.6666666666666666
+2020-03-31,Transport Services,champion,False,1.0
+2020-03-31,Transport Services,residual_momentum20,True,0.6666666666666666
+2020-03-31,Transport Services,professor_residual50,True,0.3333333333333333
+2020-03-31,Transport Services,residual_high20,True,0.6666666666666666
+2020-06-30,Agricultural Food & other Products,champion,False,1.0
+2020-06-30,Agricultural Food & other Products,residual_momentum20,True,0.3333333333333333
+2020-06-30,Agricultural Food & other Products,professor_residual50,True,0.3333333333333333
+2020-06-30,Agricultural Food & other Products,residual_high20,True,0.3333333333333333
+2020-06-30,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2020-06-30,"Agricultural, Commercial & Construction Vehicles",residual_momentum20,False,1.0
+2020-06-30,"Agricultural, Commercial & Construction Vehicles",professor_residual50,False,1.0
+2020-06-30,"Agricultural, Commercial & Construction Vehicles",residual_high20,False,1.0
+2020-06-30,Auto Components,champion,False,1.0
+2020-06-30,Auto Components,residual_momentum20,True,0.3333333333333333
+2020-06-30,Auto Components,professor_residual50,True,0.3333333333333333
+2020-06-30,Auto Components,residual_high20,True,0.6666666666666666
+2020-06-30,Automobiles,champion,False,1.0
+2020-06-30,Automobiles,residual_momentum20,False,1.0
+2020-06-30,Automobiles,professor_residual50,False,1.0
+2020-06-30,Automobiles,residual_high20,False,1.0
+2020-06-30,Banks,champion,False,1.0
+2020-06-30,Banks,residual_momentum20,True,0.6666666666666666
+2020-06-30,Banks,professor_residual50,True,0.6666666666666666
+2020-06-30,Banks,residual_high20,True,0.6666666666666666
+2020-06-30,Beverages,champion,False,1.0
+2020-06-30,Beverages,residual_momentum20,False,1.0
+2020-06-30,Beverages,professor_residual50,True,0.3333333333333333
+2020-06-30,Beverages,residual_high20,False,1.0
+2020-06-30,Capital Markets,champion,False,1.0
+2020-06-30,Capital Markets,residual_momentum20,True,0.6666666666666666
+2020-06-30,Capital Markets,professor_residual50,True,0.3333333333333333
+2020-06-30,Capital Markets,residual_high20,False,1.0
+2020-06-30,Cement & Cement Products,champion,False,1.0
+2020-06-30,Cement & Cement Products,residual_momentum20,True,0.6666666666666666
+2020-06-30,Cement & Cement Products,professor_residual50,False,1.0
+2020-06-30,Cement & Cement Products,residual_high20,True,0.6666666666666666
+2020-06-30,Chemicals & Petrochemicals,champion,False,1.0
+2020-06-30,Chemicals & Petrochemicals,residual_momentum20,True,0.6666666666666666
+2020-06-30,Chemicals & Petrochemicals,professor_residual50,True,0.3333333333333333
+2020-06-30,Chemicals & Petrochemicals,residual_high20,True,0.6666666666666666
+2020-06-30,Commercial Services & Supplies,champion,False,1.0
+2020-06-30,Commercial Services & Supplies,residual_momentum20,True,0.3333333333333333
+2020-06-30,Commercial Services & Supplies,professor_residual50,True,0.6666666666666666
+2020-06-30,Commercial Services & Supplies,residual_high20,True,0.6666666666666666
+2020-06-30,Construction,champion,False,1.0
+2020-06-30,Construction,residual_momentum20,True,0.0
+2020-06-30,Construction,professor_residual50,True,0.6666666666666666
+2020-06-30,Construction,residual_high20,True,0.6666666666666666
+2020-06-30,Consumer Durables,champion,False,1.0
+2020-06-30,Consumer Durables,residual_momentum20,True,0.6666666666666666
+2020-06-30,Consumer Durables,professor_residual50,True,0.3333333333333333
+2020-06-30,Consumer Durables,residual_high20,True,0.6666666666666666
+2020-06-30,Electrical Equipment,champion,False,1.0
+2020-06-30,Electrical Equipment,residual_momentum20,True,0.6666666666666666
+2020-06-30,Electrical Equipment,professor_residual50,True,0.3333333333333333
+2020-06-30,Electrical Equipment,residual_high20,True,0.6666666666666666
+2020-06-30,Entertainment,champion,False,1.0
+2020-06-30,Entertainment,residual_momentum20,True,0.6666666666666666
+2020-06-30,Entertainment,professor_residual50,True,0.3333333333333333
+2020-06-30,Entertainment,residual_high20,True,0.6666666666666666
+2020-06-30,Ferrous Metals,champion,False,1.0
+2020-06-30,Ferrous Metals,residual_momentum20,True,0.6666666666666666
+2020-06-30,Ferrous Metals,professor_residual50,True,0.6666666666666666
+2020-06-30,Ferrous Metals,residual_high20,False,1.0
+2020-06-30,Fertilizers & Agrochemicals,champion,False,1.0
+2020-06-30,Fertilizers & Agrochemicals,residual_momentum20,True,0.6666666666666666
+2020-06-30,Fertilizers & Agrochemicals,professor_residual50,True,0.6666666666666666
+2020-06-30,Fertilizers & Agrochemicals,residual_high20,True,0.6666666666666666
+2020-06-30,Finance,champion,False,1.0
+2020-06-30,Finance,residual_momentum20,True,0.6666666666666666
+2020-06-30,Finance,professor_residual50,True,0.0
+2020-06-30,Finance,residual_high20,False,1.0
+2020-06-30,Food Products,champion,False,1.0
+2020-06-30,Food Products,residual_momentum20,True,0.6666666666666666
+2020-06-30,Food Products,professor_residual50,True,0.3333333333333333
+2020-06-30,Food Products,residual_high20,True,0.6666666666666666
+2020-06-30,Healthcare Services,champion,False,1.0
+2020-06-30,Healthcare Services,residual_momentum20,False,1.0
+2020-06-30,Healthcare Services,professor_residual50,True,0.6666666666666666
+2020-06-30,Healthcare Services,residual_high20,False,1.0
+2020-06-30,Household Products,champion,False,1.0
+2020-06-30,Household Products,residual_momentum20,False,1.0
+2020-06-30,Household Products,professor_residual50,True,0.6666666666666666
+2020-06-30,Household Products,residual_high20,False,1.0
+2020-06-30,IT - Hardware,champion,False,1.0
+2020-06-30,IT - Hardware,residual_momentum20,False,1.0
+2020-06-30,IT - Hardware,professor_residual50,True,0.6666666666666666
+2020-06-30,IT - Hardware,residual_high20,False,1.0
+2020-06-30,IT - Services,champion,False,1.0
+2020-06-30,IT - Services,residual_momentum20,True,0.6666666666666666
+2020-06-30,IT - Services,professor_residual50,True,0.3333333333333333
+2020-06-30,IT - Services,residual_high20,False,1.0
+2020-06-30,IT - Software,champion,False,1.0
+2020-06-30,IT - Software,residual_momentum20,True,0.6666666666666666
+2020-06-30,IT - Software,professor_residual50,True,0.6666666666666666
+2020-06-30,IT - Software,residual_high20,True,0.6666666666666666
+2020-06-30,Industrial Manufacturing,champion,False,1.0
+2020-06-30,Industrial Manufacturing,residual_momentum20,True,0.6666666666666666
+2020-06-30,Industrial Manufacturing,professor_residual50,True,0.3333333333333333
+2020-06-30,Industrial Manufacturing,residual_high20,True,0.6666666666666666
+2020-06-30,Industrial Products,champion,False,1.0
+2020-06-30,Industrial Products,residual_momentum20,True,0.3333333333333333
+2020-06-30,Industrial Products,professor_residual50,True,0.3333333333333333
+2020-06-30,Industrial Products,residual_high20,True,0.3333333333333333
+2020-06-30,Leisure Services,champion,False,1.0
+2020-06-30,Leisure Services,residual_momentum20,True,0.6666666666666666
+2020-06-30,Leisure Services,professor_residual50,True,0.3333333333333333
+2020-06-30,Leisure Services,residual_high20,False,1.0
+2020-06-30,Media,champion,False,1.0
+2020-06-30,Media,residual_momentum20,False,1.0
+2020-06-30,Media,professor_residual50,False,1.0
+2020-06-30,Media,residual_high20,False,1.0
+2020-06-30,Minerals & Mining,champion,False,1.0
+2020-06-30,Minerals & Mining,residual_momentum20,False,1.0
+2020-06-30,Minerals & Mining,professor_residual50,False,1.0
+2020-06-30,Minerals & Mining,residual_high20,False,1.0
+2020-06-30,Non - Ferrous Metals,champion,False,1.0
+2020-06-30,Non - Ferrous Metals,residual_momentum20,False,1.0
+2020-06-30,Non - Ferrous Metals,professor_residual50,True,0.6666666666666666
+2020-06-30,Non - Ferrous Metals,residual_high20,False,1.0
+2020-06-30,Oil,champion,False,1.0
+2020-06-30,Oil,residual_momentum20,False,1.0
+2020-06-30,Oil,professor_residual50,True,0.6666666666666666
+2020-06-30,Oil,residual_high20,False,1.0
+2020-06-30,Other Construction Materials,champion,False,1.0
+2020-06-30,Other Construction Materials,residual_momentum20,False,1.0
+2020-06-30,Other Construction Materials,professor_residual50,False,1.0
+2020-06-30,Other Construction Materials,residual_high20,False,1.0
+2020-06-30,Other Consumer Services,champion,False,1.0
+2020-06-30,Other Consumer Services,residual_momentum20,False,1.0
+2020-06-30,Other Consumer Services,professor_residual50,False,1.0
+2020-06-30,Other Consumer Services,residual_high20,False,1.0
+2020-06-30,"Paper, Forest & Jute Products",champion,False,1.0
+2020-06-30,"Paper, Forest & Jute Products",residual_momentum20,False,1.0
+2020-06-30,"Paper, Forest & Jute Products",professor_residual50,True,0.3333333333333333
+2020-06-30,"Paper, Forest & Jute Products",residual_high20,False,1.0
+2020-06-30,Personal Products,champion,False,1.0
+2020-06-30,Personal Products,residual_momentum20,False,1.0
+2020-06-30,Personal Products,professor_residual50,False,1.0
+2020-06-30,Personal Products,residual_high20,False,1.0
+2020-06-30,Petroleum Products,champion,False,1.0
+2020-06-30,Petroleum Products,residual_momentum20,False,1.0
+2020-06-30,Petroleum Products,professor_residual50,True,0.6666666666666666
+2020-06-30,Petroleum Products,residual_high20,True,0.6666666666666666
+2020-06-30,Pharmaceuticals & Biotechnology,champion,False,1.0
+2020-06-30,Pharmaceuticals & Biotechnology,residual_momentum20,True,0.6666666666666666
+2020-06-30,Pharmaceuticals & Biotechnology,professor_residual50,True,0.6666666666666666
+2020-06-30,Pharmaceuticals & Biotechnology,residual_high20,True,0.6666666666666666
+2020-06-30,Power,champion,False,1.0
+2020-06-30,Power,residual_momentum20,True,0.6666666666666666
+2020-06-30,Power,professor_residual50,True,0.6666666666666666
+2020-06-30,Power,residual_high20,True,0.6666666666666666
+2020-06-30,Realty,champion,False,1.0
+2020-06-30,Realty,residual_momentum20,True,0.6666666666666666
+2020-06-30,Realty,professor_residual50,True,0.3333333333333333
+2020-06-30,Realty,residual_high20,False,1.0
+2020-06-30,Retailing,champion,False,1.0
+2020-06-30,Retailing,residual_momentum20,False,1.0
+2020-06-30,Retailing,professor_residual50,False,1.0
+2020-06-30,Retailing,residual_high20,False,1.0
+2020-06-30,Telecom -  Equipment & Accessories,champion,False,1.0
+2020-06-30,Telecom -  Equipment & Accessories,residual_momentum20,False,1.0
+2020-06-30,Telecom -  Equipment & Accessories,professor_residual50,True,0.6666666666666666
+2020-06-30,Telecom -  Equipment & Accessories,residual_high20,False,1.0
+2020-06-30,Telecom - Services,champion,False,1.0
+2020-06-30,Telecom - Services,residual_momentum20,False,1.0
+2020-06-30,Telecom - Services,professor_residual50,False,1.0
+2020-06-30,Telecom - Services,residual_high20,False,1.0
+2020-06-30,Textiles & Apparels,champion,False,1.0
+2020-06-30,Textiles & Apparels,residual_momentum20,True,0.3333333333333333
+2020-06-30,Textiles & Apparels,professor_residual50,True,0.0
+2020-06-30,Textiles & Apparels,residual_high20,True,0.6666666666666666
+2020-06-30,Transport Services,champion,False,1.0
+2020-06-30,Transport Services,residual_momentum20,True,0.6666666666666666
+2020-06-30,Transport Services,professor_residual50,True,0.6666666666666666
+2020-06-30,Transport Services,residual_high20,True,0.6666666666666666
+2020-09-30,Agricultural Food & other Products,champion,False,1.0
+2020-09-30,Agricultural Food & other Products,residual_momentum20,True,0.6666666666666666
+2020-09-30,Agricultural Food & other Products,professor_residual50,True,0.3333333333333333
+2020-09-30,Agricultural Food & other Products,residual_high20,True,0.3333333333333333
+2020-09-30,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2020-09-30,"Agricultural, Commercial & Construction Vehicles",residual_momentum20,False,1.0
+2020-09-30,"Agricultural, Commercial & Construction Vehicles",professor_residual50,False,1.0
+2020-09-30,"Agricultural, Commercial & Construction Vehicles",residual_high20,False,1.0
+2020-09-30,Auto Components,champion,False,1.0
+2020-09-30,Auto Components,residual_momentum20,True,0.3333333333333333
+2020-09-30,Auto Components,professor_residual50,True,0.0
+2020-09-30,Auto Components,residual_high20,True,0.6666666666666666
+2020-09-30,Automobiles,champion,False,1.0
+2020-09-30,Automobiles,residual_momentum20,False,1.0
+2020-09-30,Automobiles,professor_residual50,False,1.0
+2020-09-30,Automobiles,residual_high20,False,1.0
+2020-09-30,Banks,champion,False,1.0
+2020-09-30,Banks,residual_momentum20,True,0.6666666666666666
+2020-09-30,Banks,professor_residual50,False,1.0
+2020-09-30,Banks,residual_high20,False,1.0
+2020-09-30,Beverages,champion,False,1.0
+2020-09-30,Beverages,residual_momentum20,False,1.0
+2020-09-30,Beverages,professor_residual50,True,0.6666666666666666
+2020-09-30,Beverages,residual_high20,True,0.6666666666666666
+2020-09-30,Capital Markets,champion,False,1.0
+2020-09-30,Capital Markets,residual_momentum20,False,1.0
+2020-09-30,Capital Markets,professor_residual50,True,0.3333333333333333
+2020-09-30,Capital Markets,residual_high20,False,1.0
+2020-09-30,Cement & Cement Products,champion,False,1.0
+2020-09-30,Cement & Cement Products,residual_momentum20,False,1.0
+2020-09-30,Cement & Cement Products,professor_residual50,True,0.6666666666666666
+2020-09-30,Cement & Cement Products,residual_high20,False,1.0
+2020-09-30,Chemicals & Petrochemicals,champion,False,1.0
+2020-09-30,Chemicals & Petrochemicals,residual_momentum20,True,0.3333333333333333
+2020-09-30,Chemicals & Petrochemicals,professor_residual50,True,0.3333333333333333
+2020-09-30,Chemicals & Petrochemicals,residual_high20,True,0.3333333333333333
+2020-09-30,Commercial Services & Supplies,champion,False,1.0
+2020-09-30,Commercial Services & Supplies,residual_momentum20,True,0.3333333333333333
+2020-09-30,Commercial Services & Supplies,professor_residual50,True,0.6666666666666666
+2020-09-30,Commercial Services & Supplies,residual_high20,True,0.3333333333333333
+2020-09-30,Construction,champion,False,1.0
+2020-09-30,Construction,residual_momentum20,True,0.3333333333333333
+2020-09-30,Construction,professor_residual50,True,0.3333333333333333
+2020-09-30,Construction,residual_high20,True,0.3333333333333333
+2020-09-30,Consumer Durables,champion,False,1.0
+2020-09-30,Consumer Durables,residual_momentum20,True,0.6666666666666666
+2020-09-30,Consumer Durables,professor_residual50,True,0.3333333333333333
+2020-09-30,Consumer Durables,residual_high20,True,0.3333333333333333
+2020-09-30,Diversified,champion,False,1.0
+2020-09-30,Diversified,residual_momentum20,False,1.0
+2020-09-30,Diversified,professor_residual50,False,1.0
+2020-09-30,Diversified,residual_high20,False,1.0
+2020-09-30,Electrical Equipment,champion,False,1.0
+2020-09-30,Electrical Equipment,residual_momentum20,True,0.6666666666666666
+2020-09-30,Electrical Equipment,professor_residual50,True,0.3333333333333333
+2020-09-30,Electrical Equipment,residual_high20,False,1.0
+2020-09-30,Entertainment,champion,False,1.0
+2020-09-30,Entertainment,residual_momentum20,True,0.6666666666666666
+2020-09-30,Entertainment,professor_residual50,True,0.6666666666666666
+2020-09-30,Entertainment,residual_high20,True,0.6666666666666666
+2020-09-30,Ferrous Metals,champion,False,1.0
+2020-09-30,Ferrous Metals,residual_momentum20,False,1.0
+2020-09-30,Ferrous Metals,professor_residual50,True,0.3333333333333333
+2020-09-30,Ferrous Metals,residual_high20,False,1.0
+2020-09-30,Fertilizers & Agrochemicals,champion,False,1.0
+2020-09-30,Fertilizers & Agrochemicals,residual_momentum20,True,0.6666666666666666
+2020-09-30,Fertilizers & Agrochemicals,professor_residual50,True,0.3333333333333333
+2020-09-30,Fertilizers & Agrochemicals,residual_high20,True,0.3333333333333333
+2020-09-30,Finance,champion,False,1.0
+2020-09-30,Finance,residual_momentum20,True,0.6666666666666666
+2020-09-30,Finance,professor_residual50,True,0.0
+2020-09-30,Finance,residual_high20,True,0.6666666666666666
+2020-09-30,Food Products,champion,False,1.0
+2020-09-30,Food Products,residual_momentum20,False,1.0
+2020-09-30,Food Products,professor_residual50,True,0.6666666666666666
+2020-09-30,Food Products,residual_high20,False,1.0
+2020-09-30,Healthcare Services,champion,False,1.0
+2020-09-30,Healthcare Services,residual_momentum20,False,1.0
+2020-09-30,Healthcare Services,professor_residual50,True,0.6666666666666666
+2020-09-30,Healthcare Services,residual_high20,False,1.0
+2020-09-30,Household Products,champion,False,1.0
+2020-09-30,Household Products,residual_momentum20,False,1.0
+2020-09-30,Household Products,professor_residual50,False,1.0
+2020-09-30,Household Products,residual_high20,False,1.0
+2020-09-30,IT - Hardware,champion,False,1.0
+2020-09-30,IT - Hardware,residual_momentum20,False,1.0
+2020-09-30,IT - Hardware,professor_residual50,False,1.0
+2020-09-30,IT - Hardware,residual_high20,False,1.0
+2020-09-30,IT - Services,champion,False,1.0
+2020-09-30,IT - Services,residual_momentum20,False,1.0
+2020-09-30,IT - Services,professor_residual50,True,0.3333333333333333
+2020-09-30,IT - Services,residual_high20,False,1.0
+2020-09-30,IT - Software,champion,False,1.0
+2020-09-30,IT - Software,residual_momentum20,True,0.6666666666666666
+2020-09-30,IT - Software,professor_residual50,True,0.3333333333333333
+2020-09-30,IT - Software,residual_high20,True,0.6666666666666666
+2020-09-30,Industrial Manufacturing,champion,False,1.0
+2020-09-30,Industrial Manufacturing,residual_momentum20,True,0.3333333333333333
+2020-09-30,Industrial Manufacturing,professor_residual50,True,0.3333333333333333
+2020-09-30,Industrial Manufacturing,residual_high20,True,0.3333333333333333
+2020-09-30,Industrial Products,champion,False,1.0
+2020-09-30,Industrial Products,residual_momentum20,True,0.3333333333333333
+2020-09-30,Industrial Products,professor_residual50,True,0.0
+2020-09-30,Industrial Products,residual_high20,True,0.3333333333333333
+2020-09-30,Leisure Services,champion,False,1.0
+2020-09-30,Leisure Services,residual_momentum20,False,1.0
+2020-09-30,Leisure Services,professor_residual50,True,0.3333333333333333
+2020-09-30,Leisure Services,residual_high20,True,0.6666666666666666
+2020-09-30,Media,champion,False,1.0
+2020-09-30,Media,residual_momentum20,False,1.0
+2020-09-30,Media,professor_residual50,True,0.6666666666666666
+2020-09-30,Media,residual_high20,False,1.0
+2020-09-30,Minerals & Mining,champion,False,1.0
+2020-09-30,Minerals & Mining,residual_momentum20,False,1.0
+2020-09-30,Minerals & Mining,professor_residual50,True,0.3333333333333333
+2020-09-30,Minerals & Mining,residual_high20,False,1.0
+2020-09-30,Non - Ferrous Metals,champion,False,1.0
+2020-09-30,Non - Ferrous Metals,residual_momentum20,False,1.0
+2020-09-30,Non - Ferrous Metals,professor_residual50,False,1.0
+2020-09-30,Non - Ferrous Metals,residual_high20,False,1.0
+2020-09-30,Oil,champion,False,1.0
+2020-09-30,Oil,residual_momentum20,False,1.0
+2020-09-30,Oil,professor_residual50,False,1.0
+2020-09-30,Oil,residual_high20,False,1.0
+2020-09-30,Other Construction Materials,champion,False,1.0
+2020-09-30,Other Construction Materials,residual_momentum20,True,0.6666666666666666
+2020-09-30,Other Construction Materials,professor_residual50,True,0.6666666666666666
+2020-09-30,Other Construction Materials,residual_high20,False,1.0
+2020-09-30,Other Consumer Services,champion,False,1.0
+2020-09-30,Other Consumer Services,residual_momentum20,False,1.0
+2020-09-30,Other Consumer Services,professor_residual50,False,1.0
+2020-09-30,Other Consumer Services,residual_high20,False,1.0
+2020-09-30,"Paper, Forest & Jute Products",champion,False,1.0
+2020-09-30,"Paper, Forest & Jute Products",residual_momentum20,False,1.0
+2020-09-30,"Paper, Forest & Jute Products",professor_residual50,True,0.6666666666666666
+2020-09-30,"Paper, Forest & Jute Products",residual_high20,False,1.0
+2020-09-30,Personal Products,champion,False,1.0
+2020-09-30,Personal Products,residual_momentum20,False,1.0
+2020-09-30,Personal Products,professor_residual50,False,1.0
+2020-09-30,Personal Products,residual_high20,False,1.0
+2020-09-30,Petroleum Products,champion,False,1.0
+2020-09-30,Petroleum Products,residual_momentum20,False,1.0
+2020-09-30,Petroleum Products,professor_residual50,True,0.6666666666666666
+2020-09-30,Petroleum Products,residual_high20,False,1.0
+2020-09-30,Pharmaceuticals & Biotechnology,champion,False,1.0
+2020-09-30,Pharmaceuticals & Biotechnology,residual_momentum20,True,0.6666666666666666
+2020-09-30,Pharmaceuticals & Biotechnology,professor_residual50,True,0.3333333333333333
+2020-09-30,Pharmaceuticals & Biotechnology,residual_high20,True,0.3333333333333333
+2020-09-30,Power,champion,False,1.0
+2020-09-30,Power,residual_momentum20,False,1.0
+2020-09-30,Power,professor_residual50,True,0.6666666666666666
+2020-09-30,Power,residual_high20,True,0.6666666666666666
+2020-09-30,Realty,champion,False,1.0
+2020-09-30,Realty,residual_momentum20,True,0.6666666666666666
+2020-09-30,Realty,professor_residual50,True,0.6666666666666666
+2020-09-30,Realty,residual_high20,True,0.6666666666666666
+2020-09-30,Retailing,champion,False,1.0
+2020-09-30,Retailing,residual_momentum20,False,1.0
+2020-09-30,Retailing,professor_residual50,False,1.0
+2020-09-30,Retailing,residual_high20,False,1.0
+2020-09-30,Telecom -  Equipment & Accessories,champion,False,1.0
+2020-09-30,Telecom -  Equipment & Accessories,residual_momentum20,False,1.0
+2020-09-30,Telecom -  Equipment & Accessories,professor_residual50,True,0.6666666666666666
+2020-09-30,Telecom -  Equipment & Accessories,residual_high20,False,1.0
+2020-09-30,Telecom - Services,champion,False,1.0
+2020-09-30,Telecom - Services,residual_momentum20,False,1.0
+2020-09-30,Telecom - Services,professor_residual50,True,0.6666666666666666
+2020-09-30,Telecom - Services,residual_high20,True,0.6666666666666666
+2020-09-30,Textiles & Apparels,champion,False,1.0
+2020-09-30,Textiles & Apparels,residual_momentum20,True,0.6666666666666666
+2020-09-30,Textiles & Apparels,professor_residual50,True,0.3333333333333333
+2020-09-30,Textiles & Apparels,residual_high20,True,0.6666666666666666
+2020-09-30,Transport Services,champion,False,1.0
+2020-09-30,Transport Services,residual_momentum20,False,1.0
+2020-09-30,Transport Services,professor_residual50,True,0.6666666666666666
+2020-09-30,Transport Services,residual_high20,False,1.0
+2020-12-31,Aerospace & Defense,champion,False,1.0
+2020-12-31,Aerospace & Defense,residual_momentum20,False,1.0
+2020-12-31,Aerospace & Defense,professor_residual50,False,1.0
+2020-12-31,Aerospace & Defense,residual_high20,False,1.0
+2020-12-31,Agricultural Food & other Products,champion,False,1.0
+2020-12-31,Agricultural Food & other Products,residual_momentum20,True,0.6666666666666666
+2020-12-31,Agricultural Food & other Products,professor_residual50,True,0.6666666666666666
+2020-12-31,Agricultural Food & other Products,residual_high20,True,0.6666666666666666
+2020-12-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2020-12-31,"Agricultural, Commercial & Construction Vehicles",residual_momentum20,True,0.6666666666666666
+2020-12-31,"Agricultural, Commercial & Construction Vehicles",professor_residual50,True,0.6666666666666666
+2020-12-31,"Agricultural, Commercial & Construction Vehicles",residual_high20,True,0.6666666666666666
+2020-12-31,Auto Components,champion,False,1.0
+2020-12-31,Auto Components,residual_momentum20,True,0.6666666666666666
+2020-12-31,Auto Components,professor_residual50,True,0.3333333333333333
+2020-12-31,Auto Components,residual_high20,True,0.3333333333333333
+2020-12-31,Automobiles,champion,False,1.0
+2020-12-31,Automobiles,residual_momentum20,False,1.0
+2020-12-31,Automobiles,professor_residual50,True,0.6666666666666666
+2020-12-31,Automobiles,residual_high20,False,1.0
+2020-12-31,Banks,champion,False,1.0
+2020-12-31,Banks,residual_momentum20,False,1.0
+2020-12-31,Banks,professor_residual50,True,0.6666666666666666
+2020-12-31,Banks,residual_high20,False,1.0
+2020-12-31,Beverages,champion,False,1.0
+2020-12-31,Beverages,residual_momentum20,True,0.6666666666666666
+2020-12-31,Beverages,professor_residual50,True,0.3333333333333333
+2020-12-31,Beverages,residual_high20,True,0.6666666666666666
+2020-12-31,Capital Markets,champion,False,1.0
+2020-12-31,Capital Markets,residual_momentum20,False,1.0
+2020-12-31,Capital Markets,professor_residual50,True,0.3333333333333333
+2020-12-31,Capital Markets,residual_high20,False,1.0
+2020-12-31,Cement & Cement Products,champion,False,1.0
+2020-12-31,Cement & Cement Products,residual_momentum20,True,0.6666666666666666
+2020-12-31,Cement & Cement Products,professor_residual50,True,0.6666666666666666
+2020-12-31,Cement & Cement Products,residual_high20,False,1.0
+2020-12-31,Chemicals & Petrochemicals,champion,False,1.0
+2020-12-31,Chemicals & Petrochemicals,residual_momentum20,True,0.0
+2020-12-31,Chemicals & Petrochemicals,professor_residual50,True,0.0
+2020-12-31,Chemicals & Petrochemicals,residual_high20,True,0.0
+2020-12-31,Commercial Services & Supplies,champion,False,1.0
+2020-12-31,Commercial Services & Supplies,residual_momentum20,False,1.0
+2020-12-31,Commercial Services & Supplies,professor_residual50,True,0.3333333333333333
+2020-12-31,Commercial Services & Supplies,residual_high20,False,1.0
+2020-12-31,Construction,champion,False,1.0
+2020-12-31,Construction,residual_momentum20,True,0.6666666666666666
+2020-12-31,Construction,professor_residual50,False,1.0
+2020-12-31,Construction,residual_high20,True,0.6666666666666666
+2020-12-31,Consumer Durables,champion,False,1.0
+2020-12-31,Consumer Durables,residual_momentum20,False,1.0
+2020-12-31,Consumer Durables,professor_residual50,True,0.3333333333333333
+2020-12-31,Consumer Durables,residual_high20,True,0.3333333333333333
+2020-12-31,Diversified,champion,False,1.0
+2020-12-31,Diversified,residual_momentum20,False,1.0
+2020-12-31,Diversified,professor_residual50,True,0.6666666666666666
+2020-12-31,Diversified,residual_high20,False,1.0
+2020-12-31,Electrical Equipment,champion,False,1.0
+2020-12-31,Electrical Equipment,residual_momentum20,True,0.6666666666666666
+2020-12-31,Electrical Equipment,professor_residual50,False,1.0
+2020-12-31,Electrical Equipment,residual_high20,True,0.6666666666666666
+2020-12-31,Entertainment,champion,False,1.0
+2020-12-31,Entertainment,residual_momentum20,True,0.6666666666666666
+2020-12-31,Entertainment,professor_residual50,True,0.3333333333333333
+2020-12-31,Entertainment,residual_high20,False,1.0
+2020-12-31,Ferrous Metals,champion,False,1.0
+2020-12-31,Ferrous Metals,residual_momentum20,False,1.0
+2020-12-31,Ferrous Metals,professor_residual50,True,0.6666666666666666
+2020-12-31,Ferrous Metals,residual_high20,False,1.0
+2020-12-31,Fertilizers & Agrochemicals,champion,False,1.0
+2020-12-31,Fertilizers & Agrochemicals,residual_momentum20,False,1.0
+2020-12-31,Fertilizers & Agrochemicals,professor_residual50,True,0.6666666666666666
+2020-12-31,Fertilizers & Agrochemicals,residual_high20,True,0.6666666666666666
+2020-12-31,Finance,champion,False,1.0
+2020-12-31,Finance,residual_momentum20,True,0.6666666666666666
+2020-12-31,Finance,professor_residual50,True,0.6666666666666666
+2020-12-31,Finance,residual_high20,True,0.6666666666666666
+2020-12-31,Food Products,champion,False,1.0
+2020-12-31,Food Products,residual_momentum20,True,0.6666666666666666
+2020-12-31,Food Products,professor_residual50,True,0.6666666666666666
+2020-12-31,Food Products,residual_high20,True,0.6666666666666666
+2020-12-31,Healthcare Services,champion,False,1.0
+2020-12-31,Healthcare Services,residual_momentum20,False,1.0
+2020-12-31,Healthcare Services,professor_residual50,False,1.0
+2020-12-31,Healthcare Services,residual_high20,False,1.0
+2020-12-31,Household Products,champion,False,1.0
+2020-12-31,Household Products,residual_momentum20,False,1.0
+2020-12-31,Household Products,professor_residual50,True,0.6666666666666666
+2020-12-31,Household Products,residual_high20,False,1.0
+2020-12-31,IT - Hardware,champion,False,1.0
+2020-12-31,IT - Hardware,residual_momentum20,False,1.0
+2020-12-31,IT - Hardware,professor_residual50,False,1.0
+2020-12-31,IT - Hardware,residual_high20,False,1.0
+2020-12-31,IT - Services,champion,False,1.0
+2020-12-31,IT - Services,residual_momentum20,True,0.6666666666666666
+2020-12-31,IT - Services,professor_residual50,True,0.3333333333333333
+2020-12-31,IT - Services,residual_high20,True,0.3333333333333333
+2020-12-31,IT - Software,champion,False,1.0
+2020-12-31,IT - Software,residual_momentum20,True,0.6666666666666666
+2020-12-31,IT - Software,professor_residual50,True,0.6666666666666666
+2020-12-31,IT - Software,residual_high20,True,0.6666666666666666
+2020-12-31,Industrial Manufacturing,champion,False,1.0
+2020-12-31,Industrial Manufacturing,residual_momentum20,True,0.6666666666666666
+2020-12-31,Industrial Manufacturing,professor_residual50,True,0.3333333333333333
+2020-12-31,Industrial Manufacturing,residual_high20,True,0.6666666666666666
+2020-12-31,Industrial Products,champion,False,1.0
+2020-12-31,Industrial Products,residual_momentum20,True,0.3333333333333333
+2020-12-31,Industrial Products,professor_residual50,True,0.0
+2020-12-31,Industrial Products,residual_high20,True,0.0
+2020-12-31,Leisure Services,champion,False,1.0
+2020-12-31,Leisure Services,residual_momentum20,True,0.6666666666666666
+2020-12-31,Leisure Services,professor_residual50,True,0.3333333333333333
+2020-12-31,Leisure Services,residual_high20,True,0.6666666666666666
+2020-12-31,Media,champion,False,1.0
+2020-12-31,Media,residual_momentum20,True,0.6666666666666666
+2020-12-31,Media,professor_residual50,True,0.6666666666666666
+2020-12-31,Media,residual_high20,True,0.6666666666666666
+2020-12-31,Minerals & Mining,champion,False,1.0
+2020-12-31,Minerals & Mining,residual_momentum20,True,0.6666666666666666
+2020-12-31,Minerals & Mining,professor_residual50,True,0.3333333333333333
+2020-12-31,Minerals & Mining,residual_high20,True,0.6666666666666666
+2020-12-31,Non - Ferrous Metals,champion,False,1.0
+2020-12-31,Non - Ferrous Metals,residual_momentum20,False,1.0
+2020-12-31,Non - Ferrous Metals,professor_residual50,False,1.0
+2020-12-31,Non - Ferrous Metals,residual_high20,True,0.6666666666666666
+2020-12-31,Oil,champion,False,1.0
+2020-12-31,Oil,residual_momentum20,True,0.6666666666666666
+2020-12-31,Oil,professor_residual50,True,0.6666666666666666
+2020-12-31,Oil,residual_high20,False,1.0
+2020-12-31,Other Construction Materials,champion,False,1.0
+2020-12-31,Other Construction Materials,residual_momentum20,False,1.0
+2020-12-31,Other Construction Materials,professor_residual50,False,1.0
+2020-12-31,Other Construction Materials,residual_high20,False,1.0
+2020-12-31,Other Consumer Services,champion,False,1.0
+2020-12-31,Other Consumer Services,residual_momentum20,False,1.0
+2020-12-31,Other Consumer Services,professor_residual50,True,0.6666666666666666
+2020-12-31,Other Consumer Services,residual_high20,False,1.0
+2020-12-31,"Paper, Forest & Jute Products",champion,False,1.0
+2020-12-31,"Paper, Forest & Jute Products",residual_momentum20,True,0.6666666666666666
+2020-12-31,"Paper, Forest & Jute Products",professor_residual50,True,0.6666666666666666
+2020-12-31,"Paper, Forest & Jute Products",residual_high20,True,0.6666666666666666
+2020-12-31,Personal Products,champion,False,1.0
+2020-12-31,Personal Products,residual_momentum20,False,1.0
+2020-12-31,Personal Products,professor_residual50,False,1.0
+2020-12-31,Personal Products,residual_high20,False,1.0
+2020-12-31,Petroleum Products,champion,False,1.0
+2020-12-31,Petroleum Products,residual_momentum20,True,0.6666666666666666
+2020-12-31,Petroleum Products,professor_residual50,True,0.6666666666666666
+2020-12-31,Petroleum Products,residual_high20,False,1.0
+2020-12-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2020-12-31,Pharmaceuticals & Biotechnology,residual_momentum20,True,0.3333333333333333
+2020-12-31,Pharmaceuticals & Biotechnology,professor_residual50,True,0.0
+2020-12-31,Pharmaceuticals & Biotechnology,residual_high20,True,0.6666666666666666
+2020-12-31,Power,champion,False,1.0
+2020-12-31,Power,residual_momentum20,False,1.0
+2020-12-31,Power,professor_residual50,True,0.6666666666666666
+2020-12-31,Power,residual_high20,True,0.6666666666666666
+2020-12-31,Realty,champion,False,1.0
+2020-12-31,Realty,residual_momentum20,True,0.6666666666666666
+2020-12-31,Realty,professor_residual50,True,0.6666666666666666
+2020-12-31,Realty,residual_high20,True,0.6666666666666666
+2020-12-31,Retailing,champion,False,1.0
+2020-12-31,Retailing,residual_momentum20,False,1.0
+2020-12-31,Retailing,professor_residual50,False,1.0
+2020-12-31,Retailing,residual_high20,True,0.6666666666666666
+2020-12-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2020-12-31,Telecom -  Equipment & Accessories,residual_momentum20,False,1.0
+2020-12-31,Telecom -  Equipment & Accessories,professor_residual50,True,0.6666666666666666
+2020-12-31,Telecom -  Equipment & Accessories,residual_high20,False,1.0
+2020-12-31,Telecom - Services,champion,False,1.0
+2020-12-31,Telecom - Services,residual_momentum20,False,1.0
+2020-12-31,Telecom - Services,professor_residual50,True,0.6666666666666666
+2020-12-31,Telecom - Services,residual_high20,False,1.0
+2020-12-31,Textiles & Apparels,champion,False,1.0
+2020-12-31,Textiles & Apparels,residual_momentum20,True,0.3333333333333333
+2020-12-31,Textiles & Apparels,professor_residual50,True,0.3333333333333333
+2020-12-31,Textiles & Apparels,residual_high20,True,0.3333333333333333
+2020-12-31,Transport Infrastructure,champion,False,1.0
+2020-12-31,Transport Infrastructure,residual_momentum20,False,1.0
+2020-12-31,Transport Infrastructure,professor_residual50,False,1.0
+2020-12-31,Transport Infrastructure,residual_high20,False,1.0
+2020-12-31,Transport Services,champion,False,1.0
+2020-12-31,Transport Services,residual_momentum20,False,1.0
+2020-12-31,Transport Services,professor_residual50,True,0.6666666666666666
+2020-12-31,Transport Services,residual_high20,False,1.0
+2021-03-31,Aerospace & Defense,champion,False,1.0
+2021-03-31,Aerospace & Defense,residual_momentum20,False,1.0
+2021-03-31,Aerospace & Defense,professor_residual50,False,1.0
+2021-03-31,Aerospace & Defense,residual_high20,False,1.0
+2021-03-31,Agricultural Food & other Products,champion,False,1.0
+2021-03-31,Agricultural Food & other Products,residual_momentum20,True,0.6666666666666666
+2021-03-31,Agricultural Food & other Products,professor_residual50,True,0.6666666666666666
+2021-03-31,Agricultural Food & other Products,residual_high20,True,0.6666666666666666
+2021-03-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2021-03-31,"Agricultural, Commercial & Construction Vehicles",residual_momentum20,True,0.6666666666666666
+2021-03-31,"Agricultural, Commercial & Construction Vehicles",professor_residual50,True,0.3333333333333333
+2021-03-31,"Agricultural, Commercial & Construction Vehicles",residual_high20,True,0.6666666666666666
+2021-03-31,Auto Components,champion,False,1.0
+2021-03-31,Auto Components,residual_momentum20,True,0.6666666666666666
+2021-03-31,Auto Components,professor_residual50,True,0.3333333333333333
+2021-03-31,Auto Components,residual_high20,True,0.6666666666666666
+2021-03-31,Automobiles,champion,False,1.0
+2021-03-31,Automobiles,residual_momentum20,False,1.0
+2021-03-31,Automobiles,professor_residual50,True,0.6666666666666666
+2021-03-31,Automobiles,residual_high20,False,1.0
+2021-03-31,Banks,champion,False,1.0
+2021-03-31,Banks,residual_momentum20,False,1.0
+2021-03-31,Banks,professor_residual50,False,1.0
+2021-03-31,Banks,residual_high20,False,1.0
+2021-03-31,Beverages,champion,False,1.0
+2021-03-31,Beverages,residual_momentum20,True,0.6666666666666666
+2021-03-31,Beverages,professor_residual50,True,0.3333333333333333
+2021-03-31,Beverages,residual_high20,True,0.6666666666666666
+2021-03-31,Capital Markets,champion,False,1.0
+2021-03-31,Capital Markets,residual_momentum20,True,0.6666666666666666
+2021-03-31,Capital Markets,professor_residual50,True,0.3333333333333333
+2021-03-31,Capital Markets,residual_high20,True,0.3333333333333333
+2021-03-31,Cement & Cement Products,champion,False,1.0
+2021-03-31,Cement & Cement Products,residual_momentum20,True,0.6666666666666666
+2021-03-31,Cement & Cement Products,professor_residual50,True,0.0
+2021-03-31,Cement & Cement Products,residual_high20,True,0.6666666666666666
+2021-03-31,Chemicals & Petrochemicals,champion,False,1.0
+2021-03-31,Chemicals & Petrochemicals,residual_momentum20,True,0.0
+2021-03-31,Chemicals & Petrochemicals,professor_residual50,True,0.0
+2021-03-31,Chemicals & Petrochemicals,residual_high20,True,0.0
+2021-03-31,Commercial Services & Supplies,champion,False,1.0
+2021-03-31,Commercial Services & Supplies,residual_momentum20,False,1.0
+2021-03-31,Commercial Services & Supplies,professor_residual50,True,0.3333333333333333
+2021-03-31,Commercial Services & Supplies,residual_high20,False,1.0
+2021-03-31,Construction,champion,False,1.0
+2021-03-31,Construction,residual_momentum20,False,1.0
+2021-03-31,Construction,professor_residual50,True,0.6666666666666666
+2021-03-31,Construction,residual_high20,True,0.6666666666666666
+2021-03-31,Consumer Durables,champion,False,1.0
+2021-03-31,Consumer Durables,residual_momentum20,True,0.3333333333333333
+2021-03-31,Consumer Durables,professor_residual50,True,0.0
+2021-03-31,Consumer Durables,residual_high20,True,0.3333333333333333
+2021-03-31,Diversified,champion,False,1.0
+2021-03-31,Diversified,residual_momentum20,False,1.0
+2021-03-31,Diversified,professor_residual50,False,1.0
+2021-03-31,Diversified,residual_high20,False,1.0
+2021-03-31,Electrical Equipment,champion,False,1.0
+2021-03-31,Electrical Equipment,residual_momentum20,True,0.6666666666666666
+2021-03-31,Electrical Equipment,professor_residual50,True,0.6666666666666666
+2021-03-31,Electrical Equipment,residual_high20,False,1.0
+2021-03-31,Entertainment,champion,False,1.0
+2021-03-31,Entertainment,residual_momentum20,False,1.0
+2021-03-31,Entertainment,professor_residual50,True,0.0
+2021-03-31,Entertainment,residual_high20,True,0.6666666666666666
+2021-03-31,Ferrous Metals,champion,False,1.0
+2021-03-31,Ferrous Metals,residual_momentum20,True,0.6666666666666666
+2021-03-31,Ferrous Metals,professor_residual50,True,0.6666666666666666
+2021-03-31,Ferrous Metals,residual_high20,True,0.6666666666666666
+2021-03-31,Fertilizers & Agrochemicals,champion,False,1.0
+2021-03-31,Fertilizers & Agrochemicals,residual_momentum20,False,1.0
+2021-03-31,Fertilizers & Agrochemicals,professor_residual50,True,0.3333333333333333
+2021-03-31,Fertilizers & Agrochemicals,residual_high20,True,0.6666666666666666
+2021-03-31,Finance,champion,False,1.0
+2021-03-31,Finance,residual_momentum20,True,0.6666666666666666
+2021-03-31,Finance,professor_residual50,True,0.3333333333333333
+2021-03-31,Finance,residual_high20,True,0.6666666666666666
+2021-03-31,Food Products,champion,False,1.0
+2021-03-31,Food Products,residual_momentum20,True,0.6666666666666666
+2021-03-31,Food Products,professor_residual50,True,0.3333333333333333
+2021-03-31,Food Products,residual_high20,False,1.0
+2021-03-31,Healthcare Services,champion,False,1.0
+2021-03-31,Healthcare Services,residual_momentum20,False,1.0
+2021-03-31,Healthcare Services,professor_residual50,True,0.6666666666666666
+2021-03-31,Healthcare Services,residual_high20,False,1.0
+2021-03-31,Household Products,champion,False,1.0
+2021-03-31,Household Products,residual_momentum20,True,0.6666666666666666
+2021-03-31,Household Products,professor_residual50,True,0.0
+2021-03-31,Household Products,residual_high20,True,0.6666666666666666
+2021-03-31,IT - Hardware,champion,False,1.0
+2021-03-31,IT - Hardware,residual_momentum20,False,1.0
+2021-03-31,IT - Hardware,professor_residual50,True,0.6666666666666666
+2021-03-31,IT - Hardware,residual_high20,False,1.0
+2021-03-31,IT - Services,champion,False,1.0
+2021-03-31,IT - Services,residual_momentum20,False,1.0
+2021-03-31,IT - Services,professor_residual50,True,0.6666666666666666
+2021-03-31,IT - Services,residual_high20,False,1.0
+2021-03-31,IT - Software,champion,False,1.0
+2021-03-31,IT - Software,residual_momentum20,False,1.0
+2021-03-31,IT - Software,professor_residual50,True,0.3333333333333333
+2021-03-31,IT - Software,residual_high20,True,0.6666666666666666
+2021-03-31,Industrial Manufacturing,champion,False,1.0
+2021-03-31,Industrial Manufacturing,residual_momentum20,True,0.3333333333333333
+2021-03-31,Industrial Manufacturing,professor_residual50,True,0.3333333333333333
+2021-03-31,Industrial Manufacturing,residual_high20,True,0.6666666666666666
+2021-03-31,Industrial Products,champion,False,1.0
+2021-03-31,Industrial Products,residual_momentum20,True,0.0
+2021-03-31,Industrial Products,professor_residual50,True,0.0
+2021-03-31,Industrial Products,residual_high20,True,0.6666666666666666
+2021-03-31,Leisure Services,champion,False,1.0
+2021-03-31,Leisure Services,residual_momentum20,False,1.0
+2021-03-31,Leisure Services,professor_residual50,True,0.6666666666666666
+2021-03-31,Leisure Services,residual_high20,True,0.6666666666666666
+2021-03-31,Media,champion,False,1.0
+2021-03-31,Media,residual_momentum20,False,1.0
+2021-03-31,Media,professor_residual50,True,0.6666666666666666
+2021-03-31,Media,residual_high20,False,1.0
+2021-03-31,Minerals & Mining,champion,False,1.0
+2021-03-31,Minerals & Mining,residual_momentum20,False,1.0
+2021-03-31,Minerals & Mining,professor_residual50,True,0.6666666666666666
+2021-03-31,Minerals & Mining,residual_high20,False,1.0
+2021-03-31,Non - Ferrous Metals,champion,False,1.0
+2021-03-31,Non - Ferrous Metals,residual_momentum20,False,1.0
+2021-03-31,Non - Ferrous Metals,professor_residual50,False,1.0
+2021-03-31,Non - Ferrous Metals,residual_high20,False,1.0
+2021-03-31,Oil,champion,False,1.0
+2021-03-31,Oil,residual_momentum20,False,1.0
+2021-03-31,Oil,professor_residual50,True,0.6666666666666666
+2021-03-31,Oil,residual_high20,True,0.6666666666666666
+2021-03-31,Other Construction Materials,champion,False,1.0
+2021-03-31,Other Construction Materials,residual_momentum20,False,1.0
+2021-03-31,Other Construction Materials,professor_residual50,False,1.0
+2021-03-31,Other Construction Materials,residual_high20,False,1.0
+2021-03-31,Other Consumer Services,champion,False,1.0
+2021-03-31,Other Consumer Services,residual_momentum20,False,1.0
+2021-03-31,Other Consumer Services,professor_residual50,False,1.0
+2021-03-31,Other Consumer Services,residual_high20,False,1.0
+2021-03-31,"Paper, Forest & Jute Products",champion,False,1.0
+2021-03-31,"Paper, Forest & Jute Products",residual_momentum20,False,1.0
+2021-03-31,"Paper, Forest & Jute Products",professor_residual50,True,0.6666666666666666
+2021-03-31,"Paper, Forest & Jute Products",residual_high20,True,0.6666666666666666
+2021-03-31,Personal Products,champion,False,1.0
+2021-03-31,Personal Products,residual_momentum20,False,1.0
+2021-03-31,Personal Products,professor_residual50,True,0.6666666666666666
+2021-03-31,Personal Products,residual_high20,False,1.0
+2021-03-31,Petroleum Products,champion,False,1.0
+2021-03-31,Petroleum Products,residual_momentum20,False,1.0
+2021-03-31,Petroleum Products,professor_residual50,True,0.6666666666666666
+2021-03-31,Petroleum Products,residual_high20,True,0.6666666666666666
+2021-03-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2021-03-31,Pharmaceuticals & Biotechnology,residual_momentum20,True,0.3333333333333333
+2021-03-31,Pharmaceuticals & Biotechnology,professor_residual50,True,0.3333333333333333
+2021-03-31,Pharmaceuticals & Biotechnology,residual_high20,True,0.3333333333333333
+2021-03-31,Power,champion,False,1.0
+2021-03-31,Power,residual_momentum20,False,1.0
+2021-03-31,Power,professor_residual50,True,0.6666666666666666
+2021-03-31,Power,residual_high20,False,1.0
+2021-03-31,Realty,champion,False,1.0
+2021-03-31,Realty,residual_momentum20,True,0.6666666666666666
+2021-03-31,Realty,professor_residual50,True,0.3333333333333333
+2021-03-31,Realty,residual_high20,True,0.6666666666666666
+2021-03-31,Retailing,champion,False,1.0
+2021-03-31,Retailing,residual_momentum20,False,1.0
+2021-03-31,Retailing,professor_residual50,True,0.6666666666666666
+2021-03-31,Retailing,residual_high20,True,0.6666666666666666
+2021-03-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2021-03-31,Telecom -  Equipment & Accessories,residual_momentum20,False,1.0
+2021-03-31,Telecom -  Equipment & Accessories,professor_residual50,True,0.6666666666666666
+2021-03-31,Telecom -  Equipment & Accessories,residual_high20,False,1.0
+2021-03-31,Telecom - Services,champion,False,1.0
+2021-03-31,Telecom - Services,residual_momentum20,False,1.0
+2021-03-31,Telecom - Services,professor_residual50,True,0.6666666666666666
+2021-03-31,Telecom - Services,residual_high20,True,0.6666666666666666
+2021-03-31,Textiles & Apparels,champion,False,1.0
+2021-03-31,Textiles & Apparels,residual_momentum20,True,0.6666666666666666
+2021-03-31,Textiles & Apparels,professor_residual50,True,0.0
+2021-03-31,Textiles & Apparels,residual_high20,True,0.3333333333333333
+2021-03-31,Transport Infrastructure,champion,False,1.0
+2021-03-31,Transport Infrastructure,residual_momentum20,False,1.0
+2021-03-31,Transport Infrastructure,professor_residual50,False,1.0
+2021-03-31,Transport Infrastructure,residual_high20,False,1.0
+2021-03-31,Transport Services,champion,False,1.0
+2021-03-31,Transport Services,residual_momentum20,True,0.6666666666666666
+2021-03-31,Transport Services,professor_residual50,True,0.0
+2021-03-31,Transport Services,residual_high20,True,0.6666666666666666
+2021-06-30,Aerospace & Defense,champion,False,1.0
+2021-06-30,Aerospace & Defense,residual_momentum20,False,1.0
+2021-06-30,Aerospace & Defense,professor_residual50,False,1.0
+2021-06-30,Aerospace & Defense,residual_high20,False,1.0
+2021-06-30,Agricultural Food & other Products,champion,False,1.0
+2021-06-30,Agricultural Food & other Products,residual_momentum20,True,0.6666666666666666
+2021-06-30,Agricultural Food & other Products,professor_residual50,True,0.3333333333333333
+2021-06-30,Agricultural Food & other Products,residual_high20,True,0.3333333333333333
+2021-06-30,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2021-06-30,"Agricultural, Commercial & Construction Vehicles",residual_momentum20,False,1.0
+2021-06-30,"Agricultural, Commercial & Construction Vehicles",professor_residual50,True,0.6666666666666666
+2021-06-30,"Agricultural, Commercial & Construction Vehicles",residual_high20,False,1.0
+2021-06-30,Auto Components,champion,False,1.0
+2021-06-30,Auto Components,residual_momentum20,True,0.6666666666666666
+2021-06-30,Auto Components,professor_residual50,True,0.3333333333333333
+2021-06-30,Auto Components,residual_high20,True,0.6666666666666666
+2021-06-30,Automobiles,champion,False,1.0
+2021-06-30,Automobiles,residual_momentum20,False,1.0
+2021-06-30,Automobiles,professor_residual50,True,0.6666666666666666
+2021-06-30,Automobiles,residual_high20,False,1.0
+2021-06-30,Banks,champion,False,1.0
+2021-06-30,Banks,residual_momentum20,False,1.0
+2021-06-30,Banks,professor_residual50,True,0.6666666666666666
+2021-06-30,Banks,residual_high20,False,1.0
+2021-06-30,Beverages,champion,False,1.0
+2021-06-30,Beverages,residual_momentum20,True,0.6666666666666666
+2021-06-30,Beverages,professor_residual50,True,0.3333333333333333
+2021-06-30,Beverages,residual_high20,True,0.6666666666666666
+2021-06-30,Capital Markets,champion,False,1.0
+2021-06-30,Capital Markets,residual_momentum20,True,0.6666666666666666
+2021-06-30,Capital Markets,professor_residual50,True,0.3333333333333333
+2021-06-30,Capital Markets,residual_high20,True,0.6666666666666666
+2021-06-30,Cement & Cement Products,champion,False,1.0
+2021-06-30,Cement & Cement Products,residual_momentum20,True,0.6666666666666666
+2021-06-30,Cement & Cement Products,professor_residual50,True,0.3333333333333333
+2021-06-30,Cement & Cement Products,residual_high20,False,1.0
+2021-06-30,Chemicals & Petrochemicals,champion,False,1.0
+2021-06-30,Chemicals & Petrochemicals,residual_momentum20,True,0.3333333333333333
+2021-06-30,Chemicals & Petrochemicals,professor_residual50,True,0.0
+2021-06-30,Chemicals & Petrochemicals,residual_high20,True,0.0
+2021-06-30,Commercial Services & Supplies,champion,False,1.0
+2021-06-30,Commercial Services & Supplies,residual_momentum20,True,0.3333333333333333
+2021-06-30,Commercial Services & Supplies,professor_residual50,True,0.3333333333333333
+2021-06-30,Commercial Services & Supplies,residual_high20,True,0.3333333333333333
+2021-06-30,Construction,champion,False,1.0
+2021-06-30,Construction,residual_momentum20,False,1.0
+2021-06-30,Construction,professor_residual50,False,1.0
+2021-06-30,Construction,residual_high20,False,1.0
+2021-06-30,Consumer Durables,champion,False,1.0
+2021-06-30,Consumer Durables,residual_momentum20,True,0.3333333333333333
+2021-06-30,Consumer Durables,professor_residual50,True,0.3333333333333333
+2021-06-30,Consumer Durables,residual_high20,True,0.3333333333333333
+2021-06-30,Diversified,champion,False,1.0
+2021-06-30,Diversified,residual_momentum20,False,1.0
+2021-06-30,Diversified,professor_residual50,True,0.6666666666666666
+2021-06-30,Diversified,residual_high20,False,1.0
+2021-06-30,Electrical Equipment,champion,False,1.0
+2021-06-30,Electrical Equipment,residual_momentum20,True,0.6666666666666666
+2021-06-30,Electrical Equipment,professor_residual50,True,0.6666666666666666
+2021-06-30,Electrical Equipment,residual_high20,True,0.6666666666666666
+2021-06-30,Entertainment,champion,False,1.0
+2021-06-30,Entertainment,residual_momentum20,True,0.6666666666666666
+2021-06-30,Entertainment,professor_residual50,True,0.0
+2021-06-30,Entertainment,residual_high20,True,0.6666666666666666
+2021-06-30,Ferrous Metals,champion,False,1.0
+2021-06-30,Ferrous Metals,residual_momentum20,False,1.0
+2021-06-30,Ferrous Metals,professor_residual50,True,0.6666666666666666
+2021-06-30,Ferrous Metals,residual_high20,True,0.6666666666666666
+2021-06-30,Fertilizers & Agrochemicals,champion,False,1.0
+2021-06-30,Fertilizers & Agrochemicals,residual_momentum20,True,0.6666666666666666
+2021-06-30,Fertilizers & Agrochemicals,professor_residual50,True,0.3333333333333333
+2021-06-30,Fertilizers & Agrochemicals,residual_high20,True,0.6666666666666666
+2021-06-30,Finance,champion,False,1.0
+2021-06-30,Finance,residual_momentum20,True,0.0
+2021-06-30,Finance,professor_residual50,True,0.0
+2021-06-30,Finance,residual_high20,True,0.0
+2021-06-30,Food Products,champion,False,1.0
+2021-06-30,Food Products,residual_momentum20,True,0.6666666666666666
+2021-06-30,Food Products,professor_residual50,True,0.3333333333333333
+2021-06-30,Food Products,residual_high20,False,1.0
+2021-06-30,Healthcare Services,champion,False,1.0
+2021-06-30,Healthcare Services,residual_momentum20,False,1.0
+2021-06-30,Healthcare Services,professor_residual50,True,0.6666666666666666
+2021-06-30,Healthcare Services,residual_high20,False,1.0
+2021-06-30,Household Products,champion,False,1.0
+2021-06-30,Household Products,residual_momentum20,False,1.0
+2021-06-30,Household Products,professor_residual50,True,0.0
+2021-06-30,Household Products,residual_high20,False,1.0
+2021-06-30,IT - Hardware,champion,False,1.0
+2021-06-30,IT - Hardware,residual_momentum20,False,1.0
+2021-06-30,IT - Hardware,professor_residual50,False,1.0
+2021-06-30,IT - Hardware,residual_high20,False,1.0
+2021-06-30,IT - Services,champion,False,1.0
+2021-06-30,IT - Services,residual_momentum20,True,0.6666666666666666
+2021-06-30,IT - Services,professor_residual50,True,0.6666666666666666
+2021-06-30,IT - Services,residual_high20,False,1.0
+2021-06-30,IT - Software,champion,False,1.0
+2021-06-30,IT - Software,residual_momentum20,True,0.3333333333333333
+2021-06-30,IT - Software,professor_residual50,True,0.0
+2021-06-30,IT - Software,residual_high20,True,0.3333333333333333
+2021-06-30,Industrial Manufacturing,champion,False,1.0
+2021-06-30,Industrial Manufacturing,residual_momentum20,True,0.3333333333333333
+2021-06-30,Industrial Manufacturing,professor_residual50,True,0.3333333333333333
+2021-06-30,Industrial Manufacturing,residual_high20,True,0.3333333333333333
+2021-06-30,Industrial Products,champion,False,1.0
+2021-06-30,Industrial Products,residual_momentum20,True,0.6666666666666666
+2021-06-30,Industrial Products,professor_residual50,True,0.3333333333333333
+2021-06-30,Industrial Products,residual_high20,True,0.6666666666666666
+2021-06-30,Leisure Services,champion,False,1.0
+2021-06-30,Leisure Services,residual_momentum20,True,0.6666666666666666
+2021-06-30,Leisure Services,professor_residual50,True,0.3333333333333333
+2021-06-30,Leisure Services,residual_high20,True,0.6666666666666666
+2021-06-30,Media,champion,False,1.0
+2021-06-30,Media,residual_momentum20,False,1.0
+2021-06-30,Media,professor_residual50,True,0.6666666666666666
+2021-06-30,Media,residual_high20,False,1.0
+2021-06-30,Minerals & Mining,champion,False,1.0
+2021-06-30,Minerals & Mining,residual_momentum20,False,1.0
+2021-06-30,Minerals & Mining,professor_residual50,True,0.6666666666666666
+2021-06-30,Minerals & Mining,residual_high20,False,1.0
+2021-06-30,Non - Ferrous Metals,champion,False,1.0
+2021-06-30,Non - Ferrous Metals,residual_momentum20,False,1.0
+2021-06-30,Non - Ferrous Metals,professor_residual50,False,1.0
+2021-06-30,Non - Ferrous Metals,residual_high20,True,0.6666666666666666
+2021-06-30,Oil,champion,False,1.0
+2021-06-30,Oil,residual_momentum20,False,1.0
+2021-06-30,Oil,professor_residual50,False,1.0
+2021-06-30,Oil,residual_high20,False,1.0
+2021-06-30,Other Construction Materials,champion,False,1.0
+2021-06-30,Other Construction Materials,residual_momentum20,False,1.0
+2021-06-30,Other Construction Materials,professor_residual50,False,1.0
+2021-06-30,Other Construction Materials,residual_high20,True,0.6666666666666666
+2021-06-30,Other Consumer Services,champion,False,1.0
+2021-06-30,Other Consumer Services,residual_momentum20,True,0.6666666666666666
+2021-06-30,Other Consumer Services,professor_residual50,True,0.3333333333333333
+2021-06-30,Other Consumer Services,residual_high20,True,0.6666666666666666
+2021-06-30,"Paper, Forest & Jute Products",champion,False,1.0
+2021-06-30,"Paper, Forest & Jute Products",residual_momentum20,True,0.6666666666666666
+2021-06-30,"Paper, Forest & Jute Products",professor_residual50,True,0.6666666666666666
+2021-06-30,"Paper, Forest & Jute Products",residual_high20,True,0.6666666666666666
+2021-06-30,Personal Products,champion,False,1.0
+2021-06-30,Personal Products,residual_momentum20,False,1.0
+2021-06-30,Personal Products,professor_residual50,True,0.6666666666666666
+2021-06-30,Personal Products,residual_high20,False,1.0
+2021-06-30,Petroleum Products,champion,False,1.0
+2021-06-30,Petroleum Products,residual_momentum20,True,0.6666666666666666
+2021-06-30,Petroleum Products,professor_residual50,True,0.6666666666666666
+2021-06-30,Petroleum Products,residual_high20,True,0.6666666666666666
+2021-06-30,Pharmaceuticals & Biotechnology,champion,False,1.0
+2021-06-30,Pharmaceuticals & Biotechnology,residual_momentum20,True,0.0
+2021-06-30,Pharmaceuticals & Biotechnology,professor_residual50,True,0.3333333333333333
+2021-06-30,Pharmaceuticals & Biotechnology,residual_high20,True,0.3333333333333333
+2021-06-30,Power,champion,False,1.0
+2021-06-30,Power,residual_momentum20,False,1.0
+2021-06-30,Power,professor_residual50,True,0.6666666666666666
+2021-06-30,Power,residual_high20,True,0.3333333333333333
+2021-06-30,Realty,champion,False,1.0
+2021-06-30,Realty,residual_momentum20,True,0.3333333333333333
+2021-06-30,Realty,professor_residual50,True,0.6666666666666666
+2021-06-30,Realty,residual_high20,True,0.6666666666666666
+2021-06-30,Retailing,champion,False,1.0
+2021-06-30,Retailing,residual_momentum20,False,1.0
+2021-06-30,Retailing,professor_residual50,False,1.0
+2021-06-30,Retailing,residual_high20,False,1.0
+2021-06-30,Telecom -  Equipment & Accessories,champion,False,1.0
+2021-06-30,Telecom -  Equipment & Accessories,residual_momentum20,True,0.6666666666666666
+2021-06-30,Telecom -  Equipment & Accessories,professor_residual50,True,0.3333333333333333
+2021-06-30,Telecom -  Equipment & Accessories,residual_high20,True,0.6666666666666666
+2021-06-30,Telecom - Services,champion,False,1.0
+2021-06-30,Telecom - Services,residual_momentum20,False,1.0
+2021-06-30,Telecom - Services,professor_residual50,False,1.0
+2021-06-30,Telecom - Services,residual_high20,False,1.0
+2021-06-30,Textiles & Apparels,champion,False,1.0
+2021-06-30,Textiles & Apparels,residual_momentum20,True,0.6666666666666666
+2021-06-30,Textiles & Apparels,professor_residual50,True,0.0
+2021-06-30,Textiles & Apparels,residual_high20,True,0.6666666666666666
+2021-06-30,Transport Infrastructure,champion,False,1.0
+2021-06-30,Transport Infrastructure,residual_momentum20,False,1.0
+2021-06-30,Transport Infrastructure,professor_residual50,False,1.0
+2021-06-30,Transport Infrastructure,residual_high20,False,1.0
+2021-06-30,Transport Services,champion,False,1.0
+2021-06-30,Transport Services,residual_momentum20,True,0.6666666666666666
+2021-06-30,Transport Services,professor_residual50,True,0.3333333333333333
+2021-06-30,Transport Services,residual_high20,True,0.6666666666666666
+2021-09-30,Aerospace & Defense,champion,False,1.0
+2021-09-30,Aerospace & Defense,residual_momentum20,False,1.0
+2021-09-30,Aerospace & Defense,professor_residual50,True,0.6666666666666666
+2021-09-30,Aerospace & Defense,residual_high20,False,1.0
+2021-09-30,Agricultural Food & other Products,champion,False,1.0
+2021-09-30,Agricultural Food & other Products,residual_momentum20,True,0.6666666666666666
+2021-09-30,Agricultural Food & other Products,professor_residual50,True,0.3333333333333333
+2021-09-30,Agricultural Food & other Products,residual_high20,True,0.3333333333333333
+2021-09-30,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2021-09-30,"Agricultural, Commercial & Construction Vehicles",residual_momentum20,False,1.0
+2021-09-30,"Agricultural, Commercial & Construction Vehicles",professor_residual50,True,0.6666666666666666
+2021-09-30,"Agricultural, Commercial & Construction Vehicles",residual_high20,False,1.0
+2021-09-30,Auto Components,champion,False,1.0
+2021-09-30,Auto Components,residual_momentum20,True,0.6666666666666666
+2021-09-30,Auto Components,professor_residual50,True,0.3333333333333333
+2021-09-30,Auto Components,residual_high20,True,0.6666666666666666
+2021-09-30,Automobiles,champion,False,1.0
+2021-09-30,Automobiles,residual_momentum20,False,1.0
+2021-09-30,Automobiles,professor_residual50,True,0.6666666666666666
+2021-09-30,Automobiles,residual_high20,False,1.0
+2021-09-30,Banks,champion,False,1.0
+2021-09-30,Banks,residual_momentum20,True,0.6666666666666666
+2021-09-30,Banks,professor_residual50,True,0.6666666666666666
+2021-09-30,Banks,residual_high20,True,0.6666666666666666
+2021-09-30,Beverages,champion,False,1.0
+2021-09-30,Beverages,residual_momentum20,False,1.0
+2021-09-30,Beverages,professor_residual50,True,0.3333333333333333
+2021-09-30,Beverages,residual_high20,False,1.0
+2021-09-30,Capital Markets,champion,False,1.0
+2021-09-30,Capital Markets,residual_momentum20,True,0.6666666666666666
+2021-09-30,Capital Markets,professor_residual50,True,0.3333333333333333
+2021-09-30,Capital Markets,residual_high20,True,0.6666666666666666
+2021-09-30,Cement & Cement Products,champion,False,1.0
+2021-09-30,Cement & Cement Products,residual_momentum20,True,0.6666666666666666
+2021-09-30,Cement & Cement Products,professor_residual50,True,0.3333333333333333
+2021-09-30,Cement & Cement Products,residual_high20,True,0.6666666666666666
+2021-09-30,Chemicals & Petrochemicals,champion,False,1.0
+2021-09-30,Chemicals & Petrochemicals,residual_momentum20,True,0.3333333333333333
+2021-09-30,Chemicals & Petrochemicals,professor_residual50,True,0.0
+2021-09-30,Chemicals & Petrochemicals,residual_high20,True,0.0
+2021-09-30,Commercial Services & Supplies,champion,False,1.0
+2021-09-30,Commercial Services & Supplies,residual_momentum20,True,0.3333333333333333
+2021-09-30,Commercial Services & Supplies,professor_residual50,True,0.0
+2021-09-30,Commercial Services & Supplies,residual_high20,True,0.3333333333333333
+2021-09-30,Construction,champion,False,1.0
+2021-09-30,Construction,residual_momentum20,True,0.6666666666666666
+2021-09-30,Construction,professor_residual50,True,0.3333333333333333
+2021-09-30,Construction,residual_high20,True,0.3333333333333333
+2021-09-30,Consumer Durables,champion,False,1.0
+2021-09-30,Consumer Durables,residual_momentum20,True,0.3333333333333333
+2021-09-30,Consumer Durables,professor_residual50,True,0.3333333333333333
+2021-09-30,Consumer Durables,residual_high20,True,0.3333333333333333
+2021-09-30,Diversified,champion,False,1.0
+2021-09-30,Diversified,residual_momentum20,False,1.0
+2021-09-30,Diversified,professor_residual50,True,0.6666666666666666
+2021-09-30,Diversified,residual_high20,False,1.0
+2021-09-30,Electrical Equipment,champion,False,1.0
+2021-09-30,Electrical Equipment,residual_momentum20,True,0.6666666666666666
+2021-09-30,Electrical Equipment,professor_residual50,True,0.3333333333333333
+2021-09-30,Electrical Equipment,residual_high20,True,0.3333333333333333
+2021-09-30,Entertainment,champion,False,1.0
+2021-09-30,Entertainment,residual_momentum20,True,0.6666666666666666
+2021-09-30,Entertainment,professor_residual50,True,0.0
+2021-09-30,Entertainment,residual_high20,True,0.6666666666666666
+2021-09-30,Ferrous Metals,champion,False,1.0
+2021-09-30,Ferrous Metals,residual_momentum20,True,0.6666666666666666
+2021-09-30,Ferrous Metals,professor_residual50,True,0.6666666666666666
+2021-09-30,Ferrous Metals,residual_high20,True,0.6666666666666666
+2021-09-30,Fertilizers & Agrochemicals,champion,False,1.0
+2021-09-30,Fertilizers & Agrochemicals,residual_momentum20,True,0.6666666666666666
+2021-09-30,Fertilizers & Agrochemicals,professor_residual50,True,0.3333333333333333
+2021-09-30,Fertilizers & Agrochemicals,residual_high20,True,0.6666666666666666
+2021-09-30,Finance,champion,False,1.0
+2021-09-30,Finance,residual_momentum20,True,0.0
+2021-09-30,Finance,professor_residual50,True,0.0
+2021-09-30,Finance,residual_high20,True,0.0
+2021-09-30,Food Products,champion,False,1.0
+2021-09-30,Food Products,residual_momentum20,True,0.6666666666666666
+2021-09-30,Food Products,professor_residual50,True,0.3333333333333333
+2021-09-30,Food Products,residual_high20,False,1.0
+2021-09-30,Healthcare Services,champion,False,1.0
+2021-09-30,Healthcare Services,residual_momentum20,True,0.6666666666666666
+2021-09-30,Healthcare Services,professor_residual50,True,0.6666666666666666
+2021-09-30,Healthcare Services,residual_high20,True,0.6666666666666666
+2021-09-30,Household Products,champion,False,1.0
+2021-09-30,Household Products,residual_momentum20,False,1.0
+2021-09-30,Household Products,professor_residual50,True,0.3333333333333333
+2021-09-30,Household Products,residual_high20,False,1.0
+2021-09-30,IT - Hardware,champion,False,1.0
+2021-09-30,IT - Hardware,residual_momentum20,True,0.6666666666666666
+2021-09-30,IT - Hardware,professor_residual50,True,0.6666666666666666
+2021-09-30,IT - Hardware,residual_high20,True,0.6666666666666666
+2021-09-30,IT - Services,champion,False,1.0
+2021-09-30,IT - Services,residual_momentum20,True,0.6666666666666666
+2021-09-30,IT - Services,professor_residual50,True,0.6666666666666666
+2021-09-30,IT - Services,residual_high20,True,0.6666666666666666
+2021-09-30,IT - Software,champion,False,1.0
+2021-09-30,IT - Software,residual_momentum20,True,0.6666666666666666
+2021-09-30,IT - Software,professor_residual50,True,0.0
+2021-09-30,IT - Software,residual_high20,True,0.3333333333333333
+2021-09-30,Industrial Manufacturing,champion,False,1.0
+2021-09-30,Industrial Manufacturing,residual_momentum20,True,0.6666666666666666
+2021-09-30,Industrial Manufacturing,professor_residual50,True,0.3333333333333333
+2021-09-30,Industrial Manufacturing,residual_high20,True,0.3333333333333333
+2021-09-30,Industrial Products,champion,False,1.0
+2021-09-30,Industrial Products,residual_momentum20,True,0.0
+2021-09-30,Industrial Products,professor_residual50,True,0.0
+2021-09-30,Industrial Products,residual_high20,True,0.0
+2021-09-30,Leisure Services,champion,False,1.0
+2021-09-30,Leisure Services,residual_momentum20,True,0.6666666666666666
+2021-09-30,Leisure Services,professor_residual50,True,0.3333333333333333
+2021-09-30,Leisure Services,residual_high20,True,0.6666666666666666
+2021-09-30,Media,champion,False,1.0
+2021-09-30,Media,residual_momentum20,False,1.0
+2021-09-30,Media,professor_residual50,True,0.6666666666666666
+2021-09-30,Media,residual_high20,False,1.0
+2021-09-30,Minerals & Mining,champion,False,1.0
+2021-09-30,Minerals & Mining,residual_momentum20,False,1.0
+2021-09-30,Minerals & Mining,professor_residual50,True,0.6666666666666666
+2021-09-30,Minerals & Mining,residual_high20,False,1.0
+2021-09-30,Non - Ferrous Metals,champion,False,1.0
+2021-09-30,Non - Ferrous Metals,residual_momentum20,False,1.0
+2021-09-30,Non - Ferrous Metals,professor_residual50,True,0.6666666666666666
+2021-09-30,Non - Ferrous Metals,residual_high20,True,0.6666666666666666
+2021-09-30,Oil,champion,False,1.0
+2021-09-30,Oil,residual_momentum20,True,0.6666666666666666
+2021-09-30,Oil,professor_residual50,True,0.3333333333333333
+2021-09-30,Oil,residual_high20,False,1.0
+2021-09-30,Other Construction Materials,champion,False,1.0
+2021-09-30,Other Construction Materials,residual_momentum20,False,1.0
+2021-09-30,Other Construction Materials,professor_residual50,True,0.6666666666666666
+2021-09-30,Other Construction Materials,residual_high20,False,1.0
+2021-09-30,Other Consumer Services,champion,False,1.0
+2021-09-30,Other Consumer Services,residual_momentum20,False,1.0
+2021-09-30,Other Consumer Services,professor_residual50,False,1.0
+2021-09-30,Other Consumer Services,residual_high20,False,1.0
+2021-09-30,"Paper, Forest & Jute Products",champion,False,1.0
+2021-09-30,"Paper, Forest & Jute Products",residual_momentum20,False,1.0
+2021-09-30,"Paper, Forest & Jute Products",professor_residual50,True,0.0
+2021-09-30,"Paper, Forest & Jute Products",residual_high20,False,1.0
+2021-09-30,Personal Products,champion,False,1.0
+2021-09-30,Personal Products,residual_momentum20,False,1.0
+2021-09-30,Personal Products,professor_residual50,True,0.6666666666666666
+2021-09-30,Personal Products,residual_high20,False,1.0
+2021-09-30,Petroleum Products,champion,False,1.0
+2021-09-30,Petroleum Products,residual_momentum20,False,1.0
+2021-09-30,Petroleum Products,professor_residual50,True,0.3333333333333333
+2021-09-30,Petroleum Products,residual_high20,True,0.6666666666666666
+2021-09-30,Pharmaceuticals & Biotechnology,champion,False,1.0
+2021-09-30,Pharmaceuticals & Biotechnology,residual_momentum20,True,0.0
+2021-09-30,Pharmaceuticals & Biotechnology,professor_residual50,True,0.3333333333333333
+2021-09-30,Pharmaceuticals & Biotechnology,residual_high20,True,0.3333333333333333
+2021-09-30,Power,champion,False,1.0
+2021-09-30,Power,residual_momentum20,False,1.0
+2021-09-30,Power,professor_residual50,True,0.6666666666666666
+2021-09-30,Power,residual_high20,False,1.0
+2021-09-30,Realty,champion,False,1.0
+2021-09-30,Realty,residual_momentum20,True,0.6666666666666666
+2021-09-30,Realty,professor_residual50,True,0.3333333333333333
+2021-09-30,Realty,residual_high20,True,0.3333333333333333
+2021-09-30,Retailing,champion,False,1.0
+2021-09-30,Retailing,residual_momentum20,False,1.0
+2021-09-30,Retailing,professor_residual50,False,1.0
+2021-09-30,Retailing,residual_high20,False,1.0
+2021-09-30,Telecom -  Equipment & Accessories,champion,False,1.0
+2021-09-30,Telecom -  Equipment & Accessories,residual_momentum20,True,0.6666666666666666
+2021-09-30,Telecom -  Equipment & Accessories,professor_residual50,True,0.6666666666666666
+2021-09-30,Telecom -  Equipment & Accessories,residual_high20,False,1.0
+2021-09-30,Telecom - Services,champion,False,1.0
+2021-09-30,Telecom - Services,residual_momentum20,True,0.6666666666666666
+2021-09-30,Telecom - Services,professor_residual50,True,0.6666666666666666
+2021-09-30,Telecom - Services,residual_high20,False,1.0
+2021-09-30,Textiles & Apparels,champion,False,1.0
+2021-09-30,Textiles & Apparels,residual_momentum20,True,0.6666666666666666
+2021-09-30,Textiles & Apparels,professor_residual50,True,0.0
+2021-09-30,Textiles & Apparels,residual_high20,True,0.6666666666666666
+2021-09-30,Transport Infrastructure,champion,False,1.0
+2021-09-30,Transport Infrastructure,residual_momentum20,False,1.0
+2021-09-30,Transport Infrastructure,professor_residual50,False,1.0
+2021-09-30,Transport Infrastructure,residual_high20,False,1.0
+2021-09-30,Transport Services,champion,False,1.0
+2021-09-30,Transport Services,residual_momentum20,True,0.6666666666666666
+2021-09-30,Transport Services,professor_residual50,True,0.3333333333333333
+2021-09-30,Transport Services,residual_high20,True,0.3333333333333333
+2021-12-31,Aerospace & Defense,champion,False,1.0
+2021-12-31,Aerospace & Defense,residual_momentum20,True,0.6666666666666666
+2021-12-31,Aerospace & Defense,professor_residual50,True,0.6666666666666666
+2021-12-31,Aerospace & Defense,residual_high20,False,1.0
+2021-12-31,Agricultural Food & other Products,champion,False,1.0
+2021-12-31,Agricultural Food & other Products,residual_momentum20,True,0.6666666666666666
+2021-12-31,Agricultural Food & other Products,professor_residual50,True,0.0
+2021-12-31,Agricultural Food & other Products,residual_high20,True,0.6666666666666666
+2021-12-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2021-12-31,"Agricultural, Commercial & Construction Vehicles",residual_momentum20,False,1.0
+2021-12-31,"Agricultural, Commercial & Construction Vehicles",professor_residual50,True,0.6666666666666666
+2021-12-31,"Agricultural, Commercial & Construction Vehicles",residual_high20,False,1.0
+2021-12-31,Auto Components,champion,False,1.0
+2021-12-31,Auto Components,residual_momentum20,True,0.6666666666666666
+2021-12-31,Auto Components,professor_residual50,True,0.3333333333333333
+2021-12-31,Auto Components,residual_high20,True,0.6666666666666666
+2021-12-31,Automobiles,champion,False,1.0
+2021-12-31,Automobiles,residual_momentum20,False,1.0
+2021-12-31,Automobiles,professor_residual50,True,0.6666666666666666
+2021-12-31,Automobiles,residual_high20,False,1.0
+2021-12-31,Banks,champion,False,1.0
+2021-12-31,Banks,residual_momentum20,True,0.6666666666666666
+2021-12-31,Banks,professor_residual50,True,0.3333333333333333
+2021-12-31,Banks,residual_high20,True,0.6666666666666666
+2021-12-31,Beverages,champion,False,1.0
+2021-12-31,Beverages,residual_momentum20,False,1.0
+2021-12-31,Beverages,professor_residual50,True,0.3333333333333333
+2021-12-31,Beverages,residual_high20,False,1.0
+2021-12-31,Capital Markets,champion,False,1.0
+2021-12-31,Capital Markets,residual_momentum20,True,0.6666666666666666
+2021-12-31,Capital Markets,professor_residual50,True,0.0
+2021-12-31,Capital Markets,residual_high20,True,0.6666666666666666
+2021-12-31,Cement & Cement Products,champion,False,1.0
+2021-12-31,Cement & Cement Products,residual_momentum20,False,1.0
+2021-12-31,Cement & Cement Products,professor_residual50,True,0.0
+2021-12-31,Cement & Cement Products,residual_high20,False,1.0
+2021-12-31,Chemicals & Petrochemicals,champion,False,1.0
+2021-12-31,Chemicals & Petrochemicals,residual_momentum20,True,0.0
+2021-12-31,Chemicals & Petrochemicals,professor_residual50,True,0.0
+2021-12-31,Chemicals & Petrochemicals,residual_high20,True,0.0
+2021-12-31,Commercial Services & Supplies,champion,False,1.0
+2021-12-31,Commercial Services & Supplies,residual_momentum20,True,0.3333333333333333
+2021-12-31,Commercial Services & Supplies,professor_residual50,True,0.0
+2021-12-31,Commercial Services & Supplies,residual_high20,True,0.6666666666666666
+2021-12-31,Construction,champion,False,1.0
+2021-12-31,Construction,residual_momentum20,True,0.3333333333333333
+2021-12-31,Construction,professor_residual50,True,0.3333333333333333
+2021-12-31,Construction,residual_high20,True,0.3333333333333333
+2021-12-31,Consumer Durables,champion,False,1.0
+2021-12-31,Consumer Durables,residual_momentum20,True,0.3333333333333333
+2021-12-31,Consumer Durables,professor_residual50,True,0.0
+2021-12-31,Consumer Durables,residual_high20,True,0.6666666666666666
+2021-12-31,Diversified,champion,False,1.0
+2021-12-31,Diversified,residual_momentum20,False,1.0
+2021-12-31,Diversified,professor_residual50,False,1.0
+2021-12-31,Diversified,residual_high20,False,1.0
+2021-12-31,Electrical Equipment,champion,False,1.0
+2021-12-31,Electrical Equipment,residual_momentum20,True,0.6666666666666666
+2021-12-31,Electrical Equipment,professor_residual50,True,0.3333333333333333
+2021-12-31,Electrical Equipment,residual_high20,True,0.3333333333333333
+2021-12-31,Entertainment,champion,False,1.0
+2021-12-31,Entertainment,residual_momentum20,True,0.3333333333333333
+2021-12-31,Entertainment,professor_residual50,True,0.0
+2021-12-31,Entertainment,residual_high20,True,0.3333333333333333
+2021-12-31,Ferrous Metals,champion,False,1.0
+2021-12-31,Ferrous Metals,residual_momentum20,False,1.0
+2021-12-31,Ferrous Metals,professor_residual50,True,0.3333333333333333
+2021-12-31,Ferrous Metals,residual_high20,False,1.0
+2021-12-31,Fertilizers & Agrochemicals,champion,False,1.0
+2021-12-31,Fertilizers & Agrochemicals,residual_momentum20,False,1.0
+2021-12-31,Fertilizers & Agrochemicals,professor_residual50,True,0.3333333333333333
+2021-12-31,Fertilizers & Agrochemicals,residual_high20,False,1.0
+2021-12-31,Finance,champion,False,1.0
+2021-12-31,Finance,residual_momentum20,True,0.3333333333333333
+2021-12-31,Finance,professor_residual50,True,0.0
+2021-12-31,Finance,residual_high20,True,0.3333333333333333
+2021-12-31,Food Products,champion,False,1.0
+2021-12-31,Food Products,residual_momentum20,True,0.6666666666666666
+2021-12-31,Food Products,professor_residual50,True,0.3333333333333333
+2021-12-31,Food Products,residual_high20,False,1.0
+2021-12-31,Gas,champion,False,1.0
+2021-12-31,Gas,residual_momentum20,False,1.0
+2021-12-31,Gas,professor_residual50,False,1.0
+2021-12-31,Gas,residual_high20,False,1.0
+2021-12-31,Healthcare Services,champion,False,1.0
+2021-12-31,Healthcare Services,residual_momentum20,True,0.6666666666666666
+2021-12-31,Healthcare Services,professor_residual50,True,0.3333333333333333
+2021-12-31,Healthcare Services,residual_high20,True,0.6666666666666666
+2021-12-31,Household Products,champion,False,1.0
+2021-12-31,Household Products,residual_momentum20,False,1.0
+2021-12-31,Household Products,professor_residual50,True,0.3333333333333333
+2021-12-31,Household Products,residual_high20,False,1.0
+2021-12-31,IT - Hardware,champion,False,1.0
+2021-12-31,IT - Hardware,residual_momentum20,False,1.0
+2021-12-31,IT - Hardware,professor_residual50,True,0.6666666666666666
+2021-12-31,IT - Hardware,residual_high20,False,1.0
+2021-12-31,IT - Services,champion,False,1.0
+2021-12-31,IT - Services,residual_momentum20,False,1.0
+2021-12-31,IT - Services,professor_residual50,True,0.3333333333333333
+2021-12-31,IT - Services,residual_high20,False,1.0
+2021-12-31,IT - Software,champion,False,1.0
+2021-12-31,IT - Software,residual_momentum20,True,0.3333333333333333
+2021-12-31,IT - Software,professor_residual50,True,0.0
+2021-12-31,IT - Software,residual_high20,True,0.3333333333333333
+2021-12-31,Industrial Manufacturing,champion,False,1.0
+2021-12-31,Industrial Manufacturing,residual_momentum20,True,0.6666666666666666
+2021-12-31,Industrial Manufacturing,professor_residual50,True,0.0
+2021-12-31,Industrial Manufacturing,residual_high20,True,0.6666666666666666
+2021-12-31,Industrial Products,champion,False,1.0
+2021-12-31,Industrial Products,residual_momentum20,True,0.3333333333333333
+2021-12-31,Industrial Products,professor_residual50,True,0.3333333333333333
+2021-12-31,Industrial Products,residual_high20,True,0.6666666666666666
+2021-12-31,Leisure Services,champion,False,1.0
+2021-12-31,Leisure Services,residual_momentum20,True,0.6666666666666666
+2021-12-31,Leisure Services,professor_residual50,True,0.6666666666666666
+2021-12-31,Leisure Services,residual_high20,False,1.0
+2021-12-31,Media,champion,False,1.0
+2021-12-31,Media,residual_momentum20,False,1.0
+2021-12-31,Media,professor_residual50,True,0.3333333333333333
+2021-12-31,Media,residual_high20,True,0.6666666666666666
+2021-12-31,Minerals & Mining,champion,False,1.0
+2021-12-31,Minerals & Mining,residual_momentum20,False,1.0
+2021-12-31,Minerals & Mining,professor_residual50,True,0.3333333333333333
+2021-12-31,Minerals & Mining,residual_high20,False,1.0
+2021-12-31,Non - Ferrous Metals,champion,False,1.0
+2021-12-31,Non - Ferrous Metals,residual_momentum20,False,1.0
+2021-12-31,Non - Ferrous Metals,professor_residual50,True,0.6666666666666666
+2021-12-31,Non - Ferrous Metals,residual_high20,False,1.0
+2021-12-31,Oil,champion,False,1.0
+2021-12-31,Oil,residual_momentum20,False,1.0
+2021-12-31,Oil,professor_residual50,True,0.6666666666666666
+2021-12-31,Oil,residual_high20,False,1.0
+2021-12-31,Other Construction Materials,champion,False,1.0
+2021-12-31,Other Construction Materials,residual_momentum20,False,1.0
+2021-12-31,Other Construction Materials,professor_residual50,True,0.6666666666666666
+2021-12-31,Other Construction Materials,residual_high20,False,1.0
+2021-12-31,Other Consumer Services,champion,False,1.0
+2021-12-31,Other Consumer Services,residual_momentum20,False,1.0
+2021-12-31,Other Consumer Services,professor_residual50,True,0.6666666666666666
+2021-12-31,Other Consumer Services,residual_high20,False,1.0
+2021-12-31,"Paper, Forest & Jute Products",champion,False,1.0
+2021-12-31,"Paper, Forest & Jute Products",residual_momentum20,False,1.0
+2021-12-31,"Paper, Forest & Jute Products",professor_residual50,True,0.6666666666666666
+2021-12-31,"Paper, Forest & Jute Products",residual_high20,False,1.0
+2021-12-31,Personal Products,champion,False,1.0
+2021-12-31,Personal Products,residual_momentum20,False,1.0
+2021-12-31,Personal Products,professor_residual50,True,0.3333333333333333
+2021-12-31,Personal Products,residual_high20,False,1.0
+2021-12-31,Petroleum Products,champion,False,1.0
+2021-12-31,Petroleum Products,residual_momentum20,True,0.6666666666666666
+2021-12-31,Petroleum Products,professor_residual50,True,0.6666666666666666
+2021-12-31,Petroleum Products,residual_high20,True,0.6666666666666666
+2021-12-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2021-12-31,Pharmaceuticals & Biotechnology,residual_momentum20,True,0.3333333333333333
+2021-12-31,Pharmaceuticals & Biotechnology,professor_residual50,True,0.3333333333333333
+2021-12-31,Pharmaceuticals & Biotechnology,residual_high20,False,1.0
+2021-12-31,Power,champion,False,1.0
+2021-12-31,Power,residual_momentum20,False,1.0
+2021-12-31,Power,professor_residual50,True,0.3333333333333333
+2021-12-31,Power,residual_high20,True,0.6666666666666666
+2021-12-31,Realty,champion,False,1.0
+2021-12-31,Realty,residual_momentum20,True,0.6666666666666666
+2021-12-31,Realty,professor_residual50,True,0.3333333333333333
+2021-12-31,Realty,residual_high20,True,0.6666666666666666
+2021-12-31,Retailing,champion,False,1.0
+2021-12-31,Retailing,residual_momentum20,True,0.6666666666666666
+2021-12-31,Retailing,professor_residual50,True,0.6666666666666666
+2021-12-31,Retailing,residual_high20,True,0.6666666666666666
+2021-12-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2021-12-31,Telecom -  Equipment & Accessories,residual_momentum20,False,1.0
+2021-12-31,Telecom -  Equipment & Accessories,professor_residual50,True,0.6666666666666666
+2021-12-31,Telecom -  Equipment & Accessories,residual_high20,False,1.0
+2021-12-31,Telecom - Services,champion,False,1.0
+2021-12-31,Telecom - Services,residual_momentum20,False,1.0
+2021-12-31,Telecom - Services,professor_residual50,True,0.3333333333333333
+2021-12-31,Telecom - Services,residual_high20,False,1.0
+2021-12-31,Textiles & Apparels,champion,False,1.0
+2021-12-31,Textiles & Apparels,residual_momentum20,True,0.3333333333333333
+2021-12-31,Textiles & Apparels,professor_residual50,True,0.0
+2021-12-31,Textiles & Apparels,residual_high20,True,0.3333333333333333
+2021-12-31,Transport Infrastructure,champion,False,1.0
+2021-12-31,Transport Infrastructure,residual_momentum20,False,1.0
+2021-12-31,Transport Infrastructure,professor_residual50,False,1.0
+2021-12-31,Transport Infrastructure,residual_high20,False,1.0
+2021-12-31,Transport Services,champion,False,1.0
+2021-12-31,Transport Services,residual_momentum20,True,0.6666666666666666
+2021-12-31,Transport Services,professor_residual50,True,0.6666666666666666
+2021-12-31,Transport Services,residual_high20,False,1.0
+2022-03-31,Aerospace & Defense,champion,False,1.0
+2022-03-31,Aerospace & Defense,residual_momentum20,True,0.6666666666666666
+2022-03-31,Aerospace & Defense,professor_residual50,True,0.3333333333333333
+2022-03-31,Aerospace & Defense,residual_high20,False,1.0
+2022-03-31,Agricultural Food & other Products,champion,False,1.0
+2022-03-31,Agricultural Food & other Products,residual_momentum20,True,0.3333333333333333
+2022-03-31,Agricultural Food & other Products,professor_residual50,True,0.0
+2022-03-31,Agricultural Food & other Products,residual_high20,True,0.3333333333333333
+2022-03-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2022-03-31,"Agricultural, Commercial & Construction Vehicles",residual_momentum20,False,1.0
+2022-03-31,"Agricultural, Commercial & Construction Vehicles",professor_residual50,True,0.6666666666666666
+2022-03-31,"Agricultural, Commercial & Construction Vehicles",residual_high20,False,1.0
+2022-03-31,Auto Components,champion,False,1.0
+2022-03-31,Auto Components,residual_momentum20,True,0.6666666666666666
+2022-03-31,Auto Components,professor_residual50,True,0.3333333333333333
+2022-03-31,Auto Components,residual_high20,True,0.6666666666666666
+2022-03-31,Automobiles,champion,False,1.0
+2022-03-31,Automobiles,residual_momentum20,False,1.0
+2022-03-31,Automobiles,professor_residual50,True,0.6666666666666666
+2022-03-31,Automobiles,residual_high20,False,1.0
+2022-03-31,Banks,champion,False,1.0
+2022-03-31,Banks,residual_momentum20,True,0.6666666666666666
+2022-03-31,Banks,professor_residual50,False,1.0
+2022-03-31,Banks,residual_high20,True,0.6666666666666666
+2022-03-31,Beverages,champion,False,1.0
+2022-03-31,Beverages,residual_momentum20,False,1.0
+2022-03-31,Beverages,professor_residual50,True,0.3333333333333333
+2022-03-31,Beverages,residual_high20,True,0.6666666666666666
+2022-03-31,Capital Markets,champion,False,1.0
+2022-03-31,Capital Markets,residual_momentum20,True,0.6666666666666666
+2022-03-31,Capital Markets,professor_residual50,True,0.3333333333333333
+2022-03-31,Capital Markets,residual_high20,True,0.6666666666666666
+2022-03-31,Cement & Cement Products,champion,False,1.0
+2022-03-31,Cement & Cement Products,residual_momentum20,True,0.6666666666666666
+2022-03-31,Cement & Cement Products,professor_residual50,True,0.3333333333333333
+2022-03-31,Cement & Cement Products,residual_high20,True,0.6666666666666666
+2022-03-31,Chemicals & Petrochemicals,champion,False,1.0
+2022-03-31,Chemicals & Petrochemicals,residual_momentum20,True,0.0
+2022-03-31,Chemicals & Petrochemicals,professor_residual50,True,0.0
+2022-03-31,Chemicals & Petrochemicals,residual_high20,True,0.3333333333333333
+2022-03-31,Commercial Services & Supplies,champion,False,1.0
+2022-03-31,Commercial Services & Supplies,residual_momentum20,True,0.6666666666666666
+2022-03-31,Commercial Services & Supplies,professor_residual50,True,0.0
+2022-03-31,Commercial Services & Supplies,residual_high20,True,0.6666666666666666
+2022-03-31,Construction,champion,False,1.0
+2022-03-31,Construction,residual_momentum20,True,0.6666666666666666
+2022-03-31,Construction,professor_residual50,True,0.3333333333333333
+2022-03-31,Construction,residual_high20,True,0.6666666666666666
+2022-03-31,Consumer Durables,champion,False,1.0
+2022-03-31,Consumer Durables,residual_momentum20,True,0.3333333333333333
+2022-03-31,Consumer Durables,professor_residual50,True,0.0
+2022-03-31,Consumer Durables,residual_high20,True,0.3333333333333333
+2022-03-31,Diversified,champion,False,1.0
+2022-03-31,Diversified,residual_momentum20,False,1.0
+2022-03-31,Diversified,professor_residual50,True,0.6666666666666666
+2022-03-31,Diversified,residual_high20,False,1.0
+2022-03-31,Electrical Equipment,champion,False,1.0
+2022-03-31,Electrical Equipment,residual_momentum20,True,0.3333333333333333
+2022-03-31,Electrical Equipment,professor_residual50,True,0.6666666666666666
+2022-03-31,Electrical Equipment,residual_high20,True,0.3333333333333333
+2022-03-31,Entertainment,champion,False,1.0
+2022-03-31,Entertainment,residual_momentum20,True,0.6666666666666666
+2022-03-31,Entertainment,professor_residual50,True,0.3333333333333333
+2022-03-31,Entertainment,residual_high20,True,0.3333333333333333
+2022-03-31,Ferrous Metals,champion,False,1.0
+2022-03-31,Ferrous Metals,residual_momentum20,True,0.6666666666666666
+2022-03-31,Ferrous Metals,professor_residual50,True,0.0
+2022-03-31,Ferrous Metals,residual_high20,True,0.6666666666666666
+2022-03-31,Fertilizers & Agrochemicals,champion,False,1.0
+2022-03-31,Fertilizers & Agrochemicals,residual_momentum20,False,1.0
+2022-03-31,Fertilizers & Agrochemicals,professor_residual50,True,0.6666666666666666
+2022-03-31,Fertilizers & Agrochemicals,residual_high20,False,1.0
+2022-03-31,Finance,champion,False,1.0
+2022-03-31,Finance,residual_momentum20,True,0.3333333333333333
+2022-03-31,Finance,professor_residual50,True,0.0
+2022-03-31,Finance,residual_high20,True,0.6666666666666666
+2022-03-31,Food Products,champion,False,1.0
+2022-03-31,Food Products,residual_momentum20,True,0.6666666666666666
+2022-03-31,Food Products,professor_residual50,True,0.3333333333333333
+2022-03-31,Food Products,residual_high20,False,1.0
+2022-03-31,Gas,champion,False,1.0
+2022-03-31,Gas,residual_momentum20,False,1.0
+2022-03-31,Gas,professor_residual50,True,0.6666666666666666
+2022-03-31,Gas,residual_high20,False,1.0
+2022-03-31,Healthcare Services,champion,False,1.0
+2022-03-31,Healthcare Services,residual_momentum20,True,0.6666666666666666
+2022-03-31,Healthcare Services,professor_residual50,True,0.6666666666666666
+2022-03-31,Healthcare Services,residual_high20,True,0.6666666666666666
+2022-03-31,Household Products,champion,False,1.0
+2022-03-31,Household Products,residual_momentum20,False,1.0
+2022-03-31,Household Products,professor_residual50,True,0.6666666666666666
+2022-03-31,Household Products,residual_high20,True,0.6666666666666666
+2022-03-31,IT - Hardware,champion,False,1.0
+2022-03-31,IT - Hardware,residual_momentum20,False,1.0
+2022-03-31,IT - Hardware,professor_residual50,True,0.3333333333333333
+2022-03-31,IT - Hardware,residual_high20,True,0.6666666666666666
+2022-03-31,IT - Services,champion,False,1.0
+2022-03-31,IT - Services,residual_momentum20,False,1.0
+2022-03-31,IT - Services,professor_residual50,True,0.6666666666666666
+2022-03-31,IT - Services,residual_high20,True,0.6666666666666666
+2022-03-31,IT - Software,champion,False,1.0
+2022-03-31,IT - Software,residual_momentum20,True,0.6666666666666666
+2022-03-31,IT - Software,professor_residual50,True,0.0
+2022-03-31,IT - Software,residual_high20,False,1.0
+2022-03-31,Industrial Manufacturing,champion,False,1.0
+2022-03-31,Industrial Manufacturing,residual_momentum20,True,0.6666666666666666
+2022-03-31,Industrial Manufacturing,professor_residual50,True,0.3333333333333333
+2022-03-31,Industrial Manufacturing,residual_high20,True,0.3333333333333333
+2022-03-31,Industrial Products,champion,False,1.0
+2022-03-31,Industrial Products,residual_momentum20,True,0.0
+2022-03-31,Industrial Products,professor_residual50,True,0.0
+2022-03-31,Industrial Products,residual_high20,True,0.3333333333333333
+2022-03-31,Leisure Services,champion,False,1.0
+2022-03-31,Leisure Services,residual_momentum20,True,0.6666666666666666
+2022-03-31,Leisure Services,professor_residual50,True,0.0
+2022-03-31,Leisure Services,residual_high20,True,0.6666666666666666
+2022-03-31,Media,champion,False,1.0
+2022-03-31,Media,residual_momentum20,False,1.0
+2022-03-31,Media,professor_residual50,True,0.6666666666666666
+2022-03-31,Media,residual_high20,False,1.0
+2022-03-31,Minerals & Mining,champion,False,1.0
+2022-03-31,Minerals & Mining,residual_momentum20,False,1.0
+2022-03-31,Minerals & Mining,professor_residual50,True,0.0
+2022-03-31,Minerals & Mining,residual_high20,True,0.6666666666666666
+2022-03-31,Non - Ferrous Metals,champion,False,1.0
+2022-03-31,Non - Ferrous Metals,residual_momentum20,False,1.0
+2022-03-31,Non - Ferrous Metals,professor_residual50,True,0.3333333333333333
+2022-03-31,Non - Ferrous Metals,residual_high20,False,1.0
+2022-03-31,Oil,champion,False,1.0
+2022-03-31,Oil,residual_momentum20,True,0.6666666666666666
+2022-03-31,Oil,professor_residual50,True,0.6666666666666666
+2022-03-31,Oil,residual_high20,True,0.6666666666666666
+2022-03-31,Other Construction Materials,champion,False,1.0
+2022-03-31,Other Construction Materials,residual_momentum20,False,1.0
+2022-03-31,Other Construction Materials,professor_residual50,False,1.0
+2022-03-31,Other Construction Materials,residual_high20,False,1.0
+2022-03-31,Other Consumer Services,champion,False,1.0
+2022-03-31,Other Consumer Services,residual_momentum20,True,0.6666666666666666
+2022-03-31,Other Consumer Services,professor_residual50,True,0.6666666666666666
+2022-03-31,Other Consumer Services,residual_high20,False,1.0
+2022-03-31,"Paper, Forest & Jute Products",champion,False,1.0
+2022-03-31,"Paper, Forest & Jute Products",residual_momentum20,False,1.0
+2022-03-31,"Paper, Forest & Jute Products",professor_residual50,True,0.0
+2022-03-31,"Paper, Forest & Jute Products",residual_high20,True,0.6666666666666666
+2022-03-31,Personal Products,champion,False,1.0
+2022-03-31,Personal Products,residual_momentum20,False,1.0
+2022-03-31,Personal Products,professor_residual50,True,0.3333333333333333
+2022-03-31,Personal Products,residual_high20,False,1.0
+2022-03-31,Petroleum Products,champion,False,1.0
+2022-03-31,Petroleum Products,residual_momentum20,False,1.0
+2022-03-31,Petroleum Products,professor_residual50,True,0.3333333333333333
+2022-03-31,Petroleum Products,residual_high20,False,1.0
+2022-03-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2022-03-31,Pharmaceuticals & Biotechnology,residual_momentum20,True,0.6666666666666666
+2022-03-31,Pharmaceuticals & Biotechnology,professor_residual50,True,0.0
+2022-03-31,Pharmaceuticals & Biotechnology,residual_high20,False,1.0
+2022-03-31,Power,champion,False,1.0
+2022-03-31,Power,residual_momentum20,False,1.0
+2022-03-31,Power,professor_residual50,True,0.3333333333333333
+2022-03-31,Power,residual_high20,True,0.6666666666666666
+2022-03-31,Realty,champion,False,1.0
+2022-03-31,Realty,residual_momentum20,True,0.3333333333333333
+2022-03-31,Realty,professor_residual50,True,0.3333333333333333
+2022-03-31,Realty,residual_high20,True,0.6666666666666666
+2022-03-31,Retailing,champion,False,1.0
+2022-03-31,Retailing,residual_momentum20,False,1.0
+2022-03-31,Retailing,professor_residual50,True,0.6666666666666666
+2022-03-31,Retailing,residual_high20,False,1.0
+2022-03-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2022-03-31,Telecom -  Equipment & Accessories,residual_momentum20,False,1.0
+2022-03-31,Telecom -  Equipment & Accessories,professor_residual50,True,0.6666666666666666
+2022-03-31,Telecom -  Equipment & Accessories,residual_high20,False,1.0
+2022-03-31,Telecom - Services,champion,False,1.0
+2022-03-31,Telecom - Services,residual_momentum20,True,0.6666666666666666
+2022-03-31,Telecom - Services,professor_residual50,True,0.6666666666666666
+2022-03-31,Telecom - Services,residual_high20,False,1.0
+2022-03-31,Textiles & Apparels,champion,False,1.0
+2022-03-31,Textiles & Apparels,residual_momentum20,True,0.0
+2022-03-31,Textiles & Apparels,professor_residual50,True,0.0
+2022-03-31,Textiles & Apparels,residual_high20,True,0.0
+2022-03-31,Transport Infrastructure,champion,False,1.0
+2022-03-31,Transport Infrastructure,residual_momentum20,False,1.0
+2022-03-31,Transport Infrastructure,professor_residual50,True,0.3333333333333333
+2022-03-31,Transport Infrastructure,residual_high20,False,1.0
+2022-03-31,Transport Services,champion,False,1.0
+2022-03-31,Transport Services,residual_momentum20,True,0.3333333333333333
+2022-03-31,Transport Services,professor_residual50,True,0.0
+2022-03-31,Transport Services,residual_high20,True,0.6666666666666666
+2022-06-30,Aerospace & Defense,champion,False,1.0
+2022-06-30,Aerospace & Defense,residual_momentum20,True,0.6666666666666666
+2022-06-30,Aerospace & Defense,professor_residual50,True,0.3333333333333333
+2022-06-30,Aerospace & Defense,residual_high20,False,1.0
+2022-06-30,Agricultural Food & other Products,champion,False,1.0
+2022-06-30,Agricultural Food & other Products,residual_momentum20,True,0.3333333333333333
+2022-06-30,Agricultural Food & other Products,professor_residual50,True,0.3333333333333333
+2022-06-30,Agricultural Food & other Products,residual_high20,True,0.3333333333333333
+2022-06-30,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2022-06-30,"Agricultural, Commercial & Construction Vehicles",residual_momentum20,False,1.0
+2022-06-30,"Agricultural, Commercial & Construction Vehicles",professor_residual50,False,1.0
+2022-06-30,"Agricultural, Commercial & Construction Vehicles",residual_high20,False,1.0
+2022-06-30,Auto Components,champion,False,1.0
+2022-06-30,Auto Components,residual_momentum20,False,1.0
+2022-06-30,Auto Components,professor_residual50,True,0.6666666666666666
+2022-06-30,Auto Components,residual_high20,True,0.6666666666666666
+2022-06-30,Automobiles,champion,False,1.0
+2022-06-30,Automobiles,residual_momentum20,False,1.0
+2022-06-30,Automobiles,professor_residual50,True,0.6666666666666666
+2022-06-30,Automobiles,residual_high20,False,1.0
+2022-06-30,Banks,champion,False,1.0
+2022-06-30,Banks,residual_momentum20,False,1.0
+2022-06-30,Banks,professor_residual50,True,0.6666666666666666
+2022-06-30,Banks,residual_high20,False,1.0
+2022-06-30,Beverages,champion,False,1.0
+2022-06-30,Beverages,residual_momentum20,True,0.6666666666666666
+2022-06-30,Beverages,professor_residual50,True,0.3333333333333333
+2022-06-30,Beverages,residual_high20,False,1.0
+2022-06-30,Capital Markets,champion,False,1.0
+2022-06-30,Capital Markets,residual_momentum20,False,1.0
+2022-06-30,Capital Markets,professor_residual50,True,0.3333333333333333
+2022-06-30,Capital Markets,residual_high20,True,0.6666666666666666
+2022-06-30,Cement & Cement Products,champion,False,1.0
+2022-06-30,Cement & Cement Products,residual_momentum20,False,1.0
+2022-06-30,Cement & Cement Products,professor_residual50,True,0.6666666666666666
+2022-06-30,Cement & Cement Products,residual_high20,False,1.0
+2022-06-30,Chemicals & Petrochemicals,champion,False,1.0
+2022-06-30,Chemicals & Petrochemicals,residual_momentum20,True,0.6666666666666666
+2022-06-30,Chemicals & Petrochemicals,professor_residual50,True,0.3333333333333333
+2022-06-30,Chemicals & Petrochemicals,residual_high20,False,1.0
+2022-06-30,Commercial Services & Supplies,champion,False,1.0
+2022-06-30,Commercial Services & Supplies,residual_momentum20,True,0.3333333333333333
+2022-06-30,Commercial Services & Supplies,professor_residual50,True,0.0
+2022-06-30,Commercial Services & Supplies,residual_high20,True,0.3333333333333333
+2022-06-30,Construction,champion,False,1.0
+2022-06-30,Construction,residual_momentum20,True,0.6666666666666666
+2022-06-30,Construction,professor_residual50,True,0.3333333333333333
+2022-06-30,Construction,residual_high20,True,0.3333333333333333
+2022-06-30,Consumer Durables,champion,False,1.0
+2022-06-30,Consumer Durables,residual_momentum20,True,0.3333333333333333
+2022-06-30,Consumer Durables,professor_residual50,True,0.3333333333333333
+2022-06-30,Consumer Durables,residual_high20,True,0.3333333333333333
+2022-06-30,Diversified,champion,False,1.0
+2022-06-30,Diversified,residual_momentum20,False,1.0
+2022-06-30,Diversified,professor_residual50,True,0.6666666666666666
+2022-06-30,Diversified,residual_high20,False,1.0
+2022-06-30,Electrical Equipment,champion,False,1.0
+2022-06-30,Electrical Equipment,residual_momentum20,True,0.6666666666666666
+2022-06-30,Electrical Equipment,professor_residual50,True,0.3333333333333333
+2022-06-30,Electrical Equipment,residual_high20,True,0.6666666666666666
+2022-06-30,Entertainment,champion,False,1.0
+2022-06-30,Entertainment,residual_momentum20,True,0.6666666666666666
+2022-06-30,Entertainment,professor_residual50,True,0.6666666666666666
+2022-06-30,Entertainment,residual_high20,True,0.6666666666666666
+2022-06-30,Ferrous Metals,champion,False,1.0
+2022-06-30,Ferrous Metals,residual_momentum20,False,1.0
+2022-06-30,Ferrous Metals,professor_residual50,True,0.0
+2022-06-30,Ferrous Metals,residual_high20,False,1.0
+2022-06-30,Fertilizers & Agrochemicals,champion,False,1.0
+2022-06-30,Fertilizers & Agrochemicals,residual_momentum20,True,0.6666666666666666
+2022-06-30,Fertilizers & Agrochemicals,professor_residual50,True,0.3333333333333333
+2022-06-30,Fertilizers & Agrochemicals,residual_high20,True,0.6666666666666666
+2022-06-30,Finance,champion,False,1.0
+2022-06-30,Finance,residual_momentum20,True,0.6666666666666666
+2022-06-30,Finance,professor_residual50,True,0.0
+2022-06-30,Finance,residual_high20,True,0.6666666666666666
+2022-06-30,Food Products,champion,False,1.0
+2022-06-30,Food Products,residual_momentum20,True,0.6666666666666666
+2022-06-30,Food Products,professor_residual50,True,0.3333333333333333
+2022-06-30,Food Products,residual_high20,True,0.6666666666666666
+2022-06-30,Gas,champion,False,1.0
+2022-06-30,Gas,residual_momentum20,False,1.0
+2022-06-30,Gas,professor_residual50,False,1.0
+2022-06-30,Gas,residual_high20,False,1.0
+2022-06-30,Healthcare Services,champion,False,1.0
+2022-06-30,Healthcare Services,residual_momentum20,False,1.0
+2022-06-30,Healthcare Services,professor_residual50,True,0.6666666666666666
+2022-06-30,Healthcare Services,residual_high20,True,0.6666666666666666
+2022-06-30,Household Products,champion,False,1.0
+2022-06-30,Household Products,residual_momentum20,True,0.6666666666666666
+2022-06-30,Household Products,professor_residual50,True,0.6666666666666666
+2022-06-30,Household Products,residual_high20,False,1.0
+2022-06-30,IT - Hardware,champion,False,1.0
+2022-06-30,IT - Hardware,residual_momentum20,False,1.0
+2022-06-30,IT - Hardware,professor_residual50,True,0.3333333333333333
+2022-06-30,IT - Hardware,residual_high20,True,0.6666666666666666
+2022-06-30,IT - Services,champion,False,1.0
+2022-06-30,IT - Services,residual_momentum20,True,0.6666666666666666
+2022-06-30,IT - Services,professor_residual50,True,0.3333333333333333
+2022-06-30,IT - Services,residual_high20,True,0.6666666666666666
+2022-06-30,IT - Software,champion,False,1.0
+2022-06-30,IT - Software,residual_momentum20,True,0.6666666666666666
+2022-06-30,IT - Software,professor_residual50,True,0.0
+2022-06-30,IT - Software,residual_high20,True,0.6666666666666666
+2022-06-30,Industrial Manufacturing,champion,False,1.0
+2022-06-30,Industrial Manufacturing,residual_momentum20,True,0.6666666666666666
+2022-06-30,Industrial Manufacturing,professor_residual50,True,0.3333333333333333
+2022-06-30,Industrial Manufacturing,residual_high20,True,0.3333333333333333
+2022-06-30,Industrial Products,champion,False,1.0
+2022-06-30,Industrial Products,residual_momentum20,True,0.0
+2022-06-30,Industrial Products,professor_residual50,True,0.0
+2022-06-30,Industrial Products,residual_high20,True,0.6666666666666666
+2022-06-30,Leisure Services,champion,False,1.0
+2022-06-30,Leisure Services,residual_momentum20,True,0.6666666666666666
+2022-06-30,Leisure Services,professor_residual50,True,0.3333333333333333
+2022-06-30,Leisure Services,residual_high20,True,0.6666666666666666
+2022-06-30,Media,champion,False,1.0
+2022-06-30,Media,residual_momentum20,False,1.0
+2022-06-30,Media,professor_residual50,True,0.6666666666666666
+2022-06-30,Media,residual_high20,False,1.0
+2022-06-30,Minerals & Mining,champion,False,1.0
+2022-06-30,Minerals & Mining,residual_momentum20,False,1.0
+2022-06-30,Minerals & Mining,professor_residual50,True,0.3333333333333333
+2022-06-30,Minerals & Mining,residual_high20,False,1.0
+2022-06-30,Non - Ferrous Metals,champion,False,1.0
+2022-06-30,Non - Ferrous Metals,residual_momentum20,False,1.0
+2022-06-30,Non - Ferrous Metals,professor_residual50,True,0.6666666666666666
+2022-06-30,Non - Ferrous Metals,residual_high20,False,1.0
+2022-06-30,Oil,champion,False,1.0
+2022-06-30,Oil,residual_momentum20,False,1.0
+2022-06-30,Oil,professor_residual50,True,0.6666666666666666
+2022-06-30,Oil,residual_high20,False,1.0
+2022-06-30,Other Construction Materials,champion,False,1.0
+2022-06-30,Other Construction Materials,residual_momentum20,False,1.0
+2022-06-30,Other Construction Materials,professor_residual50,True,0.6666666666666666
+2022-06-30,Other Construction Materials,residual_high20,False,1.0
+2022-06-30,Other Consumer Services,champion,False,1.0
+2022-06-30,Other Consumer Services,residual_momentum20,False,1.0
+2022-06-30,Other Consumer Services,professor_residual50,True,0.3333333333333333
+2022-06-30,Other Consumer Services,residual_high20,False,1.0
+2022-06-30,"Paper, Forest & Jute Products",champion,False,1.0
+2022-06-30,"Paper, Forest & Jute Products",residual_momentum20,False,1.0
+2022-06-30,"Paper, Forest & Jute Products",professor_residual50,True,0.3333333333333333
+2022-06-30,"Paper, Forest & Jute Products",residual_high20,False,1.0
+2022-06-30,Personal Products,champion,False,1.0
+2022-06-30,Personal Products,residual_momentum20,False,1.0
+2022-06-30,Personal Products,professor_residual50,True,0.6666666666666666
+2022-06-30,Personal Products,residual_high20,False,1.0
+2022-06-30,Petroleum Products,champion,False,1.0
+2022-06-30,Petroleum Products,residual_momentum20,False,1.0
+2022-06-30,Petroleum Products,professor_residual50,True,0.6666666666666666
+2022-06-30,Petroleum Products,residual_high20,False,1.0
+2022-06-30,Pharmaceuticals & Biotechnology,champion,False,1.0
+2022-06-30,Pharmaceuticals & Biotechnology,residual_momentum20,True,0.6666666666666666
+2022-06-30,Pharmaceuticals & Biotechnology,professor_residual50,True,0.0
+2022-06-30,Pharmaceuticals & Biotechnology,residual_high20,True,0.3333333333333333
+2022-06-30,Power,champion,False,1.0
+2022-06-30,Power,residual_momentum20,True,0.6666666666666666
+2022-06-30,Power,professor_residual50,True,0.3333333333333333
+2022-06-30,Power,residual_high20,False,1.0
+2022-06-30,Realty,champion,False,1.0
+2022-06-30,Realty,residual_momentum20,True,0.6666666666666666
+2022-06-30,Realty,professor_residual50,False,1.0
+2022-06-30,Realty,residual_high20,True,0.6666666666666666
+2022-06-30,Retailing,champion,False,1.0
+2022-06-30,Retailing,residual_momentum20,False,1.0
+2022-06-30,Retailing,professor_residual50,True,0.3333333333333333
+2022-06-30,Retailing,residual_high20,False,1.0
+2022-06-30,Telecom -  Equipment & Accessories,champion,False,1.0
+2022-06-30,Telecom -  Equipment & Accessories,residual_momentum20,False,1.0
+2022-06-30,Telecom -  Equipment & Accessories,professor_residual50,True,0.6666666666666666
+2022-06-30,Telecom -  Equipment & Accessories,residual_high20,False,1.0
+2022-06-30,Telecom - Services,champion,False,1.0
+2022-06-30,Telecom - Services,residual_momentum20,False,1.0
+2022-06-30,Telecom - Services,professor_residual50,True,0.6666666666666666
+2022-06-30,Telecom - Services,residual_high20,False,1.0
+2022-06-30,Textiles & Apparels,champion,False,1.0
+2022-06-30,Textiles & Apparels,residual_momentum20,True,0.0
+2022-06-30,Textiles & Apparels,professor_residual50,True,0.0
+2022-06-30,Textiles & Apparels,residual_high20,True,0.6666666666666666
+2022-06-30,Transport Infrastructure,champion,False,1.0
+2022-06-30,Transport Infrastructure,residual_momentum20,False,1.0
+2022-06-30,Transport Infrastructure,professor_residual50,False,1.0
+2022-06-30,Transport Infrastructure,residual_high20,False,1.0
+2022-06-30,Transport Services,champion,False,1.0
+2022-06-30,Transport Services,residual_momentum20,True,0.6666666666666666
+2022-06-30,Transport Services,professor_residual50,True,0.0
+2022-06-30,Transport Services,residual_high20,True,0.3333333333333333
+2022-09-30,Aerospace & Defense,champion,False,1.0
+2022-09-30,Aerospace & Defense,residual_momentum20,False,1.0
+2022-09-30,Aerospace & Defense,professor_residual50,False,1.0
+2022-09-30,Aerospace & Defense,residual_high20,False,1.0
+2022-09-30,Agricultural Food & other Products,champion,False,1.0
+2022-09-30,Agricultural Food & other Products,residual_momentum20,True,0.3333333333333333
+2022-09-30,Agricultural Food & other Products,professor_residual50,True,0.0
+2022-09-30,Agricultural Food & other Products,residual_high20,True,0.3333333333333333
+2022-09-30,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2022-09-30,"Agricultural, Commercial & Construction Vehicles",residual_momentum20,True,0.6666666666666666
+2022-09-30,"Agricultural, Commercial & Construction Vehicles",professor_residual50,False,1.0
+2022-09-30,"Agricultural, Commercial & Construction Vehicles",residual_high20,True,0.6666666666666666
+2022-09-30,Auto Components,champion,False,1.0
+2022-09-30,Auto Components,residual_momentum20,True,0.3333333333333333
+2022-09-30,Auto Components,professor_residual50,True,0.0
+2022-09-30,Auto Components,residual_high20,True,0.3333333333333333
+2022-09-30,Automobiles,champion,False,1.0
+2022-09-30,Automobiles,residual_momentum20,True,0.6666666666666666
+2022-09-30,Automobiles,professor_residual50,True,0.3333333333333333
+2022-09-30,Automobiles,residual_high20,False,1.0
+2022-09-30,Banks,champion,False,1.0
+2022-09-30,Banks,residual_momentum20,True,0.6666666666666666
+2022-09-30,Banks,professor_residual50,True,0.6666666666666666
+2022-09-30,Banks,residual_high20,True,0.6666666666666666
+2022-09-30,Beverages,champion,False,1.0
+2022-09-30,Beverages,residual_momentum20,False,1.0
+2022-09-30,Beverages,professor_residual50,True,0.3333333333333333
+2022-09-30,Beverages,residual_high20,True,0.6666666666666666
+2022-09-30,Capital Markets,champion,False,1.0
+2022-09-30,Capital Markets,residual_momentum20,False,1.0
+2022-09-30,Capital Markets,professor_residual50,True,0.3333333333333333
+2022-09-30,Capital Markets,residual_high20,False,1.0
+2022-09-30,Cement & Cement Products,champion,False,1.0
+2022-09-30,Cement & Cement Products,residual_momentum20,False,1.0
+2022-09-30,Cement & Cement Products,professor_residual50,True,0.3333333333333333
+2022-09-30,Cement & Cement Products,residual_high20,True,0.6666666666666666
+2022-09-30,Chemicals & Petrochemicals,champion,False,1.0
+2022-09-30,Chemicals & Petrochemicals,residual_momentum20,True,0.6666666666666666
+2022-09-30,Chemicals & Petrochemicals,professor_residual50,True,0.0
+2022-09-30,Chemicals & Petrochemicals,residual_high20,True,0.6666666666666666
+2022-09-30,Commercial Services & Supplies,champion,False,1.0
+2022-09-30,Commercial Services & Supplies,residual_momentum20,True,0.3333333333333333
+2022-09-30,Commercial Services & Supplies,professor_residual50,True,0.0
+2022-09-30,Commercial Services & Supplies,residual_high20,True,0.3333333333333333
+2022-09-30,Construction,champion,False,1.0
+2022-09-30,Construction,residual_momentum20,True,0.6666666666666666
+2022-09-30,Construction,professor_residual50,True,0.3333333333333333
+2022-09-30,Construction,residual_high20,True,0.0
+2022-09-30,Consumer Durables,champion,False,1.0
+2022-09-30,Consumer Durables,residual_momentum20,False,1.0
+2022-09-30,Consumer Durables,professor_residual50,True,0.3333333333333333
+2022-09-30,Consumer Durables,residual_high20,True,0.3333333333333333
+2022-09-30,Diversified,champion,False,1.0
+2022-09-30,Diversified,residual_momentum20,False,1.0
+2022-09-30,Diversified,professor_residual50,False,1.0
+2022-09-30,Diversified,residual_high20,False,1.0
+2022-09-30,Electrical Equipment,champion,False,1.0
+2022-09-30,Electrical Equipment,residual_momentum20,True,0.6666666666666666
+2022-09-30,Electrical Equipment,professor_residual50,True,0.3333333333333333
+2022-09-30,Electrical Equipment,residual_high20,True,0.6666666666666666
+2022-09-30,Entertainment,champion,False,1.0
+2022-09-30,Entertainment,residual_momentum20,True,0.6666666666666666
+2022-09-30,Entertainment,professor_residual50,True,0.3333333333333333
+2022-09-30,Entertainment,residual_high20,True,0.6666666666666666
+2022-09-30,Ferrous Metals,champion,False,1.0
+2022-09-30,Ferrous Metals,residual_momentum20,False,1.0
+2022-09-30,Ferrous Metals,professor_residual50,True,0.6666666666666666
+2022-09-30,Ferrous Metals,residual_high20,True,0.3333333333333333
+2022-09-30,Fertilizers & Agrochemicals,champion,False,1.0
+2022-09-30,Fertilizers & Agrochemicals,residual_momentum20,True,0.6666666666666666
+2022-09-30,Fertilizers & Agrochemicals,professor_residual50,True,0.3333333333333333
+2022-09-30,Fertilizers & Agrochemicals,residual_high20,False,1.0
+2022-09-30,Finance,champion,False,1.0
+2022-09-30,Finance,residual_momentum20,True,0.6666666666666666
+2022-09-30,Finance,professor_residual50,True,0.3333333333333333
+2022-09-30,Finance,residual_high20,True,0.6666666666666666
+2022-09-30,Food Products,champion,False,1.0
+2022-09-30,Food Products,residual_momentum20,True,0.6666666666666666
+2022-09-30,Food Products,professor_residual50,True,0.6666666666666666
+2022-09-30,Food Products,residual_high20,True,0.6666666666666666
+2022-09-30,Gas,champion,False,1.0
+2022-09-30,Gas,residual_momentum20,False,1.0
+2022-09-30,Gas,professor_residual50,True,0.3333333333333333
+2022-09-30,Gas,residual_high20,False,1.0
+2022-09-30,Healthcare Services,champion,False,1.0
+2022-09-30,Healthcare Services,residual_momentum20,True,0.6666666666666666
+2022-09-30,Healthcare Services,professor_residual50,True,0.6666666666666666
+2022-09-30,Healthcare Services,residual_high20,True,0.6666666666666666
+2022-09-30,Household Products,champion,False,1.0
+2022-09-30,Household Products,residual_momentum20,False,1.0
+2022-09-30,Household Products,professor_residual50,True,0.6666666666666666
+2022-09-30,Household Products,residual_high20,True,0.6666666666666666
+2022-09-30,IT - Hardware,champion,False,1.0
+2022-09-30,IT - Hardware,residual_momentum20,True,0.6666666666666666
+2022-09-30,IT - Hardware,professor_residual50,True,0.6666666666666666
+2022-09-30,IT - Hardware,residual_high20,False,1.0
+2022-09-30,IT - Services,champion,False,1.0
+2022-09-30,IT - Services,residual_momentum20,False,1.0
+2022-09-30,IT - Services,professor_residual50,True,0.6666666666666666
+2022-09-30,IT - Services,residual_high20,True,0.6666666666666666
+2022-09-30,IT - Software,champion,False,1.0
+2022-09-30,IT - Software,residual_momentum20,True,0.6666666666666666
+2022-09-30,IT - Software,professor_residual50,True,0.0
+2022-09-30,IT - Software,residual_high20,True,0.6666666666666666
+2022-09-30,Industrial Manufacturing,champion,False,1.0
+2022-09-30,Industrial Manufacturing,residual_momentum20,True,0.6666666666666666
+2022-09-30,Industrial Manufacturing,professor_residual50,True,0.3333333333333333
+2022-09-30,Industrial Manufacturing,residual_high20,True,0.6666666666666666
+2022-09-30,Industrial Products,champion,False,1.0
+2022-09-30,Industrial Products,residual_momentum20,True,0.6666666666666666
+2022-09-30,Industrial Products,professor_residual50,True,0.0
+2022-09-30,Industrial Products,residual_high20,True,0.3333333333333333
+2022-09-30,Leisure Services,champion,False,1.0
+2022-09-30,Leisure Services,residual_momentum20,True,0.6666666666666666
+2022-09-30,Leisure Services,professor_residual50,True,0.3333333333333333
+2022-09-30,Leisure Services,residual_high20,True,0.6666666666666666
+2022-09-30,Media,champion,False,1.0
+2022-09-30,Media,residual_momentum20,True,0.6666666666666666
+2022-09-30,Media,professor_residual50,True,0.6666666666666666
+2022-09-30,Media,residual_high20,False,1.0
+2022-09-30,Minerals & Mining,champion,False,1.0
+2022-09-30,Minerals & Mining,residual_momentum20,False,1.0
+2022-09-30,Minerals & Mining,professor_residual50,True,0.3333333333333333
+2022-09-30,Minerals & Mining,residual_high20,True,0.6666666666666666
+2022-09-30,Non - Ferrous Metals,champion,False,1.0
+2022-09-30,Non - Ferrous Metals,residual_momentum20,True,0.6666666666666666
+2022-09-30,Non - Ferrous Metals,professor_residual50,True,0.0
+2022-09-30,Non - Ferrous Metals,residual_high20,False,1.0
+2022-09-30,Oil,champion,False,1.0
+2022-09-30,Oil,residual_momentum20,False,1.0
+2022-09-30,Oil,professor_residual50,True,0.6666666666666666
+2022-09-30,Oil,residual_high20,False,1.0
+2022-09-30,Other Construction Materials,champion,False,1.0
+2022-09-30,Other Construction Materials,residual_momentum20,False,1.0
+2022-09-30,Other Construction Materials,professor_residual50,True,0.6666666666666666
+2022-09-30,Other Construction Materials,residual_high20,True,0.6666666666666666
+2022-09-30,Other Consumer Services,champion,False,1.0
+2022-09-30,Other Consumer Services,residual_momentum20,False,1.0
+2022-09-30,Other Consumer Services,professor_residual50,True,0.3333333333333333
+2022-09-30,Other Consumer Services,residual_high20,True,0.6666666666666666
+2022-09-30,"Paper, Forest & Jute Products",champion,False,1.0
+2022-09-30,"Paper, Forest & Jute Products",residual_momentum20,True,0.6666666666666666
+2022-09-30,"Paper, Forest & Jute Products",professor_residual50,True,0.3333333333333333
+2022-09-30,"Paper, Forest & Jute Products",residual_high20,True,0.3333333333333333
+2022-09-30,Personal Products,champion,False,1.0
+2022-09-30,Personal Products,residual_momentum20,False,1.0
+2022-09-30,Personal Products,professor_residual50,True,0.3333333333333333
+2022-09-30,Personal Products,residual_high20,False,1.0
+2022-09-30,Petroleum Products,champion,False,1.0
+2022-09-30,Petroleum Products,residual_momentum20,False,1.0
+2022-09-30,Petroleum Products,professor_residual50,True,0.3333333333333333
+2022-09-30,Petroleum Products,residual_high20,False,1.0
+2022-09-30,Pharmaceuticals & Biotechnology,champion,False,1.0
+2022-09-30,Pharmaceuticals & Biotechnology,residual_momentum20,True,0.3333333333333333
+2022-09-30,Pharmaceuticals & Biotechnology,professor_residual50,True,0.0
+2022-09-30,Pharmaceuticals & Biotechnology,residual_high20,True,0.6666666666666666
+2022-09-30,Power,champion,False,1.0
+2022-09-30,Power,residual_momentum20,False,1.0
+2022-09-30,Power,professor_residual50,True,0.3333333333333333
+2022-09-30,Power,residual_high20,False,1.0
+2022-09-30,Realty,champion,False,1.0
+2022-09-30,Realty,residual_momentum20,False,1.0
+2022-09-30,Realty,professor_residual50,False,1.0
+2022-09-30,Realty,residual_high20,True,0.6666666666666666
+2022-09-30,Retailing,champion,False,1.0
+2022-09-30,Retailing,residual_momentum20,False,1.0
+2022-09-30,Retailing,professor_residual50,False,1.0
+2022-09-30,Retailing,residual_high20,False,1.0
+2022-09-30,Telecom -  Equipment & Accessories,champion,False,1.0
+2022-09-30,Telecom -  Equipment & Accessories,residual_momentum20,False,1.0
+2022-09-30,Telecom -  Equipment & Accessories,professor_residual50,True,0.6666666666666666
+2022-09-30,Telecom -  Equipment & Accessories,residual_high20,False,1.0
+2022-09-30,Telecom - Services,champion,False,1.0
+2022-09-30,Telecom - Services,residual_momentum20,True,0.6666666666666666
+2022-09-30,Telecom - Services,professor_residual50,True,0.6666666666666666
+2022-09-30,Telecom - Services,residual_high20,True,0.6666666666666666
+2022-09-30,Textiles & Apparels,champion,False,1.0
+2022-09-30,Textiles & Apparels,residual_momentum20,True,0.3333333333333333
+2022-09-30,Textiles & Apparels,professor_residual50,True,0.0
+2022-09-30,Textiles & Apparels,residual_high20,True,0.6666666666666666
+2022-09-30,Transport Infrastructure,champion,False,1.0
+2022-09-30,Transport Infrastructure,residual_momentum20,False,1.0
+2022-09-30,Transport Infrastructure,professor_residual50,True,0.6666666666666666
+2022-09-30,Transport Infrastructure,residual_high20,False,1.0
+2022-09-30,Transport Services,champion,False,1.0
+2022-09-30,Transport Services,residual_momentum20,False,1.0
+2022-09-30,Transport Services,professor_residual50,True,0.0
+2022-09-30,Transport Services,residual_high20,False,1.0
+2022-12-31,Aerospace & Defense,champion,False,1.0
+2022-12-31,Aerospace & Defense,residual_momentum20,False,1.0
+2022-12-31,Aerospace & Defense,professor_residual50,True,0.6666666666666666
+2022-12-31,Aerospace & Defense,residual_high20,False,1.0
+2022-12-31,Agricultural Food & other Products,champion,False,1.0
+2022-12-31,Agricultural Food & other Products,residual_momentum20,True,0.6666666666666666
+2022-12-31,Agricultural Food & other Products,professor_residual50,True,0.0
+2022-12-31,Agricultural Food & other Products,residual_high20,True,0.6666666666666666
+2022-12-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2022-12-31,"Agricultural, Commercial & Construction Vehicles",residual_momentum20,False,1.0
+2022-12-31,"Agricultural, Commercial & Construction Vehicles",professor_residual50,False,1.0
+2022-12-31,"Agricultural, Commercial & Construction Vehicles",residual_high20,False,1.0
+2022-12-31,Auto Components,champion,False,1.0
+2022-12-31,Auto Components,residual_momentum20,True,0.6666666666666666
+2022-12-31,Auto Components,professor_residual50,True,0.3333333333333333
+2022-12-31,Auto Components,residual_high20,True,0.3333333333333333
+2022-12-31,Automobiles,champion,False,1.0
+2022-12-31,Automobiles,residual_momentum20,False,1.0
+2022-12-31,Automobiles,professor_residual50,True,0.6666666666666666
+2022-12-31,Automobiles,residual_high20,False,1.0
+2022-12-31,Banks,champion,False,1.0
+2022-12-31,Banks,residual_momentum20,True,0.6666666666666666
+2022-12-31,Banks,professor_residual50,False,1.0
+2022-12-31,Banks,residual_high20,False,1.0
+2022-12-31,Beverages,champion,False,1.0
+2022-12-31,Beverages,residual_momentum20,False,1.0
+2022-12-31,Beverages,professor_residual50,True,0.3333333333333333
+2022-12-31,Beverages,residual_high20,False,1.0
+2022-12-31,Capital Markets,champion,False,1.0
+2022-12-31,Capital Markets,residual_momentum20,False,1.0
+2022-12-31,Capital Markets,professor_residual50,True,0.3333333333333333
+2022-12-31,Capital Markets,residual_high20,False,1.0
+2022-12-31,Cement & Cement Products,champion,False,1.0
+2022-12-31,Cement & Cement Products,residual_momentum20,True,0.6666666666666666
+2022-12-31,Cement & Cement Products,professor_residual50,True,0.3333333333333333
+2022-12-31,Cement & Cement Products,residual_high20,True,0.3333333333333333
+2022-12-31,Chemicals & Petrochemicals,champion,False,1.0
+2022-12-31,Chemicals & Petrochemicals,residual_momentum20,True,0.6666666666666666
+2022-12-31,Chemicals & Petrochemicals,professor_residual50,True,0.0
+2022-12-31,Chemicals & Petrochemicals,residual_high20,False,1.0
+2022-12-31,Commercial Services & Supplies,champion,False,1.0
+2022-12-31,Commercial Services & Supplies,residual_momentum20,False,1.0
+2022-12-31,Commercial Services & Supplies,professor_residual50,True,0.3333333333333333
+2022-12-31,Commercial Services & Supplies,residual_high20,True,0.6666666666666666
+2022-12-31,Construction,champion,False,1.0
+2022-12-31,Construction,residual_momentum20,True,0.6666666666666666
+2022-12-31,Construction,professor_residual50,True,0.3333333333333333
+2022-12-31,Construction,residual_high20,True,0.6666666666666666
+2022-12-31,Consumer Durables,champion,False,1.0
+2022-12-31,Consumer Durables,residual_momentum20,True,0.6666666666666666
+2022-12-31,Consumer Durables,professor_residual50,True,0.0
+2022-12-31,Consumer Durables,residual_high20,True,0.6666666666666666
+2022-12-31,Diversified,champion,False,1.0
+2022-12-31,Diversified,residual_momentum20,False,1.0
+2022-12-31,Diversified,professor_residual50,False,1.0
+2022-12-31,Diversified,residual_high20,False,1.0
+2022-12-31,Electrical Equipment,champion,False,1.0
+2022-12-31,Electrical Equipment,residual_momentum20,True,0.6666666666666666
+2022-12-31,Electrical Equipment,professor_residual50,True,0.0
+2022-12-31,Electrical Equipment,residual_high20,False,1.0
+2022-12-31,Entertainment,champion,False,1.0
+2022-12-31,Entertainment,residual_momentum20,True,0.6666666666666666
+2022-12-31,Entertainment,professor_residual50,True,0.3333333333333333
+2022-12-31,Entertainment,residual_high20,True,0.6666666666666666
+2022-12-31,Ferrous Metals,champion,False,1.0
+2022-12-31,Ferrous Metals,residual_momentum20,False,1.0
+2022-12-31,Ferrous Metals,professor_residual50,False,1.0
+2022-12-31,Ferrous Metals,residual_high20,False,1.0
+2022-12-31,Fertilizers & Agrochemicals,champion,False,1.0
+2022-12-31,Fertilizers & Agrochemicals,residual_momentum20,True,0.6666666666666666
+2022-12-31,Fertilizers & Agrochemicals,professor_residual50,True,0.3333333333333333
+2022-12-31,Fertilizers & Agrochemicals,residual_high20,False,1.0
+2022-12-31,Finance,champion,False,1.0
+2022-12-31,Finance,residual_momentum20,False,1.0
+2022-12-31,Finance,professor_residual50,True,0.3333333333333333
+2022-12-31,Finance,residual_high20,True,0.6666666666666666
+2022-12-31,Food Products,champion,False,1.0
+2022-12-31,Food Products,residual_momentum20,True,0.6666666666666666
+2022-12-31,Food Products,professor_residual50,True,0.6666666666666666
+2022-12-31,Food Products,residual_high20,True,0.6666666666666666
+2022-12-31,Healthcare Services,champion,False,1.0
+2022-12-31,Healthcare Services,residual_momentum20,True,0.6666666666666666
+2022-12-31,Healthcare Services,professor_residual50,True,0.3333333333333333
+2022-12-31,Healthcare Services,residual_high20,False,1.0
+2022-12-31,Household Products,champion,False,1.0
+2022-12-31,Household Products,residual_momentum20,False,1.0
+2022-12-31,Household Products,professor_residual50,True,0.3333333333333333
+2022-12-31,Household Products,residual_high20,False,1.0
+2022-12-31,IT - Hardware,champion,False,1.0
+2022-12-31,IT - Hardware,residual_momentum20,False,1.0
+2022-12-31,IT - Hardware,professor_residual50,True,0.6666666666666666
+2022-12-31,IT - Hardware,residual_high20,False,1.0
+2022-12-31,IT - Services,champion,False,1.0
+2022-12-31,IT - Services,residual_momentum20,False,1.0
+2022-12-31,IT - Services,professor_residual50,True,0.6666666666666666
+2022-12-31,IT - Services,residual_high20,False,1.0
+2022-12-31,IT - Software,champion,False,1.0
+2022-12-31,IT - Software,residual_momentum20,False,1.0
+2022-12-31,IT - Software,professor_residual50,True,0.0
+2022-12-31,IT - Software,residual_high20,True,0.6666666666666666
+2022-12-31,Industrial Manufacturing,champion,False,1.0
+2022-12-31,Industrial Manufacturing,residual_momentum20,True,0.6666666666666666
+2022-12-31,Industrial Manufacturing,professor_residual50,True,0.0
+2022-12-31,Industrial Manufacturing,residual_high20,True,0.3333333333333333
+2022-12-31,Industrial Products,champion,False,1.0
+2022-12-31,Industrial Products,residual_momentum20,True,0.6666666666666666
+2022-12-31,Industrial Products,professor_residual50,True,0.0
+2022-12-31,Industrial Products,residual_high20,True,0.6666666666666666
+2022-12-31,Insurance,champion,False,1.0
+2022-12-31,Insurance,residual_momentum20,False,1.0
+2022-12-31,Insurance,professor_residual50,False,1.0
+2022-12-31,Insurance,residual_high20,False,1.0
+2022-12-31,Leisure Services,champion,False,1.0
+2022-12-31,Leisure Services,residual_momentum20,True,0.6666666666666666
+2022-12-31,Leisure Services,professor_residual50,True,0.3333333333333333
+2022-12-31,Leisure Services,residual_high20,False,1.0
+2022-12-31,Media,champion,False,1.0
+2022-12-31,Media,residual_momentum20,False,1.0
+2022-12-31,Media,professor_residual50,True,0.6666666666666666
+2022-12-31,Media,residual_high20,False,1.0
+2022-12-31,Metals & Minerals Trading,champion,False,1.0
+2022-12-31,Metals & Minerals Trading,residual_momentum20,False,1.0
+2022-12-31,Metals & Minerals Trading,professor_residual50,True,0.6666666666666666
+2022-12-31,Metals & Minerals Trading,residual_high20,False,1.0
+2022-12-31,Minerals & Mining,champion,False,1.0
+2022-12-31,Minerals & Mining,residual_momentum20,False,1.0
+2022-12-31,Minerals & Mining,professor_residual50,True,0.6666666666666666
+2022-12-31,Minerals & Mining,residual_high20,False,1.0
+2022-12-31,Non - Ferrous Metals,champion,False,1.0
+2022-12-31,Non - Ferrous Metals,residual_momentum20,True,0.6666666666666666
+2022-12-31,Non - Ferrous Metals,professor_residual50,True,0.3333333333333333
+2022-12-31,Non - Ferrous Metals,residual_high20,True,0.6666666666666666
+2022-12-31,Oil,champion,False,1.0
+2022-12-31,Oil,residual_momentum20,False,1.0
+2022-12-31,Oil,professor_residual50,True,0.6666666666666666
+2022-12-31,Oil,residual_high20,False,1.0
+2022-12-31,Other Construction Materials,champion,False,1.0
+2022-12-31,Other Construction Materials,residual_momentum20,True,0.6666666666666666
+2022-12-31,Other Construction Materials,professor_residual50,True,0.6666666666666666
+2022-12-31,Other Construction Materials,residual_high20,False,1.0
+2022-12-31,Other Consumer Services,champion,False,1.0
+2022-12-31,Other Consumer Services,residual_momentum20,False,1.0
+2022-12-31,Other Consumer Services,professor_residual50,True,0.6666666666666666
+2022-12-31,Other Consumer Services,residual_high20,False,1.0
+2022-12-31,"Paper, Forest & Jute Products",champion,False,1.0
+2022-12-31,"Paper, Forest & Jute Products",residual_momentum20,True,0.6666666666666666
+2022-12-31,"Paper, Forest & Jute Products",professor_residual50,True,0.6666666666666666
+2022-12-31,"Paper, Forest & Jute Products",residual_high20,True,0.3333333333333333
+2022-12-31,Personal Products,champion,False,1.0
+2022-12-31,Personal Products,residual_momentum20,False,1.0
+2022-12-31,Personal Products,professor_residual50,True,0.6666666666666666
+2022-12-31,Personal Products,residual_high20,False,1.0
+2022-12-31,Petroleum Products,champion,False,1.0
+2022-12-31,Petroleum Products,residual_momentum20,False,1.0
+2022-12-31,Petroleum Products,professor_residual50,True,0.6666666666666666
+2022-12-31,Petroleum Products,residual_high20,False,1.0
+2022-12-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2022-12-31,Pharmaceuticals & Biotechnology,residual_momentum20,True,0.6666666666666666
+2022-12-31,Pharmaceuticals & Biotechnology,professor_residual50,True,0.3333333333333333
+2022-12-31,Pharmaceuticals & Biotechnology,residual_high20,True,0.6666666666666666
+2022-12-31,Power,champion,False,1.0
+2022-12-31,Power,residual_momentum20,False,1.0
+2022-12-31,Power,professor_residual50,True,0.6666666666666666
+2022-12-31,Power,residual_high20,False,1.0
+2022-12-31,Realty,champion,False,1.0
+2022-12-31,Realty,residual_momentum20,True,0.6666666666666666
+2022-12-31,Realty,professor_residual50,True,0.6666666666666666
+2022-12-31,Realty,residual_high20,False,1.0
+2022-12-31,Retailing,champion,False,1.0
+2022-12-31,Retailing,residual_momentum20,False,1.0
+2022-12-31,Retailing,professor_residual50,True,0.6666666666666666
+2022-12-31,Retailing,residual_high20,False,1.0
+2022-12-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2022-12-31,Telecom -  Equipment & Accessories,residual_momentum20,False,1.0
+2022-12-31,Telecom -  Equipment & Accessories,professor_residual50,True,0.3333333333333333
+2022-12-31,Telecom -  Equipment & Accessories,residual_high20,False,1.0
+2022-12-31,Telecom - Services,champion,False,1.0
+2022-12-31,Telecom - Services,residual_momentum20,False,1.0
+2022-12-31,Telecom - Services,professor_residual50,False,1.0
+2022-12-31,Telecom - Services,residual_high20,True,0.6666666666666666
+2022-12-31,Textiles & Apparels,champion,False,1.0
+2022-12-31,Textiles & Apparels,residual_momentum20,True,0.6666666666666666
+2022-12-31,Textiles & Apparels,professor_residual50,True,0.3333333333333333
+2022-12-31,Textiles & Apparels,residual_high20,True,0.3333333333333333
+2022-12-31,Transport Infrastructure,champion,False,1.0
+2022-12-31,Transport Infrastructure,residual_momentum20,True,0.6666666666666666
+2022-12-31,Transport Infrastructure,professor_residual50,True,0.6666666666666666
+2022-12-31,Transport Infrastructure,residual_high20,False,1.0
+2022-12-31,Transport Services,champion,False,1.0
+2022-12-31,Transport Services,residual_momentum20,True,0.6666666666666666
+2022-12-31,Transport Services,professor_residual50,True,0.3333333333333333
+2022-12-31,Transport Services,residual_high20,True,0.6666666666666666
+2023-03-31,Aerospace & Defense,champion,False,1.0
+2023-03-31,Aerospace & Defense,residual_momentum20,False,1.0
+2023-03-31,Aerospace & Defense,professor_residual50,True,0.6666666666666666
+2023-03-31,Aerospace & Defense,residual_high20,False,1.0
+2023-03-31,Agricultural Food & other Products,champion,False,1.0
+2023-03-31,Agricultural Food & other Products,residual_momentum20,True,0.3333333333333333
+2023-03-31,Agricultural Food & other Products,professor_residual50,True,0.0
+2023-03-31,Agricultural Food & other Products,residual_high20,True,0.3333333333333333
+2023-03-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2023-03-31,"Agricultural, Commercial & Construction Vehicles",residual_momentum20,False,1.0
+2023-03-31,"Agricultural, Commercial & Construction Vehicles",professor_residual50,False,1.0
+2023-03-31,"Agricultural, Commercial & Construction Vehicles",residual_high20,False,1.0
+2023-03-31,Auto Components,champion,False,1.0
+2023-03-31,Auto Components,residual_momentum20,True,0.0
+2023-03-31,Auto Components,professor_residual50,True,0.3333333333333333
+2023-03-31,Auto Components,residual_high20,True,0.3333333333333333
+2023-03-31,Automobiles,champion,False,1.0
+2023-03-31,Automobiles,residual_momentum20,False,1.0
+2023-03-31,Automobiles,professor_residual50,False,1.0
+2023-03-31,Automobiles,residual_high20,False,1.0
+2023-03-31,Banks,champion,False,1.0
+2023-03-31,Banks,residual_momentum20,True,0.6666666666666666
+2023-03-31,Banks,professor_residual50,True,0.3333333333333333
+2023-03-31,Banks,residual_high20,True,0.6666666666666666
+2023-03-31,Beverages,champion,False,1.0
+2023-03-31,Beverages,residual_momentum20,False,1.0
+2023-03-31,Beverages,professor_residual50,True,0.6666666666666666
+2023-03-31,Beverages,residual_high20,False,1.0
+2023-03-31,Capital Markets,champion,False,1.0
+2023-03-31,Capital Markets,residual_momentum20,False,1.0
+2023-03-31,Capital Markets,professor_residual50,True,0.3333333333333333
+2023-03-31,Capital Markets,residual_high20,False,1.0
+2023-03-31,Cement & Cement Products,champion,False,1.0
+2023-03-31,Cement & Cement Products,residual_momentum20,True,0.6666666666666666
+2023-03-31,Cement & Cement Products,professor_residual50,True,0.0
+2023-03-31,Cement & Cement Products,residual_high20,True,0.6666666666666666
+2023-03-31,Chemicals & Petrochemicals,champion,False,1.0
+2023-03-31,Chemicals & Petrochemicals,residual_momentum20,True,0.3333333333333333
+2023-03-31,Chemicals & Petrochemicals,professor_residual50,True,0.3333333333333333
+2023-03-31,Chemicals & Petrochemicals,residual_high20,True,0.3333333333333333
+2023-03-31,Commercial Services & Supplies,champion,False,1.0
+2023-03-31,Commercial Services & Supplies,residual_momentum20,True,0.3333333333333333
+2023-03-31,Commercial Services & Supplies,professor_residual50,True,0.0
+2023-03-31,Commercial Services & Supplies,residual_high20,True,0.6666666666666666
+2023-03-31,Construction,champion,False,1.0
+2023-03-31,Construction,residual_momentum20,True,0.6666666666666666
+2023-03-31,Construction,professor_residual50,True,0.3333333333333333
+2023-03-31,Construction,residual_high20,True,0.6666666666666666
+2023-03-31,Consumer Durables,champion,False,1.0
+2023-03-31,Consumer Durables,residual_momentum20,True,0.6666666666666666
+2023-03-31,Consumer Durables,professor_residual50,True,0.6666666666666666
+2023-03-31,Consumer Durables,residual_high20,True,0.6666666666666666
+2023-03-31,Diversified,champion,False,1.0
+2023-03-31,Diversified,residual_momentum20,False,1.0
+2023-03-31,Diversified,professor_residual50,True,0.6666666666666666
+2023-03-31,Diversified,residual_high20,False,1.0
+2023-03-31,Electrical Equipment,champion,False,1.0
+2023-03-31,Electrical Equipment,residual_momentum20,True,0.6666666666666666
+2023-03-31,Electrical Equipment,professor_residual50,True,0.0
+2023-03-31,Electrical Equipment,residual_high20,True,0.3333333333333333
+2023-03-31,Entertainment,champion,False,1.0
+2023-03-31,Entertainment,residual_momentum20,True,0.3333333333333333
+2023-03-31,Entertainment,professor_residual50,True,0.3333333333333333
+2023-03-31,Entertainment,residual_high20,True,0.6666666666666666
+2023-03-31,Ferrous Metals,champion,False,1.0
+2023-03-31,Ferrous Metals,residual_momentum20,True,0.6666666666666666
+2023-03-31,Ferrous Metals,professor_residual50,True,0.6666666666666666
+2023-03-31,Ferrous Metals,residual_high20,True,0.6666666666666666
+2023-03-31,Fertilizers & Agrochemicals,champion,False,1.0
+2023-03-31,Fertilizers & Agrochemicals,residual_momentum20,True,0.6666666666666666
+2023-03-31,Fertilizers & Agrochemicals,professor_residual50,True,0.0
+2023-03-31,Fertilizers & Agrochemicals,residual_high20,True,0.6666666666666666
+2023-03-31,Finance,champion,False,1.0
+2023-03-31,Finance,residual_momentum20,True,0.3333333333333333
+2023-03-31,Finance,professor_residual50,True,0.0
+2023-03-31,Finance,residual_high20,True,0.0
+2023-03-31,Food Products,champion,False,1.0
+2023-03-31,Food Products,residual_momentum20,True,0.6666666666666666
+2023-03-31,Food Products,professor_residual50,True,0.6666666666666666
+2023-03-31,Food Products,residual_high20,True,0.6666666666666666
+2023-03-31,Gas,champion,False,1.0
+2023-03-31,Gas,residual_momentum20,False,1.0
+2023-03-31,Gas,professor_residual50,True,0.6666666666666666
+2023-03-31,Gas,residual_high20,False,1.0
+2023-03-31,Healthcare Services,champion,False,1.0
+2023-03-31,Healthcare Services,residual_momentum20,True,0.6666666666666666
+2023-03-31,Healthcare Services,professor_residual50,True,0.6666666666666666
+2023-03-31,Healthcare Services,residual_high20,False,1.0
+2023-03-31,Household Products,champion,False,1.0
+2023-03-31,Household Products,residual_momentum20,False,1.0
+2023-03-31,Household Products,professor_residual50,True,0.6666666666666666
+2023-03-31,Household Products,residual_high20,True,0.6666666666666666
+2023-03-31,IT - Hardware,champion,False,1.0
+2023-03-31,IT - Hardware,residual_momentum20,True,0.6666666666666666
+2023-03-31,IT - Hardware,professor_residual50,True,0.6666666666666666
+2023-03-31,IT - Hardware,residual_high20,False,1.0
+2023-03-31,IT - Services,champion,False,1.0
+2023-03-31,IT - Services,residual_momentum20,False,1.0
+2023-03-31,IT - Services,professor_residual50,True,0.3333333333333333
+2023-03-31,IT - Services,residual_high20,True,0.6666666666666666
+2023-03-31,IT - Software,champion,False,1.0
+2023-03-31,IT - Software,residual_momentum20,True,0.3333333333333333
+2023-03-31,IT - Software,professor_residual50,True,0.3333333333333333
+2023-03-31,IT - Software,residual_high20,True,0.6666666666666666
+2023-03-31,Industrial Manufacturing,champion,False,1.0
+2023-03-31,Industrial Manufacturing,residual_momentum20,True,0.6666666666666666
+2023-03-31,Industrial Manufacturing,professor_residual50,True,0.6666666666666666
+2023-03-31,Industrial Manufacturing,residual_high20,True,0.3333333333333333
+2023-03-31,Industrial Products,champion,False,1.0
+2023-03-31,Industrial Products,residual_momentum20,True,0.6666666666666666
+2023-03-31,Industrial Products,professor_residual50,True,0.3333333333333333
+2023-03-31,Industrial Products,residual_high20,True,0.6666666666666666
+2023-03-31,Insurance,champion,False,1.0
+2023-03-31,Insurance,residual_momentum20,False,1.0
+2023-03-31,Insurance,professor_residual50,True,0.6666666666666666
+2023-03-31,Insurance,residual_high20,False,1.0
+2023-03-31,Leisure Services,champion,False,1.0
+2023-03-31,Leisure Services,residual_momentum20,False,1.0
+2023-03-31,Leisure Services,professor_residual50,True,0.6666666666666666
+2023-03-31,Leisure Services,residual_high20,True,0.6666666666666666
+2023-03-31,Media,champion,False,1.0
+2023-03-31,Media,residual_momentum20,False,1.0
+2023-03-31,Media,professor_residual50,False,1.0
+2023-03-31,Media,residual_high20,False,1.0
+2023-03-31,Metals & Minerals Trading,champion,False,1.0
+2023-03-31,Metals & Minerals Trading,residual_momentum20,False,1.0
+2023-03-31,Metals & Minerals Trading,professor_residual50,True,0.6666666666666666
+2023-03-31,Metals & Minerals Trading,residual_high20,False,1.0
+2023-03-31,Minerals & Mining,champion,False,1.0
+2023-03-31,Minerals & Mining,residual_momentum20,False,1.0
+2023-03-31,Minerals & Mining,professor_residual50,True,0.3333333333333333
+2023-03-31,Minerals & Mining,residual_high20,False,1.0
+2023-03-31,Non - Ferrous Metals,champion,False,1.0
+2023-03-31,Non - Ferrous Metals,residual_momentum20,False,1.0
+2023-03-31,Non - Ferrous Metals,professor_residual50,True,0.6666666666666666
+2023-03-31,Non - Ferrous Metals,residual_high20,True,0.6666666666666666
+2023-03-31,Oil,champion,False,1.0
+2023-03-31,Oil,residual_momentum20,False,1.0
+2023-03-31,Oil,professor_residual50,False,1.0
+2023-03-31,Oil,residual_high20,False,1.0
+2023-03-31,Other Construction Materials,champion,False,1.0
+2023-03-31,Other Construction Materials,residual_momentum20,False,1.0
+2023-03-31,Other Construction Materials,professor_residual50,True,0.6666666666666666
+2023-03-31,Other Construction Materials,residual_high20,False,1.0
+2023-03-31,Other Consumer Services,champion,False,1.0
+2023-03-31,Other Consumer Services,residual_momentum20,False,1.0
+2023-03-31,Other Consumer Services,professor_residual50,True,0.6666666666666666
+2023-03-31,Other Consumer Services,residual_high20,True,0.6666666666666666
+2023-03-31,"Paper, Forest & Jute Products",champion,False,1.0
+2023-03-31,"Paper, Forest & Jute Products",residual_momentum20,True,0.6666666666666666
+2023-03-31,"Paper, Forest & Jute Products",professor_residual50,True,0.6666666666666666
+2023-03-31,"Paper, Forest & Jute Products",residual_high20,True,0.6666666666666666
+2023-03-31,Personal Products,champion,False,1.0
+2023-03-31,Personal Products,residual_momentum20,False,1.0
+2023-03-31,Personal Products,professor_residual50,True,0.6666666666666666
+2023-03-31,Personal Products,residual_high20,False,1.0
+2023-03-31,Petroleum Products,champion,False,1.0
+2023-03-31,Petroleum Products,residual_momentum20,True,0.6666666666666666
+2023-03-31,Petroleum Products,professor_residual50,True,0.6666666666666666
+2023-03-31,Petroleum Products,residual_high20,False,1.0
+2023-03-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2023-03-31,Pharmaceuticals & Biotechnology,residual_momentum20,False,1.0
+2023-03-31,Pharmaceuticals & Biotechnology,professor_residual50,True,0.3333333333333333
+2023-03-31,Pharmaceuticals & Biotechnology,residual_high20,False,1.0
+2023-03-31,Power,champion,False,1.0
+2023-03-31,Power,residual_momentum20,True,0.6666666666666666
+2023-03-31,Power,professor_residual50,True,0.0
+2023-03-31,Power,residual_high20,True,0.6666666666666666
+2023-03-31,Realty,champion,False,1.0
+2023-03-31,Realty,residual_momentum20,True,0.6666666666666666
+2023-03-31,Realty,professor_residual50,True,0.3333333333333333
+2023-03-31,Realty,residual_high20,True,0.3333333333333333
+2023-03-31,Retailing,champion,False,1.0
+2023-03-31,Retailing,residual_momentum20,False,1.0
+2023-03-31,Retailing,professor_residual50,True,0.6666666666666666
+2023-03-31,Retailing,residual_high20,False,1.0
+2023-03-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2023-03-31,Telecom -  Equipment & Accessories,residual_momentum20,True,0.6666666666666666
+2023-03-31,Telecom -  Equipment & Accessories,professor_residual50,True,0.3333333333333333
+2023-03-31,Telecom -  Equipment & Accessories,residual_high20,False,1.0
+2023-03-31,Telecom - Services,champion,False,1.0
+2023-03-31,Telecom - Services,residual_momentum20,True,0.6666666666666666
+2023-03-31,Telecom - Services,professor_residual50,True,0.6666666666666666
+2023-03-31,Telecom - Services,residual_high20,False,1.0
+2023-03-31,Textiles & Apparels,champion,False,1.0
+2023-03-31,Textiles & Apparels,residual_momentum20,True,0.6666666666666666
+2023-03-31,Textiles & Apparels,professor_residual50,True,0.0
+2023-03-31,Textiles & Apparels,residual_high20,True,0.6666666666666666
+2023-03-31,Transport Infrastructure,champion,False,1.0
+2023-03-31,Transport Infrastructure,residual_momentum20,False,1.0
+2023-03-31,Transport Infrastructure,professor_residual50,True,0.6666666666666666
+2023-03-31,Transport Infrastructure,residual_high20,False,1.0
+2023-03-31,Transport Services,champion,False,1.0
+2023-03-31,Transport Services,residual_momentum20,False,1.0
+2023-03-31,Transport Services,professor_residual50,True,0.6666666666666666
+2023-03-31,Transport Services,residual_high20,False,1.0
+2023-06-30,Aerospace & Defense,champion,False,1.0
+2023-06-30,Aerospace & Defense,residual_momentum20,False,1.0
+2023-06-30,Aerospace & Defense,professor_residual50,True,0.6666666666666666
+2023-06-30,Aerospace & Defense,residual_high20,False,1.0
+2023-06-30,Agricultural Food & other Products,champion,False,1.0
+2023-06-30,Agricultural Food & other Products,residual_momentum20,True,0.6666666666666666
+2023-06-30,Agricultural Food & other Products,professor_residual50,True,0.0
+2023-06-30,Agricultural Food & other Products,residual_high20,True,0.0
+2023-06-30,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2023-06-30,"Agricultural, Commercial & Construction Vehicles",residual_momentum20,False,1.0
+2023-06-30,"Agricultural, Commercial & Construction Vehicles",professor_residual50,False,1.0
+2023-06-30,"Agricultural, Commercial & Construction Vehicles",residual_high20,False,1.0
+2023-06-30,Auto Components,champion,False,1.0
+2023-06-30,Auto Components,residual_momentum20,True,0.6666666666666666
+2023-06-30,Auto Components,professor_residual50,True,0.3333333333333333
+2023-06-30,Auto Components,residual_high20,True,0.6666666666666666
+2023-06-30,Automobiles,champion,False,1.0
+2023-06-30,Automobiles,residual_momentum20,False,1.0
+2023-06-30,Automobiles,professor_residual50,True,0.6666666666666666
+2023-06-30,Automobiles,residual_high20,False,1.0
+2023-06-30,Banks,champion,False,1.0
+2023-06-30,Banks,residual_momentum20,False,1.0
+2023-06-30,Banks,professor_residual50,True,0.3333333333333333
+2023-06-30,Banks,residual_high20,False,1.0
+2023-06-30,Beverages,champion,False,1.0
+2023-06-30,Beverages,residual_momentum20,False,1.0
+2023-06-30,Beverages,professor_residual50,True,0.3333333333333333
+2023-06-30,Beverages,residual_high20,False,1.0
+2023-06-30,Capital Markets,champion,False,1.0
+2023-06-30,Capital Markets,residual_momentum20,True,0.6666666666666666
+2023-06-30,Capital Markets,professor_residual50,True,0.6666666666666666
+2023-06-30,Capital Markets,residual_high20,True,0.6666666666666666
+2023-06-30,Cement & Cement Products,champion,False,1.0
+2023-06-30,Cement & Cement Products,residual_momentum20,True,0.6666666666666666
+2023-06-30,Cement & Cement Products,professor_residual50,False,1.0
+2023-06-30,Cement & Cement Products,residual_high20,True,0.6666666666666666
+2023-06-30,Chemicals & Petrochemicals,champion,False,1.0
+2023-06-30,Chemicals & Petrochemicals,residual_momentum20,True,0.6666666666666666
+2023-06-30,Chemicals & Petrochemicals,professor_residual50,True,0.3333333333333333
+2023-06-30,Chemicals & Petrochemicals,residual_high20,True,0.3333333333333333
+2023-06-30,Commercial Services & Supplies,champion,False,1.0
+2023-06-30,Commercial Services & Supplies,residual_momentum20,True,0.6666666666666666
+2023-06-30,Commercial Services & Supplies,professor_residual50,True,0.0
+2023-06-30,Commercial Services & Supplies,residual_high20,True,0.6666666666666666
+2023-06-30,Construction,champion,False,1.0
+2023-06-30,Construction,residual_momentum20,True,0.6666666666666666
+2023-06-30,Construction,professor_residual50,True,0.0
+2023-06-30,Construction,residual_high20,True,0.3333333333333333
+2023-06-30,Consumer Durables,champion,False,1.0
+2023-06-30,Consumer Durables,residual_momentum20,True,0.6666666666666666
+2023-06-30,Consumer Durables,professor_residual50,True,0.3333333333333333
+2023-06-30,Consumer Durables,residual_high20,True,0.3333333333333333
+2023-06-30,Diversified,champion,False,1.0
+2023-06-30,Diversified,residual_momentum20,False,1.0
+2023-06-30,Diversified,professor_residual50,True,0.6666666666666666
+2023-06-30,Diversified,residual_high20,False,1.0
+2023-06-30,Electrical Equipment,champion,False,1.0
+2023-06-30,Electrical Equipment,residual_momentum20,True,0.6666666666666666
+2023-06-30,Electrical Equipment,professor_residual50,True,0.3333333333333333
+2023-06-30,Electrical Equipment,residual_high20,True,0.6666666666666666
+2023-06-30,Entertainment,champion,False,1.0
+2023-06-30,Entertainment,residual_momentum20,True,0.6666666666666666
+2023-06-30,Entertainment,professor_residual50,True,0.6666666666666666
+2023-06-30,Entertainment,residual_high20,True,0.3333333333333333
+2023-06-30,Ferrous Metals,champion,False,1.0
+2023-06-30,Ferrous Metals,residual_momentum20,False,1.0
+2023-06-30,Ferrous Metals,professor_residual50,True,0.6666666666666666
+2023-06-30,Ferrous Metals,residual_high20,True,0.6666666666666666
+2023-06-30,Fertilizers & Agrochemicals,champion,False,1.0
+2023-06-30,Fertilizers & Agrochemicals,residual_momentum20,False,1.0
+2023-06-30,Fertilizers & Agrochemicals,professor_residual50,True,0.3333333333333333
+2023-06-30,Fertilizers & Agrochemicals,residual_high20,False,1.0
+2023-06-30,Finance,champion,False,1.0
+2023-06-30,Finance,residual_momentum20,False,1.0
+2023-06-30,Finance,professor_residual50,True,0.0
+2023-06-30,Finance,residual_high20,True,0.0
+2023-06-30,Food Products,champion,False,1.0
+2023-06-30,Food Products,residual_momentum20,True,0.6666666666666666
+2023-06-30,Food Products,professor_residual50,True,0.6666666666666666
+2023-06-30,Food Products,residual_high20,True,0.3333333333333333
+2023-06-30,Gas,champion,False,1.0
+2023-06-30,Gas,residual_momentum20,False,1.0
+2023-06-30,Gas,professor_residual50,True,0.6666666666666666
+2023-06-30,Gas,residual_high20,False,1.0
+2023-06-30,Healthcare Services,champion,False,1.0
+2023-06-30,Healthcare Services,residual_momentum20,False,1.0
+2023-06-30,Healthcare Services,professor_residual50,True,0.3333333333333333
+2023-06-30,Healthcare Services,residual_high20,True,0.6666666666666666
+2023-06-30,Household Products,champion,False,1.0
+2023-06-30,Household Products,residual_momentum20,True,0.6666666666666666
+2023-06-30,Household Products,professor_residual50,True,0.3333333333333333
+2023-06-30,Household Products,residual_high20,True,0.6666666666666666
+2023-06-30,IT - Hardware,champion,False,1.0
+2023-06-30,IT - Hardware,residual_momentum20,True,0.6666666666666666
+2023-06-30,IT - Hardware,professor_residual50,True,0.6666666666666666
+2023-06-30,IT - Hardware,residual_high20,True,0.6666666666666666
+2023-06-30,IT - Services,champion,False,1.0
+2023-06-30,IT - Services,residual_momentum20,False,1.0
+2023-06-30,IT - Services,professor_residual50,True,0.3333333333333333
+2023-06-30,IT - Services,residual_high20,True,0.6666666666666666
+2023-06-30,IT - Software,champion,False,1.0
+2023-06-30,IT - Software,residual_momentum20,True,0.6666666666666666
+2023-06-30,IT - Software,professor_residual50,True,0.0
+2023-06-30,IT - Software,residual_high20,False,1.0
+2023-06-30,Industrial Manufacturing,champion,False,1.0
+2023-06-30,Industrial Manufacturing,residual_momentum20,True,0.0
+2023-06-30,Industrial Manufacturing,professor_residual50,True,0.0
+2023-06-30,Industrial Manufacturing,residual_high20,True,0.0
+2023-06-30,Industrial Products,champion,False,1.0
+2023-06-30,Industrial Products,residual_momentum20,True,0.3333333333333333
+2023-06-30,Industrial Products,professor_residual50,True,0.0
+2023-06-30,Industrial Products,residual_high20,True,0.3333333333333333
+2023-06-30,Insurance,champion,False,1.0
+2023-06-30,Insurance,residual_momentum20,True,0.6666666666666666
+2023-06-30,Insurance,professor_residual50,True,0.6666666666666666
+2023-06-30,Insurance,residual_high20,False,1.0
+2023-06-30,Leisure Services,champion,False,1.0
+2023-06-30,Leisure Services,residual_momentum20,True,0.6666666666666666
+2023-06-30,Leisure Services,professor_residual50,True,0.0
+2023-06-30,Leisure Services,residual_high20,True,0.6666666666666666
+2023-06-30,Media,champion,False,1.0
+2023-06-30,Media,residual_momentum20,False,1.0
+2023-06-30,Media,professor_residual50,False,1.0
+2023-06-30,Media,residual_high20,False,1.0
+2023-06-30,Metals & Minerals Trading,champion,False,1.0
+2023-06-30,Metals & Minerals Trading,residual_momentum20,False,1.0
+2023-06-30,Metals & Minerals Trading,professor_residual50,False,1.0
+2023-06-30,Metals & Minerals Trading,residual_high20,False,1.0
+2023-06-30,Minerals & Mining,champion,False,1.0
+2023-06-30,Minerals & Mining,residual_momentum20,False,1.0
+2023-06-30,Minerals & Mining,professor_residual50,True,0.6666666666666666
+2023-06-30,Minerals & Mining,residual_high20,True,0.6666666666666666
+2023-06-30,Non - Ferrous Metals,champion,False,1.0
+2023-06-30,Non - Ferrous Metals,residual_momentum20,False,1.0
+2023-06-30,Non - Ferrous Metals,professor_residual50,True,0.6666666666666666
+2023-06-30,Non - Ferrous Metals,residual_high20,False,1.0
+2023-06-30,Oil,champion,False,1.0
+2023-06-30,Oil,residual_momentum20,False,1.0
+2023-06-30,Oil,professor_residual50,True,0.3333333333333333
+2023-06-30,Oil,residual_high20,False,1.0
+2023-06-30,Other Construction Materials,champion,False,1.0
+2023-06-30,Other Construction Materials,residual_momentum20,False,1.0
+2023-06-30,Other Construction Materials,professor_residual50,True,0.3333333333333333
+2023-06-30,Other Construction Materials,residual_high20,False,1.0
+2023-06-30,Other Consumer Services,champion,False,1.0
+2023-06-30,Other Consumer Services,residual_momentum20,False,1.0
+2023-06-30,Other Consumer Services,professor_residual50,False,1.0
+2023-06-30,Other Consumer Services,residual_high20,False,1.0
+2023-06-30,"Paper, Forest & Jute Products",champion,False,1.0
+2023-06-30,"Paper, Forest & Jute Products",residual_momentum20,True,0.6666666666666666
+2023-06-30,"Paper, Forest & Jute Products",professor_residual50,True,0.6666666666666666
+2023-06-30,"Paper, Forest & Jute Products",residual_high20,True,0.6666666666666666
+2023-06-30,Personal Products,champion,False,1.0
+2023-06-30,Personal Products,residual_momentum20,False,1.0
+2023-06-30,Personal Products,professor_residual50,False,1.0
+2023-06-30,Personal Products,residual_high20,False,1.0
+2023-06-30,Petroleum Products,champion,False,1.0
+2023-06-30,Petroleum Products,residual_momentum20,False,1.0
+2023-06-30,Petroleum Products,professor_residual50,False,1.0
+2023-06-30,Petroleum Products,residual_high20,False,1.0
+2023-06-30,Pharmaceuticals & Biotechnology,champion,False,1.0
+2023-06-30,Pharmaceuticals & Biotechnology,residual_momentum20,True,0.3333333333333333
+2023-06-30,Pharmaceuticals & Biotechnology,professor_residual50,True,0.3333333333333333
+2023-06-30,Pharmaceuticals & Biotechnology,residual_high20,True,0.6666666666666666
+2023-06-30,Power,champion,False,1.0
+2023-06-30,Power,residual_momentum20,True,0.6666666666666666
+2023-06-30,Power,professor_residual50,True,0.6666666666666666
+2023-06-30,Power,residual_high20,True,0.6666666666666666
+2023-06-30,Realty,champion,False,1.0
+2023-06-30,Realty,residual_momentum20,True,0.3333333333333333
+2023-06-30,Realty,professor_residual50,True,0.3333333333333333
+2023-06-30,Realty,residual_high20,True,0.0
+2023-06-30,Retailing,champion,False,1.0
+2023-06-30,Retailing,residual_momentum20,False,1.0
+2023-06-30,Retailing,professor_residual50,True,0.6666666666666666
+2023-06-30,Retailing,residual_high20,False,1.0
+2023-06-30,Telecom -  Equipment & Accessories,champion,False,1.0
+2023-06-30,Telecom -  Equipment & Accessories,residual_momentum20,False,1.0
+2023-06-30,Telecom -  Equipment & Accessories,professor_residual50,True,0.6666666666666666
+2023-06-30,Telecom -  Equipment & Accessories,residual_high20,False,1.0
+2023-06-30,Telecom - Services,champion,False,1.0
+2023-06-30,Telecom - Services,residual_momentum20,False,1.0
+2023-06-30,Telecom - Services,professor_residual50,True,0.6666666666666666
+2023-06-30,Telecom - Services,residual_high20,False,1.0
+2023-06-30,Textiles & Apparels,champion,False,1.0
+2023-06-30,Textiles & Apparels,residual_momentum20,True,0.3333333333333333
+2023-06-30,Textiles & Apparels,professor_residual50,True,0.0
+2023-06-30,Textiles & Apparels,residual_high20,True,0.6666666666666666
+2023-06-30,Transport Infrastructure,champion,False,1.0
+2023-06-30,Transport Infrastructure,residual_momentum20,True,0.6666666666666666
+2023-06-30,Transport Infrastructure,professor_residual50,True,0.6666666666666666
+2023-06-30,Transport Infrastructure,residual_high20,True,0.6666666666666666
+2023-06-30,Transport Services,champion,False,1.0
+2023-06-30,Transport Services,residual_momentum20,True,0.6666666666666666
+2023-06-30,Transport Services,professor_residual50,True,0.3333333333333333
+2023-06-30,Transport Services,residual_high20,True,0.6666666666666666
+2023-09-30,Aerospace & Defense,champion,False,1.0
+2023-09-30,Aerospace & Defense,residual_momentum20,False,1.0
+2023-09-30,Aerospace & Defense,professor_residual50,True,0.3333333333333333
+2023-09-30,Aerospace & Defense,residual_high20,False,1.0
+2023-09-30,Agricultural Food & other Products,champion,False,1.0
+2023-09-30,Agricultural Food & other Products,residual_momentum20,True,0.6666666666666666
+2023-09-30,Agricultural Food & other Products,professor_residual50,True,0.0
+2023-09-30,Agricultural Food & other Products,residual_high20,True,0.6666666666666666
+2023-09-30,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2023-09-30,"Agricultural, Commercial & Construction Vehicles",residual_momentum20,False,1.0
+2023-09-30,"Agricultural, Commercial & Construction Vehicles",professor_residual50,True,0.6666666666666666
+2023-09-30,"Agricultural, Commercial & Construction Vehicles",residual_high20,False,1.0
+2023-09-30,Auto Components,champion,False,1.0
+2023-09-30,Auto Components,residual_momentum20,True,0.6666666666666666
+2023-09-30,Auto Components,professor_residual50,True,0.3333333333333333
+2023-09-30,Auto Components,residual_high20,False,1.0
+2023-09-30,Automobiles,champion,False,1.0
+2023-09-30,Automobiles,residual_momentum20,False,1.0
+2023-09-30,Automobiles,professor_residual50,True,0.6666666666666666
+2023-09-30,Automobiles,residual_high20,False,1.0
+2023-09-30,Banks,champion,False,1.0
+2023-09-30,Banks,residual_momentum20,True,0.6666666666666666
+2023-09-30,Banks,professor_residual50,True,0.3333333333333333
+2023-09-30,Banks,residual_high20,True,0.6666666666666666
+2023-09-30,Beverages,champion,False,1.0
+2023-09-30,Beverages,residual_momentum20,True,0.6666666666666666
+2023-09-30,Beverages,professor_residual50,True,0.3333333333333333
+2023-09-30,Beverages,residual_high20,False,1.0
+2023-09-30,Capital Markets,champion,False,1.0
+2023-09-30,Capital Markets,residual_momentum20,False,1.0
+2023-09-30,Capital Markets,professor_residual50,True,0.6666666666666666
+2023-09-30,Capital Markets,residual_high20,False,1.0
+2023-09-30,Cement & Cement Products,champion,False,1.0
+2023-09-30,Cement & Cement Products,residual_momentum20,True,0.3333333333333333
+2023-09-30,Cement & Cement Products,professor_residual50,True,0.6666666666666666
+2023-09-30,Cement & Cement Products,residual_high20,True,0.6666666666666666
+2023-09-30,Chemicals & Petrochemicals,champion,False,1.0
+2023-09-30,Chemicals & Petrochemicals,residual_momentum20,True,0.0
+2023-09-30,Chemicals & Petrochemicals,professor_residual50,True,0.0
+2023-09-30,Chemicals & Petrochemicals,residual_high20,True,0.3333333333333333
+2023-09-30,Commercial Services & Supplies,champion,False,1.0
+2023-09-30,Commercial Services & Supplies,residual_momentum20,True,0.3333333333333333
+2023-09-30,Commercial Services & Supplies,professor_residual50,True,0.0
+2023-09-30,Commercial Services & Supplies,residual_high20,True,0.6666666666666666
+2023-09-30,Construction,champion,False,1.0
+2023-09-30,Construction,residual_momentum20,True,0.6666666666666666
+2023-09-30,Construction,professor_residual50,True,0.3333333333333333
+2023-09-30,Construction,residual_high20,True,0.6666666666666666
+2023-09-30,Consumer Durables,champion,False,1.0
+2023-09-30,Consumer Durables,residual_momentum20,True,0.6666666666666666
+2023-09-30,Consumer Durables,professor_residual50,True,0.3333333333333333
+2023-09-30,Consumer Durables,residual_high20,True,0.3333333333333333
+2023-09-30,Diversified,champion,False,1.0
+2023-09-30,Diversified,residual_momentum20,False,1.0
+2023-09-30,Diversified,professor_residual50,True,0.6666666666666666
+2023-09-30,Diversified,residual_high20,False,1.0
+2023-09-30,Electrical Equipment,champion,False,1.0
+2023-09-30,Electrical Equipment,residual_momentum20,True,0.3333333333333333
+2023-09-30,Electrical Equipment,professor_residual50,True,0.3333333333333333
+2023-09-30,Electrical Equipment,residual_high20,True,0.6666666666666666
+2023-09-30,Entertainment,champion,False,1.0
+2023-09-30,Entertainment,residual_momentum20,False,1.0
+2023-09-30,Entertainment,professor_residual50,True,0.6666666666666666
+2023-09-30,Entertainment,residual_high20,True,0.6666666666666666
+2023-09-30,Ferrous Metals,champion,False,1.0
+2023-09-30,Ferrous Metals,residual_momentum20,True,0.6666666666666666
+2023-09-30,Ferrous Metals,professor_residual50,True,0.6666666666666666
+2023-09-30,Ferrous Metals,residual_high20,True,0.6666666666666666
+2023-09-30,Fertilizers & Agrochemicals,champion,False,1.0
+2023-09-30,Fertilizers & Agrochemicals,residual_momentum20,False,1.0
+2023-09-30,Fertilizers & Agrochemicals,professor_residual50,True,0.3333333333333333
+2023-09-30,Fertilizers & Agrochemicals,residual_high20,False,1.0
+2023-09-30,Finance,champion,False,1.0
+2023-09-30,Finance,residual_momentum20,True,0.3333333333333333
+2023-09-30,Finance,professor_residual50,True,0.3333333333333333
+2023-09-30,Finance,residual_high20,True,0.6666666666666666
+2023-09-30,Food Products,champion,False,1.0
+2023-09-30,Food Products,residual_momentum20,True,0.3333333333333333
+2023-09-30,Food Products,professor_residual50,True,0.6666666666666666
+2023-09-30,Food Products,residual_high20,True,0.3333333333333333
+2023-09-30,Gas,champion,False,1.0
+2023-09-30,Gas,residual_momentum20,False,1.0
+2023-09-30,Gas,professor_residual50,False,1.0
+2023-09-30,Gas,residual_high20,False,1.0
+2023-09-30,Healthcare Services,champion,False,1.0
+2023-09-30,Healthcare Services,residual_momentum20,False,1.0
+2023-09-30,Healthcare Services,professor_residual50,True,0.6666666666666666
+2023-09-30,Healthcare Services,residual_high20,True,0.6666666666666666
+2023-09-30,Household Products,champion,False,1.0
+2023-09-30,Household Products,residual_momentum20,False,1.0
+2023-09-30,Household Products,professor_residual50,True,0.6666666666666666
+2023-09-30,Household Products,residual_high20,False,1.0
+2023-09-30,IT - Hardware,champion,False,1.0
+2023-09-30,IT - Hardware,residual_momentum20,False,1.0
+2023-09-30,IT - Hardware,professor_residual50,True,0.6666666666666666
+2023-09-30,IT - Hardware,residual_high20,False,1.0
+2023-09-30,IT - Services,champion,False,1.0
+2023-09-30,IT - Services,residual_momentum20,True,0.6666666666666666
+2023-09-30,IT - Services,professor_residual50,True,0.6666666666666666
+2023-09-30,IT - Services,residual_high20,True,0.6666666666666666
+2023-09-30,IT - Software,champion,False,1.0
+2023-09-30,IT - Software,residual_momentum20,False,1.0
+2023-09-30,IT - Software,professor_residual50,True,0.0
+2023-09-30,IT - Software,residual_high20,True,0.6666666666666666
+2023-09-30,Industrial Manufacturing,champion,False,1.0
+2023-09-30,Industrial Manufacturing,residual_momentum20,True,0.6666666666666666
+2023-09-30,Industrial Manufacturing,professor_residual50,True,0.0
+2023-09-30,Industrial Manufacturing,residual_high20,True,0.6666666666666666
+2023-09-30,Industrial Products,champion,False,1.0
+2023-09-30,Industrial Products,residual_momentum20,True,0.6666666666666666
+2023-09-30,Industrial Products,professor_residual50,True,0.0
+2023-09-30,Industrial Products,residual_high20,True,0.3333333333333333
+2023-09-30,Insurance,champion,False,1.0
+2023-09-30,Insurance,residual_momentum20,False,1.0
+2023-09-30,Insurance,professor_residual50,True,0.6666666666666666
+2023-09-30,Insurance,residual_high20,False,1.0
+2023-09-30,Leisure Services,champion,False,1.0
+2023-09-30,Leisure Services,residual_momentum20,True,0.6666666666666666
+2023-09-30,Leisure Services,professor_residual50,False,1.0
+2023-09-30,Leisure Services,residual_high20,True,0.6666666666666666
+2023-09-30,Media,champion,False,1.0
+2023-09-30,Media,residual_momentum20,False,1.0
+2023-09-30,Media,professor_residual50,False,1.0
+2023-09-30,Media,residual_high20,False,1.0
+2023-09-30,Metals & Minerals Trading,champion,False,1.0
+2023-09-30,Metals & Minerals Trading,residual_momentum20,True,0.6666666666666666
+2023-09-30,Metals & Minerals Trading,professor_residual50,True,0.6666666666666666
+2023-09-30,Metals & Minerals Trading,residual_high20,False,1.0
+2023-09-30,Minerals & Mining,champion,False,1.0
+2023-09-30,Minerals & Mining,residual_momentum20,True,0.6666666666666666
+2023-09-30,Minerals & Mining,professor_residual50,True,0.6666666666666666
+2023-09-30,Minerals & Mining,residual_high20,False,1.0
+2023-09-30,Non - Ferrous Metals,champion,False,1.0
+2023-09-30,Non - Ferrous Metals,residual_momentum20,False,1.0
+2023-09-30,Non - Ferrous Metals,professor_residual50,True,0.6666666666666666
+2023-09-30,Non - Ferrous Metals,residual_high20,False,1.0
+2023-09-30,Oil,champion,False,1.0
+2023-09-30,Oil,residual_momentum20,False,1.0
+2023-09-30,Oil,professor_residual50,True,0.6666666666666666
+2023-09-30,Oil,residual_high20,False,1.0
+2023-09-30,Other Construction Materials,champion,False,1.0
+2023-09-30,Other Construction Materials,residual_momentum20,False,1.0
+2023-09-30,Other Construction Materials,professor_residual50,True,0.6666666666666666
+2023-09-30,Other Construction Materials,residual_high20,False,1.0
+2023-09-30,Other Consumer Services,champion,False,1.0
+2023-09-30,Other Consumer Services,residual_momentum20,False,1.0
+2023-09-30,Other Consumer Services,professor_residual50,False,1.0
+2023-09-30,Other Consumer Services,residual_high20,False,1.0
+2023-09-30,"Paper, Forest & Jute Products",champion,False,1.0
+2023-09-30,"Paper, Forest & Jute Products",residual_momentum20,True,0.6666666666666666
+2023-09-30,"Paper, Forest & Jute Products",professor_residual50,True,0.0
+2023-09-30,"Paper, Forest & Jute Products",residual_high20,False,1.0
+2023-09-30,Personal Products,champion,False,1.0
+2023-09-30,Personal Products,residual_momentum20,False,1.0
+2023-09-30,Personal Products,professor_residual50,True,0.3333333333333333
+2023-09-30,Personal Products,residual_high20,False,1.0
+2023-09-30,Petroleum Products,champion,False,1.0
+2023-09-30,Petroleum Products,residual_momentum20,False,1.0
+2023-09-30,Petroleum Products,professor_residual50,True,0.6666666666666666
+2023-09-30,Petroleum Products,residual_high20,True,0.6666666666666666
+2023-09-30,Pharmaceuticals & Biotechnology,champion,False,1.0
+2023-09-30,Pharmaceuticals & Biotechnology,residual_momentum20,True,0.3333333333333333
+2023-09-30,Pharmaceuticals & Biotechnology,professor_residual50,True,0.3333333333333333
+2023-09-30,Pharmaceuticals & Biotechnology,residual_high20,True,0.3333333333333333
+2023-09-30,Power,champion,False,1.0
+2023-09-30,Power,residual_momentum20,True,0.6666666666666666
+2023-09-30,Power,professor_residual50,True,0.6666666666666666
+2023-09-30,Power,residual_high20,True,0.3333333333333333
+2023-09-30,Realty,champion,False,1.0
+2023-09-30,Realty,residual_momentum20,False,1.0
+2023-09-30,Realty,professor_residual50,True,0.6666666666666666
+2023-09-30,Realty,residual_high20,True,0.3333333333333333
+2023-09-30,Retailing,champion,False,1.0
+2023-09-30,Retailing,residual_momentum20,True,0.6666666666666666
+2023-09-30,Retailing,professor_residual50,True,0.6666666666666666
+2023-09-30,Retailing,residual_high20,True,0.6666666666666666
+2023-09-30,Telecom -  Equipment & Accessories,champion,False,1.0
+2023-09-30,Telecom -  Equipment & Accessories,residual_momentum20,False,1.0
+2023-09-30,Telecom -  Equipment & Accessories,professor_residual50,True,0.3333333333333333
+2023-09-30,Telecom -  Equipment & Accessories,residual_high20,False,1.0
+2023-09-30,Telecom - Services,champion,False,1.0
+2023-09-30,Telecom - Services,residual_momentum20,False,1.0
+2023-09-30,Telecom - Services,professor_residual50,False,1.0
+2023-09-30,Telecom - Services,residual_high20,True,0.6666666666666666
+2023-09-30,Textiles & Apparels,champion,False,1.0
+2023-09-30,Textiles & Apparels,residual_momentum20,True,0.3333333333333333
+2023-09-30,Textiles & Apparels,professor_residual50,True,0.0
+2023-09-30,Textiles & Apparels,residual_high20,True,0.6666666666666666
+2023-09-30,Transport Infrastructure,champion,False,1.0
+2023-09-30,Transport Infrastructure,residual_momentum20,False,1.0
+2023-09-30,Transport Infrastructure,professor_residual50,True,0.6666666666666666
+2023-09-30,Transport Infrastructure,residual_high20,False,1.0
+2023-09-30,Transport Services,champion,False,1.0
+2023-09-30,Transport Services,residual_momentum20,True,0.6666666666666666
+2023-09-30,Transport Services,professor_residual50,True,0.6666666666666666
+2023-09-30,Transport Services,residual_high20,True,0.6666666666666666
+2023-12-31,Aerospace & Defense,champion,False,1.0
+2023-12-31,Aerospace & Defense,residual_momentum20,True,0.6666666666666666
+2023-12-31,Aerospace & Defense,professor_residual50,True,0.3333333333333333
+2023-12-31,Aerospace & Defense,residual_high20,True,0.6666666666666666
+2023-12-31,Agricultural Food & other Products,champion,False,1.0
+2023-12-31,Agricultural Food & other Products,residual_momentum20,True,0.6666666666666666
+2023-12-31,Agricultural Food & other Products,professor_residual50,True,0.0
+2023-12-31,Agricultural Food & other Products,residual_high20,True,0.3333333333333333
+2023-12-31,"Agricultural, Commercial & Construction Vehicles",champion,False,1.0
+2023-12-31,"Agricultural, Commercial & Construction Vehicles",residual_momentum20,False,1.0
+2023-12-31,"Agricultural, Commercial & Construction Vehicles",professor_residual50,True,0.3333333333333333
+2023-12-31,"Agricultural, Commercial & Construction Vehicles",residual_high20,False,1.0
+2023-12-31,Auto Components,champion,False,1.0
+2023-12-31,Auto Components,residual_momentum20,False,1.0
+2023-12-31,Auto Components,professor_residual50,True,0.0
+2023-12-31,Auto Components,residual_high20,True,0.6666666666666666
+2023-12-31,Automobiles,champion,False,1.0
+2023-12-31,Automobiles,residual_momentum20,False,1.0
+2023-12-31,Automobiles,professor_residual50,False,1.0
+2023-12-31,Automobiles,residual_high20,False,1.0
+2023-12-31,Banks,champion,False,1.0
+2023-12-31,Banks,residual_momentum20,True,0.6666666666666666
+2023-12-31,Banks,professor_residual50,True,0.3333333333333333
+2023-12-31,Banks,residual_high20,True,0.6666666666666666
+2023-12-31,Beverages,champion,False,1.0
+2023-12-31,Beverages,residual_momentum20,False,1.0
+2023-12-31,Beverages,professor_residual50,True,0.3333333333333333
+2023-12-31,Beverages,residual_high20,False,1.0
+2023-12-31,Capital Markets,champion,False,1.0
+2023-12-31,Capital Markets,residual_momentum20,True,0.6666666666666666
+2023-12-31,Capital Markets,professor_residual50,True,0.0
+2023-12-31,Capital Markets,residual_high20,True,0.3333333333333333
+2023-12-31,Cement & Cement Products,champion,False,1.0
+2023-12-31,Cement & Cement Products,residual_momentum20,True,0.6666666666666666
+2023-12-31,Cement & Cement Products,professor_residual50,True,0.3333333333333333
+2023-12-31,Cement & Cement Products,residual_high20,True,0.6666666666666666
+2023-12-31,Chemicals & Petrochemicals,champion,False,1.0
+2023-12-31,Chemicals & Petrochemicals,residual_momentum20,True,0.3333333333333333
+2023-12-31,Chemicals & Petrochemicals,professor_residual50,True,0.3333333333333333
+2023-12-31,Chemicals & Petrochemicals,residual_high20,True,0.3333333333333333
+2023-12-31,Commercial Services & Supplies,champion,False,1.0
+2023-12-31,Commercial Services & Supplies,residual_momentum20,True,0.6666666666666666
+2023-12-31,Commercial Services & Supplies,professor_residual50,True,0.0
+2023-12-31,Commercial Services & Supplies,residual_high20,True,0.6666666666666666
+2023-12-31,Construction,champion,False,1.0
+2023-12-31,Construction,residual_momentum20,True,0.3333333333333333
+2023-12-31,Construction,professor_residual50,True,0.0
+2023-12-31,Construction,residual_high20,True,0.6666666666666666
+2023-12-31,Consumer Durables,champion,False,1.0
+2023-12-31,Consumer Durables,residual_momentum20,True,0.6666666666666666
+2023-12-31,Consumer Durables,professor_residual50,True,0.3333333333333333
+2023-12-31,Consumer Durables,residual_high20,True,0.6666666666666666
+2023-12-31,Diversified,champion,False,1.0
+2023-12-31,Diversified,residual_momentum20,True,0.6666666666666666
+2023-12-31,Diversified,professor_residual50,True,0.6666666666666666
+2023-12-31,Diversified,residual_high20,False,1.0
+2023-12-31,Electrical Equipment,champion,False,1.0
+2023-12-31,Electrical Equipment,residual_momentum20,True,0.3333333333333333
+2023-12-31,Electrical Equipment,professor_residual50,True,0.0
+2023-12-31,Electrical Equipment,residual_high20,True,0.3333333333333333
+2023-12-31,Entertainment,champion,False,1.0
+2023-12-31,Entertainment,residual_momentum20,True,0.6666666666666666
+2023-12-31,Entertainment,professor_residual50,True,0.3333333333333333
+2023-12-31,Entertainment,residual_high20,False,1.0
+2023-12-31,Ferrous Metals,champion,False,1.0
+2023-12-31,Ferrous Metals,residual_momentum20,True,0.6666666666666666
+2023-12-31,Ferrous Metals,professor_residual50,True,0.0
+2023-12-31,Ferrous Metals,residual_high20,False,1.0
+2023-12-31,Fertilizers & Agrochemicals,champion,False,1.0
+2023-12-31,Fertilizers & Agrochemicals,residual_momentum20,False,1.0
+2023-12-31,Fertilizers & Agrochemicals,professor_residual50,False,1.0
+2023-12-31,Fertilizers & Agrochemicals,residual_high20,False,1.0
+2023-12-31,Finance,champion,False,1.0
+2023-12-31,Finance,residual_momentum20,True,0.6666666666666666
+2023-12-31,Finance,professor_residual50,True,0.0
+2023-12-31,Finance,residual_high20,True,0.6666666666666666
+2023-12-31,Food Products,champion,False,1.0
+2023-12-31,Food Products,residual_momentum20,True,0.6666666666666666
+2023-12-31,Food Products,professor_residual50,True,0.6666666666666666
+2023-12-31,Food Products,residual_high20,True,0.6666666666666666
+2023-12-31,Gas,champion,False,1.0
+2023-12-31,Gas,residual_momentum20,False,1.0
+2023-12-31,Gas,professor_residual50,True,0.6666666666666666
+2023-12-31,Gas,residual_high20,False,1.0
+2023-12-31,Healthcare Services,champion,False,1.0
+2023-12-31,Healthcare Services,residual_momentum20,True,0.6666666666666666
+2023-12-31,Healthcare Services,professor_residual50,True,0.3333333333333333
+2023-12-31,Healthcare Services,residual_high20,True,0.6666666666666666
+2023-12-31,Household Products,champion,False,1.0
+2023-12-31,Household Products,residual_momentum20,False,1.0
+2023-12-31,Household Products,professor_residual50,True,0.3333333333333333
+2023-12-31,Household Products,residual_high20,False,1.0
+2023-12-31,IT - Hardware,champion,False,1.0
+2023-12-31,IT - Hardware,residual_momentum20,False,1.0
+2023-12-31,IT - Hardware,professor_residual50,True,0.3333333333333333
+2023-12-31,IT - Hardware,residual_high20,False,1.0
+2023-12-31,IT - Services,champion,False,1.0
+2023-12-31,IT - Services,residual_momentum20,True,0.6666666666666666
+2023-12-31,IT - Services,professor_residual50,True,0.0
+2023-12-31,IT - Services,residual_high20,True,0.3333333333333333
+2023-12-31,IT - Software,champion,False,1.0
+2023-12-31,IT - Software,residual_momentum20,True,0.6666666666666666
+2023-12-31,IT - Software,professor_residual50,True,0.0
+2023-12-31,IT - Software,residual_high20,True,0.6666666666666666
+2023-12-31,Industrial Manufacturing,champion,False,1.0
+2023-12-31,Industrial Manufacturing,residual_momentum20,True,0.3333333333333333
+2023-12-31,Industrial Manufacturing,professor_residual50,True,0.0
+2023-12-31,Industrial Manufacturing,residual_high20,True,0.0
+2023-12-31,Industrial Products,champion,False,1.0
+2023-12-31,Industrial Products,residual_momentum20,True,0.3333333333333333
+2023-12-31,Industrial Products,professor_residual50,True,0.0
+2023-12-31,Industrial Products,residual_high20,True,0.3333333333333333
+2023-12-31,Insurance,champion,False,1.0
+2023-12-31,Insurance,residual_momentum20,False,1.0
+2023-12-31,Insurance,professor_residual50,False,1.0
+2023-12-31,Insurance,residual_high20,False,1.0
+2023-12-31,Leisure Services,champion,False,1.0
+2023-12-31,Leisure Services,residual_momentum20,True,0.6666666666666666
+2023-12-31,Leisure Services,professor_residual50,True,0.3333333333333333
+2023-12-31,Leisure Services,residual_high20,True,0.6666666666666666
+2023-12-31,Media,champion,False,1.0
+2023-12-31,Media,residual_momentum20,False,1.0
+2023-12-31,Media,professor_residual50,True,0.6666666666666666
+2023-12-31,Media,residual_high20,False,1.0
+2023-12-31,Metals & Minerals Trading,champion,False,1.0
+2023-12-31,Metals & Minerals Trading,residual_momentum20,False,1.0
+2023-12-31,Metals & Minerals Trading,professor_residual50,True,0.6666666666666666
+2023-12-31,Metals & Minerals Trading,residual_high20,False,1.0
+2023-12-31,Minerals & Mining,champion,False,1.0
+2023-12-31,Minerals & Mining,residual_momentum20,True,0.6666666666666666
+2023-12-31,Minerals & Mining,professor_residual50,True,0.3333333333333333
+2023-12-31,Minerals & Mining,residual_high20,True,0.6666666666666666
+2023-12-31,Non - Ferrous Metals,champion,False,1.0
+2023-12-31,Non - Ferrous Metals,residual_momentum20,False,1.0
+2023-12-31,Non - Ferrous Metals,professor_residual50,True,0.3333333333333333
+2023-12-31,Non - Ferrous Metals,residual_high20,False,1.0
+2023-12-31,Oil,champion,False,1.0
+2023-12-31,Oil,residual_momentum20,False,1.0
+2023-12-31,Oil,professor_residual50,True,0.6666666666666666
+2023-12-31,Oil,residual_high20,False,1.0
+2023-12-31,Other Construction Materials,champion,False,1.0
+2023-12-31,Other Construction Materials,residual_momentum20,False,1.0
+2023-12-31,Other Construction Materials,professor_residual50,False,1.0
+2023-12-31,Other Construction Materials,residual_high20,False,1.0
+2023-12-31,Other Consumer Services,champion,False,1.0
+2023-12-31,Other Consumer Services,residual_momentum20,True,0.6666666666666666
+2023-12-31,Other Consumer Services,professor_residual50,True,0.3333333333333333
+2023-12-31,Other Consumer Services,residual_high20,True,0.6666666666666666
+2023-12-31,"Paper, Forest & Jute Products",champion,False,1.0
+2023-12-31,"Paper, Forest & Jute Products",residual_momentum20,True,0.6666666666666666
+2023-12-31,"Paper, Forest & Jute Products",professor_residual50,True,0.3333333333333333
+2023-12-31,"Paper, Forest & Jute Products",residual_high20,False,1.0
+2023-12-31,Personal Products,champion,False,1.0
+2023-12-31,Personal Products,residual_momentum20,False,1.0
+2023-12-31,Personal Products,professor_residual50,True,0.6666666666666666
+2023-12-31,Personal Products,residual_high20,False,1.0
+2023-12-31,Petroleum Products,champion,False,1.0
+2023-12-31,Petroleum Products,residual_momentum20,False,1.0
+2023-12-31,Petroleum Products,professor_residual50,True,0.6666666666666666
+2023-12-31,Petroleum Products,residual_high20,False,1.0
+2023-12-31,Pharmaceuticals & Biotechnology,champion,False,1.0
+2023-12-31,Pharmaceuticals & Biotechnology,residual_momentum20,True,0.6666666666666666
+2023-12-31,Pharmaceuticals & Biotechnology,professor_residual50,True,0.3333333333333333
+2023-12-31,Pharmaceuticals & Biotechnology,residual_high20,True,0.3333333333333333
+2023-12-31,Power,champion,False,1.0
+2023-12-31,Power,residual_momentum20,True,0.6666666666666666
+2023-12-31,Power,professor_residual50,True,0.3333333333333333
+2023-12-31,Power,residual_high20,True,0.3333333333333333
+2023-12-31,Realty,champion,False,1.0
+2023-12-31,Realty,residual_momentum20,False,1.0
+2023-12-31,Realty,professor_residual50,True,0.6666666666666666
+2023-12-31,Realty,residual_high20,False,1.0
+2023-12-31,Retailing,champion,False,1.0
+2023-12-31,Retailing,residual_momentum20,True,0.6666666666666666
+2023-12-31,Retailing,professor_residual50,True,0.3333333333333333
+2023-12-31,Retailing,residual_high20,True,0.6666666666666666
+2023-12-31,Telecom -  Equipment & Accessories,champion,False,1.0
+2023-12-31,Telecom -  Equipment & Accessories,residual_momentum20,False,1.0
+2023-12-31,Telecom -  Equipment & Accessories,professor_residual50,True,0.6666666666666666
+2023-12-31,Telecom -  Equipment & Accessories,residual_high20,False,1.0
+2023-12-31,Telecom - Services,champion,False,1.0
+2023-12-31,Telecom - Services,residual_momentum20,False,1.0
+2023-12-31,Telecom - Services,professor_residual50,True,0.6666666666666666
+2023-12-31,Telecom - Services,residual_high20,False,1.0
+2023-12-31,Textiles & Apparels,champion,False,1.0
+2023-12-31,Textiles & Apparels,residual_momentum20,True,0.3333333333333333
+2023-12-31,Textiles & Apparels,professor_residual50,True,0.3333333333333333
+2023-12-31,Textiles & Apparels,residual_high20,True,0.3333333333333333
+2023-12-31,Transport Infrastructure,champion,False,1.0
+2023-12-31,Transport Infrastructure,residual_momentum20,False,1.0
+2023-12-31,Transport Infrastructure,professor_residual50,True,0.6666666666666666
+2023-12-31,Transport Infrastructure,residual_high20,False,1.0
+2023-12-31,Transport Services,champion,False,1.0
+2023-12-31,Transport Services,residual_momentum20,True,0.6666666666666666
+2023-12-31,Transport Services,professor_residual50,True,0.6666666666666666
+2023-12-31,Transport Services,residual_high20,False,1.0

@@ -2,6 +2,8 @@
 
 Local NSE/BSE stock-ranking website and its frozen champion. Research preferences do not replace the deployed champion.
 
+Latest search, 5 November 2026: [new residual-history challengers](research/reports/residual_challengers_20261105.md). The residual-momentum overlay improved development IC in four years and matched Top20 returns, but fell short of the preregistered accuracy and professor-alignment requirements. [Search history](research/registry/research_search_history_20261105.md) records prior families to exclude from future reruns.
+
 ## Run locally
 
 ```powershell

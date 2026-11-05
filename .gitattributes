@@ -92,5 +92,11 @@ src/stock_research/professor_frontier.py text eol=lf
 research/research_variant_ledger.csv -text
 src/stock_research/sir_ladder.py text eol=lf
 experiments/high-recency-tilt-20261101/** -text
+experiments/residual-challengers-20261105/** -text
+research/reports/residual_challengers_20261105.md -text
+research/protocols/residual_challengers_20261105.md -text
+src/stock_research/residual_history.py text eol=lf
+research/runners/residual_challengers_20261105.py text eol=lf
+research/runners/residual_review_20261105.py text eol=lf
 research/reports/high_recency_tilt_20261101.md -text
 research/protocols/high_recency_tilt_20261101.md -text

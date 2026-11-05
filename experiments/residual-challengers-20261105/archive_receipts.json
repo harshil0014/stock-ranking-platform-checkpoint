@@ -1,0 +1,22 @@
+{
+  "research/reports/sector_championship_20261005.md": {
+    "sha256": "6d5b350adda004b58d9c787429cd09ce259e9e7a703f9ff1c57ee4f59bcfe8ce",
+    "residual_lines": [
+      "Primary research considered: [AQR Quality Minus Junk](https://www.aqr.com/Insights/Research/Working-Paper/Quality-Minus-Junk), [George/Hwang on 52-week highs](https://www.bauer.uh.edu/tgeorge/papers/gh4-paper.pdf), and [Residual Momentum](https://www.sciencedirect.com/science/article/pii/S0927539811000041). These motivate hypotheses; they do not validate our Indian-stock weights. Current financial statements were not backfilled into past dates as if known then. Risk-adjusted momentum is a volatility-scaled proxy, not regression residual momentum."
+    ]
+  },
+  "research/runners/sector_championship_20261005.py": {
+    "sha256": "b705649fb029c8473bcbf9e7e552a9c157e16634fd53e96c822378cb9def9908",
+    "residual_lines": [
+      "        'interpretation':'Historical price/professor proxies, not financial quality or true regression residual momentum. All dates previously exposed.'})"
+    ]
+  },
+  "filing_probe_20261101.py": {
+    "sha256": "c508252ba3a66d61bc0236c2b2a2f587e2968e414d5d6d0e23e7575bcebfd0ad",
+    "role": "archived evaluator or imported watchdog, no main execution"
+  },
+  "professor_frontier_20261101.py": {
+    "sha256": "3cacdec526bec94638b00125d3d36bc84f295f5b08e17b629eab52d5e0615540",
+    "role": "archived evaluator or imported watchdog, no main execution"
+  }
+}

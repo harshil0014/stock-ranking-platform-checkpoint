@@ -1,0 +1,74 @@
+{
+  "candidates": [
+    {
+      "model": "residual_momentum20",
+      "passes": false,
+      "checks": {
+        "ic_floor": false,
+        "ic_familywise": false,
+        "annual_ic": true,
+        "professor_alignment": false,
+        "raw_high_alignment": false,
+        "goal": true,
+        "xirr": true,
+        "winsor": true,
+        "lodo": true,
+        "drawdown": true,
+        "support": true
+      },
+      "ic_delta": 0.00460693550157814,
+      "positive_years": 4,
+      "winsor_xirr_delta": 0.028771288442229575,
+      "worst_lodo_xirr_delta": 0.01323593841959626
+    },
+    {
+      "model": "professor_residual50",
+      "passes": false,
+      "checks": {
+        "ic_floor": false,
+        "ic_familywise": false,
+        "annual_ic": false,
+        "professor_alignment": true,
+        "raw_high_alignment": true,
+        "goal": false,
+        "xirr": false,
+        "winsor": false,
+        "lodo": false,
+        "drawdown": false,
+        "support": true
+      },
+      "ic_delta": -0.06354630231729758,
+      "positive_years": 1,
+      "winsor_xirr_delta": -0.01929421795467179,
+      "worst_lodo_xirr_delta": -0.03707107621461539
+    },
+    {
+      "model": "residual_high20",
+      "passes": false,
+      "checks": {
+        "ic_floor": false,
+        "ic_familywise": false,
+        "annual_ic": true,
+        "professor_alignment": false,
+        "raw_high_alignment": false,
+        "goal": true,
+        "xirr": true,
+        "winsor": true,
+        "lodo": true,
+        "drawdown": true,
+        "support": true
+      },
+      "ic_delta": 0.0032624225492532133,
+      "positive_years": 3,
+      "winsor_xirr_delta": 0.025501050574456494,
+      "worst_lodo_xirr_delta": 0.004354796751748772
+    }
+  ],
+  "familywise_ic_hurdle": 0.049251163409381425,
+  "development_nominees": [],
+  "exposed_evaluated": false,
+  "documented_attempts": 306,
+  "prior_ids_preserved": true,
+  "rows": 26391,
+  "dates": 16
+}
