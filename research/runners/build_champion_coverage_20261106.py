@@ -54,6 +54,12 @@ def build():
     coverage=signals.notna().mean(axis=1)
     # Require at least one actual price-performance signal to offer a proxy.
     score=score.where(signals[['return_3y','return_5y','proximity']].notna().any(axis=1))
+    # Newly listed companies may have actual financial statements but no
+    # return/high history. Keep their quality-only proxy on a separate tier.
+    quality=signals[['roce','debt']].copy()
+    quality['roce']=quality['roce'].rank(pct=True)
+    quality['debt']=quality['debt'].rank(pct=True,ascending=False)
+    quality_score=quality.mean(axis=1)
     mapping=source_mapping()
     def record(identity,source_id,legacy):
         source=master.loc[source_id] if source_id else None
@@ -73,13 +79,19 @@ def build():
                 data[canonical.removeprefix('screener_')]=value
         different=bool(source_id and source_id!=identity)
         value=score.get(source_id,np.nan)
+        basis='MOMENTUM_QUALITY' if pd.notna(value) else 'NO_SIGNAL'
+        factor_coverage=float(coverage.get(source_id,0))
+        if pd.isna(value) and pd.notna(quality_score.get(source_id,np.nan)):
+            value=quality_score[source_id]
+            basis='FUNDAMENTALS_ONLY'
+            factor_coverage=float(signals.loc[source_id,['roce','debt']].notna().mean())
         return dict(isin=identity,source_isin=source_id or None,legacy=legacy,
             ticker=ticker,company=base['company'] if legacy else source['Name'],
             sector=(base['product_sector'] or 'Unclassified') if legacy else source['Industry Group'] or 'Unclassified',
             aliases=sorted(aliases),match_method=matches.loc[identity,'match_method'] if legacy else 'NEW_SOURCE_ISIN',
             different_isin=different,observed_at=observed if source_id else None,
             current_fundamentals=data,fallback_score=float(value) if pd.notna(value) else None,
-            fallback_factor_coverage=float(coverage.get(source_id,0)))
+            fallback_basis=basis,fallback_factor_coverage=factor_coverage)
     rows=[record(i,matches.loc[i,'screener_source_isin'],True) for i in facts.index]
     rows += [record(i,i,False) for i in extra.index]
     assert len({r['isin'] for r in rows})==len(rows)
@@ -91,7 +103,8 @@ def build():
         source_as_of_date='2026-11-06',source_observed_range=summary['fresh_observation_range'],
         different_isin_current_only_matches=sum(r['different_isin'] for r in rows),
         excluded_without_exchange_code=len(excluded),excluded_names=list(excluded['Name']),
-        fallback_weights=weights,missing_proxy_factor_policy='Midpoint percentile; require at least one observed price-performance signal; report factor coverage.',
+        fallback_weights=weights,missing_proxy_factor_policy='Momentum proxy uses midpoint for missing factors and requires an observed return/high signal. Otherwise use mean of observed ROCE and inverse debt/equity percentiles in a separate fundamentals-only tier; no price history is inferred.',
+        fundamentals_only_policy='Equal weight to observed ROCE and inverse debt/equity percentiles; absent factors excluded; appended after momentum proxies, not comparable model predictions.',
         fallback_validation='Unvalidated current-data coverage proxy, not a trained champion prediction.',
         historical_training_modified=False,fresh_daily_inputs=False,
         source_hashes={str(p.relative_to(ROOT)):digest(p) for p in [master_path,match_path,facts_path]},

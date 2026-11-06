@@ -120,7 +120,7 @@ def test_number_formatting_does_not_change_stored_values() -> None:
     assert live_website.format_price(None) == "Unavailable"
 
 
-def test_spa_defaults_to_personalized_and_keeps_other_views() -> None:
+def test_spa_defaults_to_champion_and_keeps_other_views() -> None:
     assert 'id="view-dashboard" class="view hidden"' in INDEX_HTML
     assert 'id="view-personalized" class="view"' in INDEX_HTML
     assert 'id="view-live" class="view hidden"' in INDEX_HTML
@@ -129,7 +129,11 @@ def test_spa_defaults_to_personalized_and_keeps_other_views() -> None:
     assert "Indian equity screen" in INDEX_HTML
     for view in ("overview", "rankings", "historical", "validation", "provenance", "methodology", "status"):
         assert f'id="view-{view}"' in INDEX_HTML
-    assert "return !name?'personalized':name" in APP_JS
+    assert "return !name?'sector-champion':name" in APP_JS
+    assert 'async function openChampionStock' in APP_JS
+    assert 'async function terminalSearch(){const query=' in APP_JS
+    assert 'await openChampionStock(query)' in APP_JS
+    assert '<option value="sector">Within sector</option><option value="global">Global coverage</option>' in INDEX_HTML
     assert 'class="brand" href="/"' in INDEX_HTML
     assert "window.onpopstate=()=>showView(routeView(),false)" in APP_JS
     assert "ensureViewLoaded(name)" in APP_JS

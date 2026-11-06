@@ -20,10 +20,14 @@ BASE=dict(amount=7500,lookback_months=36,interval_days=30,target_cagr_percent=20
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument('--api-url',help='Reuse the running local champion API instead of loading a second service')
+    source=parser.add_mutually_exclusive_group()
+    source.add_argument('--api-url',help='Reuse the running local champion API instead of loading a second service')
+    source.add_argument('--response-file',type=Path,help='Verify an already captured HTTP response without recomputing a profile')
     args=parser.parse_args()
     DELIVERY.mkdir(parents=True,exist_ok=True)
-    if args.api_url:
+    if args.response_file:
+        result=json.loads(args.response_file.read_text(encoding='utf-8'))
+    elif args.api_url:
         request=Request(args.api_url,data=json.dumps({'profile':BASE}).encode(),headers={'Content-Type':'application/json'})
         with urlopen(request,timeout=180) as response:result=json.load(response)
     else:
@@ -33,6 +37,9 @@ def main():
     rows=result['rows'];by_isin={r['isin']:r for r in rows}
     assert result['row_count']==len(rows)==5547==len(by_isin)
     assert sum(r['current_data_available'] for r in rows)==5544
+    assert result['sector_ranked_count']==5547 and result['sector_unranked_count']==0
+    assert all(r['personalized_sector_rank'] is not None and r['personalized_available'] for r in rows)
+    assert sum(r['coverage_tier']=='FUNDAMENTALS_FALLBACK' for r in rows)==3
     assert [by_isin[r['isin']]['coverage_global_position'] for r in original.rows]==list(range(1,2387))
     assert result['global_champion']['rows']==original.rows[:20]
     assert len({r['isin'] for r in rows if r['identity_match_method']=='NEW_SOURCE_ISIN'})==1111
@@ -46,13 +53,14 @@ def main():
         if row['personalized_sector_rank'] is not None:
             assert row['personalized_sector_rank']>legacy_sizes[row['sector']]
     columns=['coverage_global_position','global_model_rank','isin','screener_source_isin','ticker','company',
-        'sector','coverage_tier','personalized_score','global_model_score','personalized_sector_rank',
+        'sector','coverage_tier','sector_rank_basis','personalized_score','global_model_score','personalized_sector_rank',
         'fallback_factor_coverage','ranking_as_of_date','current_data_as_of_date','execution_available']
     with (DELIVERY/'all_stocks_coverage.csv').open('w',encoding='utf-8-sig',newline='') as stream:
         writer=csv.DictWriter(stream,fieldnames=columns,extrasaction='ignore');writer.writeheader()
         writer.writerows(sorted(rows,key=lambda r:r['coverage_global_position']))
     receipt=dict(passed=True,total_stocks=len(rows),tiers=dict(Counter(r['coverage_tier'] for r in rows)),
         fresh_source_matches=sum(r['current_data_available'] for r in rows),
+        sector_ranked_count=result['sector_ranked_count'],sector_unranked_count=result['sector_unranked_count'],
         different_isin_execution_blocked=len(changed),original_global_order_preserved=True,
         champion_training_changed=False,prospective_ledger_changed=False,fresh_daily_inputs=False,
         source_as_of_date=result['coverage']['source_as_of_date'],model_as_of_date=result['as_of_date'],
@@ -62,7 +70,11 @@ def main():
     for name in ['manifest.json','universe.json.gz']:
         target=DELIVERY/'private-runtime'/name;target.parent.mkdir(exist_ok=True)
         shutil.copy2(DEFAULT_PACKAGE/name,target)
-    shutil.copy2(ROOT/'work/champion-coverage-20261106/low-load-tests.log',DELIVERY/'test_log.txt')
+    audit_logs=[ROOT/'work/sector-ranking-audit-20261106'/name for name in ['low-load-tests.log','low-load-asset-tests.log']]
+    if all(path.exists() for path in audit_logs):
+        (DELIVERY/'test_log.txt').write_text('\n'.join(path.read_text(encoding='utf-8') for path in audit_logs),encoding='utf-8')
+    else:
+        shutil.copy2(ROOT/'work/champion-coverage-20261106/low-load-tests.log',DELIVERY/'test_log.txt')
     text=f'''# Champion coverage integration — 6 November 2026
 
 The local champion page and API now cover {len(rows):,} accepted NSE/BSE identities, including 1,111 additions. Current Screener evidence is attached to 5,544 identities; three old identities have no current match. Three source companies without either exchange code were excluded. The identical total of 5,547 source rows and combined identities is coincidental.
@@ -71,7 +83,7 @@ The local champion page and API now cover {len(rows):,} accepted NSE/BSE identit
 
 {json.dumps(receipt['tiers'],indent=2)}
 
-The 2,386 frozen global-model stocks retain their exact global order and Top-20. Existing 4,436 sector scores/order are preserved. New stocks follow the frozen stocks within each sector, using an explicitly unvalidated current-data proxy: 30% vendor three-year return percentile, 30% five-year, 20% price/all-time-high proximity, 10% ROCE, and 10% lower debt/equity. Percentiles use all exchange-coded source stocks. Missing proxy factors contribute a midpoint; coverage is displayed. A proxy requires at least one observed return/proximity signal. Missing-evidence rows have a display position, no predictive score.
+The 2,386 frozen global-model stocks retain their exact global order and Top-20. Existing 4,436 sector scores/order are preserved. New stocks follow the frozen stocks within each sector, using an explicitly unvalidated current-data proxy: 30% vendor three-year return percentile, 30% five-year, 20% price/all-time-high proximity, 10% ROCE, and 10% lower debt/equity. Percentiles use all exchange-coded source stocks. Missing proxy factors contribute a midpoint; coverage is displayed. That proxy requires at least one observed return/proximity signal. Three companies without price-return/high history instead use mean observed ROCE and inverse debt/equity percentiles, in a separate fundamentals-only tier after momentum proxies. Every one of the 5,547 stocks has a sector rank; model validation and execution eligibility remain separate.
 
 Coverage positions order evidence tiers; they are not comparable model scores or a new accuracy claim. New financial data appears in each stock's Inspect view. This integrates data into the champion product, without pretending the trained model accepts new financial columns. All 378 original vendor metrics remain in the preserved source master; 101 canonical financial fields are attached to the runtime.
 

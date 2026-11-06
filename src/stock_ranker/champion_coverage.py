@@ -74,19 +74,20 @@ class ChampionCoverage:
             if source['legacy']:
                 continue
             score = source['fallback_score']
+            fundamentals_only=source.get('fallback_basis')=='FUNDAMENTALS_ONLY'
             row = dict(isin=source['isin'], ticker=source['ticker'], company=source['company'],
                 sector=source['sector'], search_aliases=' '.join(source['aliases']), requested_code=None,
                 sector_classification_source='Screener current industry group',
                 sector_classification_method='CURRENT_VENDOR_GROUP', sector_classification_confidence='VENDOR',
                 personalized_available=score is not None, personalized_score=score,
                 personalized_rank=None, personalized_sector_rank=None, personalized_sector_peer_count=0,
-                sector_security_count=0, result_type='SCREENER_MOMENTUM_FALLBACK' if score is not None else 'INSUFFICIENT_RANKING_EVIDENCE',
+                sector_security_count=0, result_type=('SCREENER_FUNDAMENTALS_FALLBACK' if fundamentals_only else 'SCREENER_MOMENTUM_FALLBACK') if score is not None else 'PROVISIONAL_SECTOR_POSITION',
                 status='CURRENT_REFERENCE_ONLY', execution_status='HISTORY_UNAVAILABLE', execution_available=False,
                 blocker='Current-data fallback; trained champion history, high dates and SIP outcomes are unavailable.',
                 execution_blocker='No verified daily execution/corporate-action history for this added security.',
                 evidence_confidence=0, sector_scoring_fallback=True,
-                fallback_available=True, coverage_tier='SCREENER_FALLBACK' if score is not None else 'COVERAGE_ONLY',
-                coverage_score_kind='UNVALIDATED_MOMENTUM_QUALITY_PROXY' if score is not None else 'NO_SCORE',
+                fallback_available=True, coverage_tier=('FUNDAMENTALS_FALLBACK' if fundamentals_only else 'SCREENER_FALLBACK') if score is not None else 'COVERAGE_ONLY',
+                coverage_score_kind=('UNVALIDATED_FUNDAMENTALS_ONLY_PROXY' if fundamentals_only else 'UNVALIDATED_MOMENTUM_QUALITY_PROXY') if score is not None else 'NO_SCORE',
                 coverage_fallback_score=score, fallback_factor_coverage=source['fallback_factor_coverage'],
                 current_fundamentals=source['current_fundamentals'], current_data_available=True,
                 current_data_as_of_date=self.manifest['source_as_of_date'],
@@ -104,7 +105,7 @@ class ChampionCoverage:
         # Never compare a vendor proxy numerically to the trained model's score.
         # Keep the original global order first, then frozen sector evidence, then
         # new proxies; missing-evidence rows receive a display position only.
-        order = {'TRAINED_GLOBAL': 0, 'FROZEN_SECTOR': 1, 'SCREENER_FALLBACK': 2, 'COVERAGE_ONLY': 3}
+        order = {'TRAINED_GLOBAL': 0, 'FROZEN_SECTOR': 1, 'SCREENER_FALLBACK': 2, 'FUNDAMENTALS_FALLBACK': 3, 'COVERAGE_ONLY': 4}
         def key(row):
             return (order[row['coverage_tier']], row.get('global_model_rank') or 10**9,
                     -(row.get('personalized_score') or 0), row['isin'])
@@ -115,15 +116,20 @@ class ChampionCoverage:
             sectors[row['sector']].append(row)
         for members in sectors.values():
             old = [r for r in members if r['coverage_tier'] in ('TRAINED_GLOBAL','FROZEN_SECTOR')]
-            new = sorted((r for r in members if r['coverage_tier'] == 'SCREENER_FALLBACK'), key=lambda r: (-r['personalized_score'],r['isin']))
+            new = sorted((r for r in members if r['coverage_tier'] not in ('TRAINED_GLOBAL','FROZEN_SECTOR')), key=lambda r: (order[r['coverage_tier']],-(r['personalized_score'] or 0),r['isin']))
             # Competition ranks skip all tied occupants, including a tie at
             # the tail of the frozen group.
             tail = len(old)
             for offset, row in enumerate(new, 1):
                 row['personalized_sector_rank'] = tail + offset
+                row['sector_rank_basis']='PROVISIONAL_DISPLAY_ORDER' if row['personalized_score'] is None else row['coverage_score_kind']
             for row in members:
                 row['sector_security_count'] = len(members)
-                row['personalized_sector_peer_count'] = len(old) + len(new)
+                row['personalized_sector_peer_count'] = len(members)
+                row['sector_rank_available']=True
+                row.setdefault('sector_rank_basis','FROZEN_CHAMPION')
+        if any(not isinstance(row['personalized_sector_rank'],int) or row['personalized_sector_rank']<1 or row['personalized_sector_rank']>row['sector_security_count'] for row in rows):
+            raise PersonalizationError('Sector ranking positions are incomplete or invalid')
         rows.sort(key=lambda r: (r['sector'], r['personalized_sector_rank'] or 10**9, r['isin']))
         if securities:
             requested = {}
@@ -137,8 +143,9 @@ class ChampionCoverage:
         counts = dict(Counter(r['coverage_tier'] for r in rows))
         result.update(coverage={**self.metadata(), 'tiers': counts, 'fresh_daily_inputs': False},
             personalized_count=sum(r['personalized_available'] for r in rows),
-            fallback_count=counts.get('SCREENER_FALLBACK',0)+counts.get('COVERAGE_ONLY',0),
+            fallback_count=sum(counts.get(tier,0) for tier in ('SCREENER_FALLBACK','FUNDAMENTALS_FALLBACK','COVERAGE_ONLY')),
+            sector_ranked_count=len(rows), sector_unranked_count=0,
             sector_count=len(sectors), total_stocks=len(rows), row_count=len(rows),
             evidence_fallback_count=result.get('evidence_fallback_count',0)+self.manifest['additional_stocks'],
-            sector_scoring_note=f"All {len(rows):,} accepted NSE/BSE identities covered. Existing sector order is preserved; new Screener proxies follow frozen champion stocks within each sector. Proxy scores use a separate scale. Rows with no signal have a display position only.")
+            sector_scoring_note=f"All {len(rows):,} accepted NSE/BSE identities have a sector position. Existing sector order is preserved, followed by momentum proxies and then fundamentals-only proxies. Rows with no signal receive a labelled provisional position. Each score type uses a separate scale; Unclassified is a display group.")
         return result

@@ -41,9 +41,11 @@ def test_proxy_never_displaces_trained_order_and_missing_evidence_is_unscored(tm
     assert rows['NEW']['xirr'] is None and rows['NEW']['days_since_recorded_high'] is None
     assert not rows['NEW']['execution_available']
     assert rows['EMPTY']['coverage_global_position']==3
-    assert rows['EMPTY']['personalized_sector_rank'] is None
+    assert rows['EMPTY']['personalized_sector_rank']==3
+    assert rows['EMPTY']['sector_rank_basis']=='PROVISIONAL_DISPLAY_ORDER'
     assert rows['EMPTY']['personalized_score'] is None
     assert not rows['EMPTY']['personalized_available']
+    assert result['sector_unranked_count']==0 and result['sector_ranked_count']==3
     assert rows['OLD']['ranking_as_of_date']=='2026-10-03'
     assert rows['NEW']['ranking_as_of_date']=='2026-11-06'
     assert result['coverage']['fresh_daily_inputs'] is False
@@ -86,6 +88,21 @@ def test_new_stock_follows_every_occupant_of_a_frozen_bottom_tie(tmp_path):
     assert next(r for r in result['rows'] if r['isin']=='NEW')['personalized_sector_rank']==3
 
 
+def test_quality_only_proxy_is_ranked_after_momentum_without_invented_history(tmp_path):
+    coverage=package(tmp_path)
+    quality=coverage.by_isin['EMPTY']
+    quality.update(fallback_basis='FUNDAMENTALS_ONLY',fallback_score=.99)
+    result=coverage.apply(frozen(),[])
+    rows={r['isin']:r for r in result['rows']}
+    assert rows['EMPTY']['coverage_tier']=='FUNDAMENTALS_FALLBACK'
+    assert rows['EMPTY']['personalized_available']
+    assert rows['EMPTY']['personalized_sector_rank']==3
+    assert rows['EMPTY']['days_since_recorded_high'] is None
+    assert rows['EMPTY']['xirr'] is None
+    assert rows['EMPTY']['coverage_score_kind']=='UNVALIDATED_FUNDAMENTALS_ONLY_PROXY'
+    assert result['fallback_count']==2
+
+
 @pytest.mark.skipif(not (DEFAULT_PACKAGE/'manifest.json').exists(),reason='Private Screener package is local')
 def test_real_union_and_fresh_data_matches_source_without_fake_histories():
     from stock_ranker.sector_champion_product import SectorChampionService
@@ -109,8 +126,11 @@ def test_real_union_and_fresh_data_matches_source_without_fake_histories():
     for r in expected.itertuples():
         assert rows[r.isin]['personalized_score']==pytest.approx(r.personalized_score,abs=1e-12)
         assert rows[r.isin]['personalized_sector_rank']==r.personalized_sector_rank
-    additions=[r for r in rows.values() if r['coverage_tier'] in ('SCREENER_FALLBACK','COVERAGE_ONLY')]
+    additions=[r for r in rows.values() if r['coverage_tier'] in ('SCREENER_FALLBACK','FUNDAMENTALS_FALLBACK','COVERAGE_ONLY')]
     assert len(additions)==1111
+    assert all(r['personalized_sector_rank'] is not None and r['personalized_available'] for r in rows.values())
+    assert sum(r['coverage_tier']=='FUNDAMENTALS_FALLBACK' for r in rows.values())==3
+    assert result['sector_unranked_count']==0 and result['sector_ranked_count']==5547
     assert all(r['xirr'] is None and r['days_since_recorded_high'] is None and not r['execution_available'] for r in additions)
     assert sum(r['screener_source_isin'] is not None and r['screener_source_isin']!=r['isin'] for r in rows.values())==17
     added=additions[0]
