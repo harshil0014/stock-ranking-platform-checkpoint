@@ -15,6 +15,7 @@ from stock_ranker.personalized_product import PersonalizationError, parse_profil
 from stock_ranker.personalized_peak_product import PeakRankingService
 from stock_ranker.sip_profit_signal import adjustments
 from stock_ranker.global_champion_product import GlobalChampionSelection
+from stock_ranker.champion_coverage import ChampionCoverage, DEFAULT_PACKAGE as COVERAGE_PACKAGE
 
 
 def recency_adjustment(x):
@@ -59,7 +60,7 @@ class ChampionScorer:
             x['log_amount']=np.log(profile.amount);x['lookback_months']=profile.lookback_months
             x['log_interval']=np.log(profile.interval_days);x['target_cagr']=profile.target_cagr
             model=self.models[name]
-            raw=pd.Series(model.predict(x[model.feature_name()].astype('float32'),num_threads=3),index=x.index)
+            raw=pd.Series(model.predict(x[model.feature_name()].astype('float32'),num_threads=1),index=x.index)
             parts[name]=raw.groupby(x.sector).rank(pct=True).where(x.evidence_fraction.gt(0),.5)
         x=self.frames['price_inputs'].copy()
         x['original_champion_score']=.75*(.8*x.open_model_score+.2*parts['profile'])+.25*parts['price']
@@ -90,6 +91,8 @@ class SectorChampionService(PeakRankingService):
     def __init__(self,package=None,champion_package=None):
         super().__init__(package)
         self.scorer=ChampionScorer(champion_package)
+        coverage_path=Path(os.environ.get('STOCK_RANKER_CHAMPION_COVERAGE',COVERAGE_PACKAGE))
+        self.coverage=ChampionCoverage(coverage_path) if coverage_path.exists() else None
 
     def metadata(self):
         result=super().metadata()
@@ -102,13 +105,17 @@ class SectorChampionService(PeakRankingService):
             result.update(model_revision='dual_w0.01_sip_risk_confirmed0.01_20261017',profile_affects_ranking=True,
                 scientific_boundary='Fixed 3 October 2026 snapshot. Original champion plus unchanged high-recency adjustment and 0.01 downside/affordability-adjusted trailing SIP-profit signal. Amount, interval and lookback can change SIP rankings; target affects goal calculations. User accepted historical tradeoffs; no fresh validation.')
             result['sector_weights']['sip_profit_adjustment_strength']=.01
+        if self.coverage:
+            result['coverage']=self.coverage.metadata()
+        else:
+            result['coverage_note']='Current Screener coverage package is not installed; only the frozen universe is available.'
         return result
 
     def rank(self,payload,*,securities=None):
         profile=parse_profile(payload)
         with self.lock:
             # Reuse existing execution simulation, validation and identity aliases.
-            result=super().rank(payload,securities=securities)
+            result=super().rank(payload,securities=None if self.coverage else securities)
             scores=self.scorer.score(profile)
             if self.scorer.sip_enabled:
                 name=self._frozen_profile_name(profile)
@@ -144,11 +151,16 @@ class SectorChampionService(PeakRankingService):
                 sector_scoring_note='All 4,436 securities ranked within frozen sectors. Equal scores share a rank. Unclassified is a display group. Price-evidence fallbacks are labelled.',
                 execution_boundary='Ranking coverage is separate from execution eligibility. SIP execution details use your submitted fields; a ranking is not a fill guarantee.')
             try:
-                global_selection=GlobalChampionSelection().selection(profile)
+                global_package=GlobalChampionSelection()
+                global_selection=global_package.selection(profile)
             except (OSError,ValueError,KeyError) as exc:
                 global_selection={'available':False,'rows':[],
                     'note':'Global selection unavailable because its frozen package could not be verified.'}
             result['global_champion']=global_selection
+            if self.coverage:
+                self.coverage.apply(result,global_package.rows if global_selection['available'] else [],securities=securities)
+                global_selection['covered_stocks']=len(result['rows'])
+                global_selection['note']+=' Full-universe coverage below separates trained global ranks, frozen sector scores and new current-data proxies.'
             json.dumps(result,allow_nan=False)
             return result
 

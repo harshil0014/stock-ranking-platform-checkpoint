@@ -96,7 +96,7 @@ class V17RankingService(PersonalizedRankingService):
         m=self._model(name)
         mask=x.champion_score.notna()
         out=pd.Series(np.nan,index=x.index)
-        if mask.any(): out.loc[mask]=m.predict(x.loc[mask,m.feature_name()],num_threads=4)
+        if mask.any(): out.loc[mask]=m.predict(x.loc[mask,m.feature_name()],num_threads=1)
         return out
 
     def score(self,x,reference):
@@ -164,7 +164,7 @@ class V17RankingService(PersonalizedRankingService):
             valid=x.enhanced_carry_xirr_score.notna()&x.enhanced_goal_score.notna()
             x['champion_raw_model']=np.nan
             model=self._model('champion')
-            x.loc[valid,'champion_raw_model']=model.predict(x.loc[valid,model.feature_name()],num_threads=4)
+            x.loc[valid,'champion_raw_model']=model.predict(x.loc[valid,model.feature_name()],num_threads=1)
             x['champion_score']=.67*anchor(ref.enhanced_goal_score,x.enhanced_goal_score)+.33*anchor(ref.champion_raw_model,x.champion_raw_model)
             for col in POS+NEG:
                 values=anchor(ref[col],x[col]);n=ref[col].notna().sum()

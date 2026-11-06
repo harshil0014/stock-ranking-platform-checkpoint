@@ -42,7 +42,9 @@ def test_normal_champion_http_entry_point_returns_global_selection():
         with urlopen(request,timeout=120) as response:payload=json.load(response)
         assert payload['global_champion']['available']
         assert len(payload['global_champion']['rows'])==20
-        assert len(payload['rows'])==4436
+        expected=payload.get('coverage',{}).get('total_stocks',4436)
+        assert len(payload['rows'])==expected
+        assert len({row['isin'] for row in payload['rows']})==expected
     finally:
         server.shutdown()
         server.server_close()
